@@ -46,10 +46,16 @@ needed one.
 
 Search, in this order:
 
-1. `Figueiredo` and `Mota` in the **Arquivo Distrital do Porto** — she died there.
-2. The same in the **Arquivo Distrital de Aveiro** — where the compound surname *Mota de Figueiredo*
-   actually appears, in a 1964 passport register.
-3. `"Mota Figueiredo"` generally — 223 results as of 14 September 2026, unworked.
+1. ~~`Figueiredo` and `Mota` in the Arquivo Distrital do Porto~~ — **done, and closed.** Porto's
+   passport series (PT/ADPRT/AC/GCPRT/J-E/205) runs only **1951–1991**, is described at series level
+   and is not digitised. Fifty years too late. No search to do.
+2. ~~The same in Aveiro~~ — **done.** One candidate: **Augusto Pereira de Figueiredo**, 21, son of
+   Tiago Rodrigues de Figueiredo and Maria Simões, of **Eixo, Aveiro**, passport to **Lourenço
+   Marques, 22 October 1904** (PT/ADAVR/AC/GCAVR/H-D/001/0016/000610). Unproven and probably
+   coincidental — but the only pre-1924 Figueiredo bound for that city in the indexed corpus.
+3. **Eixo parish registers, Aveiro** — the next step on Augusto. Look for his baptism c.1883, and
+   above all for a **marriage to a woman surnamed Mota**. That marriage is what would make him
+   Ivone's father; without it he is a man with a common surname on the right boat.
 4. The AHU series **PT/AHU/MU-DGAPC/RNPAC**, c. 1933–1949: *processos de colonos* and
    *listas de colonos e **repatriados** a bordo*. Ivone's parents went out before this series starts,
    but it catches people coming **back**, and she ended in Porto.
