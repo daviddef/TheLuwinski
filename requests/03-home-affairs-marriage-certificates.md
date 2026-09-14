@@ -42,7 +42,14 @@ both parties' full names, ages, domiciles, and the date and place of the marriag
 | **TAB, WLD 1950/1948** | 1948 | Divorce. Kurt *Luwinsky* v. Ivone **(born Mota Figueiredo)** |
 | **TAB, WLD 497/1951** | 1951 | Restitution of conjugal rights. Kurt Luwinski v. Ivone (formerly de Witt, born Figueiredo) |
 | **TAB, WLD 2368/1951** | 1951 | Divorce. Kurt Luwinski v. Ivone (formerly de Witt) (born Figueiredo) |
-| **TAB, WLD 2542/1957** | 1957 | Illiquid case, payment. **Standard Bank of South Africa Ltd v. K Luwinski** — found on a NAAIRS screen photographed into the family tree, and not previously in this archive |
+| **TAB, TPD 534/1948** | 1948 | **Divorce. Johannes Antonie Oelofse de Witt v. Yvonne (born de Figueiredo).** *This is the one that explains the four-month gap — her first husband sued her.* **Order first** |
+| **TAB, WLD 2545/1950** | 1950 | **Restitution of conjugal rights. IVONE LUWENSKI (formerly de Witt, born Figueiredo) v. KURT.** *She brought this one.* **Order first** |
+| **TAB, WLD 2542/1957** | 1957 | Illiquid case, payment. Standard Bank of South Africa Ltd v. K Luwinski |
+
+All six were recovered from photographs already sitting in the family tree. A divorce summons of
+this period recites both parties' full names, ages, domiciles, and the date and place of the
+marriage; a restitution action recites the desertion alleged. **TPD 534/1948 and WLD 2545/1950 are
+the two nobody has read.**
 
 Order from the **National Archives Repository, Pretoria** (TAB), quoting depot, source and
 reference. All 43 NAAIRS Figueiredo entries are in `data/naairs-figueiredo.tsv`; one more is worth

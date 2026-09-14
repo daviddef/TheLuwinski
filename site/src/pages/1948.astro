@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import litigation from '../data/litigation.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const t = [
   ['11 Mar 1941', 'Henrique born', 'Ivone is seventeen. The father is a Pinto da Rocha. The son stays behind when she goes south.', ''],
@@ -33,13 +34,66 @@ const t = [
     </tbody>
   </table></div>
 
+  <h2>Six actions in nine years</h2>
+  <p>
+    All nine images attached to Ivone and Kurt in the family tree have now been opened.
+    <strong>None is a photograph of a face.</strong> Two are scans of marriage registers; the rest
+    are photographs of a NAAIRS screen — somebody's research session, captured, filed as “photos”
+    and never read again. <strong>Three of the court records in them were not in this archive.</strong>
+  </p>
+  <div class="scroll"><table>
+    <thead><tr><th>Case</th><th>Year</th><th>Who sued whom</th><th>Action</th></tr></thead>
+    <tbody>{litigation.map(r => (
+      <tr>
+        <td><strong>{r.ref}</strong></td>
+        <td>{r.year}</td>
+        <td>{r.plaintiff} → {r.defendant}</td>
+        <td>{r.action}{r.status.startsWith('NEW') && <> <span class="tag doc">New</span></>}</td>
+      </tr>
+    ))}</tbody>
+  </table></div>
+
+  <div class="panel">
+    <h3>The four-month gap is explained <span class="tag doc">Solved</span></h3>
+    <p>
+      This archive could not see how Ivone was a <strong>spinster</strong> on 2 February 1948 and
+      <strong>divorced</strong> on 19 June. <strong>TPD 534/1948 is the answer: her husband sued
+      her.</strong> <em>Johannes Antonie Oelofse de Witt versus Yvonne (born de Figueiredo)</em>,
+      divorce, brought in the Transvaal Provincial Division and evidently undefended — which is how
+      a marriage of four months was over in four months.
+    </p>
+    <p class="small">
+      She married a miner in February, he divorced her by June, and she married Kurt seventeen days
+      after that.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>And she was not only the defendant <span class="tag doc">New</span></h3>
+    <p>
+      <strong>WLD 2545/1950 — <em>Ivone Luwenski (formerly de Witt, born Figueiredo) versus
+      Kurt</em>.</strong> She brought it. Restitution of conjugal rights is the action a
+      <strong>deserted</strong> spouse brings to compel the other to return, and in South African
+      practice it was the necessary first step before a divorce for desertion.
+    </p>
+    <p>
+      So this is not one man disposing of a wife:
+    </p>
+    <blockquote>
+      <strong>1948</strong> — he files to end it, weeks after the wedding, before the child is born.<br />
+      <strong>1949</strong> — the child is born.<br />
+      <strong>1950</strong> — <strong>she</strong> files, to make him come back.<br />
+      <strong>1951</strong> — he files again, twice, and this time it ends.
+    </blockquote>
+    <p class="small">Three years, three actions, one child. <strong>Whatever else it was, she fought it.</strong></p>
+  </div>
+
   <h2>What is odd about it</h2>
   <p>
-    <strong>The gap.</strong> Four and a half months between marrying de Witt and marrying Luwinski,
-    with no divorce recorded in between. That is either bigamy or a wrong date, and the archive's
-    reading is that it is a wrong date — because she married Kurt <em>as</em> Mrs de Witt, so the de Witt
-    marriage must have come first, and probably well before 2 February 1948.
-    <a href={base + '/ivone/'}>The argument in full →</a>
+    <s><strong>The gap.</strong> Four and a half months with no divorce recorded in between, so one
+    of the dates must be wrong.</s> <strong>Both dates were right and the divorce existed.</strong>
+    It is TPD 534/1948, above — found in a photograph in the family tree.
+    <a href={base + '/ivone/'}>Ivone's page →</a>
   </p>
   <p>
     <strong>The filing.</strong> Kurt files for divorce within weeks of his own wedding, and before his
