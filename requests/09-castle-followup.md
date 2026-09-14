@@ -1,7 +1,7 @@
 # Request 09 — follow-up to the 292.7 cM match (the 10,715-person tree)
 
-**Status: DRAFTED, NOT SENT.** Awaiting the family's go-ahead, as with every message
-that goes to a private person rather than an institution.
+**Status: SENT 15 September 2026, 09:27**, into the existing MyHeritage thread, on the
+family's go-ahead. A second message went to the 297.5 cM match at 09:28 — see below.
 
 **Channel:** reply inside the existing MyHeritage thread (opened June 2025, answered
 15 September 2026). Not a cold approach.
@@ -62,4 +62,70 @@ With thanks, and with an apology once more for the fifteen months of silence fro
 this end,
 
 David Defranceski
+david.defranceski@gmail.com
+
+
+---
+
+# Request 10 — correction to the 297.5 cM match
+
+**Status: SENT 15 September 2026, 09:28**, in the same thread as the letter of 08:12.
+
+**Why:** the letter sent at 08:12 asked her *who were Mervin Halsey's parents?* — a
+question that was already moot by the time she could have read it. Leaving a wrong
+question standing is worse than sending a second message, and she is in any case the
+one person alive who may know what this archive now needs.
+
+One more from me, and this one is a correction rather than a question — I asked you the
+wrong thing this morning.
+
+I asked who Mervin Halsey's parents were. It turns out that is not where the connection
+to Derrick runs at all. It runs through your grandmother Cynthia, and I should have seen
+it sooner, because you gave me her maiden name a year ago.
+
+I found the marriage register for 29 November 1952 at St Martin's-in-the-Veld and read
+it properly. Everything you told me checks out, down to the middle name — the register
+spells it WEAR rather than Weir. But the column I had not looked at is the one headed
+"Country of Birth", and it says:
+
+    Mervin Richard Halsey, 22            — Cape Province
+    Cynthia Yvonne Elizabeth Wear, 21    — England
+
+Derrick's DNA cluster is English. Your grandfather was South African. Your grandmother
+was the one born in England, and she is the link.
+
+From there it went quickly, all in the English indexes:
+
+- Cynthia's birth is registered in the second quarter of 1931 at Hitchin, Hertfordshire.
+  Her mother's maiden name is CASTLE.
+- The only Wear–Castle marriage in the whole English index is Henry R Wear to Martha L
+  Castle, Hitchin, last quarter of 1914.
+- The 1921 census has them at 72 Pix Road, Letchworth: Henry Robert Wear, 32, a machine
+  minder at J. M. Dent's printing works, and Martha Maud Wear, 25, born at Baldock,
+  Hertfordshire. Cynthia comes along ten years after that census, the youngest.
+- And the Castles are all in one house at Baldock in 1901 and 1911 — George Castle, a
+  farm labourer and later a brewery labourer, and Caroline, born Walls, of Weston.
+
+So your great-grandmother Martha and Derrick's family are the same family. Another of
+his matches, at 292.7 cM, descends from Martha's sister Agnes Kate. Two of his closest
+matches, five centimorgans apart, down two different daughters of one couple in a
+Hertfordshire village.
+
+Which means, if you will forgive the plain arithmetic: Derrick's biological father was
+most probably one of the Castle SONS — George W. born 1885, Frederick born 1890, or
+Ernest born 1904 — and one of them was in Johannesburg in 1948.
+
+So the useful question, if you will indulge me a second time:
+
+> **Is there anything in the family about your grandmother Cynthia's people — her parents
+> Henry and Martha Wear, her Castle grandparents at Baldock, or any Castle relative in
+> South Africa?** A cousin, an uncle, someone who was already out there when she arrived?
+> A young woman does not usually sail from Hertfordshire to Johannesburg alone and by
+> chance.
+
+And I owe you an apology for a week of chasing the Halsey name when you had already
+handed me the right one. Thank you for the reply you sent a year ago. It was the answer;
+I was slow reading it.
+
+David
 david.defranceski@gmail.com
