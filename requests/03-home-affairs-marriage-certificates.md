@@ -1,7 +1,21 @@
 # Request 3 — The two Johannesburg marriage certificates
 
-South African marriage certificates of this period name **the fathers of both parties**. Two are
-wanted, and both are already located to the image.
+> ## CORRECTED, 14 September 2026
+> **They do not name the fathers.** The 1948 register image has now been read — it was attached to
+> the family tree as a photograph all along. The South African *Duplicate Original Marriage
+> Register* of this period has eleven columns: date, names, age, country of birth, personal status,
+> occupation, residence, licence, consent, antenuptial contract, remarks. **No parents.**
+>
+> What the 1948 entry does give is worth having, and is already extracted in
+> `notes/marriage-register-1948.md`: Kurt aged **36**, born **Berlin**, **bachelor**,
+> **shop keeper**; Ivone aged **24**, born **Portuguese East Africa**, and — the useful one —
+> **DIVORCED**, which means she was not still married to de Witt in June 1948.
+>
+> **Order the 1953 certificate if you want it, but not for the fathers.** For Ivone's parents the
+> only documents are Portuguese: the Maputo birth certificate and the Porto death certificate.
+
+~~South African marriage certificates of this period name **the fathers of both parties**.~~ Two are
+listed here, and both are already located to the image.
 
 | | |
 |---|---|
@@ -28,6 +42,7 @@ both parties' full names, ages, domiciles, and the date and place of the marriag
 | **TAB, WLD 1950/1948** | 1948 | Divorce. Kurt *Luwinsky* v. Ivone **(born Mota Figueiredo)** |
 | **TAB, WLD 497/1951** | 1951 | Restitution of conjugal rights. Kurt Luwinski v. Ivone (formerly de Witt, born Figueiredo) |
 | **TAB, WLD 2368/1951** | 1951 | Divorce. Kurt Luwinski v. Ivone (formerly de Witt) (born Figueiredo) |
+| **TAB, WLD 2542/1957** | 1957 | Illiquid case, payment. **Standard Bank of South Africa Ltd v. K Luwinski** — found on a NAAIRS screen photographed into the family tree, and not previously in this archive |
 
 Order from the **National Archives Repository, Pretoria** (TAB), quoting depot, source and
 reference. All 43 NAAIRS Figueiredo entries are in `data/naairs-figueiredo.tsv`; one more is worth
