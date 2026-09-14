@@ -1,0 +1,124 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// ─── The eleven letters, and what has come back ───────────────────────────────
+const letters = [
+  ['14 Sep', 'Arquivo da Defesa Nacional', 'Paço d’Arcos', 'Henrique’s 1961 military registration', 'Delivered'],
+  ['14 Sep', 'Arquivo Histórico Militar', 'Lisboa', 'Same request, after the bounce', 'Acknowledged'],
+  ['14 Sep', 'Arquivo Histórico de Moçambique', 'Maputo', 'Recruitment-district records, 1950s–60s', 'Delivered'],
+  ['15 Sep', 'Arquivo Histórico de Moçambique', 'Maputo', 'Ivone’s 1924 birth certificate', 'Delivered'],
+  ['15 Sep', 'Master of the High Court', 'South Gauteng', 'J294 in estate 12294/2023 — Henrique', 'Delivered'],
+  ['15 Sep', 'Landesarchiv Berlin', 'Berlin', 'Gertrud’s death 1943 · the 1924 marriage and divorce · Kurt’s 1912 birth entry', 'Delivered'],
+  ['15 Sep', 'National Archives', 'Pretoria', 'J294 in estate TAB MHG 7584/69 — Kurt', 'Delivered'],
+  ['15 Sep', '1ª Conservatória do Registo Civil', 'Porto', 'Ivone’s death record, date unknown', 'Delivered'],
+  ['15 Sep', 'Archiwum Państwowe', 'Bydgoszcz', 'Standesamt Schubin 1884 — Jacob’s birth', 'Acknowledged'],
+  ['15 Sep', 'Archiwum Państwowe', 'Koszalin', 'Standesamt Hammerstein 1884 — Georg; and Sally, 1847', 'Delivered'],
+  ['14 Sep', 'Arquivo Histórico Militar', '—', 'Sent to a dead domain', 'Bounced — resent'],
+];
+
+// ─── The fifteen, with live state ─────────────────────────────────────────────
+const S = {
+  sent:    ['sent',    'Sent — awaiting reply'],
+  ack:     ['ack',     'Acknowledged'],
+  you:     ['you',     'Waiting on the family'],
+  blocked: ['blocked', 'Not doable from here'],
+};
+const items = [
+  [1,  'Order estate 12294/2023 — Henrique’s J294', S.sent, 'Sent to the named estate controller for files ending in 4, with a line asking her to redirect it if the estate sits elsewhere.'],
+  [2,  'Order estate 7584/69 — Kurt’s J294', S.sent, 'Corrected mid-flight: this is a National Archives request, not a Master’s one. Kurt died in 1968 and files that old went to Pretoria long ago.'],
+  [3,  'Ivone’s Porto death record', S.sent, 'A false claim of kinship was caught in the draft and removed before sending. Asks whether a search by name is possible at all, since her date of death is unknown.'],
+  [4,  'Ivone’s 1924 Lourenço Marques birth', S.sent, 'Her 1924 birth falls inside the Maputo archive’s 1865–1934 range — it was Henrique’s 1941 that fell outside. Asks for parents and, if recorded, grandparents.'],
+  [5,  'Henrique’s 1968 marriage record', S.blocked, 'Searched on both groom and bride. Not in FamilySearch — the South African marriage collections thin out after the mid-1960s. May simply arrive inside the estate file at item 1.'],
+  [6,  'The June 1948 ante-nuptial contract', S.blocked, 'A South African deeds registry “may not give out information acting on a letter or a telephone call.” Needs attendance in person or a paid commercial search.'],
+  [7,  'The February 1956 ante-nuptial contract', S.blocked, 'Same office, same obstacle.'],
+  [8,  'Write to the closest British match', S.you, 'Drafted in full and deliberately not sent. She is a private person who did not ask to be contacted.'],
+  [9,  'Write to the keeper of the 10,715-person tree', S.you, 'Drafted. Send this one first — she is an experienced genealogist and her answer may make item 8 unnecessary.'],
+  [10, 'Big Y-700 on Derrick’s kit', S.you, 'A purchase. This archive does not spend other people’s money.'],
+  [11, 'Kurt’s naturalisation', S.blocked, 'Done as far as it can be. The Union gazette did publish naturalisation applications — his partner made one in February 1942 — and Kurt appears in none of them under any spelling the OCR catches. Recorded as a negative with its limits.'],
+  [12, 'Finish the Gazettes.Africa sweep', S.blocked, 'Done. Leibholz zero, Salkow zero, “Piccadilly Hat” nothing after 1952, Walter Oppenheimer seven including his naturalisation, Ivy Fuchs seven including her husband’s estate.'],
+  [13, 'Gertrud’s death register, 27 February 1943', S.sent, 'Asked as one of three questions in the Berlin letter. The cause of death is the point.'],
+  [14, 'Auguste and Jacob’s divorce file', S.sent, 'Same letter. In a Berlin Mischehe the date is the whole meaning of the act.'],
+  [15, 'Szubin and Hammerstein registers', S.ack, 'Two letters, one to each archive, each told what the other was asked. Both civil registries opened in 1874, so an 1884 birth entry names both parents outright.'],
+];
+
+const count = (k) => items.filter(i => i[2][0] === k).length;
+---
+<Base title="Status"
+  subtitle="Every open thread in one place, and the date it last moved"
+  lede="This page exists because the answer to “are you keeping track of all this?” was honestly: in four places, and the published one was already stale. This is the one that is not.">
+
+  <div class="cards">
+    <div class="card stat"><b>{letters.length - 1}</b><span>Delivered</span></div>
+    <div class="card stat"><b>{letters.filter(l => l[4] === 'Acknowledged').length}</b><span>Acknowledged</span></div>
+    <div class="card stat"><b>{count('sent') + count('ack')}</b><span>In flight</span></div>
+    <div class="card stat"><b>{count('you')}</b><span>Waiting on you</span></div>
+  </div>
+
+  <h2>The letters</h2>
+  <p class="small">
+    Eleven sent, and <strong>exactly one has ever bounced</strong> — the one sent before every address
+    was checked for a mail record first. That is now standing procedure, and it has since caught three
+    dead addresses before they cost anything.
+  </p>
+  <div class="scroll"><table>
+    <thead><tr><th>Sent</th><th>To</th><th>Where</th><th>Asking for</th><th>State</th></tr></thead>
+    <tbody>
+      {letters.map(([d, who, where, what, state]) => (
+        <tr>
+          <td class="small">{d}</td>
+          <td><strong>{who}</strong></td>
+          <td class="small">{where}</td>
+          <td class="small">{what}</td>
+          <td><span class={'tag ' + (state === 'Acknowledged' ? 'doc' : state.startsWith('Bounced') ? 'disp' : 'inf')}>{state}</span></td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+
+  <h2>The fifteen</h2>
+  <div class="scroll"><table>
+    <thead><tr><th></th><th>Action</th><th>State</th><th>Where it stands</th></tr></thead>
+    <tbody>
+      {items.map(([n, what, [k, label], note]) => (
+        <tr>
+          <td><strong>{n}</strong></td>
+          <td><strong>{what}</strong></td>
+          <td><span class={'tag ' + (k === 'ack' ? 'doc' : k === 'you' ? 'open' : k === 'blocked' ? 'disp' : 'inf')}>{label}</span></td>
+          <td class="small">{note}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+
+  <h2>What is actually waiting on you</h2>
+  <div class="panel">
+    <p>
+      <strong>Three things, and none of them is research.</strong>
+    </p>
+    <ul>
+      <li><strong>The two letters to living DNA matches.</strong> Written, and sitting still. Everything else went to an institution; these go to two private people, about a finding that touches their family as much as this one. And <strong>Derrick should probably be told before a stranger is</strong> — which is not this archive’s call to make.</li>
+      <li><strong>Big Y-700.</strong> A purchase, and the one test that would place Derrick on a branch young enough for a surname to mean something.</li>
+      <li><strong>The two ante-nuptial contracts</strong>, if you want them. They need somebody in a South African deeds office, or a paid search.</li>
+    </ul>
+    <p class="small">
+      Everything else is either in the post or finished. <strong>The next movement in this archive comes
+      from somebody else’s filing cabinet</strong>, and Bydgoszcz has already warned that a complicated
+      request can take more than a month.
+    </p>
+  </div>
+
+  <h2>And the ones that came back negative</h2>
+  <p class="small">
+    Recorded because a search that found nothing is still a search, and the next person should not
+    repeat it.
+  </p>
+  <ul>
+    <li><strong>Leibholz</strong> — zero across all 54,313 South African gazettes, and zero in NAAIRS. The name never entered South African public record.</li>
+    <li><strong>Mota</strong> — zero in NAAIRS. <strong>Salkow</strong> — zero in the gazettes.</li>
+    <li><strong>Colonial Mozambican gazettes</strong> — not held by Gazettes.Africa; its Mozambique run begins at independence in 1975.</li>
+    <li><strong>Projecto GERMIL</strong> — the Portuguese military master books stop in 1908, thirty years too early for Henrique.</li>
+    <li><strong>No Theory of Family Relativity</strong> exists on any of Derrick’s 5,464 matches. Nothing here will be found by machine.</li>
+  </ul>
+  <p class="small"><a href={base + '/research-log/'}>The full working record →</a> · <a href={base + '/open-questions/'}>The ten questions →</a></p>
+</Base>
