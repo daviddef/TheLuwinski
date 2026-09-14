@@ -1344,6 +1344,16 @@
      "n": "Henrique Figueiredo Pinto Da Rocha",
      "ls": "1941 - 2022"
     }
+   ],
+   "corrections": [
+    {
+     "id": 9500002,
+     "who": "Ivone Mota Figueiredo",
+     "field": "marriage to Unknown Da Rocha, before 1941",
+     "was": "married",
+     "now": "NO SUCH MARRIAGE — she was a spinster in February 1948",
+     "source": "Duplicate Original Marriage Register, Germiston no. 54 of 1948, 2 February 1948, column 5 Personal Status: SPINSTER. Henrique, born 11 March 1941, was therefore born to an unmarried mother of sixteen."
+    }
    ]
   },
   {
@@ -8052,6 +8062,14 @@
      "was": "Dec 15 1969",
      "now": "15 December 1968",
      "source": "Johannesburg Chevrah Kadisha burial register: died 15.12.1968, buried 16.12.1968, Westpark block L grave 211, Yahrzeit 24 Kislev 5729 — which is itself 15 December 1968."
+    },
+    {
+     "id": 9500001,
+     "who": "Kurt Israel Luwinski",
+     "field": "occupation",
+     "was": "dress designer",
+     "now": "dress designer (1933); shop keeper (1948)",
+     "source": "Johannesburg marriage register no. 858 of 1948, column 6: Shop Keeper. The 1933 emigration record gives dress designer. Both are true of one man."
     }
    ]
   },
@@ -12666,6 +12684,22 @@
    "was": "son of Sally Leibholz and Friederike Schmul",
    "now": "disputed — a different Leibholz family",
    "source": "Born Hammerstein, West Prussia, 7 June 1884; Jacob born Schubin, Posen, 8 August 1884. Two months and two hundred kilometres apart."
+  },
+  {
+   "id": 9500002,
+   "who": "Ivone Mota Figueiredo",
+   "field": "marriage to Unknown Da Rocha, before 1941",
+   "was": "married",
+   "now": "NO SUCH MARRIAGE — she was a spinster in February 1948",
+   "source": "Duplicate Original Marriage Register, Germiston no. 54 of 1948, 2 February 1948, column 5 Personal Status: SPINSTER. Henrique, born 11 March 1941, was therefore born to an unmarried mother of sixteen."
+  },
+  {
+   "id": 9500001,
+   "who": "Kurt Israel Luwinski",
+   "field": "occupation",
+   "was": "dress designer",
+   "now": "dress designer (1933); shop keeper (1948)",
+   "source": "Johannesburg marriage register no. 858 of 1948, column 6: Shop Keeper. The 1933 emigration record gives dress designer. Both are true of one man."
   }
  ],
  "counts": {
