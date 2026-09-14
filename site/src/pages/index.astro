@@ -15,24 +15,107 @@ const c = register.counts;
     <div class="card stat"><b>{c.omitted_living}</b><span>Living people omitted</span></div>
   </div>
 
-  <h2>The spine</h2>
+  <h2>Two spines</h2>
   <p>
-    <a href={base + '/derrick/'}>Lynn Derrick Luwinski</a> is living, and
-    this archive names him and says nothing else about him. Everything narrated here is about the dead
-    behind him.
+    <a href={base + '/derrick/'}>Lynn Derrick Luwinski</a> is living, and this archive names him and
+    says nothing else about him. Behind him run <strong>two lines, and they are not the same line.</strong>
+    One is the family of record, documented to the 1870s and carried on a name. The other is the family
+    his DNA keeps pointing at, reconstructed from 5,464 matches and not yet joined to him by any document.
+    Both are set down here, side by side, because the honest state of this research is that
+    <strong>the archive does not yet know which of the two fathered him</strong> — only which way the
+    evidence leans.
   </p>
 
-  <div class="scroll"><table>
-    <thead><tr><th>Generation</th><th>Who</th><th>Where</th><th>What happened</th></tr></thead>
-    <tbody>
-      <tr><td>Great-grandparents</td><td>Sally Leibholz &amp; Friederike Schmul</td><td>Hammerstein; married at Szubin, 1874</td><td>A Jewish family of the Posen–West Prussia borderland</td></tr>
-      <tr><td></td><td>Joachim Luwinski &amp; Johanna Thimm</td><td>Allenstein and Sauerbaum, East Prussia</td><td>Catholic farming people of the Ermland</td></tr>
-      <tr><td>Grandparents</td><td><a href={base + '/leibholz/'}>Jacob Leibholz</a></td><td>b. Schubin 1884; Berlin-Schöneberg</td><td>Deported to Auschwitz, 26 February 1943</td></tr>
-      <tr><td></td><td><a href={base + '/east-prussia/'}>Auguste “Lizzy” Luwinski</a></td><td>b. Sauerbaum 1893; d. Kraichtal 1975</td><td>Dressmaker and milliner. Survived</td></tr>
-      <tr><td>Parents</td><td><a href={base + '/kurt/'}>Kurt Israel Luwinski</a></td><td>b. Berlin 1912; d. Johannesburg 1968</td><td>Left Germany in 1933, aged 21</td></tr>
-      <tr><td></td><td><a href={base + '/ivone/'}>Ivone <strong>Mota</strong> Figueiredo</a></td><td>b. Lourenço Marques 1924; d. Porto</td><td>Four marriages, three countries</td></tr>
-    </tbody>
-  </table></div>
+  <div class="spines">
+    <div class="gen head"></div>
+    <div class="node head a">
+      <b>The line of record</b> <span class="tag doc">Documented</span>
+      <p>Paper, from Berlin and the Posen–West Prussia borderland. The family Derrick was born into, named for, and belongs to.</p>
+    </div>
+    <div class="node head b">
+      <b>The line the DNA points to</b> <span class="tag inf">Hypothesis</span>
+      <p>These people are documented — in English registers and a match's own tree. What is <em>not</em> documented is the join to Derrick.</p>
+    </div>
+
+    <div class="gen">Great-<br/>grandparents</div>
+    <div class="node a">
+      <span class="lane">Line of record</span>
+      <b>Sally Leibholz &amp; Friederike Schmul</b>
+      <p>Hammerstein; married at Szubin, 1874. A Jewish family of the borderland.</p>
+      <b>Joachim Luwinski &amp; Johanna Thimm</b>
+      <p>Allenstein and Sauerbaum, East Prussia. Catholic farming people of the Ermland.</p>
+    </div>
+    <div class="node b">
+      <span class="lane">DNA line</span>
+      <b>Alfred John Brown <span class="yr">1853–1924</span> &amp; Sarah Maria Brister <span class="yr">b.1858</span></b>
+      <p>Norfolk. He was born at a coastal hamlet called <em>California</em>, near Great Yarmouth.</p>
+      <b>George William Castle <span class="yr">1862–1917</span> &amp; Caroline Wallis <span class="yr">1862–1957</span></b>
+      <p>Norwich and Caister-on-Sea.</p>
+    </div>
+
+    <div class="gen">Grandparents</div>
+    <div class="node a">
+      <span class="lane">Line of record</span>
+      <b><a href={base + '/leibholz/'}>Jacob Leibholz</a> <span class="yr">b. Schubin 1884</span></b>
+      <p>Deported from Berlin to Auschwitz, 26 February 1943. Did not come back.</p>
+      <b><a href={base + '/east-prussia/'}>Auguste “Lizzy” Luwinski</a> <span class="yr">1893–1975</span></b>
+      <p>Dressmaker and milliner. Survived the war in Berlin.</p>
+    </div>
+    <div class="node b open">
+      <span class="lane">DNA line</span>
+      <b>One of eight people, and the archive cannot yet say which <span class="tag open">Unresolved</span></b>
+      <p>
+        Archibald, Frank, Alice or Ernest <strong>Brown</strong>; George, Ada, Frederick or Martha
+        <strong>Castle</strong>. Derrick’s biological grandparent was a sibling of Walter George Brown
+        or of Agnes Kate Castle, and those are the eight names on that shelf.
+      </p>
+    </div>
+
+    <div class="gen">Father</div>
+    <div class="node a">
+      <span class="lane">Line of record</span>
+      <b><a href={base + '/kurt/'}>Kurt Israel Luwinski</a> <span class="yr">b. Berlin 1912, d. Johannesburg 1968</span></b>
+      <p>
+        Got out of Germany in 1933, aged 21. Dress designer; partner in the Piccadilly Hat Company,
+        81 Eloff Street. Married Ivone in Johannesburg, June 1948.
+      </p>
+      <p class="verdict disp">Very probably <strong>not</strong> the biological father: 0.0% Ashkenazi where a quarter is required, and a Y-DNA haplogroup — R-S11477, U106 — that is North Sea, not Ashkenazi.</p>
+    </div>
+    <div class="node b open">
+      <span class="lane">DNA line</span>
+      <b>An unidentified man, Johannesburg, 1948 <span class="tag open">Unnamed</span></b>
+      <p>
+        Born roughly 1910–1928, a child of one of those eight. His brother or sister was the parent of
+        <strong>Mervin Richard Halsey</strong> <span class="yr">1930–2005</span>, married at St Martin’s-in-the-Veld,
+        Johannesburg, 29 November 1952 — whose granddaughter shares <strong>297.5 cM</strong> with Derrick
+        and is his closest match in a list 5,464 long.
+      </p>
+      <p class="verdict inf">The surname <strong>Halsey</strong> is a guess held loosely: no daughter of these two Norfolk families married a Halsey in the England and Wales index. Mervin was South African, not an emigrant.</p>
+    </div>
+
+    <div class="gen">Mother</div>
+    <div class="node both">
+      <b><a href={base + '/ivone/'}>Ivone <strong>Mota</strong> Figueiredo</a> <span class="yr">b. Lourenço Marques 1924, d. Porto</span></b>
+      <p>
+        <strong>Not in dispute on either reading.</strong> Four marriages, three countries. Whichever man
+        fathered Derrick, she was his mother — which is also why the Portuguese half of his DNA is the
+        half that behaves.
+      </p>
+    </div>
+
+    <div class="gen"></div>
+    <div class="node both derrick">
+      <b><a href={base + '/derrick/'}>Lynn Derrick Luwinski</a></b>
+      <p>Living. Named here, and described nowhere.</p>
+    </div>
+  </div>
+
+  <p class="small">
+    <strong>What would collapse the right-hand lane into a name:</strong> the parents of Mervin Richard
+    Halsey. One document — his 1952 marriage register, his 2005 estate, or his ~1930 South African birth
+    — names a couple, and that couple’s other sons are the short list Derrick’s father is standing in.
+    <a href={base + '/dna/'}>The arithmetic, the matches and the failed tests →</a>
+  </p>
 
   <h2>The finding this archive cannot avoid</h2>
   <div class="panel">
@@ -55,6 +138,60 @@ const c = register.counts;
     the family he descends from is a different question, and this archive keeps the two apart rather
     than pretending they are one.
   </p>
+
+
+<style>
+  .spines {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr 1fr;
+    gap: .5rem;
+    margin: 1.8rem 0 1rem;
+    max-width: none;
+    align-items: stretch;
+  }
+  .spines .gen {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: .72rem; letter-spacing: .07em; text-transform: uppercase;
+    color: var(--ink-faint);
+    padding: .85rem .2rem 0 0;
+    line-height: 1.35;
+  }
+  .spines .node {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: .8rem .95rem;
+    max-width: none;
+    font-size: .88rem;
+  }
+  .spines .node.a { border-left: 3px solid var(--doc); }
+  .spines .node.b { border-left: 3px solid var(--inf); }
+  .spines .node.b.open { border-left-style: dashed; border-left-color: var(--open); }
+  .spines .node.both { grid-column: 2 / span 2; border-left: 3px solid var(--rule); }
+  .spines .node.derrick { border-left-color: var(--accent); }
+  .spines .node.head { background: transparent; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; padding: 0 0 .5rem; }
+  .spines .node b { display: block; font-weight: 600; margin-top: .55rem; line-height: 1.35; }
+  .spines .node b:first-of-type { margin-top: 0; }
+  .spines .node p { margin: .2rem 0 0; font-size: .84rem; color: var(--ink-soft); max-width: none; }
+  .spines .yr { font-weight: 400; color: var(--ink-faint); font-size: .82em; white-space: nowrap; }
+  .spines .verdict { margin-top: .55rem; padding-top: .5rem; border-top: 1px dotted var(--rule); font-size: .8rem; }
+  .spines .verdict.disp { color: var(--disp); }
+  .spines .verdict.inf { color: var(--ink-soft); }
+  .spines .lane { display: none; }
+  @media (max-width: 52rem) {
+    .spines { grid-template-columns: 1fr; gap: .45rem; }
+    .spines .gen { padding: 1.1rem 0 0; border-top: 1px solid var(--rule); }
+    .spines .gen.head { display: none; }
+    .spines .node.head { display: none; }
+    .spines .node.both { grid-column: auto; }
+    .spines .lane {
+      display: block;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: .6rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--ink-faint); margin-bottom: .4rem;
+    }
+  }
+</style>
 
   <h2>Where to start</h2>
   <div class="cards">
