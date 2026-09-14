@@ -101,6 +101,33 @@ Australia. Four of the other British matches are her own first cousins and their
 
 ---
 
+## How it is actually sent — checked, 15 September 2026
+
+Not by email. **MyHeritage never exposes a match's email address.** The *Contact* link on a match card
+opens a new tab at the site's own inbox:
+
+```
+/inbox/compose/recipient/<opaque-user-id>/type/1/open_subject/MyHeritage%20DNA%20Match%20with%20<name>
+```
+
+What that page is, and what it means for the drafts:
+
+| | |
+|---|---|
+| **Form** | A chat thread, not an email. Subject pre-filled *“MyHeritage DNA Match with …”* and editable; one message box; a send arrow |
+| **Length** | The textarea allows **32,768 characters**. Neither letter comes close, so nothing needs cutting for space |
+| **From** | **David Defranceski's account** — his name and profile, not Derrick's. The letters say *“a family member”*, which is accurate and stays accurate |
+| **To them** | It lands in her MyHeritage inbox and she gets a notification by email. Her address is never disclosed either way |
+| **Reply** | Comes back into the same thread, which means replies are in the account and readable |
+
+**The account has done this before.** The inbox already holds DNA correspondence with several matches
+going back to 2025, so the flow is familiar and the letters will not look out of place.
+
+**One consequence worth weighing.** Because it is a chat rather than a letter, a long block of text
+can read as heavy. Both drafts are structured with short paragraphs and a numbered question list for
+that reason. They can be sent as one message; they should not be broken into several, which would
+arrive as a burst of notifications.
+
 ## Before either is sent
 
 - **They go through MyHeritage's own messaging**, not email — that is how the matches are reachable,
