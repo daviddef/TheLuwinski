@@ -1,5 +1,18 @@
 # Request 1 — Death record of Ivone de Figueiredo, Porto
 
+> ## CORRECTED BEFORE SENDING, 15 September 2026
+> The draft below originally read **“sou neto dela”** — *I am her grandson*. **That is false.**
+> Ivone's son is Derrick. The researcher is the son of Derrick's former wife by her second
+> marriage, and is no relation to Ivone at all — which his own DNA test states plainly, his father
+> being the second husband.
+>
+> It was written months ago, never sent, and would have put a false statement of relationship in
+> front of a government registry. **It is also unnecessary:** a Portuguese *certidão de óbito* is a
+> public document and needs no claim of kinship. The line now reads simply that the purpose is
+> genealogical and non-commercial.
+>
+> *Check who you are claiming to be before you claim it.*
+
 **Why this one first.** A Portuguese *assento de óbito* names the deceased's parents. Nothing
 else available names Ivone's parents in a single step.
 
@@ -35,7 +48,7 @@ the request — the **names of her father and mother**.
 > posteriormente a Portugal. O seu apelido de solteira aparece grafado tanto *Figueiredo* como
 > *Figueredo*.
 >
-> O pedido tem fins exclusivamente genealógicos: sou neto dela e procuro identificar os
+> O pedido tem fins exclusivamente genealógicos e não comerciais. Procuro identificar os
 > nomes dos pais dela, que constam do assento. Agradeço que me informem do custo e da forma de
 > pagamento, bem como de qualquer documento que deva apresentar.
 >
