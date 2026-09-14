@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const log = [
+  ['Harvested the source', 'The MyHeritage tree read in full — 164 people, 648 facts with their citations. Five duplicate records found and collapsed; about a hundred people identified as a surname index rather than descent.', 'doc'],
+  ['Checked it against the Bundesarchiv', 'All four Leibholz men found in the Gedenkbuch. Jacob was deported on 26 February 1943, not killed in 1945 — and Georg, born at Hammerstein two months after Jacob was born at Schubin, cannot be his brother.', 'doc'],
+  ['Read the DNA', 'Derrick carries 0.0% Ashkenazi Jewish where a quarter is required, and 1.4% Germanic where a quarter is required. The paternity of record does not survive it.', 'inf'],
+  ['Found her name', 'The 1948 divorce file names her in full: Ivone, born MOTA FIGUEIREDO. "Mota" was never a nickname. Her father was a Figueiredo and her mother a Mota.', 'doc'],
+  ['Surveyed Mozambique', 'FamilySearch has never filmed anything genealogical for Mozambique. The Arquivo Histórico de Moçambique holds the civil registers for 1865–1934 and takes requests online — and Ivone was born in 1924.', 'doc'],
+  ['Worked the passport registers', 'Porto closed as a dead end: its series begins in 1951. Aveiro gave one candidate, Augusto Pereira de Figueiredo, bound for Lourenço Marques in October 1904.', 'doc'],
+  ['Read the 1883 baptism book', 'Fifty-one images, no name index, entry Nº 35. Augusto born 12 August 1883, four grandparents named — and a marginal note giving his death at Amadora in 1954, with the registration number that will decide whether he is Ivone’s father.', 'doc'],
+  ['Worked the British DNA cluster', 'Five matches who are first cousins to each other are all second cousins to Derrick. One sits a generation closer — her grandparent was a sibling of his biological father, and her own father was born in Johannesburg. Surnames: Halsey, Parr, Fenton.', 'inf'],
+  ['Yad Vashem', 'Samuel appears in the List of Jews murdered in Auschwitz as Samuel ISRAEL Leibholz — which is where the compulsory Nazi middle name on this family’s records comes from. Oskar confirmed on the Theresienstadt list, Georg on the Łódź list.', 'doc'],
+  ['The 1939 census', 'Addresses at last. Jacob, Auguste and Siegfried at Meraner Straße 2, Schöneberg. And two corrections: Gertrud Leibke was Oskar’s wife, not Georg’s — and Georg’s wife, Lydia née Perl, died on the same day he did.', 'doc'],
+];
+---
+<Base title="Research log"
+  subtitle="What was done, in the order it was done"
+  lede="An archive is only as trustworthy as its account of itself. This is the working record — including the leads that went nowhere, which are the ones most worth writing down.">
+
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th></th><th>Status</th></tr></thead>
+    <tbody>
+      {log.map(([what, detail, tag]) => (
+        <tr>
+          <td><strong>{what}</strong></td>
+          <td class="small">{detail}</td>
+          <td><span class={'tag ' + tag}>{tag === 'doc' ? 'Documented' : 'Inferred'}</span></td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+
+  <h2>Leads closed, with reasons</h2>
+  <p>
+    These cost time and produced nothing, which is exactly why they are written down — so that
+    nobody spends the same time discovering the same nothing.
+  </p>
+  <ul>
+    <li><strong>FamilySearch for Mozambique.</strong> The catalogue holds 51 items for the country and not one is a vital record. The search cannot succeed.</li>
+    <li><strong>Porto passport registers.</strong> The surviving series runs 1951–1991, is described at series level only, and is not digitised. Half a century too late.</li>
+    <li><strong>MyHeritage record collections for Ivone.</strong> Nine results, eight Brazilian and one Floridian. No Portuguese or colonial civil registration in them at all.</li>
+    <li><strong>Augusto Pereira de Figueiredo</strong> is a candidate and probably a coincidence: no Figueiredo–Mota connection exists anywhere in Aveiro, and his brother emigrated to Brazil like most of that district.</li>
+    <li><strong>Halsey in the South African national archives.</strong> Forty documents, not one from the Transvaal depot. Whoever that family was in Johannesburg, they left no estate file in the index.</li>
+  </ul>
+
+  <h2>Sibling archives</h2>
+  <p>
+    Same method, same author. <strong>The Defranceski</strong> (Istria), <strong>The Lerena</strong>
+    (Rosario, and the hinge into this one), <strong>The Falco</strong> (Arienzo). The Lerena archive
+    recorded this archive's subject as <em>“Derrick Luwinski (b.1947)”</em>; it has been corrected to
+    <strong>Lynn Derrick Luwinski, born 24 April 1949</strong>, and the two now point at each other.
+  </p>
+  <p class="small"><a href={base + '/open-questions/'}>The ten questions still open →</a></p>
+</Base>

@@ -24,7 +24,8 @@ NAMED_BARE = {9500003}          # Derrick
 DUPLICATES = {
     9500151: 9500026,   # Georg Leibholz, dateless-parent copy
     9500150: 9500154,   # Leopold Leibke, dateless copy (and the only one flagged living)
-    9500104: 9500145,   # Gertrud Leibke — "Trude Gertrud", attached to Oskar
+    9500145: 9500104,   # Gertrud Leibke — the copy attached to Georg. The 1939 census
+                        # puts her at Oskar's address, so the Oskar copy (9500104) is canonical.
     9500148: 9500152,   # Julius Leibke
     9500149: 9500153,   # Henriette Katz
 }

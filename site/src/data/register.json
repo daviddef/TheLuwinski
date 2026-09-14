@@ -3876,92 +3876,6 @@
    "no_death_recorded": true
   },
   {
-   "id": 9500145,
-   "name": "Gertrud Leibke (Leibholz)",
-   "first": "Gertrud",
-   "last": "Leibke",
-   "sex": "F",
-   "born": "July 13 1894",
-   "died": "Feb 27 1943",
-   "by": 1894,
-   "dy": 1943,
-   "kind": "index",
-   "facts": [
-    {
-     "t": "Birth",
-     "ty": "BIRT",
-     "date": "July 13 1894",
-     "place": "Berlin, Germany",
-     "c": "",
-     "ac": ""
-    },
-    {
-     "t": "Residence",
-     "ty": "RESI",
-     "date": "",
-     "place": "Wilmersdorf, Berlin, Germany",
-     "c": "",
-     "ac": ""
-    },
-    {
-     "t": "Residence",
-     "ty": "RESI",
-     "date": "",
-     "place": "Berlin, Schöneberg",
-     "c": "",
-     "ac": ""
-    },
-    {
-     "t": "Marriage to:",
-     "ty": "MARR",
-     "date": "",
-     "place": "",
-     "c": "",
-     "ac": ""
-    },
-    {
-     "t": "Death",
-     "ty": "DEAT",
-     "date": "Feb 27 1943",
-     "place": "Berlin, Germany",
-     "c": "",
-     "ac": ""
-    }
-   ],
-   "rel": [
-    {
-     "id": 9500026,
-     "rel": "Her husband",
-     "n": "Georg Leibholz",
-     "ls": "1884 - 1942"
-    },
-    {
-     "id": 9500147,
-     "rel": "Her daughter",
-     "n": "Elli Leibholz (Struzik)",
-     "ls": "1915 - 1942"
-    },
-    {
-     "id": 9500152,
-     "rel": "Her father",
-     "n": "Julius Leibke",
-     "ls": "1870 - 1942"
-    },
-    {
-     "id": 9500153,
-     "rel": "Her mother",
-     "n": "Henriette Katz (Leibke)",
-     "ls": "1861 - 1926"
-    },
-    {
-     "id": 9500154,
-     "rel": "Her brother",
-     "n": "Leopold Leibke",
-     "ls": "1892 - 1932"
-    }
-   ]
-  },
-  {
    "id": 9500152,
    "name": "Julius Leibke",
    "first": "Julius",
@@ -4066,6 +3980,94 @@
      "rel": "His sister",
      "n": "Gertrud Leibke (Leibholz)",
      "ls": "1894 - 1943"
+    }
+   ]
+  },
+  {
+   "id": 9500104,
+   "name": "Trude Gertrud Leibke (Leibholz)",
+   "first": "Trude Gertrud",
+   "last": "Leibke",
+   "sex": "F",
+   "born": "July 13 1894",
+   "died": "Feb 27 1943",
+   "by": 1894,
+   "dy": 1943,
+   "kind": "index",
+   "facts": [
+    {
+     "t": "Birth",
+     "ty": "BIRT",
+     "date": "July 13 1894",
+     "place": "Berlin, Berlin, Germany",
+     "c": "",
+     "ac": ""
+    },
+    {
+     "t": "Residence",
+     "ty": "RESI",
+     "date": "",
+     "place": "Wilmersdorf, Berlin, Germany",
+     "c": "",
+     "ac": ""
+    },
+    {
+     "t": "Census",
+     "ty": "CENS",
+     "date": "May 1939",
+     "place": "Berlin, Wilmersdorf, Germany",
+     "c": "",
+     "ac": ""
+    },
+    {
+     "t": "Marriage to:",
+     "ty": "MARR",
+     "date": "",
+     "place": "",
+     "c": "",
+     "ac": ""
+    },
+    {
+     "t": "Marriage to:",
+     "ty": "MARR",
+     "date": "",
+     "place": "",
+     "c": "",
+     "ac": ""
+    },
+    {
+     "t": "Death",
+     "ty": "DEAT",
+     "date": "Feb 27 1943",
+     "place": "Berlin, Germany",
+     "c": "Cause: Holocaust",
+     "ac": ""
+    }
+   ],
+   "rel": [
+    {
+     "id": 9500027,
+     "rel": "Her husband",
+     "n": "Oskar Leibholz",
+     "ls": "1887 - 1944"
+    },
+    {
+     "id": 9500151,
+     "rel": "Her husband",
+     "n": "Georg Leibholz",
+     "ls": "1884 - 1942"
+    },
+    {
+     "id": 9500148,
+     "rel": "Her father",
+     "n": "Julius Leibke",
+     "ls": "1870 - 1942"
+    },
+    {
+     "id": 9500149,
+     "rel": "Her mother",
+     "n": "Henriette Katz (Leibke)",
+     "ls": "1861 - 1926"
     }
    ]
   },
@@ -12559,9 +12561,9 @@
  ],
  "duplicates": [
   {
-   "name": "Trude Gertrud Leibke (Leibholz)",
-   "dropped": 9500104,
-   "kept": 9500145
+   "name": "Gertrud Leibke (Leibholz)",
+   "dropped": 9500145,
+   "kept": 9500104
   },
   {
    "name": "Georg Leibholz",

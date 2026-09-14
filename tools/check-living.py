@@ -30,7 +30,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import names
 
 ALLOWED = {9500003}
-DUPLICATES = {9500151, 9500150, 9500104, 9500148, 9500149}
+DUPLICATES = {9500151, 9500150, 9500145, 9500148, 9500149}
 PRESUMED_DEAD_BY = 1920
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent

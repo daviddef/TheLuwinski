@@ -31,6 +31,10 @@ jobs:
       - name: Build
         run: npx astro build
         working-directory: site
+      # Indexes the RENDERED pages, so what is searchable is exactly what a
+      # reader can see - and nothing the living-persons rule removed.
+      - name: Build the search index
+        run: python3 tools/build-search.py
       # The archive promises that living people are not present in the output.
       # This checks the rendered HTML rather than trusting the generator, and the
       # deploy is gated on it. It has already caught one real case: a dateless
