@@ -70,3 +70,23 @@ Search, in this order:
 **Also free, and not yet done:** the *Governo Geral de Moçambique* fond at the AHU, of which
 **331,829 images were put online in March and April 2026**. Nobody has looked at any of it for this
 family.
+
+
+---
+
+# Request 6 — Augusto's death record, Oeiras 1954. The decisive one.
+
+Read out of the margin of his own baptism entry (PT/ADAVR/PAVR04/1/32, image 31, entry Nº 35):
+
+> *Falleceu no dia 21 de Agosto findo, na freguesia da Amadora, concelho de Oeiras.
+> Reg. nº 247, livro 46 … Conservatória daquele concelho. … Aveiro, 8 de Setembro de 1954.*
+
+**Ask for:** certidão de narrativa completa do assento de óbito of **AUGUSTO FERREIRA (indexed
+PEREIRA) DE FIGUEIREDO**, born Eixo, Aveiro, **12 August 1883**, died **Amadora, concelho de
+Oeiras, 21 August 1954**, son of **Thiago Rodrigues de Figueiredo** and **Maria Simões Ferreira**.
+
+> **Conservatória do Registo Civil de Oeiras — óbito, registo nº 247, livro 46, ano de 1954.**
+
+**Why it decides the question.** A Portuguese death record names the surviving spouse, and usually
+the children. If Augusto's widow was a **Mota**, he is Ivone's father. If she was not, he is
+eliminated, and the Aveiro line of enquiry closes for good. Either answer is worth the postage.
