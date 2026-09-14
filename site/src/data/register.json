@@ -882,7 +882,7 @@
      "id": 9500003,
      "rel": "Half brother",
      "n": "Lynn Derrick Luwinski",
-     "ls": "Born: 1949"
+     "ls": "Living"
     }
    ]
   },
@@ -1336,7 +1336,7 @@
      "id": 9500003,
      "rel": "Her son",
      "n": "Lynn Derrick Luwinski",
-     "ls": "Born: 1949"
+     "ls": "Living"
     },
     {
      "id": 9500013,
@@ -8033,7 +8033,7 @@
      "id": 9500003,
      "rel": "His son",
      "n": "Lynn Derrick Luwinski",
-     "ls": "Born: 1949"
+     "ls": "Living"
     },
     {
      "id": 9500020,
@@ -8327,7 +8327,7 @@
    "sex": "M",
    "born": "",
    "died": "",
-   "by": 1949,
+   "by": null,
    "dy": null,
    "kind": "index",
    "bare": true,

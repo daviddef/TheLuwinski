@@ -86,14 +86,17 @@ def main():
             "kind": "index" if pid in index_only else "family",
         }
         if pid in NAMED_BARE:
-            rec.update({"bare": True, "born": "", "died": "", "dy": None,
+            # Name only. No birth date, no birth YEAR, no death, no facts. The year is
+            # a date of birth in disguise and is stripped with everything else.
+            rec.update({"bare": True, "born": "", "died": "", "by": None, "dy": None,
                         "facts": [], "note": "Living. Named only, per the archive's policy."})
             rec["rel"] = [r for r in p["rel"] if "father" in r["rel"].lower() or "mother" in r["rel"].lower()]
         else:
             rec["facts"] = [f for f in p["facts"] if f["t"] and not f["t"].startswith(
                 ("Birth of", "Death of", "Marriage of"))]
-            rec["rel"] = [r for r in p["rel"] if not by_id.get(r["id"], {}).get("alive")
-                          or r["id"] in NAMED_BARE]
+            rec["rel"] = [dict(r, ls="Living") if r["id"] in NAMED_BARE else r
+                          for r in p["rel"]
+                          if not by_id.get(r["id"], {}).get("alive") or r["id"] in NAMED_BARE]
             if p["alive"]:
                 rec["no_death_recorded"] = True
         if pid in by_person:
