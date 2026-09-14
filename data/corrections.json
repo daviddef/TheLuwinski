@@ -1,0 +1,45 @@
+{
+  "note": "Corrections applied to the MyHeritage harvest when the register is built. Each one names the source that overrides the family record. The original value is kept alongside so nothing is silently rewritten.",
+  "corrections": [
+    {
+      "id": 9500001,
+      "who": "Kurt Israel Luwinski",
+      "field": "died",
+      "was": "Dec 15 1969",
+      "now": "15 December 1968",
+      "source": "Johannesburg Chevrah Kadisha burial register: died 15.12.1968, buried 16.12.1968, Westpark block L grave 211, Yahrzeit 24 Kislev 5729 — which is itself 15 December 1968."
+    },
+    {
+      "id": 9500020,
+      "who": "Jacob Leibholz",
+      "field": "died",
+      "was": "1945",
+      "now": "not documented; deported to Auschwitz 26 February 1943",
+      "source": "Bundesarchiv Gedenkbuch en1100957, which records the deportation and deliberately gives no date of death."
+    },
+    {
+      "id": 9500010,
+      "who": "Morris Isaac Salkow",
+      "field": "died",
+      "was": "Nov 9 1991",
+      "now": "8 November 1991",
+      "source": "Johannesburg Chevrah Kadisha burial register: died 08.11.1991, buried 10.11.1991, Westpark block U grave 2469."
+    },
+    {
+      "id": 9500145,
+      "who": "Gertrud Leibke",
+      "field": "husband",
+      "was": "Georg Leibholz",
+      "now": "Oskar Leibholz",
+      "source": "Census of 17 May 1939 via Mapping the Lives: Gertrud and Oskar share an address, Waghäuseler Str. 9/10 Wilmersdorf. Georg was at Michaelkirchstr. 26, Mitte, with Lydia née Perl."
+    },
+    {
+      "id": 9500026,
+      "who": "Georg Leibholz",
+      "field": "brother of Jacob",
+      "was": "son of Sally Leibholz and Friederike Schmul",
+      "now": "disputed — a different Leibholz family",
+      "source": "Born Hammerstein, West Prussia, 7 June 1884; Jacob born Schubin, Posen, 8 August 1884. Two months and two hundred kilometres apart."
+    }
+  ]
+}

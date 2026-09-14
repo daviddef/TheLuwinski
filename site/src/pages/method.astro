@@ -57,6 +57,20 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     people and are not named.
   </p>
 
+  <h2>Corrections to the source</h2>
+  <p>
+    Where a named source overrides the family record, the correction is applied to the register and
+    listed here with the evidence. <strong>Nothing is silently rewritten</strong> — the original
+    value is carried through as <em>was</em>, so a reader can always see what the family believed and
+    why this archive disagrees.
+  </p>
+  <div class="scroll"><table>
+    <thead><tr><th>Who</th><th>Field</th><th>Was</th><th>Now</th><th>On what evidence</th></tr></thead>
+    <tbody>{register.corrections.map(c => (
+      <tr><td><strong>{c.who}</strong></td><td>{c.field}</td><td class="muted">{c.was}</td><td><strong>{c.now}</strong></td><td class="small">{c.source}</td></tr>
+    ))}</tbody>
+  </table></div>
+
   <h2>Duplicate records in the source</h2>
   <p>
     The tree holds five people twice. Each pair shares an identical birth <em>and</em> death date, so

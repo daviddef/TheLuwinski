@@ -40,6 +40,14 @@ def main():
     people = json.load(open(SRC))
     by_id = {p["id"]: p for p in people}
 
+    # Corrections: where a named source overrides the family record. The original
+    # value is carried through as `was`, so nothing is silently rewritten.
+    corr_path = ROOT / "data" / "corrections.json"
+    corrections = json.load(open(corr_path))["corrections"] if corr_path.exists() else []
+    by_person = {}
+    for c in corrections:
+        by_person.setdefault(c["id"], []).append(c)
+
     # Anyone descending from the placeholder hubs is a surname-index entry,
     # not a proven relative. Walk down from the hubs and mark them.
     index_only = set()
@@ -88,12 +96,18 @@ def main():
                           or r["id"] in NAMED_BARE]
             if p["alive"]:
                 rec["no_death_recorded"] = True
+        if pid in by_person:
+            rec["corrections"] = by_person[pid]
+            for c in by_person[pid]:
+                if c["field"] == "died" and not rec.get("bare"):
+                    rec["died"] = c["now"]
         out.append(rec)
 
     out.sort(key=lambda r: (r["last"] or "", r["first"] or ""))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     json.dump({"people": out,
                "duplicates": [{"name": n, "dropped": d, "kept": k} for n, d, k in dropped],
+               "corrections": corrections,
                "counts": {"total": len(people), "published": len(out),
                           "omitted_living": len(omitted),
                           "duplicates_collapsed": len(dropped),
