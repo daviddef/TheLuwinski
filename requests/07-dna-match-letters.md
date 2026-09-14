@@ -62,6 +62,11 @@ the shared ancestral place as **South Africa**.*
 *292.7 cM, twelve segments, second cousin at 68% — common ancestors at great-grandparent level. In
 Australia. Four of the other British matches are her own first cousins and their children.*
 
+> **Revised 15 September 2026.** The first version of this letter asked about the grandfather her tree
+> records as *Unknown*. That question has been dropped: both of her first cousins who match Derrick
+> carry **Brown**, which places the connection on her **father's** side, not her mother's. Asking her
+> about the wrong grandparent would have wasted her goodwill on the first approach.
+
 > **Subject: 2nd cousin DNA match — a Johannesburg branch I can't place**
 >
 > Hello,
@@ -77,19 +82,19 @@ Australia. Four of the other British matches are her own first cousins and their
 > guessing.
 >
 > If you and he are second cousins, then his biological father was a **first cousin of one of your
-> parents** — which from your tree would put him among the descendants of
-> **Alfred John Brown and Sarah Maria Brister**, **George William Castle and Caroline Wallis**, or
-> **William Frederick Webb and Louisa Hayden**.
+> parents**. Two of your own first cousins are also matches of his, and both of them list **Brown**
+> among their ancestors — which points at your **father's** side rather than your mother's, and so at
+> the descendants of **Alfred John Brown and Sarah Maria Brister**, or of **George William Castle and
+> Caroline Wallis**.
 >
 > Three questions, and any one of them would help:
 >
-> 1. Did a cousin of your father's or your mother's **go out to South Africa** — Johannesburg, around
->    the 1930s or 1940s?
-> 2. Does the surname **Halsey** appear anywhere in the family, by marriage or otherwise? Derrick's
->    single closest match carries it, and her shared place with him is South Africa.
-> 3. Your tree records your mother's father as **Unknown**. Is anything known about him at all —
->    even a first name or a county? I ask because a gap in exactly that generation is where this
->    connection would sit, and I'd rather ask than speculate.
+> 1. Did a cousin of your father's **go out to South Africa** — Johannesburg, around the 1930s or
+>    1940s? That is the generation and the place I am trying to account for.
+> 2. Were there **brothers or sisters of Walter George Brown, or of Agnes Kate Castle**, whose
+>    children you have never been able to trace?
+> 3. Does the surname **Halsey** appear anywhere in the family, by marriage or otherwise? Derrick's
+>    single closest match carries it, and her shared ancestral place with him is South Africa.
 >
 > I realise this may be unwelcome news about someone's grandfather, and I've no wish to cause trouble
 > in your family. If you'd rather not pursue it, I'll leave it there and thank you for reading.
