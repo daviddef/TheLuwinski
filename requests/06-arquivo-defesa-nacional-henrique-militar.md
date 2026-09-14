@@ -63,6 +63,32 @@ mestres*, 1763–1908, and stops thirty years too early.
 holds **no colonial Mozambican gazettes** — its Mozambique run begins in 1975. The *Boletim Oficial
 de Moçambique*, which published call-up and posting lists, is not searchable there.
 
+## SENT — 15 September 2026
+
+All three went out from the family's own Gmail, in Portuguese, signed **David Defranceski** with his
+email as the reply address. No postal address or telephone was given, because this archive does not
+hold them; the archives can ask if they need them.
+
+| Sent to | Address | Gmail id |
+|---|---|---|
+| **Arquivo da Defesa Nacional**, Paço d'Arcos | **adn@defesa.pt** | `1a0a1752c123b19a` |
+| **Arquivo Histórico Militar**, Lisboa | **ahm@mail.exercito.pt** | `1a0a175609541106` |
+| **Arquivo Histórico de Moçambique**, Maputo | **ahm@uem.mz** | `1a0a1759f0462e00` |
+
+**The Maputo letter is not the same letter, deliberately.** This archive established in
+`mozambique-sources.md` that the AHM's civil registers run **1865–1934**, and that Henrique's 1941
+birth falls outside them. Writing to ask for a birth certificate would have wasted their time and
+ours. That letter therefore opens by saying so, and then asks the different question: whether the
+**distritos de recrutamento e mobilização** records of the 1950s and 60s are in their custody,
+whether that documentation stayed in Mozambique after 1975, and what a search by name would cost.
+
+The Lisbon letters differ from each other too — the AHM one says plainly that **GERMIL is known to
+stop at 1908**, so they need not point there, and that the ADN has had the same request the same day.
+Each archive is also told about the others, so that none of them does work another has already done.
+
+All three state the reason outright rather than burying it: **o nome do pai**. The Portuguese
+military register names the conscript's father and mother, and that is the only reason for writing.
+
 ## Honest expectation
 
 There is **no online name index** for 1961 Mozambique conscripts, so this is a letter into an archive
