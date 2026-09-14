@@ -53,9 +53,16 @@ Search, in this order:
    Tiago Rodrigues de Figueiredo and Maria Simões, of **Eixo, Aveiro**, passport to **Lourenço
    Marques, 22 October 1904** (PT/ADAVR/AC/GCAVR/H-D/001/0016/000610). Unproven and probably
    coincidental — but the only pre-1924 Figueiredo bound for that city in the indexed corpus.
-3. **Eixo parish registers, Aveiro** — the next step on Augusto. Look for his baptism c.1883, and
-   above all for a **marriage to a woman surnamed Mota**. That marriage is what would make him
-   Ivone's father; without it he is a man with a common surname on the right boat.
+3. ~~Eixo parish registers, Aveiro~~ — **done, and Augusto is demoted.** There is **no
+   Figueiredo–Mota marriage in Eixo or anywhere in the district** (Digitarq: zero), and **no
+   marriage for Augusto is indexed at all**, in a district whose Catholic registers are indexed
+   1550–1957. His brother Clemente Augusto took two passports and both went to **Brazil**, which is
+   where Aveiro emigration overwhelmingly went. Nothing places Augusto anywhere after 1904.
+
+   Still open for its own sake, not for Ivone's: **Batismos 1883, PT/ADAVR/PAVR04/1/32**, 51 images,
+   digitised and openly licensed but not name-indexed. It would settle whether his mother was
+   Maria Simões or Maria Dias Pereira — the two indexes disagree with his own surname. It cannot
+   connect him to Ivone.
 4. The AHU series **PT/AHU/MU-DGAPC/RNPAC**, c. 1933–1949: *processos de colonos* and
    *listas de colonos e **repatriados** a bordo*. Ivone's parents went out before this series starts,
    but it catches people coming **back**, and she ended in Porto.
