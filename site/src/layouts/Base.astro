@@ -32,7 +32,7 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
       --ink: #1b1a17; --ink-soft: #55514a; --ink-faint: #857f75;
       --ground: #f7f5f0; --panel: #fffdf8; --rule: #ddd7cb;
       --accent: #7a2e1f; --accent-soft: #a8563f;
-      --doc: #2f5d50; --inf: #6b5a12; --disp: #8a2f2f;
+      --doc: #2f5d50; --inf: #6b5a12; --disp: #8a2f2f; --open: #4a4a52;
       --measure: 34rem;
       color-scheme: light;
     }
@@ -41,7 +41,7 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
         --ink: #ece7dd; --ink-soft: #b3aca0; --ink-faint: #857f75;
         --ground: #14130f; --panel: #1c1a16; --rule: #35312a;
         --accent: #d98b72; --accent-soft: #b5674f;
-        --doc: #7fb8a4; --inf: #cbb45f; --disp: #d98080;
+        --doc: #7fb8a4; --inf: #cbb45f; --disp: #d98080; --open: #a5a5b0;
         color-scheme: dark;
       }
     }
@@ -49,7 +49,7 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
       --ink: #ece7dd; --ink-soft: #b3aca0; --ink-faint: #857f75;
       --ground: #14130f; --panel: #1c1a16; --rule: #35312a;
       --accent: #d98b72; --accent-soft: #b5674f;
-      --doc: #7fb8a4; --inf: #cbb45f; --disp: #d98080;
+      --doc: #7fb8a4; --inf: #cbb45f; --disp: #d98080; --open: #a5a5b0;
       color-scheme: dark;
     }
     * { box-sizing: border-box; }
@@ -82,7 +82,7 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
     th { font-weight: 600; font-size: .74rem; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-faint); white-space: nowrap; }
     tbody tr:last-child td { border-bottom: 0; }
     .tag { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; padding: .15rem .45rem; border: 1px solid currentColor; border-radius: 2px; white-space: nowrap; }
-    .tag.doc { color: var(--doc); } .tag.inf { color: var(--inf); } .tag.disp { color: var(--disp); }
+    .tag.doc { color: var(--doc); } .tag.inf { color: var(--inf); } .tag.disp { color: var(--disp); } .tag.open { color: var(--open); }
     .panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 3px; padding: 1.2rem 1.4rem; margin: 1.6rem 0; max-width: var(--measure); }
     .panel > :last-child { margin-bottom: 0; }
     .panel h3 { margin-top: 0; }
