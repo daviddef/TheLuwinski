@@ -63,7 +63,7 @@ const log = [
     <thead><tr><th></th><th>Action</th><th>Why it is worth doing</th></tr></thead>
     <tbody>
       <tr><td><strong>1</strong></td><td><strong>Order estate 12294/2023</strong></td><td>Henrique's <strong>J294 death notice</strong> asks outright for the full names of the father. The likeliest single answer to question 8</td></tr>
-      <tr><td><strong>2</strong></td><td><strong>Order estate 7584/69</strong></td><td>Kurt's own J294 — what the family said in 1969 about whose son he was, on a page where whose son <em>his</em> son was is the question</td></tr>
+      <tr><td><strong>2</strong></td><td><strong>Order estate 7584/69</strong> — from the <strong>National Archives</strong>, not the Master <span class="tag disp">Corrected</span></td><td>Kurt's own J294 — what the family said in 1969 about whose son he was. <strong>Corrected the same day:</strong> he died in 1968 and files of that age went to Pretoria long ago. NAAIRS indexes it as <strong>TAB, MHG 7584/69</strong></td></tr>
       <tr><td><strong>3</strong></td><td>Send the <strong>Porto <em>óbito</em></strong> request</td><td>Portuguese death records name both parents outright. Drafted months ago, never sent</td></tr>
       <tr><td><strong>4</strong></td><td>Send the <strong>1924 Lourenço Marques birth</strong> request</td><td><strong>1924 falls inside</strong> the Maputo archive's 1865–1934 range, unlike Henrique's 1941. Should give parents <em>and</em> grandparents</td></tr>
       <tr><td><strong>5</strong></td><td><strong>Henrique's 1968 marriage record</strong></td><td>1968 South African registers <em>do</em> carry parents — unlike the 1948 form, which has no parents column at all</td></tr>
@@ -79,6 +79,38 @@ const log = [
       <tr><td><strong>15</strong></td><td><strong>Szubin and Hammerstein registers</strong></td><td>Settle whether Georg was Jacob's brother or his cousin. Born two months apart in different provinces, which no mother manages</td></tr>
     </tbody>
   </table></div>
+  <div class="panel">
+    <h3>Six letters, one bounce, and two bad addresses <span class="tag doc">15 September 2026</span></h3>
+    <p>
+      Sent: the <strong>Arquivo da Defesa Nacional</strong>; the <strong>Arquivo Histórico de
+      Moçambique</strong> twice, once for the recruitment records and once for <strong>Ivone's 1924
+      birth certificate</strong> — which, unlike Henrique's 1941 birth, falls inside their range; the
+      <strong>Arquivo Histórico Militar</strong>; and the <strong>Master of the High Court</strong> for
+      the J294 in estate 12294/2023.
+    </p>
+    <p>
+      <strong>One bounced, and it was my fault.</strong> The Military Archive's published address,
+      <code>ahm@mail.exercito.pt</code>, failed with NXDOMAIN. A DNS lookup shows <code>exercito.pt</code>
+      has mail servers and <code>mail.exercito.pt</code> has none — the subdomain has been retired, so the
+      address that appears on reference pages everywhere was never going to work for anyone. The resend
+      went to <code>ahm@exercito.pt</code> and says so in its first paragraph, so the archive learns its
+      own contact is broken.
+    </p>
+    <p>
+      <strong>Then it happened again an hour later.</strong> A summary offered
+      <code>MastersJohannesburg@justice.gov.za</code> for the Master's office. That office's own contact
+      sheet says, in capitals on its first page, that the address <strong>is not in use</strong>. Reading
+      the document instead of the summary also produced the thing that mattered: Johannesburg allocates
+      estate files to controllers <strong>by the last digit of the file number</strong>. 122<strong>94</strong>
+      ends in 4, so the request went to the named controller for 4 rather than into a general inbox.
+    </p>
+    <p class="small">
+      <strong>Check the MX record before sending, and read the source rather than the summary of it.</strong>
+      Two lessons, one morning, and both are written down here because an archive that hides its own
+      mistakes is worth less than one that does not.
+    </p>
+  </div>
+
   <div class="panel">
     <h3>Parked, and why</h3>
     <p>
