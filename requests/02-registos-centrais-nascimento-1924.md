@@ -1,8 +1,13 @@
 # Request 2 — Birth registration, Lourenço Marques 1924
 
-**Where.** **Conservatória dos Registos Centrais**, Lisbon, holds the civil registration of the
-former Portuguese overseas territories, Mozambique included. In parallel: **Arquivo Histórico
-Ultramarino** (Lisbon) and the **Arquivo Histórico de Moçambique** (Maputo).
+**Where — and this splits in two at the year 1934.**
+
+| Record | Where it is |
+|---|---|
+| **Ivone, born 1924** | **Arquivo Histórico de Moçambique, Maputo.** The AHM holds the civil registration books for **1865–1934** and issues certificates from them. Request through its own portal: **https://documentos.uem.mz/#/front/index** · ahm@uem.mz · Travessa do Varietá nº 58, C.P. 2033, Maputo · +258 21 323428 · Mon–Fri 07:30–15:30 |
+| **Henrique, born 1941** | Past the AHM's cut-off. **Conservatória dos Registos Centrais**, Lisbon, which holds post-1934 civil registration for the former overseas territories |
+
+Send the first one first. It is the shorter road to her parents, and it can be lodged online.
 
 **Two records wanted from the same office.**
 

@@ -33,3 +33,27 @@ Order from the **National Archives Repository, Pretoria** (TAB), quoting depot, 
 reference. All 43 NAAIRS Figueiredo entries are in `data/naairs-figueiredo.tsv`; one more is worth
 a look while you are there — **KAB, PIO 4752A, "Immigration papers. Mrs. L.A. Figueiredo", 1950**,
 at the Cape Town repository.
+
+
+---
+
+# Request 5 — the untried Portuguese searches, which cost nothing
+
+**Digitarq — https://digitarq.arquivos.pt** — searches the Torre do Tombo, the Arquivo Histórico
+Ultramarino and every Portuguese district archive, and district **passport registers (*registos de
+passaporte*) are indexed by personal name and digitised**. Anyone leaving Portugal for the colonies
+needed one.
+
+Search, in this order:
+
+1. `Figueiredo` and `Mota` in the **Arquivo Distrital do Porto** — she died there.
+2. The same in the **Arquivo Distrital de Aveiro** — where the compound surname *Mota de Figueiredo*
+   actually appears, in a 1964 passport register.
+3. `"Mota Figueiredo"` generally — 223 results as of 14 September 2026, unworked.
+4. The AHU series **PT/AHU/MU-DGAPC/RNPAC**, c. 1933–1949: *processos de colonos* and
+   *listas de colonos e **repatriados** a bordo*. Ivone's parents went out before this series starts,
+   but it catches people coming **back**, and she ended in Porto.
+
+**Also free, and not yet done:** the *Governo Geral de Moçambique* fond at the AHU, of which
+**331,829 images were put online in March and April 2026**. Nobody has looked at any of it for this
+family.
