@@ -1,0 +1,122 @@
+---
+const { title, subtitle, lede } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const nav = [
+  ['', 'The archive'],
+  ['/derrick', 'Derrick'],
+  ['/kurt', 'Kurt'],
+  ['/leibholz', 'The Leibholz brothers'],
+  ['/east-prussia', 'East Prussia'],
+  ['/ivone', 'Ivone'],
+  ['/dna', 'The DNA'],
+  ['/1948', '1948'],
+  ['/register', 'Register'],
+  ['/method', 'Method'],
+  ['/open-questions', 'Open questions'],
+  ['/sources', 'Sources'],
+];
+const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
+---
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title === 'The Luwinski Archive' ? title : title + ' — The Luwinski Archive'}</title>
+  <meta name="description" content={subtitle || 'An evidence-first family archive.'} />
+  <style is:global>
+    :root {
+      --ink: #1b1a17; --ink-soft: #55514a; --ink-faint: #857f75;
+      --ground: #f7f5f0; --panel: #fffdf8; --rule: #ddd7cb;
+      --accent: #7a2e1f; --accent-soft: #a8563f;
+      --doc: #2f5d50; --inf: #6b5a12; --disp: #8a2f2f;
+      --measure: 34rem;
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --ink: #ece7dd; --ink-soft: #b3aca0; --ink-faint: #857f75;
+        --ground: #14130f; --panel: #1c1a16; --rule: #35312a;
+        --accent: #d98b72; --accent-soft: #b5674f;
+        --doc: #7fb8a4; --inf: #cbb45f; --disp: #d98080;
+        color-scheme: dark;
+      }
+    }
+    :root[data-theme="dark"] {
+      --ink: #ece7dd; --ink-soft: #b3aca0; --ink-faint: #857f75;
+      --ground: #14130f; --panel: #1c1a16; --rule: #35312a;
+      --accent: #d98b72; --accent-soft: #b5674f;
+      --doc: #7fb8a4; --inf: #cbb45f; --disp: #d98080;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--ground); color: var(--ink);
+      font: 16px/1.62 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 74rem; margin: 0 auto; padding: 0 1.5rem; }
+    .masthead { border-bottom: 1px solid var(--rule); padding: 1.4rem 0 1.1rem; }
+    .masthead a.home { color: var(--ink); text-decoration: none; font-size: .95rem; letter-spacing: .16em; text-transform: uppercase; }
+    nav.primary { margin-top: .8rem; display: flex; flex-wrap: wrap; gap: .15rem 1.15rem; }
+    nav.primary a { font-size: .8rem; letter-spacing: .04em; color: var(--ink-soft); text-decoration: none; padding: .15rem 0; border-bottom: 1px solid transparent; }
+    nav.primary a:hover { color: var(--ink); border-bottom-color: var(--accent); }
+    nav.primary a[aria-current] { color: var(--accent); border-bottom-color: var(--accent); }
+    main { padding: 2.6rem 0 4rem; }
+    h1 { font-size: clamp(1.9rem, 4.2vw, 3rem); line-height: 1.08; margin: 0 0 .4rem; font-weight: 600; letter-spacing: -.015em; }
+    .sub { color: var(--ink-soft); font-size: 1.02rem; margin: 0 0 1.7rem; max-width: var(--measure); }
+    .lede { font-size: 1.16rem; line-height: 1.55; max-width: var(--measure); margin: 0 0 2rem; }
+    h2 { font-size: 1.32rem; margin: 2.9rem 0 .7rem; font-weight: 600; letter-spacing: -.01em; }
+    h3 { font-size: 1.02rem; margin: 1.8rem 0 .5rem; font-weight: 600; }
+    p, ul, ol { max-width: var(--measure); }
+    p { margin: 0 0 1.05rem; }
+    li { margin-bottom: .45rem; }
+    a { color: var(--accent); text-underline-offset: 2px; }
+    blockquote { margin: 1.4rem 0; padding: .2rem 0 .2rem 1.2rem; border-left: 3px solid var(--rule); color: var(--ink-soft); font-style: italic; max-width: var(--measure); }
+    .scroll { overflow-x: auto; margin: 1.4rem 0; border: 1px solid var(--rule); background: var(--panel); border-radius: 3px; }
+    table { border-collapse: collapse; width: 100%; font-size: .87rem; font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; }
+    th, td { text-align: left; padding: .55rem .8rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+    th { font-weight: 600; font-size: .74rem; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-faint); white-space: nowrap; }
+    tbody tr:last-child td { border-bottom: 0; }
+    .tag { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; padding: .15rem .45rem; border: 1px solid currentColor; border-radius: 2px; white-space: nowrap; }
+    .tag.doc { color: var(--doc); } .tag.inf { color: var(--inf); } .tag.disp { color: var(--disp); }
+    .panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 3px; padding: 1.2rem 1.4rem; margin: 1.6rem 0; max-width: var(--measure); }
+    .panel > :last-child { margin-bottom: 0; }
+    .panel h3 { margin-top: 0; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin: 1.8rem 0; max-width: none; }
+    .card { background: var(--panel); border: 1px solid var(--rule); border-radius: 3px; padding: 1.1rem 1.2rem; }
+    .card a { text-decoration: none; font-weight: 600; }
+    .card p { font-size: .9rem; color: var(--ink-soft); margin: .35rem 0 0; }
+    .stat { font-family: ui-sans-serif, system-ui, sans-serif; }
+    .stat b { display: block; font-size: 1.7rem; font-weight: 600; letter-spacing: -.02em; }
+    .stat span { font-size: .76rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-faint); }
+    footer { border-top: 1px solid var(--rule); padding: 1.6rem 0 3rem; font-size: .82rem; color: var(--ink-faint); }
+    footer p { max-width: 46rem; }
+    .kv { display: grid; grid-template-columns: minmax(7rem, auto) 1fr; gap: .3rem 1.1rem; font-size: .92rem; max-width: var(--measure); margin: 1.2rem 0; }
+    .kv dt { color: var(--ink-faint); font-family: ui-sans-serif, system-ui, sans-serif; font-size: .76rem; letter-spacing: .05em; text-transform: uppercase; padding-top: .2rem; }
+    .kv dd { margin: 0; }
+    .muted { color: var(--ink-soft); }
+    .small { font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <header class="masthead"><div class="wrap">
+    <a class="home" href={base + '/'}>The Luwinski Archive</a>
+    <nav class="primary">
+      {nav.map(([href, label]) => (
+        <a href={base + href + '/'} aria-current={here === href ? 'page' : undefined}>{label}</a>
+      ))}
+    </nav>
+  </div></header>
+  <main><div class="wrap">
+    <h1>{title}</h1>
+    {subtitle && <p class="sub">{subtitle}</p>}
+    {lede && <p class="lede">{lede}</p>}
+    <slot />
+  </div></main>
+  <footer><div class="wrap">
+    <p><strong>Living people are omitted from this build.</strong> Lynn Derrick Luwinski is named and
+    nothing more. A removal request is honoured within days, without argument and without requiring a reason.</p>
+    <p>Every claim carries a confidence and a source. Corrections are the most valuable thing you can send.</p>
+  </div></footer>
+</body>
+</html>

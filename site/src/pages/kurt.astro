@@ -1,0 +1,88 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const life = [
+  ['11 May 1912', 'Born at Berlin', 'To Auguste Luwinski, nineteen and unmarried. He took her surname and kept it for life.', 'doc'],
+  ['5 Jan 1924', 'His parents marry', 'Auguste Luwinski and Jacob Leibholz, at Berlin-Schöneberg — twelve years after his birth.', 'doc'],
+  ['5 Aug 1925', 'A brother', 'Siegfried Leibholz, born at Martin-Luther-Straße 60, Berlin-Schöneberg. Same parents; the other surname.', 'doc'],
+  ['1933', 'Emigrates to Johannesburg', 'Aged twenty-one, in the year the Nazis took power.', 'doc'],
+  ['from 1933', 'South Africa', 'Occupation recorded as dress designer — his mother was a Schneiderin und Modistin.', 'doc'],
+  ['26 Feb 1943', 'His father deported', 'Jacob Leibholz, from Berlin to Auschwitz. Kurt had been ten years gone.', 'doc'],
+  ['19 Jun 1948', 'Marries Ivone', 'At Johannesburg, certificate 858. He is 36, she is 24 and entered as Ivone de Figueiredo de Witt.', 'doc'],
+  ['after Jun 1948', 'Files for divorce', 'Within weeks of the wedding, and before his son was born.', 'doc'],
+  ['24 Apr 1949', 'Birth of Derrick', '', 'doc'],
+  ['1951', 'Divorce', 'Illiquid case, restitution of conjugal rights: Kurt Luwinski versus Ivone, formerly de Witt, born Figueiredo.', 'doc'],
+  ['29 Feb 1956', 'Marries Frances Hostowsky', 'Registered in the Hanover, Orange Free State records.', 'doc'],
+  ['1957', 'Files for divorce again', 'Kurt Luwinski versus Frances, formerly Sefton, formerly Berner, born Hostowsky.', 'doc'],
+  ['15 Dec 1969', 'Dies at Johannesburg', 'Aged 57. Estate file 7584/1969, Master of the Supreme Court, Pretoria.', 'doc'],
+  ['', 'Buried Chevra Kadisha, Johannesburg', 'The Jewish burial society. He was buried as a Jew.', 'doc'],
+];
+---
+<Base title="Kurt Israel Luwinski"
+  subtitle="Berlin, 11 May 1912 — Johannesburg, 15 December 1969"
+  lede="He was born with his mother's name because his parents would not marry for another twelve years. He left Germany at twenty-one and never lived there again. His father, his uncles and his cousins were killed while he was cutting dresses eight thousand kilometres away.">
+
+  <div class="scroll"><table>
+    <thead><tr><th>When</th><th>What</th><th></th><th>Status</th></tr></thead>
+    <tbody>
+      {life.map(([when, what, detail, tag]) => (
+        <tr><td>{when}</td><td><strong>{what}</strong></td><td>{detail}</td><td><span class={'tag ' + tag}>Documented</span></td></tr>
+      ))}
+    </tbody>
+  </table></div>
+
+  <h2>1933</h2>
+  <p>
+    The tree records his emigration in a single word and a year: <em>Johannesburg, Süd Afrika, 1933</em>.
+    He was twenty-one. His father was a Kaufmann in Schöneberg; his mother a dressmaker from an East
+    Prussian farming family. He arrived in a city with an established German-Jewish trade and took up
+    a needle trade of his own.
+  </p>
+  <p>
+    Ten years later, on 26 February 1943, his father was put on a train from Berlin to Auschwitz — the
+    day before the <em>Fabrikaktion</em>, the round-up of the last Jewish forced labourers in the city.
+    Within six weeks his uncle Samuel was dead at Auschwitz too. Nothing in the record says what Kurt
+    knew, or when.
+  </p>
+
+  <h2>The name</h2>
+  <div class="panel">
+    <h3>Where does “Israel” come from? <span class="tag inf">Open</span></h3>
+    <p>
+      From 1 January 1939 the Nazi state compelled German Jewish men whose first names were not on an
+      approved list to insert <em>Israel</em>, and women <em>Sara</em>. It is why the tree also carries
+      a “Samuel <em>Israel</em> Leibholz”.
+    </p>
+    <p>
+      But Kurt had been in South Africa for six years by then; and as the son of a Jewish father and a
+      Catholic East Prussian mother he would ordinarily have been classed <em>Mischling ersten Grades</em>,
+      to whom the name decree did not apply. The Federal Archives' own entry for his uncle reads plainly
+      “Samuel”, not “Samuel Israel” — so the <em>Israel</em> on both men in this family's tree came from
+      some other document. Which document is not yet known. It is worth finding: it would say how the
+      German state classified him, and whether the classification followed him out of the country.
+    </p>
+  </div>
+
+  <h2>Three wives, two divorces filed</h2>
+  <p>
+    Ivone in 1948, divorced 1951. Frances Hostowsky in 1956, divorce filed 1957. Pauline — recorded in
+    the tree under the names Rappoport and Miller, born 29 September 1914, died of pancreatic cancer on
+    17 November 1985 — appears as his wife without a date, and outlived him by sixteen years. Both
+    divorce actions are “illiquid case, restitution of conjugal rights”, which in South African practice
+    of the period was the standard first step towards a decree, not a reconciliation.
+  </p>
+
+  <h2>His brother, who stayed</h2>
+  <p>
+    Siegfried Leibholz was born at Martin-Luther-Straße 60 in Schöneberg on 5 August 1925 — the same
+    parents, the father's surname. The residence record is the part that stops you: from
+    <strong>January 1943 to 30 April 1945</strong> he was at Sommerfeld in the Osthavelland, where his
+    mother's people farmed. His father was deported from Berlin on 26 February 1943. The boy was moved
+    out of the city in the weeks before it happened, and stayed out until the war ended.
+  </p>
+  <p>
+    He joined the Berlin Kreispolizei on 15 February 1947, married Edith Charlotte Zelenka, had a son
+    Michael Kurt in 1951 — named, at least in part, for the brother in Johannesburg — and died at
+    Potsdam on 1 February 2005. He is buried at the Südwestkirchhof, Stahnsdorf.
+  </p>
+</Base>

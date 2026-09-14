@@ -1,0 +1,111 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const names = [
+  ['Ivone de Figueiredo', 'Her own name, as the 1948 Johannesburg marriage register has it'],
+  ['Ivone / Mota “Yvonne” Figueiredo', 'As the family tree carries her — “Mota” unexplained, “Yvonne” the anglicisation Johannesburg gave her'],
+  ['Ivone de Witt', 'The name she married Kurt Luwinski under, in June 1948'],
+  ['Ivone Luwinski', 'The name she married Morris Salkow under, in February 1953'],
+  ['Ivone, formerly de Witt, born Figueiredo', 'The Supreme Court of the Transvaal, 1951'],
+];
+const marriages = [
+  ['before 1941', 'A da Rocha', 'Name not recorded', 'Son Henrique, born 11 March 1941'],
+  ['2 Feb 1948', 'Johannes Antonie Oelofse de Witt', 'b. Dec 1923 Johannesburg; d. Sasolburg', 'Germiston'],
+  ['19 Jun 1948', 'Kurt Israel Luwinski', 'b. 1912 Berlin; d. 1969 Johannesburg', 'Johannesburg, cert. 858'],
+  ['13 Feb 1953', 'Morris Isaac Salkow', 'b. 12 Oct 1921 Pretoria; d. 9 Nov 1991 Johannesburg, buried West Park', ''],
+];
+---
+<Base title="Ivone de Figueiredo"
+  subtitle="Lourenço Marques, 4 March 1924 — Porto"
+  lede="She was born in a Portuguese colonial town on the Indian Ocean, had a son at seventeen, married four men in Johannesburg between 1948 and 1953 — two of them Jewish, one of them an Afrikaner, the first a Portuguese she left behind — and was buried at the other end of the empire, in Porto.">
+
+  <h2>The names</h2>
+  <p>
+    She appears in the record under five, which is itself the story. The constant is
+    <strong>Figueiredo</strong>: the name she was born with, and the one the court reached for in 1951
+    when it had to say who she actually was.
+  </p>
+  <div class="scroll"><table>
+    <thead><tr><th>As written</th><th>Where</th></tr></thead>
+    <tbody>{names.map(([n, w]) => (<tr><td><strong>{n}</strong></td><td>{w}</td></tr>))}</tbody>
+  </table></div>
+
+  <div class="panel">
+    <h3>Her son's name gives up her father's <span class="tag inf">Inferred</span></h3>
+    <p>
+      Her first son was <strong>Henrique Figueiredo Pinto da Rocha</strong>. Portuguese naming puts the
+      mother's surname before the father's. So <em>Figueiredo</em> is hers, and <em>Pinto da Rocha</em>
+      is the father's — the man the tree can only call “Unknown da Rocha”.
+    </p>
+    <p class="small">Which makes <strong>Pinto da Rocha</strong>, not <em>da Rocha</em>, the name to search on.</p>
+  </div>
+
+  <h2>Lourenço Marques, 1924</h2>
+  <p>
+    Lourenço Marques — Maputo since 1976 — was the capital of Portuguese East Africa, a deep-water port
+    built on the traffic of the Witwatersrand goldfields: the Rand's nearest sea, joined to Johannesburg
+    by rail since 1895. A Portuguese family in Lourenço Marques in 1924 was living four hundred miles
+    from Johannesburg on a line that ran straight there, which is the plainest available answer to how
+    she came to be married in Germiston twenty-four years later.
+  </p>
+
+  <h2>Four marriages</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Date</th><th>Husband</th><th>Him</th><th>Where</th></tr></thead>
+    <tbody>{marriages.map(([d, h, w, p]) => (<tr><td>{d}</td><td><strong>{h}</strong></td><td>{w}</td><td>{p}</td></tr>))}</tbody>
+  </table></div>
+
+  <div class="panel">
+    <h3>Two of these cannot both be right <span class="tag disp">Contradiction</span></h3>
+    <p>
+      She is recorded as marrying <strong>de Witt on 2 February 1948</strong> and
+      <strong>Luwinski on 19 June 1948</strong> — four and a half months apart, with no divorce between
+      them. One of those dates is wrong, or the February entry is not a marriage at all.
+    </p>
+    <p>
+      The Luwinski date is solid: it is on the certificate, number 858, with her age given as 24. The
+      February date carries the <em>same</em> citation as the June one, which means it was never
+      independently sourced. The likeliest reading is that the de Witt marriage was earlier and the
+      February 1948 date belongs to something else — its dissolution, most obviously. But she was
+      already <em>Mrs de Witt</em> when she married Kurt, so the de Witt marriage is real and came first.
+      <strong>The Germiston register settles it.</strong>
+    </p>
+  </div>
+
+  <h2>The son she left, and the son she kept</h2>
+  <p>
+    Henrique was born on 11 March 1941, when she was seventeen. He did not reach Johannesburg until
+    <strong>November 1962</strong> — twenty-one years later, and a grown man. In between, his mother had
+    married three more times in another country and had a second son there in 1949. Henrique married
+    Dawn Elizabeth Hendey on 18 May 1968, and died on 27 October 2022, outliving his wife by thirteen
+    years.
+  </p>
+
+  <h2>Porto</h2>
+  <p>
+    She died and was buried at <strong>Porto</strong>. Not Lourenço Marques, not Johannesburg — the
+    metropole, which she may never have lived in before. No date is recorded, which is the largest
+    single hole in this archive: a Portuguese death certificate names the deceased's parents, and
+    naming Ivone's parents is the whole object of the exercise.
+  </p>
+
+  <div class="panel">
+    <h3>Her line is the one part of this family the DNA confirms outright <span class="tag doc">Documented</span></h3>
+    <p>
+      Three of Derrick's ten closest matches are in Portugal, sharing 133, 111 and 109 centimorgans, all
+      three flagged by the testing service as having Portugal in common with him. Against
+      <strong>60.6% Portuguese</strong> in the ethnicity estimate. Whatever else is in doubt
+      — and a great deal is — <a href={base + '/dna/'}>Ivone is not</a>.
+    </p>
+  </div>
+
+  <h2>Still to find</h2>
+  <ul>
+    <li><strong>Her death and burial record at Porto</strong>, which will name her parents. First priority.</li>
+    <li>Her 1924 birth registration at Lourenço Marques — Portuguese colonial civil registration, now held in Maputo and in Lisbon.</li>
+    <li>The Germiston marriage register, February 1948, to resolve the contradiction above.</li>
+    <li>The original image of Johannesburg certificate 858, which should name both fathers.</li>
+    <li>The <strong>Pinto da Rocha</strong> family of Lourenço Marques — Henrique's father.</li>
+    <li>Her immigration to South Africa: when, and with whom.</li>
+  </ul>
+</Base>

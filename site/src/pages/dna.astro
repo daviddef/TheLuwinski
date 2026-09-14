@@ -1,0 +1,128 @@
+---
+import Base from '../layouts/Base.astro';
+import dna from '../data/dna.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const expected = [
+  ['Ashkenazi Jewish', '~25%', 'from Jacob Leibholz, of Schubin and Berlin-Schöneberg', '0.0%'],
+  ['Germanic / Baltic', '~25%', 'from Auguste Luwinski, of Sauerbaum in East Prussia', '1.4%'],
+  ['Portuguese', '~50%', 'from Ivone de Figueiredo, of Lourenço Marques', '60.6%'],
+];
+const matches = [
+  ['A match in the United Kingdom', '2nd cousin', 333.9, 'British cluster'],
+  ['A match in the United Kingdom', "1st cousin's daughter", 297.5, 'British cluster — South Africa in common'],
+  ['A match in Australia', '2nd cousin', 292.7, 'British cluster — manages a tree of 10,715'],
+  ['A match in the United Kingdom', "2nd cousin's son", 165.9, 'British cluster'],
+  ['A match in Portugal', '3rd cousin', 133.2, 'Portuguese cluster — Portugal in common'],
+  ['A match in Portugal', "2nd cousin's daughter", 111.2, 'Portuguese cluster — Portugal in common'],
+  ['A match in Portugal', "2nd cousin's son", 108.7, 'Portuguese cluster — Portugal in common'],
+  ['A match, manager in Japan', "2nd cousin's son", 99.1, ''],
+  ['A match in the United Kingdom', "2nd cousin's son", 96.0, 'British cluster'],
+  ['A match in the United Kingdom', "2nd cousin's son", 92.5, 'British cluster'],
+];
+---
+<Base title="What the DNA says"
+  subtitle="A test the paper record set for itself, and failed"
+  lede="The family tree makes a hard, checkable prediction about Derrick's DNA. The DNA does not meet it — not narrowly, but by the whole of one grandparent.">
+
+  <div class="panel">
+    <h3>The finding <span class="tag inf">Inferred, strongly</span></h3>
+    <p>
+      <strong>Kurt Israel Luwinski is very probably not Lynn Derrick Luwinski's biological father.</strong>
+      Two independent lines of evidence say so, and the paper record was already hinting at it before any
+      test was taken.
+    </p>
+    <p class="small">Not <em>documented</em>, and not closed. What would close it is set out at the foot of this page.</p>
+  </div>
+
+  <h2>The prediction, and the result</h2>
+  <p>
+    If Derrick is Kurt's son, then Kurt's father Jacob Leibholz — a Jewish merchant of Schubin and
+    Schöneberg — must put roughly a quarter Ashkenazi Jewish into Derrick's genome, and Kurt's mother
+    Auguste, of an East Prussian farming family, roughly a quarter Germanic. Neither is optional. This
+    is simply how autosomal inheritance works over two generations.
+  </p>
+  <div class="scroll"><table>
+    <thead><tr><th>From</th><th>Expected</th><th>Why</th><th>Observed</th></tr></thead>
+    <tbody>{expected.map(([g, e, w, o]) => (
+      <tr><td><strong>{g}</strong></td><td>{e}</td><td class="small">{w}</td><td><strong>{o}</strong></td></tr>
+    ))}</tbody>
+  </table></div>
+  <p>
+    Ashkenazi Jewish is the most sharply resolved population in consumer ancestry testing. A strong
+    founder effect and centuries of endogamy make the signal unmistakable, and a quarter-share is not
+    something an estimate mislays. <strong>Zero is not noise.</strong> Neither is 1.4% standing in for
+    an East Prussian grandmother.
+  </p>
+
+  <h2>The full estimate</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Population</th><th>Share</th></tr></thead>
+    <tbody>
+      {dna.europe.map((e) => (<tr><td>{e.group}</td><td><strong>{e.pct}%</strong></td></tr>))}
+      <tr><td class="muted">Ashkenazi Jewish</td><td class="muted"><strong>0.0%</strong></td></tr>
+    </tbody>
+  </table></div>
+  <p class="small muted">
+    Additional genetic groups reported: <strong>{dna.additional_genetic_groups.join('</strong>, <strong>')}</strong>.
+    Everything but the Portuguese — 39.4% of the whole — is northwest European and leans English.
+  </p>
+
+  <h2>The match list says it independently</h2>
+  <p>
+    Ethnicity estimates are inferences. A match list is arithmetic on shared segments, and it is harder
+    to argue with. Derrick has <strong>5,464 matches</strong>. The ten closest fall into two clean
+    groups and neither of them is German or Jewish.
+  </p>
+  <div class="scroll"><table>
+    <thead><tr><th>Match</th><th>Estimated relationship</th><th>Shared cM</th><th></th></tr></thead>
+    <tbody>{matches.map(([m, r, cm, n]) => (
+      <tr><td>{m}</td><td>{r}</td><td><strong>{cm}</strong></td><td class="small muted">{n}</td></tr>
+    ))}</tbody>
+  </table></div>
+  <p class="small muted">
+    Match holders are living people and are not named here. Their names are in the private research file.
+  </p>
+  <p>
+    A person with one Ashkenazi grandparent normally carries <em>thousands</em> of Ashkenazi matches,
+    because that population is heavily over-represented in these databases. Derrick has none at the top
+    of his list. What he has instead is a British cluster — one of whom shares South Africa with him as
+    an ancestral place — and the Portuguese cluster that is his mother, exactly where she should be.
+  </p>
+
+  <h2>The paper record was already saying it</h2>
+  <blockquote>
+    Ivone married Johannes Antonie Oelofse de Witt on 2 February 1948.<br />
+    Ivone married Kurt Luwinski on 19 June 1948, entered in the register as <em>Ivone de Witt</em>.<br />
+    Kurt filed for divorce <em>after June 1948</em> — within weeks of the wedding, and before the child was born on 24 April 1949.
+  </blockquote>
+  <p>
+    None of that was read as meaning anything until the DNA arrived. Read backwards from the DNA it is
+    hard to read as anything else. <a href={base + '/1948/'}>The year, set out day by day →</a>
+  </p>
+
+  <h2>What this does not touch</h2>
+  <ul>
+    <li><strong>Ivone stands.</strong> Three Portuguese matches at 108–133 cM confirm her line directly.</li>
+    <li><strong>The Berlin history stands.</strong> Jacob Leibholz was deported to Auschwitz on 26 February 1943. Samuel died there, Oskar died there, Georg died at Chełmno. Kurt escaped in 1933. All of it is documented and none of it depends on this question.</li>
+    <li><strong>It remains Derrick's family.</strong> He was born into it, named for it, and raised in it. This archive keeps descent and inheritance in separate columns rather than collapsing one into the other.</li>
+  </ul>
+
+  <div class="panel">
+    <h3>Nor does de Witt obviously fit</h3>
+    <p>
+      The temptation is to move the fatherhood four months earlier and be done. But an Afrikaner
+      Oelofse–van Straaten line should read Dutch, German and French Huguenot. The observed Dutch is
+      <strong>1.5%</strong> and Germanic <strong>1.4%</strong>, against English <strong>18.5%</strong>
+      and a named genetic group of <em>Southeastern and Eastern England</em>. That is an English family,
+      not a Cape one. The question is open, and this archive does not intend to close it by guessing.
+    </p>
+  </div>
+
+  <h2>What would settle it</h2>
+  <ol>
+    <li><strong>Y-DNA.</strong> The paternal line, tested directly. If Kurt were the father, Derrick's Y-haplogroup would be Jacob Leibholz's. One test, one answer.</li>
+    <li><strong>The British cluster.</strong> A 10,715-person tree and a match with South Africa in common are the shortest route to a name.</li>
+    <li><strong>Shared-match triangulation</strong> across the four closest British matches.</li>
+    <li><strong>A search of all 5,464</strong> for Leibholz, Luwinski, Thimm and Fricke. Absence across the whole list, and not merely the top of it, would be conclusive.</li>
+  </ol>
+</Base>

@@ -1,0 +1,109 @@
+---
+import Base from '../layouts/Base.astro';
+import gb from '../data/gedenkbuch.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="The Leibholz brothers"
+  subtitle="Schubin in Posen, then Berlin, then Auschwitz and Chełmno"
+  lede="Four men of this surname appear in the German Federal Archives' Memorial Book. Three of them were brothers. The fourth was not, and proving that is one of the two corrections this page makes to the family's own tree.">
+
+  <h2>The entries, as the Bundesarchiv has them</h2>
+  <p class="small muted">
+    Bundesarchiv, <em>Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen
+    Gewaltherrschaft in Deutschland 1933–1945</em>, online edition, read 14 September 2026.
+    Each entry is cited by its stable identifier.
+  </p>
+  <div class="scroll"><table>
+    <thead><tr><th>Name</th><th>Born</th><th>Birthplace</th><th>Living in</th><th>Deported</th><th>Died</th><th>Entry</th></tr></thead>
+    <tbody>
+      {gb.map((r) => (
+        <tr>
+          <td><strong>{r.name}</strong></td>
+          <td>{r.born}</td>
+          <td>{r.birthplace}</td>
+          <td>{r.residence}</td>
+          <td>{r.deportation_1}{r.deportation_2 ? '; ' + r.deportation_2 : ''}</td>
+          <td>{r.death_date === 'not documented' ? <span class="muted">not documented</span> : r.death_date}{r.death_place && r.death_place !== 'not documented' ? ' — ' + r.death_place : ''}</td>
+          <td class="small"><a href={'https://apps.bundesarchiv.de/gedenkbuch/' + r.gedenkbuch_id}>{r.gedenkbuch_id}</a></td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+
+  <h2>Correction one: Jacob did not die in 1945</h2>
+  <div class="panel">
+    <p>
+      The family tree records <em>“1945, KZ Auschwitz”</em>. The Memorial Book records his deportation
+      from Berlin to Auschwitz on <strong>26 February 1943</strong>, and — carefully — <strong>no date
+      of death at all</strong>, because the Federal Archives publish one only where it is certain.
+    </p>
+    <p>
+      He was 58. The 1945 in the tree is a family estimate that hardened into a fact.
+      <strong>Correct the year; keep the place.</strong> <span class="tag doc">Documented</span>
+    </p>
+  </div>
+
+  <h2>Correction two: Georg was not their brother</h2>
+  <p>
+    The tree makes Georg a fourth son of Sally Leibholz and Friederike Schmul. He cannot be. Jacob was
+    born at <strong>Schubin in Posen on 8 August 1884</strong>; Georg at <strong>Hammerstein in West
+    Prussia on 7 June 1884</strong>. Two months apart, two hundred kilometres apart, one mother. The two
+    dates and the two places both come from the Bundesarchiv, independently of the family.
+  </p>
+  <p>
+    A Memorial Book search on the surname returns fifty Leibholz entries, and they cluster in two
+    places: Schubin in Posen, and Hammerstein, Karwen and Bärwalde in West Prussia and Pomerania. These
+    are two Leibholz families. Ours is the Schubin one.
+  </p>
+  <div class="panel">
+    <h3>A likelier reading <span class="tag inf">Inferred</span></h3>
+    <p>
+      <strong>Sally Leibholz was himself born at Hammerstein</strong>, on 7 July 1847, and married at
+      Szubin on 24 November 1874. So the family had people in both towns. The cleanest explanation is
+      that Georg belonged to the Hammerstein branch Sally came from — a nephew or a cousin of Jacob's,
+      not a brother. That keeps every documented date intact and only moves one line on the chart.
+    </p>
+    <p class="small">
+      Status of Georg in this archive: <span class="tag disp">Disputed</span> — right surname, right
+      family, wrong generation, pending a Schubin or Hammerstein register.
+    </p>
+  </div>
+
+  <h2>What the dates do when you lay them side by side</h2>
+  <p>
+    Georg went first: Berlin to the Łódź ghetto on <strong>1 November 1941</strong>, then to Chełmno on
+    <strong>13 May 1942</strong>. His daughter <strong>Elli</strong>, born in Berlin on 7 November 1915
+    and working as a secretary, is recorded in the family's tree as dying <em>“after 13 May 1942”</em> —
+    which is his transport date exactly. She went with him.
+  </p>
+  <p>
+    Then the Berlin round-up. Jacob was deported on <strong>26 February 1943</strong>, the day before
+    the <em>Fabrikaktion</em>. <strong>Gertrud Leibke</strong>, born in Berlin on 13 July 1894, died in
+    the city itself on <strong>27 February 1943</strong> — the day of it. Six weeks later, on
+    <strong>10 April 1943</strong>, Samuel was dead at Auschwitz.
+  </p>
+  <p>
+    Oskar lasted longest. Berlin to Theresienstadt on <strong>17 March 1943</strong>, and Theresienstadt
+    to Auschwitz on <strong>16 October 1944</strong>, where the Memorial Book gives that same day as the
+    date of his death.
+  </p>
+
+  <div class="panel">
+    <h3>An open question about Gertrud <span class="tag inf">Open</span></h3>
+    <p>
+      She died <em>in Berlin</em> on 27 February 1943, not in a camp — and the tree attaches the same
+      woman, with the same birth and death dates and the same parents, to two different brothers, Georg
+      and Oskar. One of those attachments is a duplicate record that needs merging; and a death in
+      Berlin on the day of the <em>Fabrikaktion</em> has an obvious and terrible range of explanations
+      that the record does not settle. Both need the Berlin death register.
+    </p>
+  </div>
+
+  <h2>Still to find</h2>
+  <ul>
+    <li>Whether Jacob has a <em>Stolperstein</em> in Schöneberg. The Leibholz stones located so far — Willmanndamm 6, Danckelmannstraße 44 — belong to other Leibholz families.</li>
+    <li>The Schubin (Szubin) Jewish registers, for Sally and Friederike's children and the brothers' births.</li>
+    <li>The 17 May 1939 census card for Oskar at Berlin-Wilmersdorf, which recorded grandparents.</li>
+    <li>Arolsen Archives, for all four, and for Elli and Werner.</li>
+  </ul>
+</Base>

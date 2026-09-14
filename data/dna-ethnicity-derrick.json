@@ -1,0 +1,19 @@
+{
+  "subject": "Lynn Derrick Luwinski",
+  "source": "MyHeritage DNA, Ethnicity Estimate, shared with David Defranceski",
+  "captured": "2026-09-14",
+  "note": "Read from the MyHeritage ethnicity panel as displayed. Percentages as shown.",
+  "europe": [
+    {"group": "Portuguese", "pct": 60.6, "sub": "Portugal"},
+    {"group": "English", "pct": 18.5},
+    {"group": "French", "pct": 5.8},
+    {"group": "Danish", "pct": 5.4},
+    {"group": "Breton", "pct": 5.3},
+    {"group": "Dutch", "pct": 1.5},
+    {"group": "Scottish and Welsh", "pct": 1.5},
+    {"group": "Germanic", "pct": 1.4}
+  ],
+  "additional_genetic_groups": ["Southeastern and Eastern England", "England"],
+  "ashkenazi_jewish_pct": 0.0,
+  "total_shown": 100.0
+}

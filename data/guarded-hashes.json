@@ -1,0 +1,16 @@
+{
+ "salt": "15ab284db37b9d1da579c3b21b9a810b",
+ "algorithm": "sha256(salt|<first token> <last token>), particles dropped, first 32 hex",
+ "count": 9,
+ "digests": [
+  "037a3b157bb304e683f45652a10bd088",
+  "1f9415e476d79d9ff7298b2ec4572636",
+  "5ee5da9936e223e84a90951f3d85baa0",
+  "60c106ea9dc1c66cfab26effaa4faa8d",
+  "791396928a81d4af3c6675b46b40230f",
+  "97886d5bee72502e11701bd5a8745c7f",
+  "d6d582f99044895db77289cd852daa74",
+  "e91fd5e63fe748447d69f0f215ee8d82",
+  "ec66981c7c71ae396638a8d34d3b6fe4"
+ ]
+}

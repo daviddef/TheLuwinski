@@ -1,0 +1,14 @@
+node_modules/
+site/node_modules/
+site/dist/
+site/.astro/
+.DS_Store
+*.log
+scratch/
+
+# The raw harvest holds every living person in full, and the working notes name
+# living DNA match holders. Neither belongs in a public repository. The build
+# needs only site/src/data/register.json, which is generated from the harvest
+# with living people already removed.
+data/myheritage-tree9.json
+notes/

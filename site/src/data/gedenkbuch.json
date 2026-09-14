@@ -1,0 +1,50 @@
+[
+ {
+  "name": "Jacob Leibholz",
+  "born": "08.08.1884",
+  "birthplace": "Schubin (poln. Szubin)/Posen",
+  "residence": "Berlin (Schöneberg)",
+  "deportation_1": "from Berlin 26.02.1943 → Auschwitz, Konzentrations- und Vernichtungslager",
+  "deportation_2": "",
+  "death_date": "not documented",
+  "death_place": "not documented",
+  "gedenkbuch_id": "en1100957",
+  "status": "DOCUMENTED"
+ },
+ {
+  "name": "Samuel Leibholz",
+  "born": "28.06.1877",
+  "birthplace": "Schubin (poln. Szubin)/Posen",
+  "residence": "Berlin (Kreuzberg)",
+  "deportation_1": "→ Auschwitz, Konzentrations- und Vernichtungslager",
+  "deportation_2": "",
+  "death_date": "10.04.1943",
+  "death_place": "Auschwitz, Vernichtungslager",
+  "gedenkbuch_id": "en909753",
+  "status": "DOCUMENTED"
+ },
+ {
+  "name": "Oskar Leibholz",
+  "born": "13.05.1887",
+  "birthplace": "Schubin (poln. Szubin)/Posen",
+  "residence": "Berlin (Wilmersdorf)",
+  "deportation_1": "from Berlin 17.03.1943 → Theresienstadt, Ghetto",
+  "deportation_2": "16.10.1944 → Auschwitz, Konzentrations- und Vernichtungslager",
+  "death_date": "16.10.1944",
+  "death_place": "Auschwitz, Vernichtungslager",
+  "gedenkbuch_id": "en1100894",
+  "status": "DOCUMENTED"
+ },
+ {
+  "name": "Georg Leibholz",
+  "born": "07.06.1884",
+  "birthplace": "Hammerstein/Schlochau/Westpreußen",
+  "residence": "Berlin (Mitte)",
+  "deportation_1": "from Berlin 01.11.1941 → Litzmannstadt (Lodz), Ghetto",
+  "deportation_2": "13.05.1942 → Kulmhof (Chelmno), Vernichtungslager",
+  "death_date": "not documented",
+  "death_place": "Kulmhof (Chelmno), Vernichtungslager",
+  "gedenkbuch_id": "en1100801",
+  "status": "DOCUMENTED — but NOT a brother, see notes"
+ }
+]

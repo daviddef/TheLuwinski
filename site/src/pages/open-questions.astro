@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const q = [
+  ['1', 'Who were Ivone\'s parents?', 'Nothing at all is recorded. She is the subject of this research and her own parents are blank.', 'Her death and burial record at Porto — a Portuguese death certificate names the deceased\'s parents. Then her 1924 birth registration at Lourenço Marques.', 'Ivone'],
+  ['2', 'Who was Derrick\'s biological father?', 'The DNA excludes Kurt Israel Luwinski with reasonable confidence and points to an English family with a South African connection.', 'Y-DNA on Derrick\'s kit; then the four closest British matches, one of whom manages a tree of 10,715 people.', 'The DNA'],
+  ['3', 'When did Auguste divorce Jacob, and why?', 'The tree records the divorce with no date. In a Berlin Mischehe the date is the whole meaning of the act.', 'Berlin-Schöneberg divorce files; the 5 January 1924 marriage entry that preceded them.', 'East Prussia'],
+  ['4', 'Where does Kurt\'s "Israel" come from?', 'He left Germany in 1933, six years before the compulsory-name decree, and as a Mischling would have been outside it anyway.', 'German expatriation lists in the Reichsanzeiger; South African naturalisation and alien registration papers.', 'Kurt'],
+  ['5', 'Is Georg a brother or a cousin?', 'Born at Hammerstein two months after Jacob was born at Schubin. Both dates from the Bundesarchiv. They cannot both be sons of one mother.', 'Schubin and Hammerstein registers. Sally Leibholz was born at Hammerstein himself, which is the likely explanation.', 'The Leibholz brothers'],
+  ['6', 'What happened to Gertrud Leibke on 27 February 1943?', 'She died in Berlin, not in a camp, on the day of the Fabrikaktion. The tree also duplicates her across two brothers.', 'Berlin death register; merge the duplicate and establish which brother she married.', 'The Leibholz brothers'],
+  ['7', 'When did Ivone actually marry de Witt?', 'Recorded as 2 February 1948, four and a half months before she married Kurt, with no divorce between.', 'The Germiston marriage register.', 'Ivone'],
+  ['8', 'Who was the Pinto da Rocha?', 'Henrique\'s father, and the tree can only call him "Unknown da Rocha". His son\'s name gives the surname away.', 'Lourenço Marques civil registration around 1940; Portuguese records for Henrique\'s 1941 birth.', 'Ivone'],
+  ['9', 'Does Jacob have a Stolperstein?', 'None found in Schöneberg. The Leibholz stones located so far belong to other Leibholz families.', 'Koordinierungsstelle Stolpersteine Berlin. If there is none, there could be.', 'The Leibholz brothers'],
+  ['10', 'Do any of the 100 index Luwinskis connect?', 'Not one has been shown to. They may be entirely unrelated people who share a rare surname.', 'Allenstein and Kreis Rössel Catholic registers, for Joachim born 1865 and back.', 'The register'],
+];
+const href = { 'Ivone': '/ivone/', 'The DNA': '/dna/', 'East Prussia': '/east-prussia/', 'Kurt': '/kurt/', 'The Leibholz brothers': '/leibholz/', 'The register': '/register/' };
+---
+<Base title="Open questions"
+  subtitle="Ten things this archive cannot answer yet, in the order they are worth attacking"
+  lede="An archive is worth what its unanswered questions are worth. These are written so that anyone — a cousin, a stranger, an archivist — can pick one up and work it without asking permission.">
+
+  {q.map(([n, question, state, next, page]) => (
+    <div class="panel">
+      <h3>{n}. {question}</h3>
+      <p>{state}</p>
+      <p class="small"><strong>Next:</strong> {next}</p>
+      <p class="small"><a href={base + href[page]}>{page} →</a></p>
+    </div>
+  ))}
+
+  <h2>Requests worth drafting</h2>
+  <ul>
+    <li><strong>Conservatória do Registo Civil do Porto</strong> — death and burial of Ivone de Figueiredo, b. 4 March 1924 Lourenço Marques.</li>
+    <li><strong>Arquivo Histórico de Moçambique</strong>, Maputo, and the <strong>Arquivo Histórico Ultramarino</strong>, Lisbon — Lourenço Marques civil registration, 1924 and c. 1941.</li>
+    <li><strong>Landesarchiv Berlin</strong> — Schöneberg marriage 5 January 1924; the divorce file; Kurt's 1912 birth entry; Gertrud Leibke's death, 27 February 1943.</li>
+    <li><strong>Arolsen Archives</strong> — Jacob, Samuel, Georg, Oskar, Elli and Werner Leibholz.</li>
+    <li><strong>Master of the Supreme Court, Pretoria</strong> — estate file 7584/1969, Kurt Luwinski.</li>
+    <li><strong>National Archives of South Africa</strong> — the 1948 and 1951 divorce actions, and the Germiston marriage register.</li>
+  </ul>
+</Base>

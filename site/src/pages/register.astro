@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import register from '../data/register.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const fam = register.people.filter(p => p.kind === 'family');
+const idx = register.people.filter(p => p.kind === 'index');
+const c = register.counts;
+---
+<Base title="The register"
+  subtitle={c.published + ' of ' + c.total + ' people in the source, published'}
+  lede="Everyone the source records, with the two kinds of entry kept firmly apart: the family proper, and a hundred-odd people who share the surname and have not been shown to share anything else.">
+
+  <div class="cards">
+    <div class="card stat"><b>{c.family}</b><span>Family</span></div>
+    <div class="card stat"><b>{c.index}</b><span>Surname index</span></div>
+    <div class="card stat"><b>{c.omitted_living}</b><span>Living, omitted</span></div>
+    <div class="card stat"><b>{c.total}</b><span>In the source</span></div>
+  </div>
+
+  <h2>The family</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Name</th><th>Born</th><th>Died</th><th>Noted</th></tr></thead>
+    <tbody>
+      {fam.map(p => (
+        <tr>
+          <td><strong>{p.name}</strong>{p.bare && <> <span class="tag inf">Living — named only</span></>}</td>
+          <td>{p.born || (p.by ? String(p.by) : '')}</td>
+          <td>{p.no_death_recorded ? <span class="muted small">no death recorded</span> : p.died}</td>
+          <td class="small muted">{(p.facts || []).filter(f => f.place || f.c).slice(0, 2).map(f => (f.t + (f.place ? ': ' + f.place : '') + (f.c ? ' — ' + f.c : ''))).join(' · ').slice(0, 150)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+
+  <h2>The surname index — not ancestry</h2>
+  <div class="panel">
+    <p>
+      The source tree hangs about a hundred people off two nodes literally named
+      <em>“UNKNOWN PLACEHOLDERS Luwinski”</em> and <em>“Germany Luwinski”</em>. They run from 1757 to
+      1929 and carry Polish spouse surnames — Grzegorzewska, Kruczyńska, Paturalska, Sabędzka,
+      Błożkiewicz, Leciejewska, Melkowa, Klich.
+    </p>
+    <p>
+      That is a <strong>collection of every Luwinski found in the German and Polish registers</strong>,
+      parked under a placeholder so it could be kept. It is useful and worth keeping. It is not descent,
+      and it is not presented here as though it were. Not one of these people has been shown to connect
+      to Joachim Luwinski of Allenstein. <span class="tag disp">Unproven</span>
+    </p>
+  </div>
+  <div class="scroll"><table>
+    <thead><tr><th>Name</th><th>Born</th><th>Died</th></tr></thead>
+    <tbody>
+      {idx.map(p => (<tr><td>{p.name}</td><td>{p.born}</td><td>{p.died}</td></tr>))}
+    </tbody>
+  </table></div>
+</Base>

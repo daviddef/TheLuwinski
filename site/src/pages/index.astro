@@ -1,0 +1,63 @@
+---
+import Base from '../layouts/Base.astro';
+import register from '../data/register.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const c = register.counts;
+---
+<Base title="The Luwinski Archive"
+  subtitle="An evidence-first archive for the family of Lynn Derrick Luwinski — Berlin, Schubin, Sauerbaum, Lourenço Marques, Johannesburg, Porto."
+  lede="Four of this family's men were deported from Berlin between 1941 and 1944 and did not come back. One young man got out in 1933 and became a dress designer in Johannesburg. A woman born in Portuguese East Africa married four times in that city and was buried in Porto. This archive sets down what can be documented about all of them — and one finding that unsettles how they are joined together.">
+
+  <div class="cards">
+    <div class="card stat"><b>{c.family}</b><span>People in the family proper</span></div>
+    <div class="card stat"><b>4</b><span>In the Gedenkbuch</span></div>
+    <div class="card stat"><b>{c.index}</b><span>Surname-index entries, not descent</span></div>
+    <div class="card stat"><b>{c.omitted_living}</b><span>Living people omitted</span></div>
+  </div>
+
+  <h2>The spine</h2>
+  <p>
+    <a href={base + '/derrick/'}>Lynn Derrick Luwinski</a> was born on 24 April 1949. He is living, and
+    this archive names him and says nothing else about him. Everything narrated here is about the dead
+    behind him.
+  </p>
+
+  <div class="scroll"><table>
+    <thead><tr><th>Generation</th><th>Who</th><th>Where</th><th>What happened</th></tr></thead>
+    <tbody>
+      <tr><td>Great-grandparents</td><td>Sally Leibholz &amp; Friederike Schmul</td><td>Hammerstein; married at Szubin, 1874</td><td>A Jewish family of the Posen–West Prussia borderland</td></tr>
+      <tr><td></td><td>Joachim Luwinski &amp; Johanna Thimm</td><td>Allenstein and Sauerbaum, East Prussia</td><td>Catholic farming people of the Ermland</td></tr>
+      <tr><td>Grandparents</td><td><a href={base + '/leibholz/'}>Jacob Leibholz</a></td><td>b. Schubin 1884; Berlin-Schöneberg</td><td>Deported to Auschwitz, 26 February 1943</td></tr>
+      <tr><td></td><td><a href={base + '/east-prussia/'}>Auguste “Lizzy” Luwinski</a></td><td>b. Sauerbaum 1893; d. Kraichtal 1975</td><td>Dressmaker and milliner. Survived</td></tr>
+      <tr><td>Parents</td><td><a href={base + '/kurt/'}>Kurt Israel Luwinski</a></td><td>b. Berlin 1912; d. Johannesburg 1969</td><td>Left Germany in 1933, aged 21</td></tr>
+      <tr><td></td><td><a href={base + '/ivone/'}>Ivone de Figueiredo</a></td><td>b. Lourenço Marques 1924; d. Porto</td><td>Four marriages, three countries</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>The finding this archive cannot avoid</h2>
+  <div class="panel">
+    <h3>Kurt Israel Luwinski is very probably not Derrick's biological father <span class="tag inf">Inferred</span></h3>
+    <p>If he were, Derrick's DNA would carry about a quarter Ashkenazi Jewish from Jacob Leibholz and
+    about a quarter East Prussian German from Auguste. It carries <strong>0.0%</strong> and
+    <strong>1.4%</strong>. His nearest matches are British and Portuguese, and there is no German or
+    Jewish cluster anywhere near the top of a list 5,464 long.</p>
+    <p class="small"><a href={base + '/dna/'}>The evidence, the arithmetic, and what would overturn it →</a></p>
+  </div>
+  <p>
+    That does not make the Berlin history untrue, and it does not make it less his. Jacob Leibholz died
+    at Auschwitz; his brothers Samuel and Oskar died there too, and Georg at Chełmno. Kurt escaped in
+    1933 and carried the name. It is the family Derrick was born into and named for. Whether it is also
+    the family he descends from is a different question, and this archive keeps the two apart rather
+    than pretending they are one.
+  </p>
+
+  <h2>Where to start</h2>
+  <div class="cards">
+    <div class="card"><a href={base + '/leibholz/'}>The Leibholz brothers</a><p>Four men, four entries in the German Federal Archives' Memorial Book. Two corrections to the family tree fall out of them.</p></div>
+    <div class="card"><a href={base + '/ivone/'}>Ivone</a><p>Born at Lourenço Marques in 1924. Married a da Rocha, a de Witt, a Luwinski and a Salkow. Buried at Porto.</p></div>
+    <div class="card"><a href={base + '/1948/'}>The year 1948</a><p>Two marriages four and a half months apart, and a divorce filed before the child was born.</p></div>
+    <div class="card"><a href={base + '/east-prussia/'}>Sauerbaum and Allenstein</a><p>The Catholic half: a farmer, a milliner, and a son born twelve years before his parents married.</p></div>
+    <div class="card"><a href={base + '/register/'}>The register</a><p>Every person in the source, labelled — including the hundred who are a surname index and not ancestry.</p></div>
+    <div class="card"><a href={base + '/method/'}>Method</a><p>What “documented”, “inferred” and “disputed” mean here, and why living people are absent.</p></div>
+  </div>
+</Base>

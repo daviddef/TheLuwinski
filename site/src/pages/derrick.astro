@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="Lynn Derrick Luwinski"
+  subtitle="Born 24 April 1949. Living."
+  lede="This archive is organised around him and tells almost nothing about him. That is deliberate.">
+
+  <div class="panel">
+    <h3>What is published here</h3>
+    <dl class="kv">
+      <dt>Name</dt><dd>Lynn Derrick Luwinski</dd>
+      <dt>Born</dt><dd>1949</dd>
+      <dt>Father</dt><dd>Kurt Israel Luwinski, of record — <a href={base + '/dna/'}>disputed by DNA</a></dd>
+      <dt>Mother</dt><dd>Ivone de Figueiredo</dd>
+    </dl>
+    <p class="small muted">Nothing further. No address, no occupation, no photograph, no descendants.</p>
+  </div>
+
+  <h2>Why a living man is the centre of an archive that will not describe him</h2>
+  <p>
+    Because he is the join. Every line this archive follows runs through him and stops there. His father's
+    line goes back to a Berlin tenement and a transport to Auschwitz. His mother's goes back to a
+    Portuguese colonial town on the Indian Ocean. Neither of those families knew the other existed until
+    1948, and they were finished with each other by 1951.
+  </p>
+  <p>
+    The policy of the sibling archives is that living people are omitted from the build entirely — not
+    hidden, not gated, not present in the output. Here that rule is bent exactly once and no further:
+    Derrick is <em>named</em>, because an archive about his ancestry that refused to say whose ancestry
+    it was would be absurd. Everything else about him is left out.
+  </p>
+
+  <h2>What is known and not published</h2>
+  <p>
+    A good deal. The source tree records more, and the research file holds more still — including the
+    DNA that prompted the central finding of this archive. It stays in the private notes. If Derrick
+    wishes any of it published, or wishes his name removed as well, either is done on asking, without
+    argument and without requiring a reason.
+  </p>
+
+  <h2>The two families that meet in him</h2>
+  <div class="cards">
+    <div class="card"><a href={base + '/kurt/'}>His father of record</a><p>Kurt Israel Luwinski, born Berlin 1912, in Johannesburg from 1933, died there in 1969 when Derrick was twenty.</p></div>
+    <div class="card"><a href={base + '/ivone/'}>His mother</a><p>Ivone de Figueiredo, born Lourenço Marques 1924, buried at Porto.</p></div>
+  </div>
+</Base>

@@ -1,0 +1,77 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const t = [
+  ['11 Mar 1941', 'Henrique born', 'Ivone is seventeen. The father is a Pinto da Rocha. The son stays behind when she goes south.', ''],
+  ['2 Feb 1948', 'Ivone marries de Witt', 'At Germiston. He is 24, born in Johannesburg in December 1923.', 'contradiction'],
+  ['19 Jun 1948', 'Ivone marries Kurt Luwinski', 'At Johannesburg. Certificate 858. She is entered as Ivone de Figueiredo de Witt, aged 24. He is 36.', 'key'],
+  ['after Jun 1948', 'Kurt files for divorce', 'The tree records it as an attempted divorce filed, citing the South African national archives. Weeks, at most, after the wedding.', 'key'],
+  ['c. late Jul 1948', 'Derrick conceived', 'Inferred from the birth, counting back.', 'inferred'],
+  ['24 Apr 1949', 'Derrick born', '', 'key'],
+  ['1951', 'Divorce granted', 'Illiquid case. Restitution of conjugal rights. Kurt Luwinski versus Ivone, formerly de Witt, born Figueiredo.', 'key'],
+  ['13 Feb 1953', 'Ivone marries Morris Salkow', 'Entered as Ivone Luwinski.', ''],
+  ['29 Feb 1956', 'Kurt marries Frances Hostowsky', 'Registered in the Hanover, Orange Free State records.', ''],
+  ['1957', 'Kurt files for divorce again', 'Versus Frances, formerly Sefton, formerly Berner, born Hostowsky.', ''],
+  ['Nov 1962', 'Henrique reaches Johannesburg', 'Twenty-one years after his birth, and fourteen after his mother married Kurt.', ''],
+  ['15 Dec 1969', 'Kurt dies at Johannesburg', 'Derrick is twenty. Estate file 7584/1969, Pretoria. Buried Chevra Kadisha.', ''],
+];
+---
+<Base title="1948"
+  subtitle="Two marriages, one divorce action, and a child"
+  lede="Set the dates in a column and the year stops looking like a marriage and starts looking like something else. None of this was noticed until the DNA gave a reason to look.">
+
+  <div class="scroll"><table>
+    <thead><tr><th>Date</th><th>Event</th><th></th></tr></thead>
+    <tbody>
+      {t.map(([d, e, n, k]) => (
+        <tr>
+          <td><strong>{d}</strong></td>
+          <td>{e}{k === 'contradiction' && <> <span class="tag disp">Contradiction</span></>}{k === 'inferred' && <> <span class="tag inf">Inferred</span></>}</td>
+          <td class="small muted">{n}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+
+  <h2>What is odd about it</h2>
+  <p>
+    <strong>The gap.</strong> Four and a half months between marrying de Witt and marrying Luwinski,
+    with no divorce recorded in between. That is either bigamy or a wrong date, and the archive's
+    reading is that it is a wrong date — because she married Kurt <em>as</em> Mrs de Witt, so the de Witt
+    marriage must have come first, and probably well before 2 February 1948.
+    <a href={base + '/ivone/'}>The argument in full →</a>
+  </p>
+  <p>
+    <strong>The filing.</strong> Kurt files for divorce within weeks of his own wedding, and before his
+    wife gives birth. That is not a marriage that wore out. Something was wrong with it almost at once.
+  </p>
+  <p>
+    <strong>The timing of the birth.</strong> Derrick was born ten months after the wedding, so the
+    conception falls after it. On its face that is unremarkable. It only becomes remarkable alongside
+    a DNA result showing <a href={base + '/dna/'}>no trace of Kurt's father or Kurt's mother</a> in the
+    child.
+  </p>
+
+  <div class="panel">
+    <h3>A warning about reading backwards <span class="tag inf">Method</span></h3>
+    <p>
+      Everything on this page was in the record before the DNA was looked at, and none of it was thought
+      to mean anything. That should make anyone careful. A timeline read in the light of a conclusion
+      will always seem to support it.
+    </p>
+    <p>
+      So: the dates here are documented and the inference is labelled as an inference, and they are kept
+      apart on purpose. If the Y-DNA comes back Ashkenazi, this page stays exactly as it is and the
+      conclusion goes — a marriage in trouble from the first month, and nothing more.
+    </p>
+  </div>
+
+  <h2>What sits behind it</h2>
+  <p>
+    Kurt was thirty-six, fifteen years out of Germany, and had five years earlier lost his father to a
+    transport from Berlin he can only have learned about second-hand and late. Ivone was
+    twenty-four, born in Portuguese East Africa, with a seven-year-old son in another country. They
+    married in June, he sued in the winter, the child came in the autumn, and the court took until 1951
+    to let them go. Neither of them was in the country either had been born in.
+  </p>
+</Base>

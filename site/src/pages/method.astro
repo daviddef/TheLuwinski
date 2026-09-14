@@ -1,0 +1,87 @@
+---
+import Base from '../layouts/Base.astro';
+import register from '../data/register.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="Method"
+  subtitle="What the labels mean, and who is missing"
+  lede="Every claim here carries a confidence and a source. The point of labelling is that a reader can overturn the reasoning without having to take the conclusion on trust.">
+
+  <h2>The labels</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Label</th><th>Means</th></tr></thead>
+    <tbody>
+      <tr><td><span class="tag doc">Documented</span></td><td>A named source with a reference, and where possible the scan. The Gedenkbuch entries, the marriage certificate number, the deportation dates.</td></tr>
+      <tr><td><span class="tag inf">Inferred</span></td><td>A reasoned conclusion from documented facts, with the reasoning written out so it can be attacked. The paternity finding is here, and stays here until a Y-DNA result moves it.</td></tr>
+      <tr><td><span class="tag disp">Disputed</span></td><td>Asserted in the family record and contradicted by what can be seen. Georg Leibholz as a brother; the February 1948 marriage date.</td></tr>
+      <tr><td><span class="tag disp">Unproven</span></td><td>Kept because it may matter later, but carrying no weight now. The hundred-odd surname-index Luwinskis.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Living people</h2>
+  <div class="panel">
+    <p>
+      <strong>Living people are omitted from this build entirely</strong> — not hidden, not gated, not
+      present in the output. <strong>{register.counts.omitted_living}</strong> people were removed on
+      that ground before this site was generated.
+    </p>
+    <p>
+      One exception, and only one. <a href={base + '/derrick/'}>Lynn Derrick Luwinski</a> is
+      <strong>named</strong>, with his birth year and his parents, and nothing else — no occupation, no
+      address, no photograph, no descendants. An archive about a man's ancestry that would not say whose
+      ancestry it was would be useless; an archive that published him would be a different kind of
+      failure.
+    </p>
+    <p>
+      Where the source flags someone as living but they were born in 1920 or earlier, and so would now
+      be 106 or more, they are presumed dead and published with the absence of a death record stated
+      plainly. Several of those are Holocaust-era people whose fate was never recorded. Saying so is the
+      entry's purpose.
+    </p>
+    <p class="small">
+      A removal request is honoured within days, without argument and without requiring a reason.
+    </p>
+  </div>
+
+  <h2>Two rules for this particular family</h2>
+  <p>
+    <strong>On the Holocaust records.</strong> Dates and places come from the Bundesarchiv and are
+    quoted as the Bundesarchiv gives them, including its refusals: where it declines to state a date of
+    death because the date is not certain, this archive declines too, and says why. Jacob Leibholz has
+    no death date here. That is not an omission.
+  </p>
+  <p>
+    <strong>On the paternity.</strong> It is stated, because burying a documented inconsistency in a
+    private file would make the rest of the archive worth less. It is labelled as an inference, the
+    arithmetic is shown, and the tests that would overturn it are listed. DNA match holders are living
+    people and are not named.
+  </p>
+
+  <h2>Duplicate records in the source</h2>
+  <p>
+    The tree holds five people twice. Each pair shares an identical birth <em>and</em> death date, so
+    these are not two people with one name — they are one person entered twice, usually once with
+    parents attached and once without. They are collapsed here to the fuller copy, and listed so the
+    collapse can be checked or reversed.
+  </p>
+  <div class="scroll"><table>
+    <thead><tr><th>Person</th><th>Dropped</th><th>Kept</th></tr></thead>
+    <tbody>{register.duplicates.map(d => (<tr><td>{d.name}</td><td class="small muted">{d.dropped}</td><td class="small">{d.kept}</td></tr>))}</tbody>
+  </table></div>
+  <p class="small muted">
+    One of these mattered. The dateless copy of <strong>Leopold Leibke</strong> was the only record in
+    the whole tree flagged as a living person without a birth year — while the fuller copy of the same
+    man records his death in 1932. The build's living-persons check caught it, which is what the check
+    is for.
+  </p>
+
+  <h2>The source</h2>
+  <p>
+    The spine is a MyHeritage family tree of 164 people, read on 14 September 2026. It is a family
+    record, not an archive: it carries real documents, real citations, family estimates and at least two
+    duplicated individuals, all mixed together at the same apparent confidence. Separating those is most
+    of the work here. Where this archive contradicts the tree — Jacob's death year, Georg's parentage,
+    the February 1948 marriage — the contradiction is set out with its evidence rather than quietly
+    corrected.
+  </p>
+</Base>
