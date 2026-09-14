@@ -32,7 +32,7 @@ const items = [
   [5,  'Henrique’s 1968 marriage record', S.blocked, 'Searched on both groom and bride. Not in FamilySearch — the South African marriage collections thin out after the mid-1960s. May simply arrive inside the estate file at item 1.'],
   [6,  'The June 1948 ante-nuptial contract', S.blocked, 'A South African deeds registry “may not give out information acting on a letter or a telephone call.” Needs attendance in person or a paid commercial search.'],
   [7,  'The February 1956 ante-nuptial contract', S.blocked, 'Same office, same obstacle.'],
-  [8,  'Write to the closest British match', S.ack, 'SENT 15 September as a reply in the June 2025 thread she opened. She was written to in June 2025 and replied, naming four grandparents — Mervin and Cynthia Halsey, Cynthia born Weir; John and Elsie Parr. The drafted letter asks what she has already answered. The reply asks the one question that matters: who were Mervin Halsey\u2019s parents, and where was he born.'],
+  [8,  'Write to the closest British match', S.ack, 'SENT 15 September. ANSWERED BY DOCUMENT THE SAME DAY, and not in the way the letter expected: the 1952 register\'s birthplace column shows Mervin Halsey was born in the Cape Province and Cynthia Wear in England. The link is the grandmother, not the grandfather. Her GRO birth entry gives her mother\'s maiden name as CASTLE, and the censuses put that Castle family at Baldock, Hertfordshire. The question the letter asked — who were Mervin Halsey\'s parents — no longer matters.'],
   [9,  'Write to the keeper of the 10,715-person tree', S.ack, 'SENT 15 September, as a follow-up inside the thread opened in June 2025 that she never answered — not as the cold letter drafted, which would have opened with a falsehood.'],
   [10, 'Big Y-700 on Derrick’s kit', S.you, 'A purchase. This archive does not spend other people’s money.'],
   [11, 'Kurt’s naturalisation', S.blocked, 'Done as far as it can be. The Union gazette did publish naturalisation applications — his partner made one in February 1942 — and Kurt appears in none of them under any spelling the OCR catches. Recorded as a negative with its limits.'],
@@ -75,6 +75,19 @@ const count = (k) => items.filter(i => i[2][0] === k).length;
       ))}
     </tbody>
   </table></div>
+
+  <div class="panel">
+    <h3>Item 8 answered itself, 15 September <span class="tag doc">Closed</span></h3>
+    <p>
+      The letter asking the closest match who her grandfather&rsquo;s parents were went out in the
+      morning. By the afternoon the question was moot: a column on the 1952 marriage register shows
+      her grandfather was born in the <strong>Cape Province</strong> and her grandmother in
+      <strong>England</strong>, and the English side is the one that matters. Her grandmother&rsquo;s
+      birth entry names the mother as a <strong>Castle</strong>, of <strong>Baldock,
+      Hertfordshire</strong> — the second of Derrick&rsquo;s top matches descends from the same couple
+      through a different daughter. <a href={base + '/dna/#castle'}>The chain →</a>
+    </p>
+  </div>
 
   <h2>The fifteen</h2>
   <div class="scroll"><table>
