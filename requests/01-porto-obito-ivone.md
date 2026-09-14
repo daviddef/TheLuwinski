@@ -8,8 +8,10 @@ Requests may also be lodged at any *Conservatória* or through the IRN's online 
 death is more than a few decades old the record may already have passed to the
 **Arquivo Distrital do Porto**, which should be asked in parallel.
 
-**What is known.** Given name *Ivone*, born **4 March 1924 at Lourenço Marques**, Mozambique.
-Maiden name **de Figueiredo** (also written *Figueredo*). Successive married names **da Rocha**
+**What is known.** **IVONE MOTA FIGUEIREDO**, very likely *Ivone da Mota Figueiredo*, born
+**4 March 1924 at Lourenço Marques**, Mozambique. Her birth name is given in full as *born Mota
+Figueiredo* by the Transvaal Supreme Court in 1948 (WLD 1950/1948); the South African marriage
+registers shorten it to *de Figueiredo*, also written *Figueredo*. Successive married names **da Rocha**
 (or *Pinto da Rocha*), **de Witt**, **Luwinski**, **Salkow**. Died at Porto, date unknown; buried
 at Porto. She lived in South Africa from at least 1948 to the 1950s and returned to Portugal later.
 
@@ -23,9 +25,10 @@ the request — the **names of her father and mother**.
 
 > Exmos. Senhores,
 >
-> Venho solicitar uma certidão de narrativa completa do assento de óbito de **IVONE DE FIGUEIREDO**,
-> nascida a **4 de março de 1924 em Lourenço Marques, Moçambique**, falecida e sepultada no
-> **Porto**, em data que desconheço.
+> Venho solicitar uma certidão de narrativa completa do assento de óbito de **IVONE (DA) MOTA
+> FIGUEIREDO**, nascida a **4 de março de 1924 em Lourenço Marques, Moçambique**, falecida e
+> sepultada no **Porto**, em data que desconheço. Nos registos sul-africanos aparece também apenas
+> como *Ivone de Figueiredo* ou *de Figueredo*.
 >
 > Ao longo da vida usou também os apelidos de casada **Pinto da Rocha**, **de Witt**, **Luwinski**
 > e **Salkow**. Viveu em Joanesburgo, África do Sul, entre 1948 e os anos 50, tendo regressado
@@ -42,8 +45,8 @@ the request — the **names of her father and mother**.
 
 > Dear Sir or Madam,
 >
-> I should like to request a full certified copy of the death record of **IVONE DE FIGUEIREDO**,
-> born **4 March 1924 at Lourenço Marques, Mozambique**, who died and was buried at **Porto** on a
+> I should like to request a full certified copy of the death record of **IVONE (DA) MOTA
+> FIGUEIREDO**, born **4 March 1924 at Lourenço Marques, Mozambique**, who died and was buried at **Porto** on a
 > date unknown to me.
 >
 > During her life she also used the married surnames **Pinto da Rocha**, **de Witt**, **Luwinski**

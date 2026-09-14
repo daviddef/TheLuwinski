@@ -18,6 +18,18 @@ wanted, and both are already located to the image.
    The **unabridged** form is the one that carries parents' details — the abridged one does not, so
    the form must say so explicitly.
 
-Also outstanding at the national archives, and free to search: **43 documents indexed under
-FIGUEIREDO** in NAAIRS, none yet read. The interface serves one document per request and began
-timing out; it wants a patient half-hour rather than a clever script.
+## Request 4 — the three divorce files, Transvaal depot
+
+Read on 14 September 2026 and worth ordering. A divorce summons of this period normally recites
+both parties' full names, ages, domiciles, and the date and place of the marriage.
+
+| Case | Year | As indexed |
+|---|---|---|
+| **TAB, WLD 1950/1948** | 1948 | Divorce. Kurt *Luwinsky* v. Ivone **(born Mota Figueiredo)** |
+| **TAB, WLD 497/1951** | 1951 | Restitution of conjugal rights. Kurt Luwinski v. Ivone (formerly de Witt, born Figueiredo) |
+| **TAB, WLD 2368/1951** | 1951 | Divorce. Kurt Luwinski v. Ivone (formerly de Witt) (born Figueiredo) |
+
+Order from the **National Archives Repository, Pretoria** (TAB), quoting depot, source and
+reference. All 43 NAAIRS Figueiredo entries are in `data/naairs-figueiredo.tsv`; one more is worth
+a look while you are there — **KAB, PIO 4752A, "Immigration papers. Mrs. L.A. Figueiredo", 1950**,
+at the Cape Town repository.
