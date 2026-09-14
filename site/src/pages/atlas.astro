@@ -1,0 +1,115 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// name, lon, lat, what, kind, label side
+const places = [
+  ['Hammerstein (Czarne)', 16.94, 53.68, 'Sally Leibholz born 1847. Georg born 1884 — which is why he cannot be Jacob’s brother', 'leib', 'w'],
+  ['Szubin (Schubin)', 17.74, 53.00, 'Sally married Friederike 1874. Samuel 1877, Jacob 1884, Oskar 1887 all born here', 'leib', 'e'],
+  ['Allenstein (Olsztyn)', 20.48, 53.78, 'Joachim Luwinski born 1865. A Landwirt', 'luw', 'e'],
+  ['Sauerbaum, Kreis Rössel', 21.15, 54.35, 'Johanna Thimm born 1871; Auguste born 1893', 'luw', 'e'],
+  ['Berlin', 13.40, 52.52, 'Kurt born 1912. Four addresses: Meraner Str. 2, Kommandantenstr. 29, Waghäuseler Str. 9/10, Michaelkirchstr. 26', 'both', 'w'],
+  ['Sommerfeld', 12.98, 52.95, 'Where Siegfried was hidden, January 1943 to April 1945', 'luw', 'w'],
+  ['Łódź', 19.46, 51.76, 'Georg and Lydia, in the ghetto from 1 November 1941', 'end', 'e'],
+  ['Chełmno (Kulmhof)', 18.72, 52.15, 'Georg and Lydia, 13 May 1942', 'end', 'e'],
+  ['Theresienstadt', 14.15, 50.51, 'Oskar, 17 March 1943', 'end', 'w'],
+  ['Auschwitz', 19.20, 50.03, 'Jacob 26 Feb 1943 · Samuel 10 Apr 1943 · Oskar 16 Oct 1944', 'end', 'e'],
+  ['Kraichtal', 8.72, 49.14, 'Auguste died 1975', 'luw', 'w'],
+  ['Eixo, Aveiro', -8.55, 40.62, 'Augusto Pereira de Figueiredo baptised 1883 — candidate only', 'fig', 'e'],
+  ['Porto', -8.61, 41.35, 'Ivone died and was buried', 'fig', 'e'],
+  ['Amadora, Oeiras', -9.23, 38.76, 'Augusto died 21 August 1954', 'fig', 'e'],
+];
+const world = [
+  ['Berlin', 13.40, 52.52, 'both', 'e'],
+  ['Lisbon / Porto', -8.61, 41.15, 'fig', 'e'],
+  ['Lourenço Marques', 32.58, -25.97, 'fig', 'e'],
+  ['Johannesburg', 28.05, -26.20, 'both', 'w'],
+];
+const colour = { leib: 'var(--disp)', luw: 'var(--inf)', fig: 'var(--doc)', end: 'var(--accent)', both: 'var(--ink)' };
+// Europe panel
+const EW = 1000, EH = 460;
+const ex = l => ((l + 12) / 36) * EW;
+const ey = l => ((56.5 - l) / 19) * EH;
+// World panel
+const WW = 1000, WH = 520;
+const wx = l => ((l + 20) / 62) * WW;
+const wy = l => ((60 - l) / 92) * WH;
+---
+<Base title="Atlas"
+  subtitle="Every place this archive can put a date to"
+  lede="It runs from a Pomeranian market town to the Indian Ocean and back to the Atlantic, and the shape of it is the twentieth century.">
+
+  <h2>Europe</h2>
+  <div class="scroll">
+    <svg viewBox={`0 0 ${EW} ${EH}`} width="100%" role="img" aria-label="The European places"
+         style="min-width:54rem;background:var(--panel);display:block">
+      <path d={`M${ex(17.74)},${ey(53.00)} L${ex(13.40)},${ey(52.52)}`} stroke="var(--disp)" stroke-width="2.5" opacity=".6" fill="none" />
+      <path d={`M${ex(20.48)},${ey(53.78)} L${ex(13.40)},${ey(52.52)}`} stroke="var(--inf)" stroke-width="2.5" opacity=".6" fill="none" />
+      <path d={`M${ex(13.40)},${ey(52.52)} L${ex(19.46)},${ey(51.76)} L${ex(18.72)},${ey(52.15)}`} stroke="var(--accent)" stroke-width="2" opacity=".85" fill="none" />
+      <path d={`M${ex(13.40)},${ey(52.52)} L${ex(19.20)},${ey(50.03)}`} stroke="var(--accent)" stroke-width="2" opacity=".85" fill="none" />
+      <path d={`M${ex(13.40)},${ey(52.52)} L${ex(14.15)},${ey(50.51)} L${ex(19.20)},${ey(50.03)}`} stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="5 4" opacity=".7" fill="none" />
+      {places.map(([n, lo, la, , k, side]) => (
+        <circle cx={ex(lo)} cy={ey(la)} r={k === 'end' ? 7 : 5.5} fill={colour[k]} stroke="var(--panel)" stroke-width="2" />
+      ))}
+      {places.map(([n, lo, la, , k, side]) => (
+        <text x={ex(lo) + (side === 'w' ? -11 : 11)} y={ey(la) + 4}
+              text-anchor={side === 'w' ? 'end' : 'start'} font-size="13" fill="var(--ink-soft)"
+              font-family="ui-sans-serif, system-ui, sans-serif">{n}</text>
+      ))}
+    </svg>
+  </div>
+  <p class="small muted">
+    Red lines are the deportations. The dashed one is Oskar, who went to Theresienstadt first and
+    reached Auschwitz nineteen months later.
+  </p>
+
+  <h2>And the two long journeys</h2>
+  <div class="scroll">
+    <svg viewBox={`0 0 ${WW} ${WH}`} width="100%" role="img" aria-label="Berlin to Johannesburg, Lourenço Marques to Johannesburg to Porto"
+         style="min-width:44rem;background:var(--panel);display:block">
+      <path d={`M${wx(13.40)},${wy(52.52)} L${wx(28.05)},${wy(-26.20)}`} stroke="var(--ink-faint)" stroke-width="2.5" stroke-dasharray="8 6" fill="none" />
+      <path d={`M${wx(32.58)},${wy(-25.97)} L${wx(28.05)},${wy(-26.20)}`} stroke="var(--doc)" stroke-width="3" fill="none" />
+      <path d={`M${wx(28.05)},${wy(-26.20)} L${wx(-8.61)},${wy(41.15)}`} stroke="var(--doc)" stroke-width="2" stroke-dasharray="5 5" fill="none" opacity=".75" />
+      {world.map(([n, lo, la, k, side]) => (
+        <circle cx={wx(lo)} cy={wy(la)} r="7" fill={colour[k]} stroke="var(--panel)" stroke-width="2" />
+      ))}
+      {world.map(([n, lo, la, k, side]) => (
+        <text x={wx(lo) + (side === 'w' ? -12 : 12)} y={wy(la) + 4}
+              text-anchor={side === 'w' ? 'end' : 'start'} font-size="14" fill="var(--ink-soft)"
+              font-family="ui-sans-serif, system-ui, sans-serif">{n}</text>
+      ))}
+      <text x={wx(13.4) + 120} y={wy(20)} font-size="13" fill="var(--ink-faint)" font-family="ui-sans-serif, system-ui, sans-serif">Kurt, 1933</text>
+      <text x={wx(32.58) - 6} y={wy(-25.97) + 26} font-size="13" fill="var(--doc)" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif">Ivone — 400 miles of railway</text>
+    </svg>
+  </div>
+  <p class="small muted">
+    A plain equirectangular frame: longitude and latitude are true, nothing else about it is meant
+    to be. The dashed line south is 1933. The dashed line north is Ivone, at the end.
+  </p>
+
+  <h2>The places, with what happened at them</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Place</th><th>What happened</th></tr></thead>
+    <tbody>
+      {places.map(([n, , , what, k]) => (
+        <tr><td><strong style={`color:${colour[k]}`}>{n}</strong></td><td class="small">{what}</td></tr>
+      ))}
+      <tr><td><strong style={`color:${colour.fig}`}>Lourenço Marques (Maputo)</strong></td><td class="small">Ivone Mota Figueiredo born 4 March 1924. Henrique born 1941</td></tr>
+      <tr><td><strong style={`color:${colour.both}`}>Johannesburg</strong></td><td class="small">Kurt from 1933. Married 1948. Derrick born 1949. Kurt buried 1968 — Westpark, block L, grave 211</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>What the shape of it says</h2>
+  <p>
+    Two families that began four hundred kilometres apart — Jewish at Szubin, Catholic at Allenstein
+    — converge on <strong>one city</strong>, and inside Berlin on <strong>four streets</strong>. Then
+    the line breaks in two directions at once. One son goes eight thousand kilometres south in 1933
+    and lives. His father, his uncles and his aunt go three hundred kilometres east between 1941 and
+    1944, and do not.
+  </p>
+  <p>
+    The other half of the map has nothing to do with any of it.
+    <strong>Lourenço Marques to Johannesburg</strong> is a railway line and four hundred miles; it is
+    how Ivone arrived, and it is the only reason these two halves are on one page. She ended at
+    <strong>Porto</strong>, which nobody else in this archive ever saw.
+  </p>
+</Base>
