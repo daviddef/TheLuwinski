@@ -287,10 +287,10 @@
     {
       "n": 36,
       "what": "Estate-notice sweep: Martha Maud Wear 1986, and every Wear estate 1965-1990",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Henry Robert Wear's estate is MHG 10245/69 and is already on the Pretoria request. His widow died in Johannesburg on 16 March 1986 and her estate has never been looked for. A widow's estate notice gives an estate number and an identity number, and her liquidation account would name the heirs — which is to say HER CHILDREN, which is to say whether Leonard was still alive in 1986 and whether he is named. That last point cuts directly at rows 10: if the 1986 account names Leonard as predeceased, it dates his death."
+      "note": "DONE 15 September by driving NAAIRS itself rather than a mirror of it. THE SWEEP FOUND NO WEAR ESTATE IN THE TRANSVAAL BETWEEN 1970 AND 1976; the last is the father's, MHG 10245/69, remarks SURVIVING SPOUSE MARTHA MAUD WEAR. Martha Maud's own 1986 estate is NOT absent — it is out of range, because the deceased-estate index runs to the end of 1976 and stops (2,246 estate records in 1976, one in 1977, zero after). That has to be got from the Master's office direct, which is row 2's correspondence. The measurement is the real result: it makes Leonard's two published death years asymmetric for the first time — 1973 is INSIDE the index and he is not in it; 1979 is three years past its last year and cannot be tested at all. Published on /leonard/ with the limits stated."
     },
     {
       "n": 37,
@@ -303,10 +303,10 @@
     {
       "n": 38,
       "what": "Kurt's naturalisation, and a plain answer about whether such lists exist at all",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Carried over from the old next-fifteen list, item 11, never done. Kurt was a German national, so unlike Leonard he genuinely would have had to naturalise. PARTLY TESTED ALREADY, 15 September, and the early result is discouraging: the Gazette full text returns no naturalisation list naming any individual of interest, and the phrase searches that should find such lists return nothing. Finish the test properly and then either find the lists or write down, once and for all, that this corpus does not hold them — so that no future session spends an evening on it again."
+      "note": "DONE 15 September, both halves, and the plain answer is YES THE LISTS EXIST AND NO KURT IS NOT IN THEM. The Government Gazette publishes naturalisation in two series — intention-to-apply notices under section 10 of the South African Citizenship Act 1949, and lists of certificates actually issued; 246 gazettes carry the heading and both were read in full for 1975 and 1976 while working row 58. A full-text search of every South African gazette returns LUWINSKI exactly eight times and this archive had already read all eight — six Piccadilly Hat Company partnership notices, the 1972 Paula application and the 1975 Pallou's Dress Centre notice. NONE IS A NATURALISATION NOTICE. Luwinski is a rare surname and the same search demonstrably finds him, so unlike the WEAR null this one is worth something. NAAIRS cannot help: a search of the central-government database for NATURALIZATION returns 342 documents and every one is a POLICY FILE OR A BILL — the 1926 Act, its 1927 amendment, South West Africa bills. Individual naturalisation files are not indexed at item level anywhere this archive can reach, so the remaining route is a letter, which is row 61."
     },
     {
       "n": 39,
@@ -482,7 +482,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "NEW and deliberately small. Row 4 of burial folio W 56 carries two lines in its Remarks column: \"P. Fol. W.8.\", which is the private-graves cross-reference and is certainly Wear's, and above it, in a smaller darker hand, \"Transf. P.Fol. F 3/8.\" — a transfer of private rights to or from folio F 3/8. The ruling below both lines puts them in row 4's cell, but the page curves across two thousand pixels and the upper line may belong to row 3. THE ARCHIVE IS NOT CLAIMING IT. If it does belong to Wear then the grave rights in 56045 were transferred, and whoever they were transferred to is a name this archive does not have — which is the question row 57 asked and could not answer from the books it opened. Resolving it means finding the F-series folio in the same film and reading what grave it covers. One image, no fee."
+      "note": "NEW and deliberately small. Row 4 of burial folio W 56 carries two lines in its Remarks column: \"P. Fol. W.8.\", which is the private-graves cross-reference and is certainly Wear's, and above it, in a smaller darker hand, \"Transf. P.Fol. F 3/8.\" — a transfer of private rights to or from folio F 3/8. The ruling below both lines puts them in row 4's cell, but the page curves across two thousand pixels and the upper line may belong to row 3. THE ARCHIVE IS NOT CLAIMING IT. If it does belong to Wear then the grave rights in 56045 were transferred, and whoever they were transferred to is a name this archive does not have — which is the question row 57 asked and could not answer from the books it opened. Resolving it means finding the F-series folio in the same film and reading what grave it covers. One image, no fee. 15 September, partly answered without opening the F folio: the Private Graves Register HAS an \"Authority to Purchase — Next of Kin\" column and IT IS BLANK, for Wear and for six consecutive neighbouring rows (receipts 10997, 10999, 11009, 11475, 11484, 11517). The clerk on folio W 8 never used that column. So even had the 1986 reopening been recorded, the register's relationship field was not being filled in. The F 3/8 folio is still worth one image, but it is now the only thing this book can still give."
     },
     {
       "n": 61,
@@ -499,6 +499,22 @@
       "owner": "this archive",
       "since": "2026-09-15",
       "note": "NEW and small, but it is a free correction to the archive's own sibling table, which carries her as EVANS only. The 1975 gazette gives her as \"formerly Bailey, nee Wear\". So between the 1939 Register at Letchworth and 1975 she married a Bailey and then an Evans. A Bailey marriage is a dated document naming her father — if it was solemnised in England before she emigrated, the GRO marriage index will have it with the spouse's surname, and an English certificate DOES name fathers where the South African one does not. Order of work: GRO marriage index, WEAR, Janette E M, 1937 onwards, England and Wales. Cheap to search, about twelve pounds to buy if found, and David's call whether to buy."
+    },
+    {
+      "n": 63,
+      "what": "WLD 978/1960 — who was Mawthane Dabeah Kwele, and why was he suing Leonard",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "NEW, and it is a fifth court file and a year the archive did not have. TAB, WLD 978/1960: ILLIQUID CASE, PAYMENT, MAWTHANE DABEAH KWELE VERSUS L A R WEAR. Leonard was in Johannesburg in 1960 and somebody sued him for money. The plaintiff's name is African, and a Black plaintiff bringing a payment action against a white defendant in the Witwatersrand Local Division in 1960 implies a working or trading relationship rather than a casual one — which would make this the only surviving trace of what Leonard actually DID for a living between the 1951 register's ENGINEER and the 1969 grave. The archive is not guessing further; the file would say. Add to the held researcher brief alongside the ante-nuptial contracts, since it is the same reading room."
+    },
+    {
+      "n": 64,
+      "what": "WLD 2961/1962 — the co-respondent named one number after the divorce",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "NEW. WLD 2960/1962 is Marjorie Eileen Wear divorcing Leonard; WLD 2961/1962, filed one number later, is the same plaintiff suing ANOTHER WOMAN for DAMAGES. Same plaintiff, consecutive numbers, same year: in the practice of the period that is an action against the co-respondent, and it means the second marriage ended over somebody the archive has never heard of. HER NAME IS IN THE INDEX AND DELIBERATELY NOT ON THE SITE — she would be in her eighties or nineties if living, there is no death record for her, and the claim is an imputation of adultery drawn from two case numbers rather than from the file. Held in the private notes. What would settle it is the file itself, and it matters beyond gossip: a woman Leonard was involved with in 1962 is the likeliest person to have been near him in 1969, and 1969 is where he disappears."
     }
   ]
 }
