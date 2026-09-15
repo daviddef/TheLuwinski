@@ -1,6 +1,6 @@
 # Request 17 — Immaculate Conception, Rosebank: the marriage register of 7 September 1940
 
-**Status: DRAFTED 15 September 2026. NOT SENT.**
+**Status: SENT 15 September 2026.** Gmail thread `1a0a3b72c965ecf1`. MX re-verified on the day immediately before sending.
 
 ## Why this is the best letter on the list
 

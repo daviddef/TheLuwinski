@@ -1,6 +1,6 @@
 # Request 16 — SANDF Documentation Centre: Leonard Aubrey Robert Wear, UDF, 1940
 
-**Status: DRAFTED 15 September 2026. NOT SENT.**
+**Status: SENT 15 September 2026.** Gmail thread `1a0a3b70c6389154`. MX re-verified on the day immediately before sending.
 
 ## Before sending — three things established first
 
