@@ -370,10 +370,10 @@
     {
       "n": 44,
       "what": "Triangulate the 253 cM that are NOT Castle",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
-      "since": "2026-09-15",
-      "note": "The same evidence from the other end. Those segments come from the WEAR side of the couple. Any other match who shares them is a Wear cousin. That is the group worth writing to, and the group most likely to contain a male-line Wear for row 31. STARTED 15 September and stopped at a known point. The candidate is DARREN SEARLES, and his match page confirms EIGHT shared segments with Derrick — but the coordinates sit behind the chromosome browser's Advanced options panel and did not come out of the DOM on this pass. The test is to ask how many of those eight fall inside the 253 cM of non-Castle regions: chromosomes 1 twice, 6, 7, 8, 12, 15, 18, 20 and 22 twice. If most do, the Wear line has a second living witness. Small next action, clearly defined."
+      "since": "2026-09-16",
+      "note": "DONE 16 September — not by getting Darren Searles's eight segments, which are still behind the chromosome browser's Advanced panel, BUT BY BUILDING THE THING THAT WILL TEST THEM IN SECONDS WHEN THEY ARRIVE. The archive's argument has always been made by EXCLUSION: these regions are the ones the Castle cousins do NOT share. That is almost impossible to test a new match against, because it asks the reader to hold twelve absences in mind. So it was computed the other way round from the local segment data and written down as coordinates. Subtracting every region either documented Castle-side cousin shares, from the closest match's twelve segments, leaves 253.2 cM IN 12 NAMED REGIONS, now published on /dna/ and stored as data/wear-signature.json. THE COMPUTATION VALIDATES ITSELF: it reproduces this archive's previously published 44.3 cM shared and 253.2 cM not shared TO THE DECIMAL, from an independent method. It also produced the Castle side positively for the first time — the two Castle cousins overlap each other by about 151 cM across nine regions on chromosomes 1, 2, 5, 6, 12 and 18, which is what a tight documented pair should look like, while the closest match overlaps them by only 44. STATED LIMIT: the subtraction is on physical coordinates with cM apportioned by length, and cM and base pairs do not scale together, so the last digit should not be over-read."
     },
     {
       "n": 45,

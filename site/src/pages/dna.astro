@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import seg from '../data/segments.json';
+import wearsig from '../data/wear-signature.json';
 const CHR = [249250621,243199373,198022430,191154276,180915260,171115067,159138663,146364022,141213431,135534747,135006516,133851895,115169878,107349540,102531392,90354753,81195210,78077248,59128983,63025520,48129895,51304566];
 const MAXCHR = CHR[0];
 const merge = (iv) => { const s=[...iv].sort((a,b)=>a[0]-b[0]); const m=[]; for (const [lo,hi] of s) { if (m.length && lo <= m[m.length-1][1]) m[m.length-1][1] = Math.max(m[m.length-1][1], hi); else m.push([lo,hi]); } return m; };
@@ -880,6 +881,35 @@ const matches = [
       And it kills the alternative outright. Under the other reading, Derrick&rsquo;s relationship to
       the closest match would be <em>the same</em> relationship the 292.7 cM match has to her. Hers
       reads <strong>82.1 cM</strong>. His reads <strong>297.5</strong>.
+    </p>
+  </div>
+
+  <div class="panel" id="signature">
+    <h3>The Wear signature, as coordinates <span class="tag doc">16 September</span></h3>
+    <p>
+      The argument above has always been made by <em>exclusion</em> &mdash; these regions are the ones
+      the Castle cousins do <strong>not</strong> share. That is hard to test a new match against,
+      because it asks a reader to hold twelve absences in mind.
+    </p>
+    <p>
+      So it has been computed the other way round and written down. Subtracting every region either
+      documented Castle-side cousin shares from the closest match&rsquo;s twelve segments leaves
+      <strong>{wearsig.total_cm} cM in {wearsig.regions.length} regions</strong>. These are the
+      coordinates. <strong>Any further match who shares these is a candidate for the paternal side</strong>,
+      and can be tested in seconds rather than argued about.
+    </p>
+    <div class="scroll"><table class="small">
+      <thead><tr><th>Chr</th><th>Start</th><th>End</th><th>cM</th></tr></thead>
+      <tbody>{wearsig.regions.map((r) => (
+        <tr><td>{r[0]}</td><td>{r[1].toLocaleString()}</td><td>{r[2].toLocaleString()}</td><td>{r[3]}</td></tr>
+      ))}</tbody>
+    </table></div>
+    <p class="small muted">
+      GRCh37/hg19, as MyHeritage reports positions. The subtraction is done on physical coordinates
+      and the cM of each remainder is apportioned by length, which is an approximation &mdash; cM and
+      base pairs do not scale together. It reproduces this archive&rsquo;s previously published
+      figures of <strong>44.3 cM shared</strong> and <strong>253.2 cM not shared</strong> to the
+      decimal, which is the reason to trust it and also the reason not to over-read the last digit.
     </p>
   </div>
 
