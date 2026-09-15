@@ -10,7 +10,7 @@ const names = [
   ['Ivone, formerly de Witt, born Figueiredo', 'The Supreme Court of the Transvaal, 1951'],
 ];
 const marriages = [
-  ['before 1941', 'A da Rocha', 'Name not recorded', 'Son Henrique, born 11 March 1941'],
+  ['before 1941 — DID NOT HAPPEN', 'A da Rocha', 'In the family tree only. She was entered a SPINSTER in February 1948', 'Son Henrique, born 11 March 1941, to an unmarried mother of sixteen'],
   ['2 Feb 1948', 'Johannes Antonie Oelofse de Witt', 'b. Dec 1923 Johannesburg; d. Sasolburg', 'Germiston'],
   ['19 Jun 1948', 'Kurt Israel Luwinski', 'b. 1912 Berlin; d. 1969 Johannesburg', 'Johannesburg, cert. 858'],
   ['13 Feb 1953', 'Morris Isaac Salkow', 'b. 12 Oct 1921 Pretoria; d. 9 Nov 1991 Johannesburg, buried West Park', ''],
@@ -121,7 +121,7 @@ const marriages = [
     </p>
   </div>
 
-  <h2>Four marriages</h2>
+  <h2>Three marriages, and a fourth that never took place</h2>
   <div class="scroll"><table>
     <thead><tr><th>Date</th><th>Husband</th><th>Him</th><th>Where</th></tr></thead>
     <tbody>{marriages.map(([d, h, w, p]) => (<tr><td>{d}</td><td><strong>{h}</strong></td><td>{w}</td><td>{p}</td></tr>))}</tbody>
