@@ -3,6 +3,25 @@
   "dek": "What is being done here, as opposed to what is known.",
   "lead": "This archive already had five registers for what it knows — the open questions, the research log, the sources, the method, and the corrections folded into each page. It had none for what it is doing. That lived in a chat window, which is the one place that does not survive the session, and on 15 September it cost a letter sent to a woman who had been thanked fourteen hours earlier. This is the register that answers who has to move next.",
   "close": "Everything here owned by David is a decision or a payment. Everything owned by this archive is work that can start without asking anybody. Everything blocked is waiting on a filing cabinet in South Africa, Portugal, Poland or Germany — or on one of five living people who were written to about a finding that concerns them.",
+  "accounts": [
+    {
+      "prefix": "letter",
+      "noun": "letters sent and unanswered",
+      "file": "site/src/data/letters.json",
+      "rows": "rows",
+      "key": "thread",
+      "label": "what"
+    },
+    {
+      "prefix": "request",
+      "noun": "letters drafted",
+      "dir": "requests",
+      "ignore": [
+        "README.md"
+      ]
+    }
+  ],
+  "unreconciled": 33,
   "rows": [
     {
       "n": 1,
