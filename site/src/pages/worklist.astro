@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import WorkList from '@daviddef/archive-kit/components/WorkList.astro';
+import { u } from '../lib/url.js';
+import work from '../data/worklist.json';
+const open = work.rows.filter(r => !['done', 'struck'].includes(r.state)).length;
+const mine = work.rows.filter(r => r.owner === 'this archive'
+  && !['done', 'struck'].includes(r.state)).length;
+---
+<Base title={work.title}
+  subtitle={`${work.dek} — ${open} open, ${mine} of them on this archive`}
+  lede={work.lead}>
+  <WorkList work={work} u={u} />
+  {work.close && <p class="small">{work.close}</p>}
+</Base>

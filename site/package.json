@@ -5,11 +5,13 @@
   "private": true,
   "scripts": {
     "dev": "astro dev --port 4331",
-    "build": "astro build && python3 ../tools/build-search.py && npm run check:living",
+    "build": "astro build && python3 ../tools/build-search.py && npm run check:living && npm run check:worklist",
     "preview": "astro preview --port 4331",
-    "check:living": "python3 ../tools/check-living.py --dist dist"
+    "check:living": "python3 ../tools/check-living.py --dist dist",
+    "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root ."
   },
   "dependencies": {
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#60aad580fdde1a26e2f7780e36bcbf11b931b020",
     "astro": "^5.18.2"
   }
 }
