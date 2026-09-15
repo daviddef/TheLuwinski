@@ -343,10 +343,10 @@
     {
       "n": 43,
       "what": "Sort every match in the cluster into Wear side, Castle side, or neither",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The decisive step of this entire investigation was a segment argument — 297.5 cM shared, of which only about 44 overlap any Castle cousin, so there must be two common ancestors and therefore a married couple. That argument was made once, for one match. It has never been run across the whole cluster. Doing it systematically would sort the matches into those who descend from Henry Robert Wear and those who descend from Martha Maud Castle — and the first group are Derrick's father's blood relatives in a way the second group are not."
+      "note": "DONE 15 September, by ratio rather than by segments, and the limits are published with it. For each shared match, cM-with-Derrick divided by cM-with-Penelope-Browne measures how much of that person's relationship to Derrick is left unexplained by the documented Castle line. All ten shared matches ranked. CATHERINE HALSEY 3.62, DARREN SEARLES 3.32, Jamie Morris 1.96, Josh Barnett 0.97, then the Browne core at 0.10 to 0.42. Searles is in neither of the tables the archive built on 14 September: 96.0 cM with Derrick and only 28.9 with the Castle descendant. On the reasoning that found the Wear line, that is what a Wear-side cousin looks like. Caveats stated on the page: the ratio conflates 'not on Browne's line' with 'distant from Browne', and the denominator is inflated at the bottom because those five are Browne's own first cousins. The bottom of the table is nearly meaningless; the top is not."
     },
     {
       "n": 44,
@@ -354,7 +354,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The same evidence from the other end. Those segments come from the WEAR side of the couple. Any other match who shares them is a Wear cousin. That is the group worth writing to, and the group most likely to contain a male-line Wear for row 31."
+      "note": "The same evidence from the other end. Those segments come from the WEAR side of the couple. Any other match who shares them is a Wear cousin. That is the group worth writing to, and the group most likely to contain a male-line Wear for row 31. STARTED 15 September and stopped at a known point. The candidate is DARREN SEARLES, and his match page confirms EIGHT shared segments with Derrick — but the coordinates sit behind the chromosome browser's Advanced options panel and did not come out of the DOM on this pass. The test is to ask how many of those eight fall inside the 253 cM of non-Castle regions: chromosomes 1 twice, 6, 7, 8, 12, 15, 18, 20 and 22 twice. If most do, the Wear line has a second living witness. Small next action, clearly defined."
     },
     {
       "n": 45,
