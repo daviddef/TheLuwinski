@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-// ─── The eleven letters, and what has come back ───────────────────────────────
+// ─── Every letter and message, and what has come back ─────────────────────────
 const letters = [
   ['14 Sep', 'Arquivo da Defesa Nacional', 'Paço d’Arcos', 'Henrique’s 1961 military registration', 'Delivered'],
   ['14 Sep', 'Arquivo Histórico Militar', 'Lisboa', 'Same request, after the bounce', 'Acknowledged'],
@@ -15,6 +15,10 @@ const letters = [
   ['15 Sep', 'Archiwum Państwowe', 'Bydgoszcz', 'Standesamt Schubin 1884 — Jacob’s birth', 'Acknowledged'],
   ['15 Sep', 'Archiwum Państwowe', 'Koszalin', 'Standesamt Hammerstein 1884 — Georg; and Sally, 1847', 'Delivered'],
   ['14 Sep', 'Arquivo Histórico Militar', '—', 'Sent to a dead domain', 'Bounced — resent'],
+  ['15 Sep 09:27', 'The 292.7 cM match', 'MyHeritage', 'Her own Castles in the Baldock censuses, and one question back: what became of the Castle sons', 'Sent'],
+  ['15 Sep 09:28', 'The 297.5 cM match', 'MyHeritage', 'A correction — the link is her grandmother, not her grandfather', 'Sent'],
+  ['15 Sep 12:01', 'The keeper of the Nel Web Site', 'MyHeritage', 'Leonard’s English family, and the finding. The first cold letter of the project', 'Sent'],
+  ['Drafted', 'Master of the High Court', 'Cape Town', 'J294 in estates 10761/2024 and 018561/2021 — the two Wear daughters who died in the Cape', 'Not sent'],
 ];
 
 // ─── The fifteen, with live state ─────────────────────────────────────────────
@@ -32,7 +36,7 @@ const items = [
   [5,  'Henrique’s 1968 marriage record', S.blocked, 'Searched on both groom and bride. Not in FamilySearch — the South African marriage collections thin out after the mid-1960s. May simply arrive inside the estate file at item 1.'],
   [6,  'The June 1948 ante-nuptial contract', S.blocked, 'A South African deeds registry “may not give out information acting on a letter or a telephone call.” Needs attendance in person or a paid commercial search.'],
   [7,  'The February 1956 ante-nuptial contract', S.blocked, 'Same office, same obstacle.'],
-  [8,  'Write to the closest British match', S.ack, 'SENT 15 September. ANSWERED BY DOCUMENT THE SAME DAY, and not in the way the letter expected: the 1952 register\'s birthplace column shows Mervin Halsey was born in the Cape Province and Cynthia Wear in England. The link is the grandmother, not the grandfather. Her GRO birth entry gives her mother\'s maiden name as CASTLE, and the censuses put that Castle family at Baldock, Hertfordshire. The question the letter asked — who were Mervin Halsey\'s parents — no longer matters.'],
+  [8,  'Write to the closest British match', S.ack, 'SENT 15 September, then CORRECTED an hour later. The 1952 register\'s birthplace column shows Mervin Halsey was born in the Cape Province and Cynthia Wear in England, so the link is the grandmother. A second message told her so. And the question the first letter asked has since answered itself anyway: the verified South African death records give HENRY GEORGE CHARLES HALSEY, 1906-1993, and MARY ELLEN HALSEY, 1907-1981 — the right ages to be Mervin\'s parents. Untested, and no longer on the critical path.'],
   [9,  'Write to the keeper of the 10,715-person tree', S.ack, 'SENT 15 September as a follow-up inside the June 2025 thread — and again at 09:27 the same day, this time carrying a finding rather than a question: her own Castle family in the Baldock censuses, two children her tree is missing, and the correction that Caroline was born a Walls. The question back is narrow — what became of the Castle sons, and did any of them go to South Africa.'],
   [10, 'Big Y-700 on Derrick’s kit', S.you, 'A purchase. This archive does not spend other people’s money.'],
   [11, 'Kurt’s naturalisation', S.blocked, 'Done as far as it can be. The Union gazette did publish naturalisation applications — his partner made one in February 1942 — and Kurt appears in none of them under any spelling the OCR catches. Recorded as a negative with its limits.'],
@@ -49,7 +53,7 @@ const count = (k) => items.filter(i => i[2][0] === k).length;
   lede="This page exists because the answer to “are you keeping track of all this?” was honestly: in four places, and the published one was already stale. This is the one that is not.">
 
   <div class="cards">
-    <div class="card stat"><b>{letters.length - 1}</b><span>Delivered</span></div>
+    <div class="card stat"><b>{letters.filter(l => l[4] !== 'Not sent').length}</b><span>Out the door</span></div>
     <div class="card stat"><b>{letters.filter(l => l[4] === 'Acknowledged').length}</b><span>Acknowledged</span></div>
     <div class="card stat"><b>{count('sent') + count('ack')}</b><span>In flight</span></div>
     <div class="card stat"><b>{count('you')}</b><span>Waiting on you</span></div>
@@ -185,7 +189,7 @@ const count = (k) => items.filter(i => i[2][0] === k).length;
           <td><strong>{who}</strong></td>
           <td class="small">{where}</td>
           <td class="small">{what}</td>
-          <td><span class={'tag ' + (state === 'Acknowledged' ? 'doc' : state.startsWith('Bounced') ? 'disp' : 'inf')}>{state}</span></td>
+          <td><span class={'tag ' + (state === 'Acknowledged' ? 'doc' : state.startsWith('Bounced') ? 'disp' : state === 'Not sent' ? 'open' : 'inf')}>{state}</span></td>
         </tr>
       ))}
     </tbody>
@@ -277,7 +281,8 @@ const count = (k) => items.filter(i => i[2][0] === k).length;
     </p>
     <ul>
       <li><strong>Reply to the match who offered his whole tree</strong> in June 2025 and was never answered. He is on Ancestry, not MyHeritage, which is why his tree here holds three people. Fifteen months late, but the offer may stand.</li>
-      <li><strong>The remaining letter to a living DNA match.</strong> Written, and sitting still. Everything else went to an institution; these go to two private people, about a finding that touches their family as much as this one. And <strong>Derrick should probably be told before a stranger is</strong> — which is not this archive’s call to make.</li>
+      <li><strong>All four letters to living matches have now gone</strong>, the last of them a cold approach to a stranger about her own father. The concern that <strong>Derrick should be told before a stranger is</strong> was raised twice and overruled twice; that is the family’s call and the file says so.</li>
+      <li><strong>Request 11, drafted and not sent</strong> — the Master at Cape Town, for the two death notices that would confirm Leonard from a government record.</li>
       <li><strong>Big Y-700.</strong> A purchase, and the one test that would place Derrick on a branch young enough for a surname to mean something.</li>
       <li><strong>The two ante-nuptial contracts</strong>, if you want them. They need somebody in a South African deeds office, or a paid search.</li>
     </ul>
