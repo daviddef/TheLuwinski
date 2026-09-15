@@ -9,23 +9,70 @@ const c = register.counts;
 const T0 = 1860, T1 = 2030;
 const pc = (y) => ((y - T0) / (T1 - T0)) * 100;
 const lives = [
-  // lane, name, born, died (0 = not found), last year actually documented, where, events
-  ['a', 'Sally Leibholz & Friederike Schmul', 1847, 0, 1884, 'Hammerstein · married Szubin 1874', [[1874,'m']]],
-  ['a', 'Jacob Leibholz', 1884, 1943, 1943, 'Schubin → Berlin → Auschwitz', [[1924,'m'],[1943,'x']]],
-  ['a', 'Auguste “Lizzy” Luwinski', 1893, 1975, 1975, 'Sauerbaum → Berlin → Kraichtal', [[1924,'m']]],
-  ['a', 'Kurt Israel Luwinski', 1912, 1968, 1968, 'Berlin → Johannesburg, 1933', [[1933,'e'],[1948,'m'],[1948,'d'],[1951,'d'],[1956,'m']]],
-  ['b', 'George Castle', 1863, 0, 1911, 'Baldock — farm, then the brewery. Last seen on the 1911 census', [[1883,'m']]],
-  ['b', 'Caroline Wallis', 1863, 1957, 1957, 'Weston, Hertfordshire', [[1883,'m']]],
-  ['b', 'Henry Robert Wear', 1889, 1969, 1969, 'Bermondsey → Letchworth → Johannesburg', [[1914,'m'],[1969,'x']]],
-  ['b', 'Martha Maud Castle', 1895, 1986, 1986, 'Baldock → Letchworth → Johannesburg', [[1914,'m']]],
-  ['b', 'Leonard Aubrey Robert Wear', 1917, 1973, 1979, 'Hitchin → Johannesburg by 1940. Died 1973 or 1979 — two sources disagree', [[1940,'m'],[1948,'?'],[1951,'d'],[1951,'m'],[1962,'d']]],
-  ['b', 'Cynthia Yvonne Elizabeth Wear', 1931, 2000, 2000, 'Hitchin → Johannesburg', [[1952,'m']]],
-  ['b', 'Bruce Wallace Wear', 1936, 0, 1980, 'Hitchin → Kuruman, Cape. Four marriages, three divorces', [[1959,'m'],[1963,'d'],[1971,'d'],[1977,'d'],[1980,'m']]],
-  ['b', 'Gillian Agnes Louisa Wear', 1941, 2024, 2024, 'Johannesburg → Hermanus', [[1969,'m']]],
-  ['s', 'Ivone Mota Figueiredo', 1924, 0, 1953, 'Lourenço Marques → Johannesburg → Porto. Buried at Porto, date not found', [[1948,'m'],[1948,'m'],[1953,'m']]],
-  ['s', 'Henrique Figueiredo Pinto da Rocha', 1941, 2022, 2022, 'Born to an unmarried mother of sixteen', [[1968,'m']]],
+  // lane, name, born, died (0 = not found), last documented year, where, events [year, kind, title, detail]
+  ['a', 'Sally Leibholz & Friederike Schmul', 1847, 0, 1884, 'Hammerstein · married Szubin 1874', [
+    [1874,'m','Married at Szubin','Standesamt Szubin, 1874. A Jewish family of the Posen–West Prussia borderland. Their son Jacob was born at Schubin ten years later.'],
+  ]],
+  ['a', 'Jacob Leibholz', 1884, 1943, 1943, 'Schubin → Berlin → Auschwitz', [
+    [1924,'m','Married Auguste Luwinski','5 January 1924, Berlin — twelve years after their son Kurt was born. Kurt stayed a Luwinski; the son born after the marriage, Siegfried, was registered a Leibholz.'],
+    [1943,'x','Deported to Auschwitz','26 February 1943, from Berlin. German Federal Archives Memorial Book. His brothers Samuel and Oskar died there too, and Georg at Chełmno. None of the four came back.'],
+  ]],
+  ['a', 'Auguste “Lizzy” Luwinski', 1893, 1975, 1975, 'Sauerbaum → Berlin → Kraichtal', [
+    [1924,'m','Married Jacob Leibholz','5 January 1924, Berlin. A Mischehe: she was Catholic, from an East Prussian farming family, and she survived the war in Berlin.'],
+  ]],
+  ['a', 'Kurt Israel Luwinski', 1912, 1968, 1968, 'Berlin → Johannesburg, 1933', [
+    [1933,'e','Left Germany','Aged 21. By 1 November 1941 he had bought the Piccadilly Hat Company at 81 Eloff Street, Johannesburg, from the widow Ivy Fuchs, with Walter Oppenheimer.'],
+    [1948,'m','Married Ivone','19 June 1948, Johannesburg, certificate 858, by special licence taken out ten days before. He 36 and a bachelor; she 24 and entered DIVORCED. Both at 108 Dunstan Street, Braamfontein.'],
+    [1948,'d','Filed against her the same year','WLD 1950/1948 — Illiquid case, divorce, Kurt Luwinsky versus Ivone (born Mota Figueiredo). Within months of the wedding, and before the child was born.'],
+    [1951,'d','Began again, and finished it','WLD 497/1951, restitution of conjugal rights — the step South African law required before a divorce for desertion — then WLD 2368/1951, the divorce itself.'],
+    [1956,'m','Married Pauline Rappoport','Entry 169 of 1956. His status on the register is DIVORCEE with the order filed. The parents’ columns, which this form has and the 1948 form did not, are ruled through and empty.'],
+  ]],
+  ['b', 'George Castle', 1863, 1917, 1917, 'Baldock — farm, then the brewery', [
+    [1883,'m','Married Caroline Wallis','1883. By the 1911 census they had been married 28 years, and her widowed father Joseph Wallis, 84, was living with them at St Mary’s Cottages, Baldock.'],
+    [1917,'x','Died at Hitchin','Q3 1917, registered Hitchin, Hertfordshire, aged 54 — which confirms to the quarter what his great-granddaughter’s family tree had recorded only as “1917”.'],
+  ]],
+  ['b', 'Caroline Wallis', 1863, 1957, 1957, 'Weston, Hertfordshire', [
+    [1883,'m','Married George Castle','1883. Seven children followed, five by 1901 and two more by 1911. She outlived him by forty years.'],
+  ]],
+  ['b', 'Henry Robert Wear', 1889, 1969, 1969, 'Bermondsey → Letchworth → Johannesburg', [
+    [1914,'m','Married Martha Maud Castle','Hitchin, last quarter of 1914, vol 3A p.1552 — the only Wear–Castle marriage in the entire England and Wales index. By 1921 they were at 72 Pix Road, Letchworth, and he was a machine minder at J. M. Dent & Sons.'],
+    [1969,'x','Died in Johannesburg','11 September 1969, aged 80. Buried at West Park Cemetery on the 13th. The Bermondsey printer’s machine minder is buried eight thousand miles from Letchworth.'],
+  ]],
+  ['b', 'Martha Maud Castle', 1895, 1986, 1986, 'Baldock → Letchworth → Johannesburg', [
+    [1914,'m','Married Henry Robert Wear','Hitchin, Q4 1914. Six children followed, all registered at Hitchin between 1917 and 1936 — and the birth index, searched on her maiden name, is what finally listed them.'],
+  ]],
+  ['b', 'Leonard Aubrey Robert Wear', 1917, 1973, 1979, 'Hitchin → Johannesburg by 1940. Died 1973 or 1979 — two sources disagree', [
+    [1940,'m','Married Phyllis Agnes Robertson','7 September 1940, Rosebank, Johannesburg, certificate 13. He was 23 and she was 25. Their daughter Gillian was born eleven months later.'],
+    [1948,'?','The year everything converges','He is thirty-one, in Johannesburg, and married to somebody else. The DNA says Derrick’s biological father was a son of Henry Robert Wear and Martha Maud Castle. There were two sons. The other was eleven.'],
+    [1951,'d','Divorced by Phyllis','WLD 2026/1951. Six years later he was back in court against her — WLD 790/1957, by then Wear versus Phyllis Agnes NORQUOY, she having remarried in 1952. Opposed applications of that kind are usually about children.'],
+    [1951,'m','Married again, that October','30 October 1951, Johannesburg. Marjorie Eileen Dunlop, born Walker.'],
+    [1962,'d','Divorced again','WLD 2960/1962 — Marjorie Eileen Wear (formerly Dunlop, born Walker) versus Leonard Aubrey Robert.'],
+  ]],
+  ['b', 'Cynthia Yvonne Elizabeth Wear', 1931, 2000, 2000, 'Hitchin → Johannesburg', [
+    [1952,'m','Married Mervin Richard Halsey','29 November 1952, St Martin’s-in-the-Veld, Johannesburg, certificate 51. She was 21 and born in ENGLAND; he was 22 and born in the CAPE PROVINCE. Two words in column four that redirected this entire archive. Her granddaughter is Derrick’s closest DNA match, at 297.5 cM. They divorced in 1978.'],
+  ]],
+  ['b', 'Bruce Wallace Wear', 1936, 0, 1980, 'Hitchin → Kuruman, Cape. Four marriages, three divorces. No death found', [
+    [1959,'m','Married Jillian Anne Thorp','21 November 1959, Van Zyl, Kuruman, Cape Province. The younger of the two Wear sons had crossed to South Africa too.'],
+    [1963,'d','Divorced','WLD 5268/1963 — Jillian Ann Wear (born Thorp) versus Bruce Wallace.'],
+    [1971,'d','Divorced','WLD 6870/1971 — Rita Jean Wear (born Willis) versus Bruce Wallace Wear.'],
+    [1977,'d','Divorced','WLD 489/77 — Bruce Wallace Wear versus Margaret Wear (formerly Gannon, born Crimes).'],
+    [1980,'m','Married Edwina Ann Green','1980. She was 35, he was 44. She died in 2014 still called Wear and with NO SURVIVING SPOUSE named on the estate notice — which is how this archive knows he was gone before her, and all it knows.'],
+  ]],
+  ['b', 'Gillian Agnes Louisa Wear', 1941, 2024, 2024, 'Johannesburg → Hermanus', [
+    [1969,'m','Married Willem Adrian Nel','1969. He predeceased her.'],
+    [2024,'x','Died at Hermanus','17 March 2024, at 14 Fynbos Park, Church Street. Estate 10761/2024, Master of the High Court, Cape Town; identity number 4108080012088; no surviving spouse; wound up by an attorney. She had built the seven-person family tree that is the only source anywhere giving her father a mother called Castle.'],
+  ]],
+  ['s', 'Ivone Mota Figueiredo', 1924, 0, 1953, 'Lourenço Marques → Johannesburg → Porto. Buried at Porto, date not found', [
+    [1948,'m','Married de Witt','2 February 1948, Germiston, register no. 34. She is aged 22, a dressmaker of 42 Joel Road, Berea — and entered a SPINSTER, which is what disproves the da Rocha marriage in the family tree.'],
+    [1948,'m','Married Kurt Luwinski','19 June 1948 — four months and seventeen days after the first, and this time entered DIVORCED. This archive still does not understand how that was done.'],
+    [1953,'m','Married Morris Isaac Salkow','13 February 1953. He died in Johannesburg in 1991 and is buried at West Park.'],
+  ]],
+  ['s', 'Henrique Figueiredo Pinto da Rocha', 1941, 2022, 2022, 'Born to an unmarried mother of sixteen', [
+    [1968,'m','Married','18 May 1968.'],
+    [2022,'x','Died in South Africa','27 October 2022. Estate 12294/2023, gazetted three times. Its death notice names his father — the man the family tree can only call “Unknown da Rocha”. That file has been on request since the beginning.'],
+  ]],
 ];
-const marks = { m:['m','Marriage'], d:['d','Divorce or action filed'], e:['e','Left the country'], x:['x','Deported, or died abroad'], '?':['q','The year everything converges on'] };
+const marks = { m:['m','Marriage'], d:['d','Divorce or action filed'], e:['e','Left the country'], x:['x','Deported, or died abroad'], '?':['q','The pivot'] };
 const decades = [];
 for (let y = 1860; y <= 2030; y += 20) decades.push(y);
 
@@ -307,20 +354,34 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
               <span class="tl-d open">?</span>
             </div>
           )}
-          {evs.map(([y, k]) => (
-            <div class={'tl-ev ' + (k === '?' ? 'q' : k)} style={`left:${pc(y)}%`} title={marks[k][1] + ' · ' + y}></div>
+          {evs.map(([y, k, title, detail]) => (
+            <button class={'tl-ev ' + (k === '?' ? 'q' : k)} style={`left:${pc(y)}%`}
+              data-y={y} data-who={name} data-kind={marks[k][1]} data-title={title} data-detail={detail}
+              aria-label={`${y} — ${title}`}></button>
           ))}
         </div>
       </div>
     ))}
   </div></div>
 
+  <div class="tl-detail" id="tlDetail" hidden>
+    <button class="tl-close" id="tlClose" aria-label="Close">&times;</button>
+    <span class="tl-who" id="tlWho"></span>
+    <b id="tlTitle"></b>
+    <span class="tl-meta" id="tlMeta"></span>
+    <p id="tlText"></p>
+  </div>
+  <p class="small tl-hint" id="tlHint">
+    <strong>Every dot on the chart is clickable.</strong> Forty-odd events — marriages, divorces,
+    deportations, departures — each with what the archive actually holds on it.
+  </p>
+
   <p class="small">
     <span class="tl-key"><i class="m"></i> marriage</span>
     <span class="tl-key"><i class="d"></i> divorce or action filed</span>
     <span class="tl-key"><i class="e"></i> left the country</span>
     <span class="tl-key"><i class="x"></i> deported, or died abroad</span>
-    <span class="tl-key"><i class="q"></i> 1948</span>
+    <span class="tl-key"><i class="q"></i> the pivot</span>
     <span class="tl-key">a <strong>dotted tail</strong> is a life this archive cannot see the end of</span>
   </p>
   <p class="small">
@@ -436,6 +497,27 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
     opacity: .5; }
   .tl-ev.q { border-color: var(--accent); background: var(--panel); width: 9px; height: 9px;
     margin: -4.5px 0 0 -4.5px; border-width: 2px; }
+
+  .tl-ev { cursor: pointer; padding: 0; appearance: none; }
+  .tl-ev:hover, .tl-ev:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .tl-ev.on { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .tl-detail {
+    position: relative; background: var(--panel); border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent); border-radius: 3px;
+    padding: 1rem 2.4rem 1rem 1.2rem; margin: 1rem 0 .4rem; max-width: none;
+  }
+  .tl-detail .tl-who {
+    display: block; font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint);
+  }
+  .tl-detail b { display: block; font-size: 1rem; margin: .2rem 0 .1rem; }
+  .tl-detail .tl-meta { display: block; font-size: .78rem; color: var(--ink-faint); margin-bottom: .5rem; }
+  .tl-detail p { margin: 0; font-size: .9rem; max-width: var(--measure); }
+  .tl-close {
+    position: absolute; top: .5rem; right: .6rem; border: 0; background: none;
+    font-size: 1.2rem; line-height: 1; color: var(--ink-faint); cursor: pointer; padding: .2rem .35rem;
+  }
+  .tl-close:hover { color: var(--ink); }
   .tl-key { margin-right: 1.1rem; white-space: nowrap; }
   .tl-key i {
     display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: .3rem;
@@ -516,4 +598,36 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
     <div class="card"><a href={base + '/register/'}>The register</a><p>Every person in the source, labelled — including the hundred who are a surname index and not ancestry.</p></div>
     <div class="card"><a href={base + '/method/'}>Method</a><p>What “documented”, “inferred” and “disputed” mean here, and why living people are absent.</p></div>
   </div>
+
+<script is:inline>
+  (function () {
+    var box = document.getElementById('tlDetail');
+    if (!box) return;
+    var hint = document.getElementById('tlHint');
+    var who = document.getElementById('tlWho'), ttl = document.getElementById('tlTitle');
+    var meta = document.getElementById('tlMeta'), txt = document.getElementById('tlText');
+    var current = null;
+    function close() {
+      box.hidden = true;
+      if (hint) hint.hidden = false;
+      if (current) current.classList.remove('on');
+      current = null;
+    }
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('.tl-ev');
+      if (!b) return;
+      if (current) current.classList.remove('on');
+      current = b; b.classList.add('on');
+      who.textContent = b.dataset.who;
+      ttl.textContent = b.dataset.title;
+      meta.textContent = b.dataset.kind + ' · ' + b.dataset.y;
+      txt.textContent = b.dataset.detail;
+      box.hidden = false;
+      if (hint) hint.hidden = true;
+      box.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    });
+    document.getElementById('tlClose').addEventListener('click', close);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  })();
+</script>
 </Base>
