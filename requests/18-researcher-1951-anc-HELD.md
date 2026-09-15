@@ -51,5 +51,14 @@ All three are Johannesburg registrations:
 The 1951 one is now the one I care most about, so if you do take the Deeds Registry work and it is
 easier to do one than three, **please do that one first**.
 
-All three marriages are entered on the civil registers as having been contracted *with* an
+And in fact there is a **fourth**, found later the same evening:
+
+- **29 November 1952** — **Mervin Richard Halsey** and **Cynthia Yvonne Elizabeth Wear**, married at
+  St Martin's-in-the-Veld, Johannesburg, certificate 51 of 1952, **with** an antenuptial contract.
+
+Cynthia was Leonard's sister. A notarial deed for a Wear daughter, executed in Johannesburg in 1952,
+may recite her father's name — which is the single fact I am trying to document. **If the 1951 one
+cannot be found, this is the next best.**
+
+All four marriages are entered on the civil registers as having been contracted *with* an
 antenuptial contract, so the deeds should exist.

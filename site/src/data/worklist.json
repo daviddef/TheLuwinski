@@ -279,10 +279,10 @@
     {
       "n": 35,
       "what": "Re-read the 1952 Halsey-Wear register for the columns nobody looked at",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "It was opened once, for column 4, and column 4 redirected the entire archive. Nobody went back for the rest of the sheet. Occupations, addresses, witnesses, licence or banns, the remarks column. The 1940 register was read for one thing and gave up the army; there is no reason to think this one is exhausted."
+      "note": "DONE 15 September, and it paid. The sheet had been opened once, for column 4, which redirected the whole archive; nobody went back for the rest. Certificate 51 of 1952, frame 2149, image 3:1:3Q9M-CSJY-YGDD. Three things came out. (1) 64 GREENFIELD ROAD, GREENSIDE, JOHANNESBURG — Cynthia's address at 21 and a spinster, so very probably the household address of Henry Robert Wear and Martha Maud Castle, and the first address this archive has ever had for them. (2) Banns, at St Martin's-in-the-Veld, denomination ANGLICAN CHURCH — so the Wears were Anglican, and the 1940 Catholic ceremony came from Phyllis's side, which is what request 17 guessed and now has evidence for. (3) Column 10 reads WITH, a FOURTH ante-nuptial contract. And one disappointment worth recording: column 9, Consent given by, reads 'Own' for both — had Cynthia been a minor it would have carried her father's name outright."
     },
     {
       "n": 36,
@@ -435,6 +435,14 @@
       "owner": "this archive",
       "since": "2026-09-15",
       "note": "STRUCK within the hour, and it is worth saying why. The Find a Grave record's PLACE field offers five candidate cemeteries for the ambiguous string 'West Park Cemetery' — Johannesburg, Cleveland Ohio, Long Eaton Derbyshire, Hereford Texas, and Bulawayo — and FamilySearch surfaced the Johannesburg one only because the query was filtered to South Africa. The record's own Country, State, County and City fields resolve to UNITED STATES OF AMERICA / TEXAS / DEAF SMITH / HEREFORD. He also appears as a father in Illinois births of 1883. He is an American and has nothing to do with this family. A place-name collision in an index, caught before anything was published — which is the first time this week that has happened before rather than after."
+    },
+    {
+      "n": 55,
+      "what": "64 Greenfield Road, Greenside — find out who lived there",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "New on 15 September from the 1952 register: Cynthia Wear, 21 and unmarried, gives her address as 64 Greenfield Road, Greenside, Johannesburg. At that age in 1952 she was almost certainly living with her parents, which would make this the household address of Henry Robert Wear and Martha Maud Castle — seventeen years after Letchworth and seventeen before he died in the city. It is the FIRST address this archive has ever had for them, and unlike a grave it is checkable: the Deeds Office property index, Johannesburg street and telephone directories, and voters rolls. It also feeds row 41, because if Leonard was ever at that address the Berea coincidence stops being the only geography in the case."
     }
   ]
 }
