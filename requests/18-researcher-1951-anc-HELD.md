@@ -62,3 +62,31 @@ cannot be found, this is the next best.**
 
 All four marriages are entered on the civil registers as having been contracted *with* an
 antenuptial contract, so the deeds should exist.
+
+
+---
+
+## And a second thing for the same visit, added 15 September
+
+*Also held. Same reasoning — it goes with the reply about rates, not before it.*
+
+**Do you also work in the Johannesburg street and telephone directories, the Deeds Office property
+index, or the voters rolls?**
+
+I am trying to place one man at an address year by year, and I have got him three times in
+fifty-eight years:
+
+- **1921** — 72 Pix Road, Letchworth, England (the census; he is four)
+- **7 September 1940** — Roberts Heights, Pretoria (his marriage register; occupation *Army*)
+- **30 October 1951** — Polana Court, Abel Road, Berea, Johannesburg (his second marriage register)
+
+**Between 1941 and 1950 I have nothing at all** — not one address — and that is the decade I care
+about. His name is **Leonard Aubrey Robert Wear**, born England 1917, an engineer by 1951.
+
+One more address that is not his but may be his parents': **64 Greenfield Road, Greenside**, given
+in November 1952 by his sister Cynthia, then twenty-one and unmarried. If the directories show who
+occupied that house through the 1940s and 1950s, that alone would be worth the visit.
+
+I have already exhausted what can be done from here: the full text of the Government Gazette returns
+nothing for any of these addresses against the surname, and the only two hits for *"Greenfield Road"*
+and *Wear* are advertisements for ladies' **wear**.

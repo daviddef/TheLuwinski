@@ -15,6 +15,21 @@ const life = [
   ['1962', 'Divorced again', 'TAB WLD 2960/1962 — Marjorie Eileen Wear (formerly Dunlop, born Walker) versus Leonard Aubrey Robert.', 'doc'],
   ['1973 or 1979', 'Dies — and the archive cannot say which', 'The family tree says 1973. GenDatabase’s death index says 1979 on a record it marks INCOMPLETE, printing his date of birth as the corrupt string 0017. Neither is a document. No estate file, no gazette notice, no grave.', 'disp'],
 ];
+const where = [
+  ['1917', 'Hitchin, Hertfordshire', 'Birth registered', 'doc'],
+  ['1921', '72 Pix Road, Letchworth', 'The census. He is four.', 'doc'],
+  ['1922–1938', '—', 'Nothing. The family is presumably still at Letchworth: his siblings go on being registered there until 1936.', 'gap'],
+  ['by Sep 1939', 'left England', 'Absent from the 1939 Register, and the absence is real rather than redaction.', 'doc'],
+  ['7 Sep 1940', 'ROBERTS HEIGHTS, PRETORIA', 'His marriage register. Occupation: Army.', 'doc'],
+  ['1941', 'Johannesburg', 'His daughter Gillian is born. No address recorded.', 'inf'],
+  ['1942–1950', '—', 'NOTHING AT ALL. Nine years, and 1948 is inside them.', 'gap'],
+  ['1951', 'Johannesburg', 'Divorced by Phyllis, WLD 2026/1951. No address on the index entry.', 'doc'],
+  ['30 Oct 1951', 'POLANA COURT, ABEL ROAD, BEREA', 'His second marriage register.', 'doc'],
+  ['1952', '64 Greenfield Road, Greenside', 'Not his — his sister Cynthia gives it, aged 21 and unmarried. Very probably their parents’ house.', 'inf'],
+  ['1957', 'Johannesburg', 'WLD 790/1957, against his remarried first wife. No address.', 'doc'],
+  ['1962', 'Johannesburg', 'WLD 2960/1962, divorced by Marjorie. No address.', 'doc'],
+  ['1963–1979', '—', 'Nothing. No estate, no gazette notice, no grave, no death record in South Africa.', 'gap'],
+];
 const forCase = [
   ['The DNA excludes Kurt twice over', 'Derrick has 0.0% Ashkenazi Jewish where a son of Kurt Israel Luwinski requires a quarter; and his Y-DNA haplogroup is R-S11477 — R1b, branch U106/Z381, a North Sea lineage, not an Ashkenazi one.'],
   ['The segments require a married couple, not a person', 'Of the 297.5 cM Derrick shares with his closest match, only about 44 fall in regions he also shares with any Castle cousin. The other 253 lie nowhere near them. Two people who share a single ancestor cannot do that. They descend from Henry Robert Wear AND Martha Maud Castle together.'],
@@ -73,6 +88,43 @@ const disproof = [
     <a class="src" href={fs('1:1:6ZCM-N8BV')}>1940, certificate 13</a> and
     <a class="src" href={fs('1:1:6ZHR-R9ZG')}>1951, certificate 1397</a>.
   </p>
+
+  <h2 id="where">Where he can be put, and where he cannot</h2>
+  <p>
+    Fifty-eight years of a life, and <strong>three addresses</strong>. They are set out here with the
+    silences at the same weight as the entries, because the silences are the point.
+  </p>
+  <div class="scroll bleed"><table>
+    <thead><tr><th>When</th><th>Where</th><th></th></tr></thead>
+    <tbody>{where.map(([w, a, n, k]) => (
+      <tr>
+        <td><strong>{w}</strong></td>
+        <td>{k === 'gap' ? <span class="muted">{a}</span> : <strong>{a}</strong>}
+          {k === 'inf' && <> <span class="tag inf">Inferred</span></>}
+          {k === 'gap' && <> <span class="tag open">Silent</span></>}</td>
+        <td class="small muted">{n}</td>
+      </tr>
+    ))}</tbody>
+  </table></div>
+  <div class="panel">
+    <h3>The nine years that matter are the nine years that are blank</h3>
+    <p>
+      He is at a military camp outside Pretoria in September 1940. He is at a block of flats in Berea
+      in October 1951. <strong>Between those two points there is one recorded fact — that a daughter
+      was born in 1941 — and no address whatsoever.</strong>
+    </p>
+    <p>
+      <strong>1948 is in the middle of that hole.</strong> Nothing places Leonard in Johannesburg in
+      1948 except the fact that he married there in 1940 and again in 1951. That is an inference from
+      either side of a gap, and this page will not dress it up as anything else.
+    </p>
+    <p class="small">
+      What would fill it: Johannesburg <strong>street and telephone directories</strong>, which ran
+      annually and are not online; the <strong>Deeds Office</strong> property index; and the
+      <strong>voters rolls</strong>. All three need somebody in Johannesburg or Pretoria. None of them
+      needs a fee worth arguing about. <em>This is the cheapest unworked lead in the archive.</em>
+    </p>
+  </div>
 
   <h2>The case that he is Derrick&rsquo;s biological father</h2>
   <div class="scroll bleed"><table>
