@@ -1,0 +1,120 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const fs = (a) => `https://www.familysearch.org/ark:/61903/${a}`;
+const life = [
+  ['Q1 1917', 'Born, and registered at Hitchin', 'Hertfordshire. The GRO birth index, searched on the mother’s maiden name CASTLE, gives Henry Robert Wear and Martha Maud Castle six children at Hitchin between 1917 and 1936. He is the first.', 'doc'],
+  ['1921', 'Aged four, at 72 Pix Road, Letchworth', 'The 1921 census. His father is a Bermondsey man; his mother was born at Baldock.', 'doc'],
+  ['before 29 Sep 1939', 'The household leaves England', 'Absent from the 1939 Register, and the absence is real rather than redaction — born 1889, his father would be 137. Nationally Henry Robert Wear runs 1891, 1901, 1911, 1921 and then stops.', 'doc'],
+  ['7 Sep 1940', 'In the army, at Roberts Heights', 'His own marriage register gives his occupation as ARMY and his residence as ROBERTS HEIGHTS, PRETORIA — the Union Defence Force’s principal base, one year and one day after South Africa entered the war. The first occupation recorded for him anywhere.', 'doc'],
+  ['7 Sep 1940', 'Marries Phyllis Agnes Robertson', 'Rosebank, Johannesburg, certificate 13. He is 23, born England, a BACHELOR. Married BY BANNS, without antenuptial contract, by W. P. Whelan, who wrote “Catholic Priest” on the denomination line himself.', 'doc'],
+  ['1941', 'His daughter Gillian is born', 'Gillian Agnes Louisa Wear, carrying her mother’s name. She built, in 2018, the seven-person tree that is the only source anywhere giving Leonard a mother called Castle.', 'doc'],
+  ['1948', 'The year everything converges', 'He is thirty-one and in Johannesburg, married to somebody else. The DNA says Derrick’s biological father was a son of Henry Robert Wear and Martha Maud Castle. There were two sons. The other was eleven.', 'inf'],
+  ['1951', 'Divorced by Phyllis', 'TAB WLD 2026/1951. Six years later he is back in court against her — WLD 790/1957, by then Wear versus Phyllis Agnes NORQUOY, she having remarried in 1952. Opposed applications of that kind are usually about a child.', 'doc'],
+  ['30 Oct 1951', 'An engineer, in Berea, married again', 'Johannesburg, certificate 1397. He is 34, born England, a DIVORCEE, and an ENGINEER, of Polana Court, Abel Road, BEREA. Marjorie Eileen Dunlop, born Walker, 34, England, divorcee, school mistress. Special licence 205044, WITH an antenuptial contract. “Order filed” against both names.', 'doc'],
+  ['1962', 'Divorced again', 'TAB WLD 2960/1962 — Marjorie Eileen Wear (formerly Dunlop, born Walker) versus Leonard Aubrey Robert.', 'doc'],
+  ['1973 or 1979', 'Dies — and the archive cannot say which', 'The family tree says 1973. GenDatabase’s death index says 1979 on a record it marks INCOMPLETE, printing his date of birth as the corrupt string 0017. Neither is a document. No estate file, no gazette notice, no grave.', 'disp'],
+];
+const forCase = [
+  ['The DNA excludes Kurt twice over', 'Derrick has 0.0% Ashkenazi Jewish where a son of Kurt Israel Luwinski requires a quarter; and his Y-DNA haplogroup is R-S11477 — R1b, branch U106/Z381, a North Sea lineage, not an Ashkenazi one.'],
+  ['The segments require a married couple, not a person', 'Of the 297.5 cM Derrick shares with his closest match, only about 44 fall in regions he also shares with any Castle cousin. The other 253 lie nowhere near them. Two people who share a single ancestor cannot do that. They descend from Henry Robert Wear AND Martha Maud Castle together.'],
+  ['That couple had exactly two sons', 'The GRO birth index, searched on the mother’s maiden name, gives six children at Hitchin between 1917 and 1936. Two are sons. In June 1948 one was thirty-one and the other was eleven.'],
+  ['The thirty-one-year-old was in Johannesburg', 'Married there in 1940, divorced there in 1951, remarried there the same October, in court there in 1957 and 1962.'],
+  ['And a source outside the DNA says he was their son', 'A seven-person MyHeritage tree built in 2018 by his own daughter gives his mother as “Muad Wear, born Castle”. No other record anywhere gives Leonard parents at all.'],
+];
+const against = [
+  ['No document has ever named Leonard as anybody’s father — except his daughter’s tree', 'This is the whole weakness and it has not moved all week. Six South African marriage registers across thirty years and two form designs have now been read, and not one has a column for a parent. The state never asked.'],
+  ['Nothing links Leonard to Ivone. Nothing at all.', 'Not a letter, not a witness, not a shared address, not a court paper. The case is that the DNA points at a couple, the couple had two sons, and one of them was a child. It is an argument by elimination, and it is being asked to carry a conclusion about a living man’s parentage.'],
+  ['The Berea overlap is thin and must be said to be thin', 'His 1951 address, Polana Court on Abel Road, is a few streets from Ivone’s February 1948 address at 42 Joel Road. But the dates are three and a half years apart and Berea held tens of thousands of people. It is the first geographic overlap this archive has found, and it is not evidence of a meeting.'],
+  ['The sibship rests on one search, on one site', 'Six children, from FindMyPast’s birth index searched on a maiden name. It has never been verified against the GRO’s own index or against certificates. If the couple had a seventh child, or if “Bruce W” is not male, the argument changes shape.'],
+  ['The index is complete for England and Wales only', 'A son born abroad would not appear in it. The births run continuously at Hitchin from 1917 to 1936, which is why the archive believes the family was there throughout — but that is an inference from the same index.'],
+  ['Nobody has tested a Wear Y chromosome', 'Not one. Of 7,748 public members of the R-U106 project, 34 sit under S11477, and no Wear, Weir or Ware is among them.'],
+];
+const disproof = [
+  ['His birth certificate names different parents', 'GRO, Hitchin, first quarter 1917, about £12.50. It names his father and mother outright. This archive has never ordered it, which should be embarrassing, and it is the cheapest decisive document on the entire list.'],
+  ['A male-line Wear tests, and does not match R-S11477', 'One Y-37 would do it. The nearest candidate is not a distant cousin: it is Leonard’s own brother, born 1936, who is not recorded as dead in South Africa.'],
+  ['His army attestation gives a different next of kin', 'Requested from the SANDF Documentation Centre on 15 September. An attestation form names parents.'],
+  ['A third son turns up in the birth index', 'The whole argument is “two sons, and one was eleven”. A third changes the arithmetic.'],
+  ['A J294 death notice names a different father', 'The death notices of Gillian Nel and Patricia Grant, requested from the Master of the High Court at Cape Town, each have a field for the father’s full names.'],
+  ['Leonard is shown to have been out of the country in 1948', 'Nothing currently places him in Johannesburg between 1941 and 1951 except the fact that he married there before and after.'],
+];
+---
+<Base title="Leonard Aubrey Robert Wear"
+  subtitle="Hitchin 1917 — Johannesburg — died 1973 or 1979, and this archive cannot say which"
+  lede="The man the DNA points at. He has never had a page here, because until 15 September 2026 there was almost nothing to put on one: a birth index entry, a census line at the age of four, and somebody else's family tree. There is more now — an occupation, two marriages read in full, three court files and an address — and there is still no document that joins him to Derrick.">
+
+  <div class="panel">
+    <h3>Read this part first <span class="tag inf">Standing</span></h3>
+    <p>
+      <strong>Leonard Aubrey Robert Wear is an inference, not a finding.</strong> Everything on this
+      page about <em>his own life</em> is documented and cited. Everything about <em>his relationship
+      to Derrick</em> rests on an argument from shared DNA segments and a sibling list, and on no
+      document whatsoever.
+    </p>
+    <p>
+      The case against him is set out below at the same length as the case for him, and it is not
+      padding. If you read only one half, read that one.
+    </p>
+  </div>
+
+  <h2>His life, as far as it is documented</h2>
+  <div class="scroll bleed"><table>
+    <thead><tr><th>When</th><th>What</th><th></th></tr></thead>
+    <tbody>{life.map(([d, e, n, k]) => (
+      <tr>
+        <td><strong>{d}</strong></td>
+        <td>{e} {k === 'doc' && <span class="tag doc">Documented</span>}{k === 'inf' && <span class="tag inf">Inferred</span>}{k === 'disp' && <span class="tag disp">Disputed</span>}</td>
+        <td class="small muted">{n}</td>
+      </tr>
+    ))}</tbody>
+  </table></div>
+  <p class="small muted">
+    The two marriage registers were read from microfilm at full resolution on 15 September 2026:
+    <a class="src" href={fs('1:1:6ZCM-N8BV')}>1940, certificate 13</a> and
+    <a class="src" href={fs('1:1:6ZHR-R9ZG')}>1951, certificate 1397</a>.
+  </p>
+
+  <h2>The case that he is Derrick&rsquo;s biological father</h2>
+  <div class="scroll bleed"><table>
+    <tbody>{forCase.map(([h, b]) => (
+      <tr><td style="width:26rem"><strong>{h}</strong></td><td class="small">{b}</td></tr>
+    ))}</tbody>
+  </table></div>
+
+  <h2>The case against, at the same length</h2>
+  <div class="scroll bleed"><table>
+    <tbody>{against.map(([h, b]) => (
+      <tr><td style="width:26rem"><strong>{h}</strong></td><td class="small">{b}</td></tr>
+    ))}</tbody>
+  </table></div>
+
+  <h2 id="disproof">What would make this archive abandon him</h2>
+  <p>
+    Written down <strong>before</strong> the documents arrive, and published, so that it cannot be
+    quietly revised afterwards. Any one of these would do it.
+  </p>
+  <div class="scroll bleed"><table>
+    <tbody>{disproof.map(([h, b]) => (
+      <tr><td style="width:26rem"><strong>{h}</strong></td><td class="small">{b}</td></tr>
+    ))}</tbody>
+  </table></div>
+  <div class="panel">
+    <h3>Why a page says this at all</h3>
+    <p>
+      An archive that only ever publishes the evidence <em>for</em> its conclusion is not an archive,
+      it is a case. This one has had to withdraw four published claims in a week &mdash; a
+      transcription taken for a document, a gazette snippet taken for a record, an estate notice
+      belonging to another man entirely, and an age read as a contradiction when it was a pattern.
+    </p>
+    <p>
+      <strong>Every one of those was found by opening the source rather than trusting the summary.</strong>
+      The list above is the same discipline pointed forward instead of backward.
+    </p>
+  </div>
+
+  <p class="small">
+    <a href={base + '/dna/'}>The DNA, in full &rarr;</a> &middot;
+    <a href={base + '/worklist/'}>What is being done about it &rarr;</a> &middot;
+    <a href={base + '/open-questions/'}>The open questions &rarr;</a>
+  </p>
+</Base>

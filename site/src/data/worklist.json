@@ -367,10 +367,10 @@
     {
       "n": 46,
       "what": "A page for Leonard",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Kurt has a page. Ivone has a page. Derrick has a page. The man the DNA actually points to is scattered across six sections of the DNA page and a paragraph on the home page, and he has now acquired an occupation, two marriages, three court files, an army posting and an address in Berea. He needs his own page, with the case for him and the case against him set out separately and the second one written honestly."
+      "note": "DONE 15 September. /leonard/ is live and in the menu. His life as far as it is documented, with every row tagged documented, inferred or disputed; the case that he is Derrick's biological father; and THE CASE AGAINST SET OUT AT THE SAME LENGTH, which is the point of the page. Row 50 is folded into it as a section rather than scattered elsewhere."
     },
     {
       "n": 47,
@@ -399,10 +399,10 @@
     {
       "n": 50,
       "what": "Write down what would DISPROVE Leonard",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The archive has a careful page about not reading a timeline backwards in the light of a conclusion, and it is right to have one. But it has never set out, in advance and in public, what evidence would make it abandon the identification. A GRO birth certificate naming different parents. A Y test from a male-line Wear that does not match. An attestation form giving a different next of kin. A third son in the birth index. Writing that list down BEFORE the documents arrive is the difference between a case and a conviction."
+      "note": "DONE 15 September, as a section of the new Leonard page rather than a page of its own. Six things are named that would make this archive abandon the identification — a birth certificate naming different parents, a male-line Wear Y test that does not match R-S11477, an attestation form with a different next of kin, a third son in the birth index, a J294 naming a different father, and evidence he was out of the country in 1948. Written down BEFORE the documents arrive and published, so it cannot be quietly revised afterwards."
     },
     {
       "n": 51,
@@ -431,10 +431,10 @@
     {
       "n": 54,
       "what": "John Anderson Wear, buried at West Park — who is he?",
-      "state": "next",
+      "state": "struck",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Turned up incidentally while searching for Leonard's grave: a Find a Grave entry for JOHN ANDERSON WEAR at WEST PARK CEMETERY, JOHANNESBURG — the same cemetery where Henry Robert Wear was buried in 1969 and Martha Maud in 1986. No dates captured yet. He may be nothing to do with this family; Wear is not a rare surname and the archive has already been caught once treating a shared surname as a relationship, with Edwina. But a Wear in the same cemetery as the family's parents is worth ten minutes, and if he is a relation he is another male-line candidate."
+      "note": "STRUCK within the hour, and it is worth saying why. The Find a Grave record's PLACE field offers five candidate cemeteries for the ambiguous string 'West Park Cemetery' — Johannesburg, Cleveland Ohio, Long Eaton Derbyshire, Hereford Texas, and Bulawayo — and FamilySearch surfaced the Johannesburg one only because the query was filtered to South Africa. The record's own Country, State, County and City fields resolve to UNITED STATES OF AMERICA / TEXAS / DEAF SMITH / HEREFORD. He also appears as a father in Illinois births of 1883. He is an American and has nothing to do with this family. A place-name collision in an index, caught before anything was published — which is the first time this week that has happened before rather than after."
     }
   ]
 }
