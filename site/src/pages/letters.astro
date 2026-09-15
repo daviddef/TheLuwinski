@@ -11,10 +11,11 @@ const rows = data.rows.map(r => {
   return { ...r, waited, left, due: due.toISOString().slice(0, 10), ready: left <= 0 };
 }).sort((a, b) => a.left - b.left);
 const readyNow = rows.filter(r => r.ready).length;
+const acked = rows.filter(r => r.ack).length;
 const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 ---
 <Base title="Letters out"
-  subtitle={`${rows.length} sent and unanswered — ${readyNow === 0 ? 'none due to be chased yet' : readyNow + ' now due to be chased'}`}
+  subtitle={`${rows.length} sent — ${acked} have acknowledged receipt, ${rows.length - acked} are silent, and ${readyNow === 0 ? 'none is due to be chased yet' : readyNow + ' are due to be chased'}`}
   lede={data.note}>
 
   <div class="panel">
@@ -35,12 +36,15 @@ const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day:
   </div>
 
   <div class="scroll bleed"><table>
-    <thead><tr><th>Waited</th><th>To</th><th>About</th><th>Chase from</th></tr></thead>
+    <thead><tr><th>Waited</th><th>To</th><th>About</th><th>Heard back</th><th>Chase from</th></tr></thead>
     <tbody>{rows.map(r => (
       <tr>
         <td><strong>{r.waited}d</strong></td>
         <td><strong>{r.who}</strong><br /><span class="small muted">{r.addr}</span></td>
         <td class="small">{r.what}</td>
+        <td class="small">{r.ack
+          ? <><span class="tag inf">Acknowledged</span><br /><span class="muted">{r.ackNote}</span></>
+          : <span class="muted">&mdash;</span>}</td>
         <td class="small">
           {r.ready
             ? <><span class="tag disp">Due now</span> <span class="muted">{r.left === 0 ? 'today' : `${-r.left}d overdue`}</span></>
@@ -54,6 +58,8 @@ const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day:
     Intervals: <strong>10 days</strong> for a commissioned researcher who has been asked for rates;
     <strong>21 days</strong> for a Master&rsquo;s office, a national archive or a parish;
     <strong>28 days</strong> for an overseas archive in another language.
-    A reply resets the row &mdash; and a letter that has been answered comes off this page entirely.
+    <strong>An acknowledgement is not an answer</strong>, and this page keeps the two apart: a row marked
+    <em>Acknowledged</em> has been received and queued by a human or a mail robot, nothing more. Its chase
+    date does not move. A row that is genuinely answered comes off this page entirely.
   </p>
 </Base>

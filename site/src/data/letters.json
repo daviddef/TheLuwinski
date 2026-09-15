@@ -24,7 +24,9 @@
    "addr": "ahm@exercito.pt",
    "what": "Henrique's military record (resent after a bounce)",
    "thread": "1a0a17d8bf87cdba",
-   "chase": 21
+   "chase": 21,
+   "ack": "2026-09-14",
+   "ackNote": "Automatic acknowledgement: received, and they will send the information if it exists"
   },
   {
    "sent": "2026-09-14",
@@ -64,7 +66,9 @@
    "addr": "kancelaria@bydgoszcz.archiwa.gov.pl",
    "what": "Schubin / Szubin records",
    "thread": "1a0a19fe2cf2d1de",
-   "chase": 28
+   "chase": 28,
+   "ack": "2026-09-14",
+   "ackNote": "Automatic acknowledgement: passed for handling, applications taken in order of receipt"
   },
   {
    "sent": "2026-09-14",
@@ -88,7 +92,9 @@
    "addr": "DKeyster@justice.gov.za",
    "what": "J294 death notices, estates 10761/2024 and 018561/2021",
    "thread": "1a0a2e876b71886f",
-   "chase": 21
+   "chase": 21,
+   "ack": "2026-09-15",
+   "ackNote": "Auto-reply diverts APPOINTMENT queries only, to Ms Portia Arendse \u2014 a copy request correctly stays with Mr Keyster. The cc to Ms Mphetshwa auto-replied that she has left the section."
   },
   {
    "sent": "2026-09-15",
@@ -120,7 +126,9 @@
    "addr": "arqgex@exercito.pt",
    "what": "Henrique's military record \u2014 by referral from the ADN",
    "thread": "1a0a40447162eada",
-   "chase": 28
+   "chase": 28,
+   "ack": "2026-09-15",
+   "ackNote": "Automatic acknowledgement: received, and it will be handled by their services"
   }
  ]
 }
