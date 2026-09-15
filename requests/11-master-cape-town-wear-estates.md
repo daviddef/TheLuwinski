@@ -1,6 +1,7 @@
 # Request 11 — Two estate files at the Master of the High Court, Cape Town
 
-**Status: DRAFTED, NOT SENT.**
+**Status: SENT 15 September 2026** to DKeyster@justice.gov.za, cc NMphetshwa@justice.gov.za.
+Gmail message id `1a0a2e876b71886f`.
 
 **Why these two.** The DNA places Derrick's biological father among the sons of Henry Robert
 Wear and Martha Maud Castle, and the only son of the right age is **Leonard Aubrey Robert
