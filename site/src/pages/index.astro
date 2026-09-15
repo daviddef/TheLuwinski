@@ -77,6 +77,11 @@ const c = register.counts;
         Wear&ndash;Castle marriage in the whole English index. By 1921 at <strong>72 Pix Road,
         Letchworth</strong>, with four children and a lodger.
       </p>
+      <p>
+        <strong>And they went too.</strong> He died in Johannesburg on <strong>11 September 1969</strong>,
+        aged 80, and is buried at West Park; she died there on <strong>16 March 1986</strong>, aged 90.
+        The whole household crossed.
+      </p>
       <p class="verdict inf">
         <strong>The segments name them as a couple, not a line.</strong> Of the 297.5 cM Derrick shares
         with his closest match, only ~44 falls in Castle territory; <strong>~253 cM lies outside every
@@ -126,24 +131,63 @@ const c = register.counts;
       </p>
     </div>
 
+    <div class="gen">Siblings</div>
+    <div class="node a">
+      <span class="lane">Line of record</span>
+      <b>None <span class="tag doc">Documented</span></b>
+      <p>
+        Kurt married three times — Frances Hostowsky, Ivone, and Pauline Rappoport in 1956 — and
+        <strong>one child is recorded across all three</strong>. On this reading Derrick has no
+        paternal brother or sister at all.
+      </p>
+    </div>
+    <div class="node b open">
+      <span class="lane">DNA line</span>
+      <b>Not yet known <span class="tag open">Open</span></b>
+      <p>
+        Leonard was married from 1940 to 1951 and again from 1951 to 1962. <strong>WLD 790/1957</strong>,
+        an opposed application against his first wife six years after the divorce, is the kind of case
+        that is usually about children — but no child of his has been documented.
+      </p>
+      <p class="verdict inf">
+        One candidate, and no more than that: <strong>Edwina Ann Wear</strong>, born
+        <strong>1945</strong>, died 30 June 2014, buried at Braamfontein, Johannesburg — the right
+        surname, the right city, born inside his first marriage. <strong>Her parents are not
+        recorded.</strong>
+      </p>
+    </div>
+
+    <div class="gen"></div>
+    <div class="node both">
+      <b>Henrique Figueiredo Pinto da Rocha <span class="yr">11 March 1941 – 27 October 2022</span></b>
+      <p>
+        Ivone&rsquo;s son by her first marriage, to a da Rocha — and therefore
+        <strong>Derrick&rsquo;s half-brother on either reading</strong>, because the dispute is over the
+        father and never over the mother. He died in South Africa in 2022; his estate,
+        <strong>12294/2023</strong>, is the file this archive has been waiting on since the beginning.
+      </p>
+    </div>
+
     <div class="gen"></div>
     <div class="node both derrick">
       <b><a href={base + '/derrick/'}>Lynn Derrick Luwinski</a></b>
       <p>Living. Named here, and described nowhere.</p>
     </div>
+
+    <div class="gen"></div>
+    <div class="note both">
+      <strong>What would turn the right-hand lane from a strong guess into a fact:</strong>
+      <strong>WLD 2026/1951</strong> and <strong>WLD 790/1957</strong> in the National Archives at
+      Pretoria — a divorce, and six years later an opposed application against the same woman, which in
+      that court usually means children. Or a living male-line Wear taking a Y test, whose result should
+      be Derrick&rsquo;s. <a href={base + '/dna/#wear'}>How the segments got here, and what is still
+      only inferred &rarr;</a>
+    </div>
   </div>
 
-  <p class="small">
-    <strong>What would turn the right-hand lane from a strong guess into a fact:</strong>
-    <strong>WLD 2026/1951</strong> and <strong>WLD 790/1957</strong> in the National Archives at
-    Pretoria — a divorce, and six years later an opposed application against the same woman, which in
-    that court usually means children. Or a living male-line Wear taking a Y test, whose result should
-    be Derrick&rsquo;s.
-    <a href={base + '/dna/#wear'}>How the segments got here, and what is still only inferred &rarr;</a>
-  </p>
 
   <h2>The finding this archive cannot avoid</h2>
-  <div class="panel">
+  <div class="panel wide">
     <h3>Kurt Israel Luwinski is very probably not Derrick's biological father <span class="tag inf">Inferred</span></h3>
     <p>If he were, Derrick's DNA would carry about a quarter Ashkenazi Jewish from Jacob Leibholz and
     about a quarter East Prussian German from Auguste. It carries <strong>0.0%</strong> and
@@ -156,7 +200,7 @@ const c = register.counts;
     autosomal cluster is British, and the haplogroup's largest European population is England.</p>
     <p class="small"><a href={base + '/dna/'}>The evidence, the arithmetic, what the Y can and cannot prove →</a></p>
   </div>
-  <p>
+  <p class="wide">
     That does not make the Berlin history untrue, and it does not make it less his. Jacob Leibholz died
     at Auschwitz; his brothers Samuel and Oskar died there too, and Georg at Chełmno. Kurt escaped in
     1933 and carried the name. It is the family Derrick was born into and named for. Whether it is also
@@ -203,6 +247,19 @@ const c = register.counts;
   .spines .verdict.disp { color: var(--disp); }
   .spines .verdict.inf { color: var(--ink-soft); }
   .spines .lane { display: none; }
+  .spines .note {
+    grid-column: 2 / span 2;
+    max-width: none;
+    font-size: .85rem;
+    color: var(--ink-soft);
+    padding: .85rem 0 0;
+    border-top: 1px solid var(--rule);
+    margin-top: .3rem;
+  }
+  .spines .note strong { color: var(--ink); }
+  /* this section argues across two columns — it must not be squeezed to a reading measure */
+  .wide { max-width: none; }
+  .wide p, .wide ul, .wide li { max-width: none; }
   @media (max-width: 52rem) {
     .spines { grid-template-columns: 1fr; gap: .45rem; }
     .spines .gen { padding: 1.1rem 0 0; border-top: 1px solid var(--rule); }
