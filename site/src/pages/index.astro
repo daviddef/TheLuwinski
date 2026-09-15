@@ -582,8 +582,24 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
   .wide { max-width: none; }
   .wide p, .wide ul, .wide li { max-width: none; }
   @media (max-width: 52rem) {
-    .spines { grid-template-columns: 1fr; gap: .45rem; }
-    .spines .sibrow { grid-column: auto; grid-template-columns: 1fr; }
+    /* minmax(0,1fr), not 1fr: a plain 1fr track cannot shrink below its
+       content's min-content width, which on a phone left the single column
+       522px wide inside a 327px page. */
+    .spines { grid-template-columns: minmax(0, 1fr); gap: .45rem; }
+    /* Reset EVERY explicit placement, not a list of them. One child whose
+       selector the list happens to miss creates implicit columns, and the
+       grid — and with it the whole page — blows out past the viewport.
+       That is exactly what `.spines .note` did on phones. The doubled class
+       lifts specificity to match `.spines .node.both` without !important. */
+    .spines.spines > * { grid-column: auto; min-width: 0; }
+    .spines .sibrow { min-width: 0; }
+    .spines .node, .spines .note { overflow-wrap: anywhere; }
+    .spines .sibrow { grid-column: auto; grid-template-columns: minmax(0, 1fr); }
+    .spines .sibrow > * { min-width: 0; }
+    /* The year spans are nowrap on desktop so a date never breaks mid-range.
+       On a phone that nowrap sets the min-content width and pushes the page
+       out, so let them wrap here. */
+    .spines .yr { white-space: normal; }
     .spines .span2 { grid-column: auto; }
     .spines .gen { padding: 1.1rem 0 0; border-top: 1px solid var(--rule); }
     .spines .gen.head { display: none; }

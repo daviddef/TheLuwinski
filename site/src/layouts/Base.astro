@@ -135,6 +135,18 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
     .hero { border-bottom: 1px solid var(--rule); background: var(--panel); }
     .hero img { display: block; width: 100%; height: clamp(180px, 26vw, 420px); object-fit: cover; object-position: center 55%; }
     .hero figcaption { padding: .55rem 0 .7rem; font-size: .78rem; color: var(--ink-faint); max-width: none; }
+    /* Phones: four full-width stat cards is a great deal of scrolling for
+       four numbers. Two across reads better and still fits at 320px. */
+    @media (max-width: 34rem) {
+      .cards { grid-template-columns: repeat(2, 1fr); gap: .6rem; }
+      .card { padding: .85rem .9rem; }
+      .stat b { font-size: 1.45rem; }
+      .stat span { font-size: .67rem; letter-spacing: .04em; }
+      .wrap { padding: 0 1rem; }
+      /* Tags are nowrap so a two-word label never splits. A few are long
+         enough to push a phone page sideways on their own, so let them wrap here. */
+      .tag { white-space: normal; }
+    }
     .muted { color: var(--ink-soft); }
     .small { font-size: .85rem; }
   </style>
