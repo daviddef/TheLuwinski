@@ -1,5 +1,26 @@
 ---
 import Base from '../layouts/Base.astro';
+import seg from '../data/segments.json';
+const CHR = [249250621,243199373,198022430,191154276,180915260,171115067,159138663,146364022,141213431,135534747,135006516,133851895,115169878,107349540,102531392,90354753,81195210,78077248,59128983,63025520,48129895,51304566];
+const MAXCHR = CHR[0];
+const merge = (iv) => { const s=[...iv].sort((a,b)=>a[0]-b[0]); const m=[]; for (const [lo,hi] of s) { if (m.length && lo <= m[m.length-1][1]) m[m.length-1][1] = Math.max(m[m.length-1][1], hi); else m.push([lo,hi]); } return m; };
+const byChr = (segs, c) => segs.filter(s => s[0] === c);
+// overlap of the closest match with the union of the Castle-side cousins
+let ovCm = 0, totCm = 0;
+const overlapBands = [];
+for (const s of seg.closest.segments) {
+  const [c, st, en, cm] = s; totCm += cm;
+  const iv = merge(byChr(seg.castle.segments, c).map(t2 => [Math.max(st, t2[1]), Math.min(en, t2[2])]).filter(([lo,hi]) => hi > lo));
+  const ov = iv.reduce((a,[lo,hi]) => a + (hi-lo), 0);
+  if (ov > 0) { ovCm += cm * (ov / (en - st)); iv.forEach(([lo,hi]) => overlapBands.push([c, lo, hi])); }
+}
+const CM_OVER = ovCm.toFixed(1), CM_ALONE = (totCm - ovCm).toFixed(1), CM_TOT = totCm.toFixed(1);
+// SVG geometry
+const ROWH = 25, LAB = 26, X0 = 32, X1 = 990, TRACK = X1 - X0, BARH = 7, GAP = 2;
+const px = (chr, bp) => X0 + (bp / MAXCHR) * TRACK;
+const wpx = (chr, a, b) => Math.max(1.1, ((b - a) / MAXCHR) * TRACK);
+const SVGH = 22 * ROWH + 16;
+
 import dna from '../data/dna.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const expected = [
@@ -764,6 +785,57 @@ const matches = [
   </div>
 
   <h2 id="wear">The segments say two ancestors, not one <span class="tag doc">15 September, evening</span></h2>
+
+  <figure class="segmap bleed">
+    <svg viewBox={`0 0 1000 ${SVGH}`} width="100%" role="img"
+         aria-label="Chromosome map. The closest match shares twelve segments with Derrick; two Castle-side second cousins share twenty-eight. They coincide on chromosome 2 and almost nowhere else.">
+      {CHR.map((len, i) => {
+        const c = i + 1, y = 8 + i * ROWH;
+        const closest = byChr(seg.closest.segments, c);
+        const castle = merge(byChr(seg.castle.segments, c).map(s => [s[1], s[2]]));
+        const overs = overlapBands.filter(b => b[0] === c);
+        return (<g>
+          <text x={LAB} y={y + BARH + 5} text-anchor="end" class="cl">{c}</text>
+          <rect x={X0} y={y} width={(len / MAXCHR) * TRACK} height={BARH} rx="2" class="trk" />
+          <rect x={X0} y={y + BARH + GAP} width={(len / MAXCHR) * TRACK} height={BARH} rx="2" class="trk" />
+          {closest.map(s => <rect x={px(c, s[1])} y={y} width={wpx(c, s[1], s[2])} height={BARH} rx="1.5" class="a" />)}
+          {castle.map(s => <rect x={px(c, s[0])} y={y + BARH + GAP} width={wpx(c, s[0], s[1])} height={BARH} rx="1.5" class="b" />)}
+          {overs.map(b => <rect x={px(c, b[1])} y={y - 2.5} width={wpx(c, b[1], b[2])} height={BARH * 2 + GAP + 5} rx="2" class="ov" />)}
+        </g>);
+      })}
+    </svg>
+    <figcaption class="small">
+      <span class="key"><i class="ka"></i> the closest match &mdash; <strong>{seg.closest.role}</strong>, {CM_TOT} cM in 12 segments</span>
+      <span class="key"><i class="kb"></i> {seg.castle.role} &mdash; {seg.castle.cm} cM in 28 segments</span>
+      <span class="key"><i class="kov"></i> where they coincide</span>
+    </figcaption>
+  </figure>
+  <p>
+    <strong>Every argument on this page is in that picture.</strong> The upper bar of each pair is
+    what Derrick shares with his closest match. The lower bar is what he shares with two second
+    cousins who are <em>documented</em> descendants of the Castle family. <strong>They line up on
+    chromosome 2, and almost nowhere else.</strong>
+  </p>
+  <p>
+    Of the <strong>{CM_TOT} cM</strong> Derrick shares with the closest match, <strong>{CM_OVER} cM</strong>
+    fall inside regions he also shares with a Castle cousin &mdash; and <strong>{CM_ALONE} cM</strong>
+    do not. Eleven of her twelve segments sit on chromosomes where the Castle cousins have nothing at all.
+  </p>
+  <p>
+    Two people who descend from a <em>single</em> common ancestor cannot do that. The shared DNA would
+    fall in the same places. <strong>Derrick and this match share two ancestors &mdash; a married
+    couple</strong> &mdash; and the couple is Henry Robert Wear and Martha Maud Castle. The chromosome 2
+    block is the Castle half of them. The other {CM_ALONE} cM is the half the Castle cousins do not carry,
+    and that half is <strong>Wear</strong>.
+  </p>
+  <p class="small muted">
+    Positions as MyHeritage reports them, GRCh37/hg19, captured {seg.captured}. Chromosomes are drawn to
+    scale against chromosome 1. The overlap figure is computed from the coordinates, pro-rating each
+    segment&rsquo;s centimorgans by the fraction of its length that overlaps &mdash; it is an
+    approximation, because centimorgans and base pairs are not linearly related.
+    <strong>Match holders are living and are identified by role only.</strong>
+  </p>
+
   <p>
     Centimorgan totals could not separate the two readings. <strong>The segments could</strong> — and
     they did it in one pass, because they answer a different question: not <em>how much</em> Derrick

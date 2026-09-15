@@ -1,0 +1,55 @@
+# Request 18 — the third ante-nuptial contract, for the Pretoria researcher
+
+**Status: DRAFTED 15 September 2026. HELD, DELIBERATELY NOT SENT.**
+**Send it with the reply to her rates, not before.**
+
+## Why it is held
+
+Row 53 said to send a short amendment "rather than letting it sit until the researcher has finished
+and been paid". Having read the thread, that is the wrong call and the row is wrong.
+
+`digitalphoto@icon.co.za` has had **two** emails already, both within four hours on 15 September:
+
+1. **14 Sep 23:15** — the brief: six Booyzen estate files, what is wanted from each, payment, and a
+   note of further work to come.
+2. **15 Sep 03:25** — an addition: MHG 10245/69 (Wear), **and the Deeds Registry question, already
+   naming the ante-nuptial contracts of June 1948 and February 1956**.
+
+**She has not replied to either.** She has not said whether she takes the work, or at what rate. And
+the second letter says, in its own first paragraph:
+
+> *"Please do not let either of them delay your reply about rates — that is still the only thing I
+> actually need first, and everything below can wait until you have told me whether you take the
+> work at all."*
+
+**A third email today would contradict our own sentence.** It would also cost nothing to wait,
+because she cannot go to the Deeds Registry before terms are agreed, so there is no scenario in
+which holding this loses the 1951 contract.
+
+*This is what row 49 — a follow-up calendar — is for. The archive has nineteen letters out and no
+discipline about when to chase. Sending a third message in one day to someone who has not answered
+the first two is the opposite of that discipline.*
+
+---
+
+**To:** `digitalphoto@icon.co.za`
+**Send:** appended to the reply when she answers about rates. **Not as a separate email.**
+
+---
+
+One correction to what I sent you on Monday, and it is in your favour rather than mine: there are
+**three** ante-nuptial contracts, not two. I found the third after I had written to you.
+
+All three are Johannesburg registrations:
+
+- one executed shortly before a marriage on **19 June 1948**
+- one executed shortly before a marriage on **30 October 1951** — the parties are
+  **Leonard Aubrey Robert Wear** and **Marjorie Eileen Dunlop, born Walker**, married at
+  Johannesburg, certificate 1397 of 1951, on special licence no. 205044
+- one executed shortly before a marriage in **February 1956**
+
+The 1951 one is now the one I care most about, so if you do take the Deeds Registry work and it is
+easier to do one than three, **please do that one first**.
+
+All three marriages are entered on the civil registers as having been contracted *with* an
+antenuptial contract, so the deeds should exist.

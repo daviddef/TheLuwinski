@@ -115,6 +115,21 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
     a.src:hover { color: var(--accent); border-bottom-style: solid; }
     a.src::after { content: " \2197"; font-size: .72em; vertical-align: .25em; color: var(--accent-soft); }
     .unsourced { border-bottom: 1px dotted var(--ink-faint); cursor: help; }
+    /* Chromosome segment map (/dna/). Colours come from the theme tokens so it
+       works in light and dark without a second palette. */
+    .segmap { margin: 1.8rem 0 1.2rem; }
+    .segmap svg { display: block; width: 100%; height: auto; }
+    .segmap .trk { fill: var(--rule); opacity: .55; }
+    .segmap .a { fill: var(--accent); }
+    .segmap .b { fill: var(--doc); }
+    .segmap .ov { fill: none; stroke: var(--inf); stroke-width: 1.6; }
+    .segmap .cl { font: 600 9px ui-sans-serif, system-ui, sans-serif; fill: var(--ink-faint); }
+    .segmap figcaption { display: flex; flex-wrap: wrap; gap: .3rem 1.4rem; margin-top: .75rem; color: var(--ink-soft); max-width: none; }
+    .segmap .key { display: inline-flex; align-items: center; gap: .4rem; }
+    .segmap .key i { width: 1.1rem; height: .5rem; border-radius: 2px; display: inline-block; flex: none; }
+    .segmap .key i.ka { background: var(--accent); }
+    .segmap .key i.kb { background: var(--doc); }
+    .segmap .key i.kov { background: none; border: 1.6px solid var(--inf); height: .85rem; }
     .muted { color: var(--ink-soft); }
     .small { font-size: .85rem; }
   </style>
