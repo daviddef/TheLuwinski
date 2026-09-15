@@ -71,10 +71,10 @@
     {
       "n": 9,
       "what": "Read the 1948 Johannesburg marriage register at full resolution",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The 1956 register read that way produced the Piccadilly Hat Company. The 1952 register read that way **redirected the entire archive** — two words in a column nobody had looked at. Kurt and Ivone's own register, certificate 858, has never once been read at full resolution. Blocked this evening only because FamilySearch rate-limited the session after a heavy day of image requests."
+      "note": "Done 15 September. Read a third time, and this time from the archive's own microfilm rather than from a photograph in the family tree: digital film 008109682, frame 2047, image ark 3:1:3Q9M-CSJ1-SJQK. FamilySearch's own pages would not render — the session had been rate-limited to about one response every thirty-five seconds, which the site's front end shows as a hang — so the page was rebuilt locally from its 108 deep-zoom tiles and every cell magnified between four and five times, with the sideways columns rotated upright. One real correction: the couple's address is 108 DUNOTTAR Street, SYDENHAM, not Dunstan Street, Braamfontein. Everything the argument rests on holds, including the one that matters — column (10) reads With A.N.C. at 5.2x, four letters, not Without."
     },
     {
       "n": 10,
@@ -82,7 +82,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Two secondary sources disagree: the family tree kept by his own daughter says **1973**, GenDatabase's verified deaths say **1979**. Neither is a document. `\"WEAR, LEONARD\"` returns nothing in the gazettes — 1970s OCR is poor. Next: NAAIRS with a date filter, and the Cape rather than the Transvaal."
+      "note": "Two secondary sources disagree: the family tree kept by his own daughter says **1973**, GenDatabase's verified deaths say **1979**. Neither is a document. `\"WEAR, LEONARD\"` returns nothing in the gazettes — 1970s OCR is poor. Next: NAAIRS with a date filter, and the Cape rather than the Transvaal. **NAAIRS was down when this was tried** — *the connection to the Search Manager Server is inactive*."
     },
     {
       "n": 11,
@@ -90,23 +90,23 @@
       "state": "struck",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Not reachable from the sources available, and kept here so nobody tries it again the same way.** A son of Bruce born in the 1960s would be in his sixties now, so he is not in a *death* database; and South African civil marriages on FamilySearch stop at **1974**, so a marriage in the 1980s or 1990s is not there either. GenDatabase cannot find living people. **The Y-test route needs contact with living Wears, not records** — which makes it a question for the people already written to, not a search."
+      "note": "**Not reachable from the sources available, and kept here so nobody tries it again the same way.** A son of Bruce born in the 1960s would be in his sixties now, so he is not in a *death* database; and South African civil marriages on FamilySearch stop at **1974**, so a marriage in the 1980s or 1990s is not there either. GenDatabase cannot find living people. **The Y-test route needs contact with living Wears, not records** — which makes it a question for the people already written to, not a search. **Retested 15 September at the family's push**, by the one route left — Michelle Ann Wear, b.1978, d.2017 Johannesburg, whose estate would name her parents. **She is in no gazette and not in GenDatabase at all.** Two routes, both closed."
     },
     {
       "n": 12,
-      "what": "Date the Wear family's emigration — the 1939 Register and the outbound passenger lists",
-      "state": "next",
+      "what": "Date the Wear family's emigration",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The whole household crossed: the parents are buried in Johannesburg, Leonard was there by 1940, Cynthia married there in 1952, Bruce in the Cape in 1959. **This archive cannot date the crossing at all.** If Henry Robert Wear is absent from the 1939 Register they had already gone. Tractable now that the surname is known rather than guessed."
+      "note": "**Answered: they were gone before 29 September 1939.** The 1939 Register has seven Wears in Hertfordshire and the household is not among them, and a national search returns Henry Robert Wear in the 1891, 1901, 1911 and 1921 censuses and then stops. The absence is real rather than redaction — born 1889 and 1895, he and Martha would be 137 and 131, so their records would be open if they existed. **One daughter stayed**: *Jeannett (E M) Wear, 1919, 18 Ridge Avenue, Letchworth*, aged twenty on register night. She followed later and died in South Africa in 2001."
     },
     {
       "n": 13,
       "what": "Re-run every woman in the archive by maiden name",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Newly possible: GenDatabase indexes South African women under their **maiden** names, which nothing else available here does. Auguste's sister Hilda; Kurt's other wives Frances Hostowsky and Pauline Rappoport; and **Ivone under Salkow** — her Porto death has defeated every Portuguese route and may be reachable from the South African side."
+      "note": "**Run, and the useful answer is a negative.** Ivone is in **no South African death record under any name she used** — not Salkow, not Luwinski, not de Witt, not Figueiredo, and no Ivone among the six women in the verified deaths carrying that maiden name. She married three times in that country and died out of its reach. **That is what dying in Porto looks like from this side**, and it is the first corroboration this archive has for a death it has never been able to date."
     },
     {
       "n": 14,
@@ -163,6 +163,30 @@
       "owner": "this archive",
       "since": "2026-09-14",
       "note": "Standing work, and the reason this archive is worth anything. Published corrections to date: the Castles were **Hertfordshire, not Norfolk**; Caroline was a **Wallis**, not a Walls, and the tree was right where this archive was wrong; Derrick's birth year leaked onto the DNA page and was removed; the generation claim was walked back within the hour; and Henrique was called the son of a marriage that the 1948 register proves never happened."
+    },
+    {
+      "n": 21,
+      "what": "Mervin Halsey's parents — the Henry George Charles and Mary Ellen guess",
+      "state": "struck",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "**Founded on two birth years and killed by a third date.** This archive proposed Henry George Charles Halsey (1906–1993) and Mary Ellen Halsey (d.1981) as Mervin's parents because they were the right ages. But **he married Evelyn Ruth in 1932** and **Mervin was born on 15 June 1930** — two years earlier; Mary Ellen has no spouse recorded and is not his wife; and Mervin was born in the **Cape Province**, which nothing places any of them in. Off the critical path regardless: the Halsey line stopped mattering the moment column four of the 1952 register was read."
+    },
+    {
+      "n": 22,
+      "what": "A second copy of the de Witt divorce decree, filed behind marriage entry 858 of 1948",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Not a new mystery — the four-month gap was solved when TPD 534/1948 turned up in a photograph in the family tree: her first husband sued her. What the film adds is independent corroboration and a second place to get the document. The Remarks column of the Johannesburg register reads \"Order Filed.\", which in 1948 practice means the decree was physically handed in on the wedding day and filed with entry 858. So the order exists in two custodies: the court file at the Transvaal depot, already on the Pretoria request, and whatever sits behind entry 858 at Home Affairs, which nobody has asked for. Worth asking, because a decree recites the grounds, and the grounds for a marriage that lasted from February to June are the thing this archive still cannot explain."
+    },
+    {
+      "n": 23,
+      "what": "The reverse of the 1948 marriage register — the form says P.T.O. and nobody has turned it over",
+      "state": "blocked",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Frame 2047 ends with the printed instruction [P.T.O. There is a back to the sheet. FamilySearch does not expose a film's frame list to anything except its own viewer, and its own viewer would not load for this session, so the frame after 2047 could not be reached. Named as unread rather than assumed blank."
     }
   ]
 }
