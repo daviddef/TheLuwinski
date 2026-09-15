@@ -23,13 +23,22 @@ Worse, the right answer was already in this mailbox. A request about a different
 gone to **`Enquiries2@DSAC.GOV.ZA`** on 12 September and been answered on the 14th by
 **Ms Mavis Xaba**, Archivist Assistant, Reading Room, NARSSA. **I did not look.**
 
+## The practical consequence
+The private researcher **already has a live commission** at this repository. MHG 10245/69 is
+one more file on the same visit and should be **added to that enquiry**, not begun as a new
+one. That is the family's call — it is paid work already under way for another line.
+
 ## And her answer changes the ask
 
 > *"Please note that all the estate files you are requesting are **bound files**. Unfortunately,
 > we are therefore unable to scan these files and provide complete digital copies by email."*
 > — Ms Mavis Xaba, 14 September 2026
 
-**MHG estate files cannot be emailed at all.** The original letter asked for the J294 from
+**MHG estate files cannot be emailed at all.** And — found only after being asked — **she had
+already been replied to** on 14 September, and **the private researcher had already been
+written to the same evening** about six Booyzen MHG files. Today's letter cc'd a woman who had
+been thanked fourteen hours earlier, about a different family. **Search the sent mail before
+writing. This mailbox serves two archives.** The original letter asked for the J294 from
 MHG 10245/69 as though it were a matter of photocopying one page. It is not. She refers
 enquirers instead to a **private researcher**, cc'd on her reply as `digitalphoto@icon.co.za`.
 
