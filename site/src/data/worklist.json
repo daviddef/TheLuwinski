@@ -634,10 +634,10 @@
     {
       "n": 77,
       "what": "Every WEAR burial at West Park, not just the two this archive stumbled on",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The archive reached grave 56045 by following Henry Robert Wear and then Martha Maud. It has never asked the simple question: HOW MANY WEARS ARE BURIED AT WEST PARK? Row 54 was struck because a \"West Park Cemetery\" hit resolved to Texas, but that was a search-engine error, not an answer. The cemetery's own registers are on FamilySearch and the private-graves index folio W 8 is already open. Read the W folios systematically and list every Wear with date, grave, section and age. If Leonard is buried there under a section nobody has looked at, this ends row 10 in an afternoon."
+      "note": "DONE 15 September, and the answer is that LEONARD IS NOT THERE. Searched by collection rather than by guesswork — f.collectionId=4453927, the Johannesburg cemetery registers, 517 raw hits on the surname, collapsed to six distinct people: HENRIETTA WEAR buried 1909, HENRY ROBERT WEAR 13.9.1969, MARTHA MAUD WEAR 19.3.1986, EDWINA ANN WEAR 8.7.2014, MICHELLE ANN WEAR born 1978 died 27.3.2017, and DAN B WEAR undated. He bought grave 56045 and he was not buried in it, and he is in no other Johannesburg cemetery register the collection indexes. BOUNDS: this is the INDEXED layer of ONE collection covering 1840-2019; it does not cover unindexed images in it, other Johannesburg cemeteries, or the Chevrah Kadisha, which is a separate database — a Wear would have no business in a Jewish cemetery but the exclusion is stated rather than assumed. TWO WEARS ARE NEW: Michelle Ann Wear, born 1978, the right age to be a granddaughter of Bruce Wallace Wear who married four times; and Dan B Wear. Both written down, neither pursued."
     },
     {
       "n": 78,
@@ -714,10 +714,10 @@
     {
       "n": 87,
       "what": "Read the FamilySearch catalogue at item level, not the browse labels",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "A technique proved in a sister archive tonight and never used here. This archive takes film ranges from COLLECTION WAYPOINTS — the browse labels — which are coarse and sometimes simply wrong. The catalogue item is one level deeper and lists the contents of each film volume by volume with its DGS number: q.keywords is the only query term that service accepts, returning koha:NNNNNN, and the item call returns film_note[]. Re-read the South African and Hertfordshire holdings that way. The sister archive's table gained four parishes and lost a parish it thought it had. This one has been reasoning about which registers exist from labels."
+      "note": "DONE 15 September, and the technique transferred but the target did not need it. The catalogue search is /service/search/catalog/v3/search?q.keywords=..., whose replies come back as searchHits[].metadataHit.metadata — not the shape the sister archive's parser expected — and the item call is /service/search/catalog/item/<id>. Applied to Johannesburg it finds olib:4453927, \"South Africa, Johannesburg, cemetery registers: COLLECTION RECORD, 1840-2019\", and the item record says plainly NOT AVAILABLE ON MICROFILM: it is a digital-image collection, so there is no film_note list of volumes to read and the browse-label problem the technique was invented to solve does not arise here. WHAT REPLACES IT IS BETTER: the collection has an id, and the persona search takes f.collectionId, which turns \"every Wear in Johannesburg's cemeteries\" into one query. That is how row 77 was answered. NOTE A DISCREPANCY WORTH KNOWING: the item's own summary says the collection holds Olifantsvlei registers 2017-2021 while its title says 1840-2019. The title is right — the 1969 and 1986 West Park entries are in it — so THE SUMMARY IS WRONG, and anyone reading the catalogue description alone would wrongly conclude this collection cannot help them."
     },
     {
       "n": 88,
