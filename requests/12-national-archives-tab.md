@@ -1,12 +1,41 @@
 # Request 12 — National Archives Repository (TAB), Pretoria: four items
 
-**Status: SENT 15 September 2026** to `enquiries@dac.gov.za`. Gmail id `1a0a308ddaf67c5c`.
+**Status: SENT TWICE — the first one to a stale address.**
 
-**Address verified from the source, not a summary.** The National Archives' own
-*Acronyms and names used to identify archival repositories* page
-(`national.archives.gov.za/reposit.htm`) gives, for **SAB** and **TAB** alike:
-Private Bag X236, Pretoria 0001 · 24 Hamilton Street, Arcadia, Pretoria ·
-(012) 441 3200 · **enquiries@dac.gov.za**. MX for `dac.gov.za` resolves to Mimecast.
+- 15 Sep, `enquiries@dac.gov.za`, Gmail id `1a0a308ddaf67c5c`. **Wrong address.**
+- 15 Sep, **`Enquiries2@dsac.gov.za`**, cc **`mavisx@dsac.gov.za`**, Gmail id `1a0a30c59c9c8405`.
+  Rewritten, and opening by owning the duplication.
+
+## *** THE ERROR, AND IT IS A NEW KIND ***
+
+I checked the address against a **source document** rather than a search summary — the National
+Archives' own *Acronyms and names used to identify archival repositories* page,
+`national.archives.gov.za/reposit.htm` — and MX-checked the domain, which resolved fine.
+**Both checks passed and the address was still wrong.**
+
+The page is out of date. The department was renamed: **Arts and Culture (DAC) became Sport,
+Arts and Culture (DSAC)**, and the National Archives now answers at **`dsac.gov.za`**.
+`dac.gov.za` still has live MX, so nothing bounced — the letter simply went into a legacy
+domain and may never be read. **A live MX record proves a domain exists. It does not prove
+anybody is listening.**
+
+Worse, the right answer was already in this mailbox. A request about a different family had
+gone to **`Enquiries2@DSAC.GOV.ZA`** on 12 September and been answered on the 14th by
+**Ms Mavis Xaba**, Archivist Assistant, Reading Room, NARSSA. **I did not look.**
+
+## And her answer changes the ask
+
+> *"Please note that all the estate files you are requesting are **bound files**. Unfortunately,
+> we are therefore unable to scan these files and provide complete digital copies by email."*
+> — Ms Mavis Xaba, 14 September 2026
+
+**MHG estate files cannot be emailed at all.** The original letter asked for the J294 from
+MHG 10245/69 as though it were a matter of photocopying one page. It is not. She refers
+enquirers instead to a **private researcher**, cc'd on her reply as `digitalphoto@icon.co.za`.
+
+The resent letter therefore asks a narrower and better question: **are WLD court files also
+bound**, or are they loose and copyable — and if MHG 10245/69 cannot be sent, will they simply
+confirm that so the private-researcher route can be taken instead.
 
 ## The four items
 
