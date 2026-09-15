@@ -586,26 +586,26 @@
     {
       "n": 71,
       "what": "The England and Wales probate calendar, 1970–1990, for Leonard",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
-      "since": "2026-09-15",
-      "note": "WORKED 15 September to the end of what is free, and the result is a second instrument on which 1973 fails. The England and Wales probate service is free and its images ARE viewable without an account — but IT DOES NOT NAME-INDEX ANYTHING BEFORE 1996. A surname-and-year search returns scanned calendar pages and matches the string anywhere on the page, so WEAR also catches Weardale and Wearmouth. Searched with the keyword AUBREY to cut the noise: 1973 returns ZERO PAGES; then 8, 24, 19, 31, 13, 23, 19, 13 for 1974 to 1981. THE FAMILY TREE'S YEAR RETURNS NOTHING, on a second independent index, the evening after the South African estate index said the same. The 1979 pages have NOT been read — twenty-three dense calendar pages is an afternoon by eye, or minutes on a commercial index that has keyed the calendar by person. The row stays open and now says what it would cost."
+      "since": "2026-09-16",
+      "note": "WORKED 15 September to the end of what is free, and the result is a second instrument on which 1973 fails. The England and Wales probate service is free and its images ARE viewable without an account — but IT DOES NOT NAME-INDEX ANYTHING BEFORE 1996. A surname-and-year search returns scanned calendar pages and matches the string anywhere on the page, so WEAR also catches Weardale and Wearmouth. Searched with the keyword AUBREY to cut the noise: 1973 returns ZERO PAGES; then 8, 24, 19, 31, 13, 23, 19, 13 for 1974 to 1981. THE FAMILY TREE'S YEAR RETURNS NOTHING, on a second independent index, the evening after the South African estate index said the same. The 1979 pages have NOT been read — twenty-three dense calendar pages is an afternoon by eye, or minutes on a commercial index that has keyed the calendar by person. The row stays open and now says what it would cost. || CLOSED 16 September by row 73 rather than by reading the images. If he did not die in England or Wales between 1970 and 1985 — and a 99%-complete index that prints dates of birth says he did not — then there is no English death for an English grant of probate to follow. The 23 unread pages for 1979 would be a search for something now known not to be there. ONE CAVEAT KEPT, because it is real: an English grant CAN follow a foreign death, and the calendar records those in a recognisable form — a page read on the way records ADAMSON, Charles Mary, \"of 126 The Gardens Esplanade Durban SOUTH AFRICA died 7 April 1979 administration with will Pietermaritzburg £3500 in England and Wales SEALED London 3 December 1981\". So a resealed South African grant would appear. That is a narrower search than the one this row began with, and it is the only reason not to mark the row struck."
     },
     {
       "n": 72,
       "what": "GRO consular and overseas death registrations for Leonard",
       "state": "next",
       "owner": "this archive",
-      "since": "2026-09-15",
-      "note": "The second consequence of the family staying British. Deaths of British subjects abroad could be registered with a British consulate and appear in the GRO's Overseas Deaths indexes rather than in any South African series. That is a place this archive has never looked, and it is exactly where a man who was still legally British in the 1970s would land. Check the coverage first — registration was voluntary and many are missing — and publish the coverage dates alongside the result, so that a null is a bounded null and not a shrug. Feeds row 10."
+      "since": "2026-09-16",
+      "note": "The second consequence of the family staying British. Deaths of British subjects abroad could be registered with a British consulate and appear in the GRO's Overseas Deaths indexes rather than in any South African series. That is a place this archive has never looked, and it is exactly where a man who was still legally British in the 1970s would land. Check the coverage first — registration was voluntary and many are missing — and publish the coverage dates alongside the result, so that a null is a bounded null and not a shrug. Feeds row 10. || PROMOTED 16 September: THIS IS NOW THE MOST IMPORTANT UNTESTED THING ABOUT HIM. Three instruments have each looked in a different place and found nothing — the NAAIRS estate index (South Africa, to end 1976), the Johannesburg cemetery registers (six Wears, none of them him), and now the GRO death index (England and Wales, 1970-1985, >99%, 241 Wears, none of them him). The consular and overseas registers are EXACTLY where a British subject who died abroad would be recorded, and they are the one British series not yet searched."
     },
     {
       "n": 73,
       "what": "The GRO death index for England and Wales — in case he went home",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
-      "since": "2026-09-15",
-      "note": "Third consequence. The archive has assumed Leonard died in South Africa because that is where it last saw him, in September 1969. He was a British subject with four siblings, at least one of whom was still shuttling between identities in 1975. A man of fifty-two, twice divorced, could have gone back. Search the GRO death index for WEAR, Leonard A R / Leonard Aubrey Robert, 1969 to 1990, and search it on the DATE OF BIRTH field where the index carries one — a 1917 birth at Hitchin is distinctive. Cheap, and the archive has never done it."
+      "since": "2026-09-16",
+      "note": "DONE 16 September, and it is THE BEST-BOUNDED NEGATIVE THIS ARCHIVE HAS EVER PRODUCED ON HIM. Row 58's finding that the family stayed British raised a hypothesis nobody had entertained — that Leonard went home to die. HE DID NOT. FreeBMD transcribes the GRO index; its coverage chart for deaths shows EVERY QUARTER FROM 1970 TO 1983 AT 100%, and the search prints the figure beside each quarter: 58 CONSECUTIVE QUARTERS, EVERY ONE MARKED >99%. And from 1969 the GRO death index carries FULL FORENAMES AND THE DATE OF BIRTH, so he can hide behind neither an initial nor a common surname. Searched WEAR, deaths, March 1970 to December 1985, no forename: 241 ENTRIES, SIXTEEN OF THEM BORN 1915-1919, AND NOT ONE IS HIM. The only 1917 birth is a Sam Wear of Halifax. A separate search on the forename Leonard returns exactly one man, Leonard Rigby Wear born 10 October 1897, died Claro June 1970 — twenty years too old, wrong county. SETTLED: he did not die in England or Wales between 1970 and 1985, in either candidate year or any year between."
     },
     {
       "n": 74,

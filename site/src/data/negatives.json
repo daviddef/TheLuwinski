@@ -3,6 +3,13 @@
   "dek": "Absences, with the limits that make them worth something.",
   "rows": [
     {
+      "claim": "Leonard did not die in England or Wales between 1970 and 1985",
+      "searched": "FreeBMD (the GRO death index for England and Wales): surname WEAR, deaths, March 1970 to December 1985, NO forename given — 241 entries across 58 consecutive quarters",
+      "result": "Sixteen of the 241 were born between 1915 and 1919. NOT ONE is Leonard Aubrey Robert Wear; the only 1917 birth is a Sam Wear of Halifax. A separate search on the forename Leonard returns one man, Leonard Rigby Wear, born 10 October 1897, died Claro June 1970.",
+      "bound": "AS CLEAN AS A NEGATIVE GETS, and the reasons are worth stating. Every one of the 58 quarters is marked >99% complete, and FreeBMD's own coverage chart shows 1970–1983 at 100%. From 1969 the GRO death index carries FULL FORENAMES AND THE DATE OF BIRTH, so he could hide behind neither an initial nor a common surname. What it does NOT cover: deaths abroad, which are in the consular and overseas registers and have not been searched; and Scotland and Northern Ireland, which have separate registers.",
+      "date": "16 Sep 2026"
+    },
+    {
       "claim": "Leonard has no deceased estate in South Africa",
       "searched": "National Archives (NAAIRS), all repositories, surname WEAR, 1970–1976",
       "result": "No Wear deceased estate in the Transvaal at all between 1970 and 1976. The last is his father's, MHG 10245/69.",
