@@ -514,10 +514,10 @@
     {
       "n": 62,
       "what": "The Bailey marriage — Janette Wear married twice",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
-      "since": "2026-09-15",
-      "note": "ATTEMPTED 15 September and NOT FOUND, but the search is too blunt to call it a negative and the row stays open. Searched FamilySearch England and Wales for WEAR with spouse BAILEY, and South Africa for the same pair. FamilySearch fuzzy-matches Janette to Jane, Jean, Jennie and even Ware, and returned 348,000 results for a query meant to find one woman. WHAT WOULD ACTUALLY WORK: the GRO index searched on the exact forename string, or the South African marriage register if she married Bailey after emigrating — AND NOBODY KNOWS WHICH COUNTRY IT HAPPENED IN. She was at Letchworth in 1939 and naturalised in South Africa in 1975; the Bailey marriage is somewhere in those thirty-six years and on one of two continents."
+      "since": "2026-09-16",
+      "note": "DONE 16 September, AND IT IS THE BEST THING FOUND THIS WEEK. The archive did not know which country the Bailey marriage was in, let alone which year. It is the FIRST of the thirty-six, and it is ENGLAND. FreeBMD, Marriages, December quarter 1939, >99% complete: WEAR, Jeanette E M — spouse BAILEY — HITCHIN — vol 3a page 4416; and the reverse, BAILEY, EDWARD J — spouse WEAR — same volume and page. HITCHIN IS THE FAMILY'S OWN REGISTRATION DISTRICT, where all six Wear children were born. TWO CONSEQUENCES. First, it rewrites the 1939 Register. That register, taken 29 SEPTEMBER 1939, found her alone at 18 Ridge Avenue, Letchworth, and this archive read it as \"and one daughter stayed\" — the household gone to South Africa, a girl of twenty left behind. SHE WAS NOT LEFT BEHIND; SHE WAS STAYING TO BE MARRIED, within three months and probably less. Second, and this is the point: AN ENGLISH MARRIAGE CERTIFICATE NAMES BOTH FATHERS. Row 33 established that the South African register has no parents' column at all — which is why the whole sibship rests on a seven-person family tree, why request 19 goes to the Master for three estates, and why row 61 chases a naturalisation file. This certificate costs about £14 and comes by email."
     },
     {
       "n": 63,
@@ -774,6 +774,14 @@
       "owner": "the private researcher, Pretoria",
       "since": "2026-09-16",
       "note": "NEW, out of row 74's sweep, and it belongs in the Pretoria bundle with rows 24, 80, 91 and 93. WLD 2225/1953, MORRIS ISAAC SALKOW VERSUS IVONNE (BORN DE FIGUERIDO) — the divorce filed the same year as the 13 February 1953 marriage. A divorce summons of the period recites the date and place of the marriage, both parties' ages and domiciles, AND THE CHILDREN BY NAME AND BIRTH DATE. For a woman whose stated age drifts younger on every form she signs, and whose parents are the central unsolved question of this archive, A PLEADING SHE HAD TO ANSWER IS WORTH MORE THAN ANOTHER CERTIFICATE. It may also be the last South African document that records where she was living, which is the thing nobody has been able to establish between 1953 and her death at Porto. || FOLDED into REQUEST 20 on 16 September — the consolidated Pretoria court-file bundle. Between 15 and 16 September this archive found EIGHT files in one depot, from five separate lines of enquiry, opened as five separate rows. That is how research happens and a terrible way to commission it: one person, one visit, one list, in priority order so it can be cut from the bottom. The bundle is HELD, not sent — the researcher was engaged on 14 September for six Booyzen files and has not replied, and nothing more goes to her until she answers on rates and capacity. This row stays open only as a pointer to request 20."
+    },
+    {
+      "n": 95,
+      "what": "GRO marriage certificate — Hitchin, Dec 1939, 3a/4416 — and it names the fathers",
+      "state": "next",
+      "owner": "David",
+      "since": "2026-09-16",
+      "note": "NEW and URGENT, out of row 62, AND IT IS THE CHEAPEST DOCUMENT ON THE ENTIRE WORK LIST. GRO marriage certificate, HITCHIN, December quarter 1939, VOL 3A PAGE 4416 — Edward J Bailey and Jeanette Eileen Maud Wear. An English marriage certificate names BOTH FATHERS, with their occupations. IF IT NAMES HENRY ROBERT WEAR, this archive has documentary proof from an official record that he had a daughter born 1919 at Hitchin — and the seven-person MyHeritage tree stops being the sole authority for the couple at the head of this line. It does not prove Leonard was their son; nothing yet does. But it is exactly what requests 19 and 20 are trying to achieve the slow and expensive way, for about £14 and an email. BUY THIS BEFORE ANYTHING ELSE ON THE LIST, including the GRO birth and marriage certificates of rows 27 and 28."
     }
   ]
 }
