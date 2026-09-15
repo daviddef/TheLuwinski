@@ -79,10 +79,10 @@
     {
       "n": 10,
       "what": "Settle whether Leonard died in 1973 or 1979",
-      "state": "next",
-      "owner": "this archive",
+      "state": "blocked",
+      "owner": "David",
       "since": "2026-09-15",
-      "note": "Two secondary sources disagree: the family tree kept by his own daughter says **1973**, GenDatabase's verified deaths say **1979**. Neither is a document. `\"WEAR, LEONARD\"` returns nothing in the gazettes — 1970s OCR is poor. Next: NAAIRS with a date filter, and the Cape rather than the Transvaal. **NAAIRS was down when this was tried** — *the connection to the Search Manager Server is inactive*."
+      "note": "Worked hard on 15 September and not settled — but the evidence is now correctly weighed, which it was not before. Three routes failed. NAAIRS is down a second day, returning \"The connection to the Search Manager Server is inactive\" with an empty database list. Gazettes.Africa returns nothing for \"Leonard Aubrey Robert Wear\", \"Wear, Leonard\" or \"L. A. R. Wear\" in any year — and that proves nothing, because the control damns it: a search for Luwinski returns eight documents and not one is Kurt's own 1969 estate notice, which certainly existed. FamilySearch has both his marriages and no death record at all. What did change: GenDatabase's own profile page says in its own words that this record is INCOMPLETE as per their verification, and prints his date of birth as the corrupt string 0017. So 1979 is a damaged entry in a state index and 1973 is a daughter's family tree, and neither is a document. The archive should stop preferring 1979. The cheap way to close it is GenDatabase's single Verified Report at R20, which releases the identity number, the place of death and the full date — a purchase, so it is David's to make and not this archive's."
     },
     {
       "n": 11,
@@ -174,19 +174,27 @@
     },
     {
       "n": 22,
-      "what": "A second copy of the de Witt divorce decree, filed behind marriage entry 858 of 1948",
-      "state": "next",
-      "owner": "this archive",
+      "what": "What is filed behind marriage entry 858 of 1948 — and the back of the sheet",
+      "state": "blocked",
+      "owner": "David",
       "since": "2026-09-15",
-      "note": "Not a new mystery — the four-month gap was solved when TPD 534/1948 turned up in a photograph in the family tree: her first husband sued her. What the film adds is independent corroboration and a second place to get the document. The Remarks column of the Johannesburg register reads \"Order Filed.\", which in 1948 practice means the decree was physically handed in on the wedding day and filed with entry 858. So the order exists in two custodies: the court file at the Transvaal depot, already on the Pretoria request, and whatever sits behind entry 858 at Home Affairs, which nobody has asked for. Worth asking, because a decree recites the grounds, and the grounds for a marriage that lasted from February to June are the thing this archive still cannot explain."
+      "note": "Drafted as request 15 and DELIBERATELY NOT SENT. The plan was a letter to Home Affairs. Searching the sent mail first — the rule written after the Xaba duplication — turned up a reply from a professional South African researcher in May 2020 saying that certificates of any kind, abridged, unabridged or vault, can only be applied for IN PERSON at Home Affairs, that third-party applications are no longer accepted, and that an applicant living overseas must go through the South African Embassy or Consulate in their country. So the letter as conceived would have gone to an address that cannot act on it — the fourth dead address of this project, avoided this time before sending rather than after a bounce. It is redrafted to the High Commission in Canberra and asks HOW rather than asking for the record. And it surfaces something uncomfortable: if eligibility really is limited to immediate family, then for the 1948 marriage that means the two spouses, both long dead, and their son of record. This document cannot be got without Derrick, which collides with row 15. Raised once, here, and left with David."
     },
     {
       "n": 23,
       "what": "The reverse of the 1948 marriage register — the form says P.T.O. and nobody has turned it over",
-      "state": "blocked",
+      "state": "struck",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Frame 2047 ends with the printed instruction [P.T.O. There is a back to the sheet. FamilySearch does not expose a film's frame list to anything except its own viewer, and its own viewer would not load for this session, so the frame after 2047 could not be reached. Named as unread rather than assumed blank."
+      "note": "Struck 15 September, with an answer rather than a shrug. The film viewer loaded once the throttle eased, and the frames either side of ours were opened: frame 2046 is certificate 764, Louw and Swanepoel; frame 2048 is certificate 295, Mowbray and Gemmer. Both are certificate FRONTS, both 19 June 1948. The film runs front, front, front across its 3,228 images. So the reverse of the sheet was never photographed, and no amount of patience with FamilySearch will produce it. The question is not dropped — it is folded into row 22, because the letter to Home Affairs about entry 858 has to ask for both sides of it now."
+    },
+    {
+      "n": 24,
+      "what": "The Wear–Dunlop ante-nuptial contract, Johannesburg, October 1951",
+      "state": "next",
+      "owner": "the private researcher, Pretoria",
+      "since": "2026-09-15",
+      "note": "Found tonight by reading the register of Leonard's second marriage at full resolution: certificate 1397 of 1951, column 10, reads \"with\". So a notarial ante-nuptial contract was executed for Leonard Aubrey Robert Wear and Marjorie Eileen Dunlop, born Walker, and registered in the Johannesburg Deeds Office. This is the third ANC on the archive's list, after Kurt's two, and it is the only one of the three that names LEONARD. An ANC recites each party's full particulars and is not confined to the register's eleven columns, which makes it the best document about him this archive has ever had a route to. Goes to the Pretoria researcher with rows 4 and 5."
     }
   ]
 }
