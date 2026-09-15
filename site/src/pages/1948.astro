@@ -43,13 +43,22 @@ const t = [
     <thead><tr><th>Case</th><th>Year</th><th>Who sued whom</th><th>Action</th></tr></thead>
     <tbody>{litigation.map(r => (
       <tr>
-        <td><strong>{r.ref}</strong></td>
+        <td>{r.url
+          ? <a class="src" href={r.url} title={'National Archives reference ' + r.naairs + ' — opens the record'}><strong>{r.ref}</strong></a>
+          : <strong class="unsourced" title={r.nourl}>{r.ref}</strong>}</td>
         <td>{r.year}</td>
         <td>{r.plaintiff} → {r.defendant}</td>
         <td>{r.action}{r.status.startsWith('NEW') && <> <span class="tag doc">New</span></>}</td>
       </tr>
     ))}</tbody>
   </table></div>
+  <p class="small muted">
+    <strong>Case numbers that are links go to the record.</strong> Four of these six can be opened and
+    checked in one click, at their National Archives reference. The two that are not links are not
+    linked because this archive cannot presently produce a public record for them &mdash; they are known
+    only from a photograph of a NAAIRS screen that somebody saved into the family tree. Hover them to see
+    that said. <strong>A citation you cannot follow should not look like one you can.</strong>
+  </p>
 
   <div class="panel">
     <h3>The four-month gap is explained <span class="tag doc">Solved</span></h3>
@@ -91,7 +100,7 @@ const t = [
       The 1948 register had been read twice, both times from a <strong>photograph attached to the
       family tree</strong> — a copy of a copy. This archive has already been caught once treating a
       transcription as a document, so on 15 September it was fetched from the microfilm:
-      <strong>digital film 008109682, frame 2047</strong>, in <em>South Africa, Civil Marriage
+      <strong>digital film 008109682, frame 2047</strong> — <a class="src" href="https://www.familysearch.org/ark:/61903/1:1:6ZHT-WSJM">the index entry</a> and <a class="src" href="https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSJ1-SJQK">the page image</a>, in <em>South Africa, Civil Marriage
       Records, 1801–1974</em>. FamilySearch's own pages would not render — the session had been
       rate-limited to about one response every thirty-five seconds, which the site's front end shows
       as a hang — so the page was rebuilt locally from its <strong>108 deep-zoom tiles</strong> and

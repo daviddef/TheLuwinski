@@ -8,7 +8,10 @@
   "defendant": "Yvonne (born de Figueiredo)",
   "action": "DIVORCE",
   "source": "NAAIRS screen photographed into the family tree, photo 9500068",
-  "status": "NEW — found 14 Sep 2026"
+  "status": "NEW — found 14 Sep 2026",
+  "naairs": null,
+  "url": null,
+  "nourl": "Not in the National Archives index as mirrored by GenDatabase; known only from a NAAIRS screen photographed into the family tree."
  },
  {
   "ref": "WLD 1950/1948",
@@ -19,7 +22,9 @@
   "defendant": "Ivone (born Mota Figueiredo)",
   "action": "DIVORCE",
   "source": "NAAIRS, and photo 9500064",
-  "status": "known"
+  "status": "known",
+  "naairs": "ZA TAB WLD_0_1950/1948_1",
+  "url": "https://www.gendatabase.com/national-archives-record.php?q=5678677"
  },
  {
   "ref": "WLD 2545/1950",
@@ -30,7 +35,9 @@
   "defendant": "KURT",
   "action": "RESTITUTION OF CONJUGAL RIGHTS",
   "source": "NAAIRS screen photographed into the family tree, photos 9500067 and 9500069",
-  "status": "NEW — and she is the plaintiff"
+  "status": "NEW — and she is the plaintiff",
+  "naairs": "ZA TAB WLD_0_2545/1950_1",
+  "url": "https://www.gendatabase.com/national-archives-record.php?q=5710570"
  },
  {
   "ref": "WLD 497/1951",
@@ -41,7 +48,9 @@
   "defendant": "Ivone (formerly de Witt, born Figueiredo)",
   "action": "RESTITUTION OF CONJUGAL RIGHTS",
   "source": "NAAIRS, and photo 9500065",
-  "status": "known"
+  "status": "known",
+  "naairs": "ZA TAB WLD_0_497/1951_1",
+  "url": "https://www.gendatabase.com/national-archives-record.php?q=5713539"
  },
  {
   "ref": "WLD 2368/1951",
@@ -52,7 +61,9 @@
   "defendant": "Ivone (formerly de Witt) (born Figueiredo)",
   "action": "DIVORCE",
   "source": "NAAIRS",
-  "status": "known"
+  "status": "known",
+  "naairs": "ZA TAB WLD_0_2368/1951_1",
+  "url": "https://www.gendatabase.com/national-archives-record.php?q=5723928"
  },
  {
   "ref": "WLD 2542/1957",
@@ -63,6 +74,9 @@
   "defendant": "K LUWINSKI",
   "action": "ILLIQUID CASE, PAYMENT",
   "source": "NAAIRS screen photographed into the family tree, photo 9500066",
-  "status": "NEW — found 14 Sep 2026"
+  "status": "NEW — found 14 Sep 2026",
+  "naairs": null,
+  "url": null,
+  "nourl": "Not in the National Archives index as mirrored by GenDatabase; known only from a NAAIRS screen photographed into the family tree."
  }
 ]
