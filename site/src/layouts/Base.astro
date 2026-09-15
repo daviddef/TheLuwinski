@@ -1,5 +1,5 @@
 ---
-const { title, subtitle, lede } = Astro.props;
+const { title, subtitle, lede, hero } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const nav = [
   ['', 'The archive'],
@@ -131,6 +131,10 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
     .segmap .key i.ka { background: var(--accent); }
     .segmap .key i.kb { background: var(--doc); }
     .segmap .key i.kov { background: none; border: 1.6px solid var(--inf); height: .85rem; }
+    /* Optional hero band on the home page. Rendered only when the file exists. */
+    .hero { border-bottom: 1px solid var(--rule); background: var(--panel); }
+    .hero img { display: block; width: 100%; height: clamp(180px, 26vw, 420px); object-fit: cover; object-position: center 55%; }
+    .hero figcaption { padding: .55rem 0 .7rem; font-size: .78rem; color: var(--ink-faint); max-width: none; }
     .muted { color: var(--ink-soft); }
     .small { font-size: .85rem; }
   </style>
@@ -144,6 +148,12 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
       ))}
     </nav>
   </div></header>
+  {hero && (
+    <figure class="hero" style="margin:0">
+      <img src={hero.src} alt={hero.alt} />
+      <div class="wrap"><figcaption>{hero.caption}</figcaption></div>
+    </figure>
+  )}
   <main><div class="wrap">
     <h1>{title}</h1>
     {subtitle && <p class="sub">{subtitle}</p>}

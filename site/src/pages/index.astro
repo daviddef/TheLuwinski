@@ -1,8 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
+import fs from 'node:fs';
+import path from 'node:path';
 import register from '../data/register.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const c = register.counts;
+// The hero band renders only if the image is actually present, so the page never
+// ships a broken <img>. Drop hero.jpg into site/public/ and it appears.
+const heroFile = ['hero.jpg', 'hero.jpeg', 'hero.png', 'hero.webp'].find((f) => fs.existsSync(path.join(process.cwd(), 'public', f)));
+const heroAlt = 'A painted landscape. A railway runs away from the viewer: an English winter in the foreground, thinning birches beyond it, then dry highveld, and a river town at the vanishing point.';
+const heroCap = 'An illustration, not a document. Nothing in this archive rests on it.';
+const hero = heroFile ? { src: `${base}/${heroFile}`, alt: heroAlt, caption: heroCap } : undefined;
 
 // ─── The timeline: every dated life and event the archive holds ───────────────
 // lane: 'a' = the line of record · 'b' = the line the DNA points to · 's' = shared
@@ -78,7 +86,7 @@ const decades = [];
 for (let y = 1860; y <= 2030; y += 20) decades.push(y);
 
 ---
-<Base title="The Luwinski Archive"
+<Base hero={hero} title="The Luwinski Archive"
   subtitle="An evidence-first archive for the family of Lynn Derrick Luwinski — Berlin, Schubin, Sauerbaum, Lourenço Marques, Johannesburg, Porto."
   lede="Four of this family's men were deported from Berlin between 1941 and 1944 and did not come back. One young man got out in 1933 and became a dress designer in Johannesburg. A woman born in Portuguese East Africa married four times in that city and was buried in Porto. This archive sets down what can be documented about all of them — and one finding that unsettles how they are joined together.">
 
