@@ -71,6 +71,13 @@
       "result": "Both give Krmpote births starting 1879. Two independent indexes agree.",
       "bound": "Neither covers books that were never filmed. The parish's own status animarum, XIX–XX, is digitised and has NOT been read — it is a household census with birth dates and would not be caught by a birth-register search.",
       "date": "15 Sep 2026"
+    },
+    {
+      "claim": "Leonard never appears in the Government Gazette — A WEAK NULL, recorded as weak",
+      "searched": "Full text, every exact form of his name; and loose sweeps on Wear with engineer, Fairlands, Johannesburg",
+      "result": "Exact forms return zero. Loose forms return 3,469 and 5,568 documents, none of them him.",
+      "bound": "WEAR IS AN ORDINARY ENGLISH WORD — it appears in trade names, wool-labelling prosecutions and railway reports about flange wear. A null on this surname is nearly worthless, and is the opposite of the LUWINSKI null, which is strong precisely because the surname is rare and the same search finds him eight times. The two are not the same kind of object.",
+      "date": "15 Sep 2026"
     }
   ]
 }

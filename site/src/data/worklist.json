@@ -314,10 +314,10 @@
     {
       "n": 37,
       "what": "Sweep the Government Gazette for Leonard the engineer",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "He gave his occupation as ENGINEER in 1951. Gazettes.Africa is free, full-text, and the tooling is already written. Sweep for company directorships, business transfers under section 34, insolvencies, tenders, and government appointments. Expectations should be low and the OCR is poor — but the Piccadilly Hat Company came out of exactly this kind of sweep and it opened Kurt's entire working life."
+      "note": "DONE 15 September, and closed for a structural reason worth stating. Every exact form returns zero — \"Wear, Leonard Aubrey Robert\", \"WEAR, L. A. R.\", \"L A R Wear\" — and every loose form is useless: Wear+engineer+Johannesburg returns 5,568 documents and Wear+Fairlands+Johannesburg returns 3,469, because WEAR IS AN ORDINARY ENGLISH WORD appearing in trade names (More Wear Industries, Fashion Wear, Boys' Wear Manufacturing), wool-labelling prosecutions and railway reports about flange wear. THIS IS THE EXACT OPPOSITE OF THE LUWINSKI CASE AND THE ASYMMETRY MATTERS: Luwinski is rare, returns eight hits in the whole archive, all read, so a null means something. Wear returns thousands, none of them people, so a null means nothing. The archive will stop treating the two nulls as the same kind of object."
     },
     {
       "n": 38,
@@ -517,7 +517,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "NEW and small, but it is a free correction to the archive's own sibling table, which carries her as EVANS only. The 1975 gazette gives her as \"formerly Bailey, nee Wear\". So between the 1939 Register at Letchworth and 1975 she married a Bailey and then an Evans. A Bailey marriage is a dated document naming her father — if it was solemnised in England before she emigrated, the GRO marriage index will have it with the spouse's surname, and an English certificate DOES name fathers where the South African one does not. Order of work: GRO marriage index, WEAR, Janette E M, 1937 onwards, England and Wales. Cheap to search, about twelve pounds to buy if found, and David's call whether to buy."
+      "note": "ATTEMPTED 15 September and NOT FOUND, but the search is too blunt to call it a negative and the row stays open. Searched FamilySearch England and Wales for WEAR with spouse BAILEY, and South Africa for the same pair. FamilySearch fuzzy-matches Janette to Jane, Jean, Jennie and even Ware, and returned 348,000 results for a query meant to find one woman. WHAT WOULD ACTUALLY WORK: the GRO index searched on the exact forename string, or the South African marriage register if she married Bailey after emigrating — AND NOBODY KNOWS WHICH COUNTRY IT HAPPENED IN. She was at Letchworth in 1939 and naturalised in South Africa in 1975; the Bailey marriage is somewhere in those thirty-six years and on one of two continents."
     },
     {
       "n": 63,
@@ -690,10 +690,10 @@
     {
       "n": 84,
       "what": "Insolvency and sequestration notices for L. A. R. Wear",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "He was sued for payment in 1960 and this archive has taken that as an isolated fact. The Government Gazette publishes sequestrations and insolvencies with a rigour nothing else in this record has: SURNAME, FULL FORENAMES, OCCUPATION, RESIDENTIAL ADDRESS, and in many notices the DATE OF BIRTH and identity number. If Leonard was ever sequestrated, that notice is the single most informative line about him in existence. Search the estate and insolvency notices for WEAR with the initials L A R, and for the Fairlands and Berea addresses."
+      "note": "DONE 15 September, same answer and same reason as row 37. No insolvency or sequestration notice under any exact form of his name, and the loose sweeps are unusable because the surname is an ordinary English word. Recorded as a weak null, explicitly, on the bounded-negatives page."
     },
     {
       "n": 85,
