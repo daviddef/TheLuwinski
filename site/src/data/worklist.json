@@ -330,10 +330,10 @@
     {
       "n": 39,
       "what": "Sweep CASTLE through the South African record the way WEAR was swept",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Martha Maud Castle's people are half the ancestral couple and have had a fraction of the attention. Full GenDatabase sweep on CASTLE and its variants, gazette estate notices, and the Johannesburg burials. Her brother Ernest, born 1904, and her sister Hilda, born 1902 — neither of whom appears in the closest match's own family tree — have never been followed anywhere."
+      "note": "DONE 15 September, and it returned a coincidence that has to be handled rather than filed. TAB WLD 155/1915 and 329/1919: DIVORCE, MAUD MABEL LONGHURST (BORN CASTLE) VERSUS AUBREY LEONARD — the index writes the defendant by forenames alone because the surname is shared, and TAB MHG 3632/50 gives him in full as AUBREY LEONARD LONGHURST, died 1950, second wife Athalie born van Aardt. SO: A WOMAN CALLED MAUD, BORN CASTLE, MARRIED TO A MAN CALLED AUBREY LEONARD, IN JOHANNESBURG, TWO YEARS BEFORE LEONARD AUBREY ROBERT WEAR WAS BORN TO MARTHA MAUD CASTLE. Three elements of this archive's central identity in one line. It is probably nothing: Martha Maud was nineteen in 1915, married in Hertfordshire since 1914 and on the 1921 census at Letchworth, so she is not the plaintiff, and both Castle and Maud are common. BUT IT WOULD ANSWER A QUESTION NOBODY HERE HAS ASKED OUT LOUD — WHY JOHANNESBURG? Emigrating families go where somebody already is, and if Maud Mabel Castle was Martha Maud's aunt or elder cousin then the Castle family had a Johannesburg branch twenty years before the Wears arrived, and a boy christened Leonard Aubrey in 1917 was named after his mother's relative's husband. NOTHING IS CLAIMED. Written up in castle-baldock.md with the caution attached, because a later reader who found these three references without it could do real damage. Also swept: WEAR+CASTLE returns zero across all repositories — no South African record joins the two names."
     },
     {
       "n": 40,
@@ -742,6 +742,14 @@
       "owner": "this archive",
       "since": "2026-09-15",
       "note": "DONE 15 September — /negatives/ is live and in the navigation. Nine bounded negatives, each with three columns: WHAT WAS SEARCHED, WHAT CAME BACK, AND WHAT WOULD STILL FALL OUTSIDE IT. The last column is the point. It holds the distinction between \"this is not there\", which is a finding, and \"I did not find it\", which is a shrug. The page also records the two nulls this archive produced by its own error in one evening — a grid read before its async postback had landed, and a form field posted with an empty value — both of which looked exactly like an empty holding and neither of which was. The rule it enforces: do not publish a null you did not bound."
+    },
+    {
+      "n": 91,
+      "what": "Maud Mabel Castle of Johannesburg — coincidence, or the reason the family went there",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "NEW, out of row 39, and deliberately framed as a test rather than a claim. A Maud born Castle was divorcing an Aubrey Leonard Longhurst in Johannesburg in 1915 and again in 1919, two years before Martha Maud Castle bore a son she christened Leonard Aubrey. Martha Maud cannot be that woman — she was nineteen and in Hertfordshire — but a relative could be, and if she was, the archive gains the thing it has never had: A REASON WHY THIS FAMILY CROSSED TO THAT PARTICULAR CITY. Emigrating families go where somebody already is, and the Wear emigration has always been a bare fact with no pull behind it. Three cheap tests, in order: (1) GRO and censuses for a MAUD MABEL CASTLE born in the 1880s in Hertfordshire or Bedfordshire, and whether she sits in the same household or parish as Martha Maud's family at Baldock; (2) MHG 3632/50, Aubrey Leonard Longhurst's estate of 1950, which is INSIDE the estate index's range and orderable, and whose death notice names his parents; (3) WLD 155/1915, whose summons would recite the date and place of the first marriage. If all three come back negative, say so on the bounded-negatives page and close it."
     }
   ]
 }
