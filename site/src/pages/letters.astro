@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../data/letters.json';
+const today = new Date();
+const day = 86400000;
+const rows = data.rows.map(r => {
+  const sent = new Date(r.sent + 'T00:00:00Z');
+  const due = new Date(sent.getTime() + r.chase * day);
+  const waited = Math.floor((today - sent) / day);
+  const left = Math.ceil((due - today) / day);
+  return { ...r, waited, left, due: due.toISOString().slice(0, 10), ready: left <= 0 };
+}).sort((a, b) => a.left - b.left);
+const readyNow = rows.filter(r => r.ready).length;
+const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+---
+<Base title="Letters out"
+  subtitle={`${rows.length} sent and unanswered — ${readyNow === 0 ? 'none due to be chased yet' : readyNow + ' now due to be chased'}`}
+  lede={data.note}>
+
+  <div class="panel">
+    <h3>Why this page exists</h3>
+    <p>
+      This archive has fifteen letters out for its own research alone &mdash; more again in the sibling archives that share the mailbox &mdash; and <strong>had no schedule for chasing any of them</strong>,
+      which means they get chased either too early, which annoys archivists, or never, which is worse.
+      It had already sent one correspondent two emails in four hours and a second correspondent a
+      duplicate enquiry it had forgotten making.
+    </p>
+    <p>
+      So each letter now carries <strong>an interval chosen for the recipient</strong>, not a single
+      global one. A parish office open three hours a day is not a commercial researcher. A national
+      archive in another hemisphere is not a man who has quoted for work.
+      <strong>The page recomputes on every build</strong>, so the dates below are live rather than
+      written down once and forgotten.
+    </p>
+  </div>
+
+  <div class="scroll bleed"><table>
+    <thead><tr><th>Waited</th><th>To</th><th>About</th><th>Chase from</th></tr></thead>
+    <tbody>{rows.map(r => (
+      <tr>
+        <td><strong>{r.waited}d</strong></td>
+        <td><strong>{r.who}</strong><br /><span class="small muted">{r.addr}</span></td>
+        <td class="small">{r.what}</td>
+        <td class="small">
+          {r.ready
+            ? <><span class="tag disp">Due now</span> <span class="muted">{r.left === 0 ? 'today' : `${-r.left}d overdue`}</span></>
+            : <><span class="muted">{fmt(r.due)}</span><br /><span class="small muted">in {r.left}d</span></>}
+        </td>
+      </tr>
+    ))}</tbody>
+  </table></div>
+
+  <p class="small muted">
+    Intervals: <strong>10 days</strong> for a commissioned researcher who has been asked for rates;
+    <strong>21 days</strong> for a Master&rsquo;s office, a national archive or a parish;
+    <strong>28 days</strong> for an overseas archive in another language.
+    A reply resets the row &mdash; and a letter that has been answered comes off this page entirely.
+  </p>
+</Base>

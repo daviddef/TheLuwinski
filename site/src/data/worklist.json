@@ -391,10 +391,10 @@
     {
       "n": 49,
       "what": "A follow-up calendar for nineteen unanswered letters",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Nineteen letters are out and thirteen work-list rows are waiting on somebody else. There is no schedule for chasing any of them, which means they will be chased either too early, which annoys archivists, or never, which is worse. Set a decent interval per institution — longer for a parish than for a commercial researcher — record the date each becomes chaseable, and surface the ones that are due on the status page."
+      "note": "DONE 15 September. /letters/ is live and in the menu, built from site/src/data/letters.json and RECOMPUTED ON EVERY BUILD, so the dates are live rather than written down once and forgotten. Fifteen letters, each with an interval chosen for the recipient rather than one global number: 10 days for a commissioned researcher who has been asked for rates, 21 for a Master's office or a national archive or a parish, 28 for an overseas archive in another language. Sorted by soonest due. The page says plainly why it exists — this archive had already sent one correspondent two emails in four hours and another a duplicate enquiry it had forgotten making."
     },
     {
       "n": 50,
@@ -443,6 +443,14 @@
       "owner": "this archive",
       "since": "2026-09-15",
       "note": "New on 15 September from the 1952 register: Cynthia Wear, 21 and unmarried, gives her address as 64 Greenfield Road, Greenside, Johannesburg. At that age in 1952 she was almost certainly living with her parents, which would make this the household address of Henry Robert Wear and Martha Maud Castle — seventeen years after Letchworth and seventeen before he died in the city. It is the FIRST address this archive has ever had for them, and unlike a grave it is checkable: the Deeds Office property index, Johannesburg street and telephone directories, and voters rolls. It also feeds row 41, because if Leonard was ever at that address the Berea coincidence stops being the only geography in the case."
+    },
+    {
+      "n": 56,
+      "what": "Henrique’s Portuguese military record — now at the Arquivo Geral do Exército",
+      "state": "blocked",
+      "owner": "the Arquivo Geral do Exército, Lisboa",
+      "since": "2026-09-15",
+      "note": "A reply came in at 06:54 on 15 September and was sitting unread. Maria Joao Pires, Coordinator of the Arquivo da Defesa Nacional, writes that for military records one must contact the ARQUIVO GERAL DO EXERCITO, arqgex@exercito.pt — a different body from the Arquivo Historico Militar this archive had already written to. Written to the same hour, citing the referral by name and date, Gmail 1a0a40447162eada. The prize is the same as it always was: a Portuguese military recenseamento names the father AND the mother of the man recensed, and Henrique's father is unknown. Row 33 makes this more important, not less — the South African civil registers have no parentage field at all, so the Portuguese paperwork is the only route left for him."
     }
   ]
 }
