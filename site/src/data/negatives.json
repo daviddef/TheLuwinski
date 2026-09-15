@@ -10,6 +10,13 @@
       "date": "16 Sep 2026"
     },
     {
+      "claim": "The British consular and overseas registers cannot contain Leonard's death",
+      "searched": "GRO consular death series coverage; gov.uk guidance on registering a death abroad; published lists of excluded countries",
+      "result": "Three separate exclusions, all pointing the same way. The consular death registers run 1849–1965, so both candidate years fall outside. The modern statutory service covers deaths “on or after 1 January 1983” and is optional. And South Africa appears on the published list of countries where a death cannot be registered with the British authorities at all.",
+      "bound": "The first two are FIRM — a series end-date and gov.uk's own words. The third is PROBABLE, not proven: it is a local authority's summary, not legislation, and is marked as such. Any one of the three would be enough on its own.",
+      "date": "16 Sep 2026"
+    },
+    {
       "claim": "Leonard has no deceased estate in South Africa",
       "searched": "National Archives (NAAIRS), all repositories, surname WEAR, 1970–1976",
       "result": "No Wear deceased estate in the Transvaal at all between 1970 and 1976. The last is his father's, MHG 10245/69.",
