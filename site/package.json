@@ -11,7 +11,7 @@
     "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#f55559d7fe7daca409bb7cd07ceeb92580bfd24e",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#d1e902ea19c5f1cba0733f4b704c348defbd0c8b",
     "astro": "^5.18.2"
   }
 }
