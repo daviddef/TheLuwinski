@@ -1,6 +1,10 @@
 # Request 10 — to the keeper of the Nel Web Site
 
-**Status: DRAFTED, NOT SENT.** Awaiting the family's go-ahead.
+**Status: SENT 15 September 2026, 12:01**, on the family's instruction, as a MyHeritage
+internal message to member OYYV6MHIBUDKYYENYC4REZXRAXFJGSI. Subject: *Leonard Wear
+1917–1973 — his English family, and something I have to tell you*. Sent in full: the
+concern that Derrick should be told before a stranger is was raised twice and overruled
+twice, which is the family's call and not this archive's.
 
 **Channel:** MyHeritage internal message, "Contact Gillian" on the Nel Web Site record
 `myheritage.com/research/record-1-OYYV6T3F4NKNBE6NKSA26TI3WGSWZNY-1-500003`.
