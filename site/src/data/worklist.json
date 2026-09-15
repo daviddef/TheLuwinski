@@ -375,10 +375,10 @@
     {
       "n": 47,
       "what": "Draw the segments, instead of describing them",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The 44-against-253 argument is the strongest thing in this archive and it is currently three paragraphs of prose. It is a picture: chromosomes along an axis, Derrick's shared segments with the closest match in one colour, the Castle cousins' in another, and the overlap visible or not visible at a glance. Anyone who sees it understands the argument in five seconds. Anyone who reads the prose has to take it on trust."
+      "note": "The 44-against-253 argument is the strongest thing in this archive and it is currently three paragraphs of prose. It is a picture: chromosomes along an axis, Derrick's shared segments with the closest match in one colour, the Castle cousins' in another, and the overlap visible or not visible at a glance. Anyone who sees it understands the argument in five seconds. Anyone who reads the prose has to take it on trust. DONE 15 September: the chromosome map is live on /dna/, computed at build time from the segment coordinates rather than typed in, so the 297.5 / 44.3 / 253.2 figures in the prose are derived from the data beside them. Matches labelled by role only; the copy in site/src/data has the surname keys stripped."
     },
     {
       "n": 48,
@@ -407,10 +407,10 @@
     {
       "n": 51,
       "what": "Read the reverse of the 1951 and 1940 registers — or prove they were not filmed either",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Both forms end with the printed instruction P.T.O., and for the 1948 one the frames either side proved the film holds fronts only. That was established for a single film. It has not been established for film 008019258 or film 008161359, and it should not be assumed from one case — especially as the 1951 image is 5,111 by 3,803 where the 1948 one is 2,995 by 2,212, which is a different scanning regime entirely."
+      "note": "ANSWERED 15 September, and now established across THREE separate films rather than assumed from one. Film 008109682 (the 1948 register): frames 2046 and 2048 are certificates 764 and 295, both fronts. Film 008161359 (the 1940 register, frame 473, certificate 13): frame 474 is an Afrikaans certificate from Turffontein, number 206 — a front. Film 008019258 (the 1951 register, frame 2700, certificate 1397): frame 2701 is certificate 1400, Siegbert Buchholz of Germany — a front. THE REVERSES OF THESE SHEETS WERE NEVER PHOTOGRAPHED. It is systematic to the collection's filming, not a quirk of one reel, and no amount of patience with FamilySearch will produce them. That strengthens request 15: whatever is written on the back of any of these registers survives only in the original bound books at Home Affairs."
     },
     {
       "n": 52,
