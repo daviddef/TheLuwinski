@@ -255,10 +255,10 @@
     {
       "n": 32,
       "what": "The 1953 Salkow marriage register, read at full resolution",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Ivone married Morris Isaac Salkow on 13 February 1953, entered as Ivone Luwinski. FamilySearch has it as 1:1:6ZHR-B6Y3. The archive has the index line and has never opened the image. Every register it HAS opened this week changed something — the 1948 one gave the ante-nuptial contract, the 1940 one gave the army. Read it: her age, her status, her occupation, her address, and whether the remarks column carries an order."
+      "note": "DONE 15 September. Certificate 146 of 1953, Johannesburg, frame 1087, image 3:1:3Q9M-CSV4-R9JG-K, rebuilt from 336 tiles. Morris Isaac Salkow, 31, born Transvaal, DIVORCEE, salesman. Ivone Luwinski formerly de Witt born de Figueredo, 25, Portuguese East Africa, DIVORCEE, SALESLADY, of 9 Rudney Road, Rossmore. Without ante-nuptial contract; special licence 220116; and ORDER FILED against BOTH names — which is the second document, and the first she signed, proving the 1951 divorce from Kurt was actually granted. Salkow turns out to have married three times, 1943, 1953 and 1960, so this marriage ended too. AND IT CORRECTED THIS ARCHIVE THE SAME DAY: the age panel published on /1948/ that morning read the February and June 1948 ages as a two-year jump in four months. With the 1953 figure the real shape is a stated age drifting steadily YOUNGER — 22, then 24, then 25 where 1924 requires 28 or 29. The panel is rewritten, and the rule it now carries is that no inference in this archive may rest on an age Ivone gave a clerk."
     },
     {
       "n": 33,
@@ -319,10 +319,10 @@
     {
       "n": 40,
       "what": "Leonard's grave — and with it, probably, the death year",
-      "state": "next",
-      "owner": "this archive",
+      "state": "blocked",
+      "owner": "David",
       "since": "2026-09-15",
-      "note": "His parents are both at West Park, Johannesburg: Henry Robert on 11 September 1969, Martha Maud on 16 March 1986. Nobody has looked for Leonard in a cemetery register. eGGSA's gravestone photographs, the West Park and Brixton registers, BillionGraves and Find a Grave. A headstone or a burial register entry would settle 1973 against 1979 outright, which is row 10, and would do it without anybody buying anything."
+      "note": "WORKED and came back empty, which is itself worth having. Searched the FamilySearch collection that holds both his parents — South Africa, Gauteng, Johannesburg, Cemetery Records 1840-2019 — plus every South African death, burial and Find a Grave collection. LEONARD AUBREY ROBERT WEAR APPEARS EXACTLY TWICE IN ALL OF FAMILYSEARCH'S SOUTH AFRICAN HOLDINGS: his 1940 marriage and his 1951 marriage. No death, no burial, no grave. That is a real negative rather than a gap in the index, because the same collections hold Henry Robert at West Park in 1969, Martha Maud in 1986, Edwina in 2014 and Michelle in 2017. The likeliest reading is that he did not die in Johannesburg — he was divorced twice and could have gone anywhere. Which points straight back at row 10: GenDatabase's PLACE OF DEATH field is paywalled, and the R20 report would say which province to search. Blocked on that purchase, which is David's."
     },
     {
       "n": 41,
@@ -427,6 +427,14 @@
       "owner": "this archive",
       "since": "2026-09-15",
       "note": "Row 24 opened the Wear-Dunlop contract of October 1951 as a new document. The researcher was commissioned before it existed, so the brief does not mention it. Send a short amendment rather than letting it sit until the researcher has finished and been paid — it is the only one of the three contracts that names Leonard, and it is the reason the row was opened at all."
+    },
+    {
+      "n": 54,
+      "what": "John Anderson Wear, buried at West Park — who is he?",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Turned up incidentally while searching for Leonard's grave: a Find a Grave entry for JOHN ANDERSON WEAR at WEST PARK CEMETERY, JOHANNESBURG — the same cemetery where Henry Robert Wear was buried in 1969 and Martha Maud in 1986. No dates captured yet. He may be nothing to do with this family; Wear is not a rare surname and the archive has already been caught once treating a shared surname as a relationship, with Edwina. But a Wear in the same cemetery as the family's parents is worth ten minutes, and if he is a relation he is another male-line candidate."
     }
   ]
 }
