@@ -236,16 +236,16 @@
       "what": "Leonard's own birth certificate, GRO, Hitchin, first quarter 1917",
       "state": "blocked",
       "owner": "David",
-      "since": "2026-09-15",
-      "note": "THE OBVIOUS DOCUMENT THIS ARCHIVE HAS NEVER ORDERED, and it should be embarrassing that it took until now. Every route tried this week has been an attempt to get Leonard's parents out of a SOUTH AFRICAN record — marriage registers with no parents' columns, an estate that does not exist, a military file, a parish book. His ENGLISH BIRTH CERTIFICATE names his father and mother outright. The index entry is already held: WEAR, Leonard A R, Hitchin, Q1 1917. A GRO certificate costs about GBP 12.50 and arrives as a PDF in days. If it names Henry Robert Wear and Martha Maud Castle, the single weakest link in the whole chain — that Leonard is their son, currently resting on a seven-person family tree built by his daughter — becomes a government record. A purchase, so David's, but this is the cheapest decisive document on the entire list."
+      "since": "2026-09-16",
+      "note": "THE OBVIOUS DOCUMENT THIS ARCHIVE HAS NEVER ORDERED, and it should be embarrassing that it took until now. Every route tried this week has been an attempt to get Leonard's parents out of a SOUTH AFRICAN record — marriage registers with no parents' columns, an estate that does not exist, a military file, a parish book. His ENGLISH BIRTH CERTIFICATE names his father and mother outright. The index entry is already held: WEAR, Leonard A R, Hitchin, Q1 1917. A GRO certificate costs about GBP 12.50 and arrives as a PDF in days. If it names Henry Robert Wear and Martha Maud Castle, the single weakest link in the whole chain — that Leonard is their son, currently resting on a seven-person family tree built by his daughter — becomes a government record. A purchase, so David's, but this is the cheapest decisive document on the entire list. || REFERENCE PINNED 16 September from FreeBMD, so the certificate cannot be ordered wrong: HITCHIN, March quarter 1917, vol 3a page 1244 — WEAR, Leonard A R, mother CASTLE. The birth certificate names the father and gives his occupation and the family's address at the time."
     },
     {
       "n": 28,
       "what": "The Wear-Castle marriage certificate, GRO, Hitchin, fourth quarter 1914",
       "state": "blocked",
       "owner": "David",
-      "since": "2026-09-15",
-      "note": "The companion to the row above, and the generation behind it. The archive established that the ONLY Wear-Castle marriage in the whole English index is Henry R Wear to Martha L Castle, Hitchin Q4 1914. The certificate names BOTH FATHERS, with their occupations. That does two things at once: it confirms the couple from a state record rather than an inference, and it pushes the line back a generation on both sides at a stroke. Same cost, same speed."
+      "since": "2026-09-16",
+      "note": "The companion to the row above, and the generation behind it. The archive established that the ONLY Wear-Castle marriage in the whole English index is Henry R Wear to Martha L Castle, Hitchin Q4 1914. The certificate names BOTH FATHERS, with their occupations. That does two things at once: it confirms the couple from a state record rather than an inference, and it pushes the line back a generation on both sides at a stroke. Same cost, same speed. || REFERENCE PINNED 16 September from FreeBMD, so the certificate cannot be ordered wrong: HITCHIN, December quarter 1914, vol 3a page 1552 — WEAR, Henry R, spouse CASTLE. The 1914 certificate names the fathers of BOTH parties — Henry Robert Wear's father and Martha Maud Castle's father on one sheet — so it pushes this line back a generation in a single document."
     },
     {
       "n": 29,
@@ -354,10 +354,10 @@
     {
       "n": 42,
       "what": "Date the emigration exactly, from the outward passenger lists",
-      "state": "blocked",
+      "state": "done",
       "owner": "David — FamilySearch sign-in",
       "since": "2026-09-16",
-      "note": "Row 12 is marked done, and it is done only in the sense that the emigration is BOUNDED — after the 1921 census, before 29 September 1939. The UK outward passenger lists, BT27, would give the actual ship and the actual date. Two notes have carried this as a to-do for days without anyone touching it. It also answers something the archive has never asked: did Leonard travel WITH his parents, or separately, and at what age. || BLOCKED 16 September: THE FAMILYSEARCH SESSION HAS SIGNED OUT and this row cannot move without it. The catalogue and persona APIs now return 401 and the site redirects to the login page. This archive will not enter credentials on David's behalf. One sign-in in the browser unblocks this row, rows 42, 60 and 88 together, and the post-1970 marriage register test in row 81."
+      "note": "Row 12 is marked done, and it is done only in the sense that the emigration is BOUNDED — after the 1921 census, before 29 September 1939. The UK outward passenger lists, BT27, would give the actual ship and the actual date. Two notes have carried this as a to-do for days without anyone touching it. It also answers something the archive has never asked: did Leonard travel WITH his parents, or separately, and at what age. || BLOCKED 16 September: THE FAMILYSEARCH SESSION HAS SIGNED OUT and this row cannot move without it. The catalogue and persona APIs now return 401 and the site redirects to the login page. This archive will not enter credentials on David's behalf. One sign-in in the browser unblocks this row, rows 42, 60 and 88 together, and the post-1970 marriage register test in row 81. || NARROWED 16 September WITHOUT A PASSENGER LIST, and closed at that. NO WEAR MARRIED A FOOT IN ENGLAND AND WALES BETWEEN 1938 AND 1955 — and GenDatabase has Kathleen Edith Wear marrying James Cecil Foot in 1945, so SHE WAS IN SOUTH AFRICA BY THEN. Put with the rest, the window closes hard: Q3 1936 Bruce born at Hitchin, family still in England; 29 September 1939 the household ABSENT from the 1939 Register; Q4 1939 Janette marries Edward Bailey AT HITCHIN, having stayed for the wedding; 7 September 1940 Leonard marries at Rosebank, Johannesburg; 1945 Kathleen marries, not in England. THE HOUSEHOLD LEFT BETWEEN AUTUMN 1936 AND SEPTEMBER 1939, AND TWO OF THE SIX CHILDREN FOLLOWED SEPARATELY. That is a three-year window fixed by records rather than inferred from silence, and it is as far as this goes without the outward passenger lists, which are behind a paywall."
     },
     {
       "n": 43,
