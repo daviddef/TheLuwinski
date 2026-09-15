@@ -437,7 +437,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Phyllis Agnes Robertson was born in Natal in 1915 to Anatole Edgar Robertson and Sabine Marguerite Momple, married Leonard in 1940, divorced him in 1951, remarried as NORQUOY in 1952, was sued by him in 1957 and died in 2002. She is the mother of the woman whose family tree broke this case open, and the archive knows almost nothing about her. Momple is a Mauritian name, which is probably also why a Catholic priest married them."
+      "note": "BROKEN OPEN 15 September, after sitting untouched because Momple was a name with nothing attached. One NAAIRS query attached a family. TAB WLD 3046/1959: DIVORCE, LOUIS JAMES MOMPLE ROBERTSON VERSUS FLORENCE PERTHINIA — A JOHANNESBURG MAN CARRYING MOMPLE AS A MIDDLE NAME AND ROBERTSON AS A SURNAME, which is the classic signature of a mother's maiden name carried forward and exactly the joint this archive needed, since Phyllis Agnes ROBERTSON's mother was a MOMPLE. He is very probably her brother or first cousin. And behind him a whole family with estates: MHG 6060/50 MOMPLE, LOUIS ARTHUR, surviving spouse DORA MOMPLE BORN CARLSE; MHG 695/64 Dora Momple; TPD 1468/1950 Douglas Arthur Momple in re the late Louis Arthur Momple; and three daughters married out as Archer, Ackhurst and Gervais. MHG 6060/50 IS INSIDE THE ESTATE INDEX'S RANGE AND CAN BE ORDERED — its death notice names Louis Arthur Momple's parents and its estate file lists his children. If Phyllis's mother is among them, row 52 is answered and the Mauritian line behind her opens with it."
     },
     {
       "n": 53,
@@ -538,26 +538,26 @@
     {
       "n": 65,
       "what": "Ivone's naturalisation — the one route that names her parents on a South African form",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "THE BEST OF THE NEW ROWS. Row 58 proved the Government Gazette publishes naturalisation twice over — an intention-to-apply notice giving name, occupation and residential address, and a list of certificates issued giving EXACT DATE OF BIRTH, COUNTRY OF BIRTH and previous nationality. Ivone was a Portuguese national living in Johannesburg from at least 1947, married there in 1948 and again in 1953, and stayed until at least the 1970s. If she ever naturalised, the gazette gives her birth date outright and THE FILE BEHIND IT NAMES HER PARENTS — which is the single thing this archive has been writing to Lisbon, Maputo and Porto to obtain. Search the full text for MOTA FIGUEIREDO, FIGUEIREDO, LUWINSKI, SALKOW and the forename IVONE, and read the surrounding page rather than the snippet: the lists are two-column and the OCR interleaves them badly enough that row 58's entry had to be unpicked by hand."
+      "note": "DONE 15 September, and the answer is a bounded negative that is itself a fact about her. The gazette was swept YEAR BY YEAR 1946-1980 for the forename Ivone — the search API takes a year filter and pages, which is how a common forename becomes tractable. Ten South African gazettes carry it in that window and EVERY ONE WAS OPENED: a Radium Station general dealer in 1951, Ivone da Conceicao Isaac in the 1962 grant list, Maria Ivone Freitas Basilio de Abreu of Emmarentia in 1967, Ivone Bertholet de Oliveira e Sousa Duran of Lourenco Marques in 1968, Maria Ivone Silva Almeida in the 1968 grant list, Maria Ivone Melo Gouveia in the 1970 list. NONE IS HER. The exact forms \"Salkow, Ivone\", \"Ivone Salkow\", \"LUWINSKI, Ivone\", \"MOTA FIGUEIREDO\" and \"Rocha, Ivone\" return zero each. IVONE DID NOT NATURALISE AS A SOUTH AFRICAN under any of her three surnames. The sweep also taught the format — surname, forenames, date of birth, country of birth, previous nationality, certificate number — and showed the lists FULL of Portuguese and Madeiran names through exactly the years she lived there. Other Portuguese naturalised steadily; she did not. That fits a woman who went back to Portugal and died at Porto, and it makes the Portuguese correspondence more important, not less."
     },
     {
       "n": 66,
       "what": "Da Rocha naturalisation — the father the family tree can only call Unknown",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Henrique Figueiredo Pinto da Rocha was Ivone's first son and his father is recorded nowhere as anything but \"Unknown da Rocha\". The Portuguese military route (row 56) is blocked behind a form this archive will not fill in on David's behalf. The naturalisation lists are a second door to the same man: if a da Rocha naturalised in South Africa the issued-certificate list gives his date and country of birth, and the file names his parents. Search DA ROCHA and ROCHA across the gazette, and cross-check any hit against the 1941 Lourenço Marques window."
+      "note": "DONE 15 September. \"da Rocha, Henrique\" and \"Henrique Figueiredo Pinto\" return three South African gazettes and ALL THREE ARE THE 2023 ESTATE NOTICES THIS ARCHIVE ALREADY HAD for estate 12294/2023. No naturalisation notice, no grant. The route is closed and the father the tree calls Unknown is still unknown. What remains for him is the Portuguese military recenseamento, which is row 56, and the South African estate file itself."
     },
     {
       "n": 67,
       "what": "Salkow's naturalisation, and whether he was an immigrant at all",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Morris Isaac Salkow married Ivone in 1953 and died in Johannesburg in 1991, buried by the Chevrah Kadisha. The surname is Lithuanian-Jewish and the likeliest history is immigration in the 1920s or 1930s, but this archive has never established where he was born. A naturalisation entry would settle it in one line. He matters because he was Derrick's stepfather for the whole of his childhood, and because a man's naturalisation file lists his household."
+      "note": "DONE 15 September. \"Salkow, Morris\", \"Morris Isaac Salkow\" and \"Salkow, Mrs\" all return zero. The bare surname returns scores of hits across 1941-1969 but they are trade and business notices, not persons. No naturalisation for him either. Where Morris Isaac Salkow was born is still unestablished, and the gazette will not say."
     },
     {
       "n": 68,
@@ -589,7 +589,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Row 58 changed the prior on this. The family did NOT naturalise — Leonard's eldest sister was still a citizen of the United Kingdom and Colonies in 1975, forty years after they left Hertfordshire. A British subject who died abroad leaving any English asset appears in the England and Wales probate calendar, which is free, indexed by surname and year, and gives THE EXACT DATE AND PLACE OF DEATH and the address. Notes at wear-letchworth.md line 135 assert \"no English death, no probate\" but the assertion has no bounded search behind it. Do it properly: WEAR, 1970 to 1990, and report the bounds searched whether or not it finds him. Feeds row 10 directly."
+      "note": "WORKED 15 September to the end of what is free, and the result is a second instrument on which 1973 fails. The England and Wales probate service is free and its images ARE viewable without an account — but IT DOES NOT NAME-INDEX ANYTHING BEFORE 1996. A surname-and-year search returns scanned calendar pages and matches the string anywhere on the page, so WEAR also catches Weardale and Wearmouth. Searched with the keyword AUBREY to cut the noise: 1973 returns ZERO PAGES; then 8, 24, 19, 31, 13, 23, 19, 13 for 1974 to 1981. THE FAMILY TREE'S YEAR RETURNS NOTHING, on a second independent index, the evening after the South African estate index said the same. The 1979 pages have NOT been read — twenty-three dense calendar pages is an afternoon by eye, or minutes on a commercial index that has keyed the calendar by person. The row stays open and now says what it would cost."
     },
     {
       "n": 72,
@@ -626,10 +626,10 @@
     {
       "n": 76,
       "what": "The PIO immigration-papers series — Kurt's arrival, and everyone else's",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The Figueiredo sweep of 14 September turned up something nobody followed: SIX CAPE TOWN IMMIGRATION FILES, one of them KAB PIO 4752A, \"Immigration papers. Mrs. L.A. Figueiredo\", 1950. PIO is a whole series and it is indexed in NAAIRS at item level. Kurt Luwinski arrived from Germany in the 1930s as a Jewish refugee and this archive has never found a single document of his arrival — no ship, no permit, no date. An immigration file gives date and place of birth, nationality, the ship, and often the relatives already resident. Search PIO and the other immigration series for LUWINSKI, WEAR, SALKOW, DA ROCHA and FIGUEIREDO, and read KAB PIO 4752A whatever else turns up."
+      "note": "DONE 15 September, and the answer is that KURT'S ARRIVAL IS NOT IN THE INDEX AT ALL. The PIO immigration series is real and indexed at item level, and it holds exactly one Wear and no Luwinski. KAB PIO 907, reference 38964E, IMMIGRATION PAPERS H C WEAR, 1949 — almost certainly not ours: the initials are H C, not H R or L A R, and 1949 is a decade after this archive dated the family's departure. Recorded because it is the only one and because \"almost certainly not\" should be written down rather than decided twice. Also found: KAB PIO 82445E, immigration papers re EISENHARDT, 1957. IMMIGRATION+LUWINSKI and PIO+LUWINSKI both return nothing. Kurt has no ship, no permit and no date, and the index that would hold them does not have him."
     },
     {
       "n": 77,
@@ -677,7 +677,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "She is Leonard's first wife, Gillian's mother, and the closest living link to him that ever existed. The archive knows she remarried a Norquoy on 14 June 1952 and that Leonard brought an opposed application against her in 1957, and nothing else. NORQUOY IS A RARE ORKNEY SURNAME and therefore highly searchable. Find the 1952 marriage register, her death, and her estate. Her death notice names her parents — which is row 52's Momple and Robertson question answered from a different direction — and her estate file may hold correspondence about maintenance from a man this archive cannot otherwise place in the 1960s and 1970s."
+      "note": "ADVANCED 15 September — a candidate name, from NAAIRS. Phyllis remarried a Norquoy on 14 June 1952 and Leonard sued \"Phyllis Agnes Norquoy\" in 1957. NAAIRS holds fourteen Norquoy documents and two are a Johannesburg man in exactly the right years: WLD 1198/1957, Edward William Allen versus ROBERT SELWYN NORQUOY, and TPD 1624/1960, Sadi Jacobs versus Robert Selwyn Norquoy. ROBERT SELWYN NORQUOY IS VERY PROBABLY HER SECOND HUSBAND — rare Orkney surname, right city, right decade, and WLD 1198/1957 filed the same year as Leonard's WLD 790/1957 against her. Stated as an inference from surname, place and date; no document yet joins them. Next: the 1952 marriage register under the name Norquoy, and his estate. There is no Norquoy estate for a Phyllis Agnes in the index, but the index stops in 1976 and she may have outlived it."
     },
     {
       "n": 83,
@@ -701,7 +701,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The archive found Kurt buying the shop at 81 Eloff Street on 1 November 1941, running it with Walter Oppenheimer for exactly a year, taking it over alone on 31 October 1942 and still trading there in 1952 — and then dropped it. He died in 1968. THE SIXTEEN YEARS BETWEEN ARE THE YEARS DERRICK WAS BORN INTO. A business generates gazette notices when it changes hands, is registered as a company, changes address or is wound up, and the gazette is free and full-text. Run 81 Eloff Street and PICCADILLY against 1952–1970."
+      "note": "ADVANCED 15 September. \"Piccadilly Hat\" returns five South African gazettes. Three are the 1941 partnership notices already held. TWO ARE NEW AND NEITHER CONTAINS THE WORD LUWINSKI, which is why the earlier surname sweep missed them. 8 NOVEMBER 1940, NO. 2825 carries a business notice naming PICCADILLY HAT and PICCADILLY (PROPRIETARY) — A YEAR BEFORE KURT BOUGHT THE SHOP. The OCR of that page is badly scrambled, columns interleaved and words shuffled, and this archive will not guess at what it says: THE PAGE IMAGE NEEDS OPENING. And 16 May 1952, no. 4846 lists \"Piccadilly Hat Co.\" in a registration schedule under reference VCR. 429/8/49, a 1949 registration. So the shop existed under a company before Kurt and was still registered in 1952 — he bought a going concern, not an empty name."
     },
     {
       "n": 86,
