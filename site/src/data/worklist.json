@@ -618,10 +618,10 @@
     {
       "n": 75,
       "what": "Fill the three null references in the litigation table from NAAIRS itself",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "litigation.json carries TPD 534/1948 with naairs:null and a nourl note saying it is \"known only from a NAAIRS screen photographed into the family tree\". That excuse is now spent: NAAIRS answers directly. Verify TPD 534/1948, WLD 2545/1950 and every other row of the table against the index, fill the naairs field, and either supply the url or replace the nourl text with what the index actually says. The table was built from a commercial mirror and somebody's photographs; row 36 checked the seven Luwinski documents and found it held. Finish the job for the rest."
+      "note": "DONE 15 September. All six rows of litigation.json verified directly against NAAIRS rather than against a commercial mirror or a photograph of somebody's screen. TPD 534/1948 no longer needs its excuse: the index gives it in full — TAB, TPD, VOLUME 5/795, ILLIQUID CASE. DIVORCE. JOHANNES ANTONIE OELOFSE DE WITT VERSUS YVONNE (BORN DE FIGUEIREDO) — and THE VOLUME NUMBER IS NEW, which is what an order form actually needs. The nourl excuse is removed. And WLD 2545/1950 explains its own earlier obscurity: the index spells her IVONE LUWENSKI, not Luwinski, so a correct-spelling surname search could never have found it."
     },
     {
       "n": 76,
@@ -698,10 +698,10 @@
     {
       "n": 85,
       "what": "What happened to the Piccadilly Hat Company after 1952",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "ADVANCED 15 September. \"Piccadilly Hat\" returns five South African gazettes. Three are the 1941 partnership notices already held. TWO ARE NEW AND NEITHER CONTAINS THE WORD LUWINSKI, which is why the earlier surname sweep missed them. 8 NOVEMBER 1940, NO. 2825 carries a business notice naming PICCADILLY HAT and PICCADILLY (PROPRIETARY) — A YEAR BEFORE KURT BOUGHT THE SHOP. The OCR of that page is badly scrambled, columns interleaved and words shuffled, and this archive will not guess at what it says: THE PAGE IMAGE NEEDS OPENING. And 16 May 1952, no. 4846 lists \"Piccadilly Hat Co.\" in a registration schedule under reference VCR. 429/8/49, a 1949 registration. So the shop existed under a company before Kurt and was still registered in 1952 — he bought a going concern, not an empty name."
+      "note": "DONE 15 September, and the shop had a life before Kurt. The 1940 page was unreadable in OCR, so the PDF page was rendered at 200 dpi and read as an image. Government Gazette 2825 of 8 November 1940, page VII: NOTICE OF SALE OF BUSINESS — \"The business of PICCADILLY HAT SHOP carried on by PICCADILLY DRESS SALOON (PROPRIETARY), LIMITED, at HANNAH COURT, 81 ELOFF STREET, Johannesburg, has been sold and will be transferred to IVY FUCHS, a public trader, who will carry on the said business under the same style or firm at the same address for her own account and benefit as from the 1st of October, 1940.\" Attorney Israel Katz, Sauer's Buildings. THREE GAINS: the building is named — HANNAH COURT, which this archive did not have; the shop belonged to a company, PICCADILLY DRESS SALOON (PTY) LTD; and KURT BOUGHT IT FROM A NAMED PREDECESSOR, IVY FUCHS, who had held it for thirteen months. He bought a going concern with a history, not an empty name. Also found: 16 May 1952 no. 4846 lists \"Piccadilly Hat Co.\" in a registration schedule under VCR. 429/8/49, a 1949 registration."
     },
     {
       "n": 86,
@@ -738,10 +738,10 @@
     {
       "n": 90,
       "what": "A register of bounded negatives — what has been searched and did not exist",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "This archive has become good at proving absences and careless about recording their bounds. Tonight alone: no Wear estate in the Transvaal 1970–1976, and the estate index stops at the end of 1976; no Luwinski naturalisation across the whole gazette; no pre-1879 Krmpote births. Each is worth something only because the limit was measured. The research log's \"leads closed\" list records conclusions but not ranges. Give the site one page that states, for every negative the archive relies on, WHAT WAS SEARCHED, OVER WHAT RANGE, AND WHAT WOULD FALL OUTSIDE IT — so that a later reader can tell a real absence from an unmeasured one."
+      "note": "DONE 15 September — /negatives/ is live and in the navigation. Nine bounded negatives, each with three columns: WHAT WAS SEARCHED, WHAT CAME BACK, AND WHAT WOULD STILL FALL OUTSIDE IT. The last column is the point. It holds the distinction between \"this is not there\", which is a finding, and \"I did not find it\", which is a shrug. The page also records the two nulls this archive produced by its own error in one evening — a grid read before its async postback had landed, and a form field posted with an empty value — both of which looked exactly like an empty holding and neither of which was. The rule it enforces: do not publish a null you did not bound."
     }
   ]
 }

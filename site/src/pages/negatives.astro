@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../data/negatives.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title={data.title} subtitle={data.dek}
+  lede="This archive has become good at proving that something is not there, and careless about recording how far it looked. An absence is worth nothing until its limits are written down. This page is where they are.">
+
+  <div class="panel">
+    <h3>Why this page exists</h3>
+    <p>
+      Several of this archive&rsquo;s conclusions now rest on absences. That Leonard has no South
+      African estate. That Ivone never naturalised. That the marriage registers never asked for
+      parents. <strong>Each of those is only worth something because somebody measured how far the
+      search reached</strong> &mdash; and until now those measurements lived in commit messages and
+      working notes, where a later reader would never find them.
+    </p>
+    <p>
+      The distinction the page is trying to hold is between <em>this is not there</em> and
+      <em>I did not find it</em>. The first is a finding. The second is a shrug. The column that
+      separates them is the last one.
+    </p>
+  </div>
+
+  {data.rows.map((r) => (
+    <div class="panel">
+      <h3>{r.claim} <span class="tag doc">{r.date}</span></h3>
+      <p class="small"><strong>Searched:</strong> {r.searched}</p>
+      <p class="small"><strong>Result:</strong> {r.result}</p>
+      <p class="small muted"><strong>What would fall outside it:</strong> {r.bound}</p>
+    </div>
+  ))}
+
+  <div class="panel">
+    <h3>The rule this page is trying to enforce</h3>
+    <p>
+      <strong>Do not publish a null you did not bound.</strong> Twice this evening a search returned
+      nothing and the nothing was the archive&rsquo;s own fault: once because a page&rsquo;s results
+      were still loading, and once because a form field was posted empty. Both looked exactly like an
+      empty holding. Neither was.
+    </p>
+    <p>
+      So a negative enters this archive with three things attached or it does not enter at all: what
+      was searched, over what range, and what would still fall outside it.
+    </p>
+  </div>
+</Base>
