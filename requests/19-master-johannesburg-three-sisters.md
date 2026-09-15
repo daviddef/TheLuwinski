@@ -1,9 +1,9 @@
 # Request 19 — The Master of the High Court, Johannesburg: three sisters' estates
 
-**Status: DRAFTED 16 September 2026. NOT SENT — the address needs verifying first.**
-*This archive's own rule, written after the Xaba duplication and reinforced by row 48: verify the
-address before writing, not after. The Johannesburg Master's office contact details have not yet
-been checked the way Cape Town's were for request 11.*
+**Status: DRAFTED 16 September 2026. NOT SENT.**
+*The address has now been checked (below) and the finding changed the letter: there is already a
+live thread with this office about this family, so this goes in as a follow-up, not as a cold
+approach. David to send.*
 
 ## What this asks for and why it is the best remaining shot
 
@@ -45,28 +45,46 @@ have found himself:
 **So they must be asked for by name and date of death.** That is an ordinary counter request, and it
 is what this letter does.
 
-## Before sending — what still has to be established
+## The address, checked — and a structural problem the letter has to own
 
-1. **Verify the Johannesburg Master's office address and the controller's name**, the way request 11
-   established Mr D Keyster at Cape Town by last digit of the estate number. Do not send to a
-   generic address found in a guide; request 16 records what happens when a widely published address
-   turns out to be dead.
-2. **Check the sent mail first.** Two archives share this mailbox. Search for prior correspondence
-   with the Johannesburg Master before writing.
-3. **Note the connection to request 11**, which is live at Cape Town for Gillian Nel (10761/2024)
-   and Patricia Grant (018561/2021). The letter should say so — one researcher, one family, two
-   offices — so that neither office thinks it is being asked in the alternative.
+*Checked against `SHARED-CONTACTS.md` and `sent-log.md` before drafting, per row 48.*
+
+| | |
+|---|---|
+| ~~`MastersJohannesburg@justice.gov.za`~~ | **NOT IN USE. The department's own PDF says so in capitals.** Do not send here. |
+| **`MorSello@justice.gov.za`** — Ms Morwanki Sello | **LIVE, and already written to.** She is the controller for **file numbers ending in 4**, and this mailbox wrote to her on 15 September about estate **12294/2023** (Henrique da Rocha), cc `KhuMabaso@justice.gov.za`. |
+
+**So there is already an open thread with this office, about this family.** That changes what should
+be sent. **This must not be a cold letter** — it should go into the existing thread as a follow-up,
+naming the earlier request, or it repeats the Xaba duplication that caused the shared-contacts rule
+to be written in the first place.
+
+**And the structural problem, stated plainly:** the Johannesburg office allocates files **by the last
+digit of the estate number**, exactly as Cape Town does. **This archive does not have estate numbers
+for any of the three sisters** — that is the whole point of asking. So there is no way to know in
+advance which controller owns them, and Ms Sello may have to pass the request on. *The letter should
+say so, and ask her to redirect it rather than pretending the choice of desk was informed.*
+
+## Also still to do
+
+- **Note the connection to request 11**, live at Cape Town for Gillian Nel (10761/2024) and Patricia
+  Grant (018561/2021). One researcher, one family, two offices — so neither thinks it is being asked
+  in the alternative.
 
 ---
 
-**To:** *(to be established — see above)*
+**To:** `MorSello@justice.gov.za` — **as a reply on the existing 12294/2023 thread, not a new one**
+**Cc:** `KhuMabaso@justice.gov.za`
 **Subject:** Copy request — death notices (J294) in three deceased estates: EVANS 2001, FOOT 2010, HALSEY 2000
 
 ---
 
-Dear Sir or Madam,
+Dear Ms Sello,
 
-I am researching my family's history and would be grateful for copies of the **death notice
+Thank you for your help with estate **12294/2023** (DA ROCHA, Henrique Figueiredo Pinto), about
+which I wrote on 15 September. I am writing on the same research, and about the same family.
+
+I would be grateful for copies of the **death notice
 (Form J294)** in three deceased estates, all of them women who died in the Johannesburg area and
 who were sisters:
 
