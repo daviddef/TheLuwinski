@@ -1,9 +1,14 @@
 # Request 13 — Permission to publish, GenDatabase
 
-**Status: PREPARED, NOT SUBMITTED.** It is a web form at
-`gendatabase.com/permission-request.php` and it asks for **your** name, phone number and
-email. I have not submitted it: entering somebody's personal details into a form is not
-something this archive does on a general instruction. Everything below is ready to paste.
+**Status: SUBMITTED 15 September 2026**, at `gendatabase.com/permission-request.php`, once the
+family supplied the phone number the form requires.
+
+> *"Request received. Thank you — your request has been submitted. We will review your request
+> and email you the decision. If it is approved, a permission certificate (PDF) will be
+> attached to that email."*
+
+So the outcome arrives by email to david.defranceski@gmail.com, and **a PDF certificate comes
+with it if the answer is yes** — which is worth keeping with the archive's sources.
 
 ## Why it is needed
 Every GenDatabase profile page carries:
