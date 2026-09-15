@@ -92,6 +92,13 @@
       "result": "No record anywhere for a Maud Mabel Castle. The 136 NAAIRS Longhursts are overwhelmingly Cape-based and older, with nothing joining any of them to a Castle.",
       "bound": "FamilySearch fuzzy-matches forenames badly — it collapses Janette into Jane, Jean and even Ware — and its England coverage is not complete. This does not dispose of the 1915 and 1919 Johannesburg divorces, which name her plainly. The real tests are two orderable documents: MHG 3632/50 and WLD 155/1915.",
       "date": "16 Sep 2026"
+    },
+    {
+      "claim": "No Leibholz appears anywhere in the South African archives",
+      "searched": "NAAIRS, all repositories and national registers, surname LEIBHOLZ",
+      "result": "Zero documents.",
+      "bound": "Expected rather than informative — the Leibholz brothers were in Berlin and East Prussia and none of them reached South Africa. Recorded so that nobody runs the search again on the assumption it was never tried.",
+      "date": "16 Sep 2026"
     }
   ]
 }

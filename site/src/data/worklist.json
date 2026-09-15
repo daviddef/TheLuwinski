@@ -610,10 +610,10 @@
     {
       "n": 74,
       "what": "Sweep every surname in the archive through NAAIRS, now that it can be driven",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
-      "since": "2026-09-15",
-      "note": "Row 36 worked out how to drive the National Archives index programmatically — session token, the K0000001–K0000005 field names, the year range, and the &F=P print view that returns one clean document. The archive then used it for exactly two surnames. RUN THE WHOLE CAST: CASTLE, HALSEY, ROBERTSON, NORQUOY, DUNLOP, WALKER, MOMPLE, DE WITT, FIGUEIREDO, MOTA, SALKOW, DA ROCHA, LEIBHOLZ, HOSTOWSKY, BERNER, SEFTON, EISENHARDT, CRYSTAL, THORP, WILLIS, GANNON, CRIMES, GREEN, BAILEY, EVANS. Save every hit to a TSV the way the Figueiredo sweep was saved. This subsumes the South African half of row 39 and should be done before it."
+      "since": "2026-09-16",
+      "note": "DONE 16 September, and it paid for itself on the fourth surname. THE FIND IS WLD 2225/1953: ILLIQUID CASE. DIVORCE. MORRIS ISAAC SALKOW VERSUS IVONNE (BORN DE FIGUERIDO). THEY MARRIED ON 13 FEBRUARY 1953 AND HE SUED HER FOR DIVORCE IN THE SAME YEAR. The archive knew the marriage ended — FamilySearch has him marrying in 1943, 1953 and 1960 — but not that it ended almost at once; Johannesburg case numbers ran to five figures by the 1970s, so 2225 of 1953 is not a December filing. Three consequences: it removes a stepfather the archive had been assuming was a constant through Derrick's childhood; it explains the hole after 1953 as a fact about her life rather than a failure of searching; and it is a new orderable document naming Ivone, whose summons would recite the date and place of the marriage, both ages and domiciles, and the children by name. ALSO SWEPT: NORQUOY gave Robert Selwyn (row 82); MOMPLE gave the Robertson joint (row 39); CASTLE gave the Longhurst coincidence; SALKOW gave nine Johannesburg estates all inside the index window, one of which is probably Morris Isaac's parent; and LEIBHOLZ returns ZERO across all repositories, which is expected — they were never in South Africa — and is recorded so nobody runs it again."
     },
     {
       "n": 75,
@@ -766,6 +766,14 @@
       "owner": "the private researcher, Pretoria",
       "since": "2026-09-16",
       "note": "NEW, out of row 83, and it belongs in the same Pretoria visit as rows 24, 80 and 91. Marjorie Eileen Dunlop, born Walker, divorced Robert John Dunlop in 1949 and married Leonard in October 1951. A divorce summons of the period recites the date and place of the marriage, the parties' ages and domiciles, AND THE CHILDREN BY NAME AND BIRTH DATE — which is exactly what the estate row wants to know before paying for a copy. It would also place her in Johannesburg in 1949, two years before she married Leonard and one year after 1948. Cheap, because the researcher is already going for five other files."
+    },
+    {
+      "n": 94,
+      "what": "WLD 2225/1953 — the Salkow divorce, filed the year they married",
+      "state": "next",
+      "owner": "the private researcher, Pretoria",
+      "since": "2026-09-16",
+      "note": "NEW, out of row 74's sweep, and it belongs in the Pretoria bundle with rows 24, 80, 91 and 93. WLD 2225/1953, MORRIS ISAAC SALKOW VERSUS IVONNE (BORN DE FIGUERIDO) — the divorce filed the same year as the 13 February 1953 marriage. A divorce summons of the period recites the date and place of the marriage, both parties' ages and domiciles, AND THE CHILDREN BY NAME AND BIRTH DATE. For a woman whose stated age drifts younger on every form she signs, and whose parents are the central unsolved question of this archive, A PLEADING SHE HAD TO ANSWER IS WORTH MORE THAN ANOTHER CERTIFICATE. It may also be the last South African document that records where she was living, which is the thing nobody has been able to establish between 1953 and her death at Porto."
     }
   ]
 }
