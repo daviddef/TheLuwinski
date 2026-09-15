@@ -144,14 +144,29 @@ const c = register.counts;
       </div>
     </div>
 
-    <div class="gen">Mother</div>
-    <div class="node both">
-      <b><a href={base + '/ivone/'}>Ivone <strong>Mota</strong> Figueiredo</a> <span class="yr">b. Lourenço Marques 1924, d. Porto</span></b>
-      <p>
-        <strong>Not in dispute on either reading.</strong> Four marriages, three countries. Whichever man
-        fathered Derrick, she was his mother — which is also why the Portuguese half of his DNA is the
-        half that behaves.
-      </p>
+    <div class="gen">Mothers</div>
+    <div class="sibrow">
+      <div class="node sib span2 shared">
+        <span class="rel">Mother of <em>Henrique</em> and <em>Derrick</em></span>
+        <b><a href={base + '/ivone/'}>Ivone <strong>Mota</strong> Figueiredo</a></b>
+        <span class="yr">b. Lourenço Marques 1924, d. Porto</span>
+        <p>
+          <strong>Not in dispute on either reading.</strong> Four marriages, three countries. Whichever
+          man fathered Derrick, she was his mother — which is also why the Portuguese half of his DNA is
+          the half that behaves. Henrique is hers by the first of those marriages, to a da Rocha.
+        </p>
+      </div>
+      <div class="node b open sib">
+        <span class="rel">Mother of <em>Edwina</em>? <span class="tag open">If Edwina is his</span></span>
+        <b>Phyllis Agnes Robertson</b>
+        <span class="yr">b. 1915 &middot; married Leonard 1940, divorced him 1951</span>
+        <p>
+          <strong>No relation to Derrick whatsoever</strong>, and not his mother by any reading. She is
+          here because <strong>Edwina&rsquo;s mother is not Ivone</strong> — if Edwina is Leonard&rsquo;s
+          daughter, this is whose daughter she is, and Derrick would share a father with her and nothing
+          else.
+        </p>
+      </div>
     </div>
 
     <div class="gen">His generation</div>
@@ -161,9 +176,10 @@ const c = register.counts;
         <b>Henrique Figueiredo Pinto da Rocha</b>
         <span class="yr">11 March 1941 &ndash; 27 October 2022</span>
         <p>
-          Ivone&rsquo;s son by her first marriage, to a da Rocha. <strong>His brother on either
-          reading</strong>, because the dispute has only ever been about the father. Estate
-          <strong>12294/2023</strong>.
+          Father: <strong>a da Rocha</strong>, Ivone&rsquo;s first husband, whom the family tree can
+          only call <em>Unknown</em>. <strong>Derrick&rsquo;s brother on either reading</strong>, because
+          the dispute has only ever been about <em>his</em> father. Estate <strong>12294/2023</strong> —
+          the file that would finally name the da Rocha.
         </p>
       </div>
       <div class="node derrick sib">
@@ -181,9 +197,10 @@ const c = register.counts;
         <b>Edwina Ann Wear</b>
         <span class="yr">1945 &ndash; 30 June 2014</span>
         <p>
-          Buried at Braamfontein, Johannesburg. The right surname, the right city, born inside
-          Leonard&rsquo;s first marriage. <strong>Her parents are not recorded</strong> in anything found
-          — for now she is a coincidence with good timing.
+          Buried at Braamfontein, Johannesburg. If she is Leonard&rsquo;s, then her father is his and
+          <strong>her mother is Phyllis, not Ivone</strong> — she would be a half-sister through the
+          father alone. <strong>Her parents are not recorded</strong> in anything found, so for now she
+          is a coincidence with good timing.
         </p>
       </div>
     </div>
@@ -278,6 +295,8 @@ const c = register.counts;
   }
   .spines .sib .rel em { font-style: normal; color: var(--ink); font-weight: 600; }
   .spines .sib > .yr { display: block; margin-top: .1rem; }
+  .spines .span2 { grid-column: 1 / span 2; }
+  .spines .node.shared { border-left: 3px solid var(--rule); }
   .spines .sibs {
     margin-top: .6rem; padding-top: .55rem;
     border-top: 1px dotted var(--rule);
@@ -307,6 +326,7 @@ const c = register.counts;
   @media (max-width: 52rem) {
     .spines { grid-template-columns: 1fr; gap: .45rem; }
     .spines .sibrow { grid-column: auto; grid-template-columns: 1fr; }
+    .spines .span2 { grid-column: auto; }
     .spines .gen { padding: 1.1rem 0 0; border-top: 1px solid var(--rule); }
     .spines .gen.head { display: none; }
     .spines .node.head { display: none; }
