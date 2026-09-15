@@ -463,10 +463,10 @@
     {
       "n": 58,
       "what": "5 Livingstone Court, 4th Street, Parkhurst — run the parents' documented address",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "NEW, and it replaces row 55's guess with a fact. The West Park burial register gives Henry Robert Wear's usual residence at death: 5 LIVINGSTONE CT., 4TH ST., PARKHURST, JHB. Court means a block of flats. This is the first documented South African address for either parent, and it is seventeen years after the Greenside inference and seventeen years before Martha Maud is found two streets away at 12 and a half Second Street. What to run against it: the gazette full-text (Livingstone Court, and Parkhurst with the surname), the Deeds Office sectional-title index if the flats were ever sold off, and the Johannesburg street and telephone directories held in Pretoria — the last of which is already on the researcher's held brief and can simply have this address added to it."
+      "note": "DONE 15 September, and it paid far beyond the address. One gazette query on \"Livingstone Court\" returned four South African hits; the 1965 and 1977 ones are other people, but GOVERNMENT GAZETTE 4620 OF 21 MARCH 1975, under NATURALIZATION NOTICES, carries: EVANS, Mrs Janette Eileen Maud, formerly Bailey, nee WEAR, saleslady, 5 LIVINGSTONE COURT, 28 VIERDE STRAAT/FOURTH STREET, PARKHURST, JOHANNESBURG. The OCR interleaves two columns and the entry had to be unpicked from its neighbour, so the page itself was read. And the grant followed in GAZETTE 5007 OF 12 MARCH 1976: R54033 - EVANS, Janette Eileen Maud, 28/10/19, England, Citizen of the U.K. and C., 30/10/75. THREE GAINS. (1) The Parkhurst address is corroborated from a wholly independent source six years later, with the building's street number added — the cemetery clerk's hand and the Government Printer's type agree. (2) The birth date 28 October 1919 falls inside GRO quarter Q4 1919, so the Hitchin birth and the Johannesburg naturalisation are the same woman without an assumption. (3) THE FAMILY STAYED BRITISH: Leonard's eldest sister was still a citizen of the United Kingdom and Colonies in 1975, forty years after the household left Hertfordshire. That explains why a man in Johannesburg from the late 1930s to 1969 leaves so little in South African government series. Also new: she was married twice, formerly BAILEY. Checked and rejected along the way: \"Wear, Martha\" in Gazette 2438 of 20 June 1969 is MARTHA CUMMINGS WEAR, BORN CAMASK, of 17 Botha Avenue, Witbank, estate 6167/66 — not Martha Maud born Castle. Opened rather than trusted, which is now the rule."
     },
     {
       "n": 59,
@@ -483,6 +483,22 @@
       "owner": "this archive",
       "since": "2026-09-15",
       "note": "NEW and deliberately small. Row 4 of burial folio W 56 carries two lines in its Remarks column: \"P. Fol. W.8.\", which is the private-graves cross-reference and is certainly Wear's, and above it, in a smaller darker hand, \"Transf. P.Fol. F 3/8.\" — a transfer of private rights to or from folio F 3/8. The ruling below both lines puts them in row 4's cell, but the page curves across two thousand pixels and the upper line may belong to row 3. THE ARCHIVE IS NOT CLAIMING IT. If it does belong to Wear then the grave rights in 56045 were transferred, and whoever they were transferred to is a name this archive does not have — which is the question row 57 asked and could not answer from the books it opened. Resolving it means finding the F-series folio in the same film and reading what grave it covers. One image, no fee."
+    },
+    {
+      "n": 61,
+      "what": "Naturalisation file R54033, and whether Leonard ever had one",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "NEW, and it is a record class this archive has never used. A gazette naturalisation notice is a name and an address; the FILE behind it records date and place of birth, previous nationality and PARENTS. Row 33 established that the South African civil marriage registers have no parentage field at all — this series does. Certificate R54033 was granted to Janette Eileen Maud Evans, nee Wear, on 30 October 1975; if the file names Henry Robert Wear and Martha Maud Castle it is the first South African government record to state that couple as the parents of a child. It does not prove Leonard was theirs. THE SECOND QUESTION IS THE BIGGER ONE: ask in the same letter whether any naturalisation file exists for WEAR, Leonard Aubrey Robert, born 1917. A phrase search of the gazette returns nothing for him and no Wear in either the 1975 notice list or the 1976 grant list, but the lists are alphabetical and the OCR interleaves columns badly enough that this very entry had to be unpicked by hand — SO THAT NULL IS NOT AN ANSWER. Files for this period sit with the Department of Home Affairs, older series transferred to the National Archives, Pretoria. A letter, not a purchase. Send with the Master of the High Court business."
+    },
+    {
+      "n": 62,
+      "what": "The Bailey marriage — Janette Wear married twice",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "NEW and small, but it is a free correction to the archive's own sibling table, which carries her as EVANS only. The 1975 gazette gives her as \"formerly Bailey, nee Wear\". So between the 1939 Register at Letchworth and 1975 she married a Bailey and then an Evans. A Bailey marriage is a dated document naming her father — if it was solemnised in England before she emigrated, the GRO marriage index will have it with the spouse's surname, and an English certificate DOES name fathers where the South African one does not. Order of work: GRO marriage index, WEAR, Janette E M, 1937 onwards, England and Wales. Cheap to search, about twelve pounds to buy if found, and David's call whether to buy."
     }
   ]
 }
