@@ -35,7 +35,9 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
       --ground: #f7f5f0; --panel: #fffdf8; --rule: #ddd7cb;
       --accent: #7a2e1f; --accent-soft: #a8563f;
       --doc: #2f5d50; --inf: #6b5a12; --disp: #8a2f2f; --open: #4a4a52;
-      --measure: 34rem;
+      --measure: 37rem;   /* reading column */
+      --wide: 64rem;      /* tables, cards, panels */
+      --bleed: 9rem;      /* extra width for diagrams, only when there is room */
       color-scheme: light;
     }
     @media (prefers-color-scheme: dark) {
@@ -60,7 +62,13 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
       font: 16px/1.62 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
       -webkit-font-smoothing: antialiased;
     }
-    .wrap { max-width: 74rem; margin: 0 auto; padding: 0 1.5rem; }
+    .wrap { max-width: var(--wide); margin: 0 auto; padding: 0 1.5rem; }
+    /* Diagrams may reach past the wide column, but only when the viewport can
+       afford it — and always from the same left edge as everything else. */
+    .bleed { width: 100%; }
+    @media (min-width: 84rem) { .bleed { width: calc(100% + var(--bleed)); } }
+    /* Headings share the reading measure so the page has one right edge for prose. */
+    h2, h3 { max-width: var(--measure); }
     .masthead { border-bottom: 1px solid var(--rule); padding: 1.4rem 0 1.1rem; }
     .masthead a.home { color: var(--ink); text-decoration: none; font-size: .95rem; letter-spacing: .16em; text-transform: uppercase; }
     nav.primary { margin-top: .8rem; display: flex; flex-wrap: wrap; gap: .15rem 1.15rem; }
@@ -88,7 +96,7 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
     .panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 3px; padding: 1.2rem 1.4rem; margin: 1.6rem 0; max-width: var(--measure); }
     .panel > :last-child { margin-bottom: 0; }
     .panel h3 { margin-top: 0; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin: 1.8rem 0; max-width: none; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1rem; margin: 1.8rem 0; max-width: none; }
     .card { background: var(--panel); border: 1px solid var(--rule); border-radius: 3px; padding: 1.1rem 1.2rem; }
     .card a { text-decoration: none; font-weight: 600; }
     .card p { font-size: .9rem; color: var(--ink-soft); margin: .35rem 0 0; }
