@@ -35,6 +35,39 @@ const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day:
     </p>
   </div>
 
+  <div class="panel">
+    <h3>The address check that did not work <span class="tag disp">Rule replaced</span></h3>
+    <p>
+      This archive&rsquo;s standing rule was <em>&ldquo;MX check before sending any email&rdquo;</em>.
+      On 15 September all twenty-six addresses the project has used were re-resolved and audited
+      against the six that have actually failed. <strong>MX caught one of the six.</strong>
+    </p>
+    <div class="scroll"><table>
+      <thead><tr><th>Address</th><th>MX said</th><th>What happened</th></tr></thead>
+      <tbody>
+        <tr><td><code>ahm@mail.exercito.pt</code></td><td><strong>no MX</strong></td><td><span class="tag doc">Caught</span> NXDOMAIN bounce</td></tr>
+        <tr><td><code>sandfdoc@mweb.co.za</code></td><td>live</td><td>550 relay access denied</td></tr>
+        <tr><td><code>enquiries@dac.gov.za</code></td><td>live</td><td>NXDOMAIN, from DSAC&rsquo;s own gateway</td></tr>
+        <tr><td>the same, earlier</td><td>live</td><td>department renamed DAC &rarr; DSAC</td></tr>
+        <tr><td><code>NMphetshwa@justice.gov.za</code></td><td>live</td><td>the person had left the section</td></tr>
+        <tr><td>SANDF, Visagie Street</td><td>live</td><td>the office had moved to Irene</td></tr>
+      </tbody>
+    </table></div>
+    <p>
+      <strong>And here is why a DNS check can never catch the commonest failure.</strong>
+      <code>dac.gov.za</code> and <code>dsac.gov.za</code> resolve to <strong>the same mail
+      gateway</strong>. The dead department&rsquo;s domain keeps a perfectly valid MX record, the
+      shared gateway accepts the mail, and the rejection happens inside, where DNS cannot see it.
+    </p>
+    <p class="small">
+      <strong>The replacement, ordered by what actually catches things:</strong> search the sent mail
+      first, for prior contact <em>and</em> prior bounces &mdash; that has caught three failures;
+      prefer an address the institution itself gave you over one from a directory; check the
+      institution still exists under that name and at that address; then MX, last, to catch a
+      mistyped subdomain; then watch for a bounce for a day.
+    </p>
+  </div>
+
   <div class="scroll bleed"><table>
     <thead><tr><th>Waited</th><th>To</th><th>About</th><th>Heard back</th><th>Chase from</th></tr></thead>
     <tbody>{rows.map(r => (

@@ -114,7 +114,7 @@
       "state": "blocked",
       "owner": "David",
       "since": "2026-09-14",
-      "note": "A purchase, and **this archive does not spend other people's money.** It would place him on a branch young enough for a surname to mean something. Of the 7,748 public members of the R-U106 project only 34 sit under R-S11477, whose common ancestor lived around 200 BCE — so the surnames on that branch are ninety generations away and mean nothing at all."
+      "note": "A purchase, and **this archive does not spend other people's money.** It would place him on a branch young enough for a surname to mean something. Of the 7,748 public members of the R-U106 project only 34 sit under R-S11477, whose common ancestor lived around 200 BCE — so the surnames on that branch are ninety generations away and mean nothing at all. SHARPENED 15 September by row 45. The argument for the Big Y is no longer 'more detail'. The classic haplotree shows forty-two branches below R-S11477, and its two immediate children are R-Z27559 and R-BY42072 — and R-BY42072 is TAGGED ENGLAND, as is R-FT370170 below it (13 testers, c. 550 CE). The Y evidence has so far only been able to say NOT ASHKENAZI. A Big Y that landed Derrick on one of those two branches would make it say something positive and geographically pointed for the first time."
     },
     {
       "n": 15,
@@ -359,10 +359,10 @@
     {
       "n": 45,
       "what": "Re-check R-U106 for a Wear, Weir or Ware under S11477",
-      "state": "next",
+      "state": "running",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Checked on 14 September: 34 of 7,748 public members sit under S11477, common ancestor about 200 BCE, and not one carries the surname. Projects gain members continuously and this costs five minutes. Worth a standing re-check every few weeks rather than a one-off, and worth recording the date of each check so the negative means something."
+      "note": "STANDING CHECK, and the date is the point. Checked 14 September, re-checked 15 September: R-U106 unchanged at 34 of 7,748, and STILL NO WEAR, WEIR OR WARE anywhere on the branch — the same five surname projects as yesterday (Ballew 16/62, Stafford 8/96, Blakely 8/68, Byrd 5/102, York 4/85). A dated negative is worth more than an undated one. BUT the re-check found a project the first pass missed: R1b-P89.2, where 33 OF 62 PUBLIC MEMBERS SIT ON DERRICK'S EXACT BRANCH — 53 per cent, against 0.4 per cent in R-U106. If a surname ever surfaces from the Y side it will surface there, and this archive was watching the wrong project. Re-check both, monthly, and record the date each time."
     },
     {
       "n": 46,
@@ -383,10 +383,10 @@
     {
       "n": 48,
       "what": "Re-verify every address in SHARED-CONTACTS.md, and do it before writing, not after",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Six bad addresses so far: two stale, one renamed department with live MX and nobody listening, one relay refusing, one subdomain with no MX at all, and one note that would have reproduced a dead address a third time. The pattern is now clear enough to systematise: before any letter, resolve the MX, check the institution has not been renamed or moved, and search the sent mail for prior contact. Two of those three steps have already caught a failure this week."
+      "note": "DONE 15 September, and the old rule is replaced rather than reaffirmed. All twenty-six addresses this project has used were re-resolved and audited against the six that have actually failed. MX CAUGHT ONE OF THE SIX. The reason is now understood and published: dac.gov.za and dsac.gov.za resolve to the SAME mail gateway, so a renamed department keeps a perfectly valid MX record and the rejection happens inside, where DNS cannot see it. A live MX proves a mail server answers for the domain and nothing about the department, the office or the person. The replacement procedure, ordered by what actually catches things: search the sent mail first for prior contact AND prior bounces (three catches so far); prefer an address the institution itself gave you over a directory entry; check the institution still exists under that name and at that address; MX last, for a mistyped subdomain; then watch a day for a bounce. Written into SHARED-CONTACTS.md in both archives and published on /letters/."
     },
     {
       "n": 49,
