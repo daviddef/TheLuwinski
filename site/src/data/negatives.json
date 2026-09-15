@@ -78,6 +78,20 @@
       "result": "Exact forms return zero. Loose forms return 3,469 and 5,568 documents, none of them him.",
       "bound": "WEAR IS AN ORDINARY ENGLISH WORD — it appears in trade names, wool-labelling prosecutions and railway reports about flange wear. A null on this surname is nearly worthless, and is the opposite of the LUWINSKI null, which is strong precisely because the surname is rare and the same search finds him eight times. The two are not the same kind of object.",
       "date": "15 Sep 2026"
+    },
+    {
+      "claim": "None of Leonard's three dead sisters has a gazetted estate",
+      "searched": "Government Gazette full text: “CYNTHIA YVONNE ELIZABETH”, “JANETTE EILEEN MAUD”, and “KATHLEEN EDITH” with FOOT across 2009–2014",
+      "result": "Cynthia returns nothing at all. Janette returns only her own 1975 naturalisation notice and the 1976 certificate list. Kathleen returns nothing in her death window.",
+      "bound": "THIS IS EXPECTED, NOT SUSPICIOUS. A Form J193 estate advertisement is required only above a value threshold, and three women who died in Johannesburg suburbs in 2000, 2001 and 2010 would very probably fall under it. It means the estates cannot be ordered by number and must be asked for by name and date of death — not that they do not exist.",
+      "date": "16 Sep 2026"
+    },
+    {
+      "claim": "There is no Maud Mabel Castle in the records — A WEAK NULL",
+      "searched": "FamilySearch, full forename pair MAUD MABEL with surname CASTLE, England and South Africa; and NAAIRS for LONGHURST",
+      "result": "No record anywhere for a Maud Mabel Castle. The 136 NAAIRS Longhursts are overwhelmingly Cape-based and older, with nothing joining any of them to a Castle.",
+      "bound": "FamilySearch fuzzy-matches forenames badly — it collapses Janette into Jane, Jean and even Ware — and its England coverage is not complete. This does not dispose of the 1915 and 1919 Johannesburg divorces, which name her plainly. The real tests are two orderable documents: MHG 3632/50 and WLD 155/1915.",
+      "date": "16 Sep 2026"
     }
   ]
 }
