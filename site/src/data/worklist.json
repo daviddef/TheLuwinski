@@ -354,10 +354,10 @@
     {
       "n": 42,
       "what": "Date the emigration exactly, from the outward passenger lists",
-      "state": "next",
-      "owner": "this archive",
-      "since": "2026-09-15",
-      "note": "Row 12 is marked done, and it is done only in the sense that the emigration is BOUNDED — after the 1921 census, before 29 September 1939. The UK outward passenger lists, BT27, would give the actual ship and the actual date. Two notes have carried this as a to-do for days without anyone touching it. It also answers something the archive has never asked: did Leonard travel WITH his parents, or separately, and at what age."
+      "state": "blocked",
+      "owner": "David — FamilySearch sign-in",
+      "since": "2026-09-16",
+      "note": "Row 12 is marked done, and it is done only in the sense that the emigration is BOUNDED — after the 1921 census, before 29 September 1939. The UK outward passenger lists, BT27, would give the actual ship and the actual date. Two notes have carried this as a to-do for days without anyone touching it. It also answers something the archive has never asked: did Leonard travel WITH his parents, or separately, and at what age. || BLOCKED 16 September: THE FAMILYSEARCH SESSION HAS SIGNED OUT and this row cannot move without it. The catalogue and persona APIs now return 401 and the site redirects to the login page. This archive will not enter credentials on David's behalf. One sign-in in the browser unblocks this row, rows 42, 60 and 88 together, and the post-1970 marriage register test in row 81."
     },
     {
       "n": 43,
@@ -498,10 +498,10 @@
     {
       "n": 60,
       "what": "Folio F 3/8 — the possible transfer of the grave rights",
-      "state": "next",
-      "owner": "this archive",
-      "since": "2026-09-15",
-      "note": "NEW and deliberately small. Row 4 of burial folio W 56 carries two lines in its Remarks column: \"P. Fol. W.8.\", which is the private-graves cross-reference and is certainly Wear's, and above it, in a smaller darker hand, \"Transf. P.Fol. F 3/8.\" — a transfer of private rights to or from folio F 3/8. The ruling below both lines puts them in row 4's cell, but the page curves across two thousand pixels and the upper line may belong to row 3. THE ARCHIVE IS NOT CLAIMING IT. If it does belong to Wear then the grave rights in 56045 were transferred, and whoever they were transferred to is a name this archive does not have — which is the question row 57 asked and could not answer from the books it opened. Resolving it means finding the F-series folio in the same film and reading what grave it covers. One image, no fee. 15 September, partly answered without opening the F folio: the Private Graves Register HAS an \"Authority to Purchase — Next of Kin\" column and IT IS BLANK, for Wear and for six consecutive neighbouring rows (receipts 10997, 10999, 11009, 11475, 11484, 11517). The clerk on folio W 8 never used that column. So even had the 1986 reopening been recorded, the register's relationship field was not being filled in. The F 3/8 folio is still worth one image, but it is now the only thing this book can still give."
+      "state": "blocked",
+      "owner": "David — FamilySearch sign-in",
+      "since": "2026-09-16",
+      "note": "NEW and deliberately small. Row 4 of burial folio W 56 carries two lines in its Remarks column: \"P. Fol. W.8.\", which is the private-graves cross-reference and is certainly Wear's, and above it, in a smaller darker hand, \"Transf. P.Fol. F 3/8.\" — a transfer of private rights to or from folio F 3/8. The ruling below both lines puts them in row 4's cell, but the page curves across two thousand pixels and the upper line may belong to row 3. THE ARCHIVE IS NOT CLAIMING IT. If it does belong to Wear then the grave rights in 56045 were transferred, and whoever they were transferred to is a name this archive does not have — which is the question row 57 asked and could not answer from the books it opened. Resolving it means finding the F-series folio in the same film and reading what grave it covers. One image, no fee. 15 September, partly answered without opening the F folio: the Private Graves Register HAS an \"Authority to Purchase — Next of Kin\" column and IT IS BLANK, for Wear and for six consecutive neighbouring rows (receipts 10997, 10999, 11009, 11475, 11484, 11517). The clerk on folio W 8 never used that column. So even had the 1986 reopening been recorded, the register's relationship field was not being filled in. The F 3/8 folio is still worth one image, but it is now the only thing this book can still give. || BLOCKED 16 September: THE FAMILYSEARCH SESSION HAS SIGNED OUT and this row cannot move without it. The catalogue and persona APIs now return 401 and the site redirects to the login page. This archive will not enter credentials on David's behalf. One sign-in in the browser unblocks this row, rows 42, 60 and 88 together, and the post-1970 marriage register test in row 81."
     },
     {
       "n": 61,
@@ -650,10 +650,10 @@
     {
       "n": 79,
       "what": "The undertakers — Cooks in 1969 and REG in 1986",
-      "state": "next",
-      "owner": "this archive",
-      "since": "2026-09-15",
-      "note": "Row 57 established that the cemetery books do not record who authorised the 1986 reopening, because a second interment into an existing private grave generated no grave transaction at all. But SOMEBODY instructed the undertaker, and the register names them: Cooks for Henry Robert in September 1969, REG for Martha Maud in March 1986. An undertaker's own file records the informant — the person who arranged and paid for the funeral — with their name, address and relationship to the deceased. Identify both firms, establish whether either still exists or whether its records went to a repository, and ask. This is the last route to the 1986 authority."
+      "state": "blocked",
+      "owner": "the City of Johannesburg / the firms",
+      "since": "2026-09-16",
+      "note": "WORKED 16 September to the limit of what can be established from here, and it is LESS TRACTABLE THAN IT LOOKED. \"COOKS\" is a specific firm named against Henry Robert Wear in September 1969 and nothing else on that page. \"REG\", which the 1986 register gives for Martha Maud, IS ALMOST CERTAINLY NOT A FIRM AT ALL — it appears against most rows on the 1969 page as well, which is not how an undertaker's name behaves. It is far likelier to be a clerk's abbreviation, and the archive WILL NOT GUESS WHICH: reading it as a company and writing to that company would be the Caroline Walls error again. Doves, founded 1882 and headquartered in Johannesburg, is the obvious large survivor and could be asked, but there is no evidence connecting it to either entry. WHAT THIS ROW ACTUALLY NEEDS IS THE REGISTER'S OWN KEY — the abbreviation table a cemetery clerk would have used — or one question to the City of Johannesburg cemeteries office, which is the same office row 78 must approach for the photograph of grave 56045. FOLD THE TWO REQUESTS INTO ONE."
     },
     {
       "n": 80,
@@ -722,18 +722,18 @@
     {
       "n": 88,
       "what": "Run the FamilySearch full-text search over the unindexed South African images",
-      "state": "next",
-      "owner": "this archive",
-      "since": "2026-09-15",
-      "note": "Everything this archive has found on FamilySearch has come through the indexed name search or through images it knew to open. FamilySearch now runs full text over images that were never indexed, which is a different instrument: it reads the handwriting on pages nobody catalogued. Run WEAR with LEONARD, LUWINSKI, and MOTA FIGUEIREDO against the South African collections. The cemetery register that broke row 55 open was found by opening images by hand; this is the same act done at scale."
+      "state": "blocked",
+      "owner": "David — FamilySearch sign-in",
+      "since": "2026-09-16",
+      "note": "Everything this archive has found on FamilySearch has come through the indexed name search or through images it knew to open. FamilySearch now runs full text over images that were never indexed, which is a different instrument: it reads the handwriting on pages nobody catalogued. Run WEAR with LEONARD, LUWINSKI, and MOTA FIGUEIREDO against the South African collections. The cemetery register that broke row 55 open was found by opening images by hand; this is the same act done at scale. || BLOCKED 16 September: THE FAMILYSEARCH SESSION HAS SIGNED OUT and this row cannot move without it. The catalogue and persona APIs now return 401 and the site redirects to the login page. This archive will not enter credentials on David's behalf. One sign-in in the browser unblocks this row, rows 42, 60 and 88 together, and the post-1970 marriage register test in row 81."
     },
     {
       "n": 89,
       "what": "Digitised Johannesburg directories and voters rolls — establish which are reachable from here",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
-      "since": "2026-09-15",
-      "note": "Row 41 closed with the judgement that street directories, the Deeds Office index and the voters rolls \"all need somebody physically in Johannesburg or Pretoria\". That was asserted rather than checked. Some South African directories and voters rolls are digitised on the commercial sites and on the National Library's portal. Establish EXACTLY which years of the Johannesburg directory and which voters rolls are reachable without a reading room, and write the list down. If even one year between 1942 and 1950 is online, it goes straight at the nine-year hole that row 41 could not fill."
+      "since": "2026-09-16",
+      "note": "DONE 16 September, and the answer REDIRECTS THE INSTRUMENT rather than closing it. Row 41 asserted that directories and voters rolls \"all need somebody physically in Johannesburg or Pretoria\". Checked: FOR THE WEARS THAT IS RIGHT, AND FOR THE OTHER FAMILIES IT IS WRONG. Street directories — the only South African directory digitised and searchable at ancestors.co.za is PIETERMARITZBURG 1897. There is no Johannesburg directory for the 1940s or 1950s reachable without a reading room, so row 41's nine-year hole stays shut from this direction. BUT THE VOTERS ROLLS ARE ONLINE FOR 1925 AND 1931, indexed by town across 148 places including Johannesburg, Berea, Fordsburg, Jeppes, Denver, Langlaagte and Bezuidenhout, through GenDatabase (membership) and eGGSA. 1925 and 1931 are far too early for the Wears, who arrived in the late 1930s — WHICH IS WHY NOBODY HERE HAS USED THEM. But they are exactly right for the families this week has just opened up: the MOMPLES and ROBERTSONS of row 52, who were Johannesburg people by 1950 and whose parents would be on a 1925 or 1931 roll; and the LONGHURSTS of row 91, whose divorces are 1915 and 1919. A roll gives name, address and occupation by street. THAT IS THE CHEAPEST TEST AVAILABLE for whether Maud Mabel Castle's family were in Johannesburg before the Wears came."
     },
     {
       "n": 90,
