@@ -118,6 +118,25 @@ deliberate. It should read as information for her, not as a defence.
 **The relationship is stated once and correctly:** Derrick is David's **father-in-law**. Derrick is
 named, and nothing else about him is — no dates, no age, no year.
 
+## Read end to end, 16 September — two structural fixes
+
+**Two paragraphs opened with the same phrase.** The dead-domain note and the NAAIRS note both began
+"useful to you rather than to me". Fixed.
+
+**And the explanation sat four screens below the apology.** Her whole letter is about scattered
+enquiries; the reason it happened — a dead `dac.gov.za` domain — was buried near the end. **It now
+sits immediately after the apology, where she will be looking for it**, and the misdirected MHG
+10245/69 note goes with it. The manifest's Wear table then says of that file *"this is the one that
+went to the dead domain"*, so the two halves point at each other instead of repeating.
+
+**Order now:** yes to the file → yes to one thread → thanks for answering the bound question → how the
+scattering happened → the manifest → the researcher, so the bound question closes before anything new
+opens → a rule, then the two things that are not file requests → the forward-looking close.
+
+*One correction of fact in the manifest:* WLD 2225/1953 reads **de Figuerido**, which is what the
+index actually has — it had been typed as *de Figueirido*, a seventh spelling this archive invented
+by accident while writing about six real ones.
+
 ---
 
 **To:** `mavisx@dsac.gov.za`
@@ -139,9 +158,21 @@ don't add that to your day. If your own office requires it, of course do as suit
 Thank you also for answering what I had asked twice: that the court files are bound like the estates.
 That closes the question, and I won't raise it again.
 
+**On how the scattering happened**, which I think is owed to you. Several of the addresses I used are
+on the **`dac.gov.za`** domain, which I took from the older National Archives pages. **One of them,
+`enquiries@dac.gov.za`, bounced straight back with "the recipient's domain does not exist."** I have
+had no reply from any of the others on that domain either. So some of what must have looked
+deliberate was me writing into a void — which is my fault for trusting a stale page, but it was not
+me asking four people the same question on purpose.
+
+That has one consequence worth flagging: on 14 September I sent the request about **MHG 10245/69 —
+WEAR, Henry Robert** to `archives@dac.gov.za`, copied to `naairs@dac.gov.za`. **If that never reached
+the Reading Room, that is why.** I am not asking you to act on it — I mention it only so that it is
+not sitting somewhere unanswered with my name on it.
+
 Since you asked for one thread so that you could give me a consolidated reply, let me do my half of
-that properly. **Below is every Transvaal reference I hold, in one place, so that you are never
-again working from a fragment of it.**
+that properly. **Below is every Transvaal reference I hold, in one place, so that you are never again
+working from a fragment of it.**
 
 **I am not asking you to work through this list.** Most of it is already settled or already with the
 researcher. **The only file I am asking for is WLD 2545/1950**, which you have kindly offered. The
@@ -157,14 +188,14 @@ later looking like a new imposition.
 | **WLD 2545/1950** | **Ivone (formerly de Witt, born Figueiredo) v. Kurt — restitution of conjugal rights** | **The one you have offered to check. Yes please** |
 | WLD 497/1951 | Luwinski v. Ivone — restitution of conjugal rights | *Bound. Understood* |
 | WLD 2368/1951 | Luwinski v. Ivone — divorce | *Bound. Understood* |
-| WLD 2225/1953 | Salkow v. Ivonne (born de Figueirido) | *With the researcher* |
+| WLD 2225/1953 | Salkow v. Ivonne (born de Figuerido) | *With the researcher* |
 | WLD 2542/1957 | Standard Bank of South Africa v. K. Luwinski | *Nothing needed* |
 
 **The Wear family — the same city, an unconnected surname**
 
 | file | who | where it stands |
 |---|---|---|
-| MHG 10245/69 | WEAR, Henry Robert — deceased estate | *With the researcher. See the note below about where this request went astray* |
+| MHG 10245/69 | WEAR, Henry Robert — deceased estate | *With the researcher — this is the one that went to the dead domain* |
 | WLD 2026/1951 | Phyllis Agnes Wear (born Robertson) v. Leonard Aubrey Robert | *With the researcher* |
 | WLD 185/1949 | Marjorie Eileen Dunlop (born Walker) v. Robert John | *With the researcher* |
 | WLD 790/1957 | Leonard Aubrey Robert Wear v. Phyllis Agnes Norquoy | *With the researcher* |
@@ -176,62 +207,54 @@ The two groups are two different families. They meet only in one man whose ident
 trying to establish, and I mention it so that nobody wastes an afternoon looking for a link between
 the surnames. There is none.
 
-**Two things that are not requests for files, and one of them may be more use to you than to me.**
+On the bound files generally: I understand, and I am not going to keep asking. **I have taken your
+advice and engaged a private researcher**, who expects to be at the Archives on **Tuesday 22
+September**. The photography is arranged and off your desk entirely, and that is a direct result of
+what you told me on 14 September.
 
-**The first is that NAAIRS appears to be down.** Since this morning, 16 September,
-`national.archsrch.gov.za` has stopped resolving altogether — there is no address record for it at
-all. The `www.` form does resolve, but every page through it, including the front page, comes back
-with the CICS "400 Bad Request" error, so the system is being reached and is refusing. **I mention it
-only because it is your own search system and you may not have been told.** It is not a complaint; I
-have no claim on it.
+---
 
-**The second is a question that needs no file pulled.** My wife's grandmother, **Ivone de Figueiredo,
-was born at Lourenço Marques on 4 March 1924** and was a Portuguese national when she married in
+**Two last things, neither of which asks you to pull a file.**
+
+**The first is for you rather than for me: NAAIRS appears to be down.** Since this morning,
+16 September, `national.archsrch.gov.za` has stopped resolving altogether — there is no address
+record for it at all. The `www.` form does resolve, but every page through it, including the front
+page, returns the CICS "400 Bad Request" error, so the system is being reached and is refusing. **I
+mention it only because it is your own search system and you may not have been told.** It is not a
+complaint; I have no claim on it.
+
+**The second is a question rather than a request.** My wife's grandmother, **Ivone de Figueiredo, was
+born at Lourenço Marques on 4 March 1924** and was a Portuguese national when she married in
 Johannesburg in 1948. Her parents' names are the one thing this whole search has never been able to
 establish.
 
-**Is there anything at all in the naturalisation or alien-registration series — SAB rather than TAB —
-under the surname FIGUEIREDO or MOTA FIGUEIREDO, for anyone from Portuguese East Africa?** I am
-asking whether an index entry exists, not asking you to read a file. **And it is more likely to be
-her father than her**: as I understand the law before September 1949, a foreign woman who married a
-British subject took his nationality automatically, and she married a Mr de Witt in February 1948 —
-so she may well have had no need to naturalise, and no file. Her father would have.
+**Is there an index entry at all in the naturalisation or alien-registration series — SAB rather than
+TAB — under FIGUEIREDO or MOTA FIGUEIREDO, for anyone from Portuguese East Africa?** I am asking
+whether an entry exists, not asking you to read a file. **And it is more likely to be her father than
+her**: as I understand the law before September 1949, a foreign woman who married a British subject
+took his nationality automatically, and she married a Mr de Witt in February 1948 — so she may well
+have had no need to naturalise, and no file at all. Her father would have.
 
-**One thing that will save you time, because it has already cost me a great deal.** Her name is
+**One note that will save you a search, because it has already cost me a great many.** Her name is
 spelt six different ways across five documents, and **two of the worst spellings are the ones NAAIRS
-itself carries.** WLD 2545/1950 — the file you have kindly offered to check — hid from me for weeks
-for exactly this reason: the index has her as **LUWENSKI**, not Luwinski. So if a search under
-Figueiredo comes back empty, these are the forms the records actually use:
+itself carries.** WLD 2545/1950 — the very file you have offered to check — hid from me for weeks for
+exactly this reason: the index has her as **LUWENSKI**, not Luwinski. So if FIGUEIREDO comes back
+empty, these are the forms the records actually use:
 
 | | as it appears, and where |
 |---|---|
 | **Forename** | **IVONE** — most files · **YVONNE** — TPD 534/1948 · **IVONNE** — WLD 2225/1953 |
-| **Maiden surname** | **FIGUEIREDO** and **DE FIGUEIREDO** · **MOTA FIGUEIREDO** — WLD 1950/1948 · **DE FIGUERIDO** — WLD 2225/1953 · **DE FIGUEREDO** — her 1953 marriage register · **FIGARETTO** — the NAAIRS index itself |
+| **Maiden surname** | **FIGUEIREDO** and **DE FIGUEIREDO** · **MOTA FIGUEIREDO** — WLD 1950/1948 · **DE FIGUERIDO** — WLD 2225/1953 · **DE FIGUEREDO** — her own 1953 marriage register · **FIGARETTO** — the NAAIRS index itself |
 | **Married surnames** | **DE WITT** from February 1948 · **LUWINSKI**, also **LUWINSKY** and **LUWENSKI** — from June 1948 · **SALKOW** from February 1953 |
 
 **A file from the 1940s or 1950s could be indexed under any of them.** I am not asking you to work
 through the table — it is there so that one search does not become six.
 
-If the answer is simply "nothing under any of those", that is a genuinely useful answer and I will
-stop looking down that road. **I would normally have checked this on NAAIRS myself rather than ask
-you, which is the only reason I am asking.**
+**And if the answer is simply "nothing under any of those", that is a genuinely useful answer** and I
+will stop looking down that road. I would normally have checked this on NAAIRS myself rather than
+ask you, which is the only reason I am asking at all.
 
-One thing that may be useful to you rather than to me. Several of the addresses I used are on the
-**`dac.gov.za`** domain, which I took from the older National Archives pages. **One of them,
-`enquiries@dac.gov.za`, bounced straight back with "the recipient's domain does not exist."** I have
-had no reply from any of the others on that domain either. So some of what must have looked like
-scattering was me writing into a void — which is my fault for trusting a stale page, but it was not
-me asking four people the same question on purpose.
-
-That has one consequence worth flagging: on 14 September I sent the request about **MHG 10245/69 —
-WEAR, Henry Robert** to `archives@dac.gov.za`, copied to `naairs@dac.gov.za`. **If that never reached
-the Reading Room, that is why.** I am not asking you to act on it — I mention it only so that it is
-not sitting somewhere unanswered with my name on it.
-
-On the bound files generally: I understand, and I am not going to keep asking. **I have taken your
-advice and engaged a private researcher**, who expects to be at the Archives on **Tuesday 22
-September**. The photography is arranged and off your desk entirely, and that is a direct result of
-what you told me on 14 September.
+---
 
 Last thing, so that nothing arrives as a surprise later. **My research covers more than this one
 family** — there are several other connected lines, and some of them will have Transvaal records too.
