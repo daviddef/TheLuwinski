@@ -17,12 +17,24 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title === 'The Luwinski Archive' ? title : title + ' — The Luwinski Archive'}</title>
   <meta name="description" content={subtitle || 'An evidence-first family archive.'} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href={base + '/styles.css'} />
   <style is:global>
     :root {
       --ink: #1b1a17; --ink-soft: #55514a; --ink-faint: #857f75;
       --ground: #f7f5f0; --panel: #fffdf8; --rule: #ddd7cb;
       --accent: #7a2e1f; --accent-soft: #a8563f;
       --doc: #2f5d50; --inf: #6b5a12; --disp: #8a2f2f; --open: #4a4a52;
+      /* Aliases so the shared archive-kit component CSS resolves against this
+         archive's own palette rather than shipping a second set of colours. */
+      --ink-2: var(--ink-soft); --ink-3: var(--ink-faint);
+      --rule-strong: var(--ink-faint); --panel-2: var(--ground);
+      --accent-wash: color-mix(in srgb, var(--accent) 12%, var(--panel));
+      --serif: "EB Garamond", Georgia, "Times New Roman", serif;
+      --sans: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
+      --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
       --measure: 37rem;   /* reading column */
       --wide: 64rem;      /* tables, cards, panels */
       --bleed: 9rem;      /* extra width for diagrams, only when there is room */
