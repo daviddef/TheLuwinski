@@ -5,12 +5,15 @@
   "private": true,
   "scripts": {
     "dev": "astro dev --port 4331",
-    "build": "astro build && python3 ../tools/build-search.py && npm run check:living && npm run check:worklist && npm run check:covers && npm run check:matches",
+    "build": "npm run build:register && npm run build:evidence && astro build && python3 ../tools/build-search.py && npm run check:living && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence",
     "preview": "astro preview --port 4331",
     "check:living": "python3 ../tools/check-living.py --dist dist",
     "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root .",
     "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root .",
-    "check:matches": "python3 ../tools/check-matches.py"
+    "check:matches": "python3 ../tools/check-matches.py",
+    "build:register": "python3 ../tools/build-register.py",
+    "build:evidence": "python3 ../tools/build-evidence.py",
+    "check:evidence": "python3 ../tools/check-evidence.py"
   },
   "dependencies": {
     "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#fae55f9f357b153885b8374f59b3e8725dd3d0b7",

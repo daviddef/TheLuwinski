@@ -104,6 +104,12 @@ def main():
             for c in by_person[pid]:
                 if c["field"] == "died" and not rec.get("bare"):
                     rec["died"] = c["now"]
+                    # A correction that supplies a death CANCELS "no death recorded".
+                    # Without this the register would print the absence and throw the
+                    # corrected date away - the source flags the person alive, the
+                    # template tests no_death_recorded first, and the correction loses.
+                    # Not currently triggered by the data. Fixed before it is.
+                    rec.pop("no_death_recorded", None)
         out.append(rec)
 
     out.sort(key=lambda r: (r["last"] or "", r["first"] or ""))

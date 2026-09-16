@@ -6,7 +6,7 @@ const nav = [
   ["Our line", [["/derrick", "Derrick"], ["/leonard", "Leonard Wear"], ["/kurt", "Kurt"], ["/ivone", "Ivone"], ["/leibholz", "The Leibholz brothers"]]],
   ["Places", [["/east-prussia", "East Prussia"], ["/mozambique", "Mozambique"], ["/atlas", "Atlas"]]],
   ["People & names", [["/register", "The register"], ["/names", "Her names"]]],
-  ["Evidence", [["/sources", "Sources"], ["/method", "Method"], ["/negatives", "Bounded negatives"], ["/open-questions", "Open questions"], ["/worklist", "The work list"], ["/letters", "Letters out"], ["/research-log", "Research log"], ["/status", "Status"]]],
+  ["Evidence", [["/evidence", "What has been read"], ["/sources", "Sources"], ["/method", "Method"], ["/negatives", "Bounded negatives"], ["/open-questions", "Open questions"], ["/worklist", "The work list"], ["/letters", "Letters out"], ["/research-log", "Research log"], ["/status", "Status"]]],
 ];
 const navFlat = nav.flatMap(([, links]) => links);
 const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');

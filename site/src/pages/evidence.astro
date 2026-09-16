@@ -1,0 +1,143 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../data/evidence.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const c = data.counts;
+const personFiles = data.files.filter(f => f.kind === 'person');
+const refFiles = data.files.filter(f => f.kind === 'ref');
+const linked = data.people.filter(p => p.register_id);
+const ambiguous = data.people.filter(p => p.ambiguous);
+---
+<Base title="What has actually been read"
+  subtitle={c.records + ' records, about ' + c.people + ' people, from ' + c.person_files + ' files'}
+  lede="Every person below has a record behind them that somebody opened, transcribed and filed. This page exists because for three days none of that reached the site.">
+
+  <div class="cards">
+    <div class="card stat"><b>{c.people}</b><span>People with a record</span></div>
+    <div class="card stat"><b>{c.records}</b><span>Records</span></div>
+    <div class="card stat"><b>{c.files}</b><span>Evidence files</span></div>
+    <div class="card stat"><b>{c.linked_to_register}</b><span>Matched to the register</span></div>
+  </div>
+
+  <div class="panel">
+    <h3>The fault this page was built to close <span class="tag disp">17 September 2026</span></h3>
+    <p>
+      This archive kept twenty-one evidence files in <code>data/</code> &mdash; censuses, the
+      Gedenkbuch, the 1939 Register, passenger lists, court files. <strong>Not one build script read
+      any of them.</strong> The register was assembled from the MyHeritage export and
+      <code>corrections.json</code> and nothing else. Everything a record actually said reached this
+      site only because a human retyped it into a paragraph.
+    </p>
+    <p>
+      That is survivable while the human is paying attention and silently wrong the moment they are
+      not. <strong>Nothing would have noticed</strong> if a file had been added and never surfaced, or
+      if a page and a file had come to disagree. There was no gate, because there was nothing to gate.
+    </p>
+    <p class="small muted">
+      The clearest casualty was <strong>Samuel Israel Leibholz</strong>. The register printed his birth
+      as <em>&ldquo;June 28 1877?&rdquo;</em> &mdash; with the source tree&rsquo;s question mark intact
+      &mdash; while <code>data/leibholz-gedenkbuch.tsv</code> held the Bundesarchiv&rsquo;s entry
+      <strong>en909753</strong>, giving 28 June 1877 at Schubin, and his death at Auschwitz on 10 April
+      1943. The archive had the citation. The page showed the doubt.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>What this page does not do</h3>
+    <p>
+      <strong>It does not rewrite the tree.</strong> The register and the charts draw the export as
+      given, and that rule has not changed: the question mark on Samuel&rsquo;s birth year is still
+      there, because that is what the source says. What has changed is that the record sits beside it
+      instead of in a file nobody reads. Where a named source genuinely overrides the family record
+      that is a <a href={base + '/method/'}>correction</a>, shown as <em>was</em> and <em>now</em>, and
+      it is a different mechanism on purpose.
+    </p>
+  </div>
+
+  <h2>People matched to a register entry</h2>
+  <p class="small muted">
+    Name matching is exact on the name or on first-plus-last, so this number is a floor and not a
+    count of everyone documented. Most of the people below are on the English side, which the
+    MyHeritage export never contained at all.
+  </p>
+  <div class="scroll"><table>
+    <thead><tr><th>Person</th><th>In the register as</th><th>Records read</th></tr></thead>
+    <tbody>{linked.map(p => (
+      <tr>
+        <td><strong>{p.name}</strong></td>
+        <td class="small">{p.register_name} <span class="muted">#{p.register_id}</span></td>
+        <td class="small">{p.records.map(r => r.title).join(' · ')}</td>
+      </tr>
+    ))}</tbody>
+  </table></div>
+
+  {ambiguous.length > 0 && (
+  <div class="panel">
+    <h3>Names this builder refuses to resolve <span class="tag disp">Not linked</span></h3>
+    <p class="small">
+      <strong>A name match is not a person match</strong>, and the first version of this builder
+      proved it on its own data. The register holds a <em>Kurt Luwinski</em> who died in 1995 — a
+      surname-index entry — and a <em>Kurt Israel Luwinski</em>, 1912 to 1968, who is the man this
+      archive is about. Matching the court files on the bare name hung three divorce actions on the
+      wrong one. The builder now pools every candidate before deciding, and <strong>where more than
+      one person answers to a name it links neither and says so here.</strong>
+    </p>
+    {ambiguous.map(p => (
+      <p class="small">
+        <strong>{p.name}</strong> — documented in {[...new Set(p.records.map(r => r.file))].join(', ')} —
+        could be: {p.ambiguous.map(a => (a.name + ' #' + a.id + (a.died ? ', d. ' + a.died : ', no death recorded'))).join('  |  ')}
+      </p>
+    ))}
+    <p class="small muted">
+      Resolving these is a human job and is deliberately not automated. The second pair above is
+      also a <strong>duplicate in the source tree</strong> that the register's own collapse list does
+      not cover — one copy carries a death date and the other does not.
+    </p>
+  </div>
+  )}
+
+  <h2>Every person with a record behind them</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Person</th><th>Record</th><th>What it says</th></tr></thead>
+    <tbody>{data.people.map(p => p.records.map((r, i) => (
+      <tr>
+        <td>{i === 0 ? <strong>{p.name}</strong> : <span class="muted small">&nbsp;</span>}</td>
+        <td class="small">{r.title}<br /><span class="muted">{r.source}</span></td>
+        <td class="small muted">{r.detail}</td>
+      </tr>
+    )))}</tbody>
+  </table></div>
+
+  <h2>The files themselves</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>File</th><th>What it is</th><th>Source</th><th>Rows</th><th>People</th></tr></thead>
+    <tbody>{data.files.map(f => (
+      <tr>
+        <td><code class="small">{f.file}</code></td>
+        <td class="small">{f.title}</td>
+        <td class="small muted">{f.source}</td>
+        <td>{f.rows}</td>
+        <td>{f.kind === 'person' ? f.people : <span class="muted small">by reference</span>}</td>
+      </tr>
+    ))}</tbody>
+  </table></div>
+
+  <div class="panel">
+    <h3>Four files are keyed by reference and not by person</h3>
+    <p class="small">
+      {refFiles.map(f => f.file).join(', ')} &mdash; these record a search, a sweep or a set of
+      archival references rather than a household. They are declared in the builder&rsquo;s manifest
+      so that they are accounted for, and they attach to no individual on purpose.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>The gate that now stands behind this page</h3>
+    <p class="small">
+      <code>tools/check-evidence.py</code> runs on every build. It refuses the build if a file appears
+      in <code>data/</code> that the builder does not declare, and it refuses the build if a person
+      named in an evidence file reaches the published site carrying neither a record nor a correction.
+      <strong>The failure that made this page possible cannot happen again without the build stopping.</strong>
+    </p>
+  </div>
+</Base>

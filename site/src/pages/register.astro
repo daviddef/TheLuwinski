@@ -1,7 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
 import register from '../data/register.json';
+import evidence from '../data/evidence.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// Records read about a person, attached by build-evidence.py. The register still
+// draws the export as given; this only says whether anything has been READ.
+const readFor = new Map(evidence.people.filter(p => p.register_id).map(p => [p.register_id, p.records]));
 const fam = register.people.filter(p => p.kind === 'family');
 const idx = register.people.filter(p => p.kind === 'index');
 const c = register.counts;
@@ -9,6 +13,21 @@ const c = register.counts;
 <Base title="The register"
   subtitle={c.published + ' of ' + c.total + ' people in the source, published'}
   lede="Everyone the source records, with the two kinds of entry kept firmly apart: the family proper, and a hundred-odd people who share the surname and have not been shown to share anything else.">
+
+  <div class="panel">
+    <p class="small">
+      The <strong>Record read</strong> column was added on 17 September 2026, and it exists because
+      until that day <strong>no build script in this archive read a single one of its twenty-one
+      evidence files</strong>. What a census or the Gedenkbuch actually said reached these pages only
+      if somebody retyped it. <a href={base + '/evidence/'}>What has actually been read &rarr;</a>
+    </p>
+    <p class="small muted">
+      The column says whether a record has been <em>read</em> about the person. It does not change a
+      date: the dates below are still the source tree&rsquo;s own, question marks and all. Where a
+      named source overrides the family record that is a <a href={base + '/method/'}>correction</a>,
+      carried as <em>was</em> and <em>now</em>.
+    </p>
+  </div>
 
   <div class="cards">
     <div class="card stat"><b>{c.family}</b><span>Family</span></div>
@@ -19,13 +38,16 @@ const c = register.counts;
 
   <h2>The family</h2>
   <div class="scroll"><table>
-    <thead><tr><th>Name</th><th>Born</th><th>Died</th><th>Noted</th></tr></thead>
+    <thead><tr><th>Name</th><th>Born</th><th>Died</th><th>Record read</th><th>Noted</th></tr></thead>
     <tbody>
       {fam.map(p => (
         <tr>
           <td><strong>{p.name}</strong>{p.bare && <> <span class="tag inf">Living — named only</span></>}</td>
           <td>{p.born || (p.by ? String(p.by) : '')}</td>
           <td>{p.no_death_recorded ? <span class="muted small">no death recorded</span> : p.died}</td>
+          <td class="small">{readFor.has(p.id)
+            ? <><span class="tag doc">Read</span> {readFor.get(p.id).map(r => r.title).join(' · ')}</>
+            : (p.corrections ? <span class="tag inf">Corrected</span> : <span class="muted">&mdash;</span>)}</td>
           <td class="small muted">{(p.facts || []).filter(f => f.place || f.c).slice(0, 2).map(f => (f.t + (f.place ? ': ' + f.place : '') + (f.c ? ' — ' + f.c : ''))).join(' · ').slice(0, 150)}</td>
         </tr>
       ))}
@@ -74,9 +96,12 @@ const c = register.counts;
     </p>
   </div>
   <div class="scroll"><table>
-    <thead><tr><th>Name</th><th>Born</th><th>Died</th></tr></thead>
+    <thead><tr><th>Name</th><th>Born</th><th>Died</th><th>Record read</th></tr></thead>
     <tbody>
-      {idx.map(p => (<tr><td>{p.name}</td><td>{p.born}</td><td>{p.died}</td></tr>))}
+      {idx.map(p => (<tr><td>{p.name}</td><td>{p.born}</td><td>{p.died}</td>
+        <td class="small">{readFor.has(p.id)
+          ? <><span class="tag doc">Read</span> {readFor.get(p.id).map(r => r.title).join(' · ')}</>
+          : (p.corrections ? <span class="tag inf">Corrected</span> : <span class="muted">&mdash;</span>)}</td></tr>))}
     </tbody>
   </table></div>
 </Base>

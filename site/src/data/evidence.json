@@ -1,0 +1,1636 @@
+{
+ "files": [
+  {
+   "file": "bloom-1861-yarmouth.tsv",
+   "title": "1861 census, 80 Howard Street, Great Yarmouth",
+   "source": "RG9, Great Yarmouth",
+   "kind": "person",
+   "rows": 5,
+   "people": 5
+  },
+  {
+   "file": "caroline-james-1920-1957.tsv",
+   "title": "Caroline Castle, later James, 1920 to 1957",
+   "source": "GRO indexes; 1939 Register RG101/1598B/017/25",
+   "kind": "ref",
+   "rows": 4,
+   "people": 0
+  },
+  {
+   "file": "castle-1911-1921.tsv",
+   "title": "1911 and 1921 censuses, Baldock and Letchworth",
+   "source": "RG14/7572 sch 173; RG15/07079 sch 125",
+   "kind": "person",
+   "rows": 9,
+   "people": 9
+  },
+  {
+   "file": "castle-from-match-tree.tsv",
+   "title": "A match holder's Ancestry tree",
+   "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+   "kind": "person",
+   "rows": 14,
+   "people": 13
+  },
+  {
+   "file": "gazette-wear-sweep.tsv",
+   "title": "The gazette sweep for the Wears and for Phyllis",
+   "source": "gazettes.africa, 54,313 South African issues",
+   "kind": "ref",
+   "rows": 13,
+   "people": 0
+  },
+  {
+   "file": "giddins-norton-end.tsv",
+   "title": "1861 and 1871 censuses, Norton End, Baldock",
+   "source": "RG9/816 f.69; RG10/1365 f.27",
+   "kind": "person",
+   "rows": 9,
+   "people": 9
+  },
+  {
+   "file": "hawkins-1871-aldenham.tsv",
+   "title": "1871 census, The Red Lion Cottages, Aldenham",
+   "source": "RG10 piece 1365",
+   "kind": "person",
+   "rows": 8,
+   "people": 8
+  },
+  {
+   "file": "hull-1901-st-albans.tsv",
+   "title": "1901 census, 22 Mount Pleasant, St Albans",
+   "source": "RG13 piece 1312",
+   "kind": "person",
+   "rows": 7,
+   "people": 7
+  },
+  {
+   "file": "leibholz-gedenkbuch.tsv",
+   "title": "The Bundesarchiv Gedenkbuch",
+   "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+   "kind": "person",
+   "rows": 4,
+   "people": 4
+  },
+  {
+   "file": "litigation.tsv",
+   "title": "Transvaal court files",
+   "source": "National Archives of South Africa, WLD and TPD series",
+   "kind": "person",
+   "rows": 8,
+   "people": 16
+  },
+  {
+   "file": "naairs-figueiredo.tsv",
+   "title": "The NAAIRS index under FIGUEIREDO",
+   "source": "National Archives of South Africa",
+   "kind": "ref",
+   "rows": 43,
+   "people": 0
+  },
+  {
+   "file": "shenton-1939-pix-road.tsv",
+   "title": "1939 Register, 63 Pix Road, Letchworth",
+   "source": "TNA R39/1620/1620G/011/28, schedule 305",
+   "kind": "person",
+   "rows": 3,
+   "people": 3
+  },
+  {
+   "file": "shenton-line-closed.tsv",
+   "title": "The 63 Pix Road household, traced end to end",
+   "source": "GRO birth, marriage and death indexes; 1939 Register",
+   "kind": "person",
+   "rows": 15,
+   "people": 15
+  },
+  {
+   "file": "wear-1851-bermondsey.tsv",
+   "title": "1851 census, Salisbury Street, Bermondsey",
+   "source": "HO107 piece 1560 folio 212",
+   "kind": "person",
+   "rows": 4,
+   "people": 4
+  },
+  {
+   "file": "wear-1871-bermondsey.tsv",
+   "title": "1871 census, Jamaica Road, Bermondsey",
+   "source": "RG10 piece 641 folio 40 schedule 40",
+   "kind": "person",
+   "rows": 8,
+   "people": 8
+  },
+  {
+   "file": "wear-1891-watford.tsv",
+   "title": "1891 census, Watford",
+   "source": "RG12, Watford",
+   "kind": "person",
+   "rows": 9,
+   "people": 9
+  },
+  {
+   "file": "wear-1911-letchworth.tsv",
+   "title": "1911 census, Letchworth",
+   "source": "RG14, Letchworth",
+   "kind": "person",
+   "rows": 5,
+   "people": 5
+  },
+  {
+   "file": "wear-1939-register.tsv",
+   "title": "1939 Register, 72 Pix Road, Letchworth",
+   "source": "TNA R39",
+   "kind": "person",
+   "rows": 3,
+   "people": 3
+  },
+  {
+   "file": "wear-brothers-1881.tsv",
+   "title": "1881 census, two Bermondsey households",
+   "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
+   "kind": "person",
+   "rows": 10,
+   "people": 10
+  },
+  {
+   "file": "wear-emigration-bt27.tsv",
+   "title": "BT 27 outbound passenger lists",
+   "source": "TNA BT 27",
+   "kind": "person",
+   "rows": 7,
+   "people": 7
+  },
+  {
+   "file": "wear-pow-1943-45.tsv",
+   "title": "War Office prisoner-of-war lists",
+   "source": "TNA WO 392/15 and WO 392/21",
+   "kind": "ref",
+   "rows": 10,
+   "people": 0
+  }
+ ],
+ "people": [
+  {
+   "name": "Ada May Castle",
+   "slug": "ada-may-castle",
+   "records": [
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: 10 Dec 1886 · born_place: Baldock · died: Jul 1969 · died_place: Hitchin"
+    }
+   ]
+  },
+  {
+   "name": "Agnes Kate Castle",
+   "slug": "agnes-kate-castle",
+   "records": [
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: 8 May 1891 · born_place: Baldock · died: Jan 1967 · died_place: Aldershot, Hampshire"
+    }
+   ]
+  },
+  {
+   "name": "Albert Charter",
+   "slug": "albert-charter",
+   "records": [
+    {
+     "file": "wear-1911-letchworth.tsv",
+     "title": "1911 census, Letchworth",
+     "source": "RG14, Letchworth",
+     "detail": "relationship: Brother · marital: Single · sex: Male · age: 28 · birth_year: 1883 · occupation: Trimmer · birth_place: Bassingbourn, Cambs"
+    }
+   ]
+  },
+  {
+   "name": "Albert J Hull",
+   "slug": "albert-j-hull",
+   "records": [
+    {
+     "file": "hull-1901-st-albans.tsv",
+     "title": "1901 census, 22 Mount Pleasant, St Albans",
+     "source": "RG13 piece 1312",
+     "detail": "relationship: Son · marital: Single · sex: Male · age: 6 · birth_year: 1895 · occupation: - · birth_place: St Albans, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Alfred Hawkins",
+   "slug": "alfred-hawkins",
+   "records": [
+    {
+     "file": "hawkins-1871-aldenham.tsv",
+     "title": "1871 census, The Red Lion Cottages, Aldenham",
+     "source": "RG10 piece 1365",
+     "detail": "relationship: Son · sex: Male · age: 5 · birth_year: 1866 · occupation: Scholar · birth_place: Aldenham, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Allan Bloom",
+   "slug": "allan-bloom",
+   "records": [
+    {
+     "file": "bloom-1861-yarmouth.tsv",
+     "title": "1861 census, 80 Howard Street, Great Yarmouth",
+     "source": "RG9, Great Yarmouth",
+     "detail": "relationship: Son · marital: - · sex: Male · age: 3 · birth_year: 1858 · occupation: - · birth_place: Yarmouth, Norfolk, England"
+    }
+   ]
+  },
+  {
+   "name": "Ann Wear",
+   "slug": "ann-wear",
+   "records": [
+    {
+     "file": "wear-brothers-1881.tsv",
+     "title": "1881 census, two Bermondsey households",
+     "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
+     "detail": "household: A · address: 42 Jamaica Road · reference: RG11/574/56/8 sch 501 · relationship: Wife · sex: Female · age: 30 · birth_year: 1851 · birth_place: Walworth, Surrey"
+    }
+   ]
+  },
+  {
+   "name": "Arthur J Hawkins",
+   "slug": "arthur-j-hawkins",
+   "records": [
+    {
+     "file": "wear-1891-watford.tsv",
+     "title": "1891 census, Watford",
+     "source": "RG12, Watford",
+     "detail": "relationship: Son · marital: Single · sex: Male · age: 6 · birth_year: 1885 · occupation: Scholar · birth_place: Bushey, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "B Wear",
+   "slug": "b-wear",
+   "records": [
+    {
+     "file": "wear-emigration-bt27.tsv",
+     "title": "BT 27 outbound passenger lists",
+     "source": "TNA BT 27",
+     "detail": "entry: 00226 · title: MAST · sex: Male · birth_year: 1937 · age: 2 · occupation: Nil · ship: Dunvegan Castle · line: Union Castle · dep_day: 10 · dep_month: 8 · dep_year: 1939 · dep_port: London · dest_port: Durban (Port Natal) · piece: TNA/BT27/1542/00/0024"
+    }
+   ]
+  },
+  {
+   "name": "C Wear",
+   "slug": "c-wear",
+   "records": [
+    {
+     "file": "wear-emigration-bt27.tsv",
+     "title": "BT 27 outbound passenger lists",
+     "source": "TNA BT 27",
+     "detail": "entry: 00224 · title: MISS · sex: Female · birth_year: 1931 · age: 8 · occupation: Nil · ship: Dunvegan Castle · line: Union Castle · dep_day: 10 · dep_month: 8 · dep_year: 1939 · dep_port: London · dest_port: Durban (Port Natal) · piece: TNA/BT27/1542/00/0024"
+    }
+   ]
+  },
+  {
+   "name": "Caroline Castle",
+   "slug": "caroline-castle",
+   "records": [
+    {
+     "file": "castle-1911-1921.tsv",
+     "title": "1911 and 1921 censuses, Baldock and Letchworth",
+     "source": "RG14/7572 sch 173; RG15/07079 sch 125",
+     "detail": "source: 1911 census · reference: RG14 piece 7572, schedule 173 · address: The Church Yard, St Mary's Cottages, Baldock · date: 2 April 1911 · relationship: Wife · age_as_transcribed: 48 · birthplace: Herts Weston · note: MARRIED 28 YEARS. TOTAL CHILDREN BORN 9, STILL LIVING 8, DIED 1."
+    }
+   ]
+  },
+  {
+   "name": "Caroline James",
+   "slug": "caroline-james",
+   "records": [
+    {
+     "file": "castle-1911-1921.tsv",
+     "title": "1911 and 1921 censuses, Baldock and Letchworth",
+     "source": "RG14/7572 sch 173; RG15/07079 sch 125",
+     "detail": "source: 1921 census · reference: RG15 piece 07079, schedule 125 · address: 9 Boscombe Place, Letchworth · date: 19 June 1921 · relationship: Wife · age_as_transcribed: 56 y 4 m · birthplace: Herts Weston · occupation: Home Duties · note: THE SAME WOMAN. Married 10 months. The age puts her birthday in FEBRUARY, which is right; the year is two out."
+    }
+   ]
+  },
+  {
+   "name": "Caroline Wallis",
+   "slug": "caroline-wallis",
+   "records": [
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: 1862 · born_place: Weston, Hertfordshire · died: 1957 · died_place: Baldock"
+    }
+   ]
+  },
+  {
+   "name": "Charlotte L Hawkins",
+   "slug": "charlotte-l-hawkins",
+   "records": [
+    {
+     "file": "wear-1891-watford.tsv",
+     "title": "1891 census, Watford",
+     "source": "RG12, Watford",
+     "detail": "relationship: Wife · marital: Married · sex: Female · age: 26 · birth_year: 1865 · occupation: - · birth_place: Wigginton, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Edith M Hull",
+   "slug": "edith-m-hull",
+   "records": [
+    {
+     "file": "hull-1901-st-albans.tsv",
+     "title": "1901 census, 22 Mount Pleasant, St Albans",
+     "source": "RG13 piece 1312",
+     "detail": "relationship: Daughter · marital: Single · sex: Female · age: 4 · birth_year: 1897 · occupation: - · birth_place: St Albans, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Edith Wear",
+   "slug": "edith-wear",
+   "records": [
+    {
+     "file": "wear-brothers-1881.tsv",
+     "title": "1881 census, two Bermondsey households",
+     "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
+     "detail": "household: B · address: 2 Fenner Road · reference: RG11/567/128/60 sch 1238 · relationship: Daughter · sex: Female · age: 0 · birth_year: 1881"
+    }
+   ]
+  },
+  {
+   "name": "Elizabeth Giddins",
+   "slug": "elizabeth-giddins",
+   "records": [
+    {
+     "file": "giddins-norton-end.tsv",
+     "title": "1861 and 1871 censuses, Norton End, Baldock",
+     "source": "RG9/816 f.69; RG10/1365 f.27",
+     "detail": "census: 1861 · relationship: Wife · sex: Female · age: 46 · birth_year: 1815 · occupation: - · birth_place: Norton, Hertfordshire"
+    },
+    {
+     "file": "giddins-norton-end.tsv",
+     "title": "1861 and 1871 censuses, Norton End, Baldock",
+     "source": "RG9/816 f.69; RG10/1365 f.27",
+     "detail": "census: 1871 · relationship: Wife · sex: Female · age: 57 · birth_year: 1814 · occupation: Platting · birth_place: Norton, Hertfordshire"
+    }
+   ]
+  },
+  {
+   "name": "Emma Giddins",
+   "slug": "emma-giddins",
+   "records": [
+    {
+     "file": "giddins-norton-end.tsv",
+     "title": "1861 and 1871 censuses, Norton End, Baldock",
+     "source": "RG9/816 f.69; RG10/1365 f.27",
+     "detail": "census: 1861 · relationship: Daughter · sex: Female · age: 6 · birth_year: 1855 · occupation: Scholar · birth_place: Norton, Hertfordshire"
+    }
+   ]
+  },
+  {
+   "name": "Emma Hawkins",
+   "slug": "emma-hawkins",
+   "records": [
+    {
+     "file": "hawkins-1871-aldenham.tsv",
+     "title": "1871 census, The Red Lion Cottages, Aldenham",
+     "source": "RG10 piece 1365",
+     "detail": "relationship: Wife · sex: Female · age: 49 · birth_year: 1822 · occupation: - · birth_place: Aldenham, Hertfordshire, England"
+    },
+    {
+     "file": "hawkins-1871-aldenham.tsv",
+     "title": "1871 census, The Red Lion Cottages, Aldenham",
+     "source": "RG10 piece 1365",
+     "detail": "relationship: Daughter · sex: Female · age: 12 · birth_year: 1859 · occupation: Scholar · birth_place: Aldenham, Hertfordshire, England"
+    },
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: married Robert Wear · date: 1881 · place: Southwark, London"
+    }
+   ]
+  },
+  {
+   "name": "Emma Hawkins, later WEAR, later HULL",
+   "slug": "emma-hawkins-later-wear-later-hull",
+   "records": [
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: born · date: 7 February 1859 · place: Aldenham, Hertfordshire · reference: 1939 Register RG101/1620G/011/28 · note: the date is her own, given to a registrar at eighty"
+    }
+   ]
+  },
+  {
+   "name": "Emma Hull",
+   "slug": "emma-hull",
+   "records": [
+    {
+     "file": "hull-1901-st-albans.tsv",
+     "title": "1901 census, 22 Mount Pleasant, St Albans",
+     "source": "RG13 piece 1312",
+     "detail": "relationship: Wife · marital: Married · sex: Female · age: 41 · birth_year: 1860 · occupation: - · birth_place: Aldenham, Hertfordshire, England"
+    },
+    {
+     "file": "shenton-1939-pix-road.tsv",
+     "title": "1939 Register, 63 Pix Road, Letchworth",
+     "source": "TNA R39/1620/1620G/011/28, schedule 305",
+     "detail": "birth_date: 07 Feb 1859 · sex: Female · occupation: Incapacitated - Blind · marital: Widowed · schedule: 305/1"
+    },
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: widowed a second time · date: before 29 September 1939 · reference: 1939 Register · note: Widowed"
+    },
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: enumerated · date: 29 September 1939 · place: 63 Pix Road, Letchworth · reference: RG101/1620G/011/28 sched 305/1 · note: Incapacitated - Blind, aged 80"
+    },
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: DIED · date: Q2 1944 · place: HITCHIN, HERTFORDSHIRE · reference: GRO death index, birth year 1859 · note: AGED 85. HER LIFE NOW RUNS END TO END."
+    }
+   ]
+  },
+  {
+   "name": "Emma Wear",
+   "slug": "emma-wear",
+   "records": [
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: widowed · date: Q1 1890 · place: St Olave Southwark · note: Robert Wear dead at thirty-one"
+    },
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: married John Hull · date: c. 1893"
+    },
+    {
+     "file": "wear-1891-watford.tsv",
+     "title": "1891 census, Watford",
+     "source": "RG12, Watford",
+     "detail": "relationship: Mother (as transcribed) · marital: Widow · sex: Female · age: 32 · birth_year: 1859 · occupation: - · birth_place: Aldenham, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Ernest Albert Cyril CASTLE",
+   "slug": "ernest-albert-cyril-castle",
+   "records": [
+    {
+     "file": "castle-1911-1921.tsv",
+     "title": "1911 and 1921 censuses, Baldock and Letchworth",
+     "source": "RG14/7572 sch 173; RG15/07079 sch 125",
+     "detail": "source: 1921 census · reference: RG15 piece 07079, schedule 125 · address: 9 Boscombe Place, Letchworth · date: 19 June 1921 · relationship: STEP-SON · note: the Ernest of 1911, and the word step-son is the proof"
+    },
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: 28 Nov 1903 · born_place: Baldock · died: 3 Jul 1988 · died_place: Baldock"
+    }
+   ]
+  },
+  {
+   "name": "Ernest Castle",
+   "slug": "ernest-castle",
+   "records": [
+    {
+     "file": "castle-1911-1921.tsv",
+     "title": "1911 and 1921 censuses, Baldock and Letchworth",
+     "source": "RG14/7572 sch 173; RG15/07079 sch 125",
+     "detail": "source: 1911 census · reference: RG14 piece 7572, schedule 173 · address: The Church Yard, St Mary's Cottages, Baldock · date: 2 April 1911 · relationship: Son · note: Ernest Albert Cyril, b.1904"
+    }
+   ]
+  },
+  {
+   "name": "Florence Margaret Hilda Castle",
+   "slug": "florence-margaret-hilda-castle",
+   "records": [
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: 26 May 1901 · born_place: Baldock · died: 13 Mar 1985 · died_place: Stotfold, Beds"
+    }
+   ]
+  },
+  {
+   "name": "Florence Margarite Hilda CASTLE",
+   "slug": "florence-margarite-hilda-castle",
+   "records": [
+    {
+     "file": "castle-1911-1921.tsv",
+     "title": "1911 and 1921 censuses, Baldock and Letchworth",
+     "source": "RG14/7572 sch 173; RG15/07079 sch 125",
+     "detail": "source: 1921 census · reference: RG15 piece 07079, schedule 125 · address: 9 Boscombe Place, Letchworth · date: 19 June 1921 · relationship: STEP-SON [sic — daughter] · note: the Hilda of 1911, full names at last"
+    }
+   ]
+  },
+  {
+   "name": "Frederick James Castle",
+   "slug": "frederick-james-castle",
+   "records": [
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: abt 1889 · born_place: Baldock"
+    }
+   ]
+  },
+  {
+   "name": "Georg Leibholz",
+   "slug": "georg-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 07.06.1884 · birthplace: Hammerstein/Schlochau/Westpreußen · residence: Berlin (Mitte) · deportation_1: from Berlin 01.11.1941 → Litzmannstadt (Lodz), Ghetto · deportation_2: 13.05.1942 → Kulmhof (Chelmno), Vernichtungslager · death_date: not documented · death_place: Kulmhof (Chelmno), Vernichtungslager · gedenkbuch_id: en1100801 · status: DOCUMENTED — but NOT a brother, see notes"
+    }
+   ],
+   "register_id": 9500026,
+   "register_name": "Georg Leibholz",
+   "register_match": "exact"
+  },
+  {
+   "name": "George Castle",
+   "slug": "george-castle",
+   "records": [
+    {
+     "file": "castle-1911-1921.tsv",
+     "title": "1911 and 1921 censuses, Baldock and Letchworth",
+     "source": "RG14/7572 sch 173; RG15/07079 sch 125",
+     "detail": "source: 1911 census · reference: RG14 piece 7572, schedule 173, RG78/371, RD136 SD1 ED3 · address: The Church Yard, St Mary's Cottages, Baldock, Hertfordshire · date: 2 April 1911 · relationship: Head · note: the George William Castle who died in 1916"
+    },
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: 1840 · died: 1885"
+    },
+    {
+     "file": "giddins-norton-end.tsv",
+     "title": "1861 and 1871 censuses, Norton End, Baldock",
+     "source": "RG9/816 f.69; RG10/1365 f.27",
+     "detail": "census: 1871 · relationship: Son-in-law · sex: Male · age: 30 · birth_year: 1841 · occupation: Ag lab · birth_place: Baldock, Hertfordshire"
+    },
+    {
+     "file": "giddins-norton-end.tsv",
+     "title": "1861 and 1871 censuses, Norton End, Baldock",
+     "source": "RG9/816 f.69; RG10/1365 f.27",
+     "detail": "census: 1871 · relationship: Grandson · sex: Male · age: 8 · birth_year: 1863 · occupation: Scholar · birth_place: Baldock, Hertfordshire"
+    }
+   ]
+  },
+  {
+   "name": "George Giddins",
+   "slug": "george-giddins",
+   "records": [
+    {
+     "file": "giddins-norton-end.tsv",
+     "title": "1861 and 1871 censuses, Norton End, Baldock",
+     "source": "RG9/816 f.69; RG10/1365 f.27",
+     "detail": "census: 1861 · relationship: Son · sex: Male · age: 14 · birth_year: 1847 · occupation: Agricultural labourer · birth_place: Baldock, Hertfordshire"
+    }
+   ]
+  },
+  {
+   "name": "George William Castle",
+   "slug": "george-william-castle",
+   "records": [
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: 1862 · born_place: Willian, Hertfordshire · died: 1916"
+    },
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: abt 1885 · born_place: Baldock · died: 23 Aug 1939"
+    }
+   ]
+  },
+  {
+   "name": "Gertrude Wear",
+   "slug": "gertrude-wear",
+   "records": [
+    {
+     "file": "wear-brothers-1881.tsv",
+     "title": "1881 census, two Bermondsey households",
+     "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
+     "detail": "household: A · address: 42 Jamaica Road · reference: RG11/574/56/8 sch 501 · relationship: Daughter · sex: Female · age: 7 · birth_year: 1874 · occupation: Scholar · birth_place: Walworth, Surrey"
+    }
+   ]
+  },
+  {
+   "name": "H R Wear",
+   "slug": "h-r-wear",
+   "records": [
+    {
+     "file": "wear-emigration-bt27.tsv",
+     "title": "BT 27 outbound passenger lists",
+     "source": "TNA BT 27",
+     "detail": "entry: 00189 · title: MR · sex: Male · birth_year: 1890 · age: 49 · occupation: Machine minder (transcribed \"Machine minister\") · ship: Durban Castle · line: Union-Castle · dep_day: 5 · dep_month: 4 · dep_year: 1939 · dep_port: London · dest_port: Cape · piece: TNA/BT27/1540/00/0042"
+    }
+   ]
+  },
+  {
+   "name": "HARRY Wear",
+   "slug": "harry-wear",
+   "records": [
+    {
+     "file": "wear-brothers-1881.tsv",
+     "title": "1881 census, two Bermondsey households",
+     "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
+     "detail": "household: A · address: 42 Jamaica Road · reference: RG11/574/56/8 sch 501 · relationship: Son · sex: Male · age: 0 · birth_year: 1881 · note: A MALE-LINE WEAR"
+    }
+   ]
+  },
+  {
+   "name": "Harriet Reeves",
+   "slug": "harriet-reeves",
+   "records": [
+    {
+     "file": "wear-1911-letchworth.tsv",
+     "title": "1911 census, Letchworth",
+     "source": "RG14, Letchworth",
+     "detail": "relationship: Head · marital: Widow · sex: Female · age: 36 · birth_year: 1875 · occupation: - · birth_place: Bassingbourn, Cambs"
+    }
+   ]
+  },
+  {
+   "name": "Henery Hawkins",
+   "slug": "henery-hawkins",
+   "records": [
+    {
+     "file": "hawkins-1871-aldenham.tsv",
+     "title": "1871 census, The Red Lion Cottages, Aldenham",
+     "source": "RG10 piece 1365",
+     "detail": "relationship: Son · sex: Male · age: 7 · birth_year: 1864 · occupation: Scholar · birth_place: Aldenham, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Henry R Wear",
+   "slug": "henry-r-wear",
+   "records": [
+    {
+     "file": "hull-1901-st-albans.tsv",
+     "title": "1901 census, 22 Mount Pleasant, St Albans",
+     "source": "RG13 piece 1312",
+     "detail": "relationship: Step son · marital: Single · sex: Male · age: 11 · birth_year: 1890 · occupation: - · birth_place: Bermondsey, Surrey, England"
+    },
+    {
+     "file": "wear-1891-watford.tsv",
+     "title": "1891 census, Watford",
+     "source": "RG12, Watford",
+     "detail": "relationship: Son · marital: Single · sex: Male · age: 1 · birth_year: 1890 · occupation: - · birth_place: Bermondsey, Surrey, England"
+    }
+   ]
+  },
+  {
+   "name": "Henry Robert Wear",
+   "slug": "henry-robert-wear",
+   "records": [
+    {
+     "file": "wear-1911-letchworth.tsv",
+     "title": "1911 census, Letchworth",
+     "source": "RG14, Letchworth",
+     "detail": "relationship: Boarder · marital: Single · sex: Male · age: 21 · birth_year: 1890 · occupation: Printer's assistant · birth_place: Bermondsey"
+    }
+   ]
+  },
+  {
+   "name": "Henry Wear",
+   "slug": "henry-wear",
+   "records": [
+    {
+     "file": "wear-1851-bermondsey.tsv",
+     "title": "1851 census, Salisbury Street, Bermondsey",
+     "source": "HO107 piece 1560 folio 212",
+     "detail": "relationship: Son · marital: - · sex: Male · age: 1 · birth_year: 1850 · occupation: - · birth_place: Bermondsey, Surrey, England"
+    },
+    {
+     "file": "wear-1871-bermondsey.tsv",
+     "title": "1871 census, Jamaica Road, Bermondsey",
+     "source": "RG10 piece 641 folio 40 schedule 40",
+     "detail": "relationship: Son · sex: Male · age: 17 · birth_year: 1854 · occupation: Harness maker · birth_place: Bermondsey, Surrey, England"
+    }
+   ]
+  },
+  {
+   "name": "Herbert Leslie Reeves",
+   "slug": "herbert-leslie-reeves",
+   "records": [
+    {
+     "file": "wear-1911-letchworth.tsv",
+     "title": "1911 census, Letchworth",
+     "source": "RG14, Letchworth",
+     "detail": "relationship: Son · marital: - · sex: Male · age: 5 · birth_year: 1906 · occupation: - · birth_place: Tooting, S W"
+    }
+   ]
+  },
+  {
+   "name": "Hilda Castle",
+   "slug": "hilda-castle",
+   "records": [
+    {
+     "file": "castle-1911-1921.tsv",
+     "title": "1911 and 1921 censuses, Baldock and Letchworth",
+     "source": "RG14/7572 sch 173; RG15/07079 sch 125",
+     "detail": "source: 1911 census · reference: RG14 piece 7572, schedule 173 · address: The Church Yard, St Mary's Cottages, Baldock · date: 2 April 1911 · relationship: Daughter · note: Florence Margarite Hilda, b.1901, going by her third name"
+    }
+   ]
+  },
+  {
+   "name": "ISRAEL",
+   "slug": "israel",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 332/1952 · depot: TAB · division: Witwatersrand Local Division · year: 1952 · plaintiff: PAULINE BERMAN (formerly MILLER, born RAPPOPORT) · defendant: ISRAEL · action: DIVORCE · source: gendatabase mirror of NAAIRS, 16 Sep 2026 · status: NEW — her second divorce, five years before Kurt"
+    }
+   ]
+  },
+  {
+   "name": "IVONE LUWENSKI (formerly de Witt, born Figueiredo)",
+   "slug": "ivone-luwenski-formerly-de-witt-born-figueiredo",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 2545/1950 · depot: TAB · division: Witwatersrand Local Division · year: 1950 · plaintiff: IVONE LUWENSKI (formerly de Witt, born Figueiredo) · defendant: KURT · action: RESTITUTION OF CONJUGAL RIGHTS · source: NAAIRS screen photographed into the family tree, photos 9500067 and 9500069 · status: NEW — and she is the plaintiff"
+    }
+   ]
+  },
+  {
+   "name": "Ivone (born Mota Figueiredo)",
+   "slug": "ivone-born-mota-figueiredo",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 1950/1948 · depot: TAB · division: Witwatersrand Local Division · year: 1948 · plaintiff: Kurt LUWINSKY · defendant: Ivone (born Mota Figueiredo) · action: DIVORCE · source: NAAIRS, and photo 9500064 · status: known"
+    }
+   ]
+  },
+  {
+   "name": "Ivone (formerly de Witt, born Figueiredo)",
+   "slug": "ivone-formerly-de-witt-born-figueiredo",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 497/1951 · depot: TAB · division: Witwatersrand Local Division · year: 1951 · plaintiff: Kurt LUWINSKI · defendant: Ivone (formerly de Witt, born Figueiredo) · action: RESTITUTION OF CONJUGAL RIGHTS · source: NAAIRS, and photo 9500065 · status: known"
+    },
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 2368/1951 · depot: TAB · division: Witwatersrand Local Division · year: 1951 · plaintiff: Kurt LUWINSKI · defendant: Ivone (formerly de Witt) (born Figueiredo) · action: DIVORCE · source: NAAIRS · status: known"
+    }
+   ]
+  },
+  {
+   "name": "JOSEPH",
+   "slug": "joseph",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 583/1944 · depot: TAB · division: Witwatersrand Local Division · year: 1944 · plaintiff: PAULINE MILLER (born RAPPOPORT) · defendant: JOSEPH · action: DIVORCE · source: gendatabase mirror of NAAIRS, 16 Sep 2026 · status: NEW — Kurt's last wife, her first divorce"
+    }
+   ]
+  },
+  {
+   "name": "JOSEPH WALLIS",
+   "slug": "joseph-wallis",
+   "records": [
+    {
+     "file": "castle-1911-1921.tsv",
+     "title": "1911 and 1921 censuses, Baldock and Letchworth",
+     "source": "RG14/7572 sch 173; RG15/07079 sch 125",
+     "detail": "source: 1911 census · reference: RG14 piece 7572, schedule 173 · address: The Church Yard, St Mary's Cottages, Baldock · date: 2 April 1911 · relationship: FATHER · note: CAROLINE'S OWN FATHER, IN THE HOUSE, AND SPELT WALLIS"
+    }
+   ]
+  },
+  {
+   "name": "Jacob Leibholz",
+   "slug": "jacob-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 08.08.1884 · birthplace: Schubin (poln. Szubin)/Posen · residence: Berlin (Schöneberg) · deportation_1: from Berlin 26.02.1943 → Auschwitz, Konzentrations- und Vernichtungslager · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100957 · status: DOCUMENTED"
+    }
+   ],
+   "register_id": 9500020,
+   "register_name": "Jacob Leibholz",
+   "register_match": "exact"
+  },
+  {
+   "name": "James B Dykes",
+   "slug": "james-b-dykes",
+   "records": [
+    {
+     "file": "wear-1911-letchworth.tsv",
+     "title": "1911 census, Letchworth",
+     "source": "RG14, Letchworth",
+     "detail": "relationship: Boarder · marital: Single · sex: Male · age: 22 · birth_year: 1889 · occupation: Fitter, engineers · birth_place: Brandleton, Suffolk"
+    }
+   ]
+  },
+  {
+   "name": "James Bloom",
+   "slug": "james-bloom",
+   "records": [
+    {
+     "file": "bloom-1861-yarmouth.tsv",
+     "title": "1861 census, 80 Howard Street, Great Yarmouth",
+     "source": "RG9, Great Yarmouth",
+     "detail": "relationship: Son · marital: Unmarried · sex: Male · age: 13 · birth_year: 1848 · occupation: Scholar · birth_place: Yarmouth, Norfolk, England"
+    }
+   ]
+  },
+  {
+   "name": "James Giddins",
+   "slug": "james-giddins",
+   "records": [
+    {
+     "file": "giddins-norton-end.tsv",
+     "title": "1861 and 1871 censuses, Norton End, Baldock",
+     "source": "RG9/816 f.69; RG10/1365 f.27",
+     "detail": "census: 1861 · relationship: Head · sex: Male · age: 46 · birth_year: 1815 · occupation: Agricultural labourer · birth_place: Baldock, Hertfordshire"
+    },
+    {
+     "file": "giddins-norton-end.tsv",
+     "title": "1861 and 1871 censuses, Norton End, Baldock",
+     "source": "RG9/816 f.69; RG10/1365 f.27",
+     "detail": "census: 1871 · relationship: Head · sex: Male · age: 57 · birth_year: 1814 · occupation: Ag lab · birth_place: Baldock, Hertfordshire"
+    }
+   ]
+  },
+  {
+   "name": "James James",
+   "slug": "james-james",
+   "records": [
+    {
+     "file": "castle-1911-1921.tsv",
+     "title": "1911 and 1921 censuses, Baldock and Letchworth",
+     "source": "RG14/7572 sch 173; RG15/07079 sch 125",
+     "detail": "source: 1921 census · reference: RG15 piece 07079, schedule 125, RD136 RS1 ED10 · address: 9 Boscombe Place, Letchworth, Hertfordshire · date: 19 June 1921 · relationship: Head"
+    }
+   ]
+  },
+  {
+   "name": "James Wear",
+   "slug": "james-wear",
+   "records": [
+    {
+     "file": "wear-1871-bermondsey.tsv",
+     "title": "1871 census, Jamaica Road, Bermondsey",
+     "source": "RG10 piece 641 folio 40 schedule 40",
+     "detail": "relationship: Son · sex: Male · age: 19 · birth_year: 1852 · occupation: Harness maker · birth_place: Bermondsey, Surrey, England"
+    },
+    {
+     "file": "wear-brothers-1881.tsv",
+     "title": "1881 census, two Bermondsey households",
+     "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
+     "detail": "household: A · address: 42 Jamaica Road, Bermondsey, St Olave Southwark · reference: RG11 piece 574 folio 56 page 8 schedule 501 · relationship: Head · sex: Male · age: 29 · birth_year: 1852 · occupation: Harness maker · birth_place: Walworth, Surrey · note: ROBERT WEAR'S BROTHER. In 1871 he was nineteen and a harness maker in his father's house in the same road."
+    }
+   ]
+  },
+  {
+   "name": "Jeannett (E M) Wear",
+   "slug": "jeannett-e-m-wear",
+   "records": [
+    {
+     "file": "wear-1939-register.tsv",
+     "title": "1939 Register, 72 Pix Road, Letchworth",
+     "source": "TNA R39",
+     "detail": "birth_date: 28 Oct 1919 · sex: Female · occupation: Cinema Cashier · marital: Single · schedule: 279/3"
+    }
+   ]
+  },
+  {
+   "name": "Jeremiah R Taylor",
+   "slug": "jeremiah-r-taylor",
+   "records": [
+    {
+     "file": "wear-1871-bermondsey.tsv",
+     "title": "1871 census, Jamaica Road, Bermondsey",
+     "source": "RG10 piece 641 folio 40 schedule 40",
+     "detail": "relationship: Lodger · sex: Male · age: 71 · birth_year: 1800 · occupation: - · birth_place: Bermondsey, Surrey, England"
+    }
+   ]
+  },
+  {
+   "name": "Johannes Antonie Oelofse DE WITT",
+   "slug": "johannes-antonie-oelofse-de-witt",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: TPD 534/1948 · depot: TAB · division: Transvaal Provincial Division · year: 1948 · plaintiff: Johannes Antonie Oelofse DE WITT · defendant: Yvonne (born de Figueiredo) · action: DIVORCE · source: NAAIRS screen photographed into the family tree, photo 9500068 · status: NEW — found 14 Sep 2026"
+    }
+   ],
+   "ambiguous": [
+    {
+     "id": 9500160,
+     "name": "Johannes Antonie Oelofse De Witt",
+     "born": "Circa 1923",
+     "died": "Apr 2 1963"
+    },
+    {
+     "id": 9500005,
+     "name": "Johannes Antonie Oelofse de Witt",
+     "born": "Dec 1923",
+     "died": ""
+    }
+   ]
+  },
+  {
+   "name": "John Giddins",
+   "slug": "john-giddins",
+   "records": [
+    {
+     "file": "giddins-norton-end.tsv",
+     "title": "1861 and 1871 censuses, Norton End, Baldock",
+     "source": "RG9/816 f.69; RG10/1365 f.27",
+     "detail": "census: 1861 · relationship: Son · sex: Male · age: 12 · birth_year: 1849 · occupation: Agricultural labourer · birth_place: Norton, Hertfordshire"
+    }
+   ]
+  },
+  {
+   "name": "John Hawkins",
+   "slug": "john-hawkins",
+   "records": [
+    {
+     "file": "hawkins-1871-aldenham.tsv",
+     "title": "1871 census, The Red Lion Cottages, Aldenham",
+     "source": "RG10 piece 1365",
+     "detail": "relationship: Head · sex: Male · age: 51 · birth_year: 1820 · occupation: Ag lab · birth_place: Aldenham, Hertfordshire, England"
+    },
+    {
+     "file": "hawkins-1871-aldenham.tsv",
+     "title": "1871 census, The Red Lion Cottages, Aldenham",
+     "source": "RG10 piece 1365",
+     "detail": "relationship: Son · sex: Male · age: 14 · birth_year: 1857 · occupation: Ag lab · birth_place: Aldenham, Hertfordshire, England"
+    },
+    {
+     "file": "wear-1891-watford.tsv",
+     "title": "1891 census, Watford",
+     "source": "RG12, Watford",
+     "detail": "relationship: Head · marital: Married · sex: Male · age: 34 · birth_year: 1857 · occupation: Carter · birth_place: Aldenham, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "John Hull",
+   "slug": "john-hull",
+   "records": [
+    {
+     "file": "hull-1901-st-albans.tsv",
+     "title": "1901 census, 22 Mount Pleasant, St Albans",
+     "source": "RG13 piece 1312",
+     "detail": "relationship: Head · marital: Married · sex: Male · age: 33 · birth_year: 1868 · occupation: Railway labourer · birth_place: Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "K LUWINSKI",
+   "slug": "k-luwinski",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 2542/1957 · depot: TAB · division: Witwatersrand Local Division · year: 1957 · plaintiff: STANDARD BANK OF SOUTH AFRICA LTD · defendant: K LUWINSKI · action: ILLIQUID CASE, PAYMENT · source: NAAIRS screen photographed into the family tree, photo 9500066 · status: NEW — found 14 Sep 2026"
+    }
+   ]
+  },
+  {
+   "name": "K Wear",
+   "slug": "k-wear",
+   "records": [
+    {
+     "file": "wear-emigration-bt27.tsv",
+     "title": "BT 27 outbound passenger lists",
+     "source": "TNA BT 27",
+     "detail": "entry: 00227 · title: MISS · sex: Female · birth_year: 1921 · age: 18 · occupation: Nil · ship: Dunvegan Castle · line: Union Castle · dep_day: 10 · dep_month: 8 · dep_year: 1939 · dep_port: London · dest_port: Durban (Port Natal) · piece: TNA/BT27/1542/00/0024"
+    }
+   ]
+  },
+  {
+   "name": "KURT",
+   "slug": "kurt",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 2545/1950 · depot: TAB · division: Witwatersrand Local Division · year: 1950 · plaintiff: IVONE LUWENSKI (formerly de Witt, born Figueiredo) · defendant: KURT · action: RESTITUTION OF CONJUGAL RIGHTS · source: NAAIRS screen photographed into the family tree, photos 9500067 and 9500069 · status: NEW — and she is the plaintiff"
+    }
+   ]
+  },
+  {
+   "name": "Kurt LUWINSKI",
+   "slug": "kurt-luwinski",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 497/1951 · depot: TAB · division: Witwatersrand Local Division · year: 1951 · plaintiff: Kurt LUWINSKI · defendant: Ivone (formerly de Witt, born Figueiredo) · action: RESTITUTION OF CONJUGAL RIGHTS · source: NAAIRS, and photo 9500065 · status: known"
+    },
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 2368/1951 · depot: TAB · division: Witwatersrand Local Division · year: 1951 · plaintiff: Kurt LUWINSKI · defendant: Ivone (formerly de Witt) (born Figueiredo) · action: DIVORCE · source: NAAIRS · status: known"
+    }
+   ],
+   "ambiguous": [
+    {
+     "id": 9500040,
+     "name": "Kurt Luwinski",
+     "born": "",
+     "died": "1995"
+    },
+    {
+     "id": 9500001,
+     "name": "Kurt Israel Luwinski",
+     "born": "May 11 1912",
+     "died": "15 December 1968"
+    }
+   ]
+  },
+  {
+   "name": "Kurt LUWINSKY",
+   "slug": "kurt-luwinsky",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 1950/1948 · depot: TAB · division: Witwatersrand Local Division · year: 1948 · plaintiff: Kurt LUWINSKY · defendant: Ivone (born Mota Figueiredo) · action: DIVORCE · source: NAAIRS, and photo 9500064 · status: known"
+    }
+   ]
+  },
+  {
+   "name": "L A R Wear",
+   "slug": "l-a-r-wear",
+   "records": [
+    {
+     "file": "wear-emigration-bt27.tsv",
+     "title": "BT 27 outbound passenger lists",
+     "source": "TNA BT 27",
+     "detail": "entry: 00171 · title: MR · sex: Male · birth_year: 1917 · age: 20 · occupation: Engineer · ship: Windsor Castle · line: Union-Castle M S S Co Ltd · dep_day: 12 · dep_month: 3 · dep_year: 1937 · dep_port: Southampton · dest_port: Cape · piece: TNA/BT27/1490/00/0047"
+    }
+   ]
+  },
+  {
+   "name": "L Wear",
+   "slug": "l-wear",
+   "records": [
+    {
+     "file": "wear-emigration-bt27.tsv",
+     "title": "BT 27 outbound passenger lists",
+     "source": "TNA BT 27",
+     "detail": "entry: 00225 · title: MISS · sex: Female · birth_year: 1933 · age: 6 · occupation: Nil · ship: Dunvegan Castle · line: Union Castle · dep_day: 10 · dep_month: 8 · dep_year: 1939 · dep_port: London · dest_port: Durban (Port Natal) · piece: TNA/BT27/1542/00/0024"
+    }
+   ]
+  },
+  {
+   "name": "LOUIS Wear",
+   "slug": "louis-wear",
+   "records": [
+    {
+     "file": "wear-brothers-1881.tsv",
+     "title": "1881 census, two Bermondsey households",
+     "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
+     "detail": "household: A · address: 42 Jamaica Road · reference: RG11/574/56/8 sch 501 · relationship: Son · sex: Male · age: 3 · birth_year: 1878 · note: A MALE-LINE WEAR"
+    }
+   ]
+  },
+  {
+   "name": "LOUISE S A SHENTON",
+   "slug": "louise-s-a-shenton",
+   "records": [
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: died · date: Q4 1967 · place: HITCHIN, HERTFORDSHIRE · reference: GRO death index, birth year 1882 · note: AGED 84. The initials close it: born Louisa Sarah A, died Louise S A."
+    }
+   ]
+  },
+  {
+   "name": "Lois M Hawkins",
+   "slug": "lois-m-hawkins",
+   "records": [
+    {
+     "file": "wear-1891-watford.tsv",
+     "title": "1891 census, Watford",
+     "source": "RG12, Watford",
+     "detail": "relationship: Daughter · marital: Single · sex: Female · age: 4 · birth_year: 1887 · occupation: - · birth_place: Watford, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Lottie Corby",
+   "slug": "lottie-corby",
+   "records": [
+    {
+     "file": "wear-1939-register.tsv",
+     "title": "1939 Register, 72 Pix Road, Letchworth",
+     "source": "TNA R39",
+     "detail": "birth_date: 03 Mar 1881 · sex: Female · occupation: Hand Sewer · marital: Single · schedule: 279/2"
+    }
+   ]
+  },
+  {
+   "name": "Louisa Corby",
+   "slug": "louisa-corby",
+   "records": [
+    {
+     "file": "wear-1939-register.tsv",
+     "title": "1939 Register, 72 Pix Road, Letchworth",
+     "source": "TNA R39",
+     "detail": "birth_date: 14 Jan 1870 · sex: Female · occupation: Unpaid Domestic Duties · marital: Single · schedule: 279/1"
+    }
+   ]
+  },
+  {
+   "name": "Louisa S A Wear",
+   "slug": "louisa-s-a-wear",
+   "records": [
+    {
+     "file": "hull-1901-st-albans.tsv",
+     "title": "1901 census, 22 Mount Pleasant, St Albans",
+     "source": "RG13 piece 1312",
+     "detail": "relationship: Step daughter · marital: Single · sex: Female · age: 18 · birth_year: 1883 · occupation: - · birth_place: Wimbledon, Surrey, England"
+    }
+   ]
+  },
+  {
+   "name": "Louisa S Wear",
+   "slug": "louisa-s-wear",
+   "records": [
+    {
+     "file": "wear-1891-watford.tsv",
+     "title": "1891 census, Watford",
+     "source": "RG12, Watford",
+     "detail": "relationship: Daughter · marital: Single · sex: Female · age: 8 · birth_year: 1883 · occupation: Scholar · birth_place: Wimbledon, Surrey, England"
+    }
+   ]
+  },
+  {
+   "name": "Louisa Sarah A WEAR",
+   "slug": "louisa-sarah-a-wear",
+   "records": [
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: born · date: 29 November 1882 · place: registered Q1 1883, KINGSTON, SURREY · reference: GRO birth index · note: A NEW PLACE FOR HER PARENTS - Kingston, not Bermondsey"
+    }
+   ]
+  },
+  {
+   "name": "Louisa Shenton",
+   "slug": "louisa-shenton",
+   "records": [
+    {
+     "file": "shenton-1939-pix-road.tsv",
+     "title": "1939 Register, 63 Pix Road, Letchworth",
+     "source": "TNA R39/1620/1620G/011/28, schedule 305",
+     "detail": "birth_date: 29 Nov 1882 · sex: Female · occupation: Unpaid Domestic Duties · marital: Married · schedule: 305/2"
+    },
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: enumerated · date: 29 September 1939 · place: 63 Pix Road, Letchworth · reference: RG101/1620G/011/28 sched 305/2 · note: Unpaid Domestic Duties, keeping her blind mother"
+    }
+   ]
+  },
+  {
+   "name": "Louisa Wear",
+   "slug": "louisa-wear",
+   "records": [
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: married William Shenton · date: Q3 1918 · place: Hitchin, Hertfordshire · reference: GRO marriage index · note: she was thirty-five"
+    }
+   ]
+  },
+  {
+   "name": "M Wear",
+   "slug": "m-wear",
+   "records": [
+    {
+     "file": "wear-emigration-bt27.tsv",
+     "title": "BT 27 outbound passenger lists",
+     "source": "TNA BT 27",
+     "detail": "entry: 00223 · title: MRS · sex: Female · birth_year: 1895 · occupation: Nil · ship: Dunvegan Castle · line: Union Castle · dep_day: 10 · dep_month: 8 · dep_year: 1939 · dep_port: London · dest_port: Durban (Port Natal) · piece: TNA/BT27/1542/00/0024"
+    }
+   ]
+  },
+  {
+   "name": "Martha Giddings",
+   "slug": "martha-giddings",
+   "records": [
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: 1841 · died: 1863"
+    }
+   ]
+  },
+  {
+   "name": "Martha Maude Castle",
+   "slug": "martha-maude-castle",
+   "records": [
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: 21 JULY 1895 · born_place: Baldock · died: 16 Mar 1986 · died_place: Johannesburg"
+    }
+   ]
+  },
+  {
+   "name": "Mary Hawkins",
+   "slug": "mary-hawkins",
+   "records": [
+    {
+     "file": "hawkins-1871-aldenham.tsv",
+     "title": "1871 census, The Red Lion Cottages, Aldenham",
+     "source": "RG10 piece 1365",
+     "detail": "relationship: Daughter · sex: Female · age: 10 · birth_year: 1861 · occupation: Scholar · birth_place: Aldenham, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Mary Wear",
+   "slug": "mary-wear",
+   "records": [
+    {
+     "file": "wear-brothers-1881.tsv",
+     "title": "1881 census, two Bermondsey households",
+     "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
+     "detail": "household: B · address: 2 Fenner Road · reference: RG11/567/128/60 sch 1238 · relationship: Wife · sex: Female · age: 33 · birth_year: 1848 · birth_place: Kent"
+    },
+    {
+     "file": "wear-brothers-1881.tsv",
+     "title": "1881 census, two Bermondsey households",
+     "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
+     "detail": "household: B · address: 2 Fenner Road · reference: RG11/567/128/60 sch 1238 · relationship: Daughter · sex: Female · age: 3 · birth_year: 1878"
+    }
+   ]
+  },
+  {
+   "name": "Maud A Hawkins",
+   "slug": "maud-a-hawkins",
+   "records": [
+    {
+     "file": "wear-1891-watford.tsv",
+     "title": "1891 census, Watford",
+     "source": "RG12, Watford",
+     "detail": "relationship: Daughter · marital: Single · sex: Female · age: 1 · birth_year: 1890 · occupation: - · birth_place: Watford, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Oskar Leibholz",
+   "slug": "oskar-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 13.05.1887 · birthplace: Schubin (poln. Szubin)/Posen · residence: Berlin (Wilmersdorf) · deportation_1: from Berlin 17.03.1943 → Theresienstadt, Ghetto · deportation_2: 16.10.1944 → Auschwitz, Konzentrations- und Vernichtungslager · death_date: 16.10.1944 · death_place: Auschwitz, Vernichtungslager · gedenkbuch_id: en1100894 · status: DOCUMENTED"
+    }
+   ],
+   "register_id": 9500027,
+   "register_name": "Oskar Leibholz",
+   "register_match": "exact"
+  },
+  {
+   "name": "PAULINE BERMAN (formerly MILLER, born RAPPOPORT)",
+   "slug": "pauline-berman-formerly-miller-born-rappoport",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 332/1952 · depot: TAB · division: Witwatersrand Local Division · year: 1952 · plaintiff: PAULINE BERMAN (formerly MILLER, born RAPPOPORT) · defendant: ISRAEL · action: DIVORCE · source: gendatabase mirror of NAAIRS, 16 Sep 2026 · status: NEW — her second divorce, five years before Kurt"
+    }
+   ]
+  },
+  {
+   "name": "PAULINE MILLER (born RAPPOPORT)",
+   "slug": "pauline-miller-born-rappoport",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 583/1944 · depot: TAB · division: Witwatersrand Local Division · year: 1944 · plaintiff: PAULINE MILLER (born RAPPOPORT) · defendant: JOSEPH · action: DIVORCE · source: gendatabase mirror of NAAIRS, 16 Sep 2026 · status: NEW — Kurt's last wife, her first divorce"
+    }
+   ]
+  },
+  {
+   "name": "Robert Bloom",
+   "slug": "robert-bloom",
+   "records": [
+    {
+     "file": "bloom-1861-yarmouth.tsv",
+     "title": "1861 census, 80 Howard Street, Great Yarmouth",
+     "source": "RG9, Great Yarmouth",
+     "detail": "relationship: Son · marital: - · sex: Male · age: 5 · birth_year: 1856 · occupation: - · birth_place: Yarmouth, Norfolk, England"
+    }
+   ]
+  },
+  {
+   "name": "Robert Hawkins",
+   "slug": "robert-hawkins",
+   "records": [
+    {
+     "file": "hawkins-1871-aldenham.tsv",
+     "title": "1871 census, The Red Lion Cottages, Aldenham",
+     "source": "RG10 piece 1365",
+     "detail": "relationship: Son · sex: Male · age: 28 · birth_year: 1843 · occupation: Ag lab · birth_place: Aldenham, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Robert Wear",
+   "slug": "robert-wear",
+   "records": [
+    {
+     "file": "wear-1871-bermondsey.tsv",
+     "title": "1871 census, Jamaica Road, Bermondsey",
+     "source": "RG10 piece 641 folio 40 schedule 40",
+     "detail": "relationship: Son · sex: Male · age: 12 · birth_year: 1859 · occupation: Scholar · birth_place: Bermondsey, Surrey, England"
+    }
+   ]
+  },
+  {
+   "name": "Rosetta E Wear",
+   "slug": "rosetta-e-wear",
+   "records": [
+    {
+     "file": "hull-1901-st-albans.tsv",
+     "title": "1901 census, 22 Mount Pleasant, St Albans",
+     "source": "RG13 piece 1312",
+     "detail": "relationship: Step daughter · marital: Single · sex: Female · age: 15 · birth_year: 1886 · occupation: Apprentice straw hat maker · birth_place: Bermondsey, Surrey, England"
+    },
+    {
+     "file": "wear-1891-watford.tsv",
+     "title": "1891 census, Watford",
+     "source": "RG12, Watford",
+     "detail": "relationship: Daughter · marital: Single · sex: Female · age: 5 · birth_year: 1886 · occupation: Scholar · birth_place: Bermondsey, Surrey, England"
+    }
+   ]
+  },
+  {
+   "name": "STANDARD BANK OF SOUTH AFRICA LTD",
+   "slug": "standard-bank-of-south-africa-ltd",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: WLD 2542/1957 · depot: TAB · division: Witwatersrand Local Division · year: 1957 · plaintiff: STANDARD BANK OF SOUTH AFRICA LTD · defendant: K LUWINSKI · action: ILLIQUID CASE, PAYMENT · source: NAAIRS screen photographed into the family tree, photo 9500066 · status: NEW — found 14 Sep 2026"
+    }
+   ]
+  },
+  {
+   "name": "Samuel Leibholz",
+   "slug": "samuel-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 28.06.1877 · birthplace: Schubin (poln. Szubin)/Posen · residence: Berlin (Kreuzberg) · deportation_1: → Auschwitz, Konzentrations- und Vernichtungslager · death_date: 10.04.1943 · death_place: Auschwitz, Vernichtungslager · gedenkbuch_id: en909753 · status: DOCUMENTED"
+    }
+   ],
+   "register_id": 9500025,
+   "register_name": "Samuel Israel Leibholz",
+   "register_match": "alias"
+  },
+  {
+   "name": "Sarah Ann Bloom",
+   "slug": "sarah-ann-bloom",
+   "records": [
+    {
+     "file": "wear-1871-bermondsey.tsv",
+     "title": "1871 census, Jamaica Road, Bermondsey",
+     "source": "RG10 piece 641 folio 40 schedule 40",
+     "detail": "relationship: Niece · sex: Female · age: 17 · birth_year: 1854 · occupation: - · birth_place: Yarmouth, Norfolk, England"
+    }
+   ]
+  },
+  {
+   "name": "Sarah Ann Wallis",
+   "slug": "sarah-ann-wallis",
+   "records": [
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: 19 Aug 1882 · born_place: Maiden Street, Weston, Herts · died: Oct 1959 · died_place: Hitchin"
+    }
+   ]
+  },
+  {
+   "name": "Sarah Bloom",
+   "slug": "sarah-bloom",
+   "records": [
+    {
+     "file": "bloom-1861-yarmouth.tsv",
+     "title": "1861 census, 80 Howard Street, Great Yarmouth",
+     "source": "RG9, Great Yarmouth",
+     "detail": "relationship: Head · marital: Married · sex: Female · age: 44 · birth_year: 1817 · occupation: (illegible) wife · birth_place: Yarmouth, Norfolk, England"
+    },
+    {
+     "file": "bloom-1861-yarmouth.tsv",
+     "title": "1861 census, 80 Howard Street, Great Yarmouth",
+     "source": "RG9, Great Yarmouth",
+     "detail": "relationship: Daughter · marital: Unmarried · sex: Female · age: 7 · birth_year: 1854 · occupation: Scholar · birth_place: Yarmouth, Norfolk, England"
+    }
+   ]
+  },
+  {
+   "name": "Sarah Wear",
+   "slug": "sarah-wear",
+   "records": [
+    {
+     "file": "wear-1851-bermondsey.tsv",
+     "title": "1851 census, Salisbury Street, Bermondsey",
+     "source": "HO107 piece 1560 folio 212",
+     "detail": "relationship: Wife · marital: Married · sex: Female · age: 29 · birth_year: 1822 · occupation: - · birth_place: Deptford, Kent, England"
+    },
+    {
+     "file": "wear-1871-bermondsey.tsv",
+     "title": "1871 census, Jamaica Road, Bermondsey",
+     "source": "RG10 piece 641 folio 40 schedule 40",
+     "detail": "relationship: Wife · sex: Female · age: 49 · birth_year: 1822 · occupation: - · birth_place: Bermondsey, Surrey, England"
+    }
+   ]
+  },
+  {
+   "name": "Sidney Charles Castle",
+   "slug": "sidney-charles-castle",
+   "records": [
+    {
+     "file": "castle-from-match-tree.tsv",
+     "title": "A match holder's Ancestry tree",
+     "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
+     "detail": "born: 6 Feb 1898 · born_place: Baldock · died: 1900 · died_place: Baldock"
+    }
+   ]
+  },
+  {
+   "name": "Stanley W SHENTON",
+   "slug": "stanley-w-shenton",
+   "records": [
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: born · date: Q1 1924 · place: Hitchin · reference: GRO birth index, mother's maiden name WEAR · note: his mother was forty-one"
+    },
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: DIED · date: Q1 1924 · place: HITCHIN · reference: GRO death index, birth year 1924 · note: BORN AND DIED IN THE SAME QUARTER"
+    }
+   ]
+  },
+  {
+   "name": "William Shenton",
+   "slug": "william-shenton",
+   "records": [
+    {
+     "file": "shenton-1939-pix-road.tsv",
+     "title": "1939 Register, 63 Pix Road, Letchworth",
+     "source": "TNA R39/1620/1620G/011/28, schedule 305",
+     "detail": "birth_date: ? Dec 1876 · sex: Male · occupation: Incapacitated · marital: Married · schedule: 305/3"
+    },
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: enumerated · date: 29 September 1939 · place: 63 Pix Road, Letchworth · reference: RG101/1620G/011/28 sched 305/3 · note: born \"? Dec 1876\", \"Incapacitated\""
+    },
+    {
+     "file": "shenton-line-closed.tsv",
+     "title": "The 63 Pix Road household, traced end to end",
+     "source": "GRO birth, marriage and death indexes; 1939 Register",
+     "detail": "event: died · date: Q3 1953 · place: Hitchin, Hertfordshire · reference: GRO death index, birth year 1877 · note: a December 1876 birth registers in Q1 1877"
+    }
+   ]
+  },
+  {
+   "name": "William Wear",
+   "slug": "william-wear",
+   "records": [
+    {
+     "file": "wear-1851-bermondsey.tsv",
+     "title": "1851 census, Salisbury Street, Bermondsey",
+     "source": "HO107 piece 1560 folio 212",
+     "detail": "relationship: Head · marital: Married · sex: Male · age: 28 · birth_year: 1823 · occupation: Sadler · birth_place: Walworth, Surrey, England"
+    },
+    {
+     "file": "wear-1851-bermondsey.tsv",
+     "title": "1851 census, Salisbury Street, Bermondsey",
+     "source": "HO107 piece 1560 folio 212",
+     "detail": "relationship: Son · marital: - · sex: Male · age: 3 · birth_year: 1848 · occupation: - · birth_place: Bermondsey, Surrey, England"
+    },
+    {
+     "file": "wear-1871-bermondsey.tsv",
+     "title": "1871 census, Jamaica Road, Bermondsey",
+     "source": "RG10 piece 641 folio 40 schedule 40",
+     "detail": "relationship: Head · sex: Male · age: 48 · birth_year: 1823 · occupation: Harness maker · birth_place: Newington, Surrey, England"
+    },
+    {
+     "file": "wear-1871-bermondsey.tsv",
+     "title": "1871 census, Jamaica Road, Bermondsey",
+     "source": "RG10 piece 641 folio 40 schedule 40",
+     "detail": "relationship: Son · sex: Male · age: 21 · birth_year: 1850 · occupation: Harness maker · birth_place: Bermondsey, Surrey, England"
+    },
+    {
+     "file": "wear-brothers-1881.tsv",
+     "title": "1881 census, two Bermondsey households",
+     "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
+     "detail": "household: B · address: 2 Fenner Road, Bermondsey, St Olave Southwark · reference: RG11 piece 567 folio 128 page 60 schedule 1238 · relationship: Head · sex: Male · age: 38 · birth_year: 1843 · occupation: SADDLER · note: PROBABLY the eldest brother and NOT PROVED. Same parish, same sub-district, his father's exact trade - but the age is five to seven years out against both 1851 and 1871, and the birthplace column is blank."
+    },
+    {
+     "file": "wear-brothers-1881.tsv",
+     "title": "1881 census, two Bermondsey households",
+     "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
+     "detail": "household: B · address: 2 Fenner Road · reference: RG11/567/128/60 sch 1238 · relationship: Son · sex: Male · age: 6 · birth_year: 1875 · note: A MALE-LINE WEAR, if household B is ours"
+    }
+   ]
+  },
+  {
+   "name": "Yvonne (born de Figueiredo)",
+   "slug": "yvonne-born-de-figueiredo",
+   "records": [
+    {
+     "file": "litigation.tsv",
+     "title": "Transvaal court files",
+     "source": "National Archives of South Africa, WLD and TPD series",
+     "detail": "ref: TPD 534/1948 · depot: TAB · division: Transvaal Provincial Division · year: 1948 · plaintiff: Johannes Antonie Oelofse DE WITT · defendant: Yvonne (born de Figueiredo) · action: DIVORCE · source: NAAIRS screen photographed into the family tree, photo 9500068 · status: NEW — found 14 Sep 2026"
+    }
+   ]
+  }
+ ],
+ "ambiguous": [
+  "Johannes Antonie Oelofse DE WITT",
+  "Kurt LUWINSKI"
+ ],
+ "counts": {
+  "ambiguous": 2,
+  "files": 21,
+  "person_files": 17,
+  "people": 100,
+  "records": 135,
+  "linked_to_register": 4
+ }
+}
