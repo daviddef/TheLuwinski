@@ -27,9 +27,32 @@ exists. If she meets a fourth family from the same correspondent in a fortnight,
 warned, the goodwill earned by this letter is spent.
 
 *One sentence, no list.* It converts a future surprise into a stated expectation, and it repeats the
-commitment she actually asked for — **one thread, one enquiry at a time.** It also invites her to say
-if it becomes too much, which costs nothing and is the difference between a correspondent and a
-nuisance.
+commitment she actually asked for — **one thread, one recipient, references gathered rather than
+scattered.** It also invites her to say if it becomes too much, which costs nothing and is the
+difference between a correspondent and a nuisance.
+
+## What she actually asked for — checked against her own words, 16 September
+
+An earlier draft of this letter promised her **"one enquiry at a time, and I will not open another."**
+That was wrong, and wrong in a way worth recording: it over-corrected in the opposite direction from
+her complaint.
+
+| her words | what they ask for |
+|---|---|
+| *"avoid sending **the same enquiry** separately to multiple addresses"* | The duplication she objects to is **horizontal** — one question, four inboxes. Not several questions over several weeks. |
+| *"keep the correspondence relating to your current **enquiries** in one email thread"* | **Plural.** She expects to hold more than one at a time, and wants them in one place. |
+| *"so that I can provide you with a **consolidated** response"* | **Gathered, not rationed.** A consolidated response is only possible if she is holding several requests at once. Drip-feeding her one file at a time would produce *more* separate replies from her, not fewer — the exact cost she is trying to avoid. |
+
+**She is not asking him to ask less. She is asking him to ask in one place.** The corrected sentence
+promises what she asked for: one thread, one recipient, and multiple references gathered into a
+single message so she can answer them together.
+
+**Does that reopen the eight files?** It weakens the argument against sending them, but does not
+overturn it — and the reason is hers, not tact. **She offered to check one**: *"I can **first** check
+TAB, WLD 2545/1950."* "First" is her sequencing, chosen by her, and the right response to someone who
+has just set a pace is to keep it. The eight are Anne's job in any case (request 20), so nothing is
+lost by waiting. **What has changed is what happens when she comes back:** if she offers again, the
+correct reply is now *all of them in one message*, not one more file.
 
 ## What the reply deliberately does NOT do
 
@@ -88,9 +111,10 @@ advice and engaged the researcher you recommended, and she expects to be at the 
 
 One last thing, so that nothing arrives as a surprise later. **My research covers more than this one
 family** — there are several connected lines I am working through, and some of them will have
-Transvaal records too. **All of it will come to you, in this thread, one enquiry at a time, and I
-will not open another.** If that is ever too much, say so and I will slow down; I would far rather
-you told me than quietly wished I would go away.
+Transvaal records too. **All of it will come to you here, in this thread, and where there is more
+than one reference I will gather them into a single message rather than send them one at a time**,
+so that you can answer them together as you suggested. If the volume is ever too much, say so and I
+will slow down; I would far rather you told me than quietly wished I would go away.
 
 With thanks for two prompt and genuinely useful replies, and for your patience with a correspondent
 who was making more work than he needed to,
@@ -103,6 +127,7 @@ david.defranceski@gmail.com
 ## If she comes back having read 2545/1950
 
 **Do not immediately send the other eight.** Thank her, record what she says in `notes/ivone.md`, and
-let a decent interval pass. If she offers again, take it. The eight TAB files are Anne's job and are
-already in request 20 — **Ms Xaba's value is that she can tell you what is in a file without anyone
-travelling, and that is worth protecting rather than spending.**
+let a decent interval pass. **If she offers again, send them as one list in one message** — that is
+the consolidation she asked for, and it is the opposite of the mistake that annoyed her. The eight
+TAB files are Anne's job and are already in request 20 — **Ms Xaba's value is that she can tell you
+what is in a file without anyone travelling, and that is worth protecting rather than spending.**
