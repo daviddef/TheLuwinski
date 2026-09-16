@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import data from '../data/tree.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const tagFor = { proved: 'doc', inferred: 'inf', unknown: 'open', excluded: 'disp' };
 ---
 <Base title={data.title} subtitle={data.dek}
   lede="A family tree that shows only names is a claim without a citation. This one carries the evidence on every person, and says plainly which links are proved, which are inferred, and which are still holes.">
@@ -12,7 +13,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <tbody>
         {data.legend.map((l) => (
           <tr>
-            <td><span class={'tag ' + (l.k === 'proved' ? 'doc' : 'open')}>{l.label}</span></td>
+            <td><span class={'tag ' + tagFor[l.k]}>{l.label}</span></td>
             <td class="small muted">{l.what}</td>
           </tr>
         ))}
@@ -31,7 +32,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <div style="margin:0 0 1.15rem 0;">
           <h4 style="margin:0 0 .15rem 0;">
             {p.name}{' '}
-            <span class={'tag ' + (p.status === 'proved' ? 'doc' : 'open')}>{p.status}</span>
+            <span class={'tag ' + tagFor[p.status]}>{p.status}</span>
           </h4>
           {p.dates && <p class="small" style="margin:.1rem 0;"><strong>{p.dates}</strong></p>}
           {p.place && <p class="small muted" style="margin:.1rem 0;">{p.place}</p>}
