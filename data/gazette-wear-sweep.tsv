@@ -1,0 +1,37 @@
+# The free gazette archive, swept for the Wears and for Phyllis, 17 September 2026.
+# gazettes.africa full text, 54,313 South African issues. Every count below is documents, not lines.
+query	count	what was read	outcome
+"Luwinski"	8	control	The eight known entries. THE INSTRUMENT WORKS.
+"Piccadilly Hat"	5	control	The shop at 81 Eloff Street. Quoted phrases do match when the OCR is clean.
+"Kurt Israel Luwinski"	0	control	AND THIS IS WHY PHRASE SEARCH CANNOT BE TRUSTED HERE. The man is in this archive eight times and his full name in order returns nothing. Commas, line breaks and jammed columns break adjacency.
+Wear AND Aubrey	38	ALL 38 READ	NO LEONARD AUBREY ROBERT WEAR. Two real things fell out of it anyway - see below.
+Wear AND Norquoy	0		
+Wear AND Kwele	2	read	Nothing to do with WLD 978/1960.
+Norquoy	41	ALL 41 READ	A WHOLE JOHANNESBURG NORQUOY FAMILY AND NO PHYLLIS.
+Norquoy AND Phyllis	0		
+Norquoy AND Agnes	3	read	Coincidental page-mates. Neither is her.
+Luwinski AND Ivone	0		
+Luwinski AND Frances	0		
+Hostowsky	0		Kurt's third wife is not in the gazette at all.
+Salkow AND Ivonne	0		
+#
+# THE TWO THINGS THAT FELL OUT OF THE WEAR+AUBREY SWEEP:
+#  1. ESTATE 3175/82 - WEAR, CECIL WENTWORTH, identity number 0611115009007, gazette 8374 of
+#     10 September 1982, page 99. The identity number reads as a birth on 11 NOVEMBER 1906.
+#     THIS IS THE DURBAN DECOY, NOT OURS - the Cecil Wentworth Wear who married Doreen Mary
+#     James at Durban in 1933, from the separate Wear family FamilySearch turns up under the
+#     surname. Written down so that the next person to find it knows it is already excluded.
+#  2. "Elizabeth Gardens, WEAR AVENUE, HOWICK" is a retirement village in Natal, and it
+#     generates false positives for ever. One of them is an estate for CASTLE, WILLIAM
+#     MAXWELL, born 31 March 1919 - a Castle at a Wear address, which is precisely the kind
+#     of coincidence this archive has already been caught by once.
+#
+# THE NORQUOY FAMILY, for row 82 - a lead and not a finding:
+#   Thomas Smith Leask Norquoy, ambulance officer, estate 3529/44, liquidation gazetted 1945
+#   Soldelina O'Neill Norquoy, born 14 September 1900, estate 16050/83, Bramley House,
+#     71 Linden Road, Bramley, Johannesburg
+#   Louis William Norquoy, a retired miner, estate 1638/55
+#   Robert Selwyn Norquoy; William Knight Norquoy; Peter Norquoy; Barbara Alice Norquoy
+# PHYLLIS AGNES ROBERTSON MARRIED A NORQUOY ON 14 JUNE 1952. One of these men is probably him.
+# NONE OF THEM IS NAMED AS HERS BY ANY RECORD READ HERE, and the archive is not going to guess
+# which - but the family is now a short list instead of a surname.
