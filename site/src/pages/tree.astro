@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../data/tree.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title={data.title} subtitle={data.dek}
+  lede="A family tree that shows only names is a claim without a citation. This one carries the evidence on every person, and says plainly which links are proved, which are inferred, and which are still holes.">
+
+  <div class="panel">
+    <h3>How to read it</h3>
+    <table>
+      <tbody>
+        {data.legend.map((l) => (
+          <tr>
+            <td><span class={'tag ' + (l.k === 'proved' ? 'doc' : 'open')}>{l.label}</span></td>
+            <td class="small muted">{l.what}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="small muted">
+      <strong>Living people are named and nothing more.</strong> No dates, no ages, nothing that could
+      be worked backwards into one.
+    </p>
+  </div>
+
+  {data.generations.map((g) => (
+    <div class="panel">
+      <h3>{g.label} <span class="small muted">&mdash; generation {g.n}</span></h3>
+      {g.people.map((p) => (
+        <div style="margin:0 0 1.15rem 0;">
+          <h4 style="margin:0 0 .15rem 0;">
+            {p.name}{' '}
+            <span class={'tag ' + (p.status === 'proved' ? 'doc' : 'open')}>{p.status}</span>
+          </h4>
+          {p.dates && <p class="small" style="margin:.1rem 0;"><strong>{p.dates}</strong></p>}
+          {p.place && <p class="small muted" style="margin:.1rem 0;">{p.place}</p>}
+          <p class="small muted" style="margin:.3rem 0 0 0;">{p.how}</p>
+        </div>
+      ))}
+    </div>
+  ))}
+
+  <div class="panel">
+    <h3>What the shape of this tree says</h3>
+    <p>
+      <strong>It is lopsided, and the lopsidedness is the finding.</strong> The Wear side now runs back
+      five generations to a harness maker in Bermondsey and a farm labourer in Aldenham. The Figueiredo
+      side stops dead at Derrick's grandparents, whose given names nobody has ever established.
+    </p>
+    <p>
+      That is not because one family mattered more. <strong>It is because English civil registration
+      from 1837 is indexed, digitised and searchable from a desk, and Portuguese colonial registration
+      in Louren&ccedil;o Marques is not.</strong> Four generations of Wears were added in a single day
+      from a subscription; one generation of Figueiredos has resisted a year of letters.
+    </p>
+    <p class="small muted">
+      The two holes are not equal either. <strong>Ivone's parents are a live search</strong> with two
+      named documents that would answer it &mdash; her 1924 birth registration and her Porto death
+      record. <strong>Martha Maud Castle's parents are simply thin</strong>: the Castle side is carried
+      by DNA matches rather than by paper, and nobody has gone looking properly yet.
+    </p>
+    <p class="small muted">
+      See also <a href={base + '/names/'}>her names</a>,
+      <a href={base + '/dna/'}>the DNA</a>,
+      <a href={base + '/open-questions/'}>open questions</a> and
+      <a href={base + '/register/'}>the register</a>.
+    </p>
+  </div>
+</Base>
