@@ -7,8 +7,8 @@
 
 | he asked | the answer |
 |---|---|
-| *"I have sent a guest invite for my Brown Ancestry to your email"* | **Accept it.** David's action, not mine. |
-| *"more likely to be Alfred / Frederick Brown?"* | **No — and the reason is the useful part.** The shared couple is **GEORGE CASTLE and CAROLINE WALLS of Baldock**. Brown is not the shared surname; it is the surname Agnes Kate Castle married into. |
+| *"I have sent a guest invite for my Brown Ancestry to your email"* | **Arrived and opened.** It went to David's Gmail from `ancestry@email.ancestry.co.uk` at 20:18 on 15 September and sat unaccepted until he clicked it — which is why it never appeared under *Trees Shared with Me*. The tree is **Brown Family Tree**, 113587011. |
+| *"more likely to be Alfred / Frederick Brown?"* | **No — and HIS OWN TREE PROVES IT.** The shared couple is **GEORGE W CASTLE 1862–1916 and CAROLINE WALLIS 1862–1957**, who sit on the far right of the chart he shared. Alfred Browne is Walter George Brown's father and is Paul's alone. |
 | *"who is my first cousin with Brown interest — are you able to tell me?"* | **I am not going to name her.** She is a living person who has not been asked. The reply offers to carry a message instead. |
 
 ## Why the refusal matters more than the answer
@@ -57,28 +57,42 @@ it. **Paul has no such need to know, and volunteering it would be gossip dressed
 
 Paul,
 
-Thank you — I will watch for the guest invite and accept it.
+Thank you — the invite arrived and I have been through the tree.
 
-**On the great-grandparents: not Brown, I think, and the reason may be useful to you.**
+**Your instinct is right and your guess is wrong, and the answer is already inside your own tree.**
 
-Your instinct that we share great-grandparents looks right. But I do not think the shared couple is
-a Brown couple at all. **I think it is GEORGE CASTLE and CAROLINE WALLS of Baldock, Hertfordshire,
-who married in 1883.**
+I have opened the Brown Family Tree — thank you, it came through. **You are right that we share
+great-grandparents. But they are not Browns. They are the couple on the far right of your own chart:
+GEORGE W CASTLE, 1862–1916, and CAROLINE WALLIS, 1862–1957.**
 
-Here is why. Another of my matches descends from **Agnes Kate Castle, who married Walter George
-Brown**. Derrick descends from **Martha Maud Castle**. **Agnes Kate and Martha Maud were sisters** —
-both daughters of George Castle, a farm labourer and later a labourer at the Baldock brewery, and
-Caroline, born at Weston four miles away.
+Follow it back from you: your mother **Decima A Brown, 1928–1997**; her mother **Agnes Kate Castle,
+1891–1967**; and *her* father **George W Castle**. Three steps. **Derrick's line is the same length:
+his father, his father's mother, and her father — George W Castle.** That makes us second cousins,
+which is exactly what you said, and it fits the 333.9 cM we share better than anything else would.
 
-So **Brown comes into it as a husband, not as the common ancestor.** That is exactly why the surname
-is all over one side of this and nowhere on the other. It also squares with what you told me last
-June — that your paternal great-grandparents are Harrison/Randall and Crisp/Bray — which puts your
-Brown line on your mother's side, where a Castle daughter's married name would sit.
+**So Alfred Browne is not our common ancestor. He is Walter George Brown's father, and he is yours
+alone.** Brown is simply the surname Agnes Kate married into. That is why it fills your match list
+and appears nowhere on mine.
 
-If that is right, **Alfred and Frederick Brown are probably descendants of the couple rather than the
-couple itself**, and the name to look for behind them is **Castle, at Baldock and Norton in
-Hertfordshire.** The 1901 and 1911 censuses put the family at Norton End and then at St Mary's
-Cottages by the church yard in Baldock. I will happily send you the images.
+**And here is the part I think is worth something to you, because your tree does not have it.**
+
+**Agnes Kate had a sister: MARTHA MAUD CASTLE, born 1895.** Your tree stops with George and Caroline;
+it does not carry their other daughter. **Martha Maud married HENRY ROBERT WEAR at Hitchin in the
+last quarter of 1914** — the only Wear–Castle marriage in the whole England and Wales index — and
+they had six children there between 1917 and 1936. **In 1939 the whole family emigrated:** he sailed
+from London to the Cape on the *Durban Castle* on 5 April, and she followed on the *Dunvegan Castle*
+to Durban on 10 August with the four youngest, three weeks before war was declared.
+
+That is the branch your tree is missing, and it is where my side of this comes from.
+
+On George and Caroline themselves, in case it is useful: he was born at **Baldock**, a farm labourer
+and later a labourer at the Baldock brewery; she was born at **Weston**, four miles off. The 1901 and
+1911 censuses have them at **Norton End, Norton**, and then at **St Mary's Cottages by the church yard
+in Baldock**, with Caroline's widowed father living with them. **One small thing you may want to
+check: his name is written WALLS in that census household, and WALLIS in your tree and in several
+other places.** I do not know which is right and have stopped asserting either.
+
+I will gladly send the census images for any of it.
 
 **On your other question — who your first cousin is — I am afraid I would rather not say.**
 
