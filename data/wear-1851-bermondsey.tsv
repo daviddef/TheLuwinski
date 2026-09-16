@@ -1,0 +1,12 @@
+first	last	relationship	marital	sex	age	birth_year	occupation	birth_place
+William	Wear	Head	Married	Male	28	1823	Sadler	Walworth, Surrey, England
+Sarah	Wear	Wife	Married	Female	29	1822	-	Deptford, Kent, England
+William	Wear	Son	-	Male	3	1848	-	Bermondsey, Surrey, England
+Henry	Wear	Son	-	Male	1	1850	-	Bermondsey, Surrey, England
+# Salisbury Street, Bermondsey. 1851 census, HO107 piece 1560, folio 212.
+# TWO CORRECTIONS TO THE 1871 READING. Sarah's birthplace is DEPTFORD, KENT here and
+# BERMONDSEY, SURREY in 1871 - a different county, not a variant spelling. And William's
+# is WALWORTH, which is compatible with the 1871 NEWINGTON, Walworth being a district
+# inside Newington parish, but is the more precise of the two.
+# AND IT NARROWS THE MARRIAGE. A son aged 3 in March 1851 puts the wedding BEFORE 1848,
+# two years earlier than the 1845-1850 window the archive had been searching.
