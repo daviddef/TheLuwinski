@@ -73,6 +73,59 @@ const groups = [
   </div>
 
   <div class="panel">
+    <h3>{data.tested_title} <span class="tag doc">16 Sep 2026</span></h3>
+    <p class="small">{data.tested_dek}</p>
+    <p>
+      <strong>Forty-one spellings were put to the indexes</strong> &mdash; twenty-one ways of writing
+      Figueiredo and twenty of writing Luwinski, including many that appear in no record and were
+      invented on purpose to see whether a clerk had ever made the same slip.
+    </p>
+    <table>
+      <thead><tr><th>spelling</th><th>NAAIRS</th><th>gendatabase</th><th>what it uniquely surfaced</th></tr></thead>
+      <tbody>
+        {data.tested.map((t) => (
+          <tr>
+            <td><strong>{t.form}</strong></td>
+            <td class="small">{t.naairs}</td>
+            <td class="small">{t.gendb}</td>
+            <td class="small muted">{t.unique}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="small muted">
+      A dash means the spelling was not put to that index rather than that it returned nothing.
+      <strong>The distinction is the whole point of this archive&rsquo;s negatives</strong> and it is
+      not going to be blurred here.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>What the exercise was actually worth</h3>
+    <p>
+      <strong>One genuinely new record, and it is a good one.</strong> Estate
+      <strong>TAB MHG 7029/54</strong> belongs to a Portuguese man who died in Johannesburg in 1954.
+      The Union Gazette advertises him as <strong>FIGUEIREDO, Agostinho Vicente Sebastiao</strong>.
+      NAAIRS files him as <strong>FIQUEIREDO</strong>. Two indexes, two spellings, one man &mdash; and
+      until 16 September 2026 nobody had ever typed the one with a Q.
+    </p>
+    <p>
+      He is <em>not</em> claimed as a relative. Figueiredo is a common Portuguese surname and nothing
+      connects him to Ivone but a city and a decade. <strong>What his file carries is a death notice,
+      and a death notice names parents</strong> &mdash; which is the one thing this archive cannot get
+      for her.
+    </p>
+    <p>
+      <strong>And one real exclusion.</strong> Kurt came out of East Prussia, and the slide from
+      <em>Luwinski</em> to <em>Lewinski</em> is exactly the slide a clerk makes. There is a Lewinski
+      and a Lewinsky family in Johannesburg in the same decades &mdash; Erwin, Bella born Berman,
+      Meinhard, Ingeborg Ursula born Leske. <strong>They are not this family.</strong> That is worth
+      as much as a find, and it is recorded here so that it is never re-opened as a hopeful
+      possibility.
+    </p>
+  </div>
+
+  <div class="panel">
     <h3>The same problem in the other lines</h3>
     <table>
       <thead><tr><th>name</th><th>forms</th><th></th></tr></thead>

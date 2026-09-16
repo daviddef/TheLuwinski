@@ -8,26 +8,196 @@
       "born": "Lourenço Marques, 4 March 1924",
       "why": "Her parents' given names are the oldest unsolved question in this archive. Every route to them runs through an index, and an index can only be searched on a spelling.",
       "forms": [
-        { "form": "IVONE", "kind": "forename", "where": "Most files, and her own 1953 marriage register", "note": "The form this archive treats as canonical." },
-        { "form": "YVONNE", "kind": "forename", "where": "TAB TPD 534/1948", "note": "The de Witt divorce. French spelling, in an Afrikaans court." },
-        { "form": "IVONNE", "kind": "forename", "where": "TAB WLD 2225/1953", "note": "The Salkow divorce." },
-        { "form": "FIGUEIREDO", "kind": "maiden", "where": "TAB WLD 497/1951, WLD 2368/1951", "note": "The correct Portuguese spelling, and the one most searches start and stop with." },
-        { "form": "DE FIGUEIREDO", "kind": "maiden", "where": "TAB TPD 534/1948", "note": "With the particle. A surname search that anchors on the first letter can miss this." },
-        { "form": "MOTA FIGUEIREDO", "kind": "maiden", "where": "TAB WLD 1950/1948", "note": "The fullest form anybody wrote down, and the only record that gives her a second family name. It is the single most important spelling on this page." },
-        { "form": "DE FIGUERIDO", "kind": "maiden", "where": "TAB WLD 2225/1953", "note": "An 'e' lost. This is how NAAIRS carries the Salkow divorce, and it is why that file went unfound for months." },
-        { "form": "DE FIGUEREDO", "kind": "maiden", "where": "Her own marriage register, 1953", "note": "Written by a clerk in front of her, with her standing there. Not a transcription error at a distance." },
-        { "form": "FIGARETTO", "kind": "maiden", "where": "The NAAIRS index, TAB WLD 2545/1950", "note": "Not Portuguese, not a variant, not anything a person would write. An index corruption — and it is attached to the one file in which SHE is the plaintiff." },
-        { "form": "DE WITT", "kind": "married", "where": "From 2 February 1948", "note": "Her first marriage. She is still being called this in files from 1951." },
-        { "form": "LUWINSKI", "kind": "married", "where": "From 19 June 1948", "note": "The spelling this archive is named for." },
-        { "form": "LUWINSKY", "kind": "married", "where": "TAB WLD 1950/1948", "note": "With a 'y'. One NAAIRS record only." },
-        { "form": "LUWENSKI", "kind": "married", "where": "The NAAIRS index, TAB WLD 2545/1950", "note": "An 'e' for an 'i'. This one spelling hid the restitution file for weeks." },
-        { "form": "SALKOW", "kind": "married", "where": "From 13 February 1953", "note": "The third marriage, over within the year." }
+        {
+          "form": "IVONE",
+          "kind": "forename",
+          "where": "Most files, and her own 1953 marriage register",
+          "note": "The form this archive treats as canonical."
+        },
+        {
+          "form": "YVONNE",
+          "kind": "forename",
+          "where": "TAB TPD 534/1948",
+          "note": "The de Witt divorce. French spelling, in an Afrikaans court."
+        },
+        {
+          "form": "IVONNE",
+          "kind": "forename",
+          "where": "TAB WLD 2225/1953",
+          "note": "The Salkow divorce."
+        },
+        {
+          "form": "FIGUEIREDO",
+          "kind": "maiden",
+          "where": "TAB WLD 497/1951, WLD 2368/1951",
+          "note": "The correct Portuguese spelling, and the one most searches start and stop with."
+        },
+        {
+          "form": "DE FIGUEIREDO",
+          "kind": "maiden",
+          "where": "TAB TPD 534/1948",
+          "note": "With the particle. A surname search that anchors on the first letter can miss this."
+        },
+        {
+          "form": "MOTA FIGUEIREDO",
+          "kind": "maiden",
+          "where": "TAB WLD 1950/1948",
+          "note": "The fullest form anybody wrote down, and the only record that gives her a second family name. It is the single most important spelling on this page."
+        },
+        {
+          "form": "DE FIGUERIDO",
+          "kind": "maiden",
+          "where": "TAB WLD 2225/1953",
+          "note": "An 'e' lost. This is how NAAIRS carries the Salkow divorce, and it is why that file went unfound for months."
+        },
+        {
+          "form": "DE FIGUEREDO",
+          "kind": "maiden",
+          "where": "Her own marriage register, 1953",
+          "note": "Written by a clerk in front of her, with her standing there. Not a transcription error at a distance."
+        },
+        {
+          "form": "FIGARETTO",
+          "kind": "maiden",
+          "where": "The NAAIRS index, TAB WLD 2545/1950",
+          "note": "Not Portuguese, not a variant, not anything a person would write. An index corruption — and it is attached to the one file in which SHE is the plaintiff."
+        },
+        {
+          "form": "DE WITT",
+          "kind": "married",
+          "where": "From 2 February 1948",
+          "note": "Her first marriage. She is still being called this in files from 1951."
+        },
+        {
+          "form": "LUWINSKI",
+          "kind": "married",
+          "where": "From 19 June 1948",
+          "note": "The spelling this archive is named for."
+        },
+        {
+          "form": "LUWINSKY",
+          "kind": "married",
+          "where": "TAB WLD 1950/1948",
+          "note": "With a 'y'. One NAAIRS record only."
+        },
+        {
+          "form": "LUWENSKI",
+          "kind": "married",
+          "where": "The NAAIRS index, TAB WLD 2545/1950",
+          "note": "An 'e' for an 'i'. This one spelling hid the restitution file for weeks."
+        },
+        {
+          "form": "SALKOW",
+          "kind": "married",
+          "where": "From 13 February 1953",
+          "note": "The third marriage, over within the year."
+        },
+        {
+          "form": "FIQUEIREDO",
+          "kind": "maiden",
+          "where": "The NAAIRS index, TAB MHG 7029/54 and KAB PIO 990",
+          "note": "With a Q. Found 16 September 2026 by testing spellings nobody had written down. NAAIRS files a Johannesburg estate under it that the Union Gazette advertises as FIGUEIREDO — two indexes, two spellings, one man."
+        },
+        {
+          "form": "DE FIGUEIREDO DE WITT",
+          "kind": "married",
+          "where": "FamilySearch, South Africa Civil Marriage Records",
+          "note": "FamilySearch files married names INSIDE the surname field, so she is indexed as one long surname. A search for FIGUEIREDO alone may not reach it."
+        }
       ]
     }
   ],
   "others": [
-    { "name": "Kurt Luwinski", "forms": "LUWINSKI · LUWINSKY · LUWENSKI", "note": "The same three spellings as his wife's married name, and for the same reason — they come from the same court files." },
-    { "name": "The Wear family", "forms": "WEAR · WEIR · WARE", "note": "Not yet found to vary in any record this archive holds. Listed because the Y-DNA project was searched on all three and the possibility should not be quietly forgotten." },
-    { "name": "Booyzen", "forms": "BOOYZEN · BOOYSEN · BOOIJZEN · BOOIJSEN", "note": "A connected line, with the same problem in Dutch rather than Portuguese." }
+    {
+      "name": "Kurt Luwinski",
+      "forms": "LUWINSKI · LUWINSKY · LUWENSKI",
+      "note": "The same three spellings as his wife's married name, and for the same reason — they come from the same court files."
+    },
+    {
+      "name": "The Wear family",
+      "forms": "WEAR · WEIR · WARE",
+      "note": "Not yet found to vary in any record this archive holds. Listed because the Y-DNA project was searched on all three and the possibility should not be quietly forgotten."
+    },
+    {
+      "name": "Booyzen",
+      "forms": "BOOYZEN · BOOYSEN · BOOIJZEN · BOOIJSEN",
+      "note": "A connected line, with the same problem in Dutch rather than Portuguese."
+    }
+  ],
+  "tested_title": "What each spelling actually returns",
+  "tested_dek": "Every form put to every index that could be reached, 16 September 2026. The column that matters is the last one.",
+  "tested": [
+    {
+      "form": "FIGUEIREDO",
+      "naairs": "43",
+      "gendb": "65",
+      "unique": "The known corpus. Everything below is invisible to it."
+    },
+    {
+      "form": "FIQUEIREDO",
+      "naairs": "—",
+      "gendb": "4",
+      "unique": "THE FIND OF THE DAY. TAB MHG 7029/54 — FIQUEIREDO, AGOSTINHO VICENTE SEBASTIAO, a Portuguese man whose Johannesburg estate the Union Gazette advertises under FIGUEIREDO. Also KAB PIO 990/42707E, IMMIGRATION PAPERS JG DE FIQUEIREDO. Not claimed as kin — but no search on the correct spelling could ever have seen either."
+    },
+    {
+      "form": "FIGARETTO",
+      "naairs": "1",
+      "gendb": "1",
+      "unique": "TAB WLD 2545/1950. The only action in which Ivone is the plaintiff. Reachable by no other maiden spelling."
+    },
+    {
+      "form": "LUWENSKI",
+      "naairs": "1",
+      "gendb": "1",
+      "unique": "The same file, from the other side of the marriage."
+    },
+    {
+      "form": "LUWINSKY",
+      "naairs": "1",
+      "gendb": "1",
+      "unique": "TAB WLD 1950/1948, the first divorce."
+    },
+    {
+      "form": "FIGUEREDO",
+      "naairs": "—",
+      "gendb": "10",
+      "unique": "KAB IRC 1/4/19 and IRC 1/3/1 — two immigration files. Neither is hers."
+    },
+    {
+      "form": "FIGUERIDO",
+      "naairs": "—",
+      "gendb": "2",
+      "unique": "TAB WLD 2225/1953, the Salkow divorce, as NAAIRS spells it."
+    },
+    {
+      "form": "FIGUERDO",
+      "naairs": "—",
+      "gendb": "1",
+      "unique": "SAB BAL 7 — a temporary permit for a Goanese C FIGUERDO. A different community, but it proves the permit series is indexed."
+    },
+    {
+      "form": "FIGEIREDO · FIGUEREIDO · FIGUEIREDA",
+      "naairs": "—",
+      "gendb": "1 each",
+      "unique": "One divorce apiece, none connected. Recorded so that nobody searches them twice."
+    },
+    {
+      "form": "LEWINSKI · LEWINSKY",
+      "naairs": "—",
+      "gendb": "12 · 18",
+      "unique": "A REAL FAMILY, AND NOT THIS ONE. German-Jewish Johannesburg — Erwin, Bella born Berman, Meinhard, Ingeborg Ursula born Leske. Tested because Kurt came out of East Prussia and the slide from Luwinski to Lewinski is exactly the slide a clerk makes. It did not happen. Recorded as an exclusion rather than left as an open possibility."
+    },
+    {
+      "form": "FIGUERETTO · FIGARETO · FIGUEIRDO · FIGUIREDO · FIGUERREDO · FIGUERIEDO · FIGUEIRETO",
+      "naairs": "0",
+      "gendb": "0",
+      "unique": "Nothing, anywhere. Invented spellings that no clerk ever made."
+    },
+    {
+      "form": "LUWENSKY · LUWINSKA · LUWINSKE · LUWINSKIE · LUVINSKI · LUBINSKI · LUWINZKI · LUWINSCHI · LOWINSKI · LAWINSKI",
+      "naairs": "0",
+      "gendb": "0",
+      "unique": "Nothing. The Luwinski name turns out to corrupt in only two directions, not ten."
+    }
   ]
 }
