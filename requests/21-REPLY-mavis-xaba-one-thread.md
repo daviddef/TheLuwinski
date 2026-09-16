@@ -82,6 +82,21 @@ FIGUEIREDO or MOTA FIGUEIREDO in the naturalisation or alien-registration series
 - **And it tells her where to look first — the father, not the daughter** — with the reason given, so
   she is not sent hunting for a file that the law of the day may have made unnecessary.
 
+**3. And the name is given in every spelling the records actually use.** David's point, and it is
+the difference between the question working and failing. **Six spellings of the maiden surname across
+five documents, and NAAIRS itself carries two of the worst.** The table is framed as *saving her a
+search*, not as instructing her how to do her job, and it is followed by "I am not asking you to work
+through the table — it is there so that one search does not become six."
+
+**The proof that this matters is in her own offer.** WLD 2545/1950 is the file she volunteered to
+check, and it hid from this archive for weeks because **the index spells her LUWENSKI**. The letter
+says so, which is both true and the most persuasive possible reason for the table.
+
+*It also cost this archive its own negative:* the gazette sweep recorded on /negatives/ searched only
+**Figueiredo, de Figueiredo and Mota Figueiredo** — three of the six. **It never searched Figuerido,
+Figueredo or Figaretto.** That is being re-run, and the negative is being corrected rather than left
+to look stronger than it was.
+
 **Everything else in request 24 stays held.** The two doubtful references, the OD structural
 question, the catalogue-line files and the four death notices all wait until she has answered.
 
@@ -182,7 +197,22 @@ her father than her**: as I understand the law before September 1949, a foreign 
 British subject took his nationality automatically, and she married a Mr de Witt in February 1948 —
 so she may well have had no need to naturalise, and no file. Her father would have.
 
-If the answer is simply "nothing under that surname", that is a genuinely useful answer and I will
+**One thing that will save you time, because it has already cost me a great deal.** Her name is
+spelt six different ways across five documents, and **two of the worst spellings are the ones NAAIRS
+itself carries.** WLD 2545/1950 — the file you have kindly offered to check — hid from me for weeks
+for exactly this reason: the index has her as **LUWENSKI**, not Luwinski. So if a search under
+Figueiredo comes back empty, these are the forms the records actually use:
+
+| | as it appears, and where |
+|---|---|
+| **Forename** | **IVONE** — most files · **YVONNE** — TPD 534/1948 · **IVONNE** — WLD 2225/1953 |
+| **Maiden surname** | **FIGUEIREDO** and **DE FIGUEIREDO** · **MOTA FIGUEIREDO** — WLD 1950/1948 · **DE FIGUERIDO** — WLD 2225/1953 · **DE FIGUEREDO** — her 1953 marriage register · **FIGARETTO** — the NAAIRS index itself |
+| **Married surnames** | **DE WITT** from February 1948 · **LUWINSKI**, also **LUWINSKY** and **LUWENSKI** — from June 1948 · **SALKOW** from February 1953 |
+
+**A file from the 1940s or 1950s could be indexed under any of them.** I am not asking you to work
+through the table — it is there so that one search does not become six.
+
+If the answer is simply "nothing under any of those", that is a genuinely useful answer and I will
 stop looking down that road. **I would normally have checked this on NAAIRS myself rather than ask
 you, which is the only reason I am asking.**
 
