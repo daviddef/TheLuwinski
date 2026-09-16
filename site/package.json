@@ -9,7 +9,8 @@
     "preview": "astro preview --port 4331",
     "check:living": "python3 ../tools/check-living.py --dist dist",
     "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root .",
-    "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root ."
+    "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root .",
+    "check:matches": "python3 ../tools/check-matches.py"
   },
   "dependencies": {
     "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#fae55f9f357b153885b8374f59b3e8725dd3d0b7",

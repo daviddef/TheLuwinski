@@ -11,4 +11,7 @@ scratch/
 # needs only site/src/data/register.json, which is generated from the harvest
 # with living people already removed.
 data/myheritage-tree9.json
+# The AutoClusters export names 110 living DNA match holders with their
+# cM and their tree links. Same rule as the harvest: it never leaves this machine.
+data/autoclusters-*.csv
 notes/

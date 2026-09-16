@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import seg from '../data/segments.json';
 import wearsig from '../data/wear-signature.json';
+import ac from '../data/autoclusters.json';
 const CHR = [249250621,243199373,198022430,191154276,180915260,171115067,159138663,146364022,141213431,135534747,135006516,133851895,115169878,107349540,102531392,90354753,81195210,78077248,59128983,63025520,48129895,51304566];
 const MAXCHR = CHR[0];
 const merge = (iv) => { const s=[...iv].sort((a,b)=>a[0]-b[0]); const m=[]; for (const [lo,hi] of s) { if (m.length && lo <= m[m.length-1][1]) m[m.length-1][1] = Math.max(m[m.length-1][1], hi); else m.push([lo,hi]); } return m; };
@@ -158,7 +159,7 @@ const matches = [
   <h3>It is one family, and it is tightly interlocked</h3>
   <p>
     Each shared-match table gives a person's relationship to <em>both</em> sides at once, which is what
-    makes the shape readable. Five of these people — Harrison, Browne, Noye, Taw, Davey — are
+    makes the shape readable. Five of these people — the 333.9, 292.6, 165.9, 99.1 and 88.6 cM matches — are
     <strong>first cousins to one another</strong>, sharing between <strong>450 and 801 cM</strong>. And
     every one of them is a <strong>second cousin to Derrick</strong>. That is not a scatter of
     coincidental matches. It is one English family, and Derrick hangs off it at a fixed distance.
@@ -185,7 +186,7 @@ const matches = [
   <ul>
     <li><strong>The paternal family is English</strong> — which the ethnicity estimate said, and the match structure now confirms independently and at close range.</li>
     <li><strong>A branch of it was in Johannesburg</strong>, in the right city at the right time.</li>
-    <li><strong>The nearest surname is Halsey</strong>, at grandparent distance. Harrison, Brown, Davey, Noye and Taw sit one generation further out.</li>
+    <li><strong>The closest match sits at grandparent distance</strong>; the five second cousins named above sit one generation further out.</li>
     <li><strong>It closes the Kurt question from the other side.</strong> Every one of these pages prints the same line — <em>“do not share any ancestral surnames”</em> — against Derrick's own list of Figueiredo, Leibholz, Luwinski, Schmul, Thimm. Six matches examined closely, three British and three Portuguese, and not one touches Leibholz or Luwinski.</li>
   </ul>
   <p>
@@ -881,6 +882,57 @@ const matches = [
       And it kills the alternative outright. Under the other reading, Derrick&rsquo;s relationship to
       the closest match would be <em>the same</em> relationship the 292.7 cM match has to her. Hers
       reads <strong>82.1 cM</strong>. His reads <strong>297.5</strong>.
+    </p>
+  </div>
+
+  <div class="panel" id="autoclusters">
+    <h3>And a machine that knew none of this put the same people in one box <span class="tag doc">16 September</span></h3>
+    <p>
+      Everything above was reasoned out by hand &mdash; shared-match lists read one page at a time,
+      segments copied off match pages, a couple inferred from the shape of an overlap. On 15 September
+      MyHeritage produced an <strong>AutoClusters</strong> report for the same kit:
+      <strong>{ac.matches} matches sorted into {ac.clusters} clusters, {ac.total_cm.toLocaleString()} cM in all.</strong>
+    </p>
+    <p>
+      AutoClusters knows nothing about this archive&rsquo;s reasoning. It groups matches purely by
+      whether they match <em>each other</em>. <strong>It produced the same group.</strong>
+    </p>
+    <div class="scroll"><table class="small">
+      <thead><tr><th>Cluster</th><th>People</th><th>cM</th><th>Share</th><th>Character</th></tr></thead>
+      <tbody>{ac.rows.map((r) => (
+        <tr>
+          <td><strong>{r.c}</strong></td><td>{r.n}</td><td>{r.cm.toLocaleString()}</td><td>{r.pct}%</td>
+          <td class="small">{r.character}</td>
+        </tr>
+      ))}</tbody>
+    </table></div>
+    <p>
+      <strong>Cluster 3 is the paternal line, and it dwarfs everything else</strong> &mdash; twelve
+      people, 1,706 cM, <strong>nearly a third of all clustered sharing in the kit</strong> and almost
+      three times the next cluster. All three anchor matches sit in it together.
+    </p>
+    <p>
+      <strong>But it does not separate Wear from Castle, and that is worth being clear about.</strong>
+      The closest match descends from <em>both</em> halves of the couple; the two Castle cousins
+      descend from one half. All three therefore match each other, and this algorithm is bound to put
+      them in a single cluster. <strong>A married couple looks exactly like this.</strong> Cluster
+      membership proves <em>paternal</em>, not <em>Wear</em> &mdash; which is what the twelve-region
+      signature above is for.
+    </p>
+    <p>
+      <strong>The bifurcation is the other finding, and it is cleaner than anything argued here.</strong>
+      Derrick&rsquo;s mother was Portuguese, from Louren&ccedil;o Marques. So every Portuguese cluster
+      is maternal and every British one is paternal &mdash; and there are <strong>four separate
+      Portuguese clusters, fifteen people, about 776 cM</strong>, against a British side that
+      outweighs them several times over. <strong>For a man whose father of record was a German Jew
+      from East Prussia, that is the 0.0% Ashkenazi result restated in a different currency.</strong>
+    </p>
+    <p class="small muted">
+      <strong>The names are not here and will not be.</strong> These are living people. This archive
+      publishes DNA match holders as role, country and cM only, and the export itself is held off the
+      repository. Three of the four Portuguese clusters contain someone sharing more with Derrick than
+      anyone this archive has ever written to about his mother &mdash; but writing to them is
+      <a href={base + '/worklist/'}>David&rsquo;s to do</a>, not this archive&rsquo;s.
     </p>
   </div>
 

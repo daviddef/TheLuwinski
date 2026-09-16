@@ -1,0 +1,19 @@
+{
+  "note": "MyHeritage AutoClusters, generated 15 September 2026. Match holders are living and are NOT named here — cluster, size, total cM and character only. The full export is held off this repository.",
+  "generated": "2026-09-15",
+  "matches": 110,
+  "clusters": 20,
+  "total_cm": 5361,
+  "rows": [
+    {"c": "3", "n": 12, "cm": 1706, "pct": 31.8, "character": "THE PATERNAL LINE — holds all three anchor matches at 333.9, 297.5 and 292.6 cM, plus nine more", "side": "paternal"},
+    {"c": "2", "n": 12, "cm": 554, "pct": 10.3, "character": "English, unattributed. Largest member 68 cM", "side": "paternal"},
+    {"c": "1", "n": 15, "cm": 439, "pct": 8.2, "character": "English, unattributed. Every member between 25 and 41 cM", "side": "paternal"},
+    {"c": "4", "n": 10, "cm": 304, "pct": 5.7, "character": "American surnames, one tree of 62,000 people", "side": "unclear"},
+    {"c": "17", "n": 3, "cm": 250, "pct": 4.7, "character": "PORTUGUESE — two members over 100 cM", "side": "maternal"},
+    {"c": "10", "n": 4, "cm": 237, "pct": 4.4, "character": "PORTUGUESE — strongest member 133.2 cM", "side": "maternal"},
+    {"c": "7", "n": 5, "cm": 198, "pct": 3.7, "character": "English, unattributed", "side": "paternal"},
+    {"c": "8", "n": 5, "cm": 188, "pct": 3.5, "character": "English, unattributed", "side": "paternal"},
+    {"c": "6", "n": 5, "cm": 179, "pct": 3.3, "character": "PORTUGUESE", "side": "maternal"},
+    {"c": "20", "n": 3, "cm": 110, "pct": 2.1, "character": "PORTUGUESE / Brazilian", "side": "maternal"}
+  ]
+}
