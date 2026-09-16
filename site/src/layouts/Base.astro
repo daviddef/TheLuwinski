@@ -10,13 +10,46 @@ const nav = [
 ];
 const navFlat = nav.flatMap(([, links]) => links);
 const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
+
+/* THE HEAD TAGS THAT SAY WHICH ARCHIVE THIS IS.
+   Added 17 September 2026 because the tab strip showed this site as a generic
+   "G" while every sibling showed its own initial. The cause was two absences:
+   there was no favicon file at all, and nothing in this head ever linked one.
+   With no icon declared the browser falls back to the shared github.io origin,
+   which is what the G came from.
+
+   The siblings get these from the kit's SocialHead, which reads name, accent
+   and url out of archives.json by BASE_URL. THIS ARCHIVE IS DELIBERATELY NOT IN
+   ARCHIVES.JSON — it was taken out on 16 September at David's instruction,
+   because the Luwinskis are not a branch of the same family and the ring of
+   sibling links had no business on these pages. Putting it back to get a
+   favicon would put Luwinski into every other archive's ring, which is the
+   thing that was objected to. So the values are stated here instead. */
+const SITE = 'The Luwinski Archive';
+const ACCENT = '#9A4B2B';
+const ORIGIN = 'https://daviddef.github.io';
+const LINE = 'An evidence-first archive of the Luwinski, Wear, Castle and Figueiredo families.';
+const p = Astro.url.pathname.replace(/\/+$/, '');
+const canonical = ORIGIN + (/\.[a-z0-9]{2,5}$/i.test(p) ? p : p + '/');
+const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
 ---
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title === 'The Luwinski Archive' ? title : title + ' — The Luwinski Archive'}</title>
-  <meta name="description" content={subtitle || 'An evidence-first family archive.'} />
+  <meta name="description" content={subtitle || LINE} />
+  <link rel="icon" href={base + '/favicon.svg'} type="image/svg+xml" />
+  <meta name="theme-color" content={ACCENT} />
+  <link rel="canonical" href={canonical} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content={SITE} />
+  <meta property="og:title" content={full} />
+  <meta property="og:description" content={subtitle || LINE} />
+  <meta property="og:url" content={canonical} />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={full} />
+  <meta name="twitter:description" content={subtitle || LINE} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
