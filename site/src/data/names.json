@@ -135,7 +135,7 @@
     },
     {
       "form": "FIQUEIREDO",
-      "naairs": "—",
+      "naairs": "4",
       "gendb": "4",
       "unique": "THE FIND OF THE DAY. TAB MHG 7029/54 — FIQUEIREDO, AGOSTINHO VICENTE SEBASTIAO, a Portuguese man whose Johannesburg estate the Union Gazette advertises under FIGUEIREDO. Also KAB PIO 990/42707E, IMMIGRATION PAPERS JG DE FIQUEIREDO. Not claimed as kin — but no search on the correct spelling could ever have seen either."
     },
@@ -159,31 +159,31 @@
     },
     {
       "form": "FIGUEREDO",
-      "naairs": "—",
+      "naairs": "6",
       "gendb": "10",
       "unique": "KAB IRC 1/4/19 and IRC 1/3/1 — two immigration files. Neither is hers."
     },
     {
       "form": "FIGUERIDO",
-      "naairs": "—",
+      "naairs": "2",
       "gendb": "2",
       "unique": "TAB WLD 2225/1953, the Salkow divorce, as NAAIRS spells it."
     },
     {
       "form": "FIGUERDO",
-      "naairs": "—",
+      "naairs": "1",
       "gendb": "1",
       "unique": "SAB BAL 7 — a temporary permit for a Goanese C FIGUERDO. A different community, but it proves the permit series is indexed."
     },
     {
       "form": "FIGEIREDO · FIGUEREIDO · FIGUEIREDA",
-      "naairs": "—",
+      "naairs": "1 each",
       "gendb": "1 each",
       "unique": "One divorce apiece, none connected. Recorded so that nobody searches them twice."
     },
     {
       "form": "LEWINSKI · LEWINSKY",
-      "naairs": "—",
+      "naairs": "5 · 11",
       "gendb": "12 · 18",
       "unique": "A REAL FAMILY, AND NOT THIS ONE. German-Jewish Johannesburg — Erwin, Bella born Berman, Meinhard, Ingeborg Ursula born Leske. Tested because Kurt came out of East Prussia and the slide from Luwinski to Lewinski is exactly the slide a clerk makes. It did not happen. Recorded as an exclusion rather than left as an open possibility."
     },
@@ -195,33 +195,55 @@
     },
     {
       "form": "LAWINSKI",
-      "naairs": "—",
+      "naairs": "3",
       "gendb": "3",
       "unique": "A REAL MAN, AND NOT OURS. Israel Blogos Lawinski, suing Georg Marthinus Kleynhans in the Transvaal in 1903 — TAB ZTPD 8/678, 888/1903. Twenty-five years before Kurt was born and in the wrong court. Excluded."
     },
     {
       "form": "LUBINSKI",
-      "naairs": "—",
+      "naairs": "2",
       "gendb": "3",
       "unique": "Also real, also not ours. Erich Lubinski's estate TAB MHG 4010/73, and Johanna born Schaefer, 1922–1992. No connection offered or found."
     },
     {
       "form": "LUWINSK (truncated stem)",
-      "naairs": "—",
+      "naairs": "0",
       "gendb": "9",
-      "unique": "Returns the Luwinski set plus nothing new — the stem search is a superset, not a discovery."
+      "unique": "gendatabase does stem matching and NAAIRS does not — the same query returns 9 and 0. A reminder that two indexes over the same records are not the same instrument."
     },
     {
-      "form": "MOTTA · FIGUEIRA",
-      "naairs": "—",
-      "gendb": "324 · 164",
-      "unique": "NOT SEARCHED THROUGH, and said so plainly. Both are common surnames in their own right rather than misspellings of hers, and both exceeded the harvest cap. Listed so that the gap is visible rather than silently absent — MOTA is one of her recorded names and MOTTA is one letter from it."
+      "form": "MOTTA",
+      "naairs": "20",
+      "gendb": "324",
+      "unique": "EXAMINED AT NAAIRS AND EXCLUDED. All twenty are Indian or Italian — Motta Naik, Subrai Motta, Motta di Livenza, Motta Makanya. NOT ONE IS PORTUGUESE. MOTA is one of Ivone's recorded names and MOTTA is one letter from it, so this needed testing; it is a dead end and now says so."
     },
     {
       "form": "LUWENSKY · LUWINSKA · LUWINSKE · LUWINSKIE · LUVINSKI · LUWINZKI · LUWINSCHI · LOWINSKI · LUWINSKII · LUWANSKI · LUWINSKIJ · LIWINSKI",
-      "naairs": "—",
+      "naairs": "0",
       "gendb": "0",
       "unique": "Nothing. Twelve invented spellings that no clerk ever made."
+    },
+    {
+      "form": "FIGUEIRA",
+      "naairs": "40",
+      "gendb": "164",
+      "unique": "A DIFFERENT PORTUGUESE SURNAME, not a misspelling of hers, and no Ivone among the forty. Worth the look anyway for what the shape of it shows: SIXTEEN OF THE FORTY ARE IMMIGRATION PAPERS AT KAB, IN THE PIO AND IRC SERIES. That is where the Portuguese community in South Africa is indexed."
+    },
+    {
+      "form": "FIGUEIRED",
+      "naairs": "1",
+      "gendb": "—",
+      "unique": "KAB PIO 33143E — IMMIGRATION PAPERS HA FIGUEIRED. The surname truncated by the index itself, with the final O simply gone. Nobody would search for this; it was found by asking what a clerk might do to the word."
+    },
+    {
+      "form": "MOTA",
+      "naairs": "288",
+      "gendb": "15,102",
+      "unique": "NOT SEARCHED THROUGH — too many, and the gap is stated rather than hidden. It is the most important untested name on this page, because MOTA FIGUEIREDO is the fullest form anybody ever wrote of her maiden name."
     }
-  ]
+  ],
+  "depot_finding": {
+    "title": "Where the Portuguese are actually filed",
+    "body": "Across every Figueiredo, Fiqueiredo, Figueredo, Figuerido and Figueira search run on 16 September 2026, the immigration records cluster in one place: KAB — the Cape Town Archives Repository — in the PIO and IRC series. PIO is the Principal Immigration Officer; IRC the immigration control files. Sixteen of forty Figueira records are there; so are JG de Fiqueiredo, HA Figueired, Juonet Figuere​do, Maria T Figueredo and five more Figueiredos. NOT ONE OF THEM IS IVONE. What the pattern is worth is a corrected assumption: this archive had been treating naturalisation and alien files as central-government records at SAB in Pretoria. THE INDEXED IMMIGRATION SERIES FOR PORTUGUESE ARRIVALS IS AT CAPE TOWN, and a request pointed at the wrong depot would have come back empty for the wrong reason."
+  }
 }

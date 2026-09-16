@@ -219,9 +219,13 @@ born at Lourenço Marques on 4 March 1924** and was a Portuguese national when s
 Johannesburg in 1948. Her parents' names are the one thing this whole search has never been able to
 establish.
 
-**Is there an index entry at all in the naturalisation or alien-registration series — SAB rather than
-TAB — under FIGUEIREDO or MOTA FIGUEIREDO, for anyone from Portuguese East Africa?** I am asking
-whether an entry exists, not asking you to read a file. **And it is more likely to be her father than
+**Is there an index entry for her anywhere in the immigration or naturalisation records?** I am
+asking whether an entry exists, not asking you to read a file. From what I can see on NAAIRS, the
+Portuguese immigration files seem to sit mostly at **KAB, in the PIO and IRC series** rather than in
+the Transvaal — so my real question may be **whether there is a Transvaal equivalent for someone who
+came in overland from Lourenço Marques rather than by sea to Cape Town.** You will know that far
+better than I do, and if the answer is that I am asking the wrong repository entirely, that alone
+would save me weeks. **And it is more likely to be her father than
 her**: as I understand the law before September 1949, a foreign woman who married a British subject
 took his nationality automatically, and she married a Mr de Witt in February 1948 — so she may well
 have had no need to naturalise, and no file at all. Her father would have.
