@@ -76,6 +76,38 @@ second invoice.**
 | TAB MHG 40293 — KOLBE, Frederick Fortunatus Downing, 1918 | **Who does it name as his parents?** If Frederik Fortunatus Kolbe and Elizabeth Johanna du Toit, a question chased across three provinces closes |
 | TAB MHG 3734/46 — DASCHNER, Catherine Mary Sophia, born Booyzen | **Who does it name as her parents?** Already on Anne's booked six, so this is a fallback only |
 
+### Q5 — the alien file for a Portuguese woman from Lourenço Marques. *Added 16 September; the best question on this queue*
+
+**Ivone de Figueiredo was born at Lourenço Marques on 4 March 1924 and was a Portuguese national.**
+She married in Johannesburg in 1948. **Her parents' given names are this archive's oldest unsolved
+question**, and a South African naturalisation memorial asks for the applicant's date and place of
+birth, **the father's name and nationality**, the date and ship of arrival, and the wife and children
+by name and age.
+
+**The question for her is: does SAB hold a naturalisation, alien-registration or immigration-permit
+file for any FIGUEIREDO or MOTA FIGUEIREDO from Portuguese East Africa?**
+
+**And the better question behind it: is there one for her father?** A father's memorial names every
+child. That single document would give her parents *and* her siblings, which nothing this archive has
+tried can do.
+
+**Why it is hers and not Anne's.** Naturalisation is **SAB**, the central-government depot, not TAB.
+Anne's day is a TAB day. And the first step is not a file at all — **it is a question about whether an
+index entry exists**, which is a desk question. It is also the question NAAIRS would normally answer,
+and **NAAIRS has been unreachable since 16 September** — its hostname has lost its DNS record — so
+the desk is currently the only route to it.
+
+**One caveat to state when asking, because it is honest and it protects her time.** Under the law as
+it stood, **an alien woman who married a British subject before 2 September 1949 acquired his
+nationality automatically**; the South African Citizenship Act 44 of 1949 ended that. **Ivone married
+Johannes Antonie Oelofse de Witt on 2 February 1948** — nineteen months inside the old rule. If he was
+a Union national, **she became one by marriage and there will be no file for her at all.** So the
+enquiry should be framed as *is there an entry for the surname*, not *please find her file*, and the
+father should be named as the likelier subject.
+
+*This is also why the gazette sweep came back empty: 1930 to 1960, every year, no Figueiredo
+naturalisation notice — recorded on /negatives/ with its control test and its OCR caveat.*
+
 ## What is NOT on this queue, and why
 
 **Nothing from the Lerena court files (TPD 1367/1980, TPD 1248/1979, WLD 8043/77, and the rest).**
