@@ -37,25 +37,25 @@ fifteen near-identical messages from one stranger reads as harvesting rather tha
 **Order:** cluster 10 first (133.2 cM), then 17 (two over 100), then 6 (the big shared tree), then 20
 only if the first three produce nothing.
 
-## TWO BLANKS DAVID MUST FILL BEFORE SENDING
+## ONE BLANK LEFT, AND ONE CORRECTION ON THE RECORD
 
-**1. `{RELATIONSHIP}` / `{RELAÇÃO}` — and this is a correction, not a formatting note.**
+**`{cM}` — the shared total for that particular recipient**, from the send list in
+`notes/autoclusters-2026-09-15.md`. Four letters, four different figures. Getting this wrong in a
+first message to a genealogist is the fastest way to be ignored.
 
-The first draft of these letters said *"my wife's family… my father-in-law, Derrick"* and
-*"a família da minha mulher. O meu sogro."* **This archive has never recorded how David is related to
-Derrick.** It was inferred, written into a letter to strangers, and would have gone out as fact.
+### The correction, kept because the archive keeps its corrections
 
-That is the same error as the Kurt estate notice and the Paula gazette line: *a plausible reading
-treated as a source.* It is worse here, because it would have been asserted to living people who have
-no way to check it.
+The first draft asserted *"my wife's family… my father-in-law, Derrick."* **The father-in-law part was
+right. Nothing in this archive said so.** It was inferred from context, written into a letter to
+strangers, and would have gone out as fact.
 
-**The letters now carry a blank.** David knows the answer; this archive does not, and should not
-guess. Portuguese needs the right word — *o meu sogro* (father-in-law), *o meu tio* (uncle),
-*o pai da minha mulher* (my wife's father). **Fill it in both languages before sending.**
+*Being right by luck is not the same as being right.* It is the same error as the Kurt estate notice
+and the Paula gazette line — a plausible reading treated as a source — and worse here, because it
+would have been asserted to living people with no way to check it.
 
-**2. `{cM}` — the shared total for that particular recipient**, from the send list in
-`notes/autoclusters-2026-09-15.md`. Getting this wrong in a first message to a genealogist is the
-fastest way to be ignored.
+**David confirmed it on 16 September: Derrick is his father-in-law.** It is now documented rather than
+assumed, and the letters read *do meu sogro* / *my father-in-law* on his authority and not on a
+guess.
 
 *Signature standardised to* **David Defranceski**, *which is how he signs his own sent mail five times
 out of eight. "Austrália" is kept in the Portuguese body — unlike the Xaba letter, it earns its place
@@ -83,7 +83,7 @@ first message from a stranger on a genealogy site does not get read.*
 
 Olá,
 
-Chamo-me David e escrevo da Austrália. Faço a história da família de **{RELAÇÃO}**, o **Derrick**,
+Chamo-me David e escrevo da Austrália. Faço a história da família do **meu sogro**, o **Derrick**,
 que partilha consigo **{cM} centimorgans** de ADN — o que vos coloca como primos, provavelmente em
 segundo ou terceiro grau.
 
@@ -120,7 +120,7 @@ david.defranceski@gmail.com
 
 Hello,
 
-My name is David and I am writing from Australia. I research the family history of **{RELATIONSHIP}**,
+My name is David and I am writing from Australia. I research the family history of **my father-in-law**,
 **Derrick**, who shares **{cM} centimorgans** of DNA with you — which makes you cousins, probably
 second or third.
 
