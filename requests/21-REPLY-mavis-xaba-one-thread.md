@@ -220,15 +220,25 @@ Johannesburg in 1948. Her parents' names are the one thing this whole search has
 establish.
 
 **Is there an index entry for her anywhere in the immigration or naturalisation records?** I am
-asking whether an entry exists, not asking you to read a file. From what I can see on NAAIRS, the
-Portuguese immigration files seem to sit mostly at **KAB, in the PIO and IRC series** rather than in
-the Transvaal — so my real question may be **whether there is a Transvaal equivalent for someone who
-came in overland from Lourenço Marques rather than by sea to Cape Town.** You will know that far
-better than I do, and if the answer is that I am asking the wrong repository entirely, that alone
-would save me weeks. **And it is more likely to be her father than
-her**: as I understand the law before September 1949, a foreign woman who married a British subject
-took his nationality automatically, and she married a Mr de Witt in February 1948 — so she may well
-have had no need to naturalise, and no file at all. Her father would have.
+asking whether an entry exists, not asking you to read a file.
+
+**And it is more likely to be her father than her.** As I understand the law before September 1949, a
+foreign woman who married a British subject took his nationality automatically — and she married a
+Mr de Witt in February 1948. So she may well have had no need to naturalise, and no file at all. Her
+father would have.
+
+**Two things I have found out that may make the question easier to answer, or may just save you
+looking.** The first is that the Portuguese immigration files I can see seem to sit at **KAB, in the
+PIO and IRC series**, rather than in the Transvaal — so my real question may be **whether there is a
+Transvaal equivalent for someone who came in overland from Lourenço Marques rather than by sea to
+Cape Town.** If the answer is that I am asking the wrong repository entirely, that alone would save
+me weeks.
+
+**The second is that I no longer trust the online index on this subject at all.** I took a man I can
+prove naturalised — his application is printed in the Union Gazette of 20 February 1942 — and
+searched for him. **His naturalisation file is not in the index either.** So the absence of a file
+under a name appears to tell me nothing, and **I cannot tell from outside the building whether these
+papers survive.** That is really why I am asking you rather than looking myself.
 
 **One note that will save you a search, because it has already cost me a great many.** Her name is
 spelt six different ways across five documents, and **two of the worst spellings are the ones NAAIRS
