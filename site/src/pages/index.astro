@@ -10,7 +10,12 @@ const c = register.counts;
 const heroFile = ['hero.jpg', 'hero.jpeg', 'hero.png', 'hero.webp'].find((f) => fs.existsSync(path.join(process.cwd(), 'public', f)));
 const heroAlt = 'A painted landscape. A railway runs away from the viewer: an English winter in the foreground, thinning birches beyond it, then dry highveld, and a river town at the vanishing point.';
 const heroCap = 'An illustration, not a document. Nothing in this archive rests on it.';
-const hero = heroFile ? { src: `${base}/${heroFile}`, alt: heroAlt, caption: heroCap } : undefined;
+const heroKick = 'A family history, kept honestly';
+const heroHeading = 'Out of East Prussia and Mozambique, into one Johannesburg marriage.';
+const heroSub = 'Berlin \u00b7 Louren\u00e7o Marques \u00b7 Hitchin \u00b7 Johannesburg \u2014 a family assembled from court files, ships\u2019 manifests and DNA, with every inference marked as one, and every correction left where it was made.';
+const hero = heroFile
+  ? { src: `${base}/${heroFile}`, alt: heroAlt, caption: heroCap, kick: heroKick, heading: heroHeading, sub: heroSub }
+  : undefined;
 
 // ─── The timeline: every dated life and event the archive holds ───────────────
 // lane: 'a' = the line of record · 'b' = the line the DNA points to · 's' = shared

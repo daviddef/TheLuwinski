@@ -2,30 +2,13 @@
 const { title, subtitle, lede, hero } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const nav = [
-  ['', 'The archive'],
-  ['/tree', 'The tree'],
-  ['/derrick', 'Derrick'],
-  ['/kurt', 'Kurt'],
-  ['/leonard', 'Leonard Wear'],
-  ['/leibholz', 'The Leibholz brothers'],
-  ['/east-prussia', 'East Prussia'],
-  ['/ivone', 'Ivone'],
-  ['/names', 'Her names'],
-  ['/mozambique', 'Mozambique'],
-  ['/dna', 'The DNA'],
-  ['/1948', '1948'],
-  ['/atlas', 'Atlas'],
-  ['/register', 'Register'],
-  ['/search', 'Search'],
-  ['/research-log', 'Log'],
-  ['/status', 'Status'],
-  ['/letters', 'Letters out'],
-  ['/method', 'Method'],
-  ['/negatives', 'Bounded negatives'],
-  ['/open-questions', 'Open questions'],
-  ['/worklist', 'Work list'],
-  ['/sources', 'Sources'],
+  ["Start", [["", "The archive"], ["/tree", "The tree"], ["/dna", "The DNA"], ["/1948", "Nineteen forty-eight"]]],
+  ["Our line", [["/derrick", "Derrick"], ["/leonard", "Leonard Wear"], ["/kurt", "Kurt"], ["/ivone", "Ivone"], ["/leibholz", "The Leibholz brothers"]]],
+  ["Places", [["/east-prussia", "East Prussia"], ["/mozambique", "Mozambique"], ["/atlas", "Atlas"]]],
+  ["People & names", [["/register", "The register"], ["/names", "Her names"]]],
+  ["Evidence", [["/sources", "Sources"], ["/method", "Method"], ["/negatives", "Bounded negatives"], ["/open-questions", "Open questions"], ["/worklist", "The work list"], ["/letters", "Letters out"], ["/research-log", "Research log"], ["/status", "Status"]]],
 ];
+const navFlat = nav.flatMap(([, links]) => links);
 const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
 ---
 <html lang="en">
@@ -74,12 +57,55 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
     @media (min-width: 84rem) { .bleed { width: calc(100% + var(--bleed)); } }
     /* Headings share the reading measure so the page has one right edge for prose. */
     h2, h3 { max-width: var(--measure); }
-    .masthead { border-bottom: 1px solid var(--rule); padding: 1.4rem 0 1.1rem; }
-    .masthead a.home { color: var(--ink); text-decoration: none; font-size: .95rem; letter-spacing: .16em; text-transform: uppercase; }
-    nav.primary { margin-top: .8rem; display: flex; flex-wrap: wrap; gap: .15rem 1.15rem; }
-    nav.primary a { font-size: .8rem; letter-spacing: .04em; color: var(--ink-soft); text-decoration: none; padding: .15rem 0; border-bottom: 1px solid transparent; }
-    nav.primary a:hover { color: var(--ink); border-bottom-color: var(--accent); }
-    nav.primary a[aria-current] { color: var(--accent); border-bottom-color: var(--accent); }
+    /* Masthead, after the Defranceschi archive: a sticky bar, a serif wordmark
+       with the second word in italic accent, grouped dropdowns instead of
+       twenty-three flat links, and a search pill on the right. */
+    .masthead { border-bottom: 1px solid var(--rule); background: var(--panel);
+      position: sticky; top: 0; z-index: 60; }
+    .sitein { display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; padding-top: .7rem; padding-bottom: .7rem; }
+    .masthead a.brand { font-size: 1.15rem; font-weight: 600; letter-spacing: -.01em;
+      color: var(--ink); text-decoration: none; white-space: nowrap; }
+    .masthead a.brand em { font-style: italic; font-weight: 400; color: var(--accent); }
+    nav.topnav { display: flex; align-items: center; gap: 1px; flex-wrap: nowrap; }
+    nav.topnav details.menu { position: relative; }
+    nav.topnav summary { list-style: none; cursor: pointer;
+      font-family: ui-sans-serif, system-ui, sans-serif; font-size: .78rem;
+      color: var(--ink-soft); padding: .35rem .55rem; border-radius: 999px;
+      white-space: nowrap; border: 1px solid transparent; }
+    nav.topnav summary::-webkit-details-marker { display: none; }
+    nav.topnav summary::after { content: ""; display: inline-block; margin-left: .38rem;
+      width: 5px; height: 5px; border-right: 1.5px solid currentColor;
+      border-bottom: 1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); opacity: .55; }
+    nav.topnav summary:hover { color: var(--ink); }
+    nav.topnav details[open] summary { color: var(--accent); border-color: var(--rule); }
+    nav.topnav .dropdown { position: absolute; top: calc(100% + 8px); left: 0; min-width: 13rem;
+      z-index: 70; background: var(--panel); border: 1px solid var(--rule); border-radius: 12px;
+      box-shadow: 0 18px 44px rgba(10,12,16,.18); padding: .4rem; display: flex; flex-direction: column; }
+    nav.topnav .dropdown a { font-family: ui-sans-serif, system-ui, sans-serif; font-size: .84rem;
+      color: var(--ink-soft); text-decoration: none; padding: .4rem .6rem; border-radius: 8px; white-space: nowrap; }
+    nav.topnav .dropdown a:hover { color: var(--accent); }
+    nav.topnav .dropdown a.on { color: var(--ink); font-weight: 600; }
+    .findbtn { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: .76rem; line-height: 1; text-decoration: none; margin-left: .55rem;
+      color: var(--paper); background: var(--accent); padding: .45rem .85rem; border-radius: 999px; white-space: nowrap; }
+    .drawerbox { display: none; }
+    .drawerbox > summary { list-style: none; cursor: pointer; font-size: .8rem;
+      border: 1px solid var(--rule); border-radius: 999px; padding: .38rem .8rem; color: var(--ink); }
+    .drawerbox > summary::-webkit-details-marker { display: none; }
+    .drawer { position: absolute; left: 0; right: 0; background: var(--panel);
+      border-bottom: 1px solid var(--rule); padding: .8rem 1rem 1.2rem; max-height: 72vh; overflow: auto; z-index: 65; }
+    .drawer .dgrp { padding: .5rem 0; border-bottom: 1px solid var(--rule); }
+    .drawer .dgrp:last-child { border-bottom: 0; }
+    .drawer .gl { display: block; font-size: .62rem; font-weight: 600; letter-spacing: .16em;
+      text-transform: uppercase; color: var(--ink-faint); margin-bottom: .35rem; }
+    .drawer a { display: inline-block; font-size: .88rem; color: var(--ink-soft);
+      text-decoration: none; padding: .25rem .8rem .25rem 0; }
+    .drawer a.on { color: var(--accent); font-weight: 600; }
+    @media (max-width: 62rem) {
+      nav.topnav { display: none; }
+      .drawerbox { display: block; }
+    }
     main { padding: 2.6rem 0 4rem; }
     h1 { font-size: clamp(1.9rem, 4.2vw, 3rem); line-height: 1.08; margin: 0 0 .4rem; font-weight: 600; letter-spacing: -.015em; }
     .sub { color: var(--ink-soft); font-size: 1.02rem; margin: 0 0 1.7rem; max-width: var(--measure); }
@@ -135,9 +161,35 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
     .segmap .key i.kb { background: var(--doc); }
     .segmap .key i.kov { background: none; border: 1.6px solid var(--inf); height: .85rem; }
     /* Optional hero band on the home page. Rendered only when the file exists. */
-    .hero { border-bottom: 1px solid var(--rule); background: var(--panel); }
-    .hero img { display: block; width: 100%; height: clamp(180px, 26vw, 420px); object-fit: cover; object-position: center 55%; }
-    .hero figcaption { padding: .55rem 0 .7rem; font-size: .78rem; color: var(--ink-faint); max-width: none; }
+    /* The hero band. Sized and layered after the Defranceschi archive: a full-bleed
+       plate, a gradient that darkens only the lower third so the sky stays open,
+       and the title set over it rather than beneath it. */
+    .hero { position: relative; border-bottom: 1px solid var(--rule); background: #1b1a17; overflow: hidden; }
+    .hero img { display: block; width: 100%; height: clamp(300px, 48vw, 560px);
+      object-fit: cover; object-position: center 58%; }
+    .hero .cap { position: absolute; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(to top, rgba(14,13,11,.90), rgba(14,13,11,.52) 46%, rgba(14,13,11,.06) 78%, transparent); }
+    .hero .cap .wrap { padding-top: 3.2rem; padding-bottom: 1.5rem; }
+    .hero .kick { font-family: ui-sans-serif, system-ui, sans-serif; font-size: .66rem;
+      letter-spacing: .2em; text-transform: uppercase; color: #E9C489; margin: 0; }
+    .hero h1 { color: #FBF8F1; font-size: clamp(1.9rem, 5vw, 3.5rem); line-height: 1.04;
+      margin: .45rem 0 0; max-width: 20ch; font-weight: 600; letter-spacing: -.018em; }
+    .hero .sub { color: #E2DCD0; font-size: clamp(.9rem, 1.5vw, 1.02rem); margin: .7rem 0 0;
+      max-width: 60ch; line-height: 1.5; }
+    .hero-note { display: block; padding: .5rem 0 0; font-size: .72rem; color: var(--ink-faint); }
+    /* Where the hero carries the title, the page must not print it again. */
+    body.has-hero main > .wrap > h1:first-child,
+    body.has-hero main > .wrap > h1:first-child + .sub { display: none; }
+    /* Phones. The caption block is nearly as tall as the plate, so at 375px the
+       text had covered the whole painting and there was no picture left to see.
+       Give the image more height, take the headline down, and tighten the sub. */
+    @media (max-width: 34rem) {
+      .hero img { height: 26rem; object-position: 42% 60%; }
+      .hero .cap .wrap { padding-top: 1.6rem; padding-bottom: 1.1rem; }
+      .hero h1 { font-size: 1.5rem; line-height: 1.12; max-width: 17ch; }
+      .hero .sub { font-size: .82rem; line-height: 1.45; margin-top: .5rem; }
+      .hero .kick { font-size: .58rem; letter-spacing: .16em; }
+    }
     /* Phones: four full-width stat cards is a great deal of scrolling for
        four numbers. Two across reads better and still fits at 320px. */
     @media (max-width: 34rem) {
@@ -154,21 +206,47 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
     .small { font-size: .85rem; }
   </style>
 </head>
-<body>
-  <header class="masthead"><div class="wrap">
-    <a class="home" href={base + '/'}>The Luwinski Archive</a>
-    <nav class="primary">
-      {nav.map(([href, label]) => (
-        <a href={base + href + '/'} aria-current={here === href ? 'page' : undefined}>{label}</a>
+<body class={hero ? "has-hero" : undefined}>
+  <header class="masthead"><div class="wrap sitein">
+    <a class="brand" href={base + '/'}>The Luwinski <em>Archive</em></a>
+    <nav class="topnav" aria-label="Main">
+      {nav.map(([label, links]) => (
+        <details class="menu">
+          <summary>{label}</summary>
+          <div class="dropdown">
+            {links.map(([h, l]) => (
+              <a href={base + (h ? h + '/' : '/')} class={here === h ? 'on' : undefined}>{l}</a>
+            ))}
+          </div>
+        </details>
       ))}
+      <a class="findbtn" href={base + '/search/'}>Search</a>
     </nav>
+    <details class="drawerbox">
+      <summary>Menu</summary>
+      <div class="drawer">
+        {nav.map(([label, links]) => (
+          <div class="dgrp"><span class="gl">{label}</span>
+            {links.map(([h, l]) => (
+              <a href={base + (h ? h + '/' : '/')} class={here === h ? 'on' : undefined}>{l}</a>
+            ))}
+          </div>
+        ))}
+        <div class="dgrp"><a href={base + '/search/'}>Search</a></div>
+      </div>
+    </details>
   </div></header>
   {hero && (
     <figure class="hero" style="margin:0">
       <img src={hero.src} alt={hero.alt} />
-      <div class="wrap"><figcaption>{hero.caption}</figcaption></div>
+      <div class="cap"><div class="wrap">
+        {hero.kick && <p class="kick">{hero.kick}</p>}
+        <h1>{hero.heading || title}</h1>
+        {(hero.sub || subtitle) && <p class="sub">{hero.sub || subtitle}</p>}
+      </div></div>
     </figure>
   )}
+  {hero && <div class="wrap"><figcaption class="hero-note">{hero.caption}</figcaption></div>}
   <main><div class="wrap">
     <h1>{title}</h1>
     {subtitle && <p class="sub">{subtitle}</p>}
