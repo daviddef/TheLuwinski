@@ -1,60 +1,87 @@
-# Reply 21 — to Ms Mavis Xaba: accept her offer, and consolidate to one thread
+# Reply 21 — to Ms Mavis Xaba
 
 **Status: DRAFTED 16 September 2026. NOT SENT — David to send.**
-
-## Why this goes now
-
-Two of her emails of 15 September are unanswered, and one of them contains an offer worth more than
-anything else currently outstanding: **she will read WLD 2545/1950 herself and report the grounds and
-the outcome.** That is the supervisor of the Reading Room offering to do a lookup at no charge, on
-the one file where Ivone is the plaintiff rather than the defendant.
-
-Her second point is procedural and fair, and the archive should simply accept it. **Six DSAC/DAC
-addresses were used in four days**, across three subject threads and two unrelated families. Two of
-those addresses are on the dead `dac.gov.za` domain and one bounced outright — which is worth saying,
-because from her side it looks like deliberate scattering rather than a stale address list.
-
 **Send as a reply inside thread `1a0a30c59c9c8405`. Do not start a new one.**
+
+## She asked three things. The reply answers all three, in her order, in the first sixty words.
+
+| she asked | the answer |
+|---|---|
+| *"If you would like me to proceed, I can first check TAB, WLD 2545/1950…"* | **Yes. Please do.** |
+| *"…direct your archival enquiries to me directly… keep the correspondence in one email thread"* | **Yes. Agreed, and apologised for.** |
+| *"If you would prefer that the general enquiries address also be copied… I am happy to do so"* | **No — she alone.** She offered that for *his* convenience; declining it removes a step from her day and is the stronger form of the commitment she asked for. |
+
+**And she answered his question** — court files are bound, as the estates are. He asked it twice, on
+15 September at 03:11 and again at 04:11. The reply should acknowledge that she answered it, or she
+will reasonably wonder whether he read either message.
+
+## What the reply deliberately does NOT do
+
+**It does not hand her another list.** She offered to check **one** file — *"I can **first** check
+TAB, WLD 2545/1950"* — and the archive has eight more TAB files it would dearly like read. Sending
+them now, in the same message as an apology for sending too much, would be absurd. **Accept the one,
+say thank you, and let her come back.**
+
+## On the dead domain — what can and cannot be said
+
+- **Provable:** `enquiries@dac.gov.za` bounced on 15 September: *"The Domain Name System (DNS)
+  reported that the recipient's domain does not exist."*
+- **Not provable:** that `archives@dac.gov.za` and `naairs@dac.gov.za` bounced. **No NDR for those
+  was ever received**, which is odd on the same domain, and the honest formulation is *no reply from
+  any of them*, not *they bounced*.
+
+The point is worth one short paragraph, because from her side six addresses in four days looks
+deliberate. It should read as information for her, not as a defence.
 
 ---
 
 **To:** `mavisx@dsac.gov.za`
-**Cc:** `Enquiries2@dsac.gov.za` *(she offered this; keeping it is the polite answer)*
+**Cc:** *(none — see above)*
 **Subject:** Re: Copy request — TAB: WLD 1950/1948, 497/1951, 2368/1951, and MHG 10245/69
 
 ---
 
 Dear Ms Xaba,
 
-Thank you for both of your messages, and yes — **please do look at TAB, WLD 2545/1950**. Your offer
-to tell me what the file is about, with the grounds and the outcome, is worth a great deal to me and
-I am grateful for it. That is the file I would have chosen if I could only have one.
+**Yes please — do go ahead with TAB, WLD 2545/1950.** Thank you for offering; that is genuinely the
+one I would have chosen, and knowing the grounds and the outcome is worth more to me than pages of
+photographs of the others.
 
-**And you are quite right about the emails. I am sorry.** I will keep everything in this thread and
-address it to you from now on.
+**And yes to your second point, with an apology.** Everything from me will come to you, in this
+thread, from now on. **You do not need to copy the general enquiries address on my account** — please
+don't add that to your day. If your own office requires it, of course do as suits you.
 
-It was not deliberate, and I think the explanation is worth one line in case it is useful to you:
-three of the addresses I used are on the **`dac.gov.za`** domain, which I took from the older
-National Archives pages. That domain appears to be dead — `enquiries@dac.gov.za` bounced back to me
-with *"the recipient's domain does not exist"*. So some of what looks like a scatter was me writing
-to addresses that no longer receive anything. **I now have only yours and the general enquiries
-address, and I will use yours.**
+Thank you also for answering what I had asked twice: that the court files are bound like the estates.
+That closes the question, and I won't raise it again.
 
-One consequence of that, which may explain a gap at your end: on 14 September I sent a request to
-`archives@dac.gov.za`, copied to `naairs@dac.gov.za`, about **TAB, MHG 7584/69 — LUWINSKI, Kurt**.
-Both are on the dead domain. **If that request never reached the Reading Room, that is why**, and I
-mention it only so it is not sitting somewhere unanswered. I am not asking you to act on it now.
+One thing that may be useful to you rather than to me. Several of the addresses I used are on the
+**`dac.gov.za`** domain, which I took from the older National Archives pages. **One of them,
+`enquiries@dac.gov.za`, bounced straight back with "the recipient's domain does not exist."** I have
+had no reply from any of the others on that domain either. So some of what must have looked like
+scattering was me writing into a void — which is my fault for trusting a stale page, but it was not
+me asking four people the same question on purpose.
 
-On the bound files, I understand completely and I am not asking you to copy anything. I have taken
-your earlier advice and engaged the private researcher you recommended. She has quoted, and expects
-to be at the Archives on **Tuesday 22 September**, so the photography is in hand and off your desk.
+That has one consequence worth flagging: on 14 September I sent a request about **TAB, MHG 10245/69 —
+WEAR, Henry Robert** to `archives@dac.gov.za`, copied to `naairs@dac.gov.za`. **If that never reached
+the Reading Room, that is why.** I am not asking you to act on it — I mention it only so it is not
+sitting somewhere unanswered with my name on it.
 
-What I would value from you, when it suits, is exactly what you have offered: **what the file says.**
-A note of the grounds and the outcome of WLD 2545/1950 tells me what a photograph of it would take
-weeks to tell me.
+On the bound files generally: I understand, and I am not going to keep asking. I have taken your
+advice and engaged the researcher you recommended, and she expects to be at the Archives on **Tuesday
+22 September**, so the photography is arranged and off your desk entirely.
 
-With thanks for your patience, and for two quick and genuinely useful replies,
+With thanks for two prompt and genuinely useful replies, and for your patience with a correspondent
+who was making more work than he needed to,
 
 David Defranceski
 david.defranceski@gmail.com
 Australia
+
+---
+
+## If she comes back having read 2545/1950
+
+**Do not immediately send the other eight.** Thank her, record what she says in `notes/ivone.md`, and
+let a decent interval pass. If she offers again, take it. The eight TAB files are Anne's job and are
+already in request 20 — **Ms Xaba's value is that she can tell you what is in a file without anyone
+travelling, and that is worth protecting rather than spending.**
