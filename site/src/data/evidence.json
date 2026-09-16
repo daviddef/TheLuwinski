@@ -41,6 +41,14 @@
    "people": 13
   },
   {
+   "file": "castle-nine-children.tsv",
+   "title": "The nine children of George William Castle and Caroline Wallis",
+   "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
+   "kind": "person",
+   "rows": 9,
+   "people": 9
+  },
+  {
    "file": "gazette-wear-sweep.tsv",
    "title": "The gazette sweep for the Wears and for Phyllis",
    "source": "gazettes.africa, 54,313 South African issues",
@@ -187,6 +195,12 @@
      "title": "A match holder's Ancestry tree",
      "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
      "detail": "born: 10 Dec 1886 · born_place: Baldock · died: Jul 1969 · died_place: Hitchin"
+    },
+    {
+     "file": "castle-nine-children.tsv",
+     "title": "The nine children of George William Castle and Caroline Wallis",
+     "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
+     "detail": "n: 3 · born: 1887, baptised 10 APRIL 1887 AT WESTON · source_for_birth: Hertfordshire Baptisms GBPRS/B/71335450/1 · died: not established — see below · note: Father given as GEORGE WILLIAM CASTLE, LABOURER. Married Q4 1909 Hitchin 3A/1171."
     }
    ]
   },
@@ -199,6 +213,12 @@
      "title": "A match holder's Ancestry tree",
      "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
      "detail": "born: 8 May 1891 · born_place: Baldock · died: Jan 1967 · died_place: Aldershot, Hampshire"
+    },
+    {
+     "file": "castle-nine-children.tsv",
+     "title": "The nine children of George William Castle and Caroline Wallis",
+     "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
+     "detail": "n: 5 · born: 1892, Baldock · source_for_birth: GRO index (mother WALLIS); 1901 census aged 9 · died: Jan 1967 · note: Married Walter George Brown."
     }
    ]
   },
@@ -511,6 +531,12 @@
      "title": "A match holder's Ancestry tree",
      "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
      "detail": "born: 28 Nov 1903 · born_place: Baldock · died: 3 Jul 1988 · died_place: Baldock"
+    },
+    {
+     "file": "castle-nine-children.tsv",
+     "title": "The nine children of George William Castle and Caroline Wallis",
+     "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
+     "detail": "n: 9 · born: 1904, Baldock · source_for_birth: GRO index (mother WALLIS); 1921 census, full names · died: 3 July 1988 · note: Step-son of James James in 1921."
     }
    ]
   },
@@ -547,6 +573,12 @@
      "title": "1911 and 1921 censuses, Baldock and Letchworth",
      "source": "RG14/7572 sch 173; RG15/07079 sch 125",
      "detail": "source: 1921 census · reference: RG15 piece 07079, schedule 125 · address: 9 Boscombe Place, Letchworth · date: 19 June 1921 · relationship: STEP-SON [sic — daughter] · note: the Hilda of 1911, full names at last"
+    },
+    {
+     "file": "castle-nine-children.tsv",
+     "title": "The nine children of George William Castle and Caroline Wallis",
+     "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
+     "detail": "n: 8 · born: 1901, Baldock · source_for_birth: GRO index (mother WALLIS); 1921 census, full names · died: 13 March 1985 · note: Step-daughter of James James in 1921."
     }
    ]
   },
@@ -559,6 +591,18 @@
      "title": "A match holder's Ancestry tree",
      "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
      "detail": "born: abt 1889 · born_place: Baldock"
+    }
+   ]
+  },
+  {
+   "name": "Fredrick James Castle",
+   "slug": "fredrick-james-castle",
+   "records": [
+    {
+     "file": "castle-nine-children.tsv",
+     "title": "The nine children of George William Castle and Caroline Wallis",
+     "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
+     "detail": "n: 4 · born: 1889, Baldock · source_for_birth: GRO index (mother WALLIS); 1901 census aged 11 · died: not established · note: The only Castle male line. Absent from England after 1911."
     }
    ]
   },
@@ -634,6 +678,12 @@
      "title": "A match holder's Ancestry tree",
      "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
      "detail": "born: abt 1885 · born_place: Baldock · died: 23 Aug 1939"
+    },
+    {
+     "file": "castle-nine-children.tsv",
+     "title": "The nine children of George William Castle and Caroline Wallis",
+     "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
+     "detail": "n: 2 · born: 1884/85, Baldock · source_for_birth: GRO index (mother WALLIS); 1901 census aged 16 · died: 23 August 1939"
     }
    ]
   },
@@ -1287,6 +1337,18 @@
    ]
   },
   {
+   "name": "Martha Maud Castle",
+   "slug": "martha-maud-castle",
+   "records": [
+    {
+     "file": "castle-nine-children.tsv",
+     "title": "The nine children of George William Castle and Caroline Wallis",
+     "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
+     "detail": "n: 6 · born: 21 July 1895, Baldock · source_for_birth: GRO Q3 1895 Hitchin 3A/561 — MOTHER'S MAIDEN NAME BLANK IN THE INDEX · died: 16 March 1986, Johannesburg · note: Married Henry Robert Wear. Derrick's great-grandmother."
+    }
+   ]
+  },
+  {
    "name": "Martha Maude Castle",
    "slug": "martha-maude-castle",
    "records": [
@@ -1481,6 +1543,12 @@
      "title": "A match holder's Ancestry tree",
      "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
      "detail": "born: 19 Aug 1882 · born_place: Maiden Street, Weston, Herts · died: Oct 1959 · died_place: Hitchin"
+    },
+    {
+     "file": "castle-nine-children.tsv",
+     "title": "The nine children of George William Castle and Caroline Wallis",
+     "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
+     "detail": "n: 1 · born: 19 August 1882, Maiden Street, Weston, Herts · source_for_birth: match holder's tree · died: Oct 1959, Hitchin · note: REGISTERED UNDER HER MOTHER'S MAIDEN NAME, because her parents did not marry until October 1882. THIS IS WHY A SEARCH FOR CASTLE BIRTHS NEVER FOUND HER."
     }
    ]
   },
@@ -1529,6 +1597,12 @@
      "title": "A match holder's Ancestry tree",
      "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
      "detail": "born: 6 Feb 1898 · born_place: Baldock · died: 1900 · died_place: Baldock"
+    },
+    {
+     "file": "castle-nine-children.tsv",
+     "title": "The nine children of George William Castle and Caroline Wallis",
+     "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
+     "detail": "n: 7 · born: Q2 1898, Hitchin · source_for_birth: GRO birth index — ONE ENTRY, READ 17 SEPTEMBER · died: Q4 1900, HITCHIN, AGED TWO · note: *** THIS IS THE ONE WHO DIED. *** GRO death index, one entry, birth year 1898. He is gone before the 1901 census, which is why no census ever showed him."
     }
    ]
   },
@@ -1635,10 +1709,10 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 22,
-  "person_files": 17,
-  "people": 100,
-  "records": 135,
+  "files": 23,
+  "person_files": 18,
+  "people": 102,
+  "records": 144,
   "linked_to_register": 4
  }
 }
