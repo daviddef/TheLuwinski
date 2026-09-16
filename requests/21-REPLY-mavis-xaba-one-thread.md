@@ -52,6 +52,39 @@ needed**.
 **What the table must never do is read as an order form.** Hence: no "please supply", no priority
 numbers, no fee question. Priorities live in request 20 and are Anne's business, not hers.
 
+## Added 16 September, after the letter was drafted and before it was sent
+
+Two things changed after the manifest was written, and because **the letter had not gone**, they
+belong in it rather than in a later message. Folding them in now is not breaking the promise — it is
+making the promise true when it arrives.
+
+**1. NAAIRS went down.** `national.archsrch.gov.za` lost its DNS record entirely on 16 September; the
+`www.` form reaches the CICS gateway, which returns 400 on every path including the front page.
+**This is told to her as information, not as a complaint.** It is NARSSA's own system and she may not
+have been told. It costs this archive nothing and it is the only thing in the letter that is a gift
+rather than an ask.
+
+**2. One question that needs no file pulled.** Ivone de Figueiredo, born Lourenço Marques
+4 March 1924, Portuguese national, married in Johannesburg 1948. **Is there an index entry under
+FIGUEIREDO or MOTA FIGUEIREDO in the naturalisation or alien-registration series at SAB?**
+
+**Why this one and not the rest of request 24:**
+
+- **It is a question, not a file.** The manifest's promise was about *files*, and the sentence was
+  amended from "the only thing I am asking of you" to **"the only file I am asking for"** so that it
+  stays literally true.
+- **It is SAB, not TAB**, so it was never the researcher's to do.
+- **NAAIRS is how this archive would normally have answered it without troubling anybody** — and the
+  letter says exactly that, because it is true and it is the whole justification for asking.
+- **It carries its own off-ramp.** *"If the answer is simply nothing under that surname, that is a
+  genuinely useful answer and I will stop looking down that road."* A question she can close in one
+  word is not an imposition.
+- **And it tells her where to look first — the father, not the daughter** — with the reason given, so
+  she is not sent hunting for a file that the law of the day may have made unnecessary.
+
+**Everything else in request 24 stays held.** The two doubtful references, the OD structural
+question, the catalogue-line files and the four death notices all wait until she has answered.
+
 ## On the dead domain — what can and cannot be said
 
 - **Provable:** `enquiries@dac.gov.za` bounced on 15 September: *"The Domain Name System (DNS)
@@ -96,8 +129,8 @@ that properly. **Below is every Transvaal reference I hold, in one place, so tha
 again working from a fragment of it.**
 
 **I am not asking you to work through this list.** Most of it is already settled or already with the
-researcher. **The only thing I am asking of you is WLD 2545/1950**, which you have kindly offered.
-The rest is here so that you can see the whole shape of what I am doing, and so that nothing arrives
+researcher. **The only file I am asking for is WLD 2545/1950**, which you have kindly offered. The
+rest is here so that you can see the whole shape of what I am doing, and so that nothing arrives
 later looking like a new imposition.
 
 **The Luwinski / Figueiredo marriage — Johannesburg, 1948 to 1957**
@@ -127,6 +160,31 @@ later looking like a new imposition.
 The two groups are two different families. They meet only in one man whose identity is what I am
 trying to establish, and I mention it so that nobody wastes an afternoon looking for a link between
 the surnames. There is none.
+
+**Two things that are not requests for files, and one of them may be more use to you than to me.**
+
+**The first is that NAAIRS appears to be down.** Since this morning, 16 September,
+`national.archsrch.gov.za` has stopped resolving altogether — there is no address record for it at
+all. The `www.` form does resolve, but every page through it, including the front page, comes back
+with the CICS "400 Bad Request" error, so the system is being reached and is refusing. **I mention it
+only because it is your own search system and you may not have been told.** It is not a complaint; I
+have no claim on it.
+
+**The second is a question that needs no file pulled.** My wife's grandmother, **Ivone de Figueiredo,
+was born at Lourenço Marques on 4 March 1924** and was a Portuguese national when she married in
+Johannesburg in 1948. Her parents' names are the one thing this whole search has never been able to
+establish.
+
+**Is there anything at all in the naturalisation or alien-registration series — SAB rather than TAB —
+under the surname FIGUEIREDO or MOTA FIGUEIREDO, for anyone from Portuguese East Africa?** I am
+asking whether an index entry exists, not asking you to read a file. **And it is more likely to be
+her father than her**: as I understand the law before September 1949, a foreign woman who married a
+British subject took his nationality automatically, and she married a Mr de Witt in February 1948 —
+so she may well have had no need to naturalise, and no file. Her father would have.
+
+If the answer is simply "nothing under that surname", that is a genuinely useful answer and I will
+stop looking down that road. **I would normally have checked this on NAAIRS myself rather than ask
+you, which is the only reason I am asking.**
 
 One thing that may be useful to you rather than to me. Several of the addresses I used are on the
 **`dac.gov.za`** domain, which I took from the older National Archives pages. **One of them,

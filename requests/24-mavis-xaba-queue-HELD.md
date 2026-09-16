@@ -76,7 +76,14 @@ second invoice.**
 | TAB MHG 40293 — KOLBE, Frederick Fortunatus Downing, 1918 | **Who does it name as his parents?** If Frederik Fortunatus Kolbe and Elizabeth Johanna du Toit, a question chased across three provinces closes |
 | TAB MHG 3734/46 — DASCHNER, Catherine Mary Sophia, born Booyzen | **Who does it name as her parents?** Already on Anne's booked six, so this is a fallback only |
 
-### Q5 — the alien file for a Portuguese woman from Lourenço Marques. *Added 16 September; the best question on this queue*
+### Q5 — ~~the alien file for a Portuguese woman from Lourenço Marques~~ **MOVED INTO REPLY 21, 16 September**
+
+> **This one is no longer held.** It went into the letter itself, because the letter had not yet been
+> sent and because it is a *question* rather than a file — the manifest's promise was amended from
+> "the only thing I am asking of you" to **"the only file I am asking for"** so that it stays true.
+> It is SAB rather than TAB, so it was never the researcher's; and NAAIRS, which is how this archive
+> would normally have answered it without troubling anybody, is down. The reasoning below stands and
+> is kept for the record.
 
 **Ivone de Figueiredo was born at Lourenço Marques on 4 March 1924 and was a Portuguese national.**
 She married in Johannesburg in 1948. **Her parents' given names are this archive's oldest unsolved
