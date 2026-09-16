@@ -1,0 +1,15 @@
+census	first	last	relationship	sex	age	birth_year	occupation	birth_place
+1861	James	Giddins	Head	Male	46	1815	Agricultural labourer	Baldock, Hertfordshire
+1861	Elizabeth	Giddins	Wife	Female	46	1815	-	Norton, Hertfordshire
+1861	George	Giddins	Son	Male	14	1847	Agricultural labourer	Baldock, Hertfordshire
+1861	John	Giddins	Son	Male	12	1849	Agricultural labourer	Norton, Hertfordshire
+1861	Emma	Giddins	Daughter	Female	6	1855	Scholar	Norton, Hertfordshire
+1871	James	Giddins	Head	Male	57	1814	Ag lab	Baldock, Hertfordshire
+1871	Elizabeth	Giddins	Wife	Female	57	1814	Platting	Norton, Hertfordshire
+1871	George	Castle	Son-in-law	Male	30	1841	Ag lab	Baldock, Hertfordshire
+1871	George	Castle	Grandson	Male	8	1863	Scholar	Baldock, Hertfordshire
+# 1861: 9 Cottages at Norton End Baldock, Norton, Hitchin, Herts. RG9 piece 816, folio 69.
+# 1871: Norton End, Norton, Hitchin, Herts. RG10 piece 1365, folio 27.
+# MARTHA GIDDINGS (1841-1863) is in NEITHER. In 1861 she was 20 and already out of the house;
+# by 1871 she had been dead eight years. Her existence is attested by the 1871 relationships:
+# George Castle is enumerated as SON-IN-LAW and his boy as GRANDSON, which only works through her.

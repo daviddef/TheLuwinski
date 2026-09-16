@@ -29,6 +29,15 @@ AMBIGUOUS = {
     "halsey",    # Mervin Richard Halsey m. Cynthia Wear 1952 — both dead
     "morris",    # Morris Isaac Salkow — dead
     "brown", "browne",  # Walter George Brown m. Agnes Kate Castle — dead
+    # Giddins/Giddings is NOT a coincidence, and that is exactly why it is here.
+    # James Giddins of Norton End, Baldock, b.1815, is Derrick's 3x-great-grandfather,
+    # proved from the 1861 and 1871 censuses on 16 September 2026. TWO LIVING MATCH
+    # HOLDERS CARRY THE SURNAME, at 43.36 and 62.89 cM, both in cluster 12 — which is
+    # consistent with fourth cousins descending from James through Martha's brothers.
+    # THE RULE PROTECTS LIVING PEOPLE, NOT DEAD ONES. Publishing a man born in 1815
+    # does not identify anybody alive; the two match holders remain unnamed on the site
+    # and appear only as cM and cluster. Recorded rather than silently widened.
+    "giddins", "giddings",
     "mary", "thomas", "roberts", "hunter", "cross", "wood", "hall", "ward",
     "johnson", "gray", "collins", "marshall", "cox", "ball", "lord", "carter",
     "payne", "gordon", "graham", "gibson", "scully", "bury", "irons",
