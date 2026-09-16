@@ -137,6 +137,14 @@
    "people": 15
   },
   {
+   "file": "tna-discovery.tsv",
+   "title": "The National Archives Discovery catalogue",
+   "source": "discovery.nationalarchives.gov.uk — citations verified and references found, 17 September 2026",
+   "kind": "ref",
+   "rows": 10,
+   "people": 0
+  },
+  {
    "file": "wear-1851-bermondsey.tsv",
    "title": "1851 census, Salisbury Street, Bermondsey",
    "source": "HO107 piece 1560 folio 212",
@@ -1725,7 +1733,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 25,
+  "files": 26,
   "person_files": 18,
   "people": 102,
   "records": 144,

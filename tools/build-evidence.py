@@ -47,6 +47,7 @@ MANIFEST = {
  "caroline-james-1920-1957.tsv": ([], "Caroline Castle, later James, 1920 to 1957", "GRO indexes; 1939 Register RG101/1598B/017/25", "ref"),
  "litigation.tsv":               (["plaintiff","defendant"], "Transvaal court files", "National Archives of South Africa, WLD and TPD series", "person"),
  "naairs-figueiredo.tsv":        ([], "The NAAIRS index under FIGUEIREDO", "National Archives of South Africa", "ref"),
+ "tna-discovery.tsv":            ([], "The National Archives Discovery catalogue", "discovery.nationalarchives.gov.uk — citations verified and references found, 17 September 2026", "ref"),
  "castle-frederick-soldier.tsv":  ([], "Frederick James Castle, soldier — 1901 to the 1920s", "1901 and 1911 censuses; TNA WO 329/1120 and WO 372/4", "ref"),
  "castle-1911-meeanee-barracks.tsv": ([], "Frederick Castle in barracks, 1911", "1911 census RG14 piece 10304 schedule 9999, Meeanee Barracks, Colchester — read from the original image", "ref"),
  "castle-nine-children.tsv":     (["name"], "The nine children of George William Castle and Caroline Wallis", "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192", "person"),

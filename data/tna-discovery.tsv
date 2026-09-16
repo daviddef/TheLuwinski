@@ -1,0 +1,22 @@
+# THE NATIONAL ARCHIVES DISCOVERY CATALOGUE — first used 17 September 2026, at David's prompting,
+# after 219 commits that cited Kew references without once opening Kew's catalogue.
+# Free, no account, answers JSON, and describes 2,500+ other archives besides its own.
+purpose	reference	what the catalogue says	what it changes
+VERIFY	WO 392/15	"Section 5: South Africa (Union Defence Forces)." Dated 1945 Apr.	THIS ARCHIVE'S CITATION WAS VAGUER THAN THE RECORD. It was published as "War Office Directorate of Prisoners of War lists 1943 to 1945". The piece is specifically THE SOUTH AFRICAN SECTION, which is exactly the claim made about Leonard Wear - and the catalogue, not the index, now says so.
+VERIFY	WO 392/21	"Section 1: British Army. Section 2: Australian. Section 3: Canadian. Section 4: New Zealand. Section 5: SOUTH AFRICAN ARMY. Section 6: ..." Dated 1943 Aug.	the same, for the earlier volume
+VERIFY	WO 329/1120	"Scottish Rifles (Cameronians) other ranks: medal rolls D/103B3: D/103B4: D/103B5: D/103B6. PAGES 312-622. British War Medal and Victory Medal."	confirms the medal roll cited for Fred James Castle, and adds the page range
+VERIFY	WO 372/4	"Medal index cards: CAMPBELL H - COOKE W E. (Described and available to download at item level)."	CASTLE falls inside that alphabetical range, and the series is ITEM-LEVEL - which is how the next line was found
+FIND	WO 372/4/50790	"Medal card of Castle, Fred J. Corps Regiment No Rank SCOTTISH RIFLES 10061 SERJEANT. SCOTTISH RIFLES 7815432 SERJEANT. MACHINE GUN CORPS 195568 SERJEANT."	*** THE EXACT ITEM REFERENCE, AND KEW'S OWN WORDS FOR ALL THREE SERVICE NUMBERS. *** Findmypast gave only "WO 372/4" and printed the Discovery id D1734236 on its own transcript. THIS ARCHIVE HAD THE ID FOR HOURS AND NEVER FOLLOWED IT.
+FIND	DP/12/1/14	"Register of baptisms, 1880-1895" — BALDOCK, ST MARY THE VIRGIN PARISH RECORDS, Hertfordshire Archives and Local Studies	THE REGISTER THIS ARCHIVE HAS BEEN GESTURING AT ALL DAY, now an orderable reference. Covers George William 1885, Fredrick James 1889, Agnes Kate 1892.
+FIND	DP/12/1/15	"Register of baptisms, 1895-1910" — the same parish	Covers MARTHA MAUD, baptised 22 September 1895, and SIDNEY CHARLES 1898, FLORENCE 1901, ERNEST 1904
+VERIFY	RG 14 · RG 15 · RG 101 · BT 27 · HO 396	all resolve, all describe what this archive said they describe	no correction needed
+SEARCH	LUWINSKI	COUNT 0	NOTHING IN ANY BRITISH ARCHIVE DISCOVERY DESCRIBES. See the bounded negative for what that does and does not mean.
+SEARCH	LEIBHOLZ	COUNT 16	NONE OF THEM OURS. Gerhard Leibholz, Bonhoeffer's brother-in-law, at Lambeth Palace Library and The London Archives; HO 334/233/3860, a 1948 naturalisation for Hermann Gerhard Leibholz; HO 405/33425 for an H Leibholz born 15/11/1901; HO 396/53/16 for TOBIAS LEIBHOLZ, born 04/02/1906 at BRESLAU. Ours were born at Schubin in 1877, 1884 and 1887 and at Hammerstein in 1884, and were deported from Berlin rather than interned in Britain.
+#
+# A REFINEMENT THAT CAME OUT OF LOOKING, AND IT MATTERS FOR THE BAPTISMS:
+# the 1901 census gives the George W Castle household's ECCLESIASTICAL PARISH as "ST NICHOLAS NORTON",
+# not Baldock - while the unrelated James Castle household three schedules away is under "BALDOCK
+# ST MARY THE VIRGIN WITH BYGRAVE". Norton End is in Norton parish. SO THE CASTLE BAPTISMS OF THE
+# 1890s MAY BE IN NORTON'S REGISTER RATHER THAN BALDOCK'S, and Ada May's was at WESTON, a third parish.
+# DISCOVERY DOES NOT SURFACE NORTON'S REGISTERS at any phrasing tried, so that is a question for
+# Hertfordshire Archives directly rather than a reference this archive can quote yet.
