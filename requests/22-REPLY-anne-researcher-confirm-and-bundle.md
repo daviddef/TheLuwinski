@@ -167,6 +167,24 @@ you actually did.** If it changes the invoice, send me a revised one and I will 
 - **Nothing in groups B or C is connected to the Booyzens.** Three unrelated families, one depot, one
   visit. Please do not spend a moment looking for a link between the surnames; there is none.
 
+**One question, and please do not spend any time on it — I want an answer, not a search.**
+
+You will be in the SAB reading room anyway for A7. **Is there such a thing as a naturalisation or
+alien-registration register at SAB that can be consulted by name at the desk?** I am not asking you
+to look anybody up. I am asking whether the finding aid exists, because I cannot tell from here.
+
+**The reason it has to be asked at the desk rather than online:** I have just established that the
+online index does not list naturalisation files at all. **I took a man I can prove naturalised** —
+his application is printed in the Union Gazette of 20 February 1942 — **and searched for him. His
+naturalisation file is not in the index either.** So nobody can tell from outside the building
+whether these papers survive.
+
+Two people I am interested in: a Portuguese woman born at Lourenço Marques in 1924 who married in
+Johannesburg in 1948, and a German who arrived in 1933 and died in Johannesburg in 1968 without, so
+far as I can tell, ever becoming South African. **If there is a naturalisation register or a card
+index at SAB that can be consulted by name, I would like to know it exists. If there is not, that is
+a perfectly good answer and saves me months.**
+
 **Two small things for Tuesday, neither of them worth delaying anything:**
 
 - **MHG 52653 — BOOYZEN, JACOBUS NICHOLS, 1923.** You said not to worry that the year does not
