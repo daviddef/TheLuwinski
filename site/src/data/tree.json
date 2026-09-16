@@ -2,76 +2,167 @@
   "title": "The tree",
   "dek": "Derrick's ancestry as it now stands, with the strength of every link stated on the link itself.",
   "legend": [
-    { "k": "proved", "label": "Proved", "what": "A document names the person and the relationship." },
-    { "k": "inferred", "label": "Inferred", "what": "Strongly indicated by DNA, by a sibship or by a chain of records, but no single document says it outright." },
-    { "k": "unknown", "label": "Unknown", "what": "An open question. Named here so the gap is visible rather than absent." },
-    { "k": "excluded", "label": "Excluded", "what": "Tested and ruled out. Kept on the tree because removing it would hide the work." }
+    {
+      "k": "proved",
+      "label": "Proved",
+      "what": "A document names the person and the relationship."
+    },
+    {
+      "k": "inferred",
+      "label": "Inferred",
+      "what": "Strongly indicated by DNA, by a sibship or by a chain of records, but no single document says it outright."
+    },
+    {
+      "k": "unknown",
+      "label": "Unknown",
+      "what": "An open question. Named here so the gap is visible rather than absent."
+    },
+    {
+      "k": "excluded",
+      "label": "Excluded",
+      "what": "Tested and ruled out. Kept on the tree because removing it would hide the work."
+    }
   ],
   "generations": [
     {
       "n": "1",
       "label": "Derrick",
       "people": [
-        { "name": "Lynn Derrick Luwinski", "dates": "Living", "place": "", "status": "proved",
-          "how": "Named only. No dates, no age, nothing that could be worked backwards into one — the archive's standing rule for anyone alive." }
+        {
+          "name": "Lynn Derrick Luwinski",
+          "dates": "Living",
+          "place": "",
+          "status": "proved",
+          "how": "Named only. No dates, no age, nothing that could be worked backwards into one — the archive's standing rule for anyone alive."
+        }
       ]
     },
     {
       "n": "2",
       "label": "His parents",
       "people": [
-        { "name": "Leonard Aubrey Robert Wear", "dates": "b. 1917, Hitchin · d. 1973 or 1979", "place": "Hitchin → Johannesburg", "status": "inferred",
-          "how": "THE WEAKEST LINK ON THE TREE, AND THE MOST IMPORTANT. The DNA proves descent from Henry Robert Wear and Martha Maud Castle as a couple — 253 cM in twelve regions no Castle cousin shares. The birth index gives that couple two sons: one thirty-one in June 1948 and one eleven. NO DOCUMENT YET NAMES LEONARD AS ANYBODY'S FATHER. His death year is itself unresolved: 1973 has failed three separate tests and 1979 rests on a single transcription." },
-        { "name": "Ivone de Figueiredo", "dates": "b. 4 March 1924, Lourenço Marques · d. Porto", "place": "Mozambique → Johannesburg → Portugal", "status": "proved",
-          "how": "Recorded under six spellings of her maiden surname, three forenames and five married names. Married Johannes Antonie Oelofse de Witt (Feb 1948), Kurt Luwinski (June 1948) and Morris Isaac Salkow (Feb 1953)." },
-        { "name": "Kurt Israel Luwinski", "dates": "b. 11 May 1912 · d. 15 December 1968, Johannesburg", "place": "East Prussia → Johannesburg", "status": "excluded",
-          "how": "Ivone's husband when Derrick was born, and not his biological father. EXCLUDED TWICE OVER BY DNA: 0.0% Ashkenazi where a quarter would be required, and a Y haplogroup, R-S11477, that is North Sea rather than Ashkenazi. He stays on the tree because he is the reason the question was ever asked." }
+        {
+          "name": "Leonard Aubrey Robert Wear",
+          "dates": "b. 1917, Hitchin · d. 1973 or 1979",
+          "place": "Hitchin → Johannesburg",
+          "status": "inferred",
+          "how": "THE WEAKEST LINK ON THE TREE, AND THE MOST IMPORTANT. The DNA proves descent from Henry Robert Wear and Martha Maud Castle as a couple — 253 cM in twelve regions no Castle cousin shares. The birth index gives that couple two sons: one thirty-one in June 1948 and one eleven. NO DOCUMENT YET NAMES LEONARD AS ANYBODY'S FATHER. His death year is itself unresolved: 1973 has failed three separate tests and 1979 rests on a single transcription."
+        },
+        {
+          "name": "Ivone de Figueiredo",
+          "dates": "b. 4 March 1924, Lourenço Marques · d. Porto",
+          "place": "Mozambique → Johannesburg → Portugal",
+          "status": "proved",
+          "how": "Recorded under six spellings of her maiden surname, three forenames and five married names. Married Johannes Antonie Oelofse de Witt (Feb 1948), Kurt Luwinski (June 1948) and Morris Isaac Salkow (Feb 1953)."
+        },
+        {
+          "name": "Kurt Israel Luwinski",
+          "dates": "b. 11 May 1912 · d. 15 December 1968, Johannesburg",
+          "place": "East Prussia → Johannesburg",
+          "status": "excluded",
+          "how": "Ivone's husband when Derrick was born, and not his biological father. EXCLUDED TWICE OVER BY DNA: 0.0% Ashkenazi where a quarter would be required, and a Y haplogroup, R-S11477, that is North Sea rather than Ashkenazi. He stays on the tree because he is the reason the question was ever asked."
+        }
       ]
     },
     {
       "n": "3",
       "label": "Grandparents",
       "people": [
-        { "name": "Henry Robert Wear", "dates": "b. Q3 1889, St Olave Bermondsey · d. 11 September 1969, Johannesburg", "place": "Bermondsey → Watford → Hitchin → Johannesburg", "status": "proved",
-          "how": "Birth index vol 1D p230. Hertfordshire Regiment, service no. 3010. Sailed London–Cape on the Durban Castle, 5 April 1939, occupation machine minder. Buried West Park." },
-        { "name": "Martha Maud Castle", "dates": "b. 1895 · d. 1986, Johannesburg", "place": "Baldock → Letchworth → Johannesburg", "status": "proved",
-          "how": "Married Henry Robert Wear at Hitchin, Q4 1914. Sailed London–Durban on the Dunvegan Castle, 10 August 1939, with four children. Buried West Park, 16 March 1986." },
-        { "name": "Ivone's father and mother", "dates": "", "place": "Portuguese East Africa", "status": "unknown",
-          "how": "THE OLDEST UNSOLVED QUESTION IN THIS ARCHIVE. Their surnames are known from the 1948 divorce file — she is recorded as born MOTA FIGUEIREDO — but not their given names. Her 1924 Lourenço Marques birth registration and her Porto death record would each name both outright." }
+        {
+          "name": "Henry Robert Wear",
+          "dates": "b. Q3 1889, St Olave Bermondsey · d. 11 September 1969, Johannesburg",
+          "place": "Bermondsey → Watford → Hitchin → Johannesburg",
+          "status": "proved",
+          "how": "Birth index vol 1D p230. Hertfordshire Regiment, service no. 3010. Sailed London–Cape on the Durban Castle, 5 April 1939, occupation machine minder. Buried West Park."
+        },
+        {
+          "name": "Martha Maud Castle",
+          "dates": "b. 1895 · d. 1986, Johannesburg",
+          "place": "Baldock → Letchworth → Johannesburg",
+          "status": "proved",
+          "how": "Married Henry Robert Wear at Hitchin, Q4 1914. Sailed London–Durban on the Dunvegan Castle, 10 August 1939, with four children. Buried West Park, 16 March 1986."
+        },
+        {
+          "name": "Ivone's father and mother",
+          "dates": "",
+          "place": "Portuguese East Africa",
+          "status": "unknown",
+          "how": "THE OLDEST UNSOLVED QUESTION IN THIS ARCHIVE. Their surnames are known from the 1948 divorce file — she is recorded as born MOTA FIGUEIREDO — but not their given names. Her 1924 Lourenço Marques birth registration and her Porto death record would each name both outright."
+        }
       ]
     },
     {
       "n": "4",
       "label": "Great-grandparents",
       "people": [
-        { "name": "Robert Wear", "dates": "b. c. 1859, Bermondsey · d. Q1 1890, St Olave Southwark, aged 31", "place": "Bermondsey", "status": "proved",
-          "how": "Married Emma Hawkins Q4 1881, St Olave Southwark, vol 1D p455. Died vol 1D p141 — six months after his son was born. The boy never knew him." },
-        { "name": "Emma Hawkins", "dates": "b. 1859, Aldenham, Hertfordshire", "place": "Aldenham → London → Watford", "status": "proved",
-          "how": "A widow at thirty-two. By April 1891 she is back in Hertfordshire with her three children, in her brother's house at 44 Ebury Road, Watford. SHE IS THE REASON THIS FAMILY WAS EVER IN HERTFORDSHIRE." },
-        { "name": "Martha Maud Castle's parents", "dates": "", "place": "Hertfordshire", "status": "unknown",
-          "how": "Thin. The Castle side is carried by the DNA — the Castle cousins are real and matched — but her own parents have not been established from documents." }
+        {
+          "name": "Robert Wear",
+          "dates": "b. c. 1859, Bermondsey · d. Q1 1890, St Olave Southwark, aged 31",
+          "place": "Bermondsey",
+          "status": "proved",
+          "how": "Married Emma Hawkins Q4 1881, St Olave Southwark, vol 1D p455. Died vol 1D p141 — six months after his son was born. The boy never knew him."
+        },
+        {
+          "name": "Emma Hawkins",
+          "dates": "b. 1859, Aldenham, Hertfordshire",
+          "place": "Aldenham → London → Watford",
+          "status": "proved",
+          "how": "A widow at thirty-two. By April 1891 she is back in Hertfordshire with her three children, in her brother's house at 44 Ebury Road, Watford. SHE IS THE REASON THIS FAMILY WAS EVER IN HERTFORDSHIRE."
+        },
+        {
+          "name": "George Castle × Caroline Walls",
+          "dates": "both b. 1863 · married 1883",
+          "place": "Baldock and Weston, Hertfordshire",
+          "status": "proved",
+          "how": "CORRECTED 16 September. An earlier version of this page had them as UNKNOWN, which was simply wrong — this archive established them from the censuses months ago and the error was mine in building the page. George Castle, born Baldock 1863, a farm labourer and later a labourer in the Baldock brewery; Caroline, born Weston 1863, four miles off. The 1901 and 1911 censuses have them at Norton End, Norton, and then at St Mary's Cottages by the church yard in Baldock, with Caroline's widowed father Joseph, 84, living with them. HER SURNAME IS RECORDED BOTH AS WALLS AND AS WALLIS — see the names page."
+        }
       ]
     },
     {
       "n": "5",
       "label": "Great-great-grandparents",
       "people": [
-        { "name": "William Wear", "dates": "b. c. 1823, Newington, Surrey", "place": "Jamaica Road, Bermondsey", "status": "proved",
-          "how": "HARNESS MAKER. In 1871 he heads a house in which the three older sons are all at the same trade and Robert, at twelve, is still a scholar." },
-        { "name": "Sarah Bloom", "dates": "b. c. 1822, Bermondsey", "place": "Jamaica Road, Bermondsey", "status": "proved",
-          "how": "Her maiden name is in no census — a married woman's never is. Robert's birth registration gives the mother's maiden name as BLOOM, and a seventeen-year-old niece called Sarah Ann Bloom is in the house on census night. Two records confirming each other unasked." },
-        { "name": "John Hawkins", "dates": "b. c. 1820, Aldenham", "place": "The Red Lion Cottages, Aldenham", "status": "proved",
-          "how": "AGRICULTURAL LABOURER. Eight in the household in 1871, every one of them born in the same parish." },
-        { "name": "Emma Hawkins", "dates": "b. c. 1822, Aldenham", "place": "The Red Lion Cottages, Aldenham", "status": "proved",
-          "how": "Her daughter Emma, twelve and a scholar in 1871, would marry in London, bury a husband there, and come home." }
+        {
+          "name": "William Wear",
+          "dates": "b. c. 1823, Newington, Surrey",
+          "place": "Jamaica Road, Bermondsey",
+          "status": "proved",
+          "how": "HARNESS MAKER. In 1871 he heads a house in which the three older sons are all at the same trade and Robert, at twelve, is still a scholar."
+        },
+        {
+          "name": "Sarah Bloom",
+          "dates": "b. c. 1822, Bermondsey",
+          "place": "Jamaica Road, Bermondsey",
+          "status": "proved",
+          "how": "Her maiden name is in no census — a married woman's never is. Robert's birth registration gives the mother's maiden name as BLOOM, and a seventeen-year-old niece called Sarah Ann Bloom is in the house on census night. Two records confirming each other unasked."
+        },
+        {
+          "name": "John Hawkins",
+          "dates": "b. c. 1820, Aldenham",
+          "place": "The Red Lion Cottages, Aldenham",
+          "status": "proved",
+          "how": "AGRICULTURAL LABOURER. Eight in the household in 1871, every one of them born in the same parish."
+        },
+        {
+          "name": "Emma Hawkins",
+          "dates": "b. c. 1822, Aldenham",
+          "place": "The Red Lion Cottages, Aldenham",
+          "status": "proved",
+          "how": "Her daughter Emma, twelve and a scholar in 1871, would marry in London, bury a husband there, and come home."
+        }
       ]
     },
     {
       "n": "6",
       "label": "Above that",
       "people": [
-        { "name": "William Wear's parents · Sarah Bloom's parents · the elder Hawkinses' parents", "dates": "born c. 1790–1800", "place": "Newington · Bermondsey · Aldenham", "status": "unknown",
-          "how": "ALL BORN BEFORE CIVIL REGISTRATION BEGAN IN 1837. From here it stops being an index problem and becomes a parish-register one — a different kind of search, in a different kind of archive." }
+        {
+          "name": "William Wear's parents · Sarah Bloom's parents · the elder Hawkinses' parents",
+          "dates": "born c. 1790–1800",
+          "place": "Newington · Bermondsey · Aldenham",
+          "status": "unknown",
+          "how": "ALL BORN BEFORE CIVIL REGISTRATION BEGAN IN 1837. From here it stops being an index problem and becomes a parish-register one — a different kind of search, in a different kind of archive."
+        }
       ]
     }
   ]
