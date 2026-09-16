@@ -44,14 +44,28 @@ deeds registry indexes ante-nuptial contracts by the parties, not by the date.
 register at full resolution. **It is the most important of the three, because it is the only one that
 names Leonard.**
 
-## What the reply does NOT do
+## REVERSED 16 September, on David's question: the full list goes now
 
-**It does not add the eight TAB court files, the Lerena files, or the Booyzen OD and CJC items.**
-She is going on Tuesday for a defined job she has priced. **The moment to widen it is after she comes
-back, when she has said how the first day went** — and she has already agreed in principle.
+**An earlier version of this rewrite held all nineteen other references back for a second visit**, on
+the reasoning that she had priced a defined job and should not be overloaded. **David asked whether
+everything from the other sessions was in the letter. It was not, and holding it back was wrong.**
 
-**And it does not haggle.** The rate is hers, she explained how she arrived at it, and she capped her
-own downside unprompted.
+**Her own words settle it:** *"I travel to Pretoria to do this assignment so I would like to do it
+all in one go, so that I am not driving up and down."* **The drive is inside the R2,850 first file.**
+Every reference held back for a second visit therefore costs a second R2,850 and a second day — and
+she said plainly she would rather not.
+
+**So the letter now carries all three sessions' lists**, in groups, in priority order, explicitly
+cuttable from the bottom, with an offer to accept a revised invoice. **That is not overloading her.
+It is what her own pricing rewards and what she asked for.**
+
+**What protects her is not withholding work — it is the three warnings**, which matter more than the
+additions: the court files have no volume numbers and should be abandoned after ten minutes; the OD
+items may be bound and are hers to skip; and the three families are unrelated, so nobody should waste
+an afternoon looking for a link.
+
+**And it still does not haggle.** The rate is hers, she explained how she reached it, and she capped
+her own downside unprompted.
 
 ---
 
@@ -95,11 +109,63 @@ I have ever had.** The other two are useful but not urgent.
 All three were registered in Johannesburg, and all three marriages are recorded on the civil
 registers as entered into *with* an antenuptial contract, so the deeds should exist.
 
-**On everything else — let us do exactly what you proposed.** The six files and your free seventh on
-Tuesday, and nothing more. You said "let's do the 6, and it will go well," and I think you are right.
-**I do have more of the same kind waiting**, but it can sit until you have been once and told me how
-the day went. I would rather you saw one of these files before either of us decides how many there
-should be.
+**On everything else — you said you would rather do it all in one go, and I think you are right.**
+
+You wrote that you travel up to Pretoria for this and would rather not drive up and down. **That
+changes what I should be asking you for.** If the drive is in the first file and everything after it
+is charged by the work, then holding my other references back for a second visit costs us both a
+second journey for no reason.
+
+**So here is everything I have, in priority order, and it is meant to be cut from the bottom.** I am
+not expecting all of it. **Take what the day allows, stop when it is done, and invoice me for what
+you actually did.** If it changes the invoice, send me a revised one and I will pay that instead.
+
+**The seven already agreed come first and nothing below displaces them.**
+
+**GROUP A — the same Booyzen family, same depot**
+
+| | reference | what I want |
+|---|---|---|
+| A1 | **TAB MHG 40293** — KOLBE, Frederick Fortunatus Downing, 1918 | death notice only |
+| A2 | **TAB WLD 302/1903** — divorce, Jan Gerhardus Lodewicus BOOYSEN v Antonetta Petronella Magdalena born SNYMAN | summons and any order |
+| A3 | **TAB OD OR7499/99** (and if quick OR262/98, OR6919/98) | **the signature at the foot only** — I need to see whether he signs his name in full |
+| A4 | **TAB CJC vol 907, ref 104** — "Claims for compensation burghers. Marico. GL Booyzen", 1904 | the claim form: full name, farm, field-cornetcy |
+| A5 | **TAB OD OR2037/99** (with OR19199/98, OR19484/98) | **the signature only** — is "DS. BOOYSEN" initials or the Dutch *Ds.*? |
+| A6 | **TAB MHG 2703/63** — DASCHNER, William Herman | death notice only |
+| A7 | **SAB VWR 2, B645/8/38**, 1937 | one page — whatever states ages or relationship. **Different depot, same building** |
+
+**GROUP B — a different family, the Wears and Luwinskis. Courts, not estates.**
+
+| | reference | what I want |
+|---|---|---|
+| B1 | **TAB WLD 2026/1951** — Phyllis Agnes Wear born Robertson v Leonard Aubrey Robert | the summons and any annexures |
+| B2 | **TAB WLD 2960/1962** — Marjorie Eileen Wear formerly Dunlop born Walker v Leonard Aubrey Robert | the same |
+| B3 | **TAB WLD 185/1949** — Marjorie Eileen Dunlop born Walker v Robert John | the summons |
+| B4 | **TAB WLD 790/1957** — Leonard Aubrey Robert Wear v Phyllis Agnes Norquoy | the summons |
+| B5 | **TAB WLD 978/1960** — Mawthane Dabeah Kwele v L. A. R. Wear | the summons |
+| B6 | **TAB WLD 2225/1953** — Morris Isaac Salkow v Ivonne born de Figuerido | the summons |
+| B7 | **TAB MHG 3632/50** — LONGHURST, Aubrey Leonard | death notice only. **Lowest of this group** |
+
+**GROUP C — a third family, the Lerenas. All TAB.**
+
+| | reference | what I want |
+|---|---|---|
+| C1 | **TAB TPD 1367/1980** — Glynnis Margaret Lerena born Bolton v Anton Armando Lerena | particulars of claim and the final order. **Not the interlocutory papers** |
+| C2 | **TAB TPD 1248/1979** — Ricardo Paul Lerena v Anne Margaret born Corbett | the same |
+| C3 | **TAB MHG 1518/73** — LERENA, Rogue Luis Armando | **I already have the death notice — please do not photograph it again.** The will, and the rest of the file |
+| C4 | **TAB MHG 6746/71** — LERENA, Nuno Fernando | same: **the death notice is already in hand**, the rest is not |
+| C5 | **TAB WLD 8043/77** — Stadium Timber & Hardware v Anton Lerena | the summons only, for an address and a date |
+
+**THREE WARNINGS, and they matter more than the additions.**
+
+- **The court files in groups B and C have no volume number** — the index gives only a case number
+  and a year. The estates pull cleanly on their MHG numbers; the court files may need a volume traced
+  at the depot. **If a volume is not obvious within ten minutes, please leave that one and move on.**
+- **The OD items in A3 and A5 are correspondence-register numbers.** I do not know whether they pull
+  as separate items or sit inside bound volumes. **If they are awkward, skip them — your judgement on
+  the day is better than mine from here.**
+- **Nothing in groups B or C is connected to the Booyzens.** Three unrelated families, one depot, one
+  visit. Please do not spend a moment looking for a link between the surnames; there is none.
 
 **Two small things for Tuesday, neither of them worth delaying anything:**
 
