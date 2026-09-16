@@ -28,3 +28,21 @@ step	year	source	reference	what it says
 # AND NO 1914 OR 1914-15 STAR. A Star was awarded for entering a theatre of war before the end of
 # 1915, and the 2nd Battalion went to France in November 1914. Either he was not with them, or he was
 # on home or garrison service until 1916, or the Star roll simply has not been searched. It has not.
+#
+# WHERE HE IS NOT — the army and overseas registers, swept 17 September 2026, with controls.
+# These are the registers a soldier of the 1920s would appear in instead of the ordinary
+# General Register Office series, and they are indexed separately from it.
+set	searched	result	control
+British Armed Forces And Overseas DEATHS AND BURIALS	CASTLE, forename FRED*, all ten results opened or accounted for	NO SCOTTISH RIFLES AND NO NUMBER 10061. The nearest by name is FREDERICK J CASTLE, died 1917, and he is PRIVATE 47783 OF THE NORTHUMBERLAND FUSILIERS, buried at Roclincourt Valley Cemetery, France. The others are RAF and Naval deaths of 1942 to 1944 and an Ionian Islands death before 1864.	the set returns results for other Castles, and the war-death series is complete for 1914-1921
+British Armed Forces And Overseas BANNS AND MARRIAGES	CASTLE, all 59 results read across three pages	NOT ONE FRED, FREDERICK OR FREDK. The Castles in that set marry at Malta, Kolar, Istanbul, Singapore, Italy, Aldershot and Johannesburg, and none of them is ours.	SEARCHED JOHN SMITH IN THE SAME SET FIRST: 251 results, from Lisbon in 1726 to Calcutta in 1769 onward. THE SET IS REAL AND IT WAS POINTED AT THE RIGHT PLACE.
+British Army service records WO 363 and WO 364	CASTLE, forename FRED*, all 78 results read	no Scottish Rifles, no Cameronians, no 10061	see the bounded negative: these series hold men whose service ENDED BY ABOUT 1920, so they cannot contain him
+#
+# WHAT THE ABSENCES ADD UP TO, STATED CAREFULLY.
+# HE DID NOT DIE IN THE WAR - the medal index card gives him 7815432, a post-1920 number.
+# HE DID NOT DIE ON ARMY SERVICE ABROAD UNDER THAT NAME, and he did not marry in an army
+# chapel abroad under it either. He is in no English census after 1911, no 1939 Register,
+# and no English death index.
+# THE HONEST READING IS THAT HE LEFT AND DID NOT COME BACK, and that the record of the rest
+# of his life is in whatever country he ended in - which this archive has not identified.
+# THE ONE DOCUMENT THAT WOULD SAY is the service record, and it is with the Ministry of
+# Defence rather than at Kew, because he was still serving when the others were closed.
