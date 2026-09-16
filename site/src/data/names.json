@@ -194,10 +194,34 @@
       "unique": "Nothing, anywhere. Invented spellings that no clerk ever made."
     },
     {
-      "form": "LUWENSKY · LUWINSKA · LUWINSKE · LUWINSKIE · LUVINSKI · LUBINSKI · LUWINZKI · LUWINSCHI · LOWINSKI · LAWINSKI",
-      "naairs": "0",
+      "form": "LAWINSKI",
+      "naairs": "—",
+      "gendb": "3",
+      "unique": "A REAL MAN, AND NOT OURS. Israel Blogos Lawinski, suing Georg Marthinus Kleynhans in the Transvaal in 1903 — TAB ZTPD 8/678, 888/1903. Twenty-five years before Kurt was born and in the wrong court. Excluded."
+    },
+    {
+      "form": "LUBINSKI",
+      "naairs": "—",
+      "gendb": "3",
+      "unique": "Also real, also not ours. Erich Lubinski's estate TAB MHG 4010/73, and Johanna born Schaefer, 1922–1992. No connection offered or found."
+    },
+    {
+      "form": "LUWINSK (truncated stem)",
+      "naairs": "—",
+      "gendb": "9",
+      "unique": "Returns the Luwinski set plus nothing new — the stem search is a superset, not a discovery."
+    },
+    {
+      "form": "MOTTA · FIGUEIRA",
+      "naairs": "—",
+      "gendb": "324 · 164",
+      "unique": "NOT SEARCHED THROUGH, and said so plainly. Both are common surnames in their own right rather than misspellings of hers, and both exceeded the harvest cap. Listed so that the gap is visible rather than silently absent — MOTA is one of her recorded names and MOTTA is one letter from it."
+    },
+    {
+      "form": "LUWENSKY · LUWINSKA · LUWINSKE · LUWINSKIE · LUVINSKI · LUWINZKI · LUWINSCHI · LOWINSKI · LUWINSKII · LUWANSKI · LUWINSKIJ · LIWINSKI",
+      "naairs": "—",
       "gendb": "0",
-      "unique": "Nothing. The Luwinski name turns out to corrupt in only two directions, not ten."
+      "unique": "Nothing. Twelve invented spellings that no clerk ever made."
     }
   ]
 }
