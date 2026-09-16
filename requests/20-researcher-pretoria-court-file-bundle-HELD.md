@@ -56,6 +56,34 @@ a connection between them. There is none, except the man this archive is trying 
 for the divorces, **the summons**. A bound file photographed cover to cover costs more and says less.
 If pages have to be chosen, choose those.
 
+## WHERE THE EIGHT ACTUALLY GO — settled 16 September
+
+**To Anne, not to Ms Xaba.** They are Tier B of the appendix to reply 22 and they travel on the
+22 September visit if the day allows.
+
+**Why not Ms Xaba, when she has just offered to read a file and report what is in it?**
+
+Because that offer was for **one** file, phrased as *"I can **first** check TAB, WLD 2545/1950"*, and
+it arrived in the same exchange as a request to stop sending her enquiries through four addresses at
+once. **Handing her eight more would answer a courtesy with an imposition.** Her value to this
+archive is precise and unusual: *she can tell you what is in a file without anybody travelling.* That
+is worth protecting rather than spending in one go.
+
+**The division is therefore:**
+
+| | |
+|---|---|
+| **Ms Xaba** | *what a file says.* One at a time, in her thread, when she offers |
+| **Anne** | *photographs of specific bound files.* Paid, commissioned, and already under way |
+
+**And she is told that more is coming.** Reply 21 now carries one sentence saying the research covers
+several connected lines, that some will have Transvaal records, and that all of it will come to her
+in one thread, one enquiry at a time. **She learns the shape of it now rather than meeting a fourth
+family in a fortnight.**
+
+*What reply 21 does not do is name those lines or list a single file.* She asked for less
+correspondence, not more detail.
+
 ## Payment and sequencing
 
 Rates are unknown — that is precisely what the 14 September brief asked and what has not come back.

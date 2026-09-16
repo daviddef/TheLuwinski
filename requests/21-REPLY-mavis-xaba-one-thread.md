@@ -15,6 +15,22 @@
 15 September at 03:11 and again at 04:11. The reply should acknowledge that she answered it, or she
 will reasonably wonder whether he read either message.
 
+## Two changes made on David's instruction, 16 September
+
+**"Australia" is out of the signature.** It stays out of the body too — the letter never needed it;
+she knows where he is and the previous messages said so.
+
+**And the letter now states, in one sentence, that more research is coming.** Her complaint was
+about repeated separate enquiries. **There are Transvaal records in other family lines** — the Lerena
+files reported on 16 September are the immediate example, and she has never been told that line
+exists. If she meets a fourth family from the same correspondent in a fortnight, having not been
+warned, the goodwill earned by this letter is spent.
+
+*One sentence, no list.* It converts a future surprise into a stated expectation, and it repeats the
+commitment she actually asked for — **one thread, one enquiry at a time.** It also invites her to say
+if it becomes too much, which costs nothing and is the difference between a correspondent and a
+nuisance.
+
 ## What the reply deliberately does NOT do
 
 **It does not hand her another list.** She offered to check **one** file — *"I can **first** check
@@ -70,12 +86,17 @@ On the bound files generally: I understand, and I am not going to keep asking. I
 advice and engaged the researcher you recommended, and she expects to be at the Archives on **Tuesday
 22 September**, so the photography is arranged and off your desk entirely.
 
+One last thing, so that nothing arrives as a surprise later. **My research covers more than this one
+family** — there are several connected lines I am working through, and some of them will have
+Transvaal records too. **All of it will come to you, in this thread, one enquiry at a time, and I
+will not open another.** If that is ever too much, say so and I will slow down; I would far rather
+you told me than quietly wished I would go away.
+
 With thanks for two prompt and genuinely useful replies, and for your patience with a correspondent
 who was making more work than he needed to,
 
 David Defranceski
 david.defranceski@gmail.com
-Australia
 
 ---
 

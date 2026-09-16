@@ -37,6 +37,30 @@ fifteen near-identical messages from one stranger reads as harvesting rather tha
 **Order:** cluster 10 first (133.2 cM), then 17 (two over 100), then 6 (the big shared tree), then 20
 only if the first three produce nothing.
 
+## TWO BLANKS DAVID MUST FILL BEFORE SENDING
+
+**1. `{RELATIONSHIP}` / `{RELAÇÃO}` — and this is a correction, not a formatting note.**
+
+The first draft of these letters said *"my wife's family… my father-in-law, Derrick"* and
+*"a família da minha mulher. O meu sogro."* **This archive has never recorded how David is related to
+Derrick.** It was inferred, written into a letter to strangers, and would have gone out as fact.
+
+That is the same error as the Kurt estate notice and the Paula gazette line: *a plausible reading
+treated as a source.* It is worse here, because it would have been asserted to living people who have
+no way to check it.
+
+**The letters now carry a blank.** David knows the answer; this archive does not, and should not
+guess. Portuguese needs the right word — *o meu sogro* (father-in-law), *o meu tio* (uncle),
+*o pai da minha mulher* (my wife's father). **Fill it in both languages before sending.**
+
+**2. `{cM}` — the shared total for that particular recipient**, from the send list in
+`notes/autoclusters-2026-09-15.md`. Getting this wrong in a first message to a genealogist is the
+fastest way to be ignored.
+
+*Signature standardised to* **David Defranceski**, *which is how he signs his own sent mail five times
+out of eight. "Austrália" is kept in the Portuguese body — unlike the Xaba letter, it earns its place
+there, because it explains why he cannot simply go and look.*
+
 ## What must NOT be in these letters
 
 **Nothing about the paternity question.** It is Derrick's private business, it concerns his *father's*
@@ -59,8 +83,8 @@ first message from a stranger on a genealogy site does not get read.*
 
 Olá,
 
-Chamo-me David e escrevo da Austrália, sobre a família da minha mulher. O meu sogro, **Derrick**,
-partilha consigo **{cM} centimorgans** de ADN — o que nos coloca como primos, provavelmente em
+Chamo-me David e escrevo da Austrália. Faço a história da família de **{RELAÇÃO}**, o **Derrick**,
+que partilha consigo **{cM} centimorgans** de ADN — o que vos coloca como primos, provavelmente em
 segundo ou terceiro grau.
 
 Escrevo por causa da **mãe** dele, e por um motivo simples: **não sabemos quem foram os pais dela.**
@@ -89,17 +113,16 @@ pergunta a toda a gente.
 
 Com os melhores cumprimentos,
 
-David de Franceski
-Austrália
+David Defranceski
 david.defranceski@gmail.com
 
 ---
 
 Hello,
 
-My name is David and I am writing from Australia, about my wife's family. My father-in-law,
-**Derrick**, shares **{cM} centimorgans** of DNA with you — which makes you cousins, probably second
-or third.
+My name is David and I am writing from Australia. I research the family history of **{RELATIONSHIP}**,
+**Derrick**, who shares **{cM} centimorgans** of DNA with you — which makes you cousins, probably
+second or third.
 
 I am writing about **his mother**, for a simple reason: **we do not know who her parents were.**
 
@@ -127,8 +150,7 @@ everybody.
 
 With best wishes,
 
-David de Franceski
-Australia
+David Defranceski
 david.defranceski@gmail.com
 
 ---
