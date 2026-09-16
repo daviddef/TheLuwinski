@@ -115,12 +115,70 @@ Eight TAB files. **Tier 1 of that request is the three that matter**: MHG 10245/
 only), and the divorce summonses in WLD 2026/1951 and WLD 2960/1962. The remaining five are listed
 in request 20 in priority order.
 
-## Tier C — Lerena, NOT yet confirmed
+## Tier C — Lerena, reported and ranked 16 September
 
-`TAB MHG 6746/71` · `TAB MHG 1518/73` · `TAB WLD 8043/77` · `TAB TPD 1248/1979` · `TAB TPD 1367/1980`
+**All TAB. That archive has no SAB references at all.** Pull list at
+`Lerena Family/data/tab-pull-list-2026-09-22.tsv`.
 
-**These have not been re-verified and that session has not reported.** *Do not put them to Anne until
-they have been checked the way the Booyzen list was.* They are noted here so they are not forgotten.
+**One thing to tell Anne before she goes, because it is a matter of honesty rather than tactics:**
+*a South African death notice asks for the deceased's parents, not their grandparents.* **Nothing at
+Pretoria answers that archive's central question directly**, and she should not be led to think the
+second file below will crack it. It is worth ordering for what it does give, not for what it cannot.
+
+| | reference | want | why |
+|---|---|---|---|
+| **C1** | **TAB · MHG · 1518/73** — LERENA, **ROGUE** Luis Armando, d. 29 Jan 1973, 20 Park Lane, Florida, Roodepoort | **death notice (J294) first, then the marriage block** — he married twice | **His place of birth.** Born 6 Dec 1905, fifteen years before his next-known brother and three years before his father's Argentine enrolment card was filed at Cape Town. *Argentina* dates the emigration to after Dec 1905; *Cape Town* means the family was already settled and the 1908 card was filed from a home. **Either answer is worth the trip** |
+| **C2** | **TAB · MHG · 6746/71** — LERENA, Nuno Fernando, d. 1 July 1971 | **death notice, then the children / next-of-kin list** | Names his parents — expected Pablo Armando and Mary Septima Taylor. The only document that would put Pablo Armando's name into an official South African record **written by his own family rather than a clerk** |
+| **C3** | **TAB · TPD · 1367/1980** — Glynnis Margaret Lerena (born Bolton) v **Anton Armando Lerena** | **summons (particulars of claim) and the final order. Not the pleadings** | Who Anton Armando is — the one man that archive cannot place. A summons states the date and place of marriage and usually the ages; the order deals with children |
+| **C4** | **TAB · TPD · 1248/1979** — Ricardo Paul Lerena v Anne Margaret (born Corbett) | **summons and order only** | Who Ricardo Paul is — on the face of it a son of Ricardo Juan Carlos, carrying the Juan Carlos name into a third generation, which is this family's documented habit |
+| C5 | TAB · WLD · 8043/77 — Stadium Timber & Hardware v Anton Lerena | the summons only | An address and a date for Anton in 1977, perhaps a trade. That is all a debt summons carries |
+
+**Drop order given by that session: C5 first, then C4 if the court files prove slow.**
+**If she does only two, do the two estates** — they retrieve cleanly on an MHG number and they carry
+the death notices.
+
+### Lerena flags — tell her these
+
+- **No volume number exists for any of the four court references.** NAAIRS gives a case number and a
+  year and nothing else. **Estates retrieve cleanly on MHG; court files may need a volume traced at
+  the depot. If a volume is not obvious in ten minutes, abandon it and put the time into the
+  estates.**
+- **WLD is the Witwatersrand Local Division, sitting in Johannesburg.** NAAIRS places the archived
+  files at TAB. *That has not been independently verified.*
+- **Ask for 1518/73 as "ROGUE", not Roque.** That is how it is indexed.
+- **Do not send her after the modern Lerena estates** — 19962/95, 16409/00, 15127/2013, 017515/2022
+  and two others. Those come from Government Gazette notices, not NAAIRS; the NAAIRS Lerena series
+  stops in 1980, and they should still be with the Master of the High Court.
+- **TPD M680/1979 and TPD 2769/1979 are the same dispute as C4** — interlocutory applications inside
+  it. Ordering them is paying three times for one argument. Only if 1248/1979 is missing.
+
+## THE SCALE PROBLEM, STATED PLAINLY BEFORE ANYTHING IS SENT
+
+Add it up:
+
+    Booyzen, already booked                       6
+    Booyzen, new (A1-A7)                          7   — A3 and A5 are 3 documents each
+    Wear and Luwinski (request 20)                8
+    Lerena (C1-C5)                                5
+                                                 --
+                                                 26 items, more physical pulls
+
+**Twenty-six files is not one day's work and nobody should pretend otherwise.** Anne quoted for six.
+Sending her twenty-six without saying so would be the kind of thing that turns a good working
+relationship into a bad one by the second job.
+
+**So the letter must do three things at once:** hand over the whole list, rank it, and say explicitly
+that she is expected to take what the day allows and leave the rest. **Her judgement on the day beats
+any ranking made from Australia** — she is the one who will see how tightly each file is bound.
+
+**If she can only do a handful beyond the booked six, this is the order across all three archives:**
+
+1. **A1** — the Kolbe death notice. Closes a question chased across three provinces.
+2. **C1** and **C2** — the two Lerena estates. They retrieve cleanly on an MHG number.
+3. **Request 20 Tier 1** — MHG 10245/69's death notice, and the two divorce summonses.
+4. **A2** — the 1903 Booysen divorce, found the morning she was booked.
+
+**Everything else is a bonus.**
 
 ## THINGS TO TELL HER NOT TO HUNT
 
@@ -138,6 +196,30 @@ them is an hour lost from the list above:**
   certainly exist; whether each pulls as a discrete item or sits inside a bound volume is unknown.
   **Her judgement on the day beats anyone's from here.**
 
+## A question that resolved itself, and one cross-archive saving
+
+**The Catherine Mary Sophia question is answered, and no file needs ordering for it.** Two women,
+thirty-eight years apart, both files real and correctly dated:
+
+- **MHG 3734/46** — Catherine Mary Sophia Daschner, born Booyzen, b. 22 April 1891, d. 1946.
+- **Nuno Lerena's widow** — Catherine Mary Sophia Booyzen, b. 25 March 1929, d. 25 December 2013.
+  She married Nuno Fernando Lerena on 15 January 1949 at St Joseph's, Mayfair, and remarried in
+  December 1972, eighteen months after he died.
+
+**And the name runs back a third generation** — the Booyzen archive holds a 1940 death form for a
+Catherine Mary Sophia Booyzen *born Barry*. Barry → Daschner → the 1929 woman. The same naming
+discipline that put Juan Carlos into Ricardo Juan Carlos.
+
+**The saving is real: MHG 3734/46 is already on Anne's booked six**, and the Booyzen archive calls
+its death notice *"the most wanted page in this list"* because it should name the 1891 woman's
+parents. **One file, already paid for, wanted by two archives for two different reasons.** Nothing to
+add to the order.
+
+**And one file to keep her away from:** **KAB MOOC 6/9/17017**, Pablo Armando Lerena's own death
+notice — *the single most valuable document in that archive*, because it asks for his parents. **It is
+in Cape Town, it is already requested from the Western Cape Archives, and no Pretoria money should go
+near it.**
+
 ## The paragraph to add to the letter
 
 > Since writing, my list has come together faster than I expected, and I have attached it. **It is
@@ -152,3 +234,18 @@ them is an hour lost from the list above:**
 > One note on the **OD** items: those are correspondence-register numbers, and I do not know whether
 > they pull as separate items or sit inside bound volumes. If they are awkward, skip them — your
 > judgement on the day is better than mine from here.
+>
+> **I should be straight with you about the size of it.** With everything added the list runs to
+> about twenty-six items, and I engaged you for six. **I am not expecting twenty-six.** I have put
+> them in order and I would genuinely rather you did the top few carefully than the lot in a rush.
+> **Take what the day allows, stop when it is done, and invoice me for what you did.**
+>
+> Two practical notes from the list itself. **The four Lerena court files have no volume number** —
+> the index gives only a case number and a year. The estates pull cleanly on their MHG numbers; the
+> court files may need a volume traced at the depot. **If a volume is not obvious within ten minutes,
+> please abandon it and put the time into the estates instead.** And one of them is indexed under
+> the spelling **"ROGUE"**, not Roque.
+>
+> Lastly, if a file turns out to be thin or to say nothing, **please tell me that rather than
+> photographing it out of politeness.** A one-line "nothing in it" is a real result and I would
+> rather pay for the looking than for the pages.
