@@ -25,11 +25,27 @@
    "people": 9
   },
   {
+   "file": "castle-1911-meeanee-barracks.tsv",
+   "title": "Frederick Castle in barracks, 1911",
+   "source": "1911 census RG14 piece 10304 schedule 9999, Meeanee Barracks, Colchester — read from the original image",
+   "kind": "ref",
+   "rows": 12,
+   "people": 0
+  },
+  {
    "file": "castle-baptisms-weston.tsv",
    "title": "The Hertfordshire baptism register, worked to its coverage bound",
    "source": "Findmypast, Hertfordshire Baptisms — 823 Castle rows sorted by mother's name; Baldock coverage ends 1879",
    "kind": "ref",
    "rows": 5,
+   "people": 0
+  },
+  {
+   "file": "castle-frederick-soldier.tsv",
+   "title": "Frederick James Castle, soldier — 1901 to the 1920s",
+   "source": "1901 and 1911 censuses; TNA WO 329/1120 and WO 372/4",
+   "kind": "ref",
+   "rows": 4,
    "people": 0
   },
   {
@@ -1709,7 +1725,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 23,
+  "files": 25,
   "person_files": 18,
   "people": 102,
   "records": 144,
