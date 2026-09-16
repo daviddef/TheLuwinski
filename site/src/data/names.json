@@ -124,14 +124,19 @@
       "note": "A connected line, with the same problem in Dutch rather than Portuguese."
     },
     {
-      "name": "Caroline Walls / Wallis",
-      "forms": "WALLS · WALLIS",
-      "note": "Derrick's great-grandmother, born Weston, Hertfordshire, 1863. THE SITE ITSELF USES BOTH — seven times Wallis, five times Walls — which is a published contradiction rather than a research finding. The census household is the reason for the doubt and also the best evidence: her widowed father is enumerated with the family as JOSEPH WALLS. Until a birth or marriage registration settles it, WALLS is used with Wallis noted, and neither is asserted as correct. UPDATED 16 September: a second-cousin match's own Ancestry tree, shared that day, gives her as CAROLINE WALLIS, 1862–1957 — an independent tree rather than a record, but it is a second party writing Wallis without prompting. The census household still says Walls. STILL NOT SETTLED, and the letter to him says so rather than pretending otherwise."
+      "name": "Caroline Wallis (not Walls)",
+      "forms": "WALLIS — settled · WALLS — withdrawn",
+      "note": "SETTLED 17 SEPTEMBER, AND THE SITE'S OWN CONTRADICTION IS CLOSED. This page recorded that the archive used Wallis seven times and Walls five, and that neither was asserted. THE GRO BIRTH INDEX DECIDES IT. Searching Castle births at Hitchin on MOTHER'S MAIDEN NAME returns SIX CHILDREN UNDER WALLIS — George William 1884, Ada May 1887, Fredrick James 1889, Agnes Kate 1892, Florence Margaret H 1901, Ernest Albert C 1904 — AND NOTHING AT ALL UNDER WALLS. That is the registrar recording her maiden name at each birth, six times over twenty years, and it is better evidence than one census household in which her widowed father was written down as Joseph Walls. WALLS IS WITHDRAWN. The census entry stands as what an enumerator heard once."
     },
     {
       "name": "Giddins / Giddings",
       "forms": "GIDDINS · GIDDINGS",
       "note": "Derrick's three-times-great-grandparents of Norton End, Baldock. BOTH CENSUSES — 1861 and 1871 — WRITE GIDDINS. The tree that first named them writes GIDDINGS. The enumerator wrote what he heard twice, ten years apart, and agreed with himself; so GIDDINS is used here with Giddings noted. IT MATTERS MORE THAN THE OTHERS ON THIS PAGE, because two living DNA matches carry the surname and a search on the wrong spelling would miss them."
+    },
+    {
+      "name": "Martha Maud / Maude Castle",
+      "forms": "MAUD · MAUDE",
+      "note": "Her own birth registration — Hitchin, third quarter 1895, volume 3A page 561 — spells her MARTHA MAUD. The tree that supplied her exact date of birth spells her MARTHA MAUDE, and this archive has used both. MAUD is the registered form."
     }
   ],
   "tested_title": "What each spelling actually returns",
