@@ -76,13 +76,19 @@ is worth protecting rather than spending in one go.
 | **Ms Xaba** | *what a file says.* One at a time, in her thread, when she offers |
 | **Anne** | *photographs of specific bound files.* Paid, commissioned, and already under way |
 
-**And she is told that more is coming.** Reply 21 now carries one sentence saying the research covers
-several connected lines, that some will have Transvaal records, and that all of it will come to her
-in one thread, one enquiry at a time. **She learns the shape of it now rather than meeting a fourth
-family in a fortnight.**
+**REVISED 16 September — she is now given the whole manifest.** Re-reading her email showed that she
+asked for *consolidation*, not rationing: *"keep the correspondence relating to your current
+enquiries in one email thread… so that I can provide you with a consolidated response."* A
+consolidated response is only possible if she holds the whole picture.
 
-*What reply 21 does not do is name those lines or list a single file.* She asked for less
-correspondence, not more detail.
+**Reply 21 therefore lists all fourteen Transvaal references in one table**, each with a status —
+*nothing needed*, *bound, understood*, *with the researcher*, or, for WLD 2545/1950 alone, *yes
+please*. **It is a manifest, not an order form.** The eight in this file appear there marked **with
+the researcher**, which is not a request to her and is also the courtesy of showing her that her own
+advice to engage a private researcher was taken.
+
+**The division of labour is unchanged.** Anne photographs; Ms Xaba reads and reports, one file at a
+time, at her own pace. What changed is that she can now see what she is one-fourteenth of.
 
 ## Payment and sequencing
 
