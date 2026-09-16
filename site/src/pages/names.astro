@@ -1,0 +1,96 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../data/names.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const p = data.people[0];
+const groups = [
+  ['forename', 'Her forename'],
+  ['maiden', 'Her maiden surname'],
+  ['married', 'Her married surnames'],
+];
+---
+<Base title={data.title} subtitle={data.dek}
+  lede="An index cannot be searched for a person. It can only be searched for a spelling. This page exists because this archive learned that the expensive way: a file in which Ivone is the plaintiff sat unfound for weeks behind two letters.">
+
+  <div class="panel">
+    <h3>Why this page exists</h3>
+    <p>
+      <strong>Ivone is recorded under six spellings of her maiden surname across five documents</strong>,
+      three forenames and four married surnames. That is not unusual for a Portuguese woman in an
+      English-and-Afrikaans record system. What is unusual is how much has turned on it.
+    </p>
+    <p>
+      <strong>TAB WLD 2545/1950 is the only file in which she is the plaintiff</strong> &mdash; the
+      one in which she sued Kurt rather than being sued. It went unfound through months of searching
+      because the index carries her as <strong>IVONE LUWENSKI, born FIGARETTO</strong>. Neither word
+      is a spelling a person would choose. A search on the correct name could never have found it, and
+      did not.
+    </p>
+    <p class="small muted">
+      Every form below is given with the record it comes from. Where a spelling appears only in an
+      index and in no document, that is said plainly &mdash; the difference matters, because an index
+      corruption tells you about the cataloguer and a document variant tells you about the family.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>{p.canonical} <span class="tag doc">b. {p.born}</span></h3>
+    <p class="small">{p.why}</p>
+    {groups.map(([kind, label]) => (
+      <div>
+        <h4>{label}</h4>
+        <table>
+          <thead><tr><th>as written</th><th>where it appears</th><th>what it means</th></tr></thead>
+          <tbody>
+            {p.forms.filter((f) => f.kind === kind).map((f) => (
+              <tr>
+                <td><strong>{f.form}</strong></td>
+                <td class="small">{f.where}</td>
+                <td class="small muted">{f.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    ))}
+  </div>
+
+  <div class="panel">
+    <h3>The rule this archive now works to</h3>
+    <p>
+      <strong>No surname search counts as done until every recorded spelling has been tried.</strong>
+      Applied to the Union Gazette on 16 September 2026, that rule turned a three-spelling sweep into
+      a six-spelling one and made the resulting negative worth stating. Applied to NAAIRS, it shows
+      that <strong>FIGARETTO, LUWENSKI and LUWINSKY each return exactly one record &mdash; and each of
+      those records is invisible to the correct spelling.</strong>
+    </p>
+    <p class="small">
+      It also cuts the other way, which is the part worth remembering.
+      <strong>FIGARETTO and LUWENSKI appear nowhere in any African gazette at all.</strong> They exist
+      only inside the archival index. So a spelling that finds a file can still be a spelling nobody
+      ever wrote &mdash; useful for searching, useless as evidence about the family.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>The same problem in the other lines</h3>
+    <table>
+      <thead><tr><th>name</th><th>forms</th><th></th></tr></thead>
+      <tbody>
+        {data.others.map((o) => (
+          <tr>
+            <td><strong>{o.name}</strong></td>
+            <td class="small">{o.forms}</td>
+            <td class="small muted">{o.note}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <p class="small muted">
+    See also <a href={base + '/ivone/'}>Ivone</a>,
+    <a href={base + '/negatives/'}>the bounded negatives</a>, and
+    <a href={base + '/sources/'}>sources</a>.
+  </p>
+</Base>

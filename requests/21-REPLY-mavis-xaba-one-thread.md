@@ -214,16 +214,7 @@ what you told me on 14 September.
 
 ---
 
-**Two last things, neither of which asks you to pull a file.**
-
-**The first is for you rather than for me: NAAIRS appears to be down.** Since this morning,
-16 September, `national.archsrch.gov.za` has stopped resolving altogether — there is no address
-record for it at all. The `www.` form does resolve, but every page through it, including the front
-page, returns the CICS "400 Bad Request" error, so the system is being reached and is refusing. **I
-mention it only because it is your own search system and you may not have been told.** It is not a
-complaint; I have no claim on it.
-
-**The second is a question rather than a request.** My wife's grandmother, **Ivone de Figueiredo, was
+**One last thing, and it is a question rather than a request for a file.** My wife's grandmother, **Ivone de Figueiredo, was
 born at Lourenço Marques on 4 March 1924** and was a Portuguese national when she married in
 Johannesburg in 1948. Her parents' names are the one thing this whole search has never been able to
 establish.
