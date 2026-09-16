@@ -47,6 +47,7 @@ MANIFEST = {
  "caroline-james-1920-1957.tsv": ([], "Caroline Castle, later James, 1920 to 1957", "GRO indexes; 1939 Register RG101/1598B/017/25", "ref"),
  "litigation.tsv":               (["plaintiff","defendant"], "Transvaal court files", "National Archives of South Africa, WLD and TPD series", "person"),
  "naairs-figueiredo.tsv":        ([], "The NAAIRS index under FIGUEIREDO", "National Archives of South Africa", "ref"),
+ "castle-baptisms-weston.tsv":   ([], "The Hertfordshire baptism register, worked to its coverage bound", "Findmypast, Hertfordshire Baptisms — 823 Castle rows sorted by mother's name; Baldock coverage ends 1879", "ref"),
  "gazette-wear-sweep.tsv":       ([], "The gazette sweep for the Wears and for Phyllis", "gazettes.africa, 54,313 South African issues", "ref"),
 }
 

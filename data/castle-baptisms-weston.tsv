@@ -1,0 +1,30 @@
+# Row 159 worked, 17 September 2026. Findmypast, Hertfordshire Baptisms.
+# THE QUESTION: the 1911 census has Caroline answering NINE CHILDREN BORN, EIGHT LIVING, ONE DIED.
+# Seven are named. The baptism register names both parents on every line, so it should name all nine.
+# IT CANNOT, AND THE REASON IS A COVERAGE BOUND RATHER THAN A SEARCH FAILURE.
+what	result	how it was established
+Castle baptisms in the whole Hertfordshire set	823	lastname=castle, no other filter
+...of those, with a mother named CAROLINE	EXACTLY ONE	sorted by mother's first name across all 42 pages; between the Barbara block and the Catharine block there is a single row
+THAT ONE ROW	ADA MAY CASTLE, baptised 10 April 1887 at WESTON — father GEORGE WILLIAM CASTLE, LABOURER; mother CAROLINE	transcript GBPRS/B/71335450/1
+Baldock coverage in this set	STOPS AT 1879	sorted by baptism year descending, place Baldock: the latest of 195 Castle baptisms is 1879
+The children's dates	1884 to 1904	GRO birth index
+# SO THE INSTRUMENT ENDS FIVE YEARS BEFORE THE FAMILY STARTS. Martha Maud was baptised at Baldock on
+# 22 September 1895 and that entry is not in this set either - the latest Martha Castle at Baldock is 1876.
+# THE ROW IS NOT ANSWERED. The two unnamed children are still unnamed. What is now known is WHY, and
+# that the answer lies in the Baldock parish register at Hertfordshire Archives rather than in any index.
+#
+# THE ONE FIND, AND IT IS WORTH HAVING: the first baptism this archive has read for ANY of Caroline's
+# children. It gives the father's forenames as GEORGE WILLIAM and his trade as LABOURER, and it puts the
+# family at WESTON in 1887 - Caroline's own birthplace, and the village where SARAH ANN WALLIS was born
+# on 19 August 1882, two months before the marriage. The Weston thread is now three strands.
+#
+# AND A CORRECTION TO THE MATCH-HOLDER'S TREE, found while following Ada May forward:
+#   HER MARRIAGE     Q4 1909, HITCHIN, volume 3A page 1171. She was twenty-two.
+#   THE TREE SAYS    "Ada May Castle, died Jul 1969, Hitchin"
+#   THE INDEX SAYS   NO SUCH DEATH. Ada* Castle born 1884-1890, all England and Wales: sixteen entries,
+#                    NOT ONE at Hitchin and NOT ONE in 1969.
+# A woman who married in 1909 did not die a Castle in 1969, and this is the Caroline James trap exactly:
+# a tree records a death under a maiden surname the woman had not used for sixty years. Her married
+# surname is unknown and is NOT guessed here. Findmypast's MarriageFinder offers Thomas Redman or
+# Sidney Smith; THOSE ARE PAGE-MATES IN AN INDEX, NOT A MARRIAGE, and neither is written down as a husband.
+# The certificate, 3A/1171, would name the husband and her father in one line.

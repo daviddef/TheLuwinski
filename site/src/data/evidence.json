@@ -25,6 +25,14 @@
    "people": 9
   },
   {
+   "file": "castle-baptisms-weston.tsv",
+   "title": "The Hertfordshire baptism register, worked to its coverage bound",
+   "source": "Findmypast, Hertfordshire Baptisms — 823 Castle rows sorted by mother's name; Baldock coverage ends 1879",
+   "kind": "ref",
+   "rows": 5,
+   "people": 0
+  },
+  {
    "file": "castle-from-match-tree.tsv",
    "title": "A match holder's Ancestry tree",
    "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
@@ -1627,7 +1635,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 21,
+  "files": 22,
   "person_files": 17,
   "people": 100,
   "records": 135,
