@@ -1,26 +1,41 @@
 {
   "title": "The tree",
-  "dek": "Derrick's ancestry as it now stands, with the strength of every link stated on the link itself.",
+  "dek": "Derrick's ancestry as it now stands, graded on the five-word ladder the sibling archives share.",
   "legend": [
     {
-      "k": "proved",
-      "label": "Proved",
-      "what": "A document names the person and the relationship."
+      "k": "documented",
+      "label": "Documented",
+      "what": "A record was read, and it says this."
+    },
+    {
+      "k": "probable",
+      "label": "Probable",
+      "what": "The evidence points one way and nothing points the other."
     },
     {
       "k": "inferred",
       "label": "Inferred",
-      "what": "Strongly indicated by DNA, by a sibship or by a chain of records, but no single document says it outright."
+      "what": "Reasoned from what is known, not witnessed in a record."
+    },
+    {
+      "k": "family",
+      "label": "Family",
+      "what": "Told, remembered, or written on somebody's family chart — not sourced."
+    },
+    {
+      "k": "disputed",
+      "label": "Disputed",
+      "what": "Two sources disagree and neither has been ruled out."
     },
     {
       "k": "unknown",
-      "label": "Unknown",
-      "what": "An open question. Named here so the gap is visible rather than absent."
+      "label": "Not established",
+      "what": "NOT A LEVEL ON THE LADDER. There is no claim here yet — the gap is drawn as a person so it stays visible."
     },
     {
       "k": "excluded",
-      "label": "Excluded",
-      "what": "Tested and ruled out. Kept on the tree because removing it would hide the work."
+      "label": "Ruled out",
+      "what": "NOT A LEVEL EITHER. A claim that was tested and failed, kept on the tree because deleting it would hide the work."
     }
   ],
   "generations": [
@@ -32,7 +47,7 @@
           "name": "Lynn Derrick Luwinski",
           "dates": "Living",
           "place": "",
-          "status": "proved",
+          "status": "documented",
           "how": "Named only. No dates, no age, nothing that could be worked backwards into one — the archive's standing rule for anyone alive."
         }
       ]
@@ -52,7 +67,7 @@
           "name": "Ivone de Figueiredo",
           "dates": "b. 4 March 1924, Lourenço Marques · d. Porto",
           "place": "Mozambique → Johannesburg → Portugal",
-          "status": "proved",
+          "status": "documented",
           "how": "Recorded under six spellings of her maiden surname, three forenames and five married names. Married Johannes Antonie Oelofse de Witt (Feb 1948), Kurt Luwinski (June 1948) and Morris Isaac Salkow (Feb 1953)."
         },
         {
@@ -72,14 +87,14 @@
           "name": "Henry Robert Wear",
           "dates": "b. Q3 1889, St Olave Bermondsey · d. 11 September 1969, Johannesburg",
           "place": "Bermondsey → Watford → Hitchin → Johannesburg",
-          "status": "proved",
+          "status": "documented",
           "how": "Birth index vol 1D p230. Hertfordshire Regiment, service no. 3010. Sailed London–Cape on the Durban Castle, 5 April 1939, occupation machine minder. Buried West Park."
         },
         {
           "name": "Martha Maud Castle",
           "dates": "b. 21 July 1895, Baldock · d. 16 March 1986, Johannesburg",
           "place": "Baldock → Letchworth → Johannesburg",
-          "status": "proved",
+          "status": "documented",
           "how": "Baptised at Baldock 22 September 1895. Married Henry Robert Wear at Hitchin in October 1914. Sailed London–Durban on the Dunvegan Castle, 10 August 1939, with four children. Buried West Park. HER EXACT DATE OF BIRTH CAME FROM a second-cousin match'S TREE ON 16 SEPTEMBER 2026 — this archive had only the year."
         },
         {
@@ -99,22 +114,22 @@
           "name": "Robert Wear",
           "dates": "b. c. 1859, Bermondsey · d. Q1 1890, St Olave Southwark, aged 31",
           "place": "Bermondsey",
-          "status": "proved",
+          "status": "documented",
           "how": "Married Emma Hawkins Q4 1881, St Olave Southwark, vol 1D p455. Died vol 1D p141 — six months after his son was born. The boy never knew him."
         },
         {
           "name": "Emma Hawkins",
           "dates": "b. 1859, Aldenham, Hertfordshire",
           "place": "Aldenham → London → Watford",
-          "status": "proved",
+          "status": "documented",
           "how": "A widow at thirty-two. By April 1891 she is back in Hertfordshire with her three children, in her brother's house at 44 Ebury Road, Watford. SHE IS THE REASON THIS FAMILY WAS EVER IN HERTFORDSHIRE."
         },
         {
           "name": "George William Castle × Caroline Wallis",
           "dates": "b. 1862 Willian and 1862 Weston · married October 1882, Hitchin · d. 1916 and 1957",
           "place": "Willian → Norton End → Middle Row, Baldock",
-          "status": "proved",
-          "how": "CORRECTED TWICE IN ONE DAY. First from UNKNOWN, which was simply wrong. Then from the tree shared by a second-cousin match, which gives his full name, his birthplace at WILLIAN rather than Baldock, a marriage in OCTOBER 1882 rather than 1883, and NINE children rather than the handful this archive knew. He was an agricultural labourer at Middle Row in 1891 and a farm labourer at Norton End in 1901. Caroline came to Baldock from Weston just before the marriage, and their eldest, SARAH ANN WALLIS, was born at Maiden Street, Weston, on 19 August 1882 — before it, which is why she carries her mother's name."
+          "status": "probable",
+          "how": "REGRADED 16 September from DOCUMENTED to PROBABLE, and the demotion is the point. The marriage, the nine children and the dates came from another researcher's tree, not from records this archive has read. WHAT IS DOCUMENTED, because the 1871 census was pulled and read here, is that a GEORGE CASTLE, 30, agricultural labourer, was living at Norton End as SON-IN-LAW to James Giddins with a son George, 8. WHAT IS NOT is the birthplace at Willian, the October 1882 marriage, and the nine children — all still one tree's word. The census also disagrees with that tree twice: it gives the boy's birthplace as BALDOCK, not Willian, and his birth year as 1863, not 1862. Under the ladder that is exactly what PROBABLE means — the evidence points one way and nothing points the other, but nobody has read the record that would settle it. The marriage certificate would."
         }
       ]
     },
@@ -126,42 +141,42 @@
           "name": "William Wear",
           "dates": "b. c. 1823, Newington, Surrey",
           "place": "Jamaica Road, Bermondsey",
-          "status": "proved",
+          "status": "documented",
           "how": "HARNESS MAKER. In 1871 he heads a house in which the three older sons are all at the same trade and Robert, at twelve, is still a scholar."
         },
         {
           "name": "Sarah Bloom",
           "dates": "b. c. 1822, Bermondsey",
           "place": "Jamaica Road, Bermondsey",
-          "status": "proved",
+          "status": "documented",
           "how": "Her maiden name is in no census — a married woman's never is. Robert's birth registration gives the mother's maiden name as BLOOM, and a seventeen-year-old niece called Sarah Ann Bloom is in the house on census night. Two records confirming each other unasked."
         },
         {
           "name": "John Hawkins",
           "dates": "b. c. 1820, Aldenham",
           "place": "The Red Lion Cottages, Aldenham",
-          "status": "proved",
+          "status": "documented",
           "how": "AGRICULTURAL LABOURER. Eight in the household in 1871, every one of them born in the same parish."
         },
         {
           "name": "Emma Hawkins",
           "dates": "b. c. 1822, Aldenham",
           "place": "The Red Lion Cottages, Aldenham",
-          "status": "proved",
+          "status": "documented",
           "how": "Her daughter Emma, twelve and a scholar in 1871, would marry in London, bury a husband there, and come home."
         },
         {
           "name": "George Castle × Martha Giddings",
           "dates": "1840–1885 and 1841–1863",
           "place": "Willian and Baldock, Hertfordshire",
-          "status": "proved",
+          "status": "documented",
           "how": "PROVED 16 September from the censuses themselves, having been taken on trust from another researcher's tree that morning. THE 1871 CENSUS AT NORTON END — RG10/1365 f.27 — has GEORGE CASTLE, 30, AGRICULTURAL LABOURER, ENUMERATED AS SON-IN-LAW in the house of James and Elizabeth Giddins, with his boy GEORGE CASTLE, 8, AS GRANDSON. Martha herself is not there; she had been dead eight years. BUT THE TWO RELATIONSHIPS ONLY WORK THROUGH HER, and they are the census's own words rather than a tree's. She died in 1863, the year after her son was born, and her widower took the child to HER parents rather than his own."
         },
         {
           "name": "James Giddins × Elizabeth Giddins",
           "dates": "both b. 1814–1815",
           "place": "9 Cottages at Norton End, Baldock",
-          "status": "proved",
+          "status": "documented",
           "how": "NEW ON 16 SEPTEMBER, and they are the reason this branch of the family stayed in Hertfordshire. He an AGRICULTURAL LABOURER born at Baldock; she born at Norton and, in 1871, doing PLATTING — straw-plaiting, the cottage industry that kept Hertfordshire women in work for a century. Found in both the 1861 census (RG9/816 f.69) and the 1871 (RG10/1365 f.27), at the same address a decade apart, with children George 1847, John 1849 and Emma 1855 — and, in 1871, a widowed son-in-law and a grandson who was not theirs to raise and whom they raised."
         }
       ]

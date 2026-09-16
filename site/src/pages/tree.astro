@@ -1,11 +1,24 @@
 ---
 import Base from '../layouts/Base.astro';
 import data from '../data/tree.json';
+import Evidence from '@daviddef/archive-kit/components/Evidence.astro';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const tagFor = { proved: 'doc', inferred: 'inf', unknown: 'open', excluded: 'disp' };
+/* The five-word ladder is shared across the sibling archives so a level means
+   the same thing wherever a reader meets it. Two of this page's marks are NOT
+   levels on it and must not pretend to be: 'unknown' is the absence of a claim,
+   and 'excluded' is a claim tested and failed. They get their own chips. */
+const LADDER = new Set(['documented', 'probable', 'inferred', 'family', 'disputed']);
+const OFF = { unknown: 'Not established', excluded: 'Ruled out' };
 ---
+<style is:global>
+  /* The two marks that are not evidence levels are drawn deliberately unlike
+     the ladder: no fill, a dashed edge, so they cannot be mistaken for a grade. */
+  .ev-off { border-style: dashed; background: transparent; }
+  .ev-unknown { color: var(--ink-3); }
+  .ev-excluded { color: var(--disp); }
+</style>
 <Base title={data.title} subtitle={data.dek}
-  lede="A family tree that shows only names is a claim without a citation. This one carries the evidence on every person, and says plainly which links are proved, which are inferred, and which are still holes.">
+  lede="A family tree that shows only names is a claim without a citation. This one grades every person on the same five-word ladder the other archives use, so a level means the same thing wherever a reader meets it — and marks the two things that are not levels at all.">
 
   <div class="panel">
     <h3>How to read it</h3>
@@ -13,7 +26,9 @@ const tagFor = { proved: 'doc', inferred: 'inf', unknown: 'open', excluded: 'dis
       <tbody>
         {data.legend.map((l) => (
           <tr>
-            <td><span class={'tag ' + tagFor[l.k]}>{l.label}</span></td>
+            <td>{LADDER.has(l.k)
+              ? <Evidence level={l.k} />
+              : <span class={'ev ev-off ev-' + l.k}>{l.label}</span>}</td>
             <td class="small muted">{l.what}</td>
           </tr>
         ))}
@@ -32,7 +47,9 @@ const tagFor = { proved: 'doc', inferred: 'inf', unknown: 'open', excluded: 'dis
         <div style="margin:0 0 1.15rem 0;">
           <h4 style="margin:0 0 .15rem 0;">
             {p.name}{' '}
-            <span class={'tag ' + tagFor[p.status]}>{p.status}</span>
+            {LADDER.has(p.status)
+              ? <Evidence level={p.status} />
+              : <span class={'ev ev-off ev-' + p.status}>{OFF[p.status]}</span>}
           </h4>
           {p.dates && <p class="small" style="margin:.1rem 0;"><strong>{p.dates}</strong></p>}
           {p.place && <p class="small muted" style="margin:.1rem 0;">{p.place}</p>}
