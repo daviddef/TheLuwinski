@@ -1,6 +1,14 @@
 {
  "files": [
   {
+   "file": "berlin-adressbuch.tsv",
+   "title": "The Berliner Adressbücher",
+   "source": "Zentral- und Landesbibliothek Berlin, digital.zlb.de — annual volumes 1799-1970, full-text",
+   "kind": "ref",
+   "rows": 17,
+   "people": 0
+  },
+  {
    "file": "bloom-1861-yarmouth.tsv",
    "title": "1861 census, 80 Howard Street, Great Yarmouth",
    "source": "RG9, Great Yarmouth",
@@ -1733,7 +1741,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 26,
+  "files": 27,
   "person_files": 18,
   "people": 102,
   "records": 144,

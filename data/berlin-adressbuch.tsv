@@ -1,0 +1,54 @@
+# THE BERLINER ADRESSBÜCHER — found and first used 17 September 2026.
+# Free, digitised 1799-1970 by the Zentral- und Landesbibliothek Berlin, full-text searchable
+# through a JSON API at digital.zlb.de. NEVER TOUCHED BY THIS ARCHIVE BEFORE TODAY, although
+# the whole Leibholz-Luwinski line lived in Berlin and the books list householders by name,
+# trade and street, every single year.
+#
+# PART ONE — A SURNAME LEAVING A CITY, WITH A CONTROL.
+# Page hits per annual volume, uncapped numFound, main series 34115495. The volumes are the
+# same size throughout: 6,000 to 7,500 pages each year.
+year	Leibholz	Thimm	Hirschfeld	Bergmann	Schmul	volume_pages
+1933	24	66	52	784	18	6341
+1934	23	53	54	764	11	6072
+1935	16	47	55	628	9	6289
+1936	22	65	55	691	9	6596
+1937	16	72	96	703	15	6612
+1938	18	68	91	723	17	6718
+1939	15	45	66	556	10	6880
+1940	12	75	59	729	11	7034
+1941	5	69	63	709	14	7076
+1942	6	63	41	720	4	7158
+1943	2	75	37	644	5	7062
+#
+# LEIBHOLZ GOES FROM 24 TO 2. THIMM GOES FROM 66 TO 75.
+# THIMM IS THE CONTROL AND IT IS NOT AN IDLE ONE: Johanna Thimm of Sauerbaum is Kurt's own
+# great-grandmother, an East Prussian and not Jewish. Her surname is as common in the 1943
+# book as in the 1933 one. SO THE SCANNER DID NOT GET WORSE, THE FRAKTUR DID NOT GET HARDER,
+# AND THE BOOK DID NOT GET SMALLER. Bergmann, a large mixed name, is flat. Hirschfeld, plainly
+# Jewish, declines but far less steeply, which this archive cannot explain and does not pretend to.
+#
+# WHAT THIS DOES NOT SAY, and the limits matter more than the number:
+#  - A PAGE HIT IS A PAGE, NOT A PERSON. Twenty-four hits is not twenty-four Leibholzes.
+#  - THE NUMBERS ARE SMALL. Twenty-four to two is a real direction across four years with a
+#    flat control, but it is not a population statistic.
+#  - THE MECHANISM IS NOT DISTINGUISHED. Deportation, emigration and administrative exclusion
+#    from directories all look identical in a count. Jews were being pushed out of German
+#    commercial listings from 1938 quite apart from being deported. THE COUNT CANNOT TELL
+#    THOSE APART and this archive is not going to pretend it can.
+#
+# PART TWO — THE LUWINSKIS OF BERLIN, AND THEY ARE IN THE GARMENT TRADE.
+# Twenty-three Luwinski page hits across the whole series. Read at the page:
+year	entry	note
+1913	"LuwinSki, I., Invalide."	the year after Kurt was born to Auguste Luwinski, nineteen and unmarried
+1933	"Luwinski Alfred Bügler N31 Putbusser Str 24"	A BÜGLER IS A GARMENT PRESSER. Lizzy was a dressmaker and milliner.
+1936	"LuwinSki, A., Bügler."	the same man, three years on
+1943	"Luwinski, A., Kraftwagenführer"	a lorry driver by 1943 — a presser could not stay a presser in a war economy
+1957-1970	Luwinski entries in six post-war volumes	Lizzy lived until 1975
+#
+# THIS IS A LEAD AND NOT A FINDING. Nothing read here links Alfred Luwinski to Auguste. What
+# is true is that a Luwinski household was in Berlin in the clothing trade in the years Lizzy
+# was a dressmaker there, that Luwinski is not a common Berlin name — twenty-three pages in a
+# hundred and seventy years of directories — and that Joachim Luwinski and Johanna Thimm of
+# Sauerbaum will have had children besides Auguste. A BROTHER IS THE OBVIOUS GUESS AND IT IS
+# A GUESS. Putbusser Straße 24 in Wedding is a specific address and can be checked against
+# the Berlin registration records.
