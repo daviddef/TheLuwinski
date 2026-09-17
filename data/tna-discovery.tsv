@@ -20,3 +20,43 @@ SEARCH	LEIBHOLZ	COUNT 16	NONE OF THEM OURS. Gerhard Leibholz, Bonhoeffer's broth
 # 1890s MAY BE IN NORTON'S REGISTER RATHER THAN BALDOCK'S, and Ada May's was at WESTON, a third parish.
 # DISCOVERY DOES NOT SURFACE NORTON'S REGISTERS at any phrasing tried, so that is a question for
 # Hertfordshire Archives directly rather than a reference this archive can quote yet.
+#
+# ================================================================================================
+# THE FULL CITATION SWEEP — 17 September 2026. Every archival reference on this site, checked.
+# ================================================================================================
+# Forty-four distinct references were extracted from site/src/data, site/src/pages and data/,
+# and each was read back from the catalogue with tools/tna.py --verify.
+#
+#   VERIFIED EXACTLY, FIRST PASS ............ 42
+#   RESOLVED AFTER ONE CORRECTION ............ 2
+#   WRONG, MISSING OR MISATTRIBUTED .......... 0
+#
+# THE TWO THAT NEEDED A CORRECTION WERE THE SAME MISTAKE TWICE, AND IT IS NOT REALLY OURS:
+#   RG 15/7079  ->  RG 15/7079   "Registration Sub-District: Baldock. Civil Parish: LETCHWORTH (part)."
+#   RG 14/7576  ->  RG 14/7576   "Registration Sub-District: Baldock. Civil Parish: LETCHWORTH (part) RD 136 RS 1 ED 7."
+# FINDMYPAST PRINTS PIECE NUMBERS WITH A LEADING ZERO. THE NATIONAL ARCHIVES DOES NOT. This archive
+# copied the transcript's format, so the references were readable by a human and not by the catalogue.
+# Both resolve without the zero, and both describe exactly what this site says they describe.
+#
+# AND THE CATALOGUE CONFIRMED THE CONTENT, NOT JUST THE EXISTENCE, IN EVERY CASE THAT MATTERS:
+#   RG 14/7572   "Baldock" — the Castle household of 1911
+#   RG 13/1298   "Baldock" — Norton End, 1901
+#   RG 10/1365   "Baldock" — the Giddins house at Norton End, 1871
+#   RG 9/816     "Baldock. Parish: Caldecott. Parish: Newnham" — the same family, 1861
+#   RG 11/574    "5K St James Bermondsey" — Jamaica Road, the Wear brothers, 1881
+#   RG 11/567    "5D St James Bermondsey" — Fenner Road, 1881
+#   RG 10/641    "5J St James Bermondsey" — the father's house, 1871
+#   HO 107/1560  "BERMONDSEY (Street Indexed)" — Salisbury Street, 1851
+#   RG 12/1120   "2C Watford" — Emma Hawkins after her widowhood, 1891
+#   RG 13/1312   "St Albans" — the Hull household, 1901
+#   RG 15/7079   "Letchworth (part)" — Caroline James at 9 Boscombe Place, 1921
+#   RG 14/10304  "Colchester South-East" — Meeanee Barracks, 1911
+#   RG 78/543    "Colchester South-East" — the summary book for the same
+#   BT 27/1490   "Southampton, 1937 February [part], March" — Leonard's sailing
+#   BT 27/1540   "London, 1939 April to June [part]" — his father's
+#   BT 27/1542   "London, 1939 August [part] to October" — his mother's
+# EVERY ONE OF THOSE IS THE RIGHT DISTRICT, THE RIGHT PARISH AND THE RIGHT MONTH.
+#
+# ONE FALSE POSITIVE IN THE EXTRACTION, NOT IN THE SITE: the regular expression pulled "ED 26" out of
+# a census citation, where it means ENUMERATION DISTRICT 26. The catalogue has an ED 26 of its own —
+# Board of Trade correspondence — and matched it. The site never cited that; the script did.
