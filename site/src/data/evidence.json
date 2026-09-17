@@ -1,6 +1,14 @@
 {
  "files": [
   {
+   "file": "arolsen-leibholz-luwinski.tsv",
+   "title": "The Arolsen Archives index",
+   "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+   "kind": "person",
+   "rows": 12,
+   "people": 12
+  },
+  {
    "file": "berlin-adressbuch.tsv",
    "title": "The Berliner Adressbücher",
    "source": "Zentral- und Landesbibliothek Berlin, digital.zlb.de — annual volumes 1799-1970, full-text",
@@ -289,6 +297,21 @@
      "detail": "relationship: Son · sex: Male · age: 5 · birth_year: 1866 · occupation: Scholar · birth_place: Aldenham, Hertfordshire, England"
     }
    ]
+  },
+  {
+   "name": "Alfred Luwinski",
+   "slug": "alfred-luwinski",
+   "records": [
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LUWINSKI, Alfred · date_of_birth: 09.09.1917"
+    }
+   ],
+   "register_id": 9500139,
+   "register_name": "Alfred Luwinski",
+   "register_match": "exact"
   },
   {
    "name": "Allan Bloom",
@@ -643,6 +666,18 @@
    "slug": "georg-leibholz",
    "records": [
     {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LEIBHOLZ, GEORG · date_of_birth: 07.06.1885 · what it confirms or changes: A YEAR OUT FROM THE GEDENKBUCH, which gives 7 June 1884 (en1100801). Same day, same month, different year."
+    },
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LEIBHOLZ, GEORG ISRAEL · date_of_birth: 07.06.1885 · what it confirms or changes: the compulsory name again"
+    },
+    {
      "file": "leibholz-gedenkbuch.tsv",
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
@@ -934,6 +969,24 @@
    "slug": "jacob-leibholz",
    "records": [
     {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LEIBHOLZ, JAKOB · date_of_birth: 08.08.1884 · birthplace: SCHUBIN · what it confirms or changes: CONFIRMS the Gedenkbuch exactly — 8 August 1884, Schubin — from a second and independent body of records."
+    },
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LEIBHOLZ, JACOB · date_of_birth: 08.08.1884 · what it confirms or changes: the same man, second spelling"
+    },
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LEIBHOLZ, Jacques Jaques · date_of_birth: 08.08.1884 · what it confirms or changes: THE SAME MAN, FRENCH-SPELLED. A rendering that suggests a document made in French hands — a displaced-persons or tracing file rather than a German one."
+    },
+    {
      "file": "leibholz-gedenkbuch.tsv",
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
@@ -1151,9 +1204,15 @@
    ]
   },
   {
-   "name": "Kurt LUWINSKI",
+   "name": "KURT LUWINSKI",
    "slug": "kurt-luwinski",
    "records": [
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LUWINSKI, Kurt · date_of_birth: 11.05.1912 · what it confirms or changes: *** KURT HIMSELF, AND THIS ARCHIVE DID NOT EXPECT HIM TO BE THERE AT ALL. *** DocID 11214358. See below."
+    },
     {
      "file": "litigation.tsv",
      "title": "Transvaal court files",
@@ -1439,6 +1498,30 @@
    "slug": "oskar-leibholz",
    "records": [
     {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LEIBHOLZ, OSKAR · date_of_birth: 13.05.1887 · birthplace: SCHUBIN · what it confirms or changes: CONFIRMS the Gedenkbuch. And SCHUBIN again, which is the brothers' birthplace."
+    },
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LEIBHOLZ, ISRAEL OSKAR · date_of_birth: 13.05.1887 · what it confirms or changes: *** THE COMPULSORY NAME, ON A FAMILY DOCUMENT. *** The 1938 decree is no longer only a law quoted on this site; here is one of these brothers carrying the name it forced on him."
+    },
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: two further OSKAR entries · date_of_birth: 13.05.1887 · what it confirms or changes: four index entries in all"
+    },
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: TRACING CASE T/D no. 52.971, \"LEIBHOLZ, OSCAR born 13.05.1887\" · date_of_birth: 13.05.1887 · what it confirms or changes: 14 DOCUMENTS. Somebody, after the war, asked the International Tracing Service what became of him. WHO ASKED IS INSIDE THE FILE."
+    },
+    {
      "file": "leibholz-gedenkbuch.tsv",
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
@@ -1639,6 +1722,21 @@
    ]
   },
   {
+   "name": "Siegfried Leibholz",
+   "slug": "siegfried-leibholz",
+   "records": [
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LEIBHOLZ, Siegfried · date_of_birth: 05.08.1925 · what it confirms or changes: CONFIRMS Kurt's younger brother, born 5 August 1925 at Berlin-Schöneberg."
+    }
+   ],
+   "register_id": 9500019,
+   "register_name": "Siegfried Leibholz",
+   "register_match": "exact"
+  },
+  {
    "name": "Stanley W SHENTON",
    "slug": "stanley-w-shenton",
    "records": [
@@ -1737,14 +1835,14 @@
  ],
  "ambiguous": [
   "Johannes Antonie Oelofse DE WITT",
-  "Kurt LUWINSKI"
+  "KURT LUWINSKI"
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 27,
-  "person_files": 18,
-  "people": 102,
-  "records": 144,
-  "linked_to_register": 4
+  "files": 28,
+  "person_files": 19,
+  "people": 104,
+  "records": 156,
+  "linked_to_register": 6
  }
 }
