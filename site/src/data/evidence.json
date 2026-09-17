@@ -223,6 +223,14 @@
    "kind": "ref",
    "rows": 10,
    "people": 0
+  },
+  {
+   "file": "yadvashem-leibholz.tsv",
+   "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+   "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+   "kind": "person",
+   "rows": 5,
+   "people": 5
   }
  ],
  "people": [
@@ -682,6 +690,12 @@
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
      "detail": "born: 07.06.1884 · birthplace: Hammerstein/Schlochau/Westpreußen · residence: Berlin (Mitte) · deportation_1: from Berlin 01.11.1941 → Litzmannstadt (Lodz), Ghetto · deportation_2: 13.05.1942 → Kulmhof (Chelmno), Vernichtungslager · death_date: not documented · death_place: Kulmhof (Chelmno), Vernichtungslager · gedenkbuch_id: en1100801 · status: DOCUMENTED — but NOT a brother, see notes"
+    },
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: in the results list · date_of_birth: 1884 · what it adds: LIST OF LODZ GHETTO INMATES, \"presumably murdered\" — which matches the Bundesarchiv's refusal to state a death date. Yad Vashem gives his year as 1884, AGREEING WITH THE BUNDESARCHIV AND DISAGREEING WITH AROLSEN'S 1885."
     }
    ],
    "register_id": 9500026,
@@ -991,6 +1005,12 @@
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
      "detail": "born: 08.08.1884 · birthplace: Schubin (poln. Szubin)/Posen · residence: Berlin (Schöneberg) · deportation_1: from Berlin 26.02.1943 → Auschwitz, Konzentrations- und Vernichtungslager · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100957 · status: DOCUMENTED"
+    },
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: 13520936 · item IDs 11572198 and 4113817 · date_of_birth: 08/08/1884 · place_of_birth: Schubin, Szubin, Poznan, Poland"
     }
    ],
    "register_id": 9500020,
@@ -1404,6 +1424,18 @@
    ]
   },
   {
+   "name": "Lydia Leibholz",
+   "slug": "lydia-leibholz",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: in the results list · date_of_birth: 1885 and 1886 in two records · what it adds: LIST OF LODZ GHETTO INMATES. This archive holds that Georg's wife was LYDIA née PERL and that she died on the same day he did. Here she is, in the same ghetto."
+    }
+   ]
+  },
+  {
    "name": "M Wear",
    "slug": "m-wear",
    "records": [
@@ -1526,6 +1558,12 @@
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
      "detail": "born: 13.05.1887 · birthplace: Schubin (poln. Szubin)/Posen · residence: Berlin (Wilmersdorf) · deportation_1: from Berlin 17.03.1943 → Theresienstadt, Ghetto · deportation_2: 16.10.1944 → Auschwitz, Konzentrations- und Vernichtungslager · death_date: 16.10.1944 · death_place: Auschwitz, Vernichtungslager · gedenkbuch_id: en1100894 · status: DOCUMENTED"
+    },
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: 13449776 · item ID 11572206 · date_of_birth: 13/05/1887 · place_of_birth: Schubin, Szubin, Poznan, Poland · what it adds: Deported BERLIN to THERESIENSTADT 17/03/1943; THERESIENSTADT to AUSCHWITZ 16/10/1944; DATE OF DEATH 16/10/1944 — the same day the second transport left. Citizenship Germany."
     }
    ],
    "register_id": 9500027,
@@ -1621,6 +1659,21 @@
      "detail": "ref: WLD 2542/1957 · depot: TAB · division: Witwatersrand Local Division · year: 1957 · plaintiff: STANDARD BANK OF SOUTH AFRICA LTD · defendant: K LUWINSKI · action: ILLIQUID CASE, PAYMENT · source: NAAIRS screen photographed into the family tree, photo 9500066 · status: NEW — found 14 Sep 2026"
     }
    ]
+  },
+  {
+   "name": "Samuel Israel Leibholz",
+   "slug": "samuel-israel-leibholz",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: in the results list · date_of_birth: 1877 · place_of_birth: Schubin, Poland · what it adds: Confirms what this archive already had from the Auschwitz list, INCLUDING THE COMPULSORY ISRAEL."
+    }
+   ],
+   "register_id": 9500025,
+   "register_name": "Samuel Israel Leibholz",
+   "register_match": "exact"
   },
   {
    "name": "Samuel Leibholz",
@@ -1839,10 +1892,10 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 28,
-  "person_files": 19,
-  "people": 104,
-  "records": 156,
-  "linked_to_register": 6
+  "files": 29,
+  "person_files": 20,
+  "people": 106,
+  "records": 161,
+  "linked_to_register": 7
  }
 }

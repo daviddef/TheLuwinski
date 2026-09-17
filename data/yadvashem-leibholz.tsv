@@ -1,0 +1,34 @@
+# YAD VASHEM, Central Database of Shoah Victims' Names — worked properly 17 September 2026.
+# This archive had used one Yad Vashem list (Jews murdered in Auschwitz) and never searched the
+# database itself. LEIBHOLZ returns 88 victim records, 3 data-submitter records and 8 further.
+# Sources behind them: List of Murdered Jews from Germany (47), LIST OF DEPORTATION FROM BERLIN (41),
+# PAGE OF TESTIMONY (18), List of Theresienstadt Camp Inmates (8).
+who	yv_record	date_of_birth	place_of_birth	what it adds
+Jacob Leibholz	13520936 · item IDs 11572198 and 4113817	08/08/1884	Schubin, Szubin, Poznan, Poland	*** THE TRANSPORT IS NAMED. "TRANSPORT 30 FROM BERLIN TO AUSCHWITZ BIRKENAU, EXTERMINATION CAMP, POLAND, ON 26/02/1943." *** This archive has carried the date for a fortnight and never had the transport. Also: PERMANENT RESIDENCE BERLIN, and CITIZENSHIP GERMANY.
+Oskar Leibholz	13449776 · item ID 11572206	13/05/1887	Schubin, Szubin, Poznan, Poland	Deported BERLIN to THERESIENSTADT 17/03/1943; THERESIENSTADT to AUSCHWITZ 16/10/1944; DATE OF DEATH 16/10/1944 — the same day the second transport left. Citizenship Germany.
+Samuel Israel Leibholz	in the results list	1877	Schubin, Poland	Confirms what this archive already had from the Auschwitz list, INCLUDING THE COMPULSORY ISRAEL.
+Georg Leibholz	in the results list	1884		LIST OF LODZ GHETTO INMATES, "presumably murdered" — which matches the Bundesarchiv's refusal to state a death date. Yad Vashem gives his year as 1884, AGREEING WITH THE BUNDESARCHIV AND DISAGREEING WITH AROLSEN'S 1885.
+Lydia Leibholz	in the results list	1885 and 1886 in two records		LIST OF LODZ GHETTO INMATES. This archive holds that Georg's wife was LYDIA née PERL and that she died on the same day he did. Here she is, in the same ghetto.
+#
+# A SECOND MEMORIAL BOOK THIS ARCHIVE DID NOT KNOW IT WAS STANDING ON.
+# Jacob's deportation record is sourced not to the Bundesarchiv but to:
+#   "Gedenkbuch Berlins der jüdischen Opfer des Nationalsozialismus", Freie Universität Berlin,
+#   Zentralinstitut für sozialwissenschaftliche Forschung, Edition Hentrich, Berlin 1995.
+# THAT IS A DIFFERENT BOOK FROM THE ONE CITED ON EVERY PAGE OF THIS SITE. The Bundesarchiv Gedenkbuch
+# is national; this is Berlin's own, compiled by the Free University, and it is where the transport
+# number comes from. It should be consulted directly for Auguste, for Siegfried, and for the address.
+#
+# THE OTHER BERLIN LEIBHOLZES, AND THEY ARE NOT OURS UNTIL SOMETHING SAYS THEY ARE.
+# The same search returns a substantial Berlin family this archive has never accounted for:
+#   WILHELM 1890 · ELSE 1889 · RUTH 1923 · LIESELOTTE 1923 · WALTER 1922 · CHANA 1938 ·
+#   HEINRICH 1890 · ALBERT 1886 · MAX 1877 · HANS ISRAEL 1912 (born Preussisch Friedland)
+# Most are on the List of Deportation from Berlin. WHETHER ANY OF THEM IS A COUSIN IS UNKNOWN AND IS
+# NOT GUESSED HERE. What is worth saying is that Sally Leibholz and Friederike Schmul had more than
+# the three or four sons this archive has names for, and a Berlin Leibholz of the right age is the
+# obvious place a fifth would appear.
+#
+# *** A DECOY TO WRITE DOWN BEFORE IT COSTS SOMEBODY A DAY ***
+#   "KURT LEIBHOLZ, 1927, BERLIN, MURDERED" — List of deportation from Berlin.
+# THAT IS NOT OUR KURT. Ours is KURT LUWINSKI, born 11 May 1912, who left Germany in 1933 and died
+# in Johannesburg in 1968. A Kurt Leibholz of the same city, fifteen years younger, murdered, is
+# exactly the kind of near-match this archive has been caught by three times in a fortnight.

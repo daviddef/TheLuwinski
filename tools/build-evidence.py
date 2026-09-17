@@ -47,6 +47,7 @@ MANIFEST = {
  "caroline-james-1920-1957.tsv": ([], "Caroline Castle, later James, 1920 to 1957", "GRO indexes; 1939 Register RG101/1598B/017/25", "ref"),
  "litigation.tsv":               (["plaintiff","defendant"], "Transvaal court files", "National Archives of South Africa, WLD and TPD series", "person"),
  "naairs-figueiredo.tsv":        ([], "The NAAIRS index under FIGUEIREDO", "National Archives of South Africa", "ref"),
+ "yadvashem-leibholz.tsv":       (["who"], "Yad Vashem, Central Database of Shoah Victims' Names", "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206", "person"),
  "arolsen-leibholz-luwinski.tsv": (["who"], "The Arolsen Archives index", "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked", "person"),
  "berlin-adressbuch.tsv":        ([], "The Berliner Adressbücher", "Zentral- und Landesbibliothek Berlin, digital.zlb.de — annual volumes 1799-1970, full-text", "ref"),
  "tna-discovery.tsv":            ([], "The National Archives Discovery catalogue", "discovery.nationalarchives.gov.uk — citations verified and references found, 17 September 2026", "ref"),
