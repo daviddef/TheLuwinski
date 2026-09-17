@@ -81,6 +81,22 @@
    "people": 9
   },
   {
+   "file": "familysearch-sa-family.tsv",
+   "title": "This family in FamilySearch's South African collections",
+   "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+   "kind": "person",
+   "rows": 16,
+   "people": 16
+  },
+  {
+   "file": "familysearch-south-africa.tsv",
+   "title": "What FamilySearch actually holds for South Africa",
+   "source": "FamilySearch collection metadata, all 3,502 collections enumerated 17 September 2026; index spans measured by exact-year counts",
+   "kind": "ref",
+   "rows": 40,
+   "people": 0
+  },
+  {
    "file": "gazette-wear-sweep.tsv",
    "title": "The gazette sweep for the Wears and for Phyllis",
    "source": "gazettes.africa, 54,313 South African issues",
@@ -370,6 +386,18 @@
    ]
   },
   {
+   "name": "Bruce Wallace WEAR",
+   "slug": "bruce-wallace-wear",
+   "records": [
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: marriage to Jillian Anne THORP · date: 21 November 1959 · place: South Africa · age_given: — · record: South Africa, Civil Marriage Records · note: Already held."
+    }
+   ]
+  },
+  {
    "name": "C Wear",
    "slug": "c-wear",
    "records": [
@@ -426,6 +454,24 @@
      "title": "1891 census, Watford",
      "source": "RG12, Watford",
      "detail": "relationship: Wife · marital: Married · sex: Female · age: 26 · birth_year: 1865 · occupation: - · birth_place: Wigginton, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "DECOY",
+   "slug": "decoy",
+   "records": [
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: Leonard Anthony WEAR, husband of Dawn Edna Wear born Ferreira, died 14 March 2000 · date: — · place: Western Cape · age_given: — · record: Western Cape, Deceased Estate Files, 1951-2011 · note: NOT OURS. A different Leonard Wear with a different middle name in a different province. Her parents are Andries Hercules Ferreira and Susannah C. Ströh. Written down before it costs somebody an afternoon."
+    },
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: the Durban Wears — Cecil Joseph Wear and Katie, born Beck, married Durban 20 February 1912, with at least eight children baptised 1912-1931, and Cecil Wentworth Wear who married Doreen Mary James in 1933 · date: — · place: Durban, Natal · age_given: — · record: Anglican parish registers and Natal civil registration · note: NOT OURS, and they are the majority of the 111. Any surname search for WEAR in South Africa is mostly this family."
     }
    ]
   },
@@ -646,6 +692,18 @@
    ]
   },
   {
+   "name": "Frances HOSTOWSKY, BERNER, SEFTON, LUWINSKI",
+   "slug": "frances-hostowsky-berner-sefton-luwinski",
+   "records": [
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: marriage to Rolf EISENHARDT · date: 23 May 1958 · place: South Africa · age_given: 43 · record: South Africa, Civil Marriage Records — ark 1:1:8CVY-QFW2; also Western Cape Archives Records ark 1:1:Q23Q-XBMH"
+    }
+   ]
+  },
+  {
    "name": "Frederick James Castle",
    "slug": "frederick-james-castle",
    "records": [
@@ -847,9 +905,15 @@
    ]
   },
   {
-   "name": "Henry Robert Wear",
+   "name": "Henry Robert WEAR",
    "slug": "henry-robert-wear",
    "records": [
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: burial, grave 56045 · date: 11 September 1969 · place: West Park, Johannesburg · age_given: 80 · record: Johannesburg Cemetery Records — images ark 3:1:3QHK-Q3PY-2FQG and 3:1:3QHV-13PY-2FCC · note: The image references are recorded here for row 60, which needs the F-series folio from the same film."
+    },
     {
      "file": "wear-1911-letchworth.tsv",
      "title": "1911 census, Letchworth",
@@ -951,6 +1015,18 @@
      "title": "Transvaal court files",
      "source": "National Archives of South Africa, WLD and TPD series",
      "detail": "ref: WLD 2368/1951 · depot: TAB · division: Witwatersrand Local Division · year: 1951 · plaintiff: Kurt LUWINSKI · defendant: Ivone (formerly de Witt) (born Figueiredo) · action: DIVORCE · source: NAAIRS · status: known"
+    }
+   ]
+  },
+  {
+   "name": "Ivone de FIGUEIREDO",
+   "slug": "ivone-de-figueiredo",
+   "records": [
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: BIRTH, PARENTS OR DEATH · date: — · place: — · age_given: — · record: NOT PRESENT · note: Three marriages and nothing else. Her parents' names remain the oldest unanswered question in this archive; no South African set FamilySearch holds carries a parents' column for a civil marriage."
     }
    ]
   },
@@ -1234,6 +1310,18 @@
      "detail": "arolsen_index_entry: LUWINSKI, Kurt · date_of_birth: 11.05.1912 · what it confirms or changes: *** KURT HIMSELF, AND THIS ARCHIVE DID NOT EXPECT HIM TO BE THERE AT ALL. *** DocID 11214358. See below."
     },
     {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: marriage to Ivone de Figueiredo de Witt · date: 19 June 1948 · place: Johannesburg, Transvaal · age_given: 36 · record: South Africa, Civil Marriage Records — ark 1:1:6ZHT-WSJM · note: Corroborates the register image read on 15 September. Age 36 against a birth of 11 May 1912."
+    },
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: marriage to Frances Hostovsky, Bernes, Sefton · date: 29 February 1956 · place: South Africa · age_given: 43 · record: South Africa, Civil Marriage Records — ark 1:1:D4XQ-BJ2M · note: Corroborates entry No. 169 of 1956. Her surname stack shows she had been married at least twice before him."
+    },
+    {
      "file": "litigation.tsv",
      "title": "Transvaal court files",
      "source": "National Archives of South Africa, WLD and TPD series",
@@ -1260,6 +1348,33 @@
      "died": "15 December 1968"
     }
    ]
+  },
+  {
+   "name": "Kathleen Edith WEAR",
+   "slug": "kathleen-edith-wear",
+   "records": [
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: marriage to James Cecil FOOT · date: 26 May 1945 · place: Johannesburg, Transvaal · age_given: 24 · record: South Africa, Church of the Province of South Africa (Anglican) Parish Registers — ark 1:1:6ZPY-XHSZ"
+    }
+   ]
+  },
+  {
+   "name": "Kurt Israel LUWINSKI",
+   "slug": "kurt-israel-luwinski",
+   "records": [
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: DEATH OR ESTATE · date: — · place: — · age_given: — · record: NOT PRESENT · note: Kurt appears EXACTLY TWICE, and both are marriages. See the two index cliffs in familysearch-south-africa.tsv: the civil death index stops in 1966 and he died after it."
+    }
+   ],
+   "register_id": 9500001,
+   "register_name": "Kurt Israel Luwinski",
+   "register_match": "exact"
   },
   {
    "name": "Kurt LUWINSKY",
@@ -1318,6 +1433,30 @@
      "title": "The 63 Pix Road household, traced end to end",
      "source": "GRO birth, marriage and death indexes; 1939 Register",
      "detail": "event: died · date: Q4 1967 · place: HITCHIN, HERTFORDSHIRE · reference: GRO death index, birth year 1882 · note: AGED 84. The initials close it: born Louisa Sarah A, died Louise S A."
+    }
+   ]
+  },
+  {
+   "name": "Leonard Aubrey Robert WEAR",
+   "slug": "leonard-aubrey-robert-wear",
+   "records": [
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: marriage to Phyllis Agnes ROBERTSON · date: 7 September 1940 · place: Johannesburg, Transvaal · age_given: 23 · record: South Africa, Civil Marriage Records — ark 1:1:6ZCM-N8BV · note: Known. Age 23 fits a birth in 1917."
+    },
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: marriage to Marjorie Eileen DUNLOP · date: 30 October 1951 · place: Johannesburg, Transvaal · age_given: 34 · record: South Africa, Civil Marriage Records — ark 1:1:6ZHR-R9ZG · note: Known. This is the marriage whose ante-nuptial contract Anne is being asked for."
+    },
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: DEATH OR BURIAL · date: — · place: — · age_given: — · record: NOT PRESENT"
     }
    ]
   },
@@ -1472,6 +1611,18 @@
    ]
   },
   {
+   "name": "Martha Maud WEAR",
+   "slug": "martha-maud-wear",
+   "records": [
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: burial, grave 56045 · date: 19 March 1986 · place: West Park, Johannesburg · age_given: 90 · record: Johannesburg Cemetery Records — image ark 3:1:3QHV-B3PY-2FKN · note: As above."
+    }
+   ]
+  },
+  {
    "name": "Martha Maude Castle",
    "slug": "martha-maude-castle",
    "records": [
@@ -1591,6 +1742,18 @@
      "title": "Transvaal court files",
      "source": "National Archives of South Africa, WLD and TPD series",
      "detail": "ref: WLD 583/1944 · depot: TAB · division: Witwatersrand Local Division · year: 1944 · plaintiff: PAULINE MILLER (born RAPPOPORT) · defendant: JOSEPH · action: DIVORCE · source: gendatabase mirror of NAAIRS, 16 Sep 2026 · status: NEW — Kurt's last wife, her first divorce"
+    }
+   ]
+  },
+  {
+   "name": "Phyllis Agnes WEAR",
+   "slug": "phyllis-agnes-wear",
+   "records": [
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: marriage to Robert Selwyn NORQUOY · date: 14 June 1952 · place: Malvern, Johannesburg, Transvaal · age_given: 37 · record: South Africa, Civil Marriage Records — ark 1:1:6ZHR-NR73"
     }
    ]
   },
@@ -1884,6 +2047,18 @@
      "detail": "ref: TPD 534/1948 · depot: TAB · division: Transvaal Provincial Division · year: 1948 · plaintiff: Johannes Antonie Oelofse DE WITT · defendant: Yvonne (born de Figueiredo) · action: DIVORCE · source: NAAIRS screen photographed into the family tree, photo 9500068 · status: NEW — found 14 Sep 2026"
     }
    ]
+  },
+  {
+   "name": "Yvonne FIGUEIREDO",
+   "slug": "yvonne-figueiredo",
+   "records": [
+    {
+     "file": "familysearch-sa-family.tsv",
+     "title": "This family in FamilySearch's South African collections",
+     "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
+     "detail": "event: marriage to Johannes Antonie Oelofse DE WITT · date: 2 February 1948 · place: Germiston, Transvaal · age_given: 22 · record: South Africa, Civil Marriage Records — ark 1:1:6ZCM-J38T"
+    }
+   ]
   }
  ],
  "ambiguous": [
@@ -1892,10 +2067,10 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 29,
-  "person_files": 20,
-  "people": 106,
-  "records": 161,
-  "linked_to_register": 7
+  "files": 31,
+  "person_files": 21,
+  "people": 116,
+  "records": 177,
+  "linked_to_register": 8
  }
 }

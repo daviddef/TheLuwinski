@@ -3,6 +3,18 @@
   "dek": "Absences, with the limits that make them worth something.",
   "rows": [
     {
+      "claim": "Leonard Aubrey Robert Wear is in no South African record FamilySearch holds except his two marriages",
+      "searched": "ALL THIRTY-TWO South African collections FamilySearch holds, found by enumerating all 3,502 of its collections and filtering. Surname WEAR matched EXACTLY - 111 records, every one read - then repeated under WARE, WEIR, WIER, WEARE, WEARNE and WEARS.",
+      "result": "He appears TWICE. Johannesburg, 7 September 1940, to Phyllis Agnes Robertson, aged 23. Johannesburg, 30 October 1951, to Marjorie Eileen Dunlop, aged 34. No death, no burial, no estate, no baptism, under any spelling.",
+      "bound": "AND HERE IS WHY IT PROVES LESS THAN IT LOOKS, WHICH IS THE POINT OF WRITING IT DOWN. FamilySearch's South African civil death registration is a NAME INDEX TO 1966: exact-year counts give 61,899 for 1960, 74,131 for 1965, 59,263 for 1966 - and then 178 for 1967 and nothing after it. Leonard died in 1973 or 1979. HIS ABSENCE FROM AN INDEX THAT ENDS SEVEN YEARS BEFORE HE DIED IS NOT EVIDENCE ABOUT HIM. The same bound removes Kurt, who died in 1968, and Henry Robert, who died in September 1969 and is nonetheless in the collection - as a BURIAL, in the Johannesburg cemetery registers, which run to 2019. So the negative that does carry weight is the narrower one: he was not buried in a Johannesburg cemetery, in a set that holds his father, his mother and two later Wears."
+    },
+    {
+      "claim": "There is no post-1970 South African marriage register to reach by name on FamilySearch",
+      "searched": "\"South Africa, Civil Marriage Records, 1801-1974\", collection 2821281 - 2,556,837 records and 2,692,991 images. Counted by exact year rather than trusting the title.",
+      "result": "1950 = 133,215. 1955 = 148,400. 1959 = 171,201. 1960 = 178,037. 1961 = 124. 1962 = 37. 1963 = 66. 1965 = 190. 1966 = 6. 1967 = 0. 1968 = 2. 1969 and after = 0.",
+      "bound": "A CLIFF, NOT A DECLINE. The collection is titled 1801-1974 and is, as a name index, 1801-1960. The images may well run to 1974; nothing lets you find one by name. THE GENERAL LESSON, AND THIS ARCHIVE HAS NOW LEARNED IT TWICE IN A WEEK: a collection's title describes the records, not the index, and an index that stops looks exactly like a family that leaves no record. The first time was the electoral registers, where a search box returned 3,478 rows and not one name."
+    },
+    {
       "claim": "Leonard did not die in England or Wales between 1970 and 1985",
       "searched": "FreeBMD (the GRO death index for England and Wales): surname WEAR, deaths, March 1970 to December 1985, NO forename given — 241 entries across 58 consecutive quarters",
       "result": "Sixteen of the 241 were born between 1915 and 1919. NOT ONE is Leonard Aubrey Robert Wear; the only 1917 birth is a Sam Wear of Halifax. A separate search on the forename Leonard returns one man, Leonard Rigby Wear, born 10 October 1897, died Claro June 1970.",

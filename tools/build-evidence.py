@@ -56,6 +56,8 @@ MANIFEST = {
  "castle-nine-children.tsv":     (["name"], "The nine children of George William Castle and Caroline Wallis", "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192", "person"),
  "castle-baptisms-weston.tsv":   ([], "The Hertfordshire baptism register, worked to its coverage bound", "Findmypast, Hertfordshire Baptisms — 823 Castle rows sorted by mother's name; Baldock coverage ends 1879", "ref"),
  "gazette-wear-sweep.tsv":       ([], "The gazette sweep for the Wears and for Phyllis", "gazettes.africa, 54,313 South African issues", "ref"),
+ "familysearch-south-africa.tsv": ([], "What FamilySearch actually holds for South Africa", "FamilySearch collection metadata, all 3,502 collections enumerated 17 September 2026; index spans measured by exact-year counts", "ref"),
+ "familysearch-sa-family.tsv":   (["who"], "This family in FamilySearch's South African collections", "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026", "person"),
 }
 
 NOT_A_PERSON = re.compile(r"^(married|marriage|#|-|—|\s*)$", re.I)

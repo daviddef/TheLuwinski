@@ -1,0 +1,50 @@
+# WHAT FAMILYSEARCH ACTUALLY HOLDS FOR SOUTH AFRICA — measured 17 September 2026.
+# The worklist said eleven record sets. There are THIRTY-TWO. All 3,502 FamilySearch
+# collections were enumerated through /service/search/hr/v2/collections and filtered;
+# the counts below are the collections' own published figures.
+#
+# THE POINT OF THIS FILE IS THE LAST TWO ROWS OF EACH BLOCK. A collection's TITLE gives
+# the span of the records. Its INDEX may stop far earlier, and an index that stops is
+# indistinguishable, from outside, from a family that leaves no record. Both cliffs
+# below were measured by counting exact-year hits, not read off a description.
+field	value
+enumerated	3,502 FamilySearch collections read; 32 cover South Africa
+method	/service/search/hr/v2/collections, paged 100 at a time, deduplicated by collection id
+run	17 September 2026, signed in
+collection	South Africa, Civil Marriage Records, 1801-1974 — id 2821281 — 2,556,837 records, 2,692,991 images
+collection	South Africa, Cape Province, Civil Records, 1840-1972 — id 1779109 — 2,796,060 records
+collection	South Africa, Gauteng, Johannesburg, Cemetery Records, 1840-2019 — id 4453927 — 2,406,245 records
+collection	South Africa, Cape, Probate Records of the Master of the High Court, 1822-1990 — id 2517051 — 2,066,020 records
+collection	South Africa, Transvaal, Probate Records from the Master of the Supreme Court, 1869-1961 — id 2520237 — 1,870,732 records
+collection	South Africa, Church of the Province of South Africa (Anglican) Parish Registers, 1801-2004 — id 1468076 — 1,230,219 records
+collection	South Africa, Transvaal, Civil Death, 1869-1954 — id 2998108 — 961,705 records
+collection	South Africa, Cape, Cemetery Records, 1872-2011 — id 2790463 — 757,900 records
+collection	South Africa, Civil Death Registration, 1953-1967 — id 3732506 — 709,500 records
+collection	South Africa, KwaZulu Natal, Vital Records, 1868-1976 — id 3511741 — 610,424 records
+collection	South Africa, Orange Free State, Probate Records, 1832-1990 — id 3040532 — 532,485 records
+collection	South Africa, Pietermaritzburg, Estate Files, 1846-1950 — id 2573604 — 357,852 records
+collection	South Africa, Natal, Civil Deaths, 1863-1955 — id 2721608 — 338,278 records
+collection	South Africa, Transvaal, Civil Marriages, 1870-1931 — id 2727134 — 267,277 records
+collection	South Africa, Natal, Civil Marriages, 1845-1955 — id 2063749 — 210,566 records
+collection	South Africa, Orange Free State, Civil Death Registration, 1902-1954 — id 3732502 — 208,955 records
+collection	South Africa, Natal, Passenger Lists, 1860-1911 — id 3038342 — 155,073 records
+collection	South Africa, Cape, Kimberley, Probate Records of the Supreme Court, 1871-1937 — id 2521616 — 158,938 records
+collection	South Africa, Cape, Western Cape Archives Records, 1792-1992 — id 1935348 — 146,155 records
+collection	South Africa, Western Cape, Deceased Estate Files, 1951-2011 — id 4319131 — 4,020 records, 348,416 images
+collection	South Africa, Transvaal, Estate Files, 1950-1993 — id 2144007 — NO INDEX, 191,580 images
+collection	South Africa, Orange Free State, Estate Files, 1951-2006 — id 1407787 — NO INDEX, 3,895,196 images
+collection	South Africa, Eastern Cape, Estate Files, 1962-2004 — id 2037006 — NO INDEX, 425,696 images
+collection	South Africa, Western Cape, Estate Files, 1974 — id 2156332 — NO INDEX, 73,456 images
+collection	plus the Dutch Reformed, Netherdutch Reformed, Methodist and Reformed church registers, the Register of Slaves 1762-1838, and the Settlers Index 1820-1920
+CLIFF ONE	"South Africa, Civil Marriage Records, 1801-1974" is a NAME INDEX TO 1960, not to 1974
+measured	exact-year counts: 1950 = 133,215 · 1955 = 148,400 · 1959 = 171,201 · 1960 = 178,037 · 1961 = 124 · 1962 = 37 · 1963 = 66 · 1965 = 190 · 1966 = 6 · 1967 = 0 · 1968 = 2 · 1969 onward = 0
+consequence	row 81 cannot be answered here. There is no post-1970 South African marriage indexed in this set, so no register image of that date can be reached by name.
+CLIFF TWO	"South Africa, Civil Death Registration, 1953-1967" is a NAME INDEX TO 1966
+measured	exact-year counts: 1953 = 1,384 · 1960 = 61,899 · 1965 = 74,131 · 1966 = 59,263 · 1967 = 178
+consequence	KURT died 1968. HENRY ROBERT died 11 September 1969. LEONARD died 1973 or 1979. ALL THREE FALL AFTER THE LAST YEAR FAMILYSEARCH INDEXES A SOUTH AFRICAN CIVIL DEATH. Their absence from it is a property of the index, not of their lives.
+THE NEAR MISS	South Africa, Transvaal, Estate Files, 1950-1993 — id 2144007
+what it is	the collection's own words: "Images of copies of DEATH NOTICES from probate estate files from the historic province of Transvaal ... National Archives of South Africa, Pretoria"
+why it matters	a South African death notice names the deceased's PARENTS. The title spans 1950 to 1993, which brackets Kurt in 1968, Henry Robert in 1969, both of Leonard's candidate years, and Martha Maud in 1986.
+what is actually online	SEVEN WAYPOINTS: 1955, 1956, 1957, 1958, 1958-1959, 1959, 1960. Read from /service/cds/recapi/collections/2144007/waypoints.
+verdict	THE SET IS PUBLISHED FOR 1955 TO 1960 ONLY. Its own page says "This collection is being published as images become available." Nothing in it can touch any death in this family. Worth re-checking whenever FamilySearch adds to it — this is the one instrument that would answer row 96 without Home Affairs.
+control	the Orange Free State equivalent, id 1407787, IS complete — 57 waypoints, 1951 to 2006. So the gap in the Transvaal set is a publishing gap, not a survival gap.
