@@ -3,6 +3,12 @@
   "dek": "Absences, with the limits that make them worth something.",
   "rows": [
     {
+      "claim": "Kurt Luwinski's estate was never advertised in the South African Government Gazette — or the scanner lost it",
+      "searched": "gazettes.africa, the full South African run. LUWINSKI and LUWINSKY, every year; then the OCR manglings Luwinsk, Luwenski, Lnwinski, Luwiuski, Luwinshi; then Lewinski, whose two hits in 1969 and 1970 were opened.",
+      "result": "EIGHT documents in the entire corpus, and not one is his estate: three in October 1942 dissolving the partnership between Walter Oppenheimer and Kurt Luwinski, two in November 1941 creating it, and one in November 1972 for Paula Luwinski. NOTHING AT ALL IN 1968, 1969, 1970 OR 1971. The two Lewinski hits are both VON LEWINSKY in a tariff list.",
+      "bound": "THE CONTROL IS WHAT MAKES THIS WORTH ANYTHING, and it kills the innocent explanation. The years are fully in the corpus and full of exactly the kind of notice that is missing: searching 1969 for 'Estates of deceased persons' returns 221 issues, 'boedel' returns 100, 'Master of the Supreme Court' returns 111; 1970 gives 163, 93 and 101. So this is not a gap in the archive of gazettes. WHAT IT STILL CANNOT DISTINGUISH: a notice the scanner mis-read from a notice that was never placed. The search does no prefix matching — 'Luwinsk' returns zero where 'Luwinski' returns eight — so a mangled spelling is invisible to it, and this corpus has already been caught rendering Figueiredo as 'Epo .Figueiredo,CarlosDe'. He died on 15 December 1968 and his estate is MHG 7584/69. Only the file itself can say which."
+    },
+    {
       "claim": "Leonard Aubrey Robert Wear is in no South African record FamilySearch holds except his two marriages",
       "searched": "ALL THIRTY-TWO South African collections FamilySearch holds, found by enumerating all 3,502 of its collections and filtering. Surname WEAR matched EXACTLY - 111 records, every one read - then repeated under WARE, WEIR, WIER, WEARE, WEARNE and WEARS.",
       "result": "He appears TWICE. Johannesburg, 7 September 1940, to Phyllis Agnes Robertson, aged 23. Johannesburg, 30 October 1951, to Marjorie Eileen Dunlop, aged 34. No death, no burial, no estate, no baptism, under any spelling.",
