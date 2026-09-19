@@ -269,8 +269,8 @@
    "title": "Yad Vashem, Central Database of Shoah Victims' Names",
    "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
    "kind": "person",
-   "rows": 5,
-   "people": 5
+   "rows": 11,
+   "people": 11
   }
  ],
  "people": [
@@ -331,6 +331,18 @@
      "title": "1901 census, 22 Mount Pleasant, St Albans",
      "source": "RG13 piece 1312",
      "detail": "relationship: Son · marital: Single · sex: Male · age: 6 · birth_year: 1895 · occupation: - · birth_place: St Albans, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Albert Leibholz",
+   "slug": "albert-leibholz",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: List of Persecuted Persons · date_of_birth: 1886 · place_of_birth: Berlin, Germany"
     }
    ]
   },
@@ -887,6 +899,18 @@
    ]
   },
   {
+   "name": "Hans Israel Leibholz",
+   "slug": "hans-israel-leibholz",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: List of Jews Murdered in Auschwitz · date_of_birth: 1912 · place_of_birth: PREUSSISCH FRIEDLAND, Germany"
+    }
+   ]
+  },
+  {
    "name": "Harriet Reeves",
    "slug": "harriet-reeves",
    "records": [
@@ -895,6 +919,18 @@
      "title": "1911 census, Letchworth",
      "source": "RG14, Letchworth",
      "detail": "relationship: Head · marital: Widow · sex: Female · age: 36 · birth_year: 1875 · occupation: - · birth_place: Bassingbourn, Cambs"
+    }
+   ]
+  },
+  {
+   "name": "Heinrich Leibholz",
+   "slug": "heinrich-leibholz",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: List of Persecuted Persons · date_of_birth: 1890 · place_of_birth: Berlin, Germany · what it adds: CORRESPONDENCE ONLY. The 1940 directory has Heinrich Leibholz, Verwaltungsbeamter, Neukölln, Leinestraße 32. Fate not stated by Yad Vashem."
     }
    ]
   },
@@ -1856,6 +1892,12 @@
      "title": "Yad Vashem, Central Database of Shoah Victims' Names",
      "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
      "detail": "yv_record: in the results list · date_of_birth: 1877 · place_of_birth: Schubin, Poland · what it adds: Confirms what this archive already had from the Auschwitz list, INCLUDING THE COMPULSORY ISRAEL."
+    },
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: List of Jews Murdered in Auschwitz · date_of_birth: 1877 · place_of_birth: Schubin, Poland"
     }
    ],
    "register_id": 9500025,
@@ -1995,6 +2037,30 @@
    ]
   },
   {
+   "name": "THE PROFESSIONS FACET",
+   "slug": "the-professions-facet",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: Yad Vashem facet counts for the surname · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
+   "name": "Wilhelm Leibholz",
+   "slug": "wilhelm-leibholz",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: List of Deportation from Berlin; List of Theresienstadt Camp Inmates; List of Murdered Jews from Germany · date_of_birth: 28/12/1890 · place_of_birth: Berlin, Germany"
+    }
+   ]
+  },
+  {
    "name": "William Shenton",
    "slug": "william-shenton",
    "records": [
@@ -2093,8 +2159,8 @@
   "ambiguous": 2,
   "files": 34,
   "person_files": 21,
-  "people": 116,
-  "records": 177,
+  "people": 121,
+  "records": 183,
   "linked_to_register": 8
  }
 }
