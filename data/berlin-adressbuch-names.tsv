@@ -1,0 +1,39 @@
+# THE BERLINER ADRESSBUCH, READ PROPERLY — the ALPHABETICAL NAME SECTION, 1920 to 1943.
+# 20 September 2026. This supersedes the method behind the page counts in berlin-adressbuch.tsv.
+#
+# THE METHOD WAS WRONG AND THE CORRECTION IS THE FIRST FINDING.
+# The earlier sweep counted PAGE HITS PER VOLUME — 24 in 1933 down to 2 in 1943 — and read the
+# fall as a family leaving a city. But a volume has FOUR SECTIONS, and the count mixed them:
+#   Teil I    Einwohner / Haushaltungsvorstände   — HOUSEHOLDERS AND FIRMS, ONE ENTRY EACH
+#   Teil II   Branchen-Verzeichnis                — the trades index, where one firm recurs
+#   Teil III  Behörden, Kirchen, Schulen          — institutions
+#   Teil IV   nach Straßen geordnet               — the street directory, where every tenant recurs
+# In 1933, 24 pages carried the name and ONLY ONE of them was Teil I. The other 23 were the street
+# and trade sections, where a single household can generate a dozen hits. A count across all four
+# measures the size of the book as much as the size of the family.
+# The section is not consistently titled: it is "I. Einwohner Berlins und seiner Vororte" in 1920,
+# "[Teil I.] Einwohner und Firmen der Stadt Berlin geordnet nach Namen" in 1932, and
+# "I. Haushaltungsvorstände" from 1938. It is identified here by position in the volume, not by title.
+field	value
+LUWINSKI, AND IT ANSWERS ITEM 9	read off the householder page for 1933, page 1671: "LuwinSki Alfred Bügler N31 Putbusser Str 24" — ALFRED LUWINSKI, BÜGLER (a garment presser), N31 PUTBUSSER STRASSE 24, Wedding.
+what that settles	he is a HEAD OF HOUSEHOLD in 1933. Teil I lists householders and registered firms, not lodgers and not children.
+AND IT SEPARATES HIM FROM THE AROLSEN MAN	the Arolsen index holds an ALFRED LUWINSKI BORN 09.09.1917. A boy of sixteen is not a head of household and not a qualified presser. THEY ARE NOT THE SAME MAN. The likeliest reading is father and son, and the archive does not assert even that.
+and it keeps him age-compatible with Lizzy	Auguste "Lizzy" Luwinski was born 28 August 1893. A householder in the garment trade in 1933 fits a man of her own generation. HER BROTHER REMAINS POSSIBLE AND IS STILL NOT PROVED.
+the Luwinski name is genuinely rare in Berlin	in the whole run 1920-1943 the name reaches the ALPHABETICAL HOUSEHOLDER SECTION IN ONE YEAR ONLY — 1933. The single hits in 1936 and 1943 are in other sections. LUWINSKY with a Y returns nothing at all, in any volume, in any section.
+LEIBHOLZ — WHO THEY WERE, FROM THEIR OWN ENTRIES	the name in Teil I is not a scatter of households. It is a small number of BUSINESSES, and they are in the clothing trade.
+1920	WILLIAM LEIBHOLZ, Generaldirektor and STADTRAT — a city councillor. Also FELIX LEIBHOLZ, "Heringe u. Sardellen" — herring and anchovies.
+1922	LOUIS LEIBHOLZ, proprietor, telephone Moabit 10965.
+1924 to 1934	JAQUES LEIBHOLZ & CO., KONFEKTION — ready-made clothing — W8, Kronenstraße. Also LEO LEIBHOLZ & CO. G.m.b.H.
+1929 to 1938	M. LEIBHOLZ, TRIKOTAGEN und WOLLWAREN — knitwear and woollens — C2, ROSENSTRASSE 17.
+1929 to 1938	SAMUEL LEIBHOLZ, "HÜTE EN GROS" — HATS, WHOLESALE.
+AND THAT IS THE LINE WORTH FOLLOWING	SAMUEL LEIBHOLZ SOLD HATS WHOLESALE IN BERLIN. Kurt Luwinski kept a hat shop, THE PICCADILLY HAT, at 81 Eloff Street, Johannesburg, from 1941 to 1952, and gave his occupation as dress designer in 1933 and again in 1956. AUGUSTE "LIZZY" LUWINSKI WAS A DRESSMAKER AND MILLINER. The trade did not begin in Johannesburg.
+a move, and it may be nothing or may be everything	Samuel Leibholz is at SW19 in 1929-1936 and at SW68 in 1938. A wholesale hat business changing postal district between 1936 and 1938 is the kind of move that was sometimes chosen and sometimes not. THE ARCHIVE IS NOT READING IT EITHER WAY.
+THE LAST ENTRIES	the last Leibholz FIRMS in the householder section are in the 1938 volume: M. Leibholz at Rosenstraße 17, and Samuel Leibholz at SW68.
+AND HERE IS WHERE THIS ARCHIVE STOPS, DELIBERATELY	from 1939 the only thing the OCR returns under the name is the printer's cross-reference "Leibholz s. a. Leipholz" — see also Leipholz — plus a LEIBHOLD Wilhelm, Werkschutzbeamter, who is a different surname. IT WOULD BE EASY AND WRONG TO PUBLISH THAT AS THE FAMILY DISAPPEARING FROM THE REGISTER IN 1939.
+why it would be wrong	THE 1939 PAGE CANNOT BE READ. Page 1719 of the 1939 volume returns as ONE UNBROKEN BLOCK of 17,000 characters with the columns interleaved — the running head still says "Leibholz", so the alphabetical run still passes through the name, and whether an entry sits under it is NOT LEGIBLE IN THE TEXT LAYER. The same failure hits the 1939 street pages.
+what it would take	the page images, at magnification, for 1939 to 1943 — the same treatment the West Park cemetery registers needed. Counting works; READING A NAMED LINE NEEDS THE IMAGE. That was written down as a risk before this run and it is now a measured fact.
+TWO LEIBHOLZ INDIVIDUALS IN THE STREET SECTION, BOTH AFTER THE FIRMS STOP	and both are people rather than businesses, which is a different kind of entry.
+1938, page 4963	"Leibholz, F., Pensionär" — a PENSIONER, one tenant among seventy in a large block. NOT on Meraner Straße: the building's owner is given as Dr. jur. Goldberg of Schöneberg, Meraner Straße 45/46, which is how Meraner enters this page at all.
+1940, page 5953	"Leibholz, [initial], Ww." — a WIDOW, in Schöneberg, in the run of houses between Meraner Platz and Kufsteiner Straße. THE STREET NAME AND HER FORENAME ARE BOTH ILLEGIBLE IN THE TEXT LAYER. Written down as a page reference, not as a person.
+ITEMS 7 AND 8 ARE NOT ANSWERED	Jacob Leibholz at MERANER STRASSE 2 year by year, and Auguste under Luwinski then Leibholz then Fricke, both need the street section read from the image. The pages are now identified. The reading is not done, and this file says so rather than implying otherwise.
+source	Zentral- und Landesbibliothek Berlin, digital.zlb.de — Berliner Adressbücher, annual volumes, PI 34115495_<year>, queried through tools/zlb.py. Section identified by page order within the volume. Read 20 September 2026.

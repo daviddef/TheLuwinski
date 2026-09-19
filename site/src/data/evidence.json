@@ -9,6 +9,14 @@
    "people": 12
   },
   {
+   "file": "berlin-adressbuch-names.tsv",
+   "title": "The Berliner Adressbuch, alphabetical name section",
+   "source": "Zentral- und Landesbibliothek Berlin, digital.zlb.de — Teil I (Einwohner / Haushaltungsvorstände), annual volumes 1920-1943, read 20 September 2026",
+   "kind": "ref",
+   "rows": 22,
+   "people": 0
+  },
+  {
    "file": "berlin-adressbuch.tsv",
    "title": "The Berliner Adressbücher",
    "source": "Zentral- und Landesbibliothek Berlin, digital.zlb.de — annual volumes 1799-1970, full-text",
@@ -71,6 +79,14 @@
    "kind": "person",
    "rows": 14,
    "people": 13
+  },
+  {
+   "file": "castle-giddings-1862.tsv",
+   "title": "Martha Giddings, George Castle and a marriage of one year",
+   "source": "GRO indexes via Findmypast — marriage Q3 1862 Hitchin; birth Q4 1862 Hitchin; death Q3 1863 Hitchin 3A/188",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
   },
   {
    "file": "castle-nine-children.tsv",
@@ -2067,7 +2083,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 31,
+  "files": 33,
   "person_files": 21,
   "people": 116,
   "records": 177,
