@@ -293,8 +293,8 @@
    "title": "Yad Vashem, Central Database of Shoah Victims' Names",
    "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
    "kind": "person",
-   "rows": 11,
-   "people": 11
+   "rows": 18,
+   "people": 18
   }
  ],
  "people": [
@@ -347,6 +347,18 @@
    ]
   },
   {
+   "name": "*** AND THE SAME PERSON WROTE BOTH FORMS ***",
+   "slug": "and-the-same-person-wrote-both-forms",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: — · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
    "name": "*** AND TWO CLEAN NEGATIVES, WHICH IS WHY THIS SEARCH WAS RUN ***",
    "slug": "and-two-clean-negatives-which-is-why-this-search-was-run",
    "records": [
@@ -379,6 +391,18 @@
      "title": "The Berlin directory against the 1939 census, household by household",
      "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
      "detail": "directory_entry: — · mapping_the_lives: —"
+    }
+   ]
+  },
+  {
+   "name": "AND THERE ARE PHOTOGRAPHS",
+   "slug": "and-there-are-photographs",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: — · date_of_birth: — · place_of_birth: —"
     }
    ]
   },
@@ -670,6 +694,18 @@
      "title": "This family in FamilySearch's South African collections",
      "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
      "detail": "event: the Durban Wears — Cecil Joseph Wear and Katie, born Beck, married Durban 20 February 1912, with at least eight children baptised 1912-1931, and Cecil Wentworth Wear who married Doreen Mary James in 1933 · date: — · place: Durban, Natal · age_given: — · record: Anglican parish registers and Natal civil registration · note: NOT OURS, and they are the majority of the 111. Any surname search for WEAR in South Africa is mostly this family."
+    }
+   ]
+  },
+  {
+   "name": "ERNA LEIBHOLZ",
+   "slug": "erna-leibholz",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: Page of Testimony, item ID 1070804 · date_of_birth: age given as 40 · place_of_birth: born BERLIN; permanent residence NEUKÖLLN · what it adds: Married, spouse's first name WILLY. PLACE OF DEATH: AUSCHWITZ. Mapping the Lives gives her as ERNA née HAMMER, born 20.01.1897, of Lenaustr. 25 Erdgeschoss, died before 08.05.1945."
     }
    ]
   },
@@ -2010,6 +2046,18 @@
    ]
   },
   {
+   "name": "ONE INCONSISTENCY, RECORDED RATHER THAN SMOOTHED",
+   "slug": "one-inconsistency-recorded-rather-than-smoothed",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: — · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
    "name": "Oskar Leibholz",
    "slug": "oskar-leibholz",
    "records": [
@@ -2340,6 +2388,18 @@
    ]
   },
   {
+   "name": "THE BOUND ON THE WHOLE BLOCK",
+   "slug": "the-bound-on-the-whole-block",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: — · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
    "name": "THE LENAUSTRASSE HOUSEHOLD",
    "slug": "the-lenaustrasse-household",
    "records": [
@@ -2372,6 +2432,18 @@
      "title": "The Berlin directory against the 1939 census, household by household",
      "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
      "detail": "directory_entry: 1940: \"Wilhelm, Vertreter, NO18 WEINSTRASSE 6\". 1941: \"WILHELM ISRAEL, BAUARBEITER\", same address. Absent from 1942. · mapping_the_lives: Leibholz, JENNY née ROSENBERG, born 11.02.1893, died before 08.05.1945, Weinstr. 6, Horst-Wessel-Stadt"
+    }
+   ]
+  },
+  {
+   "name": "WILLI [WILLY] LEIBHOLZ",
+   "slug": "willi-willy-leibholz",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: Page of Testimony, item ID 1067433 · date_of_birth: born 1893 · place_of_birth: Germany; lived Berlin · what it adds: He was a BUTCHER. Prior to WWII he lived in Berlin. Married, spouse's first name ERNA. PLACE OF DEATH: AUSCHWITZ, POLAND, 1943. Age given as 45."
     }
    ]
   },
@@ -2490,6 +2562,18 @@
    ]
   },
   {
+   "name": "and what that closes",
+   "slug": "and-what-that-closes",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: — · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
    "name": "what those negatives are worth, and it is not much on its own",
    "slug": "what-those-negatives-are-worth-and-it-is-not-much-on-its-own",
    "records": [
@@ -2510,8 +2594,8 @@
   "ambiguous": 2,
   "files": 37,
   "person_files": 22,
-  "people": 146,
-  "records": 211,
+  "people": 153,
+  "records": 218,
   "linked_to_register": 11
  }
 }
