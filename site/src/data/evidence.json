@@ -233,6 +233,14 @@
    "people": 3
   },
   {
+   "file": "wear-bloom-1842.tsv",
+   "title": "The William Weare x Sarah Bloom marriage, Stepney 1842",
+   "source": "GRO marriage index via Findmypast — Stepney Q3 1842, volume 2 page 430; Marriage Finder names four grooms on the page",
+   "kind": "ref",
+   "rows": 14,
+   "people": 0
+  },
+  {
    "file": "wear-brothers-1881.tsv",
    "title": "1881 census, two Bermondsey households",
    "source": "RG11 piece 574 folio 56 page 8 sch 501; RG11 piece 567 folio 128 page 60 sch 1238",
@@ -2083,7 +2091,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 33,
+  "files": 34,
   "person_files": 21,
   "people": 116,
   "records": 177,

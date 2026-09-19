@@ -52,6 +52,7 @@ MANIFEST = {
  "berlin-adressbuch.tsv":        ([], "The Berliner Adressbücher", "Zentral- und Landesbibliothek Berlin, digital.zlb.de — annual volumes 1799-1970, full-text", "ref"),
  "berlin-adressbuch-names.tsv": ([], "The Berliner Adressbuch, alphabetical name section", "Zentral- und Landesbibliothek Berlin, digital.zlb.de — Teil I (Einwohner / Haushaltungsvorstände), annual volumes 1920-1943, read 20 September 2026", "ref"),
  "castle-giddings-1862.tsv":     ([], "Martha Giddings, George Castle and a marriage of one year", "GRO indexes via Findmypast — marriage Q3 1862 Hitchin; birth Q4 1862 Hitchin; death Q3 1863 Hitchin 3A/188", "ref"),
+ "wear-bloom-1842.tsv":         ([], "The William Weare x Sarah Bloom marriage, Stepney 1842", "GRO marriage index via Findmypast — Stepney Q3 1842, volume 2 page 430; Marriage Finder names four grooms on the page", "ref"),
  "tna-discovery.tsv":            ([], "The National Archives Discovery catalogue", "discovery.nationalarchives.gov.uk — citations verified and references found, 17 September 2026", "ref"),
  "castle-frederick-soldier.tsv":  ([], "Frederick James Castle, soldier — 1901 to the 1920s", "1901 and 1911 censuses; TNA WO 329/1120 and WO 372/4", "ref"),
  "castle-1911-meeanee-barracks.tsv": ([], "Frederick Castle in barracks, 1911", "1911 census RG14 piece 10304 schedule 9999, Meeanee Barracks, Colchester — read from the original image", "ref"),

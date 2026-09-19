@@ -1,0 +1,21 @@
+# THE WILLIAM WEARE x SARAH BLOOM MARRIAGE — a page number, four grooms, and one certificate
+# that would answer two of this archive's oldest questions. 20 September 2026.
+#
+# ROW 125 CARRIED A TITLE THAT SAID "FOUND, Stepney 1842" AND A BODY THAT SAID "NOT FOUND, AND THE
+# FAILURE IS RECORDED". The body was right at the time and is now out of date, and the reason it was
+# wrong is a trap in the search engine rather than anything about the family. See the last block.
+field	value
+THE ENTRY	BLOOM, SARAH — marriage registered QUARTER 3 of 1842, STEPNEY, London. VOLUME 2, PAGE 430.
+WHY IT IS NOT YET A MARRIAGE	the General Register Office index before 1912 DOES NOT NAME THE SPOUSE. It names four people per page. Findmypast's Marriage Finder returns the other names printed on volume 2 page 430 of Stepney, Q3 1842, and they are: WILLIAM WEARE · THOMAS MOYES · WILLIAM GEORGE SMITH · JAMES WICKS.
+so the state of it is	SARAH BLOOM MARRIED ONE OF FOUR MEN ON THAT PAGE, AND ONE OF THE FOUR IS A WILLIAM WEARE. That is a one-in-four on the page, sharpened by everything else the archive holds, and it is NOT a proved marriage.
+what sharpens it	Sarah Bloom was born about 1822 at BERMONDSEY, which puts her twenty years old in 1842. Their eldest traced child, William, was born about 1850 at Bermondsey. Stepney is across the river from Bermondsey — close enough to be ordinary, far enough that it is worth saying it is not the home parish.
+what does NOT sharpen it	the spelling. WEARE with an E is one of the six forms this family's surname takes and proves nothing either way.
+THE ONE ACTION THAT SETTLES IT, AND IT IS A PURCHASE	the GRO marriage certificate for STEPNEY, QUARTER 3 1842, VOLUME 2, PAGE 430. A marriage certificate of 1842 names BOTH FATHERS and gives both their occupations.
+AND THAT IS WHY IT MATTERS MORE THAN ITS OWN ROW	it answers TWO of the archive's oldest open questions in one document. (a) WILLIAM WEAR'S OWN PARENTS — he was born about 1823 at Newington, Surrey, before civil registration, and this is the brick wall at the top of the Wear line. (b) SARAH BLOOM'S FATHER — the question behind the whole Yarmouth enquiry. One certificate, two generations, both sides.
+the cost is David's	it is a purchase and this archive does not make purchases.
+AND HERE IS THE METHOD FAULT THAT HID IT, WHICH MATTERS BEYOND THIS ROW	ON FINDMYPAST'S "ENGLAND & WALES MARRIAGES 1837-2005", A YEAR FILTER SILENTLY RETURNS ZERO INSTEAD OF FILTERING.
+the positive control that proves it	JAMES SHARDALOW MORT married at YARMOUTH, NORFOLK, IN 1885 — the row is in the index and was read. Search the same surname and the same place with year=1885 and a give-or-take of two years: ZERO RESULTS. The record that is demonstrably there is destroyed by asking for the year it happened in.
+both parameter spellings fail the same way	yearofmarriage= and year= each return 0 where the unfiltered search returns 5.
+WHAT THAT MEANS FOR WORK ALREADY DONE	every year-filtered marriage search this archive has run on that dataset produced a FALSE ZERO or a truncated count. Row 125 recorded "a search on SARAH BLOOM across 1841-1853 returns three". UNFILTERED IT RETURNS SIXTY-SEVEN, of which five fall before 1870: Stepney 1842, Aylsham 1850, Aylsham 1857, Wangford 1860, Holbeach 1865. The row also recorded a "Depwade 1845" which does not appear in the unfiltered list at all.
+THE RULE FROM NOW ON	DO NOT PUT A YEAR ON A FINDMYPAST MARRIAGE SEARCH. Filter by place, read the whole list, and sort by eye. The same control — find a record, then search for it with the filter on — should be run before trusting any filter on any dataset here.
+source	Findmypast, England & Wales Marriages 1837-2005, transcript BMD/M/1842/3/AZ/000046/032, with Marriage Finder. Read 20 September 2026.
