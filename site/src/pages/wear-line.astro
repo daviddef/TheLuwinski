@@ -1,0 +1,102 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const line = [
+  ['Derrick', '', 'Named here by his own permission, and by name only.', 'doc'],
+  ['LEONARD AUBREY ROBERT WEAR', 'b. 1917 Hitchin, d. 1973 or 1979',
+   'Birth registered Hitchin 1917. On the 1921 census at 72 Pix Road, Letchworth, aged four. Sailed alone from Southampton on 12 March 1937, aged twenty. Married at Johannesburg in 1940 and again in 1951. Corporal 141272, Union Defence Force, a prisoner of war in Germany 1943 to 1945. Bought his father’s grave at West Park on 13 September 1969, of 271 Wilson Street, Fairlands.', 'doc'],
+  ['HENRY ROBERT WEAR × MARTHA MAUD CASTLE', '1889–1969 · 1895–1986',
+   'Married Hitchin, Q4 1914. He was born at St Olave Bermondsey in 1889, a printer’s assistant at Letchworth in 1911 and a machine minder at J. M. Dent & Sons by 1921. Sailed to the Cape on the Durban Castle, 5 April 1939; she followed on the Dunvegan Castle to Durban on 10 August with the four youngest children. Both buried in grave 56045, West Park, Johannesburg.', 'doc'],
+  ['ROBERT WEAR × EMMA HAWKINS', '1859–1890 · b. 1859',
+   'He died at thirty-one in 1890 and she took the children home to her brother’s house at Watford, where the 1891 census finds them.', 'doc'],
+  ['WILLIAM WEAR × SARAH BLOOM', 'b. c.1823 Newington · b. c.1822 Bermondsey',
+   'The top of the line as it stands. Both from south London; he a tradesman, born before civil registration.', 'doc'],
+];
+
+const open = [
+  ['a', 'WILLIAM WEAR’S OWN PARENTS',
+   'He was born about 1823 at Newington, Surrey — before civil registration began in 1837. This is a parish-register problem, not an index one.',
+   'NOW ANSWERABLE BY PURCHASE. See below: an 1842 marriage certificate names the fathers of both parties.'],
+  ['b', 'THE WILLIAM WEAR × SARAH BLOOM MARRIAGE',
+   'Located 20 September 2026: registered QUARTER 3 of 1842 at STEPNEY, volume 2, page 430.',
+   'ONE-IN-FOUR, NOT PROVED. Before 1912 the index does not name the spouse. Four people are printed on that page: WILLIAM WEARE, Thomas Moyes, William George Smith, James Wicks.'],
+  ['c', 'SARAH BLOOM’S FATHER, AND THE YARMOUTH BRANCH',
+   'A niece, Sarah Ann Bloom, seventeen and born at Yarmouth, is in the 1871 household at Jamaica Road. Her birth is registered Yarmouth Q3 1853, 4B/1, mother’s maiden name MORT.',
+   'THE SIDEWAYS ROUTE IS SHUT. The whole England and Wales index holds five MORT marriages in Norfolk, ever, and the earliest is 1885 — thirty-two years too late. The brother married elsewhere.'],
+  ['d', 'LEONARD’S DEATH — 1973 OR 1979',
+   'Six instruments have looked and none can reach him.',
+   'ONE PLACE LEFT: the South African death register at the Department of Home Affairs. FamilySearch’s South African civil death index stops in 1966; the Transvaal estate-file death notices are published for 1955–1960 only.'],
+  ['e', 'A LIVING MALE-LINE WEAR, FOR A Y TEST',
+   'Derrick’s Y haplogroup is R-S11477 — R1b, branch U106/Z381, a North Sea lineage. Re-checked 20 September 2026: of 7,755 public members of the R-U106 project, 34 sit on his branch, and there is STILL NO WEAR, WEIR OR WARE anywhere on it.',
+   'The surname projects on the branch are Ballew, Stafford, Blakely, Byrd and York — unchanged since 14 September. A dated negative, re-dated.'],
+];
+---
+<Base title="Where the Wear line stands"
+  subtitle="Five generations, and the four questions above them"
+  lede="A stocktake rather than an argument. What the line is, how each step is held up, and — the part that matters — exactly what is still open at the top of it and what would close each one.">
+
+  <div class="cards">
+    <div class="card stat"><b>5</b><span>Generations documented</span></div>
+    <div class="card stat"><b>1842</b><span>Earliest record located</span></div>
+    <div class="card stat"><b>1</b><span>Certificate that would answer two questions</span></div>
+    <div class="card stat"><b>0</b><span>Wears on the Y branch</span></div>
+  </div>
+
+  <h2>The line</h2>
+  <p class="small muted">
+    Read downwards. Every step below rests on a document somebody opened, not on a family tree.
+  </p>
+  <table>
+    <thead><tr><th>Generation</th><th>Dates</th><th>How it is held up</th></tr></thead>
+    <tbody>
+      {line.map(([who, dates, how]) => (
+        <tr><td><strong set:html={who} /></td><td class="small">{dates}</td><td class="small">{how}</td></tr>
+      ))}
+    </tbody>
+  </table>
+
+  <div class="panel">
+    <h3>One certificate would answer two of these <span class="tag inf">20 September 2026</span></h3>
+    <p>
+      <strong>Stepney, quarter 3 of 1842, volume 2, page 430.</strong> Sarah Bloom&rsquo;s marriage is
+      registered on that page, and so are three other brides; the four grooms printed with them
+      include a <strong>William Weare</strong>. The index of that period does not say who married whom.
+    </p>
+    <p>
+      <strong>An 1842 marriage certificate names both fathers, with their occupations.</strong> So
+      ordering that one page would give <em>William Wear&rsquo;s father</em> &mdash; question (a), the
+      brick wall at the top of this line &mdash; and <em>Sarah Bloom&rsquo;s father</em> &mdash;
+      question (c), the whole point of the Yarmouth enquiry. It would also settle question (b) by
+      saying plainly whether these two are the pair on that page.
+    </p>
+    <p class="small muted">
+      It is a purchase from the General Register Office, so it is not this archive&rsquo;s to make.
+      It is the single highest-value order on the whole work list.
+    </p>
+  </div>
+
+  <h2>What is still open above the line</h2>
+  {open.map(([k, what, state, verdict]) => (
+    <div class="panel">
+      <h3>({k}) <span set:html={what} /></h3>
+      <p class="small">{state}</p>
+      <p class="small"><strong>{verdict}</strong></p>
+    </div>
+  ))}
+
+  <div class="panel">
+    <h3>And the other side of that generation</h3>
+    <p class="small">
+      Emma Hawkins was the daughter of <strong>JOHN HAWKINS</strong> b.1820 and
+      <strong>EMMA HAWKINS</strong> b.1822, of <strong>The Red Lion Cottages, Aldenham</strong>,
+      Hertfordshire &mdash; farm labourers, where the Wears and the Blooms are London tradesmen. The two
+      halves of this generation could hardly be less alike, and both are documented from the 1871 census.
+    </p>
+    <p class="small muted">
+      A warning kept in place deliberately: there are <strong>two Emma Hawkinses</strong>, mother and
+      daughter, born about 1822 and in 1859. This archive once merged them and published the result.
+      See <a href={base + '/method/'}>how corrections work</a>.
+    </p>
+  </div>
+</Base>
