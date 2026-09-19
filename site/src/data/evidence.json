@@ -5,8 +5,8 @@
    "title": "The Arolsen Archives index",
    "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
    "kind": "person",
-   "rows": 12,
-   "people": 12
+   "rows": 21,
+   "people": 21
   },
   {
    "file": "berlin-adressbuch-names.tsv",
@@ -347,6 +347,18 @@
    ]
   },
   {
+   "name": "*** AND TWO CLEAN NEGATIVES, WHICH IS WHY THIS SEARCH WAS RUN ***",
+   "slug": "and-two-clean-negatives-which-is-why-this-search-was-run",
+   "records": [
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: — · date_of_birth: — · birthplace: —"
+    }
+   ]
+  },
+  {
    "name": "ALFRED LEIBHOLZ",
    "slug": "alfred-leibholz",
    "records": [
@@ -511,6 +523,12 @@
      "title": "The Arolsen Archives index",
      "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
      "detail": "arolsen_index_entry: LUWINSKI, Alfred · date_of_birth: 09.09.1917"
+    },
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LUWINSKI, Alfred · date_of_birth: 09/09/1917 · birthplace: —"
     }
    ],
    "register_id": 9500139,
@@ -854,6 +872,21 @@
    ]
   },
   {
+   "name": "Felix Luwinski",
+   "slug": "felix-luwinski",
+   "records": [
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LUWINSKI, Felix · date_of_birth: 02/19/1923 · birthplace: —"
+    }
+   ],
+   "register_id": 9500134,
+   "register_name": "Felix Luwinski",
+   "register_match": "exact"
+  },
+  {
    "name": "Florence Margaret Hilda Castle",
    "slug": "florence-margaret-hilda-castle",
    "records": [
@@ -1115,6 +1148,21 @@
    ]
   },
   {
+   "name": "Helga Luwinski",
+   "slug": "helga-luwinski",
+   "records": [
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LUWINSKI, Helga · date_of_birth: 05/01/1934 · birthplace: —"
+    }
+   ],
+   "register_id": 9500136,
+   "register_name": "Helga Erna Marquardt Wagner (Luwinski)",
+   "register_match": "alias"
+  },
+  {
    "name": "Henery Hawkins",
    "slug": "henery-hawkins",
    "records": [
@@ -1303,6 +1351,18 @@
      "title": "1911 and 1921 censuses, Baldock and Letchworth",
      "source": "RG14/7572 sch 173; RG15/07079 sch 125",
      "detail": "source: 1911 census · reference: RG14 piece 7572, schedule 173 · address: The Church Yard, St Mary's Cottages, Baldock · date: 2 April 1911 · relationship: FATHER · note: CAROLINE'S OWN FATHER, IN THE HOUSE, AND SPELT WALLIS"
+    }
+   ]
+  },
+  {
+   "name": "JUWINSKI LUWINSKI",
+   "slug": "juwinski-luwinski",
+   "records": [
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: a name-variant card · date_of_birth: — · birthplace: — · what it confirms or changes: one of the nine is a cross-reference card rather than a person, and one more carries a surname with no forename and no date. Recorded so the count of nine is not mistaken for nine people."
     }
    ]
   },
@@ -1614,9 +1674,15 @@
    ]
   },
   {
-   "name": "Kurt Israel LUWINSKI",
+   "name": "Kurt Israel Luwinski",
    "slug": "kurt-israel-luwinski",
    "records": [
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LUWINSKI, Kurt · date_of_birth: 05/11/1912 · birthplace: —"
+    },
     {
      "file": "familysearch-sa-family.tsv",
      "title": "This family in FamilySearch's South African collections",
@@ -1837,6 +1903,21 @@
      "detail": "entry: 00223 · title: MRS · sex: Female · birth_year: 1895 · occupation: Nil · ship: Dunvegan Castle · line: Union Castle · dep_day: 10 · dep_month: 8 · dep_year: 1939 · dep_port: London · dest_port: Durban (Port Natal) · piece: TNA/BT27/1542/00/0024"
     }
    ]
+  },
+  {
+   "name": "Manfred Joachim Luwinski",
+   "slug": "manfred-joachim-luwinski",
+   "records": [
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: LUWINSKI, Manfred · date_of_birth: 11/14/1933 · birthplace: —"
+    }
+   ],
+   "register_id": 9500135,
+   "register_name": "Manfred Joachim Luwinski",
+   "register_match": "exact"
   },
   {
    "name": "Martha Giddings",
@@ -2247,6 +2328,18 @@
    ]
   },
   {
+   "name": "THE BOUND ON ALL OF IT",
+   "slug": "the-bound-on-all-of-it",
+   "records": [
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: — · date_of_birth: — · birthplace: —"
+    }
+   ]
+  },
+  {
    "name": "THE LENAUSTRASSE HOUSEHOLD",
    "slug": "the-lenaustrasse-household",
    "records": [
@@ -2395,6 +2488,18 @@
      "detail": "directory_entry: — · mapping_the_lives: — · what it adds: The LEVETZOWSTRASSE SYNAGOGUE, a few doors from number 13, was requisitioned in 1941 as the main Berlin deportation assembly camp. That is a fact about the street, not a claim about this family."
     }
    ]
+  },
+  {
+   "name": "what those negatives are worth, and it is not much on its own",
+   "slug": "what-those-negatives-are-worth-and-it-is-not-much-on-its-own",
+   "records": [
+    {
+     "file": "arolsen-leibholz-luwinski.tsv",
+     "title": "The Arolsen Archives index",
+     "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
+     "detail": "arolsen_index_entry: — · date_of_birth: — · birthplace: —"
+    }
+   ]
   }
  ],
  "ambiguous": [
@@ -2405,8 +2510,8 @@
   "ambiguous": 2,
   "files": 37,
   "person_files": 22,
-  "people": 139,
-  "records": 202,
-  "linked_to_register": 8
+  "people": 146,
+  "records": 211,
+  "linked_to_register": 11
  }
 }
