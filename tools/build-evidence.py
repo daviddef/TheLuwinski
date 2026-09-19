@@ -51,6 +51,7 @@ MANIFEST = {
  "arolsen-leibholz-luwinski.tsv": (["who"], "The Arolsen Archives index", "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked", "person"),
  "berlin-adressbuch.tsv":        ([], "The Berliner Adressbücher", "Zentral- und Landesbibliothek Berlin, digital.zlb.de — annual volumes 1799-1970, full-text", "ref"),
  "berlin-adressbuch-names.tsv": ([], "The Berliner Adressbuch, alphabetical name section", "Zentral- und Landesbibliothek Berlin, digital.zlb.de — Teil I (Einwohner / Haushaltungsvorstände), annual volumes 1920-1943, read 20 September 2026", "ref"),
+ "mappingthelives-leibholz.tsv": (["who"], "The Berlin directory against the 1939 census, household by household", "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026", "person"),
  "castle-giddings-1862.tsv":     ([], "Martha Giddings, George Castle and a marriage of one year", "GRO indexes via Findmypast — marriage Q3 1862 Hitchin; birth Q4 1862 Hitchin; death Q3 1863 Hitchin 3A/188", "ref"),
  "wear-bloom-1842.tsv":         ([], "The William Weare x Sarah Bloom marriage, Stepney 1842", "GRO marriage index via Findmypast — Stepney Q3 1842, volume 2 page 430; Marriage Finder names four grooms on the page", "ref"),
  "tna-discovery.tsv":            ([], "The National Archives Discovery catalogue", "discovery.nationalarchives.gov.uk — citations verified and references found, 17 September 2026", "ref"),
