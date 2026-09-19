@@ -281,6 +281,14 @@
    "people": 0
   },
   {
+   "file": "westpark-films.tsv",
+   "title": "The Johannesburg cemetery films, mapped",
+   "source": "FamilySearch catalogue olib:4148464, South Africa, Johannesburg City Cemetery records, 210 films; film 107638608 read at images 151, 187 and 401, 20 September 2026",
+   "kind": "ref",
+   "rows": 10,
+   "people": 0
+  },
+  {
    "file": "yadvashem-leibholz.tsv",
    "title": "Yad Vashem, Central Database of Shoah Victims' Names",
    "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
@@ -2395,7 +2403,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 36,
+  "files": 37,
   "person_files": 22,
   "people": 139,
   "records": 202,
