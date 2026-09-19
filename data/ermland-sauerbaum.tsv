@@ -1,0 +1,29 @@
+# SAUERBAUM, KREIS RÖSSEL — the parish found, the films identified, and only one of nine online.
+# 20 September 2026, with the FamilySearch session live.
+#
+# WHY THIS EXISTS. The 1939 census card read today gives AUGUSTE "LIZZY" LUWINSKI's birthplace as
+# SAUERBAUM / RÖSSEL / OSTPREUSSEN. This archive had never had a village for her. A village means a
+# parish, and a parish means a register.
+field	value
+FIRST, THE THING THAT LOOKED LIKE A FINDING AND IS A COVERAGE GAP	FamilySearch's INDEXED records hold 71 people with the exact surname LUWINSKI in the entire world. NOT ONE OF THEM IS EAST PRUSSIAN.
+the breakdown	22 in "Deutschland, Preußen, WESTPREUSSEN, Katholische und Lutherisch Kirchenbücher" · 13 in "Preußen, POSEN" · 2 in Schlesien · the remaining 34 are American immigration, census and naturalisation, plus the two South African marriages of Kurt.
+AND THAT IS NOT A FACT ABOUT THE FAMILY	the Ermland registers are held by FamilySearch AS CATALOGUED FILM, NOT AS AN INDEX. A search of the name index cannot see them. The archive's own Luwinski tree is Posen and West Prussia; Lizzy's birthplace is East Prussia; and the index cannot speak to whether those connect.
+and the full-text instrument cannot see them either	FamilySearch full text, which reads unindexed images, returns for LUWINSKI exactly what it returned on 17 September: Milwaukee and Chicago naturalisation petitions, New York passenger lists, Ohio and Minnesota vital records. ALL AMERICAN. The German parish registers are not in that corpus.
+*** THE PARISH, AND IT IS NAMED IN THE CATALOGUE'S OWN WORDS ***	catalogue record koha:15497, summary note: "Parish register of baptisms and deaths for GROSS BÖSSAU, Ostpreußen, Germany, now BIESOWO, Olsztyn, Poland. Also includes Kunzkeim, SAUERBAUM, Willims, and Kleisak (Kreis Rössel). Text in Latin and German."
+so	SAUERBAUM WAS IN THE CATHOLIC PARISH OF GROSS BÖSSAU, KREIS RÖSSEL. The register series runs 1690 to 1897 and is held on NINE films.
+THE NINE FILMS, AND WHAT EACH HOLDS	from the catalogue's film notes.
+102682510	Taufen 1700-1792 · Tote 1694-1847 — THE ONLY ONE THAT OPENS ONLINE
+7948905	TAUFEN 1793-1890 — the baptisms that would hold JOACHIM LUWINSKI, born 21 October 1865
+7948906	Heiraten 1700-1895 · Tote 1847-1873 — the marriages, which would hold Joachim's marriage to Johanna Thimm
+7769256	GEBURTEN (KOPIE) 1881-1958, with other civil birth series — the civil registration copies that would hold LIZZY, born 28 August 1893. Shelved as "B1 Floor Film".
+8247245	Taufen 1793-1890 · Kirchengeschichte 1838-1897
+7948645	Heiraten 1700-1895 · Tote 1847-1873 · Kirchengeschichte 1690-1775
+7992975	Taufen 1700-1792 · Tote 1694-1797
+7996567	Taufen, Tote 1700-1797
+7996568	Tote 1798-1847
+*** AND EIGHT OF THE NINE ARE NOT ONLINE ***	film 7948905 and film 7769256 — the two that matter — both return "Film number not found" in the FamilySearch viewer while signed in. They are catalogued, filmed and shelved, and they are not digitised.
+the one that is online was opened and checked	film 102682510, 683 images. At image 591 the camera photographed the film's own title board: "GROSS-BÖSSAU / KRS.RÖSSEL / 1798-1847 / ✝" — the cross marking deaths. So this film really is the right parish AND its baptisms stop in 1792, half a century before anyone in this story.
+A MISLABELLING WORTH RECORDING, BECAUSE IT WOULD SEND SOMEBODY AWAY	the FamilySearch image viewer files film 102682510 under "Germany, LUTHERAN Baptisms, Marriages, and Burials, 1500-1971". THE CATALOGUE SAYS "KATHOLISCHE KIRCHE GROSS BÖSSAU" AND THE ERMLAND WAS CATHOLIC. The film's own title board settles it. A researcher who trusted the collection label would conclude these were the wrong registers.
+WHAT WOULD ACTUALLY ANSWER IT, IN ORDER OF COST	(1) Films 7948905 and 7769256 at a Family History Centre, where undigitised films can be ordered — Joachim's 1865 baptism would name HIS parents, a generation this archive does not have, and Lizzy's 1893 birth would confirm hers. (2) The originals: the Ermland diocesan archive at Olsztyn (Archiwum Archidiecezji Warmińskiej) and the Polish state archive at Olsztyn hold Kreis Rössel registers. (3) Re-check the two film numbers periodically — FamilySearch digitises continuously, and this is one HTTP request each.
+THE CAUTION THAT GOES WITH ALL OF IT	none of this yet puts a LUWINSKI in Sauerbaum. It puts LIZZY there, from a 1939 state document, and it establishes which register would say who her people were. SHE MAY HAVE BEEN BORN AT HER MOTHER'S VILLAGE — Johanna Thimm is of Sauerbaum — IN WHICH CASE THE LUWINSKIS MAY NEVER HAVE LIVED IN KREIS RÖSSEL AT ALL. The register would settle that too, in one line.
+source	FamilySearch catalogue record koha:15497 and its film notes; FamilySearch image viewer, film 102682510 image 591; FamilySearch record index, surname LUWINSKI matched exactly, 71 results; FamilySearch full-text search. All read 20 September 2026 while signed in.

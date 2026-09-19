@@ -97,6 +97,14 @@
    "people": 9
   },
   {
+   "file": "ermland-sauerbaum.tsv",
+   "title": "Sauerbaum, Kreis Rössel — the parish, the films, and what is not online",
+   "source": "FamilySearch catalogue koha:15497 (Katholische Kirche Groß Bössau, Kr. Rössel, Kirchenbuch 1690-1897) with its nine film notes; film 102682510 image 591; record index and full-text search, 20 September 2026",
+   "kind": "ref",
+   "rows": 22,
+   "people": 0
+  },
+  {
    "file": "familysearch-sa-family.tsv",
    "title": "This family in FamilySearch's South African collections",
    "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
@@ -2387,7 +2395,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 35,
+  "files": 36,
   "person_files": 22,
   "people": 139,
   "records": 202,
