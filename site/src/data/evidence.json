@@ -165,8 +165,8 @@
    "title": "The Berlin directory against the 1939 census, household by household",
    "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
    "kind": "person",
-   "rows": 11,
-   "people": 11
+   "rows": 19,
+   "people": 19
   },
   {
    "file": "naairs-figueiredo.tsv",
@@ -283,6 +283,54 @@
  ],
  "people": [
   {
+   "name": "(1) HER BIRTHPLACE IS NAMED, AND THIS ARCHIVE ALREADY KNEW THE VILLAGE",
+   "slug": "1-her-birthplace-is-named-and-this-archive-already-knew-the-village",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: SAUERBAUM, KREIS RÖSSEL, EAST PRUSSIA — in the Ermland"
+    }
+   ]
+  },
+  {
+   "name": "(2) \"RACE\": NNNN",
+   "slug": "2-race-nnnn",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: the Ergänzungskarte recorded the ancestry of all four grandparents. N is nicht-jüdisch. FOUR N's MEANS ALL FOUR GRANDPARENTS WERE RECORDED AS NON-JEWISH. · what it adds: SO THE GERMAN STATE ITSELF CLASSIFIED LIZZY AS NOT JEWISH, on its own form, in 1939. That is the first documentary answer to a question this archive has carried for weeks."
+    }
+   ]
+  },
+  {
+   "name": "(3) \"BASIS OF PERSECUTION: COLLECTIVE\"",
+   "slug": "3-basis-of-persecution-collective",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: the term for a person persecuted as part of a household rather than for their own recorded ancestry"
+    }
+   ]
+  },
+  {
+   "name": "(4) AND IT GIVES JACOB A PLACE OF DEATH",
+   "slug": "4-and-it-gives-jacob-a-place-of-death",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: the record's Family members block: \"Leibholz, Jacob [Jakob], * 08.08.1884 in Szubin (Schubin) / Schubin / Polen, † before 08.05.1945 IN AUSCHWITZ\" · what it adds: THE BUNDESARCHIV GEDENKBUCH ENTRY FOR JACOB SAYS \"not documented\" FOR BOTH DEATH DATE AND DEATH PLACE, and data/leibholz-gedenkbuch.tsv carries that. THIS SOURCE NAMES AUSCHWITZ. The date remains undocumented."
+    }
+   ]
+  },
+  {
    "name": "ALFRED LEIBHOLZ",
    "slug": "alfred-leibholz",
    "records": [
@@ -295,6 +343,30 @@
    ]
   },
   {
+   "name": "AND THE QUESTION IT SHARPENS RATHER THAN ANSWERS",
+   "slug": "and-the-question-it-sharpens-rather-than-answers",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: —"
+    }
+   ]
+  },
+  {
+   "name": "ANTON LUWINSKI — read in full, and one of this archive's assumptions corrected",
+   "slug": "anton-luwinski-read-in-full-and-one-of-this-archive-s-assumptions-corrected",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: 1939 census supplementary card, ID no. VZ280665 · mapping_the_lives: born 16.10.1919 in DEUTHEN / ALLENSTEIN / OSTPREUSSEN · residence 17.05.1939 at the Lehrwerkstatt Ostpreußisches Baugewerbe, Schindekopstr. 7, Königsberg · \"Race\": NNNN · Basis of persecution: UNKNOWN"
+    }
+   ]
+  },
+  {
    "name": "ARTHUR, THE SANITÄTSRAT",
    "slug": "arthur-the-sanitatsrat",
    "records": [
@@ -303,6 +375,18 @@
      "title": "The Berlin directory against the 1939 census, household by household",
      "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
      "detail": "directory_entry: 1938: \"Arthur, Dr. med., Sanitätsrat, SO16 Köpenicker Straße 91\". · mapping_the_lives: Leibholz, ARTHUR, born 21.05.1862, died 09.11.1937, Kreuzberg · what it adds: HE WAS ALREADY DEAD when the 1938 volume was printed — directories are compiled a year ahead and carry the dead for a year. A caution for every other entry in this file."
+    }
+   ]
+  },
+  {
+   "name": "AUGUSTE LEIBHOLZ née LUWINSKI — KURT'S MOTHER, AND THE RECORD ANSWERS THREE QUESTIONS AT ONCE",
+   "slug": "auguste-leibholz-nee-luwinski-kurt-s-mother-and-the-record-answers-three-questions-at-once",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: 1939 census supplementary card, Reichssippenamt, Bundesarchiv R 1509 · mapping_the_lives: born 28.08.1893 in SAUERBAUM / RÖSSEL / OSTPREUSSEN · residence 17.05.1939 Meraner Str. 2, Schöneberg · \"Race\": NNNN · Basis of persecution: COLLECTIVE · what it adds: see the four rows below."
     }
    ]
   },
@@ -2104,6 +2188,12 @@
      "title": "The Arolsen Archives index",
      "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
      "detail": "arolsen_index_entry: LEIBHOLZ, Siegfried · date_of_birth: 05.08.1925 · what it confirms or changes: CONFIRMS Kurt's younger brother, born 5 August 1925 at Berlin-Schöneberg."
+    },
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: the same Family members block: \"Leibholz, Siegfried, * 05.08.1925 in Berlin / Berlin, † -\" · what it adds: Jacob and Auguste's son, KURT'S HALF-BROTHER through their mother. NO DEATH IS RECORDED FOR HIM IN THIS DATABASE — which is not the same as surviving, and is not treated here as if it were."
     }
    ],
    "register_id": 9500019,
@@ -2299,8 +2389,8 @@
   "ambiguous": 2,
   "files": 35,
   "person_files": 22,
-  "people": 132,
-  "records": 194,
+  "people": 139,
+  "records": 202,
   "linked_to_register": 8
  }
 }
