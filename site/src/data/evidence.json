@@ -209,6 +209,14 @@
    "people": 0
   },
   {
+   "file": "schmul-and-thimm.tsv",
+   "title": "The two great-grandmothers' surnames — what can be reached and what cannot",
+   "source": "FamilySearch collection metadata and Posen collection 4116415 (33 exact SCHMUL records read); Geneteka control run and failed; 20 September 2026",
+   "kind": "ref",
+   "rows": 15,
+   "people": 0
+  },
+  {
    "file": "shenton-1939-pix-road.tsv",
    "title": "1939 Register, 63 Pix Road, Letchworth",
    "source": "TNA R39/1620/1620G/011/28, schedule 305",
@@ -2624,7 +2632,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 41,
+  "files": 42,
   "person_files": 22,
   "people": 153,
   "records": 218,
