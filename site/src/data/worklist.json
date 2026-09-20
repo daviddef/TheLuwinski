@@ -1868,11 +1868,11 @@
     },
     {
       "n": 223,
-      "what": "CHODOWIECKISTRASSE 32 AND 31 — find the same two houses in the 1912 and 1914 volumes",
-      "state": "next",
+      "what": "CHODOWIECKISTRASSE 32 AND 31 IN 1912 AND 1914 — a one-year tenancy in a brand-new house",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-20",
-      "note": "The 1913 Berliner Adressbuch puts LUWINSKI, J., Invalide at CHODOWIECKISTRASSE 32, corner of Winsstraße, Berlin N 55, and LEIBHOLZ, G., Kfm. NEXT DOOR AT NUMBER 31. The volume was compiled in the autumn of 1912 and Kurt was born on 11 May 1912. *** THE TEST IS THE SAME PAGE IN THE NEIGHBOURING YEARS: *** do both households persist, does either arrive or leave, and does the Leibholz entry ever spell out a forename. NEITHER PAGE COULD BE PINNED TODAY — the OCR carries Luwinski in 1913 alone, exact searches return nothing in 1911, 1912, 1914, 1915 or 1916, and a fuzzy search returns forty-four hits one edit away, which is a list to work through rather than an answer. THE PAGE MUST BE FOUND BY STREET, NOT BY NAME: search the Teil III of each volume for the Chodowieckistraße heading and walk forward to number 31."
+      "note": "DONE. Both volumes found by mapping each year's Teil III pagination onto its image numbers rather than by searching for the name, which is what the row said would be needed. *** 1912: NUMBER 32 IS A NEUBAU *** — \"32 Neubau. E. Berl. Terrain-Gesellschaft\", owned by the developer, no tenants at all. AND NO LEIBHOLZ AT 31 EITHER: the 1912 run goes Köhler, Koettlitz, KRINKE, Liebenhagen, where 1913 reads Köhler, Koeltlitz, LEIBHOLZ, Liebenhagen. *** 1914: THE LUWINSKIS ARE GONE AND GEORG LEIBHOLZ IS STILL THERE *** — number 32's alphabetical list runs Landow, Michaelis with nothing between, and 31 still carries \"Leibholz, G., Kfm.\" SO THE LUWINSKI TENANCY IS ONE VOLUME WIDE: into a brand-new building during 1912, out again before the autumn of 1913. AND IT QUALIFIES THIS ARCHIVE'S OWN CLAIM — the birth-entry file counted the district as one of four agreeing facts, but the address dates from the autumn of 1912 and the birth was in May, and the family had moved that year. Three agree outright, one partly. The entry itself is untouched: the register index was read."
     },
     {
       "n": 224,
@@ -1935,6 +1935,14 @@
       "owner": "this archive",
       "since": "2026-09-20",
       "note": "Jaques Leibholz, the man Auguste married in 1924, is at LUTHERSTRASSE 34 II, W 62, in the 1913 Berliner Adressbuch — twenty-five years earlier than any other address held for him. The street no longer exists under that name and is not listed as an earlier name of any surviving Berlin street, so it was absorbed or renumbered. W 62 is the Nollendorfplatz and Wittenbergplatz quarter. *** THE INSTRUMENT IS ALREADY PROVEN: *** the Berliner Adressbuch's own Straßenverzeichnis gives every street's Standesamt in its first column, and that is how Kurt's birth office was found. Looking up Lutherstraße 34 there would give the registry office that held Jacob's records in 1913 — and, if he was there earlier, the office that would hold a first marriage or any acknowledgement of paternity. Four OCR searches of the 1913 index range failed to surface the row; it needs finding by page rather than by word."
+    },
+    {
+      "n": 231,
+      "what": "WHERE WERE THE LUWINSKIS IN MAY 1912, AND WHERE DID THEY GO IN 1913",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "Chodowieckistraße 32 was a NEUBAU in the 1912 volume and holds no Luwinski in the 1914 one. The household is caught by exactly one book. SO THERE IS AN ADDRESS BEFORE IT AND AN ADDRESS AFTER IT, and the one before it is where Kurt was born on 11 May 1912. The 1911 and 1912 volumes' NAME sections are the place to look — Teil I, under Luwinski, which the archive has swept for householders across 1900 to 1943 and found the name in 1933 only. THAT SWEEP NEEDS REDOING AGAINST THE TENANT LISTS RATHER THAN THE HOUSEHOLDER SECTION: J. Luwinski of Chodowieckistraße 32 is a TENANT in Teil III and does not appear in the Teil I householder index at all, which is exactly why forty-four years of sweeping missed him."
     }
   ]
 }
