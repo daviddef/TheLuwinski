@@ -1835,6 +1835,30 @@
       "covers": [
         "request:34-SEND-THIS-to-olsztyn.txt"
       ]
+    },
+    {
+      "n": 220,
+      "what": "KURT'S BIRTH ENTRY NUMBER — it is in one of twenty-one free PDFs and the shortest is 33 MB",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "THE LANDESARCHIV BERLIN PUBLISHES THE NAME INDEXES TO THE BERLIN REGISTRY REGISTERS AS FREE PDFs and this archive had never opened them. *** SCHÖNEBERG II, NAMENSVERZEICHNIS ZUM GEBURTENREGISTER 1911-1913, P Rep. 161 Nr. 713, 33.44 MB *** covers 11 May 1912 in the district the family is documented in from 1925. Schöneberg I's births stop at 1910, so inside Schöneberg there is no second candidate. If he was born elsewhere in the old city, TWENTY MORE SINGLE-YEAR 1912 VOLUMES ARE ONLINE, 6 to 35 MB each, all enumerated in the evidence file. Find the surname, read the entry number, and the certificate can be ordered by citation instead of by plea. BLOCKED ONLY ON ONE THING: the browser renders these PDFs as a blank page, so reading one means downloading it, and this archive does not download files on David's behalf without asking. The question is with him."
+    },
+    {
+      "n": 221,
+      "what": "THE 1924 MARRIAGE ENTRY — and the marginal note that would say whether Kurt was legitimised",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "Jacob Leibholz married Auguste Luwinski on 5 JANUARY 1924, twelve years after Kurt was born and took his mother's name. A German marriage register entry NAMES THE PARENTS OF BOTH PARTIES, and where a couple legitimise an existing child THE ENTRY CARRIES A MARGINAL NOTE SAYING SO. Two index volumes cover the date: SCHÖNEBERG I, HEIRATSREGISTER 1922-1927, P Rep. 160 Nr. 1036, 240.41 MB; and SCHÖNEBERG II, HEIRATSREGISTER 1924-1928, P Rep. 161 Nr. 271, 249.27 MB. Same blocker as row 220."
+    },
+    {
+      "n": 222,
+      "what": "THE DOUBLE-ENCODING TRAP AT THE LANDESARCHIV, recorded as method",
+      "state": "done",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "A finding that was about to be published and was false. Three queries for Schöneberg returned nothing and a sweep of all 142 offices put Schöneberg, Neukölln, Köpenick and Weißensee in the empty column. *** EVERY OFFICE NAME WITH AN UMLAUT RETURNED ZERO AND EVERY NAME WITHOUT ONE RETURNED ROWS. *** The site's database stores the names DOUBLE-ENCODED — the stored string is literally \"Standesamt KÃ¶penick\" — and the match is on the whole string, so the CORRECT spelling finds nothing and the MANGLED one finds seventeen volumes. Schöneberg has more online than almost anywhere: births 1874-1913 and deaths year by year to 1994. WHAT CAUGHT IT was not cleverness but noticing that all four failures shared a property and none of the successes did. Kept as a standing check: when a set of negatives has a common character, suspect the character before believing the negatives."
     }
   ]
 }

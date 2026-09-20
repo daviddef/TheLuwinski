@@ -583,6 +583,60 @@ const life = [
     </p>
   </div>
 
+  <h2>His birth entry number is in one of twenty-one free files</h2>
+  <p>
+    The Landesarchiv Berlin publishes the <em>Namensverzeichnisse</em> — the alphabetical name indexes
+    to the Berlin registry registers — as free PDFs, office by office and year by year. This archive
+    had never opened them. Find the surname in the index, read off the entry number, and the
+    certificate can be ordered by an exact citation instead of by a plea.
+  </p>
+
+  <div class="panel">
+    <h3>Schöneberg II, 1911 to 1913, thirty-three megabytes <span class="tag doc">New, 20 September 2026</span></h3>
+    <p>
+      <strong>P Rep. 161 Nr. 713.</strong> Kurt was born on <strong>11 May 1912</strong>, and this is
+      the birth index for the district the family is documented in from 1925. Schöneberg I's birth
+      indexes stop at 1910 and Schöneberg II begins at 1911, so inside Schöneberg there is no gap and
+      no second candidate.
+    </p>
+    <p>
+      No address is known for Auguste in 1912 — she was nineteen and unmarried — so Schöneberg is the
+      likeliest office and not the only possible one. <strong>But the alternative is finite:</strong>
+      twenty more single-year 1912 birth indexes are online for the old Roman-numeral city offices,
+      between 6 and 35 MB each. Twenty-one files, about 350 MB, all free, all listed.
+      <strong>That is a bounded job, not a search.</strong>
+    </p>
+    <p>
+      And the same instrument holds the marriage. Jacob married Auguste on 5 January 1924, twelve years
+      after Kurt was born and took his mother's name. A German marriage entry names the parents of both
+      parties, and where a couple legitimise an existing child <strong>the entry carries a marginal note
+      saying so</strong>. Two volumes cover the date: Schöneberg I, marriages 1922–1927, P Rep. 160
+      Nr. 1036; and Schöneberg II, marriages 1924–1928, P Rep. 161 Nr. 271.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>And a false finding, caught before it was written down <span class="tag disp">Method</span></h3>
+    <p>
+      This page was about to say that <em>Schöneberg, this family's own district, has no online index
+      at all.</em> Three queries returned nothing and a sweep of all 142 registry offices put
+      Schöneberg, Neukölln, Köpenick and Weißensee in the empty column.
+    </p>
+    <p>
+      <strong>Every office name with an umlaut returned zero, and every name without one returned
+      rows.</strong> Four failures, one shared property. The site's database stores the names
+      double-encoded — the stored string is literally <code>Standesamt KÃ¶penick</code> — and the match
+      is on the whole string, so the <em>correct</em> spelling finds nothing and the mangled one finds
+      seventeen volumes. Schöneberg turns out to have more online than almost anywhere: births from
+      1874 to 1913, and deaths year by year to 1994.
+    </p>
+    <p>
+      What caught it was not cleverness. It was noticing that all four failures shared a character and
+      none of the successes did. <strong>When a set of negatives has something in common, suspect the
+      thing they have in common before believing the negatives.</strong>
+    </p>
+  </div>
+
   <h2>The one file that would let him speak for himself</h2>
   <p>
     Everything on this page is someone else's paper about Kurt: a gazette notice, a burial register,

@@ -1,0 +1,35 @@
+# THE BERLIN REGISTRY OFFICES PUT THEIR NAME INDEXES ONLINE, FREE, AND THIS ARCHIVE HAD NEVER OPENED THEM.
+# content.landesarchiv-berlin.de/labsa/show/index.php — the Landesarchiv Berlin's "Standesamtsabfrage",
+# measured end to end on 20 September 2026.
+#
+# WHAT IT IS. Pick a registry office and a register type and it lists the surviving NAMENSVERZEICHNISSE
+# — the alphabetical name indexes to the birth, marriage and death registers — as free PDFs. Find the
+# name, read off the entry number, and the certificate can then be ordered by an exact citation
+# instead of by a plea. Years still inside the statutory protection period are simply not shown, so
+# whatever is listed is open.
+#
+# *** AND IT NEARLY PRODUCED A COMPLETELY FALSE FINDING, WHICH IS THE FIRST THING IN THIS FILE. ***
+field	value
+# ---------------- 0. THE TRAP, RECORDED BEFORE THE FINDINGS ----------------
+what was about to be published	"SCHÖNEBERG — THIS FAMILY'S OWN DISTRICT — HAS NO ONLINE NAME INDEX AT ALL." Three office names were queried, all three returned nothing, and a sweep of all 142 offices put Schöneberg, Neukölln, Köpenick and Weißensee in the empty column.
+what was actually wrong	EVERY OFFICE NAME CONTAINING AN UMLAUT RETURNED ZERO, and every name without one returned rows. Four umlauts, four zeroes. That is not a coincidence, it is a symptom.
+the cause	the site's own database stores the office names DOUBLE-ENCODED. The stored string is not "Standesamt Köpenick" but literally "Standesamt KÃ¶penick", and the search matches the whole string exactly — no partial matching, as a control on "Treptow" against "Standesamt Treptow" confirms. QUERYING THE CORRECT SPELLING RETURNS NOTHING. Querying the mangled one returns seventeen volumes.
+so the rule this archive already has, again, in a new costume	ONE SPELLING IS NOT A SEARCH — and this time the spelling that worked was the WRONG one. The test that caught it was not cleverness; it was noticing that all four failures shared a property and none of the successes did.
+# ---------------- 1. WHAT IS ACTUALLY THERE FOR SCHÖNEBERG ----------------
+*** KURT'S BIRTH INDEX EXISTS, AND IT IS ONE SMALL VOLUME ***	SCHÖNEBERG II, NAMENSVERZEICHNIS ZUM GEBURTENREGISTER, 1911-1913 — P Rep. 161 Nr. 713, 33.44 MB, labsa/pdf/P_Rep_161_0713.pdf. KURT LUWINSKI WAS BORN ON 11 MAY 1912. Three years of one office in one file, alphabetical, and his surname begins with L.
+and it is the right office	Schöneberg I's birth indexes stop at 1910. Schöneberg II picks up at 1911. There is no gap and no second candidate inside Schöneberg.
+*** AND THE MARRIAGE INDEX EXISTS TWICE ***	JACOB LEIBHOLZ MARRIED AUGUSTE LUWINSKI ON 5 JANUARY 1924. Schöneberg I, Heiratsregister 1922-1927 — P Rep. 160 Nr. 1036, 240.41 MB. Schöneberg II, Heiratsregister 1924-1928 — P Rep. 161 Nr. 271, 249.27 MB. One of the two holds the entry number.
+why the marriage matters more than it looks	a German marriage register entry names THE PARENTS OF BOTH PARTIES, and where a couple legitimise an existing child the register carries a marginal note saying so. Kurt was born twelve years before this wedding and took his mother's name. IF HE WAS LEGITIMISED IN 1924, THE NOTE IS IN THAT ENTRY.
+# ---------------- 2. AND IF HE WAS NOT BORN IN SCHÖNEBERG ----------------
+the problem	no address is known for Auguste in 1912. She was nineteen and unmarried; the family is only documented in Schöneberg from 1925. Schöneberg is the likeliest office and it is not the only possible one.
+*** BUT THE ALTERNATIVE IS FINITE AND IT HAS BEEN ENUMERATED ***	the old city of Berlin was covered by the Roman-numeral offices, and TWENTY OF THEM HAVE A 1912 BIRTH INDEX ONLINE, each a single year: Berlin I/II (6.56M) · III (9.31M) · IV a (11.57M) · IV b (14.16M) · V a (13.43M) · V b (8.70M) · VI (5.99M) · VII a (8.85M) · VII b (18.85M) · VII c (19.23M) · VIII (21.19M) · IX (16.44M) · X a (11.47M) · X b (34.65M) · X c (14.25M) · XI (14.49M) · XII a (26.39M) · XII b (20.22M) · XIII a (20.29M) · XIII b (22.75M).
+what that means practically	KURT'S BIRTH ENTRY NUMBER IS IN ONE OF TWENTY-ONE FILES, all free, all listed, totalling about 350 MB. That is a bounded job, not a search.
+one bonus the sweep turned up	a few of these indexes are not images at all. Berlin I 1890 and Berlin II 1887 to 1893 are "PDF-Dokument - Textdatei", under a megabyte each, and Berlin I/II 1914 is a "durchsuchbares PDF durch OCR-Texterkennung". WHERE THOSE EXIST THE INDEX IS MACHINE-READABLE. None of them is 1912.
+# ---------------- 3. WHAT THIS ARCHIVE COULD NOT DO, AND WHY ----------------
+the PDFs cannot be read from here	the browser pane renders these files as a blank page — tested on the smallest, P_Rep_803_0399.pdf. THE ONLY WAY TO READ ONE IS TO DOWNLOAD IT, AND THIS ARCHIVE DOES NOT DOWNLOAD FILES ON DAVID'S BEHALF WITHOUT ASKING. The question has been put to him; until it is answered the job is specified and not done.
+and a caution about what the indexes look like	the Landesarchiv's own guidance warns that the originals are "oftmals von sehr schlechter Qualität" with tears, wear and pasted-over patches, and that it has no control over legibility. These are handwritten registers photographed from damaged books.
+# ---------------- 4. THE SHAPE OF THE WHOLE INSTRUMENT ----------------
+how many offices	ONE HUNDRED AND FORTY-TWO, from Standesamt Adlershof to Standesamt Zehlendorf von Berlin, harvested from the site's own autocomplete.
+how far the indexes run	the old Roman-numeral city offices carry births to 1914 and marriages to 1938. Schöneberg's DEATH indexes run all the way to 1994, year by year. Some volumes are listed but marked "geschützte Daten bis 2050" and carry no link at all — Tegel's births are the example.
+how big	from 3.55 MB to 573 MB a volume. The sizes are printed beside every entry, which is how the enumeration above was made without opening anything.
+source	content.landesarchiv-berlin.de/labsa, swept 20 September 2026: 142 office names harvested, all three register types queried for each, with "Standesamt Treptow" as the positive control and the umlaut failure diagnosed and corrected before anything was written down.

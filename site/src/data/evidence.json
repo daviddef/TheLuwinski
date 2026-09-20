@@ -49,6 +49,14 @@
    "people": 0
   },
   {
+   "file": "berlin-namensverzeichnisse.tsv",
+   "title": "The Berlin registry offices put their name indexes online, and one of them holds Kurt's birth number",
+   "source": "Landesarchiv Berlin Standesamtsabfrage, 142 offices swept 20 September 2026",
+   "kind": "ref",
+   "rows": 18,
+   "people": 0
+  },
+  {
    "file": "berlin-postwar-luwinski.tsv",
    "title": "Post-war West Berlin — the Luwinskis, Auguste under her last surname, and who was still called Leibholz",
    "source": "Zentral- und Landesbibliothek Berlin, digital.zlb.de — Namenteil series 34117222 (1949-1970) and telephone books 15849358 (1969-1980), searched through the Goobi Solr API and the per-page OCR endpoint, 20 September 2026",
@@ -3152,7 +3160,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 56,
+  "files": 57,
   "person_files": 22,
   "people": 187,
   "records": 252,
