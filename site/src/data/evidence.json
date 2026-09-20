@@ -395,6 +395,18 @@
    ]
   },
   {
+   "name": "*** CORRECTED THE SAME DAY — this line first said Kurt was \"her son by another man\" and Jacob \"his stepfather\". AN ASSUMPTION, AND THE ARCHIVE'S OWN RECORD SAYS OTHERWISE ***",
+   "slug": "corrected-the-same-day-this-line-first-said-kurt-was-her-son-by-another-man-and-jacob-his-stepfather-an-assumption-and-the-archive-s-own-record-says-otherwise",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: —"
+    }
+   ]
+  },
+  {
    "name": "ALFRED LEIBHOLZ",
    "slug": "alfred-leibholz",
    "records": [
@@ -403,18 +415,6 @@
      "title": "The Berlin directory against the 1939 census, household by household",
      "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
      "detail": "directory_entry: 1940: \"A ISRAEL, Fleischermeister, NW87 LEVETZOWSTRASSE 13\". 1941: the same man, same address, no longer a Fleischermeister but an ARBEITER. Absent from 1942. · mapping_the_lives: Leibholz, ALFRED, born 04.12.1887, DIED 08.08.1942, Levetzowstr. 13 Hinterhaus II links, Tiergarten"
-    }
-   ]
-  },
-  {
-   "name": "AND THE QUESTION IT SHARPENS RATHER THAN ANSWERS",
-   "slug": "and-the-question-it-sharpens-rather-than-answers",
-   "records": [
-    {
-     "file": "mappingthelives-leibholz.tsv",
-     "title": "The Berlin directory against the 1939 census, household by household",
-     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
-     "detail": "directory_entry: — · mapping_the_lives: —"
     }
    ]
   },
