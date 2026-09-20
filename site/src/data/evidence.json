@@ -321,6 +321,14 @@
    "people": 38
   },
   {
+   "file": "melbourne-leibholz-death.tsv",
+   "title": "Joachim Peter Leibholz died at Toorak in 1971, and the index names his parents",
+   "source": "Victorian BDM historical index reg. 26252/1971, searched 21 September 2026",
+   "kind": "ref",
+   "rows": 10,
+   "people": 0
+  },
+  {
    "file": "naa-recordsearch.tsv",
    "title": "The National Archives of Australia has the family — it just has not scanned them",
    "source": "recordsearch.naa.gov.au, item-level index, eight surname wildcards, searched 20 September 2026",
@@ -3208,7 +3216,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 63,
+  "files": 64,
   "person_files": 22,
   "people": 187,
   "records": 252,

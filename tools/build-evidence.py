@@ -77,6 +77,7 @@ MANIFEST = {
  "leipholz-sweep.tsv":        ([], "The eighth spelling, and the directory printed it itself — LEIPHOLZ", "Berliner Adressbuch cross-reference 1913 to 1940, swept 20 September 2026", "ref"),
  "gedenkbuch-fifty.tsv":      ([], "Fifty Leibholz in the Gedenkbuch, and only three of them were born at Schubin", "Bundesarchiv Gedenkbuch, all five result pages read 20 September 2026", "ref"),
  "weinstrasse-pages-of-testimony.tsv": ([], "The Weinstraße household was at Yad Vashem all along, under the eighth spelling", "Yad Vashem Pages of Testimony 5369884 and 1122806, read 21 September 2026", "ref"),
+ "melbourne-leibholz-death.tsv": ([], "Joachim Peter Leibholz died at Toorak in 1971, and the index names his parents", "Victorian BDM historical index reg. 26252/1971, searched 21 September 2026", "ref"),
  "twenty-next.tsv":            ([], "Twenty ways to open the Luwinskis abroad", "Written 20 September 2026 at David's request \u2014 a prioritised plan, not a finding", "ref"),
  "szubin-civil-registers.tsv":  ([], "The Szubin civil registers of 1874 \u2014 found, filmed and online", "szukajwarchiwach.gov.pl (AP Bydgoszcz fonds 6/1792/0, 6/1795/0, 6/1796/0) and FamilySearch catalogue koha:402152 and koha:402191, digital films 007998644 and 008016003; 20 September 2026", "ref"),
  "schmul-and-thimm.tsv":        ([], "The two great-grandmothers' surnames — what can be reached and what cannot", "FamilySearch collection metadata and Posen collection 4116415 (33 exact SCHMUL records read); Geneteka control run and failed; 20 September 2026", "ref"),
