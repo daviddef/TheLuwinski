@@ -1,0 +1,31 @@
+# THE SCHÖNEBERG DEATH INDEXES, AND THE EIGHTH SPELLING TURNING UP IN ONE OF THEM.
+# Landesarchiv Berlin, P Rep. 163, Namensverzeichnisse zum Sterberegister, Standesamt Schöneberg.
+# Sixty-one volumes, 1938 to 1994, unbroken year by year. Read 21 September 2026.
+#
+# WHY THESE ARE ONLINE AT ALL. Deaths leave the personal-data protection period after thirty years,
+# births after a hundred and ten. That is why Schöneberg's death indexes run to 1994 while its
+# birth indexes stop in 1913, and it is why the death of a woman last seen in a 1970 directory is
+# reachable from a desk and the birth of a child born in 1925 is not.
+field	value
+# ---------------- THE FINDING ----------------
+*** ERNA FRIDA ELSE LEIPHOLZ, DIED 13 JANUARY 1975 ***	Standesamt Schöneberg, Namensverzeichnis zum Sterberegister 1975, P Rep. 163 Nr. 602, the Le- block. The line reads "Leipholz | Erna Frida Else | 13.1. | 79 | ev". *** THAT IS A DATE, A REGISTER NUMBER AND A CONFESSION: STERBEREGISTER SCHÖNEBERG 1975 NR. 79, PROTESTANT. *** A death entry of that vintage carries the address, the age or birth date, the birthplace, the marital status and the informant. It is orderable by number.
+*** AND IT WAS FOUND ONLY BECAUSE THE SEARCH WAS WIDENED ***	the scan that found it was looking for Leibholz. It returned nothing for four consecutive years. The pattern was then widened to Le[iy][bp]h — Leibholz OR LEIPHOLZ — and the 1975 volume answered on the first pass. *** A SEARCH FOR THE SEVEN KNOWN SPELLINGS WOULD HAVE READ THIS VOLUME AND DECLARED IT EMPTY. *** This is the clearest demonstration the archive has that the thirty-two published negatives are provisional; see work list row 247.
+is she the Erna of Streitstraße	NOT ESTABLISHED, AND THE DATES ARGUE AGAINST IT. This archive holds "Leibholz Erna · 20 Streitstr. 39" in the 1980-81 Berlin telephone book, Spandau, recorded as the last Leibholz in the post-war run. A woman who died in Schöneberg in January 1975 is not in a 1980-81 telephone book. EITHER THEY ARE TWO WOMEN, OR THE ARCHIVE HAS MISREAD A YEAR SOMEWHERE. Both possibilities are live and neither is asserted. THE CERTIFICATE WOULD SETTLE IT, and so would re-reading the Streitstraße line.
+# ---------------- THE NEGATIVES, WHICH HAVE A POSITIVE CONTROL ----------------
+Schöneberg deaths 1970	P Rep. 163 Nr. 597, 140 pages. No Leibholz and no Leipholz in the Le- block. CONTROL: a scan of the same band for "Lehmann" returned two pages of Lehmanns, so the band was being read.
+Schöneberg deaths 1971	P Rep. 163 Nr. 598, 133 pages. The Le- block runs Lehmann · Lehmann · Lehmann · Lehrke · Leie · Leinung · Leipert · Leissner · Leitzmann · Lelewel · Lemke. LEIBHOLZ WOULD SIT BETWEEN LEHRKE AND LEIE AND IT IS NOT THERE.
+Schöneberg deaths 1972	P Rep. 163 Nr. 599, 125 pages. Nothing in the Le- block.
+Schöneberg deaths 1973	P Rep. 163 Nr. 600, 125 pages. The block runs Lehmann (eleven of them) · Lehnhoff · Leischner · Lemanczyk. Nothing between.
+Schöneberg deaths 1974	P Rep. 163 Nr. 601. Lehmann · LEIB, Johanna Elisabeth Käthe, Nr. 1094 · Leifert · Leistritz · Lementy · Lemke. LEIB IS A DIFFERENT SURNAME and is recorded here only so that a later reader does not rediscover it as a near miss.
+Schöneberg deaths 1976	P Rep. 163 Nr. 603. Lehfeldt · Lehmann · Leiers · Leitner. Nothing.
+Schöneberg deaths 1977	P Rep. 163 Nr. 604. Lehmann · Lehmkühler · Lehne · Leitloff. Nothing.
+# ---------------- WHO WAS BEING LOOKED FOR, AND WHY THESE YEARS ----------------
+ELLA LEIBHOLZ, Krankenschwester	the target of the sweep. Reppichstraße 28 in the 1938 directory · Dominicusstraße 43 in 1957 and 1959 · WILLMANNDAMM 3 in 1964 and 1967 and in the 1963 and 1970 street sections · and absent from the 1975-76 telephone book. THAT BRACKETS A DEATH TO ROUGHLY 1970-1975 IF SHE DIED IN SCHÖNEBERG. Six of those years are now read and she is in none of them. SHE MAY HAVE DIED ELSEWHERE, MOVED, OR MARRIED.
+what is NOT closed	1969 and earlier, 1978 onwards, and every other Berlin registry office. Schöneberg was chosen because all three of Ella's addresses are in it.
+# ---------------- THE INSTRUMENT, WHICH IS THE REUSABLE PART ----------------
+*** THE PDFs ARE 40 TO 380 MEGABYTES AND NONE OF THEM WAS DOWNLOADED ***	content.landesarchiv-berlin.de serves them with "accept-ranges: bytes". pdf.js loaded in the browser fetches only the byte ranges it needs for the pages asked for. A 76 MB index is read in about fifteen seconds over a few hundred kilobytes.
+and they carry a text layer	poor OCR of a typed or handwritten register, but good enough to sort surnames. THE WORKING METHOD IS NOT TO SEARCH FOR THE NAME. It is to pull every token matching Le[hij]* out of the middle third of the volume, sort them, and READ THE ALPHABET FOR A GAP. That is how the 1971 volume was proved empty and how 1975 gave up a spelling nobody was searching for.
+where the alphabet sits	the Le- block falls between 33 and 64 per cent of the way through every volume tested. Scanning that band costs about twenty page reads instead of a hundred and thirty.
+the search form	POST to content.landesarchiv-berlin.de/labsa/show/index.php with regName, and sterbe / heirats / geburten as checkbox values. IT ANSWERS A PLAIN POST — no session, no token, unlike the Bundesarchiv's JSF pages. *** AND THE OFFICE NAME MUST BE DOUBLE-ENCODED: "Standesamt SchÃ¶neberg", not "Standesamt Schöneberg". *** The autocomplete at /labsa/show/autocomplete.php?b=1&q= lists every office and shows the same mangling, which is how the trap is confirmed rather than guessed.
+and there is no Schöneberg III	the offices are Standesamt Schöneberg, Schöneberg I and Schöneberg II. The 1924 marriage of Jacob Leibholz and Auguste is in Schöneberg II.
+source	Landesarchiv Berlin LABSA, P Rep. 163 Nr. 597-604 and 602, read page by page through pdf.js on 21 September 2026. Nothing downloaded; the volumes were read in place over HTTP range requests.

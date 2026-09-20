@@ -42,10 +42,23 @@ def main():
                 "heading": heading or None,
                 "text": content[:1500],
             })
+    payload = json.dumps({"entries": entries}, ensure_ascii=False)
+    # Written to BOTH, deliberately, and the reason is the ordering of the build chain.
+    # astro build empties dist before it refills it, and build-search runs AFTER astro,
+    # so a copy in dist alone exists only between the end of one build and the start of
+    # the next: any bare `astro build`, or any build interrupted before this step, and
+    # the search page fetches a file that is not there. A copy in public alone is worse
+    # in a quieter way -- astro copies public into dist DURING the build, before this
+    # script has run, so dist would carry the PREVIOUS build's index and be permanently
+    # one build stale. Writing both gives dist a fresh index now and leaves a durable
+    # copy that the next astro build will lay down before this script overwrites it.
     out = DIST / "searchindex.json"
-    out.write_text(json.dumps({"entries": entries}, ensure_ascii=False), encoding="utf-8")
+    out.write_text(payload, encoding="utf-8")
+    keep = ROOT / "site" / "public" / "searchindex.json"
+    keep.write_text(payload, encoding="utf-8")
     print(f"build-search: {len(entries)} sections across "
-          f"{len(set(e['url'] for e in entries))} pages -> {out.relative_to(ROOT)}")
+          f"{len(set(e['url'] for e in entries))} pages -> {out.relative_to(ROOT)} "
+          f"and {keep.relative_to(ROOT)}")
 
 if __name__ == "__main__":
     main()

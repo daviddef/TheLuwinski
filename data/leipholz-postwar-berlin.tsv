@@ -1,0 +1,23 @@
+# THE EIGHTH SPELLING IN POST-WAR BERLIN — THE SWEEP THE SWEEP FILE SAID HAD NOT BEEN DONE.
+# ZLB Berlin, Berliner Adressbuch Namenteil 34117222_<year>_<part>, 1949-1970, read 21 September 2026.
+#
+# WHY IT WAS RUN. data/leipholz-sweep.tsv lists the instruments LEIPHOLZ had been put through and
+# names the one it had not: "the post-war Berlin directories, which were swept for LUWINSKI and
+# LEIBHOLZ and not for this." One Solr query across the whole run answered it.
+field	value
+# ---------------- THE RESULT ----------------
+*** LEIPHOLZ IS IN SEVEN POST-WAR VOLUMES ***	1957, 1959, 1961, 1963, 1964, 1967 and 1970. The surname did not die with the deported; it is in the Berlin directory continuously through the fifties and sixties, and this archive had walked past it every time it swept the same volumes for LEIBHOLZ.
+# ---------------- FRIEDRICH, WHO MOVES ONCE AND RETIRES ----------------
+FRIEDRICH LEIPHOLZ	1957 "Friedrich Angest Tgl Berliner Str 5a" — an employee at Berliner Straße 5a in TEGEL. 1959 the same. 1961 "Friedrich Pensionär Rei 1 Schwabstr 4" — RETIRED, and moved to Schwabstraße 4 in REINICKENDORF. 1964 and 1967 the same address. AND THE STREET SECTIONS CARRY HIM TOO: 1963 and 1970 both list "Leipholz Friedrich Pens" in a house whose neighbours are unchanged across the seven years — Klasczyk the car mechanic, Weczerek the foreman, Wirth the machine fitter, Bach the waitress, Driemel, Gebel, Heintze. ONE MAN, FOURTEEN YEARS, TWO ADDRESSES, AND A RETIREMENT VISIBLE IN THE TRADE COLUMN.
+# ---------------- KLARA, AND THE ADDRESS THAT ALREADY MEANT SOMETHING ----------------
+*** KLARA LEIPHOLZ, PUTZMACHERIN, DIEFFENBACHSTRASSE 58 ***	1957 and 1959 only: "—Klara Putzmacherin SW 29 Dieffenbachstr 58". A PUTZMACHERIN IS A MILLINER — a maker of women's hats.
+*** AND PAUL LEIPHOLZ, SCHLOSSER, WAS AT DIEFFENBACHSTRASSE 58 IN 1924 ***	this archive already held him, from the 1924 Adressbuch run in data/leipholz-sweep.tsv: "PAUL, Schlosser, S59 Dieffenbachstraße 58". *** THE SAME STREET AND THE SAME HOUSE NUMBER, THIRTY-THREE YEARS AND A WAR APART. *** Dieffenbachstraße is in Kreuzberg; the postal prefix differs because Berlin renumbered its postal districts between the two volumes, not because the address moved.
+how far that can be taken	NOT TO A RELATIONSHIP. A surname and a house number thirty-three years apart is a strong coincidence and nothing more until a document joins them. WHAT IT IS is the first post-war address this archive has for the eighth spelling that it can already match to a pre-war one, and Kreuzberg registry records for Dieffenbachstraße would test it.
+and the trade is worth one sentence	THE LEIBHOLZ TRADE IN BERLIN WAS HATS. Samuel dealt in Hüte en gros at Kommandantenstraße 29; the 1941 directory has an Israel "Hüte". A milliner named Leipholz in 1957 is the same trade in the same city under the other spelling. IT PROVES NOTHING. It is recorded because a later reader should not have to notice it twice.
+# ---------------- AND A DEATH, FROM A DIFFERENT INSTRUMENT THE SAME DAY ----------------
+ERNA FRIDA ELSE LEIPHOLZ	died 13 January 1975, Standesamt Schöneberg, Sterberegister Nr. 79 — see data/schoeneberg-death-indexes.tsv. She is NOT in any of the seven directory volumes above under that spelling, which is consistent with a woman listed under a husband's line rather than her own.
+# ---------------- WHAT THIS IS AND IS NOT ----------------
+*** TEXT LAYER, NOT IMAGE ***	every line above is read from the OCR text layer of the ZLB's page scans, and this archive's standard is that A TEXT-LAYER HIT IS NOT A READ ENTRY. The post-war volumes are set in Antiqua rather than Fraktur, so the layer is far cleaner than the pre-war runs — "Leipholz Friedrich Pensionär Rei 1 Schwabstr 4" needs no interpretation. It is still not a crop of the printed line, and it is published as what it is.
+one OCR caution carried forward	the 1959 volume prints the name lower-case as "leipholz" and the 1964 volume gives the house number as "Schwabstr ?" where the digit failed. Neither changes the reading; both are recorded so the next reader knows the layer is imperfect.
+NOT KIN ON ANY EVIDENCE HELD	no document joins Friedrich, Klara, Paul or Erna to Jacob Leibholz of Schubin. The Berliner Adressbuch's own cross-reference — "Leipholz, s. a. Leibholz" — is why they are worth holding, and it is not a pedigree.
+source	ZLB Berlin digital.zlb.de, Solr index query for FULLTEXT:Leipholz across PI_TOPSTRUCT:34117222*, then the per-page OCR endpoint for each of the seven hits. Read 21 September 2026.

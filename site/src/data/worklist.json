@@ -2043,18 +2043,18 @@
   {
    "n": 244,
    "what": "BUILD THE ADDRESS-TO-REGISTRY-OFFICE MAP FOR EVERY BERLIN ADDRESS THIS ARCHIVE HOLDS",
-   "state": "next",
+   "state": "struck",
    "owner": "this archive",
    "since": "2026-09-21",
-   "note": "The Berliner Adressbuch's Straßenverzeichnis carries a column headed STANDESAMT, street by street. It is how Kurt's birth office was found — Chodowieckistraße to Berlin VIII to Geburtsregister 1912 Nr. 963 — and it has been used ONCE. This archive holds roughly thirty Berlin addresses: Meraner Str. 2, Levetzowstr. 13, Michaelkirchstr. 26, Kommandantenstr. 29, Waghäuseler Str. 9/10, Weinstr. 6, Treuchtlinger Str. 4, Leinestr. 32, Mehringdamm 109, Willmanndamm, Hasenheide, Egellsstr. 16, Ramlerstr. 15, Stephanstr. 7, Chodowieckistr. 32, Lutherstr. 34 and more. NOT ONE OF THE OTHERS HAS BEEN RUN THROUGH THAT COLUMN. *** WHY IT IS THE HIGHEST-LEVERAGE ITEM ON THE LIST: *** every certificate this archive will ever ask for has to name an office, and at present it would be guessing. One afternoon converts a list of streets into a list of offices, and the Landesarchiv's free name indexes are organised BY OFFICE, so the map is also the key to searching them."
+   "note": "The Berliner Adressbuch's Straßenverzeichnis carries a column headed STANDESAMT, street by street. It is how Kurt's birth office was found — Chodowieckistraße to Berlin VIII to Geburtsregister 1912 Nr. 963 — and it has been used ONCE. This archive holds roughly thirty Berlin addresses: Meraner Str. 2, Levetzowstr. 13, Michaelkirchstr. 26, Kommandantenstr. 29, Waghäuseler Str. 9/10, Weinstr. 6, Treuchtlinger Str. 4, Leinestr. 32, Mehringdamm 109, Willmanndamm, Hasenheide, Egellsstr. 16, Ramlerstr. 15, Stephanstr. 7, Chodowieckistr. 32, Lutherstr. 34 and more. NOT ONE OF THE OTHERS HAS BEEN RUN THROUGH THAT COLUMN. *** WHY IT IS THE HIGHEST-LEVERAGE ITEM ON THE LIST: *** every certificate this archive will ever ask for has to name an office, and at present it would be guessing. One afternoon converts a list of streets into a list of offices, and the Landesarchiv's free name indexes are organised BY OFFICE, so the map is also the key to searching them.  *** 21 SEPTEMBER, AND IT DID NOT WORK. *** The Adressbuch route was tried and abandoned with a reason. The 1913 Straßenverzeichnis carries the Standesamt column, but its OCR is a four-column table read as one stream of fragments -- which is why Kurt's office was read at the IMAGE and not from the text. The 1938 volume has no such column at all: its Teil IV is a house-by-house RESIDENT list, and the running heads that might have given a district are Fraktur mush (\"IV. Seil\", \"IY, Zeit\", \"IV. jrdr\"). A map of thirty addresses built from that would be a map of guesses. WHAT REPLACED IT, AND WORKED THE SAME AFTERNOON: go at the office indexes directly. LABSA answers a plain POST, lists every register volume an office holds, and the volumes are readable in place. The borough is knowable from the postal prefix the directory already prints. THE ITEM IS STRUCK, NOT DONE -- the map does not exist and the thing it was wanted for was got another way."
   },
   {
    "n": 245,
    "what": "THE SCHÖNEBERG AND WEDDING DEATH INDEXES FOR THE FOUR LEIBHOLZ WOMEN AND THE TWO POST-WAR LUWINSKI MEN",
-   "state": "next",
+   "state": "running",
    "owner": "this archive",
    "since": "2026-09-21",
-   "note": "Deaths leave the protection period after thirty years, which is why the Schöneberg death indexes run YEAR BY YEAR TO 1994 while the births stop in 1913. FOUR LEIBHOLZ WOMEN LEAVE THIS ARCHIVE'S STORY WITH NO DEATH RECORDED: ELLA, Krankenschwester, Willmanndamm, in the books to 1970 · CHARLOTTE, Hasenheide, 1957 to 1967 · AGNES née KERGER, Mehringdamm 109, to 1976 · ERNA, Spandau, 1980, the last Leibholz in the Berlin books. Three of those addresses sit in offices whose death indexes are online. THE SAME FOR THE TWO MEN THE POST-WAR SWEEP FOUND: Joachim the Ofensetzer of Ramlerstr. 15 in Wedding, and the second Kurt, the Postfacharbeiter, whom the family tree has dying in 1995. A death entry gives the date, the address, the informant, and usually an age — and an age gives a birth year to test against the tree. DEPENDS ON ROW 244 for the office of each address."
+   "note": "Deaths leave the protection period after thirty years, which is why the Schöneberg death indexes run YEAR BY YEAR TO 1994 while the births stop in 1913. FOUR LEIBHOLZ WOMEN LEAVE THIS ARCHIVE'S STORY WITH NO DEATH RECORDED: ELLA, Krankenschwester, Willmanndamm, in the books to 1970 · CHARLOTTE, Hasenheide, 1957 to 1967 · AGNES née KERGER, Mehringdamm 109, to 1976 · ERNA, Spandau, 1980, the last Leibholz in the Berlin books. Three of those addresses sit in offices whose death indexes are online. THE SAME FOR THE TWO MEN THE POST-WAR SWEEP FOUND: Joachim the Ofensetzer of Ramlerstr. 15 in Wedding, and the second Kurt, the Postfacharbeiter, whom the family tree has dying in 1995. A death entry gives the date, the address, the informant, and usually an age — and an age gives a birth year to test against the tree. DEPENDS ON ROW 244 for the office of each address.  *** 21 SEPTEMBER: SEVEN OF SCHÖNEBERG'S SIXTY-ONE DEATH VOLUMES READ. *** 1970-1977 less 1975. Ella is in none of them. AND 1975 GAVE UP SOMEBODY ELSE: \"Leipholz | Erna Frida Else | 13.1. | 79 | ev\" -- Sterberegister Schöneberg 1975 Nr. 79. See data/schoeneberg-death-indexes.tsv. Three of the four women are NOT Schöneberg cases and this row was wrong to imply they were: Mehringdamm and Hasenheide are Kreuzberg and Neukölln, Streitstraße is Spandau. Only Ella's three addresses are Schöneberg."
   },
   {
    "n": 246,
@@ -2070,7 +2070,7 @@
    "state": "next",
    "owner": "this archive",
    "since": "2026-09-21",
-   "note": "THIRTY-TWO bounded negatives are published on this site and most were searched under LEIBHOLZ alone. Three separate institutions have since been shown to write the same murdered person both LEIBHOLZ and LEIPHOLZ. *** EVERY ONE OF THE THIRTY-TWO IS THEREFORE PROVISIONAL, and the archive has not said so on the page. *** Two things are owed: first, mark which of the thirty-two could be reached by the eighth spelling and which genuinely could not; second, re-run the ones that could. THIS IS THE SAME FAILURE AS THE UMLAUT AND THE BLANK GENETEKA PARAMETER — a negative is only as wide as the spelling it was searched under, and this archive learned that lesson after it had already printed thirty-two of them."
+   "note": "THIRTY-TWO bounded negatives are published on this site and most were searched under LEIBHOLZ alone. Three separate institutions have since been shown to write the same murdered person both LEIBHOLZ and LEIPHOLZ. *** EVERY ONE OF THE THIRTY-TWO IS THEREFORE PROVISIONAL, and the archive has not said so on the page. *** Two things are owed: first, mark which of the thirty-two could be reached by the eighth spelling and which genuinely could not; second, re-run the ones that could. THIS IS THE SAME FAILURE AS THE UMLAUT AND THE BLANK GENETEKA PARAMETER — a negative is only as wide as the spelling it was searched under, and this archive learned that lesson after it had already printed thirty-two of them.  *** AND IT NOW HAS A WORKED EXAMPLE RATHER THAN AN ARGUMENT. *** On 21 September the Schöneberg death indexes were scanned for LEIBHOLZ across 1970-1977 and returned nothing four years running. The pattern was widened to Le[iy][bp]h and the 1975 volume answered immediately with ERNA FRIDA ELSE LEIPHOLZ. THE NARROW SCAN HAD ALREADY READ THAT VOLUME AND CALLED IT EMPTY. That is this row's claim demonstrated on a document, not inferred."
   },
   {
    "n": 248,
@@ -2079,6 +2079,38 @@
    "owner": "this archive",
    "since": "2026-09-21",
    "note": "The Sauerbaum pin was FIFTY KILOMETRES OUT and it was found by accident, while checking an unrelated distance for a sentence that said \"about fifteen kilometres\" and should have said 17.8. THERE ARE SIXTEEN PINS ON THE ATLAS AND FIFTEEN HAVE NEVER BEEN CHECKED against a gazetteer. The same pass should test every date this archive has converted between calendars or between a register and a narrative, and every number introduced by the word \"about\". *** THE POINT IS NOT THAT ONE PIN WAS WRONG. *** It is that the error survived a published page, a build gate and several re-readings, and was caught only when something unrelated happened to touch it. An error nobody is looking for is not found by care; it is found by a systematic pass."
+  },
+  {
+   "n": 249,
+   "what": "ERNA FRIDA ELSE LEIPHOLZ, SCHÖNEBERG STERBEREGISTER 1975 NR. 79 — and whether she is the Erna of Streitstraße",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-21",
+   "note": "The name index gives the date (13 January 1975), the register number (79) and the confession (ev). A DEATH ENTRY OF THAT VINTAGE CARRIES THE ADDRESS, THE BIRTH DATE OR AGE, THE BIRTHPLACE, THE MARITAL STATUS AND THE INFORMANT -- and the informant is usually the nearest relative, which is the thing this archive keeps running out of. *** THE TENSION TO RESOLVE FIRST, AND IT COSTS NOTHING: *** this archive records \"Leibholz Erna · 20 Streitstr. 39\" in the 1980-81 telephone book as the last Leibholz in the post-war run. A woman who died in January 1975 is not in a 1980-81 telephone book. EITHER THEY ARE TWO WOMEN OR A YEAR HAS BEEN MISREAD, and re-reading the Streitstraße line settles it before anybody orders a certificate. The certificate itself is a purchase and is not mine."
+  },
+  {
+   "n": 250,
+   "what": "DIEFFENBACHSTRASSE 58 — Paul Leipholz in 1924, Klara Leipholz in 1957",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-21",
+   "note": "PAUL, Schlosser, S59 Dieffenbachstraße 58, from the 1924 Adressbuch. KLARA, PUTZMACHERIN, SW 29 Dieffenbachstraße 58, from the 1957 and 1959 post-war Namenteil. SAME STREET, SAME HOUSE NUMBER, THIRTY-THREE YEARS AND A WAR APART; the postal prefix differs because Berlin renumbered its districts, not because the address did. A Putzmacherin is a MILLINER and the Leibholz trade in Berlin was hats. TESTS THAT NEED NOBODY'S HELP: the intervening volumes 1925-1943 and 1949-1956 for the same house, which would show whether the family held it straight through; the Kreuzberg registry indexes for both names; and the 1943 and 1949 volumes either side of the gap, which is where a household either survives or does not. NOT KIN ON ANY EVIDENCE HELD."
+  },
+  {
+   "n": 251,
+   "what": "FRIEDRICH LEIPHOLZ of Schwabstraße 4, Reinickendorf — fourteen years and a retirement",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-21",
+   "note": "Tegel, Berliner Straße 5a, Angestellter, 1957 and 1959. Reinickendorf, Schwabstraße 4, PENSIONÄR, 1961 through 1970, with the same neighbours in the street section both times. A man who retires between 1959 and 1961 was born around 1895 give or take, WHICH PUTS HIM IN JACOB LEIBHOLZ'S GENERATION. Reinickendorf's death indexes are in the same free LABSA set that gave up Erna, and his death would name a wife and an age. CHEAP, UNASSISTED, AND NOT YET DONE."
+  },
+  {
+   "n": 252,
+   "what": "SWEEP THE REMAINING FIFTY-FOUR SCHÖNEBERG DEATH VOLUMES, AND THEN THE OTHER OFFICES",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-21",
+   "note": "Seven of sixty-one are read. The method is now routine and costs about fifteen seconds a volume: LABSA lists the volumes, pdf.js reads them in place over HTTP range requests without downloading a byte of the 40-380 MB files, and the test is not a name search but PULLING EVERY Le[hij]* TOKEN OUT OF THE MIDDLE THIRD AND READING THE ALPHABET FOR A GAP. *** THE PATTERN MUST BE Le[iy][bp]h AND NOT LEIBHOLZ *** -- that is the whole lesson of 1975. Then Kreuzberg for Agnes and for Dieffenbachstraße, Neukölln for Charlotte, Spandau for Erna, Reinickendorf for Friedrich, Wedding for Joachim the Ofensetzer."
   }
  ]
 }

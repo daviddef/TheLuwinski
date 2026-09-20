@@ -15,3 +15,4 @@ data/myheritage-tree9.json
 # cM and their tree links. Same rule as the harvest: it never leaves this machine.
 data/autoclusters-*.csv
 notes/
+site/public/searchindex.json

@@ -289,6 +289,14 @@
    "people": 0
   },
   {
+   "file": "leipholz-postwar-berlin.tsv",
+   "title": "The eighth spelling in post-war Berlin — seven volumes the sweep had never seen",
+   "source": "ZLB Berliner Adressbuch Namenteil 1957-1970, Solr sweep and per-page OCR 21 September 2026",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
+  },
+  {
    "file": "leipholz-sweep.tsv",
    "title": "The eighth spelling, and the directory printed it itself — LEIPHOLZ",
    "source": "Berliner Adressbuch cross-reference 1913 to 1940, swept 20 September 2026",
@@ -358,6 +366,14 @@
    "source": "FamilySearch collection metadata and Posen collection 4116415 (33 exact SCHMUL records read); Geneteka control run and failed; 20 September 2026",
    "kind": "ref",
    "rows": 22,
+   "people": 0
+  },
+  {
+   "file": "schoeneberg-death-indexes.tsv",
+   "title": "The Schöneberg death indexes, and the eighth spelling in one of them",
+   "source": "Landesarchiv Berlin P Rep. 163, sixty-one volumes listed and eight read through pdf.js 21 September 2026",
+   "kind": "ref",
+   "rows": 18,
    "people": 0
   },
   {
@@ -3224,7 +3240,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 65,
+  "files": 67,
   "person_files": 22,
   "people": 187,
   "records": 252,
