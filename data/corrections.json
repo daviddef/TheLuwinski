@@ -88,6 +88,14 @@
       "was": "flew from Berlin to Melbourne — this archive's own reading, published 20 September 2026",
       "now": "sailed from Bremerhaven to Melbourne on the ship FLAVIA, arriving 17 September 1965",
       "source": "NAA: A2559, 1965/86/85-88, item ID 5435314 — the Australian half of the same nominal roll, whose title states the ship, the port and the date. The error came from reading the mode of travel off the Arolsen FOLDER heading, “TRANSPORT BY AIRPLANE”, instead of off the sheet. A folder heading describes the folder."
+    },
+    {
+      "id": 9500903,
+      "who": "Sauerbaum, Kreis Rössel — the place, on this archive's own map",
+      "field": "where the atlas put it",
+      "was": "54.35 N, 21.15 E — a pin placed before the village had been identified, and fifty kilometres from the village",
+      "now": "53.935 N, 20.846 E — Zerbuń, Gmina Jeziorany, powiat olsztyński",
+      "source": "German Wikipedia's coordinates for Zerbuń, the village this archive identified as Sauerbaum on 20 September 2026. Checked because a DIFFERENT claim was being verified — the distance from Sauerbaum to Bischofstein — and the arithmetic came out at 33 km against a published 15. The distance claim was near enough (17.8 km from the real village). THE PIN WAS NOT. The map had been showing Auguste Luwinski's birthplace fifty kilometres from where she was born, since before the village was identified at all."
     }
   ]
 }
