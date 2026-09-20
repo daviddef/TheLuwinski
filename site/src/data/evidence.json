@@ -169,6 +169,14 @@
    "people": 16
   },
   {
+   "file": "luwinski-emigration-1965.tsv",
+   "title": "A branch of the family flew from Berlin to Australia in 1965",
+   "source": "Arolsen Archives DocID 81709354 — ICEM nominal roll, 3.1.3 Emigrations, BGO 65/135, stamped September 1965; read with consent 20 September 2026",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
+  },
+  {
    "file": "mappingthelives-leibholz.tsv",
    "title": "The Berlin directory against the 1939 census, household by household",
    "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
@@ -2592,7 +2600,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 37,
+  "files": 38,
   "person_files": 22,
   "people": 153,
   "records": 218,
