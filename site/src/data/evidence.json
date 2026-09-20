@@ -225,6 +225,14 @@
    "people": 0
   },
   {
+   "file": "tree-audit.tsv",
+   "title": "Every citation in the family tree, checked against what it cites",
+   "source": "data/myheritage-tree9.json audited 20 September 2026 against Arolsen DocID 130648701 and the FamilySearch citation strings",
+   "kind": "ref",
+   "rows": 18,
+   "people": 0
+  },
+  {
    "file": "wear-1851-bermondsey.tsv",
    "title": "1851 census, Salisbury Street, Bermondsey",
    "source": "HO107 piece 1560 folio 212",
@@ -2608,7 +2616,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 39,
+  "files": 40,
   "person_files": 22,
   "people": 153,
   "records": 218,
