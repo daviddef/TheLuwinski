@@ -1970,11 +1970,11 @@
     },
     {
       "n": 235,
-      "what": "THE TWO PAGES OF TESTIMONY FOR WILLI AND JENNY — free, unopened, and they name a submitter",
-      "state": "next",
+      "what": "THE TWO PAGES OF TESTIMONY — opened, and they correct this archive's own note",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-20",
-      "note": "Yad Vashem holds a Page of Testimony for WILLI LEIPHOLZ, born 1887 at Berlin, and for JENNY LEIPHOLZ, born 1893 — the couple the Bundesarchiv lists as Wilhelm Willi Leibholz, born 30.12.1887 in Berlin, and Jenny Leibholz, born 11.02.1893 in Loosen. *** A PAGE OF TESTIMONY NAMES THE PERSON WHO FILLED IT IN: *** a survivor or a relative, with their address at the time and their stated relationship to the dead. Two of them, for a Berlin couple of exactly Jacob's generation, free to open and never opened. NOT KIN ON ANY EVIDENCE HELD — but a submitter is a living connection someone made on purpose, and this archive has very few of those."
+      "note": "DONE 21 September. Both filled in by KHANAN ROSENBERG VARADI, recorded as \"Family\" on Willi's page and as NEPHEW on Jenny's — so a Rosenberg, a child of one of Jenny's siblings, who survived and wrote out what happened to his aunt and uncle. *** WILLI'S PAGE IS AN EXACT MATCH FOR A HOUSEHOLD THIS ARCHIVE ALREADY HAD: *** born 30.12.1887, wife Jenny née Rosenberg, address WEINSTR 6 — the Weinstraße 6 household from the 1939 census and the 1938-41 directories. And it adds what a census card cannot: PLACE OF DEATH AUSCHWITZ, where Mapping the Lives could only say \"died before 08.05.1945\". JENNY'S PAGE GIVES HER PARENTS — ISIDOR and CECILLIE Rosenberg — and her birthplace, SCHLOCHAU, which is the district Sally Leibholz was born in and where the Gedenkbuch's fifty cluster. *** AND IT CORRECTS THE REGISTER OF LINES: *** the entry read \"NOT the Wilhelm Yad Vashem has\", written off a LEIBHOLZ search and true of that search. BOTH WILHELMS ARE AT YAD VASHEM — the 1890 one under LEIBHOLZ and the Weinstraße one under LEIPHOLZ. A DISCREPANCY LEFT OPEN: the Gedenkbuch gives Jenny's birthplace as Loosen, the Page of Testimony as Schlochau. NO APPROACH HAS BEEN MADE to the submitter and whether one should is David's call."
     },
     {
       "n": 236,
@@ -2007,6 +2007,14 @@
       "owner": "this archive",
       "since": "2026-09-20",
       "note": "Written onto the method page because it is the most transferable thing the day produced. THE LANDESARCHIV: four offices returned nothing and this archive nearly published \"Schöneberg has no online name index\"; the database stores office names double-encoded, so the correct spelling finds nothing and the mangled one finds seventeen volumes, and the tell was that all four failures carried an umlaut and no success did. GENETEKA: both spellings returned an empty table with the province and record-type parameters left blank, and a blank parameter there is not 'everywhere' but 'nothing'. A PEER'S TOOL: a change of selection rule took a working map from 1,495 rows back to 59, caught by regenerating and reading the map rather than by reading the code. *** IN ALL THREE THE EVIDENCE WAS IN THE SET, NOT IN ANY ONE CASE *** — a shared character, a query shape that differed from the control, a count that moved. The standing rule was already that a negative is worth recording only if a positive control went down the same path. The addition: WHEN SEVERAL NEGATIVES HAVE SOMETHING IN COMMON, SUSPECT THE THING THEY HAVE IN COMMON BEFORE BELIEVING THE NEGATIVES."
+    },
+    {
+      "n": 240,
+      "what": "ISIDOR AND CECILLIE ROSENBERG OF SCHLOCHAU — two names arrived from a nephew's handwriting",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-21",
+      "note": "Jenny Leipholz née Rosenberg, born Schlochau 11 February 1893, daughter of ISIDOR and CECILLIE. From her Page of Testimony, written by her nephew. NOT THIS FAMILY ON ANY EVIDENCE HELD — she married into a Berlin Leipholz household with no shown connection to the Schubin Leibholzes. WHY IT IS WORTH A ROW ANYWAY: Schlochau is the district Sally Leibholz was born in, the Gedenkbuch's fifty cluster there, and this archive has been trying for days to get behind Sally's generation. A Rosenberg family at Schlochau with two given names attached is a thread in the right place. CHEAP TESTS: Geneteka and the Polish state archives for ROSENBERG at Człuchów, which is Schlochau; and the other Pages of Testimony submitted by the same nephew, which would give his own generation of the family."
     }
   ]
 }

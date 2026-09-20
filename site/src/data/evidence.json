@@ -481,6 +481,14 @@
    "people": 0
   },
   {
+   "file": "weinstrasse-pages-of-testimony.tsv",
+   "title": "The Weinstraße household was at Yad Vashem all along, under the eighth spelling",
+   "source": "Yad Vashem Pages of Testimony 5369884 and 1122806, read 21 September 2026",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
+  },
+  {
    "file": "westpark-films.tsv",
    "title": "The Johannesburg cemetery films, mapped",
    "source": "FamilySearch catalogue olib:4148464, South Africa, Johannesburg City Cemetery records, 210 films; film 107638608 read at images 151, 187 and 401, 20 September 2026",
@@ -3200,7 +3208,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 62,
+  "files": 63,
   "person_files": 22,
   "people": 187,
   "records": 252,

@@ -1,0 +1,29 @@
+# THE WEINSTRASSE HOUSEHOLD WAS AT YAD VASHEM ALL ALONG, FILED UNDER THE EIGHTH SPELLING.
+# Yad Vashem Shoah Names Database, Pages of Testimony 5369884 and 1122806, opened 21 September 2026.
+#
+# WHAT THIS ARCHIVE ALREADY HAD. Mapping the Lives and the Berliner Adressbuch gave a household at
+# NO18 WEINSTRASSE 6: "Wilhelm, Vertreter" in the 1938 to 1940 directories, "WILHELM ISRAEL,
+# BAUARBEITER" in 1941 — a sales representative reduced to a building labourer — and absent from
+# 1942. The 1939 census gave WILHELM LEIBHOLZ, born 30.12.1887, and JENNY née ROSENBERG, born
+# 11.02.1893, both "died before 08.05.1945". The archive also established that a DIFFERENT Wilhelm
+# Leibholz, born 28.12.1890, is the one Yad Vashem holds, and wrote on the register of lines that
+# the Weinstraße Wilhelm is "NOT the Wilhelm Yad Vashem has".
+#
+# *** THAT WAS TRUE OF THE SPELLING SEARCHED AND FALSE OF THE ARCHIVE. BOTH WILHELMS ARE AT YAD
+# VASHEM. THE 1890 ONE IS UNDER LEIBHOLZ AND THE WEINSTRASSE ONE IS UNDER LEIPHOLZ. ***
+field	value
+# ---------------- WILLI, PAGE OF TESTIMONY 5369884 ----------------
+the identification is exact	"Last Name LEIPHOLZ · First Name WILLI · First Name WILLHELM · Date of Birth 30/12/1887 · Married · Spouse's First Name JENNY · Spouse's Maiden Name ROSENBERG · Address of Permanent Residence WEINSTR 6 · Wartime Address WEINSTR 6". THE BIRTH DATE, THE WIFE, HER MAIDEN NAME AND THE STREET ALL MATCH THE CENSUS HOUSEHOLD. There is no room for a second reading.
+*** AND IT ADDS THE THING THE CENSUS COULD NOT ***	"Place of Death: AUSCHWITZ, Camp, Poland". Mapping the Lives could say only "died before 08.05.1945", because that is what a census card and an absence prove. THE PAGE SAYS WHERE. Age given as 56.
+# ---------------- JENNY, PAGE OF TESTIMONY 1122806 ----------------
+and hers gives a birthplace and two more names	"JENNY LEIPHOLZ née ROSENBERG · Date of Birth 11/02/1893 · Place of Birth SCHLOCHAU, Grenzmark Posen-Westpreussen, Pomerania · Father's First Name ISIDOR · Mother's First Name CECILLIE · Age 50 · Place of Death AUSCHWITZ". TWO PARENTS THIS ARCHIVE DID NOT HAVE, and a village.
+*** AND THE BIRTHPLACE IS SCHLOCHAU, WHICH IS THE WHOLE OF LAST NIGHT'S OTHER FINDING ***	the Bundesarchiv Gedenkbuch's fifty Leibholz cluster in Kreis Schlochau and its neighbours — Hammerstein 5, Karwen 5, Glowitz 6, Schlochau 3 — and SALLY LEIBHOLZ, Kurt's great-grandfather, was born at HAMMERSTEIN, KREIS SCHLOCHAU, in 1847. A Berlin Leipholz married a woman born in the district the surname comes from.
+a discrepancy, recorded and not resolved	THE GEDENKBUCH GIVES JENNY'S BIRTHPLACE AS LOOSEN AND THE PAGE OF TESTIMONY GIVES SCHLOCHAU. Both are in the same corner of Pomerania and one may be the village and the other the district town, or the two sources may simply disagree. The archive is not picking between them on no evidence.
+# ---------------- AND A SURVIVOR WHO WENT LOOKING ----------------
+*** THE SUBMITTER ***	both pages were filled in by the same person: KHANAN ROSENBERG VARADI, recorded as "Family" on Willi's page and as *** NEPHEW *** on Jenny's. He is therefore a ROSENBERG — a child of one of Jenny's siblings — and he survived, and at some point he sat down and wrote out what had happened to his aunt and his uncle.
+what that is worth, stated carefully	A PAGE OF TESTIMONY IS THE ONLY DOCUMENT IN THIS WHOLE ARCHIVE WRITTEN BY SOMEBODY WHO CHOSE TO WRITE IT. Everything else here is a clerk's form, a register line, a transport list. This is a man remembering two people on purpose.
+and what it is not	EVIDENCE OF KINSHIP TO THIS FAMILY. Nothing connects Willi Leipholz of Weinstraße 6 to the Schubin Leibholzes except a surname and a city, and the surname is exactly the thing this archive has spent two days proving is unreliable in both directions. NO APPROACH HAS BEEN MADE TO THE SUBMITTER OR TO ANYONE CONNECTED WITH HIM, and whether one ever should is David's decision and not this archive's.
+# ---------------- WHAT IT DOES TO THE REGISTER OF LINES ----------------
+the Weinstraße entry moves	it has sat in the "unplaced" list on /lines as "Weinstraße 6 — Wilhelm b. 30.12.1887 and Jenny née Rosenberg — and NOT the Wilhelm Yad Vashem has". THE SECOND HALF OF THAT NOTE IS NOW WRONG AND THE FIRST HALF IS NOW FULLER. He is at Yad Vashem, under LEIPHOLZ; he died at Auschwitz; her parents were Isidor and Cecillie Rosenberg and she was born in Kreis Schlochau.
+and the general lesson, which this archive has now met three times in two days	A NEGATIVE RECORDED UNDER ONE SPELLING IS NOT A NEGATIVE. "Not the Wilhelm Yad Vashem has" was written in good faith off a LEIBHOLZ search and was true of that search. The correction did not come from doubting the finding; it came from running the other spelling for an unrelated reason.
+source	collections.yadvashem.org, Pages of Testimony item IDs 5369884 (Willi) and 1122806 (Jenny), both read at the record page on 21 September 2026. Cross-read against data/mappingthelives-leibholz.tsv, data/berlin-adressbuch-names.tsv and data/gedenkbuch-fifty.tsv.
