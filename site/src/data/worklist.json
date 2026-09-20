@@ -1991,6 +1991,14 @@
       "owner": "this archive",
       "since": "2026-09-20",
       "note": "A peer session pointed out that seven sibling archives share a spine of \"The families\" and \"People & places\" and this one runs \"Start · Our line · Places · People & names · Evidence\", and that a deviation nobody has recorded is indistinguishable from drift. RIGHT, AND NOW RECORDED ON THE METHOD PAGE. \"Our line\" because the question this archive exists to answer is a single descent — whether Derrick is Kurt's son — and a families group would invite families that are not the subject. \"People & names\" because the naming is the obstacle, not an ornament: Ivone is filed under six maiden spellings, three forenames and four married surnames, and on 20 September an EIGHTH spelling of the Leibholz name turned out to reach people the other seven could not. NOTE FOR THE RECORD: the peer's supporting reason — \"this archive is one woman and her documents rather than a family\" — describes the /names page, which is about Ivone, and not this archive, which is a family of at least four generations. The spine is right; that reason for it is not."
+    },
+    {
+      "n": 238,
+      "what": "check:living WATCHED THE PAGES AND NOT THE DATA — widened to served JSON, and proved",
+      "state": "done",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "A peer session found this blind spot across the shared tooling and widened the KIT's gate. *** THIS ARCHIVE DOES NOT USE THE KIT'S GATE — it runs its own tools/check-living.py — so the fix did not reach it. *** The gate walked *.html only, and this site serves two JSON files a browser fetches directly: dist/atlas-data.json behind the map and dist/searchindex.json. MEASURED BEFORE CHANGING: leak zero. A first crude grep looked like three hits and every one was a published dead namesake — Joachim Luwinski b.1865, Sally Leibholz, Gertrud Leibke — the same false-positive trap the peer reported. NOW WALKS *.html AND *.json: 27 pages became 29 files, still clean. AND PROVED RATHER THAN ASSUMED: a scratch build with a guarded living person in a served atlas-data.json and nothing in the HTML — the old gate said \"ok\" and exited zero, the new one named the file, the person and the matched text and failed. The one thing a peer cannot do for this archive is fix a tool it does not use, so a shared finding still has to be re-landed locally."
     }
   ]
 }

@@ -43,6 +43,34 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </p>
   </div>
 
+  <div class="panel">
+    <h3>The gate watched the pages and not the data <span class="tag disp">Widened, 20 September 2026</span></h3>
+    <p>
+      <code>check:living</code> exists so that the promise about living people is tested against the
+      built output rather than trusted to the generator. Until tonight it walked
+      <strong>*.html only</strong> — and this site serves two JSON files that a reader's browser
+      fetches directly: the atlas data behind the map, and the search index. A living person could
+      have reached a reader through either without the build saying a word.
+    </p>
+    <p>
+      A peer session working across the shared tooling found the same blind spot and widened the
+      kit's copy of the gate. <strong>This archive does not use the kit's copy</strong>; it runs its
+      own <code>tools/check-living.py</code>, so the fix did not reach it and had to be made here.
+    </p>
+    <p>
+      <strong>Measured before it was changed: the leak was zero.</strong> A first crude search looked
+      like three hits and every one was a published dead namesake — Joachim Luwinski born 1865,
+      Sally Leibholz, Gertrud Leibke. The blind spot was real and the leak was not, which is the
+      order those two things have to be established in.
+    </p>
+    <p>
+      And it was proved rather than assumed. A scratch copy of the build was given a served
+      <code>atlas-data.json</code> naming a guarded living person, with nothing in the HTML. The old
+      gate answered <em>“ok”</em> and exited zero. The new one named the file, the person and the
+      matched text, and failed the build.
+    </p>
+  </div>
+
   <h2>Two rules for this particular family</h2>
   <p>
     <strong>On the Holocaust records.</strong> Dates and places come from the Bundesarchiv and are

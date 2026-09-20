@@ -2,7 +2,15 @@
 """Fail the build if anyone omitted as living turns up in the output.
 
 The archive promises that living people are not present in the build. This
-checks the promise against the rendered HTML rather than trusting the generator.
+checks the promise against the rendered output rather than trusting the generator.
+
+It reads *.html AND *.json under dist. The JSON matters because the atlas is
+served as data — site/public/atlas-data.json is copied verbatim into dist and
+fetched by the map at runtime — and so is the search index. Until 20 September
+2026 this gate walked HTML only, so a living person could have reached a reader
+through a served JSON file without the build noticing. A peer session found the
+same blind spot across the estate; measured here first, the leak was zero and
+the hole was real.
 
 Two modes:
   --harvest   the full private harvest is present (local runs). Guards on real
@@ -43,12 +51,14 @@ def pages(dist):
     p = pathlib.Path(dist)
     if not p.is_absolute():
         p = pathlib.Path.cwd() / p
-    f = sorted(p.rglob("*.html"))
+    f = sorted(p.rglob("*.html")) + sorted(p.rglob("*.json"))
     if not f:
-        sys.exit(f"check-living: no HTML found under {p}")
+        sys.exit(f"check-living: no HTML or JSON found under {p}")
     return p, f
 
 def visible(text):
+    # JSON has no tags to strip; the substitutions are no-ops on it, and the
+    # whitespace collapse is what the candidate extractor wants either way.
     text = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", text)
     text = re.sub(r"(?s)<[^>]+>", " ", text)
     return re.sub(r"\s+", " ", text)
@@ -104,4 +114,5 @@ if __name__ == "__main__":
         for f, full, found in hits:
             print(f"  {f}: {full} matched {found!r}")
         sys.exit(1)
-    print(f"check-living: ok ({used}) — {n} pages, {guarded} guarded, none present")
+    print(f"check-living: ok ({used}) — {n} files (html and served json), "
+          f"{guarded} guarded, none present")
