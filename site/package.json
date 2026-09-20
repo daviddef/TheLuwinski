@@ -16,7 +16,7 @@
     "check:evidence": "python3 ../tools/check-evidence.py"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#fae55f9f357b153885b8374f59b3e8725dd3d0b7",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#714b06ed40cb2798e0fbf4d295cca3128ae5165c",
     "astro": "^5.18.2"
   }
 }

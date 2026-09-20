@@ -1,0 +1,283 @@
+{
+ "places": [
+  {
+   "name": "Hammerstein (Czarne)",
+   "lat": 53.68,
+   "lon": 16.94,
+   "cat": "leib",
+   "what": "Sally Leibholz born 1847. Georg born 1884 — which is why he cannot be Jacob’s brother",
+   "n": 0
+  },
+  {
+   "name": "Szubin (Schubin)",
+   "lat": 53.0,
+   "lon": 17.74,
+   "cat": "leib",
+   "what": "Sally married Friederike 1874. Samuel 1877, Jacob 1884, Oskar 1887 all born here",
+   "n": 0
+  },
+  {
+   "name": "Allenstein (Olsztyn)",
+   "lat": 53.78,
+   "lon": 20.48,
+   "cat": "luw",
+   "what": "Joachim Luwinski born 1865. A Landwirt",
+   "n": 0
+  },
+  {
+   "name": "Sauerbaum, Kreis Rössel",
+   "lat": 54.35,
+   "lon": 21.15,
+   "cat": "luw",
+   "what": "Johanna Thimm born 1871; Auguste born 1893",
+   "n": 0
+  },
+  {
+   "name": "Berlin",
+   "lat": 52.52,
+   "lon": 13.4,
+   "cat": "both",
+   "what": "Kurt born 1912. Four addresses: Meraner Str. 2, Kommandantenstr. 29, Waghäuseler Str. 9/10, Michaelkirchstr. 26",
+   "n": 0
+  },
+  {
+   "name": "Sommerfeld",
+   "lat": 52.95,
+   "lon": 12.98,
+   "cat": "luw",
+   "what": "Where Siegfried was hidden, January 1943 to April 1945",
+   "n": 0
+  },
+  {
+   "name": "Łódź",
+   "lat": 51.76,
+   "lon": 19.46,
+   "cat": "end",
+   "what": "Georg and Lydia, in the ghetto from 1 November 1941",
+   "n": 0
+  },
+  {
+   "name": "Chełmno (Kulmhof)",
+   "lat": 52.15,
+   "lon": 18.72,
+   "cat": "end",
+   "what": "Georg and Lydia, 13 May 1942",
+   "n": 0
+  },
+  {
+   "name": "Theresienstadt",
+   "lat": 50.51,
+   "lon": 14.15,
+   "cat": "end",
+   "what": "Oskar, 17 March 1943",
+   "n": 0
+  },
+  {
+   "name": "Auschwitz",
+   "lat": 50.03,
+   "lon": 19.2,
+   "cat": "end",
+   "what": "Jacob 26 Feb 1943 · Samuel 10 Apr 1943 · Oskar 16 Oct 1944",
+   "n": 0
+  },
+  {
+   "name": "Kraichtal",
+   "lat": 49.14,
+   "lon": 8.72,
+   "cat": "luw",
+   "what": "Auguste died 1975",
+   "n": 0
+  },
+  {
+   "name": "Eixo, Aveiro",
+   "lat": 40.62,
+   "lon": -8.55,
+   "cat": "fig",
+   "what": "Augusto Pereira de Figueiredo baptised 1883 — candidate only",
+   "n": 0
+  },
+  {
+   "name": "Porto",
+   "lat": 41.35,
+   "lon": -8.61,
+   "cat": "fig",
+   "what": "Ivone died and was buried",
+   "n": 0
+  },
+  {
+   "name": "Amadora, Oeiras",
+   "lat": 38.76,
+   "lon": -9.23,
+   "cat": "fig",
+   "what": "Augusto died 21 August 1954",
+   "n": 0
+  },
+  {
+   "name": "Lourenço Marques (Maputo)",
+   "lat": -25.97,
+   "lon": 32.58,
+   "cat": "fig",
+   "what": "Ivone Mota Figueiredo born 4 March 1924. Henrique born 1941",
+   "n": 0
+  },
+  {
+   "name": "Johannesburg",
+   "lat": -26.2,
+   "lon": 28.05,
+   "cat": "both",
+   "what": "Kurt from 1933. Married 1948. Kurt buried 1968 — Westpark, block L, grave 211",
+   "n": 0
+  }
+ ],
+ "moves": [
+  {
+   "n": "Szubin to Berlin",
+   "from": [
+    53.0,
+    17.74
+   ],
+   "to": [
+    52.52,
+    13.4
+   ],
+   "color": "#8a2f2f",
+   "dash": null,
+   "weight": 2.5,
+   "opacity": 0.6,
+   "note": "The Leibholz move into the city.",
+   "layer": "The families converge"
+  },
+  {
+   "n": "Allenstein to Berlin",
+   "from": [
+    53.78,
+    20.48
+   ],
+   "to": [
+    52.52,
+    13.4
+   ],
+   "color": "#6b5a12",
+   "dash": null,
+   "weight": 2.5,
+   "opacity": 0.6,
+   "note": "The Luwinski move into the city.",
+   "layer": "The families converge"
+  },
+  {
+   "n": "Berlin → Łódź → Chełmno",
+   "from": [
+    52.52,
+    13.4
+   ],
+   "via": [
+    [
+     51.76,
+     19.46
+    ]
+   ],
+   "to": [
+    52.15,
+    18.72
+   ],
+   "color": "#7a2e1f",
+   "dash": null,
+   "weight": 2.2,
+   "opacity": 0.9,
+   "note": "Georg and Lydia. Deported to the Łódź ghetto on 1 November 1941 and murdered at Chełmno on 13 May 1942.",
+   "layer": "The deportations"
+  },
+  {
+   "n": "Berlin → Auschwitz",
+   "from": [
+    52.52,
+    13.4
+   ],
+   "to": [
+    50.03,
+    19.2
+   ],
+   "color": "#7a2e1f",
+   "dash": null,
+   "weight": 2.2,
+   "opacity": 0.9,
+   "note": "Jacob, 26 February 1943. Samuel, 10 April 1943.",
+   "layer": "The deportations"
+  },
+  {
+   "n": "Berlin → Theresienstadt → Auschwitz",
+   "from": [
+    52.52,
+    13.4
+   ],
+   "via": [
+    [
+     50.51,
+     14.15
+    ]
+   ],
+   "to": [
+    50.03,
+    19.2
+   ],
+   "color": "#7a2e1f",
+   "dash": "5 4",
+   "weight": 1.8,
+   "opacity": 0.75,
+   "note": "Oskar. Theresienstadt on 17 March 1943, Auschwitz nineteen months later on 16 October 1944.",
+   "layer": "The deportations"
+  },
+  {
+   "n": "Kurt, 1933",
+   "from": [
+    52.52,
+    13.4
+   ],
+   "to": [
+    -26.2,
+    28.05
+   ],
+   "color": "#857f75",
+   "dash": "8 6",
+   "weight": 2.4,
+   "opacity": 0.8,
+   "note": "Eight thousand kilometres south, in 1933. He lived.",
+   "layer": "The two long journeys"
+  },
+  {
+   "n": "Ivone — 400 miles of railway",
+   "from": [
+    -25.97,
+    32.58
+   ],
+   "to": [
+    -26.2,
+    28.05
+   ],
+   "color": "#2f5d50",
+   "dash": null,
+   "weight": 3,
+   "opacity": 0.9,
+   "note": "How Ivone arrived, and the only reason these two halves are on one page.",
+   "layer": "The two long journeys"
+  },
+  {
+   "n": "Johannesburg → Porto",
+   "from": [
+    -26.2,
+    28.05
+   ],
+   "to": [
+    41.35,
+    -8.61
+   ],
+   "color": "#2f5d50",
+   "dash": "5 5",
+   "weight": 2,
+   "opacity": 0.75,
+   "note": "Ivone at the end. Porto is a place nobody else in this archive ever saw.",
+   "layer": "The two long journeys"
+  }
+ ],
+ "note": "Colours are this archive's own, read out of its Base.astro: --disp for Leibholz, --inf for Luwinski, --doc for Figueiredo, --accent for where it ended, --ink-faint for the 1933 crossing. The kit colours markers from JavaScript, so they are hex here rather than var() and DO NOT FOLLOW THE DARK THEME the way the hand-drawn SVG did. On the map that costs nothing - the tiles are light in both themes - which is why «both» is the mid tone --ink-soft and not --ink: a near-black dot was legible on the old drawing and would vanish from the legend on a dark page."
+}
