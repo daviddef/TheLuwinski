@@ -357,8 +357,8 @@
    "title": "Yad Vashem, Central Database of Shoah Victims' Names",
    "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
    "kind": "person",
-   "rows": 18,
-   "people": 18
+   "rows": 32,
+   "people": 32
   }
  ],
  "people": [
@@ -411,6 +411,30 @@
    ]
   },
   {
+   "name": "*** AND A CHILD THIS ARCHIVE DID NOT HAVE ***",
+   "slug": "and-a-child-this-archive-did-not-have",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: item 8754767 · date_of_birth: 1940 · place_of_birth: Berlin"
+    }
+   ]
+  },
+  {
+   "name": "*** AND A SECOND SOPHIE LEIBHOLZ, WHO IS NOT THAT ONE ***",
+   "slug": "and-a-second-sophie-leibholz-who-is-not-that-one",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: 13470697 · item 11572211 · date_of_birth: 09/01/1887 · place_of_birth: SCHLOCHAU, Grenzmark Posen-Westpreussen"
+    }
+   ]
+  },
+  {
    "name": "*** AND THE SAME PERSON WROTE BOTH FORMS ***",
    "slug": "and-the-same-person-wrote-both-forms",
    "records": [
@@ -443,6 +467,30 @@
      "title": "The Berlin directory against the 1939 census, household by household",
      "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
      "detail": "directory_entry: — · mapping_the_lives: —"
+    }
+   ]
+  },
+  {
+   "name": "*** SO GEORG IS THE UNCLE BY MARRIAGE ***",
+   "slug": "so-georg-is-the-uncle-by-marriage",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: — · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
+   "name": "*** THE THREE PAGES THAT SETTLE IT ***",
+   "slug": "the-three-pages-that-settle-it",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: items 1502365, 448447, 1512593 · date_of_birth: — · place_of_birth: —"
     }
    ]
   },
@@ -1096,6 +1144,18 @@
    "register_id": 9500026,
    "register_name": "Georg Leibholz",
    "register_match": "exact"
+  },
+  {
+   "name": "Georg's own Page, checked for parents",
+   "slug": "georg-s-own-page-checked-for-parents",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: item 1684365 · date_of_birth: 1883 · place_of_birth: Germany and nothing more · what it adds: NO FATHER AND NO MOTHER ON IT. The place of birth is the single word Germany. The Page gives a wife, a trade and a death and nothing above him."
+    }
+   ]
   },
   {
    "name": "George Castle",
@@ -2257,6 +2317,18 @@
    ]
   },
   {
+   "name": "SOPHIE LEIBHOLZ — *** A SURVIVOR, AND SHE WAS IN SHANGHAI ***",
+   "slug": "sophie-leibholz-a-survivor-and-she-was-in-shanghai",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: submitter search, 3 records · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
    "name": "STANDARD BANK OF SOUTH AFRICA LTD",
    "slug": "standard-bank-of-south-africa-ltd",
    "records": [
@@ -2614,6 +2686,18 @@
    ]
   },
   {
+   "name": "and it does give Lydia's parents, which nobody had",
+   "slug": "and-it-does-give-lydia-s-parents-which-nobody-had",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: — · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
    "name": "and the street should be named without decoration",
    "slug": "and-the-street-should-be-named-without-decoration",
    "records": [
@@ -2638,6 +2722,54 @@
    ]
   },
   {
+   "name": "and where she was born matters",
+   "slug": "and-where-she-was-born-matters",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: — · date_of_birth: — · place_of_birth: SCHLOCHAU"
+    }
+   ]
+  },
+  {
+   "name": "source of the additions",
+   "slug": "source-of-the-additions",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: — · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
+   "name": "the seventeen, by family",
+   "slug": "the-seventeen-by-family",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: submitter search, 17 results · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
+   "name": "what \"sister-in-law\" tells us",
+   "slug": "what-sister-in-law-tells-us",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: — · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
    "name": "what those negatives are worth, and it is not much on its own",
    "slug": "what-those-negatives-are-worth-and-it-is-not-much-on-its-own",
    "records": [
@@ -2646,6 +2778,42 @@
      "title": "The Arolsen Archives index",
      "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
      "detail": "arolsen_index_entry: — · date_of_birth: — · birthplace: —"
+    }
+   ]
+  },
+  {
+   "name": "who she was looking for (1)",
+   "slug": "who-she-was-looking-for-1",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: item 6684879 · date_of_birth: 14/01/1884 · place_of_birth: Berlin"
+    }
+   ]
+  },
+  {
+   "name": "who she was looking for (2)",
+   "slug": "who-she-was-looking-for-2",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: — · date_of_birth: 1888 · place_of_birth: — · what it adds: MATHILDE BINDER, of Berlin-Neukölln — Sally's wife."
+    }
+   ]
+  },
+  {
+   "name": "who she was looking for (3)",
+   "slug": "who-she-was-looking-for-3",
+   "records": [
+    {
+     "file": "yadvashem-leibholz.tsv",
+     "title": "Yad Vashem, Central Database of Shoah Victims' Names",
+     "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
+     "detail": "yv_record: item 6684807 · date_of_birth: 16/10/1890 · place_of_birth: Berlin"
     }
    ]
   }
@@ -2658,8 +2826,8 @@
   "ambiguous": 2,
   "files": 45,
   "person_files": 22,
-  "people": 153,
-  "records": 218,
+  "people": 167,
+  "records": 232,
   "linked_to_register": 11
  }
 }
