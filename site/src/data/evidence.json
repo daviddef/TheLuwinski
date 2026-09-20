@@ -145,6 +145,14 @@
    "people": 0
   },
   {
+   "file": "findmypast-newspapers.tsv",
+   "title": "The newspaper half of the subscription, and why the surname defeats it",
+   "source": "Findmypast, search-newspapers results, four queries run 20 September 2026",
+   "kind": "ref",
+   "rows": 14,
+   "people": 0
+  },
+  {
    "file": "gazette-wear-sweep.tsv",
    "title": "The gazette sweep for the Wears and for Phyllis",
    "source": "gazettes.africa, 54,313 South African issues",
@@ -2964,7 +2972,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 46,
+  "files": 47,
   "person_files": 22,
   "people": 178,
   "records": 243,
