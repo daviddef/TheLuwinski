@@ -193,6 +193,14 @@
    "people": 0
   },
   {
+   "file": "leibholz-shanghai.tsv",
+   "title": "A Berlin Leibholz family got out to Shanghai",
+   "source": "Arolsen Archives DocID 131698324 (Central Location Index card L 337909, reference 71410001) and DocID 78827389 (H.I.A.S. lists of Jewish nationals who died and were buried in Shanghai 1939-1948, reference 8808060); Yad Vashem submitter search; Mapping the Lives emigration field; 20 September 2026",
+   "kind": "ref",
+   "rows": 13,
+   "people": 0
+  },
+  {
    "file": "litigation.tsv",
    "title": "Transvaal court files",
    "source": "National Archives of South Africa, WLD and TPD series",
@@ -2824,7 +2832,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 45,
+  "files": 46,
   "person_files": 22,
   "people": 167,
   "records": 232,
