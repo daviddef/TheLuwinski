@@ -1884,11 +1884,11 @@
     },
     {
       "n": 225,
-      "what": "LEIBHOLZ, G., KAUFMANN, OF CHODOWIECKISTRASSE 31 — who he was",
-      "state": "next",
+      "what": "LEIBHOLZ, G., OF CHODOWIECKISTRASSE 31 — he is GEORG, and Jaques is four lines below him",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-20",
-      "note": "A Leibholz merchant living next door to a Luwinski in 1913, eleven years before Auguste Luwinski married Jacob Leibholz. NOT PROVED TO BE A RELATIVE and both surnames are borne by other Berliners. What makes him worth an hour is that this archive has never had ANY geography for how those two families met. The cheap tests: the Teil I name section of the same volume, which gives householders' full forenames and trades; and the archive's own Leibholz table, which knows a G. only as the Georg born at Hammerstein who cannot be Jacob's brother."
+      "note": "DONE the same day, from the name section of the same volume: \"— GEORG, KAUFM., NO 55, CHODOWIECKISTR. 31 II.\" A merchant, second floor, next door to the Luwinskis at 32. This archive already holds a GEORG LEIBHOLZ, born at Hammerstein, who cannot be Jacob's brother and has his own lane; WHETHER HE IS THIS MAN IS NOT ESTABLISHED, though the 1913 volume lists exactly one Georg Leibholz in Berlin. *** AND FOUR LINES BELOW HIM: \"— JAQUES, KAUFM., W 62, LUTHERSTR. 34 II.\" *** The man Auguste married eleven years later, in the same column of the same page — and TWENTY-FIVE YEARS EARLIER than the archive's previous earliest address for him. The 1913 Berlin Leibholz roll is transcribed in full in the evidence file. AND AN EIGHTH SPELLING, printed by the directory itself: \"LEIPHOLZ, s. a. LEIBHOLZ\", never searched anywhere."
     },
     {
       "n": 226,
@@ -1900,6 +1900,22 @@
       "covers": [
         "request:35-SEND-THIS-to-landesarchiv-urkunden.txt"
       ]
+    },
+    {
+      "n": 227,
+      "what": "LEIPHOLZ — an eighth spelling, printed by the Berliner Adressbuch itself, never searched",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "The 1913 directory's own cross-reference reads \"LEIPHOLZ, s. a. LEIBHOLZ\" — the compiler treating the two as one name. THIS ARCHIVE HAS NEVER RUN IT: not at Arolsen, not at the Gedenkbuch, not at Mapping the Lives, not at the NAA, not at gazettes.africa, not in the Berlin indexes. Every bounded negative recorded for LEIBHOLZ · LAIBHOLZ · LEIBHOLTZ · LEIBBHOLZ is one spelling short until this is run. The 1925 volume repeats the same cross-reference, so it is not a one-year quirk."
+    },
+    {
+      "n": 228,
+      "what": "WAS LUTHERSTRASSE RENAMED MARTIN-LUTHER-STRASSE? — verify or drop",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "Jaques Leibholz is at LUTHERSTRASSE 34, W 62, in the 1913 directory. The family tree puts Siegfried's birth in August 1925 at MARTIN-LUTHER-STRASSE 60, Schöneberg — but that tree is a modern one and would use the modern name whatever the 1925 document said. IF THE TWO ARE ONE STREET, JACOB LIVED ON IT FOR AT LEAST TWELVE YEARS, and the marriage entry at Schöneberg II in January 1924 sits exactly where it should. THE RENAMING IS ASSUMED AND HAS NOT BEEN SOURCED. A test was attempted and was inconclusive: the 1913 volume returns 128 pages for \"Lutherstr\", the post-war volume returns nothing for either name, and that nothing is an artefact of the volume's text layer rather than evidence. A Berlin street-name concordance settles it in a minute and has not been consulted."
     }
   ]
 }
