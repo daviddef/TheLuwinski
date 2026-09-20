@@ -185,6 +185,14 @@
    "people": 7
   },
   {
+   "file": "jacob-leibholz-deportation.tsv",
+   "title": "Jacob Leibholz, 26 February 1943 — the line on the list",
+   "source": "Arolsen Archives DocID 127212355 (Wave 44, 30th Osttransport to Auschwitz, reference 15510037, page 153 line 1039) and DocID 11243224 (AJDC/ITS card, reference 01020102 047); read with consent 20 September 2026",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
+  },
+  {
    "file": "leibholz-gedenkbuch.tsv",
    "title": "The Bundesarchiv Gedenkbuch",
    "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
@@ -2984,7 +2992,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 47,
+  "files": 48,
   "person_files": 22,
   "people": 179,
   "records": 244,
