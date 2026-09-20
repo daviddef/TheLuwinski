@@ -25,6 +25,14 @@
    "people": 0
   },
   {
+   "file": "australia-indexes.tsv",
+   "title": "The other Australian instruments — what each one can and cannot hold",
+   "source": "Queensland BDM historical index, the Ryerson Index and Trove, all tried 20 September 2026",
+   "kind": "ref",
+   "rows": 17,
+   "people": 0
+  },
+  {
    "file": "berlin-adressbuch-names.tsv",
    "title": "The Berliner Adressbuch, alphabetical name section",
    "source": "Zentral- und Landesbibliothek Berlin, digital.zlb.de — Teil I (Einwohner / Haushaltungsvorstände), annual volumes 1920-1943, read 20 September 2026",
@@ -3136,7 +3144,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 54,
+  "files": 55,
   "person_files": 22,
   "people": 187,
   "records": 252,

@@ -1764,6 +1764,22 @@
       "owner": "this archive",
       "since": "2026-09-20",
       "note": "Item 6 of the twenty. The search application hung on \"Loading...\", and its own configuration endpoint then began answering \"No API key found in request\" to this client. NOT A RESULT EITHER WAY: nothing was searched, so nothing is ruled out. *** AND NOTE WHAT TROVE IS ACTUALLY FOR HERE: *** copyright closes Australian newspapers at 1954 and this family landed in 1965, so the newspapers cannot hold them. THE GAZETTES CAN — the Commonwealth of Australia Gazette runs on past 1954 and carried naturalisations. Retry, restricted to the Gazette category, across every spelling."
+    },
+    {
+      "n": 213,
+      "what": "THE RYERSON INDEX — the only free instrument that reaches a 2012 Brisbane death",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "A free index to DEATH, FUNERAL AND PROBATE NOTICES in Australian newspapers, running to the present, where the Queensland state index stops at 1996. MANFRED DIED AT BRISBANE ON 20 SEPTEMBER 2012 and a Courier-Mail funeral notice would NAME THE SURVIVORS. Attempted four times on 20 September 2026 and the server answered \"Server Overloaded\" every time. NOTHING WAS SEARCHED, SO NOTHING IS RULED OUT. Retry across all seven spellings, and separately for MARQUARDT and WAGNER, which are the surnames Helga carried."
+    },
+    {
+      "n": 214,
+      "what": "QUEENSLAND DEATH CERTIFICATE FOR MANFRED — and the entitlement question that comes first",
+      "state": "blocked",
+      "owner": "David",
+      "since": "2026-09-20",
+      "note": "A Queensland death certificate NAMES THE PARENTS, and Manfred's parents are what the family tree gets worst: it makes him the son of Alfred Luwinski of Przasnysz, who died at Sachsenhausen in 1942 and was a Polish Catholic farm labourer. *** BUT THE FREE HISTORICAL INDEX STOPS AT 1996 AND HE DIED IN 2012, *** so this is not an index search — it is an application for a recent record, and Queensland issues those only to people with a recognised entitlement. BEFORE ANYTHING ELSE: is there one? Manfred is not proven kin to Kurt, so a family relationship may not exist to claim. The cheap alternative that needs no entitlement at all is the Ryerson Index at row 213 and the funeral notice it points to."
     }
   ]
 }
