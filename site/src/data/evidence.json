@@ -409,6 +409,14 @@
    "people": 0
   },
   {
+   "file": "twenty-alone.tsv",
+   "title": "Twenty things this archive can do without David",
+   "source": "Written 21 September 2026 at his request — a plan, not a finding",
+   "kind": "ref",
+   "rows": 24,
+   "people": 0
+  },
+  {
    "file": "twenty-next.tsv",
    "title": "Twenty ways to open the Luwinskis abroad",
    "source": "Written 20 September 2026 at David's request — a prioritised plan, not a finding",
@@ -3216,7 +3224,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 64,
+  "files": 65,
   "person_files": 22,
   "people": 187,
   "records": 252,
