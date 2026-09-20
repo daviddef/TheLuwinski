@@ -1563,6 +1563,14 @@
       "owner": "Claude",
       "since": "2026-09-20",
       "note": "NEW 20 SEPTEMBER. He was opened because a family tree said he was somebody's father, and he was not. HE IS RECORDED HERE ANYWAY, because the archive found him and dropping him because he is not useful would be the wrong instinct. ALFRED LUWINSKI, BORN 9 SEPTEMBER 1917 in Poland, a CATHOLIC FARM LABOURER, SINGLE, of PRZASNYSZ, PIŁSUDSKIEGO 117, in Masovia about a hundred kilometres from the East Prussian border. Imprisoned at SACHSENHAUSEN. DIED THERE ON 11 JULY 1942 AT TWENTY PAST THREE IN THE AFTERNOON; the card gives 'Herz- und Kreislaufschwäche', heart and circulatory failure, which is the standard camp formula and is not a cause of death. Death certificate 1924 of 1942. The Polish diplomatic mission and the I.R.O. were notified after the war and a later hand has dated the card 16.5.72 — somebody was still asking about him thirty years on. ONE THING WORTH NOTING AND NOT OVERREADING: Przasnysz is Masovian and the archive's other Luwinskis are East Prussian and Posen. The surname is thinly spread across all three, which is why it is traceable at all and why it keeps putting the wrong man in the right slot."
+    },
+    {
+      "n": 189,
+      "what": "AN AROLSEN INDEX ENTRY IS A POINTER, NOT A FACT — two of the tree's Luwinskis are misattached records",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "NEW 20 SEPTEMBER, after opening four Arolsen documents with David's consent and finding TWO MISATTRIBUTIONS IN THE FAMILY TREE, both of the same shape. (1) ALFRED LUWINSKI, born 9.9.1917: the tree makes him Manfred and Joachim's father and cites his Arolsen record. THE CARD SAYS POLISH, CATHOLIC, FARM LABOURER, *LEDIG* — SINGLE — SACHSENHAUSEN, DIED 11 JULY 1942 AGED TWENTY-FOUR, of Przasnysz in Masovia. He fathered nobody. (2) FELIX LUWINSKI, born 19.2.1923: the tree gives his birthplace as GRAFENAU, GERMANY and cites Arolsen. THE DOCUMENT GIVES NO BIRTHPLACE — it is a Form 11 return of the Landrat Grafenau dated 19 AUGUST 1946, an Allied listing of foreigners in the American Zone, and its nationality field reads RUSSLAND. THE PLACE OF REGISTRATION HAS BECOME THE PLACE OF BIRTH. *** THE RULE, AND THIS ARCHIVE SHOULD APPLY IT TO ITSELF BEFORE ANYONE ELSE. *** An Arolsen index entry gives a name, a date of birth and a DocID. EVERYTHING ELSE IS ON THE DOCUMENT. Until the document is opened, any place, relationship, occupation or fate attached to that entry is somebody's guess — and once it is written into a tree it gets cited back as though the archive had said it. FOUR DOCUMENTS OPENED, TWO MISATTRIBUTIONS. WHAT TO DO: the remaining Arolsen entries this archive has recorded WITHOUT opening the document — the 191 Leibholz index entries in data/arolsen-leibholz-luwinski.tsv — should be treated as pointers and nothing more until somebody opens them, and the file should say so."
     }
   ]
 }
