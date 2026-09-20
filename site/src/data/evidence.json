@@ -289,6 +289,14 @@
    "people": 15
   },
   {
+   "file": "surname-lines.tsv",
+   "title": "The lines of the name — every family of Leibholz and Luwinski, kept apart",
+   "source": "Drawn from the archive's own files, 20 September 2026 — a structure, not new evidence",
+   "kind": "ref",
+   "rows": 19,
+   "people": 0
+  },
+  {
    "file": "szubin-civil-registers.tsv",
    "title": "The Szubin civil registers of 1874 — found, filmed and online",
    "source": "szukajwarchiwach.gov.pl (AP Bydgoszcz fonds 6/1792/0, 6/1795/0, 6/1796/0) and FamilySearch catalogue koha:402152 and koha:402191, digital films 007998644 and 008016003; 20 September 2026",
@@ -3112,7 +3120,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 51,
+  "files": 52,
   "person_files": 22,
   "people": 187,
   "records": 252,
