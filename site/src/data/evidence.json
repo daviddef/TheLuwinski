@@ -29,7 +29,7 @@
    "title": "The other Australian instruments — what each one can and cannot hold",
    "source": "Queensland BDM historical index, the Ryerson Index and Trove, all tried 20 September 2026",
    "kind": "ref",
-   "rows": 17,
+   "rows": 19,
    "people": 0
   },
   {
@@ -134,6 +134,14 @@
    "source": "FamilySearch — South Africa, Civil Death Registration 1953-1967 (ark 1:1:DD9Y-PLT2); South Africa, Civil Marriage Records 1801-1974 (ark 1:1:6ZHR-NVYN); searched 20 September 2026",
    "kind": "ref",
    "rows": 10,
+   "people": 0
+  },
+  {
+   "file": "entschaedigung-berlin.tsv",
+   "title": "The compensation files moved four months ago, and nobody has asked for them",
+   "source": "Landesarchiv Berlin and LABO, their own pages, read 20 September 2026",
+   "kind": "ref",
+   "rows": 15,
    "people": 0
   },
   {
@@ -3144,7 +3152,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 55,
+  "files": 56,
   "person_files": 22,
   "people": 187,
   "records": 252,
