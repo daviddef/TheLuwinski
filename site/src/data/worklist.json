@@ -1844,16 +1844,19 @@
       "since": "2026-09-20",
       "note": "DONE, 20 September 2026. *** LUWINSKI · KURT MYSZISLAUS · 963 *** — the May block of the L section, page 75 of P Rep. 523 Nr. 1395, the name index to the birth register of STANDESAMT BERLIN VIII for 1912. Twenty-one candidate volumes became one: Schöneberg was excluded by reading its whole 1912 L section (entries 14 to 1119, no Luwinski), the 1913 directory gave Chodowieckistraße 32, and the Berliner Adressbuch's own street index — whose first column is headed STANDESAMT — gives houses 23 to 32 as office 8. FOUR THINGS AGREE: the surname, the forename, the month, and a district arrived at independently. AND THE ARITHMETIC CHECKS — entry 963 of a register that passes 2561 by December is 37.6 per cent through it, and 11 May is 36 per cent through the year. Every L page of 1912 was read: exactly one Luwinski in the whole year. A second forename nobody has ever seen: MYSZISLAUS, a German clerk's spelling of Mieczysław.",
       "covers": [
-        "request:35-SEND-THIS-to-landesarchiv-geburtsurkunde.txt"
+        "request:35-SEND-THIS-to-landesarchiv-urkunden.txt"
       ]
     },
     {
       "n": 221,
-      "what": "THE 1924 MARRIAGE ENTRY — and the marginal note that would say whether Kurt was legitimised",
-      "state": "next",
+      "what": "THE 1924 MARRIAGE ENTRY — FOUND. Standesamt Schöneberg II, Nr. 6 — and the index records the Mischehe",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-20",
-      "note": "Jacob Leibholz married Auguste Luwinski on 5 JANUARY 1924, twelve years after Kurt was born and took his mother's name. A German marriage register entry NAMES THE PARENTS OF BOTH PARTIES, and where a couple legitimise an existing child THE ENTRY CARRIES A MARGINAL NOTE SAYING SO. Two index volumes cover the date: SCHÖNEBERG I, HEIRATSREGISTER 1922-1927, P Rep. 160 Nr. 1036, 240.41 MB; and SCHÖNEBERG II, HEIRATSREGISTER 1924-1928, P Rep. 161 Nr. 271, 249.27 MB. Same blocker as row 220."
+      "note": "DONE, 20 September 2026. *** \"LEIBHOLZ · mos. · verheiratet mit LUWINSKI · kath. · Nr. 6\" *** and the same entry again under her name, on page 221 of P Rep. 161 Nr. 271, the marriage index of STANDESAMT SCHÖNEBERG II. The family tree gives the wedding as 5 January 1924; a register restarts at 1 each January and the entries above are 1, 2 and 4, SO THE SIXTH MARRIAGE OF THE YEAR IS A MARRIAGE IN THE FIRST WEEK OF IT — date and number agree without either being derived from the other. *** AND THE CLERK WROTE THE RELIGIONS: *** Jacob mos., Auguste kath. Her Catholicism had been inferred from the Ermland, from Sauerbaum and from a census card; here a registrar writes it at her own wedding, in the same line as her husband's Judaism. FOUND BY ELIMINATION: Berlin VIII's January 1924 L block (P Rep. 523 Nr. 1054 p.34) and Schöneberg I's opening 1924 L block (P Rep. 160 Nr. 1036 p.210) were read first and hold neither name. AND IT DATES THE MOVE: they were in eastern Schöneberg by January 1924, nineteen months earlier than any document previously showed.",
+      "covers": [
+        "request:35-SEND-THIS-to-landesarchiv-urkunden.txt"
+      ]
     },
     {
       "n": 222,
@@ -1895,7 +1898,7 @@
       "since": "2026-09-20",
       "note": "THE ONE TO SEND FIRST OF EVERYTHING DRAFTED TODAY. A single document by its exact register number: no searching, no name to match, no protection period to argue — births are open after 110 years and 1912 was 114 years ago. *** WHAT IT WILL CONTAIN: *** Auguste Luwinski's age, occupation and ADDRESS ON 11 MAY 1912, which this archive has never had; THE FATHER'S COLUMN, whether filled or empty, and either answer is worth having; the informant; and SAMTLICHE RANDVERMERKE — the marginal notes. Auguste married Jacob Leibholz on 5 January 1924, and if Kurt was legitimised then, the note is in that margin. It is a copy order and will cost something; the letter asks for an estimate first and does not request a certified copy.",
       "covers": [
-        "request:35-SEND-THIS-to-landesarchiv-geburtsurkunde.txt"
+        "request:35-SEND-THIS-to-landesarchiv-urkunden.txt"
       ]
     }
   ]

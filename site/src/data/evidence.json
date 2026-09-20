@@ -257,6 +257,14 @@
    "people": 4
   },
   {
+   "file": "leibholz-luwinski-marriage.tsv",
+   "title": "The marriage entry, found — Schöneberg II, 1924, Nr. 6, and the index records the Mischehe",
+   "source": "Landesarchiv Berlin P Rep. 161 Nr. 271 p.221, read at the image 20 September 2026",
+   "kind": "ref",
+   "rows": 15,
+   "people": 0
+  },
+  {
    "file": "leibholz-registration-card.tsv",
    "title": "DocID 11214358 read — the Berlin registration card, and the guess it withdraws",
    "source": "Arolsen Archives DocID 11214358, both images — 1.2.1.5 Berlin: Registration Cards from Jewish Residents, reference 10000375 24; read with consent 20 September 2026",
@@ -3176,7 +3184,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 59,
+  "files": 60,
   "person_files": 22,
   "people": 187,
   "records": 252,
