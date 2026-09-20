@@ -1,0 +1,127 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="Australia"
+  subtitle="A branch that sailed in 1965, a Leibholz who got out in 1939, and eleven files nobody has opened"
+  lede="The National Archives of Australia has this family. It has never scanned a page of it. Everything below was found in one sitting on 20 September 2026 in a free, name-indexed catalogue that this archive had never searched.">
+
+  <h2>They came by sea</h2>
+  <p>
+    On 20 September 2026 this archive published that Manfred Luwinski <em>flew</em> from Berlin to
+    Melbourne in 1965. Later the same day the National Archives of Australia said otherwise, and it
+    said so in the title of the very document Arolsen holds the other half of.
+  </p>
+
+  <div class="panel">
+    <h3>The same roll, in two countries <span class="tag doc">Documented</span></h3>
+    <p>
+      The Arolsen Archives hold an International Committee for European Migration nominal roll,
+      DocID 81709354, numbered <strong>BGO 65/135</strong>, carrying the family at
+      <strong>lines 85 to 88</strong>. The National Archives of Australia hold
+      <strong>NAA: A2559, 1965/86/85-88</strong>. The same roll number and the same four line numbers,
+      filed on opposite sides of the world by two archives that do not know of one another.
+    </p>
+    <p>
+      And the Australian title carries what the German one does not: <strong>“arrived per ship FLAVIA
+      ex Bremerhaven/Germany 17 September 1965”</strong>. They did not fly. The word <em>airplane</em>
+      belongs to the Arolsen <em>folder</em> heading, and this archive read the folder instead of the
+      document — <a href={base + '/method/'}>correction 9500902</a>.
+    </p>
+    <p>
+      The ship changes the story. Bremerhaven is not Berlin: they crossed West Germany to the North Sea
+      coast, and a migrant sailing on that run took about four weeks. <strong>They left Germany in
+      August 1965</strong>, and the Berlin flat was given up before that.
+    </p>
+  </div>
+
+  <p>
+    Four people are on those four lines. Two of them were children in 1965 and are flagged living in
+    the family tree, so they are not named here — <em>although the National Archives of Australia names
+    them in a public catalogue</em>. This archive's rule about the living is its own, and it is stricter
+    than the record it is quoting.
+  </p>
+
+  <h2>Joachim Peter Leibholz, who reached Melbourne ten weeks before the war</h2>
+  <p>
+    He was born at <strong>Berlin on 20 August 1903</strong>. He landed at Melbourne from the
+    <strong>Anchises</strong> on <strong>12 June 1939</strong> with his wife — Tilde on one file, Hilde
+    on another — and a child the catalogue does not name. On <strong>27 July 1944</strong>, while the
+    deportations were still running in the city he came from, he was naturalised at South Yarra.
+  </p>
+  <p>
+    The naturalisation card gives his previous nationality as <strong>STATELESS</strong>. He did not
+    arrive stateless; the Reich made him so after he left, and an Australian clerk wrote down the result.
+  </p>
+
+  <div class="panel">
+    <h3>And one of his files is about property inside Poland <span class="tag doc">Documented</span></h3>
+    <p>
+      <strong>NAA: A1478, EPCP63 — “German property taken over by the Polish Government -
+      Leibholz J P Mr”</strong>, 1947. A claim follows at A1458, EPCH18, and German currency bonds at
+      A1444, EPC164 — that last one filed under the spelling <strong>LAIBHOLZ</strong>.
+    </p>
+    <p>
+      Our Leibholzes are from <strong>Schubin in Posen</strong>, which is Szubin in Poland. This is the
+      first document found anywhere that puts a Leibholz, a Berliner and Polish property in one sentence.
+      It is not proof of kinship and it is not treated as any. It is a
+      <a href={base + '/lines/'}>lane of its own</a>, and the cheap tests are the Victorian death index
+      and the Melbourne Chevra Kadisha, either of which would give his parents.
+    </p>
+  </div>
+
+  <h2>The eleven items, and what state they are in</h2>
+  <table class="tbl">
+    <thead><tr><th>Citation</th><th>What it is</th><th>Access</th></tr></thead>
+    <tbody>
+      <tr><td>A2559, 1965/86/85-88</td><td>The 1965 assisted-migrant nominal roll — 9 folios</td><td>Not yet examined</td></tr>
+      <tr><td>A714, 18/8913</td><td>Leibholz naturalisation index card, 27 July 1944</td><td><strong>Open</strong></td></tr>
+      <tr><td>A435, 1944/4/1672</td><td>The naturalisation case file behind it</td><td>Not yet examined</td></tr>
+      <tr><td>A12508, 21/2464</td><td>Passenger statement, <em>Anchises</em>, 12 June 1939</td><td><strong>Open</strong></td></tr>
+      <tr><td>MP56/10, LEIBHOLZ T</td><td>“Tilde [and child]” — Melbourne</td><td><strong>Open</strong></td></tr>
+      <tr><td>A1478, EPCP63</td><td>German property taken over by the Polish Government</td><td>Not yet examined</td></tr>
+      <tr><td>A1458, EPCH18</td><td>Claim for property, 1948–1956</td><td>Not yet examined</td></tr>
+      <tr><td>A1444, EPC164</td><td>German currency bonds — <strong>“J P Laibholz”</strong></td><td>Not yet examined</td></tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>Not one of them is digitised.</strong> They are paper, at Canberra, Melbourne and Sydney.
+    An access examination is free and is asked for by email; a copy is not. The letter is
+    <a href={base + '/letters/'}>drafted and waiting to be sent</a>.
+  </p>
+
+  <div class="panel">
+    <h3>One spelling is not a search — and it paid twice in one sitting <span class="tag doc">Method</span></h3>
+    <p>
+      Eight wildcards were run: LUWINSK* · LOWINSK* · LUWENSK* · JUWINSK* · LUWWINSK* · LEIBHOL* ·
+      LAIBHOL* · LEIBBHOL*.
+    </p>
+    <p>
+      <strong>LAIBHOL*</strong> found a file that LEIBHOL* does not: the Australian government spelled
+      its own claimant’s name differently on a different form. And <strong>LOWINSK*</strong> found a
+      family that has to be kept out — Marcus William Lowinsky, who patented a cartwheel in 1892, and
+      <em>Helga Lowinsky, born 14 April 1931, who sailed to Australia from Britain in 1964 and married
+      a Grant</em>. The right forename, the wrong year, the wrong country. A careless search would have
+      taken her for Manfred’s wife.
+    </p>
+  </div>
+
+  <h2>What the search rules out, and what it does not</h2>
+  <p>
+    There is <strong>exactly one Luwinski item in the whole of the National Archives of Australia</strong>
+    — the 1965 roll. No naturalisation file, no migrant selection document, no alien registration, under
+    any spelling. That is a real finding about the index and a weak one about the records: Australian
+    citizenship files after 1949 sit in series that are largely <em>not item-listed</em> in RecordSearch.
+    A man who naturalised in Queensland in the 1970s can be wholly absent from this catalogue and wholly
+    present in the stack. <strong>The search rules out the index, not the record.</strong>
+  </p>
+  <p>
+    Two other Australian instruments were tried and did not open. <strong>Trove</strong> hung and then
+    began refusing this browser outright — nothing was searched there, so nothing is ruled out, and it is
+    the Commonwealth Gazette rather than the newspapers that matters, because copyright closes Australian
+    newspapers at 1954 and this family landed in 1965. <strong>The electoral rolls</strong> for 1965 to
+    1980 are behind a subscription this archive does not buy. Both sit on the
+    <a href={base + '/worklist/'}>work list</a>, marked for what they are: unopened, not empty.
+  </p>
+
+</Base>

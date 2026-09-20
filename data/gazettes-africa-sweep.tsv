@@ -1,0 +1,41 @@
+# GAZETTES.AFRICA, SWEPT ACROSS EVERY SPELLING FOR THE FIRST TIME — 20 SEPTEMBER 2026.
+#
+# *** READ THE FAILURE FIRST, BECAUSE IT IS THE POINT OF THE FILE. ***
+# This sweep found "Paula Luwinski" in two Johannesburg gazettes and this archive wrote her up as a
+# discovery: Kurt's widow, a commercial traveller living in a hotel in 1972, with her own dress shop
+# by 1975. EVERY PART OF THAT WAS ALREADY ON THE KURT PAGE, AND THE MIDDLE PART WAS ALREADY THERE AS
+# A CORRECTION. The 1972 notice is the sequestration of the estate of PHILLIP CRYSTAL — he is the
+# commercial traveller at the Mark Hotel, and Pauline Luwinski is the CREDITOR WHO BROUGHT THE
+# APPLICATION. This archive had made exactly that misreading once before, had caught it, and had
+# printed the correction on the page. IT THEN MADE IT AGAIN FROM THE SAME SNIPPET.
+#
+# THE CAUSE, AND THE RULE THAT FOLLOWS FROM IT. A search result was written up without reading the
+# archive's own published page on the person it concerned. The standing rule was already "check
+# letters.json and requests/ before drafting a request". IT IS NOW WIDER: BEFORE WRITING UP ANY FIND,
+# GREP THE SITE FOR THE NAME. Seven of these in one week; all seven had the same shape.
+#
+# WHAT IS ACTUALLY NEW IS BELOW, AND IT IS ALL NEGATIVE OR INSTRUMENTAL EXCEPT ONE FAMILY.
+# Queries run: LUWINSKI · LUWINSKY · LOWINSKI · LOWINSKY · LUWENSKI · JUWINSKI · LUWWINSKY ·
+# LEIBHOLZ · LAIBHOLZ · LEIBHOLTZ · LEIBBHOLZ · and two address phrases.
+field	value
+# ---------------- 1. A PROPERTY OF THE INSTRUMENT, MEASURED ----------------
+*** THE ENGINE FOLDS A TERMINAL -I AND -Y, AND FOLDS NOTHING ELSE ***	searching LUWINSKY returns exactly the eight LUWINSKI documents; searching LOWINSKI returns exactly the eight LOWINSKY documents. But LUWENSKI, JUWINSKI and LUWWINSKY each return nothing at all, and they are one letter away from a term that returns eight.
+why that is worth writing down	it means two of the seven spellings are free on this site and five are not. A sweep that runs LUWINSKI alone and stops has covered LUWINSKY without knowing it AND HAS MISSED LOWINSKI ENTIRELY — which is where the one new family is.
+# ---------------- 2. THE ONE NEW THING: A SOUTH AFRICAN LOWINSKY FAMILY ----------------
+never searched before today	the sources page records that "a search for Luwinski returns eight". LOWINSKY had not been run. It returns eight of its own, and they are a different family.
+THOS. H. LOWINSKY	Government Gazette of 4 August 1922, number 1260, page 30 — in a list of names and figures.
+MARK LOWINSKY	11 August 1944, number 3380, page 44; and again 27 January 1961, number 6617, page 119. The same list form both times, seventeen years apart.
+LOWINSKY, M.	7 July 1939, number 2659, page 132. Same form again.
+RUPERT ESMOND LOWINSKY, RETIRED	4 March 1955, number 5426, page 134 — "of Riebeek, District Maclear", estate 671/55; and 30 September 1955, number 5553, page 122 — the FIRST AND FINAL ACCOUNT on the same estate number, with a London address in the same line. A DECEASED ESTATE, ADVERTISED TWICE, THE WAY SOUTH AFRICAN ESTATES WERE.
+one more, 1985	2 August 1985, number 9879, page 142, reference 3747/84/3A under Lowinsky — an estate number of the 1984 series.
+*** WHY THEY ARE NOT OURS, AND THE REASON IS A DATE ***	THOS. H. LOWINSKY IS IN PRINT IN 1922. Kurt Luwinski did not reach South Africa until 1933. This is an established South African family of a near-identical name, present a decade before ours arrived, with its people in the Cape district of Maclear and a London connection. NO CONNECTION HAS BEEN SHOWN AND NONE IS ASSERTED. It goes on the register of lines so the next person does not spend a day ruling it out again.
+and one small hook, if it is ever wanted	estate 671/55, Rupert Esmond Lowinsky, is a NAAIRS-indexed file with a first and final account. If the two names ever have to be separated properly, that estate names his heirs.
+# ---------------- 3. THE BOUNDED NEGATIVES ----------------
+*** LEIBHOLZ, IN ANY SPELLING, IN ANY AFRICAN GAZETTE: NOTHING ***	LEIBHOLZ, LAIBHOLZ, LEIBHOLTZ and LEIBBHOLZ each return no documents, across every jurisdiction gazettes.africa holds — not South Africa, not anywhere. KURT WENT TO JOHANNESBURG ALONE. No relative of his father's family ever traded, died intestate, changed a name or was sequestrated in print in Africa.
+LUWENSKI · JUWINSKI · LUWWINSKY	nothing, and the negative is a real one: the engine that silently folds -i and -y did NOT fold these, so each was genuinely tested on its own.
+no naturalisation notice for Kurt, under any spelling	the eight LUWINSKI documents are the three Piccadilly partnership notices of November 1941, the three dissolution notices of October 1942, the 1972 sequestration and the 1975 business name. A STATEMENT ABOUT THIS CORPUS, NOT ABOUT WHETHER HE NATURALISED. NAAIRS remains the instrument for that, and it has been silent since 16 September.
+# ---------------- 4. ONE SMALL PIECE OF COLOUR, HONESTLY LABELLED AS SUCH ----------------
+18 Wanderers Street, Johannesburg	the shopfront Pauline traded from in 1975 is in HARRAS COURT, and the gazettes show it changing hands for forty years: THE WANDERERS TEA LOUNGE, sold by Hans Weller in December 1938 · MAYTIME FLORIST, transferred from a Mrs Roos in January 1944 · A. OLSEN & CO, stove merchants, in 1949 and 1950 · and PALLOU'S DRESS CENTRE by July 1975. Not evidence of anything. It is what her shop door had been before it was hers.
+# ---------------- 5. WHAT COULD NOT BE READ, AND WHY ----------------
+the full text of any notice	gazettes.africa gives a fixed snippet window and the only complete text is the source PDF, which for these volumes runs to about 81 MB. THIS ARCHIVE DOES NOT DOWNLOAD FILES ON DAVID'S BEHALF. Where a notice is quoted here it is quoted from the site's own OCR snippet, transcription errors and all — and the 1972 misreading above is exactly what happens when a snippet is treated as a document.
+source	gazettes.africa, searched 20 September 2026, thirteen queries. Cross-checked against this archive's own Kurt page, WHICH IS WHERE THE ERROR WAS CAUGHT AND WHERE IT SHOULD HAVE BEEN CHECKED FIRST.

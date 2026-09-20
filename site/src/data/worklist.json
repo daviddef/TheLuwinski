@@ -184,7 +184,7 @@
       "state": "running",
       "owner": "this archive",
       "since": "2026-09-14",
-      "note": "Standing work, and the reason this archive is worth anything. Published corrections to date: the Castles were **Hertfordshire, not Norfolk**; Caroline was a **Wallis**, not a Walls, and the tree was right where this archive was wrong; Derrick's birth year leaked onto the DNA page and was removed; the generation claim was walked back within the hour; and Henrique was called the son of a marriage that the 1948 register proves never happened. *** BROUGHT UP TO DATE 17 SEPTEMBER. *** The research log had stopped at 15 September while the archive went on making mistakes. NINE ENTRIES ADDED, of which SEVEN ARE MARKED WITHDRAWN OR CORRECTED: reading a dead hostname as a dead service; publishing two archive-index zeroes that were three records each; claiming DNA above George William Castle on a surname without opening the tree; having the emigration backwards, with the father leaving first; LEAKING THREE LIVING MATCH HOLDERS INTO A BUILD BECAUSE THE GUARD THAT CATCHES IT WAS NEVER WIRED INTO THE BUILD CHAIN; the Martha Giddings quarters; and the WALLIS/Walls contradiction that had sat on a page for a fortnight. The two genuine finds of the same days — Caroline James and Pix Road — sit in the same list in the same voice, which is the point of keeping it. *** 20 SEPTEMBER, AND THE COUNT FOR ONE DAY IS SIX. *** Six times today this archive raised as new something it already held: the Chevrah Kadisha (source of correction 1); correction 5's geography argument, which the next panel already made; Willi's 1946 questionnaire, re-read hours after being written up; Siegfried's birth date, published as something \"nothing else did\" give when Mapping the Lives had it that morning; WALTER of Levetzowstraße, whose absence from the census was this file's own omission; and row 202, which proposed writing to Poland for the Hammerstein registers that were asked for on 14 September and answered on the 16th. THE CAUSE IS THE SAME EVERY TIME AND IT IS NOT MEMORY. It is writing a row or a paragraph off the back of a fresh find WITHOUT FIRST READING THE FILES THAT WOULD ALREADY ANSWER IT — corrections.json, letters.json, the requests directory, and the data file being appended to. THE RULE THAT FOLLOWS: before a new row proposes writing to anybody, grep letters.json and requests/ for the place name. Before a data file claims a fact is new, grep data/ for it. Both are one command."
+      "note": "Standing work, and the reason this archive is worth anything. Published corrections to date: the Castles were **Hertfordshire, not Norfolk**; Caroline was a **Wallis**, not a Walls, and the tree was right where this archive was wrong; Derrick's birth year leaked onto the DNA page and was removed; the generation claim was walked back within the hour; and Henrique was called the son of a marriage that the 1948 register proves never happened. *** BROUGHT UP TO DATE 17 SEPTEMBER. *** The research log had stopped at 15 September while the archive went on making mistakes. NINE ENTRIES ADDED, of which SEVEN ARE MARKED WITHDRAWN OR CORRECTED: reading a dead hostname as a dead service; publishing two archive-index zeroes that were three records each; claiming DNA above George William Castle on a surname without opening the tree; having the emigration backwards, with the father leaving first; LEAKING THREE LIVING MATCH HOLDERS INTO A BUILD BECAUSE THE GUARD THAT CATCHES IT WAS NEVER WIRED INTO THE BUILD CHAIN; the Martha Giddings quarters; and the WALLIS/Walls contradiction that had sat on a page for a fortnight. The two genuine finds of the same days — Caroline James and Pix Road — sit in the same list in the same voice, which is the point of keeping it. *** 20 SEPTEMBER, AND THE COUNT FOR ONE DAY IS SIX. *** Six times today this archive raised as new something it already held: the Chevrah Kadisha (source of correction 1); correction 5's geography argument, which the next panel already made; Willi's 1946 questionnaire, re-read hours after being written up; Siegfried's birth date, published as something \"nothing else did\" give when Mapping the Lives had it that morning; WALTER of Levetzowstraße, whose absence from the census was this file's own omission; and row 202, which proposed writing to Poland for the Hammerstein registers that were asked for on 14 September and answered on the 16th. THE CAUSE IS THE SAME EVERY TIME AND IT IS NOT MEMORY. It is writing a row or a paragraph off the back of a fresh find WITHOUT FIRST READING THE FILES THAT WOULD ALREADY ANSWER IT — corrections.json, letters.json, the requests directory, and the data file being appended to. THE RULE THAT FOLLOWS: before a new row proposes writing to anybody, grep letters.json and requests/ for the place name. Before a data file claims a fact is new, grep data/ for it. Both are one command. || WIDENED 20 SEPTEMBER, SECOND TIME THE SAME DAY. The rule was \"read letters.json and requests/ before drafting a request\". IT IS NOW: *** BEFORE WRITING UP ANY FIND, GREP THE SITE FOR THE NAME. *** A gazettes.africa sweep produced \"Paula Luwinski, a commercial traveller, Mark Hotel\" and this archive wrote it up as a discovery about Kurt's widow. The Kurt page already had both notices, already identified her, AND ALREADY CARRIED A PUBLISHED CORRECTION OF THAT EXACT MISREADING — the commercial traveller at the Mark Hotel is Phillip Crystal, the man being sequestrated, and Pauline is the creditor who brought the application. The archive repeated its own corrected error from the same snippet, four days later."
     },
     {
       "n": 21,
@@ -1721,6 +1721,49 @@
       "owner": "this archive",
       "since": "2026-09-20",
       "note": "FOUND THE SAME WAY. RESZEL-RÖSSEL USC: 1876 no. 68 FRANZ LOWINSKI · 1881 no. 31 ALBERT LOWINSKI · 1884 no. 9 BERNHARD LOWINSKI. The Geneteka index does not carry their parents. *** KREIS RÖSSEL IS THE DISTRICT SAUERBAUM IS IN. *** Johanna Thimm was born there in 1871 and Auguste Luwinski in 1893. A household of this surname is registering children in that district from 1876, which is between those two dates. NOT KIN ON ANY EVIDENCE HELD. What it does is tell the Olsztyn archive exactly which three entries to pull, and those entries carry the father's name, age, trade and village — which would say at once whether this is Joachim's family or a different Lowinski.  NOTE THE SPELLING: the same registry spells one woman LOWINSKI in four years and LUWINSKI in two. The forms are not different families and must not be treated as such."
+    },
+    {
+      "n": 208,
+      "what": "NAA: A2559, 1965/86/85-88 — the Australian half of the 1965 emigration roll",
+      "state": "next",
+      "owner": "David sends",
+      "since": "2026-09-20",
+      "note": "NINE FOLIOS, CANBERRA, PAPER, NOT DIGITISED, access status \"not yet examined\". This is the same nominal roll Arolsen holds: BGO 65/135 lines 85 to 88 against the NAA control symbol 1965/86/85-88. IT ALREADY CORRECTED THIS ARCHIVE ONCE — its title says the family came by SHIP, the FLAVIA, ex Bremerhaven, arriving 17 September 1965, and this archive had published that they flew. *** THE FREE MOVE FIRST: *** an ACCESS EXAMINATION request to the National Archives of Australia costs nothing and is made by email. It does not produce a scan, but it opens the item and it is the step that has to happen before any copy can be ordered. Ask for examination of item ID 5435314, and at the same time for A714 18/8913, A435 1944/4/1672 and A1478 EPCP63.",
+      "covers": [
+        "request:31-SEND-THIS-to-naa.txt"
+      ]
+    },
+    {
+      "n": 209,
+      "what": "JOACHIM PETER LEIBHOLZ of Melbourne — a Berlin-born Leibholz who got out in June 1939",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "SIX NAA FILES, none scanned. Born Berlin 20 August 1903; landed Melbourne per ANCHISES 12 June 1939 with Tilde (or Hilde) and a child; naturalised 27 July 1944 at South Yarra, Victoria, PREVIOUS NATIONALITY STATELESS. *** AND ONE OF HIS FILES IS ABOUT PROPERTY INSIDE POLAND: *** A1478 EPCP63, \"German property taken over by the Polish Government - Leibholz J P Mr\", 1947, with a claim following at A1458 EPCH18 and German currency bonds at A1444 EPC164 — the last of those filed under the spelling LAIBHOLZ. OUR LEIBHOLZES ARE FROM SCHUBIN IN POSEN. This is the first document ever found that puts a Leibholz, a Berliner and Polish property in one sentence. NOT KIN ON ANY EVIDENCE HELD, and kept as its own lane. The cheap test is the Victorian death index and the Melbourne Chevra Kadisha, both of which would give his parents."
+    },
+    {
+      "n": 210,
+      "what": "THE LOWINSKYS OF SOUTH AFRICA — a second family of the name, in print eleven years before Kurt landed",
+      "state": "struck",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "FOUND BY RUNNING LOWINSKI, WHICH HAD NEVER BEEN RUN. Eight documents in the South African Government Gazette: THOS. H. LOWINSKY 1922 · LOWINSKY, M. 1939 · MARK LOWINSKY 1944 and 1961 · RUPERT ESMOND LOWINSKY, retired, of Riebeek, District Maclear, deceased estate 671/55 with a first and final account advertised 30 September 1955 · 3747/84/3A in 1985. *** NOT OURS, AND THE REASON IS A DATE: *** Thos. H. Lowinsky is in print in 1922 and Kurt Luwinski did not reach South Africa until 1933. PARKED, NOT PURSUED. It is on the register of lines so that nobody rules it out a second time. If the two names ever have to be separated properly, estate 671/55 names his heirs."
+    },
+    {
+      "n": 211,
+      "what": "AUSTRALIAN ELECTORAL ROLLS 1965-1980 — blocked, and the reason is worth recording",
+      "state": "blocked",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "Item 8 of the twenty. THE ROLLS FOR THOSE YEARS ARE BEHIND A SUBSCRIPTION. FamilySearch's free Australian electoral rolls stop at 1949 and the family did not land until 1965; the 1903-1980 set is Ancestry's, and an Ancestry subscription is a purchase this archive does not make. NOT A NEGATIVE RESULT — an unopened instrument. The free substitutes are the NAA files at row 208, the Queensland death certificate, and Australian telephone directories at the State Library of Queensland."
+    },
+    {
+      "n": 212,
+      "what": "TROVE — attempted 20 September 2026 and the site refused this browser",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "Item 6 of the twenty. The search application hung on \"Loading...\", and its own configuration endpoint then began answering \"No API key found in request\" to this client. NOT A RESULT EITHER WAY: nothing was searched, so nothing is ruled out. *** AND NOTE WHAT TROVE IS ACTUALLY FOR HERE: *** copyright closes Australian newspapers at 1954 and this family landed in 1965, so the newspapers cannot hold them. THE GAZETTES CAN — the Commonwealth of Australia Gazette runs on past 1954 and carried naturalisations. Retry, restricted to the Gazette category, across every spelling."
     }
   ]
 }

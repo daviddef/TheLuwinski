@@ -2,71 +2,716 @@
   "sets": [
     {
       "name": "LEIBHOLZ",
-      "dek": "Seven households of one surname in one city. Two of them are separated from ours by sixty-two days and two hundred miles; one of them begins in the same Kreis our own great-great-grandfather was born in.",
+      "dek": "Eight households of one surname, seven of them in one city and the eighth in Melbourne. Two of them are separated from ours by sixty-two days and two hundred miles; one of them begins in the same Kreis our own great-great-grandfather was born in.",
       "lanes": [
-        { "key": "schubin", "colour": "#4fa8c7", "label": "Schubin, in Posen — ours", "conf": "DOCUMENTED · THE LINE THIS ARCHIVE DESCENDS FROM", "read": "The Leibholz brothers →", "href": "/leibholz",
-          "nodes": [["Hammerstein","1847","Sally born — and it is NOT Schubin"],["Szubin","1874","Sally marries Friederike Schmul, 24 November"],["Schubin","1877","Samuel born"],["Schubin","1884","Jacob born, 8 August"],["Schubin","1887","Oskar born"],["Berlin","1913","the registration card's addresses begin"],["Schöneberg","1939","Meraner Str. 2 — Jacob, Auguste, Siegfried"]],
-          "ends": [["Auschwitz","/leibholz","Jacob, 26 February 1943 · Samuel, 10 April 1943"],["Theresienstadt","/leibholz","Oskar, 17 March 1943, and east on transport Er"],["Johannesburg","/kurt","Kurt, 1933 to 1969"],["Potsdam","/leibholz","Siegfried, who survived"],["Kraichtal","/east-prussia","Auguste, 1975"]] },
-        { "key": "hammerstein", "colour": "#d98b5f", "label": "Hammerstein — Georg's", "conf": "DOCUMENTED · NOT A BROTHER, THE DATES FORBID IT", "read": "Correction 5 →", "href": "/evidence",
-          "nodes": [["Hammerstein","1884","Georg born 7 June — sixty-two days before Jacob"],["Mitte","1938","a Wäscherei at Michaelkirchstraße 26"],["Berlin","1941","deported with Lydia née Perl, 1 November"]],
-          "ends": [["Łódź","/leibholz","the ghetto, November 1941"],["Chełmno","/leibholz","13 May 1942, the same day as his wife"]] },
-        { "key": "schlochau", "colour": "#c77f9a", "label": "Kreis Schlochau — Preussisch Friedland", "conf": "DOCUMENTED · SALLY'S OWN KREIS, AND A KREIS IS NOT A FAMILY", "read": "The Charlottenburg household →", "href": "/leibholz",
-          "nodes": [["Schlochau","1884","Else née Rothenberg born"],["Pr. Friedland","1912","Hans born 25 January"],["Pr. Friedland","1920","Liselott born"],["Charlottenburg","1939","Danckelmannstraße 44 — a Stolperstein"]],
-          "ends": [["Auschwitz","/leibholz","Hans deported 12 January 1943, dead 22 February"]] },
-        { "key": "stolp", "colour": "#8fa85c", "label": "Stolp and Glowitz, in Pomerania", "conf": "DOCUMENTED · SEPARABLE BY PLACE AND BY TRADE", "read": "The Lenaustraße household →", "href": "/leibholz",
-          "nodes": [["Stolp","c.1890","Willi born — 250 miles from Schubin"],["Glowitz","1899","Gertrud born, Kreis Stolp"],["Neukölln","1939","Lenaustraße 25 — a butcher, not a merchant"],["Berlin","1943","last word, March"]],
-          "ends": [["Auschwitz","/leibholz","Willi, Erna and Heinz"],["Palestine","/leibholz","Ruth-Trude Tabori-Hammer, who asked in 1946"]] },
-        { "key": "berlin", "colour": "#7f9fd1", "label": "Berlin-born — and one of them got out", "conf": "DOCUMENTED · BORN IN BERLIN, WHICH IS WHAT SEPARATES IT", "read": "Shanghai →", "href": "/leibholz",
-          "nodes": [["Berlin","1886","Albert born"],["Berlin","1890","Heinrich born"],["Halensee","1938","Albert, Antiquitäten"],["Berlin","1939","sailed 27 June, ten weeks before the war"]],
-          "ends": [["Shanghai","/leibholz","Albert died there 18 August 1944"],["Mehringdamm","/leibholz","Agnes, Heinrich's widow, until 1976"],["Jerusalem","/leibholz","Curt Sterngast, who asked after them"]] },
-        { "key": "levetzow", "colour": "#b58fc7", "label": "Levetzowstraße 13 — one flat, six people", "conf": "DOCUMENTED · NO CONNECTION PROPOSED", "read": "Why it is here at all →", "href": "/worklist",
-          "nodes": [["Tiergarten","1887","Alfred born — a master butcher"],["Tiergarten","1921","Marianne, then Walter, Lieselotte, Kurt"],["Tiergarten","1941","stripped of his trade in the directory"],["Tiergarten","1942","Alfred dead, 8 August"]],
-          "ends": [["Auschwitz","/leibholz","Else 1943, Lieselotte 1943, Kurt before May 1945"]] },
-        { "key": "gottingen", "colour": "#6f8f7f", "label": "Göttingen — not this family", "conf": "DOCUMENTED · LISTED ONLY SO HE IS NOT MERGED", "read": "The two Gerhards →", "href": "/leibholz", "parallel": true,
-          "nodes": [["Germany","1901","Dr Uri Gerhard born 15 November"],["Göttingen","1982","died at Herzberger Landstraße 55"]],
-          "ends": [["A survivor?","/leibholz","and on the public record the constitutional lawyer"]] }
+        {
+          "key": "schubin",
+          "colour": "#4fa8c7",
+          "label": "Schubin, in Posen — ours",
+          "conf": "DOCUMENTED · THE LINE THIS ARCHIVE DESCENDS FROM",
+          "read": "The Leibholz brothers →",
+          "href": "/leibholz",
+          "nodes": [
+            [
+              "Hammerstein",
+              "1847",
+              "Sally born — and it is NOT Schubin"
+            ],
+            [
+              "Szubin",
+              "1874",
+              "Sally marries Friederike Schmul, 24 November"
+            ],
+            [
+              "Schubin",
+              "1877",
+              "Samuel born"
+            ],
+            [
+              "Schubin",
+              "1884",
+              "Jacob born, 8 August"
+            ],
+            [
+              "Schubin",
+              "1887",
+              "Oskar born"
+            ],
+            [
+              "Berlin",
+              "1913",
+              "the registration card's addresses begin"
+            ],
+            [
+              "Schöneberg",
+              "1939",
+              "Meraner Str. 2 — Jacob, Auguste, Siegfried"
+            ]
+          ],
+          "ends": [
+            [
+              "Auschwitz",
+              "/leibholz",
+              "Jacob, 26 February 1943 · Samuel, 10 April 1943"
+            ],
+            [
+              "Theresienstadt",
+              "/leibholz",
+              "Oskar, 17 March 1943, and east on transport Er"
+            ],
+            [
+              "Johannesburg",
+              "/kurt",
+              "Kurt, 1933 to 1969"
+            ],
+            [
+              "Potsdam",
+              "/leibholz",
+              "Siegfried, who survived"
+            ],
+            [
+              "Kraichtal",
+              "/east-prussia",
+              "Auguste, 1975"
+            ]
+          ]
+        },
+        {
+          "key": "hammerstein",
+          "colour": "#d98b5f",
+          "label": "Hammerstein — Georg's",
+          "conf": "DOCUMENTED · NOT A BROTHER, THE DATES FORBID IT",
+          "read": "Correction 5 →",
+          "href": "/evidence",
+          "nodes": [
+            [
+              "Hammerstein",
+              "1884",
+              "Georg born 7 June — sixty-two days before Jacob"
+            ],
+            [
+              "Mitte",
+              "1938",
+              "a Wäscherei at Michaelkirchstraße 26"
+            ],
+            [
+              "Berlin",
+              "1941",
+              "deported with Lydia née Perl, 1 November"
+            ]
+          ],
+          "ends": [
+            [
+              "Łódź",
+              "/leibholz",
+              "the ghetto, November 1941"
+            ],
+            [
+              "Chełmno",
+              "/leibholz",
+              "13 May 1942, the same day as his wife"
+            ]
+          ]
+        },
+        {
+          "key": "schlochau",
+          "colour": "#c77f9a",
+          "label": "Kreis Schlochau — Preussisch Friedland",
+          "conf": "DOCUMENTED · SALLY'S OWN KREIS, AND A KREIS IS NOT A FAMILY",
+          "read": "The Charlottenburg household →",
+          "href": "/leibholz",
+          "nodes": [
+            [
+              "Schlochau",
+              "1884",
+              "Else née Rothenberg born"
+            ],
+            [
+              "Pr. Friedland",
+              "1912",
+              "Hans born 25 January"
+            ],
+            [
+              "Pr. Friedland",
+              "1920",
+              "Liselott born"
+            ],
+            [
+              "Charlottenburg",
+              "1939",
+              "Danckelmannstraße 44 — a Stolperstein"
+            ]
+          ],
+          "ends": [
+            [
+              "Auschwitz",
+              "/leibholz",
+              "Hans deported 12 January 1943, dead 22 February"
+            ]
+          ]
+        },
+        {
+          "key": "stolp",
+          "colour": "#8fa85c",
+          "label": "Stolp and Glowitz, in Pomerania",
+          "conf": "DOCUMENTED · SEPARABLE BY PLACE AND BY TRADE",
+          "read": "The Lenaustraße household →",
+          "href": "/leibholz",
+          "nodes": [
+            [
+              "Stolp",
+              "c.1890",
+              "Willi born — 250 miles from Schubin"
+            ],
+            [
+              "Glowitz",
+              "1899",
+              "Gertrud born, Kreis Stolp"
+            ],
+            [
+              "Neukölln",
+              "1939",
+              "Lenaustraße 25 — a butcher, not a merchant"
+            ],
+            [
+              "Berlin",
+              "1943",
+              "last word, March"
+            ]
+          ],
+          "ends": [
+            [
+              "Auschwitz",
+              "/leibholz",
+              "Willi, Erna and Heinz"
+            ],
+            [
+              "Palestine",
+              "/leibholz",
+              "Ruth-Trude Tabori-Hammer, who asked in 1946"
+            ]
+          ]
+        },
+        {
+          "key": "berlin",
+          "colour": "#7f9fd1",
+          "label": "Berlin-born — and one of them got out",
+          "conf": "DOCUMENTED · BORN IN BERLIN, WHICH IS WHAT SEPARATES IT",
+          "read": "Shanghai →",
+          "href": "/leibholz",
+          "nodes": [
+            [
+              "Berlin",
+              "1886",
+              "Albert born"
+            ],
+            [
+              "Berlin",
+              "1890",
+              "Heinrich born"
+            ],
+            [
+              "Halensee",
+              "1938",
+              "Albert, Antiquitäten"
+            ],
+            [
+              "Berlin",
+              "1939",
+              "sailed 27 June, ten weeks before the war"
+            ]
+          ],
+          "ends": [
+            [
+              "Shanghai",
+              "/leibholz",
+              "Albert died there 18 August 1944"
+            ],
+            [
+              "Mehringdamm",
+              "/leibholz",
+              "Agnes, Heinrich's widow, until 1976"
+            ],
+            [
+              "Jerusalem",
+              "/leibholz",
+              "Curt Sterngast, who asked after them"
+            ]
+          ]
+        },
+        {
+          "key": "levetzow",
+          "colour": "#b58fc7",
+          "label": "Levetzowstraße 13 — one flat, six people",
+          "conf": "DOCUMENTED · NO CONNECTION PROPOSED",
+          "read": "Why it is here at all →",
+          "href": "/worklist",
+          "nodes": [
+            [
+              "Tiergarten",
+              "1887",
+              "Alfred born — a master butcher"
+            ],
+            [
+              "Tiergarten",
+              "1921",
+              "Marianne, then Walter, Lieselotte, Kurt"
+            ],
+            [
+              "Tiergarten",
+              "1941",
+              "stripped of his trade in the directory"
+            ],
+            [
+              "Tiergarten",
+              "1942",
+              "Alfred dead, 8 August"
+            ]
+          ],
+          "ends": [
+            [
+              "Auschwitz",
+              "/leibholz",
+              "Else 1943, Lieselotte 1943, Kurt before May 1945"
+            ]
+          ]
+        },
+        {
+          "key": "gottingen",
+          "colour": "#6f8f7f",
+          "label": "Göttingen — not this family",
+          "conf": "DOCUMENTED · LISTED ONLY SO HE IS NOT MERGED",
+          "read": "The two Gerhards →",
+          "href": "/leibholz",
+          "parallel": true,
+          "nodes": [
+            [
+              "Germany",
+              "1901",
+              "Dr Uri Gerhard born 15 November"
+            ],
+            [
+              "Göttingen",
+              "1982",
+              "died at Herzberger Landstraße 55"
+            ]
+          ],
+          "ends": [
+            [
+              "A survivor?",
+              "/leibholz",
+              "and on the public record the constitutional lawyer"
+            ]
+          ]
+        },
+        {
+          "key": "melbourne",
+          "colour": "#c98f5a",
+          "label": "Melbourne — Joachim Peter, and the word STATELESS",
+          "conf": "DOCUMENTED · SIX FILES IN THE NATIONAL ARCHIVES OF AUSTRALIA, NONE OF THEM SCANNED",
+          "read": "The NAA files →",
+          "href": "/australia",
+          "nodes": [
+            [
+              "Berlin",
+              "1903",
+              "Joachim Peter born 20 August"
+            ],
+            [
+              "Bremen?",
+              "1939",
+              "sailed on the ANCHISES"
+            ],
+            [
+              "Melbourne",
+              "1939",
+              "landed 12 June, with Tilde and a child"
+            ],
+            [
+              "South Yarra",
+              "1944",
+              "naturalised 27 July, previous nationality STATELESS"
+            ]
+          ],
+          "ends": [
+            [
+              "Poland",
+              "/australia",
+              "property inside the new border, claimed 1947"
+            ],
+            [
+              "Sydney",
+              "/australia",
+              "Dr Jane Leibholz, 1978 — unconnected, and on the register"
+            ]
+          ]
+        }
       ],
       "unplaced": [
-        ["Weinstraße 6","/leibholz","Wilhelm b. 30.12.1887 and Jenny née Rosenberg — and NOT the Wilhelm Yad Vashem has"],
-        ["Scharnhorststr. 25","/leibholz","Felix b. 19.06.1877 and Martha née Riede"],
-        ["Afrikanische Str. 37","/leibholz","Siegfried b. 09.03.1877 — forty-eight years older than Jacob's son"],
-        ["Willmanndamm","/leibholz","Ella, a Krankenschwester, 1938 to 1970 — and a Stolperstein at no. 6"],
-        ["Hasenheide","/leibholz","Charlotte, 1957 to 1967"],
-        ["Wiesbadener Str. 57","/leibholz","Felix, then Hilde in the same flat six years later"]
+        [
+          "Weinstraße 6",
+          "/leibholz",
+          "Wilhelm b. 30.12.1887 and Jenny née Rosenberg — and NOT the Wilhelm Yad Vashem has"
+        ],
+        [
+          "Scharnhorststr. 25",
+          "/leibholz",
+          "Felix b. 19.06.1877 and Martha née Riede"
+        ],
+        [
+          "Afrikanische Str. 37",
+          "/leibholz",
+          "Siegfried b. 09.03.1877 — forty-eight years older than Jacob's son"
+        ],
+        [
+          "Willmanndamm",
+          "/leibholz",
+          "Ella, a Krankenschwester, 1938 to 1970 — and a Stolperstein at no. 6"
+        ],
+        [
+          "Hasenheide",
+          "/leibholz",
+          "Charlotte, 1957 to 1967"
+        ],
+        [
+          "Wiesbadener Str. 57",
+          "/leibholz",
+          "Felix, then Hilde in the same flat six years later"
+        ]
       ],
-      "loose": [["Sophie née Rothenberg","/leibholz","born Schlochau 1887, murdered — married into L3 or near it"],["Erna, Spandau 1980","/leibholz","the last Leibholz in the Berlin books"]]
+      "loose": [
+        [
+          "Sophie née Rothenberg",
+          "/leibholz",
+          "born Schlochau 1887, murdered — married into L3 or near it"
+        ],
+        [
+          "Erna, Spandau 1980",
+          "/leibholz",
+          "the last Leibholz in the Berlin books"
+        ],
+        [
+          "J P LAIBHOLZ, 1947",
+          "/australia",
+          "the Australian government's own spelling of the same man"
+        ]
+      ]
     },
     {
       "name": "LUWINSKI",
-      "dek": "Two of these lanes were found on 20 September, and only because the search was run on every spelling. The same East Prussian registry writes one woman LOWINSKI in four years and LUWINSKI in two.",
+      "dek": "Two of these lanes were found on 20 September, and only because the search was run on every spelling. The same East Prussian registry writes one woman LOWINSKI in four years and LUWINSKI in two. One more was found later the same day, in a South African gazette, and it is here to be kept out.",
       "lanes": [
-        { "key": "allenstein", "colour": "#4fa8c7", "label": "Allenstein and Sauerbaum — ours", "conf": "DOCUMENTED · THE LINE THIS ARCHIVE DESCENDS FROM", "read": "East Prussia →", "href": "/east-prussia",
-          "nodes": [["Allenstein","1865","Joachim born 21 October, a Landwirt"],["Sauerbaum","1871","Johanna Thimm born 25 March — Zerbuń today"],["Sauerbaum","1893","Auguste born 28 August"],["Sommerfeld","to 1932","the Hohenbrucher Chaussee"],["Charlottenburg","1932","Richard-Wagner-Straße 42, from 24 July"],["Zeutern","1955","Johanna dies — a district of Kraichtal"]],
-          "ends": [["Johannesburg","/kurt","Kurt, 1933 to 1969"],["Potsdam","/leibholz","Siegfried"],["Kraichtal","/east-prussia","Auguste, 22 June 1975, the town her mother died in"]] },
-        { "key": "joseph", "colour": "#d4a03c", "label": "Allenstein, 1874 — Joseph", "conf": "DOCUMENTED · THE CLOSEST ANY LANE COMES TO OURS", "read": "Row 206 →", "href": "/worklist",
-          "nodes": [["Allenstein","1874","birth 11 — Martha, father JOSEPH, mother Elisabeth Bilitewski"],["Allenstein","1895","Gertrude Luwenski, same registry"]],
-          "ends": [["Joachim's father?","/worklist","right town, right registry, right generation — and not proved"]] },
-        { "key": "rossel", "colour": "#c77f9a", "label": "Kreis Rössel — Sauerbaum's own registry", "conf": "DOCUMENTED · NOT CONNECTED", "read": "Row 207 →", "href": "/worklist",
-          "nodes": [["Rössel","1876","birth 68 — Franz Lowinski"],["Rössel","1881","birth 31 — Albert Lowinski"],["Rössel","1884","birth 9 — Bernhard Lowinski"]],
-          "ends": [["Kin?","/worklist","the district Johanna was born in, between her birth and Auguste's"]] },
-        { "key": "wartenburg", "colour": "#8fa85c", "label": "Wartenburg — Antonie", "conf": "DOCUMENTED · NOT CONNECTED", "read": "The spelling sweep →", "href": "/east-prussia",
-          "nodes": [["Ruszajny","1895","first of six Pietzkowski children"],["Ruszajny","1898","spelt LUWINSKI this year"],["Ruszajny","1903","and LOWINSKI in four others"]],
-          "ends": [["Her father?","/east-prussia","her marriage record would name him"]] },
-        { "key": "berlin", "colour": "#7f9fd1", "label": "Berlin — the households of the name", "conf": "DOCUMENTED · TWO CORRESPONDENCES, NO IDENTIFICATIONS", "read": "Post-war Berlin →", "href": "/east-prussia",
-          "nodes": [["Putbusser Str.","1933","Alfred, Bügler — one of only two in the whole run"],["Steglitzer Str.","1933","Oskar, SCHNEIDERMEISTER"],["Tegel","1957","Manfred, Modellschlosser, Egellsstraße 16"],["Wedding","1967","Joachim, OFENSETZER, Ramlerstraße 15"],["Reinickendorf","1970","Kurt, Beamter, with a telephone"]],
-          "ends": [["Melbourne","/worklist","Manfred, by air, 1965"],["Brisbane","/worklist","and dead there in 2012"]] },
-        { "key": "przasnysz", "colour": "#6f8f7f", "label": "Przasnysz — not this family", "conf": "DOCUMENTED · THE TREE MAKES HIM A FATHER AND HIS OWN CARD REFUSES", "read": "The tree audit →", "href": "/evidence", "parallel": true,
-          "nodes": [["Przasnysz","1917","Alfred born 9 September — a Polish Catholic farm labourer"],["Sachsenhausen","1942","died 11 July, ledig"]],
-          "ends": [["No children","/evidence","the card says ledig and the tree gives him two sons"]] }
+        {
+          "key": "allenstein",
+          "colour": "#4fa8c7",
+          "label": "Allenstein and Sauerbaum — ours",
+          "conf": "DOCUMENTED · THE LINE THIS ARCHIVE DESCENDS FROM",
+          "read": "East Prussia →",
+          "href": "/east-prussia",
+          "nodes": [
+            [
+              "Allenstein",
+              "1865",
+              "Joachim born 21 October, a Landwirt"
+            ],
+            [
+              "Sauerbaum",
+              "1871",
+              "Johanna Thimm born 25 March — Zerbuń today"
+            ],
+            [
+              "Sauerbaum",
+              "1893",
+              "Auguste born 28 August"
+            ],
+            [
+              "Sommerfeld",
+              "to 1932",
+              "the Hohenbrucher Chaussee"
+            ],
+            [
+              "Charlottenburg",
+              "1932",
+              "Richard-Wagner-Straße 42, from 24 July"
+            ],
+            [
+              "Zeutern",
+              "1955",
+              "Johanna dies — a district of Kraichtal"
+            ]
+          ],
+          "ends": [
+            [
+              "Johannesburg",
+              "/kurt",
+              "Kurt, 1933 to 1969"
+            ],
+            [
+              "Potsdam",
+              "/leibholz",
+              "Siegfried"
+            ],
+            [
+              "Kraichtal",
+              "/east-prussia",
+              "Auguste, 22 June 1975, the town her mother died in"
+            ]
+          ]
+        },
+        {
+          "key": "joseph",
+          "colour": "#d4a03c",
+          "label": "Allenstein, 1874 — Joseph",
+          "conf": "DOCUMENTED · THE CLOSEST ANY LANE COMES TO OURS",
+          "read": "Row 206 →",
+          "href": "/worklist",
+          "nodes": [
+            [
+              "Allenstein",
+              "1874",
+              "birth 11 — Martha, father JOSEPH, mother Elisabeth Bilitewski"
+            ],
+            [
+              "Allenstein",
+              "1895",
+              "Gertrude Luwenski, same registry"
+            ]
+          ],
+          "ends": [
+            [
+              "Joachim's father?",
+              "/worklist",
+              "right town, right registry, right generation — and not proved"
+            ]
+          ]
+        },
+        {
+          "key": "rossel",
+          "colour": "#c77f9a",
+          "label": "Kreis Rössel — Sauerbaum's own registry",
+          "conf": "DOCUMENTED · NOT CONNECTED",
+          "read": "Row 207 →",
+          "href": "/worklist",
+          "nodes": [
+            [
+              "Rössel",
+              "1876",
+              "birth 68 — Franz Lowinski"
+            ],
+            [
+              "Rössel",
+              "1881",
+              "birth 31 — Albert Lowinski"
+            ],
+            [
+              "Rössel",
+              "1884",
+              "birth 9 — Bernhard Lowinski"
+            ]
+          ],
+          "ends": [
+            [
+              "Kin?",
+              "/worklist",
+              "the district Johanna was born in, between her birth and Auguste's"
+            ]
+          ]
+        },
+        {
+          "key": "wartenburg",
+          "colour": "#8fa85c",
+          "label": "Wartenburg — Antonie",
+          "conf": "DOCUMENTED · NOT CONNECTED",
+          "read": "The spelling sweep →",
+          "href": "/east-prussia",
+          "nodes": [
+            [
+              "Ruszajny",
+              "1895",
+              "first of six Pietzkowski children"
+            ],
+            [
+              "Ruszajny",
+              "1898",
+              "spelt LUWINSKI this year"
+            ],
+            [
+              "Ruszajny",
+              "1903",
+              "and LOWINSKI in four others"
+            ]
+          ],
+          "ends": [
+            [
+              "Her father?",
+              "/east-prussia",
+              "her marriage record would name him"
+            ]
+          ]
+        },
+        {
+          "key": "berlin",
+          "colour": "#7f9fd1",
+          "label": "Berlin — the households of the name",
+          "conf": "DOCUMENTED · TWO CORRESPONDENCES, NO IDENTIFICATIONS",
+          "read": "Post-war Berlin →",
+          "href": "/east-prussia",
+          "nodes": [
+            [
+              "Putbusser Str.",
+              "1933",
+              "Alfred, Bügler — one of only two in the whole run"
+            ],
+            [
+              "Steglitzer Str.",
+              "1933",
+              "Oskar, SCHNEIDERMEISTER"
+            ],
+            [
+              "Tegel",
+              "1957",
+              "Manfred, Modellschlosser, Egellsstraße 16"
+            ],
+            [
+              "Wedding",
+              "1967",
+              "Joachim, OFENSETZER, Ramlerstraße 15"
+            ],
+            [
+              "Reinickendorf",
+              "1970",
+              "Kurt, Beamter, with a telephone"
+            ]
+          ],
+          "ends": [
+            [
+              "Melbourne",
+              "/worklist",
+              "Manfred, by air, 1965"
+            ],
+            [
+              "Brisbane",
+              "/worklist",
+              "and dead there in 2012"
+            ]
+          ]
+        },
+        {
+          "key": "przasnysz",
+          "colour": "#6f8f7f",
+          "label": "Przasnysz — not this family",
+          "conf": "DOCUMENTED · THE TREE MAKES HIM A FATHER AND HIS OWN CARD REFUSES",
+          "read": "The tree audit →",
+          "href": "/evidence",
+          "parallel": true,
+          "nodes": [
+            [
+              "Przasnysz",
+              "1917",
+              "Alfred born 9 September — a Polish Catholic farm labourer"
+            ],
+            [
+              "Sachsenhausen",
+              "1942",
+              "died 11 July, ledig"
+            ]
+          ],
+          "ends": [
+            [
+              "No children",
+              "/evidence",
+              "the card says ledig and the tree gives him two sons"
+            ]
+          ]
+        },
+        {
+          "key": "lowinsky-sa",
+          "colour": "#9a9a9a",
+          "label": "Johannesburg LOWINSKY — there before Kurt was, and not ours",
+          "conf": "DOCUMENTED · AND RULED OUT ON A DATE, WHICH IS THE ONLY HONEST WAY TO RULE ANYTHING OUT",
+          "read": "The gazette sweep →",
+          "href": "/kurt",
+          "parallel": true,
+          "nodes": [
+            [
+              "South Africa",
+              "1922",
+              "Thos. H. Lowinsky in a gazette list"
+            ],
+            [
+              "South Africa",
+              "1944",
+              "Mark Lowinsky"
+            ],
+            [
+              "Maclear",
+              "1955",
+              "Rupert Esmond, retired — estate 671/55"
+            ],
+            [
+              "South Africa",
+              "1985",
+              "3747/84/3A"
+            ]
+          ],
+          "ends": [
+            [
+              "Not ours",
+              "/kurt",
+              "in print eleven years before Kurt landed"
+            ]
+          ]
+        }
       ],
       "unplaced": [
-        ["Deuthen","/east-prussia","Anton b. 16.10.1919, four miles from Allenstein — one record, no parents"],
-        ["Felix","/evidence","b. 19.02.1923, an Arolsen index entry and nothing more"],
-        ["Mrągowo","/east-prussia","Jakob Lowinski and Gertrude Brieskorn, son married 1908"],
-        ["Leo's household","/east-prussia","Leo b. 1902 and Martha Fuhl, sons Kurt and Siegfried"],
-        ["The hundred names","/tree","the tree's Polish block — and on 20 September it touched a record for the first time"]
+        [
+          "Deuthen",
+          "/east-prussia",
+          "Anton b. 16.10.1919, four miles from Allenstein — one record, no parents"
+        ],
+        [
+          "Felix",
+          "/evidence",
+          "b. 19.02.1923, an Arolsen index entry and nothing more"
+        ],
+        [
+          "Mrągowo",
+          "/east-prussia",
+          "Jakob Lowinski and Gertrude Brieskorn, son married 1908"
+        ],
+        [
+          "Leo's household",
+          "/east-prussia",
+          "Leo b. 1902 and Martha Fuhl, sons Kurt and Siegfried"
+        ],
+        [
+          "The hundred names",
+          "/tree",
+          "the tree's Polish block — and on 20 September it touched a record for the first time"
+        ]
       ],
-      "loose": [["Lowin of Kraplau","/east-prussia","an 18th-century Masurian name the fuzzy search keeps returning"],["Löwinski / Lewinski","/names","a separate and far commoner Jewish surname — not a variant of this one"]]
+      "loose": [
+        [
+          "Lowin of Kraplau",
+          "/east-prussia",
+          "an 18th-century Masurian name the fuzzy search keeps returning"
+        ],
+        [
+          "Löwinski / Lewinski",
+          "/names",
+          "a separate and far commoner Jewish surname — not a variant of this one"
+        ],
+        [
+          "Marcus William Lowinsky",
+          "/australia",
+          "patented a cartwheel in Australia in 1892 — not ours, and ruled out once so nobody rules him out twice"
+        ],
+        [
+          "Helga Lowinsky b. 14 April 1931",
+          "/australia",
+          "sailed to Australia from Britain in 1964, married a Grant — the right forename, the wrong year, the wrong country"
+        ]
+      ]
     }
   ]
 }
