@@ -21,7 +21,7 @@
    "title": "The tracing files — what the consent opens and what it does not",
    "source": "Arolsen Archives: T/D 52.971 (metadata only, restricted) and 6.3.1.1 reference 06030101 121.145, the 1946 Jewish Agency search for Willi Leibholz; read 20 September 2026",
    "kind": "ref",
-   "rows": 18,
+   "rows": 30,
    "people": 0
   },
   {
@@ -177,6 +177,14 @@
    "people": 4
   },
   {
+   "file": "leibholz-registration-card.tsv",
+   "title": "DocID 11214358 read — the Berlin registration card, and the guess it withdraws",
+   "source": "Arolsen Archives DocID 11214358, both images — 1.2.1.5 Berlin: Registration Cards from Jewish Residents, reference 10000375 24; read with consent 20 September 2026",
+   "kind": "ref",
+   "rows": 14,
+   "people": 0
+  },
+  {
    "file": "litigation.tsv",
    "title": "Transvaal court files",
    "source": "National Archives of South Africa, WLD and TPD series",
@@ -206,6 +214,14 @@
    "source": "National Archives of South Africa",
    "kind": "ref",
    "rows": 43,
+   "people": 0
+  },
+  {
+   "file": "oskar-leibholz-theresienstadt.tsv",
+   "title": "Oskar Leibholz, from Schubin to a transport number leaving Theresienstadt",
+   "source": "Arolsen Archives DocIDs 127212723, 11243228, 11214364 and 5055941 — Gestapo transport list 15510042, AJDC/ITS card 01020102 047, Berlin registration card 10000375 24, Theresienstadt central card file 11422001 183; read with consent 20 September 2026",
+   "kind": "ref",
+   "rows": 16,
    "people": 0
   },
   {
@@ -2632,7 +2648,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 42,
+  "files": 44,
   "person_files": 22,
   "people": 153,
   "records": 218,
