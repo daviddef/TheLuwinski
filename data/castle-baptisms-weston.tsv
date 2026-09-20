@@ -58,3 +58,25 @@ The children's dates	1884 to 1904	GRO birth index
 # BUT SMITH IS THE COMMONEST SURNAME IN ENGLAND and Lincolnshire is a long way from Hertfordshire.
 # THIS ARCHIVE IS NOT ASSERTING THAT THE SPILSBY WOMAN IS HER. The certificate, or a Hitchin burial,
 # would settle it. What is settled is the surname she died under, and it was not Castle.
+#
+# ================================================================================================
+# *** 20 SEPTEMBER 2026: THE SAME SET ASKED THE SAME QUESTION ABOUT THE WEAR CHILDREN — AND A
+# *** DEFECT IN THE SEARCH THAT MATTERS MORE THAN THE ANSWER.
+# ================================================================================================
+# Work-list row 108 priority 5 wants baptisms for the SIX HITCHIN WEAR CHILDREN, 1917 to 1936 —
+# a baptism register can name godparents and an address the GRO index cannot.
+Wear baptisms in the whole Hertfordshire set	ELEVEN	lastname=wear, no other filter. 1570 Watford · 1593 Kings Walden · 1594 Little Hadham · 1670 Berkhamstead · 1786 HITCHIN · 1845 St Albans St Michael (x2) · 1884 Little Wymondley · 1891 Leavesden (x3).
+the latest of the eleven	1891	and the only Hitchin entry in the entire set is 1786. NONE OF THE SIX CHILDREN IS IN IT.
+and they are not in any other parish set either	0	CYNTHIA Y E WEAR, born Hitchin 1931, searched across the whole Birth, Marriage, Death & Parish category: SEVEN results and every one of them is a CIVIL index — her own GRO birth entry, plus five unrelated Cynthia Wears in Gloucestershire, Buckinghamshire and Durham. NO PARISH BAPTISM ANYWHERE.
+whether that is a coverage bound or a real absence	NOT ESTABLISHED	the Castle work on this same set measured Baldock coverage ending in 1879, which points to a bound. The set's own coverage page returns 404. The honest statement is that the baptisms are NOT REACHABLE THROUGH FINDMYPAST and the route is Hertfordshire Archives directly, or the parish.
+# ---------------------------------------------------------------------------------------------
+# *** AND THE DEFECT, WHICH GENERALISES A RULE THIS ARCHIVE ALREADY HAD FOR ONE SET TO A SECOND ***
+# ---------------------------------------------------------------------------------------------
+# On 16 September this archive proved that FINDMYPAST'S MARRIAGE INDEX SILENTLY RETURNS ZERO WHEN
+# YEAR-FILTERED, using James Shardalow Mort's 1885 Yarmouth marriage as a positive control. The rule
+# written then was "never year-filter a Findmypast MARRIAGE search". IT IS NOT ONLY THE MARRIAGES.
+Hertfordshire Baptisms, lastname=smith, no year	15,122	the control, and it is a large one.
+the same search with year=1880 give-or-take 5	*** 0 ***	FIFTEEN THOUSAND SMITH BAPTISMS IN HERTFORDSHIRE AND NOT ONE OF THEM IN THE 1875-1885 WINDOW. That is not a result, it is a broken filter.
+and with year=1920 give-or-take 5	0	which would have been read as "the set does not reach the twentieth century" if the 1880 control had not been run first.
+THE RULE, RESTATED WIDER	—	*** NEVER YEAR-FILTER A FINDMYPAST SEARCH IN ANY SET, AND IF ONE IS RUN, RUN A POSITIVE CONTROL IN THE SAME SET IN THE SAME BREATH. *** Two record sets now behave this way. The failure mode is the dangerous one: it returns a clean, plausible zero rather than an error.
+source of the additions	—	Findmypast, search/results with datasetname=hertfordshire+baptisms, five queries run 20 September 2026.
