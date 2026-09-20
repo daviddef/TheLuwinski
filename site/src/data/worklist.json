@@ -1975,6 +1975,22 @@
       "owner": "this archive",
       "since": "2026-09-20",
       "note": "Yad Vashem holds a Page of Testimony for WILLI LEIPHOLZ, born 1887 at Berlin, and for JENNY LEIPHOLZ, born 1893 — the couple the Bundesarchiv lists as Wilhelm Willi Leibholz, born 30.12.1887 in Berlin, and Jenny Leibholz, born 11.02.1893 in Loosen. *** A PAGE OF TESTIMONY NAMES THE PERSON WHO FILLED IT IN: *** a survivor or a relative, with their address at the time and their stated relationship to the dead. Two of them, for a Berlin couple of exactly Jacob's generation, free to open and never opened. NOT KIN ON ANY EVIDENCE HELD — but a submitter is a living connection someone made on purpose, and this archive has very few of those."
+    },
+    {
+      "n": 236,
+      "what": "TWO NAME FOLDS OFFERED BY THE SHARED TOOLING, BOTH REFUSED — and the decision is written down so it is not re-asked",
+      "state": "done",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "namefold.py held back two changes because each alters a letter in a name, and asked the archive that owns them. CORRECTLY. *** BOTH REFUSED. *** LUWINSKY → Luwinski, eighteen tokens: every one is either a QUOTED DOCUMENT — the Witwatersrand court index reads \"Kurt LUWINSKY versus Ivone (born Mota Figueiredo)\" — or a DELIBERATE VARIANT LIST on the lines page, the names page and the bounded negatives. The fold would have turned \"searched LUWINSKI and LUWINSKY\" into \"searched LUWINSKI and LUWINSKI\", which is a false account of work already published. HOSTOWSKI → HOSTOWSKY: *** AND THIS ONE RUNS THE WRONG WAY. *** Frances appears as Hostovsky on the 1956 marriage register, Hostowski in the Cape Town and Wynberg register and Hostowsky in the 1957 divorce. The archive has argued Hostovsky is her birth form, on the most formal of the three; folding onto HOSTOWSKY would enshrine the wrong one and destroy the other two. WHAT WAS DONE INSTEAD: Frances added to the names page as a second person with all three forms and the document each comes from, and a method section stating the rule — quoted spellings are never altered, variant lists are never collapsed, and where the archive speaks in its own voice it says which form it chose and why. The underlying worry was fair and is answered; the fix is not the fold."
+    },
+    {
+      "n": 237,
+      "what": "THE MENU SPINE, WRITTEN DOWN AT LAST",
+      "state": "done",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "A peer session pointed out that seven sibling archives share a spine of \"The families\" and \"People & places\" and this one runs \"Start · Our line · Places · People & names · Evidence\", and that a deviation nobody has recorded is indistinguishable from drift. RIGHT, AND NOW RECORDED ON THE METHOD PAGE. \"Our line\" because the question this archive exists to answer is a single descent — whether Derrick is Kurt's son — and a families group would invite families that are not the subject. \"People & names\" because the naming is the obstacle, not an ornament: Ivone is filed under six maiden spellings, three forenames and four married surnames, and on 20 September an EIGHTH spelling of the Leibholz name turned out to reach people the other seven could not. NOTE FOR THE RECORD: the peer's supporting reason — \"this archive is one woman and her documents rather than a family\" — describes the /names page, which is about Ivone, and not this archive, which is a family of at least four generations. The spine is right; that reason for it is not."
     }
   ]
 }

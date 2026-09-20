@@ -1,6 +1,6 @@
 {
   "title": "The names she is filed under",
-  "dek": "One woman, six spellings of her maiden surname, three of her forename and four married surnames — and the indexes carry the worst of them.",
+  "dek": "One woman, six spellings of her maiden surname, three of her forename and four married surnames — and the indexes carry the worst of them. And a second woman, added on 20 September 2026 for the opposite reason — not because her spellings are hard to search, but because a tool offered to make them uniform.",
   "people": [
     {
       "who": "Ivone",
@@ -103,6 +103,38 @@
           "kind": "married",
           "where": "FamilySearch, South Africa Civil Marriage Records",
           "note": "FamilySearch files married names INSIDE the surname field, so she is indexed as one long surname. A search for FIGUEIREDO alone may not reach it."
+        }
+      ]
+    },
+    {
+      "who": "Frances",
+      "canonical": "Frances Hostovsky",
+      "born": "not documented — she appears first as an adult, already twice married",
+      "why": "Kurt's second wife, married 29 February 1956 and divorced the year after. THREE DOCUMENTS SPELL HER MAIDEN NAME THREE WAYS, and an automatic tidy-up was proposed on 20 September 2026 that would have folded all three into one. It was refused. She is here because the refusal needs somewhere to live.",
+      "forms": [
+        {
+          "form": "HOSTOVSKY",
+          "kind": "maiden surname",
+          "where": "Marriage register entry No. 169 of 1956, form B.M.D. 3 (a) — “Frances Sefton, formerly Berner, born Hostovsky”",
+          "note": "THE FORM THIS ARCHIVE TREATS AS CANONICAL, because it is the one written on the most formal document she appears in and the one that document uses for her BIRTH name."
+        },
+        {
+          "form": "HOSTOWSKI",
+          "kind": "maiden surname",
+          "where": "The Cape Town and Wynberg marriage register, and the FamilySearch citation ark:/61903/1:1:Q23Q-XY1T",
+          "note": "A W and an -i. Quoted exactly where it is quoted and not corrected."
+        },
+        {
+          "form": "HOSTOWSKY",
+          "kind": "maiden surname",
+          "where": "The 1957 divorce record and the Hanover, Orange Free State registration",
+          "note": "A W and a -y. The form this archive has most often used in its own narrative, which is an inconsistency it is choosing to show rather than to hide."
+        },
+        {
+          "form": "SEFTON · BERNER · LUWINSKI",
+          "kind": "married surnames",
+          "where": "The 1956 register lists them in order",
+          "note": "She carried five surnames in one life. Kurt's was the last of them and it lasted about eighteen months."
         }
       ]
     }
