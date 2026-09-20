@@ -109,8 +109,8 @@
    "title": "The nine children of George William Castle and Caroline Wallis",
    "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
    "kind": "person",
-   "rows": 9,
-   "people": 9
+   "rows": 14,
+   "people": 10
   },
   {
    "file": "dewitt-confirmed.tsv",
@@ -1272,6 +1272,18 @@
      "title": "The nine children of George William Castle and Caroline Wallis",
      "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
      "detail": "n: 2 · born: 1884/85, Baldock · source_for_birth: GRO index (mother WALLIS); 1901 census aged 16 · died: 23 August 1939"
+    }
+   ]
+  },
+  {
+   "name": "George William Castle — PROBATE FOUND",
+   "slug": "george-william-castle-probate-found",
+   "records": [
+    {
+     "file": "castle-nine-children.tsv",
+     "title": "The nine children of George William Castle and Caroline Wallis",
+     "source": "1911 census fertility question RG14/7572 sch 173; GRO birth and death indexes; 1901 census RG13/1298 f.49 p.26 sch 192",
+     "detail": "n: 2 · born: 1884/85, Baldock · source_for_birth: unchanged · died: *** 23 AUGUST 1939, and it is now a record ***"
     }
    ]
   },
@@ -2974,8 +2986,8 @@
   "ambiguous": 2,
   "files": 47,
   "person_files": 22,
-  "people": 178,
-  "records": 243,
+  "people": 179,
+  "records": 244,
   "linked_to_register": 11
  }
 }
