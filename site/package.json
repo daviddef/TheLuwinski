@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev --port 4331",
-    "build": "npm run build:register && npm run build:evidence && astro build && python3 ../tools/build-search.py && npm run check:living && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence",
+    "build": "npm run build:register && npm run build:evidence && astro build && npm run check:templates && python3 ../tools/build-search.py && npm run check:living && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence",
     "preview": "astro preview --port 4331",
     "check:living": "python3 ../tools/check-living.py --dist dist",
     "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root .",
@@ -13,7 +13,8 @@
     "check:matches": "python3 ../tools/check-matches.py",
     "build:register": "python3 ../tools/build-register.py",
     "build:evidence": "python3 ../tools/build-evidence.py",
-    "check:evidence": "python3 ../tools/check-evidence.py"
+    "check:evidence": "python3 ../tools/check-evidence.py",
+    "check:templates": "python3 node_modules/@daviddef/archive-kit/kit/tools/checktemplates.py --root ."
   },
   "dependencies": {
     "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#4400ea8eec9960bb3cfb639a3958c786630176aa",
