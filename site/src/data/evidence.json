@@ -221,8 +221,8 @@
    "title": "The Berlin directory against the 1939 census, household by household",
    "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
    "kind": "person",
-   "rows": 19,
-   "people": 19
+   "rows": 30,
+   "people": 30
   },
   {
    "file": "naairs-figueiredo.tsv",
@@ -455,6 +455,18 @@
    ]
   },
   {
+   "name": "*** AND THE TRACING CASES LINE UP, WITH TWO PUZZLES ***",
+   "slug": "and-the-tracing-cases-line-up-with-two-puzzles",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: —"
+    }
+   ]
+  },
+  {
    "name": "*** AND TWO CLEAN NEGATIVES, WHICH IS WHY THIS SEARCH WAS RUN ***",
    "slug": "and-two-clean-negatives-which-is-why-this-search-was-run",
    "records": [
@@ -479,6 +491,18 @@
    ]
   },
   {
+   "name": "*** CORRECTION TO THIS FILE'S OWN LEVETZOWSTRASSE LINE ***",
+   "slug": "correction-to-this-file-s-own-levetzowstrasse-line",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: the row above says the database gives \"four more Leibholz at Levetzowstraße 13\". IT GIVES FIVE. · mapping_the_lives: Leibholz, WALTER, born 20.09.1922, died before 08.05.1945, Levetzowstr. 13 HH II. links, Tiergarten"
+    }
+   ]
+  },
+  {
    "name": "*** SO GEORG IS THE UNCLE BY MARRIAGE ***",
    "slug": "so-georg-is-the-uncle-by-marriage",
    "records": [
@@ -499,6 +523,18 @@
      "title": "Yad Vashem, Central Database of Shoah Victims' Names",
      "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
      "detail": "yv_record: items 1502365, 448447, 1512593 · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
+   "name": "*** WHY THIS HOUSEHOLD IS NOT LIKE THE OTHERS ***",
+   "slug": "why-this-household-is-not-like-the-others",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: —"
     }
    ]
   },
@@ -1252,6 +1288,18 @@
      "title": "BT 27 outbound passenger lists",
      "source": "TNA BT 27",
      "detail": "entry: 00189 · title: MR · sex: Male · birth_year: 1890 · age: 49 · occupation: Machine minder (transcribed \"Machine minister\") · ship: Durban Castle · line: Union-Castle · dep_day: 5 · dep_month: 4 · dep_year: 1939 · dep_port: London · dest_port: Cape · piece: TNA/BT27/1540/00/0042"
+    }
+   ]
+  },
+  {
+   "name": "HANS LEIBHOLZ — read in full",
+   "slug": "hans-leibholz-read-in-full",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: the 1938-43 directories have no Leibholz in Danckelmannstraße; the household is below the householder line"
     }
    ]
   },
@@ -2694,6 +2742,18 @@
    ]
   },
   {
+   "name": "and a fourth person in the same flat",
+   "slug": "and-a-fourth-person-in-the-same-flat",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: Leibholz, LAURA née ROTHENBERG, born 23.09.1884, died before 08.05.1945, Danckelmannstr. 44"
+    }
+   ]
+  },
+  {
    "name": "and it does give Lydia's parents, which nobody had",
    "slug": "and-it-does-give-lydia-s-parents-which-nobody-had",
    "records": [
@@ -2702,6 +2762,42 @@
      "title": "Yad Vashem, Central Database of Shoah Victims' Names",
      "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
      "detail": "yv_record: — · date_of_birth: — · place_of_birth: —"
+    }
+   ]
+  },
+  {
+   "name": "and it names the Stolperstein",
+   "slug": "and-it-names-the-stolperstein",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: — · what it adds: The Danckelmannstraße 44 stone commemorates this household. This archive listed it as belonging to \"other Leibholz families\" without knowing whose it was. It now knows."
+    }
+   ]
+  },
+  {
+   "name": "and it settles part of work-list row 200",
+   "slug": "and-it-settles-part-of-work-list-row-200",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: —"
+    }
+   ]
+  },
+  {
+   "name": "and the bound on that, stated plainly",
+   "slug": "and-the-bound-on-that-stated-plainly",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: —"
     }
    ]
   },
@@ -2738,6 +2834,30 @@
      "title": "Yad Vashem, Central Database of Shoah Victims' Names",
      "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
      "detail": "yv_record: — · date_of_birth: — · place_of_birth: SCHLOCHAU"
+    }
+   ]
+  },
+  {
+   "name": "his mother",
+   "slug": "his-mother",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: Leibholz, ELSE née ROTHENBERG, born 23.10.1884 IN SCHLOCHAU / SCHLOCHAU / POMMERN, same address, NO DATE OF DEATH RECORDED · what it adds: named in his record's own Family members block. Born in the town of Schlochau itself."
+    }
+   ]
+  },
+  {
+   "name": "his sister",
+   "slug": "his-sister",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: Leibholz, LISELOTT [Lieselott Lieselotte], born 22.10.1920 IN PREUSSISCH FRIEDLAND, died before 08.05.1945 AT AUSCHWITZ, same address · what it adds: also in the Family members block."
     }
    ]
   },
@@ -2790,6 +2910,18 @@
    ]
   },
   {
+   "name": "where Hans and Gerhard are not",
+   "slug": "where-hans-and-gerhard-are-not",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: —"
+    }
+   ]
+  },
+  {
    "name": "who she was looking for (1)",
    "slug": "who-she-was-looking-for-1",
    "records": [
@@ -2834,8 +2966,8 @@
   "ambiguous": 2,
   "files": 46,
   "person_files": 22,
-  "people": 167,
-  "records": 232,
+  "people": 178,
+  "records": 243,
   "linked_to_register": 11
  }
 }
