@@ -41,6 +41,14 @@
    "people": 0
   },
   {
+   "file": "berlin-postwar-luwinski.tsv",
+   "title": "The Luwinskis in post-war West Berlin, and Auguste under her last surname",
+   "source": "Zentral- und Landesbibliothek Berlin, digital.zlb.de — Namenteil series 34117222 (1949-1970) and telephone books 15849358 (1969-1980), searched through the Goobi Solr API and the per-page OCR endpoint, 20 September 2026",
+   "kind": "ref",
+   "rows": 14,
+   "people": 0
+  },
+  {
    "file": "bloom-1861-yarmouth.tsv",
    "title": "1861 census, 80 Howard Street, Great Yarmouth",
    "source": "RG9, Great Yarmouth",
@@ -3088,7 +3096,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 48,
+  "files": 49,
   "person_files": 22,
   "people": 187,
   "records": 252,
