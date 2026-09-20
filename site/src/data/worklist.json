@@ -1859,6 +1859,30 @@
       "owner": "this archive",
       "since": "2026-09-20",
       "note": "A finding that was about to be published and was false. Three queries for Schöneberg returned nothing and a sweep of all 142 offices put Schöneberg, Neukölln, Köpenick and Weißensee in the empty column. *** EVERY OFFICE NAME WITH AN UMLAUT RETURNED ZERO AND EVERY NAME WITHOUT ONE RETURNED ROWS. *** The site's database stores the names DOUBLE-ENCODED — the stored string is literally \"Standesamt KÃ¶penick\" — and the match is on the whole string, so the CORRECT spelling finds nothing and the MANGLED one finds seventeen volumes. Schöneberg has more online than almost anywhere: births 1874-1913 and deaths year by year to 1994. WHAT CAUGHT IT was not cleverness but noticing that all four failures shared a property and none of the successes did. Kept as a standing check: when a set of negatives has a common character, suspect the character before believing the negatives."
+    },
+    {
+      "n": 223,
+      "what": "CHODOWIECKISTRASSE 32 AND 31 — find the same two houses in the 1912 and 1914 volumes",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "The 1913 Berliner Adressbuch puts LUWINSKI, J., Invalide at CHODOWIECKISTRASSE 32, corner of Winsstraße, Berlin N 55, and LEIBHOLZ, G., Kfm. NEXT DOOR AT NUMBER 31. The volume was compiled in the autumn of 1912 and Kurt was born on 11 May 1912. *** THE TEST IS THE SAME PAGE IN THE NEIGHBOURING YEARS: *** do both households persist, does either arrive or leave, and does the Leibholz entry ever spell out a forename. NEITHER PAGE COULD BE PINNED TODAY — the OCR carries Luwinski in 1913 alone, exact searches return nothing in 1911, 1912, 1914, 1915 or 1916, and a fuzzy search returns forty-four hits one edit away, which is a list to work through rather than an answer. THE PAGE MUST BE FOUND BY STREET, NOT BY NAME: search the Teil III of each volume for the Chodowieckistraße heading and walk forward to number 31."
+    },
+    {
+      "n": 224,
+      "what": "WHICH STANDESAMT SERVED CHODOWIECKISTRASSE IN 1912",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "The thing that now stands between this archive and Kurt's birth entry number. Row 220 enumerated twenty-one candidate 1912 birth-index volumes because the district was unknown. IT IS NO LONGER UNKNOWN — a Luwinski household was at Chodowieckistraße 32, PRENZLAUER BERG, POSTAL N 55, in the year he was born. Which of the old Roman-numeral Berlin registry offices covered that street in 1912 is NOT established and is deliberately not guessed at. The Berliner Adressbuch's own front matter lists the Standesämter with their districts; so does the Landesarchiv. One of those settles it, and settling it cuts twenty-one volumes to one or two."
+    },
+    {
+      "n": 225,
+      "what": "LEIBHOLZ, G., KAUFMANN, OF CHODOWIECKISTRASSE 31 — who he was",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "A Leibholz merchant living next door to a Luwinski in 1913, eleven years before Auguste Luwinski married Jacob Leibholz. NOT PROVED TO BE A RELATIVE and both surnames are borne by other Berliners. What makes him worth an hour is that this archive has never had ANY geography for how those two families met. The cheap tests: the Teil I name section of the same volume, which gives householders' full forenames and trades; and the archive's own Leibholz table, which knows a G. only as the Georg born at Hammerstein who cannot be Jacob's brother."
     }
   ]
 }

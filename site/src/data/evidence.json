@@ -137,6 +137,14 @@
    "people": 10
   },
   {
+   "file": "chodowieckistrasse-1913.tsv",
+   "title": "A Luwinski and a Leibholz in adjacent houses in 1913",
+   "source": "Berliner Adressbuch 1913 Teil III p.139, ZLB digital copy, read at the image 20 September 2026",
+   "kind": "ref",
+   "rows": 16,
+   "people": 0
+  },
+  {
    "file": "dewitt-confirmed.tsv",
    "title": "Ivone's first husband — the death date confirmed, and a second marriage",
    "source": "FamilySearch — South Africa, Civil Death Registration 1953-1967 (ark 1:1:DD9Y-PLT2); South Africa, Civil Marriage Records 1801-1974 (ark 1:1:6ZHR-NVYN); searched 20 September 2026",
@@ -3160,7 +3168,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 57,
+  "files": 58,
   "person_files": 22,
   "people": 187,
   "records": 252,
