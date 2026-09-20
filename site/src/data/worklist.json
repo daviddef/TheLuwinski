@@ -2099,10 +2099,10 @@
   {
    "n": 251,
    "what": "FRIEDRICH LEIPHOLZ of Schwabstraße 4, Reinickendorf — fourteen years and a retirement",
-   "state": "next",
+   "state": "running",
    "owner": "this archive",
    "since": "2026-09-21",
-   "note": "Tegel, Berliner Straße 5a, Angestellter, 1957 and 1959. Reinickendorf, Schwabstraße 4, PENSIONÄR, 1961 through 1970, with the same neighbours in the street section both times. A man who retires between 1959 and 1961 was born around 1895 give or take, WHICH PUTS HIM IN JACOB LEIBHOLZ'S GENERATION. Reinickendorf's death indexes are in the same free LABSA set that gave up Erna, and his death would name a wife and an age. CHEAP, UNASSISTED, AND NOT YET DONE."
+   "note": "Tegel, Berliner Straße 5a, Angestellter, 1957 and 1959. Reinickendorf, Schwabstraße 4, PENSIONÄR, 1961 through 1970, with the same neighbours in the street section both times. A man who retires between 1959 and 1961 was born around 1895 give or take, WHICH PUTS HIM IN JACOB LEIBHOLZ'S GENERATION. Reinickendorf's death indexes are in the same free LABSA set that gave up Erna, and his death would name a wife and an age. CHEAP, UNASSISTED, AND NOT YET DONE.  *** 21 SEPTEMBER: REINICKENDORF 1974-1981 READ, EIGHT CONSECUTIVE YEARS, HE IS IN NONE OF THEM. *** All eight bracketed -- the nearest name before and after the gap is recorded for every year in data/kreuzberg-reinickendorf-deaths.tsv. 1982-1994 still to read, and those volumes jump from 3 MB to 99 MB because the series changes format."
   },
   {
    "n": 252,
@@ -2110,7 +2110,15 @@
    "state": "next",
    "owner": "this archive",
    "since": "2026-09-21",
-   "note": "Seven of sixty-one are read. The method is now routine and costs about fifteen seconds a volume: LABSA lists the volumes, pdf.js reads them in place over HTTP range requests without downloading a byte of the 40-380 MB files, and the test is not a name search but PULLING EVERY Le[hij]* TOKEN OUT OF THE MIDDLE THIRD AND READING THE ALPHABET FOR A GAP. *** THE PATTERN MUST BE Le[iy][bp]h AND NOT LEIBHOLZ *** -- that is the whole lesson of 1975. Then Kreuzberg for Agnes and for Dieffenbachstraße, Neukölln for Charlotte, Spandau for Erna, Reinickendorf for Friedrich, Wedding for Joachim the Ofensetzer."
+   "note": "Seven of sixty-one are read. The method is now routine and costs about fifteen seconds a volume: LABSA lists the volumes, pdf.js reads them in place over HTTP range requests without downloading a byte of the 40-380 MB files, and the test is not a name search but PULLING EVERY Le[hij]* TOKEN OUT OF THE MIDDLE THIRD AND READING THE ALPHABET FOR A GAP. *** THE PATTERN MUST BE Le[iy][bp]h AND NOT LEIBHOLZ *** -- that is the whole lesson of 1975. Then Kreuzberg for Agnes and for Dieffenbachstraße, Neukölln for Charlotte, Spandau for Erna, Reinickendorf for Friedrich, Wedding for Joachim the Ofensetzer.  *** AND THE METHOD NEEDED A GUARD BEFORE IT COULD BE TRUSTED AT SCALE. *** Carrying the Schöneberg band (33-64 per cent) over to Kreuzberg produced TWO FALSE NEGATIVES -- 1980 stopped scanning at Leipelt and 1981 at Leimbach, both of which sort BEFORE Leipholz, so each reported an absence it had never looked for. A scan must now return the nearest name on EACH SIDE of the target, and a result with an empty side is inconclusive rather than negative. It caught a third case within minutes. ALSO: a volume much larger than its neighbours may hold TWO alphabetical sequences -- Kreuzberg 1982 is 226 pages against 125 and has L twice. And a binary search keyed on a page's median word DOES NOT WORK here, because these registers print forenames in their own column."
+  },
+  {
+   "n": 253,
+   "what": "AGNES LEIBHOLZ née KERGER — not in Kreuzberg 1980, 1981 or 1982",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-21",
+   "note": "She is in the telephone book at Mehringdamm 109 from 1972-73 to 1979-80 and gone from 1980-81, which made 1980-82 the obvious years. SHE IS IN NONE OF THEM, all three bracketed. Kreuzberg 1983-1994 remain, and so does the possibility that she did not die in Kreuzberg at all. *** THE CONTROL CASE THIS ARCHIVE ALREADY OWNS IS THE WARNING: *** Heinrich Leibholz, her husband, vanished from the Berlin directory after 1942 and DID NOT DIE UNTIL 1948. Leaving a telephone book is not dying. She was born 10 March 1889, so she was 91 in 1980 -- a move into a home in another borough is at least as likely as a death, and a home means another office."
   }
  ]
 }
