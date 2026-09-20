@@ -17,7 +17,7 @@
     "check:templates": "python3 node_modules/@daviddef/archive-kit/kit/tools/checktemplates.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#4400ea8eec9960bb3cfb639a3958c786630176aa",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#86f3b60926f1d4c2aef72e433d539cba479efdd7",
     "astro": "^5.18.2"
   },
   "devDependencies": {
