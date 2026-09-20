@@ -1,6 +1,14 @@
 {
  "files": [
   {
+   "file": "alfred-luwinski-sachsenhausen.tsv",
+   "title": "Alfred Luwinski born 9 September 1917 — who he actually was",
+   "source": "Arolsen Archives DocID 130648701 — Amt für die Erfassung der Kriegsopfer (Berlin), reference 23120001 275; read with consent 20 September 2026",
+   "kind": "ref",
+   "rows": 20,
+   "people": 0
+  },
+  {
    "file": "arolsen-leibholz-luwinski.tsv",
    "title": "The Arolsen Archives index",
    "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
@@ -2600,7 +2608,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 38,
+  "files": 39,
   "person_files": 22,
   "people": 153,
   "records": 218,
