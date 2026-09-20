@@ -218,6 +218,59 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     the archive speaks in its own voice it says which form it has chosen and why.</strong>
   </p>
 
+  <div class="panel">
+    <h3>And the tool was corrected, so this page should not be read as a standing complaint <span class="tag doc">21 September 2026</span></h3>
+    <p>
+      The refusals above stand — those two particular folds are still wrong for this archive's
+      content. But the tool that proposed them has since changed, and the change answers the
+      objection. Where an archive spells a name several ways it now <em>names the label it used and
+      says it is only a label</em>, and the map is applied to the search query and to the stored row
+      alike, so every form finds every other and nothing claims any one of them is correct.
+    </p>
+    <p>
+      That matters for a distinction this archive leaned on hard on 20 September. A fold of this kind
+      is <strong>a search rule with no concept of identity</strong>. It says <em>these letters find
+      those rows</em>, not <em>these people are those people</em> — which is exactly the line between
+      LEIPHOLZ reaching Willi and Jenny, who are ours to consider, and LEIPHOLZ reaching an
+      eighteenth-century Protestant family at Orzysz-Arys in Masuria, who are certainly not.
+      <strong>The variant list widens the search. It must never widen the family.</strong>
+    </p>
+  </div>
+
+  <h2>Where the evidence for a bug lives</h2>
+  <p>
+    Three instruments failed silently in one day, and none of the three failures was visible in the
+    case in front of it.
+  </p>
+  <ul>
+    <li>
+      <strong>The Landesarchiv's registry database.</strong> Four offices returned nothing and this
+      archive nearly published <em>“Schöneberg has no online name index.”</em> The database stores
+      its office names double-encoded, so the <em>correct</em> spelling finds nothing and the mangled
+      one finds seventeen volumes. The tell was that all four failures contained an umlaut and none
+      of the successes did.
+    </li>
+    <li>
+      <strong>Geneteka.</strong> Both spellings of a surname returned an empty table, and both were
+      nearly written down as zeroes. The province and record-type parameters had been left blank,
+      and a blank parameter there is not “everywhere” but “nothing”. The control caught it.
+    </li>
+    <li>
+      <strong>A shared tidying tool</strong>, in a peer's archive: a change of selection rule quietly
+      took a working map from 1,495 rows back to 59. It was caught by regenerating the map and
+      reading it, not by reading the code.
+    </li>
+  </ul>
+  <p>
+    <strong>In all three the evidence was in the set, not in any one case</strong> — a shared
+    character across the failures, a shape of query that differed from the control, a count that
+    moved. None of it is visible from inspecting a single result, and none of it was found by
+    reasoning about how the tool ought to behave. Hence the standing rule that a negative is only
+    worth recording if a positive control went down the same path, and the addition earned today:
+    <strong>when several negatives have something in common, suspect the thing they have in
+    common before believing the negatives.</strong>
+  </p>
+
   <h2>Why this archive's menu differs from its siblings</h2>
   <p>
     Seven related archives share a spine of <em>The families</em> and <em>People &amp; places</em>.
