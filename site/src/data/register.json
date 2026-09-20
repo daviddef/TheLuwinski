@@ -928,6 +928,16 @@
      "n": "Delina de Witt",
      "ls": "Deceased"
     }
+   ],
+   "corrections": [
+    {
+     "id": 9500160,
+     "who": "Johannes Antonie Oelofse De Witt (the younger)",
+     "field": "identity",
+     "was": "son of Johannes Antonie Oelofse de Witt, born circa 1923 at Pretoria",
+     "now": "NOT A SECOND PERSON — the same man as 9500005, duplicated",
+     "source": "Same name, same birth year as his supposed father, same place of death, and a father-son relationship that is arithmetically impossible. The duplication also invented a wife for him — 'Unknown de Witt', 9500161, who exists only to be his mother — and gave Delina de Witt a half-brother who is really her father. Found by tools/audit-tree.py, 20 September 2026, which flags a parent under fourteen at a child's birth. *** DELIBERATELY NOT COLLAPSED INTO 9500005. *** The DUPLICATES map in tools/build-register.py collapses records only where the pair shares AN IDENTICAL BIRTH AND DEATH DATE, and says in its own comment that those are not guesses. This pair does not meet that bar: the birth places differ, Johannesburg against Pretoria, one birth is 'circa' and only one record carries a death. It is a strong inference and not an identity, so both records stay in the register with this correction attached to them, which is what corrections are for."
+    }
    ]
   },
   {
@@ -12495,7 +12505,7 @@
    "last": "de Witt",
    "sex": "M",
    "born": "Dec 1923",
-   "died": "",
+   "died": "2 April 1963, Sasolburg",
    "by": 1923,
    "dy": null,
    "kind": "index",
@@ -12569,6 +12579,16 @@
      "rel": "His mother",
      "n": "Delina Johanna Oelofse (De Witt)",
      "ls": "1899 - Deceased"
+    }
+   ],
+   "corrections": [
+    {
+     "id": 9500005,
+     "who": "Johannes Antonie Oelofse de Witt",
+     "field": "died",
+     "was": "no date; Sasolburg",
+     "now": "2 April 1963, Sasolburg",
+     "source": "THE TREE'S OWN DUPLICATE, not an outside record. The harvest holds this man twice: 9500005, born December 1923 at Johannesburg, with a death place and no date; and 9500160, listed as HIS SON, of exactly the same name, born circa 1923 at Pretoria, died 2 April 1963 at Sasolburg. A father cannot be born in the same year as his son, and the two die in the same small Free State town. They are one man, and the date of death is on the duplicate. Independent confirmation has NOT been obtained: a Free State death registration or estate file for de Witt at Sasolburg in 1963 would settle it, and the Orange Free State estate files 1951-2006 are fully digitised."
     }
    ]
   },
@@ -12700,6 +12720,22 @@
    "was": "dress designer",
    "now": "dress designer (1933); shop keeper (1948)",
    "source": "Johannesburg marriage register no. 858 of 1948, column 6: Shop Keeper. The 1933 emigration record gives dress designer. Both are true of one man."
+  },
+  {
+   "id": 9500005,
+   "who": "Johannes Antonie Oelofse de Witt",
+   "field": "died",
+   "was": "no date; Sasolburg",
+   "now": "2 April 1963, Sasolburg",
+   "source": "THE TREE'S OWN DUPLICATE, not an outside record. The harvest holds this man twice: 9500005, born December 1923 at Johannesburg, with a death place and no date; and 9500160, listed as HIS SON, of exactly the same name, born circa 1923 at Pretoria, died 2 April 1963 at Sasolburg. A father cannot be born in the same year as his son, and the two die in the same small Free State town. They are one man, and the date of death is on the duplicate. Independent confirmation has NOT been obtained: a Free State death registration or estate file for de Witt at Sasolburg in 1963 would settle it, and the Orange Free State estate files 1951-2006 are fully digitised."
+  },
+  {
+   "id": 9500160,
+   "who": "Johannes Antonie Oelofse De Witt (the younger)",
+   "field": "identity",
+   "was": "son of Johannes Antonie Oelofse de Witt, born circa 1923 at Pretoria",
+   "now": "NOT A SECOND PERSON — the same man as 9500005, duplicated",
+   "source": "Same name, same birth year as his supposed father, same place of death, and a father-son relationship that is arithmetically impossible. The duplication also invented a wife for him — 'Unknown de Witt', 9500161, who exists only to be his mother — and gave Delina de Witt a half-brother who is really her father. Found by tools/audit-tree.py, 20 September 2026, which flags a parent under fourteen at a child's birth. *** DELIBERATELY NOT COLLAPSED INTO 9500005. *** The DUPLICATES map in tools/build-register.py collapses records only where the pair shares AN IDENTICAL BIRTH AND DEATH DATE, and says in its own comment that those are not guesses. This pair does not meet that bar: the birth places differ, Johannesburg against Pretoria, one birth is 'circa' and only one record carries a death. It is a strong inference and not an identity, so both records stay in the register with this correction attached to them, which is what corrections are for."
   }
  ],
  "counts": {
