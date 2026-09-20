@@ -241,6 +241,14 @@
    "people": 0
   },
   {
+   "file": "kurt-birth-entry.tsv",
+   "title": "Kurt's birth entry number, found — Standesamt Berlin VIII, 1912, Nr. 963",
+   "source": "Landesarchiv Berlin P Rep. 523 Nr. 1395, read at the image 20 September 2026",
+   "kind": "ref",
+   "rows": 17,
+   "people": 0
+  },
+  {
    "file": "leibholz-gedenkbuch.tsv",
    "title": "The Bundesarchiv Gedenkbuch",
    "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
@@ -3168,7 +3176,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 58,
+  "files": 59,
   "person_files": 22,
   "people": 187,
   "records": 252,

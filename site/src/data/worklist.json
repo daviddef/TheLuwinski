@@ -1838,11 +1838,14 @@
     },
     {
       "n": 220,
-      "what": "KURT'S BIRTH ENTRY NUMBER — it is in one of twenty-one free PDFs and the shortest is 33 MB",
-      "state": "next",
+      "what": "KURT'S BIRTH ENTRY NUMBER — FOUND. Standesamt Berlin VIII, 1912, Nr. 963",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-20",
-      "note": "THE LANDESARCHIV BERLIN PUBLISHES THE NAME INDEXES TO THE BERLIN REGISTRY REGISTERS AS FREE PDFs and this archive had never opened them. *** SCHÖNEBERG II, NAMENSVERZEICHNIS ZUM GEBURTENREGISTER 1911-1913, P Rep. 161 Nr. 713, 33.44 MB *** covers 11 May 1912 in the district the family is documented in from 1925. Schöneberg I's births stop at 1910, so inside Schöneberg there is no second candidate. If he was born elsewhere in the old city, TWENTY MORE SINGLE-YEAR 1912 VOLUMES ARE ONLINE, 6 to 35 MB each, all enumerated in the evidence file. Find the surname, read the entry number, and the certificate can be ordered by citation instead of by plea. BLOCKED ONLY ON ONE THING: the browser renders these PDFs as a blank page, so reading one means downloading it, and this archive does not download files on David's behalf without asking. The question is with him."
+      "note": "DONE, 20 September 2026. *** LUWINSKI · KURT MYSZISLAUS · 963 *** — the May block of the L section, page 75 of P Rep. 523 Nr. 1395, the name index to the birth register of STANDESAMT BERLIN VIII for 1912. Twenty-one candidate volumes became one: Schöneberg was excluded by reading its whole 1912 L section (entries 14 to 1119, no Luwinski), the 1913 directory gave Chodowieckistraße 32, and the Berliner Adressbuch's own street index — whose first column is headed STANDESAMT — gives houses 23 to 32 as office 8. FOUR THINGS AGREE: the surname, the forename, the month, and a district arrived at independently. AND THE ARITHMETIC CHECKS — entry 963 of a register that passes 2561 by December is 37.6 per cent through it, and 11 May is 36 per cent through the year. Every L page of 1912 was read: exactly one Luwinski in the whole year. A second forename nobody has ever seen: MYSZISLAUS, a German clerk's spelling of Mieczysław.",
+      "covers": [
+        "request:35-SEND-THIS-to-landesarchiv-geburtsurkunde.txt"
+      ]
     },
     {
       "n": 221,
@@ -1871,10 +1874,10 @@
     {
       "n": 224,
       "what": "WHICH STANDESAMT SERVED CHODOWIECKISTRASSE IN 1912",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-20",
-      "note": "The thing that now stands between this archive and Kurt's birth entry number. Row 220 enumerated twenty-one candidate 1912 birth-index volumes because the district was unknown. IT IS NO LONGER UNKNOWN — a Luwinski household was at Chodowieckistraße 32, PRENZLAUER BERG, POSTAL N 55, in the year he was born. Which of the old Roman-numeral Berlin registry offices covered that street in 1912 is NOT established and is deliberately not guessed at. The Berliner Adressbuch's own front matter lists the Standesämter with their districts; so does the Landesarchiv. One of those settles it, and settling it cuts twenty-one volumes to one or two."
+      "note": "The thing that now stands between this archive and Kurt's birth entry number. Row 220 enumerated twenty-one candidate 1912 birth-index volumes because the district was unknown. IT IS NO LONGER UNKNOWN — a Luwinski household was at Chodowieckistraße 32, PRENZLAUER BERG, POSTAL N 55, in the year he was born. Which of the old Roman-numeral Berlin registry offices covered that street in 1912 is NOT established and is deliberately not guessed at. The Berliner Adressbuch's own front matter lists the Standesämter with their districts; so does the Landesarchiv. One of those settles it, and settling it cuts twenty-one volumes to one or two. || *** ANSWERED THE SAME DAY: STANDESAMT 8. *** The Berliner Adressbuch's second part carries an alphabetical street index whose first column is headed \"Standesamt\". Chodowieckistraße: houses 1-10 → 8, 11-20 → 8, 21-22 → 10c, 23-32 → 8. Number 32 is office 8, and so is number 31 where the Leibholz lived. THE INSTRUMENT IS GENERAL: that table gives the registry office for every street in Berlin, and this archive will need it again."
     },
     {
       "n": 225,
@@ -1883,6 +1886,17 @@
       "owner": "this archive",
       "since": "2026-09-20",
       "note": "A Leibholz merchant living next door to a Luwinski in 1913, eleven years before Auguste Luwinski married Jacob Leibholz. NOT PROVED TO BE A RELATIVE and both surnames are borne by other Berliners. What makes him worth an hour is that this archive has never had ANY geography for how those two families met. The cheap tests: the Teil I name section of the same volume, which gives householders' full forenames and trades; and the archive's own Leibholz table, which knows a G. only as the Georg born at Hammerstein who cannot be Jacob's brother."
+    },
+    {
+      "n": 226,
+      "what": "ORDER THE CERTIFICATE — Standesamt Berlin VIII, Geburtsregister 1912, Nr. 963",
+      "state": "next",
+      "owner": "David sends",
+      "since": "2026-09-20",
+      "note": "THE ONE TO SEND FIRST OF EVERYTHING DRAFTED TODAY. A single document by its exact register number: no searching, no name to match, no protection period to argue — births are open after 110 years and 1912 was 114 years ago. *** WHAT IT WILL CONTAIN: *** Auguste Luwinski's age, occupation and ADDRESS ON 11 MAY 1912, which this archive has never had; THE FATHER'S COLUMN, whether filled or empty, and either answer is worth having; the informant; and SAMTLICHE RANDVERMERKE — the marginal notes. Auguste married Jacob Leibholz on 5 January 1924, and if Kurt was legitimised then, the note is in that margin. It is a copy order and will cost something; the letter asks for an estimate first and does not request a certified copy.",
+      "covers": [
+        "request:35-SEND-THIS-to-landesarchiv-geburtsurkunde.txt"
+      ]
     }
   ]
 }
