@@ -289,6 +289,14 @@
    "people": 15
   },
   {
+   "file": "szubin-civil-registers.tsv",
+   "title": "The Szubin civil registers of 1874 — found, filmed and online",
+   "source": "szukajwarchiwach.gov.pl (AP Bydgoszcz fonds 6/1792/0, 6/1795/0, 6/1796/0) and FamilySearch catalogue koha:402152 and koha:402191, digital films 007998644 and 008016003; 20 September 2026",
+   "kind": "ref",
+   "rows": 9,
+   "people": 0
+  },
+  {
    "file": "tna-discovery.tsv",
    "title": "The National Archives Discovery catalogue",
    "source": "discovery.nationalarchives.gov.uk — citations verified and references found, 17 September 2026",
@@ -3096,7 +3104,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 49,
+  "files": 50,
   "person_files": 22,
   "people": 187,
   "records": 252,
