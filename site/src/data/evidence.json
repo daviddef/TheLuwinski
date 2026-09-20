@@ -17,6 +17,14 @@
    "people": 21
   },
   {
+   "file": "arolsen-tracing-files.tsv",
+   "title": "The tracing files — what the consent opens and what it does not",
+   "source": "Arolsen Archives: T/D 52.971 (metadata only, restricted) and 6.3.1.1 reference 06030101 121.145, the 1946 Jewish Agency search for Willi Leibholz; read 20 September 2026",
+   "kind": "ref",
+   "rows": 18,
+   "people": 0
+  },
+  {
    "file": "berlin-adressbuch-names.tsv",
    "title": "The Berliner Adressbuch, alphabetical name section",
    "source": "Zentral- und Landesbibliothek Berlin, digital.zlb.de — Teil I (Einwohner / Haushaltungsvorstände), annual volumes 1920-1943, read 20 September 2026",
@@ -2616,7 +2624,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 40,
+  "files": 41,
   "person_files": 22,
   "people": 153,
   "records": 218,
