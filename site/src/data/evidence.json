@@ -209,6 +209,14 @@
    "people": 0
   },
   {
+   "file": "gedenkbuch-fifty.tsv",
+   "title": "Fifty Leibholz in the Gedenkbuch, and only three of them were born at Schubin",
+   "source": "Bundesarchiv Gedenkbuch, all five result pages read 20 September 2026",
+   "kind": "ref",
+   "rows": 13,
+   "people": 0
+  },
+  {
    "file": "giddins-norton-end.tsv",
    "title": "1861 and 1871 censuses, Norton End, Baldock",
    "source": "RG9/816 f.69; RG10/1365 f.27",
@@ -3192,7 +3200,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 61,
+  "files": 62,
   "person_files": 22,
   "people": 187,
   "records": 252,
