@@ -18,5 +18,10 @@
   "dependencies": {
     "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#145506fb35cba1a0ecdf4b8c529f8ee1c9c76c85",
     "astro": "^5.18.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/node": "^26.6.2",
+    "typescript": "^5.9.3"
   }
 }

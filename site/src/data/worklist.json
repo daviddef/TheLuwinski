@@ -1777,7 +1777,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-20",
-      "note": "A free index to DEATH, FUNERAL AND PROBATE NOTICES in Australian newspapers, running to the present, where the Queensland state index stops at 1996. MANFRED DIED AT BRISBANE ON 20 SEPTEMBER 2012 and a Courier-Mail funeral notice would NAME THE SURVIVORS. Attempted four times on 20 September 2026 and the server answered \"Server Overloaded\" every time. NOTHING WAS SEARCHED, SO NOTHING IS RULED OUT. Retry across all seven spellings, and separately for MARQUARDT and WAGNER, which are the surnames Helga carried."
+      "note": "A free index to DEATH, FUNERAL AND PROBATE NOTICES in Australian newspapers, running to the present, where the Queensland state index stops at 1996. MANFRED DIED AT BRISBANE ON 20 SEPTEMBER 2012 and a Courier-Mail funeral notice would NAME THE SURVIVORS. Attempted four times on 20 September 2026 and the server answered \"Server Overloaded\" every time. NOTHING WAS SEARCHED, SO NOTHING IS RULED OUT. Retry across all seven spellings, and separately for MARQUARDT and WAGNER, which are the surnames Helga carried. || RETRIED AGAIN 20 September, late: \"Server Overloaded\" for the eighth time. Not searched."
     },
     {
       "n": 214,
@@ -1907,7 +1907,7 @@
       "state": "running",
       "owner": "this archive",
       "since": "2026-09-20",
-      "note": "The 1913 directory's own cross-reference reads \"LEIPHOLZ, s. a. LEIBHOLZ\" — the compiler treating the two as one name. THIS ARCHIVE HAS NEVER RUN IT: not at Arolsen, not at the Gedenkbuch, not at Mapping the Lives, not at the NAA, not at gazettes.africa, not in the Berlin indexes. Every bounded negative recorded for LEIBHOLZ · LAIBHOLZ · LEIBHOLTZ · LEIBBHOLZ is one spelling short until this is run. The 1925 volume repeats the same cross-reference, so it is not a one-year quirk. || STARTED THE SAME DAY. It is a real Berlin surname, present in every Adressbuch volume sampled from 1913 to 1943, and THE CROSS-REFERENCE RUNS BOTH WAYS — 1913 and 1924 print \"Leipholz, s. a. Leibholz\", 1940 prints \"Leibholz s. o. Leipholz\". *** AND ONE MAN MAY BE PRINTED UNDER BOTH: *** ADOLF, police officer, NO18 Friedenstraße — Leipholz in 1924 at no. 30, Leibholz in 1940 at no. 47, in the eleven-householder run this archive has already published. TEXT LAYER ONLY, NOT VERIFIED AT THE IMAGE: three crops of the 1924 page returned a different column because that page's ALTO coordinates do not map onto the served image. NAA: nothing. Gazettes.Africa: nothing. STILL TO RUN — Arolsen, the Gedenkbuch, Mapping the Lives, Yad Vashem, Queensland, Geneteka, and the Landesarchiv name indexes. Seven recorded negatives stay provisional until they are."
+      "note": "The 1913 directory's own cross-reference reads \"LEIPHOLZ, s. a. LEIBHOLZ\" — the compiler treating the two as one name. THIS ARCHIVE HAS NEVER RUN IT: not at Arolsen, not at the Gedenkbuch, not at Mapping the Lives, not at the NAA, not at gazettes.africa, not in the Berlin indexes. Every bounded negative recorded for LEIBHOLZ · LAIBHOLZ · LEIBHOLTZ · LEIBBHOLZ is one spelling short until this is run. The 1925 volume repeats the same cross-reference, so it is not a one-year quirk. || STARTED THE SAME DAY. It is a real Berlin surname, present in every Adressbuch volume sampled from 1913 to 1943, and THE CROSS-REFERENCE RUNS BOTH WAYS — 1913 and 1924 print \"Leipholz, s. a. Leibholz\", 1940 prints \"Leibholz s. o. Leipholz\". *** AND ONE MAN MAY BE PRINTED UNDER BOTH: *** ADOLF, police officer, NO18 Friedenstraße — Leipholz in 1924 at no. 30, Leibholz in 1940 at no. 47, in the eleven-householder run this archive has already published. TEXT LAYER ONLY, NOT VERIFIED AT THE IMAGE: three crops of the 1924 page returned a different column because that page's ALTO coordinates do not map onto the served image. NAA: nothing. Gazettes.Africa: nothing. STILL TO RUN — Arolsen, the Gedenkbuch, Mapping the Lives, Yad Vashem, Queensland, Geneteka, and the Landesarchiv name indexes. Seven recorded negatives stay provisional until they are. || *** MAPPING THE LIVES RUN, AND THE RULE HAS PRODUCED A PERSON: WEILER, ELISABETH NÉE LEIPHOLZ, BORN 1 JANUARY 1891, BERLIN *** — exactly one, with LEIBHOLZ as the control on the same screen returning the hundred-capped list the archive already holds. She is in none of this archive's files under any spelling. NOT KIN ON ANY EVIDENCE HELD. Six instruments left: Arolsen, the Gedenkbuch, Yad Vashem, Queensland, Geneteka, and the Landesarchiv name indexes."
     },
     {
       "n": 228,
@@ -1943,6 +1943,14 @@
       "owner": "this archive",
       "since": "2026-09-20",
       "note": "Chodowieckistraße 32 was a NEUBAU in the 1912 volume and holds no Luwinski in the 1914 one. The household is caught by exactly one book. SO THERE IS AN ADDRESS BEFORE IT AND AN ADDRESS AFTER IT, and the one before it is where Kurt was born on 11 May 1912. The 1911 and 1912 volumes' NAME sections are the place to look — Teil I, under Luwinski, which the archive has swept for householders across 1900 to 1943 and found the name in 1933 only. THAT SWEEP NEEDS REDOING AGAINST THE TENANT LISTS RATHER THAN THE HOUSEHOLDER SECTION: J. Luwinski of Chodowieckistraße 32 is a TENANT in Teil III and does not appear in the Teil I householder index at all, which is exactly why forty-four years of sweeping missed him."
+    },
+    {
+      "n": 232,
+      "what": "ELISABETH WEILER NÉE LEIPHOLZ, born 1 January 1891 at Berlin — the first person the eighth spelling produced",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "note": "Found by running LEIPHOLZ at Mapping the Lives, which the archive had only ever searched as LEIBHOLZ. Exactly one person, surfaced through the maiden-name field. A Berlin woman born 1 January 1891 — the generation of Jacob (1884), Samuel (1877) and Oskar (1887). NOT KIN ON ANY EVIDENCE HELD and not asserted to be. WHAT WOULD TEST IT: her record page gives an address and a source, and Mapping the Lives is built on the 1939 census card, which names birthplaces. If she was born in SCHUBIN the question answers itself; if she was born in Berlin to a Leipholz household already in the directories, she belongs to the separate Leipholz line and goes on the register of lines as one. Either way she is the first thing the eighth spelling has produced and the reason the other six sweeps matter."
     }
   ]
 }
