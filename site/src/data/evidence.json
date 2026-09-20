@@ -281,6 +281,14 @@
    "people": 0
   },
   {
+   "file": "leipholz-sweep.tsv",
+   "title": "The eighth spelling, and the directory printed it itself — LEIPHOLZ",
+   "source": "Berliner Adressbuch cross-reference 1913 to 1940, swept 20 September 2026",
+   "kind": "ref",
+   "rows": 12,
+   "people": 0
+  },
+  {
    "file": "litigation.tsv",
    "title": "Transvaal court files",
    "source": "National Archives of South Africa, WLD and TPD series",
@@ -3184,7 +3192,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 60,
+  "files": 61,
   "person_files": 22,
   "people": 187,
   "records": 252,
