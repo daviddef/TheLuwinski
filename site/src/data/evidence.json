@@ -237,8 +237,8 @@
    "title": "The Berlin directory against the 1939 census, household by household",
    "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
    "kind": "person",
-   "rows": 30,
-   "people": 30
+   "rows": 38,
+   "people": 38
   },
   {
    "file": "naairs-figueiredo.tsv",
@@ -447,6 +447,18 @@
    ]
   },
   {
+   "name": "*** AND A SCHMUL AT A LEIBHOLZ ADDRESS, WHICH WAS CHECKED AND DID NOT SURVIVE ***",
+   "slug": "and-a-schmul-at-a-leibholz-address-which-was-checked-and-did-not-survive",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: ROSENFELD, HENRIETTE née SCHMUL, born 24.04.1887, Weinstr. 6, Horst-Wessel-Stadt, \"Race\" JJJJ"
+    }
+   ]
+  },
+  {
    "name": "*** AND A SECOND SOPHIE LEIBHOLZ, WHO IS NOT THAT ONE ***",
    "slug": "and-a-second-sophie-leibholz-who-is-not-that-one",
    "records": [
@@ -519,6 +531,30 @@
    ]
   },
   {
+   "name": "*** SAMUEL LEIBHOLZ HAD A WIFE, AND SHE WAS NOT JEWISH ***",
+   "slug": "samuel-leibholz-had-a-wife-and-she-was-not-jewish",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: the directory has \"SAMUEL (Hüte en gros, SW68 Kommandantenstr 29)\" in 1938 and \"ISRAEL (Hüte)\" at the same address from 1940 · mapping_the_lives: Leibholz, SAMUEL, born 28.06.1877 IN SZUBIN (SCHUBIN), \"Race\" JJJJ, persecution RACIAL, residence 17.05.1939 Kommandantenstr. 29, Kreuzberg, DEPORTED TO AUSCHWITZ, DIED 10.04.1943 — census card ID VZ153419"
+    }
+   ]
+  },
+  {
+   "name": "*** SO BOTH BROTHERS WERE IN MIXED MARRIAGES ***",
+   "slug": "so-both-brothers-were-in-mixed-marriages",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: —"
+    }
+   ]
+  },
+  {
    "name": "*** SO GEORG IS THE UNCLE BY MARRIAGE ***",
    "slug": "so-georg-is-the-uncle-by-marriage",
    "records": [
@@ -543,6 +579,18 @@
    ]
   },
   {
+   "name": "*** WEINSTRASSE 6 — AND THE TWO WILHELMS CAN NOW BE TOLD APART ***",
+   "slug": "weinstrasse-6-and-the-two-wilhelms-can-now-be-told-apart",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: 1938-1942: \"Wilhelm, Vertreter, NO18 Weinstr 6\", who in the 1941 volume is no longer a Vertreter but a BAUARBEITER · mapping_the_lives: Leibholz, WILHELM, born 30.12.1887, died before 08.05.1945 — with JENNY née ROSENBERG, born 11.02.1893, died before 08.05.1945, same address, Weinstr. 6, Horst-Wessel-Stadt"
+    }
+   ]
+  },
+  {
    "name": "*** WHY THIS HOUSEHOLD IS NOT LIKE THE OTHERS ***",
    "slug": "why-this-household-is-not-like-the-others",
    "records": [
@@ -551,6 +599,18 @@
      "title": "The Berlin directory against the 1939 census, household by household",
      "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
      "detail": "directory_entry: — · mapping_the_lives: —"
+    }
+   ]
+  },
+  {
+   "name": "AFRIKANISCHE STRASSE 37 — and a namesake to keep apart",
+   "slug": "afrikanische-strasse-37-and-a-namesake-to-keep-apart",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: 1938: \"C (Kaufm, N65 Afrikanische Str 37)\" · mapping_the_lives: Leibholz, SIEGFRIED, born 09.03.1877 — with LUISE née WITT, born 22.07.1896, same address, Wedding"
     }
    ]
   },
@@ -2770,6 +2830,18 @@
    ]
   },
   {
+   "name": "a spelling to add",
+   "slug": "a-spelling-to-add",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: Leibbholz · what it adds: *** LEIBBHOLZ, WITH A DOUBLED B *** — the form the census clerk wrote for Frida. Anyone searching German records for this family needs it beside Leibholz, Laibholz, Leibholtz and Leibholz."
+    }
+   ]
+  },
+  {
    "name": "and a fourth person in the same flat",
    "slug": "and-a-fourth-person-in-the-same-flat",
    "records": [
@@ -2778,6 +2850,18 @@
      "title": "The Berlin directory against the 1939 census, household by household",
      "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
      "detail": "directory_entry: — · mapping_the_lives: Leibholz, LAURA née ROTHENBERG, born 23.09.1884, died before 08.05.1945, Danckelmannstr. 44"
+    }
+   ]
+  },
+  {
+   "name": "and it answers a question the Arolsen work could not",
+   "slug": "and-it-answers-a-question-the-arolsen-work-could-not",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: —"
     }
    ]
   },
@@ -2902,6 +2986,18 @@
    ]
   },
   {
+   "name": "source of this block",
+   "slug": "source-of-this-block",
+   "records": [
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: — · mapping_the_lives: —"
+    }
+   ]
+  },
+  {
    "name": "the seventeen, by family",
    "slug": "the-seventeen-by-family",
    "records": [
@@ -2994,8 +3090,8 @@
   "ambiguous": 2,
   "files": 48,
   "person_files": 22,
-  "people": 179,
-  "records": 244,
+  "people": 187,
+  "records": 252,
   "linked_to_register": 11
  }
 }
