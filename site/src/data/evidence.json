@@ -113,6 +113,14 @@
    "people": 9
   },
   {
+   "file": "dewitt-confirmed.tsv",
+   "title": "Ivone's first husband — the death date confirmed, and a second marriage",
+   "source": "FamilySearch — South Africa, Civil Death Registration 1953-1967 (ark 1:1:DD9Y-PLT2); South Africa, Civil Marriage Records 1801-1974 (ark 1:1:6ZHR-NVYN); searched 20 September 2026",
+   "kind": "ref",
+   "rows": 10,
+   "people": 0
+  },
+  {
    "file": "ermland-sauerbaum.tsv",
    "title": "Sauerbaum, Kreis Rössel — the parish, the films, and what is not online",
    "source": "FamilySearch catalogue koha:15497 (Katholische Kirche Groß Bössau, Kr. Rössel, Kirchenbuch 1690-1897) with its nine film notes; film 102682510 image 591; record index and full-text search, 20 September 2026",
@@ -2648,7 +2656,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 44,
+  "files": 45,
   "person_files": 22,
   "people": 153,
   "records": 218,
