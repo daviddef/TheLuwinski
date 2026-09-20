@@ -313,6 +313,14 @@
    "people": 0
   },
   {
+   "file": "twenty-next.tsv",
+   "title": "Twenty ways to open the Luwinskis abroad",
+   "source": "Written 20 September 2026 at David's request — a prioritised plan, not a finding",
+   "kind": "ref",
+   "rows": 20,
+   "people": 0
+  },
+  {
    "file": "wear-1851-bermondsey.tsv",
    "title": "1851 census, Salisbury Street, Bermondsey",
    "source": "HO107 piece 1560 folio 212",
@@ -3104,7 +3112,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 50,
+  "files": 51,
   "person_files": 22,
   "people": 187,
   "records": 252,
