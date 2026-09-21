@@ -22,6 +22,16 @@ Two modes:
 
 Default: harvest if it exists, otherwise hashes.
 
+*** AND A KNOWN LIMIT OF --harvest, WHICH COST A RED DEPLOY ON 21 SEPTEMBER. ***
+--harvest builds each guard from the live tree's `first` + `last`, which is a
+person's CURRENT name. IT DOES NOT GUARD A MARRIED WOMAN'S MAIDEN NAME. The
+hash list does: on 21 September it carried nine digests where harvest built
+seven guards, and the two extra were maiden-name forms. A page naming a living
+woman by the surname she was born with passed --harvest and was stopped by
+--hashes in CI. SO A GREEN --harvest RUN IS NOT PERMISSION. Both modes are now
+run locally, harvest first for its exact names and hashes second because it is
+the one CI trusts, and the build fails if either does.
+
 Known limit of --hashes: a person recorded under a single token ("Luke") cannot
 be keyed, because guarding a bare given name would match ordinary prose across
 the whole site. Those depend on the --harvest run, which is local and exact.

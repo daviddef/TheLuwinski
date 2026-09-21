@@ -2122,11 +2122,19 @@
   },
   {
    "n": 254,
-   "what": "FRIEDA LEIBHOLZ, married SCHÖNFELD — Spandau Sterberegister 1982 Nr. 1486, and she was Jewish",
+   "what": "A JEWISH WOMAN BORN LEIBHOLZ, married SCHÖNFELD — Spandau Sterberegister 1982 Nr. 1486",
    "state": "next",
    "owner": "this archive",
    "since": "2026-09-21",
-   "note": "Found on 21 September while sweeping Spandau for Erna, who is not there. \"Leibholz verh. Schönfeld | Frieda | 19. 5. | 1486 | mos. | verw.\" *** MOS. IS MOSAISCH. A JEWISH WOMAN BORN LEIBHOLZ, LIVING IN BERLIN-SPANDAU AND DYING THERE IN 1982. *** THE FREE TEST BEFORE ANY PURCHASE: the Berlin marriage indexes for a LEIBHOLZ–SCHÖNFELD marriage. A marriage entry names both fathers, which would say whose daughter she is, and it costs nothing. TWO THINGS THIS ARCHIVE ALREADY HELD AND NEVER JOINED: Yad Vashem 5415605 gives SAMUEL LEIBHOLZ a wife called FRIEDA, recorded as new and never followed; and the Arolsen tracing files hold a Leibholz correspondence file INDEXED UNDER SCHÖNFELD. *** THE TWO FRIEDAS ARE PROBABLY NOT ONE WOMAN *** -- Samuel's widow would be indexed under her own birth name as \"Xxx verh. Leibholz\", and this entry makes Leibholz the birth name. Said both ways because the index convention is what decides it and the convention was read off three neighbouring entries, not assumed."
+   "note": "Found on 21 September while sweeping Spandau for Erna, who is not there. \"Leibholz verh. Schönfeld | [forename withheld] | 19. 5. | 1486 | mos. | verw.\" *** MOS. IS MOSAISCH. A JEWISH WOMAN BORN LEIBHOLZ, LIVING IN BERLIN-SPANDAU AND DYING THERE IN 1982. *** *** HER FORENAME IS WITHHELD AND THAT IS DAVID'S DECISION TO REVERSE, NOT THIS ARCHIVE'S. *** Set beside the surname she was born with, her forename is ALSO THE MAIDEN NAME OF A LIVING PERSON IN THIS FAMILY. The two are certainly different women -- one died in 1982 -- but a reader and a search engine cannot tell, and the rule here is that a living person's former name does not go on a public page whoever the page is about. The forename is in the private notes and the register number is published, so the certificate is orderable without it. THE FREE TEST BEFORE ANY PURCHASE: the Berlin marriage indexes for a LEIBHOLZ–SCHÖNFELD marriage, which names her father. TWO THINGS THIS ARCHIVE ALREADY HELD AND NEVER JOINED: Yad Vashem 5415605 gives SAMUEL LEIBHOLZ a wife with the same forename, recorded as new and never followed; and the Arolsen tracing files hold a Leibholz correspondence file INDEXED UNDER SCHÖNFELD -- the same married surname. THE TWO WOMEN ARE PROBABLY NOT ONE: Samuel's widow would be indexed under her own birth name as \"Xxx verh. Leibholz\", and this entry makes Leibholz the birth name."
+  },
+  {
+   "n": 255,
+   "what": "check:living PASSED LOCALLY AND FAILED CI ON THE SAME COMMIT — harvest does not guard maiden names",
+   "state": "done",
+   "owner": "this archive",
+   "since": "2026-09-21",
+   "note": "Commit 8c1d8af failed CI in 17 seconds and the site did not publish. *** THE GATE WAS RIGHT AND THE LOCAL RUN OF THE SAME GATE WAS WRONG. *** --harvest builds each guard from the live tree's `first` + `last`, which is a person's CURRENT name, and NEVER CHECKS A MARRIED WOMAN'S MAIDEN NAME. --hashes carries nine salted digests where harvest built seven guards, and the two extra are maiden-name forms. So a page naming a living woman by the surname she was born with passed locally and was stopped in CI. *** A GREEN LOCAL RUN HAD BEEN READ AS PERMISSION ALL MORNING AND IT WAS NOT ONE. *** FIXED: check:living now runs BOTH modes locally and the build fails if either does; the limit is written into the tool's own docstring beside the one already recorded for --hashes. PROVED: the hashes run locally now reproduces the CI failure name for name and file for file. A peer session found this by reading CI while this archive was reading its own green terminal."
   }
  ]
 }

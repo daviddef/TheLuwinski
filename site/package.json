@@ -8,7 +8,7 @@
     "build": "npm run build:register && npm run build:evidence && astro build && npm run check:templates && python3 ../tools/build-search.py && npm run check:search && npm run check:living && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence",
     "preview": "astro preview --port 4331",
     "check:search": "python3 ../tools/check-search.py",
-    "check:living": "python3 ../tools/check-living.py --dist dist",
+    "check:living": "python3 ../tools/check-living.py --dist dist --mode harvest && python3 ../tools/check-living.py --dist dist --mode hashes",
     "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root .",
     "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root .",
     "check:matches": "python3 ../tools/check-matches.py",
