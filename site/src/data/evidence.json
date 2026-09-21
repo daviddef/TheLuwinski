@@ -401,6 +401,14 @@
    "people": 15
   },
   {
+   "file": "spandau-frieda-leibholz.tsv",
+   "title": "Frieda Leibholz, married Schönfeld — a Jewish Leibholz who survived and died in 1982",
+   "source": "Standesamt Spandau, Sterberegister 1982 Nr. 1486, read through pdf.js 21 September 2026",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
+  },
+  {
    "file": "surname-lines.tsv",
    "title": "The lines of the name — every family of Leibholz and Luwinski, kept apart",
    "source": "Drawn from the archive's own files, 20 September 2026 — a structure, not new evidence",
@@ -3248,7 +3256,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 68,
+  "files": 69,
   "person_files": 22,
   "people": 187,
   "records": 252,
