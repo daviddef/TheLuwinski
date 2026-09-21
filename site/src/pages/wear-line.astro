@@ -4,7 +4,8 @@ import Spine from '@daviddef/archive-kit/components/Spine.astro';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const line = [
-  ['Derrick', '', 'Named here by his own permission, and by name only.', 'doc'],
+  // LIVING is declared, not inferred. See the note below the array.
+  ['Derrick', '', 'Named here by his own permission, and by name only.', 'doc', 'LIVING'],
   ['LEONARD AUBREY ROBERT WEAR', 'b. 1917 Hitchin, d. 1973 or 1979',
    'Birth registered Hitchin 1917. On the 1921 census at 72 Pix Road, Letchworth, aged four. Sailed alone from Southampton on 12 March 1937, aged twenty. Married at Johannesburg in 1940 and again in 1951. Corporal 141272, Union Defence Force, a prisoner of war in Germany 1943 to 1945. Bought his father’s grave at West Park on 13 September 1969, of 271 Wilson Street, Fairlands.', 'doc'],
   ['HENRY ROBERT WEAR × MARTHA MAUD CASTLE', '1889–1969 · 1895–1986',
@@ -24,11 +25,24 @@ const line = [
    written and mapped here, so no prose passes through a transcription. What
    the mapping adds is what the table had no column for: the husband and wife
    as separate people, and the living rule applied by the component rather
-   than by a sentence. */
-const spine = line.map(([who, dates, how, conf], i) => {
+   than by a sentence.
+
+   *** AND THE LIVING FLAG IS DECLARED RATHER THAN INFERRED, WHICH IT WAS NOT. ***
+   The conversion first derived it as `living = !dates` -- no dates, therefore
+   alive. That is true of this array today and it is NOT A RULE, it is a
+   reading of a shape. A generation with a name and no dates for any other
+   reason -- a couple at the top of the line whose years are simply not known,
+   which is exactly what happens as a line is pushed back -- would be marked
+   living and be wrong. THE ONE CONSTRAINT ON THIS SITE THAT MUST NOT FAIL
+   SHOULD NOT REST ON AN ABSENCE. A fifth element 'LIVING' now says so
+   explicitly, and a row with no dates and no flag is treated as dead with
+   dates unknown, which is the safe direction to be wrong in: it withholds a
+   guard from nobody who has one, and it never invents a birth year.
+   The peer session that made the conversion named this weakness itself. */
+const spine = line.map(([who, dates, how, conf, flag], i) => {
   const [self, wife] = who.split(' \u00d7 ');
   const [hisLife, herLife] = (dates || '').split(' \u00b7 ');
-  const living = !dates;
+  const living = flag === 'LIVING';
   let born = null, died = null;
   if (!living && hisLife) {
     const bd = hisLife.match(/^b\.\s*(.+?),\s*d\.\s*(.+)$/);
