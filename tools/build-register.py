@@ -104,12 +104,25 @@ def main():
             for c in by_person[pid]:
                 if c["field"] == "died" and not rec.get("bare"):
                     rec["died"] = c["now"]
+                    # AND THE DERIVED YEAR WITH IT. Until 22 September this line
+                    # corrected the date and left `dy` holding the superseded year,
+                    # so Kurt Israel Luwinski read "died 15 December 1968" on the
+                    # register page and "1912 - 1969" on the bloodline, and the
+                    # timeline placed him in the wrong year. A correction that does
+                    # not reach the value the pages actually plot is not a correction.
+                    rec["dy"] = year(c["now"])
                     # A correction that supplies a death CANCELS "no death recorded".
                     # Without this the register would print the absence and throw the
                     # corrected date away - the source flags the person alive, the
                     # template tests no_death_recorded first, and the correction loses.
                     # Not currently triggered by the data. Fixed before it is.
                     rec.pop("no_death_recorded", None)
+                if c["field"] == "born" and not rec.get("bare"):
+                    # Symmetrical, and not currently triggered by the data either.
+                    # The `died` case was not triggered when it was written and it
+                    # still shipped a wrong year onto two pages.
+                    rec["born"] = c["now"]
+                    rec["by"] = year(c["now"])
         out.append(rec)
 
     out.sort(key=lambda r: (r["last"] or "", r["first"] or ""))

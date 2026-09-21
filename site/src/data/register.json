@@ -3197,7 +3197,7 @@
    "born": "Aug 8 1884",
    "died": "not documented; deported to Auschwitz 26 February 1943",
    "by": 1884,
-   "dy": 1945,
+   "dy": 1943,
    "kind": "index",
    "facts": [
     {
@@ -7904,7 +7904,7 @@
    "born": "May 11 1912",
    "died": "15 December 1968",
    "by": 1912,
-   "dy": 1969,
+   "dy": 1968,
    "kind": "index",
    "facts": [
     {
@@ -12507,7 +12507,7 @@
    "born": "Dec 1923",
    "died": "2 April 1963, Sasolburg",
    "by": 1923,
-   "dy": null,
+   "dy": 1963,
    "kind": "index",
    "facts": [
     {
