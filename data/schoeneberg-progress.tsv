@@ -1,0 +1,31 @@
+# THE RESUME POINTER FOR THE SCHÖNEBERG DEATH-INDEX READ.
+# THIS FILE IS THE CONTROL. Any session — scheduled or driven by hand — reads this first and knows
+# exactly which volume and which page to open next, what has already been proved, and what must be
+# true before a page counts as read. It exists because the work is long, the sessions are short,
+# and a half-remembered method is how four half-read pages nearly got published as a whole year.
+field	value
+# ---------------- STATE ----------------
+DONE, AND BOUNDED AT BOTH ENDS	1938 · 1939 · 1940 · 1941 · 1942 · 1943 · 1944 · 1945 · 1946 · 1947 · 1948 · and 1970-1994 by text layer. ELEVEN YEARS READ AT THE IMAGE (105 pages, about 3,300 names) PLUS TWENTY-FIVE BY TEXT.
+THE ONLY TWO HITS IN THE WHOLE RUN	GÜNTHER LEIBHOLZ, 1939 Nr. 780, "ev." — data/schoeneberg-1939-guenther-leibholz.tsv. ERNA FRIDA ELSE LEIPHOLZ, 1975 Nr. 79 — data/schoeneberg-death-indexes.tsv.
+*** IN PROGRESS: 1949-1951, P Rep. 163 Nr. 584, 409 pages ***	*** AND ITS STRUCTURE IS NOT WHAT WAS EXPECTED, WHICH IS THE IMPORTANT PART. *** It is NOT three years one after another. IT IS ONE ALPHABET, AND INSIDE EACH LETTER THE THREE YEARS RUN IN TURN. Proved by probing: page 68 is E headed 1949, page 110 is G headed 1951, page 165 is K headed 1949 again, page 190 is K headed 1951. So the L block contains a 1949 run, then a 1950 run, then a 1951 run, and ALL THREE MUST BE READ AND BOUNDED SEPARATELY.
+*** READ SO FAR IN Nr. 584: L / 1949, pages 196 to 199 ***	page 196 OPENS L at STERBEBUCH NR. 3 (Lange, Reinhold Louis Karl, died 30.12.1948) so the 1949 run is bounded at its start. 196: 3-397 · 197: 408-800 · 198: 804-1137 · 199: 1178-1622. CONTINUOUS ACROSS EVERY BOUNDARY. NO LEIBHOLZ AND NO LEIPHOLZ.
+*** RESUME HERE: P_Rep_163_0584.pdf, PAGE 200, half 'top'. ***	keep going until the 1949 run closes into blank lines or a 1950 heading appears, then do 1950, then 1951. The K block ran to about page 195, so L should run to roughly 215.
+near misses seen in Nr. 584 so far	LIPPOLD verw. EINERT (441). Nothing closer.
+then, in order	1952-53 Nr. 585 · 1954-55 Nr. 586 · 1956-57 Nr. 587 · 1958-59 Nr. 588 · 1960-61 Nr. 589 · 1962-63 Nr. 590 · 1964 Nr. 591 · 1965 Nr. 592 · 1966 Nr. 593 · 1967 Nr. 594 · 1968 Nr. 595. THEN THE PRE-1969 RUN IS COMPLETE.
+# ---------------- THE THREE THINGS THAT MUST BE TRUE BEFORE A YEAR COUNTS ----------------
+*** 1. BOUNDED AT BOTH ENDS ***	a page that OPENS the letter at a low register number (single or double digits), and a page that CLOSES it into blank ruled lines or a printed footer. If either end is missing the year is NOT done, however many pages were read.
+*** 2. CONTINUOUS ACROSS EVERY PAGE BOUNDARY ***	the last register number of each page must reach the first of the next. A GAP MEANS A MISSED PAGE. This is the check that catches a cropped screenshot, and it is the only one that does.
+*** 3. EVERY PAGE READ IN TWO HALVES ***	never one screenshot per page. See the method below.
+# ---------------- THE METHOD, WHICH IS NOT NEGOTIABLE ----------------
+*** RENDER ONCE OFFSCREEN, SHOW IN TWO OVERLAPPING HALVES ***	the pane is about 600 px tall and a rendered page is 1100-1200. A full-page canvas RUNS OFF THE BOTTOM OF THE SCREENSHOT AND LOOKS COMPLETE. window.half(file, page, 'top'|'bot') renders at scale 2.0 to an offscreen canvas and draws half of it into a visible canvas, with a SIX PER CENT OVERLAP so no row falls down the seam. The overlap is verifiable: the top half's last number must appear in the bottom half.
+DO NOT TRUST window.innerHeight	the emulated viewport and the captured image are two different things. innerHeight reported 1500 while screenshots came back 800x600. ONLY THE SCREENSHOT IS EVIDENCE.
+*** AND FOR A SUSPECTED HIT: SCALE 6, SURNAME COLUMN ONLY ***	window.crop(file, page, x0, x1, y0, y1, 6) with x roughly 0.06-0.45. AND READ THE NEIGHBOURING SURNAMES AT THE SAME MAGNIFICATION AS A CONTROL — if they are equally clear the hand is legible and the reading is not being forced onto a blur. That is how Günther Leibholz was confirmed.
+the search pattern is never the surname	look for Le[iy][bp]h AND Laib- AND Leim- AND Leib-. The run has produced LEIMHOS, LEIBRANDT, LEIBRECHT, LEIB, LAIBENTHAL, LEIPEL, LEIPELT, LEIPOLD, LIEPOLD, LIEPOLT, LEYPOLDT and LEIPOLDT — every one a near miss, and LEIPHOLZ is a real spelling of this family's name.
+# ---------------- TWO TRAPS SPECIFIC TO WHAT IS LEFT ----------------
+*** MULTI-YEAR VOLUMES HOLD MORE THAN ONE ALPHABET ***	1949-51, 1952-53, 1954-55, 1956-57, 1958-59, 1960-61 and 1962-63 are EACH SEVERAL YEARS IN ONE BOOK, and Kreuzberg 1982 proved that such a volume runs the alphabet through MORE THAN ONCE. Reading one L block and calling the volume done would miss two thirds of it. FIND EVERY L BLOCK: sample pages across the whole volume for L surnames before deciding where to read.
+no text layer before 1969	every one of these volumes returns zero extractable characters. A text search will report a clean nothing. THAT IS THE INSTRUMENT DESCRIBING ITSELF, and it is the fault that nearly published "no Leibholz in 1942".
+# ---------------- HOW TO GET BACK TO WORK IN THREE CALLS ----------------
+1	preview_start at https://content.landesarchiv-berlin.de/labsa/show/index.php
+2	inject pdf.js 3.11.174 from cdnjs, set GlobalWorkerOptions.workerSrc, and define window.half and window.crop as described above. PDFs are at ../pdf/P_Rep_163_NNNN.pdf and are read over HTTP range requests — NOTHING IS EVER DOWNLOADED.
+3	window.half('P_Rep_163_0584.pdf', <page>, 'top') and screenshot. Probe for the K/L boundary first.
+source	maintained by hand as each year closes. Last updated 21 September 2026 after 1938 and 1939.

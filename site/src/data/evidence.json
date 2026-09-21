@@ -401,6 +401,14 @@
    "people": 0
   },
   {
+   "file": "schoeneberg-progress.tsv",
+   "title": "The resume pointer for the Schöneberg death-index read",
+   "source": "Maintained by hand as each year closes — the control that makes a long read survive short sessions",
+   "kind": "ref",
+   "rows": 20,
+   "people": 0
+  },
+  {
    "file": "shenton-1939-pix-road.tsv",
    "title": "1939 Register, 63 Pix Road, Letchworth",
    "source": "TNA R39/1620/1620G/011/28, schedule 305",
@@ -3272,7 +3280,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 71,
+  "files": 72,
   "person_files": 22,
   "people": 187,
   "records": 252,
