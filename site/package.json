@@ -17,7 +17,7 @@
     "check:evidence": "python3 ../tools/check-evidence.py",
     "check:templates": "python3 node_modules/@daviddef/archive-kit/kit/tools/checktemplates.py --root .",
     "check:sources": "python3 node_modules/@daviddef/archive-kit/kit/tools/checksources.py --root . --max-unreachable 6",
-    "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 7",
+    "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 5",
     "check:pin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpin.py --root ."
   },
   "dependencies": {
