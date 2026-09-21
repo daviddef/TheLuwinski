@@ -1,0 +1,19 @@
+# THE OTHER THIRTY-ONE YEARS CANNOT BE READ THE WAY THE LAST TWENTY-FIVE WERE.
+# Landesarchiv Berlin, P Rep. 163, Standesamt Schöneberg, Namensverzeichnisse zum Sterberegister.
+# Probed and partly read 21 September 2026, after 1970-1994 was closed.
+field	value
+# ---------------- THE INSTRUMENT STOPS DEAD IN 1969 ----------------
+*** THE TEXT LAYER BEGINS AT VOLUME 0596 AND THERE IS NOTHING BEFORE IT ***	P Rep. 163 Nr. 596, the 1969 volume, averages about 1,600 characters of extractable text a page. Nr. 595 (1968), 593 (1966), 591 (1964), 587 (1956-57), 581 (1946), 611 (1943), 610 (1942) and 607 (1938) ALL RETURN ZERO CHARACTERS ON EVERY PAGE SAMPLED. They are page images with no OCR behind them.
+*** AND THE COVERAGE ASSERTION IS WHAT CAUGHT IT, WHICH IS THE FOURTH TIME TODAY ***	the 1942 volume was scanned first and came back "no hit". IT ALSO CAME BACK cov:false — no name before the target and none after — because there were no words at all. Under this morning's method that would have been published as "no Leibholz in Schöneberg in 1942". THE RULE THAT A NEGATIVE MUST NAME THE NEIGHBOUR ON EACH SIDE TURNED A FALSE NEGATIVE INTO A KNOWN LIMIT.
+a size heuristic that holds so far	the volumes WITH a text layer are 40-80 MB. The volumes WITHOUT are 120-400 MB. The 1969-1994 run is the small one; everything earlier is the large one. Probably two digitisation batches. USEFUL BUT NOT PROVED — probe the text layer, do not trust the size.
+# ---------------- AND THE INDEX IS NOT ALPHABETICAL, WHICH VOIDS THE WHOLE METHOD ----------------
+*** THE PRE-1969 VOLUMES ARE ORDERED BY INITIAL LETTER AND THEN BY REGISTER NUMBER ***	1943 page 95 runs 386, 401, 409, 420, 425, 433, 435, 454, 460, 465, 466, 473, 527, 539, 552, 565, 573, 581, 600, 635, 640, 647, 663, 684, 688, 704, 708, 754, 757 — ASCENDING NUMBERS, WHICH IS CHRONOLOGICAL. The surnames beside them are Lehmann, Loop, Lesiuska, Lenz, Lask, Liedtke, Löwstädt, List, Ladewig, Lembke, Lange — L IN NO ORDER AT ALL.
+what that destroys	"read the alphabet for a gap" — the technique that closed 1970-1994 and found Erna Leipholz — CANNOT BE USED ON THESE VOLUMES. There is no gap where a name would sit, because within a letter there is no alphabet. EVERY PAGE OF THE LETTER MUST BE READ, and read by eye, because there is no text to search.
+# ---------------- WHAT WORKS INSTEAD, AND WHAT IT COSTS ----------------
+the pages are legible	rendered through pdf.js at scale 1.6 the handwriting is clear German Kurrent and the columns are ruled: FAMILIENNAME · VORNAMEN · NR. DES STERBEBUCHES · BEMERKUNGEN. Still no download — pdf.js renders from range requests as before.
+and the volumes are tabbed	each page image shows RED INDEX TABS down the fore-edge, A through Z and Sch/St, so the L block is found in two or three probes instead of a search. In the 1943 volume L begins by page 95.
+*** AND JEWISH DEATHS ARE IDENTIFIABLE AT A GLANCE ***	the Bemerkungen column carries the confession, and "mos." — mosaisch — is written out. The compulsory middle names are in the forename column. 1943 page 96 alone has "Lachmann geb. Hirschfeld GERTRUD SARA, Nr. 932, mos." and "Lißner EMMY SARA, Nr. 933, mos." on consecutive register numbers. A READER LOOKING FOR JEWISH DEATHS IN SCHÖNEBERG IN 1943 DOES NOT NEED TO READ THE NAMES, ONLY THE LAST COLUMN.
+# ---------------- WHAT HAS ACTUALLY BEEN READ ----------------
+1943, pages 95 and 96	read at the image. Twenty-nine names on 95 and twenty-nine on 96, register numbers 386 to 1241. NO LEIBHOLZ AND NO LEIPHOLZ ON EITHER. The L section continues past 96 and the rest is not read.
+what is NOT claimed	nothing about 1943 as a whole, and nothing at all about 1938-1942 or 1944-1968. Two pages of one volume have been read out of roughly thirty volumes.
+source	Landesarchiv Berlin LABSA, P Rep. 163, probed and rendered through pdf.js over HTTP range requests, 21 September 2026.

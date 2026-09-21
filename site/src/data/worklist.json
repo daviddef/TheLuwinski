@@ -2135,6 +2135,14 @@
    "owner": "this archive",
    "since": "2026-09-21",
    "note": "Commit 8c1d8af failed CI in 17 seconds and the site did not publish. *** THE GATE WAS RIGHT AND THE LOCAL RUN OF THE SAME GATE WAS WRONG. *** --harvest builds each guard from the live tree's `first` + `last`, which is a person's CURRENT name, and NEVER CHECKS A MARRIED WOMAN'S MAIDEN NAME. --hashes carries nine salted digests where harvest built seven guards, and the two extra are maiden-name forms. So a page naming a living woman by the surname she was born with passed locally and was stopped in CI. *** A GREEN LOCAL RUN HAD BEEN READ AS PERMISSION ALL MORNING AND IT WAS NOT ONE. *** FIXED: check:living now runs BOTH modes locally and the build fails if either does; the limit is written into the tool's own docstring beside the one already recorded for --hashes. PROVED: the hashes run locally now reproduces the CI failure name for name and file for file. A peer session found this by reading CI while this archive was reading its own green terminal."
+  },
+  {
+   "n": 256,
+   "what": "SCHÖNEBERG 1938-1968 — thirty-one years that need eyes, not a text search",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-21",
+   "note": "*** THE METHOD THAT CLOSED 1970-1994 DOES NOT WORK ON THESE VOLUMES, FOR TWO SEPARATE REASONS. *** FIRST, THERE IS NO TEXT LAYER. Volume 596 (1969) averages 1,600 extractable characters a page; 595, 593, 591, 587, 581, 611, 610 and 607 return ZERO on every page sampled. The break is exactly between 1968 and 1969, and the volumes with text are 40-80 MB while those without are 120-400 MB -- two digitisation batches. SECOND, AND WORSE: THE PRE-1969 INDEXES ARE NOT ALPHABETICAL WITHIN A LETTER. They run by initial letter and then BY REGISTER NUMBER, which is chronological -- 1943 page 95 goes 386, 401, 409, 420 ... 757 with surnames Lehmann, Loop, Lesiuska, Lenz, Lask, Liedtke in that order. So there is NO GAP where the name would sit, and 'read the alphabet' is void. Every page of the L block must be read by eye. *** WHAT MAKES IT TRACTABLE: *** the pages render legibly through pdf.js at scale 1.6, the fore-edge carries RED INDEX TABS so L is found in two or three probes, and THE BEMERKUNGEN COLUMN WRITES OUT THE CONFESSION -- 'mos.' for mosaisch -- so Jewish deaths can be picked off the last column without reading a single name. 1943 page 96 alone gives 'Lachmann geb. Hirschfeld Gertrud Sara, Nr. 932, mos.' and 'Lißner Emmy Sara, Nr. 933, mos.' READ SO FAR: 1943 pages 95 and 96, fifty-eight names, no Leibholz and no Leipholz. The L section continues past 96."
   }
  ]
 }

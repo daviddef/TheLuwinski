@@ -377,6 +377,14 @@
    "people": 0
   },
   {
+   "file": "schoeneberg-1938-1968-instrument.tsv",
+   "title": "The other thirty-one years cannot be read the way the last twenty-five were",
+   "source": "Landesarchiv Berlin P Rep. 163, probed 21 September 2026 — no text layer before 1969, and no alphabet inside a letter",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
+  },
+  {
    "file": "schoeneberg-death-indexes.tsv",
    "title": "The Schöneberg death indexes, and the eighth spelling in one of them",
    "source": "Landesarchiv Berlin P Rep. 163, sixty-one volumes listed and eight read through pdf.js 21 September 2026",
@@ -3256,7 +3264,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 69,
+  "files": 70,
   "person_files": 22,
   "people": 187,
   "records": 252,

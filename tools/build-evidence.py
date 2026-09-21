@@ -81,6 +81,7 @@ MANIFEST = {
  "spandau-1982-leibholz-schoenfeld.tsv": ([], "A Jewish woman born Leibholz, married Schönfeld, who survived and died in 1982", "Standesamt Spandau, Sterberegister 1982 Nr. 1486, read through pdf.js 21 September 2026 — forename withheld, see the file", "ref"),
  "kreuzberg-reinickendorf-deaths.tsv": ([], "Eleven more death volumes, no hits, and two ways the method almost lied", "Landesarchiv Berlin P Rep. 510 and P Rep. 130, read through pdf.js 21 September 2026", "ref"),
  "leipholz-postwar-berlin.tsv":  ([], "The eighth spelling in post-war Berlin — seven volumes the sweep had never seen", "ZLB Berliner Adressbuch Namenteil 1957-1970, Solr sweep and per-page OCR 21 September 2026", "ref"),
+ "schoeneberg-1938-1968-instrument.tsv": ([], "The other thirty-one years cannot be read the way the last twenty-five were", "Landesarchiv Berlin P Rep. 163, probed 21 September 2026 — no text layer before 1969, and no alphabet inside a letter", "ref"),
  "schoeneberg-death-indexes.tsv": ([], "The Schöneberg death indexes, and the eighth spelling in one of them", "Landesarchiv Berlin P Rep. 163, sixty-one volumes listed and eight read through pdf.js 21 September 2026", "ref"),
  "twenty-alone.tsv":          ([], "Twenty things this archive can do without David", "Written 21 September 2026 at his request — a plan, not a finding", "ref"),
  "twenty-next.tsv":            ([], "Twenty ways to open the Luwinskis abroad", "Written 20 September 2026 at David's request \u2014 a prioritised plan, not a finding", "ref"),
