@@ -6,7 +6,7 @@ pages. Indexing the rendered HTML rather than the .astro sources means what is
 searched is exactly what a reader can see — including anything a component
 generated, and nothing that was stripped by the living-persons rule.
 """
-import html, json, pathlib, re, sys
+import html, json, pathlib, re, sys, unicodedata
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DIST = ROOT / "site" / "dist"
@@ -15,6 +15,12 @@ def text_of(fragment):
     fragment = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", fragment)
     fragment = re.sub(r"(?s)<[^>]+>", " ", fragment)
     return re.sub(r"\s+", " ", html.unescape(fragment)).strip()
+
+def fold(s):
+    """Lowercase and strip accents, so a reader typing `Schoneberg` finds
+       Schöneberg. The shared box folds the query the same way."""
+    return unicodedata.normalize("NFD", s.lower()).encode("ascii", "ignore").decode()
+
 
 def main():
     if not DIST.exists():
@@ -36,13 +42,19 @@ def main():
                 content = content[len(heading):].strip()
             if len(content) < 40:
                 continue
+            # THE ESTATE'S SCHEMA, ADOPTED 22 SEPTEMBER 2026. Seven archives
+            # already emit k/t/s/h/q and share one search box; this archive
+            # emitted page/url/heading/text and carried 85 lines of its own
+            # box to read it. The fields map one-for-one — only `q`, the
+            # folded haystack the shared box ranks on, is new.
             entries.append({
-                "page": title,
-                "url": url,
-                "heading": heading or None,
-                "text": content[:1500],
+                "k": "Page",
+                "t": heading or title,
+                "s": title if heading else "",
+                "h": url,
+                "q": fold(" ".join([title, heading or "", content[:1500]])),
             })
-    payload = json.dumps({"entries": entries}, ensure_ascii=False)
+    payload = json.dumps(entries, ensure_ascii=False)
     # Written to BOTH, deliberately, and the reason is the ordering of the build chain.
     # astro build empties dist before it refills it, and build-search runs AFTER astro,
     # so a copy in dist alone exists only between the end of one build and the start of
@@ -57,7 +69,7 @@ def main():
     keep = ROOT / "site" / "public" / "searchindex.json"
     keep.write_text(payload, encoding="utf-8")
     print(f"build-search: {len(entries)} sections across "
-          f"{len(set(e['url'] for e in entries))} pages -> {out.relative_to(ROOT)} "
+          f"{len(set(e['h'] for e in entries))} pages -> {out.relative_to(ROOT)} "
           f"and {keep.relative_to(ROOT)}")
 
 if __name__ == "__main__":

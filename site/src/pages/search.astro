@@ -1,85 +1,39 @@
 ---
+/* The box is one component in the kit, shared by every archive.
+
+   This page carried 85 lines of its own — a fetch, a ranker and a renderer —
+   and the kit's component says why that was a problem: "each archive had its
+   own — 91, 107, 107, 126 and 142 lines of the same idea, so every
+   improvement had to be made five times or it silently applied to one site."
+   This archive was the eighth and last holdout.
+
+   The index changed with it. It emitted page/url/heading/text and now emits
+   the estate's k/t/s/h/q, which maps one for one — only `q`, the folded
+   haystack the shared box ranks on, is new. tools/check-search.py reads both
+   spellings on purpose, so the gate keeps working across the change rather
+   than going quiet on the build that makes it.
+
+   What stays here is what belongs to this archive: how it describes itself,
+   and the things worth trying. */
 import Base from '../layouts/Base.astro';
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+import Search from "@daviddef/archive-kit/components/Search.astro";
+import { u } from '../lib/url.js';
+
+const hints = [
+  ["Schöneberg", "the Berlin street the family left"],
+  ["Auschwitz", "where three of the brothers were murdered"],
+  ["Figueiredo", "Ivone's own name, recovered in 2026"],
+  ["Halsey", "the DNA cluster that named a father"],
+  ["1948", "the marriage, and the divorce four months later"],
+  ["Sauerbaum", "the East Prussian village"],
+];
 ---
 <Base title="Search"
   subtitle="Everything in the archive, in one index"
   lede="Type a name, a street, a year, a ship. The index is built from the rendered pages, so what you can search is exactly what a reader can see — and nothing that the living-persons rule removed.">
 
-  <div class="panel" style="max-width:none">
-    <label for="q" class="small muted">Search the archive</label>
-    <input id="q" type="search" autocomplete="off" spellcheck="false"
-      placeholder="Schöneberg · Auschwitz · Figueiredo · 1948 · Aveiro · Halsey"
-      style="width:100%;margin-top:.5rem;padding:.7rem .9rem;font:inherit;font-size:1.05rem;background:var(--ground);color:var(--ink);border:1px solid var(--rule);border-radius:3px" />
-    <p id="count" class="small muted" style="margin:.7rem 0 0">Loading the index…</p>
-  </div>
-
-  <div id="results"></div>
-
-  <script is:inline define:vars={{ base }}>
-    const q = document.getElementById('q');
-    const countEl = document.getElementById('count');
-    const out = document.getElementById('results');
-    let entries = [];
-
-    fetch(base + '/searchindex.json')
-      .then(r => r.json())
-      .then(d => {
-        entries = d.entries || [];
-        countEl.textContent = entries.length + ' sections indexed. Press / from anywhere to search.';
-      })
-      .catch(() => { countEl.textContent = 'The index could not be loaded.'; });
-
-    const esc = s => s.replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
-
-    function snippet(text, terms) {
-      const low = text.toLowerCase();
-      let at = -1;
-      for (const t of terms) { const i = low.indexOf(t); if (i >= 0 && (at < 0 || i < at)) at = i; }
-      const from = Math.max(0, at - 90);
-      let s = text.slice(from, from + 260);
-      if (from > 0) s = '…' + s;
-      if (from + 260 < text.length) s = s + '…';
-      s = esc(s);
-      for (const t of terms) {
-        s = s.replace(new RegExp('(' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi'), '<mark>$1</mark>');
-      }
-      return s;
-    }
-
-    function run() {
-      const raw = q.value.trim();
-      if (raw.length < 2) { out.innerHTML = ''; return; }
-      const terms = raw.toLowerCase().split(/\s+/).filter(Boolean);
-      const hits = [];
-      for (const e of entries) {
-        const hay = ((e.heading || '') + ' ' + e.page + ' ' + e.text).toLowerCase();
-        if (!terms.every(t => hay.includes(t))) continue;
-        let score = 0;
-        for (const t of terms) {
-          if ((e.heading || '').toLowerCase().includes(t)) score += 6;
-          if (e.page.toLowerCase().includes(t)) score += 3;
-          score += (e.text.toLowerCase().split(t).length - 1);
-        }
-        hits.push({ e, score });
-      }
-      hits.sort((a, b) => b.score - a.score);
-      if (!hits.length) { out.innerHTML = '<p class="muted">Nothing found.</p>'; return; }
-      out.innerHTML = '<p class="small muted">' + hits.length + ' result' + (hits.length === 1 ? '' : 's') + '</p>' +
-        hits.slice(0, 60).map(({ e }) =>
-          '<div class="panel" style="max-width:none">' +
-          '<h3 style="margin-top:0"><a href="' + base + e.url + '">' + esc(e.page) + '</a>' +
-          (e.heading ? ' <span class="muted">· ' + esc(e.heading) + '</span>' : '') + '</h3>' +
-          '<p class="small">' + snippet(e.text, terms) + '</p></div>'
-        ).join('');
-    }
-
-    q.addEventListener('input', run);
-    document.addEventListener('keydown', ev => {
-      if (ev.key === '/' && document.activeElement !== q) { ev.preventDefault(); q.focus(); }
-    });
-    const pre = new URLSearchParams(location.search).get('q');
-    if (pre) { q.value = pre; run(); }
-    q.focus();
-  </script>
+  <section class="blk">
+    <Search base={u("/")} hints={hints}
+            placeholder="Schöneberg · Auschwitz · Figueiredo · 1948 · Aveiro · Halsey" />
+  </section>
 </Base>

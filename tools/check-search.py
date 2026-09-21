@@ -26,8 +26,22 @@ def main():
         sys.exit("check-search: no dist/ -- run a build first")
     wanted = set()
     for page in sorted(SRC.rglob("*.astro")):
-        for m in re.finditer(r"fetch\(\s*base\s*\+\s*'(/[^']+\.json)'", page.read_text(encoding="utf-8")):
+        src = page.read_text(encoding="utf-8")
+        for m in re.finditer(r"fetch\(\s*base\s*\+\s*'(/[^']+\.json)'", src):
             wanted.add(m.group(1).lstrip("/"))
+        # THE KIT'S SEARCH BOX DOES THE FETCHING NOW, AND THIS GATE WENT QUIET
+        # THE MOMENT IT DID. On 22 September the search page stopped carrying
+        # its own fetch() and started importing the shared component; `wanted`
+        # came back empty, and this printed "no page fetches a JSON file" and
+        # passed. Everything below — is the index published, does it parse, is
+        # it empty, is it STALE — stopped running, on the build that changed
+        # it and on every build after.
+        #
+        # A check that cannot find its subject must not report success. The
+        # component fetches /searchindex.json; a page that imports it wants
+        # that file exactly as a hand-written fetch did.
+        if "archive-kit/components/Search.astro" in src:
+            wanted.add("searchindex.json")
     if not wanted:
         print("  ok    check-search — no page fetches a JSON file")
         return
@@ -37,7 +51,9 @@ def main():
         if not f.exists():
             bad.append(f"{rel} — fetched by a page, NOT PUBLISHED"); continue
         try:
-            n = len(json.loads(f.read_text(encoding="utf-8")).get("entries", []))
+            rows = json.loads(f.read_text(encoding="utf-8"))
+            rows = rows.get("entries", []) if isinstance(rows, dict) else rows
+            n = len(rows)
         except Exception as e:
             bad.append(f"{rel} — published but not readable JSON: {e}"); continue
         if n == 0:
@@ -53,7 +69,12 @@ def main():
         # be represented, and a page built after the index was written will not
         # be. That is one number, and it is zero or it is not.
         try:
-            urls = {e.get("url", "") for e in json.loads(f.read_text(encoding="utf-8"))["entries"]}
+            # The estate's schema calls it `h`; this archive's old one called it
+            # `url`. Both are read so the gate keeps working across the change
+            # rather than going quiet on the build that makes it.
+            _r = json.loads(f.read_text(encoding="utf-8"))
+            _r = _r.get("entries", []) if isinstance(_r, dict) else _r
+            urls = {e.get("h") or e.get("url", "") for e in _r}
         except Exception:
             urls = set()
         built, absent = 0, []
