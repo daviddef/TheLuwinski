@@ -1,17 +1,33 @@
 ---
 import Base from '../layouts/Base.astro';
+import Strands from "@daviddef/archive-kit/components/Strands.astro";
 import lines from '../data/lines.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = (h) => base + h;
 
-function geom(lanes) {
-  const BH = 150, BGAP = 164;
-  return {
-    bands: lanes.map((_, i) => ({ y0: 26 + i * BGAP, sp: 26 + i * BGAP + 82, h: BH })),
-    vh: 26 + lanes.length * BGAP + 12,
-  };
-}
-const W = 1040, X0 = 178, X1 = 690, XE = 878;
+/* 21 September 2026. The lanes are the kit's figure now. Three archives drew
+   this by hand — Defranceski's five families arriving in Istria, Falco's five
+   strands of one surname, and this one's lanes — and Falco's own component
+   said outright that it was copying Defranceski's grammar. The geometry that
+   used to live here, and the two hundred units of it that differed from the
+   other two for no reason, are gone.
+
+   WHAT DID NOT MOVE is the argument, which is this archive's alone: a rare
+   name plus a shared address is the shape of the mistake this archive has
+   already made twice, so each household gets a lane and nothing is merged
+   until a document joins it. The two footers under each figure carry that —
+   households of the name not yet on any lane, and names attached to no lane
+   at all — and they stay on the page, because a figure that quietly dropped
+   them would be claiming the lanes are the whole population.
+
+   `ends` here is [place, href, why]; Falco's fan is [place, dashed, why].
+   The kit normalises both rather than guessing, which matters: read one as
+   the other and every destination on this page — Auschwitz, Theresienstadt,
+   Johannesburg — would draw as a dashed "not followed". */
+const toBands = (lanes) => lanes.map((l) => ({
+  key: l.key, tint: l.colour, title: l.label, status: l.conf,
+  read: l.read, href: l.href, spine: l.nodes, fan: l.ends,
+}));
 ---
 <Base title="The lines of the name"
       dek="Every family of Leibholz and of Luwinski this archive has met, kept in separate lanes until something joins them.">
@@ -40,67 +56,13 @@ const W = 1040, X0 = 178, X1 = 690, XE = 878;
     </p>
   </div>
 
-  {lines.sets.map((set) => {
-    const g = geom(set.lanes);
-    return (
+  {lines.sets.map((set) => (
     <section>
       <h2>{set.name}</h2>
       <p class="small muted">{set.dek}</p>
       <figure class="rivers">
-        <svg viewBox={`0 0 ${W} ${g.vh}`} role="img" aria-label={`The lines of ${set.name}`}>
-          {set.lanes.map((lane, li) => {
-            const b = g.bands[li];
-            const n = lane.nodes.length;
-            const step = n > 1 ? (X1 - X0) / (n - 1) : 0;
-            const lineEnd = X0 + step * (n - 1);
-            const ends = lane.ends;
-            const spread = Math.min(b.h / 2 - 22, 14 + ends.length * 13);
-            return (
-              <g>
-                <rect x="0" y={b.y0} width={W} height={b.h} rx="10"
-                      fill={lane.colour} opacity={lane.parallel ? 0.035 : 0.055}
-                      stroke={lane.parallel ? lane.colour : 'none'}
-                      stroke-dasharray={lane.parallel ? '5 5' : ''} stroke-opacity="0.4" />
-                <text x="14" y={b.y0 + 22} class="lane-label" fill={lane.colour}>{lane.label}</text>
-                <text x="14" y={b.y0 + 38} class="lane-conf">{lane.conf}</text>
-                <a href={u(lane.href)}><text x="14" y={b.y0 + b.h - 10} class="lane-read" fill={lane.colour}>{lane.read}</text></a>
-
-                <line x1={X0} y1={b.sp} x2={Math.max(lineEnd, X1)} y2={b.sp} stroke={lane.colour}
-                      stroke-width="5" stroke-linecap="round" opacity="0.32"
-                      stroke-dasharray={lane.parallel ? '12 7' : ''} />
-
-                {ends.map(([e, ehref, ewhy], ei) => {
-                  const y = ends.length === 1 ? b.sp
-                    : b.sp - spread + (ei * (spread * 2) / (ends.length - 1));
-                  const soft = e.endsWith('?');
-                  return (
-                    <g class="rnode">
-                      <title>{e.replace('?','')} — {ewhy}</title>
-                      <path d={`M ${Math.max(lineEnd, X1)} ${b.sp} C ${X1 + 80} ${b.sp}, ${XE - 80} ${y}, ${XE} ${y}`}
-                            fill="none" stroke={lane.colour} stroke-width="1.6" opacity="0.5"
-                            stroke-dasharray={soft ? '3 4' : ''} />
-                      <circle cx={XE} cy={y} r="3.4" fill={lane.colour} fill-opacity={soft ? 0.35 : 1} />
-                      <text x={XE + 9} y={y + 4} class={soft ? 'endlab soft' : 'endlab'}>{e.replace('?','')}</text>
-                    </g>
-                  );
-                })}
-
-                {lane.nodes.map(([place, year, why], i) => {
-                  const x = X0 + i * step;
-                  return (
-                    <g class="rnode">
-                      <title>{place} · {year} — {why}</title>
-                      <circle cx={x} cy={b.sp} r="8.5" fill="var(--panel)" stroke={lane.colour} stroke-width="2.6" />
-                      <circle cx={x} cy={b.sp} r="3" fill={lane.colour} />
-                      <text x={x} y={b.sp - 19} class="place">{place}</text>
-                      <text x={x} y={b.sp + 27} class="year" fill={lane.colour}>{year}</text>
-                    </g>
-                  );
-                })}
-              </g>
-            );
-          })}
-        </svg>
+        <Strands bands={toBands(set.lanes)} u={u}
+                 alt={`Every household of ${set.name} this archive has met, each in its own lane, with what would have to be found to join it to ours`} />
         <figcaption>
           Hover or tab any dot and it says what the document behind it is. The top lane of each
           diagram is the one this archive descends from. <strong>A dashed band is a family of the
@@ -124,8 +86,7 @@ const W = 1040, X0 = 178, X1 = 690, XE = 878;
         </ul>
       </div>
     </section>
-    );
-  })}
+  ))}
 
   <div class="panel">
     <h3>What each lane owes <span class="tag inf">The standing instruction</span></h3>
