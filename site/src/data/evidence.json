@@ -381,7 +381,15 @@
    "title": "The other thirty-one years cannot be read the way the last twenty-five were",
    "source": "Landesarchiv Berlin P Rep. 163, probed 21 September 2026 — no text layer before 1969, and no alphabet inside a letter",
    "kind": "ref",
-   "rows": 68,
+   "rows": 69,
+   "people": 0
+  },
+  {
+   "file": "schoeneberg-1939-guenther-leibholz.tsv",
+   "title": "Günther Leibholz, Schöneberg 1939 Nr. 780 — the first hit in eleven years of reading",
+   "source": "Landesarchiv Berlin P Rep. 163 Nr. 608 p.86, read at the image at scale 6, 21 September 2026",
+   "kind": "ref",
+   "rows": 14,
    "people": 0
   },
   {
@@ -3264,7 +3272,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 70,
+  "files": 71,
   "person_files": 22,
   "people": 187,
   "records": 252,
