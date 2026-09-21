@@ -78,6 +78,7 @@ MANIFEST = {
  "gedenkbuch-fifty.tsv":      ([], "Fifty Leibholz in the Gedenkbuch, and only three of them were born at Schubin", "Bundesarchiv Gedenkbuch, all five result pages read 20 September 2026", "ref"),
  "weinstrasse-pages-of-testimony.tsv": ([], "The Weinstraße household was at Yad Vashem all along, under the eighth spelling", "Yad Vashem Pages of Testimony 5369884 and 1122806, read 21 September 2026", "ref"),
  "atlas-pin-audit.tsv":        ([], "Every atlas pin checked against a gazetteer", "OpenStreetMap Nominatim, 16 pins queried 21 September 2026; haversine distances", "ref"),
+ "kreuzberg-ocr-control.tsv":  ([], "An OCR label is not a searchable index — measured", "Landesarchiv Berlin LABSA, P Rep. 510 Nr. 743 and P Rep. 163 Nr. 602/0628, 22 September 2026", "ref"),
  "melbourne-leibholz-death.tsv": ([], "Joachim Peter Leibholz died at Toorak in 1971, and the index names his parents", "Victorian BDM historical index reg. 26252/1971, searched 21 September 2026", "ref"),
  "spandau-1982-leibholz-schoenfeld.tsv": ([], "A Jewish woman born Leibholz, married Schönfeld, who survived and died in 1982", "Standesamt Spandau, Sterberegister 1982 Nr. 1486, read through pdf.js 21 September 2026 — forename withheld, see the file", "ref"),
  "kreuzberg-reinickendorf-deaths.tsv": ([], "Eleven more death volumes, no hits, and two ways the method almost lied", "Landesarchiv Berlin P Rep. 510 and P Rep. 130, read through pdf.js 21 September 2026", "ref"),

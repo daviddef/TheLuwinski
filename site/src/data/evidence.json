@@ -257,6 +257,14 @@
    "people": 0
   },
   {
+   "file": "kreuzberg-ocr-control.tsv",
+   "title": "An OCR label is not a searchable index — measured",
+   "source": "Landesarchiv Berlin LABSA, P Rep. 510 Nr. 743 and P Rep. 163 Nr. 602/0628, 22 September 2026",
+   "kind": "ref",
+   "rows": 12,
+   "people": 0
+  },
+  {
    "file": "kreuzberg-reinickendorf-deaths.tsv",
    "title": "Eleven more death volumes, no hits, and two ways the method almost lied",
    "source": "Landesarchiv Berlin P Rep. 510 and P Rep. 130, read through pdf.js 21 September 2026",
@@ -2694,7 +2702,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 73,
+  "files": 74,
   "person_files": 22,
   "people": 136,
   "records": 204,
