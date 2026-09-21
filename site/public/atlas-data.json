@@ -42,8 +42,8 @@
   },
   {
    "name": "Sommerfeld",
-   "lat": 52.95,
-   "lon": 12.98,
+   "lat": 52.8,
+   "lon": 13.03,
    "cat": "luw",
    "what": "Where Siegfried was hidden, January 1943 to April 1945",
    "n": 0
@@ -98,7 +98,7 @@
   },
   {
    "name": "Porto",
-   "lat": 41.35,
+   "lat": 41.15,
    "lon": -8.61,
    "cat": "fig",
    "what": "Ivone died and was buried",
@@ -268,7 +268,7 @@
     28.05
    ],
    "to": [
-    41.35,
+    41.15,
     -8.61
    ],
    "color": "#2f5d50",

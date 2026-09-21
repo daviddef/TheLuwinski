@@ -25,6 +25,14 @@
    "people": 0
   },
   {
+   "file": "atlas-pin-audit.tsv",
+   "title": "Every atlas pin checked against a gazetteer",
+   "source": "OpenStreetMap Nominatim, 16 pins queried 21 September 2026; haversine distances",
+   "kind": "ref",
+   "rows": 9,
+   "people": 0
+  },
+  {
    "file": "australia-indexes.tsv",
    "title": "The other Australian instruments — what each one can and cannot hold",
    "source": "Queensland BDM historical index, the Ryerson Index and Trove, all tried 20 September 2026",
@@ -2686,7 +2694,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 72,
+  "files": 73,
   "person_files": 22,
   "people": 136,
   "records": 204,
