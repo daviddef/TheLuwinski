@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import Strands from "@daviddef/archive-kit/components/Strands.astro";
+import BranchRivers from "@daviddef/archive-kit/components/BranchRivers.astro";
 import lines from '../data/lines.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = (h) => base + h;
@@ -20,14 +20,20 @@ const u = (h) => base + h;
    at all — and they stay on the page, because a figure that quietly dropped
    them would be claiming the lanes are the whole population.
 
-   `ends` here is [place, href, why]; Falco's fan is [place, dashed, why].
-   The kit normalises both rather than guessing, which matters: read one as
-   the other and every destination on this page — Auschwitz, Theresienstadt,
-   Johannesburg — would draw as a dashed "not followed". */
-const toBands = (lanes) => lanes.map((l) => ({
-  key: l.key, tint: l.colour, title: l.label, status: l.conf,
-  read: l.read, href: l.href, spine: l.nodes, fan: l.ends,
-}));
+   The component is BranchRivers, which the kit has had since it was promoted
+   out of Defranceschi and which this archive's data already fitted exactly:
+   lanes of { colour, label, conf, nodes, ends }, with unplaced and loose
+   underneath. No adapter was needed at all, which is the clearest sign this
+   figure should never have been written a third time.
+
+   THE TWO FOOTERS ARE PASSED EMPTY TO THE FIGURE ON PURPOSE. BranchRivers
+   will draw unplaced and loose under the rule itself, and this page already
+   lists them below with a link and a sentence each, which is more than the
+   figure can hold. Passing them twice would print them twice; dropping this
+   archive's panel would lose the sentences. So the figure gets the lanes and
+   the page keeps the footers — and they are still THERE, which is the part
+   that matters: a figure that quietly dropped them would be claiming the
+   lanes are the whole population. */
 ---
 <Base title="The lines of the name"
       dek="Every family of Leibholz and of Luwinski this archive has met, kept in separate lanes until something joins them.">
@@ -61,8 +67,7 @@ const toBands = (lanes) => lanes.map((l) => ({
       <h2>{set.name}</h2>
       <p class="small muted">{set.dek}</p>
       <figure class="rivers">
-        <Strands bands={toBands(set.lanes)} u={u}
-                 alt={`Every household of ${set.name} this archive has met, each in its own lane, with what would have to be found to join it to ours`} />
+        <BranchRivers rivers={{ ...set, unplaced: [], loose: [] }} caption={set.dek} />
         <figcaption>
           Hover or tab any dot and it says what the document behind it is. The top lane of each
           diagram is the one this archive descends from. <strong>A dashed band is a family of the
