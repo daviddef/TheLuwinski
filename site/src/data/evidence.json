@@ -225,6 +225,14 @@
    "people": 0
   },
   {
+   "file": "gedenkbuch-leibholz-findings.tsv",
+   "title": "The fifty opened — deportation, death, and two more under LAIBHOLZ",
+   "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
+  },
+  {
    "file": "giddins-norton-end.tsv",
    "title": "1861 and 1871 censuses, Norton End, Baldock",
    "source": "RG9/816 f.69; RG10/1365 f.27",
@@ -285,8 +293,8 @@
    "title": "The Bundesarchiv Gedenkbuch",
    "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
    "kind": "person",
-   "rows": 4,
-   "people": 4
+   "rows": 52,
+   "people": 52
   },
   {
    "file": "leibholz-luwinski-marriage.tsv",
@@ -796,6 +804,24 @@
    ]
   },
   {
+   "name": "Arthur Leibholz",
+   "slug": "arthur-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 02.01.1878 · birthplace: Hammerstein/Schlochau/Westpreußen · residence: Berlin (Schöneberg) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 02.03.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100868 · status: NAMESAKE, NOT A DUPLICATE: 2 distinct men named Arthur Leibholz are recorded; this is the one born 02.01.1878, the other born 27.06.1881. DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    },
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 27.06.1881 · birthplace: Karwen/Stolp/Pommern · residence: Hamburg · deportation_1: from Hamburg → Minsk, Ghetto am 08.11.1941 · death_date: not documented · death_place: not documented · gedenkbuch_id: en909743 · status: NAMESAKE, NOT A DUPLICATE: 2 distinct men named Arthur Leibholz are recorded; this is the one born 27.06.1881, the other born 02.01.1878. DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "B Wear",
    "slug": "b-wear",
    "records": [
@@ -804,6 +830,18 @@
      "title": "BT 27 outbound passenger lists",
      "source": "TNA BT 27",
      "detail": "entry: 00226 · title: MAST · sex: Male · birth_year: 1937 · age: 2 · occupation: Nil · ship: Dunvegan Castle · line: Union Castle · dep_day: 10 · dep_month: 8 · dep_year: 1939 · dep_port: London · dest_port: Durban (Port Natal) · piece: TNA/BT27/1542/00/0024"
+    }
+   ]
+  },
+  {
+   "name": "Betty Leibholz née Pollack",
+   "slug": "betty-leibholz-nee-pollack",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 05.08.1902 · birthplace: not recorded · residence: Berlin (Charlottenburg) · deportation_1: not deported — took her own life · death_date: 23.12.1935 · death_place: Berlin · gedenkbuch_id: en1100744 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
     }
    ]
   },
@@ -868,6 +906,18 @@
    ]
   },
   {
+   "name": "Chanah Chana Leibholz",
+   "slug": "chanah-chana-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 03.11.1937 · birthplace: Berlin/Stadt Berlin · residence: Berlin (Friedrichshain) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 03.03.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100769 · status: DOCUMENTED — Berlin-born; parentage not recorded here, relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "Charlotte L Hawkins",
    "slug": "charlotte-l-hawkins",
    "records": [
@@ -876,6 +926,18 @@
      "title": "1891 census, Watford",
      "source": "RG12, Watford",
      "detail": "relationship: Wife · marital: Married · sex: Female · age: 26 · birth_year: 1865 · occupation: - · birth_place: Wigginton, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Charlotte Leibholz née Tworoger",
+   "slug": "charlotte-leibholz-nee-tworoger",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 28.06.1891 · birthplace: Grabow/Schildberg/Posen · residence: Hamburg · deportation_1: from Hamburg → Minsk, Ghetto am 08.11.1941 · death_date: not documented · death_place: not documented · gedenkbuch_id: en909747 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
     }
    ]
   },
@@ -894,6 +956,18 @@
      "title": "This family in FamilySearch's South African collections",
      "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
      "detail": "event: the Durban Wears — Cecil Joseph Wear and Katie, born Beck, married Durban 20 February 1912, with at least eight children baptised 1912-1931, and Cecil Wentworth Wear who married Doreen Mary James in 1933 · date: — · place: Durban, Natal · age_given: — · record: Anglican parish registers and Natal civil registration · note: NOT OURS, and they are the majority of the 111. Any surname search for WEAR in South Africa is mostly this family."
+    }
+   ]
+  },
+  {
+   "name": "Dorothea Dukelsky née Leibholz",
+   "slug": "dorothea-dukelsky-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 18.09.1878 · birthplace: Berlin/Stadt Berlin · residence: Berlin (Schöneberg) · deportation_1: from Berlin → Theresienstadt, Ghetto am 08.07.1942 · deportation_2: → Treblinka, Vernichtungslager am 19.09.1942 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1021456 · status: DOCUMENTED — Berlin-born; parentage not recorded here, relationship NOT established"
     }
    ]
   },
@@ -934,6 +1008,18 @@
    ]
   },
   {
+   "name": "Elisabeth Leibholz née Pilz",
+   "slug": "elisabeth-leibholz-nee-pilz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 02.08.1877 · birthplace: Ostrowo/Posen · residence: Berlin (Wilmersdorf) · deportation_1: from Berlin → Riga am 05.09.1942 · death_date: 08.09.1942 · death_place: Riga · gedenkbuch_id: en1100902 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "Elizabeth Giddins",
    "slug": "elizabeth-giddins",
    "records": [
@@ -948,6 +1034,78 @@
      "title": "1861 and 1871 censuses, Norton End, Baldock",
      "source": "RG9/816 f.69; RG10/1365 f.27",
      "detail": "census: 1871 · relationship: Wife · sex: Female · age: 57 · birth_year: 1814 · occupation: Platting · birth_place: Norton, Hertfordshire"
+    }
+   ]
+  },
+  {
+   "name": "Elli Struzik née Leibholz",
+   "slug": "elli-struzik-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 07.11.1915 · birthplace: Berlin/Stadt Berlin · residence: Berlin (Mitte) · deportation_1: from Berlin → Litzmannstadt (Lodz), Ghetto am 01.11.1941 · deportation_2: → Kulmhof (Chelmno), Vernichtungslager am 13.05.1942 · death_date: 00.05.1942 · death_place: Kulmhof (Chelmno), Vernichtungslager · gedenkbuch_id: en1169257 · status: DOCUMENTED — Berlin-born; parentage not recorded here, relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Else Bodin née Leibholz",
+   "slug": "else-bodin-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 12.08.1884 · birthplace: Hammerstein/Schlochau/Westpreußen · residence: Berlin (Prenzlauer Berg) · deportation_1: from Berlin → Piaski, Ghetto am 28.03.1942 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1038480 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Else Heinrich née Leibholz",
+   "slug": "else-heinrich-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 28.02.1879 · birthplace: Rummelsburg/Pommern · residence: Berlin (Charlottenburg) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 06.03.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1069472 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Else Leibholz née Seelig",
+   "slug": "else-leibholz-nee-seelig",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 20.07.1889 · birthplace: Glowitz/Stolp/Pommern · residence: Berlin (Tiergarten) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 17.05.1943 · deportation_2: → Natzweiler, Konzentrationslager am 30.07.1943 · death_date: 00.08.1943 · death_place: Natzweiler, Konzentrationslager · gedenkbuch_id: en1100883 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Else Leibholz née Soldin",
+   "slug": "else-leibholz-nee-soldin",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 23.09.1884 · birthplace: Schlochau/Westpreußen · residence: Berlin · deportation_1: → Auschwitz, Konzentrations- und Vernichtungslager am 00.00.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en909744 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Else Oliven née Leibholz",
+   "slug": "else-oliven-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 08.12.1879 · birthplace: Karwen/Stolp/Pommern · residence: Dortmund; Düsseldorf · deportation_1: from Düsseldorf → Litzmannstadt (Lodz), Ghetto am 27.10.1941 · deportation_2: → Kulmhof (Chelmno), Vernichtungslager am 06.05.1942 · death_date: 07.05.1942 · death_place: Kulmhof (Chelmno), Vernichtungslager · gedenkbuch_id: en939567 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
     }
    ]
   },
@@ -1056,6 +1214,18 @@
      "title": "1891 census, Watford",
      "source": "RG12, Watford",
      "detail": "relationship: Mother (as transcribed) · marital: Widow · sex: Female · age: 32 · birth_year: 1859 · occupation: - · birth_place: Aldenham, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Erna Leibholz née Hammer",
+   "slug": "erna-leibholz-nee-hammer",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 20.01.1897 · birthplace: Berlin/Stadt Berlin · residence: Berlin (Neukölln) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 04.03.1943 · death_date: not documented · death_place: Auschwitz, Konzentrations- und Vernichtungslager · gedenkbuch_id: en1100839 · status: DOCUMENTED — Berlin-born; parentage not recorded here, relationship NOT established"
     }
    ]
   },
@@ -1189,6 +1359,30 @@
    ]
   },
   {
+   "name": "Freudchen Fritze Friederike Stahl née Leibholz",
+   "slug": "freudchen-fritze-friederike-stahl-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 15.03.1865 · birthplace: Zettin/Rummelsburg/Pommern · residence: Berlin (Prenzlauer Berg) · deportation_1: from Berlin → Theresienstadt, Ghetto am 17.08.1942 · death_date: 20.01.1943 · death_place: Theresienstadt, Ghetto · gedenkbuch_id: en1165312 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Frieda Frida Czarlinski née Leibholz",
+   "slug": "frieda-frida-czarlinski-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 21.11.1886 · birthplace: Bärwalde/Neustettin/Pommern · residence: Berlin (Charlottenburg) · deportation_1: from Berlin → Minsk, Ghetto am 14.11.1941 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1025216 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "GEORG",
    "slug": "georg",
    "records": [
@@ -1197,6 +1391,18 @@
      "title": "The Berlin directory against the 1939 census, household by household",
      "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
      "detail": "directory_entry: 1938 and 1939: \"Georg, WÄSCHEREI, SO16 MICHAELKIRCHSTRASSE 26\" — a laundry. · mapping_the_lives: Leibholz, GEORG, born 07.06.1884, died 13.05.1942, Michaelkirchstr. 26, Mitte — with LIEDIA [LYDIA] née PERL, born 16.01.1885, died 13.05.1942, same address · what it adds: already held by this archive from the census; the TRADE is new. Nothing here disturbs the argument on /leibholz/ that Georg was not Jacob's brother — he was born at Hammerstein, the brothers at Schubin."
+    }
+   ]
+  },
+  {
+   "name": "Georg Laibholz",
+   "slug": "georg-laibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 01.01.1883 · birthplace: not recorded · residence: Berlin · deportation_1: → Auschwitz, Konzentrations- und Vernichtungslager · death_date: not documented · death_place: Auschwitz, Konzentrations- und Vernichtungslager · gedenkbuch_id: en1728889"
     }
    ]
   },
@@ -1220,7 +1426,7 @@
      "file": "leibholz-gedenkbuch.tsv",
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
-     "detail": "born: 07.06.1884 · birthplace: Hammerstein/Schlochau/Westpreußen · residence: Berlin (Mitte) · deportation_1: from Berlin 01.11.1941 → Litzmannstadt (Lodz), Ghetto · deportation_2: 13.05.1942 → Kulmhof (Chelmno), Vernichtungslager · death_date: not documented · death_place: Kulmhof (Chelmno), Vernichtungslager · gedenkbuch_id: en1100801 · status: DOCUMENTED — but NOT a brother, see notes"
+     "detail": "born: 07.06.1884 · birthplace: Hammerstein/Schlochau/Westpreußen · residence: Berlin (Mitte) · deportation_1: from Berlin → Litzmannstadt (Lodz), Ghetto am 01.11.1941 · deportation_2: → Kulmhof (Chelmno), Vernichtungslager am 13.05.1942 · death_date: not documented · death_place: Kulmhof (Chelmno), Vernichtungslager · gedenkbuch_id: en1100801 · status: DOCUMENTED — Hammerstein-born, NOT a brother; the Pommern/Westpreußen Leibholz are a separate stock"
     },
     {
      "file": "yadvashem-leibholz.tsv",
@@ -1306,6 +1512,30 @@
    ]
   },
   {
+   "name": "Gertrud Leibholz née Leibke",
+   "slug": "gertrud-leibholz-nee-leibke",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 13.07.1894 · birthplace: Berlin/Stadt Berlin · residence: Berlin (Wilmersdorf) · deportation_1: not deported — took her own life · death_date: 27.02.1943 · death_place: Berlin · gedenkbuch_id: en1100814 · status: DOCUMENTED — Berlin-born; parentage not recorded here, relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Gertrud Meyer née Leibholz",
+   "slug": "gertrud-meyer-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 09.03.1899 · birthplace: Glowitz/Stolp/Pommern · residence: Berlin (Schöneberg) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 04.03.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1119727 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "Gertrude Wear",
    "slug": "gertrude-wear",
    "records": [
@@ -1326,18 +1556,6 @@
      "title": "BT 27 outbound passenger lists",
      "source": "TNA BT 27",
      "detail": "entry: 00189 · title: MR · sex: Male · birth_year: 1890 · age: 49 · occupation: Machine minder (transcribed \"Machine minister\") · ship: Durban Castle · line: Union-Castle · dep_day: 5 · dep_month: 4 · dep_year: 1939 · dep_port: London · dest_port: Cape · piece: TNA/BT27/1540/00/0042"
-    }
-   ]
-  },
-  {
-   "name": "HANS LEIBHOLZ",
-   "slug": "hans-leibholz",
-   "records": [
-    {
-     "file": "mappingthelives-leibholz.tsv",
-     "title": "The Berlin directory against the 1939 census, household by household",
-     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
-     "detail": "directory_entry: the 1938-43 directories have no Leibholz in Danckelmannstraße; the household is below the householder line"
     }
    ]
   },
@@ -1384,6 +1602,24 @@
    ]
   },
   {
+   "name": "Hans Leibholz",
+   "slug": "hans-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 25.01.1912 · birthplace: Preußisch Friedland/Schlochau/Westpreußen · residence: Berlin (Charlottenburg); Berlin (Tiergarten) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 12.01.1943 · death_date: 22.02.1943 · death_place: Auschwitz, Vernichtungslager · gedenkbuch_id: en1100738 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    },
+    {
+     "file": "mappingthelives-leibholz.tsv",
+     "title": "The Berlin directory against the 1939 census, household by household",
+     "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
+     "detail": "directory_entry: the 1938-43 directories have no Leibholz in Danckelmannstraße; the household is below the householder line"
+    }
+   ]
+  },
+  {
    "name": "Harriet Reeves",
    "slug": "harriet-reeves",
    "records": [
@@ -1392,6 +1628,54 @@
      "title": "1911 census, Letchworth",
      "source": "RG14, Letchworth",
      "detail": "relationship: Head · marital: Widow · sex: Female · age: 36 · birth_year: 1875 · occupation: - · birth_place: Bassingbourn, Cambs"
+    }
+   ]
+  },
+  {
+   "name": "Hedwig Nehemias née Leibholz",
+   "slug": "hedwig-nehemias-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 25.05.1898 · birthplace: Tempelburg/Neustettin/Pommern · residence: Berlin (Mitte) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 09.12.1942 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1126324 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Heinz Paul Hugo Leibholz",
+   "slug": "heinz-paul-hugo-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 18.06.1922 · birthplace: Berlin/Stadt Berlin · residence: Paderborn (Umschulungslager Grüner Weg); Berlin (Neukölln) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 04.03.1943 · death_date: 03.06.1943 (declared dead) · death_place: Auschwitz, Vernichtungslager · gedenkbuch_id: en1100751 · status: DOCUMENTED — Berlin-born; parentage not recorded here, relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Helene Kamnitzer née Leibholz",
+   "slug": "helene-kamnitzer-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 24.03.1883 · birthplace: Karwen/Stolp/Pommern · residence: Berlin · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 26.02.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1086109 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Helene Leibholz née Davidsohn",
+   "slug": "helene-leibholz-nee-davidsohn",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 12.08.1870 · birthplace: Danzig/Westpreußen · residence: Berlin (Wilmersdorf) · deportation_1: from Berlin → Theresienstadt, Ghetto am 17.08.1942 · death_date: 19.09.1942 · death_place: Theresienstadt, Ghetto · gedenkbuch_id: en1100938 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
     }
    ]
   },
@@ -1489,6 +1773,18 @@
    ]
   },
   {
+   "name": "Herta Hertha Feldtmann née Leibholz",
+   "slug": "herta-hertha-feldtmann-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 18.01.1890 · birthplace: Hammerstein/Schlochau/Westpreußen · residence: Berlin (Prenzlauer Berg) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 02.03.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1015432 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "Hilda Castle",
    "slug": "hilda-castle",
    "records": [
@@ -1521,6 +1817,18 @@
      "title": "Transvaal court files",
      "source": "National Archives of South Africa, WLD and TPD series",
      "detail": "ref: WLD 2545/1950 · depot: TAB · division: Witwatersrand Local Division · year: 1950 · plaintiff: IVONE LUWENSKI (formerly de Witt, born Figueiredo) · defendant: KURT · action: RESTITUTION OF CONJUGAL RIGHTS · source: NAAIRS screen photographed into the family tree, photos 9500067 and 9500069 · status: NEW — and she is the plaintiff"
+    }
+   ]
+  },
+  {
+   "name": "Ida Leibholz née Neuwahl",
+   "slug": "ida-leibholz-nee-neuwahl",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 04.12.1886 · birthplace: Gelsenkirchen/Westfalen · residence: Frankfurt a. Main · deportation_1: from Westerbork → Sobibor, Vernichtungslager am 23.03.1943 · death_date: 26.03.1943 (declared dead) · death_place: Sobibor, Vernichtungslager · gedenkbuch_id: en909746 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
     }
    ]
   },
@@ -1634,7 +1942,7 @@
      "file": "leibholz-gedenkbuch.tsv",
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
-     "detail": "born: 08.08.1884 · birthplace: Schubin (poln. Szubin)/Posen · residence: Berlin (Schöneberg) · deportation_1: from Berlin 26.02.1943 → Auschwitz, Konzentrations- und Vernichtungslager · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100957 · status: DOCUMENTED"
+     "detail": "born: 08.08.1884 · birthplace: Schubin (poln. Szubin)/Posen · residence: Berlin (Schöneberg) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 26.02.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100957 · status: DOCUMENTED — Schubin-born, the archive's own family; see berlin-postwar-luwinski and the Weinstraße household"
     },
     {
      "file": "yadvashem-leibholz.tsv",
@@ -1732,6 +2040,18 @@
    ]
   },
   {
+   "name": "Jenny Leibholz née Rosenberg",
+   "slug": "jenny-leibholz-nee-rosenberg",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 11.02.1893 · birthplace: Loosen/Schlochau/Westpreußen · residence: Berlin (Friedrichshain) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 03.03.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100655 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "Jeremiah R Taylor",
    "slug": "jeremiah-r-taylor",
    "records": [
@@ -1740,6 +2060,18 @@
      "title": "1871 census, Jamaica Road, Bermondsey",
      "source": "RG10 piece 641 folio 40 schedule 40",
      "detail": "relationship: Lodger · sex: Male · age: 71 · birth_year: 1800 · occupation: - · birth_place: Bermondsey, Surrey, England"
+    }
+   ]
+  },
+  {
+   "name": "Johanna Simon née Leibholz",
+   "slug": "johanna-simon-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 18.04.1889 · birthplace: Dammen/Stolp/Pommern · residence: Berlin (Neukölln) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 14.12.1942 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1162056 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
     }
    ]
   },
@@ -1949,6 +2281,18 @@
    ]
   },
   {
+   "name": "Kurt Leibholz",
+   "slug": "kurt-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 04.11.1927 · birthplace: Glowitz/Stolp/Pommern · residence: Berlin (Tiergarten) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 17.05.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1101008 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "L A R Wear",
    "slug": "l-a-r-wear",
    "records": [
@@ -1997,6 +2341,30 @@
    ]
   },
   {
+   "name": "Laura Leibholz née Rothenberg",
+   "slug": "laura-leibholz-nee-rothenberg",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 23.09.1884 · birthplace: Schlochau/Westpreußen · residence: Berlin (Charlottenburg); Berlin (Tiergarten) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 12.01.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100758 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Leo Leibholz",
+   "slug": "leo-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 15.03.1876 · birthplace: Karwen/Stolp/Pommern · residence: Frankfurt a. Main · deportation_1: from Westerbork → Sobibor, Vernichtungslager am 23.03.1943 · death_date: 26.03.1943 (declared dead) · death_place: Sobibor, Vernichtungslager · gedenkbuch_id: en344902 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "Leonard Aubrey Robert WEAR",
    "slug": "leonard-aubrey-robert-wear",
    "records": [
@@ -2017,6 +2385,42 @@
      "title": "This family in FamilySearch's South African collections",
      "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
      "detail": "event: DEATH OR BURIAL · date: — · place: — · age_given: — · record: NOT PRESENT"
+    }
+   ]
+  },
+  {
+   "name": "Lidia Laibholz",
+   "slug": "lidia-laibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 00.00.1884 · birthplace: not recorded · residence: Berlin · deportation_1: → Auschwitz, Konzentrations- und Vernichtungslager · death_date: not documented · death_place: Auschwitz, Konzentrations- und Vernichtungslager · gedenkbuch_id: en653479"
+    }
+   ]
+  },
+  {
+   "name": "Lieselott Lieselotte Leibholz",
+   "slug": "lieselott-lieselotte-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 22.10.1920 · birthplace: Preußisch Friedland/Schlochau/Westpreußen · residence: Berlin (Charlottenburg) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 12.01.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100799 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Lieselotte Leibholz",
+   "slug": "lieselotte-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 16.11.1923 · birthplace: Glowitz/Stolp/Pommern · residence: Berlin (Tiergarten) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 17.05.1943 · death_date: 06.12.1943 · death_place: Auschwitz, Vernichtungslager · gedenkbuch_id: en1100958 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
     }
    ]
   },
@@ -2135,6 +2539,18 @@
    ]
   },
   {
+   "name": "Lydia Leibholz née Perl",
+   "slug": "lydia-leibholz-nee-perl",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 16.01.1885 · birthplace: Bischofstein/Rössel/Ostpreußen · residence: Berlin (Mitte) · deportation_1: from Berlin → Litzmannstadt (Lodz), Ghetto am 01.11.1941 · deportation_2: → Kulmhof (Chelmno), Vernichtungslager am 13.05.1942 · death_date: 00.05.1942 · death_place: Kulmhof (Chelmno), Vernichtungslager · gedenkbuch_id: en1100917 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "M Wear",
    "slug": "m-wear",
    "records": [
@@ -2160,6 +2576,18 @@
    "register_id": 9500135,
    "register_name": "Manfred Joachim Luwinski",
    "register_match": "exact"
+  },
+  {
+   "name": "Martha Bernstein née Leibholz",
+   "slug": "martha-bernstein-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 24.07.1877 · birthplace: Bärwalde/Neustettin/Pommern · residence: Berlin (Charlottenburg) · deportation_1: from Berlin → Kowno (Kauen), Fort IX am 17.11.1941 · death_date: 25.11.1941 · death_place: Kowno (Kauen), Fort IX · gedenkbuch_id: en1040046 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
   },
   {
    "name": "Martha Giddings",
@@ -2252,6 +2680,18 @@
    ]
   },
   {
+   "name": "Max Leibholz",
+   "slug": "max-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 07.07.1877 · birthplace: Karwen/Stolp/Pommern · residence: Berlin (Schöneberg) · deportation_1: from Berlin → Theresienstadt, Ghetto am 22.07.1942 · deportation_2: → Treblinka, Vernichtungslager am 21.09.1942 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100881 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "ONE INCONSISTENCY, RECORDED RATHER THAN SMOOTHED",
    "slug": "one-inconsistency-recorded-rather-than-smoothed",
    "records": [
@@ -2295,7 +2735,7 @@
      "file": "leibholz-gedenkbuch.tsv",
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
-     "detail": "born: 13.05.1887 · birthplace: Schubin (poln. Szubin)/Posen · residence: Berlin (Wilmersdorf) · deportation_1: from Berlin 17.03.1943 → Theresienstadt, Ghetto · deportation_2: 16.10.1944 → Auschwitz, Konzentrations- und Vernichtungslager · death_date: 16.10.1944 · death_place: Auschwitz, Vernichtungslager · gedenkbuch_id: en1100894 · status: DOCUMENTED"
+     "detail": "born: 13.05.1887 · birthplace: Schubin (poln. Szubin)/Posen · residence: Berlin (Wilmersdorf) · deportation_1: from Berlin → Theresienstadt, Ghetto am 17.03.1943 · deportation_2: → Auschwitz, Konzentrations- und Vernichtungslager am 16.10.1944 · death_date: 16.10.1944 · death_place: Auschwitz, Vernichtungslager · gedenkbuch_id: en1100894 · status: DOCUMENTED — Schubin-born, the archive's own family"
     },
     {
      "file": "yadvashem-leibholz.tsv",
@@ -2345,6 +2785,18 @@
    ]
   },
   {
+   "name": "Regina Weile née Leibholz",
+   "slug": "regina-weile-nee-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 06.03.1872 · birthplace: Hammerstein/Schlochau/Westpreußen · residence: Berlin (Wilmersdorf) · deportation_1: from Berlin → Theresienstadt, Ghetto am 14.09.1942 · death_date: 24.03.1943 · death_place: Theresienstadt, Ghetto · gedenkbuch_id: en1177062 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "Robert Bloom",
    "slug": "robert-bloom",
    "records": [
@@ -2381,6 +2833,18 @@
    ]
   },
   {
+   "name": "Rosa Leibholz née Jacobsohn",
+   "slug": "rosa-leibholz-nee-jacobsohn",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 19.09.1878 · birthplace: Danzig/Westpreußen · residence: Berlin (Schöneberg) · deportation_1: from Berlin → Riga, Ghetto am 13.01.1942 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100840 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "Rosetta E Wear",
    "slug": "rosetta-e-wear",
    "records": [
@@ -2395,6 +2859,30 @@
      "title": "1891 census, Watford",
      "source": "RG12, Watford",
      "detail": "relationship: Daughter · marital: Single · sex: Female · age: 5 · birth_year: 1886 · occupation: Scholar · birth_place: Bermondsey, Surrey, England"
+    }
+   ]
+  },
+  {
+   "name": "Ruth Leibholz",
+   "slug": "ruth-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 07.08.1923 · birthplace: Berlin (Neukölln)/Stadt Berlin · residence: Berlin (Neukölln) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 01.03.1943 · death_date: not documented · death_place: Auschwitz, Konzentrations- und Vernichtungslager · gedenkbuch_id: en1100886 · status: DOCUMENTED — Berlin-born; parentage not recorded here, relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Ruth Leibholz née Klonower",
+   "slug": "ruth-leibholz-nee-klonower",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 23.11.1907 · birthplace: Berlin/Stadt Berlin · residence: Berlin (Friedrichshain) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 03.03.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100964 · status: DOCUMENTED — Berlin-born; parentage not recorded here, relationship NOT established"
     }
    ]
   },
@@ -2451,7 +2939,7 @@
      "file": "leibholz-gedenkbuch.tsv",
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
-     "detail": "born: 28.06.1877 · birthplace: Schubin (poln. Szubin)/Posen · residence: Berlin (Kreuzberg) · deportation_1: → Auschwitz, Konzentrations- und Vernichtungslager · death_date: 10.04.1943 · death_place: Auschwitz, Vernichtungslager · gedenkbuch_id: en909753 · status: DOCUMENTED"
+     "detail": "born: 28.06.1877 · birthplace: Schubin (poln. Szubin)/Posen · residence: Berlin (Kreuzberg) · deportation_1: → Auschwitz, Konzentrations- und Vernichtungslager · death_date: 10.04.1943 · death_place: Auschwitz, Vernichtungslager · gedenkbuch_id: en909753 · status: DOCUMENTED — Schubin-born, the archive's own family"
     }
    ],
    "register_id": 9500025,
@@ -2564,6 +3052,18 @@
    "register_match": "exact"
   },
   {
+   "name": "Sophie Leibholz née Rothenberg",
+   "slug": "sophie-leibholz-nee-rothenberg",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 09.01.1887 · birthplace: Schlochau/Westpreußen · residence: Berlin (Schöneberg); Berlin (Mitte) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 01.03.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100773 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "Stanley W SHENTON",
    "slug": "stanley-w-shenton",
    "records": [
@@ -2594,14 +3094,74 @@
    ]
   },
   {
+   "name": "Walter Leibholz",
+   "slug": "walter-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 20.09.1922 · birthplace: Glowitz/Stolp/Pommern · residence: Berlin (Tiergarten) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 01.03.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100861 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Werner P. Leibholz",
+   "slug": "werner-p-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 06.03.1907 · birthplace: Berlin/Stadt Berlin · residence: Berlin (Wilmersdorf) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 09.12.1942 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100975 · status: DOCUMENTED — Berlin-born; parentage not recorded here, relationship NOT established"
+    }
+   ]
+  },
+  {
    "name": "Wilhelm Leibholz",
    "slug": "wilhelm-leibholz",
    "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 28.12.1890 · birthplace: Glowitz/Stolp/Pommern · residence: Berlin (Neukölln) · deportation_1: from Berlin → Theresienstadt, Ghetto am 17.03.1943 · deportation_2: → Auschwitz, Konzentrations- und Vernichtungslager am 29.09.1944 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100820 · status: NAMESAKE, NOT A DUPLICATE: 2 distinct men named Wilhelm Leibholz are recorded; this is the one born 28.12.1890, the other born 15.12.1904. DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    },
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 15.12.1904 · birthplace: Tempelburg/Neustettin/Pommern · residence: Berlin (Friedrichshain) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 03.03.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100834 · status: NAMESAKE, NOT A DUPLICATE: 2 distinct men named Wilhelm Leibholz are recorded; this is the one born 15.12.1904, the other born 28.12.1890. DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    },
     {
      "file": "yadvashem-leibholz.tsv",
      "title": "Yad Vashem, Central Database of Shoah Victims' Names",
      "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
      "detail": "yv_record: List of Deportation from Berlin; List of Theresienstadt Camp Inmates; List of Murdered Jews from Germany · date_of_birth: 28/12/1890 · place_of_birth: Berlin, Germany"
+    }
+   ]
+  },
+  {
+   "name": "Wilhelm Willi Leibholz",
+   "slug": "wilhelm-willi-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 30.12.1887 · birthplace: Berlin/Stadt Berlin · residence: Berlin (Friedrichshain) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 04.03.1943 · death_date: 03.05.1943 (declared dead) · death_place: Auschwitz, Vernichtungslager · gedenkbuch_id: en1101038 · status: DOCUMENTED — Berlin-born; parentage not recorded here, relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Willi Leibholz",
+   "slug": "willi-leibholz",
+   "records": [
+    {
+     "file": "leibholz-gedenkbuch.tsv",
+     "title": "The Bundesarchiv Gedenkbuch",
+     "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
+     "detail": "born: 00.00.1893 · birthplace: not recorded · residence: Berlin · deportation_1: → Auschwitz, Konzentrations- und Vernichtungslager · death_date: not documented · death_place: Auschwitz, Konzentrations- und Vernichtungslager · gedenkbuch_id: en1633831 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
     }
    ]
   },
@@ -2702,10 +3262,10 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 74,
+  "files": 75,
   "person_files": 22,
-  "people": 136,
-  "records": 204,
+  "people": 180,
+  "records": 252,
   "linked_to_register": 11
  }
 }
