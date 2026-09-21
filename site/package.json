@@ -21,7 +21,7 @@
     "check:pin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpin.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#25ebbed",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#9ff6320",
     "astro": "^5.18.2"
   },
   "devDependencies": {
