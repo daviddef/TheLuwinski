@@ -103,6 +103,51 @@ MANIFEST = {
 
 NOT_A_PERSON = re.compile(r"^(married|marriage|#|-|—|\s*)$", re.I)
 
+# Words that occur in a sentence and not inside a person's name. Used only to
+# tell a NAME from a ROW LABEL in the narrative files; see person_name below.
+_PROSE = re.compile(
+    r"\b(who|this|that|and|the|with|from|which|because|not|are|was|were|her|his|"
+    r"their|its|has|have|been|why|how|when|where|all|every|same|own|named|read|"
+    r"found|corrected|archive|street|strasse|straße)\b", re.I)
+
+
+def person_name(raw):
+    """The person named in a 'who' cell, or None if the cell is a row label.
+
+    THE FAULT THIS FIXES. The narrative files write their key column as
+    "NAME — what the row is about", and some rows are pure commentary with no
+    name in them at all. Until 21 September the whole cell was taken as a
+    person, so the archive counted "*** AND A CHILD THIS ARCHIVE DID NOT HAVE
+    ***" and "AFRIKANISCHE STRASSE 37 — and a namesake to keep apart" among its
+    people. Two costs: the published count overstated, and check-evidence's
+    promise degraded from "this PERSON reaches a reader" to "this STRING is
+    somewhere on the site" — which it trivially was, because the sentence is
+    printed on the page, so those rows passed for the wrong reason.
+
+    So: cut at the em dash to recover the name, then require what is left to
+    look like one. Nothing is dropped silently — build-evidence prints every
+    rejected cell, because a filter you cannot see is the fault this archive
+    keeps having.
+    """
+    v = raw.split(" — ")[0].split(" -- ")[0]
+    v = v.split(" (")[0]                      # "IVONE LUWENSKI (formerly de Witt...)"
+    if "," in v:                              # "ARTHUR, THE SANITÄTSRAT" -> "ARTHUR",
+        head, tail = v.split(",", 1)          # but NOT "Leibholz, Samuel" -> "Leibholz"
+        if _PROSE.search(tail):
+            v = head
+    v = v.strip().rstrip(",;:")
+    if not v or NOT_A_PERSON.match(v):
+        return None
+    if v[0] in "*(\"'" or v[0].islower():
+        return None
+    if any(ch.isdigit() for ch in v):
+        return None
+    if len(v.split()) > 6:
+        return None
+    if _PROSE.search(v):
+        return None
+    return v
+
 # Columns that must never be published, per file. The free-text notes on the
 # match-derived file name the LIVING match holder who supplied the tree, and
 # living DNA match holders are published as role, country and cM and in no other
@@ -132,6 +177,7 @@ def main():
 
     people = {}
     files_out = []
+    rejected = []
     for fname, (keys, title, source, kind) in sorted(MANIFEST.items()):
         path = DATA / fname
         if not path.exists():
@@ -143,11 +189,15 @@ def main():
                 continue
             for k in keys:
                 raw = (r.get(k) or "").strip()
-                if not raw or NOT_A_PERSON.match(raw):
+                if not raw:
                     continue
                 if keys == ["first", "last"]:
                     continue
-                named.append((raw, r))
+                nm = person_name(raw)
+                if nm is None:
+                    rejected.append((fname, raw))
+                    continue
+                named.append((nm, r))
             if keys == ["first", "last"]:
                 nm = ((r.get("first") or "").strip() + " " + (r.get("last") or "").strip()).strip()
                 if nm and not NOT_A_PERSON.match(nm):
@@ -226,6 +276,11 @@ def main():
           + (f", {len(ambiguous)} NOT linked because the name is ambiguous" if ambiguous else ""))
     for a in ambiguous:
         print("  ambiguous, left unlinked:", a)
+    if rejected:
+        print(f"  {len(rejected)} key cell(s) read as a ROW LABEL rather than a person and NOT "
+              f"counted — if a real name is in this list, the data or the rule is wrong:")
+        for fn, raw in rejected:
+            print(f"      {fn}: {raw[:100]}")
     if strict_missing:
         print("  declared but absent:", ", ".join(strict_missing))
     return 0
