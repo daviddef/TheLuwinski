@@ -1,0 +1,83 @@
+---
+/* Everyone one person is related to. The chart, the graph builder and the
+   styles are all the kit's — six other archives have had this page for some
+   time and this one did not, because its register keeps kin in a shape the
+   builder does not read.
+
+   THE ADAPTER IS THE WHOLE OF THE LOCAL WORK. Every other archive stores kin
+   as parents/children/siblings arrays. This one stores a single `rel` list per
+   person, each entry a prose label and an id — "Her son", "His brother",
+   "Her ex-husband" — which is what the source export gives and is worth
+   keeping, because "ex-husband" and "half brother" are distinctions the
+   flattened shape throws away. So the labels are sorted into the four lanes
+   the chart draws, and nothing in the data file moves. Harmonise on the
+   component's contract, not on the data file.
+
+   The vocabulary below is CLOSED and was read off the register rather than
+   guessed: 22 distinct labels over 149 people, every one of them accounted
+   for here. An unrecognised label is counted and reported under the chart
+   rather than silently dropped, so the day the export grows a
+   twenty-third the page says so. */
+import Base from '../layouts/Base.astro';
+import Bloodline from '@daviddef/archive-kit/components/Bloodline.astro';
+import { graph, components } from '@daviddef/archive-kit/lib/bloodline.js';
+import '@daviddef/archive-kit/styles/bloodline.css';
+import register from '../data/register.json';
+
+const PARENT = new Set(['His mother', 'His father', 'Her mother', 'Her father', 'Her parent']);
+const CHILD  = new Set(['Her son', 'His son', 'Her daughter', 'His daughter', 'Daughter', 'Son']);
+const SIB    = new Set(['His brother', 'Her sister', 'His sister', 'Her brother',
+                        'Half brother', 'Half sister']);
+const SPOUSE = new Set(['Her husband', 'His wife', 'Her ex-husband', 'His ex-wife',
+                        'Partner', 'Her partner', 'His partner']);
+
+const rows = register.people || [];
+const unknown = new Map();
+
+const recs = rows.map((p) => {
+  const rec = {
+    slug: String(p.id),
+    name: p.name || [p.first, p.last].filter(Boolean).join(' ') || String(p.id),
+    dt: [p.by, p.dy].filter((v) => v && v !== 'None').join(' – '),
+    parents: [], children: [], siblings: [], spouse: null,
+  };
+  for (const e of Array.isArray(p.rel) ? p.rel : []) {
+    if (!e || !e.id) continue;
+    const link = { slug: String(e.id), name: e.n || String(e.id) };
+    if (PARENT.has(e.rel)) rec.parents.push(link);
+    else if (CHILD.has(e.rel)) rec.children.push(link);
+    else if (SIB.has(e.rel)) rec.siblings.push(link);
+    else if (SPOUSE.has(e.rel)) rec.spouse = rec.spouse || link;
+    else unknown.set(e.rel, (unknown.get(e.rel) || 0) + 1);
+  }
+  return rec;
+});
+
+const people = graph(recs);
+const linked = Object.entries(people).filter(([, p]) =>
+  p.parents.length || p.children.length || p.siblings.length);
+const comps = components(Object.fromEntries(linked));
+/* Open on somebody with all three lanes filled, so the first chart a reader
+   sees teaches them what the page does. */
+const shape = (s) => {
+  const p = people[s];
+  const up = p.parents.length, side = p.siblings.length, down = p.children.length;
+  return (up ? 1000 : 0) + (down ? 1000 : 0) + (side ? 500 : 0) + up + side + down;
+};
+const start = comps[0] ? [...comps[0]].sort((a, b) => shape(b) - shape(a))[0] : null;
+const strays = [...unknown.entries()].sort((a, b) => b[1] - a[1]);
+---
+<Base
+  title="Blood relatives"
+  subtitle={`${linked.length} people joined by what this archive has read`}
+  lede="Choose a person and they go to the middle of the chart: parents above, brothers and sisters beside them, children below — and through them the aunts, uncles and cousins. Every line is drawn in the colour of the record that made it.">
+  <Bloodline people={people} start={start} total={rows.length} />
+
+  {strays.length > 0 && (
+    <div class="note" style="margin-top:20px">
+      <p><b>Relationship labels this page does not place.</b> The register has grown a
+        kind of link the chart was not taught, so it is named here rather than dropped:
+        {strays.map(([k, n]) => ` ${k} (${n})`).join(' ·')}.</p>
+    </div>
+  )}
+</Base>
