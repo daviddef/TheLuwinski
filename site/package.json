@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev --port 4331",
-    "build": "npm run build:register && npm run build:evidence && astro build && npm run check:templates && python3 ../tools/build-search.py && npm run check:search && npm run check:living && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence && npm run check:sources && npm run check:pages",
+    "build": "npm run check:pin && npm run build:register && npm run build:evidence && astro build && npm run check:templates && python3 ../tools/build-search.py && npm run check:search && npm run check:living && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence && npm run check:sources && npm run check:pages",
     "preview": "astro preview --port 4331",
     "check:search": "python3 ../tools/check-search.py",
     "check:living": "python3 ../tools/check-living.py --dist dist --mode harvest && python3 ../tools/check-living.py --dist dist --mode hashes",
@@ -17,10 +17,11 @@
     "check:evidence": "python3 ../tools/check-evidence.py",
     "check:templates": "python3 node_modules/@daviddef/archive-kit/kit/tools/checktemplates.py --root .",
     "check:sources": "python3 node_modules/@daviddef/archive-kit/kit/tools/checksources.py --root . --max-unreachable 6",
-    "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 7"
+    "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 7",
+    "check:pin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpin.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#8ecaeaf",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#2480cb1",
     "astro": "^5.18.2"
   },
   "devDependencies": {
