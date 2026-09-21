@@ -1,32 +1,34 @@
 ---
 import Base from '../layouts/Base.astro';
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const q = [
-  ['1', 'What were Ivone\'s parents\' given names?', 'Their surnames are known — the 1948 divorce file has her born MOTA FIGUEIREDO — but the given names are still blank, and every paper route has been blocked. A surname sweep on 14 September 2026 seemed to open a new front door — 27 Figueiredo matches, 13 Mota — and it was withdrawn the same evening: the Figueiredo tag pairs her with a woman born before 1713, and MyHeritage states that the Mota matches share no ancestral surname with Derrick at all.', 'Her Porto death record, which names both parents outright, and the 1924 Lourenço Marques registration. On the DNA side the useful matches remain the two already worked — 108.7 cM at second cousin\'s son, and 133.2 cM — whose families carry the surnames Jorge, Silvestre, Conde, Gaspar and Matos.', 'Ivone'],
-  ['2', 'Who was Derrick\'s biological father?', 'ANSWERED SO FAR AS RECORDS CAN: LEONARD AUBREY ROBERT WEAR, born Hitchin, Hertfordshire, 1917. The DNA excludes Kurt Israel Luwinski twice over - 0.0% Ashkenazi where a quarter is required, and a Y-DNA haplogroup, R-S11477 of R1b branch U106/Z381, that is North Sea rather than Ashkenazi. The chain to a name: the 1952 Johannesburg register gives the birthplaces of the closest match\'s grandparents, Mervin Halsey CAPE PROVINCE and Cynthia Wear ENGLAND, so the English link is the grandmother; Cynthia\'s GRO birth entry (Q2 1931, Hitchin, 3A/1345) gives her mother\'s maiden name as CASTLE; the only Wear-Castle marriage in the whole English index is Henry R Wear to Martha L Castle, Hitchin Q4 1914; and the 1921 census has them at 72 Pix Road, Letchworth. THE SHARED SEGMENTS THEN DECIDED IT. Of the 297.5 cM Derrick shares with that match, only about 44 fall in regions he also shares with any Castle cousin - a single block on chromosome 2. The other 253 cM lie nowhere near them. Two people who share only one ancestral couple cannot do that: he and she descend from HENRY ROBERT WEAR AND MARTHA MAUD CASTLE together, as a couple, so his father was their son. The birth index, searched on the mother\'s maiden name, gives that couple six children at Hitchin between 1917 and 1936, of whom TWO WERE SONS. In June 1948 one was thirty-one and the other was eleven. And the family emigrated entire: Henry Robert Wear died in Johannesburg on 11 September 1969 and is buried at West Park, Martha Maud there on 16 March 1986. Leonard was in Johannesburg from 1940, married Phyllis Agnes Robertson at Rosebank on 7 September 1940, was divorced by her in 1951 and married again that October. CORROBORATED FROM OUTSIDE THE DNA: a seven-person MyHeritage tree kept by Leonard\'s own daughter gives his mother as \u201cMuad Wear, born Castle\u201d. No other record anywhere gives him parents at all.', 'The couple is proven to this archive\'s DNA standard. That the son is Leonard rests on the sibship - two sons, one of them a schoolboy - and not yet on a document naming him as anybody\'s father. REQUEST 11, drafted 15 September: the Master of the High Court at Cape Town, estates 10761/2024 (Gillian Agnes Louisa Nel, born Wear, 1941-2024) and 018561/2021 (Patricia Mary Maud Grant, born Wear, 1946-2021), both found free in the Government Gazette. Each file holds a Death Notice, Form J294, with a field for the father\'s full names. If either says LEONARD AUBREY ROBERT WEAR, a user-submitted tree becomes a government record. Also outstanding: WLD 1950/1948, the divorce Kurt filed against Ivone within months of marrying her, with WLD 497/1951 and 2368/1951 behind it; MHG 10245/69, Henry Robert Wear\'s own estate, whose death notice names his children; and Leonard\'s own estate, once it is settled whether he died in 1973 or 1979. The Y cannot help yet: only 34 of the 7,748 public members of the R-U106 project sit under S11477, whose common ancestor lived about 200 BCE, and no Wear, Weir or Ware is among them. A living male-line Wear taking a Y test would end it. Gillian died in March 2024, so the half-sibling test that would have settled this in a single reading is gone.', 'The DNA'],
-  ['3', 'When did Auguste divorce Jacob, and why?', 'The tree records the divorce with no date. In a Berlin Mischehe the date is the whole meaning of the act.', 'Berlin-Schöneberg divorce files; the 5 January 1924 marriage entry that preceded them.', 'East Prussia'],
-  ['4', 'Where does Kurt\'s "Israel" come from?', 'He left Germany in 1933, six years before the compulsory-name decree, and as a Mischling would have been outside it anyway.', 'German expatriation lists in the Reichsanzeiger; South African naturalisation and alien registration papers.', 'Kurt'],
-  ['5', 'Is Georg a brother or a cousin?', 'Born at Hammerstein two months after Jacob was born at Schubin. Both dates from the Bundesarchiv. They cannot both be sons of one mother.', 'ASKED, 15 September 2026. Both towns are now in Poland and both civil registries opened in 1874, so an 1884 birth entry names both parents outright. Written to Archiwum Państwowe w Bydgoszczy for Standesamt Schubin, and to Archiwum Państwowe w Koszalinie for Standesamt Hammerstein and any Jewish register covering Sally Leibholz, born there in 1847. If both entries survive, one line of each decides it.', 'The Leibholz brothers'],
-  ['6', 'What happened to Gertrud Leibke on 27 February 1943?', 'She died in Berlin, not in a camp, on the day of the Fabrikaktion. The tree also duplicates her across two brothers.', 'Berlin death register; merge the duplicate and establish which brother she married.', 'The Leibholz brothers'],
-  ['7', 'When did Ivone actually marry de Witt?', 'Recorded as 2 February 1948, four and a half months before she married Kurt, with no divorce between.', 'The Germiston marriage register.', 'Ivone'],
-  ['8', 'Who was the Pinto da Rocha?', 'Henrique\'s father, and the tree can only call him "Unknown da Rocha". LOCATED, 14 September 2026: Henrique\'s South African deceased estate, gazetted three times in 2023 — estate 12294/2023, DA ROCHA, HENRIQUE FIGUEIREDO PINTO. A South African estate file contains the Death Notice, form J294, and that form asks for the full names of the father and the maiden name of the mother.', 'Order the J294 from the Master of the High Court quoting 12294/2023. Then his 1968 marriage record, which unlike the 1948 form does carry parents. And in parallel a letter to the Arquivo da Defesa Nacional: he turned twenty five weeks after the Colonial War began, and a Portuguese military registration names both parents.', 'Ivone'],
-  ['9', 'Does Jacob have a Stolperstein?', 'None found in Schöneberg. The Leibholz stones located so far belong to other Leibholz families.', 'Koordinierungsstelle Stolpersteine Berlin. If there is none, there could be.', 'The Leibholz brothers'],
-  ['10', 'Do any of the 100 index Luwinskis connect?', 'Not one has been shown to. They may be entirely unrelated people who share a rare surname.', 'Allenstein and Kreis Rössel Catholic registers, for Joachim born 1865 and back.', 'The register'],
-];
-const href = { 'Ivone': '/ivone/', 'The DNA': '/dna/', 'East Prussia': '/east-prussia/', 'Kurt': '/kurt/', 'The Leibholz brothers': '/leibholz/', 'The register': '/register/' };
+import Questions from "@daviddef/archive-kit/components/Questions.astro";
+import { u } from '../lib/url.js';
+import data from '../data/open-questions.json';
+
+/* 22 September 2026. The ten questions were a JavaScript array inside this
+   file — a five-tuple each, with the link target looked up from a second map
+   below it. They are src/data/open-questions.json now, extracted by RUNNING
+   the array rather than retyping it, and the page draws the kit's Questions,
+   which six other archives already use.
+
+   The component's own header says the five archives keeping their questions
+   as prose "cannot use this until somebody extracts them, and that
+   extraction is research work belonging to each archive". That was true of
+   prose and was never true here: these were already structured — number,
+   question, what is known, what would settle it, where it stands — and only
+   the storage was wrong. Nothing was reworded, reordered or graded.
+
+   NO `state` IS INVENTED. The other archives grade a question open, blocked
+   or answered, and this archive never has; the component draws no filter bar
+   when there is nothing to filter. Question 2 says ANSWERED SO FAR AS
+   RECORDS CAN in its own first line, which is a sentence and not a grade,
+   and turning it into one would be this archive's call. */
+const rows = data.rows;
 ---
 <Base title="Open questions"
   subtitle="Ten things this archive cannot answer yet, in the order they are worth attacking"
   lede="An archive is worth what its unanswered questions are worth. These are written so that anyone — a cousin, a stranger, an archivist — can pick one up and work it without asking permission.">
 
-  {q.map(([n, question, state, next, page]) => (
-    <div class="panel">
-      <h3>{n}. {question}</h3>
-      <p>{state}</p>
-      <p class="small"><strong>Next:</strong> {next}</p>
-      <p class="small"><a href={base + href[page]}>{page} →</a></p>
-    </div>
-  ))}
+  <Questions rows={rows} u={u} />
 
   <h2>Requests, drafted</h2>
   <p class="small muted">
