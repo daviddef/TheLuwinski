@@ -1,221 +1,221 @@
 {
-  "title": "What has been searched and is not there",
-  "dek": "Absences, with the limits that make them worth something.",
-  "rows": [
-    {
-      "claim": "Kurt Luwinski's estate was never advertised in the South African Government Gazette — or the scanner lost it",
-      "searched": "gazettes.africa, the full South African run. LUWINSKI and LUWINSKY, every year; then the OCR manglings Luwinsk, Luwenski, Lnwinski, Luwiuski, Luwinshi; then Lewinski, whose two hits in 1969 and 1970 were opened.",
-      "result": "EIGHT documents in the entire corpus, and not one is his estate: three in October 1942 dissolving the partnership between Walter Oppenheimer and Kurt Luwinski, two in November 1941 creating it, and one in November 1972 for Paula Luwinski. NOTHING AT ALL IN 1968, 1969, 1970 OR 1971. The two Lewinski hits are both VON LEWINSKY in a tariff list.",
-      "bound": "THE CONTROL IS WHAT MAKES THIS WORTH ANYTHING, and it kills the innocent explanation. The years are fully in the corpus and full of exactly the kind of notice that is missing: searching 1969 for 'Estates of deceased persons' returns 221 issues, 'boedel' returns 100, 'Master of the Supreme Court' returns 111; 1970 gives 163, 93 and 101. So this is not a gap in the archive of gazettes. WHAT IT STILL CANNOT DISTINGUISH: a notice the scanner mis-read from a notice that was never placed. The search does no prefix matching — 'Luwinsk' returns zero where 'Luwinski' returns eight — so a mangled spelling is invisible to it, and this corpus has already been caught rendering Figueiredo as 'Epo .Figueiredo,CarlosDe'. He died on 15 December 1968 and his estate is MHG 7584/69. Only the file itself can say which."
-    },
-    {
-      "claim": "Leonard Aubrey Robert Wear is in no South African record FamilySearch holds except his two marriages",
-      "searched": "ALL THIRTY-TWO South African collections FamilySearch holds, found by enumerating all 3,502 of its collections and filtering. Surname WEAR matched EXACTLY - 111 records, every one read - then repeated under WARE, WEIR, WIER, WEARE, WEARNE and WEARS.",
-      "result": "He appears TWICE. Johannesburg, 7 September 1940, to Phyllis Agnes Robertson, aged 23. Johannesburg, 30 October 1951, to Marjorie Eileen Dunlop, aged 34. No death, no burial, no estate, no baptism, under any spelling.",
-      "bound": "AND HERE IS WHY IT PROVES LESS THAN IT LOOKS, WHICH IS THE POINT OF WRITING IT DOWN. FamilySearch's South African civil death registration is a NAME INDEX TO 1966: exact-year counts give 61,899 for 1960, 74,131 for 1965, 59,263 for 1966 - and then 178 for 1967 and nothing after it. Leonard died in 1973 or 1979. HIS ABSENCE FROM AN INDEX THAT ENDS SEVEN YEARS BEFORE HE DIED IS NOT EVIDENCE ABOUT HIM. The same bound removes Kurt, who died in 1968, and Henry Robert, who died in September 1969 and is nonetheless in the collection - as a BURIAL, in the Johannesburg cemetery registers, which run to 2019. So the negative that does carry weight is the narrower one: he was not buried in a Johannesburg cemetery, in a set that holds his father, his mother and two later Wears."
-    },
-    {
-      "claim": "There is no post-1970 South African marriage register to reach by name on FamilySearch",
-      "searched": "\"South Africa, Civil Marriage Records, 1801-1974\", collection 2821281 - 2,556,837 records and 2,692,991 images. Counted by exact year rather than trusting the title.",
-      "result": "1950 = 133,215. 1955 = 148,400. 1959 = 171,201. 1960 = 178,037. 1961 = 124. 1962 = 37. 1963 = 66. 1965 = 190. 1966 = 6. 1967 = 0. 1968 = 2. 1969 and after = 0.",
-      "bound": "A CLIFF, NOT A DECLINE. The collection is titled 1801-1974 and is, as a name index, 1801-1960. The images may well run to 1974; nothing lets you find one by name. THE GENERAL LESSON, AND THIS ARCHIVE HAS NOW LEARNED IT TWICE IN A WEEK: a collection's title describes the records, not the index, and an index that stops looks exactly like a family that leaves no record. The first time was the electoral registers, where a search box returned 3,478 rows and not one name."
-    },
-    {
-      "claim": "Leonard did not die in England or Wales between 1970 and 1985",
-      "searched": "FreeBMD (the GRO death index for England and Wales): surname WEAR, deaths, March 1970 to December 1985, NO forename given — 241 entries across 58 consecutive quarters",
-      "result": "Sixteen of the 241 were born between 1915 and 1919. NOT ONE is Leonard Aubrey Robert Wear; the only 1917 birth is a Sam Wear of Halifax. A separate search on the forename Leonard returns one man, Leonard Rigby Wear, born 10 October 1897, died Claro June 1970.",
-      "bound": "AS CLEAN AS A NEGATIVE GETS, and the reasons are worth stating. Every one of the 58 quarters is marked >99% complete, and FreeBMD's own coverage chart shows 1970–1983 at 100%. From 1969 the GRO death index carries FULL FORENAMES AND THE DATE OF BIRTH, so he could hide behind neither an initial nor a common surname. What it does NOT cover: deaths abroad, which are in the consular and overseas registers and have not been searched; and Scotland and Northern Ireland, which have separate registers.",
-      "date": "16 Sep 2026"
-    },
-    {
-      "claim": "The British consular and overseas registers cannot contain Leonard's death",
-      "searched": "GRO consular death series coverage; gov.uk guidance on registering a death abroad; published lists of excluded countries",
-      "result": "Three separate exclusions, all pointing the same way. The consular death registers run 1849–1965, so both candidate years fall outside. The modern statutory service covers deaths “on or after 1 January 1983” and is optional. And South Africa appears on the published list of countries where a death cannot be registered with the British authorities at all.",
-      "bound": "The first two are FIRM — a series end-date and gov.uk's own words. The third is PROBABLE, not proven: it is a local authority's summary, not legislation, and is marked as such. Any one of the three would be enough on its own.",
-      "date": "16 Sep 2026"
-    },
-    {
-      "claim": "Leonard has no deceased estate in South Africa",
-      "searched": "National Archives (NAAIRS), all repositories, surname WEAR, 1970–1976",
-      "result": "No Wear deceased estate in the Transvaal at all between 1970 and 1976. The last is his father's, MHG 10245/69.",
-      "bound": "THE ESTATE INDEX STOPS AT THE END OF 1976 — 2,246 estate records in 1976, one in 1977, zero after. So 1973 is inside the index and he is not in it; 1979 is three years past its last year and cannot be tested this way at all.",
-      "date": "15 Sep 2026"
-    },
-    {
-      "claim": "Leonard is not buried in any Johannesburg cemetery the index covers",
-      "searched": "FamilySearch personas, f.collectionId=4453927 (Johannesburg cemetery registers, 1840–2019), surname WEAR, all 517 hits",
-      "result": "Six distinct Wears: Henrietta 1909, Henry Robert 1969, Martha Maud 1986, Edwina Ann 2014, Michelle Ann 2017, Dan B undated. NO LEONARD, under any spelling of his forenames. He bought grave 56045 and was not buried in it.",
-      "bound": "This is the INDEXED layer of ONE collection. It does not cover unindexed images within it, other Johannesburg cemeteries, or the Chevrah Kadisha — a separate database, and the one holding Kurt, Pauline and Salkow. A Wear would have no business in a Jewish cemetery, but the exclusion is stated rather than assumed.",
-      "date": "15 Sep 2026"
-    },
-    {
-      "claim": "Leonard does not appear in the England and Wales probate calendar for 1973",
-      "searched": "probatesearch.service.gov.uk, surname WEAR, year of death 1973, keyword AUBREY",
-      "result": "Zero document pages. The same search returns 8 to 31 pages for each year from 1974 to 1981.",
-      "bound": "The free service does NOT name-index anything before 1996 — it returns scanned calendar pages and matches the string anywhere on the page, so WEAR also catches Weardale and Wearmouth. A zero here means no page in that year carries both strings. THE 1979 PAGES, 23 OF THEM, HAVE NOT BEEN READ.",
-      "date": "15 Sep 2026"
-    },
-    {
-      "claim": "Ivone never naturalised as a South African",
-      "searched": "Government Gazette full text, year by year 1946–1980, forename IVONE; plus the exact forms “Salkow, Ivone”, “Ivone Salkow”, “LUWINSKI, Ivone”, “MOTA FIGUEIREDO”, “Rocha, Ivone”",
-      "result": "Ten South African gazettes carry the forename in that window. All ten were opened and read; none is her. The exact forms return zero each.",
-      "bound": "Covers the notice of intention and the issued-certificate lists, under all three of her surnames. It does not cover a naturalisation granted outside the gazette's digitised run, and the OCR of two-column lists is poor enough that one entry this evening had to be unpicked by hand.",
-      "date": "15 Sep 2026"
-    },
-    {
-      "claim": "Kurt never naturalised as a South African",
-      "searched": "Government Gazette full text, every year, surname LUWINSKI",
-      "result": "Exactly eight hits across the whole archive and this archive had already read all eight — six Piccadilly Hat Company partnership notices, the 1972 Paula application, the 1975 Pallou's Dress Centre notice. None is a naturalisation.",
-      "bound": "STRONGER THAN THE WEAR NULLS, because Luwinski is a rare surname and the same search demonstrably finds him eight times. It does not rule out a naturalisation recorded only in a file and never gazetted.",
-      "date": "15 Sep 2026"
-    },
-    {
-      "claim": "There is no immigration file for Kurt",
-      "searched": "NAAIRS, all repositories, IMMIGRATION+LUWINSKI and PIO+LUWINSKI",
-      "result": "Zero. The only Wear immigration file is KAB PIO 907 ref 38964E, “Immigration papers H C Wear”, 1949 — wrong initials, wrong decade.",
-      "bound": "NAAIRS indexes the PIO series at item level, so this is a real search of a real series. It does not cover series that were never indexed, nor records still with Home Affairs.",
-      "date": "15 Sep 2026"
-    },
-    {
-      "claim": "NAAIRS cannot answer whether anyone in this archive naturalised",
-      "searched": "NAAIRS central-government database, keyword NATURALIZATION",
-      "result": "342 documents, and every one is a policy file or a bill — the 1926 Act, its 1927 amendment, South West Africa bills.",
-      "bound": "INDIVIDUAL NATURALISATION FILES ARE NOT INDEXED AT ITEM LEVEL. So the nulls for NATURALIZATION+WEAR and NATURALIZATION+LUWINSKI are worth nothing at all, and are recorded here only to stop anyone running them again.",
-      "date": "15 Sep 2026"
-    },
-    {
-      "claim": "The 1986 reopening of grave 56045 was not recorded",
-      "searched": "West Park burial register folio W 104 and the Private Graves Register index folio W 8, rebuilt from their deep-zoom tiles",
-      "result": "Martha Maud's Remarks column is empty, not illegible. The private-graves index holds exactly one Wear, her husband.",
-      "bound": "A second interment into an existing private grave generated no grave transaction, so no authority was ever written down. The record was not lost; IT WAS NEVER MADE. What is untested is the undertaker's own file.",
-      "date": "15 Sep 2026"
-    },
-    {
-      "claim": "The South African civil marriage register never asked for parents",
-      "searched": "The 1940, 1948, 1951, 1952, 1953 and 1956 registers, read at full resolution",
-      "result": "Two form designs across the period, and neither carries a parents' column that was ever filled in. The 1956 form has one, ruled through and empty.",
-      "bound": "BOUNDED 1940 TO 1970. Nobody has checked whether the form changed afterwards, and there are three post-1970 Wear marriages to test it on.",
-      "date": "15 Sep 2026"
-    },
-    {
-      "claim": "Krmpote has no birth register before 1879",
-      "searched": "FamilySearch catalogue, and the Croatian State Archives register search (HR-HDA-1448)",
-      "result": "Both give Krmpote births starting 1879. Two independent indexes agree.",
-      "bound": "Neither covers books that were never filmed. The parish's own status animarum, XIX–XX, is digitised and has NOT been read — it is a household census with birth dates and would not be caught by a birth-register search.",
-      "date": "15 Sep 2026"
-    },
-    {
-      "claim": "Leonard never appears in the Government Gazette — A WEAK NULL, recorded as weak",
-      "searched": "Full text, every exact form of his name; and loose sweeps on Wear with engineer, Fairlands, Johannesburg",
-      "result": "Exact forms return zero. Loose forms return 3,469 and 5,568 documents, none of them him.",
-      "bound": "WEAR IS AN ORDINARY ENGLISH WORD — it appears in trade names, wool-labelling prosecutions and railway reports about flange wear. A null on this surname is nearly worthless, and is the opposite of the LUWINSKI null, which is strong precisely because the surname is rare and the same search finds him eight times. The two are not the same kind of object.",
-      "date": "15 Sep 2026"
-    },
-    {
-      "claim": "None of Leonard's three dead sisters has a gazetted estate",
-      "searched": "Government Gazette full text: “CYNTHIA YVONNE ELIZABETH”, “JANETTE EILEEN MAUD”, and “KATHLEEN EDITH” with FOOT across 2009–2014",
-      "result": "Cynthia returns nothing at all. Janette returns only her own 1975 naturalisation notice and the 1976 certificate list. Kathleen returns nothing in her death window.",
-      "bound": "THIS IS EXPECTED, NOT SUSPICIOUS. A Form J193 estate advertisement is required only above a value threshold, and three women who died in Johannesburg suburbs in 2000, 2001 and 2010 would very probably fall under it. It means the estates cannot be ordered by number and must be asked for by name and date of death — not that they do not exist.",
-      "date": "16 Sep 2026"
-    },
-    {
-      "claim": "There is no Maud Mabel Castle in the records — A WEAK NULL",
-      "searched": "FamilySearch, full forename pair MAUD MABEL with surname CASTLE, England and South Africa; and NAAIRS for LONGHURST",
-      "result": "No record anywhere for a Maud Mabel Castle. The 136 NAAIRS Longhursts are overwhelmingly Cape-based and older, with nothing joining any of them to a Castle.",
-      "bound": "FamilySearch fuzzy-matches forenames badly — it collapses Janette into Jane, Jean and even Ware — and its England coverage is not complete. This does not dispose of the 1915 and 1919 Johannesburg divorces, which name her plainly. The real tests are two orderable documents: MHG 3632/50 and WLD 155/1915.",
-      "date": "16 Sep 2026"
-    },
-    {
-      "claim": "No Leibholz appears anywhere in the South African archives",
-      "searched": "NAAIRS, all repositories and national registers, surname LEIBHOLZ",
-      "result": "Zero documents.",
-      "bound": "Expected rather than informative — the Leibholz brothers were in Berlin and East Prussia and none of them reached South Africa. Recorded so that nobody runs the search again on the assumption it was never tried.",
-      "date": "16 Sep 2026"
-    },
-    {
-      "claim": "No Johannesburg street directory of the 1940s or 1950s is reachable without a reading room",
-      "searched": "ancestors.co.za street directories; eGGSA; FamilySearch South Africa online records guide",
-      "result": "The only South African street directory digitised and searchable is PIETERMARITZBURG 1897. Voters rolls online cover 1925 and 1931 only, across 148 towns.",
-      "bound": "This is about ONLINE reach, not existence — the Johannesburg directories exist on paper and in libraries. And the 1925/1931 voters rolls, useless for the Wears who arrived in the late 1930s, are exactly right for the Momple, Robertson and Longhurst families, who were Johannesburg people in those years.",
-      "date": "16 Sep 2026"
-    },
-    {
-      "claim": "No spelling of Ivone's maiden name appears in a South African naturalisation notice, 1930–1960",
-      "searched": "gazettes.africa full-text, South African issues only, every year from 1930 to 1960 inclusive. FIRST PASS searched three spellings — FIGUEIREDO, DE FIGUEIREDO, MOTA FIGUEIREDO. SECOND PASS, run the same day after David pointed out that she is recorded under several names, added the other three the records actually use — FIGUEREDO (her own 1953 marriage register), FIGUERIDO (WLD 2225/1953) and FIGARETTO (the NAAIRS index itself) — plus FIGUEIRIDO, and the married surnames LUWINSKI, LUWINSKY and LUWENSKI.",
-      "result": "NO NATURALISATION NOTICE UNDER ANY SPELLING. The first pass returned five South African hits in thirty-one years, two of them deceased-estate notices new to this archive: ESTATE 7029/54 — FIGUEIREDO, AGOSTINHO VICENTE SEBASTIAO, of Johannesburg, account advertised 22 July 1955; and ESTATE 2910/60 — MONTEIRO, JOSÉ DE FIGUEIREDO, OF LOURENÇO MARQUES, PORTUGUESE EAST AFRICA, advertised 2 December 1960. THE SECOND PASS ADDED NOTHING. Figueredo returns five South African hits across 1940–1943 and ALL FIVE ARE THE SAME PERUVIAN TRADING ADDRESS in a wartime enemy-trading blacklist — \"Figueredo 792, Callao, Peru\". Figuerido returns two hits on the whole continent and none in South Africa. FIGARETTO, FIGUEIRIDO AND LUWENSKI RETURN NOTHING ANYWHERE IN ANY AFRICAN GAZETTE — they are index corruptions, not spellings anyone ever printed. Luwinski and Luwinsky return the same eight documents already known.",
-      "bound": "TWO CONTROLS, WHICH IS WHAT MAKES THIS WORTH ANYTHING. (1) THE CORPUS CARRIES NATURALISATION MATERIAL: searched for \"certificate of naturalization\", \"naturalization\" and \"Aliens Act\" in 1938, 1946, 1950 and 1955 — South African hits in every year tested, up to ten a year on a capped result set. (2) THE SEARCH IS NOT DEFEATED BY SPELLING: six recorded forms of the maiden surname and three of the married one were each tried across all thirty-one years. THE FIRST VERSION OF THIS NEGATIVE OVERSTATED ITSELF by searching only three spellings while this archive's own notes record six — that is corrected here rather than left looking stronger than it was. WHAT WOULD STILL FALL OUTSIDE IT: (a) THE OCR ON THESE SCANS IS DREADFUL — one 1943 hit renders as \"Epo .Figueiredo,CarlosDe\" — so this negative is SOFT in a way the FreeBMD one is not, and no list of spellings fixes a scanner that loses the word altogether; (b) it searches the published notice, not the file, and not every naturalisation was gazetted under every statute; (c) IT DOES NOT TOUCH THE SAB NATURALISATION AND ALIEN-REGISTRATION FILES THEMSELVES, which are indexed on NAAIRS and were not searched because NAAIRS was unreachable on the day; (d) if she took her husband's nationality by marriage in February 1948, as the law before September 1949 allowed, THERE WAS NEVER A NOTICE TO FIND.",
-      "date": "16 Sep 2026"
-    },
-    {
-      "claim": "WITHDRAWN — ‘NAAIRS is down’ was wrong. The URL had moved and this archive was holding a stale one",
-      "searched": "http://national.archsrch.gov.za/sm300dl, the entry point this archive had used throughout and had never re-checked against the National Archives portal that publishes it.",
-      "result": "THE HOST DOES NOT RESOLVE AND NEVER WILL AGAIN — that part was accurately observed. THE CONCLUSION DRAWN FROM IT WAS WRONG. The portal at national.archives.gov.za/naairs.htm still publishes a working Search link, and it points somewhere else entirely: http://www.national.archsrch.gov.za/sm300cv/smws/sm300dl — a WWW PREFIX AND A PATH PREFIX this archive did not have. That URL returns HTTP 200, issues a session token and searches normally. FIGUEIREDO returns 43 documents, which is exactly the figure this archive recorded on 14 September.",
-      "bound": "RECORDED AS A FAILURE RATHER THAN QUIETLY DELETED, because the failure is the instructive part. THE OBSERVATION WAS SOUND AND THE INFERENCE WAS NOT: a dead hostname was read as a dead service, when the service had simply moved and this archive was the only party still using the old address. It took DAVID OPENING THE PUBLISHED PORTAL PAGE IN A BROWSER to find it — thirty seconds of looking at where the link actually points, against an afternoon of diagnosing DNS. THE COST WAS NOT ONLY TIME. The draft reply to Ms Xaba had a paragraph telling her, helpfully, that her own institution's search system was down. IT WOULD HAVE BEEN WRONG, and it was removed before the letter was sent. THE RULE TAKEN FROM IT: when an endpoint this archive depends on stops answering, RE-READ THE PAGE THAT PUBLISHES THE LINK before concluding anything about the service behind it.",
-      "date": "16 Sep 2026"
-    },
-    {
-      "claim": "The variant spellings each return exactly one NAAIRS record, and the correct spelling returns none of them",
-      "searched": "NAAIRS, All Archives Repositories (RSAE), on the corrected endpoint, 16 September 2026. Searched FIGUEIREDO, FIGARETTO, LUWENSKI, LUWINSKY as separate queries, and the full record fetched for each.",
-      "result": "FIGUEIREDO — 43 documents, the same 43 recorded on 14 September. FIGARETTO — 1: ILLIQUID CASE RESTITUTION OF CONJUGAL RIGHTS IVONE LUWENSKI (FORMERLY DE WITT, BORN FIGARETTO) VERSUS KURT, which is TAB WLD 2545/1950. LUWENSKI — 1: the same file. LUWINSKY — 1: TAB WLD 1950/1948. EACH VARIANT SURFACES A FILE THAT THE CORRECT SPELLING DOES NOT RETURN. WLD 2545/1950 is the only action in which Ivone is the plaintiff, and it is reachable ONLY through two spellings nobody would choose to type.",
-      "bound": "THE FIRST TWO ATTEMPTS AT THIS SEARCH RETURNED ZERO AND WERE NOT BELIEVED, which is the only reason the result is worth anything. The first posted an incomplete form and NAAIRS answered, in words, 'the search was bypassed as no search word was entered' — a message that would have read as an empty holding to anyone parsing for row counts. The second returned zero on a run that had returned one a minute earlier, and was treated as throttling rather than data. THIS ARCHIVE HAS TWICE BEFORE RECORDED FALSE EMPTINESS FROM EXACTLY THIS FAILURE and the rule now is that a zero from a flaky interface is not a finding until it reproduces. WHAT WOULD STILL FALL OUTSIDE IT: only four spellings were put to NAAIRS, not all fourteen recorded on the names page; the search was RSAE, the all-repositories database, which should but may not subsume every depot; and NAAIRS indexes file titles, not file contents, so a woman named inside a document she is not a party to remains invisible to any spelling.",
-      "date": "16 Sep 2026"
-    },
-    {
-      "claim": "WITHDRAWN WITHIN THE HOUR — the archives index does not list naturalisation files AT ALL, so their absence proves nothing",
-      "searched": [
-        "First pass: the National Archives index on all eleven tested spellings of Ivone's maiden surname, and separately on LUWINSKI, LUWINSKY and LUWENSKI for Kurt — every depot, every series, no date limit. THEN, ON DAVID'S QUESTION ABOUT KURT, A CONTROL TEST THAT SHOULD HAVE BEEN RUN FIRST: WALTER OPPENHEIMER, Kurt's business partner, IS KNOWN TO HAVE NATURALISED — the Union Gazette carries his application as notice 1462, gazette 3007 of 20 February 1942, page 115. So the index was searched for him."
-      ],
-      "result": "NO NATURALISATION FILE FOR OPPENHEIMER EITHER. A man this archive can PROVE naturalised, with the gazette notice in hand, returns three records and not one of them is his naturalisation. THE INSTRUMENT CANNOT DETECT A KNOWN POSITIVE. Therefore the absence of a Figueiredo or a Luwinski naturalisation file in that index says NOTHING WHATEVER about whether such files exist. The first version of this entry concluded that no naturalisation record exists. IT WAS WRONG, and it was wrong in the most ordinary way: it mistook the limits of a finding aid for a fact about the world.",
-      "bound": "WHAT SURVIVES, AND IT IS STILL WORTH HAVING. The surname searches DID return sixteen immigration files at KAB — twelve IRC, four PIO — and none at Pretoria, which is real evidence about WHERE the Portuguese community is indexed even though it is no evidence about naturalisation. WHAT THIS NOW MEANS IN PRACTICE: naturalisation files are evidently not item-indexed online, so THE ONLY ROUTE IS SOMEBODY STANDING IN THE READING ROOM ASKING WHETHER A NATURALISATION REGISTER OR CARD INDEX EXISTS. That question is now in both outstanding letters — to the Reading Room supervisor, who would know what finding aids exist, and to the researcher, framed as a question rather than a search. AND THE LAW STILL MAY HAVE PRE-EMPTED IT FOR IVONE: she married a Mr de Witt on 2 February 1948, inside the rule that gave a foreign wife her husband's nationality automatically. THAT REMAINS THE BEST EXPLANATION FOR HER. IT DOES NOT EXPLAIN KURT, who arrived in 1933, was an alien for thirty-five years, and died one.",
-      "date": "16 Sep 2026"
-    },
-    {
-      "claim": "The two Giddins DNA matches do NOT connect through the Hertfordshire Giddinses",
-      "searched": "On 16 September 2026 the Castle line was traced to JAMES GIDDINS of Norton End, Baldock, from the 1861 and 1871 censuses. The same afternoon, the archive's own guard flagged GIDDINS as a surname carried by two living DNA match holders — 43.36 cM and 62.89 cM, both in cluster 12. The larger holder's public tree, eighty-nine people, was then opened and read.",
-      "result": "IT IS A DIFFERENT FAMILY. That tree's GEORGE GIDDINS, 1846–1890 — whose dates sit within a year of James's son George, born about 1847 — was born on 17 JULY 1846 AT WITHYBROOK, WARWICKSHIRE, and died in the Wandsworth district of London. HIS FATHER IS RICHARD GIDDINS, NOT JAMES. The other surnames in that tree are Ratcliffe, Conway, Woodhams, Wall, McMellon and Prescott — none of them Hertfordshire. THE SURNAME IS NOT THE CONNECTION.",
-      "bound": "WHAT THIS DOES AND DOES NOT SAY. It does NOT say the matches are false: 62.89 cM is 62.89 cM and both holders are genuinely related to Derrick. It says only that THE REASON IS NOT THE GIDDINS SURNAME — which should never have been assumed, because a match holder's surname is one of eight great-grandparental lines and there is no reason it should be the relevant one. RECORDED BECAUSE OF HOW NEARLY IT WENT THE OTHER WAY. Three paragraphs had already been written calling these 'the first DNA to touch the Castle line above George William Castle', with the fourth-cousin arithmetic worked out and fitting. THE ARITHMETIC WAS SOUND AND THE PREMISE WAS NEVER CHECKED. Opening the tree took four minutes. WHAT REMAINS OPEN: the smaller holder's tree runs to twelve people and is too thin to read; and the Hertfordshire Giddinses of Norton End are still untouched by any DNA at all."
-    },
-    {
-      "claim": "No Luwinski, in any spelling, appears on any South African page FamilySearch has read — but the pages it has read stop in 1931",
-      "searched": "FamilySearch full-text search, which reads the words on unindexed images rather than a name index, signed in, 17 September 2026: LUWINSKI, LUWINSKY, LUWENSKI, and the phrase 'Piccadilly Hat' — the name of Kurt's own shop at 81 Eloff Street",
-      "result": "Thirty-three hits across the three spellings and EVERY ONE IS AMERICAN — Milwaukee and Chicago naturalisation petitions, New York and Philadelphia passenger lists, Ohio, Minnesota and Massachusetts vital records. The shop name returns nothing but Lancashire trade directories of the 1890s.",
-      "limit": "THE CONTROL WAS RUN FIRST THIS TIME. Searching NOOITGEDACHT, a farm name that exists almost nowhere outside South Africa, returns page after page of SOUTH AFRICAN VOTERS' ROLLS 1925-1931, the Pretoria district roll of 1927, the Vereeniging roll of 1931 and Transvaal military records of 1900-1903. The corpus genuinely holds South Africa and the instrument was genuinely pointed at it. AND THEN THE DATES DECIDE IT: Kurt arrived in 1933, Leonard sailed in 1937, the Wears came in 1939. EVERY PERSON THIS ARCHIVE IS LOOKING FOR ARRIVED AFTER THE LAST ROLL WAS PRINTED. This is an exhaustive search of the wrong years, and it is recorded so that nobody — including this archive — reads it as an absence of the men."
-    },
-    {
-      "claim": "There is no estate notice for Leonard Aubrey Robert Wear in the South African Government Gazette — and no Phyllis Agnes Norquoy either",
-      "searched": "gazettes.africa, free and full-text across 54,313 South African issues, 17 September 2026. The two searches that matter are WEAR AND AUBREY, which returns 38 documents, and NORQUOY, which returns 41. EVERY ONE OF THE SEVENTY-NINE WAS READ. Also run: Wear and Norquoy, Wear and Kwele, Norquoy and Phyllis, Norquoy and Agnes, Luwinski and Ivone, Luwinski and Frances, Hostowsky, Salkow and Ivonne.",
-      "result": "No Leonard. No Phyllis. An estate notice under the Administration of Estates Act is the one document that would carry his date of death and settle whether it was 1973 or 1979, and it is not there under a search that would catch it if both words survived the scanner.",
-      "limit": "THREE LIMITS, AND THE FIRST IS THE SERIOUS ONE. PHRASE SEARCH IS UNRELIABLE ON THIS CORPUS AND THE CONTROL PROVES IT: 'Kurt Israel Luwinski' returns NOTHING, although this archive holds eight gazette entries for the man. Commas, line breaks and jammed columns destroy word adjacency, so only same-DOCUMENT searches can be trusted here, and even those depend on the scanner having read both words. SECOND, an estate is only advertised if it is over the threshold — a man who died without one is not in this record at all. THIRD, a year-by-year sweep of the word 'Wear' alone was attempted and abandoned as unsound: the API stops at ten pages, so any year with more than a hundred documents is silently truncated, and 'wear' is an English word that appears in half the trade notices ever printed."
-    },
-    {
-      "claim": "WITHDRAWN — the England & Wales Electoral Registers 1832-1932 cannot be searched for a person at all, and this archive said it could",
-      "searched": "Findmypast, that record set, 18 September 2026: WEAR with a Bermondsey place filter; WILLIAM WEAR with no filter; JOHN SMITH as a high-frequency control; LUWINSKI as a rare-surname control; and a nonsense string as a null control.",
-      "result": "EVERY ROW THE SET RETURNS SAYS 'NO NAME ON RECORD'. William Wear returns 3,478 of them and the locations are DEVON and DURHAM — Weare in Devon, the River Wear in Durham. John Smith returns the same nameless rows in Lancashire. Luwinski returns zero, and so does a nonsense string. The set is page images of volumes; it indexes no elector, and what the name box matches is a place.",
-      "limit": "THE WITHDRAWN CLAIM WAS THIS ARCHIVE'S OWN, MADE THE PREVIOUS DAY: nine electoral register entries 'for William Wear, Surrey and London, 1885 to 1900'. The rows were real and carried no name, and the Surrey and London came from a place filter typed by the same hand that then reported it as a finding. A RESULT COUNT IS A PROPERTY OF A SEARCH BOX, NOT OF THE PAST. What survives is that the Bermondsey volumes are digitised and can be READ, page by page, for 1885 to 1900 — an afternoon of images rather than a search. And before 1918 the franchise is a property franchise, so lodgers and every woman are absent by law and a silence there means nothing."
-    },
-    {
-      "claim": "The record that would name Georg Leibholz's parents does not exist — Hammerstein's civil registers and its synagogue books are both gone",
-      "searched": "Archiwum Panstwowe w Koszalinie, asked on 14 September 2026 for the registers of the former German civil registry office at CZARNE — Standesamt HAMMERSTEIN, Kreis Schlochau — for 1847 and 1884, and for the books of the Jewish community there. Answered 16 September 2026, reference O-S.6342.406.2026, over the signature of Krzysztof Skrzypiec, Head of the Slupsk Branch.",
-      "result": "NEITHER SURVIVES IN THAT ARCHIVE. No Standesamt Hammerstein registers for 1874 TO 1899 — the whole span of German civil registration up to the end of the century — and NO SYNAGOGUE-COMMUNITY BOOKS FOR CZARNE AT ALL. The letter goes further than a simple nil return and says they hold no information about the fate of either series, or where it might now be kept.",
-      "limit": "IT IS AN ANSWER ABOUT ONE BUILDING, and the letter says so itself by disclaiming knowledge of where the books went. Records of a Kreis Schlochau parish could sit at another Polish archive, or in Germany, or have been destroyed in 1945, and this reply does not distinguish those. WHAT IT DOES CLOSE IS THE CHEAP ROUTE: GEORG LEIBHOLZ was born at Hammerstein on 7 June 1884 — the Bundesarchiv Gedenkbuch entry en1100801 says so — and a birth register of 1884 is the one document that would have named his parents and settled whether he belongs to this family at all. THE ARCHIVE'S POSITION IS THAT HE DOES NOT: Jacob Leibholz was born at SCHUBIN in POSEN on 8 August 1884, two months after Georg and in a different province, and two men cannot be brothers on those dates. That finding now stands on the Gedenkbuch alone, because the register that could have overturned it is not there to be read. AND THE PRE-1874 HALF IS WORSE: SALLY LEIBHOLZ, born 1847, is before German civil registration began, so only the synagogue books could ever have held him — and those are the ones the letter says do not exist at all."
-    },
-    {
-      "claim": "Frederick James Castle has no surviving First World War service file — and that is what a career soldier looks like, not a gap",
-      "searched": "Findmypast, BRITISH ARMY SERVICE RECORDS — which carries WO 363, the 'Burnt Documents', and WO 364, the pension claims — surname CASTLE, forename FRED*, all 78 results read across four pages, 17 September 2026.",
-      "result": "NOT ONE ENTRY FOR THE SCOTTISH RIFLES, THE CAMERONIANS, OR SERVICE NUMBER 10061. There are Fred James Castles in the set — 98411 Labour Corps, 10524 Devonshire Regiment, 40524 13th Reserve Cavalry — and every one of them belongs to another man; the Labour Corps one is the Royal Berkshire soldier whose medal card gives 33601 and 98411 together.",
-      "limit": "THIS ABSENCE IS EVIDENCE FOR THE READING RATHER THAN AGAINST IT, and that is why it is worth filing. WO 363 AND WO 364 COVER MEN WHOSE SERVICE ENDED BY ABOUT 1920. A soldier still serving after that date kept a live record, and a live record was never transferred to the Public Record Office — it stayed with the War Office and its successors. HIS MEDAL INDEX CARD GIVES HIM THE NUMBER 7815432, WHICH IS AN EIGHT-DIGIT POST-1920 ISSUE. So the man this archive is looking for is precisely the man these two series would not contain. TWO OTHER LIMITS, STATED: about sixty per cent of WO 363 burned in 1940, so a nil return there means little on its own; and the 1914 and 1914-15 Star rolls have NOT been searched, which is a separate question about when he first entered a theatre of war. WHAT WOULD ANSWER IT: the post-1920 service record, held by the Ministry of Defence, which releases to next of kin or on proof of death — and this archive has no death for him at all."
-    },
-    {
-      "claim": "Frederick James Castle did not die on army service abroad and did not marry in an army chapel abroad — under that name",
-      "searched": "Findmypast, 17 September 2026. BRITISH ARMED FORCES AND OVERSEAS DEATHS AND BURIALS: surname CASTLE, forename FRED*, all ten results accounted for. BRITISH ARMED FORCES AND OVERSEAS BANNS AND MARRIAGES: surname CASTLE, ALL FIFTY-NINE RESULTS READ ACROSS THREE PAGES. These are the registers a soldier of the 1920s appears in instead of the ordinary General Register Office series.",
-      "result": "NOTHING IN EITHER. No Scottish Rifles death and no number 10061; the nearest by name is FREDERICK J CASTLE who died in 1917 and is PRIVATE 47783 OF THE NORTHUMBERLAND FUSILIERS, buried at Roclincourt Valley Cemetery in France. In the marriage set there is NOT ONE Fred, Frederick or Fredk among fifty-nine Castles, who marry instead at Malta, Kolar, Istanbul, Singapore, Italy, Aldershot and Johannesburg.",
-      "limit": "THE CONTROL WAS RUN BEFORE THE NEGATIVE WAS BELIEVED, which is now this archive's habit and was not a fortnight ago: JOHN SMITH in the same marriage set returns 251 results, from Lisbon in 1726 onward. THE SET IS REAL AND IT WAS POINTED AT THE RIGHT PLACE. WHAT THE ABSENCE DOES NOT PROVE: these registers catch a man only while he is IN the army and only under the name the army used. He may have married after discharge, or under Frederick where the index has Fred, or in a civil registry abroad that Britain never indexed. AND THE ABSENCES TOGETHER STILL SAY SOMETHING: he did not die in the war, because his medal card gives him the post-1920 number 7815432; he is in no English census after 1911, no 1939 Register and no English death index. The honest reading is that he left and did not come back, and that the record of the rest of his life is in a country this archive has not yet identified."
-    },
-    {
-      "claim": "The name LUWINSKI appears in no record described by any archive in The National Archives' Discovery catalogue",
-      "searched": "discovery.nationalarchives.gov.uk, the catalogue of The National Archives AND of more than two thousand five hundred other British archives — county record offices, university and cathedral libraries, regimental and company collections. Searched 17 September 2026 for LUWINSKI and LUWINSKY.",
-      "result": "COUNT 0 for both. By contrast LEIBHOLZ returns sixteen, none of them ours — Gerhard Leibholz, Dietrich Bonhoeffer's brother-in-law, at Lambeth Palace Library; a 1948 naturalisation certificate; two Home Office alien files; and an internment card for a Tobias Leibholz born at Breslau in 1906.",
-      "limit": "DISCOVERY IS A CATALOGUE, NOT A NAME INDEX, and that limit is the whole of the caveat. Most series are described at PIECE level — 'passenger lists of people leaving the United Kingdom' — not at person level, so a man can be inside a described record and invisible to this search. Only a few series, WO 372's medal cards among them, are described item by item with names, and this same search found Fred James Castle's card that way. WHAT THE ZERO DOES MEAN: no British archive has catalogued a collection, a file or an item under that surname — no Luwinski company, estate, case or personal papers. For a family that passed through Britain only in transit, that is the expected answer, and it was worth establishing rather than assuming."
-    }
-  ]
+ "title": "What has been searched and is not there",
+ "dek": "Absences, with the limits that make them worth something.",
+ "rows": [
+  {
+   "claim": "Kurt Luwinski's estate was never advertised in the South African Government Gazette — or the scanner lost it",
+   "searched": "gazettes.africa, the full South African run. LUWINSKI and LUWINSKY, every year; then the OCR manglings Luwinsk, Luwenski, Lnwinski, Luwiuski, Luwinshi; then Lewinski, whose two hits in 1969 and 1970 were opened.",
+   "result": "EIGHT documents in the entire corpus, and not one is his estate: three in October 1942 dissolving the partnership between Walter Oppenheimer and Kurt Luwinski, two in November 1941 creating it, and one in November 1972 for Paula Luwinski. NOTHING AT ALL IN 1968, 1969, 1970 OR 1971. The two Lewinski hits are both VON LEWINSKY in a tariff list.",
+   "bound": "THE CONTROL IS WHAT MAKES THIS WORTH ANYTHING, and it kills the innocent explanation. The years are fully in the corpus and full of exactly the kind of notice that is missing: searching 1969 for 'Estates of deceased persons' returns 221 issues, 'boedel' returns 100, 'Master of the Supreme Court' returns 111; 1970 gives 163, 93 and 101. So this is not a gap in the archive of gazettes. WHAT IT STILL CANNOT DISTINGUISH: a notice the scanner mis-read from a notice that was never placed. The search does no prefix matching — 'Luwinsk' returns zero where 'Luwinski' returns eight — so a mangled spelling is invisible to it, and this corpus has already been caught rendering Figueiredo as 'Epo .Figueiredo,CarlosDe'. He died on 15 December 1968 and his estate is MHG 7584/69. Only the file itself can say which."
+  },
+  {
+   "claim": "Leonard Aubrey Robert Wear is in no South African record FamilySearch holds except his two marriages",
+   "searched": "ALL THIRTY-TWO South African collections FamilySearch holds, found by enumerating all 3,502 of its collections and filtering. Surname WEAR matched EXACTLY - 111 records, every one read - then repeated under WARE, WEIR, WIER, WEARE, WEARNE and WEARS.",
+   "result": "He appears TWICE. Johannesburg, 7 September 1940, to Phyllis Agnes Robertson, aged 23. Johannesburg, 30 October 1951, to Marjorie Eileen Dunlop, aged 34. No death, no burial, no estate, no baptism, under any spelling.",
+   "bound": "AND HERE IS WHY IT PROVES LESS THAN IT LOOKS, WHICH IS THE POINT OF WRITING IT DOWN. FamilySearch's South African civil death registration is a NAME INDEX TO 1966: exact-year counts give 61,899 for 1960, 74,131 for 1965, 59,263 for 1966 - and then 178 for 1967 and nothing after it. Leonard died in 1973 or 1979. HIS ABSENCE FROM AN INDEX THAT ENDS SEVEN YEARS BEFORE HE DIED IS NOT EVIDENCE ABOUT HIM. The same bound removes Kurt, who died in 1968, and Henry Robert, who died in September 1969 and is nonetheless in the collection - as a BURIAL, in the Johannesburg cemetery registers, which run to 2019. So the negative that does carry weight is the narrower one: he was not buried in a Johannesburg cemetery, in a set that holds his father, his mother and two later Wears."
+  },
+  {
+   "claim": "There is no post-1970 South African marriage register to reach by name on FamilySearch",
+   "searched": "\"South Africa, Civil Marriage Records, 1801-1974\", collection 2821281 - 2,556,837 records and 2,692,991 images. Counted by exact year rather than trusting the title.",
+   "result": "1950 = 133,215. 1955 = 148,400. 1959 = 171,201. 1960 = 178,037. 1961 = 124. 1962 = 37. 1963 = 66. 1965 = 190. 1966 = 6. 1967 = 0. 1968 = 2. 1969 and after = 0.",
+   "bound": "A CLIFF, NOT A DECLINE. The collection is titled 1801-1974 and is, as a name index, 1801-1960. The images may well run to 1974; nothing lets you find one by name. THE GENERAL LESSON, AND THIS ARCHIVE HAS NOW LEARNED IT TWICE IN A WEEK: a collection's title describes the records, not the index, and an index that stops looks exactly like a family that leaves no record. The first time was the electoral registers, where a search box returned 3,478 rows and not one name."
+  },
+  {
+   "claim": "Leonard did not die in England or Wales between 1970 and 1985",
+   "searched": "FreeBMD (the GRO death index for England and Wales): surname WEAR, deaths, March 1970 to December 1985, NO forename given — 241 entries across 58 consecutive quarters",
+   "result": "Sixteen of the 241 were born between 1915 and 1919. NOT ONE is Leonard Aubrey Robert Wear; the only 1917 birth is a Sam Wear of Halifax. A separate search on the forename Leonard returns one man, Leonard Rigby Wear, born 10 October 1897, died Claro June 1970.",
+   "bound": "AS CLEAN AS A NEGATIVE GETS, and the reasons are worth stating. Every one of the 58 quarters is marked >99% complete, and FreeBMD's own coverage chart shows 1970–1983 at 100%. From 1969 the GRO death index carries FULL FORENAMES AND THE DATE OF BIRTH, so he could hide behind neither an initial nor a common surname. What it does NOT cover: deaths abroad, which are in the consular and overseas registers and have not been searched; and Scotland and Northern Ireland, which have separate registers.",
+   "date": "16 Sep 2026"
+  },
+  {
+   "claim": "The British consular and overseas registers cannot contain Leonard's death",
+   "searched": "GRO consular death series coverage; gov.uk guidance on registering a death abroad; published lists of excluded countries",
+   "result": "Three separate exclusions, all pointing the same way. The consular death registers run 1849–1965, so both candidate years fall outside. The modern statutory service covers deaths “on or after 1 January 1983” and is optional. And South Africa appears on the published list of countries where a death cannot be registered with the British authorities at all.",
+   "bound": "The first two are FIRM — a series end-date and gov.uk's own words. The third is PROBABLE, not proven: it is a local authority's summary, not legislation, and is marked as such. Any one of the three would be enough on its own.",
+   "date": "16 Sep 2026"
+  },
+  {
+   "claim": "Leonard has no deceased estate in South Africa",
+   "searched": "National Archives (NAAIRS), all repositories, surname WEAR, 1970–1976",
+   "result": "No Wear deceased estate in the Transvaal at all between 1970 and 1976. The last is his father's, MHG 10245/69.",
+   "bound": "THE ESTATE INDEX STOPS AT THE END OF 1976 — 2,246 estate records in 1976, one in 1977, zero after. So 1973 is inside the index and he is not in it; 1979 is three years past its last year and cannot be tested this way at all.",
+   "date": "15 Sep 2026"
+  },
+  {
+   "claim": "Leonard is not buried in any Johannesburg cemetery the index covers",
+   "searched": "FamilySearch personas, f.collectionId=4453927 (Johannesburg cemetery registers, 1840–2019), surname WEAR, all 517 hits",
+   "result": "Six distinct Wears: Henrietta 1909, Henry Robert 1969, Martha Maud 1986, Edwina Ann 2014, Michelle Ann 2017, Dan B undated. NO LEONARD, under any spelling of his forenames. He bought grave 56045 and was not buried in it.",
+   "bound": "This is the INDEXED layer of ONE collection. It does not cover unindexed images within it, other Johannesburg cemeteries, or the Chevrah Kadisha — a separate database, and the one holding Kurt, Pauline and Salkow. A Wear would have no business in a Jewish cemetery, but the exclusion is stated rather than assumed.",
+   "date": "15 Sep 2026"
+  },
+  {
+   "claim": "Leonard does not appear in the England and Wales probate calendar for 1973",
+   "searched": "probatesearch.service.gov.uk, surname WEAR, year of death 1973, keyword AUBREY",
+   "result": "Zero document pages. The same search returns 8 to 31 pages for each year from 1974 to 1981.",
+   "bound": "The free service does NOT name-index anything before 1996 — it returns scanned calendar pages and matches the string anywhere on the page, so WEAR also catches Weardale and Wearmouth. A zero here means no page in that year carries both strings. THE 1979 PAGES, 23 OF THEM, HAVE NOT BEEN READ.",
+   "date": "15 Sep 2026"
+  },
+  {
+   "claim": "Ivone never naturalised as a South African",
+   "searched": "Government Gazette full text, year by year 1946–1980, forename IVONE; plus the exact forms “Salkow, Ivone”, “Ivone Salkow”, “LUWINSKI, Ivone”, “MOTA FIGUEIREDO”, “Rocha, Ivone”",
+   "result": "Ten South African gazettes carry the forename in that window. All ten were opened and read; none is her. The exact forms return zero each.",
+   "bound": "Covers the notice of intention and the issued-certificate lists, under all three of her surnames. It does not cover a naturalisation granted outside the gazette's digitised run, and the OCR of two-column lists is poor enough that one entry this evening had to be unpicked by hand.",
+   "date": "15 Sep 2026"
+  },
+  {
+   "claim": "Kurt never naturalised as a South African",
+   "searched": "Government Gazette full text, every year, surname LUWINSKI",
+   "result": "Exactly eight hits across the whole archive and this archive had already read all eight — six Piccadilly Hat Company partnership notices, the 1972 Paula application, the 1975 Pallou's Dress Centre notice. None is a naturalisation.",
+   "bound": "STRONGER THAN THE WEAR NULLS, because Luwinski is a rare surname and the same search demonstrably finds him eight times. It does not rule out a naturalisation recorded only in a file and never gazetted.",
+   "date": "15 Sep 2026"
+  },
+  {
+   "claim": "There is no immigration file for Kurt",
+   "searched": "NAAIRS, all repositories, IMMIGRATION+LUWINSKI and PIO+LUWINSKI",
+   "result": "Zero. The only Wear immigration file is KAB PIO 907 ref 38964E, “Immigration papers H C Wear”, 1949 — wrong initials, wrong decade.",
+   "bound": "NAAIRS indexes the PIO series at item level, so this is a real search of a real series. It does not cover series that were never indexed, nor records still with Home Affairs.",
+   "date": "15 Sep 2026"
+  },
+  {
+   "claim": "NAAIRS cannot answer whether anyone in this archive naturalised",
+   "searched": "NAAIRS central-government database, keyword NATURALIZATION",
+   "result": "342 documents, and every one is a policy file or a bill — the 1926 Act, its 1927 amendment, South West Africa bills.",
+   "bound": "INDIVIDUAL NATURALISATION FILES ARE NOT INDEXED AT ITEM LEVEL. So the nulls for NATURALIZATION+WEAR and NATURALIZATION+LUWINSKI are worth nothing at all, and are recorded here only to stop anyone running them again.",
+   "date": "15 Sep 2026"
+  },
+  {
+   "claim": "The 1986 reopening of grave 56045 was not recorded",
+   "searched": "West Park burial register folio W 104 and the Private Graves Register index folio W 8, rebuilt from their deep-zoom tiles",
+   "result": "Martha Maud's Remarks column is empty, not illegible. The private-graves index holds exactly one Wear, her husband.",
+   "bound": "A second interment into an existing private grave generated no grave transaction, so no authority was ever written down. The record was not lost; IT WAS NEVER MADE. What is untested is the undertaker's own file.",
+   "date": "15 Sep 2026"
+  },
+  {
+   "claim": "The South African civil marriage register never asked for parents",
+   "searched": "The 1940, 1948, 1951, 1952, 1953 and 1956 registers, read at full resolution",
+   "result": "Two form designs across the period, and neither carries a parents' column that was ever filled in. The 1956 form has one, ruled through and empty.",
+   "bound": "BOUNDED 1940 TO 1970. Nobody has checked whether the form changed afterwards, and there are three post-1970 Wear marriages to test it on.",
+   "date": "15 Sep 2026"
+  },
+  {
+   "claim": "Krmpote has no birth register before 1879",
+   "searched": "FamilySearch catalogue, and the Croatian State Archives register search (HR-HDA-1448)",
+   "result": "Both give Krmpote births starting 1879. Two independent indexes agree.",
+   "bound": "Neither covers books that were never filmed. The parish's own status animarum, XIX–XX, is digitised and has NOT been read — it is a household census with birth dates and would not be caught by a birth-register search.",
+   "date": "15 Sep 2026"
+  },
+  {
+   "claim": "Leonard never appears in the Government Gazette — A WEAK NULL, recorded as weak",
+   "searched": "Full text, every exact form of his name; and loose sweeps on Wear with engineer, Fairlands, Johannesburg",
+   "result": "Exact forms return zero. Loose forms return 3,469 and 5,568 documents, none of them him.",
+   "bound": "WEAR IS AN ORDINARY ENGLISH WORD — it appears in trade names, wool-labelling prosecutions and railway reports about flange wear. A null on this surname is nearly worthless, and is the opposite of the LUWINSKI null, which is strong precisely because the surname is rare and the same search finds him eight times. The two are not the same kind of object.",
+   "date": "15 Sep 2026"
+  },
+  {
+   "claim": "None of Leonard's three dead sisters has a gazetted estate",
+   "searched": "Government Gazette full text: “CYNTHIA YVONNE ELIZABETH”, “JANETTE EILEEN MAUD”, and “KATHLEEN EDITH” with FOOT across 2009–2014",
+   "result": "Cynthia returns nothing at all. Janette returns only her own 1975 naturalisation notice and the 1976 certificate list. Kathleen returns nothing in her death window.",
+   "bound": "THIS IS EXPECTED, NOT SUSPICIOUS. A Form J193 estate advertisement is required only above a value threshold, and three women who died in Johannesburg suburbs in 2000, 2001 and 2010 would very probably fall under it. It means the estates cannot be ordered by number and must be asked for by name and date of death — not that they do not exist.",
+   "date": "16 Sep 2026"
+  },
+  {
+   "claim": "There is no Maud Mabel Castle in the records — A WEAK NULL",
+   "searched": "FamilySearch, full forename pair MAUD MABEL with surname CASTLE, England and South Africa; and NAAIRS for LONGHURST",
+   "result": "No record anywhere for a Maud Mabel Castle. The 136 NAAIRS Longhursts are overwhelmingly Cape-based and older, with nothing joining any of them to a Castle.",
+   "bound": "FamilySearch fuzzy-matches forenames badly — it collapses Janette into Jane, Jean and even Ware — and its England coverage is not complete. This does not dispose of the 1915 and 1919 Johannesburg divorces, which name her plainly. The real tests are two orderable documents: MHG 3632/50 and WLD 155/1915.",
+   "date": "16 Sep 2026"
+  },
+  {
+   "claim": "No Leibholz appears anywhere in the South African archives",
+   "searched": "NAAIRS, all repositories and national registers, surname LEIBHOLZ",
+   "result": "Zero documents.",
+   "bound": "Expected rather than informative — the Leibholz brothers were in Berlin and East Prussia and none of them reached South Africa. Recorded so that nobody runs the search again on the assumption it was never tried.",
+   "date": "16 Sep 2026"
+  },
+  {
+   "claim": "No Johannesburg street directory of the 1940s or 1950s is reachable without a reading room",
+   "searched": "ancestors.co.za street directories; eGGSA; FamilySearch South Africa online records guide",
+   "result": "The only South African street directory digitised and searchable is PIETERMARITZBURG 1897. Voters rolls online cover 1925 and 1931 only, across 148 towns.",
+   "bound": "This is about ONLINE reach, not existence — the Johannesburg directories exist on paper and in libraries. And the 1925/1931 voters rolls, useless for the Wears who arrived in the late 1930s, are exactly right for the Momple, Robertson and Longhurst families, who were Johannesburg people in those years.",
+   "date": "16 Sep 2026"
+  },
+  {
+   "claim": "No spelling of Ivone's maiden name appears in a South African naturalisation notice, 1930–1960",
+   "searched": "gazettes.africa full-text, South African issues only, every year from 1930 to 1960 inclusive. FIRST PASS searched three spellings — FIGUEIREDO, DE FIGUEIREDO, MOTA FIGUEIREDO. SECOND PASS, run the same day after David pointed out that she is recorded under several names, added the other three the records actually use — FIGUEREDO (her own 1953 marriage register), FIGUERIDO (WLD 2225/1953) and FIGARETTO (the NAAIRS index itself) — plus FIGUEIRIDO, and the married surnames LUWINSKI, LUWINSKY and LUWENSKI.",
+   "result": "NO NATURALISATION NOTICE UNDER ANY SPELLING. The first pass returned five South African hits in thirty-one years, two of them deceased-estate notices new to this archive: ESTATE 7029/54 — FIGUEIREDO, AGOSTINHO VICENTE SEBASTIAO, of Johannesburg, account advertised 22 July 1955; and ESTATE 2910/60 — MONTEIRO, JOSÉ DE FIGUEIREDO, OF LOURENÇO MARQUES, PORTUGUESE EAST AFRICA, advertised 2 December 1960. THE SECOND PASS ADDED NOTHING. Figueredo returns five South African hits across 1940–1943 and ALL FIVE ARE THE SAME PERUVIAN TRADING ADDRESS in a wartime enemy-trading blacklist — \"Figueredo 792, Callao, Peru\". Figuerido returns two hits on the whole continent and none in South Africa. FIGARETTO, FIGUEIRIDO AND LUWENSKI RETURN NOTHING ANYWHERE IN ANY AFRICAN GAZETTE — they are index corruptions, not spellings anyone ever printed. Luwinski and Luwinsky return the same eight documents already known.",
+   "bound": "TWO CONTROLS, WHICH IS WHAT MAKES THIS WORTH ANYTHING. (1) THE CORPUS CARRIES NATURALISATION MATERIAL: searched for \"certificate of naturalization\", \"naturalization\" and \"Aliens Act\" in 1938, 1946, 1950 and 1955 — South African hits in every year tested, up to ten a year on a capped result set. (2) THE SEARCH IS NOT DEFEATED BY SPELLING: six recorded forms of the maiden surname and three of the married one were each tried across all thirty-one years. THE FIRST VERSION OF THIS NEGATIVE OVERSTATED ITSELF by searching only three spellings while this archive's own notes record six — that is corrected here rather than left looking stronger than it was. WHAT WOULD STILL FALL OUTSIDE IT: (a) THE OCR ON THESE SCANS IS DREADFUL — one 1943 hit renders as \"Epo .Figueiredo,CarlosDe\" — so this negative is SOFT in a way the FreeBMD one is not, and no list of spellings fixes a scanner that loses the word altogether; (b) it searches the published notice, not the file, and not every naturalisation was gazetted under every statute; (c) IT DOES NOT TOUCH THE SAB NATURALISATION AND ALIEN-REGISTRATION FILES THEMSELVES, which are indexed on NAAIRS and were not searched because NAAIRS was unreachable on the day; (d) if she took her husband's nationality by marriage in February 1948, as the law before September 1949 allowed, THERE WAS NEVER A NOTICE TO FIND.",
+   "date": "16 Sep 2026"
+  },
+  {
+   "claim": "WITHDRAWN — ‘NAAIRS is down’ was wrong. The URL had moved and this archive was holding a stale one",
+   "searched": "http://national.archsrch.gov.za/sm300dl, the entry point this archive had used throughout and had never re-checked against the National Archives portal that publishes it.",
+   "result": "THE HOST DOES NOT RESOLVE AND NEVER WILL AGAIN — that part was accurately observed. THE CONCLUSION DRAWN FROM IT WAS WRONG. The portal at national.archives.gov.za/naairs.htm still publishes a working Search link, and it points somewhere else entirely: http://www.national.archsrch.gov.za/sm300cv/smws/sm300dl — a WWW PREFIX AND A PATH PREFIX this archive did not have. That URL returns HTTP 200, issues a session token and searches normally. FIGUEIREDO returns 43 documents, which is exactly the figure this archive recorded on 14 September.",
+   "bound": "RECORDED AS A FAILURE RATHER THAN QUIETLY DELETED, because the failure is the instructive part. THE OBSERVATION WAS SOUND AND THE INFERENCE WAS NOT: a dead hostname was read as a dead service, when the service had simply moved and this archive was the only party still using the old address. It took DAVID OPENING THE PUBLISHED PORTAL PAGE IN A BROWSER to find it — thirty seconds of looking at where the link actually points, against an afternoon of diagnosing DNS. THE COST WAS NOT ONLY TIME. The draft reply to Ms Xaba had a paragraph telling her, helpfully, that her own institution's search system was down. IT WOULD HAVE BEEN WRONG, and it was removed before the letter was sent. THE RULE TAKEN FROM IT: when an endpoint this archive depends on stops answering, RE-READ THE PAGE THAT PUBLISHES THE LINK before concluding anything about the service behind it.",
+   "date": "16 Sep 2026"
+  },
+  {
+   "claim": "The variant spellings each return exactly one NAAIRS record, and the correct spelling returns none of them",
+   "searched": "NAAIRS, All Archives Repositories (RSAE), on the corrected endpoint, 16 September 2026. Searched FIGUEIREDO, FIGARETTO, LUWENSKI, LUWINSKY as separate queries, and the full record fetched for each.",
+   "result": "FIGUEIREDO — 43 documents, the same 43 recorded on 14 September. FIGARETTO — 1: ILLIQUID CASE RESTITUTION OF CONJUGAL RIGHTS IVONE LUWENSKI (FORMERLY DE WITT, BORN FIGARETTO) VERSUS KURT, which is TAB WLD 2545/1950. LUWENSKI — 1: the same file. LUWINSKY — 1: TAB WLD 1950/1948. EACH VARIANT SURFACES A FILE THAT THE CORRECT SPELLING DOES NOT RETURN. WLD 2545/1950 is the only action in which Ivone is the plaintiff, and it is reachable ONLY through two spellings nobody would choose to type.",
+   "bound": "THE FIRST TWO ATTEMPTS AT THIS SEARCH RETURNED ZERO AND WERE NOT BELIEVED, which is the only reason the result is worth anything. The first posted an incomplete form and NAAIRS answered, in words, 'the search was bypassed as no search word was entered' — a message that would have read as an empty holding to anyone parsing for row counts. The second returned zero on a run that had returned one a minute earlier, and was treated as throttling rather than data. THIS ARCHIVE HAS TWICE BEFORE RECORDED FALSE EMPTINESS FROM EXACTLY THIS FAILURE and the rule now is that a zero from a flaky interface is not a finding until it reproduces. WHAT WOULD STILL FALL OUTSIDE IT: only four spellings were put to NAAIRS, not all fourteen recorded on the names page; the search was RSAE, the all-repositories database, which should but may not subsume every depot; and NAAIRS indexes file titles, not file contents, so a woman named inside a document she is not a party to remains invisible to any spelling.",
+   "date": "16 Sep 2026"
+  },
+  {
+   "claim": "WITHDRAWN WITHIN THE HOUR — the archives index does not list naturalisation files AT ALL, so their absence proves nothing",
+   "searched": [
+    "First pass: the National Archives index on all eleven tested spellings of Ivone's maiden surname, and separately on LUWINSKI, LUWINSKY and LUWENSKI for Kurt — every depot, every series, no date limit. THEN, ON DAVID'S QUESTION ABOUT KURT, A CONTROL TEST THAT SHOULD HAVE BEEN RUN FIRST: WALTER OPPENHEIMER, Kurt's business partner, IS KNOWN TO HAVE NATURALISED — the Union Gazette carries his application as notice 1462, gazette 3007 of 20 February 1942, page 115. So the index was searched for him."
+   ],
+   "result": "NO NATURALISATION FILE FOR OPPENHEIMER EITHER. A man this archive can PROVE naturalised, with the gazette notice in hand, returns three records and not one of them is his naturalisation. THE INSTRUMENT CANNOT DETECT A KNOWN POSITIVE. Therefore the absence of a Figueiredo or a Luwinski naturalisation file in that index says NOTHING WHATEVER about whether such files exist. The first version of this entry concluded that no naturalisation record exists. IT WAS WRONG, and it was wrong in the most ordinary way: it mistook the limits of a finding aid for a fact about the world.",
+   "bound": "WHAT SURVIVES, AND IT IS STILL WORTH HAVING. The surname searches DID return sixteen immigration files at KAB — twelve IRC, four PIO — and none at Pretoria, which is real evidence about WHERE the Portuguese community is indexed even though it is no evidence about naturalisation. WHAT THIS NOW MEANS IN PRACTICE: naturalisation files are evidently not item-indexed online, so THE ONLY ROUTE IS SOMEBODY STANDING IN THE READING ROOM ASKING WHETHER A NATURALISATION REGISTER OR CARD INDEX EXISTS. That question is now in both outstanding letters — to the Reading Room supervisor, who would know what finding aids exist, and to the researcher, framed as a question rather than a search. AND THE LAW STILL MAY HAVE PRE-EMPTED IT FOR IVONE: she married a Mr de Witt on 2 February 1948, inside the rule that gave a foreign wife her husband's nationality automatically. THAT REMAINS THE BEST EXPLANATION FOR HER. IT DOES NOT EXPLAIN KURT, who arrived in 1933, was an alien for thirty-five years, and died one.",
+   "date": "16 Sep 2026"
+  },
+  {
+   "claim": "The two Giddins DNA matches do NOT connect through the Hertfordshire Giddinses",
+   "searched": "On 16 September 2026 the Castle line was traced to JAMES GIDDINS of Norton End, Baldock, from the 1861 and 1871 censuses. The same afternoon, the archive's own guard flagged GIDDINS as a surname carried by two living DNA match holders — 43.36 cM and 62.89 cM, both in cluster 12. The larger holder's public tree, eighty-nine people, was then opened and read.",
+   "result": "IT IS A DIFFERENT FAMILY. That tree's GEORGE GIDDINS, 1846–1890 — whose dates sit within a year of James's son George, born about 1847 — was born on 17 JULY 1846 AT WITHYBROOK, WARWICKSHIRE, and died in the Wandsworth district of London. HIS FATHER IS RICHARD GIDDINS, NOT JAMES. The other surnames in that tree are Ratcliffe, Conway, Woodhams, Wall, McMellon and Prescott — none of them Hertfordshire. THE SURNAME IS NOT THE CONNECTION.",
+   "bound": "WHAT THIS DOES AND DOES NOT SAY. It does NOT say the matches are false: 62.89 cM is 62.89 cM and both holders are genuinely related to Derrick. It says only that THE REASON IS NOT THE GIDDINS SURNAME — which should never have been assumed, because a match holder's surname is one of eight great-grandparental lines and there is no reason it should be the relevant one. RECORDED BECAUSE OF HOW NEARLY IT WENT THE OTHER WAY. Three paragraphs had already been written calling these 'the first DNA to touch the Castle line above George William Castle', with the fourth-cousin arithmetic worked out and fitting. THE ARITHMETIC WAS SOUND AND THE PREMISE WAS NEVER CHECKED. Opening the tree took four minutes. WHAT REMAINS OPEN: the smaller holder's tree runs to twelve people and is too thin to read; and the Hertfordshire Giddinses of Norton End are still untouched by any DNA at all."
+  },
+  {
+   "claim": "No Luwinski, in any spelling, appears on any South African page FamilySearch has read — but the pages it has read stop in 1931",
+   "searched": "FamilySearch full-text search, which reads the words on unindexed images rather than a name index, signed in, 17 September 2026: LUWINSKI, LUWINSKY, LUWENSKI, and the phrase 'Piccadilly Hat' — the name of Kurt's own shop at 81 Eloff Street",
+   "result": "Thirty-three hits across the three spellings and EVERY ONE IS AMERICAN — Milwaukee and Chicago naturalisation petitions, New York and Philadelphia passenger lists, Ohio, Minnesota and Massachusetts vital records. The shop name returns nothing but Lancashire trade directories of the 1890s.",
+   "limit": "THE CONTROL WAS RUN FIRST THIS TIME. Searching NOOITGEDACHT, a farm name that exists almost nowhere outside South Africa, returns page after page of SOUTH AFRICAN VOTERS' ROLLS 1925-1931, the Pretoria district roll of 1927, the Vereeniging roll of 1931 and Transvaal military records of 1900-1903. The corpus genuinely holds South Africa and the instrument was genuinely pointed at it. AND THEN THE DATES DECIDE IT: Kurt arrived in 1933, Leonard sailed in 1937, the Wears came in 1939. EVERY PERSON THIS ARCHIVE IS LOOKING FOR ARRIVED AFTER THE LAST ROLL WAS PRINTED. This is an exhaustive search of the wrong years, and it is recorded so that nobody — including this archive — reads it as an absence of the men."
+  },
+  {
+   "claim": "There is no estate notice for Leonard Aubrey Robert Wear in the South African Government Gazette — and no Phyllis Agnes Norquoy either",
+   "searched": "gazettes.africa, free and full-text across 54,313 South African issues, 17 September 2026. The two searches that matter are WEAR AND AUBREY, which returns 38 documents, and NORQUOY, which returns 41. EVERY ONE OF THE SEVENTY-NINE WAS READ. Also run: Wear and Norquoy, Wear and Kwele, Norquoy and Phyllis, Norquoy and Agnes, Luwinski and Ivone, Luwinski and Frances, Hostowsky, Salkow and Ivonne.",
+   "result": "No Leonard. No Phyllis. An estate notice under the Administration of Estates Act is the one document that would carry his date of death and settle whether it was 1973 or 1979, and it is not there under a search that would catch it if both words survived the scanner.",
+   "limit": "THREE LIMITS, AND THE FIRST IS THE SERIOUS ONE. PHRASE SEARCH IS UNRELIABLE ON THIS CORPUS AND THE CONTROL PROVES IT: 'Kurt Israel Luwinski' returns NOTHING, although this archive holds eight gazette entries for the man. Commas, line breaks and jammed columns destroy word adjacency, so only same-DOCUMENT searches can be trusted here, and even those depend on the scanner having read both words. SECOND, an estate is only advertised if it is over the threshold — a man who died without one is not in this record at all. THIRD, a year-by-year sweep of the word 'Wear' alone was attempted and abandoned as unsound: the API stops at ten pages, so any year with more than a hundred documents is silently truncated, and 'wear' is an English word that appears in half the trade notices ever printed."
+  },
+  {
+   "claim": "WITHDRAWN — the England & Wales Electoral Registers 1832-1932 cannot be searched for a person at all, and this archive said it could",
+   "searched": "Findmypast, that record set, 18 September 2026: WEAR with a Bermondsey place filter; WILLIAM WEAR with no filter; JOHN SMITH as a high-frequency control; LUWINSKI as a rare-surname control; and a nonsense string as a null control.",
+   "result": "EVERY ROW THE SET RETURNS SAYS 'NO NAME ON RECORD'. William Wear returns 3,478 of them and the locations are DEVON and DURHAM — Weare in Devon, the River Wear in Durham. John Smith returns the same nameless rows in Lancashire. Luwinski returns zero, and so does a nonsense string. The set is page images of volumes; it indexes no elector, and what the name box matches is a place.",
+   "limit": "THE WITHDRAWN CLAIM WAS THIS ARCHIVE'S OWN, MADE THE PREVIOUS DAY: nine electoral register entries 'for William Wear, Surrey and London, 1885 to 1900'. The rows were real and carried no name, and the Surrey and London came from a place filter typed by the same hand that then reported it as a finding. A RESULT COUNT IS A PROPERTY OF A SEARCH BOX, NOT OF THE PAST. What survives is that the Bermondsey volumes are digitised and can be READ, page by page, for 1885 to 1900 — an afternoon of images rather than a search. And before 1918 the franchise is a property franchise, so lodgers and every woman are absent by law and a silence there means nothing."
+  },
+  {
+   "claim": "The record that would name Georg Leibholz's parents does not exist — Hammerstein's civil registers and its synagogue books are both gone",
+   "searched": "Archiwum Panstwowe w Koszalinie, asked on 14 September 2026 for the registers of the former German civil registry office at CZARNE — Standesamt HAMMERSTEIN, Kreis Schlochau — for 1847 and 1884, and for the books of the Jewish community there. Answered 16 September 2026, reference O-S.6342.406.2026, over the signature of Krzysztof Skrzypiec, Head of the Slupsk Branch.",
+   "result": "NEITHER SURVIVES IN THAT ARCHIVE. No Standesamt Hammerstein registers for 1874 TO 1899 — the whole span of German civil registration up to the end of the century — and NO SYNAGOGUE-COMMUNITY BOOKS FOR CZARNE AT ALL. The letter goes further than a simple nil return and says they hold no information about the fate of either series, or where it might now be kept.",
+   "limit": "IT IS AN ANSWER ABOUT ONE BUILDING, and the letter says so itself by disclaiming knowledge of where the books went. Records of a Kreis Schlochau parish could sit at another Polish archive, or in Germany, or have been destroyed in 1945, and this reply does not distinguish those. WHAT IT DOES CLOSE IS THE CHEAP ROUTE: GEORG LEIBHOLZ was born at Hammerstein on 7 June 1884 — the Bundesarchiv Gedenkbuch entry en1100801 says so — and a birth register of 1884 is the one document that would have named his parents and settled whether he belongs to this family at all. THE ARCHIVE'S POSITION IS THAT HE DOES NOT: Jacob Leibholz was born at SCHUBIN in POSEN on 8 August 1884, two months after Georg and in a different province, and two men cannot be brothers on those dates. That finding now stands on the Gedenkbuch alone, because the register that could have overturned it is not there to be read. AND THE PRE-1874 HALF IS WORSE: SALLY LEIBHOLZ, born 1847, is before German civil registration began, so only the synagogue books could ever have held him — and those are the ones the letter says do not exist at all."
+  },
+  {
+   "claim": "Frederick James Castle has no surviving First World War service file — and that is what a career soldier looks like, not a gap",
+   "searched": "Findmypast, BRITISH ARMY SERVICE RECORDS — which carries WO 363, the 'Burnt Documents', and WO 364, the pension claims — surname CASTLE, forename FRED*, all 78 results read across four pages, 17 September 2026.",
+   "result": "NOT ONE ENTRY FOR THE SCOTTISH RIFLES, THE CAMERONIANS, OR SERVICE NUMBER 10061. There are Fred James Castles in the set — 98411 Labour Corps, 10524 Devonshire Regiment, 40524 13th Reserve Cavalry — and every one of them belongs to another man; the Labour Corps one is the Royal Berkshire soldier whose medal card gives 33601 and 98411 together.",
+   "limit": "THIS ABSENCE IS EVIDENCE FOR THE READING RATHER THAN AGAINST IT, and that is why it is worth filing. WO 363 AND WO 364 COVER MEN WHOSE SERVICE ENDED BY ABOUT 1920. A soldier still serving after that date kept a live record, and a live record was never transferred to the Public Record Office — it stayed with the War Office and its successors. HIS MEDAL INDEX CARD GIVES HIM THE NUMBER 7815432, WHICH IS AN EIGHT-DIGIT POST-1920 ISSUE. So the man this archive is looking for is precisely the man these two series would not contain. TWO OTHER LIMITS, STATED: about sixty per cent of WO 363 burned in 1940, so a nil return there means little on its own; and the 1914 and 1914-15 Star rolls have NOT been searched, which is a separate question about when he first entered a theatre of war. WHAT WOULD ANSWER IT: the post-1920 service record, held by the Ministry of Defence, which releases to next of kin or on proof of death — and this archive has no death for him at all."
+  },
+  {
+   "claim": "Frederick James Castle did not die on army service abroad and did not marry in an army chapel abroad — under that name",
+   "searched": "Findmypast, 17 September 2026. BRITISH ARMED FORCES AND OVERSEAS DEATHS AND BURIALS: surname CASTLE, forename FRED*, all ten results accounted for. BRITISH ARMED FORCES AND OVERSEAS BANNS AND MARRIAGES: surname CASTLE, ALL FIFTY-NINE RESULTS READ ACROSS THREE PAGES. These are the registers a soldier of the 1920s appears in instead of the ordinary General Register Office series.",
+   "result": "NOTHING IN EITHER. No Scottish Rifles death and no number 10061; the nearest by name is FREDERICK J CASTLE who died in 1917 and is PRIVATE 47783 OF THE NORTHUMBERLAND FUSILIERS, buried at Roclincourt Valley Cemetery in France. In the marriage set there is NOT ONE Fred, Frederick or Fredk among fifty-nine Castles, who marry instead at Malta, Kolar, Istanbul, Singapore, Italy, Aldershot and Johannesburg.",
+   "limit": "THE CONTROL WAS RUN BEFORE THE NEGATIVE WAS BELIEVED, which is now this archive's habit and was not a fortnight ago: JOHN SMITH in the same marriage set returns 251 results, from Lisbon in 1726 onward. THE SET IS REAL AND IT WAS POINTED AT THE RIGHT PLACE. WHAT THE ABSENCE DOES NOT PROVE: these registers catch a man only while he is IN the army and only under the name the army used. He may have married after discharge, or under Frederick where the index has Fred, or in a civil registry abroad that Britain never indexed. AND THE ABSENCES TOGETHER STILL SAY SOMETHING: he did not die in the war, because his medal card gives him the post-1920 number 7815432; he is in no English census after 1911, no 1939 Register and no English death index. The honest reading is that he left and did not come back, and that the record of the rest of his life is in a country this archive has not yet identified."
+  },
+  {
+   "claim": "The name LUWINSKI appears in no record described by any archive in The National Archives' Discovery catalogue",
+   "searched": "discovery.nationalarchives.gov.uk, the catalogue of The National Archives AND of more than two thousand five hundred other British archives — county record offices, university and cathedral libraries, regimental and company collections. Searched 17 September 2026 for LUWINSKI and LUWINSKY, and RE-RUN 21 September 2026 across fourteen spellings: LUWINSKI, LUWINSKY, LUWENSKI, LUWINSK, LOWINSKI, LEWINSKI, and the eight Leibholz forms LEIBHOLZ, LEIPHOLZ, LEYBHOLZ, LAIBHOLZ, LEIBHOLTZ, LEIPHOLTZ, LEIBOLZ, LEIPHOLS.",
+   "result": "COUNT 0 for both. By contrast LEIBHOLZ returns sixteen, none of them ours — Gerhard Leibholz, Dietrich Bonhoeffer's brother-in-law, at Lambeth Palace Library; a 1948 naturalisation certificate; two Home Office alien files; and an internment card for a Tobias Leibholz born at Breslau in 1906. *** RE-RUN 21 SEPTEMBER UNDER THE EIGHTH SPELLING AND THE NEGATIVE HOLDS AND IS NOW WIDER. *** LUWENSKI and LUWINSK also return COUNT 0, so four spellings of the name are now bracketed rather than two. LEIPHOLZ returns 0, as do LEYBHOLZ, LAIBHOLZ, LEIBHOLTZ, LEIPHOLTZ, LEIBOLZ and LEIPHOLS — so the sixteen Leibholz records are the whole of what Discovery holds under any spelling of that name. TWO NEIGHBOURING SURNAMES DO RETURN, AND ARE NAMED HERE SO NOBODY HAS TO FIND THEM TWICE: LOWINSKI returns 20 (Thomas Esmond Lowinsky, the painter, 1892-1947) and LEWINSKI returns 228. Neither is this family and neither is claimed as one.",
+   "limit": "DISCOVERY IS A CATALOGUE, NOT A NAME INDEX, and that limit is the whole of the caveat. Most series are described at PIECE level — 'passenger lists of people leaving the United Kingdom' — not at person level, so a man can be inside a described record and invisible to this search. Only a few series, WO 372's medal cards among them, are described item by item with names, and this same search found Fred James Castle's card that way. WHAT THE ZERO DOES MEAN: no British archive has catalogued a collection, a file or an item under that surname — no Luwinski company, estate, case or personal papers. For a family that passed through Britain only in transit, that is the expected answer, and it was worth establishing rather than assuming."
+  }
+ ]
 }
