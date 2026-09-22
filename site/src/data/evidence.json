@@ -433,6 +433,14 @@
    "people": 0
   },
   {
+   "file": "rosebank-1940-marriage-register.tsv",
+   "title": "Rosebank answered — with a document this archive already had",
+   "source": "Church of the Immaculate Conception, Rosebank, in reply to request 17; Original Marriage Register B.M.D.3 entry 13/1940, read at the image 22 September 2026",
+   "kind": "person",
+   "rows": 9,
+   "people": 0
+  },
+  {
    "file": "schmul-and-thimm.tsv",
    "title": "The two great-grandmothers' surnames — what can be reached and what cannot",
    "source": "FamilySearch collection metadata and Posen collection 4116415 (33 exact SCHMUL records read); Geneteka control run and failed; 20 September 2026",
@@ -3417,8 +3425,8 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 85,
-  "person_files": 24,
+  "files": 86,
+  "person_files": 25,
   "people": 185,
   "records": 259,
   "linked_to_register": 12

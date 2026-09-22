@@ -27,6 +27,7 @@ REG = ROOT / "site" / "src" / "data" / "register.json"
 # file -> (key columns, title, source citation, kind)
 # "kind": person = rows are people; ref = rows are references, not people.
 MANIFEST = {
+ "rosebank-1940-marriage-register.tsv": ([], "Rosebank answered — with a document this archive already had", "Church of the Immaculate Conception, Rosebank, in reply to request 17; Original Marriage Register B.M.D.3 entry 13/1940, read at the image 22 September 2026", "person"),
  "szubin-pre1874-jewish-records.tsv": ([], "No Jewish records for Szubin before 1874 — and civil registration had not started", "www.genealogiawarchiwach.pl team facet probed with controls, 22 September 2026", "ref"),
  "schmul-half-of-the-1874-entry.tsv": ([], "The bride's half — “Tochter der”, and a correction to the 119", "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141 akt nr 9/1874 scan 10, read at the image 22 September 2026", "ref"),
  "szubin-death-registers-searched.tsv": ([], "Sally's death — the Szubin registers have no index, and Berlin may be the right town", "www.genealogiawarchiwach.pl, facet and free-text searches with controls, 22 September 2026", "ref"),

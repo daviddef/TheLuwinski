@@ -229,10 +229,10 @@
     {
       "n": 26,
       "what": "The Catholic marriage register at Rosebank, 7 September 1940 — Archdiocese of Johannesburg",
-      "state": "blocked",
-      "owner": "the parish of Rosebank",
+      "state": "next",
+      "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The civil registers have no parents' columns. Catholic sacramental registers do. Leonard and Phyllis were married at Rosebank by W. P. Whelan, who filled in the Denomination line himself as \"Catholic Priest\", and they were married BY BANNS rather than on a licence — so the intention was read in church on three Sundays and generates its own entry as well. A parish marriage register of 1940 ordinarily names the father and mother of both parties. This is a church record, so it sits entirely outside the Home Affairs eligibility problem in request 15. Identify the Rosebank parish in the Archdiocese of Johannesburg and write to it. SENT as request 17. The parish is the Church of the Immaculate Conception, 16 Keyes Avenue, Rosebank, established 1936 — four years before the wedding. Not asserted as certain: the civil register gives only the word Rosebank, so the letter asks to be redirected if the marriage belongs to another parish or to a chaplaincy at the Roberts Heights camp. Both letters disclose plainly that David is not a descendant and makes no claim to be. SENT 15 September to Info@rosebankcatholicchurch.co.za, Gmail 1a0a3b72c965ecf1."
+      "note": "The civil registers have no parents' columns. Catholic sacramental registers do. Leonard and Phyllis were married at Rosebank by W. P. Whelan, who filled in the Denomination line himself as \"Catholic Priest\", and they were married BY BANNS rather than on a licence — so the intention was read in church on three Sundays and generates its own entry as well. A parish marriage register of 1940 ordinarily names the father and mother of both parties. This is a church record, so it sits entirely outside the Home Affairs eligibility problem in request 15. Identify the Rosebank parish in the Archdiocese of Johannesburg and write to it. SENT as request 17. The parish is the Church of the Immaculate Conception, 16 Keyes Avenue, Rosebank, established 1936 — four years before the wedding. Not asserted as certain: the civil register gives only the word Rosebank, so the letter asks to be redirected if the marriage belongs to another parish or to a chaplaincy at the Roberts Heights camp. Both letters disclose plainly that David is not a descendant and makes no claim to be. SENT 15 September to Info@rosebankcatholicchurch.co.za, Gmail 1a0a3b72c965ecf1. *** ANSWERED 22 SEPTEMBER 2026 — IN A WEEK, COURTEOUSLY, AND WITH A DOCUMENT THIS ARCHIVE ALREADY HAD. *** They sent the ORIGINAL MARRIAGE REGISTER, the Union civil form B.M.D. 3 no. 13 of 1940, completed by Father Whelan as marriage officer. IT HAS NO PARENTS' COLUMNS, and every field on it — Army, Roberts Heights, the banns, both witnesses — has been on the DNA page since 17 September, rebuilt from FamilySearch film 008161359 frame 475. THE FIRST WRITE-UP OF THIS REPLY ANNOUNCED THE OCCUPATION AND THE ADDRESS AS NEW FINDINGS AND WAS WRONG; a document arriving by email feels new, and the envelope was the only new thing. WHAT IS REAL: the parish ANSWERS, which matters more than the scan, because the books that name parents are still in their building. And a clean image now exists — published at /wear-robertson-1940.png — where the site previously had only a table of fields. One discrepancy is flagged and NOT silently fixed: the DNA page reads the first witness as MARY UNA ROBERTSON, the parish scan looks like MARY INA ROBERTSON, and two hard readings of one word prove nothing. THE ROW STAYS OPEN ON THIS ARCHIVE: a second letter is owed, thanking them and asking by name for the LIBER MATRIMONIORUM and the BANNS REGISTER, since the difference between the parish's own books and the state form it fills in is not obvious from outside."
     },
     {
       "n": 27,
@@ -2226,6 +2226,25 @@
       "covers": [
         "request:36-SEND-THIS-to-bydgoszcz-jewish-registers.txt"
       ]
+    },
+    {
+      "n": 267,
+      "what": "WITHDRAWN — the SANDF request already had the Roberts Heights evidence",
+      "state": "struck",
+      "owner": "this archive",
+      "since": "2026-09-22",
+      "note": "*** RAISED AND WITHDRAWN THE SAME HOUR, 22 September 2026. *** The row said the Rosebank reply turned the SANDF service-record request from a guess into a document, by giving Leonard's occupation as ARMY and his residence as ROBERTS HEIGHTS. IT DID NOT, BECAUSE THE ARCHIVE ALREADY HAD BOTH — reconstructed from FamilySearch film 008161359 frame 475 on 17 September, published on the DNA page, and already used there to argue that he was a serving soldier. Request 16 was drafted with that evidence in it. NOTHING ABOUT THE SANDF ENQUIRY CHANGES. Struck rather than deleted, because raising it is the sixth time in one day this archive has treated something it already held as a discovery, and the count is the useful part."
+    },
+    {
+      "n": 268,
+      "what": "SEND THE ROSEBANK THANK-YOU — and ask for the Liber Matrimoniorum by name",
+      "state": "next",
+      "owner": "David sends",
+      "since": "2026-09-22",
+      "covers": [
+        "request:37-SEND-THIS-to-rosebank-thanks-and-parish-register.txt"
+      ],
+      "note": "DRAFTED 22 September 2026, NOT SENT. requests/37, to go as a REPLY on the existing Rosebank thread. *** THE THANKS COMES FIRST AND IS GENUINE: *** they answered in a week, courteously, with a scan attached, under no obligation to do either. *** IT DOES NOT TELL THEM THEY SENT THE WRONG BOOK. *** It was an easy mistake — the priest was also the State's marriage officer, so the parish holds the Government form B.M.D. 3 as well as its own register, and the difference is invisible from outside a presbytery. The letter simply NAMES THE TWO BOOKS IT WANTS — the LIBER MATRIMONIORUM and the BANNS REGISTER — says what is in them that the form lacks, and stops. *** AND IT DOES NOT MENTION that this archive already held every field on the scan they sent. *** That is true, it is recorded here, and saying it to them would be graceless and would make the next request less likely to be answered. It states the reason plainly — an elderly man in Australia who has never known who his father was, and a chain of evidence every step of which is circumstantial — and it offers the parish an easy exit: if the 1940 books are with the Archdiocese rather than the parish, just say so and the letter goes there instead. It discloses that David is not a descendant and makes no claim to be."
     }
   ]
 }
