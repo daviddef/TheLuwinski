@@ -441,6 +441,14 @@
    "people": 0
   },
   {
+   "file": "schoeneberg-marriage-indexes.tsv",
+   "title": "Every Schöneberg marriage index, and what reading them would actually cost",
+   "source": "Landesarchiv Berlin LABSA, three office queries 22 September 2026; structure and cost measured at the image on P Rep. 161 Nr. 270",
+   "kind": "ref",
+   "rows": 13,
+   "people": 0
+  },
+  {
    "file": "schoeneberg-progress.tsv",
    "title": "The resume pointer for the Schöneberg death-index read",
    "source": "Maintained by hand as each year closes — the control that makes a long read survive short sessions",
@@ -3278,7 +3286,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 77,
+  "files": 78,
   "person_files": 22,
   "people": 180,
   "records": 252,
