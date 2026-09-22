@@ -27,6 +27,7 @@ REG = ROOT / "site" / "src" / "data" / "register.json"
 # file -> (key columns, title, source citation, kind)
 # "kind": person = rows are people; ref = rows are references, not people.
 MANIFEST = {
+ "probate-calendar-wear.tsv":  ([], "The probate calendar, finally read — sixteen Wear grants and none is Leonard", "probatesearch.service.gov.uk, OCR text of four calendar chunks plus a forename sweep of 1970-1981, 22 September 2026", "ref"),
  "schoeneberg-marriage-indexes.tsv": ([], "Every Schöneberg marriage index, and what reading them would actually cost", "Landesarchiv Berlin LABSA, three office queries 22 September 2026; structure and cost measured at the image on P Rep. 161 Nr. 270", "ref"),
  "register-date-audit.tsv":    ([], "Every date in the register audited — a bound is not a date", "The register itself, all 149 people and 215 distinct date strings, 22 September 2026", "ref"),
  "negatives-classified.tsv":   ([], "Every published negative classified, and three re-run", "The archive's own /negatives/ page, all 33 rows read one at a time 22 September 2026; re-runs at FreeBMD, probatesearch.service.gov.uk and gazettes.africa", "ref"),

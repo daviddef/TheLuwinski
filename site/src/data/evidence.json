@@ -401,6 +401,14 @@
    "people": 0
   },
   {
+   "file": "probate-calendar-wear.tsv",
+   "title": "The probate calendar, finally read — sixteen Wear grants and none is Leonard",
+   "source": "probatesearch.service.gov.uk, OCR text of four calendar chunks plus a forename sweep of 1970-1981, 22 September 2026",
+   "kind": "ref",
+   "rows": 15,
+   "people": 0
+  },
+  {
    "file": "register-date-audit.tsv",
    "title": "Every date in the register audited — a bound is not a date",
    "source": "The register itself, all 149 people and 215 distinct date strings, 22 September 2026",
@@ -3286,7 +3294,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 78,
+  "files": 79,
   "person_files": 22,
   "people": 180,
   "records": 252,
