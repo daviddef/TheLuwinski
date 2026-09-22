@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev --port 4331",
-    "build": "npm run check:pin && npm run build:register && npm run build:evidence && astro build && npm run check:templates && python3 ../tools/build-search.py && npm run check:search && npm run check:living && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence && npm run check:sources && npm run check:pages && npm run check:inline",
+    "build": "npm run check:pin && npm run build:register && npm run build:evidence && astro build && npm run check:templates && python3 ../tools/build-search.py && npm run check:search && npm run check:living && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence && npm run check:sources && npm run check:pages && npm run check:inline && npm run check:rows",
     "preview": "astro preview --port 4331",
     "check:search": "python3 ../tools/check-search.py",
     "check:living": "python3 ../tools/check-living.py --dist dist --mode harvest && python3 ../tools/check-living.py --dist dist --mode hashes",
@@ -19,10 +19,11 @@
     "check:sources": "python3 node_modules/@daviddef/archive-kit/kit/tools/checksources.py --root . --max-unreachable 6",
     "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 2",
     "check:pin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpin.py --root .",
-    "check:inline": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkinline.py --root . --max-inline 13"
+    "check:inline": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkinline.py --root . --max-inline 13",
+    "check:rows": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkrows.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#40bf5a3",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#fd1621e3cdfaa898c067e9bc9fba81d51442ba41",
     "astro": "^5.18.2"
   },
   "devDependencies": {
