@@ -9,6 +9,14 @@
    "people": 0
   },
   {
+   "file": "adressbuch-namenteil-runs.tsv",
+   "title": "The householder runs read as runs — and two published facts that did not survive it",
+   "source": "Berliner Adressbuch 1925-1943, ZLB Berlin, run read 22 September 2026",
+   "kind": "ref",
+   "rows": 15,
+   "people": 0
+  },
+  {
    "file": "alfred-luwinski-sachsenhausen.tsv",
    "title": "Alfred Luwinski born 9 September 1917 — who he actually was",
    "source": "Arolsen Archives DocID 130648701 — Amt für die Erfassung der Kriegsopfer (Berlin), reference 23120001 275; read with consent 20 September 2026",
@@ -53,7 +61,7 @@
    "title": "The Berliner Adressbuch, alphabetical name section",
    "source": "Zentral- und Landesbibliothek Berlin, digital.zlb.de — Teil I (Einwohner / Haushaltungsvorstände), annual volumes 1920-1943, read 20 September 2026",
    "kind": "ref",
-   "rows": 69,
+   "rows": 70,
    "people": 0
   },
   {
@@ -3457,7 +3465,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 90,
+  "files": 91,
   "person_files": 25,
   "people": 185,
   "records": 259,

@@ -122,6 +122,14 @@
       "was": "\"ERNA — 1980-81 telephone book, 'Leibholz Erna · 20 Streitstr. 39' — Spandau. The last Leibholz in the run\", and, in the summary line of the same file, \"then Erna alone in 1980\".",
       "now": "SHE IS A LEIPHOLZ, NOT A LEIBHOLZ, AND SHE IS NOT THE LAST. The 1980-81 OCR read a p as a b. The alphabet around her settles it — the line sits between LEIPERT and LEIPNER, where LEIPHOLZ belongs and LEIBHOLZ cannot — and the 1975-76 to 1979-80 volumes print the P plainly on the same number, 3 35 84 05, at the same flat. THE LAST LEIBHOLZ IN THE POST-WAR RUN IS HILDE, at Wiesbadener Straße 57, who is in the same 1980-81 volume and in nine consecutive books from 1972-73.",
       "source": "ZLB Berlin telephone books, PI_ANCHOR 15849358. The spelling was corrected on 21 September in data/leipholz-postwar-berlin.tsv and data/berlin-postwar-luwinski.tsv was never amended to match, so this file carried the superseded claim for a day. Hilde's presence in 1980-81 was found on 22 September by reading the Leibfried-to-Leibich slot in full rather than searching for the name. Working in data/leipholz-telephone-slot-audit.tsv."
+    },
+    {
+      "id": 9500912,
+      "who": "Jaques Leibholz & Co., the family's Konfektion firm in Berlin W8 — Jacob Leibholz's own business",
+      "field": "street",
+      "was": "KRONENSTRASSE 59-60, published on the Leibholz page, in data/berlin-adressbuch-names.tsv, in data/jacob-leibholz-deportation.tsv and in two research-log entries.",
+      "now": "KRAUSENSTRASSE 59-60. The house number is unchanged.",
+      "source": "Berliner Adressbuch, ZLB Berlin. FOUR READINGS IN THREE VOLUMES, none of which says Kronen: 1925 page 1871 prints it cleanly, \"JaqueB Leibholz & Co, Konfektion, W8, Krausenstr. 69. 00\"; 1934 page 1462 \"W8 Kraufen-/strasse 69. 60\"; 1938 page 1633 in the householder run \"W8 Krausen-/strasse 59. 60\"; and 1938 page 3385, a different section of the same volume, \"Leibholz J & Co W8 Kraujeuilr 69. 60\". THE DECIDING EVIDENCE IS THE OCR ARTEFACT RATHER THAN THE SPELLING: the f of \"Kraufen\" and the j of \"Kraujeu\" are both this scanner's rendering of the long s, and Kronenstrasse has no s in that position. Found on 22 September while sweeping the householder runs for row 260, and the wrong street survived because both streets are real and both sit in the Konfektion quarter around Hausvogteiplatz."
     }
   ]
 }
