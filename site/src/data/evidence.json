@@ -409,6 +409,14 @@
    "people": 0
   },
   {
+   "file": "negatives-control-audit.tsv",
+   "title": "Does every negative show its instrument was answering?",
+   "source": "The archive's own /negatives/ page, all 34 rows read 22 September 2026; new controls run at gazettes.africa",
+   "kind": "ref",
+   "rows": 9,
+   "people": 0
+  },
+  {
    "file": "oskar-leibholz-theresienstadt.tsv",
    "title": "Oskar Leibholz, from Schubin to a transport number leaving Theresienstadt",
    "source": "Arolsen Archives DocIDs 127212723, 11243228, 11214364 and 5055941 — Gestapo transport list 15510042, AJDC/ITS card 01020102 047, Berlin registration card 10000375 24, Theresienstadt central card file 11422001 183; and DocID 12663551, the Kultusvereinigung Berlin Zählkarte for Gertrud, 01020401 034; read with consent 20 September 2026",
@@ -429,7 +437,7 @@
    "title": "Every date in the register audited — a bound is not a date",
    "source": "The register itself, all 149 people and 215 distinct date strings, 22 September 2026",
    "kind": "ref",
-   "rows": 9,
+   "rows": 12,
    "people": 0
   },
   {
@@ -3425,7 +3433,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 86,
+  "files": 87,
   "person_files": 25,
   "people": 185,
   "records": 259,
