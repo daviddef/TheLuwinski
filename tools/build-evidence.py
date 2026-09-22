@@ -27,6 +27,7 @@ REG = ROOT / "site" / "src" / "data" / "register.json"
 # file -> (key columns, title, source citation, kind)
 # "kind": person = rows are people; ref = rows are references, not people.
 MANIFEST = {
+ "schmul-half-of-the-1874-entry.tsv": ([], "The bride's half — “Tochter der”, and a correction to the 119", "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141 akt nr 9/1874 scan 10, read at the image 22 September 2026", "ref"),
  "szubin-death-registers-searched.tsv": ([], "Sally's death — the Szubin registers have no index, and Berlin may be the right town", "www.genealogiawarchiwach.pl, facet and free-text searches with controls, 22 September 2026", "ref"),
  "leibholz-schmul-marriage-1874.tsv": (["name"], "Hammerstein, from a document at last — the 1874 marriage, and a generation above", "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141, akt małżeństwa nr 9/1874, on genealogiawarchiwach.pl, read 22 September 2026", "person"),
  "jacob-leibholz-birth-1884.tsv": (["name"], "Jacob Leibholz's birth entry, read at the image — Schubin 1884 Nr. 63", "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 28, akt nr 63/1884, on genealogiawarchiwach.pl, read 22 September 2026", "person"),
