@@ -121,12 +121,22 @@ section.blk:last-child{border-bottom:0}
    22 September 2026. Written for the Blazevic archive that day and carried to
    the other seven once the effect had been counted rather than assumed.
 
-   IT REACHES LESS THAN IT LOOKS. The selector is `section.blk > p + p` —
-   DIRECT children — so a paragraph inside a component's own wrapper is
-   untouched. Counted on the built pages: 211 pairs across 68 pages in the
-   seven archives, every one of them prose. A first count that searched the
-   whole of each section rather than its direct children said 7,405, which is
-   twelve times the truth and would have been the wrong reason to hesitate.
+   HOW FAR IT REACHES, corrected, and the correction is the useful part.
+   The selectors match DIRECT children of section.blk only, so a paragraph
+   inside a component's own wrapper is untouched. Counted properly across all
+   eight archives: 1,780 newly spaced pairs on 1,007 of 19,283 built pages.
+   Roughly a fifth of those are paragraph-to-paragraph; the rest are the note,
+   list and table pairs, which is why the note-heavy archives move most —
+   D'Arcy 569 pairs on 368 pages, Blazevic 647 on 342, Mazza 248 on 227.
+
+   THE FIGURE THIS FILE FIRST CARRIED WAS 211 PAIRS ON 68 PAGES, and seven
+   archives took the change on it. It counted `section.blk > p + p` and stopped
+   — one of the sixteen selectors below — so it described four per cent of the
+   rule it was justifying. An earlier count said 7,405 by searching whole
+   sections instead of direct children. Twelve times high, then eight times
+   low, both from counting against a DESCRIPTION of the rule rather than the
+   rule. The D'Arcy session measured its own build against all sixteen and
+   found the gap; its 571 and this sweep's 569 agree.
 
    Nothing that was already spaced moves: the inline styles are more specific
    and still win. This only fills in what was never set. */
