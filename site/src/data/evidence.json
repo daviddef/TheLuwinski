@@ -585,6 +585,14 @@
    "people": 0
   },
   {
+   "file": "trove-and-ryerson-22-september.tsv",
+   "title": "Trove answered and corrected its own row; Ryerson's coverage settled without a search",
+   "source": "trove.nla.gov.au and ryersonindex.org, 22 September 2026",
+   "kind": "ref",
+   "rows": 10,
+   "people": 0
+  },
+  {
    "file": "twenty-alone.tsv",
    "title": "Twenty things this archive can do without David",
    "source": "Written 21 September 2026 at his request — a plan, not a finding",
@@ -3433,7 +3441,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 87,
+  "files": 88,
   "person_files": 25,
   "people": 185,
   "records": 259,
