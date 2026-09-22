@@ -183,20 +183,34 @@ def slug(s):
 def rows(path):
     """Read an evidence TSV the same way it is written: tabs, and NOTHING ELSE.
 
-    *** QUOTE_NONE IS LOad-BEARING. *** These files are hand-written prose and
-    they quote things -- a register line, a directory entry, somebody's words.
-    A field that OPENS with a double quote is, to the csv module, a QUOTED
-    FIELD, so the quote swallows the newline at the end of the line and the
-    next line is read as a continuation of it. Every row below shifts by one.
+    *** QUOTE_NONE IS LOAD-BEARING. *** These files are hand-written prose and
+    they quote things -- a register line, a directory entry, a document's own
+    word. A field that OPENS with a double quote is, to the csv module, a
+    QUOTED FIELD, so the module strips the quotes it believes it is
+    unwrapping. A LINE THE ARCHIVE IS QUOTING BECOMES A LINE THE ARCHIVE
+    APPEARS TO BE ASSERTING.
 
-    It is silent. Nothing errors, no row count looks wrong from outside, and
-    the page still builds. data/leipholz-postwar-berlin.tsv lost one row this
-    way and data/schoeneberg-1938-1968-instrument.tsv lost NINE, their content
-    welded onto the end of the row above.
+    41 OF 93 FILES HERE CARRY SUCH A FIELD. In the built output a 1939
+    Register note reads `Widowed` where the file says `"Widowed"`, and two row
+    labels in data/atlas-pin-audit.tsv lose the quotation marks that mark them
+    as quotations of a published phrase the row exists to correct.
 
-    Found 23 September 2026 by a peer session that parsed every TSV in the
-    estate both ways and compared, rather than reading the code and reasoning.
-    With this flag all 93 files agree, row for row, with a plain tab split.
+    *** NO ROW IS LOST OR SHIFTED, AND AN EARLIER VERSION OF THIS COMMENT SAID
+    OTHERWISE. *** The swallowed-newline story is wrong: zero files here lose
+    or shift a row under default quoting. The true fault is quieter and worse
+    for being quiet -- the row survives, the quotation marks do not, nothing
+    errors, no count looks wrong, and the page builds.
+
+    Found 23 September 2026 by a peer session parsing every TSV both ways.
+    Both of our first measurements were wrong in the same manner: comparing
+    ROW COUNTS while filtering blank lines on one side only. Compare CONTENT,
+    with blanks and `#` comments normalised on both sides -- and compare every
+    column, not just the key, which is how the first pass here saw 1 affected
+    file instead of 41.
+
+    NOT applied to tools/check-matches.py, deliberately: that reads genuine
+    comma-separated exports written by a csv writer, where a quoted field
+    exists to hold a comma. Read a file the way it was written.
     """
     with open(path, encoding="utf-8") as fh:
         lines = [l for l in fh if not l.startswith("#")]

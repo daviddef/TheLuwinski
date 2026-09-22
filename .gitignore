@@ -1,6 +1,10 @@
 node_modules/
 site/node_modules/
 site/dist/
+# private verification builds — ARCHIVE_OUT targets, never committed.
+# A shared name (dist-verify) recreates the collision it was meant to solve,
+# so these are per-process (dist-gate-$$) and the glob covers both.
+site/dist-*/
 site/.astro/
 .DS_Store
 *.log
