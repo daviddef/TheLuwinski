@@ -27,6 +27,7 @@ REG = ROOT / "site" / "src" / "data" / "register.json"
 # file -> (key columns, title, source citation, kind)
 # "kind": person = rows are people; ref = rows are references, not people.
 MANIFEST = {
+ "szubin-registers-online.tsv": ([], "Szubin said yes — the registers were online before the letter was written", "Archiwum Państwowe w Bydgoszczy, letter IU.631.434.2026 of 22 September 2026; www.genealogiawarchiwach.pl searched the same day", "ref"),
  "probate-calendar-wear.tsv":  ([], "The probate calendar, finally read — sixteen Wear grants and none is Leonard", "probatesearch.service.gov.uk, OCR text of four calendar chunks plus a forename sweep of 1970-1981, 22 September 2026", "ref"),
  "schoeneberg-marriage-indexes.tsv": ([], "Every Schöneberg marriage index, and what reading them would actually cost", "Landesarchiv Berlin LABSA, three office queries 22 September 2026; structure and cost measured at the image on P Rep. 161 Nr. 270", "ref"),
  "register-date-audit.tsv":    ([], "Every date in the register audited — a bound is not a date", "The register itself, all 149 people and 215 distinct date strings, 22 September 2026", "ref"),

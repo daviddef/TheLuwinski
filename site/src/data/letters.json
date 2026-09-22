@@ -1,161 +1,164 @@
 {
-  "title": "Twenty letters, and when to chase them",
-  "note": "Only this archive's letters. The same mailbox carries correspondence for the sibling archives, which is tracked there.",
-  "rows": [
-    {
-      "sent": "2026-09-14",
-      "who": "Arquivo Histórico de Moçambique, Maputo",
-      "addr": "ahm@uem.mz",
-      "what": "Recruitment-district records, 1950s–60s",
-      "thread": "1a0a1759f0462e00",
-      "chase": 28
-    },
-    {
-      "sent": "2026-09-14",
-      "who": "Arquivo Histórico de Moçambique, Maputo",
-      "addr": "ahm@uem.mz",
-      "what": "Ivone's 1924 birth certificate",
-      "thread": "1a0a17e3f001a60d",
-      "chase": 28
-    },
-    {
-      "sent": "2026-09-14",
-      "who": "Arquivo Histórico Militar, Lisboa",
-      "addr": "ahm@exercito.pt",
-      "what": "Henrique's military record (resent after a bounce)",
-      "thread": "1a0a17d8bf87cdba",
-      "chase": 21,
-      "ack": "2026-09-14",
-      "ackNote": "Automatic acknowledgement: received, and they will send the information if it exists"
-    },
-    {
-      "sent": "2026-09-14",
-      "who": "Master of the High Court, Johannesburg",
-      "addr": "MorSello@justice.gov.za",
-      "what": "Henrique's estate, 12294/2023",
-      "thread": "1a0a17f97b34a912",
-      "chase": 21
-    },
-    {
-      "sent": "2026-09-14",
-      "who": "Landesarchiv Berlin",
-      "addr": "info@landesarchiv.berlin.de",
-      "what": "Kurt and the Leibholz brothers in Berlin — THREE numbered asks: (1) Gertrud Leibholz née Leibke's death entry of 27 February 1943, (2) the Leibholz/Luwinski marriage of 5 January 1924 AND the date of the later divorce, with a question about a Landgericht divorce file, (3) Kurt Luwinski's 1912 birth entry and its Randvermerke. Full text now saved at requests/sent/2026-09-14-landesarchiv-berlin-SENT.txt. SUPPLEMENT DRAFTED 20 September supplying the exact register numbers for (2) and (3).",
-      "thread": "1a0a19a926964a01",
-      "chase": 28
-    },
-    {
-      "sent": "2026-09-14",
-      "who": "National Archives (TAB), Pretoria",
-      "addr": "archives@dac.gov.za",
-      "what": "Estate file MHG 7584/69 — Luwinski, Kurt",
-      "thread": "1a0a19b526d2be6e",
-      "chase": 21
-    },
-    {
-      "sent": "2026-09-14",
-      "who": "1.ª Conservatória do Registo Civil, Porto",
-      "addr": "1crc.porto@dgrn.mj.pt",
-      "what": "Ivone's death record at Porto",
-      "thread": "1a0a19ca284bfb51",
-      "chase": 28
-    },
-    {
-      "sent": "2026-09-14",
-      "who": "Archiwum Państwowe w Bydgoszczy",
-      "addr": "kancelaria@bydgoszcz.archiwa.gov.pl",
-      "what": "Schubin / Szubin records",
-      "thread": "1a0a19fe2cf2d1de",
-      "chase": 28,
-      "ack": "2026-09-14",
-      "ackNote": "Automatic acknowledgement: passed for handling, applications taken in order of receipt"
-    },
-    {
-      "sent": "2026-09-14",
-      "who": "Archiwum Państwowe w Koszalinie",
-      "addr": "kancelaria@koszalin.archiwa.gov.pl",
-      "what": "Czarne (Hammerstein) civil registers 1847 and 1884, and the synagogue books — the Leibholz family",
-      "thread": "1a0a1a01f08ce480",
-      "chase": 28,
-      "answered": "2026-09-16",
-      "outcome": "ANSWERED IN FIVE LINES AND IT IS A NEGATIVE. O-S.6342.406.2026, signed by Krzysztof Skrzypiec, Head of the Slupsk Branch. The Koszalin holdings contain NO registers of the former German civil registry office at Czarne (Standesamt Hammerstein, Kreis Schlochau) FOR 1874 TO 1899, and NO synagogue-community books for Czarne AT ALL — and no information about what became of either, or where they might now be held. *** ACKNOWLEDGED 17 SEPTEMBER, message 1a0ac71a500bc77f, in their own thread 1a0a98796538c64b, to slupsk@ as they asked and copied to the case officer. The acknowledgement tells them WHY a negative was useful — that it closes the only route to Georg Leibholz’s parents — thanks them specifically for saying they do not know where the books went, and closes the correspondence so they need not spend more time on it.",
-      "acknowledged": "2026-09-17"
-    },
-    {
-      "sent": "2026-09-14",
-      "who": "The private researcher, Pretoria",
-      "addr": "digitalphoto@icon.co.za",
-      "what": "Rates first; then MHG 10245/69 and the Deeds Registry",
-      "thread": "1a0a234a65602bca",
-      "chase": 10
-    },
-    {
-      "sent": "2026-09-15",
-      "who": "Master of the High Court, Cape Town",
-      "addr": "DKeyster@justice.gov.za",
-      "what": "J294 death notices, estates 10761/2024 and 018561/2021",
-      "thread": "1a0a2e876b71886f",
-      "chase": 21,
-      "ack": "2026-09-15",
-      "ackNote": "ANSWERED, and it is an invitation to apply. Mr Keyster: \"Please, apply for copies. Application form is attached. Please, submit proof of payment and the application on groundfloor.\" Two things his reply does not give: whether an applicant in Australia may submit by email rather than in person, and the fee and banking details. Both have to be asked. REPLIED 15 September asking the two things his message left out: whether an applicant in Australia may submit by email rather than in person, and the fee and banking details for the required proof of payment. The reply also states plainly, in advance, that David is not a relative and makes no claim on either estate — so that a standing objection comes before the fee rather than after it."
-    },
-    {
-      "sent": "2026-09-15",
-      "who": "National Archives (DSAC)",
-      "addr": "Enquiries2@dsac.gov.za",
-      "what": "TAB: WLD 1950/1948, 497/1951, 2368/1951, 2545/1950, MHG 10245/69",
-      "thread": "1a0a30c59c9c8405",
-      "chase": 21
-    },
-    {
-      "sent": "2026-09-15",
-      "who": "SANDF Documentation Centre, Irene",
-      "addr": "archive@dod.mil.za",
-      "what": "Leonard's UDF service record and medal rolls — FOLLOWED UP 16 Sep with force number 141272, Corporal, POW",
-      "thread": "1a0a3b70c6389154",
-      "chase": 14
-    },
-    {
-      "sent": "2026-09-15",
-      "who": "Immaculate Conception, Rosebank",
-      "addr": "Info@rosebankcatholicchurch.co.za",
-      "what": "The parish marriage register of 7 September 1940",
-      "thread": "1a0a3b72c965ecf1",
-      "chase": 21
-    },
-    {
-      "sent": "2026-09-15",
-      "who": "Arquivo Geral do Exército, Lisboa",
-      "addr": "arqgex@exercito.pt",
-      "what": "Henrique's military record — by referral from the ADN",
-      "thread": "1a0a40447162eada",
-      "chase": 28,
-      "ack": "2026-09-15",
-      "ackNote": "Automatic acknowledgement: received, and it will be handled by their services"
-    },
-    {
-      "sent": "2026-09-16",
-      "who": "Anne, private researcher, Pretoria",
-      "addr": "digitalphoto@icon.co.za",
-      "what": "Accepted her terms and Tuesday 22 September; three ante-nuptial contracts with parties named; all 26 references in cuttable groups",
-      "thread": "1a0a234a65602bca",
-      "chase": 7
-    },
-    {
-      "sent": "2026-09-16",
-      "who": "A second-cousin DNA match, United Kingdom",
-      "addr": "MyHeritage message thread",
-      "what": "The shared ancestors are Castle, not Brown; Martha Maude's death and both 1939 sailings given back",
-      "thread": "myheritage-222465518",
-      "chase": 21
-    },
-    {
-      "sent": "2026-09-16",
-      "who": "Ms Mavis Xaba, Reading Room, National Archives",
-      "addr": "mavisx@dsac.gov.za",
-      "what": "Accepted her WLD 2545/1950 offer; consolidated every Transvaal reference into one thread; asked whether a naturalisation finding aid exists",
-      "thread": "1a0a30c59c9c8405",
-      "chase": 14
-    }
-  ]
+ "title": "Twenty letters, and when to chase them",
+ "note": "Only this archive's letters. The same mailbox carries correspondence for the sibling archives, which is tracked there.",
+ "rows": [
+  {
+   "sent": "2026-09-14",
+   "who": "Arquivo Histórico de Moçambique, Maputo",
+   "addr": "ahm@uem.mz",
+   "what": "Recruitment-district records, 1950s–60s",
+   "thread": "1a0a1759f0462e00",
+   "chase": 28
+  },
+  {
+   "sent": "2026-09-14",
+   "who": "Arquivo Histórico de Moçambique, Maputo",
+   "addr": "ahm@uem.mz",
+   "what": "Ivone's 1924 birth certificate",
+   "thread": "1a0a17e3f001a60d",
+   "chase": 28
+  },
+  {
+   "sent": "2026-09-14",
+   "who": "Arquivo Histórico Militar, Lisboa",
+   "addr": "ahm@exercito.pt",
+   "what": "Henrique's military record (resent after a bounce)",
+   "thread": "1a0a17d8bf87cdba",
+   "chase": 21,
+   "ack": "2026-09-14",
+   "ackNote": "Automatic acknowledgement: received, and they will send the information if it exists"
+  },
+  {
+   "sent": "2026-09-14",
+   "who": "Master of the High Court, Johannesburg",
+   "addr": "MorSello@justice.gov.za",
+   "what": "Henrique's estate, 12294/2023",
+   "thread": "1a0a17f97b34a912",
+   "chase": 21
+  },
+  {
+   "sent": "2026-09-14",
+   "who": "Landesarchiv Berlin",
+   "addr": "info@landesarchiv.berlin.de",
+   "what": "Kurt and the Leibholz brothers in Berlin — THREE numbered asks: (1) Gertrud Leibholz née Leibke's death entry of 27 February 1943, (2) the Leibholz/Luwinski marriage of 5 January 1924 AND the date of the later divorce, with a question about a Landgericht divorce file, (3) Kurt Luwinski's 1912 birth entry and its Randvermerke. Full text now saved at requests/sent/2026-09-14-landesarchiv-berlin-SENT.txt. SUPPLEMENT DRAFTED 20 September supplying the exact register numbers for (2) and (3).",
+   "thread": "1a0a19a926964a01",
+   "chase": 28
+  },
+  {
+   "sent": "2026-09-14",
+   "who": "National Archives (TAB), Pretoria",
+   "addr": "archives@dac.gov.za",
+   "what": "Estate file MHG 7584/69 — Luwinski, Kurt",
+   "thread": "1a0a19b526d2be6e",
+   "chase": 21
+  },
+  {
+   "sent": "2026-09-14",
+   "who": "1.ª Conservatória do Registo Civil, Porto",
+   "addr": "1crc.porto@dgrn.mj.pt",
+   "what": "Ivone's death record at Porto",
+   "thread": "1a0a19ca284bfb51",
+   "chase": 28
+  },
+  {
+   "sent": "2026-09-14",
+   "who": "Archiwum Państwowe w Bydgoszczy",
+   "addr": "kancelaria@bydgoszcz.archiwa.gov.pl",
+   "what": "Schubin / Szubin records",
+   "thread": "1a0a19fe2cf2d1de",
+   "chase": 28,
+   "ack": "2026-09-14",
+   "ackNote": "Automatic acknowledgement: passed for handling, applications taken in order of receipt",
+   "answered": "2026-09-22",
+   "outcome": "*** ANSWERED, AND IT IS A YES. *** IU.631.434.2026, dated 22 September 2026, signed by the Director KAROLINA KAWCZYŃSKA, case officer dr MAŁGORZATA URBANOWSKA-CHYŁA. The reply says the digital copies of the BIRTH, MARRIAGE AND DEATH registers of URZĄD STANU CYWILNEGO SZUBIN MIASTO “have already been made available some time ago” on www.genealogiawarchiwach.pl, and supplies a direct link to THE BIRTH REGISTER FOR 1884 — the year Jacob Leibholz was born at Schubin on 8 August. It explains how to expand the table of contents on the black bar to the left, and says the scan of any record found may be downloaded straight from the portal. NO FEE, NO QUERY SERVICE, NO ACKNOWLEDGEMENT REQUESTED — unlike the Koszalin reply, this one asks for nothing back. THE CONTRAST WITH KOSZALIN IS THE WHOLE POINT: the Hammerstein registers are gone and the Szubin ones were online the entire time this archive was writing letters about them.",
+   "acknowledged": "Not required — the letter asks for no confirmation of receipt."
+  },
+  {
+   "sent": "2026-09-14",
+   "who": "Archiwum Państwowe w Koszalinie",
+   "addr": "kancelaria@koszalin.archiwa.gov.pl",
+   "what": "Czarne (Hammerstein) civil registers 1847 and 1884, and the synagogue books — the Leibholz family",
+   "thread": "1a0a1a01f08ce480",
+   "chase": 28,
+   "answered": "2026-09-16",
+   "outcome": "ANSWERED IN FIVE LINES AND IT IS A NEGATIVE. O-S.6342.406.2026, signed by Krzysztof Skrzypiec, Head of the Slupsk Branch. The Koszalin holdings contain NO registers of the former German civil registry office at Czarne (Standesamt Hammerstein, Kreis Schlochau) FOR 1874 TO 1899, and NO synagogue-community books for Czarne AT ALL — and no information about what became of either, or where they might now be held. *** ACKNOWLEDGED 17 SEPTEMBER, message 1a0ac71a500bc77f, in their own thread 1a0a98796538c64b, to slupsk@ as they asked and copied to the case officer. The acknowledgement tells them WHY a negative was useful — that it closes the only route to Georg Leibholz’s parents — thanks them specifically for saying they do not know where the books went, and closes the correspondence so they need not spend more time on it.",
+   "acknowledged": "2026-09-17"
+  },
+  {
+   "sent": "2026-09-14",
+   "who": "The private researcher, Pretoria",
+   "addr": "digitalphoto@icon.co.za",
+   "what": "Rates first; then MHG 10245/69 and the Deeds Registry",
+   "thread": "1a0a234a65602bca",
+   "chase": 10
+  },
+  {
+   "sent": "2026-09-15",
+   "who": "Master of the High Court, Cape Town",
+   "addr": "DKeyster@justice.gov.za",
+   "what": "J294 death notices, estates 10761/2024 and 018561/2021",
+   "thread": "1a0a2e876b71886f",
+   "chase": 21,
+   "ack": "2026-09-15",
+   "ackNote": "ANSWERED, and it is an invitation to apply. Mr Keyster: \"Please, apply for copies. Application form is attached. Please, submit proof of payment and the application on groundfloor.\" Two things his reply does not give: whether an applicant in Australia may submit by email rather than in person, and the fee and banking details. Both have to be asked. REPLIED 15 September asking the two things his message left out: whether an applicant in Australia may submit by email rather than in person, and the fee and banking details for the required proof of payment. The reply also states plainly, in advance, that David is not a relative and makes no claim on either estate — so that a standing objection comes before the fee rather than after it."
+  },
+  {
+   "sent": "2026-09-15",
+   "who": "National Archives (DSAC)",
+   "addr": "Enquiries2@dsac.gov.za",
+   "what": "TAB: WLD 1950/1948, 497/1951, 2368/1951, 2545/1950, MHG 10245/69",
+   "thread": "1a0a30c59c9c8405",
+   "chase": 21
+  },
+  {
+   "sent": "2026-09-15",
+   "who": "SANDF Documentation Centre, Irene",
+   "addr": "archive@dod.mil.za",
+   "what": "Leonard's UDF service record and medal rolls — FOLLOWED UP 16 Sep with force number 141272, Corporal, POW",
+   "thread": "1a0a3b70c6389154",
+   "chase": 14
+  },
+  {
+   "sent": "2026-09-15",
+   "who": "Immaculate Conception, Rosebank",
+   "addr": "Info@rosebankcatholicchurch.co.za",
+   "what": "The parish marriage register of 7 September 1940",
+   "thread": "1a0a3b72c965ecf1",
+   "chase": 21
+  },
+  {
+   "sent": "2026-09-15",
+   "who": "Arquivo Geral do Exército, Lisboa",
+   "addr": "arqgex@exercito.pt",
+   "what": "Henrique's military record — by referral from the ADN",
+   "thread": "1a0a40447162eada",
+   "chase": 28,
+   "ack": "2026-09-15",
+   "ackNote": "Automatic acknowledgement: received, and it will be handled by their services"
+  },
+  {
+   "sent": "2026-09-16",
+   "who": "Anne, private researcher, Pretoria",
+   "addr": "digitalphoto@icon.co.za",
+   "what": "Accepted her terms and Tuesday 22 September; three ante-nuptial contracts with parties named; all 26 references in cuttable groups",
+   "thread": "1a0a234a65602bca",
+   "chase": 7
+  },
+  {
+   "sent": "2026-09-16",
+   "who": "A second-cousin DNA match, United Kingdom",
+   "addr": "MyHeritage message thread",
+   "what": "The shared ancestors are Castle, not Brown; Martha Maude's death and both 1939 sailings given back",
+   "thread": "myheritage-222465518",
+   "chase": 21
+  },
+  {
+   "sent": "2026-09-16",
+   "who": "Ms Mavis Xaba, Reading Room, National Archives",
+   "addr": "mavisx@dsac.gov.za",
+   "what": "Accepted her WLD 2545/1950 offer; consolidated every Transvaal reference into one thread; asked whether a naturalisation finding aid exists",
+   "thread": "1a0a30c59c9c8405",
+   "chase": 14
+  }
+ ]
 }

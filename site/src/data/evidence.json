@@ -505,6 +505,14 @@
    "people": 0
   },
   {
+   "file": "szubin-registers-online.tsv",
+   "title": "Szubin said yes — the registers were online before the letter was written",
+   "source": "Archiwum Państwowe w Bydgoszczy, letter IU.631.434.2026 of 22 September 2026; www.genealogiawarchiwach.pl searched the same day",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
+  },
+  {
    "file": "tna-discovery.tsv",
    "title": "The National Archives Discovery catalogue",
    "source": "discovery.nationalarchives.gov.uk — citations verified and references found, 17 September 2026",
@@ -3294,7 +3302,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 79,
+  "files": 80,
   "person_files": 22,
   "people": 180,
   "records": 252,
