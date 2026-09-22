@@ -105,6 +105,15 @@
    "now": "LEIPHOLZ — the eighth spelling. The 1975-76 and 1979-80 telephone books print the same woman, the same address and THE SAME TELEPHONE NUMBER 3 35 84 05, with the P clear in both.",
    "source": "ZLB Berlin, Berliner Telefonbuch 15849358_1975-76 p.1444, 15849358_1979-80 p.1704 and 15849358_1980-81 p.1770, read 21 September 2026. *** WHAT ACTUALLY PROVED IT WAS NOT A BETTER SCAN BUT THE ALPHABET EITHER SIDE OF HER. *** In every volume where the name is genuinely LEIBHOLZ it is printed between Leibfried and Leibich. In the 1980-81 volume that line sits between LEIPERT WERNER and LEIPNER BODO. Leipholz belongs in that gap and Leibholz cannot be in it, so the surrounding names settle the letter that the OCR could not. The same technique — read the alphabet, not the word — is what found Erna Frida Else Leipholz in the Schöneberg death index the same afternoon.",
    "why": "It mattered beyond one letter. The claim it supported was that a LEIBHOLZ survived in Berlin until 1981, which was this archive's latest trace of the name in the city. That trace belongs to the other spelling, and the correction makes the two Ernas visible: ERNA FRIDA ELSE LEIPHOLZ died on 13 January 1975, and ERNA LEIPHOLZ of Streitstraße 39 is in the telephone book for six years afterwards. TWO WOMEN OF THE SAME NAME, which the misreading had hidden inside one."
+  },
+  {
+   "id": 9500147,
+   "who": "Elli Leibholz, married Struzik, born 7 November 1915 — a surname-index entry whose death the family record could only bound",
+   "field": "died",
+   "was": "\"After May 13 1942\". The family record gives a FLOOR and not a date, and the register turned that floor into a year: year() takes the first four digits it finds, so the page carried 1942 as though it were the year she died, with nothing to say it was a bound.",
+   "now": "MAY 1942, at KULMHOF (CHEŁMNO) EXTERMINATION CAMP. Day not recorded.",
+   "source": "Bundesarchiv Gedenkbuch entry en1169257, read 22 September 2026: Elli Struzik née Leibholz, born 07.11.1915 in Berlin, of Berlin (Mitte), deported from Berlin to the Litzmannstadt (Łódź) ghetto on 1 November 1941 and from there to Kulmhof on 13 May 1942; place of death Kulmhof, date of death 00.05.1942. The birth date matches the family record to the day, which is what identifies her.",
+   "why": "IT EXPLAINS THE FAMILY RECORD RATHER THAN CONTRADICTING IT. \"After May 13 1942\" is not a guess — it is the DEPORTATION DATE, the last day anybody knew she was alive, written down as the only honest thing that could be said. The Gedenkbuch closes the gap by a fortnight and names the place. THE YEAR ON THE PAGE DOES NOT CHANGE and that is the point: this archive was right by accident, because a floor and the truth happened to fall in the same year. Joachim Luwinski's \"Before 1955\" has no such luck behind it and is still only a bound, which the bloodline and the timeline now say in words."
   }
  ]
 }

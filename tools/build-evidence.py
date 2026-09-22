@@ -27,6 +27,7 @@ REG = ROOT / "site" / "src" / "data" / "register.json"
 # file -> (key columns, title, source citation, kind)
 # "kind": person = rows are people; ref = rows are references, not people.
 MANIFEST = {
+ "register-date-audit.tsv":    ([], "Every date in the register audited — a bound is not a date", "The register itself, all 149 people and 215 distinct date strings, 22 September 2026", "ref"),
  "negatives-classified.tsv":   ([], "Every published negative classified, and three re-run", "The archive's own /negatives/ page, all 33 rows read one at a time 22 September 2026; re-runs at FreeBMD, probatesearch.service.gov.uk and gazettes.africa", "ref"),
  "gedenkbuch-leibholz-findings.tsv": ([], "The fifty opened — deportation, death, and two more under LAIBHOLZ", "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft", "ref"),
  "leibholz-gedenkbuch.tsv":      (["name"], "The Bundesarchiv Gedenkbuch", "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft", "person"),

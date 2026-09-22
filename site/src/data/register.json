@@ -10,6 +10,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -54,6 +56,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [],
    "rel": [
@@ -87,6 +91,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -147,6 +153,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [],
    "rel": [
@@ -306,6 +314,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [],
    "rel": [
@@ -333,6 +343,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [],
    "rel": [
@@ -372,6 +384,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -416,6 +430,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -460,6 +476,8 @@
    "died": "",
    "by": 1845,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -504,6 +522,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -548,6 +568,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -592,6 +614,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -636,6 +660,8 @@
    "died": "Aug 24 2011",
    "by": 1928,
    "dy": 2011,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -698,6 +724,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -736,6 +764,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -780,6 +810,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -824,6 +856,8 @@
    "died": "Oct 27 2022",
    "by": 1941,
    "dy": 2022,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -896,6 +930,8 @@
    "died": "Apr 2 1963",
    "by": 1923,
    "dy": 1963,
+   "byq": "circa",
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -950,6 +986,8 @@
    "died": "Nov 3 2005",
    "by": 1953,
    "dy": 2005,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -1188,6 +1226,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -1226,6 +1266,8 @@
    "died": "",
    "by": 1924,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -1376,6 +1418,8 @@
    "died": "",
    "by": 1820,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -1422,6 +1466,8 @@
    "died": "Jan 31 1946",
    "by": 1887,
    "dy": 1946,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -1468,6 +1514,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -1516,6 +1564,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -1564,6 +1614,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -1620,6 +1672,8 @@
    "died": "",
    "by": 1907,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -1708,6 +1762,8 @@
    "died": "June 19 1977",
    "by": 1905,
    "dy": 1977,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -1826,6 +1882,8 @@
    "died": "Mar 22 2004",
    "by": 1915,
    "dy": 2004,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -1936,6 +1994,8 @@
    "died": "",
    "by": 1876,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -2050,6 +2110,8 @@
    "died": "1932",
    "by": 1913,
    "dy": 1932,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -2124,6 +2186,8 @@
    "died": "",
    "by": 1902,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -2218,6 +2282,8 @@
    "died": "",
    "by": 1903,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -2310,6 +2376,8 @@
    "died": "Mar 24 2014",
    "by": 1943,
    "dy": 2014,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -2370,6 +2438,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -2414,6 +2484,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -2450,6 +2522,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -2494,6 +2568,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -2544,6 +2620,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -2574,6 +2652,8 @@
    "died": "Aug 22 2009",
    "by": 1943,
    "dy": 2009,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -2620,6 +2700,8 @@
    "died": "",
    "by": 1915,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -2722,6 +2804,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -2760,6 +2844,8 @@
    "died": "May 13 1926",
    "by": 1861,
    "dy": 1926,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -2818,6 +2904,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -2854,6 +2942,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -2898,6 +2988,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -2942,6 +3034,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -2986,6 +3080,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -3027,9 +3123,11 @@
    "last": "Leibholz",
    "sex": "F",
    "born": "Nov 7 1915",
-   "died": "After May 13 1942",
+   "died": "MAY 1942, at KULMHOF (CHEŁMNO) EXTERMINATION CAMP. Day not recorded.",
    "by": 1915,
    "dy": 1942,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -3078,6 +3176,17 @@
      "n": "Gertrud Leibke (Leibholz)",
      "ls": "1894 - 1943"
     }
+   ],
+   "corrections": [
+    {
+     "id": 9500147,
+     "who": "Elli Leibholz, married Struzik, born 7 November 1915 — a surname-index entry whose death the family record could only bound",
+     "field": "died",
+     "was": "\"After May 13 1942\". The family record gives a FLOOR and not a date, and the register turned that floor into a year: year() takes the first four digits it finds, so the page carried 1942 as though it were the year she died, with nothing to say it was a bound.",
+     "now": "MAY 1942, at KULMHOF (CHEŁMNO) EXTERMINATION CAMP. Day not recorded.",
+     "source": "Bundesarchiv Gedenkbuch entry en1169257, read 22 September 2026: Elli Struzik née Leibholz, born 07.11.1915 in Berlin, of Berlin (Mitte), deported from Berlin to the Litzmannstadt (Łódź) ghetto on 1 November 1941 and from there to Kulmhof on 13 May 1942; place of death Kulmhof, date of death 00.05.1942. The birth date matches the family record to the day, which is what identifies her.",
+     "why": "IT EXPLAINS THE FAMILY RECORD RATHER THAN CONTRADICTING IT. \"After May 13 1942\" is not a guess — it is the DEPORTATION DATE, the last day anybody knew she was alive, written down as the only honest thing that could be said. The Gedenkbuch closes the gap by a fortnight and names the place. THE YEAR ON THE PAGE DOES NOT CHANGE and that is the point: this archive was right by accident, because a floor and the truth happened to fall in the same year. Joachim Luwinski's \"Before 1955\" has no such luck behind it and is still only a bound, which the bloodline and the timeline now say in words."
+    }
    ]
   },
   {
@@ -3090,6 +3199,8 @@
    "died": "May 1942",
    "by": 1884,
    "dy": 1942,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -3198,6 +3309,8 @@
    "died": "not documented; deported to Auschwitz 26 February 1943",
    "by": 1884,
    "dy": 1943,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -3320,6 +3433,8 @@
    "died": "Nov 3 2005",
    "by": 1951,
    "dy": 2005,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -3474,6 +3589,8 @@
    "died": "Oct 16 1944",
    "by": 1887,
    "dy": 1944,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -3566,6 +3683,8 @@
    "died": "",
    "by": 1847,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -3654,6 +3773,8 @@
    "died": "Apr 10 1943",
    "by": 1877,
    "dy": 1943,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -3756,6 +3877,8 @@
    "died": "Feb 1 2005",
    "by": 1925,
    "dy": 2005,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -3882,6 +4005,8 @@
    "died": "",
    "by": 1913,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -3925,6 +4050,8 @@
    "died": "Oct 12 1942",
    "by": 1870,
    "dy": 1942,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -3983,6 +4110,8 @@
    "died": "Oct 10 1932",
    "by": 1892,
    "dy": 1932,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -4033,6 +4162,8 @@
    "died": "Feb 27 1943",
    "by": 1894,
    "dy": 1943,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -4121,6 +4252,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -4301,6 +4434,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -4489,6 +4624,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -4677,6 +4814,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -4865,6 +5004,8 @@
    "died": "",
    "by": 1917,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -5059,6 +5200,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -5241,6 +5384,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -5423,6 +5568,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -5611,6 +5758,8 @@
    "died": "June 22 1975",
    "by": 1893,
    "dy": 1975,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -5717,6 +5866,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -5905,6 +6056,8 @@
    "died": "Nov 1 1854",
    "by": 1807,
    "dy": 1854,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -6081,6 +6234,8 @@
    "died": "",
    "by": 1880,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -6125,6 +6280,8 @@
    "died": "",
    "by": 1923,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -6301,6 +6458,8 @@
    "died": "",
    "by": 1831,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -6503,6 +6662,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -6691,6 +6852,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -6877,6 +7040,8 @@
    "died": "",
    "by": 1757,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -6921,6 +7086,8 @@
    "died": "",
    "by": 1887,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -6965,6 +7132,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -7007,6 +7176,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -7195,6 +7366,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -7383,6 +7556,8 @@
    "died": "Before 1955",
    "by": 1865,
    "dy": 1955,
+   "byq": null,
+   "dyq": "before",
    "kind": "family",
    "facts": [
     {
@@ -7465,6 +7640,8 @@
    "died": "Dec 30 2006",
    "by": 1940,
    "dy": 2006,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -7537,6 +7714,8 @@
    "died": "",
    "by": 1883,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -7581,6 +7760,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -7761,6 +7942,8 @@
    "died": "",
    "by": 1826,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -7805,6 +7988,8 @@
    "died": "",
    "by": 1818,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -7863,6 +8048,8 @@
    "died": "1995",
    "by": null,
    "dy": 1995,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -7905,6 +8092,8 @@
    "died": "15 December 1968",
    "by": 1912,
    "dy": 1968,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -8093,6 +8282,8 @@
    "died": "",
    "by": 1902,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -8295,6 +8486,8 @@
    "died": "1929",
    "by": 1929,
    "dy": 1929,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -8339,6 +8532,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "bare": true,
    "facts": [],
@@ -8368,6 +8563,8 @@
    "died": "Sep 20 2012",
    "by": 1933,
    "dy": 2012,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -8440,6 +8637,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -8628,6 +8827,8 @@
    "died": "",
    "by": 1836,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -8672,6 +8873,8 @@
    "died": "",
    "by": 1843,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -8716,6 +8919,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -8904,6 +9109,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9092,6 +9299,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9134,6 +9343,8 @@
    "died": "",
    "by": 1810,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9178,6 +9389,8 @@
    "died": "",
    "by": 1815,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9368,6 +9581,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9556,6 +9771,8 @@
    "died": "May 5 1859",
    "by": 1859,
    "dy": 1859,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9600,6 +9817,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9642,6 +9861,8 @@
    "died": "July 12 1878",
    "by": 1874,
    "dy": 1878,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9692,6 +9913,8 @@
    "died": "",
    "by": 1774,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9736,6 +9959,8 @@
    "died": "Jan 28 1848",
    "by": 1846,
    "dy": 1848,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9788,6 +10013,8 @@
    "died": "",
    "by": 1893,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9832,6 +10059,8 @@
    "died": "",
    "by": 1882,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9882,6 +10111,8 @@
    "died": "",
    "by": 1891,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -9926,6 +10157,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -10114,6 +10347,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -10160,6 +10395,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -10204,6 +10441,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -10234,6 +10473,8 @@
    "died": "",
    "by": 1812,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -10286,6 +10527,8 @@
    "died": "",
    "by": 1899,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -10350,6 +10593,8 @@
    "died": "Aug 17 1947",
    "by": 1869,
    "dy": 1947,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -10418,6 +10663,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -10462,6 +10709,8 @@
    "died": "Nov 17 1985",
    "by": 1914,
    "dy": 1985,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -10508,6 +10757,8 @@
    "died": "June 21 1918",
    "by": 1871,
    "dy": 1918,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -10622,6 +10873,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -10666,6 +10919,8 @@
    "died": "8 November 1991",
    "by": 1921,
    "dy": 1991,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -10768,6 +11023,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -10806,6 +11063,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -10868,6 +11127,8 @@
    "died": "1930",
    "by": null,
    "dy": 1930,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -10910,6 +11171,8 @@
    "died": "",
    "by": 1874,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -10992,6 +11255,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -11030,6 +11295,8 @@
    "died": "",
    "by": 1840,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -11074,6 +11341,8 @@
    "died": "Oct 30 1955",
    "by": 1871,
    "dy": 1955,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -11176,6 +11445,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -11214,6 +11485,8 @@
    "died": "1937",
    "by": null,
    "dy": 1937,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -11274,6 +11547,8 @@
    "died": "1946",
    "by": null,
    "dy": 1946,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -11334,6 +11609,8 @@
    "died": "Jan 31 2002",
    "by": 1926,
    "dy": 2002,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -11402,6 +11679,8 @@
    "died": "Dec 26 2020",
    "by": 1930,
    "dy": 2020,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -11478,6 +11757,8 @@
    "died": "Aug 22 1963",
    "by": 1902,
    "dy": 1963,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -11562,6 +11843,8 @@
    "died": "1991",
    "by": null,
    "dy": 1991,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -11622,6 +11905,8 @@
    "died": "",
    "by": 1934,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -11676,6 +11961,8 @@
    "died": "Dec 13 1970",
    "by": 1909,
    "dy": 1970,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -11786,6 +12073,8 @@
    "died": "",
    "by": 1878,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -11892,6 +12181,8 @@
    "died": "2005",
    "by": 1929,
    "dy": 2005,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -12012,6 +12303,8 @@
    "died": "Aug 5 2000",
    "by": 1912,
    "dy": 2000,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -12094,6 +12387,8 @@
    "died": "Aug 24 1967",
    "by": 1902,
    "dy": 1967,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -12168,6 +12463,8 @@
    "died": "Aug 13 1969",
    "by": 1907,
    "dy": 1969,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -12250,6 +12547,8 @@
    "died": "Dec 21 1975",
    "by": 1901,
    "dy": 1975,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -12324,6 +12623,8 @@
    "died": "Oct 1 1943",
    "by": 1906,
    "dy": 1943,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -12414,6 +12715,8 @@
    "died": "",
    "by": null,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -12456,6 +12759,8 @@
    "died": "",
    "by": 1893,
    "dy": null,
+   "byq": null,
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -12508,6 +12813,8 @@
    "died": "2 April 1963, Sasolburg",
    "by": 1923,
    "dy": 1963,
+   "byq": null,
+   "dyq": null,
    "kind": "index",
    "facts": [
     {
@@ -12602,6 +12909,8 @@
    "died": "Apr 27 1942",
    "by": 1876,
    "dy": 1942,
+   "byq": "circa",
+   "dyq": null,
    "kind": "family",
    "facts": [
     {
@@ -12769,6 +13078,15 @@
    "now": "LEIPHOLZ — the eighth spelling. The 1975-76 and 1979-80 telephone books print the same woman, the same address and THE SAME TELEPHONE NUMBER 3 35 84 05, with the P clear in both.",
    "source": "ZLB Berlin, Berliner Telefonbuch 15849358_1975-76 p.1444, 15849358_1979-80 p.1704 and 15849358_1980-81 p.1770, read 21 September 2026. *** WHAT ACTUALLY PROVED IT WAS NOT A BETTER SCAN BUT THE ALPHABET EITHER SIDE OF HER. *** In every volume where the name is genuinely LEIBHOLZ it is printed between Leibfried and Leibich. In the 1980-81 volume that line sits between LEIPERT WERNER and LEIPNER BODO. Leipholz belongs in that gap and Leibholz cannot be in it, so the surrounding names settle the letter that the OCR could not. The same technique — read the alphabet, not the word — is what found Erna Frida Else Leipholz in the Schöneberg death index the same afternoon.",
    "why": "It mattered beyond one letter. The claim it supported was that a LEIBHOLZ survived in Berlin until 1981, which was this archive's latest trace of the name in the city. That trace belongs to the other spelling, and the correction makes the two Ernas visible: ERNA FRIDA ELSE LEIPHOLZ died on 13 January 1975, and ERNA LEIPHOLZ of Streitstraße 39 is in the telephone book for six years afterwards. TWO WOMEN OF THE SAME NAME, which the misreading had hidden inside one."
+  },
+  {
+   "id": 9500147,
+   "who": "Elli Leibholz, married Struzik, born 7 November 1915 — a surname-index entry whose death the family record could only bound",
+   "field": "died",
+   "was": "\"After May 13 1942\". The family record gives a FLOOR and not a date, and the register turned that floor into a year: year() takes the first four digits it finds, so the page carried 1942 as though it were the year she died, with nothing to say it was a bound.",
+   "now": "MAY 1942, at KULMHOF (CHEŁMNO) EXTERMINATION CAMP. Day not recorded.",
+   "source": "Bundesarchiv Gedenkbuch entry en1169257, read 22 September 2026: Elli Struzik née Leibholz, born 07.11.1915 in Berlin, of Berlin (Mitte), deported from Berlin to the Litzmannstadt (Łódź) ghetto on 1 November 1941 and from there to Kulmhof on 13 May 1942; place of death Kulmhof, date of death 00.05.1942. The birth date matches the family record to the day, which is what identifies her.",
+   "why": "IT EXPLAINS THE FAMILY RECORD RATHER THAN CONTRADICTING IT. \"After May 13 1942\" is not a guess — it is the DEPORTATION DATE, the last day anybody knew she was alive, written down as the only honest thing that could be said. The Gedenkbuch closes the gap by a fortnight and names the place. THE YEAR ON THE PAGE DOES NOT CHANGE and that is the point: this archive was right by accident, because a floor and the truth happened to fall in the same year. Joachim Luwinski's \"Before 1955\" has no such luck behind it and is still only a bound, which the bloodline and the timeline now say in words."
   }
  ],
  "counts": {

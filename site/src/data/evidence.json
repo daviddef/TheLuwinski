@@ -401,6 +401,14 @@
    "people": 0
   },
   {
+   "file": "register-date-audit.tsv",
+   "title": "Every date in the register audited — a bound is not a date",
+   "source": "The register itself, all 149 people and 215 distinct date strings, 22 September 2026",
+   "kind": "ref",
+   "rows": 9,
+   "people": 0
+  },
+  {
    "file": "schmul-and-thimm.tsv",
    "title": "The two great-grandmothers' surnames — what can be reached and what cannot",
    "source": "FamilySearch collection metadata and Posen collection 4116415 (33 exact SCHMUL records read); Geneteka control run and failed; 20 September 2026",
@@ -3270,7 +3278,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 76,
+  "files": 77,
   "person_files": 22,
   "people": 180,
   "records": 252,

@@ -46,9 +46,15 @@ for (const p of register.people || []) {
   const name = p.name || [p.first, p.last].filter(Boolean).join(' ');
   if (!name) continue;
   const b = yr(p.by), d = yr(p.dy);
-  if (b) events.push({ year: b, when: String(b), title: `<strong>${name}</strong> born`,
+  /* A TIMELINE PLOTS A POINT, AND A BOUND IS NOT A POINT. "Before 1955" and
+     "After May 13 1942" reach us as bare years and would be plotted as though
+     the archive knew the date. It has to plot them somewhere, so it plots them
+     there AND SAYS WHAT THEY ARE — the qualifier is in the `when` column. */
+  if (b) events.push({ year: b, when: p.byq ? `${p.byq} ${b}` : String(b),
+                       title: `<strong>${name}</strong> born`,
                        kind: 'Life', source: 'The register' });
-  if (d) events.push({ year: d, when: String(d), title: `<strong>${name}</strong> died`,
+  if (d) events.push({ year: d, when: p.dyq ? `${p.dyq} ${d}` : String(d),
+                       title: `<strong>${name}</strong> died`,
                        kind: 'Life', source: 'The register' });
 }
 

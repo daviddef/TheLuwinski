@@ -31,6 +31,8 @@ const SIB    = new Set(['His brother', 'Her sister', 'His sister', 'Her brother'
 const SPOUSE = new Set(['Her husband', 'His wife', 'Her ex-husband', 'His ex-wife',
                         'Partner', 'Her partner', 'His partner']);
 
+const qy = (y, q) => (y && y !== 'None') ? (q ? `${q} ${y}` : String(y)) : null;
+
 const rows = register.people || [];
 const unknown = new Map();
 
@@ -38,7 +40,10 @@ const recs = rows.map((p) => {
   const rec = {
     slug: String(p.id),
     name: p.name || [p.first, p.last].filter(Boolean).join(' ') || String(p.id),
-    dt: [p.by, p.dy].filter((v) => v && v !== 'None').join(' – '),
+    /* A BOUND IS NOT A DATE. `by`/`dy` are whatever year() found first in the source
+       string, so "Before 1955" arrived here as 1955 and printed as a death in 1955.
+       build-register.py now carries the qualifier alongside the number; print it. */
+    dt: [qy(p.by, p.byq), qy(p.dy, p.dyq)].filter(Boolean).join(' – '),
     parents: [], children: [], siblings: [], spouse: null,
   };
   for (const e of Array.isArray(p.rel) ? p.rel : []) {

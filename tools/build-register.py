@@ -36,6 +36,36 @@ def year(s):
     m = re.search(r"\b(1[5-9]\d\d|20\d\d)\b", s or "")
     return int(m.group(1)) if m else None
 
+def qualifier(s):
+    """How much the year() of a date string is actually worth.
+
+    THE FAULT THIS FIXES. year() takes the FIRST four-digit year it finds and
+    hands back a bare integer, and bloodline.astro prints that integer and
+    timeline.astro PLOTS A POINT AT IT. So "Before 1955" was published as a
+    death in 1955 and plotted there, when all the source says is that Joachim
+    Luwinski was dead by then; "After May 13 1942" was published as a death in
+    1942 when that date is the floor, not the event; and two "Circa" births
+    were printed as exact years. FOUR BOUNDED OR APPROXIMATE DATES WERE ON THE
+    SITE AS FACTS, and the register could not tell you which they were because
+    the qualifier was thrown away at parse time.
+
+    Returns None for a plain date, or one of 'circa', 'before', 'after',
+    'range' — the word the page has to print if the number is not to lie.
+    """
+    v = (s or "").strip().lower()
+    if not v:
+        return None
+    if re.search(r"\bbefore\b", v):
+        return "before"
+    if re.search(r"\bafter\b", v):
+        return "after"
+    if re.search(r"\b(circa|abt|about)\b", v):
+        return "circa"
+    ys = re.findall(r"\b(?:1[5-9]\d\d|20\d\d)\b", v)
+    if len(ys) > 1 and int(max(ys)) != int(min(ys)):
+        return "range"
+    return None
+
 def main():
     people = json.load(open(SRC))
     by_id = {p["id"]: p for p in people}
@@ -83,12 +113,14 @@ def main():
             "id": pid, "name": p["name"], "first": p["first"], "last": p["last"],
             "sex": p["g"], "born": p["b"], "died": p["d"],
             "by": year(p["b"]), "dy": year(p["d"]),
+            "byq": qualifier(p["b"]), "dyq": qualifier(p["d"]),
             "kind": "index" if pid in index_only else "family",
         }
         if pid in NAMED_BARE:
             # Name only. No birth date, no birth YEAR, no death, no facts. The year is
             # a date of birth in disguise and is stripped with everything else.
             rec.update({"bare": True, "born": "", "died": "", "by": None, "dy": None,
+                        "byq": None, "dyq": None,
                         "facts": [], "note": "Living. Named only, per the archive's policy."})
             rec["rel"] = [r for r in p["rel"] if "father" in r["rel"].lower() or "mother" in r["rel"].lower()]
         else:
@@ -111,6 +143,7 @@ def main():
                     # timeline placed him in the wrong year. A correction that does
                     # not reach the value the pages actually plot is not a correction.
                     rec["dy"] = year(c["now"])
+                    rec["dyq"] = qualifier(c["now"])
                     # A correction that supplies a death CANCELS "no death recorded".
                     # Without this the register would print the absence and throw the
                     # corrected date away - the source flags the person alive, the
@@ -123,6 +156,7 @@ def main():
                     # still shipped a wrong year onto two pages.
                     rec["born"] = c["now"]
                     rec["by"] = year(c["now"])
+                    rec["byq"] = qualifier(c["now"])
         out.append(rec)
 
     out.sort(key=lambda r: (r["last"] or "", r["first"] or ""))
