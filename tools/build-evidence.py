@@ -27,6 +27,7 @@ REG = ROOT / "site" / "src" / "data" / "register.json"
 # file -> (key columns, title, source citation, kind)
 # "kind": person = rows are people; ref = rows are references, not people.
 MANIFEST = {
+ "leibholz-schmul-marriage-1874.tsv": (["name"], "Hammerstein, from a document at last — the 1874 marriage, and a generation above", "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141, akt małżeństwa nr 9/1874, on genealogiawarchiwach.pl, read 22 September 2026", "person"),
  "jacob-leibholz-birth-1884.tsv": (["name"], "Jacob Leibholz's birth entry, read at the image — Schubin 1884 Nr. 63", "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 28, akt nr 63/1884, on genealogiawarchiwach.pl, read 22 September 2026", "person"),
  "szubin-registers-online.tsv": ([], "Szubin said yes — the registers were online before the letter was written", "Archiwum Państwowe w Bydgoszczy, letter IU.631.434.2026 of 22 September 2026; www.genealogiawarchiwach.pl searched the same day", "ref"),
  "probate-calendar-wear.tsv":  ([], "The probate calendar, finally read — sixteen Wear grants and none is Leonard", "probatesearch.service.gov.uk, OCR text of four calendar chunks plus a forename sweep of 1970-1981, 22 September 2026", "ref"),

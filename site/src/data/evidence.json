@@ -321,6 +321,14 @@
    "people": 0
   },
   {
+   "file": "leibholz-schmul-marriage-1874.tsv",
+   "title": "Hammerstein, from a document at last — the 1874 marriage, and a generation above",
+   "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141, akt małżeństwa nr 9/1874, on genealogiawarchiwach.pl, read 22 September 2026",
+   "kind": "person",
+   "rows": 11,
+   "people": 2
+  },
+  {
    "file": "leibholz-shanghai.tsv",
    "title": "A Berlin Leibholz family got out to Shanghai",
    "source": "Arolsen Archives DocID 131698324 (Central Location Index card L 337909, reference 71410001) and DocID 78827389 (H.I.A.S. lists of Jewish nationals who died and were buried in Shanghai 1939-1948, reference 8808060); Yad Vashem submitter search; Mapping the Lives emigration field; 20 September 2026",
@@ -1427,6 +1435,18 @@
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
      "detail": "born: 21.11.1886 · birthplace: Bärwalde/Neustettin/Pommern · residence: Berlin (Charlottenburg) · deportation_1: from Berlin → Minsk, Ghetto am 14.11.1941 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1025216 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Friederica Schmul",
+   "slug": "friederica-schmul",
+   "records": [
+    {
+     "file": "leibholz-schmul-marriage-1874.tsv",
+     "title": "Hammerstein, from a document at last — the 1874 marriage, and a generation above",
+     "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141, akt małżeństwa nr 9/1874, on genealogiawarchiwach.pl, read 22 September 2026",
+     "detail": ""
     }
    ]
   },
@@ -2985,6 +3005,12 @@
      "title": "Jacob Leibholz's birth entry, read at the image — Schubin 1884 Nr. 63",
      "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 28, akt nr 63/1884, on genealogiawarchiwach.pl, read 22 September 2026",
      "detail": ""
+    },
+    {
+     "file": "leibholz-schmul-marriage-1874.tsv",
+     "title": "Hammerstein, from a document at last — the 1874 marriage, and a generation above",
+     "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141, akt małżeństwa nr 9/1874, on genealogiawarchiwach.pl, read 22 September 2026",
+     "detail": ""
     }
    ],
    "register_id": 9500023,
@@ -3343,10 +3369,10 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 81,
-  "person_files": 23,
-  "people": 182,
-  "records": 255,
+  "files": 82,
+  "person_files": 24,
+  "people": 183,
+  "records": 257,
   "linked_to_register": 12
  }
 }
