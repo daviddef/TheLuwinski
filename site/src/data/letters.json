@@ -71,7 +71,8 @@
    "ackNote": "Automatic acknowledgement: passed for handling, applications taken in order of receipt",
    "answered": "2026-09-22",
    "outcome": "*** ANSWERED, AND IT IS A YES. *** IU.631.434.2026, dated 22 September 2026, signed by the Director KAROLINA KAWCZYŃSKA, case officer dr MAŁGORZATA URBANOWSKA-CHYŁA. The reply says the digital copies of the BIRTH, MARRIAGE AND DEATH registers of URZĄD STANU CYWILNEGO SZUBIN MIASTO “have already been made available some time ago” on www.genealogiawarchiwach.pl, and supplies a direct link to THE BIRTH REGISTER FOR 1884 — the year Jacob Leibholz was born at Schubin on 8 August. It explains how to expand the table of contents on the black bar to the left, and says the scan of any record found may be downloaded straight from the portal. NO FEE, NO QUERY SERVICE, NO ACKNOWLEDGEMENT REQUESTED — unlike the Koszalin reply, this one asks for nothing back. THE CONTRAST WITH KOSZALIN IS THE WHOLE POINT: the Hammerstein registers are gone and the Szubin ones were online the entire time this archive was writing letters about them.",
-   "acknowledged": "Not required — the letter asks for no confirmation of receipt."
+   "acknowledged": "Not required — the letter asks for no confirmation of receipt.",
+   "followup": "SECOND LETTER SENT 22 September 2026 on the IU.631.434.2026 thread, message 1a0c8d2a92207d0f: asks directly whether Bydgoszcz holds the akta gminy wyznaniowej żydowskiej w Szubinie, since Friederica Schmul was born about 1852 and Prussian civil registration began only on 1 October 1874. Text at requests/sent/2026-09-22-bydgoszcz-jewish-registers-SENT.txt."
   },
   {
    "sent": "2026-09-14",
@@ -126,7 +127,8 @@
    "thread": "1a0a3b72c965ecf1",
    "chase": 21,
    "answered": "2026-09-22",
-   "outcome": "ANSWERED IN A WEEK, COURTEOUSLY, WITH THE WRONG BOOK — AND THIS ARCHIVE ALREADY HAD IT. They sent the ORIGINAL MARRIAGE REGISTER, the Union civil form B.M.D. 3, entry no. 13 of 1940, which the priest completed as marriage officer. *** THAT FORM HAS NO PARENTS' COLUMNS, WHICH IS THE ONLY THING THE LETTER WANTED — and every field on it has been published here since 17 September, reconstructed from FamilySearch film 008161359 frame 475. *** WHAT IS GENUINELY NEW IS THAT THE PARISH ANSWERS: row 26 had been blocked on them since 15 September, and the books that do name parents are still in their building. A clean image also now exists and is published, where before the archive had only a table of fields. A SECOND LETTER IS OWED naming the LIBER MATRIMONIORUM and the BANNS REGISTER explicitly, because the distinction between the parish's own books and the state form it fills in is not obvious from outside."
+   "outcome": "*** ANSWERED IN FULL, IN A WEEK, AND THE ANSWER ON PARENTS IS NO. *** Arlene at the parish office replied to all five numbered questions. The 1940 parish marriage register SURVIVES and CONTAINS the entry; it DOES NOT NAME THE PARENTS — “Unfortunately not, as attached”. There is no second book: “the Catholic Church keeps one Marriage Register, the banns are included in the attached”, so the Original Marriage Register no. 13 of 1940 IS the parish register. Fr W. P. Whelan confirmed as parish priest at Rosebank from 1935, so the parish is the right one; the registers are held there, not at the Archdiocese. THIS CLOSES ROUTE 2 OF THE TWO ROUTES TO LEONARD'S PARENTAGE. A pure thank-you was sent the same day, message 1a0c8d21508292fb — no further request, because she answered everything asked.",
+   "acknowledged": "Thanks sent 22 September 2026, message 1a0c8d21508292fb, on the same thread."
   },
   {
    "sent": "2026-09-15",
