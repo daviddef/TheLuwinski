@@ -521,6 +521,14 @@
    "people": 0
   },
   {
+   "file": "szubin-death-registers-searched.tsv",
+   "title": "Sally's death — the Szubin registers have no index, and Berlin may be the right town",
+   "source": "www.genealogiawarchiwach.pl, facet and free-text searches with controls, 22 September 2026",
+   "kind": "ref",
+   "rows": 8,
+   "people": 0
+  },
+  {
    "file": "szubin-registers-online.tsv",
    "title": "Szubin said yes — the registers were online before the letter was written",
    "source": "Archiwum Państwowe w Bydgoszczy, letter IU.631.434.2026 of 22 September 2026; www.genealogiawarchiwach.pl searched the same day",
@@ -3369,7 +3377,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 82,
+  "files": 83,
   "person_files": 24,
   "people": 183,
   "records": 257,
