@@ -1,6 +1,14 @@
 {
  "files": [
   {
+   "file": "adressbuch-fulltext-sweep.tsv",
+   "title": "Five rows put to the Berlin directories' full-text index at once",
+   "source": "digital.zlb.de Solr full-text index, queried 22 September 2026 with controls",
+   "kind": "ref",
+   "rows": 13,
+   "people": 0
+  },
+  {
    "file": "alfred-luwinski-sachsenhausen.tsv",
    "title": "Alfred Luwinski born 9 September 1917 — who he actually was",
    "source": "Arolsen Archives DocID 130648701 — Amt für die Erfassung der Kriegsopfer (Berlin), reference 23120001 275; read with consent 20 September 2026",
@@ -3441,7 +3449,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 88,
+  "files": 89,
   "person_files": 25,
   "people": 185,
   "records": 259,
