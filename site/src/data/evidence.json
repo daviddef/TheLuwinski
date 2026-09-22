@@ -257,6 +257,14 @@
    "people": 7
   },
   {
+   "file": "jacob-leibholz-birth-1884.tsv",
+   "title": "Jacob Leibholz's birth entry, read at the image — Schubin 1884 Nr. 63",
+   "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 28, akt nr 63/1884, on genealogiawarchiwach.pl, read 22 September 2026",
+   "kind": "person",
+   "rows": 9,
+   "people": 3
+  },
+  {
    "file": "jacob-leibholz-deportation.tsv",
    "title": "Jacob Leibholz, 26 February 1943 — the line on the list",
    "source": "Arolsen Archives DocID 127212355 (Wave 44, 30th Osttransport to Auschwitz, reference 15510037, page 153 line 1039) and DocID 11243224 (AJDC/ITS card, reference 01020102 047); read with consent 20 September 2026",
@@ -1423,6 +1431,18 @@
    ]
   },
   {
+   "name": "Friederike Leibholz née Schmul",
+   "slug": "friederike-leibholz-nee-schmul",
+   "records": [
+    {
+     "file": "jacob-leibholz-birth-1884.tsv",
+     "title": "Jacob Leibholz's birth entry, read at the image — Schubin 1884 Nr. 63",
+     "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 28, akt nr 63/1884, on genealogiawarchiwach.pl, read 22 September 2026",
+     "detail": ""
+    }
+   ]
+  },
+  {
    "name": "GEORG",
    "slug": "georg",
    "records": [
@@ -1977,6 +1997,12 @@
      "title": "The Arolsen Archives index",
      "source": "collections.arolsen-archives.org — index entries only; the documents need a consent declaration that was not ticked",
      "detail": "arolsen_index_entry: LEIBHOLZ, Jacques Jaques · date_of_birth: 08.08.1884 · what it confirms or changes: THE SAME MAN, FRENCH-SPELLED. A rendering that suggests a document made in French hands — a displaced-persons or tracing file rather than a German one."
+    },
+    {
+     "file": "jacob-leibholz-birth-1884.tsv",
+     "title": "Jacob Leibholz's birth entry, read at the image — Schubin 1884 Nr. 63",
+     "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 28, akt nr 63/1884, on genealogiawarchiwach.pl, read 22 September 2026",
+     "detail": ""
     },
     {
      "file": "leibholz-gedenkbuch.tsv",
@@ -2951,6 +2977,21 @@
    ]
   },
   {
+   "name": "Sally Leibholz",
+   "slug": "sally-leibholz",
+   "records": [
+    {
+     "file": "jacob-leibholz-birth-1884.tsv",
+     "title": "Jacob Leibholz's birth entry, read at the image — Schubin 1884 Nr. 63",
+     "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 28, akt nr 63/1884, on genealogiawarchiwach.pl, read 22 September 2026",
+     "detail": ""
+    }
+   ],
+   "register_id": 9500023,
+   "register_name": "Sally Leibholz",
+   "register_match": "exact"
+  },
+  {
    "name": "Samuel Israel Leibholz",
    "slug": "samuel-israel-leibholz",
    "records": [
@@ -3302,10 +3343,10 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 80,
-  "person_files": 22,
-  "people": 180,
-  "records": 252,
-  "linked_to_register": 11
+  "files": 81,
+  "person_files": 23,
+  "people": 182,
+  "records": 255,
+  "linked_to_register": 12
  }
 }
