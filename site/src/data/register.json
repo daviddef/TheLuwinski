@@ -13087,6 +13087,14 @@
    "now": "MAY 1942, at KULMHOF (CHEŁMNO) EXTERMINATION CAMP. Day not recorded.",
    "source": "Bundesarchiv Gedenkbuch entry en1169257, read 22 September 2026: Elli Struzik née Leibholz, born 07.11.1915 in Berlin, of Berlin (Mitte), deported from Berlin to the Litzmannstadt (Łódź) ghetto on 1 November 1941 and from there to Kulmhof on 13 May 1942; place of death Kulmhof, date of death 00.05.1942. The birth date matches the family record to the day, which is what identifies her.",
    "why": "IT EXPLAINS THE FAMILY RECORD RATHER THAN CONTRADICTING IT. \"After May 13 1942\" is not a guess — it is the DEPORTATION DATE, the last day anybody knew she was alive, written down as the only honest thing that could be said. The Gedenkbuch closes the gap by a fortnight and names the place. THE YEAR ON THE PAGE DOES NOT CHANGE and that is the point: this archive was right by accident, because a floor and the truth happened to fall in the same year. Joachim Luwinski's \"Before 1955\" has no such luck behind it and is still only a bound, which the bloodline and the timeline now say in words."
+  },
+  {
+   "id": 9500911,
+   "who": "Erna of Streitstraße 39, Spandau — published here as the last Leibholz in the post-war Berlin telephone books",
+   "field": "surname, and the claim built on it",
+   "was": "\"ERNA — 1980-81 telephone book, 'Leibholz Erna · 20 Streitstr. 39' — Spandau. The last Leibholz in the run\", and, in the summary line of the same file, \"then Erna alone in 1980\".",
+   "now": "SHE IS A LEIPHOLZ, NOT A LEIBHOLZ, AND SHE IS NOT THE LAST. The 1980-81 OCR read a p as a b. The alphabet around her settles it — the line sits between LEIPERT and LEIPNER, where LEIPHOLZ belongs and LEIBHOLZ cannot — and the 1975-76 to 1979-80 volumes print the P plainly on the same number, 3 35 84 05, at the same flat. THE LAST LEIBHOLZ IN THE POST-WAR RUN IS HILDE, at Wiesbadener Straße 57, who is in the same 1980-81 volume and in nine consecutive books from 1972-73.",
+   "source": "ZLB Berlin telephone books, PI_ANCHOR 15849358. The spelling was corrected on 21 September in data/leipholz-postwar-berlin.tsv and data/berlin-postwar-luwinski.tsv was never amended to match, so this file carried the superseded claim for a day. Hilde's presence in 1980-81 was found on 22 September by reading the Leibfried-to-Leibich slot in full rather than searching for the name. Working in data/leipholz-telephone-slot-audit.tsv."
   }
  ],
  "counts": {

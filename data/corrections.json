@@ -1,119 +1,127 @@
 {
- "note": "Corrections applied to the MyHeritage harvest when the register is built. Each one names the source that overrides the family record. The original value is kept alongside so nothing is silently rewritten.",
- "corrections": [
-  {
-   "id": 9500001,
-   "who": "Kurt Israel Luwinski",
-   "field": "died",
-   "was": "Dec 15 1969",
-   "now": "15 December 1968",
-   "source": "Johannesburg Chevrah Kadisha burial register: died 15.12.1968, buried 16.12.1968, Westpark block L grave 211, Yahrzeit 24 Kislev 5729 — which is itself 15 December 1968."
-  },
-  {
-   "id": 9500020,
-   "who": "Jacob Leibholz",
-   "field": "died",
-   "was": "1945",
-   "now": "not documented; deported to Auschwitz 26 February 1943",
-   "source": "Bundesarchiv Gedenkbuch en1100957, which records the deportation and deliberately gives no date of death."
-  },
-  {
-   "id": 9500010,
-   "who": "Morris Isaac Salkow",
-   "field": "died",
-   "was": "Nov 9 1991",
-   "now": "8 November 1991",
-   "source": "Johannesburg Chevrah Kadisha burial register: died 08.11.1991, buried 10.11.1991, Westpark block U grave 2469."
-  },
-  {
-   "id": 9500145,
-   "who": "Gertrud Leibke",
-   "field": "husband",
-   "was": "Georg Leibholz",
-   "now": "Oskar Leibholz",
-   "source": "Census of 17 May 1939 via Mapping the Lives: Gertrud and Oskar share an address, Waghäuseler Str. 9/10 Wilmersdorf. Georg was at Michaelkirchstr. 26, Mitte, with Lydia née Perl."
-  },
-  {
-   "id": 9500026,
-   "who": "Georg Leibholz",
-   "field": "brother of Jacob",
-   "was": "son of Sally Leibholz and Friederike Schmul",
-   "now": "NOT A BROTHER — the dates forbid it. Probably a cousin or nephew of the same family",
-   "source": "Jacob was born at Schubin on 8 August 1884 and Georg at Hammerstein on 7 June 1884 — SIXTY-TWO DAYS APART. Two sons of one mother cannot be. Both dates are the Bundesarchiv's, independently of the family, and that arithmetic is what this correction rests on. *** THE WORDING BEFORE 20 SEPTEMBER 2026 ALSO SAID 'two hundred kilometres apart' AND CALLED GEORG 'a different Leibholz family'. BOTH ARE WITHDRAWN. *** SALLY LEIBHOLZ, JACOB'S OWN FATHER, WAS BORN AT HAMMERSTEIN ON 7 JULY 1847 and married at Szubin on 24 November 1874. The family had people in both towns, so the distance between them is not evidence of anything and the surname at Hammerstein is not a stranger's. What the dates rule out is BROTHERHOOD; what they leave standing is a cousin or a nephew in the town Sally came from. The Leibholz page has said exactly that in its 'A likelier reading' panel since the start — 'right surname, right family, wrong generation' — and this correction contradicted it. It no longer does."
-  },
-  {
-   "id": 9500002,
-   "who": "Ivone Mota Figueiredo",
-   "field": "marriage to Unknown Da Rocha, before 1941",
-   "was": "married",
-   "now": "NO SUCH MARRIAGE — she was a spinster in February 1948",
-   "source": "Duplicate Original Marriage Register, Germiston no. 34 of 1948, 2 February 1948, column 5 Personal Status: SPINSTER. Henrique, born 11 March 1941, was therefore born to an unmarried mother of sixteen."
-  },
-  {
-   "id": 9500001,
-   "who": "Kurt Israel Luwinski",
-   "field": "occupation",
-   "was": "dress designer",
-   "now": "dress designer (1933); shop keeper (1948)",
-   "source": "Johannesburg marriage register no. 858 of 1948, column 6: Shop Keeper. The 1933 emigration record gives dress designer. Both are true of one man."
-  },
-  {
-   "id": 9500005,
-   "who": "Johannes Antonie Oelofse de Witt",
-   "field": "died",
-   "was": "no date; Sasolburg",
-   "now": "2 April 1963, Sasolburg",
-   "source": "THE TREE'S OWN DUPLICATE, not an outside record. The harvest holds this man twice: 9500005, born December 1923 at Johannesburg, with a death place and no date; and 9500160, listed as HIS SON, of exactly the same name, born circa 1923 at Pretoria, died 2 April 1963 at Sasolburg. A father cannot be born in the same year as his son, and the two die in the same small Free State town. They are one man, and the date of death is on the duplicate. *** INDEPENDENT CONFIRMATION OBTAINED, 20 SEPTEMBER 2026, AND IT DID NOT NEED THE ESTATE FILES. *** \"South Africa, Civil Death Registration, 1953-1967\" — Entry for JOHANNES ANTONIE OELOFSE DE WITT, 2 APRIL 1963, SASOLBURG, ORANGE FREE STATE, aged 40, born 1923 at PRETORIA (FamilySearch ark:/61903/1:1:DD9Y-PLT2). A national death register says what the tree's uncited duplicate said. IT ALSO SETTLES WHICH HALF OF THE DUPLICATE WAS RIGHT ABOUT THE BIRTHPLACE — Pretoria, not Johannesburg. AND IT RAISES A DOUBT ABOUT THE BIRTH DATE: the death register makes him 40 on 2 April 1963, and a second marriage found the same day — to ELSIE MARIE GEYER on 25 FEBRUARY 1950 (ark 1:1:6ZHR-NVYN) — makes him 27 then. The two ranges overlap at April 1922 to February 1923, and the tree's \"December 1923\" falls outside both. Declared ages are not proof; two of them thirteen years apart, agreeing against the same date, are worth recording. See data/dewitt-confirmed.tsv."
-  },
-  {
-   "id": 9500160,
-   "who": "Johannes Antonie Oelofse De Witt (the younger)",
-   "field": "identity",
-   "was": "son of Johannes Antonie Oelofse de Witt, born circa 1923 at Pretoria",
-   "now": "NOT A SECOND PERSON — the same man as 9500005, duplicated",
-   "source": "Same name, same birth year as his supposed father, same place of death, and a father-son relationship that is arithmetically impossible. The duplication also invented a wife for him — 'Unknown de Witt', 9500161, who exists only to be his mother — and gave Delina de Witt a half-brother who is really her father. Found by tools/audit-tree.py, 20 September 2026, which flags a parent under fourteen at a child's birth. *** DELIBERATELY NOT COLLAPSED INTO 9500005. *** The DUPLICATES map in tools/build-register.py collapses records only where the pair shares AN IDENTICAL BIRTH AND DEATH DATE, and says in its own comment that those are not guesses. This pair does not meet that bar: the birth places differ, Johannesburg against Pretoria, one birth is 'circa' and only one record carries a death. It is a strong inference and not an identity, so both records stay in the register with this correction attached to them, which is what corrections are for. *** 20 SEPTEMBER 2026: THE BAR HAS BEEN PARTLY MET AND THE RECORDS STILL STAY APART. *** The civil death register gives the birthplace as PRETORIA, which is the duplicate's birthplace and not 9500005's Johannesburg, so the two records now differ on a point where an outside source backs one of them. That strengthens the inference that they are one man and does not turn it into an identity, because nothing yet ties the Johannesburg birth to anybody at all. Both records stay in the register."
-  },
-  {
-   "id": 9500901,
-   "who": "Edwina Ann Wear, born Green",
-   "field": "placement",
-   "was": "a node in the family tree on the front page, flagged “Removed — she was nobody”",
-   "now": "OFF THE TREE. Kept in the evidence layer and nowhere else",
-   "source": "DAVID'S DIRECTION, 20 September 2026: “if this person is a nobody she really doesnt need to be in the tree. keep it in evidence but not on the main screen.” HE IS RIGHT AND THE PANEL WAS SELF-INDULGENT. Edwina Ann Wear was born EDWINA ANN GREEN and married BRUCE WALLACE WEAR — Leonard's younger brother — in 1980. She is a Wear by marriage and NO BLOOD RELATION TO DERRICK AT ALL. This archive had spent a day on her, decided she was a coincidence, and then left her standing in the tree across all three columns under a heading announcing that she had been removed. A withdrawal does not need a monument, and a family tree is for the family. WHAT SURVIVES AND WHERE: her burial at West Park on 8 July 2014 in the cemetery-register table on the Leonard page; the cancelled estate request 33157/2014 on the status page; the negative in data/negatives.json that uses her to bound the Johannesburg cemetery search; the reasoning on the DNA page; and Bruce's own 1980 marriage on his timeline, because that is a fact about Bruce. ONE THING CHANGED WITH HER. The PHYLLIS AGNES ROBERTSON node existed to explain Edwina's mother. It now points where it always should have — at GILLIAN AGNES LOUISA NEL, born Wear, born eleven months into that marriage and carrying Agnes in her own name."
-  },
-  {
-   "id": 9500902,
-   "who": "Manfred Joachim Luwinski",
-   "field": "how the family left Germany in 1965",
-   "was": "flew from Berlin to Melbourne — this archive's own reading, published 20 September 2026",
-   "now": "sailed from Bremerhaven to Melbourne on the ship FLAVIA, arriving 17 September 1965",
-   "source": "NAA: A2559, 1965/86/85-88, item ID 5435314 — the Australian half of the same nominal roll, whose title states the ship, the port and the date. The error came from reading the mode of travel off the Arolsen FOLDER heading, “TRANSPORT BY AIRPLANE”, instead of off the sheet. A folder heading describes the folder."
-  },
-  {
-   "id": 9500903,
-   "who": "Sauerbaum, Kreis Rössel — the place, on this archive's own map",
-   "field": "where the atlas put it",
-   "was": "54.35 N, 21.15 E — a pin placed before the village had been identified, and fifty kilometres from the village",
-   "now": "53.935 N, 20.846 E — Zerbuń, Gmina Jeziorany, powiat olsztyński",
-   "source": "German Wikipedia's coordinates for Zerbuń, the village this archive identified as Sauerbaum on 20 September 2026. Checked because a DIFFERENT claim was being verified — the distance from Sauerbaum to Bischofstein — and the arithmetic came out at 33 km against a published 15. The distance claim was near enough (17.8 km from the real village). THE PIN WAS NOT. The map had been showing Auguste Luwinski's birthplace fifty kilometres from where she was born, since before the village was identified at all."
-  },
-  {
-   "id": 9500904,
-   "who": "Erna, of Streitstraße 39 in Spandau — published as the last Leibholz in the Berlin books",
-   "field": "her surname",
-   "was": "LEIBHOLZ. Read from the OCR text layer of the 1980-81 Berlin telephone book, which prints \"Leibholz Erna 3 35 84 05 20 Stteitsu.39\", and published as the last appearance of the Leibholz name in the post-war Berlin run.",
-   "now": "LEIPHOLZ — the eighth spelling. The 1975-76 and 1979-80 telephone books print the same woman, the same address and THE SAME TELEPHONE NUMBER 3 35 84 05, with the P clear in both.",
-   "source": "ZLB Berlin, Berliner Telefonbuch 15849358_1975-76 p.1444, 15849358_1979-80 p.1704 and 15849358_1980-81 p.1770, read 21 September 2026. *** WHAT ACTUALLY PROVED IT WAS NOT A BETTER SCAN BUT THE ALPHABET EITHER SIDE OF HER. *** In every volume where the name is genuinely LEIBHOLZ it is printed between Leibfried and Leibich. In the 1980-81 volume that line sits between LEIPERT WERNER and LEIPNER BODO. Leipholz belongs in that gap and Leibholz cannot be in it, so the surrounding names settle the letter that the OCR could not. The same technique — read the alphabet, not the word — is what found Erna Frida Else Leipholz in the Schöneberg death index the same afternoon.",
-   "why": "It mattered beyond one letter. The claim it supported was that a LEIBHOLZ survived in Berlin until 1981, which was this archive's latest trace of the name in the city. That trace belongs to the other spelling, and the correction makes the two Ernas visible: ERNA FRIDA ELSE LEIPHOLZ died on 13 January 1975, and ERNA LEIPHOLZ of Streitstraße 39 is in the telephone book for six years afterwards. TWO WOMEN OF THE SAME NAME, which the misreading had hidden inside one."
-  },
-  {
-   "id": 9500147,
-   "who": "Elli Leibholz, married Struzik, born 7 November 1915 — a surname-index entry whose death the family record could only bound",
-   "field": "died",
-   "was": "\"After May 13 1942\". The family record gives a FLOOR and not a date, and the register turned that floor into a year: year() takes the first four digits it finds, so the page carried 1942 as though it were the year she died, with nothing to say it was a bound.",
-   "now": "MAY 1942, at KULMHOF (CHEŁMNO) EXTERMINATION CAMP. Day not recorded.",
-   "source": "Bundesarchiv Gedenkbuch entry en1169257, read 22 September 2026: Elli Struzik née Leibholz, born 07.11.1915 in Berlin, of Berlin (Mitte), deported from Berlin to the Litzmannstadt (Łódź) ghetto on 1 November 1941 and from there to Kulmhof on 13 May 1942; place of death Kulmhof, date of death 00.05.1942. The birth date matches the family record to the day, which is what identifies her.",
-   "why": "IT EXPLAINS THE FAMILY RECORD RATHER THAN CONTRADICTING IT. \"After May 13 1942\" is not a guess — it is the DEPORTATION DATE, the last day anybody knew she was alive, written down as the only honest thing that could be said. The Gedenkbuch closes the gap by a fortnight and names the place. THE YEAR ON THE PAGE DOES NOT CHANGE and that is the point: this archive was right by accident, because a floor and the truth happened to fall in the same year. Joachim Luwinski's \"Before 1955\" has no such luck behind it and is still only a bound, which the bloodline and the timeline now say in words."
-  }
- ]
+  "note": "Corrections applied to the MyHeritage harvest when the register is built. Each one names the source that overrides the family record. The original value is kept alongside so nothing is silently rewritten.",
+  "corrections": [
+    {
+      "id": 9500001,
+      "who": "Kurt Israel Luwinski",
+      "field": "died",
+      "was": "Dec 15 1969",
+      "now": "15 December 1968",
+      "source": "Johannesburg Chevrah Kadisha burial register: died 15.12.1968, buried 16.12.1968, Westpark block L grave 211, Yahrzeit 24 Kislev 5729 — which is itself 15 December 1968."
+    },
+    {
+      "id": 9500020,
+      "who": "Jacob Leibholz",
+      "field": "died",
+      "was": "1945",
+      "now": "not documented; deported to Auschwitz 26 February 1943",
+      "source": "Bundesarchiv Gedenkbuch en1100957, which records the deportation and deliberately gives no date of death."
+    },
+    {
+      "id": 9500010,
+      "who": "Morris Isaac Salkow",
+      "field": "died",
+      "was": "Nov 9 1991",
+      "now": "8 November 1991",
+      "source": "Johannesburg Chevrah Kadisha burial register: died 08.11.1991, buried 10.11.1991, Westpark block U grave 2469."
+    },
+    {
+      "id": 9500145,
+      "who": "Gertrud Leibke",
+      "field": "husband",
+      "was": "Georg Leibholz",
+      "now": "Oskar Leibholz",
+      "source": "Census of 17 May 1939 via Mapping the Lives: Gertrud and Oskar share an address, Waghäuseler Str. 9/10 Wilmersdorf. Georg was at Michaelkirchstr. 26, Mitte, with Lydia née Perl."
+    },
+    {
+      "id": 9500026,
+      "who": "Georg Leibholz",
+      "field": "brother of Jacob",
+      "was": "son of Sally Leibholz and Friederike Schmul",
+      "now": "NOT A BROTHER — the dates forbid it. Probably a cousin or nephew of the same family",
+      "source": "Jacob was born at Schubin on 8 August 1884 and Georg at Hammerstein on 7 June 1884 — SIXTY-TWO DAYS APART. Two sons of one mother cannot be. Both dates are the Bundesarchiv's, independently of the family, and that arithmetic is what this correction rests on. *** THE WORDING BEFORE 20 SEPTEMBER 2026 ALSO SAID 'two hundred kilometres apart' AND CALLED GEORG 'a different Leibholz family'. BOTH ARE WITHDRAWN. *** SALLY LEIBHOLZ, JACOB'S OWN FATHER, WAS BORN AT HAMMERSTEIN ON 7 JULY 1847 and married at Szubin on 24 November 1874. The family had people in both towns, so the distance between them is not evidence of anything and the surname at Hammerstein is not a stranger's. What the dates rule out is BROTHERHOOD; what they leave standing is a cousin or a nephew in the town Sally came from. The Leibholz page has said exactly that in its 'A likelier reading' panel since the start — 'right surname, right family, wrong generation' — and this correction contradicted it. It no longer does."
+    },
+    {
+      "id": 9500002,
+      "who": "Ivone Mota Figueiredo",
+      "field": "marriage to Unknown Da Rocha, before 1941",
+      "was": "married",
+      "now": "NO SUCH MARRIAGE — she was a spinster in February 1948",
+      "source": "Duplicate Original Marriage Register, Germiston no. 34 of 1948, 2 February 1948, column 5 Personal Status: SPINSTER. Henrique, born 11 March 1941, was therefore born to an unmarried mother of sixteen."
+    },
+    {
+      "id": 9500001,
+      "who": "Kurt Israel Luwinski",
+      "field": "occupation",
+      "was": "dress designer",
+      "now": "dress designer (1933); shop keeper (1948)",
+      "source": "Johannesburg marriage register no. 858 of 1948, column 6: Shop Keeper. The 1933 emigration record gives dress designer. Both are true of one man."
+    },
+    {
+      "id": 9500005,
+      "who": "Johannes Antonie Oelofse de Witt",
+      "field": "died",
+      "was": "no date; Sasolburg",
+      "now": "2 April 1963, Sasolburg",
+      "source": "THE TREE'S OWN DUPLICATE, not an outside record. The harvest holds this man twice: 9500005, born December 1923 at Johannesburg, with a death place and no date; and 9500160, listed as HIS SON, of exactly the same name, born circa 1923 at Pretoria, died 2 April 1963 at Sasolburg. A father cannot be born in the same year as his son, and the two die in the same small Free State town. They are one man, and the date of death is on the duplicate. *** INDEPENDENT CONFIRMATION OBTAINED, 20 SEPTEMBER 2026, AND IT DID NOT NEED THE ESTATE FILES. *** \"South Africa, Civil Death Registration, 1953-1967\" — Entry for JOHANNES ANTONIE OELOFSE DE WITT, 2 APRIL 1963, SASOLBURG, ORANGE FREE STATE, aged 40, born 1923 at PRETORIA (FamilySearch ark:/61903/1:1:DD9Y-PLT2). A national death register says what the tree's uncited duplicate said. IT ALSO SETTLES WHICH HALF OF THE DUPLICATE WAS RIGHT ABOUT THE BIRTHPLACE — Pretoria, not Johannesburg. AND IT RAISES A DOUBT ABOUT THE BIRTH DATE: the death register makes him 40 on 2 April 1963, and a second marriage found the same day — to ELSIE MARIE GEYER on 25 FEBRUARY 1950 (ark 1:1:6ZHR-NVYN) — makes him 27 then. The two ranges overlap at April 1922 to February 1923, and the tree's \"December 1923\" falls outside both. Declared ages are not proof; two of them thirteen years apart, agreeing against the same date, are worth recording. See data/dewitt-confirmed.tsv."
+    },
+    {
+      "id": 9500160,
+      "who": "Johannes Antonie Oelofse De Witt (the younger)",
+      "field": "identity",
+      "was": "son of Johannes Antonie Oelofse de Witt, born circa 1923 at Pretoria",
+      "now": "NOT A SECOND PERSON — the same man as 9500005, duplicated",
+      "source": "Same name, same birth year as his supposed father, same place of death, and a father-son relationship that is arithmetically impossible. The duplication also invented a wife for him — 'Unknown de Witt', 9500161, who exists only to be his mother — and gave Delina de Witt a half-brother who is really her father. Found by tools/audit-tree.py, 20 September 2026, which flags a parent under fourteen at a child's birth. *** DELIBERATELY NOT COLLAPSED INTO 9500005. *** The DUPLICATES map in tools/build-register.py collapses records only where the pair shares AN IDENTICAL BIRTH AND DEATH DATE, and says in its own comment that those are not guesses. This pair does not meet that bar: the birth places differ, Johannesburg against Pretoria, one birth is 'circa' and only one record carries a death. It is a strong inference and not an identity, so both records stay in the register with this correction attached to them, which is what corrections are for. *** 20 SEPTEMBER 2026: THE BAR HAS BEEN PARTLY MET AND THE RECORDS STILL STAY APART. *** The civil death register gives the birthplace as PRETORIA, which is the duplicate's birthplace and not 9500005's Johannesburg, so the two records now differ on a point where an outside source backs one of them. That strengthens the inference that they are one man and does not turn it into an identity, because nothing yet ties the Johannesburg birth to anybody at all. Both records stay in the register."
+    },
+    {
+      "id": 9500901,
+      "who": "Edwina Ann Wear, born Green",
+      "field": "placement",
+      "was": "a node in the family tree on the front page, flagged “Removed — she was nobody”",
+      "now": "OFF THE TREE. Kept in the evidence layer and nowhere else",
+      "source": "DAVID'S DIRECTION, 20 September 2026: “if this person is a nobody she really doesnt need to be in the tree. keep it in evidence but not on the main screen.” HE IS RIGHT AND THE PANEL WAS SELF-INDULGENT. Edwina Ann Wear was born EDWINA ANN GREEN and married BRUCE WALLACE WEAR — Leonard's younger brother — in 1980. She is a Wear by marriage and NO BLOOD RELATION TO DERRICK AT ALL. This archive had spent a day on her, decided she was a coincidence, and then left her standing in the tree across all three columns under a heading announcing that she had been removed. A withdrawal does not need a monument, and a family tree is for the family. WHAT SURVIVES AND WHERE: her burial at West Park on 8 July 2014 in the cemetery-register table on the Leonard page; the cancelled estate request 33157/2014 on the status page; the negative in data/negatives.json that uses her to bound the Johannesburg cemetery search; the reasoning on the DNA page; and Bruce's own 1980 marriage on his timeline, because that is a fact about Bruce. ONE THING CHANGED WITH HER. The PHYLLIS AGNES ROBERTSON node existed to explain Edwina's mother. It now points where it always should have — at GILLIAN AGNES LOUISA NEL, born Wear, born eleven months into that marriage and carrying Agnes in her own name."
+    },
+    {
+      "id": 9500902,
+      "who": "Manfred Joachim Luwinski",
+      "field": "how the family left Germany in 1965",
+      "was": "flew from Berlin to Melbourne — this archive's own reading, published 20 September 2026",
+      "now": "sailed from Bremerhaven to Melbourne on the ship FLAVIA, arriving 17 September 1965",
+      "source": "NAA: A2559, 1965/86/85-88, item ID 5435314 — the Australian half of the same nominal roll, whose title states the ship, the port and the date. The error came from reading the mode of travel off the Arolsen FOLDER heading, “TRANSPORT BY AIRPLANE”, instead of off the sheet. A folder heading describes the folder."
+    },
+    {
+      "id": 9500903,
+      "who": "Sauerbaum, Kreis Rössel — the place, on this archive's own map",
+      "field": "where the atlas put it",
+      "was": "54.35 N, 21.15 E — a pin placed before the village had been identified, and fifty kilometres from the village",
+      "now": "53.935 N, 20.846 E — Zerbuń, Gmina Jeziorany, powiat olsztyński",
+      "source": "German Wikipedia's coordinates for Zerbuń, the village this archive identified as Sauerbaum on 20 September 2026. Checked because a DIFFERENT claim was being verified — the distance from Sauerbaum to Bischofstein — and the arithmetic came out at 33 km against a published 15. The distance claim was near enough (17.8 km from the real village). THE PIN WAS NOT. The map had been showing Auguste Luwinski's birthplace fifty kilometres from where she was born, since before the village was identified at all."
+    },
+    {
+      "id": 9500904,
+      "who": "Erna, of Streitstraße 39 in Spandau — published as the last Leibholz in the Berlin books",
+      "field": "her surname",
+      "was": "LEIBHOLZ. Read from the OCR text layer of the 1980-81 Berlin telephone book, which prints \"Leibholz Erna 3 35 84 05 20 Stteitsu.39\", and published as the last appearance of the Leibholz name in the post-war Berlin run.",
+      "now": "LEIPHOLZ — the eighth spelling. The 1975-76 and 1979-80 telephone books print the same woman, the same address and THE SAME TELEPHONE NUMBER 3 35 84 05, with the P clear in both.",
+      "source": "ZLB Berlin, Berliner Telefonbuch 15849358_1975-76 p.1444, 15849358_1979-80 p.1704 and 15849358_1980-81 p.1770, read 21 September 2026. *** WHAT ACTUALLY PROVED IT WAS NOT A BETTER SCAN BUT THE ALPHABET EITHER SIDE OF HER. *** In every volume where the name is genuinely LEIBHOLZ it is printed between Leibfried and Leibich. In the 1980-81 volume that line sits between LEIPERT WERNER and LEIPNER BODO. Leipholz belongs in that gap and Leibholz cannot be in it, so the surrounding names settle the letter that the OCR could not. The same technique — read the alphabet, not the word — is what found Erna Frida Else Leipholz in the Schöneberg death index the same afternoon.",
+      "why": "It mattered beyond one letter. The claim it supported was that a LEIBHOLZ survived in Berlin until 1981, which was this archive's latest trace of the name in the city. That trace belongs to the other spelling, and the correction makes the two Ernas visible: ERNA FRIDA ELSE LEIPHOLZ died on 13 January 1975, and ERNA LEIPHOLZ of Streitstraße 39 is in the telephone book for six years afterwards. TWO WOMEN OF THE SAME NAME, which the misreading had hidden inside one."
+    },
+    {
+      "id": 9500147,
+      "who": "Elli Leibholz, married Struzik, born 7 November 1915 — a surname-index entry whose death the family record could only bound",
+      "field": "died",
+      "was": "\"After May 13 1942\". The family record gives a FLOOR and not a date, and the register turned that floor into a year: year() takes the first four digits it finds, so the page carried 1942 as though it were the year she died, with nothing to say it was a bound.",
+      "now": "MAY 1942, at KULMHOF (CHEŁMNO) EXTERMINATION CAMP. Day not recorded.",
+      "source": "Bundesarchiv Gedenkbuch entry en1169257, read 22 September 2026: Elli Struzik née Leibholz, born 07.11.1915 in Berlin, of Berlin (Mitte), deported from Berlin to the Litzmannstadt (Łódź) ghetto on 1 November 1941 and from there to Kulmhof on 13 May 1942; place of death Kulmhof, date of death 00.05.1942. The birth date matches the family record to the day, which is what identifies her.",
+      "why": "IT EXPLAINS THE FAMILY RECORD RATHER THAN CONTRADICTING IT. \"After May 13 1942\" is not a guess — it is the DEPORTATION DATE, the last day anybody knew she was alive, written down as the only honest thing that could be said. The Gedenkbuch closes the gap by a fortnight and names the place. THE YEAR ON THE PAGE DOES NOT CHANGE and that is the point: this archive was right by accident, because a floor and the truth happened to fall in the same year. Joachim Luwinski's \"Before 1955\" has no such luck behind it and is still only a bound, which the bloodline and the timeline now say in words."
+    },
+    {
+      "id": 9500911,
+      "who": "Erna of Streitstraße 39, Spandau — published here as the last Leibholz in the post-war Berlin telephone books",
+      "field": "surname, and the claim built on it",
+      "was": "\"ERNA — 1980-81 telephone book, 'Leibholz Erna · 20 Streitstr. 39' — Spandau. The last Leibholz in the run\", and, in the summary line of the same file, \"then Erna alone in 1980\".",
+      "now": "SHE IS A LEIPHOLZ, NOT A LEIBHOLZ, AND SHE IS NOT THE LAST. The 1980-81 OCR read a p as a b. The alphabet around her settles it — the line sits between LEIPERT and LEIPNER, where LEIPHOLZ belongs and LEIBHOLZ cannot — and the 1975-76 to 1979-80 volumes print the P plainly on the same number, 3 35 84 05, at the same flat. THE LAST LEIBHOLZ IN THE POST-WAR RUN IS HILDE, at Wiesbadener Straße 57, who is in the same 1980-81 volume and in nine consecutive books from 1972-73.",
+      "source": "ZLB Berlin telephone books, PI_ANCHOR 15849358. The spelling was corrected on 21 September in data/leipholz-postwar-berlin.tsv and data/berlin-postwar-luwinski.tsv was never amended to match, so this file carried the superseded claim for a day. Hilde's presence in 1980-81 was found on 22 September by reading the Leibfried-to-Leibich slot in full rather than searching for the name. Working in data/leipholz-telephone-slot-audit.tsv."
+    }
+  ]
 }

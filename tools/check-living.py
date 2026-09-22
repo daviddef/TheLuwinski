@@ -43,7 +43,27 @@ Rules, identical to tools/build-register.py:
     published, so they are not guarded.
   - Duplicate records are data artefacts, not living people.
 """
-import argparse, hashlib, json, pathlib, re, sys
+import argparse, hashlib, json, os, pathlib, re, sys
+
+
+def resolve_dist(dist):
+    """ARCHIVE_OUT beats --dist, deliberately.
+
+    package.json passes `--dist dist` on the command line, which is the
+    repository default -- what to read when nobody has said otherwise.
+    ARCHIVE_OUT is an operator saying «read THIS build, the one I just made».
+    If the flag won, honouring the operator would mean editing package.json,
+    which is how this was broken in the kit in the first place. Sessions share
+    this working tree and `dist` is routinely half-written or somebody else's.
+    THE LIVING GATE IS THE ONE THAT MUST NEVER BE WRONG, so it must not read
+    a build it was not pointed at. Only the last component is replaced.
+    """
+    out = os.environ.get("ARCHIVE_OUT")
+    if not out:
+        return dist
+    d = (dist or "").rstrip("/\\")
+    parent = os.path.dirname(d)
+    return os.path.join(parent, out) if parent else out
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import names
 
@@ -115,10 +135,13 @@ if __name__ == "__main__":
     ap.add_argument("--dist", default="dist")
     ap.add_argument("--mode", choices=["auto", "harvest", "hashes"], default="auto")
     a = ap.parse_args()
+    dist = resolve_dist(a.dist)
+    if dist != a.dist:
+        print(f"  ..    reading {dist} (ARCHIVE_OUT)")
     mode = a.mode
     if mode == "auto":
         mode = "harvest" if (ROOT / "data" / "myheritage-tree9.json").exists() else "hashes"
-    hits, n, guarded, used = (check_harvest if mode == "harvest" else check_hashes)(a.dist)
+    hits, n, guarded, used = (check_harvest if mode == "harvest" else check_hashes)(dist)
     if hits:
         print(f"check-living: FAILED ({used}) — living people present in the build")
         for f, full, found in hits:
