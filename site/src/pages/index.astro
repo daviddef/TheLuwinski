@@ -24,7 +24,7 @@ const pc = (y) => ((y - T0) / (T1 - T0)) * 100;
 const lives = [
   // lane, name, born, died (0 = not found), last documented year, where, events [year, kind, title, detail]
   ['a', 'Sally Leibholz & Friederike Schmul', 1847, 0, 1884, 'Hammerstein · married Szubin 1874', [
-    [1874,'m','Married at Szubin','Standesamt Szubin, 1874. A Jewish family of the Posen–West Prussia borderland. Their son Jacob was born at Schubin ten years later.'],
+    [1874,'m','Married at Szubin','Standesamt Szubin, akt nr 9 of 24 November 1874, read at the image. He was a Kaufmann of twenty-seven, born and living at HAMMERSTEIN; she was born and living at Schubin. The entry names his parents — JACOB LEIBHOLZ and WILHELMINE geb. POLLNOW — and is the document that puts this family at Hammerstein before Schubin. Their son Jacob was born at Schubin ten years later and named for his grandfather.'],
   ]],
   ['a', 'Jacob Leibholz', 1884, 1943, 1943, 'Schubin → Berlin → Auschwitz', [
     [1924,'m','Married Auguste Luwinski','5 January 1924, Berlin — twelve years after their son Kurt was born. Kurt stayed a Luwinski; the son born after the marriage, Siegfried, was registered a Leibholz.'],
@@ -106,7 +106,7 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
   <p>
     <a href={base + '/derrick/'}>Lynn Derrick Luwinski</a> is living, and this archive names him and
     says nothing else about him. Behind him run <strong>two lines, and they are not the same line.</strong>
-    One is the family of record, documented to the 1870s and carried on a name. The other is the family
+    One is the family of record &mdash; carried on a name, documented from the 1870s, and as of 22 September 2026 reaching one generation further back through a marriage entry at Schubin. The other is the family
     his DNA keeps pointing at, reconstructed from 5,464 matches. As of <strong>15 September 2026</strong>
     that second lane has names on it all the way down, and the lean has become steep: the shared segments
     place him inside a Hertfordshire household called <strong>Wear</strong>, and a man of that family was
@@ -125,11 +125,39 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
       <p>Everyone here is documented — English registers, South African registers, a court index. What is <em>not</em> documented is the last joint, the one to Derrick.</p>
     </div>
 
+    <div class="gen">Great-great-<br/>grandparents</div>
+    <div class="node a">
+      <span class="lane">Line of record</span>
+      <b>Jacob Leibholz &amp; Wilhelmine <span class="yr">née Pollnow</span></b>
+      <p>
+        Found <strong>22 September 2026</strong>, in their son&rsquo;s marriage entry at Schubin:
+        <em>Sohn des Kaufmann Jacob Leibholz und der Wilhelmine geb. Pollnow</em>. He was a
+        <strong>Kaufmann</strong> like the son and the grandson after him. Neither has a date
+        here yet &mdash; the entry names them and says nothing else. The grandson born ten years
+        later was named <strong>Jacob</strong> for him.
+      </p>
+    </div>
+    <div class="node b">
+      <span class="lane">DNA line</span>
+      <b>Not reached</b>
+      <p>
+        The oldest names on this lane are <strong>George Castle</strong> and
+        <strong>Caroline Wallis</strong>, both born 1863. Their parents have not been identified,
+        and Henry Robert Wear&rsquo;s have not been found either. This lane is a generation shorter
+        than the one beside it.
+      </p>
+    </div>
+
     <div class="gen">Great-<br/>grandparents</div>
     <div class="node a">
       <span class="lane">Line of record</span>
       <b>Sally Leibholz &amp; Friederike Schmul</b>
-      <p>Hammerstein; married at Szubin, 1874. A Jewish family of the borderland.</p>
+      <p>
+        Married at Szubin on <strong>24 November 1874</strong>, akt nr 9 &mdash; the ninth and last
+        marriage of that year. The entry gives him as <strong>geboren zu Hammerstein, wohnhaft zu
+        Hammerstein</strong>, twenty-seven years old, and her as born and living at Schubin.
+        <strong>The move east happens at this wedding.</strong> A Jewish family of the borderland.
+      </p>
       <b>Joachim Luwinski &amp; Johanna Thimm</b>
       <p>Allenstein and Sauerbaum, East Prussia. Catholic farming people of the Ermland.</p>
     </div>

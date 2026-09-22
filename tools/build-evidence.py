@@ -289,10 +289,40 @@ def main():
     for a in ambiguous:
         print("  ambiguous, left unlinked:", a)
     if rejected:
-        print(f"  {len(rejected)} key cell(s) read as a ROW LABEL rather than a person and NOT "
-              f"counted — if a real name is in this list, the data or the rule is wrong:")
+        # THE FAULT THIS SEPARATES. Every rejected cell has always been printed, and on
+        # 22 September that was not enough: WILHELMINE LEIBHOLZ NÉE POLLNOW and a second
+        # new person were written into a person-kind file with *** decoration around the
+        # key, were silently refused, and NEVER REACHED THE SITE — while the author read
+        # the list, saw forty expected row labels, and missed the two that mattered. A
+        # warning you cannot pick your finding out of is not a warning.
+        #
+        # So: strip the decoration and ask the rule again. If a cell would be accepted as
+        # a person once *** and whitespace are removed, then the ONLY thing keeping that
+        # person off the site is the author's own formatting, and that is a different and
+        # much more serious thing than a heading being correctly ignored.
+        undecorated = []
+        plain = []
         for fn, raw in rejected:
-            print(f"      {fn}: {raw[:100]}")
+            bare = raw.strip().strip("*").strip()
+            # AND IT HAS TO SURVIVE THE RULE UNCHANGED. person_name() will cut a prose tail
+            # off at a comma and hand back a stump, so "SAMUEL LEIBHOLZ HAD A WIFE, AND SHE
+            # WAS NOT JEWISH" comes back as a five-word "name" and would be flagged as a
+            # person kept off the site. Requiring the cell to come back IDENTICAL means only
+            # a cell that is already a clean name is reported.
+            if person_name(bare) == bare:
+                undecorated.append((fn, raw))
+            else:
+                plain.append((fn, raw))
+        if undecorated:
+            print(f"  *** {len(undecorated)} KEY CELL(S) LOOK LIKE A REAL PERSON WITH DECORATION "
+                  f"AROUND THEM AND ARE THEREFORE NOT ON THE SITE — remove the *** or fix the key:")
+            for fn, raw in undecorated:
+                print(f"      !!  {fn}: {raw[:100]}")
+        if plain:
+            print(f"  {len(plain)} key cell(s) read as a ROW LABEL rather than a person and NOT "
+                  f"counted — if a real name is in this list, the data or the rule is wrong:")
+            for fn, raw in plain:
+                print(f"      {fn}: {raw[:100]}")
     if strict_missing:
         print("  declared but absent:", ", ".join(strict_missing))
     return 0

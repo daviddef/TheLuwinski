@@ -326,7 +326,7 @@
    "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141, akt małżeństwa nr 9/1874, on genealogiawarchiwach.pl, read 22 September 2026",
    "kind": "person",
    "rows": 11,
-   "people": 2
+   "people": 4
   },
   {
    "file": "leibholz-shanghai.tsv",
@@ -2058,6 +2058,18 @@
    "register_match": "exact"
   },
   {
+   "name": "Jacob Leibholz Senior",
+   "slug": "jacob-leibholz-senior",
+   "records": [
+    {
+     "file": "leibholz-schmul-marriage-1874.tsv",
+     "title": "Hammerstein, from a document at last — the 1874 marriage, and a generation above",
+     "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141, akt małżeństwa nr 9/1874, on genealogiawarchiwach.pl, read 22 September 2026",
+     "detail": ""
+    }
+   ]
+  },
+  {
    "name": "James B Dykes",
    "slug": "james-b-dykes",
    "records": [
@@ -3277,6 +3289,18 @@
    ]
   },
   {
+   "name": "Wilhelmine Leibholz née Pollnow",
+   "slug": "wilhelmine-leibholz-nee-pollnow",
+   "records": [
+    {
+     "file": "leibholz-schmul-marriage-1874.tsv",
+     "title": "Hammerstein, from a document at last — the 1874 marriage, and a generation above",
+     "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141, akt małżeństwa nr 9/1874, on genealogiawarchiwach.pl, read 22 September 2026",
+     "detail": ""
+    }
+   ]
+  },
+  {
    "name": "Willi Leibholz",
    "slug": "willi-leibholz",
    "records": [
@@ -3387,8 +3411,8 @@
   "ambiguous": 2,
   "files": 84,
   "person_files": 24,
-  "people": 183,
-  "records": 257,
+  "people": 185,
+  "records": 259,
   "linked_to_register": 12
  }
 }
