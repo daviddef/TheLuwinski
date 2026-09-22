@@ -537,6 +537,14 @@
    "people": 0
   },
   {
+   "file": "szubin-pre1874-jewish-records.tsv",
+   "title": "No Jewish records for Szubin before 1874 — and civil registration had not started",
+   "source": "www.genealogiawarchiwach.pl team facet probed with controls, 22 September 2026",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
+  },
+  {
    "file": "szubin-registers-online.tsv",
    "title": "Szubin said yes — the registers were online before the letter was written",
    "source": "Archiwum Państwowe w Bydgoszczy, letter IU.631.434.2026 of 22 September 2026; www.genealogiawarchiwach.pl searched the same day",
@@ -3409,7 +3417,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 84,
+  "files": 85,
   "person_files": 24,
   "people": 185,
   "records": 259,
