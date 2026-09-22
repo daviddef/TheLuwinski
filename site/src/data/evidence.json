@@ -1321,13 +1321,13 @@
      "file": "shenton-line-closed.tsv",
      "title": "The 63 Pix Road household, traced end to end",
      "source": "GRO birth, marriage and death indexes; 1939 Register",
-     "detail": "event: widowed a second time · date: before 29 September 1939 · reference: 1939 Register · note: Widowed"
+     "detail": "event: widowed a second time · date: before 29 September 1939 · reference: 1939 Register · note: \"Widowed\""
     },
     {
      "file": "shenton-line-closed.tsv",
      "title": "The 63 Pix Road household, traced end to end",
      "source": "GRO birth, marriage and death indexes; 1939 Register",
-     "detail": "event: enumerated · date: 29 September 1939 · place: 63 Pix Road, Letchworth · reference: RG101/1620G/011/28 sched 305/1 · note: Incapacitated - Blind, aged 80"
+     "detail": "event: enumerated · date: 29 September 1939 · place: 63 Pix Road, Letchworth · reference: RG101/1620G/011/28 sched 305/1 · note: \"Incapacitated - Blind\", aged 80"
     },
     {
      "file": "shenton-line-closed.tsv",
@@ -2696,7 +2696,7 @@
      "file": "shenton-line-closed.tsv",
      "title": "The 63 Pix Road household, traced end to end",
      "source": "GRO birth, marriage and death indexes; 1939 Register",
-     "detail": "event: enumerated · date: 29 September 1939 · place: 63 Pix Road, Letchworth · reference: RG101/1620G/011/28 sched 305/2 · note: Unpaid Domestic Duties, keeping her blind mother"
+     "detail": "event: enumerated · date: 29 September 1939 · place: 63 Pix Road, Letchworth · reference: RG101/1620G/011/28 sched 305/2 · note: \"Unpaid Domestic Duties\", keeping her blind mother"
     }
    ]
   },
@@ -3296,7 +3296,7 @@
      "file": "yadvashem-leibholz.tsv",
      "title": "Yad Vashem, Central Database of Shoah Victims' Names",
      "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
-     "detail": "yv_record: Page of Testimony, item ID 1067433 · date_of_birth: born 1893 · place_of_birth: Germany; lived Berlin · what it adds: He was a BUTCHER. Prior to WWII he lived in Berlin. Married, spouse's first name ERNA. PLACE OF DEATH: AUSCHWITZ, POLAND, 1943. Age given as 45."
+     "detail": "yv_record: Page of Testimony, item ID 1067433 · date_of_birth: born 1893 · place_of_birth: Germany; lived Berlin · what it adds: \"He was a BUTCHER. Prior to WWII he lived in Berlin.\" Married, spouse's first name ERNA. PLACE OF DEATH: AUSCHWITZ, POLAND, 1943. Age given as 45."
     }
    ]
   },

@@ -181,9 +181,26 @@ def slug(s):
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
 
 def rows(path):
+    """Read an evidence TSV the same way it is written: tabs, and NOTHING ELSE.
+
+    *** QUOTE_NONE IS LOad-BEARING. *** These files are hand-written prose and
+    they quote things -- a register line, a directory entry, somebody's words.
+    A field that OPENS with a double quote is, to the csv module, a QUOTED
+    FIELD, so the quote swallows the newline at the end of the line and the
+    next line is read as a continuation of it. Every row below shifts by one.
+
+    It is silent. Nothing errors, no row count looks wrong from outside, and
+    the page still builds. data/leipholz-postwar-berlin.tsv lost one row this
+    way and data/schoeneberg-1938-1968-instrument.tsv lost NINE, their content
+    welded onto the end of the row above.
+
+    Found 23 September 2026 by a peer session that parsed every TSV in the
+    estate both ways and compared, rather than reading the code and reasoning.
+    With this flag all 93 files agree, row for row, with a plain tab split.
+    """
     with open(path, encoding="utf-8") as fh:
         lines = [l for l in fh if not l.startswith("#")]
-    return list(csv.DictReader(lines, delimiter="\t"))
+    return list(csv.DictReader(lines, delimiter="\t", quoting=csv.QUOTE_NONE))
 
 def main():
     strict_missing = []
