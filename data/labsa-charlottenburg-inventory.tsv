@@ -1,0 +1,28 @@
+# THE CHARLOTTENBURG NAME INDEXES, INVENTORIED — 143 VOLUMES, AND THE FINDER HAS A DEFECT.
+# Landesarchiv Berlin LABSA, content.landesarchiv-berlin.de/labsa/. Read 22 September 2026.
+#
+# WHY IT WAS RUN. Row 241 asks which of the Charlottenburg registry offices holds anything of
+# JAQUES LEIBHOLZ of Lutherstrasse 34, and says all four have free name indexes online. They do,
+# and nobody had ever listed them. This is that list, plus a fault in the instrument that finds it.
+field	value
+# ---------------- THE DEFECT, WHICH MATTERS BEYOND THIS ROW ----------------
+*** THE THREE CHECKBOXES DO NOT UNION. TICKING MORE THAN ONE CORRUPTS THE QUERY. ***	LABSA's form offers Geburten, Heiraten and Sterbefälle as checkboxes, and the obvious way to inventory an office is to tick all three. THAT RETURNS THE WRONG ANSWER, and not even consistently wrong: STANDESAMT SCHÖNEBERG RETURNS 61 DEATH-INDEX VOLUMES WITH 'sterbe' ALONE AND ZERO WITH ALL THREE TICKED. Standesamt Charlottenburg returns 7 with 'sterbe' alone and 8 with all three — a different number again, and not the sum of anything.
+so a reading from the combined form is worth nothing	a zero from it is not an absence and a count from it is not a count. ALWAYS QUERY ONE RECORD TYPE PER REQUEST. tools/labsa.py now refuses to do otherwise and carries the control figures in its docstring.
+*** AND THE ARCHIVE'S EXISTING LABSA WORK WAS CHECKED AGAINST IT, NOT ASSUMED SAFE ***	row 252 and data/schoeneberg-progress.tsv both rest on SIXTY-ONE Schöneberg death volumes. Sixty-one is exactly what the single-checkbox query returns. THE EARLIER WORK USED THE FORM CORRECTLY AND NOTHING PUBLISHED FROM IT IS DISTURBED. That is checked rather than hoped, because the same defect would have silently halved a sweep.
+and the office name has to be exact	"Charlottenburg" alone returns NOTHING; the string must carry the "Standesamt " prefix. The match is then a PREFIX match, so "Standesamt Charlottenburg" also returns the numbered offices' rows and they have to be filtered on the office column. Offices with umlauts are double-encoded by the far end.
+# ---------------- THE INVENTORY ----------------
+Standesamt Charlottenburg	22 volumes. BIRTHS 8 (1874 - 1875 to 1896 - 1897) · MARRIAGES 7 (1874 - 1875 to 1896 - 1897) · DEATHS 7 (1874 - 1875 to 1896 - 1897)
+Standesamt Charlottenburg I	35 volumes. BIRTHS 15 (1898 - 1901 to 1914) · MARRIAGES 10 (1898 - 1900 to 1935 - 1938) · DEATHS 10 (1898 - 1901 to 1938)
+Standesamt Charlottenburg II	48 volumes. BIRTHS 14 (1898 - 1899 to 1914) · MARRIAGES 19 (1898 - 1899 to 1936 - 1938) · DEATHS 15 (1898 - 1899 to 1935 - 1938)
+Standesamt Charlottenburg III	31 volumes. BIRTHS 11 (1904 to 1914) · MARRIAGES 9 (1904 - 1908 to 1937 - 1938) · DEATHS 11 (1904 - 1906 to 1938)
+Standesamt Charlottenburg IV	7 volumes. BIRTHS NONE · MARRIAGES 4 (1922 - 1928 to 1936 - 1938) · DEATHS 3 (1922 - 1928 to 1936 - 1938)
+TOTAL	143 name-index volumes across the five Charlottenburg designations.
+# ---------------- WHAT THAT DOES TO ROW 241 ----------------
+*** CHARLOTTENBURG IV DID NOT EXIST IN 1913 ***	its earliest volume of any kind is 1922. For an event at Lutherstrasse 34 IN 1913 the office is one of CHARLOTTENBURG I, II or III — the unnumbered office closes in 1897 — so the row's "one of four" is one of three, and a third of the work just disappeared.
+and the birth indexes stop where the closure period stops	births run only to 1914 in all three numbered offices, while marriages and deaths run to 1938. A birth after 1914 is not online and not free, and no amount of reading will change that.
+THE SIZE OF THE JOB, MEASURED RATHER THAN GUESSED	the three numbered offices hold 40 birth, 38 marriage and 36 death index volumes. READING ALL OF THEM IS THE HUNDREDS-OF-READS JOB THIS ARCHIVE HAS BEEN COSTING BY EYE, and it is now an actual number: 114 volumes, at the 15 seconds a volume row 252's method achieves, IS NOT THE OBSTACLE. The obstacle is that these are 35-185 MB PDFs read in place over HTTP range requests, and the pdf.js pass has to find the L run in each.
+*** AND THE STREET STILL IS NOT PLACED, WHICH IS THE ACTUAL BLOCKER ***	narrowing three offices to one needs the Charlottenburg street directory, and it was looked for again today and NOT FOUND IN THE TEXT LAYER. Solr in the 1913 volume returns ONE page for "Lutherstr" together with "Charlottb" and it is the name section, not the street section; "Lutherstr" with "Standesamt" and with "StdA" both return ZERO. Those zeros are NOT findings — the volume is Fraktur, the street headings are set in a display face the OCR handles worst, and row 241 already said this has to be READ AT THE IMAGE. Today's attempt changes nothing about that except to confirm it from a second direction.
+and the two-Lutherstrassen trap is still live	row 241 records that there are TWO Lutherstrassen and that the promising-looking hits were registrars' own home addresses. Nothing found today separates them, and the office must not be guessed from the street name alone.
+# ---------------- STANDARD ----------------
+what this is	A CATALOGUE, NOT A READING. Not one of these 143 volumes has been opened. The inventory says what exists, what it covers and what it costs; it says nothing whatever about whether a Leibholz is in any of them.
+source	Landesarchiv Berlin, LABSA register finder, queried one record type at a time through tools/labsa.py on 22 September 2026. Bestände P Rep. 550 (Charlottenburg), 551 (I), 553 (II) and the III and IV series.

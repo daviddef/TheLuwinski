@@ -313,6 +313,14 @@
    "people": 0
   },
   {
+   "file": "labsa-charlottenburg-inventory.tsv",
+   "title": "The Charlottenburg name indexes inventoried — 143 volumes, and the finder has a defect",
+   "source": "Landesarchiv Berlin LABSA, queried one record type at a time 22 September 2026",
+   "kind": "ref",
+   "rows": 17,
+   "people": 0
+  },
+  {
    "file": "leibholz-gedenkbuch.tsv",
    "title": "The Bundesarchiv Gedenkbuch",
    "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
@@ -3465,7 +3473,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 91,
+  "files": 92,
   "person_files": 25,
   "people": 185,
   "records": 259,
