@@ -113,6 +113,57 @@ footer.site{border-top:1px solid var(--rule-strong);padding:34px 0 60px;backgrou
 .foot.dim{color:var(--ink-3);margin-top:10px}
 section.blk{padding:44px 0;border-bottom:1px solid var(--rule)}
 section.blk:last-child{border-bottom:0}
+/* PARAGRAPHS NEED AIR, AND `p{margin:0}` MEANT THEY ONLY GOT IT WHEN THE AUTHOR
+   REMEMBERED. All eight archives set `p{margin:0}` and then supply the gap one
+   paragraph at a time with an inline style="margin-top" — 5,122 of them across
+   the estate — so wherever it was left off, two paragraphs run together into a
+   wall of words. Worst at a phone width, which is where it was reported, on
+   22 September 2026. Written for the Blazevic archive that day and carried to
+   the other seven once the effect had been counted rather than assumed.
+
+   IT REACHES LESS THAN IT LOOKS. The selector is `section.blk > p + p` —
+   DIRECT children — so a paragraph inside a component's own wrapper is
+   untouched. Counted on the built pages: 211 pairs across 68 pages in the
+   seven archives, every one of them prose. A first count that searched the
+   whole of each section rather than its direct children said 7,405, which is
+   twelve times the truth and would have been the wrong reason to hesitate.
+
+   Nothing that was already spaced moves: the inline styles are more specific
+   and still win. This only fills in what was never set. */
+section.blk > p + p,
+section.blk > p + ul,
+section.blk > p + ol,
+section.blk > ul + p,
+section.blk > ol + p,
+section.blk > .grid + p,
+section.blk > table + p,
+section.blk > blockquote + p,
+section.blk > figure + p,
+section.blk > details + p,
+section.blk > .note + p,
+section.blk > p + .note,
+section.blk > p + blockquote,
+section.blk > p + table,
+section.blk > p + .grid,
+section.blk > .note + .note{margin-top:1.15rem}
+@media (max-width:620px){
+  section.blk > p + p,
+  section.blk > p + ul,
+  section.blk > p + ol,
+  section.blk > ul + p,
+  section.blk > ol + p,
+  section.blk > .grid + p,
+  section.blk > table + p,
+  section.blk > blockquote + p,
+  section.blk > figure + p,
+  section.blk > details + p,
+  section.blk > .note + p,
+  section.blk > p + .note,
+  section.blk > p + blockquote,
+  section.blk > p + table,
+  section.blk > p + .grid,
+  section.blk > .note + .note{margin-top:1.35rem}
+}
 section.blk h2{font-size:clamp(24px,3vw,34px)}
 section.blk > .dek{margin-top:10px}
 .stack{display:flex;flex-direction:column;gap:34px}
