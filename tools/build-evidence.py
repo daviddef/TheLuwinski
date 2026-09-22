@@ -97,6 +97,7 @@ MANIFEST = {
  "melbourne-leibholz-death.tsv": ([], "Joachim Peter Leibholz died at Toorak in 1971, and the index names his parents", "Victorian BDM historical index reg. 26252/1971, searched 21 September 2026", "ref"),
  "spandau-1982-leibholz-schoenfeld.tsv": ([], "A Jewish woman born Leibholz, married Schönfeld, who survived and died in 1982", "Standesamt Spandau, Sterberegister 1982 Nr. 1486, read through pdf.js 21 September 2026 — forename withheld, see the file", "ref"),
  "kreuzberg-reinickendorf-deaths.tsv": ([], "Eleven more death volumes, no hits, and two ways the method almost lied", "Landesarchiv Berlin P Rep. 510 and P Rep. 130, read through pdf.js 21 September 2026", "ref"),
+ "reinickendorf-1982-1994-deaths.tsv": ([], "Reinickendorf 1982-1994 — thirteen volumes, and the only Leipholz in twenty-one years", "Landesarchiv Berlin P Rep. 130 Nr. 1478-1490, read through pdf.js 23 September 2026", "ref"),
  "labsa-berlin-catalogue.tsv": ([], "Every free Berlin name index, catalogued — 5,383 volumes, and a trap that hid a tenth of it", "Landesarchiv Berlin LABSA, all 142 offices, built 23 September 2026", "ref"),
  "labsa-charlottenburg-inventory.tsv": ([], "The Charlottenburg name indexes inventoried — 143 volumes, and the finder has a defect", "Landesarchiv Berlin LABSA, queried one record type at a time 22 September 2026", "ref"),
  "adressbuch-namenteil-runs.tsv": ([], "The householder runs read as runs — and two published facts that did not survive it", "Berliner Adressbuch 1925-1943, ZLB Berlin, run read 22 September 2026", "ref"),

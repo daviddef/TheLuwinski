@@ -1,0 +1,43 @@
+# REINICKENDORF 1982 TO 1994 — THE THIRTEEN VOLUMES ROW 251 LEFT OPEN, READ.
+# Landesarchiv Berlin, P Rep. 130 Nr. 1478-1490, Namensverzeichnisse zum Sterberegister,
+# Standesamt Reinickendorf. Read 23 September 2026 through pdf.js over HTTP range requests.
+# NOTHING DOWNLOADED: 807 pages of 2,120 were fetched out of roughly 700 MB of PDF.
+#
+# WHY. Friedrich Leipholz is in the Berlin telephone book at Schwabstrasse 4 in Reinickendorf
+# to 1973-74 and gone from the 1974-75 volume. Reinickendorf 1974-1981 was read on 21 September
+# and he is in none of it. These thirteen were the rest of his own borough.
+field	value
+# ---------------- THE METHOD ----------------
+*** NOT A NAME SEARCH — THE SLOT, AND THIS TIME FOR BOTH SPELLINGS ***	the test is the one row 251 reached on the telephone books and row 252 on the registers: find the alphabetical slot and read it, and record an absence only when a name BELOW and a name ABOVE are both in hand. LEIBHOLZ falls between LEH- and LEIC-; LEIPHOLZ falls further on, between LEIN- and LEIS-. THEY ARE TWO DIFFERENT SLOTS AND THE FIRST PASS BRACKETED ONLY ONE. That pass was discarded and the volumes read again.
+what the first pass would have published	thirteen clean negatives covering both spellings, on a bracket that only tested LEIBHOLZ. In 1990 the nearest name above the Leibholz slot is LEIPE — which sorts BELOW Leipholz, so the Leipholz slot had not been shown to be read at all. The claim would have been true and unearned, which is the same fault as a zero from an instrument that was not looking.
+the text layer was tested before the sweep, not after	row 253 established that the Kreuzberg 1983-1994 volumes are labelled searchable and are not — their OCR caught the printed headings and almost none of the handwriting. THIS IS A DIFFERENT SERIES AND IT DOES CARRY NAMES: the 1982 layer reads "Blank Franz Erich 11.07. 1652" — surname, forenames, day and month, register number. A frequency control on the first nineteen pages returned Becker 6, Berger 5, Brandt 8 and Schmidt 0, which is exactly right for pages that have not yet left the letter B.
+cost	about 2.2 seconds a page, and only the 30 to 64 per cent of each volume where L falls — 46 to 61 pages of about 165. One volume, 1990, needed 120 because its L run is unusually thin and the window had to widen until both sides appeared.
+*** AND TWO VOLUMES FAILED THE FIRST TIME AND WERE NOT COUNTED AS ANYTHING ***	1992 and 1993 both returned network errors mid-read on the first pass. A failed fetch is not an absence. Both were retried and both read clean on the second pass, and the retry is in the code rather than in anybody's memory.
+# ---------------- THE RESULT ----------------
+*** ALL THIRTEEN READ, ALL THIRTEEN BRACKETED ON BOTH SIDES OF BOTH SPELLINGS, AND FRIEDRICH IS IN NONE OF THEM ***	no LEIBHOLZ in any year 1982 to 1994, and no LEIPHOLZ except one — see below.
+# ---------------- VOLUME BY VOLUME ----------------
+1982	P_Rep_130_1478, 167 pages, 58 read. LEIBHOLZ slot: Lehrke … Leicher. LEIPHOLZ slot: Leidenfrost … Leistikow.
+1983	P_Rep_130_1479, 169 pages, 60 read. LEIBHOLZ slot: Lehniger … Leinhübner. LEIPHOLZ slot: Leinung … Leistner.
+1984	P_Rep_130_1480, 158 pages, 56 read. LEIBHOLZ slot: Lehnhardt … Leichnitz. LEIPHOLZ slot: Leifheit … Lemien.
+1985	P_Rep_130_1481, 173 pages, 61 read. LEIBHOLZ slot: Lehwald … Leidecker. LEIPHOLZ slot: Leimkühler … Leitaite.
+1986	P_Rep_130_1482, 164 pages, 57 read. LEIBHOLZ slot: Lehr … Leimann. LEIPHOLZ slot: Leinweber … Lemanczyk.
+1987	P_Rep_130_1483, 160 pages, 56 read. LEIBHOLZ slot: Lehrke … Leichnitz. LEIPHOLZ slot: Leinweber … Leise.
+1988	P_Rep_130_1484, 161 pages, 57 read. LEIBHOLZ slot: Lehniger … Leicht. LEIPHOLZ slot: Leinkram … Leisegang.  *** AND THE SLOT IS NOT EMPTY: Leipholz Marie. ***
+1989	P_Rep_130_1485, 168 pages, 59 read. LEIBHOLZ slot: Lehnigk … Leichert. LEIPHOLZ slot: Leiding … Leisching.
+1990	P_Rep_130_1486, 170 pages, 120 read. LEIBHOLZ slot: Lehnshack … Leipe. LEIPHOLZ slot: Leipe … Leistikow.
+1991	P_Rep_130_1487, 166 pages, 59 read. LEIBHOLZ slot: Lehr … Leichnitz. LEIPHOLZ slot: Leimstein … Leithold.
+1992	P_Rep_130_1488, 168 pages, 59 read. LEIBHOLZ slot: Lehr … Leier. LEIPHOLZ slot: Leifke … Leist.
+1993	P_Rep_130_1489, 166 pages, 59 read. LEIBHOLZ slot: Lehr … Leichtmann. LEIPHOLZ slot: Leih … Leischow.
+1994	P_Rep_130_1490, 130 pages, 46 read. LEIBHOLZ slot: Lehniger … Leider. LEIPHOLZ slot: Lein … Leischner.
+# ---------------- *** THE ONE THING THE SWEEP FOUND, AND SHE IS NEW *** ----------------
+*** LEIPHOLZ MARIE — STANDESAMT REINICKENDORF, STERBEREGISTER 1988 NR. 2306 ***	page 76 of P Rep. 130 Nr. 1484, printed between LEINKRAM GERTRUD AUGUSTE RUDOLFINE and LEISEGANG FRIEDA. The day-and-month column reads "@507" in the text layer, which is most likely 5 JULY but is NOT legible enough to publish as a date. THE REGISTER NUMBER IS 2306 AND IT IS UNAMBIGUOUS, which is what an order needs.
+who she is not	NOT Erna Frida Else Leipholz, who died at Schöneberg on 13 January 1975. NOT Erna Leipholz of Streitstrasse 39 in Spandau, who is in the telephone book to 1980-81. NO MARIE OR MARIA LEIPHOLZ IS HELD ANYWHERE IN THIS ARCHIVE under any spelling, in Berlin or outside it.
+why she matters	SHE DIED IN FRIEDRICH'S BOROUGH. Friedrich Leipholz lived at Schwabstrasse 4 in Reinickendorf from at least 1961 to 1973-74, and the surname is rare: this is the ONLY Leipholz in twenty-one consecutive years of Reinickendorf death indexes, 1974 to 1994. A wife, a sister or a daughter-in-law would all fit, AND SO WOULD NO RELATION AT ALL. Nothing here joins them.
+what would settle it, and it is a purchase	the death entry itself, Reinickendorf 1988 Nr. 2306, which carries her birth date, birthplace, address, marital status and the informant — and an informant is often the person who buried Friedrich. A PURCHASE, AND NOT MINE TO MAKE.
+# ---------------- WHAT THE NEGATIVE MEANS, AND WHAT IT DOES NOT ----------------
+*** FRIEDRICH LEIPHOLZ DID NOT DIE IN REINICKENDORF ***	with the 1974-1981 run already read, TWENTY-ONE CONSECUTIVE YEARS OF HIS OWN BOROUGH ARE NOW READ AND HE IS NOT IN ANY OF THEM. He leaves the telephone book during 1974 and his borough never registers his death.
+so one of two things is true	HE MOVED and died elsewhere — which the new catalogue makes 296 death-index volumes across 25 offices, bounded and listed in data/labsa-catalogue.json — OR HE DIED AFTER 1994, which would put him near a hundred, the indexes stopping there because of the thirty-year closure.
+and the control that forbids the third reading	LEAVING A TELEPHONE BOOK IS NOT DYING. Heinrich Leibholz vanished from the Berlin directory after 1942 and did not die until 1948. NOTHING HERE SAYS FRIEDRICH DIED IN 1974; it says he stopped being listed, and that his borough never registered his death.
+# ---------------- STANDARD ----------------
+*** TEXT LAYER, NOT IMAGE ***	every line above is the OCR text layer of the Landesarchiv's scans. WHAT MAKES THE NEGATIVE SAFE IS NOT THE LAYER'S QUALITY BUT THE BRACKET: the names on each side of the gap are printed in the same layer by the same process, so a layer good enough to show LEHRKE and LEICHER on one page is good enough to have shown LEIBHOLZ between them. Where the layer is NOT good enough — the "@507" above — it is said so rather than guessed.
+source	Landesarchiv Berlin LABSA, P Rep. 130 Nr. 1478 to 1490, read through pdf.js 3.11.174 over HTTP range requests on 23 September 2026. Volume list from data/labsa-catalogue.json.

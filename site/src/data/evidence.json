@@ -481,6 +481,14 @@
    "people": 0
   },
   {
+   "file": "reinickendorf-1982-1994-deaths.tsv",
+   "title": "Reinickendorf 1982-1994 — thirteen volumes, and the only Leipholz in twenty-one years",
+   "source": "Landesarchiv Berlin P Rep. 130 Nr. 1478-1490, read through pdf.js 23 September 2026",
+   "kind": "ref",
+   "rows": 28,
+   "people": 0
+  },
+  {
    "file": "rosebank-1940-marriage-register.tsv",
    "title": "Rosebank answered — with a document this archive already had",
    "source": "Church of the Immaculate Conception, Rosebank, in reply to request 17; Original Marriage Register B.M.D.3 entry 13/1940, read at the image 22 September 2026",
@@ -3481,7 +3489,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 93,
+  "files": 94,
   "person_files": 25,
   "people": 185,
   "records": 259,
