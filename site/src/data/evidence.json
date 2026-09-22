@@ -385,6 +385,14 @@
    "people": 0
   },
   {
+   "file": "negatives-classified.tsv",
+   "title": "Every published negative classified, and three re-run",
+   "source": "The archive's own /negatives/ page, all 33 rows read one at a time 22 September 2026; re-runs at FreeBMD, probatesearch.service.gov.uk and gazettes.africa",
+   "kind": "ref",
+   "rows": 35,
+   "people": 0
+  },
+  {
    "file": "oskar-leibholz-theresienstadt.tsv",
    "title": "Oskar Leibholz, from Schubin to a transport number leaving Theresienstadt",
    "source": "Arolsen Archives DocIDs 127212723, 11243228, 11214364 and 5055941 — Gestapo transport list 15510042, AJDC/ITS card 01020102 047, Berlin registration card 10000375 24, Theresienstadt central card file 11422001 183; and DocID 12663551, the Kultusvereinigung Berlin Zählkarte for Gertrud, 01020401 034; read with consent 20 September 2026",
@@ -3262,7 +3270,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 75,
+  "files": 76,
   "person_files": 22,
   "people": 180,
   "records": 252,

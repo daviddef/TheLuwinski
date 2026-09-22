@@ -27,6 +27,7 @@ REG = ROOT / "site" / "src" / "data" / "register.json"
 # file -> (key columns, title, source citation, kind)
 # "kind": person = rows are people; ref = rows are references, not people.
 MANIFEST = {
+ "negatives-classified.tsv":   ([], "Every published negative classified, and three re-run", "The archive's own /negatives/ page, all 33 rows read one at a time 22 September 2026; re-runs at FreeBMD, probatesearch.service.gov.uk and gazettes.africa", "ref"),
  "gedenkbuch-leibholz-findings.tsv": ([], "The fifty opened — deportation, death, and two more under LAIBHOLZ", "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft", "ref"),
  "leibholz-gedenkbuch.tsv":      (["name"], "The Bundesarchiv Gedenkbuch", "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft", "person"),
  "wear-1851-bermondsey.tsv":     (["first","last"], "1851 census, Salisbury Street, Bermondsey", "HO107 piece 1560 folio 212", "person"),
