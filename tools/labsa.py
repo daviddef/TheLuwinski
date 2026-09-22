@@ -31,9 +31,51 @@ KINDS = ("geburten", "heirats", "sterbe")
 PDF = "https://content.landesarchiv-berlin.de/labsa/pdf/%s.pdf"
 
 
+AUTO = "https://content.landesarchiv-berlin.de/labsa/show/autocomplete.php?b=1&q=%s"
+
+
+def offices(timeout=60):
+    """Every registry office LABSA knows -- 142 of them, newline separated.
+
+    The search itself matches the office name EXACTLY (a bare "Standesamt",
+    "Standesamt C" or "Standesamt Sch" all return nothing), so this list is
+    the only way to enumerate the holdings. The endpoint is the jQuery
+    autocomplete behind the form's own text box, with matchContains, so any
+    substring every name shares will do.
+
+    THE NAMES COME BACK ALREADY DOUBLE-ENCODED -- "Standesamt SchAxc3Axb6neberg"
+    rather than Schoeneberg with a real umlaut -- which is precisely the form
+    the search expects. Decode the response as UTF-8 and pass the strings
+    straight back to volumes(); do NOT repair the mojibake first.
+    """
+    url = AUTO % urllib.parse.quote("Standesamt")
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    raw = urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore")
+    return [l.strip() for l in raw.splitlines() if l.strip()]
+
+
 def office_mojibake(name):
     """'Standesamt Schoeneberg' with real umlauts -> the double-encoded form."""
     return name.encode("utf-8").decode("latin-1")
+
+
+def office_repair(name):
+    """The inverse: the double-encoded form -> the real name with umlauts.
+
+    *** YOU NEED THIS, AND LEAVING IT OUT COSTS YOU EVERY OFFICE WITH AN UMLAUT. ***
+    offices() hands back DOUBLE-ENCODED names and volumes() needs them that way,
+    but the RESULT TABLE prints the office correctly encoded. So a loop that
+    queries with the autocomplete name and then filters rows on
+    `row["office"] == that_name` throws away every row for all 29 offices whose
+    name carries an umlaut or an eszett -- Schoeneberg, Neukoelln, Koepenick,
+    Weissensee and the rest -- and reports a confident, quiet ZERO for each.
+    Schoeneberg has 61 death-index volumes. Compare with office_repair() applied
+    to the query name, or compare loosely.
+    """
+    try:
+        return name.encode("latin-1").decode("utf-8")
+    except (UnicodeEncodeError, UnicodeDecodeError):
+        return name
 
 
 def volumes(office, kind, timeout=90):

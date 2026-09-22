@@ -1,0 +1,34 @@
+# EVERY FREE BERLIN NAME INDEX, CATALOGUED — 5,383 VOLUMES, 142 OFFICES, AND A TRAP THAT HID A TENTH OF IT.
+# Landesarchiv Berlin, LABSA. Built 23 September 2026 with tools/labsa.py. Full machine list in data/labsa-catalogue.json.
+#
+# WHY IT WAS BUILT. Four open rows all reduce to the same unanswered question — WHICH VOLUMES EXIST AND
+# WHAT DO THEY COVER. Row 241 (Charlottenburg for Jaques), row 251 (Reinickendorf after 1981 for Friedrich),
+# row 253 (Kreuzberg and elsewhere for Agnes), row 254 (a Leibholz-Schönfeld marriage). Nobody had ever
+# listed the holdings, so every one of them was being costed by eye.
+field	value
+# ---------------- HOW THE LIST WAS GOT AT ALL ----------------
+the search matches the office name EXACTLY, so the offices had to be enumerated first	"Standesamt", "Standesamt C" and "Standesamt Sch" all return NOTHING; only the full exact name works. The list is behind the form's own jQuery autocomplete at show/autocomplete.php, which hands back ALL 142 OFFICE NAMES to any substring they share.
+and the checkboxes still do not union	established yesterday and it holds: ONE RECORD TYPE PER REQUEST. 426 requests, then 87 more. tools/labsa.py refuses the combined form.
+# ---------------- *** THE TRAP, AND IT IS THIS ARCHIVE'S OWN MISTAKE, CAUGHT BY A CONTROL *** ----------------
+THE FIRST PASS REPORTED 4,838 VOLUMES ACROSS 113 OFFICES AND SAID 29 OFFICES HELD NOTHING	*** ALL TWENTY-NINE OF THOSE OFFICES HAVE AN UMLAUT OR AN ESZETT IN THEIR NAME. *** Schöneberg, Neukölln, Köpenick, Weißensee, Hohenschönhausen, Rixdorf I/Neukölln I and the rest. Not one of them was empty. The pass had lost 545 volumes, a tenth of the whole catalogue, and reported the loss as a finding.
+WHAT CAUSED IT	LABSA's autocomplete returns office names DOUBLE-ENCODED — "Standesamt SchÃ¶neberg" — and the search requires them that way. BUT THE RESULT TABLE PRINTS THE OFFICE CORRECTLY ENCODED, "Standesamt Schöneberg". The loop queried with one form and filtered the returned rows on the other, so for every office with an umlaut the query SUCCEEDED and the filter then discarded every row it returned. A quiet, confident zero, twenty-nine times.
+*** AND IT WAS CAUGHT BY A CONTROL AND BY NOTHING ELSE *** 	the check run against the new catalogue was the figure this archive already held: SCHÖNEBERG HAS SIXTY-ONE DEATH-INDEX VOLUMES, which row 252 rests on and which this session had pulled by hand an hour earlier. The catalogue said ZERO. Without that number the file would have been published with a 29-office hole in it and a sentence explaining that those offices have no holdings. THE CORRECTED CATALOGUE RETURNS SCHÖNEBERG 61 DEATHS EXACTLY, which is the control passing.
+the lesson is yesterday's, turned on itself	a common-name control cannot clear a rare-name negative, and a successful-looking sweep cannot clear a systematic one. THE FAULT WAS NOT IN THE ARCHIVE'S INSTRUMENT BUT IN THE CODE READING IT, which is the harder kind to see, because nothing errored and the number looked plausible.
+# ---------------- WHAT IS THERE ----------------
+THE TOTAL	5,383 NAME-INDEX VOLUMES ACROSS 139 OFFICES. 2,845 death, 1,595 marriage, 943 birth. Three offices of the 142 genuinely hold nothing: Blankenfelde, Grunewald-Forst and "Standesamt I in Berlin".
+the largest holdings	Spandau (Spandau I) 238 · Weißensee 206 · Berlin III 172 · Berlin IX 169 · Berlin XI 168.
+what a volume is	a NAMENSVERZEICHNIS, the alphabetical index to a register, served as a PDF of 3 to 380 MB. It is not the register entry; it gives a name, a date and an act number, which is what a certificate has to be ordered against.
+# ---------------- ROW 241: AND THIS CORRECTS WHAT WAS PUBLISHED YESTERDAY ----------------
+*** CHARLOTTENBURG HAS 207 VOLUMES IN SIX DESIGNATIONS, NOT 143 IN FIVE ***	yesterday's inventory queried the five office names it knew and missed STANDESAMT CHARLOTTENBURG VON BERLIN — 64 volumes, 1938 to 1994, 58 of them death indexes. That office did not exist as a name in the earlier pass because the office list had not been enumerated; it was found only when the catalogue went through all 142.
+the six, with their real spans	Charlottenburg 22 (1874-1897) · Charlottenburg I 35 (1898-1938) · Charlottenburg II 48 (1898-1938) · Charlottenburg III 31 (1904-1938) · Charlottenburg IV 7 (1922-1938) · Charlottenburg von Berlin 64 (1938-1994).
+WHAT SURVIVES OF YESTERDAY'S CONCLUSION	all of it, for 1913. Charlottenburg IV begins in 1922 and the unnumbered office closes in 1897, and the von Berlin office begins in 1938, SO A 1913 EVENT AT LUTHERSTRASSE 34 IS STILL ONE OF CHARLOTTENBURG I, II OR III. What changes is the size of the Charlottenburg holding, which was understated by a third.
+# ---------------- ROWS 251 AND 253: THE REAL SCOPE OF "SHE DIED IN ANOTHER BOROUGH" ----------------
+*** 296 DEATH-INDEX VOLUMES REACH 1982 OR LATER, ACROSS 25 OFFICES ***	that is the actual scope of the possibility row 253 raises — that Agnes, aged 91, moved into a home in another borough and died there. It is 25 offices, not a vague "elsewhere", and it is bounded.
+and it is the same 25 for Friedrich	row 251's remaining work, Reinickendorf 1982-1994, is THIRTEEN VOLUMES. Kreuzberg von Berlin for Agnes is likewise 13. Neither is the open-ended job either row describes.
+# ---------------- ROW 254: AND THE FREE TEST MAY NOT EXIST ----------------
+*** THE MARRIAGE INDEXES STOP AT 1944. EVERYWHERE. ***	1,595 marriage-index volumes and the latest year in any of them is 1944 — the 80-year closure, moving forward one year at a time. 1,180 of them cover some part of 1900-1946.
+WHAT THAT DOES TO THE ROW	row 254 calls the Berlin marriage indexes "THE FREE TEST BEFORE ANY PURCHASE" for the Leibholz-Schönfeld marriage, which would name her father. IF SHE MARRIED AFTER 1944 THAT TEST DOES NOT EXIST AT ANY PRICE OF EFFORT, and it is not a matter of looking harder. She was a Jewish woman in Berlin who was WIDOWED by 1982 and who survived the war; a marriage in the late 1940s is at least as likely as one before 1944, and possibly likelier.
+so the row's plan needs a branch it does not have	the free indexes CAN settle it if the marriage is pre-1945, and CANNOT TOUCH IT otherwise. That is worth knowing before 1,180 volumes are read to find nothing, and it changes when the purchase of the 1982 death entry stops being avoidable.
+# ---------------- STANDARD ----------------
+what this is	A CATALOGUE, NOT A READING. Not one of these 5,383 volumes has been opened here. It says what exists, what it covers and what it would cost; it says nothing about whether any Leibholz is in any of them.
+source	Landesarchiv Berlin, LABSA, content.landesarchiv-berlin.de/labsa/. Office list from the form's autocomplete endpoint; holdings queried one record type at a time, 142 offices, zero request failures. Built 23 September 2026. Machine-readable full list: data/labsa-catalogue.json.

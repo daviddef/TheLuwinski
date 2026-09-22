@@ -1,4 +1,5 @@
-# THE CHARLOTTENBURG NAME INDEXES, INVENTORIED — 143 VOLUMES, AND THE FINDER HAS A DEFECT.
+# THE CHARLOTTENBURG NAME INDEXES, INVENTORIED — AND THE FINDER HAS A DEFECT.
+# *** THE 143 IN THIS FILE IS 207. SEE THE CORRECTION AT THE HEAD OF THE TABLE. ***
 # Landesarchiv Berlin LABSA, content.landesarchiv-berlin.de/labsa/. Read 22 September 2026.
 #
 # WHY IT WAS RUN. Row 241 asks which of the Charlottenburg registry offices holds anything of
@@ -10,13 +11,16 @@ field	value
 so a reading from the combined form is worth nothing	a zero from it is not an absence and a count from it is not a count. ALWAYS QUERY ONE RECORD TYPE PER REQUEST. tools/labsa.py now refuses to do otherwise and carries the control figures in its docstring.
 *** AND THE ARCHIVE'S EXISTING LABSA WORK WAS CHECKED AGAINST IT, NOT ASSUMED SAFE ***	row 252 and data/schoeneberg-progress.tsv both rest on SIXTY-ONE Schöneberg death volumes. Sixty-one is exactly what the single-checkbox query returns. THE EARLIER WORK USED THE FORM CORRECTLY AND NOTHING PUBLISHED FROM IT IS DISTURBED. That is checked rather than hoped, because the same defect would have silently halved a sweep.
 and the office name has to be exact	"Charlottenburg" alone returns NOTHING; the string must carry the "Standesamt " prefix. The match is then a PREFIX match, so "Standesamt Charlottenburg" also returns the numbered offices' rows and they have to be filtered on the office column. Offices with umlauts are double-encoded by the far end.
+# ---------------- *** CORRECTED 23 SEPTEMBER — THIS INVENTORY WAS A THIRD SHORT *** ----------------
+*** THERE ARE SIX CHARLOTTENBURG DESIGNATIONS AND 207 VOLUMES, NOT FIVE AND 143 ***	this file queried the five office names it could think of. IT MISSED STANDESAMT CHARLOTTENBURG VON BERLIN — 64 volumes, 1938 to 1994, 58 of them death indexes — because the office list had never been enumerated and the search matches the office name EXACTLY. The full catalogue built the next day from LABSA's own autocomplete endpoint found it. GUESSING AT OFFICE NAMES IS NOT ENUMERATION, and the figures below are what guessing cost. See data/labsa-berlin-catalogue.tsv.
+WHAT SURVIVES, AND IT IS THE PART ROW 241 USES	all of it, for 1913. Charlottenburg IV begins 1922, the unnumbered office closes 1897, and the von Berlin office begins 1938, SO A 1913 EVENT IS STILL ONE OF CHARLOTTENBURG I, II OR III. The conclusion is untouched; the size of the holding was understated.
 # ---------------- THE INVENTORY ----------------
 Standesamt Charlottenburg	22 volumes. BIRTHS 8 (1874 - 1875 to 1896 - 1897) · MARRIAGES 7 (1874 - 1875 to 1896 - 1897) · DEATHS 7 (1874 - 1875 to 1896 - 1897)
 Standesamt Charlottenburg I	35 volumes. BIRTHS 15 (1898 - 1901 to 1914) · MARRIAGES 10 (1898 - 1900 to 1935 - 1938) · DEATHS 10 (1898 - 1901 to 1938)
 Standesamt Charlottenburg II	48 volumes. BIRTHS 14 (1898 - 1899 to 1914) · MARRIAGES 19 (1898 - 1899 to 1936 - 1938) · DEATHS 15 (1898 - 1899 to 1935 - 1938)
 Standesamt Charlottenburg III	31 volumes. BIRTHS 11 (1904 to 1914) · MARRIAGES 9 (1904 - 1908 to 1937 - 1938) · DEATHS 11 (1904 - 1906 to 1938)
 Standesamt Charlottenburg IV	7 volumes. BIRTHS NONE · MARRIAGES 4 (1922 - 1928 to 1936 - 1938) · DEATHS 3 (1922 - 1928 to 1936 - 1938)
-TOTAL	143 name-index volumes across the five Charlottenburg designations.
+TOTAL AS FIRST PUBLISHED	143 volumes across five designations — SUPERSEDED. The true figure is 207 across six; see the correction above.
 # ---------------- WHAT THAT DOES TO ROW 241 ----------------
 *** CHARLOTTENBURG IV DID NOT EXIST IN 1913 ***	its earliest volume of any kind is 1922. For an event at Lutherstrasse 34 IN 1913 the office is one of CHARLOTTENBURG I, II or III — the unnumbered office closes in 1897 — so the row's "one of four" is one of three, and a third of the work just disappeared.
 and the birth indexes stop where the closure period stops	births run only to 1914 in all three numbered offices, while marriages and deaths run to 1938. A birth after 1914 is not online and not free, and no amount of reading will change that.
