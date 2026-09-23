@@ -13090,11 +13090,11 @@
   },
   {
    "id": 9500911,
-   "who": "Erna of Streitstraße 39, Spandau — published here as the last Leibholz in the post-war Berlin telephone books",
-   "field": "surname, and the claim built on it",
-   "was": "\"ERNA — 1980-81 telephone book, 'Leibholz Erna · 20 Streitstr. 39' — Spandau. The last Leibholz in the run\", and, in the summary line of the same file, \"then Erna alone in 1980\".",
-   "now": "SHE IS A LEIPHOLZ, NOT A LEIBHOLZ, AND SHE IS NOT THE LAST. The 1980-81 OCR read a p as a b. The alphabet around her settles it — the line sits between LEIPERT and LEIPNER, where LEIPHOLZ belongs and LEIBHOLZ cannot — and the 1975-76 to 1979-80 volumes print the P plainly on the same number, 3 35 84 05, at the same flat. THE LAST LEIBHOLZ IN THE POST-WAR RUN IS HILDE, at Wiesbadener Straße 57, who is in the same 1980-81 volume and in nine consecutive books from 1972-73.",
-   "source": "ZLB Berlin telephone books, PI_ANCHOR 15849358. The spelling was corrected on 21 September in data/leipholz-postwar-berlin.tsv and data/berlin-postwar-luwinski.tsv was never amended to match, so this file carried the superseded claim for a day. Hilde's presence in 1980-81 was found on 22 September by reading the Leibfried-to-Leibich slot in full rather than searching for the name. Working in data/leipholz-telephone-slot-audit.tsv."
+   "who": "Hilde Leibholz of Wiesbadener Straße 57 — and which woman is the last of the name in the post-war Berlin telephone books",
+   "field": "who is last, not the spelling",
+   "was": "\"ERNA — 1980-81 telephone book — the last Leibholz in the run\", and, in the summary line of the same file, \"then Erna alone in 1980\". THE SPELLING HALF OF THIS WAS ALREADY CORRECTED ON 21 SEPTEMBER AS 9500904 — she is a LEIPHOLZ — but two things were left standing: data/berlin-postwar-luwinski.tsv and the Leibholz page were never amended to match 9500904, so a reader of either still met the old surname; and NOBODY HAD ASKED WHO THE LAST LEIBHOLZ ACTUALLY WAS.",
+   "now": "HILDE LEIBHOLZ, at Wiesbadener Straße 57, is the last of the name in the post-war Berlin run. She is in NINE CONSECUTIVE telephone volumes, 1972-73 to 1980-81, in the flat Felix held before her — including the very 1980-81 volume from which Erna was called the last. Erna is in that volume too, three places further on in the alphabet, under the other spelling.",
+   "source": "ZLB Berlin telephone books, PI_ANCHOR 15849358, read at the alphabetical slot on 22-23 September 2026 rather than by name search, which is what turned Hilde up: five of the eleven readable volumes mangle one or other of these surnames and a name search misses them. Supersedes nothing in 9500904, which stands; this records the claim that was built on top of it. Working in data/leipholz-telephone-slot-audit.tsv."
   },
   {
    "id": 9500912,
@@ -13103,6 +13103,14 @@
    "was": "KRONENSTRASSE 59-60, published on the Leibholz page, in data/berlin-adressbuch-names.tsv, in data/jacob-leibholz-deportation.tsv and in two research-log entries.",
    "now": "KRAUSENSTRASSE 59-60. The house number is unchanged.",
    "source": "Berliner Adressbuch, ZLB Berlin. FOUR READINGS IN THREE VOLUMES, none of which says Kronen: 1925 page 1871 prints it cleanly, \"JaqueB Leibholz & Co, Konfektion, W8, Krausenstr. 69. 00\"; 1934 page 1462 \"W8 Kraufen-/strasse 69. 60\"; 1938 page 1633 in the householder run \"W8 Krausen-/strasse 59. 60\"; and 1938 page 3385, a different section of the same volume, \"Leibholz J & Co W8 Kraujeuilr 69. 60\". THE DECIDING EVIDENCE IS THE OCR ARTEFACT RATHER THAN THE SPELLING: the f of \"Kraufen\" and the j of \"Kraujeu\" are both this scanner's rendering of the long s, and Kronenstrasse has no s in that position. Found on 22 September while sweeping the householder runs for row 260, and the wrong street survived because both streets are real and both sit in the Konfektion quarter around Hausvogteiplatz."
+  },
+  {
+   "id": 9500913,
+   "who": "Jacob Leibholz at Lutherstraße 34 in 1913 — which registry office could hold anything of his",
+   "field": "registry office",
+   "was": "\"So Jacob's 1913 registry office is one of Standesamt Charlottenburg I to IV\", published on Kurt's page and in the research log.",
+   "now": "ONE OF CHARLOTTENBURG I, II OR III. Charlottenburg IV did not exist in 1913 — its earliest volume of any kind is 1922 — and the unnumbered office closes in 1897.",
+   "source": "Landesarchiv Berlin, LABSA, 23 September 2026. THE ERROR CAME FROM GUESSING THE OFFICE NAMES RATHER THAN ENUMERATING THEM, which is the same root as this archive's 143-against-207 miscount of the Charlottenburg holdings the day before: the search matches an office name exactly, and the list of names is only available from the form's own autocomplete endpoint. The three surviving candidates hold 114 name-index volumes between them. Working in data/labsa-charlottenburg-inventory.tsv and data/labsa-berlin-catalogue.tsv."
   }
  ],
  "counts": {
