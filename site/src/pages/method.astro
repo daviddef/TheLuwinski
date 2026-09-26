@@ -199,6 +199,135 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     people and are not named.
   </p>
 
+  <h2>Four ways an instrument lied, in one week</h2>
+  <p>
+    Every one of these produced a confident, well-written, wrong answer, and every one of them
+    survived review because it looked like careful work. They are set out because the rules they
+    yield are worth more than the findings they nearly destroyed.
+  </p>
+
+  <div class="panel">
+    <h3>A common-name control cannot clear a rare-name negative <span class="tag disp">22 September 2026</span></h3>
+    <p>
+      Twelve Berlin telephone volumes were swept for the surname <strong>LEIPHOLZ</strong>. The search
+      found it in four and nothing in eight, and the eight were false. The OCR prints the name
+      <em>Leiphotz</em>, <em>Lelpholz</em>, <em>Leipkslz</em> and <em>Leibholz</em> &mdash;
+      <strong>five of the eleven readable volumes mangle it</strong>, and a search for the correct
+      spelling misses every one.
+    </p>
+    <p>
+      What licensed the error was a control that looked healthy the whole time: <strong>SCHMIDT, 133 to
+      191 hits a volume</strong>, in every book with a text layer. That proves the layer
+      <em>exists</em>. It proves nothing about whether one broken glyph ate a rare string, and a
+      volume can be richly indexed and still lose one line.
+    </p>
+    <p>
+      <strong>The instrument that works is the alphabet, because it does not depend on the glyph being
+      right.</strong> The name falls in a known slot &mdash; Leipholz sorts between LEIPERT and
+      LEIPIC &mdash; so the whole slot is printed and read, and an absence is recorded only when a name
+      above it and a name below it are both in hand. <strong>A missing side is inconclusive, not
+      negative.</strong> Eight unreliable zeros became six positives and two real absences, and two
+      published claims turned out to be wrong.
+    </p>
+    <p class="small muted">
+      A corollary found the same week, reading the Adressbuch: the slot method reproduced two counts
+      already read at the image (seventeen householders in 1938, ten in 1940) and then failed
+      predictably where the OCR loses the typographic dashes. A method that states where it stops is
+      worth more than one that quietly under-reports.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>The Landesarchiv&rsquo;s own finder has a defect, and it is not consistent <span class="tag disp">22 September 2026</span></h3>
+    <p>
+      LABSA, the Berlin register finder, offers births, marriages and deaths as three checkboxes.
+      Ticking more than one does not widen the search &mdash; <strong>it corrupts it</strong>:
+    </p>
+    <div class="scroll"><table>
+      <thead><tr><th>Query</th><th>Volumes returned</th></tr></thead>
+      <tbody>
+        <tr><td>Standesamt Sch&ouml;neberg, deaths alone</td><td><strong>61</strong></td></tr>
+        <tr><td>Standesamt Sch&ouml;neberg, all three ticked</td><td><strong>0</strong></td></tr>
+        <tr><td>Standesamt Charlottenburg, deaths alone</td><td>7</td></tr>
+        <tr><td>Standesamt Charlottenburg, all three ticked</td><td>8</td></tr>
+      </tbody>
+    </table></div>
+    <p>
+      Not the sum of anything, and not even reliably zero. <strong>A count from the combined form is
+      not a count and a zero from it is not an absence.</strong> This archive&rsquo;s existing work was
+      then checked against the defect rather than assumed safe: the sixty-one Sch&ouml;neberg death
+      volumes it rests on are exactly the single-checkbox figure, so nothing published was disturbed.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>Guessing at names is not enumerating them <span class="tag disp">23 September 2026</span></h3>
+    <p>
+      The Charlottenburg registry holdings were inventoried by querying the five office names the
+      archive could think of: <strong>143 volumes in five designations</strong>. The real figure is
+      <strong>207 in six</strong>. It had missed <em>Standesamt Charlottenburg von Berlin</em> entirely,
+      because LABSA matches an office name <em>exactly</em> and the list of names is only obtainable
+      from the form&rsquo;s own autocomplete endpoint.
+    </p>
+    <p class="small muted">
+      The same root produced a factual error on Kurt&rsquo;s page, which said Jacob&rsquo;s 1913 office
+      was &ldquo;one of Charlottenburg I to IV&rdquo;. <strong>Charlottenburg IV did not exist in
+      1913</strong> &mdash; its earliest volume of any kind is 1922. Correction 9500913.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>A tenth of a catalogue went missing, and the hole was shaped like an umlaut <span class="tag disp">23 September 2026</span></h3>
+    <p>
+      With the office names finally in hand, the whole free holding was enumerated:
+      <strong>5,383 name-index volumes across 139 offices</strong> &mdash; 2,845 death, 1,595 marriage,
+      943 birth. That single list turns several jobs this archive had been costing by eye into finite
+      ones: Reinickendorf&rsquo;s remaining death indexes are thirteen volumes, and the whole of
+      &ldquo;she died in some other borough&rdquo; is 296 volumes across 25 offices.
+    </p>
+    <p>
+      <strong>The first pass reported 4,838 volumes and said twenty-nine offices held nothing &mdash;
+      and all twenty-nine have an umlaut or an eszett in the name.</strong> Sch&ouml;neberg,
+      Neuk&ouml;lln, K&ouml;penick, Wei&szlig;ensee. The autocomplete hands names back
+      double-encoded and the search needs them that way, but the results table prints them correctly
+      encoded, so the loop queried in one form and filtered the returned rows on the other. Every
+      query succeeded; every row was then discarded. A quiet, confident zero, twenty-nine times,
+      worth 545 volumes.
+    </p>
+    <p class="small muted">
+      <strong>It was caught by a control and by nothing else.</strong> Sch&ouml;neberg has
+      sixty-one death volumes &mdash; a figure this archive already rested on and had pulled by hand an
+      hour earlier &mdash; and the new catalogue said zero. <strong>The fault was not in the
+      archive&rsquo;s instrument but in the code reading it</strong>, which is the harder kind to see:
+      nothing errored, and 4,838 looked plausible.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>What the slot method then bought <span class="tag doc">23 September 2026</span></h3>
+    <p>
+      Applied to Reinickendorf&rsquo;s thirteen outstanding death-index volumes, read through pdf.js
+      over HTTP range requests &mdash; 807 pages of 2,120 out of some 700&nbsp;MB, nothing downloaded
+      &mdash; it closed a borough: with the run already read to 1981,
+      <strong>twenty-one consecutive years of Friedrich Leipholz&rsquo;s own borough, 1974 to 1994, and
+      his death is not registered there.</strong>
+    </p>
+    <p>
+      <strong>And the first pass of that sweep was discarded.</strong> It had tested whether each
+      volume&rsquo;s alphabet was open on both sides of LEIBHOLZ and then reported thirteen negatives
+      covering LEIPHOLZ too. Those are two different slots. In the 1990 volume the nearest name above
+      Leibholz is <em>Leipe</em>, which sorts <em>below</em> Leipholz &mdash; so that slot had never
+      been shown to be read at all. The claim would have been true and unearned. Two volumes also
+      failed mid-read with network errors and were not counted as absences: <strong>a failed fetch is
+      not an absence.</strong>
+    </p>
+    <p class="small muted">
+      The sweep&rsquo;s one positive is on <a href={base + '/leibholz/'}>the Leibholz page</a> &mdash;
+      Marie Leipholz, the only Leipholz in all twenty-one years, dying in the borough Friedrich lived
+      in.
+    </p>
+  </div>
+
   <h2>Corrections to the source</h2>
   <p>
     Where a named source overrides the family record, the correction is applied to the register and
