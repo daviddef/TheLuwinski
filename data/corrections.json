@@ -140,20 +140,28 @@
       "source": "Landesarchiv Berlin, LABSA, 23 September 2026. THE ERROR CAME FROM GUESSING THE OFFICE NAMES RATHER THAN ENUMERATING THEM, which is the same root as this archive's 143-against-207 miscount of the Charlottenburg holdings the day before: the search matches an office name exactly, and the list of names is only available from the form's own autocomplete endpoint. The three surviving candidates hold 114 name-index volumes between them. Working in data/labsa-charlottenburg-inventory.tsv and data/labsa-berlin-catalogue.tsv."
     },
     {
-      "id": 9500915,
-      "who": "Ivone Mota (or Mata) de Figueiredo — her year of birth",
-      "field": "born",
-      "was": "1924, published on her page as the heading \"Lourenço Marques, 1924\" and used to compute her age at her first son's birth.",
-      "now": "4 MARCH 1922, at the freguesia of Nossa Senhora da Conceição, Lourenço Marques.",
-      "source": "TWO INDEPENDENT PORTUGUESE CIVIL DOCUMENTS AGREE: her birth assento n.º 447-D gives \"dia quatro, mês Março, ano mil novecentos e vinte e dois\", and her 2010 death certificate carries 04/03/1922 in its own boxes. The 1924 figure also produced an internal contradiction the page never noticed — Henrique's birth in March 1941 was described as being to \"an unmarried mother of sixteen\" in one panel and \"when she was seventeen\" in another. She had turned NINETEEN seven days before he was born."
-    },
-    {
       "id": 9500916,
       "who": "Henrique Figueiredo Pinto da Rocha, Ivone's elder son, born 11 March 1941 at Lourenço Marques",
       "field": "the circumstances of his birth, and what his surname means",
       "was": "\"Henrique was born on 11 March 1941 to an unmarried mother... His father gave him a surname and, on the evidence of that surname, acknowledged him. Ivone did not marry him.\" The page also concluded that his birth registration was \"the only document likely to name his father — there is no marriage record to find, because there was no marriage.\"",
       "now": "HE WAS BORN INSIDE A MARRIAGE — sixteen months after his parents' wedding of 18 November 1939 and four years before their divorce. He carries Pinto da Rocha because his parents were married to each other when he was born, which is a simpler explanation than acknowledgement by surname. His father has a forename: FREDERICO PINTO DA ROCHA. THERE IS ALSO A MARRIAGE RECORD TO FIND, at the 1.ª Conservatória do Registo Civil de Lourenço Marques, 18 November 1939.",
       "source": "Averbamentos 1 and 2 to assento de nascimento n.º 447-D. NOT A PROOF OF PATERNITY: a husband at the date of birth is a legal presumption, not a certificate, and nothing here excludes another father. What it removes is the archive's reason for treating his surname as evidence of acknowledgement, and it replaces one unlocated document with two."
+    },
+    {
+      "id": 9500002,
+      "who": "Ivone Mota (or Mata) de Figueiredo",
+      "field": "born",
+      "was": "1924, from the family tree, and repeated on her page as the heading \"Lourenço Marques, 1924\".",
+      "now": "4 March 1922",
+      "source": "Assento de nascimento n.º 447-D, Conservatória dos Registos Centrais, Lisboa — \"dia quatro, mês Março, ano mil novecentos e vinte e dois\" — and independently her 2010 death certificate, which carries 04/03/1922 in its own boxes. Her own declared ages contradict each other and both: 22 at Germiston in February 1948 and 24 in June 1948, when she was 25 and 26."
+    },
+    {
+      "id": 9500002,
+      "who": "Ivone Mota (or Mata) de Figueiredo",
+      "field": "died",
+      "was": "no death recorded. The page said only that she died and was buried at Porto, and called the missing date \"the largest single hole in this archive\".",
+      "now": "March 2010, at home at Rua Nova das Marinhas 82, Gulpilhares, Vila Nova de Gaia",
+      "source": "Certificado de óbito n.º 12893536, Ministério da Saúde: died at 04:30 in a private dwelling, of cardio-respiratory failure with dementia contributing, aged 88. Supplied by the family 27 September 2026. THE DAY IS NOT PUBLISHED: the boxed digits read as the 16th or the 17th, and the certifying physician dated his signature 16 March 2010, which bounds it."
     }
   ]
 }
