@@ -10,14 +10,14 @@ const names = [
   ['Ivone, formerly de Witt, born Figueiredo', 'The Supreme Court of the Transvaal, 1951'],
 ];
 const marriages = [
-  ['before 1941 — DID NOT HAPPEN', 'A da Rocha', 'In the family tree only. She was entered a SPINSTER in February 1948', 'Son Henrique, born 11 March 1941, to an unmarried mother of sixteen'],
+  ['18 Nov 1939', 'Frederico Pinto da Rocha', 'Lourenço Marques, 1.ª Conservatória — dissolved by divorce, sentence of 6 Dec 1945', 'Son Henrique, born 11 March 1941, sixteen months after the wedding'],
   ['2 Feb 1948', 'Johannes Antonie Oelofse de Witt', 'b. Dec 1923 Johannesburg; d. Sasolburg', 'Germiston'],
   ['19 Jun 1948', 'Kurt Israel Luwinski', 'b. 1912 Berlin; d. 1968 Johannesburg', 'Johannesburg, cert. 858'],
   ['13 Feb 1953', 'Morris Isaac Salkow', 'b. 12 Oct 1921 Pretoria; d. 9 Nov 1991 Johannesburg, buried West Park', 'He sued her for divorce in the same year \u2014 WLD 2225/1953. The marriage lasted months.'],
 ];
 ---
 <Base title="Ivone de Figueiredo"
-  subtitle="Lourenço Marques, 4 March 1924 — Porto"
+  subtitle="Lourenço Marques, 4 March 1922 — Vila Nova de Gaia, March 2010"
   lede="She was born in a Portuguese colonial town on the Indian Ocean, had a son at seventeen, married four men in Johannesburg between 1948 and 1953 — two of them Jewish, one of them an Afrikaner, the first a Portuguese she left behind — and was buried at the other end of the empire, in Porto.">
 
   <div class="panel">
@@ -95,11 +95,11 @@ const marriages = [
     <p class="small">Which makes <strong>Pinto da Rocha</strong>, not <em>da Rocha</em>, the name to search on.</p>
   </div>
 
-  <h2>Lourenço Marques, 1924</h2>
+  <h2>Lourenço Marques, 1922</h2>
   <p>
     Lourenço Marques — Maputo since 1976 — was the capital of Portuguese East Africa, a deep-water port
     built on the traffic of the Witwatersrand goldfields: the Rand's nearest sea, joined to Johannesburg
-    by rail since 1895. A Portuguese family in Lourenço Marques in 1924 was living four hundred miles
+    by rail since 1895. A Portuguese family in Lourenço Marques in 1922 was living four hundred miles
     from Johannesburg on a line that ran straight there, which is the plainest available answer to how
     she came to be married in Germiston twenty-four years later.
   </p>
@@ -141,7 +141,7 @@ const marriages = [
     </p>
   </div>
 
-  <h2>Three marriages, and a fourth that never took place</h2>
+  <h2>Four marriages</h2>
   <div class="scroll"><table>
     <thead><tr><th>Date</th><th>Husband</th><th>Him</th><th>Where</th></tr></thead>
     <tbody>{marriages.map(([d, h, w, p]) => (<tr><td>{d}</td><td><strong>{h}</strong></td><td>{w}</td><td>{p}</td></tr>))}</tbody>
@@ -181,21 +181,33 @@ const marriages = [
   </div>
 
   <div class="panel">
-    <h3>Which means there was never a da Rocha marriage <span class="tag doc">Corrects the tree</span></h3>
+    <h3>The da Rocha marriage, and what she declared at Germiston <span class="tag doc">Documented</span></h3>
     <p>
-      <strong>She was a spinster in February 1948.</strong> She had never been married. The family
-      tree records <em>“Marriage to: Unknown Da Rocha, before 1941”</em> — <strong>it did not
-      happen.</strong>
+      The family tree records <em>“Marriage to: Unknown Da Rocha, before 1941”</em>, and
+      <strong>her own birth registration names him and dates it.</strong> Ivone married
+      <strong>FREDERICO PINTO DA ROCHA on 18 November 1939</strong> at the 1.ª Conservatória do Registo
+      Civil de Lourenço Marques. The marriage was dissolved by divorce, by a sentence of
+      <strong>6 December 1945</strong>. Both facts are marginal notes on the assento, added in 1987.
     </p>
     <p>
-      <strong>Henrique was born on 11 March 1941 to an unmarried mother of sixteen.</strong> His
-      father gave him a surname and, on the evidence of that surname, acknowledged him. Ivone did not
-      marry him. She came to Germiston in 1948 still single, and her son stayed in Mozambique for
-      twenty-one years.
+      So at Germiston in February 1948 she was <strong>not a spinster but a divorcée of two
+      years</strong> — and the register there understates more than her status. It gives her age as
+      <strong>22</strong>; born on 4 March 1922 she was <strong>25</strong>, a fortnight short of 26.
+      A woman remarrying in another country, with a six-year-old son left behind in Mozambique, gave
+      an office the version of herself she wanted on the page. The Portuguese state was not consulted
+      and went on recording her as <em>divorciado</em> until she died.
+    </p>
+    <p>
+      <strong>Henrique was born on 11 March 1941, sixteen months after that wedding and four years
+      before the divorce.</strong> He carries Pinto da Rocha because his parents were married to each
+      other when he was born — which is a plainer reason than a father acknowledging him by surname.
+      His father has a forename now, and it is not an inference: <strong>Frederico</strong>.
     </p>
     <p class="small">
-      It also makes his birth registration at Lourenço Marques the <strong>only</strong> document
-      likely to name his father — there is no marriage record to find, because there was no marriage.
+      A husband at the date of birth is a legal presumption and not a certificate, and nothing here
+      excludes another man. What it changes is the search. His birth registration at Lourenço
+      Marques is no longer the <strong>only</strong> document likely to name his father, because
+      <strong>the marriage entry of 18 November 1939 exists too</strong>.
     </p>
   </div>
 
@@ -288,7 +300,7 @@ const marriages = [
 
   <h2>The son she left, and the son she kept</h2>
   <p>
-    Henrique was born on 11 March 1941, when she was seventeen. He did not reach Johannesburg until
+    Henrique was born on 11 March 1941, when she had just turned nineteen. He did not reach Johannesburg until
     <strong>November 1962</strong> — twenty-one years later, and a grown man. In between, his mother had
     married three more times in another country and had a second son there. Henrique married
     Dawn Elizabeth Hendey on 18 May 1968, and died on 27 October 2022, outliving his wife by thirteen
@@ -360,7 +372,10 @@ const marriages = [
   </div>
 
   <p>
-    In June 1948 she gave her age as <strong>24</strong>, which is right for a birth on 4 March 1924.
+    In June 1948 she gave her age as <strong>24</strong>; in February 1948 she had given it as
+    <strong>22</strong>. Four months apart, the two declarations differ by two years and neither is
+    right: born on 4 March 1922 she was 25 in February and 26 in June. Her stated ages are not
+    evidence of when she was born, only of what she was prepared to say.
     In February 1953 she gave it as <strong>25</strong>. She was 28. <strong>She took three years
     off.</strong> Any search keyed to a 1927 or 1928 birth year is chasing her, not a different woman.
   </p>
@@ -384,10 +399,25 @@ const marriages = [
 
   <h2>Porto</h2>
   <p>
-    She died and was buried at <strong>Porto</strong>. Not Lourenço Marques, not Johannesburg — the
-    metropole, which she may never have lived in before. No date is recorded, which is the largest
-    single hole in this archive: a Portuguese death certificate names the deceased's parents, and
-    naming Ivone's parents is the whole object of the exercise.
+    She died in the district of <strong>Porto</strong> — not Lourenço Marques, not Johannesburg, but
+    the metropole, which she may never have lived in before. <strong>She died at home, at 04:30, at
+    Rua Nova das Marinhas 82, Gulpilhares, Vila Nova de Gaia, in March 2010</strong>, of
+    cardio-respiratory failure, with dementia recorded as a contributing condition of more than a
+    year&rsquo;s standing. She was 88. The certificate gives her occupation as <em>doméstica</em>,
+    and her marital status — sixty-five years after she left Mozambique — as <em>divorciado</em>.
+  </p>
+  <p>
+    <strong>And it names her parents, which was the whole object of the exercise: JOAQUIM JÚLIO DE
+    FIGUEIREDO and LEÓNIA DOS SANTOS MOTA.</strong> Her birth registration, supplied with it, goes a
+    generation further and names all four grandparents — António Júlio de Figueiredo and Ana Pereira
+    de Figueiredo, Augusto Mata and Júlia Durães Mata — and gives her parents&rsquo; home parishes in
+    mainland Portugal: <strong>Vimieiro</strong> and <strong>Negozela</strong>.
+  </p>
+  <p class="small muted">
+    The day of the month is the one thing the certificate will not give up. The boxed digits read as
+    the 16th or the 17th and this archive will not choose between them by eye; the certifying
+    physician dated his signature 16 March 2010 and the papers were faxed that afternoon, which
+    bounds it. The <em>assento de óbito</em> at Vila Nova de Gaia would settle the day.
   </p>
 
   <div class="panel">
@@ -435,15 +465,26 @@ const marriages = [
   <h2>Still to find</h2>
   <ul>
     <li><s><strong>The Portuguese DNA matches from the surname sweep.</strong></s> <strong>Withdrawn the same evening.</strong> The 27 Figueiredo and 13 Mota hits are surname-string coincidences: MyHeritage was pairing Ivone with a woman <strong>born before 1713</strong>, and on the Mota side it states outright that no ancestral surname is shared. The real Portuguese matches are the ones already in the table above. <a href={base + '/dna/'}>Why it was withdrawn →</a></li>
-    <li><strong>Her death and burial record at Porto</strong>, which will name her parents outright.</li>
+    <li><s>Her death and burial record at Porto, which will name her parents outright.</s>
+      <strong>FOUND — supplied by the family, 27 September 2026.</strong> Certificado de óbito
+      n.º 12893536: died at home at Gulpilhares, Vila Nova de Gaia, in March 2010, and it names both
+      parents. The <em>assento de óbito</em> at Vila Nova de Gaia would still fix the exact day.</li>
     <li><s>The certificate images, because South African certificates name both parties' fathers.</s> <strong>They do not.</strong> The 1948 register has now been read and the form has no parents column at all — eleven columns, none of them a father. Ivone's parents are in the Portuguese records or nowhere.</li>
     <li><s>The 43 Figueiredo documents in the South African national archives index</s> — <strong>read, 14 September 2026</strong>, and they gave up her name. Of the rest, 31 are Transvaal court and estate files of other Johannesburg Portuguese families, and one Cape Town entry is early enough to be worth a look: <strong>KAB PIO 4752A, “Immigration papers. Mrs. L.A. Figueiredo”, 1950</strong>.</li>
     <li>The three <strong>Luwinski divorce files</strong> in the Transvaal depot, listed above.</li>
-    <li>Her 1924 birth registration at Lourenço Marques. The Arquivo Histórico de Moçambique holds the registers for 1865–1934 and issues certificates on request — <a href={base + '/mozambique/'}>the survey of where everything is kept →</a></li>
+    <li><s>Her birth registration at Lourenço Marques.</s> <strong>A transcription is in hand</strong> —
+      assento n.º 447-D, Conservatória dos Registos Centrais, Lisboa, 7 May 1987, itself taken from a
+      certidão issued at Lourenço Marques on 14 October 1974. It carries the parents, all four
+      grandparents and the marriage and divorce. THE 1922 ORIGINAL IS STILL WORTH HAVING, because a
+      transcription of a transcription is where <em>Mata</em> and <em>Mota</em> could have parted. The Arquivo Histórico de Moçambique holds the registers for 1865–1934 and issues certificates on request — <a href={base + '/mozambique/'}>the survey of where everything is kept →</a></li>
     <li><s>The Germiston marriage register, February 1948</s> — <strong>found and read</strong>, and re-read at full resolution on 14 September 2026. It is the panel above.</li>
     <li><s>The original image of Johannesburg certificate 858</s> — <strong>found and read</strong>. It was in the family tree, filed as a photograph. It has no parents column either.</li>
     <li><strong>The 1948 ante-nuptial contract</strong>, Johannesburg Deeds Office. New lead, 14 September 2026: re-reading the June 1948 register at full resolution corrected column 10 from <em>without</em> to <strong>With A.N.C.</strong> A contract was therefore executed in June 1948 and registered. It is not confined to the register's eleven columns, and it is the best remaining chance of a 1948 document that describes her.</li>
-    <li><s>The <strong>Pinto da Rocha</strong> family of Lourenço Marques — Henrique's father.</s> <strong>A document has been located that should name him.</strong> Henrique's own deceased estate was gazetted three times in 2023 — <strong>estate 12294/2023, “DA ROCHA, HENRIQUE FIGUEIREDO PINTO”</strong>, opened on his death of 27 October 2022. A South African estate file contains the <strong>Death Notice, form J294</strong>, which asks outright for <strong>the full names of the father</strong> and the maiden name of the mother. It has not been ordered yet. <span class="tag open">Located, not ordered</span></li>
+    <li><s>The <strong>Pinto da Rocha</strong> family of Lourenço Marques — Henrique's father.</s>
+      <strong>NAMED: FREDERICO PINTO DA ROCHA</strong>, who married Ivone at the 1.ª Conservatória,
+      Lourenço Marques, on 18 November 1939 and was divorced from her by a sentence of 6 December
+      1945 — so Henrique was born within the marriage. The marriage entry itself is now the document
+      to order, and it will name Frederico's own parents. Henrique's own deceased estate was gazetted three times in 2023 — <strong>estate 12294/2023, “DA ROCHA, HENRIQUE FIGUEIREDO PINTO”</strong>, opened on his death of 27 October 2022. A South African estate file contains the <strong>Death Notice, form J294</strong>, which asks outright for <strong>the full names of the father</strong> and the maiden name of the mother. It has not been ordered yet. <span class="tag open">Located, not ordered</span></li>
     <li>Her immigration to South Africa: when, and with whom.</li>
   </ul>
 </Base>

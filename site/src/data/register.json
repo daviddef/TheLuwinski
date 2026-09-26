@@ -1400,11 +1400,11 @@
    "corrections": [
     {
      "id": 9500002,
-     "who": "Ivone Mota Figueiredo",
-     "field": "marriage to Unknown Da Rocha, before 1941",
-     "was": "married",
-     "now": "NO SUCH MARRIAGE — she was a spinster in February 1948",
-     "source": "Duplicate Original Marriage Register, Germiston no. 34 of 1948, 2 February 1948, column 5 Personal Status: SPINSTER. Henrique, born 11 March 1941, was therefore born to an unmarried mother of sixteen."
+     "who": "Ivone Mota Figueiredo — and a correction this archive made to the family record, now WITHDRAWN",
+     "field": "marriage to Da Rocha, before 1941 — the tree was right and this archive was wrong",
+     "was": "This entry formerly read: \"marriage to Unknown Da Rocha, before 1941 · WAS: married · NOW: NO SUCH MARRIAGE — she was a spinster in February 1948\", sourced from the Germiston Duplicate Original Marriage Register no. 34 of 1948, column 5 Personal Status: SPINSTER. On that basis the Ivone page published \"She had never been married\", \"it did not happen\", and \"there is no marriage record to find, because there was no marriage\".",
+     "now": "*** WITHDRAWN 27 SEPTEMBER 2026. THE MARRIAGE HAPPENED AND THE FAMILY TREE HAD IT RIGHT. *** Ivone married FREDERICO PINTO DA ROCHA on 18 NOVEMBER 1939 at the 1.ª Conservatória do Registo Civil de Lourenço Marques, and that marriage was dissolved by divorce, by a sentence of 6 DECEMBER 1945. Both facts are averbamentos on her own birth registration. She was therefore not a spinster at Germiston in February 1948 but a divorcée of two years, and the Portuguese state still recorded her as DIVORCIADO on her death certificate in 2010.",
+     "source": "Assento de nascimento n.º 447-D, fls. 224, Conservatória dos Registos Centrais, Lisboa, 7 May 1987, transcribed from the 1.ª Conservatória do Registo Civil de Lourenço Marques; averbamentos 1 and 2. Photographed from the family's own papers and supplied on 27 September 2026. WHY THE GERMISTON REGISTER LOST: it records what was declared in a South African office about a status acquired in another colony, while the assento is the continuously maintained register of her own civil status, naming a husband, an office, a wedding date and a court sentence. A divorcée declaring herself single abroad is ordinary; a registrar inventing all four is not. THE LESSON IS THE COST: this archive struck a true fact out of the family record on one word in one column, and then built three panels on the strike. Working in data/ivone-assento-nascimento-1922.tsv."
     }
    ]
   },
@@ -13016,11 +13016,11 @@
   },
   {
    "id": 9500002,
-   "who": "Ivone Mota Figueiredo",
-   "field": "marriage to Unknown Da Rocha, before 1941",
-   "was": "married",
-   "now": "NO SUCH MARRIAGE — she was a spinster in February 1948",
-   "source": "Duplicate Original Marriage Register, Germiston no. 34 of 1948, 2 February 1948, column 5 Personal Status: SPINSTER. Henrique, born 11 March 1941, was therefore born to an unmarried mother of sixteen."
+   "who": "Ivone Mota Figueiredo — and a correction this archive made to the family record, now WITHDRAWN",
+   "field": "marriage to Da Rocha, before 1941 — the tree was right and this archive was wrong",
+   "was": "This entry formerly read: \"marriage to Unknown Da Rocha, before 1941 · WAS: married · NOW: NO SUCH MARRIAGE — she was a spinster in February 1948\", sourced from the Germiston Duplicate Original Marriage Register no. 34 of 1948, column 5 Personal Status: SPINSTER. On that basis the Ivone page published \"She had never been married\", \"it did not happen\", and \"there is no marriage record to find, because there was no marriage\".",
+   "now": "*** WITHDRAWN 27 SEPTEMBER 2026. THE MARRIAGE HAPPENED AND THE FAMILY TREE HAD IT RIGHT. *** Ivone married FREDERICO PINTO DA ROCHA on 18 NOVEMBER 1939 at the 1.ª Conservatória do Registo Civil de Lourenço Marques, and that marriage was dissolved by divorce, by a sentence of 6 DECEMBER 1945. Both facts are averbamentos on her own birth registration. She was therefore not a spinster at Germiston in February 1948 but a divorcée of two years, and the Portuguese state still recorded her as DIVORCIADO on her death certificate in 2010.",
+   "source": "Assento de nascimento n.º 447-D, fls. 224, Conservatória dos Registos Centrais, Lisboa, 7 May 1987, transcribed from the 1.ª Conservatória do Registo Civil de Lourenço Marques; averbamentos 1 and 2. Photographed from the family's own papers and supplied on 27 September 2026. WHY THE GERMISTON REGISTER LOST: it records what was declared in a South African office about a status acquired in another colony, while the assento is the continuously maintained register of her own civil status, naming a husband, an office, a wedding date and a court sentence. A divorcée declaring herself single abroad is ordinary; a registrar inventing all four is not. THE LESSON IS THE COST: this archive struck a true fact out of the family record on one word in one column, and then built three panels on the strike. Working in data/ivone-assento-nascimento-1922.tsv."
   },
   {
    "id": 9500001,
@@ -13111,6 +13111,22 @@
    "was": "\"So Jacob's 1913 registry office is one of Standesamt Charlottenburg I to IV\", published on Kurt's page and in the research log.",
    "now": "ONE OF CHARLOTTENBURG I, II OR III. Charlottenburg IV did not exist in 1913 — its earliest volume of any kind is 1922 — and the unnumbered office closes in 1897.",
    "source": "Landesarchiv Berlin, LABSA, 23 September 2026. THE ERROR CAME FROM GUESSING THE OFFICE NAMES RATHER THAN ENUMERATING THEM, which is the same root as this archive's 143-against-207 miscount of the Charlottenburg holdings the day before: the search matches an office name exactly, and the list of names is only available from the form's own autocomplete endpoint. The three surviving candidates hold 114 name-index volumes between them. Working in data/labsa-charlottenburg-inventory.tsv and data/labsa-berlin-catalogue.tsv."
+  },
+  {
+   "id": 9500915,
+   "who": "Ivone Mota (or Mata) de Figueiredo — her year of birth",
+   "field": "born",
+   "was": "1924, published on her page as the heading \"Lourenço Marques, 1924\" and used to compute her age at her first son's birth.",
+   "now": "4 MARCH 1922, at the freguesia of Nossa Senhora da Conceição, Lourenço Marques.",
+   "source": "TWO INDEPENDENT PORTUGUESE CIVIL DOCUMENTS AGREE: her birth assento n.º 447-D gives \"dia quatro, mês Março, ano mil novecentos e vinte e dois\", and her 2010 death certificate carries 04/03/1922 in its own boxes. The 1924 figure also produced an internal contradiction the page never noticed — Henrique's birth in March 1941 was described as being to \"an unmarried mother of sixteen\" in one panel and \"when she was seventeen\" in another. She had turned NINETEEN seven days before he was born."
+  },
+  {
+   "id": 9500916,
+   "who": "Henrique Figueiredo Pinto da Rocha, Ivone's elder son, born 11 March 1941 at Lourenço Marques",
+   "field": "the circumstances of his birth, and what his surname means",
+   "was": "\"Henrique was born on 11 March 1941 to an unmarried mother... His father gave him a surname and, on the evidence of that surname, acknowledged him. Ivone did not marry him.\" The page also concluded that his birth registration was \"the only document likely to name his father — there is no marriage record to find, because there was no marriage.\"",
+   "now": "HE WAS BORN INSIDE A MARRIAGE — sixteen months after his parents' wedding of 18 November 1939 and four years before their divorce. He carries Pinto da Rocha because his parents were married to each other when he was born, which is a simpler explanation than acknowledgement by surname. His father has a forename: FREDERICO PINTO DA ROCHA. THERE IS ALSO A MARRIAGE RECORD TO FIND, at the 1.ª Conservatória do Registo Civil de Lourenço Marques, 18 November 1939.",
+   "source": "Averbamentos 1 and 2 to assento de nascimento n.º 447-D. NOT A PROOF OF PATERNITY: a husband at the date of birth is a legal presumption, not a certificate, and nothing here excludes another father. What it removes is the archive's reason for treating his surname as evidence of acknowledgement, and it replaces one unlocated document with two."
   }
  ],
  "counts": {

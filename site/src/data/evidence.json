@@ -273,6 +273,22 @@
    "people": 7
   },
   {
+   "file": "ivone-assento-nascimento-1922.tsv",
+   "title": "Ivone's own birth registration — and the marriage this archive said never happened",
+   "source": "Assento de nascimento n.º 447-D, Conservatória dos Registos Centrais Lisboa 1987, from the family's papers, read 27 September 2026",
+   "kind": "ref",
+   "rows": 18,
+   "people": 0
+  },
+  {
+   "file": "ivone-death-certificate-2010.tsv",
+   "title": "Ivone's death at Vila Nova de Gaia — a date, a place and a cause this archive did not have",
+   "source": "Certificado de Óbito n.º 12893536, Ministério da Saúde, from the family's papers, read 27 September 2026",
+   "kind": "ref",
+   "rows": 16,
+   "people": 0
+  },
+  {
    "file": "jacob-leibholz-birth-1884.tsv",
    "title": "Jacob Leibholz's birth entry, read at the image — Schubin 1884 Nr. 63",
    "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 28, akt nr 63/1884, on genealogiawarchiwach.pl, read 22 September 2026",
@@ -3489,7 +3505,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 94,
+  "files": 96,
   "person_files": 25,
   "people": 185,
   "records": 259,
