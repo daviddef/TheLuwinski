@@ -1,6 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
+import PersonTree from '@daviddef/archive-kit/components/PersonTree.astro';
+import '@daviddef/archive-kit/styles/persontree.css';
+import subjects from '../data/page-subjects.json';
+import { familyOf } from '../lib/kin.js';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+/* The join this page is about, drawn. He is LIVING, so the chart shows his name,
+   his two parents and no date of his own — which is the same thing the panel
+   above already says in words, in the idiom the other six archives use. */
+const subject = subjects.subjects.derrick;
+const fam = familyOf(subject.id, { livingSelf: true });
 ---
 <Base title="Lynn Derrick Luwinski"
   subtitle="Living. Named, and nothing more."
@@ -15,6 +25,22 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </dl>
     <p class="small muted">Nothing further. No address, no occupation, no photograph, no descendants.</p>
   </div>
+
+  <section class="blk">
+    <h2>The join</h2>
+    <PersonTree always self={fam.self} parents={fam.parents} spouses={fam.spouses}
+                children={fam.children} siblings={fam.siblings}
+                labels={{ parents: 'His parents' }}>
+      <Fragment slot="notes">
+        <p class="warn">Two lines meet here and go no further. <strong>Nothing below him is
+        drawn</strong> — not because nothing is known, but because he is living and this
+        archive publishes a living person's name and their relationship to the dead, and
+        nothing else. His father is <strong>of record</strong>: whether Kurt Israel Luwinski
+        is also his biological father is <a href={base + '/dna/'}>disputed by DNA</a> and
+        open.</p>
+      </Fragment>
+    </PersonTree>
+  </section>
 
   <h2>Why a living man is the centre of an archive that will not describe him</h2>
   <p>

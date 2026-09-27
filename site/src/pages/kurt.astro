@@ -1,5 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
+import PersonTree from '@daviddef/archive-kit/components/PersonTree.astro';
+import '@daviddef/archive-kit/styles/persontree.css';
+import subjects from '../data/page-subjects.json';
+import { familyOf } from '../lib/kin.js';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const life = [
   ['11 May 1912', 'Born at Berlin', 'To Auguste Luwinski, nineteen and unmarried. He took her surname and kept it for life.', 'doc'],
@@ -18,6 +22,8 @@ const life = [
   ['15 Dec 1968', 'Dies at Johannesburg', 'Aged 56. Buried the next day: Westpark, block L, grave 211. Estate file 7584/1969 follows in the new year.', 'doc'],
   ['16 Dec 1968', 'Buried Westpark, Johannesburg', 'By the Chevrah Kadisha. Yahrzeit 24 Kislev 5729. He was buried as a Jew.', 'doc'],
 ];
+const subject = subjects.subjects.kurt;
+const fam = familyOf(subject.id);
 ---
 <Base title="Kurt Israel Luwinski"
   subtitle="Berlin, 11 May 1912 — Johannesburg, 15 December 1968"
@@ -32,7 +38,18 @@ const life = [
     </tbody>
   </table></div>
 
-  <h2>1933</h2>
+  <section class="blk">
+  <h2>His family</h2>
+  <PersonTree always self={fam.self} parents={fam.parents} spouses={fam.spouses}
+              children={fam.children} siblings={fam.siblings}
+              labels={{ parents: 'His parents' }}>
+    <Fragment slot="notes">
+      <p class="warn">Three marriages, one son, one brother, and a father whose death this archive cannot date — Jacob Leibholz's record ends with a deportation and not with a date, which is why the node beside his name carries only a birth. The prose below says what the chart cannot.</p>
+    </Fragment>
+  </PersonTree>
+</section>
+
+<h2>1933</h2>
   <p>
     The tree records his emigration in a single word and a year: <em>Johannesburg, Süd Afrika, 1933</em>.
     He was twenty-one. His father was a Kaufmann in Schöneberg; his mother a dressmaker from an East

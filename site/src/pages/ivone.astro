@@ -1,5 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
+import PersonTree from '@daviddef/archive-kit/components/PersonTree.astro';
+import '@daviddef/archive-kit/styles/persontree.css';
+import subjects from '../data/page-subjects.json';
+import { familyOf } from '../lib/kin.js';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const names = [
   ['Ivone Mota Figueiredo', 'Her birth name in full — the Supreme Court of the Transvaal, 1948'],
@@ -15,6 +19,8 @@ const marriages = [
   ['19 Jun 1948', 'Kurt Israel Luwinski', 'b. 1912 Berlin; d. 1968 Johannesburg', 'Johannesburg, cert. 858'],
   ['13 Feb 1953', 'Morris Isaac Salkow', 'b. 12 Oct 1921 Pretoria; d. 9 Nov 1991 Johannesburg, buried West Park', 'He sued her for divorce in the same year \u2014 WLD 2225/1953. The marriage lasted months.'],
 ];
+const subject = subjects.subjects.ivone;
+const fam = familyOf(subject.id);
 ---
 <Base title="Ivone de Figueiredo"
   subtitle="Lourenço Marques, 4 March 1922 — Vila Nova de Gaia, 14 March 2010"
@@ -152,7 +158,18 @@ const marriages = [
     correcting his own register on purpose. It is the strongest thing either side of this dispute has.
   </p>
 
-  <h2>Which gives us her parents' surnames</h2>
+  <section class="blk">
+  <h2>Her family</h2>
+  <PersonTree always self={fam.self} parents={fam.parents} spouses={fam.spouses}
+              children={fam.children} siblings={fam.siblings}
+              labels={{ parents: 'Her parents' }}>
+    <Fragment slot="notes">
+      <p class="warn">Four husbands and two sons, and <strong>no parents drawn</strong> — this register holds neither of hers, which is the question the section below is about. One son is living and appears as a name with no dates; the other died in 2022.</p>
+    </Fragment>
+  </PersonTree>
+</section>
+
+<h2>Which gives us her parents' surnames</h2>
   <p>
     Portuguese naming order puts the <strong>mother's</strong> surname before the
     <strong>father's</strong>. Her son's name already demonstrated the rule working in this family —

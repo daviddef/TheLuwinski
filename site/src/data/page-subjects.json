@@ -1,0 +1,30 @@
+{
+  "_why": [
+    "WHICH REGISTER PERSON EACH NARRATIVE PAGE IS ABOUT, declared rather than matched.",
+    "",
+    "This archive holds THREE people with Kurt in the name: 9500001 Kurt Israel",
+    "Luwinski (b. 11 May 1912, d. 15 December 1968), 9500040 Kurt Luwinski (d. 1995,",
+    "no birth recorded) and 9500022 Michael, Kurt Leibholz (1951-2005). A match on",
+    "the page's filename resolves kurt.astro to the wrong man, and the first draft of",
+    "this work did exactly that — it drew Leo Luwinski and Martha Fuhl as Kurt",
+    "Israel's parents, who are 9500040's. His are Jacob Leibholz and Auguste.",
+    "",
+    "kurt.astro also contains the string 9500005, which is a PHOTOGRAPH number and not",
+    "a person: 9500005 is Johannes Antonie Oelofse de Witt, who married Ivone after",
+    "Kurt. So reading an id out of the page's text is no safer than reading its name.",
+    "",
+    "LEONARD IS DELIBERATELY ABSENT FROM THIS FILE. He has a page and no register row,",
+    "because worklist row 1 is open and blocked: «Confirm Leonard Aubrey Robert Wear as",
+    "Derrick's biological father from a document, not an inference». He is the man the",
+    "DNA points at. A chart joining him to anybody would publish the inference this",
+    "archive is refusing to publish, so his page states the absence instead."
+  ],
+  "subjects": {
+    "derrick": { "id": "9500003", "living": true,
+      "why": "Lynn Derrick Luwinski. Living, named and nothing more — the register carries no dates for him and the chart therefore shows none." },
+    "kurt":    { "id": "9500001",
+      "why": "Kurt Israel Luwinski, by the page's own title. NOT 9500040, a different Kurt Luwinski with different parents." },
+    "ivone":   { "id": "9500002",
+      "why": "Ivone / Mota «Yvonne» Figueiredo, by the page's own title." }
+  }
+}
