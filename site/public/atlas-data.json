@@ -127,6 +127,14 @@
    "cat": "both",
    "what": "Kurt from 1933. Married 1948. Kurt buried 1968 — Westpark, block L, grave 211",
    "n": 0
+  },
+  {
+   "name": "Santa Comba Dão, Viseu",
+   "lat": 40.3936,
+   "lon": -8.1289,
+   "cat": "fig",
+   "what": "Ivone's parents' home concelho — her father of the parish of VIMIEIRO, her mother of NEGOZELA. Named in her 1922 birth assento, read 27 September 2026.",
+   "n": 0
   }
  ],
  "moves": [
@@ -277,6 +285,23 @@
    "opacity": 0.75,
    "note": "Ivone at the end. Porto is a place nobody else in this archive ever saw.",
    "layer": "The two long journeys"
+  },
+  {
+   "n": "Santa Comba Dão to Lourenço Marques",
+   "from": [
+    40.3936,
+    -8.1289
+   ],
+   "to": [
+    -25.97,
+    32.57
+   ],
+   "color": "#7fb8a4",
+   "dash": "6,6",
+   "weight": 2.0,
+   "opacity": 0.6,
+   "note": "Joaquim Júlio de Figueiredo of Vimieiro and Leonia dos Santos Mata of Negozela, out to the colony before 1922 — the emigration the 'Repatriados' column implies and no passenger list has yet been found for.",
+   "layer": "The families converge"
   }
  ],
  "note": "Colours are this archive's own, read out of its Base.astro: --disp for Leibholz, --inf for Luwinski, --doc for Figueiredo, --accent for where it ended, --ink-faint for the 1933 crossing. The kit colours markers from JavaScript, so they are hex here rather than var() and DO NOT FOLLOW THE DARK THEME the way the hand-drawn SVG did. On the map that costs nothing - the tiles are light in both themes - which is why «both» is the mid tone --ink-soft and not --ink: a near-black dot was legible on the old drawing and would vanish from the legend on a dark page."
