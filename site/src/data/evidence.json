@@ -201,6 +201,14 @@
    "people": 0
   },
   {
+   "file": "family-testimony.tsv",
+   "title": "Family testimony, attributed and dated — and the first of it closes the largest hole in the archive",
+   "source": "Told to this archive by the family; graded FAMILY on the shared ladder, never blended with the documentary record",
+   "kind": "ref",
+   "rows": 8,
+   "people": 0
+  },
+  {
    "file": "familysearch-sa-family.tsv",
    "title": "This family in FamilySearch's South African collections",
    "source": "FamilySearch, South Africa: Civil Marriage Records 1801-1974, Church of the Province of South Africa Parish Registers 1801-2004, Johannesburg Cemetery Records 1840-2019 — searched 17 September 2026",
@@ -3597,7 +3605,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 106,
+  "files": 107,
   "person_files": 25,
   "people": 186,
   "records": 260,
