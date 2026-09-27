@@ -24,7 +24,7 @@ const pc = (y) => ((y - T0) / (T1 - T0)) * 100;
 const lives = [
   // lane, name, born, died (0 = not found), last documented year, where, events [year, kind, title, detail]
   ['a', 'Sally Leibholz & Friederike Schmul', 1847, 0, 1884, 'Hammerstein · married Szubin 1874', [
-    [1874,'m','Married at Szubin','Standesamt Szubin, akt nr 9 of 24 November 1874, read at the image. He was a Kaufmann of twenty-seven, born and living at HAMMERSTEIN; she was born and living at Schubin. The entry names his parents — JACOB LEIBHOLZ and WILHELMINE geb. POLLNOW — and is the document that puts this family at Hammerstein before Schubin. Their son Jacob was born at Schubin ten years later and named for his grandfather.'],
+    [1874,'m','Married at Szubin','Standesamt Szubin, akt nr 9 of 24 December 1874, read at the image. He was a Kaufmann of twenty-seven, born and living at HAMMERSTEIN; she was born and living at Schubin. The entry names his parents — JACOB LEIBHOLZ and WILHELMINE geb. POLLNOW — and is the document that puts this family at Hammerstein before Schubin. Their son Jacob was born at Schubin ten years later and named for his grandfather.'],
   ]],
   ['a', 'Jacob Leibholz', 1884, 1943, 1943, 'Schubin → Berlin → Auschwitz', [
     [1924,'m','Married Auguste Luwinski','5 January 1924, Berlin — twelve years after their son Kurt was born. Kurt stayed a Luwinski; the son born after the marriage, Siegfried, was registered a Leibholz.'],
@@ -128,13 +128,20 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
     <div class="gen">Great-great-<br/>grandparents</div>
     <div class="node a">
       <span class="lane">Line of record</span>
-      <b><a href={base + '/leibholz/#marriage1874'}>Jacob Leibholz</a> &amp; <a href={base + '/leibholz/#marriage1874'}>Wilhelmine</a> <span class="yr">née Pollnow</span></b>
+      <b><a href={base + '/leibholz/#marriage1874'}>Jacob Leibholz</a> &amp; <a href={base + '/leibholz/#pollnow-reread'}>H&mdash;&mdash;</a> <span class="yr">née Pollnow</span></b>
       <p>
         Found <strong>22 September 2026</strong>, in their son&rsquo;s marriage entry at Schubin:
-        <em>Sohn des Kaufmann Jacob Leibholz und der Wilhelmine geb. Pollnow</em>. He was a
+        <em>Sohn des Kaufmann Jacob Leibholz und der H&mdash;&mdash; geb. Pollnow</em>. He was a
         <strong>Kaufmann</strong> like the son and the grandson after him. Neither has a date
         here yet &mdash; the entry names them and says nothing else. The grandson born ten years
         later was named <strong>Jacob</strong> for him.
+      </p>
+      <p class="small muted">
+        <strong>Her given name stood here as &ldquo;Wilhelmine&rdquo; until 27 September</strong>, when
+        the entry was <a href={base + '/leibholz/#pollnow-reread'}>re-read against the clerk&rsquo;s own
+        capitals</a>. It is not Wilhelmine, and it is not the Philipine a volunteer indexer read either.
+        <strong>It begins with H and the rest of the word is unreadable</strong>, so an initial is what
+        this chart can honestly carry.
       </p>
     </div>
     <div class="node b">
@@ -153,7 +160,7 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
       <span class="lane">Line of record</span>
       <b><a href={base + '/leibholz/#marriage1874'}>Sally Leibholz</a> &amp; <a href={base + '/leibholz/#marriage1874'}>Friederike Schmul</a></b>
       <p>
-        Married at Szubin on <strong>24 November 1874</strong>, akt nr 9 &mdash; the ninth and last
+        Married at Szubin on <strong>24 December 1874</strong>, akt nr 9 &mdash; the ninth and last
         marriage of that year. The entry gives him as <strong>geboren zu Hammerstein, wohnhaft zu
         Hammerstein</strong>, twenty-seven years old, and her as born and living at Schubin.
         <strong>The move east happens at this wedding.</strong> A Jewish family of the borderland.
