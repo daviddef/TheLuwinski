@@ -97,6 +97,14 @@
    "people": 5
   },
   {
+   "file": "bydgoszcz-reply-2026-09-25.tsv",
+   "title": "Bydgoszcz answers all three questions — the Jewish registers survive 1820-1847, the death indexes have a gap, and an archivist read the hard line",
+   "source": "Archiwum Państwowe w Bydgoszczy, pismo IU.631.434.2026 of 25 September 2026",
+   "kind": "ref",
+   "rows": 14,
+   "people": 0
+  },
+  {
    "file": "caroline-james-1920-1957.tsv",
    "title": "Caroline Castle, later James, 1920 to 1957",
    "source": "GRO indexes; 1939 Register RG101/1598B/017/25",
@@ -557,7 +565,7 @@
    "title": "The Schmul side searched — and the 1874 index names six people, not four",
    "source": "genealogiawarchiwach.pl, scan search on SCHMUL filtered to Szubin, 27 September 2026",
    "kind": "ref",
-   "rows": 15,
+   "rows": 16,
    "people": 0
   },
   {
@@ -3565,7 +3573,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 102,
+  "files": 103,
   "person_files": 25,
   "people": 186,
   "records": 260,
