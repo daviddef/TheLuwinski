@@ -1,43 +1,65 @@
 {
-  "_why": "Facts this archive has corrected. check-superseded.py refuses a build in which a withdrawn value is still asserted somewhere nobody looked. Every entry needs a reason and an explicit allow list; do not widen a list silently.",
-  "facts": [
-    {
-      "id": "leibholz-schmul-marriage-date",
-      "what": "The Leibholz-Schmul marriage at Schubin, akt nr 9 of 1874",
-      "now": "24 December 1874",
-      "was": ["24 November 1874", "24 NOVEMBER 1874"],
-      "since": "2026-09-27",
-      "why": "Published as 24 November from 22 September, with the claim that the family record's date 'now stands on the register itself'. It does not. The entry reads 'Schubin am 24 vier und zwanzigsten December'. Corroborated by akt nr 8, which is also December in the same hand, and by akt nr 7, which really is 24 November - the near-miss that confirmed the expected date before the right entry was opened.",
-      "allow": {
-        "requests/sent/": "a record of what was actually sent, and it said November",
-        "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
-        "site/src/data/worklist.json": "dated row notes, same rule",
-        "site/src/data/negatives.json": "carries the correction inline",
-        "data/corrections.json": "carries the correction inline",
-        "site/src/data/register.json": "generated from data/corrections.json",
-        "data/pollnow-1874-reread-2026-09-27.tsv": "this is the file that makes the correction",
-        "data/leibholz-schmul-marriage-1874.tsv": "quotes the withdrawn claim, and records akt nr 7 which genuinely is 24 November",
-        "site/src/pages/leibholz.astro": "quotes the withdrawn claim, and records akt nr 7",
-        "data/superseded.json": "this file"
-      }
-    },
-    {
-      "id": "pollnow-given-name",
-      "what": "The given name of Sally Leibholz's mother in the same entry",
-      "now": "H-- geb. Pollnow, the rest of the word unreadable",
-      "was": ["Wilhelmine geb. Pollnow", "WILHELMINE GEB. POLLNOW", "Wilhelmine Leibholz"],
-      "since": "2026-09-27",
-      "why": "Read as Wilhelmine on 22 September and as Philipine by the portal's volunteer indexer. Both fall. The clerk's capital P, four words along the same line in POLLNOW, is a single round bowl and the disputed capital has none; his capital H in HAMMERSTEIN has a flat baseline lead-in, two steep diagonals and a low crossbar, and the disputed capital has all three; and his capital W in WENGATZ on akt nr 8 is two rounded looping arches, which it plainly is not.",
-      "allow": {
-        "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged",
-        "site/src/data/worklist.json": "dated row notes",
-        "data/pollnow-1874-reread-2026-09-27.tsv": "this is the file that makes the correction",
-        "data/leibholz-schmul-marriage-1874.tsv": "quotes the withdrawn reading",
-        "data/schmul-szubin-index-2026-09-27.tsv": "states the discrepancy that prompted the re-read",
-        "site/src/pages/leibholz.astro": "quotes the withdrawn reading",
-        "site/src/pages/index.astro": "says on the chart what the name used to read",
-        "data/superseded.json": "this file"
-      }
-    }
-  ]
+ "_why": "Facts this archive has corrected. check-superseded.py refuses a build in which a withdrawn value is still asserted somewhere nobody looked. Every entry needs a reason and an explicit allow list; do not widen a list silently.",
+ "facts": [
+  {
+   "id": "leibholz-schmul-marriage-date",
+   "what": "The Leibholz-Schmul marriage at Schubin, akt nr 9 of 1874",
+   "now": "24 December 1874",
+   "was": [
+    "24 November 1874",
+    "24 NOVEMBER 1874"
+   ],
+   "since": "2026-09-27",
+   "why": "Published as 24 November from 22 September, with the claim that the family record's date 'now stands on the register itself'. It does not. The entry reads 'Schubin am 24 vier und zwanzigsten December'. Corroborated by akt nr 8, which is also December in the same hand, and by akt nr 7, which really is 24 November - the near-miss that confirmed the expected date before the right entry was opened.",
+   "allow": {
+    "requests/sent/": "a record of what was actually sent, and it said November",
+    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/data/worklist.json": "dated row notes, same rule",
+    "site/src/data/negatives.json": "carries the correction inline",
+    "data/corrections.json": "carries the correction inline",
+    "site/src/data/register.json": "generated from data/corrections.json",
+    "data/pollnow-1874-reread-2026-09-27.tsv": "this is the file that makes the correction",
+    "data/leibholz-schmul-marriage-1874.tsv": "quotes the withdrawn claim, and records akt nr 7 which genuinely is 24 November",
+    "site/src/pages/leibholz.astro": "quotes the withdrawn claim, and records akt nr 7",
+    "data/superseded.json": "this file"
+   }
+  },
+  {
+   "id": "pollnow-given-name",
+   "what": "The given name of Sally Leibholz's mother in the same entry",
+   "now": "H-- geb. Pollnow, the rest of the word unreadable",
+   "was": [
+    "Wilhelmine geb. Pollnow",
+    "WILHELMINE GEB. POLLNOW",
+    "Wilhelmine Leibholz"
+   ],
+   "since": "2026-09-27",
+   "why": "Read as Wilhelmine on 22 September and as Philipine by the portal's volunteer indexer. Both fall. The clerk's capital P, four words along the same line in POLLNOW, is a single round bowl and the disputed capital has none; his capital H in HAMMERSTEIN has a flat baseline lead-in, two steep diagonals and a low crossbar, and the disputed capital has all three; and his capital W in WENGATZ on akt nr 8 is two rounded looping arches, which it plainly is not.",
+   "allow": {
+    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged",
+    "site/src/data/worklist.json": "dated row notes",
+    "data/pollnow-1874-reread-2026-09-27.tsv": "this is the file that makes the correction",
+    "data/leibholz-schmul-marriage-1874.tsv": "quotes the withdrawn reading",
+    "data/schmul-szubin-index-2026-09-27.tsv": "states the discrepancy that prompted the re-read",
+    "site/src/pages/leibholz.astro": "quotes the withdrawn reading",
+    "site/src/pages/index.astro": "says on the chart what the name used to read",
+    "data/superseded.json": "this file"
+   }
+  },
+  {
+   "id": "kurt-paternity-framing",
+   "what": "How Kurt Israel Luwinski's paternity of Derrick is characterised",
+   "now": "Excluded as biological father — settled. Father of record and of upbringing. Who the biological father was is the open question.",
+   "was": [
+    "disputed by DNA",
+    "disputed by DNA</a> and open"
+   ],
+   "since": "2026-09-28",
+   "why": "The exclusion is not a dispute and is not open: 0.0% Ashkenazi where a quarter would be required, and a Y haplogroup, R-S11477, that is North Sea rather than Ashkenazi. The tree page grades him 'ruled out' and says explicitly that this is not a level on the evidence ladder but a claim tested and failed. What is open is WHO the biological father was. The phrase 'disputed by DNA' survived on derrick.astro's summary panel for a fortnight after the exclusion was published, was copied from there into a chart note by a peer session building charts, and so the page argued with itself within one screen. IT WAS TRUE WHEN WRITTEN AND WAS NEVER READ AGAINST THE FINDING THAT REPLACED IT.",
+   "allow": {
+    "data/superseded.json": "this file",
+    "site/src/pages/research-log.astro": "dated entries, superseded in place"
+   }
+  }
+ ]
 }
