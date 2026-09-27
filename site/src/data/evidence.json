@@ -645,7 +645,7 @@
    "title": "Sally's death — the Szubin registers have no index, and Berlin may be the right town",
    "source": "www.genealogiawarchiwach.pl, facet and free-text searches with controls, 22 September 2026",
    "kind": "ref",
-   "rows": 12,
+   "rows": 13,
    "people": 0
   },
   {
@@ -662,6 +662,14 @@
    "source": "Archiwum Państwowe w Bydgoszczy, letter IU.631.434.2026 of 22 September 2026; www.genealogiawarchiwach.pl searched the same day",
    "kind": "ref",
    "rows": 11,
+   "people": 0
+  },
+  {
+   "file": "szubin-sterbe-index-1894-1908.tsv",
+   "title": "The Szubin death index this archive said did not exist — sent by Bydgoszcz, and the L slot read out",
+   "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 246, supplied under case IU.631.434.2026 on 25 September 2026",
+   "kind": "ref",
+   "rows": 16,
    "people": 0
   },
   {
@@ -3557,7 +3565,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 101,
+  "files": 102,
   "person_files": 25,
   "people": 186,
   "records": 260,
