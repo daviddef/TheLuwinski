@@ -193,6 +193,54 @@
      "how": "ANSWERED IN PART, 27 SEPTEMBER 2026. WILLIAM WEAR'S PARENTS HAVE NAMES: JOHN WEAR and ELIZABETH, of Newington in Surrey. Four of their children were baptised together at Newington on 10 APRIL 1833 — Matilda 1820, William 1823, Thomas 1825, Mary Ann 1827 — and Matilda and Thomas both give the mother as Elizabeth, which is what makes it a household rather than one index line that happens to match. HELD AS PROBABLE AND NOT DOCUMENTED, for three reasons stated on the Wear page: it is an INDEX of the register and not the register, so it carries no occupation; THE TRADE WAS THE LEVER THIS ARCHIVE NOMINATED and the index cannot pull it; and Newington had a second Wear household under a John Southey Wear, so a forename match there is not an identification. SARAH BLOOM'S PARENTS, THE ELDER HAWKINSES, CASTLES AND GIDDINGSES ARE ALL STILL UNKNOWN."
     }
    ]
+  },
+  {
+   "n": "2–6, by record",
+   "label": "The other line — Kurt's family, which is Derrick's by name and not by blood",
+   "people": [
+    {
+     "name": "Jacob Leibholz",
+     "dates": "b. 8 August 1884, Schubin · deported from Berlin to Auschwitz 26 February 1943; no death recorded",
+     "place": "Schubin → Berlin → Auschwitz",
+     "status": "documented",
+     "how": "KURT'S FATHER, AND SO DERRICK'S GRANDFATHER OF RECORD. Born at Schubin in Posen, a Kaufmann in Berlin, deported on the 30th Osttransport and murdered. THE ARCHIVE THAT CARRIES HIS NAME DOCUMENTS HIS MURDER IN MORE DETAIL THAN ANY OTHER DEATH IN IT."
+    },
+    {
+     "name": "Auguste (Lizzy) Luwinski",
+     "dates": "b. 28 August 1893, Sauerbaum, Kreis Rössel · d. 22 June 1975, Kraichtal",
+     "place": "East Prussia → Berlin → Kraichtal",
+     "status": "documented",
+     "how": "KURT'S MOTHER — AND THE REASON THE NAME ON THIS ARCHIVE IS LUWINSKI AND NOT LEIBHOLZ. Kurt carried his mother's surname, not his father's; his brother Siegfried kept Leibholz. A Catholic East Prussian name on a half-Jewish child in Nazi Berlin is not a clerical accident. She divorced Jacob and outlived him by thirty-two years."
+    },
+    {
+     "name": "Sally Leibholz × Friederike Schmul",
+     "dates": "he b. 7 July 1847, Hammerstein · she b. about 1854, Schubin — married Schubin 24 December 1874",
+     "place": "Hammerstein and Schubin",
+     "status": "documented",
+     "how": "JACOB'S PARENTS. Their marriage entry of 24 December 1874 is the oldest document this archive holds on this line and the one that has been read most often — it gives his age, his birthplace, his trade, and the names of both sets of parents below."
+    },
+    {
+     "name": "Joachim Luwinski × Johanna Thimm",
+     "dates": "he b. 21 October 1865, Allenstein · she b. 25 March 1871, Sauerbaum · d. 30 October 1955",
+     "place": "Allenstein and Kreis Rössel, East Prussia",
+     "status": "documented",
+     "how": "AUGUSTE'S PARENTS, and the source of the surname Derrick carries. A Landwirt at Allenstein and a woman from a village in Kreis Rössel. THEIR MARRIAGE IS STILL UNFOUND — the one line that would name Joachim's own parents."
+    },
+    {
+     "name": "Jacob Leibholz the elder × H—— née Pollnow",
+     "dates": "both living at Hammerstein in 1874 · no dates established",
+     "place": "Hammerstein, Kreis Schlochau",
+     "status": "probable",
+     "how": "SALLY'S PARENTS, named in his marriage entry of 1874: 'Sohn des Kaufmann Jacob Leibholz und der H—— geb. Pollnow'. HER GIVEN NAME IS AN INITIAL BECAUSE THAT IS ALL THE PAGE YIELDS — read against the registrar's own capitals on 27 September 2026, which rule out both this archive's earlier Wilhelmine and the portal index's Philipine. The surname POLLNOW survives a test against a list of German-Jewish names; the forename does not survive the handwriting."
+    },
+    {
+     "name": "Juda Schmul × Jutta née Machol",
+     "dates": "at Schubin in 1874 · no dates established",
+     "place": "Schubin, Posen",
+     "status": "probable",
+     "how": "FRIEDERIKE'S PARENTS, from the same 1874 entry. HE KEPT AN INN — 'Gastwirth', read for this archive by an archivist at Bydgoszcz who holds the book. Her forename and maiden name are read three ways by three readers: Jette Machot by the portal's volunteer index, Jette née Muschll on a related card, JUTTA NÉE MACHOL by the archivist with the original in front of her. Machol against Machot is one terminal letter in a Kurrent hand."
+    }
+   ]
   }
  ]
 }
