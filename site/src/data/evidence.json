@@ -481,6 +481,14 @@
    "people": 0
   },
   {
+   "file": "naairs-two-databases.tsv",
+   "title": "Two NAAIRS databases, one of them incomplete — and six nils here were taken without knowing which answered",
+   "source": "NARSSA, 'Using the Search Function', nationalarchives.gov.za/node/737, verified 27 September 2026",
+   "kind": "ref",
+   "rows": 12,
+   "people": 0
+  },
+  {
    "file": "negatives-classified.tsv",
    "title": "Every published negative classified, and three re-run",
    "source": "The archive's own /negatives/ page, all 33 rows read one at a time 22 September 2026; re-runs at FreeBMD, probatesearch.service.gov.uk and gazettes.africa",
@@ -3589,7 +3597,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 105,
+  "files": 106,
   "person_files": 25,
   "people": 186,
   "records": 260,
