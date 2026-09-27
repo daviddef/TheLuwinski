@@ -68,7 +68,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
       --serif: "EB Garamond", Georgia, "Times New Roman", serif;
       --sans: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
       --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
-      --measure: 37rem;   /* reading column */
+      --measure: 58rem;   /* reading column */
       --wide: 64rem;      /* tables, cards, panels */
       --bleed: 9rem;      /* extra width for diagrams, only when there is room */
       color-scheme: light;
@@ -100,6 +100,25 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
        afford it — and always from the same left edge as everything else. */
     .bleed { width: 100%; }
     @media (min-width: 84rem) { .bleed { width: calc(100% + var(--bleed)); } }
+    /* Document scans sit on the same left edge and the same right edge as the prose:
+       the browser's default 40px figure margin otherwise indents them out of line. */
+    figure.doc-scan { margin: 1.6rem 0; max-width: var(--measure); }
+    figure.doc-scan img { width: 100%; display: block; border: 1px solid var(--rule); border-radius: 3px; }
+    figure.doc-scan figcaption { margin-top: .6rem; }
+    /* A document and its transcription: the Portuguese as written on the page,
+       and a plain English rendering beside it, so a reader who cannot read the
+       hand can still check this archive's claims against the words. */
+    .xlat { display: grid; grid-template-columns: 1fr 1fr; gap: .2rem 1.8rem;
+      max-width: var(--measure); margin: 1.1rem 0 1.8rem;
+      border-top: 1px solid var(--rule); padding-top: .9rem; }
+    .xlat > div > h4 { font-family: ui-sans-serif, system-ui, sans-serif; font-size: .64rem;
+      letter-spacing: .11em; text-transform: uppercase; color: var(--ink-faint);
+      margin: 0 0 .5rem; font-weight: 600; max-width: none; }
+    .xlat p { margin: 0 0 .45rem; font-size: .9rem; line-height: 1.5; max-width: none; }
+    .xlat .pt p { font-style: italic; color: var(--ink-soft); }
+    .xlat .unclear { font-style: normal; color: var(--ink-faint); }
+    @media (max-width: 760px) { .xlat { grid-template-columns: 1fr; gap: .2rem; }
+      .xlat .en { margin-top: .9rem; } }
     /* Headings share the reading measure so the page has one right edge for prose. */
     h2, h3 { max-width: var(--measure); }
     /* Masthead, after the Defranceschi archive: a sticky bar, a serif wordmark
