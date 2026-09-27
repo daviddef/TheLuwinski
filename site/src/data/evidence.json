@@ -801,6 +801,14 @@
    "people": 7
   },
   {
+   "file": "wear-newington-baptisms-1833.tsv",
+   "title": "The top of the Wear line moves up a generation — John Wear and Elizabeth of Newington, and four children baptised on one day",
+   "source": "Findmypast, England Births & Baptisms 1538-1975, searched 27 September 2026",
+   "kind": "ref",
+   "rows": 12,
+   "people": 0
+  },
+  {
    "file": "wear-pow-1943-45.tsv",
    "title": "War Office prisoner-of-war lists",
    "source": "TNA WO 392/15 and WO 392/21",
@@ -3581,7 +3589,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 104,
+  "files": 105,
   "person_files": 25,
   "people": 186,
   "records": 260,
