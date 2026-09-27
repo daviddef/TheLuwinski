@@ -697,6 +697,14 @@
    "people": 0
   },
   {
+   "file": "trove-2026-09-27.tsv",
+   "title": "Trove opened — the Canberra Times runs to 1995, and the Melbourne Leibholz is naturalised in a 1944 gazette",
+   "source": "Trove, National Library of Australia, API v3, searched 27 September 2026",
+   "kind": "ref",
+   "rows": 13,
+   "people": 0
+  },
+  {
    "file": "trove-and-ryerson-22-september.tsv",
    "title": "Trove answered and corrected its own row; Ryerson's coverage settled without a search",
    "source": "trove.nla.gov.au and ryersonindex.org, 22 September 2026",
@@ -3573,7 +3581,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 103,
+  "files": 104,
   "person_files": 25,
   "people": 186,
   "records": 260,
