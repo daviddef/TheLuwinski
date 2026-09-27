@@ -761,6 +761,14 @@
    "people": 10
   },
   {
+   "file": "wear-castle-wedding-1914-newspapers.tsv",
+   "title": "The newspaper archive opened at last — the 1914 wedding dated to the day, her street, and his regiment on furlough",
+   "source": "Findmypast British Newspaper Archive: Citizen (Letchworth) 6 November 1914 p.4 and Hertfordshire Express 7 November 1914 p.4, read 27 September 2026",
+   "kind": "ref",
+   "rows": 15,
+   "people": 0
+  },
+  {
    "file": "wear-emigration-bt27.tsv",
    "title": "BT 27 outbound passenger lists",
    "source": "TNA BT 27",
@@ -3549,7 +3557,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 100,
+  "files": 101,
   "person_files": 25,
   "people": 186,
   "records": 260,
