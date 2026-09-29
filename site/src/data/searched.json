@@ -187,6 +187,23 @@
     "web"
    ],
    "got": "Same address four months later, one brace over a woman and four children, and S Africa entered as country of intended future permanent residence. ONE Hertfordshire address elsewhere on the page (Harpenden), recorded as a fact and not as a connection. Page 7 of 15; the other fourteen pages were NOT read. NOTE FOR THE SET: BT 27 in 1939 HAS NO DESTINATION-ADDRESS COLUMN, so it cannot say where in a destination country anyone was going."
+  },
+  {
+   "src": "Findmypast — Passenger Lists Leaving UK 1890-1960 (TNA BT 27), FORM REVISIONS sampled across three eras",
+   "key": "web/findmypast-bt27-form-revisions",
+   "url": "https://www.findmypast.com.au/search/results?datasetname=passenger+lists+leaving+uk+1890-1960",
+   "what": "Which columns BT 27 actually carries, and in which years — a holdings question, not a family one",
+   "when": "2026-09-29",
+   "outcome": "yield",
+   "walked": false,
+   "tags": [
+    "bt27",
+    "passenger-list",
+    "holdings",
+    "methodology",
+    "web"
+   ],
+   "got": "THREE REVISIONS, AND THE USEFUL COLUMN EXISTS IN ONLY ONE OF THEM. 1907 (Walmer Castle): NO last-UK-address column at all — ages bucketed by nationality, and ports contracted to land. 1937 and 1939 (form P.M. 21): columns 1-9, WITH last address in the United Kingdom, and ending at country of intended future permanent residence — a country and nothing finer, so no destination address. 1951 (a typed US military transport manifest filed inside BT 27): ITEM/NAME/RANK/SER.NO./STATUS/DESTINATION, nothing of the Board of Trade form left. THE SERIES IS NOT HOMOGENEOUS: a column present in one piece proves nothing about another, and the era must be checked before a row is planned around a field."
   }
  ]
 }
