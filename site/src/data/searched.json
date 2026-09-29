@@ -204,6 +204,27 @@
     "web"
    ],
    "got": "THREE REVISIONS, AND THE USEFUL COLUMN EXISTS IN ONLY ONE OF THEM. 1907 (Walmer Castle): NO last-UK-address column at all — ages bucketed by nationality, and ports contracted to land. 1937 and 1939 (form P.M. 21): columns 1-9, WITH last address in the United Kingdom, and ending at country of intended future permanent residence — a country and nothing finer, so no destination address. 1951 (a typed US military transport manifest filed inside BT 27): ITEM/NAME/RANK/SER.NO./STATUS/DESTINATION, nothing of the Board of Trade form left. THE SERIES IS NOT HOMOGENEOUS: a column present in one piece proves nothing about another, and the era must be checked before a row is planned around a field."
+  },
+  {
+   "src": "Findmypast — Passenger Lists Leaving UK 1890-1960 (TNA BT 27), PAGE IMAGE read, not transcript",
+   "key": "web/findmypast-bt27-windsor-castle-1937",
+   "url": "https://www.findmypast.com.au/transcript?id=TNA%2FBT27%2F1490000047%2F00171",
+   "what": "The last UK address on the 1937 departure, to test whether the 1939 address was already the family home",
+   "when": "2026-09-29",
+   "outcome": "yield",
+   "pages": "6",
+   "walked": false,
+   "tags": [
+    "wear",
+    "letchworth",
+    "hertfordshire",
+    "emigration",
+    "south-africa",
+    "bt27",
+    "passenger-list",
+    "web"
+   ],
+   "got": "Same house as both 1939 voyages, twenty-nine months earlier, and the street written out in full where the 1939 entries abbreviate it. Opened only because the form survey had just shown the 1937 sheet is the same P.M. 21 revision and therefore carries column (6) at all. The page was NOT walked — the target row was read, not every household on it."
   }
  ]
 }
