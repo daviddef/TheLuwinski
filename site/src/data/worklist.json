@@ -21,7 +21,7 @@
    ]
   }
  ],
- "unreconciled": 33,
+ "unreconciled": 34,
  "rows": [
   {
    "n": 1,
@@ -2320,6 +2320,17 @@
    "what": "ORDER THE 1923 AUFGEBOT PAPERS — the parents may be in a box in Berlin",
    "since": "2026-09-29",
    "note": "NEW 29 SEPTEMBER 2026, FROM THE LANDESARCHIV'S OWN LETTER. The Sammelakte to the Schöneberg II marriage register EXISTS and holds “nur die Aufgebotsunterlagen aus dem Jahre 1923” — the banns papers. A German banns file of 1923 normally contains THE BIRTH CERTIFICATES OF BOTH PARTIES, and a birth certificate names the parents. THE 1924 MARRIAGE ENTRY NAMED NO PARENTS — the 1920s Prussian form cites the birth register instead — so JOACHIM LUWINSKI, JOHANNA née THIMM, SALLY LEIBHOLZ and FRIEDERIKE née SCHMUL are still unconfirmed on one document, and this box is the nearest thing to one. NOT DIGITISED, so no scan; copies are ordered through the Digitaler Antrag at service.berlin.de/dienstleistung/352800/. THIS IS A PURCHASE AND IT IS DAVID'S TO MAKE. DRAFTED, NOT ORDERED. AND A CLEAN NEGATIVE SO NOBODY ORDERS IT FOR THE WRONG REASON: the Sammelakte holds NO DIVORCE PAPERS. The judgment is Landgericht Berlin 251. R. 80. 40 and it lives, if it lives, in a court series. SECOND CANDIDATE ON THE SAME LOGIC: Auguste's own birth entry, GROß-BÖSSAU 1893 NR. 88, which the marriage entry cites and which this archive had no way to ask for until today."
+  },
+  {
+   "n": 278,
+   "state": "next",
+   "owner": "david",
+   "what": "REPLY TO THE LANDESARCHIV — and it supplies the one thing she asked for",
+   "since": "2026-09-29",
+   "note": "DRAFTED 29 SEPTEMBER 2026 as requests/39-REPLY-to-landesarchiv-oberle.txt. NOT SENT — I draft letters, I do not send them. IT DOES FOUR THINGS. (1) It supplies STANDESAMT BERLIN VIII, GEBURTSREGISTER 1912, NR. 963 with the reasoning, which is exactly what Frau Oberle wrote that she lacked, and says plainly that the failure was ours and not hers. (2) It offers her GERTRUD'S MAIDEN NAME, LEIBKE — her own register enters father, mother and marital status as not known, and this archive can supply the surname from an AJDC card that matches her entry on address and date of birth. A reply that only takes is worse than one that gives something back. (3) It confirms that the divorce note resolves the 1940 “Witwe” problem, so she knows what her scan was worth. (4) *** IT ASKS ONE QUESTION BEFORE ANY MONEY IS SPENT: *** do the 1923 Aufgebotsunterlagen customarily contain BOTH PARTIES' BIRTH CERTIFICATES? The parents are the entire reason to order the Sammelakte, and the marriage entry names none. If yes, order; if no, go at the two birth registers directly and save the fee. SEE ALSO ROW 229, the supplement drafted on 20 September and still unsent — this letter supersedes it and should go instead.",
+   "covers": [
+    "request:39-REPLY-to-landesarchiv-oberle.txt"
+   ]
   }
  ]
 }
