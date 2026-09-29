@@ -66,6 +66,7 @@ MANIFEST = {
  "castle-1911-1921.tsv":         (["name"], "1911 and 1921 censuses, Baldock and Letchworth", "RG14/7572 sch 173; RG15/07079 sch 125", "person"),
  "castle-from-match-tree.tsv":   (["person"], "A match holder's Ancestry tree", "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET", "person"),
  "wear-emigration-bt27.tsv":     (["first","last"], "BT 27 outbound passenger lists", "TNA BT 27", "person"),
+ "wear-1939-bt27-images.tsv":   (["row","what"], "The 1939 passenger-list pages, read as images", "TNA BT 27", "ref"),
  "wear-pow-1943-45.tsv":         ([], "War Office prisoner-of-war lists", "TNA WO 392/15 and WO 392/21", "ref"),
  "caroline-james-1920-1957.tsv": ([], "Caroline Castle, later James, 1920 to 1957", "GRO indexes; 1939 Register RG101/1598B/017/25", "ref"),
  "litigation.tsv":               (["plaintiff","defendant"], "Transvaal court files", "National Archives of South Africa, WLD and TPD series", "person"),

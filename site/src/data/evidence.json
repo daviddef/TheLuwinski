@@ -777,6 +777,14 @@
    "people": 5
   },
   {
+   "file": "wear-1939-bt27-images.tsv",
+   "title": "The 1939 passenger-list pages, read as images",
+   "source": "TNA BT 27",
+   "kind": "ref",
+   "rows": 9,
+   "people": 1
+  },
+  {
    "file": "wear-1939-register.tsv",
    "title": "1939 Register, 72 Pix Road, Letchworth",
    "source": "TNA R39",
@@ -3425,6 +3433,18 @@
    ]
   },
   {
+   "name": "THEY DECLARED THEMSELVES PERMANENT EMIGRANTS",
+   "slug": "they-declared-themselves-permanent-emigrants",
+   "records": [
+    {
+     "file": "wear-1939-bt27-images.tsv",
+     "title": "The 1939 passenger-list pages, read as images",
+     "source": "TNA BT 27",
+     "detail": "row: 4 · what: THEY DECLARED THEMSELVES PERMANENT EMIGRANTS · image: TNA/BT27/1542/00/0024 page 7, column (9) · reading: \"S Africa\" · note: \"Country of Intended Future Permanent Residence\" for Martha and all four children. Not visitors, not a passage out and back. Column (8), country of last permanent residence, is ditto-marked to England."
+    }
+   ]
+  },
+  {
    "name": "WILLI [WILLY] LEIBHOLZ",
    "slug": "willi-willy-leibholz",
    "records": [
@@ -3605,10 +3625,10 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 107,
+  "files": 108,
   "person_files": 25,
-  "people": 186,
-  "records": 260,
+  "people": 187,
+  "records": 261,
   "linked_to_register": 12
  }
 }

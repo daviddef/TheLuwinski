@@ -60,6 +60,27 @@
     "data/superseded.json": "this file",
     "site/src/pages/research-log.astro": "dated entries, superseded in place"
    }
+  },
+  {
+   "id": "janette-ridge-avenue-lodgings",
+   "what": "Where Jeannett (E M) Wear was living at 18 Ridge Avenue, Letchworth on 29 September 1939",
+   "now": "In the family's own house, alone, after the rest had sailed",
+   "was": [
+    "in lodgings on Ridge Avenue",
+    "in lodgings half a mile off on Ridge Avenue",
+    "IN LODGINGS",
+    "Letchworth lodgings",
+    "cinema cashier in lodgings"
+   ],
+   "since": "2026-09-29",
+   "why": "The word 'lodgings' was never in a record. The archive had 18 Ridge Avenue only from the 1939 Register, which gives an address and not a tenure, and filled the gap with an assumption because the family's known house was 72 Pix Road. The BT 27 passenger lists settle it: column 6, 'Last Address in the United Kingdom', reads 18 Ridge Ave, Letchworth for Henry Robert on the Durban Castle of 5 April 1939 AND for Martha Maud and the four youngest on the Dunvegan Castle of 10 August 1939. It was the family home. She had not moved out.",
+   "allow": {
+    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/data/worklist.json": "dated row notes, same rule",
+    "data/wear-1939-bt27-images.tsv": "this is the file that makes the correction",
+    "site/src/pages/leonard.astro": "carries the correction inline, quoting the withdrawn word",
+    "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it"
+   }
   }
  ]
 }

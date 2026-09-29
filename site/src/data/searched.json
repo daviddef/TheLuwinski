@@ -145,6 +145,48 @@
     "web"
    ],
    "got": "A 1944 NOTICE OF INTENTION placed by the man himself, giving his street and his months of residence — the latter matching an independently documented arrival to within days. A gazette naturalisation entry for the same man. A sponsor household located to a street. MOST OF THE LUWINSKI SEAM IS THE CANBERRA TIMES 1970-1987 AND CONCERNS LIVING PEOPLE, so it is recorded and not published. INSTRUMENT NOTE: Trove normalises spelling and two spellings of one surname return an identical set."
+  },
+  {
+   "src": "Findmypast — Passenger Lists Leaving UK 1890-1960 (TNA BT 27), PAGE IMAGES read, not transcripts",
+   "key": "web/findmypast-bt27-durban-castle-1939",
+   "url": "https://www.findmypast.com.au/transcript?id=TNA%2FBT27%2F1540000042%2F00189",
+   "what": "The last address in the United Kingdom, which the transcript does not carry, for the April 1939 departure",
+   "when": "2026-09-29",
+   "outcome": "yield",
+   "pages": "6",
+   "walked": true,
+   "tags": [
+    "wear",
+    "letchworth",
+    "hertfordshire",
+    "emigration",
+    "south-africa",
+    "bt27",
+    "passenger-list",
+    "web"
+   ],
+   "got": "Column 6 read at native resolution for the whole page, about 30 households. The surname's own line gives 18 Ridge Ave, Letchworth, and the occupation reads Machine minder where the index has Machine minister. NO OTHER HERTFORDSHIRE ADDRESS ON THE PAGE. Page 6 of 11; the other ten pages were NOT read."
+  },
+  {
+   "src": "Findmypast — Passenger Lists Leaving UK 1890-1960 (TNA BT 27), PAGE IMAGES read, not transcripts",
+   "key": "web/findmypast-bt27-dunvegan-castle-1939",
+   "url": "https://www.findmypast.com.au/transcript?id=TNA%2FBT27%2F1542000024%2F00223",
+   "what": "The same column for the August 1939 departure, as an independent check on the April reading",
+   "when": "2026-09-29",
+   "outcome": "yield",
+   "pages": "7",
+   "walked": true,
+   "tags": [
+    "wear",
+    "letchworth",
+    "hertfordshire",
+    "emigration",
+    "south-africa",
+    "bt27",
+    "passenger-list",
+    "web"
+   ],
+   "got": "Same address four months later, one brace over a woman and four children, and S Africa entered as country of intended future permanent residence. ONE Hertfordshire address elsewhere on the page (Harpenden), recorded as a fact and not as a connection. Page 7 of 15; the other fourteen pages were NOT read. NOTE FOR THE SET: BT 27 in 1939 HAS NO DESTINATION-ADDRESS COLUMN, so it cannot say where in a destination country anyone was going."
   }
  ]
 }
