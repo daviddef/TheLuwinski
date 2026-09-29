@@ -225,6 +225,40 @@
     "web"
    ],
    "got": "Same house as both 1939 voyages, twenty-nine months earlier, and the street written out in full where the 1939 entries abbreviate it. Opened only because the form survey had just shown the 1937 sheet is the same P.M. 21 revision and therefore carries column (6) at all. The page was NOT walked — the target row was read, not every household on it."
+  },
+  {
+   "src": "Landesarchiv Berlin — enquiry answered by an archivist, with scans",
+   "key": "archive/landesarchiv-berlin-2026-09-29",
+   "url": "https://landesarchiv-berlin.de/familienforschung-im-landesarchiv-berlin",
+   "what": "A death entry, a marriage entry and a birth entry, for one Berlin family",
+   "when": "2026-09-29",
+   "outcome": "yield",
+   "walked": false,
+   "tags": [
+    "berlin",
+    "standesamt",
+    "civil-registration",
+    "archive-reply",
+    "germany"
+   ],
+   "got": "TWO OF THREE ANSWERED, FREE OF CHARGE, WITH SCANS. Standesamt Wedding Sterberegister 1943 (P Rep. 830 Nr. 114) and Standesamt Schöneberg II Heiratsregister 1924 (P Rep. 161 Nr. 171) — note the NAMENSVERZEICHNIS to the latter is a different shelfmark, Nr. 271. HOLDINGS FACTS WORTH CARRYING: 1912 birth registers are NOT digitised, but the NAMENSVERZEICHNISSE are; there are 150+ registry offices with NO NAME INDEX ACROSS THEM, each office indexing births, marriages and deaths separately for every year, so an enquiry without the responsible Standesamt cannot be answered at all; and the public search system CANNOT DISPLAY UMLAUTS — search an office on the stem (‘Neuk’) and pick the mangled entry from the list. Sammelakten exist alongside the marriage registers and may hold banns papers; they are not digitised and are ordered for a fee through service.berlin.de/dienstleistung/352800/."
+  },
+  {
+   "src": "Landesarchiv Berlin — Sammelakte to Standesamt Schöneberg II Heiratsregister 1924",
+   "key": "archive/landesarchiv-berlin-sammelakte-schoeneberg-ii-1924",
+   "url": "https://service.berlin.de/dienstleistung/352800/",
+   "what": "Whether the banns file survives, and whether it holds the parties’ birth certificates",
+   "when": "2026-09-29",
+   "outcome": "pending",
+   "walked": false,
+   "tags": [
+    "berlin",
+    "standesamt",
+    "sammelakte",
+    "banns",
+    "germany"
+   ],
+   "got": "CONFIRMED BY THE ARCHIVIST TO EXIST AND TO CONTAIN ONLY THE 1923 AUFGEBOTSUNTERLAGEN — the banns papers — AND NO DIVORCE PAPERS. Not digitised. Recorded as a positive holdings fact and a bounded negative: anyone ordering this file for divorce material will get none, and the judgment (Landgericht Berlin 251. R. 80. 40) sits in a court series instead."
   }
  ]
 }

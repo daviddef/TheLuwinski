@@ -81,6 +81,28 @@
     "site/src/pages/leonard.astro": "carries the correction inline, quoting the withdrawn word",
     "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it"
    }
+  },
+  {
+   "id": "marriage1924-names-both-sets-of-parents",
+   "what": "What the Schoeneberg II marriage entry of 5 January 1924 would contain",
+   "now": "It names NO parents. The 1920s Prussian form cites each party's birth register instead.",
+   "was": [
+    "A MARRIAGE ENTRY NAMES BOTH SETS OF PARENTS",
+    "a German marriage register entry names THE PARENTS OF BOTH PARTIES",
+    "a German marriage entry names the parents of both parties"
+   ],
+   "since": "2026-09-29",
+   "why": "Predicted on 20 September from the index alone, on the strength of the pre-1920 form, and published as what the certificate 'will contain'. The entry arrived from the Landesarchiv on 29 September and gives, for each party, name, how identity was established, date and place of birth, BIRTH REGISTER NUMBER AND OFFICE, and residence. No parents. Joachim Luwinski, Johanna nee Thimm, Sally Leibholz and Friederike nee Schmul remain unconfirmed on a single document. Second time in one day a row here was planned around a field the relevant form revision does not have; the other was BT 27. NOTE ON THE STRING ITSELF: the first withdrawal listed 'names the parents of both parties', which flagged two statements that are TRUE about other documents — the 1874 Schubin entry, whose form does name them, and a 1940 Johannesburg certificate. A withdrawn value has to be specific to the claim, not to the sentence pattern, or the gate starts refusing correct work. Narrowed twice: 'BOTH SETS OF PARENTS' on its own is TRUE of the 1874 Prussian form, which this archive has read and proved - Jacob the elder and a mother nee Pollnow, Juda Schmul and Jutta nee Machol, all four off one 1874 entry. The form of 1874 names parents; the form of 1924 does not. THE WITHDRAWN THING IS THE GENERALISATION, NOT THE SENTENCE.",
+   "allow": {
+    "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it",
+    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/data/worklist.json": "dated row notes, same rule",
+    "data/leibholz-luwinski-marriage.tsv": "the file that made the prediction, corrected in place below it",
+    "data/leibholz-luwinski-1924-entry.tsv": "the file that withdraws it, and quotes it to do so",
+    "site/src/pages/leibholz.astro": "carries the correction inline, quoting the withdrawn prediction",
+    "data/berlin-namensverzeichnisse.tsv": "quotes the withdrawn sentence in order to withdraw it, and keeps the half that held",
+    "data/twenty-alone.tsv": "quotes the withdrawn sentence in order to withdraw it"
+   }
   }
  ]
 }

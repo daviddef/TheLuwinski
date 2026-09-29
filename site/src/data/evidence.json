@@ -265,6 +265,14 @@
    "people": 0
   },
   {
+   "file": "gertrud-leibholz-sterbeeintrag-1943.tsv",
+   "title": "Gertrud Leibholz, Standesamt Wedding 1943 Nr. 1291",
+   "source": "Landesarchiv Berlin",
+   "kind": "ref",
+   "rows": 15,
+   "people": 3
+  },
+  {
    "file": "giddins-norton-end.tsv",
    "title": "1861 and 1871 censuses, Norton End, Baldock",
    "source": "RG9/816 f.69; RG10/1365 f.27",
@@ -369,6 +377,14 @@
    "people": 0
   },
   {
+   "file": "landesarchiv-reply-2026-09-29.tsv",
+   "title": "The Landesarchiv Berlin reply of 29 September 2026",
+   "source": "Landesarchiv Berlin",
+   "kind": "ref",
+   "rows": 13,
+   "people": 1
+  },
+  {
    "file": "leibholz-gedenkbuch.tsv",
    "title": "The Bundesarchiv Gedenkbuch",
    "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
@@ -377,11 +393,19 @@
    "people": 52
   },
   {
+   "file": "leibholz-luwinski-1924-entry.tsv",
+   "title": "The marriage entry, Schoeneberg II 1924 Nr. 6",
+   "source": "Landesarchiv Berlin",
+   "kind": "ref",
+   "rows": 22,
+   "people": 2
+  },
+  {
    "file": "leibholz-luwinski-marriage.tsv",
    "title": "The marriage entry, found — Schöneberg II, 1924, Nr. 6, and the index records the Mischehe",
    "source": "Landesarchiv Berlin P Rep. 161 Nr. 271 p.221, read at the image 20 September 2026",
    "kind": "ref",
-   "rows": 15,
+   "rows": 16,
    "people": 0
   },
   {
@@ -887,6 +911,18 @@
      "title": "The Berlin directory against the 1939 census, household by household",
      "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
      "detail": "directory_entry: 1939 census supplementary card, ID no. VZ280665 · mapping_the_lives: born 16.10.1919 in DEUTHEN / ALLENSTEIN / OSTPREUSSEN · residence 17.05.1939 at the Lehrwerkstatt Ostpreußisches Baugewerbe, Schindekopstr. 7, Königsberg · \"Race\": NNNN · Basis of persecution: UNKNOWN"
+    }
+   ]
+  },
+  {
+   "name": "ARABELLA OBERLE",
+   "slug": "arabella-oberle",
+   "records": [
+    {
+     "file": "landesarchiv-reply-2026-09-29.tsv",
+     "title": "The Landesarchiv Berlin reply of 29 September 2026",
+     "source": "Landesarchiv Berlin",
+     "detail": "field: *** THE REPLY ***"
     }
    ]
   },
@@ -1679,6 +1715,18 @@
      "title": "The Berlin directory against the 1939 census, household by household",
      "source": "Mapping the Lives (Tracing the Past e.V.), surname LEIBHOLZ, 114 persons, matched to the Berliner Adressbuch by street and house number, 20 September 2026",
      "detail": "directory_entry: 1938 and 1939: \"Georg, WÄSCHEREI, SO16 MICHAELKIRCHSTRASSE 26\" — a laundry. · mapping_the_lives: Leibholz, GEORG, born 07.06.1884, died 13.05.1942, Michaelkirchstr. 26, Mitte — with LIEDIA [LYDIA] née PERL, born 16.01.1885, died 13.05.1942, same address · what it adds: already held by this archive from the census; the TRADE is new. Nothing here disturbs the argument on /leibholz/ that Georg was not Jacob's brother — he was born at Hammerstein, the brothers at Schubin."
+    }
+   ]
+  },
+  {
+   "name": "GERTRUD née LEIBKE",
+   "slug": "gertrud-nee-leibke",
+   "records": [
+    {
+     "file": "gertrud-leibholz-sterbeeintrag-1943.tsv",
+     "title": "Gertrud Leibholz, Standesamt Wedding 1943 Nr. 1291",
+     "source": "Landesarchiv Berlin",
+     "detail": "field: and she was"
     }
    ]
   },
@@ -2659,6 +2707,24 @@
    ]
   },
   {
+   "name": "Landesarchiv Berlin",
+   "slug": "landesarchiv-berlin",
+   "records": [
+    {
+     "file": "gertrud-leibholz-sterbeeintrag-1943.tsv",
+     "title": "Gertrud Leibholz, Standesamt Wedding 1943 Nr. 1291",
+     "source": "Landesarchiv Berlin",
+     "detail": "field: source"
+    },
+    {
+     "file": "leibholz-luwinski-1924-entry.tsv",
+     "title": "The marriage entry, Schoeneberg II 1924 Nr. 6",
+     "source": "Landesarchiv Berlin",
+     "detail": "field: source"
+    }
+   ]
+  },
+  {
    "name": "Laura Leibholz née Rothenberg",
    "slug": "laura-leibholz-nee-rothenberg",
    "records": [
@@ -3229,6 +3295,30 @@
    ]
   },
   {
+   "name": "STANDESAMT BERLIN-WEDDING",
+   "slug": "standesamt-berlin-wedding",
+   "records": [
+    {
+     "file": "gertrud-leibholz-sterbeeintrag-1943.tsv",
+     "title": "Gertrud Leibholz, Standesamt Wedding 1943 Nr. 1291",
+     "source": "Landesarchiv Berlin",
+     "detail": "field: *** THE ENTRY ***"
+    }
+   ]
+  },
+  {
+   "name": "STANDESAMT SCHÖNEBERG II",
+   "slug": "standesamt-schoneberg-ii",
+   "records": [
+    {
+     "file": "leibholz-luwinski-1924-entry.tsv",
+     "title": "The marriage entry, Schoeneberg II 1924 Nr. 6",
+     "source": "Landesarchiv Berlin",
+     "detail": "field: *** THE ENTRY ITSELF, NINE DAYS AFTER THE INDEX FOUND IT ***"
+    }
+   ]
+  },
+  {
    "name": "Sally Leibholz",
    "slug": "sally-leibholz",
    "records": [
@@ -3625,10 +3715,10 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 108,
+  "files": 111,
   "person_files": 25,
-  "people": 187,
-  "records": 261,
+  "people": 192,
+  "records": 267,
   "linked_to_register": 12
  }
 }
