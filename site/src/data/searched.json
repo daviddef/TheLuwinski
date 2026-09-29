@@ -1,0 +1,150 @@
+{
+ "title": "What has been searched",
+ "dek": "Volumes and databases worked in this archive, so that nobody repeats them. Kept for Record Atlas as much as for this site.",
+ "rows": [
+  {
+   "src": "Genealogia w Archiwach — USC Szubin Miasto, marriages 1874 (sygn. 141, 6/1792/0/2.2/141), scan 10, read at the image through the Loris IIIF tile server at up to 2x native",
+   "key": "web/gwa-szubin-marriages-1874-scan10",
+   "url": "https://www.genealogiawarchiwach.pl/",
+   "what": "The LEIBHOLZ x SCHMUL marriage entry of 1874, re-read letter by letter against the registrar's own capitals elsewhere on the page",
+   "when": "2026-09-27",
+   "outcome": "yield",
+   "pages": "10",
+   "walked": false,
+   "tags": [
+    "leibholz",
+    "schmul",
+    "pollnow",
+    "szubin",
+    "posen",
+    "marriage",
+    "web"
+   ],
+   "got": "The month is DECEMBER, not November as this archive had published. The groom's mother's forename is NOT readable: the clerk's own P in the surname on the same line and his H in the birthplace twice on the page rule out both previously published readings, and the remainder is x-height minims at the 2x ceiling. The bride's father's trade and both her parents' names are on the page and were confirmed independently by an archivist."
+  },
+  {
+   "src": "Genealogia w Archiwach — same volume, scan 9 (the preceding entry) and scan 11 (the last leaf)",
+   "key": "web/gwa-szubin-marriages-1874-scan9-11",
+   "url": "https://www.genealogiawarchiwach.pl/",
+   "what": "Letterform controls in the same hand, and whether the volume binds an alphabetical index at the back",
+   "when": "2026-09-27",
+   "outcome": "yield",
+   "pages": "9, 11",
+   "walked": false,
+   "tags": [
+    "szubin",
+    "posen",
+    "marriage",
+    "method",
+    "web"
+   ],
+   "got": "Scan 9 supplies the clerk's capital W in a surname and a second instance of the month word, both decisive. SCAN 11 IS A BLANK UNUSED PRINTED FORM — this volume binds no index, though it is a three-month stub of nine entries and so the weakest possible test of that."
+  },
+  {
+   "src": "Archiwum Panstwowe w Bydgoszczy — USC Szubin Miasto, ALPHABETISCHES VERZEICHNIS zum Sterbe-Register 1894-1908 (sygn. 246), 103 scans, supplied by the archive as a PDF. THE LETTER L READ ENTRY BY ENTRY, all four pages, every year 1894-1911",
+   "key": "archive/bydgoszcz-szubin-246-L-walked",
+   "url": "https://www.bydgoszcz.ap.gov.pl/",
+   "what": "LEIBHOLZ, in the death index of the family's own registry office",
+   "when": "2026-09-28",
+   "outcome": "nothing",
+   "pages": "45-48",
+   "walked": true,
+   "tags": [
+    "leibholz",
+    "szubin",
+    "posen",
+    "death",
+    "index",
+    "walked"
+   ],
+   "got": "NO LEIBHOLZ. K ends on scan 44 and M begins on scan 49, so the slot is bracketed at both ends, and every year from 1894 to 1911 is present in the run. THE SLOT CARRIES ITS OWN CONTROL: the first entry in it is a Jewish name and another opens 1909, so the register was not omitting Jewish deaths. Note the volume is NOT alphabetical in the usual sense — within each letter the entries run BY YEAR, so it cannot be skimmed for a surname."
+  },
+  {
+   "src": "Archiwum Panstwowe w Bydgoszczy — same volume, sygn. 246, the S and Sch letters: the SURNAME COLUMN ONLY read across all nine pages, not the other columns",
+   "key": "archive/bydgoszcz-szubin-246-S",
+   "url": "https://www.bydgoszcz.ap.gov.pl/",
+   "what": "SCHMUL, the bride's family, in the same death index",
+   "when": "2026-09-28",
+   "outcome": "nothing",
+   "pages": "80-88",
+   "walked": false,
+   "tags": [
+    "schmul",
+    "szubin",
+    "posen",
+    "death",
+    "index"
+   ],
+   "got": "NO SCHMUL in the S or Sch slots. The nearest thing is SCHIMMEL, checked at magnification because a reduced image made it look like the name. Recorded as not walked because only the surname column was read."
+  },
+  {
+   "src": "Findmypast — England Births & Baptisms 1538-1975, Newington in Surrey",
+   "key": "web/fmp-baptisms-newington-wear",
+   "url": "https://search.findmypast.com.au/search-world-records/england-births-and-baptisms-1538-1975",
+   "what": "The parents of the WEAR at the top of this line, born about 1823 at Newington and so before civil registration",
+   "when": "2026-09-28",
+   "outcome": "yield",
+   "walked": false,
+   "tags": [
+    "wear",
+    "newington",
+    "surrey",
+    "baptism",
+    "web"
+   ],
+   "got": "A GROUP BAPTISM: four children of one WEAR father baptised on a single day in 1833, born across 1820-1827, two of them opened in full and both giving the same mother. Of 189 results for the forename and surname in the window, ONE is in Surrey. CAUTION RECORDED: it is an index of the register and not the register, so it carries no occupation, and the parish held a second Wear household under a distinct middle name."
+  },
+  {
+   "src": "Findmypast — 1841 England, Wales & Scotland Census, Surrey, surname WEAR with variants, born 1818-1828",
+   "key": "web/fmp-1841-surrey-wear",
+   "url": "https://search.findmypast.com.au/search-world-records/1841-england-wales-and-scotland-census",
+   "what": "The same man in his father's household, which was the other route to the same answer",
+   "when": "2026-09-28",
+   "outcome": "nothing",
+   "walked": false,
+   "tags": [
+    "wear",
+    "surrey",
+    "census",
+    "web"
+   ],
+   "got": "EIGHT results and NOT ONE at Newington or Walworth — Clapham, Blechingley, Dorking, Croydon and four at Lambeth. At eighteen he may have been living in as an apprentice rather than under his father's roof. The census route is recorded as tried and unhelpful; the baptism register answered instead."
+  },
+  {
+   "src": "Findmypast — British Newspaper Archive, Hertfordshire titles: exact-phrase searches on an address, on a married-name death, and on a full name",
+   "key": "web/fmp-bna-hertfordshire",
+   "url": "https://www.findmypast.com.au/search-newspapers",
+   "what": "WEAR and CASTLE at Letchworth, Hitchin and Baldock",
+   "when": "2026-09-27",
+   "outcome": "yield",
+   "walked": false,
+   "tags": [
+    "wear",
+    "castle",
+    "hertfordshire",
+    "newspaper",
+    "web"
+   ],
+   "got": "TWO INDEPENDENT REPORTS of one 1914 wedding, in papers published two days and two towns apart, giving the day where the GRO index gives only a quarter, the chapel, the bride's own street, and the groom's regiment and the fact that he married on furlough. AND A NEGATIVE: the 1863 death sought under a maiden name is not there, because she died under her MARRIED name — the search string in this archive's own work list was wrong. Filtered to the county, three candidates, none hers; coverage control holds, since the Hitchin paper is digitised for the adjacent year."
+  },
+  {
+   "src": "Trove (National Library of Australia) — newspapers and gazettes, API v3",
+   "key": "web/trove-luwinski-leibholz",
+   "url": "https://trove.nla.gov.au/",
+   "what": "LUWINSKI in Australia after the 1965 emigration, LEIBHOLZ at Melbourne, and the sponsor surname at Canberra",
+   "when": "2026-09-27",
+   "outcome": "yield",
+   "walked": false,
+   "tags": [
+    "luwinski",
+    "leibholz",
+    "marquardt",
+    "australia",
+    "canberra",
+    "newspaper",
+    "web"
+   ],
+   "got": "A 1944 NOTICE OF INTENTION placed by the man himself, giving his street and his months of residence — the latter matching an independently documented arrival to within days. A gazette naturalisation entry for the same man. A sponsor household located to a street. MOST OF THE LUWINSKI SEAM IS THE CANBERRA TIMES 1970-1987 AND CONCERNS LIVING PEOPLE, so it is recorded and not published. INSTRUMENT NOTE: Trove normalises spelling and two spellings of one surname return an identical set."
+  }
+ ]
+}
