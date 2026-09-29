@@ -103,6 +103,25 @@
     "data/berlin-namensverzeichnisse.tsv": "quotes the withdrawn sentence in order to withdraw it, and keeps the half that held",
     "data/twenty-alone.tsv": "quotes the withdrawn sentence in order to withdraw it"
    }
+  },
+  {
+   "id": "leibholz-luwinski-divorce-date-unknown",
+   "what": "When Auguste Luwinski's marriage to Jacob Leibholz ended",
+   "now": "21 March 1940 - Landgericht Berlin 251. R. 80. 40, noted in the marriage register 4 April 1940",
+   "was": [
+    "The tree records the divorce without a date",
+    "This archive does not know when Auguste divorced Jacob",
+    "An undated divorce in a mixed marriage",
+    "does not know when Auguste divorced"
+   ],
+   "since": "2026-09-29",
+   "why": "Published as an open question on Auguste's own page, which asked for the date in as many words and said that a divorce before 1938 and one in 1942 were different histories. The margin of the couple's own marriage entry carries it, and the Landesarchiv Berlin sent the scan on 29 September 2026. THE DATE DOES NOT SUPPLY A MOTIVE and the page still says so; only the date is withdrawn.",
+   "allow": {
+    "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it",
+    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/data/worklist.json": "dated row notes, same rule",
+    "site/src/pages/east-prussia.astro": "carries the correction inline, quoting the withdrawn question to answer it"
+   }
   }
  ]
 }
