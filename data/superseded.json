@@ -122,6 +122,40 @@
     "site/src/data/worklist.json": "dated row notes, same rule",
     "site/src/pages/east-prussia.astro": "carries the correction inline, quoting the withdrawn question to answer it"
    }
+  },
+  {
+   "id": "georg-leibholz-as-jacobs-brother",
+   "what": "Whether Georg Leibholz was a brother of Jacob, Samuel and Oskar",
+   "now": "Not a brother. Born at Hammerstein 7 June 1884, sixty-two days before Jacob at Schubin. Cousin is the strong reading.",
+   "was": [
+    "all four brothers are in the Gedenkbuch",
+    "all four brothers",
+    "of the four brothers only Samuel has one",
+    "the four brothers only Samuel"
+   ],
+   "since": "2026-09-20",
+   "why": "Corrected on the Leibholz page on 20 September 2026 from two Bundesarchiv birth dates, and the home-page spine went on listing Georg under 'Jacob's brothers' and counting four for nine days after. Caught on 29 September 2026 by David reading the spine. THE CORRECTION EXISTED AND THE SPINE HAD NEVER BEEN READ AGAINST IT. STRING NOTE: the first withdrawal listed a bare 'four brothers', which matched 'twenty-four brothers' on the register page — a different family and a true sentence. Third over-broad withdrawal string in one day; the same lesson as the 1924-parents fact.",
+   "allow": {
+    "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it",
+    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/data/worklist.json": "dated row notes, same rule"
+   }
+  },
+  {
+   "id": "auguste-survived-the-war-in-berlin",
+   "what": "Where Auguste Luwinski was during the war",
+   "now": "Survived the war; last documented in Berlin in 1940, and the 1940 identification is itself uncertain. Died at Kraichtal in 1975.",
+   "was": [
+    "Survived the war in Berlin"
+   ],
+   "since": "2026-09-29",
+   "why": "The home page asserted Berlin for the whole war. What supports Berlin is the census card of 17 May 1939 and a 1940 directory entry the archive itself says may not be her; the directory sweep records her ABSENT from 1941. The framing rested on her being the Catholic wife of a deported Jewish husband - and the divorce of 21 March 1940 means she was his ex-wife, divorced nearly three years before the deportation. Her second husband died at Sommerfeld in January 1946, not Berlin. Survival is documented; the city for 1941-45 is not.",
+   "allow": {
+    "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it",
+    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/data/worklist.json": "dated row notes, same rule",
+    "data/entschaedigung-berlin.tsv": "a compensation-claim row whose reasoning is corrected in place below it"
+   }
   }
  ]
 }
