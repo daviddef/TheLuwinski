@@ -361,6 +361,14 @@
    "people": 0
   },
   {
+   "file": "kurt-papers-1934-1939.tsv",
+   "title": "Kurt's own papers, 1934 and 1939",
+   "source": "family papers",
+   "kind": "ref",
+   "rows": 20,
+   "people": 1
+  },
+  {
    "file": "labsa-berlin-catalogue.tsv",
    "title": "Every free Berlin name index, catalogued — 5,383 volumes, and a trap that hid a tenth of it",
    "source": "Landesarchiv Berlin LABSA, all 142 offices, built 23 September 2026",
@@ -3535,6 +3543,18 @@
    ]
   },
   {
+   "name": "THREE PHOTOGRAPHS OF KURT",
+   "slug": "three-photographs-of-kurt",
+   "records": [
+    {
+     "file": "kurt-papers-1934-1939.tsv",
+     "title": "Kurt's own papers, 1934 and 1939",
+     "source": "family papers",
+     "detail": "field: *** AND THE THING THAT IS NOT A FACT AT ALL ***"
+    }
+   ]
+  },
+  {
    "name": "WILLI [WILLY] LEIBHOLZ",
    "slug": "willi-willy-leibholz",
    "records": [
@@ -3715,10 +3735,10 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 111,
+  "files": 112,
   "person_files": 25,
-  "people": 192,
-  "records": 267,
+  "people": 193,
+  "records": 268,
   "linked_to_register": 12
  }
 }

@@ -70,6 +70,7 @@ MANIFEST = {
  "gertrud-leibholz-sterbeeintrag-1943.tsv": (["field","value"], "Gertrud Leibholz, Standesamt Wedding 1943 Nr. 1291", "Landesarchiv Berlin", "ref"),
  "leibholz-luwinski-1924-entry.tsv": (["field","value"], "The marriage entry, Schoeneberg II 1924 Nr. 6", "Landesarchiv Berlin", "ref"),
  "landesarchiv-reply-2026-09-29.tsv": (["field","value"], "The Landesarchiv Berlin reply of 29 September 2026", "Landesarchiv Berlin", "ref"),
+ "kurt-papers-1934-1939.tsv":   (["field","value"], "Kurt's own papers, 1934 and 1939", "family papers", "ref"),
  "wear-pow-1943-45.tsv":         ([], "War Office prisoner-of-war lists", "TNA WO 392/15 and WO 392/21", "ref"),
  "caroline-james-1920-1957.tsv": ([], "Caroline Castle, later James, 1920 to 1957", "GRO indexes; 1939 Register RG101/1598B/017/25", "ref"),
  "litigation.tsv":               (["plaintiff","defendant"], "Transvaal court files", "National Archives of South Africa, WLD and TPD series", "person"),

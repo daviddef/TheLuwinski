@@ -156,6 +156,34 @@
     "site/src/data/worklist.json": "dated row notes, same rule",
     "data/entschaedigung-berlin.tsv": "a compensation-claim row whose reasoning is corrected in place below it"
    }
+  },
+  {
+   "id": "kurt-left-germany-in-1933",
+   "what": "When Kurt Luwinski left Germany",
+   "now": "Not established. The family tree says 1933; his own Berlin driving licence is dated 30 January 1934, from a Schoeneberg address.",
+   "was": [
+    "Got out of Germany in 1933",
+    "got out in 1933",
+    "escaped in 1933",
+    "in Johannesburg from 1933",
+    "left Germany in 1933",
+    "He was in Johannesburg from 1933",
+    "Kurt in 1933",
+    "south in 1933",
+    "he arrived in 1933",
+    "who left in 1933"
+   ],
+   "since": "2026-10-01",
+   "why": "The year came from the family tree alone - 'Johannesburg, Sued Afrika, 1933' - and this archive repeated it as fact on the home page, the atlas, Derrick's page, the DNA page and Kurt's own. On 1 October 2026 Derrick supplied Kurt's papers. The Fuehrerschein issued by the Berlin Polizeipraesident on 30 JANUARY 1934 gives him resident at Meraner Strasse 2, Berlin-Schoeneberg, with four Reichsmarks of Prussian fee stamps on it. A man who had emigrated in 1933 did not do that. EITHER THE TREE'S YEAR IS WRONG OR HE LEFT AND CAME BACK; the document cannot say which and this archive is not choosing. What is withdrawn is the bare year asserted as fact, not the emigration itself.",
+   "allow": {
+    "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it",
+    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/data/worklist.json": "dated row notes, same rule",
+    "site/src/data/register.json": "generated from the source family tree; it records what the TREE says, which is the thing being doubted",
+    "data/kurt-papers-1934-1939.tsv": "the file that makes the correction",
+    "site/src/pages/kurt.astro": "carries the correction inline, quoting the withdrawn year to withdraw it",
+    "site/src/data/open-questions.json": "quotes the withdrawn reasoning in order to withdraw it, and says so in the same sentence"
+   }
   }
  ]
 }
