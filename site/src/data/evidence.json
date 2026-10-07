@@ -553,6 +553,14 @@
    "people": 0
   },
   {
+   "file": "other-offices-deaths-2026-10-07.tsv",
+   "title": "Fifty-one more death volumes, four people of the name, and an instrument that proves its own eyesight",
+   "source": "Landesarchiv Berlin P Rep. 510, 130, 480 and 380, read 7 October 2026",
+   "kind": "ref",
+   "rows": 25,
+   "people": 0
+  },
+  {
    "file": "pollnow-1874-reread-2026-09-27.tsv",
    "title": "The 1874 entry re-read at the image — the given name is neither Wilhelmine nor Philipine, and the marriage is not in November",
    "source": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141, akt małżeństwa nr 9/1874, scan 10, re-read at the Loris IIIF image 27 September 2026",
@@ -3735,7 +3743,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 112,
+  "files": 113,
   "person_files": 25,
   "people": 193,
   "records": 268,

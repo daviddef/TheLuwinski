@@ -259,6 +259,78 @@
     "germany"
    ],
    "got": "CONFIRMED BY THE ARCHIVIST TO EXIST AND TO CONTAIN ONLY THE 1923 AUFGEBOTSUNTERLAGEN — the banns papers — AND NO DIVORCE PAPERS. Not digitised. Recorded as a positive holdings fact and a bounded negative: anyone ordering this file for divorce material will get none, and the judgment (Landgericht Berlin 251. R. 80. 40) sits in a court series instead."
+  },
+  {
+   "src": "Landesarchiv Berlin LABSA — Standesamt Kreuzberg, Namensverzeichnisse zum Sterberegister",
+   "key": "labsa/kreuzberg-sterbe-1983-1994",
+   "url": "https://content.landesarchiv-berlin.de/labsa/show/index.php",
+   "what": "A surname in the death indexes of one Berlin registry office, 1983-1994",
+   "when": "2026-10-07",
+   "outcome": "nil",
+   "walked": true,
+   "pages": "all pages of 12 volumes",
+   "tags": [
+    "berlin",
+    "standesamt",
+    "death-index",
+    "germany",
+    "labsa"
+   ],
+   "got": "TWELVE VOLUMES (P Rep. 510 Nr. 743, 762, 781, 800, 819, 838, 920, 1066, 1184, 1284, 1456, 1471) READ PAGE BY PAGE. ELEVEN ARE A VALID NEGATIVE; ONE IS NOT, AND THE DIFFERENCE IS THE POINT. THE 1983 VOLUME IS HANDWRITTEN AND ITS OCR LAYER IS BLIND -- across 211 pages it yields 6 Schmidt, 4 Mueller and 0 Becker, 0.095 control names a page, against 1.272 for the 1984 volume. The series changes to a TYPED index at 1984 and the file drops from 125 MB to 33 MB with it. ANY NEGATIVE TAKEN FROM A LABSA TEXT LAYER MUST BE SCORED AGAINST COMMON SURNAMES FIRST; the 'Durchsuchbares PDF durch OCR-Texterkennung' label is not a promise about the names."
+  },
+  {
+   "src": "Landesarchiv Berlin LABSA — Standesamt Reinickendorf, Namensverzeichnisse zum Sterberegister",
+   "key": "labsa/reinickendorf-sterbe-1982-1994",
+   "url": "https://content.landesarchiv-berlin.de/labsa/show/index.php",
+   "what": "A surname in the death indexes of one Berlin registry office, 1982-1994",
+   "when": "2026-10-07",
+   "outcome": "yield",
+   "walked": true,
+   "pages": "all pages of 13 volumes",
+   "tags": [
+    "berlin",
+    "standesamt",
+    "death-index",
+    "germany",
+    "labsa"
+   ],
+   "got": "THIRTEEN VOLUMES (P Rep. 130 Nr. 1478-1490) READ PAGE BY PAGE, all thirteen typewritten and legible (0.93 to 1.75 control names a page). ONE ENTRY OF THE SURNAME SOUGHT, confirmed at the image: Sterberegister Reinickendorf 1988 Nr. 2306, 5 November 1988, evangelisch. With the 1974-1981 run read in September this office is now covered without a gap for twenty-one consecutive years."
+  },
+  {
+   "src": "Landesarchiv Berlin LABSA — Standesamt Spandau I, Namensverzeichnisse zum Sterberegister",
+   "key": "labsa/spandau-i-sterbe-1983-1994",
+   "url": "https://content.landesarchiv-berlin.de/labsa/show/index.php",
+   "what": "A surname in the death indexes of one Berlin registry office, 1983-1994",
+   "when": "2026-10-07",
+   "outcome": "yield",
+   "walked": true,
+   "pages": "all pages of 12 volumes",
+   "tags": [
+    "berlin",
+    "standesamt",
+    "death-index",
+    "germany",
+    "labsa"
+   ],
+   "got": "TWELVE SINGLE-YEAR VOLUMES READ PAGE BY PAGE, all legible (1.26 to 1.96 control names a page). TWO ENTRIES OF THE SURNAME SOUGHT: Sterberegister 1985 Nr. 2926 (24 November 1985, ev., widowed), confirmed at the image; and 1993 Nr. 2047 (29 August 1993), a woman entered under both her birth and married names. A THIRTEENTH VOLUME, P Rep. 480 Nr. 2458 covering 1982-1986, IS BLIND (0.03 control names a page) AND IS RECORDED AS UNREAD, NOT AS A NEGATIVE. METHOD NOTE WORTH CARRYING: the 1993 volume's text layer lists names and register numbers as two unlinked blocks; positional pairing was validated across 2,396 distinct (forenames, date) keys, of which 2,394 resolve to exactly one number, and separately by the index's own practice of entering a married woman twice."
+  },
+  {
+   "src": "Landesarchiv Berlin LABSA — Standesamt Neukölln, Namensverzeichnisse zum Sterberegister",
+   "key": "labsa/neukoelln-sterbe-1967-1992",
+   "url": "https://content.landesarchiv-berlin.de/labsa/show/index.php",
+   "what": "A surname in the death indexes of one Berlin registry office, 1967-1992",
+   "when": "2026-10-07",
+   "outcome": "nil",
+   "walked": true,
+   "pages": "all pages of 10 volumes, plus the L block of 2 more at the image",
+   "tags": [
+    "berlin",
+    "standesamt",
+    "death-index",
+    "germany",
+    "labsa"
+   ],
+   "got": "TWELVE VOLUMES, THE OFFICE COMPLETE FROM 1967 TO 1992, AND THE SURNAME IS IN NONE OF THEM. Ten were read by text layer; TWO CARRY NO TEXT LAYER AT ALL and were read at the image. TWO WARNINGS FOR ANYONE FOLLOWING. (1) P Rep. 380 Nr. 710 (1967-68) IS NOT ALPHABETICAL INSIDE EACH LETTER -- entries run by MONTH AND DATE -- so a nearest-name-either-side bracket proves nothing there and the whole letter must be read. (2) P Rep. 380 Nr. 822 (1985-87) IS SCANNED MIRRORED on every page and must be flipped to be read, holds THREE SEPARATE ALPHABETS (one per year), and ITS PAGES ARE OUT OF SEQUENCE -- one L block reads 252, 251, 254, 253, 256, 255, 258, 257, with the surnames chaining unbroken across all eight."
   }
  ]
 }
