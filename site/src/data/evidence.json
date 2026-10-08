@@ -17,6 +17,14 @@
    "people": 0
   },
   {
+   "file": "agnes-leibholz-kerger.tsv",
+   "title": "Agnes Leibholz née Kerger — not found, and the search is now bounded instead of open",
+   "source": "Mapping the Lives VZ153403, and the Berlin death indexes of twelve boroughs, 8 October 2026",
+   "kind": "ref",
+   "rows": 15,
+   "people": 0
+  },
+  {
    "file": "alfred-luwinski-sachsenhausen.tsv",
    "title": "Alfred Luwinski born 9 September 1917 — who he actually was",
    "source": "Arolsen Archives DocID 130648701 — Amt für die Erfassung der Kriegsopfer (Berlin), reference 23120001 275; read with consent 20 September 2026",
@@ -3783,7 +3791,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 118,
+  "files": 119,
   "person_files": 25,
   "people": 193,
   "records": 268,
