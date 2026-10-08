@@ -248,6 +248,53 @@
      "how": "FRIEDERIKE'S PARENTS, from the same 1874 entry. HE KEPT AN INN — 'Gastwirth', read for this archive by an archivist at Bydgoszcz who holds the book. Her forename and maiden name are read three ways by three readers: Jette Machot by the portal's volunteer index, Jette née Muschll on a related card, JUTTA NÉE MACHOL by the archivist with the original in front of her. Machol against Machot is one terminal letter in a Kurrent hand."
     }
    ]
+  },
+  {
+   "label": "Leibholz of Berlin, found in the registers — on this chart because they are documented, NOT because they are kin",
+   "people": [
+    {
+     "name": "Heinrich Leibholz × Agnes née Kerger",
+     "dates": "He b. 16 October 1890, Berlin · d. 9 August 1948, Kreuzberg · She b. 10 March 1889, Mallmitz, Kreis Sprottau, Silesia · her death not established",
+     "place": "Leinestraße 32, Neukölln → Mehringdamm 109, Kreuzberg",
+     "status": "documented",
+     "how": "THE ONLY COMPLETE HOUSEHOLD OF THE SEVEN, AND THE CONTROL CASE THIS WHOLE CHART LEANS ON. Heinrich vanishes from the Berliner Adressbuch after 1942 and DID NOT DIE UNTIL 1948 — which is why no absence from a directory is ever read here as a death. His death is now in the register in its own hand: STERBEREGISTER KREUZBERG 1948 NR. 2493, read at the image. HE LIVED IN NEUKÖLLN AND DIED IN KREUZBERG; Neukölln's own 1948 index was read page by page and is correctly empty, because a death registers where it happens. AGNES is the \"Aryan\" wife of a Mischehe — her 1939 census card, VZ153403, grades her NNNN, four non-Jewish grandparents — and she is in a database of the persecuted only by marriage, which is why every instrument that finds this family's dead slides past her. She lived at Mehringdamm until 1979-80 and WHERE SHE DIED IS NOT KNOWN: all twelve West Berlin boroughs are read for 1967-1994 and she is in none of them. NO RELATION TO JACOB HAS BEEN SHOWN."
+    },
+    {
+     "name": "Ella Josephine Martha Leibholz née Baesler",
+     "dates": "d. 22 June 1974, Tiergarten",
+     "place": "Dominicusstraße 43 → Willmanndamm 3, Schöneberg",
+     "status": "probable",
+     "how": "STERBEREGISTER TIERGARTEN 1974 NR. 1160, read at the image — THE DEATH IS CERTAIN. What is PROBABLE and not proved is that she is the Ella Leibholz who is a KRANKENSCHWESTER in the Berlin directories from 1938 to 1970. The join is a surname, a forename and a four-year gap, with Schöneberg's own twenty-five volumes for 1970-1994 read out and empty. One certificate decides it."
+    },
+    {
+     "name": "Charlotte Herta Marie Leibholz née Schötzow",
+     "dates": "d. 14 January 1982, Tempelhof",
+     "place": "Hasenheide 61–62, Neukölln",
+     "status": "probable",
+     "how": "STERBEREGISTER TEMPELHOF 1982 NR. 161, read at the image. CANDIDATE for the Charlotte Leibholz of the Hasenheide, in the directories 1957 to 1967, with Neukölln's own registers read out for 1967-1992 and empty. THE WEAKEST OF THE THREE: the gap is fifteen years. And she was nearly lost altogether — the OCR mangled her surname to \"LEibhOo1z\" and swept it onto the row above, so a search for the literal string would have walked past her."
+    },
+    {
+     "name": "Hilde Henriette Leibholz",
+     "dates": "d. 7 February 1983, Wilmersdorf",
+     "place": "Wiesbadener Straße 57, Wilmersdorf",
+     "status": "probable",
+     "how": "STERBEREGISTER WILMERSDORF 1983 NR. 304, read at the image. THE STRONGEST OF THE THREE AND THE ONLY ONE WHO DIED IN THE BOROUGH SHE LIVED IN — nine consecutive telephone books at Wiesbadener Straße 57 to 1980-81, and a gap of about two years. No \"geb.\" on the entry, so LEIBHOLZ WAS HER OWN NAME."
+    },
+    {
+     "name": "Hertha Leibholz, divorced Katznol",
+     "dates": "d. 1983, Zehlendorf",
+     "place": "Zehlendorf",
+     "status": "inferred",
+     "how": "*** NOT CONFIRMED AT THE IMAGE. *** Found in the TEXT LAYER only: Zehlendorf 1983, P Rep. 721 Nr. 2767 p.80, \"Leibholz gesch. Katznol Hertha … 2733\". Geschieden means divorced, so Leibholz is most likely her own name and Katznol the marriage she left. The exact day is not read and the entry has not been opened at the page. ON THE CHART AS A LEAD, NOT AS A FINDING."
+    },
+    {
+     "name": "Gerda Felicitas Bade née Leibholz",
+     "dates": "d. 15 February 1993, Wilmersdorf",
+     "place": "Wilmersdorf",
+     "status": "inferred",
+     "how": "*** NOT CONFIRMED AT THE IMAGE. *** Text layer of Wilmersdorf 1993, entered twice as the series always enters a married woman — \"Bade geb. Leibholz\" and \"Leibholz\", the same number from two unrelated positions, Nr. 312. SHE WAS BORN A LEIBHOLZ AND MARRIED OUT, which makes her the most valuable of the seven and the only one pointing UPWARD: she had Leibholz parents in Berlin within living memory, and the marriage that made her a Bade would name her father."
+    }
+   ]
   }
  ]
 }

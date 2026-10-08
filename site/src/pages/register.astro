@@ -8,11 +8,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const readFor = new Map(evidence.people.filter(p => p.register_id).map(p => [p.register_id, p.records]));
 const fam = register.people.filter(p => p.kind === 'family');
 const idx = register.people.filter(p => p.kind === 'index');
+const doc = register.people.filter(p => p.kind === 'document');
 const c = register.counts;
 ---
 <Base title="The register"
   subtitle={c.published + ' of ' + c.total + ' people in the source, published'}
-  lede="Everyone the source records, with the two kinds of entry kept firmly apart: the family proper, and a hundred-odd people who share the surname and have not been shown to share anything else.">
+  lede="Everyone the source records and everyone this archive has since established from a document, with the three kinds of entry kept firmly apart: the family proper, a hundred-odd people who share the surname and have not been shown to share anything else, and seven found in Berlin registers who are in nobody’s tree at all.">
 
   <div class="panel">
     <p class="small">
@@ -32,6 +33,7 @@ const c = register.counts;
   <div class="cards">
     <div class="card stat"><b>{c.family}</b><span>Family</span></div>
     <div class="card stat"><b>{c.index}</b><span>Surname index</span></div>
+    <div class="card stat"><b>{c.document}</b><span>From a record</span></div>
     <div class="card stat"><b>{c.omitted_living}</b><span>Living, omitted</span></div>
     <div class="card stat"><b>{c.total}</b><span>In the source</span></div>
   </div>
@@ -49,6 +51,38 @@ const c = register.counts;
             ? <><span class="tag doc">Read</span> {readFor.get(p.id).map(r => r.title).join(' · ')}</>
             : (p.corrections ? <span class="tag inf">Corrected</span> : <span class="muted">&mdash;</span>)}</td>
           <td class="small muted">{(p.facts || []).filter(f => f.place || f.c).slice(0, 2).map(f => (f.t + (f.place ? ': ' + f.place : '') + (f.c ? ' — ' + f.c : ''))).join(' · ').slice(0, 150)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+
+  <h2>Found in a register, in nobody&rsquo;s tree</h2>
+  <div class="panel">
+    <p>
+      The two tables above and below are both built from <strong>one source: a MyHeritage harvest</strong>,
+      which is somebody else&rsquo;s research. These seven are not in it and never were. They came out of
+      <strong>Berlin civil registers and the 1939 census, read here</strong> &mdash; and until 9 October 2026
+      there was nowhere on this site to put them, so three of them existed only as a line in an evidence file
+      while the narrative page went on saying the women simply vanish.
+    </p>
+    <p>
+      <strong>Every entry carries its own basis, and two of the seven say plainly that they are a text layer
+      not yet confirmed at the image.</strong> Three more are a register entry that is certain, attached to a
+      directory woman by a <em>candidate</em> identification that is not.
+      <strong>None of the seven is proved kin to Derrick&rsquo;s line</strong> &mdash; the same standing as the
+      hundred below. They are here because losing them was worse.
+      <span class="tag disp">Unproven kinship</span>
+    </p>
+  </div>
+  <div class="scroll"><table>
+    <thead><tr><th>Name</th><th>Born</th><th>Died</th><th>Basis</th></tr></thead>
+    <tbody>
+      {doc.map(p => (
+        <tr>
+          <td><strong>{p.name}</strong></td>
+          <td>{p.born || <span class="muted">&mdash;</span>}</td>
+          <td>{p.no_death_recorded ? <span class="muted small">not established</span> : p.died}</td>
+          <td class="small muted">{p.basis}</td>
         </tr>
       ))}
     </tbody>

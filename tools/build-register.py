@@ -14,6 +14,7 @@ import json, re, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "myheritage-tree9.json"
+DOCUMENTED = ROOT / "data" / "register-documented.json"
 OUT = ROOT / "site" / "src" / "data" / "register.json"
 
 NAMED_BARE = {9500003}          # Derrick
@@ -159,6 +160,26 @@ def main():
                     rec["byq"] = qualifier(c["now"])
         out.append(rec)
 
+    # *** THE THIRD CLASS: PEOPLE THIS ARCHIVE ESTABLISHED FROM A DOCUMENT. ***
+    # The register was built from the MyHeritage harvest alone, so a person found in a
+    # Berlin civil register could not enter it at all -- and on 8 October the site was
+    # telling readers that three Leibholz women simply vanish while their death entries
+    # sat in data/. Adding them to the harvest file would have corrupted its provenance;
+    # they get their own file, their own id block and their own label instead.
+    # EVERY ONE CARRIES ITS OWN `basis`, and two of the seven say plainly that they are a
+    # text layer not yet confirmed at the image. NONE IS PROVED KIN.
+    documented = []
+    if DOCUMENTED.exists():
+        for d in json.load(open(DOCUMENTED))["people"]:
+            rec = dict(d)
+            rec["kind"] = "document"
+            rec["by"], rec["dy"] = year(d.get("born")), year(d.get("died"))
+            rec["byq"], rec["dyq"] = qualifier(d.get("born")), qualifier(d.get("died"))
+            documented.append(rec)
+        clash = {r["id"] for r in out} & {r["id"] for r in documented}
+        assert not clash, "documented id collides with the harvest: %s" % clash
+        out.extend(documented)
+
     out.sort(key=lambda r: (r["last"] or "", r["first"] or ""))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     json.dump({"people": out,
@@ -168,10 +189,12 @@ def main():
                           "omitted_living": len(omitted),
                           "duplicates_collapsed": len(dropped),
                           "family": sum(1 for r in out if r["kind"] == "family"),
-                          "index": sum(1 for r in out if r["kind"] == "index")}},
+                          "index": sum(1 for r in out if r["kind"] == "index"),
+                          "document": sum(1 for r in out if r["kind"] == "document")}},
               open(OUT, "w"), indent=1, ensure_ascii=False)
     print(f"published {len(out)}  family {sum(1 for r in out if r['kind']=='family')}"
           f"  surname-index {sum(1 for r in out if r['kind']=='index')}"
+          f"  documented-from-record {sum(1 for r in out if r['kind']=='document')}"
           f"  omitted living {len(omitted)}")
     for n in omitted: print("  omitted living:", n)
     for n, d, k in dropped: print(f"  duplicate collapsed: {n} ({d} -> {k})")
