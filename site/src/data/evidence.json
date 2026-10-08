@@ -313,6 +313,14 @@
    "people": 8
   },
   {
+   "file": "heinrich-leibholz-kreuzberg-1948.tsv",
+   "title": "Heinrich Leibholz died in Kreuzberg, not in the borough he lived in",
+   "source": "Landesarchiv Berlin P Rep. 510 Nr. 667, Sterberegister Kreuzberg 1948 Nr. 2493, read at the image 8 October 2026",
+   "kind": "ref",
+   "rows": 12,
+   "people": 0
+  },
+  {
    "file": "hilde-leibholz-wilmersdorf-1983.tsv",
    "title": "Hilde Leibholz, the only one of the three who died in her own borough",
    "source": "Landesarchiv Berlin P Rep. 570 Nr. 2361, Sterberegister Wilmersdorf 1983 Nr. 304, read at the image 8 October 2026",
@@ -3791,7 +3799,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 119,
+  "files": 120,
   "person_files": 25,
   "people": 193,
   "records": 268,
