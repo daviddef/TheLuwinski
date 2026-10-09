@@ -6,10 +6,14 @@ pages. Indexing the rendered HTML rather than the .astro sources means what is
 searched is exactly what a reader can see — including anything a component
 generated, and nothing that was stripped by the living-persons rule.
 """
-import html, json, pathlib, re, sys, unicodedata
+import html, json, os, pathlib, re, sys, unicodedata
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-DIST = ROOT / "site" / "dist"
+# ARCHIVE_OUT beats the default, as in every kit tool (kit/tools/outdir.py). An isolated
+# build lives in site/$ARCHIVE_OUT and this read site/dist whatever the variable said, so a
+# session building somewhere of its own indexed and checked the shared directory instead.
+# The default is still dist, which CI uploads.
+DIST = ROOT / "site" / (os.environ.get("ARCHIVE_OUT") or "dist")
 
 def text_of(fragment):
     fragment = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", fragment)

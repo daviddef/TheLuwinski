@@ -44,7 +44,7 @@ def files():
         if not os.path.isdir(root):
             continue
         for dirpath, dirnames, filenames in os.walk(root):
-            dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
+            dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS and not d.startswith("dist")]
             for fn in filenames:
                 if os.path.splitext(fn)[1].lower() in SKIP_EXT:
                     continue

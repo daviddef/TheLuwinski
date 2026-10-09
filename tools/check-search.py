@@ -14,11 +14,15 @@ looked at the JSON the browser fetches: a file that is served but not rendered
 is invisible to anything that only reads pages. This gate reads the page to
 find out what it fetches, and then checks that the fetch would succeed.
 """
-import re, sys, json
+import os, re, sys, json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DIST = ROOT / "site" / "dist"
+# ARCHIVE_OUT beats the default, as in every kit tool (kit/tools/outdir.py). An isolated
+# build lives in site/$ARCHIVE_OUT and this read site/dist whatever the variable said, so a
+# session building somewhere of its own indexed and checked the shared directory instead.
+# The default is still dist, which CI uploads.
+DIST = ROOT / "site" / (os.environ.get("ARCHIVE_OUT") or "dist")
 SRC  = ROOT / "site" / "src" / "pages"
 
 def main():

@@ -21,7 +21,10 @@ import csv, glob, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EXPORTS = sorted(glob.glob(os.path.join(ROOT, "data", "autoclusters-*.csv")))
-DIST = os.path.join(ROOT, "site", "dist")
+# ARCHIVE_OUT beats the default, as in every kit tool (kit/tools/outdir.py). This read site/dist
+# whatever the variable said, so a session building into a directory of its own graded the shared
+# one (or, here, found nothing and passed). The default is still dist, which CI uploads.
+DIST = os.path.join(ROOT, "site", os.environ.get("ARCHIVE_OUT") or "dist")
 
 # Surnames that are also legitimately the names of DEAD people in this archive,
 # or ordinary English words. A surname alone here is not evidence; a full name is.
@@ -69,7 +72,7 @@ def main():
     pages = [(p, open(p, encoding="utf-8", errors="ignore").read())
              for p in glob.glob(os.path.join(DIST, "**", "*.html"), recursive=True)]
     if not pages:
-        print("  skip  check-matches: no build in site/dist — run astro build first")
+        print("  skip  check-matches: no build in %s — run astro build first" % DIST)
         return 0
 
     bad = []

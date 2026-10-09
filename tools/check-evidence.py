@@ -32,7 +32,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 EV = ROOT / "site" / "src" / "data" / "evidence.json"
 REG = ROOT / "site" / "src" / "data" / "register.json"
-DIST = ROOT / "site" / "dist"
+# ARCHIVE_OUT beats the default, as in every kit tool (kit/tools/outdir.py). This read site/dist
+# whatever the variable said, so a session building into a directory of its own graded the shared
+# one (or, here, found nothing and passed). The default is still dist, which CI uploads.
+DIST = ROOT / "site" / (os.environ.get("ARCHIVE_OUT") or "dist")
 
 def fail(msg):
     print("  " + msg)
