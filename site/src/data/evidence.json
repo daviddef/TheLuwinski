@@ -289,6 +289,14 @@
    "people": 0
   },
   {
+   "file": "gerda-leibholz-marriage-chase.tsv",
+   "title": "Chasing Gerda's marriage for her father, and the route is closed",
+   "source": "Landesarchiv Berlin LABSA, birth and marriage holdings enumerated and sampled 9 October 2026",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
+  },
+  {
    "file": "gertrud-leibholz-sterbeeintrag-1943.tsv",
    "title": "Gertrud Leibholz, Standesamt Wedding 1943 Nr. 1291",
    "source": "Landesarchiv Berlin",
@@ -3802,7 +3810,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 120,
+  "files": 121,
   "person_files": 25,
   "people": 193,
   "records": 268,
