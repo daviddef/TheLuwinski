@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev --port 4331",
-    "build": "npm run check:pin && npm run build:register && npm run build:evidence && astro build && npm run check:templates && python3 ../tools/build-search.py && npm run check:search && npm run check:living && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence && npm run check:superseded && npm run check:sources && npm run check:pages && npm run check:inline && npm run check:rows",
+    "build": "npm run check:pin && npm run build:register && npm run build:evidence && astro build && npm run check:templates && python3 ../tools/build-search.py && npm run check:search && npm run check:living && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence && npm run check:superseded && npm run check:sources && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:nav",
     "preview": "astro preview --port 4331",
     "check:search": "python3 ../tools/check-search.py",
     "check:living": "python3 ../tools/check-living.py --dist dist --mode harvest && python3 ../tools/check-living.py --dist dist --mode hashes",
@@ -20,11 +20,12 @@
     "check:sources": "python3 node_modules/@daviddef/archive-kit/kit/tools/checksources.py --root . --max-unreachable 6",
     "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 2",
     "check:pin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpin.py --root .",
+    "check:nav": "python3 node_modules/@daviddef/archive-kit/kit/tools/checknav.py --dist dist --strict",
     "check:inline": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkinline.py --root . --max-inline 13",
     "check:rows": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkrows.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#dfd61f5851843a7c53ae7faab695f2e42467444a",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#3c9214e9be65c2136325f7e35bb0d2544ee14d19",
     "astro": "^5.18.2"
   },
   "devDependencies": {
