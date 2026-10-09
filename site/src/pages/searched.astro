@@ -143,6 +143,21 @@ const ambiguous = data.people.filter(p => p.ambiguous);
     </p>
   </div>
 
+  <h2 id="files" style="margin-top:3rem">The evidence files</h2>
+  <p class="lede">Every file in <code>data/</code> that holds records or the record of a search, one row each, with the source it came from and how many rows it carries. Each row has its own address, so a page elsewhere in this archive can point at the file it relies on.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>File</th><th>What it is</th><th>Source</th><th>Rows</th><th>People</th></tr></thead>
+    <tbody>{[...personFiles, ...refFiles].map(f => (
+      <tr id={f.file.replace(/\.tsv$/, '')}>
+        <td class="small"><code>{f.file}</code></td>
+        <td>{f.title}</td>
+        <td class="small muted">{f.source}</td>
+        <td class="small">{f.rows}</td>
+        <td class="small">{f.people}</td>
+      </tr>
+    ))}</tbody>
+  </table></div>
+
   <h2 id="negatives" style="margin-top:3rem">Bounded negatives</h2>
   <p class="lede">{data_neg.dek}</p>
   <div class="panel">

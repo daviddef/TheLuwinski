@@ -9,7 +9,9 @@ import { defineConfig } from 'astro/config';
 const redirects = {
   '/letters': '/TheLuwinski/errands/',
   '/research-log': '/TheLuwinski/changes/',
-  '/negatives': '/TheLuwinski/evidence/#negatives',
+  '/negatives': '/TheLuwinski/searched/#negatives',
+  /* 9 October 2026: the estate's address for this page is /searched/. */
+  '/evidence': '/TheLuwinski/searched/',
 };
 
 export default defineConfig({
