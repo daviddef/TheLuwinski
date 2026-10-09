@@ -13,7 +13,7 @@
    "why": "Published as 24 November from 22 September, with the claim that the family record's date 'now stands on the register itself'. It does not. The entry reads 'Schubin am 24 vier und zwanzigsten December'. Corroborated by akt nr 8, which is also December in the same hand, and by akt nr 7, which really is 24 November - the near-miss that confirmed the expected date before the right entry was opened.",
    "allow": {
     "requests/sent/": "a record of what was actually sent, and it said November",
-    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/pages/changes.astro": "dated entries, superseded in place and flagged rather than rewritten",
     "site/src/data/worklist.json": "dated row notes, same rule",
     "site/src/data/negatives.json": "carries the correction inline",
     "data/corrections.json": "carries the correction inline",
@@ -36,7 +36,7 @@
    "since": "2026-09-27",
    "why": "Read as Wilhelmine on 22 September and as Philipine by the portal's volunteer indexer. Both fall. The clerk's capital P, four words along the same line in POLLNOW, is a single round bowl and the disputed capital has none; his capital H in HAMMERSTEIN has a flat baseline lead-in, two steep diagonals and a low crossbar, and the disputed capital has all three; and his capital W in WENGATZ on akt nr 8 is two rounded looping arches, which it plainly is not.",
    "allow": {
-    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged",
+    "site/src/pages/changes.astro": "dated entries, superseded in place and flagged",
     "site/src/data/worklist.json": "dated row notes",
     "data/pollnow-1874-reread-2026-09-27.tsv": "this is the file that makes the correction",
     "data/leibholz-schmul-marriage-1874.tsv": "quotes the withdrawn reading",
@@ -58,7 +58,7 @@
    "why": "The exclusion is not a dispute and is not open: 0.0% Ashkenazi where a quarter would be required, and a Y haplogroup, R-S11477, that is North Sea rather than Ashkenazi. The tree page grades him 'ruled out' and says explicitly that this is not a level on the evidence ladder but a claim tested and failed. What is open is WHO the biological father was. The phrase 'disputed by DNA' survived on derrick.astro's summary panel for a fortnight after the exclusion was published, was copied from there into a chart note by a peer session building charts, and so the page argued with itself within one screen. IT WAS TRUE WHEN WRITTEN AND WAS NEVER READ AGAINST THE FINDING THAT REPLACED IT.",
    "allow": {
     "data/superseded.json": "this file",
-    "site/src/pages/research-log.astro": "dated entries, superseded in place"
+    "site/src/pages/changes.astro": "dated entries, superseded in place"
    }
   },
   {
@@ -75,7 +75,7 @@
    "since": "2026-09-29",
    "why": "The word 'lodgings' was never in a record. The archive had 18 Ridge Avenue only from the 1939 Register, which gives an address and not a tenure, and filled the gap with an assumption because the family's known house was 72 Pix Road. The BT 27 passenger lists settle it: column 6, 'Last Address in the United Kingdom', reads 18 Ridge Ave, Letchworth for Henry Robert on the Durban Castle of 5 April 1939 AND for Martha Maud and the four youngest on the Dunvegan Castle of 10 August 1939. It was the family home. She had not moved out.",
    "allow": {
-    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/pages/changes.astro": "dated entries, superseded in place and flagged rather than rewritten",
     "site/src/data/worklist.json": "dated row notes, same rule",
     "data/wear-1939-bt27-images.tsv": "this is the file that makes the correction",
     "site/src/pages/leonard.astro": "carries the correction inline, quoting the withdrawn word",
@@ -95,7 +95,7 @@
    "why": "Predicted on 20 September from the index alone, on the strength of the pre-1920 form, and published as what the certificate 'will contain'. The entry arrived from the Landesarchiv on 29 September and gives, for each party, name, how identity was established, date and place of birth, BIRTH REGISTER NUMBER AND OFFICE, and residence. No parents. Joachim Luwinski, Johanna nee Thimm, Sally Leibholz and Friederike nee Schmul remain unconfirmed on a single document. Second time in one day a row here was planned around a field the relevant form revision does not have; the other was BT 27. NOTE ON THE STRING ITSELF: the first withdrawal listed 'names the parents of both parties', which flagged two statements that are TRUE about other documents — the 1874 Schubin entry, whose form does name them, and a 1940 Johannesburg certificate. A withdrawn value has to be specific to the claim, not to the sentence pattern, or the gate starts refusing correct work. Narrowed twice: 'BOTH SETS OF PARENTS' on its own is TRUE of the 1874 Prussian form, which this archive has read and proved - Jacob the elder and a mother nee Pollnow, Juda Schmul and Jutta nee Machol, all four off one 1874 entry. The form of 1874 names parents; the form of 1924 does not. THE WITHDRAWN THING IS THE GENERALISATION, NOT THE SENTENCE.",
    "allow": {
     "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it",
-    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/pages/changes.astro": "dated entries, superseded in place and flagged rather than rewritten",
     "site/src/data/worklist.json": "dated row notes, same rule",
     "data/leibholz-luwinski-marriage.tsv": "the file that made the prediction, corrected in place below it",
     "data/leibholz-luwinski-1924-entry.tsv": "the file that withdraws it, and quotes it to do so",
@@ -118,7 +118,7 @@
    "why": "Published as an open question on Auguste's own page, which asked for the date in as many words and said that a divorce before 1938 and one in 1942 were different histories. The margin of the couple's own marriage entry carries it, and the Landesarchiv Berlin sent the scan on 29 September 2026. THE DATE DOES NOT SUPPLY A MOTIVE and the page still says so; only the date is withdrawn.",
    "allow": {
     "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it",
-    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/pages/changes.astro": "dated entries, superseded in place and flagged rather than rewritten",
     "site/src/data/worklist.json": "dated row notes, same rule",
     "site/src/pages/east-prussia.astro": "carries the correction inline, quoting the withdrawn question to answer it"
    }
@@ -137,7 +137,7 @@
    "why": "Corrected on the Leibholz page on 20 September 2026 from two Bundesarchiv birth dates, and the home-page spine went on listing Georg under 'Jacob's brothers' and counting four for nine days after. Caught on 29 September 2026 by David reading the spine. THE CORRECTION EXISTED AND THE SPINE HAD NEVER BEEN READ AGAINST IT. STRING NOTE: the first withdrawal listed a bare 'four brothers', which matched 'twenty-four brothers' on the register page — a different family and a true sentence. Third over-broad withdrawal string in one day; the same lesson as the 1924-parents fact.",
    "allow": {
     "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it",
-    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/pages/changes.astro": "dated entries, superseded in place and flagged rather than rewritten",
     "site/src/data/worklist.json": "dated row notes, same rule"
    }
   },
@@ -152,7 +152,7 @@
    "why": "The home page asserted Berlin for the whole war. What supports Berlin is the census card of 17 May 1939 and a 1940 directory entry the archive itself says may not be her; the directory sweep records her ABSENT from 1941. The framing rested on her being the Catholic wife of a deported Jewish husband - and the divorce of 21 March 1940 means she was his ex-wife, divorced nearly three years before the deportation. Her second husband died at Sommerfeld in January 1946, not Berlin. Survival is documented; the city for 1941-45 is not.",
    "allow": {
     "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it",
-    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/pages/changes.astro": "dated entries, superseded in place and flagged rather than rewritten",
     "site/src/data/worklist.json": "dated row notes, same rule",
     "data/entschaedigung-berlin.tsv": "a compensation-claim row whose reasoning is corrected in place below it"
    }
@@ -177,7 +177,7 @@
    "why": "The year came from the family tree alone - 'Johannesburg, Sued Afrika, 1933' - and this archive repeated it as fact on the home page, the atlas, Derrick's page, the DNA page and Kurt's own. On 1 October 2026 Derrick supplied Kurt's papers. The Fuehrerschein issued by the Berlin Polizeipraesident on 30 JANUARY 1934 gives him resident at Meraner Strasse 2, Berlin-Schoeneberg, with four Reichsmarks of Prussian fee stamps on it. A man who had emigrated in 1933 did not do that. EITHER THE TREE'S YEAR IS WRONG OR HE LEFT AND CAME BACK; the document cannot say which and this archive is not choosing. What is withdrawn is the bare year asserted as fact, not the emigration itself.",
    "allow": {
     "data/superseded.json": "the register of withdrawn values; it has to name the value to withdraw it",
-    "site/src/pages/research-log.astro": "dated entries, superseded in place and flagged rather than rewritten",
+    "site/src/pages/changes.astro": "dated entries, superseded in place and flagged rather than rewritten",
     "site/src/data/worklist.json": "dated row notes, same rule",
     "site/src/data/register.json": "generated from the source family tree; it records what the TREE says, which is the thing being doubted",
     "data/kurt-papers-1934-1939.tsv": "the file that makes the correction",

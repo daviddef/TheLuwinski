@@ -335,12 +335,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     value is carried through as <em>was</em>, so a reader can always see what the family believed and
     why this archive disagrees.
   </p>
-  <div class="scroll"><table>
-    <thead><tr><th>Who</th><th>Field</th><th>Was</th><th>Now</th><th>On what evidence</th></tr></thead>
-    <tbody>{register.corrections.map(c => (
-      <tr><td><strong>{c.who}</strong></td><td>{c.field}</td><td class="muted">{c.was}</td><td><strong>{c.now}</strong></td><td class="small">{c.source}</td></tr>
-    ))}</tbody>
-  </table></div>
+  <p><strong>{register.corrections.length} corrections</strong> are listed, each with what the family record said, what this archive says instead and the evidence, on <a href={base + '/corrections/'}>the corrections page</a>.</p>
 
   <h2>Duplicate records in the source</h2>
   <p>
@@ -441,7 +436,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     Figueiredo)”</em>, and that is the spelling the registrar typed. The rest are deliberate lists of
     the variants — the rule at the head of <a href={base + '/lines/'}>the lines page</a>, the forms on
     <a href={base + '/names/'}>the names page</a>, and the record of what was searched in the
-    <a href={base + '/negatives/'}>bounded negatives</a>. Folding them would have turned
+    <a href={base + '/evidence/#negatives'}>bounded negatives</a>. Folding them would have turned
     “searched LUWINSKI and LUWINSKY” into “searched LUWINSKI and LUWINSKI”, which is not a tidier
     sentence but a false account of work already done.
   </p>

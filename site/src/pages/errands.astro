@@ -14,7 +14,7 @@ const readyNow = rows.filter(r => r.ready).length;
 const acked = rows.filter(r => r.ack).length;
 const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 ---
-<Base title="Letters out"
+<Base title="Errands"
   subtitle={`${rows.length} sent — ${acked} have acknowledged receipt, ${rows.length - acked} are silent, and ${readyNow === 0 ? 'none is due to be chased yet' : readyNow + ' are due to be chased'}`}
   lede={data.note}>
 
