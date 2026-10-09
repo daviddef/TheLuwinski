@@ -201,6 +201,14 @@
    "people": 0
   },
   {
+   "file": "dieffenbachstrasse-58a.tsv",
+   "title": "Dieffenbachstraße 58a — the thirty-three-year gap bridged, and the OCR was hiding the bridge",
+   "source": "Berliner Adressbuch 1941, 1942 and 1943, ZLB 34115495, read at the image 10 October 2026",
+   "kind": "ref",
+   "rows": 9,
+   "people": 0
+  },
+  {
    "file": "ella-leibholz-tiergarten-1974.tsv",
    "title": "Ella Leibholz, found in the wrong borough on the same day as Charlotte",
    "source": "Landesarchiv Berlin P Rep. 820 Nr. 37, Sterberegister Tiergarten 1974 Nr. 1160, read at the image 8 October 2026",
@@ -582,6 +590,14 @@
    "source": "NARSSA, 'Using the Search Function', nationalarchives.gov.za/node/737, verified 27 September 2026",
    "kind": "ref",
    "rows": 16,
+   "people": 0
+  },
+  {
+   "file": "negatives-classified-2026-10-10.tsv",
+   "title": "The published negatives, classified by the width of their own search",
+   "source": "negatives.json read against itself, 10 October 2026",
+   "kind": "ref",
+   "rows": 10,
    "people": 0
   },
   {
@@ -3810,7 +3826,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 121,
+  "files": 123,
   "person_files": 25,
   "people": 193,
   "records": 268,
