@@ -1,0 +1,19 @@
+# THE BERLIN MARRIAGE INDEXES ARE FREE AND UNSEARCHABLE, AND SEVERAL ROWS HAVE BEEN COSTING THEM WRONG.
+# Landesarchiv Berlin LABSA, measured 9-10 October 2026.
+#
+# WHY THIS FILE EXISTS. At least three open work list rows propose, as their CHEAPEST NEXT TEST, a
+# search of the Berlin marriage name-indexes — row 242 for a LEIBHOLZ–NETTER marriage, row 254 for a
+# LEIBHOLZ–SCHÖNFELD one, row 257 for a Leibholz marrying a Protestant wife. All three call it free.
+# IT IS FREE. IT IS ALSO IMAGE-ONLY, AND THAT MAKES IT EXPENSIVE.
+field	value
+# ---------------- THE MEASUREMENT ----------------
+*** FOUR MARRIAGE VOLUMES SAMPLED ACROSS TWO OFFICES AND THREE DECADES. ALL FOUR SCORE 0.0. ***	Schöneberg 1940-41 (P Rep. 163 Nr. 1064, 338 pp) · Schöneberg 1942-43 (Nr. 1377, 317 pp) · Charlottenburg I 1916-20 (Nr. 466, 382 pp) · Charlottenburg I 1935-38 (Nr. 566, 171 pp). THE CONTROL COUNTS SIX COMMON SURNAMES PER PAGE AND FOUND NONE AT ALL — not a thin layer, NO EXTRACTABLE TEXT WHATEVER.
+and the holding is large	Enumerated office by office across the whole of LABSA: *** MARRIAGE INDEXES, 313 VOLUMES, 28.3 GB, LATEST YEAR 1944. *** (Births: 209 volumes, 14.8 GB, latest year 1914. Deaths run to 1994, which is why the death sweeps worked.)
+*** SO THE REAL COST OF A BERLIN MARRIAGE SEARCH IS NOT A DOWNLOAD, IT IS AN EYE ***	at the four to six image reads a volume this archive's method costs, a surname with no borough and no year is on the order of FIFTEEN HUNDRED READS. A search with a known office and a five-year window is perhaps twenty-five reads and entirely reasonable. THE INSTRUMENT IS NOT UNUSABLE; IT IS UNUSABLE UNSCOPED.
+# ---------------- WHAT THAT DOES TO THE ROWS THAT LEAN ON IT ----------------
+ROW 242, WILLIAM LEIBHOLZ × NANETTE NÉE NETTER	the row calls the marriage index its cheapest test. IT IS NOT CHEAP, BUT IT IS THE BEST SCOPED OF THE THREE: William is traced in the directories to Charlottenburg and then Grunewald/Wilmersdorf 1920-1933, and Joachim Peter was born in 1903 — so the marriage is BEFORE 1903 and the office is Berlin or Charlottenburg. That is a real window, and it is the one marriage search in the archive worth running by eye.
+ROW 254, THE LEIBHOLZ WOMAN WHO MARRIED SCHÖNFELD	the row already found, on 23 September, that the indexes stop at 1944 and that a woman widowed by 1982 may well have married after 1945 — so the free route "settles it if the marriage is pre-1945 and CANNOT TOUCH IT otherwise". THAT STANDS AND IS NOW WORSE: even inside the reachable years it is an image job with no office and no year.
+ROW 257, GÜNTHER LEIBHOLZ	the row itself already began to doubt the word "free" — its last line reads "TEST (2) COSTED AT THE IMAGE, AND THE WORD 'FREE' IN THIS ROW IS DOING TOO MUCH WORK". THIS FILE FINISHES THAT SENTENCE WITH A NUMBER: zero extractable text, 313 volumes, no narrowing available for a man whose age, address and parents are all unknown.
+# ---------------- THE GENERAL RULE, WHICH IS THE POINT ----------------
+*** "FREE" AND "SEARCHABLE" ARE DIFFERENT PROPERTIES AND THIS ARCHIVE HAS BEEN CONFLATING THEM ***	Every LABSA volume is free to anyone with a browser. That says nothing about whether a name can be FOUND in it. The death indexes are searchable from about 1970 because the registers were typed; the marriage indexes are not searchable at all because they never were. A row that says "free" when it means "downloadable" will keep proposing work nobody can do.
+the test to run before proposing any LABSA search, and it costs one volume	download one volume of the series and year in question and score its text layer against six common surnames. Below about 0.15 a page the series is image-only and the row must be scoped to an office and a window before it is worth anything. The scanner does this automatically and refuses to call anything a negative below the floor.

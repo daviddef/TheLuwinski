@@ -81,6 +81,14 @@
    "people": 0
   },
   {
+   "file": "berlin-marriage-indexes-are-blind.tsv",
+   "title": "The Berlin marriage indexes are free and unsearchable, and several rows cost them wrong",
+   "source": "Landesarchiv Berlin LABSA, four volumes sampled and the holding enumerated, 9-10 October 2026",
+   "kind": "ref",
+   "rows": 8,
+   "people": 0
+  },
+  {
    "file": "berlin-namensverzeichnisse.tsv",
    "title": "The Berlin registry offices put their name indexes online, and one of them holds Kurt's birth number",
    "source": "Landesarchiv Berlin Standesamtsabfrage, 142 offices swept 20 September 2026",
@@ -977,12 +985,28 @@
    "people": 0
   },
   {
+   "file": "worklist-triage-2026-10-10.tsv",
+   "title": "What the work list is actually waiting on",
+   "source": "worklist.json classified by blocker, 10 October 2026",
+   "kind": "ref",
+   "rows": 11,
+   "people": 0
+  },
+  {
    "file": "yadvashem-leibholz.tsv",
    "title": "Yad Vashem, Central Database of Shoah Victims' Names",
    "source": "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206",
    "kind": "person",
    "rows": 32,
    "people": 14
+  },
+  {
+   "file": "ydna-s11477-2026-10-10.tsv",
+   "title": "R-S11477, the standing check, and the earlier passes were seeing a third of it",
+   "source": "FamilyTreeDNA Discover public JSON, machine-read 10 October 2026",
+   "kind": "ref",
+   "rows": 10,
+   "people": 0
   }
  ],
  "people": [
@@ -3826,7 +3850,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 123,
+  "files": 126,
   "person_files": 25,
   "people": 193,
   "records": 268,
