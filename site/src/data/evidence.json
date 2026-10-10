@@ -1047,6 +1047,14 @@
    "kind": "ref",
    "rows": 10,
    "people": 0
+  },
+  {
+   "file": "ydna-s11477-enrichment.tsv",
+   "title": "The two geographic projects carry no signal, and the five surname ones carry all of it",
+   "source": "FamilyTreeDNA Discover public JSON for R-S11477, thirteen projects and seventeen countries read against a base rate, 11 October 2026",
+   "kind": "ref",
+   "rows": 15,
+   "people": 0
   }
  ],
  "people": [
@@ -3890,7 +3898,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 131,
+  "files": 132,
   "person_files": 25,
   "people": 193,
   "records": 268,
