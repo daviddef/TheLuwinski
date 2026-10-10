@@ -401,6 +401,14 @@
    "people": 0
   },
   {
+   "file": "klara-leipsholz-kreuzberg-1960.tsv",
+   "title": "Klara is found, and the surname has a ninth spelling",
+   "source": "Landesarchiv Berlin P Rep. 510 Nr. 679, Sterberegister Kreuzberg 1960 Nr. 316, read at the image 11 October 2026",
+   "kind": "ref",
+   "rows": 10,
+   "people": 0
+  },
+  {
    "file": "kreuzberg-1938-1979-deaths.tsv",
    "title": "Kreuzberg closed from 1963, and the text layer begins in a year nobody had measured",
    "source": "Landesarchiv Berlin P Rep. 510, 45 volumes scanned and 1959 read at the image, 10 October 2026",
@@ -3858,7 +3866,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 127,
+  "files": 128,
   "person_files": 25,
   "people": 193,
   "records": 268,

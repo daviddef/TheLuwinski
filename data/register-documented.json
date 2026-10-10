@@ -210,6 +210,27 @@
         }
       ],
       "rel": []
+    },
+    {
+      "id": 9600008,
+      "name": "Johanne Klara Leipsholz (Diedring)",
+      "first": "Johanne Klara",
+      "last": "Leipsholz",
+      "sex": "F",
+      "born": "",
+      "died": "Feb 4 1960",
+      "basis": "DOCUMENTED, READ AT THE IMAGE. Standesamt Kreuzberg, Sterberegister 1960 Nr. 316, P Rep. 510 Nr. 679 p.123 under the Februar heading; religion column a dash. THE SURNAME IS SPELT LEIPSHOLZ, WITH AN S — a ninth spelling of this name and a registrar's own, not a machine's, read at five times magnification. STRONG CANDIDATE, NOT PROVED, for the KLARA LEIPHOLZ, Putzmacherin, of SW 29 Dieffenbachstraße 58 who is in the Berlin directories of 1957 and 1959 and gone after: the forename is Klara, the borough is Kreuzberg, and she died in the FIRST BLIND YEAR after her last directory entry, with 1959 read at the image and empty and 1963-1994 swept and empty. Against it: the spelling differs by a letter and “geb. Diedring” is a maiden name this archive has never held. Kreuzberg 1960 Nr. 316 gives the last address and settles it. NOT KIN TO ANYONE HERE ON ANY EVIDENCE.",
+      "facts": [
+        {
+          "t": "Death",
+          "ty": "DEAT",
+          "date": "Feb 4 1960",
+          "place": "Berlin-Kreuzberg",
+          "c": "Sterberegister Kreuzberg 1960 Nr. 316, \"Leipsholz geb. Diedring\", no confession stated",
+          "ac": ""
+        }
+      ],
+      "rel": []
     }
   ]
 }

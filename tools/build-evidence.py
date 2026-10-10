@@ -124,6 +124,7 @@ MANIFEST = {
  "worklist-triage-2026-10-10.tsv": ([], "What the work list is actually waiting on", "worklist.json classified by blocker, 10 October 2026", "ref"),
  "ydna-s11477-2026-10-10.tsv": ([], "R-S11477, the standing check, and the earlier passes were seeing a third of it", "FamilyTreeDNA Discover public JSON, machine-read 10 October 2026", "ref"),
  "kreuzberg-1938-1979-deaths.tsv": ([], "Kreuzberg closed from 1963, and the text layer begins in a year nobody had measured", "Landesarchiv Berlin P Rep. 510, 45 volumes scanned and 1959 read at the image, 10 October 2026", "ref"),
+ "klara-leipsholz-kreuzberg-1960.tsv": ([], "Klara is found, and the surname has a ninth spelling", "Landesarchiv Berlin P Rep. 510 Nr. 679, Sterberegister Kreuzberg 1960 Nr. 316, read at the image 11 October 2026", "ref"),
  "reinickendorf-1982-1994-deaths.tsv": ([], "Reinickendorf 1982-1994 — thirteen volumes, and the only Leipholz in twenty-one years", "Landesarchiv Berlin P Rep. 130 Nr. 1478-1490, read through pdf.js 23 September 2026", "ref"),
  "luwinski-germany-2001.tsv": ([], "What the surname looked like in Germany in 2001 — and Derrick was looking for it himself", "Lycos Genealogy telephone listings printout, 10 June 2001, from the family's papers, read 27 September 2026", "ref"),
  "ivone-death-certificate-2010.tsv": ([], "Ivone's death at Vila Nova de Gaia — a date, a place and a cause this archive did not have", "Certificado de Óbito n.º 12893536, Ministério da Saúde, from the family's papers, read 27 September 2026", "ref"),
