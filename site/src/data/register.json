@@ -13422,6 +13422,22 @@
    "was": "no death recorded. The page said only that she died and was buried at Porto, and called the missing date \"the largest single hole in this archive\".",
    "now": "14 March 2010, at home at Rua Nova das Marinhas 82, Gulpilhares, Vila Nova de Gaia",
    "source": "Certificado de óbito n.º 12893536, Ministério da Saúde: died at 04:30 in a private dwelling, of cardio-respiratory failure with dementia contributing, aged 88. Supplied by the family 27 September 2026. The day is confirmed by the family and is consistent with the form: the physician signed on 16 March, two days after. This archive first read the boxed digits as \"the 16th or the 17th\" — the 17th was impossible on the certificate's own evidence, since a doctor cannot certify a death that has not yet happened."
+  },
+  {
+   "id": 9500917,
+   "who": "The Berlin Leibholz of the Bundesarchiv Gedenkbuch, counted",
+   "field": "how many of the fifty-two lived in Berlin, and in which boroughs",
+   "was": "“Forty-four of the fifty-two are Berlin — Schöneberg 6, Wilmersdorf 6, Charlottenburg 5, Friedrichshain 5, Tiergarten 4, Neukölln 4, Mitte 4, Prenzlauer Berg 3, Kreuzberg 1, three plain Berlin, two with two boroughs each.” Work list row 260, written 22 September 2026.",
+   "now": "FORTY-SEVEN of the fifty-two have a Berlin residence. Thirty-eight carry one borough — Schöneberg 6, Wilmersdorf 6, Charlottenburg 5, Friedrichshain 5, Mitte 4, Tiergarten 4, Neukölln 4, Prenzlauer Berg 3, Kreuzberg 1. THREE carry two boroughs each, not two: Hans, Laura née Rothenberg and Sophie née Rothenberg. FIVE are plain “Berlin” with no borough, not three: Else née Soldin, Helene Kamnitzer, Willi, and the two under the LAIBHOLZ spelling, Georg and Lidia. And ONE is Berlin second after another town, Heinz Paul Hugo at “Paderborn (Umschulungslager Grüner Weg); Berlin (Neukölln)”. Five of the fifty-two are not Berlin at all.",
+   "source": "Recounted mechanically from data/leibholz-gedenkbuch.tsv on 11 October 2026, all fifty-two rows. THE ROW'S OWN FIGURES NEVER ADDED UP TO ITS OWN TOTAL: 6+6+5+5+4+4+4+3+1 = 38, plus three plain and two dual = 43, written as forty-four. The arithmetic was wrong before the data was. The two LAIBHOLZ rows are the likeliest cause of the undercount — they are the Gedenkbuch's own alternative spelling of Georg and Lydia of Mitte and are easy to read past. Working in data/adressbuch-boroughs-1938-1943.tsv."
+  },
+  {
+   "id": 9500918,
+   "who": "Wilhelm Leibholz of Weinstraße 6, NO18",
+   "field": "when the directory began taking his trade away",
+   "was": "“Two men stripped of their trade in a single year, 1940 to 1941 … WILHELM ISRAEL LEIBHOLZ of NO18 Weinstraße 6 goes from VERTRETER, a commercial traveller, to BAUARBEITER.” data/berlin-adressbuch-names.tsv, 20 September 2026.",
+   "now": "THE FALL STARTS A VOLUME EARLIER AND HAS THREE STEPS, NOT ONE. 1938: Wilhelm, KAUFMANN, NO18 Weinstraße 6. 1939: Wilhelm, VERTRETER, same house. 1940: Vertreter. 1941: Wilhelm Israel, BAUARBEITER. A merchant became a commercial traveller in the 1939 volume, before the compulsory name appears beside him at all, and a building labourer in the 1941 one.",
+   "source": "Berliner Adressbuch 1939, ZLB 34115495_1939 page order 1719, the Leibholz run read at the page image on 11 October 2026 — “—Wilhelm Vertret NO18 Weinstr 6”. WHY IT WAS MISSED: the 20 September reading recorded the 1939 forenames but not the 1939 trades, so the only trade change visible in the file was the one between the two volumes that did carry them. THE CORRECTION DOES NOT WEAKEN THE ORIGINAL POINT AND SHARPENS IT: the archive read the 1940-41 step as marked, because “Israel” is printed beside it. The 1938-39 step carries no marking of any kind and happened anyway."
   }
  ],
  "counts": {

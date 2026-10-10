@@ -1,6 +1,14 @@
 {
  "files": [
   {
+   "file": "adressbuch-boroughs-1938-1943.tsv",
+   "title": "The forty-four boroughs laid against the households — and there are forty-seven of them",
+   "source": "Berliner Adressbuch 1939, 1941, 1942 and 1943, ZLB 34115495, read at the image 11 October 2026, against the Bundesarchiv Gedenkbuch",
+   "kind": "ref",
+   "rows": 21,
+   "people": 0
+  },
+  {
    "file": "adressbuch-fulltext-sweep.tsv",
    "title": "Five rows put to the Berlin directories' full-text index at once",
    "source": "digital.zlb.de Solr full-text index, queried 22 September 2026 with controls",
@@ -3866,7 +3874,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 128,
+  "files": 129,
   "person_files": 25,
   "people": 193,
   "records": 268,
