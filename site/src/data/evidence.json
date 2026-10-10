@@ -401,6 +401,14 @@
    "people": 0
   },
   {
+   "file": "kreuzberg-1938-1979-deaths.tsv",
+   "title": "Kreuzberg closed from 1963, and the text layer begins in a year nobody had measured",
+   "source": "Landesarchiv Berlin P Rep. 510, 45 volumes scanned and 1959 read at the image, 10 October 2026",
+   "kind": "ref",
+   "rows": 12,
+   "people": 0
+  },
+  {
    "file": "kreuzberg-ocr-control.tsv",
    "title": "An OCR label is not a searchable index — measured",
    "source": "Landesarchiv Berlin LABSA, P Rep. 510 Nr. 743 and P Rep. 163 Nr. 602/0628, 22 September 2026",
@@ -3850,7 +3858,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 126,
+  "files": 127,
   "person_files": 25,
   "people": 193,
   "records": 268,
