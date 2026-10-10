@@ -95,6 +95,11 @@
      "title": "Stolpersteine Berlin",
      "what": "checked for Leibholz stones; those found (Willmanndamm 6, Danckelmannstraße 44) belong to other Leibholz families.",
      "url": "https://www.stolpersteine-berlin.de/"
+    },
+    {
+     "title": "Geneteka, the Polish Genealogical Society&rsquo;s volunteer index",
+     "url": "https://geneteka.genealodzy.pl/",
+     "what": "put to this family three times and useful every time for the SAME REASON — it says what it does not hold. Warmińsko-mazurskie: its 278 parishes include Olsztyn and Reszel and their civil registries and <strong>do not include Bössau, Biesowo, Jeziorany or Zerbuń</strong>, which are the two places Kurt&rsquo;s mother&rsquo;s family actually came from. Pomorskie, 11 October 2026: of the <strong>eleven West Prussian and Pomeranian towns the Gedenkbuch&rsquo;s fifty Leibholz cluster in, nine are not indexed at all</strong> — Człuchów (Schlochau) and Czarne (Hammerstein) among them — and of the two that are, Przechlewo stops before 1800 and Debrzno, which is Preussisch Friedland, stops before 1840. <strong>And the province holds essentially no Jewish records</strong>: births give Schmidt 1,134 and Kowalski 1,023 against Cohn 1, Levy 0, Levin 0 and Israel 1, so a Jewish surname&rsquo;s zero in this index is the index speaking and is never recorded here as a negative. Two warnings for anyone using it: the <strong>province codes are positional</strong> and an invalid one falls back silently to dolnośląskie, which cost this archive a day in September; and the <strong>results are an AJAX call</strong>, so the HTML page returns an empty table and the rows come from api/getAct.php."
     }
    ]
   },

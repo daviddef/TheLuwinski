@@ -313,6 +313,14 @@
    "people": 0
   },
   {
+   "file": "geneteka-pomorskie-2026-10-11.tsv",
+   "title": "Geneteka holds no Jewish records in pomorskie, and that is the result — not the zeroes",
+   "source": "geneteka.genealodzy.pl province 11pm, api/getAct.php and api/getParish.php with live controls, 11 October 2026",
+   "kind": "ref",
+   "rows": 16,
+   "people": 0
+  },
+  {
    "file": "gerda-leibholz-marriage-chase.tsv",
    "title": "Chasing Gerda's marriage for her father, and the route is closed",
    "source": "Landesarchiv Berlin LABSA, birth and marriage holdings enumerated and sampled 9 October 2026",
@@ -3874,7 +3882,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 129,
+  "files": 130,
   "person_files": 25,
   "people": 193,
   "records": 268,

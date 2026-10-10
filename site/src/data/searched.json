@@ -349,6 +349,43 @@
     "labsa"
    ],
    "got": "FORTY-FIVE VOLUMES 1938-1979 SCANNED AND FOUR BLIND YEARS READ PAGE BY PAGE, AND THE OFFICE IS NOW COMPLETE 1938-1994. THE TEXT LAYER OF THIS SERIES BEGINS AT 1963: seventeen volumes legible, twenty-eight blind, which was measured rather than assumed and contradicted a prediction that all forty-five would be blind. The reading produced TWO PEOPLE in fifty-seven years — a 1948 death and a 1960 death — and the 1960 one carries a NINTH SPELLING OF THE SURNAME that no index or search engine would have matched, read off the registrar's own hand at five times magnification. TWO THINGS WORTH CARRYING AWAY. (1) The L block sits at 40-48 per cent of the way through every Kreuzberg volume of this era, so the band is found in one render rather than hunted. (2) A SILENT BLIND VOLUME IS NOT A NEGATIVE: every volume here was scored against six common surnames before its silence was believed, and the four that mattered were read by eye instead."
+  },
+  {
+   "src": "Zentral- und Landesbibliothek Berlin — Berliner Adressbuch, Namenteil, annual volumes",
+   "key": "zlb/adressbuch-leibholz-runs-1939-1943",
+   "url": "https://digital.zlb.de/viewer/image/34115495_1939/1719/",
+   "what": "One surname's householder runs read at the page image, 1939, 1941, 1942 and 1943, to match a memorial book's boroughs to printed households",
+   "when": "2026-10-11",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "the Leibholz run only — 1939 p1719, 1941 p1795, 1942 p1776, 1943 p1744",
+   "tags": [
+    "berlin",
+    "directory",
+    "germany",
+    "zlb",
+    "fraktur"
+   ],
+   "got": "A REPLICATION THAT PAID FOR ITSELF, AND A LESSON ABOUT READING A DIRECTORY RUN. The four runs were read at the image and agree entry for entry with a reading made three weeks earlier, which is what established that the task waiting on them had never needed waiting on. THREE THINGS FOR ANYONE READING FRAKTUR DIRECTORY RUNS. (1) These pages are FOUR COLUMNS WIDE and the ink profile will not show the gutters, because the column rules are printed lines and score as ink; estimate the columns from the text block's width instead. (2) A RUN CAN SPLIT ACROSS A COLUMN BREAK AND THE HEADWORD IS REPEATED at the top of the next column, so a run that looks short at the foot of a column is not short. One of these four also repeats the headword MID-COLUMN after a single entry. (3) THE PER-PAGE OCR CAN INTERLEAVE TWO ADJACENT COLUMNS LINE BY LINE AND SAY NOTHING ABOUT IT: in the 1941 volume it attributed nine entries of the NEXT SURNAME to this one, which a search-based method cannot detect and an alphabetical check at the image catches at once. Reading the run in place in the full page text works for three of the four volumes; it is wrong, silently, for the fourth."
+  },
+  {
+   "src": "Geneteka (Polskie Towarzystwo Genealogiczne) — province pomorskie, 11pm",
+   "key": "geneteka/pomorskie-11pm",
+   "url": "https://geneteka.genealodzy.pl/index.php?op=gt&lang=pol&bdm=B&w=11pm",
+   "what": "Four surnames across births, marriages and deaths in one Polish province, with the coverage of eleven named towns tested and Jewish-surname controls run",
+   "when": "2026-10-11",
+   "outcome": "blocked",
+   "walked": false,
+   "pages": "whole-province exact-match queries plus two parishes enumerated in full (Debrzno rid 1568, Przechlewo rid 890) and one measured by era (Chojnice rid 194)",
+   "tags": [
+    "poland",
+    "index",
+    "volunteer",
+    "west-prussia",
+    "pomerania",
+    "jewish"
+   ],
+   "got": "RECORDED AS BLOCKED, NOT AS NOTHING, AND THE CONTROL IS WHY. GENETEKA'S POMORSKIE HOLDING CONTAINS ESSENTIALLY NO JEWISH RECORDS: province-wide births give SCHMIDT 1,134, KOWALSKI 1,023 and MÜLLER 767 against COHN 1, LEVY 0, LEVIN 0, ISRAEL 1, JACOBSOHN 2 and ROSENTHAL 3. It is an index of Catholic and Protestant parish books, so a Jewish surname's zero here is evidence about the index and not about the family, and anyone recording such a zero as a negative is recording a false one. THE COVERAGE BOUND IS THE SECOND HALF. Of eleven former German towns tested by name, NINE ARE NOT INDEXED AT ALL — including Człuchów (Schlochau) and Czarne (Hammerstein), where a place search returns two other towns of the same name in other provinces and neither is the right one. The two that are indexed stop early: Przechlewo holds 1,457 births ALL BEFORE 1800 and Debrzno (Preussisch Friedland) 1,649 births ALL BEFORE 1840, while the province indexes 1874-1925 perfectly well elsewhere. Chojnice (Konitz) is the exception and runs to 1939 with 6,107 births. THE SITE'S SEARCH IS AN AJAX CALL: the HTML page returns an empty table and the rows come from api/getAct.php as JSON, capped at fifty per request; api/getParish.php?search=<place> answers the coverage question directly and is the first call worth making. The province code is POSITIONAL and an invalid one falls back silently to dolnośląskie, which has produced a false zero in this archive before."
   }
  ]
 }
