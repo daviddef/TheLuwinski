@@ -404,6 +404,25 @@
     "method"
    ],
    "got": "THE SECOND TAB IS THE INSTRUMENT AND ALMOST NOBODY USES IT. A names search returns THREE TABS — “Results Regarding Victims”, “RESULTS REGARDING DATA SUBMITTERS” (append #submitter to the URL) and “Additional Results” — and the second lists every record whose SUBMITTER matched the name searched. SEARCHING A SURVIVOR'S NAME THERE RETURNS THE DEAD HE WROTE DOWN, which is a whole family reconstructed from one Page. The search is fully URL-driven despite the site being an Angular app: /en/names/search-results-names?page=N&gn_last_name=X&gnt_last_name=yvSynonym&gn_first_name=Y. TWO WARNINGS. The synonym expansion is loose and will fold in a different submitter of a similar name from another country — of 29 results here, 24 belonged to someone else and had to be separated by place, so the set must be READ and not counted. And A PAGE OF TESTIMONY IS A RELATIONSHIP DOCUMENT, NOT A DATE DOCUMENT: where the Pages read here met an official list, the Page was wrong on a birth day and on a death year, two Pages by the same man for the same victim gave two different places of death, and the same man's parents appeared under German names on one form and Hebrew names on the other. What a Page gives that no list gives is the single word in the “relationship to victim” field."
+  },
+  {
+   "src": "Landesarchiv Berlin LABSA — Standesamt Charlottenburg I and II, Namensverzeichnisse zum Geburten- und Heiratsregister",
+   "key": "labsa/charlottenburg-1898-1903",
+   "url": "https://content.landesarchiv-berlin.de/labsa/show/index.php",
+   "what": "One surname in the birth index of 1903 and the marriage indexes of 1898-1903 across two Berlin registry offices, scoped first from a street directory",
+   "when": "2026-10-11",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "the whole L block of 5 volumes at the image — births 1903 (P Rep. 551/526) and marriages P Rep. 551/461, 551/462, P Rep. 553/528, 553/529",
+   "tags": [
+    "berlin",
+    "standesamt",
+    "birth-index",
+    "marriage-index",
+    "germany",
+    "labsa"
+   ],
+   "got": "A BIRTH FOUND FIRST TRY, BECAUSE THE OFFICE WAS SCOPED FROM A DIRECTORY FIRST. The street directory for the birth year named the only household of that surname in the borough and gave its street; the street fixed the registry office; one index volume then produced the entry. THAT ORDER — DIRECTORY, THEN OFFICE, THEN INDEX — TURNS A SEVENTEEN-OFFICE SWEEP INTO ONE VOLUME, and it is the single most useful thing learned here. TWO LIMITS OF THESE INDEXES, BOTH MEASURED. (1) A BIRTH INDEX GIVES THE CHILD, THE DAY AND MONTH, AND THE REGISTER NUMBER, AND NOTHING ELSE — no parents, and the confession column is blank for everyone on the page. It locates a certificate; it does not replace one. (2) A MARRIAGE INDEX GIVES SURNAMES ONLY: no forenames, and NO INDICATION OF WHICH PARTY IS THE GROOM. A widow remarrying is indexed under her own married surname with “geb.” and her new husband opposite, so a man of surname X marrying a woman of surname Y and a woman of surname X marrying a man of surname Y look identical on the page. An index hit therefore names a marriage, not a couple. The birth indexes are organised BY LETTER AND THEN BY MONTH; the marriage indexes BY LETTER AND THEN BY YEAR. Both are image-only — a 1903 birth index scored zero control surnames across its first thirty pages — and the L block sits at roughly 45 to 55 per cent of the way through every one of the five volumes read."
   }
  ]
 }
