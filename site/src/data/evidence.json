@@ -873,6 +873,14 @@
    "people": 0
   },
   {
+   "file": "treuchtlingerstrasse-2-4.tsv",
+   "title": "The house Jacob Leibholz was deported from, and its owner disappears out of it in print",
+   "source": "Berliner Adressbuch Teil IV 1939-1943, ZLB 34115495, street pages read at the image 11 October 2026",
+   "kind": "ref",
+   "rows": 16,
+   "people": 0
+  },
+  {
    "file": "trove-2026-09-27.tsv",
    "title": "Trove opened — the Canberra Times runs to 1995, and the Melbourne Leibholz is naturalised in a 1944 gazette",
    "source": "Trove, National Library of Australia, API v3, searched 27 September 2026",
@@ -3898,7 +3906,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 132,
+  "files": 133,
   "person_files": 25,
   "people": 193,
   "records": 268,
