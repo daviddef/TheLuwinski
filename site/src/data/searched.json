@@ -386,6 +386,24 @@
     "jewish"
    ],
    "got": "RECORDED AS BLOCKED, NOT AS NOTHING, AND THE CONTROL IS WHY. GENETEKA'S POMORSKIE HOLDING CONTAINS ESSENTIALLY NO JEWISH RECORDS: province-wide births give SCHMIDT 1,134, KOWALSKI 1,023 and MÜLLER 767 against COHN 1, LEVY 0, LEVIN 0, ISRAEL 1, JACOBSOHN 2 and ROSENTHAL 3. It is an index of Catholic and Protestant parish books, so a Jewish surname's zero here is evidence about the index and not about the family, and anyone recording such a zero as a negative is recording a false one. THE COVERAGE BOUND IS THE SECOND HALF. Of eleven former German towns tested by name, NINE ARE NOT INDEXED AT ALL — including Człuchów (Schlochau) and Czarne (Hammerstein), where a place search returns two other towns of the same name in other provinces and neither is the right one. The two that are indexed stop early: Przechlewo holds 1,457 births ALL BEFORE 1800 and Debrzno (Preussisch Friedland) 1,649 births ALL BEFORE 1840, while the province indexes 1874-1925 perfectly well elsewhere. Chojnice (Konitz) is the exception and runs to 1939 with 6,107 births. THE SITE'S SEARCH IS AN AJAX CALL: the HTML page returns an empty table and the rows come from api/getAct.php as JSON, capped at fifty per request; api/getParish.php?search=<place> answers the coverage question directly and is the first call worth making. The province code is POSITIONAL and an invalid one falls back silently to dolnośląskie, which has produced a false zero in this archive before."
+  },
+  {
+   "src": "Yad Vashem — Central Database of Shoah Victims' Names, the data-submitter tab",
+   "key": "yadvashem/submitter-tab-2026-10-11",
+   "url": "https://collections.yadvashem.org/en/names/search-results-names",
+   "what": "Every Page of Testimony filed by one named survivor, found by searching his name as a SUBMITTER rather than as a victim",
+   "when": "2026-10-11",
+   "outcome": "yield",
+   "walked": true,
+   "pages": "all 30 results of one submitter search, 5 items read in full",
+   "tags": [
+    "yad-vashem",
+    "pages-of-testimony",
+    "germany",
+    "west-prussia",
+    "method"
+   ],
+   "got": "THE SECOND TAB IS THE INSTRUMENT AND ALMOST NOBODY USES IT. A names search returns THREE TABS — “Results Regarding Victims”, “RESULTS REGARDING DATA SUBMITTERS” (append #submitter to the URL) and “Additional Results” — and the second lists every record whose SUBMITTER matched the name searched. SEARCHING A SURVIVOR'S NAME THERE RETURNS THE DEAD HE WROTE DOWN, which is a whole family reconstructed from one Page. The search is fully URL-driven despite the site being an Angular app: /en/names/search-results-names?page=N&gn_last_name=X&gnt_last_name=yvSynonym&gn_first_name=Y. TWO WARNINGS. The synonym expansion is loose and will fold in a different submitter of a similar name from another country — of 29 results here, 24 belonged to someone else and had to be separated by place, so the set must be READ and not counted. And A PAGE OF TESTIMONY IS A RELATIONSHIP DOCUMENT, NOT A DATE DOCUMENT: where the Pages read here met an official list, the Page was wrong on a birth day and on a death year, two Pages by the same man for the same victim gave two different places of death, and the same man's parents appeared under German names on one form and Hebrew names on the other. What a Page gives that no list gives is the single word in the “relationship to victim” field."
   }
  ]
 }

@@ -713,6 +713,14 @@
    "people": 0
   },
   {
+   "file": "rosenberg-of-schlochau.tsv",
+   "title": "Isidor and Cecillie have a second child, and Isidor has a Hebrew name",
+   "source": "Yad Vashem Central Database of Shoah Victims' Names, the SUBMITTER tab, five Pages read individually, 11 October 2026",
+   "kind": "ref",
+   "rows": 18,
+   "people": 0
+  },
+  {
    "file": "schmul-and-thimm.tsv",
    "title": "The two great-grandmothers' surnames — what can be reached and what cannot",
    "source": "FamilySearch collection metadata and Posen collection 4116415 (33 exact SCHMUL records read); Geneteka control run and failed; 20 September 2026",
@@ -3882,7 +3890,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 130,
+  "files": 131,
   "person_files": 25,
   "people": 193,
   "records": 268,
