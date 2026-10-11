@@ -51,6 +51,12 @@
           "note": "An 'e' lost. This is how NAAIRS carries the Salkow divorce, and it is why that file went unfound for months."
         },
         {
+          "form": "DE FIGUEITEDO",
+          "kind": "maiden",
+          "where": "TAB TPD 534/1948",
+          "note": "A T where the R belongs. *** AND IT IS ON THE ARCHIVE'S OWN MOST-CITED FILE. *** TPD 534/1948 is her first divorce, from Johannes Antonie Oelofse de Witt, and this archive has cited it since September — while the index title spelt her maiden name a way nobody here had recorded. Found 11 October 2026 on the NAAIRS successor, searching the husband's name and reading the titles rather than counting them."
+        },
+        {
           "form": "DE FIGUEREDO",
           "kind": "maiden",
           "where": "Her own marriage register, 1953",
@@ -284,9 +290,9 @@
     },
     {
       "form": "MOTA",
-      "naairs": "288",
+      "naairs": "278, all read",
       "gendb": "15,102",
-      "unique": "NOT SEARCHED THROUGH — too many, and the gap is stated rather than hidden. It is the most important untested name on this page, because MOTA FIGUEIREDO is the fullest form anybody ever wrote of her maiden name."
+      "unique": "*** READ IN FULL 11 OCTOBER 2026, AND THE NAME IS A FALSE LEAD FOR A REASON NOBODY HAD GUESSED. *** MOTA IN THE SOUTH AFRICAN ARCHIVES IS OVERWHELMINGLY A SOTHO, TSWANA AND NGUNI SURNAME, NOT A PORTUGUESE ONE — the bulk of the 278 are NATIVE ESTATE files and magistrates' case files from the Free State and the Witwatersrand. EIGHTEEN ARE PORTUGUESE AND NOT ONE IS HERS: an estate (TAB MHG 5905/69, DA MOTA, JOAO — the only Portuguese Mota estate in the index), two Cape immigration files, a Portuguese consul-general, two Brazilian diplomats and nine Witwatersrand court files. NONE AT LOURENÇO MARQUES. *** AND THE TWO-KEYWORD TEST SETTLES IT IN ONE LINE: MOTA AND FIGUEIREDO TOGETHER RETURN EXACTLY ONE RECORD *** across all twenty repositories — TAB WLD 1950/1948, her own first divorce, held here since September. MOTA+MARQUES zero. FIGUEIREDO+LOURENCO zero. The gap this row stated is closed and the answer is no."
     }
   ],
   "depot_finding": {

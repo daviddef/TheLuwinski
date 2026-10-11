@@ -649,6 +649,14 @@
    "people": 0
   },
   {
+   "file": "naairs-sweep-2026-10-11b.tsv",
+   "title": "The six blocked rows, worked the day the block lifted — and MOTA is an African surname",
+   "source": "National Archives of South Africa, NARSA Search Portal, 278 MOTA records read in full plus SALKOW, RAPPOPORT and FIGUEIREDO, 11 October 2026",
+   "kind": "ref",
+   "rows": 17,
+   "people": 0
+  },
+  {
    "file": "naairs-two-databases.tsv",
    "title": "Two NAAIRS databases, one of them incomplete — and six nils here were taken without knowing which answered",
    "source": "NARSSA, 'Using the Search Function', nationalarchives.gov.za/node/737, verified 27 September 2026",
@@ -3930,7 +3938,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 136,
+  "files": 137,
   "person_files": 25,
   "people": 193,
   "records": 268,
