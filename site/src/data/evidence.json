@@ -641,6 +641,14 @@
    "people": 0
   },
   {
+   "file": "naairs-is-back-2026-10-11.tsv",
+   "title": "NAAIRS is back under a new name at a new address, and the negative it blocked now holds",
+   "source": "National Archives of South Africa, NARSA Search Portal, all twenty repositories queried with live controls, 11 October 2026",
+   "kind": "ref",
+   "rows": 22,
+   "people": 0
+  },
+  {
    "file": "naairs-two-databases.tsv",
    "title": "Two NAAIRS databases, one of them incomplete — and six nils here were taken without knowing which answered",
    "source": "NARSSA, 'Using the Search Function', nationalarchives.gov.za/node/737, verified 27 September 2026",
@@ -3922,7 +3930,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 135,
+  "files": 136,
   "person_files": 25,
   "people": 193,
   "records": 268,

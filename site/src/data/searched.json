@@ -441,6 +441,24 @@
     "holdings"
    ],
    "got": "A NEGATIVE WORTH HAVING AND A HOLDINGS FACT WORTH MORE. THE RUN IS SPLIT ACROSS FOUR RECORD IDENTIFIERS AND HAS A SIX-YEAR HOLE: the Berliner Adreßbuch is PI 34115495 for 1903-1943 and PI 34115512 for 1873-1896, with 1897-1902 DIGITISED UNDER NEITHER; the post-war Namenteil volumes are PI 34117222 (1955-1970) and the telephone books PI 15849358 (1970-1980). A query against the wrong anchor returns zero AND LOOKS EXACTLY LIKE AN ABSENT SURNAME — in this case zero pages and zero Schmidt, which is how it was caught. Always run a common-surname control. AND THE PRE-1900 VOLUMES PRINT FORENAME INITIALS ONLY (“A., Beamter”, “O., Lederhändler”, “J., Ww.”), so a negative on a forename cannot be drawn from them at all; full forenames begin in 1903. The search itself: eighteen years of one surname's run, the 1916 one read at the image and agreeing with its text layer entry for entry, and the forename sought is in none of them. A MAN WHO IS NOT A HOUSEHOLDER IS NOT IN A DIRECTORY, which is the limit of what any such negative can mean and should be said out loud."
+  },
+  {
+   "src": "National Archives of South Africa — the NARSA Search Portal, which is NAAIRS under a new name",
+   "key": "naairs/narsa-portal-2026-10-11",
+   "url": "https://www.nationalarchives.gov.za/search/",
+   "what": "Three published negatives re-run under seventeen spellings across all twenty South African repositories, plus three family surnames never tried there before",
+   "when": "2026-10-11",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "all twenty repositories at once (RSA), one surname per query, every result read",
+   "tags": [
+    "south-africa",
+    "national-archive",
+    "index",
+    "naairs",
+    "method"
+   ],
+   "got": "THE SERVICE WAS RECORDED AS DEAD AND IT HAD ONLY MOVED, FOR THE SECOND TIME IN A MONTH. The old Search Manager endpoint still answers 503 and the old portal page is still 404; NAAIRS now lives at /search/ as the “National Archival Information Search System” — an Angular portal, free, no account, ALL TWENTY REPOSITORIES including one code for all of them at once, a four-keyword Contains/AND/OR form, and a JSON API at /search-api/api/search taking {repositoryCode, keywords:[{keyword,operator,matchType,enabled}], …}. ITS OWN ROUTES 404 IF TYPED DIRECTLY — there is no server-side fallback — so the portal must be entered at /search/ and the repository clicked. AND THE THING WORTH MORE THAN THE ENDPOINT: NARSSA STILL PUBLISHES A TWO-DATABASE WARNING (8.3 million entries migrating, the “fulltext search” admittedly incomplete) AND NAMES THIS PORTAL AS THE COMPLETE ONE — “To search the complete database please click on”, linking exactly here. That settles which twin answers, which an earlier session could only argue from the vocabulary of a results page. Controls: SMITH 47,936, SCHMIDT 3,418. Two caveats: A MULTI-WORD KEYWORD IS NOT A PHRASE (two surnames in one box returned more records than either alone), and the facet counts are per-repository so a zero under RSA is a zero everywhere. THE SEARCHES THEMSELVES: three published negatives widened from one spelling to six and eleven and ALL THREE SURVIVED, which is the outcome a re-run should usually have and rarely gets written down; and two court files turned up that the archive did not hold, both indexed under a maiden surname spelt one letter apart from the other, NEITHER RETURNED BY THE OTHER."
   }
  ]
 }

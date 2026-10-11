@@ -84,5 +84,35 @@
     "url": null,
     "nourl": "Not in the National Archives index as mirrored by GenDatabase; known only from a NAAIRS screen photographed into the family tree.",
     "verified": "Verified 15 Sep 2026 against NAAIRS — one of the seven Luwinski documents the index holds."
+  },
+  {
+    "ref": "WLD 1878/1956",
+    "depot": "TAB",
+    "division": "Witwatersrand Local Division",
+    "year": "1956",
+    "plaintiff": "Kurt LUWINSKI",
+    "defendant": "Frances (formerly SEFTON, formerly BERNER, born HOSTOWSKY)",
+    "action": "ILLIQUID CASE, RESTITUTION OF CONJUGAL RIGHTS",
+    "source": "NARSA Search Portal, the NAAIRS successor at nationalarchives.gov.za/search/",
+    "status": "NEW — found 11 Oct 2026, and this archive held six cases before it",
+    "naairs": "ZA TAB WLD_0_1878/1956_1",
+    "url": null,
+    "nourl": "Found under the surname HOSTOWSKY, not under LUWINSKI — the title spells her maiden name with a Y and the Eisenhardt records spell it with an I, so one query cannot return both.",
+    "verified": "THE MARRIAGE LASTED MONTHS. Kurt married Frances Hostowsky on 29 FEBRUARY 1956, her age given as 43 in the South African civil marriage index, and sued her for restitution of conjugal rights IN THE SAME YEAR — which in South African practice is the first step of a divorce. She married Rolf Eisenhardt on 23 May 1958."
+  },
+  {
+    "ref": "WLD 126/1959",
+    "depot": "TAB",
+    "division": "Witwatersrand Local Division",
+    "year": "1959",
+    "plaintiff": "Frances EISENHARDT (born HOSTOWSKI)",
+    "defendant": "Rolf [EISENHARDT]",
+    "action": "ILLIQUID CASE, JUDICIAL SEPARATION",
+    "source": "NARSA Search Portal, the NAAIRS successor at nationalarchives.gov.za/search/",
+    "status": "NEW — found 11 Oct 2026",
+    "naairs": "ZA TAB WLD_0_126/1959_1",
+    "url": null,
+    "nourl": "NOT KURT'S CASE AND NOT THIS FAMILY'S. It is here because it completes a person the archive half-held: the woman Kurt married in February 1956 and sued the same year married Rolf Eisenhardt on 23 May 1958 and sued HIM within the year. The marriage register is ZA KAB HAWC_1/3/58/1/53_183_1, Cape Town and Wynberg.",
+    "verified": "Found 11 October 2026 under HOSTOWSKI; the companion case WLD 1878/1956 is indexed under HOSTOWSKY, one letter apart."
   }
 ]
