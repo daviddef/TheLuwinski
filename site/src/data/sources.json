@@ -26,7 +26,7 @@
     },
     {
      "title": "Findmypast",
-     "what": ", full subscription, from 16 September 2026 — the 1851, 1871, 1881, 1891, 1901, 1911 and 1921 censuses of England and Wales; the 1939 Register; the GRO birth, marriage and death indexes; BT 27 outbound passenger lists; <em>Soldiers Died in the Great War</em>; the First World War campaign medal rolls and medal index cards; WO 363 and WO 364 service records; <em>British Armed Forces and Overseas</em> births, marriages and deaths; and Hertfordshire Baptisms. Most of the Wear and Castle work on this site is from it. <strong>Its transcripts are not the records</strong>: the 1911 barracks return that names Frederick Castle&rsquo;s regiment has an empty occupation column in the transcript and reads <em>Scottish Rifles</em> on the image.",
+     "what": ", full subscription, from 16 September 2026 — the 1851, 1871, 1881, 1891, 1901, 1911 and 1921 censuses of England and Wales; the 1939 Register; the GRO birth, marriage and death indexes; BT 27 outbound passenger lists; <em>Soldiers Died in the Great War</em>; the First World War campaign medal rolls and medal index cards; WO 363 and WO 364 service records; <em>British Armed Forces and Overseas</em> births, marriages and deaths; and Hertfordshire Baptisms. Most of the Wear and Castle work on this site is from it. <strong>Its transcripts are not the records</strong>: the 1911 barracks return that names Frederick Castle&rsquo;s regiment has an empty occupation column in the transcript and reads <em>Scottish Rifles</em> on the image. Worked through the <strong>Australian site</strong> — <code>www.findmypast.com.au</code> and <code>search.findmypast.com.au</code> — which is where David&rsquo;s subscription lives and what every link in this archive&rsquo;s data points at, though the records are the same British ones.",
      "url": "https://www.findmypast.co.uk/"
     },
     {
@@ -100,6 +100,26 @@
      "title": "Geneteka, the Polish Genealogical Society&rsquo;s volunteer index",
      "url": "https://geneteka.genealodzy.pl/",
      "what": "put to this family three times and useful every time for the SAME REASON — it says what it does not hold. Warmińsko-mazurskie: its 278 parishes include Olsztyn and Reszel and their civil registries and <strong>do not include Bössau, Biesowo, Jeziorany or Zerbuń</strong>, which are the two places Kurt&rsquo;s mother&rsquo;s family actually came from. Pomorskie, 11 October 2026: of the <strong>eleven West Prussian and Pomeranian towns the Gedenkbuch&rsquo;s fifty Leibholz cluster in, nine are not indexed at all</strong> — Człuchów (Schlochau) and Czarne (Hammerstein) among them — and of the two that are, Przechlewo stops before 1800 and Debrzno, which is Preussisch Friedland, stops before 1840. <strong>And the province holds essentially no Jewish records</strong>: births give Schmidt 1,134 and Kowalski 1,023 against Cohn 1, Levy 0, Levin 0 and Israel 1, so a Jewish surname&rsquo;s zero in this index is the index speaking and is never recorded here as a negative. Two warnings for anyone using it: the <strong>province codes are positional</strong> and an invalid one falls back silently to dolnośląskie, which cost this archive a day in September; and the <strong>results are an AJAX call</strong>, so the HTML page returns an empty table and the rows come from api/getAct.php."
+    },
+    {
+     "title": "Landesarchiv Berlin &mdash; LABSA, the Namensverzeichnisse to Berlin&rsquo;s civil registers",
+     "what": "the public viewer of the <strong>name indexes</strong> to Berlin&rsquo;s birth, marriage and death registers &mdash; <strong>free, no account, no fee</strong> &mdash; and the instrument behind every Berlin register reading on this site. Worked from 7 October 2026; wrapped in <code>tools/labsa.py</code>. <strong>Over 600 volumes have been passed through it and roughly 150 read entire</strong>, across Neuk&ouml;lln, Kreuzberg, Reinickendorf, Spandau, Sch&ouml;neberg and all eleven East Berlin offices. <em>Three limits worth knowing before anyone uses it again.</em> The record-type checkboxes <strong>do not union</strong> &mdash; ask for one kind per request or the answer is silently wrong. <strong>It cannot display umlauts</strong>: search an office on its stem (&lsquo;Neuk&rsquo;) and pick the mangled entry out of the list. And there are <strong>150-odd registry offices with no index across them</strong>, each indexing births, marriages and deaths separately for every year, so an enquiry that cannot name the responsible Standesamt cannot be answered at all. <strong>The label &ldquo;Durchsuchbares PDF durch OCR-Texterkennung&rdquo; is not a promise about the names.</strong> Every volume on this site is scored against six common surnames before its silence is allowed to count, and the blind ones are recorded as unread rather than as negatives.",
+     "url": "https://content.landesarchiv-berlin.de/labsa/show/index.php"
+    },
+    {
+     "title": "Genealogia w Archiwach, the Polish state archives&rsquo; scan portal",
+     "what": "the digitised holdings of the Polish state archives. It serves scans through a <strong>Loris IIIF tile server</strong>, which means a page can be read at <strong>up to twice its native resolution</strong> rather than at whatever size the viewer offers &mdash; and that is what made the <strong>Szubin marriage entry of 1874 legible letter by letter</strong>, re-read against the registrar&rsquo;s own capitals elsewhere on the same page. Free.",
+     "url": "https://www.genealogiawarchiwach.pl/"
+    },
+    {
+     "title": "Archiwum Pa&#324;stwowe w Bydgoszczy",
+     "what": "the Polish state archive holding the Szubin registers, <strong>answered by letter on 25 September 2026</strong>. The holdings fact it gave is the reason a letter was worth writing: the <strong>Jewish registers of Szubin survive for 1820&ndash;1847 only</strong>. That is the wrong span for Friederike and the <strong>right span for Abraham Schmul, born 1846</strong>, whose entry would name the same parents if he is her brother. A fourth letter asking for that one year is drafted and unsent.",
+     "url": "https://www.bydgoszcz.ap.gov.pl/"
+    },
+    {
+     "title": "Trove, National Library of Australia",
+     "what": "the digitised Australian newspapers, read through its API for the branch that sailed in 1965. Free; the key is held locally and is not in this repository.",
+     "url": "https://trove.nla.gov.au/"
     }
    ]
   },
@@ -135,6 +155,11 @@
      "title": "Allenstein and Kreis Rössel Catholic parish registers",
      "what": "Allenstein and Kreis Rössel Catholic parish registers",
      "untitled": true
+    },
+    {
+     "title": "Landesarchiv Berlin &mdash; the Digitaler Antrag",
+     "what": "not a source to read but <strong>the counter at which Berlin copies are bought</strong>. Registers that are not digitised &mdash; and the <strong>Sammelakten</strong> that sit alongside the marriage registers, which in 1923 would normally hold the <em>birth certificates of both parties</em> and therefore the parents this archive still cannot confirm on one document &mdash; are ordered here for a fee. <strong>Every one of these is a purchase and David&rsquo;s to make.</strong> Six are drafted and none is ordered.",
+     "url": "https://service.berlin.de/dienstleistung/352800/"
     }
    ]
   }
