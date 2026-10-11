@@ -89,6 +89,14 @@
    "people": 0
   },
   {
+   "file": "berlin-directories-before-1903.tsv",
+   "title": "Sally was never a Berlin householder, and the pre-1903 directories are under another number",
+   "source": "Berliner Adressbuch, ZLB anchors 34115495 and 34115512, eighteen years of runs with the 1916 one read at the image, 11 October 2026",
+   "kind": "ref",
+   "rows": 15,
+   "people": 0
+  },
+  {
    "file": "berlin-marriage-indexes-are-blind.tsv",
    "title": "The Berlin marriage indexes are free and unsearchable, and several rows cost them wrong",
    "source": "Landesarchiv Berlin LABSA, four volumes sampled and the holding enumerated, 9-10 October 2026",
@@ -205,7 +213,7 @@
    "title": "A Luwinski and a Leibholz in adjacent houses in 1913",
    "source": "Berliner Adressbuch 1913 Teil III p.139, ZLB digital copy, read at the image 20 September 2026",
    "kind": "ref",
-   "rows": 33,
+   "rows": 36,
    "people": 0
   },
   {
@@ -3914,7 +3922,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 134,
+  "files": 135,
   "person_files": 25,
   "people": 193,
   "records": 268,
