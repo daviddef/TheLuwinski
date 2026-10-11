@@ -18,7 +18,7 @@
     "check:superseded": "python3 ../tools/check-superseded.py",
     "check:templates": "python3 node_modules/@daviddef/archive-kit/kit/tools/checktemplates.py --root .",
     "check:sources": "python3 node_modules/@daviddef/archive-kit/kit/tools/checksources.py --root . --max-unreachable 6",
-    "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 2",
+    "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 1",
     "check:pin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpin.py --root .",
     "check:nav": "python3 node_modules/@daviddef/archive-kit/kit/tools/checknav.py --dist dist --strict",
     "check:inline": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkinline.py --root . --max-inline 13",
