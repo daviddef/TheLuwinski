@@ -178,6 +178,14 @@
       "was": "“Two men stripped of their trade in a single year, 1940 to 1941 … WILHELM ISRAEL LEIBHOLZ of NO18 Weinstraße 6 goes from VERTRETER, a commercial traveller, to BAUARBEITER.” data/berlin-adressbuch-names.tsv, 20 September 2026.",
       "now": "THE FALL STARTS A VOLUME EARLIER AND HAS THREE STEPS, NOT ONE. 1938: Wilhelm, KAUFMANN, NO18 Weinstraße 6. 1939: Wilhelm, VERTRETER, same house. 1940: Vertreter. 1941: Wilhelm Israel, BAUARBEITER. A merchant became a commercial traveller in the 1939 volume, before the compulsory name appears beside him at all, and a building labourer in the 1941 one.",
       "source": "Berliner Adressbuch 1939, ZLB 34115495_1939 page order 1719, the Leibholz run read at the page image on 11 October 2026 — “—Wilhelm Vertret NO18 Weinstr 6”. WHY IT WAS MISSED: the 20 September reading recorded the 1939 forenames but not the 1939 trades, so the only trade change visible in the file was the one between the two volumes that did carry them. THE CORRECTION DOES NOT WEAKEN THE ORIGINAL POINT AND SHARPENS IT: the archive read the 1940-41 step as marked, because “Israel” is printed beside it. The 1938-39 step carries no marking of any kind and happened anyway."
+    },
+    {
+      "id": 9500919,
+      "who": "Kurt Israel Luwinski and Frances (formerly Sefton, formerly Berner, born Hostowsky)",
+      "field": "the year he sued her for restitution of conjugal rights",
+      "was": "“Married Frances 29 February 1956, sued her for RESTITUTION OF CONJUGAL RIGHTS in 1957” — on Kurt's page in two places and in his timeline as “1957 · Files for divorce again”.",
+      "now": "IT IS 1956, THE YEAR OF THE MARRIAGE. Witwatersrand Local Division, “ILLIQUID CASE. RESTITUTION OF CONJUGAL RIGHTS. KURT LUWINSKI VERSUS FRANCES (FORMERLY SEFTON, FORMERLY BERNER, BORN HOSTOWSKY)”, reference ZA TAB WLD_0_1878/1956_1. He married her on 29 February 1956 and sued her before the year was out. THE MARRIAGE LASTED MONTHS, NOT A YEAR AND A HALF.",
+      "source": "National Archives of South Africa, the NARSA Search Portal, 11 October 2026. *** AND THE 1957 HAD NOTHING BEHIND IT. *** The claim appears nowhere in this archive's data layer — no file, no citation, no NAAIRS reference — only in the prose of one page and the timeline built from it. THE LIKELIEST ORIGIN IS A CONFLATION with WLD 2542/1957, STANDARD BANK OF SOUTH AFRICA LTD v K LUWINSKI, which this archive has held since 14 September and which is a different action against a different plaintiff. A year read off the nearest case in the list. The reading that the restitution action is 'the legal signature of a wife who has left' is unchanged and is strengthened: she left inside the first year."
     }
   ]
 }

@@ -184,6 +184,27 @@
     "site/src/pages/kurt.astro": "carries the correction inline, quoting the withdrawn year to withdraw it",
     "site/src/data/open-questions.json": "quotes the withdrawn reasoning in order to withdraw it, and says so in the same sentence"
    }
+  },
+  {
+   "id": "frances-restitution-1957",
+   "what": "The year Kurt Luwinski sued Frances for restitution of conjugal rights",
+   "now": "1956, the year of the marriage. Witwatersrand Local Division, ZA TAB WLD_0_1878/1956_1.",
+   "was": [
+    "divorce filed 1957",
+    "sued her for restitution of conjugal rights in 1957",
+    "restitution of conjugal rights in 1957",
+    "Frances, divorce 1957"
+   ],
+   "since": "2026-10-11",
+   "why": "Kurt's page said he married Frances on 29 February 1956 and sued her in 1957, in two places, and his timeline said it too. THE CLAIM HAD NOTHING BEHIND IT - no file, no citation, nowhere in the data layer. The record, found on the NAAIRS successor on 11 October 2026, is WLD 1878/1956: he sued her in the year he married her. The likeliest origin of the 1957 is a conflation with WLD 2542/1957, Standard Bank of South Africa Ltd v K Luwinski, a different action by a different plaintiff held here since 14 September - a year read off the nearest case in the list. Correction 9500919.",
+   "allow": {
+    "data/superseded.json": "this declaration itself",
+    "data/corrections.json": "carries correction 9500919 inline",
+    "site/src/data/register.json": "generated from corrections.json, which carries the correction inline",
+    "site/src/pages/changes.astro": "dated research-log entries, superseded in place and flagged rather than rewritten",
+    "site/src/data/worklist.json": "dated row notes, same rule",
+    "site/src/pages/kurt.astro": "quotes the withdrawn year in the correction note beneath it"
+   }
   }
  ]
 }
