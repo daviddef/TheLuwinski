@@ -1,6 +1,48 @@
 ---
+/* What changed, most recent first.
+ *
+ * 11 October 2026. This page was hand-drawn: a three-column table written out
+ * in the template. Eight archives in the estate carry a `changes` page and six
+ * of them draw it with the kit's Changes component, so checkpages counts this
+ * one against the harmonisation ratchet.
+ *
+ * THE LOG ITSELF DOES NOT MOVE. All 214 rows stay exactly as they were, in the
+ * order they were written, and so does every section below the feed — the open
+ * work, the next fifteen, the four panels, the closed leads. Only the table
+ * that drew the rows is gone. The component takes the rows; the argument stays
+ * this archive's own.
+ *
+ * THE GRADE STAYS THIS ARCHIVE'S OWN THREE WORDS. doc/disp/inf have always
+ * printed as DOCUMENTED, WITHDRAWN and INFERRED, and they still do — passed
+ * through as the component's `kind`, which also turns them into a filter with
+ * a count against each. 111 documented, 69 withdrawn, 34 inferred. The colours
+ * come back below, because the component's chip carries the grade in a
+ * data attribute and this archive has had --doc, --disp and --inf since its
+ * first build.
+ *
+ * ONE GROUP, AND NO INVENTED DATES. The component groups by day, and this is
+ * the one archive in the estate whose log has no dates in it at all: 214 rows
+ * that record an order, not a calendar. The first few happen to line up with
+ * commits and the rest do not, so dating them would mean guessing 200 dates to
+ * satisfy the shape of a component — which is the tail wagging the dog, and
+ * would put fabricated dates on the one page whose whole job is to be the
+ * archive's honest account of itself. So: one group, named for what the
+ * ordering actually is.
+ *
+ * `did`, NOT `found`, FOR A PAGE THAT IS 69 WITHDRAWALS DEEP. The component
+ * keeps «what was done» and «what was found» apart on purpose, and says why:
+ * «reading a register for six hours and finding nothing is a day's work and no
+ * discovery, and a feed that only records discoveries quietly rewrites the
+ * effort.» This archive has one field per row, and a third of the page is
+ * negatives and retractions. Printing those under «found» would assert a
+ * discovery for every one of them — the exact failure the component warns
+ * against. «did» is true of all 214, and it is what the subtitle has always
+ * said this page is.
+ */
 import Base from '../layouts/Base.astro';
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+import Changes from '@daviddef/archive-kit/components/Changes.astro';
+import { u } from '../lib/url.js';
+
 const log = [
   ['The six rows that unblocked, worked the same afternoon — and MOTA turns out to be an African surname', 'THE SERVICE CAME BACK IN THE MORNING AND SIX ROWS HAD BEEN WAITING ON IT. *** ROW 137 CALLED MOTA “THE MOST IMPORTANT UNTESTED NAME”, *** because MOTA FIGUEIREDO is the fullest form anybody ever wrote of Ivone\'s maiden name and 288 records was past the cap used on every other spelling. ALL 278 ARE NOW READ, AND THE NAME IS A FALSE LEAD FOR A REASON NOBODY HAD GUESSED: *** MOTA IN THE SOUTH AFRICAN ARCHIVES IS OVERWHELMINGLY A SOTHO, TSWANA AND NGUNI SURNAME. *** The bulk of the 278 are NATIVE ESTATE files and magistrates\' case files from the Free State and the Witwatersrand — Lehlohonolo, Litaba, Mohasoa, Mbuti Meshack, Maphehello Agnes, Monamoholo Johane. EIGHTEEN ARE PORTUGUESE AND NOT ONE IS HERS, and the two-keyword test settles it in one line: MOTA and FIGUEIREDO together return EXACTLY ONE RECORD across all twenty repositories, and it is her own first divorce, held here since September. *** ROW 175 WANTED A NUMBER AND NAMED ITS OWN TRAP WITHOUT SEEING IT. *** It asked for “the WLD number for Kurt versus Frances, 1957” and said to search LUWINSKI, LUWINSKY and LUWENSKI. The file is TAB WLD 1878/1956 — THE YEAR IS 1956, the year he married her — and it came up under HOSTOWSKY, her maiden name, which none of those three queries would return. And the row\'s last line points at “the neighbour already in the table, WLD 2542/1957, Standard Bank versus K. Luwinski, in the same window”. THAT NEIGHBOUR IS WHERE THE 1957 CAME FROM. Correction 9500919. *** ROW 138: ALL SIX SALKOW FILES CONFIRMED AND A SEVENTH FOUND *** — TAB WLD 2462/1966, Isaac Lewis Benjamin versus ROSALINE EVE, the first record to give her a second forename, and her fourth marriage ending. AND IT CONTRADICTS THE 1960 FILE ABOUT THE ORDER OF HER MARRIAGES: one lists them “formerly Spence-Wilson, formerly Salkow”, the other numbers them “(1) Burns (2) Spencer-Wilson (3) Salkow”, and they cannot both be right. The estate is indexed SALKOW, ISAAC MORRIS — forenames reversed from every court file. *** ROW 154: *** seventy-five Rappoport records and exactly two are Pauline\'s. No fourth husband. *** ROW 140 IS DONE AND THE WAY IT HAD TO BE DONE IS THE FINDING: A REFERENCE CODE IS NOT SEARCHABLE ON THIS SERVICE AT ALL. *** “61416” returns ZERO while the record carrying it sits in the index, and “534/1948” returns NINE THOUSAND FOUR HUNDRED AND SIXTY-NINE, because the keyword box tokenises on the slash and matches 534 OR 1948 anywhere in a title. The portal searches TITLE TEXT. So all eighteen citations were re-verified BY SURNAME and all eighteen came back with the reference this archive already held. NOT ONE CITATION HERE IS STALE. *** AND A NEW SPELLING, OFF THE ARCHIVE\'S OWN MOST-CITED FILE. *** TPD 534/1948 is Ivone\'s first divorce and this archive has cited it since September. Its index title reads “JOHANNES ANTONIE OELOFSE DE WITT VERSUS YVONNE (BORN DE FIGUEITEDO)” — A T WHERE THE R BELONGS, and nobody here had recorded it, because the file was known by its number and the title was never read. SEVENTEEN FORMS OF HER MAIDEN NAME ARE NOW ON THE NAMES PAGE AND THE NEWEST WAS ON A DOCUMENT THE ARCHIVE ALREADY OWNED. A CITATION IS NOT A READING — which is the same fault as this morning\'s, twice in one day.', 'doc'],
   ['NAAIRS was not down, it had moved again — and the three negatives it was blocking now hold under seventeen spellings', 'THE WORK LIST HAD FIVE ROWS OWNED BY “NAAIRS IS DOWN” AND A SIXTH BLOCKED BEHIND THEM. The endpoint was re-probed to put a date on the block and it turned out not to be a block. The old Search Manager address still answers 503 and naairs.htm is still 404; THE SERVICE CAME BACK SOMEWHERE ELSE UNDER A DIFFERENT NAME — nationalarchives.gov.za/search/, the NATIONAL ARCHIVAL INFORMATION SEARCH SYSTEM, free, no account, all twenty repositories, with a JSON API underneath. That is the second time in a month a dead URL has been mistaken here for a dead service; the first was negative #21, withdrawn on exactly that ground. *** AND THE BETTER HALF IS NOT THE ADDRESS. *** NARSSA still publishes its two-database warning — 8.3 million entries migrating, the “fulltext search” admittedly incomplete — AND IT NAMES THIS PORTAL AS THE COMPLETE ONE: “To search the complete database please click on: Search NAAIRS Database”, linking exactly there. On 27 September this archive added a bound to negative #18 saying it could not establish which of the two databases had answered, and that the balance of evidence favoured the complete one. FOR TODAY\'S SEARCHES THAT IS NO LONGER A BALANCE OF EVIDENCE; IT IS THE ARCHIVE\'S OWN SENTENCE. *** CONTROLS FIRST: SMITH 47,936, SCHMIDT 3,418. *** Then LEIBHOLZ 0, LEIPHOLZ 0, LEIBHOLTZ 0, LEIPHOLTZ 0, LAIBHOLZ 0, LEIBHOLS 0 — the negative that was called “the exact shape of the 1975 error” is widened from one spelling to six AND IT SURVIVES, and the eighth spelling has at last been put to a South African archive. LUWINSKI 7, LUWINSKY 1, LEWINSKI 5, LOWINSKY 7 and seven more spellings zero, with no naturalisation file and no immigration file under any of them; LUWINSKY, the spelling this archive knew the South African record used and had never searched, returns exactly the 1948 divorce file already held. A RE-RUN THAT CONFIRMS THE ORIGINAL IS THE USUAL OUTCOME AND IS ALMOST NEVER WRITTEN DOWN. *** AND TWO COURT FILES FELL OUT THAT THE ARCHIVE DID NOT HAVE. *** TAB WLD 1878/1956, RESTITUTION OF CONJUGAL RIGHTS, KURT LUWINSKI VERSUS FRANCES NÉE HOSTOWSKY — a seventh case where the litigation table held six. He married her on 29 FEBRUARY 1956 and sued her IN THE SAME YEAR, and in South African practice a restitution order is the first step of a divorce: THE MARRIAGE LASTED MONTHS. And TAB WLD 126/1959, Frances Eisenhardt v Rolf, judicial separation, within a year of her 23 May 1958 remarriage. BOTH ARE INDEXED UNDER HER MAIDEN SURNAME SPELT ONE LETTER APART — HOSTOWSKY AND HOSTOWSKI — AND NEITHER QUERY RETURNS THE OTHER. Three family surnames also went to a South African archive for the first time: KERGER 3, two of them immigration papers; SCHMUL 5; POLLNOW 1. None connected to anyone here, all recorded as tried and empty.', 'doc'],
@@ -217,23 +259,38 @@ const log = [
   ['Two candidate dates, and the document already excluded one of them', 'The death certificate\u2019s boxed day-of-month is smudged, and this archive published \u201cthe 16th or the 17th\u201d and declined to choose. THE SEVENTEENTH WAS NEVER AVAILABLE. The same certificate carries the certifying physician\u2019s signature dated 16 March, and a doctor cannot certify a death that has not happened yet \u2014 so one of the two readings was impossible on the page\u2019s own evidence. Worse, the bound was written into the very paragraph that offered the pair, as the thing that \u201cbounds it\u201d, and was then not applied to it. The family gives the date as 14 MARCH 2010, which fits everything else: the certificate written and the whole bundle faxed two days later. THE RULE: a document\u2019s legible dates constrain its illegible ones, and the constraint has to be applied before the candidates are published, not printed alongside them. Refusing to guess is the right instinct and it is not a substitute for reading the rest of the page.', 'disp'],
   ['A recollection, a paragraph built on it, and a withdrawal inside the hour', 'Asked who travelled to Portugal when Ivone died, the family first said HENRIQUE \u2014 known as Eric \u2014 and that he passed the papers to Derrick afterwards. The declaration in the bundle names \u201co Sr. DERIKE\u201d. This archive recorded the disagreement rather than resolving it, which was right, BUT ALSO WROTE A PARAGRAPH ON WHAT WOULD FOLLOW IF THE RECOLLECTION HELD \u2014 that a Henrique at Vila Nova de Gaia in 2010 would mean his estrangement from his mother had not lasted, and that the half-brothers were in contact late in life. The family then confirmed it was Derrick, and the paragraph is withdrawn. NOTHING PLACES HENRIQUE IN PORTUGAL, and the archive still knows nothing of him between Johannesburg in 1962 and his death in 2022. The argument that settled it was in the document the whole time: a clerk taking a name by ear does not turn HENRIQUE, a name he writes every week, into DERIKE \u2014 he does turn DERRICK into it. THE LESSON IS NOT \u201cdo not record family recollection\u201d, which would be absurd in an archive built on it. It is that an inference drawn from an unresolved claim inherits the claim\u2019s uncertainty, and this one was written in the confident voice the rest of the page uses for documents. ERIC survives as a name variant not previously held, which is all the detour left behind.', 'disp'],
 ];
+
+/* THE CHARACTER CLASS IS LOAD-BEARING. Written the obvious way, as
+   `.replace(/</g, '&lt;')`, the bare `<` after a slash stops being a regex to
+   the TypeScript parser behind `astro check` and starts a JSX tag — and every
+   open tag in the long body below is then reported as never closing. It cost 20
+   phantom failures from checktemplates on a page whose markup was correct, and
+   `astro build` itself was happy throughout, so only the gate caught it. The
+   same note, for the same reason, is in errands.astro and searched.astro. */
+const ENT = { '&': '&amp;', '<': '&lt;', '>': '&gt;' };
+const esc = (s) => String(s ?? '').replace(/[&<>]/g, (ch) => ENT[ch]);
+
+/* The old table printed both fields through JSX, which escapes; the component
+   takes HTML. So everything is escaped on the way in and the seven rows that
+   carry a literal ampersand — «Jaques Leibholz & Co.», «England & Wales» —
+   render exactly as they did before. */
+const GRADE = { doc: 'Documented', disp: 'Withdrawn', inf: 'Inferred' };
+
+const days = [{
+  when: 'In the order it was done, newest first',
+  entries: log.map(([what, detail, tag]) => ({
+    title: esc(what),
+    did: esc(detail),
+    kind: GRADE[tag] || tag,
+  })),
+}];
 ---
 <Base title="What changed"
   subtitle="What was done, in the order it was done"
   lede="An archive is only as trustworthy as its account of itself. This is the working record — including the leads that went nowhere, which are the ones most worth writing down.">
 
-  <div class="scroll"><table>
-    <thead><tr><th>Step</th><th></th><th>Status</th></tr></thead>
-    <tbody>
-      {log.map(([what, detail, tag]) => (
-        <tr>
-          <td><strong>{what}</strong></td>
-          <td class="small">{detail}</td>
-          <td><span class={'tag ' + tag}>{tag === 'doc' ? 'Documented' : tag === 'disp' ? 'Withdrawn' : 'Inferred'}</span></td>
-        </tr>
-      ))}
-    </tbody>
-  </table></div>
+  <Changes u={u} days={days} />
+
 
   <h2>Where the open work stands</h2>
   <div class="scroll"><table>
@@ -393,7 +450,7 @@ const log = [
     <p>
       <strong>And one thing that will not appear here at all.</strong> The archive has been told that
       Derrick served on the Mozambique border in the 1970s. He is living; this archive
-      <a href={base + '/derrick/'}>names him and publishes nothing else about him</a>, and that includes
+      <a href={u('/derrick/')}>names him and publishes nothing else about him</a>, and that includes
       his service. The single fact such a file could hold that <em>would</em> be publishable is a
       next-of-kin address for <strong>Ivone in the 1970s</strong> — and nobody knows where she was
       between the Salkow marriage in 1953 and her death at Porto. But it is his record, it needs his own
@@ -424,5 +481,20 @@ const log = [
     recorded this archive's subject under a wrong given name and a wrong year; it has been corrected to
     <strong>Lynn Derrick Luwinski</strong>, and the two now point at each other.
   </p>
-  <p class="small"><a href={base + '/open-questions/'}>The ten questions still open →</a></p>
+  <p class="small"><a href={u('/open-questions/')}>The ten questions still open →</a></p>
+
+<style is:global>
+  /* The component's chip is unstyled in this archive — nothing here has ever
+     defined `.chip`, because this archive spells the same object `.tag`. These
+     three rules hand the grade back its own appearance rather than forking the
+     component to change a class name. The colours are the archive's own, and
+     follow it into dark mode because they are the same variables Base sets. */
+  .ch .chip { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: .62rem; letter-spacing: .1em; text-transform: uppercase;
+    padding: .15rem .45rem; border: 1px solid currentColor; border-radius: 2px;
+    white-space: nowrap; }
+  .ch-e[data-kind="Documented"] .chip { color: var(--doc); }
+  .ch-e[data-kind="Withdrawn"]  .chip { color: var(--disp); }
+  .ch-e[data-kind="Inferred"]   .chip { color: var(--inf); }
+</style>
 </Base>
