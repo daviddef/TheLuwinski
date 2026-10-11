@@ -1,7 +1,33 @@
 ---
+/* What has actually been read, and what it did not turn up.
+ *
+ * 11 October 2026. THE SEARCH REGISTER WAS NOT ON THIS PAGE. data/searched.json
+ * has held twenty-four worked volumes and databases since 27 September — the
+ * Szubin marriage re-read letter by letter, twelve Kreuzberg Namensverzeichnisse
+ * read page by page, the eighteen-year Adressbuch run and the six-year hole in
+ * it — and it was imported by no page in this archive. The research commits
+ * were writing it and the site was not showing it. Its own dek says it is
+ * «kept so that nobody repeats them», which it cannot do from inside a file.
+ *
+ * It is drawn here by the kit's Searched component, as it is in the seven other
+ * archives of the estate; this was the last one hand-drawing this page, so
+ * checkpages failed the build. The OUTCOME VOCABULARY IS THIS ARCHIVE'S and is
+ * taken as given: yield, nothing, nil, pending, blocked. Only `nothing` and
+ * `nil` count as «returned nothing» for the tally. `blocked` deliberately does
+ * not — the Geneteka row says so in its own words, «RECORDED AS BLOCKED, NOT AS
+ * NOTHING», because a holding that contains essentially no Jewish records is
+ * not a search that came back empty. `pending` is a holdings fact, not a
+ * negative. Counting either as nothing would be inventing a finding.
+ *
+ * The evidence-file inventory and the bounded negatives below are a different
+ * object from the register and stay as they were.
+ */
 import Base from '../layouts/Base.astro';
+import Searched from '@daviddef/archive-kit/components/Searched.astro';
+import { u } from '../lib/url.js';
 import data from '../data/evidence.json';
 import negatives from '../data/negatives.json';
+import searched from '../data/searched.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const data_neg = negatives;
 const c = data.counts;
@@ -9,6 +35,42 @@ const personFiles = data.files.filter(f => f.kind === 'person');
 const refFiles = data.files.filter(f => f.kind === 'ref');
 const linked = data.people.filter(p => p.register_id);
 const ambiguous = data.people.filter(p => p.ambiguous);
+
+/* The component escapes `src`, `when` and `outcome` itself and takes `what`,
+   `got` and `extra` as HTML the archive has already rendered. This archive
+   holds them as plain text, markers and all, so they are escaped here —
+   printed as the data holds them, the same rule corrections.astro works to. */
+/* THE CHARACTER CLASS IS LOAD-BEARING. Written the obvious way, as
+   `.replace(/</g, '&lt;')`, the bare `<` after a slash stops being a regex to
+   the TypeScript parser behind `astro check` and starts a JSX tag — and every
+   open tag in the body below is then reported as never closing. It cost 20
+   phantom failures from checktemplates on a page whose markup was correct, and
+   `astro build` itself was happy throughout, so only the gate caught it.
+   corrections.astro gets away with the obvious spelling because it has one
+   self-closing component after its frontmatter and nothing to mis-pair with. */
+const ENT = { '&': '&amp;', '<': '&lt;', '>': '&gt;' };
+const esc = (s) => String(s ?? '').replace(/[&<>]/g, (ch) => ENT[ch]);
+const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB',
+  { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+
+/* WALKED IS THE WHOLE DIFFERENCE between a volume read page by page and a
+   surname typed into a search box, and it is the first thing a later reader
+   needs in order to decide whether to repeat the work. It is the dim column. */
+const srows = [...searched.rows]
+  .sort((a, b) => String(b.when).localeCompare(String(a.when)))
+  .map((r) => ({
+    when: fmt(r.when),
+    src: r.src,
+    what: esc(r.what),
+    got: esc(r.got),
+    extra: esc([r.pages ? `pages ${r.pages}` : '', r.walked ? 'walked page by page' : 'queried, not walked']
+      .filter(Boolean).join(' · ')),
+    href: r.url,
+    outcome: r.outcome,
+    tags: r.tags,
+  }));
+const NIL = ['nothing', 'nil'];
+const nilCount = searched.rows.filter((r) => NIL.includes(r.outcome)).length;
 ---
 <Base title="What has actually been read"
   subtitle={c.records + ' records, about ' + c.people + ' people, from ' + c.person_files + ' files'}
@@ -19,7 +81,13 @@ const ambiguous = data.people.filter(p => p.ambiguous);
     <div class="card stat"><b>{c.records}</b><span>Records</span></div>
     <div class="card stat"><b>{c.files}</b><span>Evidence files</span></div>
     <div class="card stat"><b>{c.linked_to_register}</b><span>Matched to the register</span></div>
+    <div class="card stat"><b>{searched.rows.length}</b><span>Volumes &amp; databases worked</span></div>
+    <div class="card stat"><b>{nilCount}</b><span>Of those returned nothing</span></div>
   </div>
+
+  <h2 id="register" style="margin-top:3rem">{searched.title}</h2>
+  <p class="lede">{searched.dek}</p>
+  <Searched rows={srows} u={u} nil={NIL} unit="volumes and databases" />
 
   <div class="panel">
     <h3>The fault this page was built to close <span class="tag disp">17 September 2026</span></h3>

@@ -1,27 +1,136 @@
 ---
+/* What this archive has asked of other people, and when each may be chased.
+ *
+ * 11 October 2026. This page was hand-drawn. Seven of the eight archives in
+ * the estate draw their errands queue with the kit's Errands component, and
+ * this was the last holdout, so checkpages failed the build that added it.
+ *
+ * THE GRADE STAYS THIS ARCHIVE'S OWN. It ranks a letter by WHEN IT MAY BE
+ * CHASED, computed from an interval chosen for the recipient — which is a
+ * different question from Defranceski's (what would the answer buy),
+ * D'Arcy's (where has the request got to) and Lerena's (has anybody
+ * replied). The component takes the grouping, the grade and its wording as
+ * given, the same contract the rest of the estate works to.
+ *
+ * AND THREE LETTERS HAD BEEN ANSWERED WITHOUT THE PAGE SAYING SO. letters.json
+ * has carried `answered` and `outcome` on three rows since 25 September;
+ * the old mapping read `ack` and `ackNote` and nothing else. So Koszalin —
+ * answered in five lines with a negative, signed, on 16 September — printed
+ * an em dash under «Heard back», and was counted as silent and as due to be
+ * chased. The data was right and the page was wrong, which is the fault
+ * checkrows.py exists for: the mapping in the page, not the component,
+ * decides what a reader sees.
+ */
 import Base from '../layouts/Base.astro';
+import Errands from '@daviddef/archive-kit/components/Errands.astro';
+import { u } from '../lib/url.js';
 import data from '../data/letters.json';
-const today = new Date();
+
 const day = 86400000;
-const rows = data.rows.map(r => {
+const today = new Date();
+/* THE CHARACTER CLASS IS LOAD-BEARING. Written the obvious way, as
+   `.replace(/</g, '&lt;')`, the bare `<` after a slash stops being a regex to
+   the TypeScript parser behind `astro check` and starts a JSX tag — and every
+   open tag in the body below is then reported as never closing. It cost 20
+   phantom failures from checktemplates on a page whose markup was correct, and
+   `astro build` itself was happy throughout, so only the gate caught it.
+   corrections.astro gets away with the obvious spelling because it has one
+   self-closing component after its frontmatter and nothing to mis-pair with. */
+const ENT = { '&': '&amp;', '<': '&lt;', '>': '&gt;' };
+const esc = (s) => String(s ?? '').replace(/[&<>]/g, (ch) => ENT[ch]);
+const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB',
+  { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+
+/* The page recomputes on every build, so the dates below are live rather than
+   written down once and forgotten. `n` is the order sent and does not move. */
+const rows = data.rows.map((r, i) => {
   const sent = new Date(r.sent + 'T00:00:00Z');
   const due = new Date(sent.getTime() + r.chase * day);
-  const waited = Math.floor((today - sent) / day);
-  const left = Math.ceil((due - today) / day);
-  return { ...r, waited, left, due: due.toISOString().slice(0, 10), ready: left <= 0 };
-}).sort((a, b) => a.left - b.left);
-const readyNow = rows.filter(r => r.ready).length;
-const acked = rows.filter(r => r.ack).length;
-const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+  return {
+    ...r,
+    n: i + 1,
+    waited: Math.floor((today - sent) / day),
+    left: Math.ceil((due - today) / day),
+    dueOn: due.toISOString().slice(0, 10),
+  };
+});
+
+/* AN ACKNOWLEDGEMENT IS NOT AN ANSWER and the two are kept apart here, which
+   is the one thing the footnote at the bottom of this page has always said:
+   an answered letter is off the chase clock, an acknowledged one is not and
+   its chase date does not move. */
+const answered = rows.filter((r) => r.answered);
+const open = rows.filter((r) => !r.answered).sort((a, b) => a.left - b.left);
+const due = open.filter((r) => r.left <= 0);
+const waiting = open.filter((r) => r.left > 0);
+const acked = open.filter((r) => r.ack).length;
+
+const STATE = {
+  answered: ['Answered', 'var(--doc)'],
+  due: ['Due to be chased', 'var(--disp)'],
+  waiting: ['Inside its interval', 'var(--open)'],
+};
+
+/* The kit's row has no slot of its own for an outcome or a chase date, so both
+   lead the slot that exists — the same move D'Arcy made when its statement of
+   stakes had nowhere to go. A line nobody can read is not published. */
+const why = (r, state) => {
+  const bits = [];
+  if (state === 'answered') {
+    bits.push(`<strong>Answered ${fmt(r.answered)}.</strong> ${esc(r.outcome)}`);
+  } else if (state === 'due') {
+    bits.push(`<strong>${r.left === 0 ? 'Due to be chased today' : `${-r.left} days overdue`}.</strong> `
+      + `Waited ${r.waited} days against an interval of ${r.chase}.`);
+  } else {
+    bits.push(`<strong>Chase from ${fmt(r.dueOn)}</strong>, in ${r.left} days — `
+      + `waited ${r.waited} of ${r.chase}.`);
+  }
+  if (r.ack) {
+    bits.push(`<span class="muted"><strong>Acknowledged ${fmt(r.ack)}.</strong> ${esc(r.ackNote)}`
+      + `${state === 'answered' ? '' : ' An acknowledgement is not an answer and this date does not move.'}</span>`);
+  }
+  if (r.acknowledged) bits.push(`<span class="muted"><strong>Our thanks:</strong> ${esc(r.acknowledged)}</span>`);
+  if (r.followup) bits.push(`<strong>Followed up.</strong> ${esc(r.followup)}`);
+  return bits.join('<br />');
+};
+
+const toRows = (list, state) => list.map((r) => ({
+  n: r.n,
+  what: esc(r.what),
+  who: `<strong>${esc(r.who)}</strong> · ${esc(r.addr)}`,
+  sent: fmt(r.sent),
+  ref: esc(r.thread),
+  why: why(r, state),
+  stateLabel: STATE[state][0],
+  colour: STATE[state][1],
+}));
+
+/* 9 October 2026's lesson from D'Arcy, applied here: a count that is retyped
+   is a claim that can go stale silently. The prose below said «fifteen
+   letters» against eighteen rows in the data under it. It is computed now. */
+const NUM = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+             'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen',
+             'eighteen', 'nineteen', 'twenty'];
+const word = (n) => (n < NUM.length ? NUM[n] : String(n));
+
+const groups = [
+  ['Answered, and kept', answered, 'answered',
+    'Off the chase clock. The answer is printed in full, because a negative that cost a letter is worth as much as a hit.'],
+  ['Due to be chased', due, 'due',
+    'The interval chosen for this recipient has run out.'],
+  ['Out, and still inside its interval', waiting, 'waiting',
+    'Chasing these now would be chasing too early.'],
+];
 ---
 <Base title="Errands"
-  subtitle={`${rows.length} sent — ${acked} have acknowledged receipt, ${rows.length - acked} are silent, and ${readyNow === 0 ? 'none is due to be chased yet' : readyNow + ' are due to be chased'}`}
+  subtitle={`${rows.length} sent — ${answered.length} answered, ${acked} acknowledged but not yet answered, `
+    + `${open.length - acked} silent, and ${due.length === 0 ? 'none due to be chased' : `${due.length} due to be chased`}`}
   lede={data.note}>
 
   <div class="panel">
     <h3>Why this page exists</h3>
     <p>
-      This archive has fifteen letters out for its own research alone &mdash; more again in the sibling archives that share the mailbox &mdash; and <strong>had no schedule for chasing any of them</strong>,
+      This archive has {word(rows.length)} letters out for its own research alone &mdash; more again in the sibling archives that share the mailbox &mdash; and <strong>had no schedule for chasing any of them</strong>,
       which means they get chased either too early, which annoys archivists, or never, which is worse.
       It had already sent one correspondent two emails in four hours and a second correspondent a
       duplicate enquiry it had forgotten making.
@@ -68,31 +177,22 @@ const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day:
     </p>
   </div>
 
-  <div class="scroll bleed"><table>
-    <thead><tr><th>Waited</th><th>To</th><th>About</th><th>Heard back</th><th>Chase from</th></tr></thead>
-    <tbody>{rows.map(r => (
-      <tr>
-        <td><strong>{r.waited}d</strong></td>
-        <td><strong>{r.who}</strong><br /><span class="small muted">{r.addr}</span></td>
-        <td class="small">{r.what}</td>
-        <td class="small">{r.ack
-          ? <><span class="tag inf">Acknowledged</span><br /><span class="muted">{r.ackNote}</span></>
-          : <span class="muted">&mdash;</span>}</td>
-        <td class="small">
-          {r.ready
-            ? <><span class="tag disp">Due now</span> <span class="muted">{r.left === 0 ? 'today' : `${-r.left}d overdue`}</span></>
-            : <><span class="muted">{fmt(r.due)}</span><br /><span class="small muted">in {r.left}d</span></>}
-        </td>
-      </tr>
-    ))}</tbody>
-  </table></div>
+  {groups.map(([label, list, state, note]) => list.length > 0 && (
+    <section>
+      <h2>{label}</h2>
+      <p class="small muted">{note}</p>
+      <Errands groups={[{ rows: toRows(list, state) }]} u={u} />
+    </section>
+  ))}
 
   <p class="small muted">
-    Intervals: <strong>10 days</strong> for a commissioned researcher who has been asked for rates;
+    Intervals: <strong>7 to 10 days</strong> for a private researcher who has been asked for rates;
+    <strong>14 days</strong> for a documentation centre or a reading room with a named officer;
     <strong>21 days</strong> for a Master&rsquo;s office, a national archive or a parish;
     <strong>28 days</strong> for an overseas archive in another language.
     <strong>An acknowledgement is not an answer</strong>, and this page keeps the two apart: a row marked
     <em>Acknowledged</em> has been received and queued by a human or a mail robot, nothing more. Its chase
-    date does not move. A row that is genuinely answered comes off this page entirely.
+    date does not move. A row that is genuinely answered comes off the chase clock and is kept under
+    <em>Answered</em> above, with what it said.
   </p>
 </Base>
