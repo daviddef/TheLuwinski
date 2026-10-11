@@ -423,6 +423,24 @@
     "labsa"
    ],
    "got": "A BIRTH FOUND FIRST TRY, BECAUSE THE OFFICE WAS SCOPED FROM A DIRECTORY FIRST. The street directory for the birth year named the only household of that surname in the borough and gave its street; the street fixed the registry office; one index volume then produced the entry. THAT ORDER — DIRECTORY, THEN OFFICE, THEN INDEX — TURNS A SEVENTEEN-OFFICE SWEEP INTO ONE VOLUME, and it is the single most useful thing learned here. TWO LIMITS OF THESE INDEXES, BOTH MEASURED. (1) A BIRTH INDEX GIVES THE CHILD, THE DAY AND MONTH, AND THE REGISTER NUMBER, AND NOTHING ELSE — no parents, and the confession column is blank for everyone on the page. It locates a certificate; it does not replace one. (2) A MARRIAGE INDEX GIVES SURNAMES ONLY: no forenames, and NO INDICATION OF WHICH PARTY IS THE GROOM. A widow remarrying is indexed under her own married surname with “geb.” and her new husband opposite, so a man of surname X marrying a woman of surname Y and a woman of surname X marrying a man of surname Y look identical on the page. An index hit therefore names a marriage, not a couple. The birth indexes are organised BY LETTER AND THEN BY MONTH; the marriage indexes BY LETTER AND THEN BY YEAR. Both are image-only — a 1903 birth index scored zero control surnames across its first thirty pages — and the L block sits at roughly 45 to 55 per cent of the way through every one of the five volumes read."
+  },
+  {
+   "src": "Zentral- und Landesbibliothek Berlin — Berliner Adressbuch, the whole digitised run",
+   "key": "zlb/adressbuch-sally-1873-1920",
+   "url": "https://digital.zlb.de/viewer/image/34115495_1916/1710/",
+   "what": "One forename hunted through eighteen years of one city's householder lists, and the holding's own shape measured on the way",
+   "when": "2026-10-11",
+   "outcome": "nil",
+   "walked": false,
+   "pages": "the surname's Namenteil run in 1873, 1880, 1884, 1888, 1890, 1892, 1894, 1895, 1896, 1903, 1905, 1908, 1910, 1913, 1916 and 1920 — the 1916 run read at the page image",
+   "tags": [
+    "berlin",
+    "directory",
+    "germany",
+    "zlb",
+    "holdings"
+   ],
+   "got": "A NEGATIVE WORTH HAVING AND A HOLDINGS FACT WORTH MORE. THE RUN IS SPLIT ACROSS FOUR RECORD IDENTIFIERS AND HAS A SIX-YEAR HOLE: the Berliner Adreßbuch is PI 34115495 for 1903-1943 and PI 34115512 for 1873-1896, with 1897-1902 DIGITISED UNDER NEITHER; the post-war Namenteil volumes are PI 34117222 (1955-1970) and the telephone books PI 15849358 (1970-1980). A query against the wrong anchor returns zero AND LOOKS EXACTLY LIKE AN ABSENT SURNAME — in this case zero pages and zero Schmidt, which is how it was caught. Always run a common-surname control. AND THE PRE-1900 VOLUMES PRINT FORENAME INITIALS ONLY (“A., Beamter”, “O., Lederhändler”, “J., Ww.”), so a negative on a forename cannot be drawn from them at all; full forenames begin in 1903. The search itself: eighteen years of one surname's run, the 1916 one read at the image and agreeing with its text layer entry for entry, and the forename sought is in none of them. A MAN WHO IS NOT A HOUSEHOLDER IS NOT IN A DIRECTORY, which is the limit of what any such negative can mean and should be said out loud."
   }
  ]
 }
