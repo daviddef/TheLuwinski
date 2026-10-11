@@ -233,6 +233,14 @@
    "people": 0
   },
   {
+   "file": "east-berlin-1990-1994-deaths.tsv",
+   "title": "East Berlin, the reading that was only ever an argument — two thirds of it is now a reading",
+   "source": "Landesarchiv Berlin LABSA, eleven East Berlin offices, all 47 death-index volumes touching 1990-1994 scored and swept, 11 October 2026",
+   "kind": "ref",
+   "rows": 15,
+   "people": 0
+  },
+  {
    "file": "ella-leibholz-tiergarten-1974.tsv",
    "title": "Ella Leibholz, found in the wrong borough on the same day as Charlotte",
    "source": "Landesarchiv Berlin P Rep. 820 Nr. 37, Sterberegister Tiergarten 1974 Nr. 1160, read at the image 8 October 2026",
@@ -3946,7 +3954,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 138,
+  "files": 139,
   "person_files": 25,
   "people": 193,
   "records": 268,
