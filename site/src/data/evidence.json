@@ -445,7 +445,7 @@
    "title": "Kreuzberg is closed, 1938 to 1994, and the text layer begins in a year nobody had measured",
    "source": "Landesarchiv Berlin P Rep. 510, 45 volumes scanned and the four blind years 1959-1962 read at the image, 10-11 October 2026",
    "kind": "ref",
-   "rows": 16,
+   "rows": 17,
    "people": 0
   },
   {
@@ -831,6 +831,14 @@
    "kind": "person",
    "rows": 15,
    "people": 15
+  },
+  {
+   "file": "spandau-1980-1982-deaths.tsv",
+   "title": "The gap in Agnes's own window, found by counting the sweeps instead of trusting them",
+   "source": "Landesarchiv Berlin LABSA, Standesamt Spandau I P Rep. 480 Nr. 1238, 1239, 1240 and 2458, swept and read at the image 11 October 2026",
+   "kind": "ref",
+   "rows": 18,
+   "people": 0
   },
   {
    "file": "spandau-1982-leibholz-schoenfeld.tsv",
@@ -3938,7 +3946,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 137,
+  "files": 138,
   "person_files": 25,
   "people": 193,
   "records": 268,
