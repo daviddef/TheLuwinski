@@ -459,6 +459,24 @@
     "method"
    ],
    "got": "THE SERVICE WAS RECORDED AS DEAD AND IT HAD ONLY MOVED, FOR THE SECOND TIME IN A MONTH. The old Search Manager endpoint still answers 503 and the old portal page is still 404; NAAIRS now lives at /search/ as the “National Archival Information Search System” — an Angular portal, free, no account, ALL TWENTY REPOSITORIES including one code for all of them at once, a four-keyword Contains/AND/OR form, and a JSON API at /search-api/api/search taking {repositoryCode, keywords:[{keyword,operator,matchType,enabled}], …}. ITS OWN ROUTES 404 IF TYPED DIRECTLY — there is no server-side fallback — so the portal must be entered at /search/ and the repository clicked. AND THE THING WORTH MORE THAN THE ENDPOINT: NARSSA STILL PUBLISHES A TWO-DATABASE WARNING (8.3 million entries migrating, the “fulltext search” admittedly incomplete) AND NAMES THIS PORTAL AS THE COMPLETE ONE — “To search the complete database please click on”, linking exactly here. That settles which twin answers, which an earlier session could only argue from the vocabulary of a results page. Controls: SMITH 47,936, SCHMIDT 3,418. Two caveats: A MULTI-WORD KEYWORD IS NOT A PHRASE (two surnames in one box returned more records than either alone), and the facet counts are per-repository so a zero under RSA is a zero everywhere. THE SEARCHES THEMSELVES: three published negatives widened from one spelling to six and eleven and ALL THREE SURVIVED, which is the outcome a re-run should usually have and rarely gets written down; and two court files turned up that the archive did not hold, both indexed under a maiden surname spelt one letter apart from the other, NEITHER RETURNED BY THE OTHER."
+  },
+  {
+   "src": "Landesarchiv Berlin LABSA — eleven East Berlin registry offices, Namensverzeichnisse zum Sterberegister",
+   "key": "labsa/east-berlin-sterbe-1990-1994",
+   "url": "https://content.landesarchiv-berlin.de/labsa/show/index.php",
+   "what": "The family's spellings and the maiden name KERGER in the death indexes of every East Berlin registry office, 1990-1994",
+   "when": "2026-10-11",
+   "outcome": "nothing",
+   "walked": false,
+   "pages": "all pages of 33 volumes; 14 of the 47 are blind and are NOT read",
+   "tags": [
+    "berlin",
+    "standesamt",
+    "death-index",
+    "germany",
+    "labsa"
+   ],
+   "got": "FORTY-SEVEN VOLUMES, 1.0 GB, ELEVEN OFFICES — Friedrichshain, Hellersdorf, Hohenschönhausen, Köpenick, Lichtenberg, Marzahn, Mitte, Pankow, Prenzlauer Berg, Treptow and Weißensee. Each was scored against six common surnames before its silence was allowed to count, and THE TWO CLASSES SEPARATE WITHOUT ARGUMENT: the 33 legible run 1.38 to 2.51 control names a page, the 14 blind are all 0.00. NO LEIBHOLZ, LEIPHOLZ, LEIPSHOLZ, LUWINSKI OR LOWINSKI IN ANY OF THE THIRTY-THREE. *** THE BLINDNESS IS NOT RANDOM: EVERY SINGLE 1990 VOLUME IS BLIND, IN ELEVEN SEPARATE OFFICES — WHICH IS EVERY OFFICE IN EAST BERLIN *** — the first year after reunification is unreadable across the whole of East Berlin, plus Prenzlauer Berg 1991-93 entire. Those fourteen are recorded as UNREAD, not as negatives. ONE KERGER WAS FOUND AND SHE IS NOT AGNES: Köpenick 1992, \"Kerger, Karoline Henriette Lucie\", three forenames none of them Agnes and no married name; her register number is not cleanly separable in the text layer and was NOT GUESSED. Written down so the maiden name is not searched again on the assumption it was never tried. WHY 1990 AND NOT 1980: until 9 November 1989 a West Berlin pensioner could not relocate east at all, so the window is bounded by the Wall and not by choice. See data/east-berlin-1990-1994-deaths.tsv."
   }
  ]
 }
