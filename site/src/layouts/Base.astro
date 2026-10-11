@@ -1,4 +1,5 @@
 ---
+import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
 const { title, subtitle, lede, hero } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const nav = [
@@ -322,6 +323,11 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     <p><strong>Living people are omitted from this build.</strong> Lynn Derrick Luwinski is named and
     nothing more. A removal request is honoured within days, without argument and without requiring a reason.</p>
     <p>Every claim carries a confidence and a source. Corrections are the most valuable thing you can send.</p>
+    {/* The siblings pass this component `thisArchive?.counter` out of the kit's
+        archives.json. This archive is deliberately not in that file (see the
+        note above the head tags), so the code is stated here, the same way
+        SITE and ACCENT are. GoatCounter site: theluwinski. */}
+    <VisitCount code="theluwinski" />
   </div></footer>
 </body>
 </html>
