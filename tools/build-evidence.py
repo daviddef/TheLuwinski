@@ -60,7 +60,7 @@ MANIFEST = {
  "wear-1939-register.tsv":       (["first","last"], "1939 Register, 72 Pix Road, Letchworth", "TNA R39", "person"),
  "shenton-1939-pix-road.tsv":    (["first","last"], "1939 Register, 63 Pix Road, Letchworth", "TNA R39/1620/1620G/011/28, schedule 305", "person"),
  "shenton-line-closed.tsv":      (["who"], "The 63 Pix Road household, traced end to end", "GRO birth, marriage and death indexes; 1939 Register", "person"),
- "hawkins-1871-aldenham.tsv":    (["first","last"], "1871 census, The Red Lion Cottages, Aldenham", "RG10 piece 1365", "person"),
+ "hawkins-1871-aldenham.tsv":    (["first","last"], "1871 census, The Red Lion Cottages, Aldenham", "RG10 piece 1380", "person"),
  "hawkins-aldenham-baptisms.tsv": (["first","last"], "Aldenham baptisms, the Hawkins register read entire", "Findmypast, Hertfordshire Baptisms", "person"),
  "giddins-norton-end.tsv":       (["first","last"], "1861 and 1871 censuses, Norton End, Baldock", "RG9/816 f.69; RG10/1365 f.27", "person"),
  "bloom-1861-yarmouth.tsv":      (["first","last"], "1861 census, 80 Howard Street, Great Yarmouth", "RG9, Great Yarmouth", "person"),
