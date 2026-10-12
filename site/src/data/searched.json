@@ -477,6 +477,41 @@
     "labsa"
    ],
    "got": "FORTY-SEVEN VOLUMES, 1.0 GB, ELEVEN OFFICES — Friedrichshain, Hellersdorf, Hohenschönhausen, Köpenick, Lichtenberg, Marzahn, Mitte, Pankow, Prenzlauer Berg, Treptow and Weißensee. Each was scored against six common surnames before its silence was allowed to count, and THE TWO CLASSES SEPARATE WITHOUT ARGUMENT: the 33 legible run 1.38 to 2.51 control names a page, the 14 blind are all 0.00. NO LEIBHOLZ, LEIPHOLZ, LEIPSHOLZ, LUWINSKI OR LOWINSKI IN ANY OF THE THIRTY-THREE. *** THE BLINDNESS IS NOT RANDOM: EVERY SINGLE 1990 VOLUME IS BLIND, IN ELEVEN SEPARATE OFFICES — WHICH IS EVERY OFFICE IN EAST BERLIN *** — the first year after reunification is unreadable across the whole of East Berlin, plus Prenzlauer Berg 1991-93 entire. Those fourteen are recorded as UNREAD, not as negatives. ONE KERGER WAS FOUND AND SHE IS NOT AGNES: Köpenick 1992, \"Kerger, Karoline Henriette Lucie\", three forenames none of them Agnes and no married name; her register number is not cleanly separable in the text layer and was NOT GUESSED. Written down so the maiden name is not searched again on the assumption it was never tried. WHY 1990 AND NOT 1980: until 9 November 1989 a West Berlin pensioner could not relocate east at all, so the window is bounded by the Wall and not by choice. See data/east-berlin-1990-1994-deaths.tsv."
+  },
+  {
+   "src": "Findmypast — Hertfordshire Baptisms, surname HAWKINS at ALDENHAM",
+   "key": "fmp/herts-baptisms-aldenham-hawkins",
+   "url": "https://www.findmypast.com.au/search/results?datasetname=hertfordshire+baptisms&lastname=hawkins&place=aldenham",
+   "what": "The parents of John Hawkins b.1820 and of Emma b.1822 of the Red Lion Cottages, and the children of that marriage",
+   "when": "2026-10-12",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "all 141 HAWKINS entries, every one of the ten result pages",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "baptism",
+    "parish",
+    "findmypast"
+   ],
+   "got": "EXHAUSTIVE FOR THE SURNAME, NOT FOR THE PARISH — every Hawkins baptism at Aldenham was read, not every baptism. JOHN HAWKINS BAPTISED 1819, SON OF WILLIAM AND MARY, is the only John the register offers in the window and the others are excluded by age (1824 Jeremiah and Elizabeth, 1826 George and Ann). His whole sibling set is there at two-to-three year intervals, 1801 to 1819. AND THE NINE CHILDREN OF JOHN AND EMMA CAME OUT WHOLE — Robert 1843, Betsey 1849, Richard 1851, Jane 1853, John 1856, Emma 1859, Mary 1861, Henry 1863, Alfred 1865 — of whom only six are in the 1871 household. EMMA'S MAIDEN NAME IS STILL UNKNOWN: there is no Emma among the twenty Aldenham Hawkinses of 1841, consistent with her being a Hawkins only by marriage. INSTRUMENT, MEASURED: `place=` filters this set and `keywordsplace=` does not (it returns the whole county's 2,056); results are ordered by FORENAME and not by year so no page can be skipped; and the set prints the father's and mother's forenames in the result row, so a family can be assembled without opening a transcript."
+  },
+  {
+   "src": "Findmypast — 1841 England, Wales & Scotland Census, surname HAWKINS at ALDENHAM",
+   "key": "fmp/1841-census-aldenham-hawkins",
+   "url": "https://www.findmypast.com.au/search/results?datasetname=1841+england%2c+wales+%26+scotland+census&lastname=hawkins&keywordsplace=aldenham",
+   "what": "John Hawkins b.1820 in a parent's household, which is what work list row 128 expected to find",
+   "when": "2026-10-12",
+   "outcome": "nothing",
+   "walked": false,
+   "pages": "all 20 HAWKINS entries in the parish",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "census",
+    "findmypast"
+   ],
+   "got": "THE ROW'S EXPECTATION IS WRONG AND THAT IS THE RESULT. All twenty Hawkins entries were read and the three Johns are: b.1811, aged 30, heading his own family with Ann at Reservoir; b.1826, aged 15, son of Jeremiah and Elizabeth; and b.1821, aged 20, BOARDING AT ALDENHAM CHECKERS with Katherine Nicholls 70 and William Kimpton 20 — HO107/438/3 folio 7 page 8 schedule 438. At twenty our man was already out of the family home, so the 1841 census cannot give his parents and the baptism register was read instead. Note the 1841 rounding: ages 15 and over are recorded DOWN to the nearest five, so '20' means 20 to 24."
   }
  ]
 }

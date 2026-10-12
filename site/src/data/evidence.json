@@ -369,6 +369,14 @@
    "people": 8
   },
   {
+   "file": "hawkins-aldenham-baptisms.tsv",
+   "title": "Aldenham baptisms, the Hawkins register read entire",
+   "source": "Findmypast, Hertfordshire Baptisms",
+   "kind": "person",
+   "rows": 22,
+   "people": 22
+  },
+  {
    "file": "heinrich-leibholz-kreuzberg-1948.tsv",
    "title": "Heinrich Leibholz died in Kreuzberg, not in the borough he lived in",
    "source": "Landesarchiv Berlin P Rep. 510 Nr. 667, Sterberegister Kreuzberg 1948 Nr. 2493, read at the image 8 October 2026",
@@ -1267,6 +1275,12 @@
      "title": "1871 census, The Red Lion Cottages, Aldenham",
      "source": "RG10 piece 1365",
      "detail": "relationship: Son · sex: Male · age: 5 · birth_year: 1866 · occupation: Scholar · birth_place: Aldenham, Hertfordshire, England"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1865 · father: John · mother: Emma · note: 1871 census: Alfred, 5, scholar"
     }
    ]
   },
@@ -1358,6 +1372,18 @@
    ]
   },
   {
+   "name": "Betsey Hawkins",
+   "slug": "betsey-hawkins",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1849 · father: John · mother: Emma · note: *** NOT IN THE 1871 HOUSEHOLD *** — she would be 22 and is away or married"
+    }
+   ]
+  },
+  {
    "name": "Betty Leibholz née Pollack",
    "slug": "betty-leibholz-nee-pollack",
    "records": [
@@ -1438,6 +1464,18 @@
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
      "detail": "born: 03.11.1937 · birthplace: Berlin/Stadt Berlin · residence: Berlin (Friedrichshain) · deportation_1: from Berlin → Auschwitz, Konzentrations- und Vernichtungslager am 03.03.1943 · death_date: not documented · death_place: not documented · gedenkbuch_id: en1100769 · status: DOCUMENTED — Berlin-born; parentage not recorded here, relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "Charlotte Hawkins",
+   "slug": "charlotte-hawkins",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1817 · father: William · mother: Mary"
     }
    ]
   },
@@ -1660,6 +1698,18 @@
      "title": "1871 census, The Red Lion Cottages, Aldenham",
      "source": "RG10 piece 1365",
      "detail": "relationship: Daughter · sex: Female · age: 12 · birth_year: 1859 · occupation: Scholar · birth_place: Aldenham, Hertfordshire, England"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1859 · father: John · mother: Emma · note: *** THE LINE. *** 1871 census: Emma, 12, scholar. Married ROBERT WEAR at St Olave Southwark in 1881; mother of Henry Robert Wear"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: - · father: - · mother: -"
     },
     {
      "file": "shenton-line-closed.tsv",
@@ -2042,6 +2092,18 @@
    ]
   },
   {
+   "name": "George Hawkins",
+   "slug": "george-hawkins",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1801 · father: Wm · mother: Mary · note: the eldest of the run"
+    }
+   ]
+  },
+  {
    "name": "George William Castle",
    "slug": "george-william-castle",
    "records": [
@@ -2266,6 +2328,18 @@
      "title": "1871 census, The Red Lion Cottages, Aldenham",
      "source": "RG10 piece 1365",
      "detail": "relationship: Son · sex: Male · age: 7 · birth_year: 1864 · occupation: Scholar · birth_place: Aldenham, Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "Henry Hawkins",
+   "slug": "henry-hawkins",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1863 · father: John · mother: Emma · note: 1871 census: \"Henery\", 7, scholar"
     }
    ]
   },
@@ -2621,6 +2695,24 @@
    ]
   },
   {
+   "name": "Jane Hawkins",
+   "slug": "jane-hawkins",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1808 · father: Wm · mother: Mary"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1853 · father: John · mother: Emma · note: *** NOT IN THE 1871 HOUSEHOLD *** — she would be 18"
+    }
+   ]
+  },
+  {
    "name": "Jeannett (E M) Wear",
    "slug": "jeannett-e-m-wear",
    "records": [
@@ -2721,6 +2813,30 @@
      "title": "1871 census, The Red Lion Cottages, Aldenham",
      "source": "RG10 piece 1365",
      "detail": "relationship: Son · sex: Male · age: 14 · birth_year: 1857 · occupation: Ag lab · birth_place: Aldenham, Hertfordshire, England"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: - · father: - · mother: -"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1819 · father: William · mother: Mary"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1819 · father: William · mother: Mary · note: *** OURS, ON THE READING ABOVE ***"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1856 · father: John · mother: Emma · note: 1871 census: John, 14 — and the man at 44 Ebury Road, Watford in 1891"
     },
     {
      "file": "wear-1891-watford.tsv",
@@ -3257,6 +3373,24 @@
      "title": "1871 census, The Red Lion Cottages, Aldenham",
      "source": "RG10 piece 1365",
      "detail": "relationship: Daughter · sex: Female · age: 10 · birth_year: 1861 · occupation: Scholar · birth_place: Aldenham, Hertfordshire, England"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1805 · father: William · mother: Mary"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1812 · father: William · mother: Mary · note: the name reused, so the 1805 Mary had probably died"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1861 · father: John · mother: Emma · note: 1871 census: Mary, 10, scholar"
     }
    ]
   },
@@ -3408,6 +3542,18 @@
    ]
   },
   {
+   "name": "Richard Hawkins",
+   "slug": "richard-hawkins",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1851 · father: John · mother: Emma · note: *** NOT IN THE 1871 HOUSEHOLD *** — he would be 20"
+    }
+   ]
+  },
+  {
    "name": "Robert Bloom",
    "slug": "robert-bloom",
    "records": [
@@ -3428,6 +3574,12 @@
      "title": "1871 census, The Red Lion Cottages, Aldenham",
      "source": "RG10 piece 1365",
      "detail": "relationship: Son · sex: Male · age: 28 · birth_year: 1843 · occupation: Ag lab · birth_place: Aldenham, Hertfordshire, England"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1843 · father: John · mother: Emma · note: 1871 census: Robert, 28, ag lab"
     }
    ]
   },
@@ -3663,6 +3815,18 @@
    ]
   },
   {
+   "name": "Sarah Hawkins",
+   "slug": "sarah-hawkins",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1803 · father: Wm · mother: Mary"
+    }
+   ]
+  },
+  {
    "name": "Sarah Wear",
    "slug": "sarah-wear",
    "records": [
@@ -3774,6 +3938,18 @@
    ]
   },
   {
+   "name": "Thomas Hawkins",
+   "slug": "thomas-hawkins",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1810 · father: William · mother: Mary"
+    }
+   ]
+  },
+  {
    "name": "WILLI [WILLY] LEIBHOLZ",
    "slug": "willi-willy-leibholz",
    "records": [
@@ -3854,6 +4030,18 @@
      "title": "The Bundesarchiv Gedenkbuch",
      "source": "Bundesarchiv, Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft",
      "detail": "born: 00.00.1893 · birthplace: not recorded · residence: Berlin · deportation_1: → Auschwitz, Konzentrations- und Vernichtungslager · death_date: not documented · death_place: Auschwitz, Konzentrations- und Vernichtungslager · gedenkbuch_id: en1633831 · status: DOCUMENTED — not of the Schubin stock; relationship NOT established"
+    }
+   ]
+  },
+  {
+   "name": "William Hawkins",
+   "slug": "william-hawkins",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1814 · father: William · mother: Mary"
     }
    ]
   },
@@ -3946,6 +4134,18 @@
      "detail": "event: marriage to Johannes Antonie Oelofse DE WITT · date: 2 February 1948 · place: Germiston, Transvaal · age_given: 22 · record: South Africa, Civil Marriage Records — ark 1:1:6ZCM-J38T"
     }
    ]
+  },
+  {
+   "name": "source -",
+   "slug": "source",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: - · father: - · mother: -"
+    }
+   ]
   }
  ],
  "ambiguous": [
@@ -3954,10 +4154,10 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 139,
-  "person_files": 25,
-  "people": 193,
-  "records": 268,
+  "files": 140,
+  "person_files": 26,
+  "people": 203,
+  "records": 290,
   "linked_to_register": 13
  }
 }

@@ -1,0 +1,47 @@
+# THE ALDENHAM HAWKINS BAPTISM REGISTER, READ ENTIRE — AND JOHN b.1820 HAS PARENTS.
+# Findmypast, Hertfordshire Baptisms, surname HAWKINS at ALDENHAM: 141 entries, every page read.
+# Work list row 128. Read 12 October 2026, inside the subscription window.
+#
+# WHY. Row 128 wanted the parents of JOHN HAWKINS b.1820 and EMMA b.1822, the couple at THE RED LION
+# COTTAGES, Aldenham, in 1871 — Derrick's great-great-grandparents through Emma's daughter Emma, who
+# married Robert Wear at Southwark in 1881. The row proposed the 1841 and 1851 censuses. THE 1841
+# CENSUS CANNOT ANSWER IT, and that is the first finding below.
+first	last	baptism_year	father	mother	note
+# ---------------- WHAT THE 1841 CENSUS ACTUALLY SHOWS, WHICH IS NOT WHAT THE ROW EXPECTED ----------------
+John	Hawkins	-	-	-	*** AT TWENTY HE WAS ALREADY OUT OF THE FAMILY HOME, SO 1841 GIVES NO PARENTS. *** All twenty Hawkins entries for Aldenham in 1841 were read. Three Johns: b.1811 (30, heading his own family with Ann at Reservoir), b.1826 (15, son of Jeremiah and Elizabeth at a Cottage) and b.1821 (20) — and the twenty-year-old is BOARDING AT ALDENHAM CHECKERS in a household of three with KATHERINE NICHOLLS, 70, and WILLIAM KIMPTON, 20. HO107/438/3 folio 7 page 8 schedule 438. No parents in it. Remember 1841 rounds ages 15 and over DOWN to the nearest five, so "20" means 20 to 24.
+# ---------------- SO THE BAPTISM REGISTER WAS READ INSTEAD, AND IT ANSWERS ----------------
+John	Hawkins	1819	William	Mary	*** THE ONLY JOHN HAWKINS BAPTISED AT ALDENHAM IN THE WHOLE WINDOW, AND THE OTHERS ARE EXCLUDED BY AGE. *** The register's other Johns are 1824 (Jeremiah and Elizabeth), 1826 (George and Ann), 1598, 1856, 1857, 1861 and 1875 — none of them can be a man of 51 in 1871. A baptism in 1819 fits a birth in 1819 or 1820 exactly. NOT PROOF AND SAID SO: the register cannot show that this child is the Red Lion man. It is the only candidate it allows, with the rest ruled out on age.
+# and the family that baptism sits in, which is a complete sibling set at two-to-three year intervals
+George	Hawkins	1801	Wm	Mary	the eldest of the run
+Sarah	Hawkins	1803	Wm	Mary	
+Mary	Hawkins	1805	William	Mary	
+Jane	Hawkins	1808	Wm	Mary	
+Thomas	Hawkins	1810	William	Mary	
+Mary	Hawkins	1812	William	Mary	the name reused, so the 1805 Mary had probably died
+William	Hawkins	1814	William	Mary	
+Charlotte	Hawkins	1817	William	Mary	
+John	Hawkins	1819	William	Mary	*** OURS, ON THE READING ABOVE ***
+# AND THE 1841 CENSUS CORROBORATES THE PARENTS WITHOUT BEING ASKED: a WILLIAM HAWKINS b.1776 is in
+# Aldenham in 1841, and so are a CHARLOTTE b.1821 and a WILLIAM b.1821 — the rounding puts both in the
+# range of the 1817 and 1814 baptisms. The household was not opened; this is noted as consistency, not
+# as a reading.
+# ---------------- THE NINE CHILDREN OF JOHN AND EMMA, WHICH NOBODY HAD ----------------
+Robert	Hawkins	1843	John	Emma	1871 census: Robert, 28, ag lab
+Betsey	Hawkins	1849	John	Emma	*** NOT IN THE 1871 HOUSEHOLD *** — she would be 22 and is away or married
+Richard	Hawkins	1851	John	Emma	*** NOT IN THE 1871 HOUSEHOLD *** — he would be 20
+Jane	Hawkins	1853	John	Emma	*** NOT IN THE 1871 HOUSEHOLD *** — she would be 18
+John	Hawkins	1856	John	Emma	1871 census: John, 14 — and the man at 44 Ebury Road, Watford in 1891
+Emma	Hawkins	1859	John	Emma	*** THE LINE. *** 1871 census: Emma, 12, scholar. Married ROBERT WEAR at St Olave Southwark in 1881; mother of Henry Robert Wear
+Mary	Hawkins	1861	John	Emma	1871 census: Mary, 10, scholar
+Henry	Hawkins	1863	John	Emma	1871 census: "Henery", 7, scholar
+Alfred	Hawkins	1865	John	Emma	1871 census: Alfred, 5, scholar
+# SIX OF THE NINE ARE IN THE 1871 HOUSEHOLD AND THREE ARE NOT. The three missing are the three eldest
+# after Robert, which is what a household looks like when the older children have gone to service or
+# married. NO CLAIM IS MADE ABOUT WHERE THEY WENT.
+# ---------------- WHAT IS STILL OPEN, SO NOBODY THINKS THIS ROW IS DONE ----------------
+Emma	Hawkins	-	-	-	*** HER MAIDEN NAME IS STILL UNKNOWN AND HER PARENTS WITH IT. *** She is "Emma Hawkins" in 1871 only by marriage, and THERE IS NO EMMA AMONG THE TWENTY ALDENHAM HAWKINSES OF 1841 — consistent with her not being a Hawkins by birth. THE ROUTE IS THE MARRIAGE: Robert was baptised in 1843, so John and Emma married about 1842, which is AFTER CIVIL REGISTRATION BEGAN IN 1837. A GRO marriage index entry therefore exists, in the Watford district, and it gives her maiden surname. NOT YET RUN.
+# ---------------- THE INSTRUMENT, MEASURED, BECAUSE TWO OF THESE COST TIME TODAY ----------------
+#	#	#	#	#	*** `page=` IS NOT THE PAGINATION PARAMETER AND IT DOES NOT FAIL LOUDLY. *** Adding &page=5 to a Findmypast results URL returns "0 results found" — the parameter is not ignored, it is treated as a filter that nothing matches. THE PAGINATION PARAMETER IS `_page=`, with an underscore. This is the same shape of trap as the year-filter rule already recorded in row 108: A ZERO THAT IS AN ARTEFACT OF THE QUERY AND LOOKS EXACTLY LIKE AN ABSENCE.
+#	#	#	#	#	AND THE PLACE PARAMETER DIFFERS BY SET. `keywordsplace=aldenham` filters the 1841 census (20 results) and DOES NOT FILTER Hertfordshire Baptisms at all (2,056 — the whole county's Hawkinses). `place=aldenham` filters the baptisms correctly, CONTROLLED BY READING THE PLACE COLUMN OF EVERY ROW RETURNED: all 141 say Aldenham.
+#	#	#	#	#	the results are ordered BY FORENAME, not by year, so there is no skipping to a date: all ten pages must be read. The set exposes FATHER'S and MOTHER'S FORENAMES in the result row itself, which is why a whole family can be assembled without opening a single transcript.
+source	-	-	-	-	Findmypast, Hertfordshire Baptisms (surname HAWKINS, place ALDENHAM, 141 entries, all pages read) and 1841 England, Wales & Scotland Census (surname HAWKINS, Aldenham, 20 entries, all read). 12 October 2026, inside the one-month subscription. The 1871 household is in data/hawkins-1871-aldenham.tsv.
