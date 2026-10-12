@@ -39,7 +39,7 @@ const groups = [
     {groups.map(([kind, label]) => (
       <div>
         <h4>{label}</h4>
-        <table>
+        <div class="scroll"><table>
           <thead><tr><th>as written</th><th>where it appears</th><th>what it means</th></tr></thead>
           <tbody>
             {p.forms.filter((f) => f.kind === kind).map((f) => (
@@ -50,7 +50,7 @@ const groups = [
               </tr>
             ))}
           </tbody>
-        </table>
+        </table></div>
       </div>
     ))}
   </div>
@@ -88,7 +88,7 @@ const groups = [
       different claims</strong>, and writing the first when the second was true is precisely the error
       this page exists to prevent.
     </p>
-    <table>
+    <div class="scroll"><table>
       <thead><tr><th>spelling</th><th>NAAIRS</th><th>gendatabase</th><th>what it uniquely surfaced</th></tr></thead>
       <tbody>
         {data.tested.map((t) => (
@@ -100,7 +100,7 @@ const groups = [
           </tr>
         ))}
       </tbody>
-    </table>
+    </table></div>
     <p class="small muted">
       A dash means the spelling was not put to that index rather than that it returned nothing.
       <strong>The distinction is the whole point of this archive&rsquo;s negatives</strong> and it is
@@ -140,7 +140,7 @@ const groups = [
 
   <div class="panel">
     <h3>The same problem in the other lines</h3>
-    <table>
+    <div class="scroll"><table>
       <thead><tr><th>name</th><th>forms</th><th></th></tr></thead>
       <tbody>
         {data.others.map((o) => (
@@ -151,7 +151,7 @@ const groups = [
           </tr>
         ))}
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <p class="small muted">

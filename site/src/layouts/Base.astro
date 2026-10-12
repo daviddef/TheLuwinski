@@ -192,6 +192,15 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     a { color: var(--accent); text-underline-offset: 2px; }
     blockquote { margin: 1.4rem 0; padding: .2rem 0 .2rem 1.2rem; border-left: 3px solid var(--rule); color: var(--ink-soft); font-style: italic; max-width: var(--measure); }
     .scroll { overflow-x: auto; margin: 1.4rem 0; border: 1px solid var(--rule); background: var(--panel); border-radius: 3px; }
+    /* A LONG UNBREAKABLE STRING OVERFLOWS ITS PARAGRAPH, and a block's own box stays
+       container-width while the word runs out of it — so no element-size check finds
+       it and the whole page scrolls sideways on a phone. Found 13 October 2026 on
+       /worklist/ (+204px), /searched/ (+73) and /sources/ (+65): file names, URLs and
+       reference codes in notes. break-word rather than anywhere in prose, so table
+       columns keep their natural minimum width; anywhere only on code, which is where
+       the URLs live. */
+    main p, main li, main td, main dd, main figcaption, main blockquote, main .sr-w, main .sr-meta { overflow-wrap: break-word; }
+    main code { overflow-wrap: anywhere; }
     table { border-collapse: collapse; width: 100%; font-size: .87rem; font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; }
     th, td { text-align: left; padding: .55rem .8rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
     th { font-weight: 600; font-size: .74rem; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-faint); white-space: nowrap; }
