@@ -550,6 +550,25 @@
     "findmypast"
    ],
    "got": "ELEVEN CHILDREN OF ROBERT AND MARY LARKIN at Aldenham, 1814 to 1833, with Emma the sixth: Sarah 1814, Mary 1815, Elizabeth 1818, Joseph 1820, Robert William 1821, EMMA 1822, Amy 1825, James 1824, John 1828, Joseph 1828, Thomas 1833. Two Josephs, so the first had most likely died. *** BUT ROBERT'S OWN PARENTS ARE NOT ESTABLISHED AND THAT IS THE RESULT. *** The register offers TWO candidates and this archive picks neither: Robert baptised 1789 to ROBERT AND ANN, who would be 24 at his 1814 marriage, and Robert baptised 1781 to JAMES AND SARAH, who would be 33. Both are ordinary marriage ages. THREE ROUTES TRIED AND CLOSED: the 1841 census would separate them by its own rounding but the ONLY Robert Larkin in Aldenham in 1841 is the SON, aged 20; the single Robert burial at Aldenham, 1 September 1793, CARRIES NO AGE; and a September 1793 death does not even orphan the Robert-and-Ann family, whose last child was born in 1794. *** AND A FALSE ZERO WORTH MORE THAN THE SEARCH: A FORENAME SEARCH DOES NOT EXPAND ABBREVIATIONS AND FAILS SILENTLY. *** firstname=robert in Hertfordshire Burials at Aldenham returns ZERO; the burial is indexed “ROBT”. Caught only by control — LARKIN at Aldenham with no forename returns 10, SMITH returns 90, so the set covers the parish. This archive earned “one spelling is not a search” on SURNAMES; it applies to FORENAMES, and these registers are full of Robt, Wm, Jas, Danl, Thos and Jno. Search the surname and read the block."
+  },
+  {
+   "src": "Findmypast — 1851 census at Aldenham, and Hertfordshire Baptisms for APPLEYARD and BURCH",
+   "key": "fmp/1851-aldenham-and-the-fourth-generation",
+   "url": "https://www.findmypast.com.au/search/results?datasetname=1851+england%2c+wales+%26+scotland+census&lastname=hawkins&keywordsplace=aldenham",
+   "what": "John and Emma's household in 1851, and the parents of Mary Appleyard and Mary Burch",
+   "when": "2026-10-13",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "all Hawkins entries for Aldenham in 1851; all 18 APPLEYARD and all 7 BURCH baptisms at Aldenham; both surnames county-wide",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "census",
+    "baptism",
+    "parish",
+    "findmypast"
+   ],
+   "got": "THE 1851 HOUSEHOLD AT LETCHMORE HEATH (HO107/1714 f.19 p.1 sch.2): John head, ag lab, 39; EMMA WIFE BORN 1822, which is Emma Larkin to the year and identifies the household; then WILLIAM b.1841, ROBERT b.1843, JOHN b.1847, BETSEY b.1849. *** THREE REVISIONS. *** (1) THE ELDEST SON WAS BORN ABOUT A YEAR BEFORE THE BANNS of September 1842 — stated as a fact about dates, and the likeliest reason the banns fell when they did. (2) WILLIAM 1841 AND JOHN 1847 ARE ABSENT FROM THE ALDENHAM BAPTISM REGISTER, so the nine children are at least eleven, and the 1856 baptised John is a SECOND John. The caveat written yesterday — that a register read entire is complete for the register and not for the family — was needed within a day. (3) AN EIGHT-YEAR AGE DISCREPANCY ON JOHN: 39 in 1851, 51 in 1871, baptised 1819. Two of three agree; the register holds no John baptised 1810-14, so no second candidate opens and the 1851 age is simply the outlier. *** AND THE FOURTH GENERATION IS OUTSIDE THE COUNTY. *** Neither MARY APPLEYARD (married 1800) nor MARY BURCH (married 1814) was baptised anywhere in Hertfordshire in her window. CONTROLLED BY THIS ARCHIVE'S OWN SWEEPS: the Aldenham register is demonstrably well covered for 1770-1800, since the Larkin and Hawkins passes returned baptisms at 1772 through 1794. Both women married into the parish from outside it — “of this parish” in a banns entry is RESIDENCE, not birth. RESIDUAL RISK NAMED: the county-wide passes used a forename filter, which this archive learned yesterday does not expand abbreviations; the Burch one should be redone surname-only before the negative is leaned on."
   }
  ]
 }

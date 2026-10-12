@@ -373,8 +373,8 @@
    "title": "Aldenham baptisms, the Hawkins register read entire",
    "source": "Findmypast, Hertfordshire Baptisms",
    "kind": "person",
-   "rows": 39,
-   "people": 39
+   "rows": 44,
+   "people": 44
   },
   {
    "file": "heinrich-leibholz-kreuzberg-1948.tsv",
@@ -2905,6 +2905,18 @@
      "detail": "baptism_year: - · father: - · mother: -"
     },
     {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1851 · father: - · mother: -"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1847 · father: John · mother: Emma"
+    },
+    {
      "file": "wear-1891-watford.tsv",
      "title": "1891 census, Watford",
      "source": "RG12, Watford",
@@ -3457,6 +3469,30 @@
      "title": "A match holder's Ancestry tree",
      "source": "Brown Family Tree, tree 113587011, read as guest 16 September 2026 — A USER TREE, NOT A RECORD SET",
      "detail": "born: 21 JULY 1895 · born_place: Baldock · died: 16 Mar 1986 · died_place: Johannesburg"
+    }
+   ]
+  },
+  {
+   "name": "Mary Appleyard",
+   "slug": "mary-appleyard",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: - · father: - · mother: -"
+    }
+   ]
+  },
+  {
+   "name": "Mary Burch",
+   "slug": "mary-burch",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: - · father: - · mother: -"
     }
    ]
   },
@@ -4210,6 +4246,12 @@
      "title": "Aldenham baptisms, the Hawkins register read entire",
      "source": "Findmypast, Hertfordshire Baptisms",
      "detail": "baptism_year: - · father: Mary · mother: Appleyard"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1841 · father: John · mother: Emma"
     }
    ]
   },
@@ -4324,8 +4366,8 @@
   "ambiguous": 2,
   "files": 140,
   "person_files": 26,
-  "people": 214,
-  "records": 307,
+  "people": 216,
+  "records": 312,
   "linked_to_register": 13
  }
 }
