@@ -373,8 +373,8 @@
    "title": "Aldenham baptisms, the Hawkins register read entire",
    "source": "Findmypast, Hertfordshire Baptisms",
    "kind": "person",
-   "rows": 27,
-   "people": 27
+   "rows": 39,
+   "people": 39
   },
   {
    "file": "heinrich-leibholz-kreuzberg-1948.tsv",
@@ -1318,6 +1318,18 @@
    ]
   },
   {
+   "name": "Amy Larkin",
+   "slug": "amy-larkin",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1825 · father: Robert · mother: Mary · note: born 1823, baptised 1825"
+    }
+   ]
+  },
+  {
    "name": "Ann Wear",
    "slug": "ann-wear",
    "records": [
@@ -1600,6 +1612,18 @@
    ]
   },
   {
+   "name": "Elizabeth Larkin",
+   "slug": "elizabeth-larkin",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1818 · father: Robert · mother: Mary"
+    }
+   ]
+  },
+  {
    "name": "Elli Struzik née Leibholz",
    "slug": "elli-struzik-nee-leibholz",
    "records": [
@@ -1782,6 +1806,12 @@
      "title": "Aldenham baptisms, the Hawkins register read entire",
      "source": "Findmypast, Hertfordshire Baptisms",
      "detail": "baptism_year: - · father: - · mother: -"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1822 · father: Robert · mother: Mary · note: *** THE LINE. *** Married John Hawkins by banns 18 September 1842"
     }
    ]
   },
@@ -2695,6 +2725,18 @@
    ]
   },
   {
+   "name": "James Larkin",
+   "slug": "james-larkin",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1824 · father: Robert · mother: Mary"
+    }
+   ]
+  },
+  {
    "name": "James Wear",
    "slug": "james-wear",
    "records": [
@@ -2879,6 +2921,36 @@
      "title": "1901 census, 22 Mount Pleasant, St Albans",
      "source": "RG13 piece 1312",
      "detail": "relationship: Head · marital: Married · sex: Male · age: 33 · birth_year: 1868 · occupation: Railway labourer · birth_place: Hertfordshire, England"
+    }
+   ]
+  },
+  {
+   "name": "John Larkin",
+   "slug": "john-larkin",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1828 · father: Robert · mother: Mary"
+    }
+   ]
+  },
+  {
+   "name": "Joseph Larkin",
+   "slug": "joseph-larkin",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1820 · father: Robert · mother: Mary · note: *** AND A SECOND JOSEPH IN 1828, so this one had most likely died — the register does not say so and the reuse is the only evidence"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1828 · father: Robert · mother: Mary · note: the name reused"
     }
    ]
   },
@@ -3419,6 +3491,18 @@
    ]
   },
   {
+   "name": "Mary Larkin",
+   "slug": "mary-larkin",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1815 · father: Robert · mother: Mary · note: the mother's name"
+    }
+   ]
+  },
+  {
    "name": "Mary Wear",
    "slug": "mary-wear",
    "records": [
@@ -3616,6 +3700,12 @@
      "title": "Aldenham baptisms, the Hawkins register read entire",
      "source": "Findmypast, Hertfordshire Baptisms",
      "detail": "baptism_year: - · father: Mary · mother: Burch"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1789? · father: Robert · mother: Ann"
     }
    ]
   },
@@ -3628,6 +3718,18 @@
      "title": "1871 census, Jamaica Road, Bermondsey",
      "source": "RG10 piece 641 folio 40 schedule 40",
      "detail": "relationship: Son · sex: Male · age: 12 · birth_year: 1859 · occupation: Scholar · birth_place: Bermondsey, Surrey, England"
+    }
+   ]
+  },
+  {
+   "name": "Robert William Larkin",
+   "slug": "robert-william-larkin",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1821 · father: Robert · mother: Mary · note: the only Robert Larkin in Aldenham in the 1841 census, aged 20 — THE SON, not the father"
     }
    ]
   },
@@ -3863,6 +3965,18 @@
    ]
   },
   {
+   "name": "Sarah Larkin",
+   "slug": "sarah-larkin",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1814 · father: Robert · mother: Mary · note: the year of the marriage — banns were in January 1814"
+    }
+   ]
+  },
+  {
    "name": "Sarah Wear",
    "slug": "sarah-wear",
    "records": [
@@ -3982,6 +4096,18 @@
      "title": "Aldenham baptisms, the Hawkins register read entire",
      "source": "Findmypast, Hertfordshire Baptisms",
      "detail": "baptism_year: 1810 · father: William · mother: Mary"
+    }
+   ]
+  },
+  {
+   "name": "Thomas Larkin",
+   "slug": "thomas-larkin",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1833 · father: Robert · mother: Mary · note: the youngest found; Emma was eleven"
     }
    ]
   },
@@ -4198,8 +4324,8 @@
   "ambiguous": 2,
   "files": 140,
   "person_files": 26,
-  "people": 205,
-  "records": 295,
+  "people": 214,
+  "records": 307,
   "linked_to_register": 13
  }
 }

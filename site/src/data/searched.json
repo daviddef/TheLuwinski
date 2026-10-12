@@ -531,6 +531,25 @@
     "findmypast"
    ],
    "got": "*** JOHN HAWKINS AND EMMA LARKIN, BANNS AT ALDENHAM 18 SEPTEMBER 1842, both resident in the parish. *** The only John-and-Emma pair among the 44, and it falls exactly where Robert's 1843 baptism said it must. THE RECORD IS A BANNS ENTRY AND NOT A MARRIAGE — its marriage-year field is empty, banns are the announcement and the wedding is not proved by them; what makes it near-certain is Robert's baptism to John and Emma in the same parish the next year. THE PARISH REGISTER ANSWERED WHAT THE GRO INDEX WOULD ONLY HAVE HINTED AT: this archive has three times refused MarriageFinder's page-mate suggestions as evidence, and here the register simply names her. Her baptism followed in the same session: EMMA LARKIN, Aldenham 1822, father ROBERT, mother MARY, the only Emma Larkin of that generation in the parish and the birth year matching the 1871 census exactly."
+  },
+  {
+   "src": "Findmypast — Hertfordshire Baptisms and Hertfordshire Burials, surname LARKIN at ALDENHAM",
+   "key": "fmp/herts-larkin-aldenham",
+   "url": "https://www.findmypast.com.au/search/results?datasetname=hertfordshire%20baptisms&lastname=larkin&place=aldenham",
+   "what": "Emma Larkin's siblings, and the parents of her father Robert Larkin who married Mary Burch in 1814",
+   "when": "2026-10-12",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "all 105 LARKIN baptism entries (six result pages) and all 10 LARKIN burial entries",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "baptism",
+    "burial",
+    "parish",
+    "findmypast"
+   ],
+   "got": "ELEVEN CHILDREN OF ROBERT AND MARY LARKIN at Aldenham, 1814 to 1833, with Emma the sixth: Sarah 1814, Mary 1815, Elizabeth 1818, Joseph 1820, Robert William 1821, EMMA 1822, Amy 1825, James 1824, John 1828, Joseph 1828, Thomas 1833. Two Josephs, so the first had most likely died. *** BUT ROBERT'S OWN PARENTS ARE NOT ESTABLISHED AND THAT IS THE RESULT. *** The register offers TWO candidates and this archive picks neither: Robert baptised 1789 to ROBERT AND ANN, who would be 24 at his 1814 marriage, and Robert baptised 1781 to JAMES AND SARAH, who would be 33. Both are ordinary marriage ages. THREE ROUTES TRIED AND CLOSED: the 1841 census would separate them by its own rounding but the ONLY Robert Larkin in Aldenham in 1841 is the SON, aged 20; the single Robert burial at Aldenham, 1 September 1793, CARRIES NO AGE; and a September 1793 death does not even orphan the Robert-and-Ann family, whose last child was born in 1794. *** AND A FALSE ZERO WORTH MORE THAN THE SEARCH: A FORENAME SEARCH DOES NOT EXPAND ABBREVIATIONS AND FAILS SILENTLY. *** firstname=robert in Hertfordshire Burials at Aldenham returns ZERO; the burial is indexed “ROBT”. Caught only by control — LARKIN at Aldenham with no forename returns 10, SMITH returns 90, so the set covers the parish. This archive earned “one spelling is not a search” on SURNAMES; it applies to FORENAMES, and these registers are full of Robt, Wm, Jas, Danl, Thos and Jno. Search the surname and read the block."
   }
  ]
 }
