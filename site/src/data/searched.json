@@ -494,7 +494,7 @@
     "parish",
     "findmypast"
    ],
-   "got": "EXHAUSTIVE FOR THE SURNAME, NOT FOR THE PARISH — every Hawkins baptism at Aldenham was read, not every baptism. JOHN HAWKINS BAPTISED 1819, SON OF WILLIAM AND MARY, is the only John the register offers in the window and the others are excluded by age (1824 Jeremiah and Elizabeth, 1826 George and Ann). His whole sibling set is there at two-to-three year intervals, 1801 to 1819. AND THE NINE CHILDREN OF JOHN AND EMMA CAME OUT WHOLE — Robert 1843, Betsey 1849, Richard 1851, Jane 1853, John 1856, Emma 1859, Mary 1861, Henry 1863, Alfred 1865 — of whom only six are in the 1871 household. EMMA'S MAIDEN NAME IS STILL UNKNOWN: there is no Emma among the twenty Aldenham Hawkinses of 1841, consistent with her being a Hawkins only by marriage. INSTRUMENT, MEASURED: `place=` filters this set and `keywordsplace=` does not (it returns the whole county's 2,056); results are ordered by FORENAME and not by year so no page can be skipped; and the set prints the father's and mother's forenames in the result row, so a family can be assembled without opening a transcript."
+   "got": "EXHAUSTIVE FOR THE SURNAME, NOT FOR THE PARISH — every Hawkins baptism at Aldenham was read, not every baptism. JOHN HAWKINS BAPTISED 1819, SON OF WILLIAM AND MARY, is the only John the register offers in the window and the others are excluded by age (1824 Jeremiah and Elizabeth, 1826 George and Ann). His whole sibling set is there at two-to-three year intervals, 1801 to 1819. AND THE NINE CHILDREN OF JOHN AND EMMA CAME OUT WHOLE — Robert 1843, Betsey 1849, Richard 1851, Jane 1853, John 1856, Emma 1859, Mary 1861, Henry 1863, Alfred 1865 — of whom only six are in the 1871 household. AND EMMA'S MAIDEN NAME IS LARKIN, settled the same afternoon from the parish banns and her own baptism: EMMA LARKIN, baptised Aldenham 1822, father ROBERT, mother MARY — the birth year matching the 1871 census to the year. INSTRUMENT, MEASURED: `place=` filters this set and `keywordsplace=` does not (it returns the whole county's 2,056); results are ordered by FORENAME and not by year so no page can be skipped; and the set prints the father's and mother's forenames in the result row, so a family can be assembled without opening a transcript."
   },
   {
    "src": "Findmypast — 1841 England, Wales & Scotland Census, surname HAWKINS at ALDENHAM",
@@ -512,6 +512,25 @@
     "findmypast"
    ],
    "got": "THE ROW'S EXPECTATION IS WRONG AND THAT IS THE RESULT. All twenty Hawkins entries were read and the three Johns are: b.1811, aged 30, heading his own family with Ann at Reservoir; b.1826, aged 15, son of Jeremiah and Elizabeth; and b.1821, aged 20, BOARDING AT ALDENHAM CHECKERS with Katherine Nicholls 70 and William Kimpton 20 — HO107/438/3 folio 7 page 8 schedule 438. At twenty our man was already out of the family home, so the 1841 census cannot give his parents and the baptism register was read instead. Note the 1841 rounding: ages 15 and over are recorded DOWN to the nearest five, so '20' means 20 to 24."
+  },
+  {
+   "src": "Findmypast — Hertfordshire Banns & Marriages, surname HAWKINS at ALDENHAM",
+   "key": "fmp/herts-marriages-aldenham-hawkins",
+   "url": "https://www.findmypast.com.au/search/results?datasetname=hertfordshire%20banns%20%26%20marriages&lastname=hawkins&place=aldenham",
+   "what": "The maiden name of Emma, wife of John Hawkins of the Red Lion Cottages — and through it her parents",
+   "when": "2026-10-12",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "all 44 HAWKINS entries, all three result pages",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "marriage",
+    "banns",
+    "parish",
+    "findmypast"
+   ],
+   "got": "*** JOHN HAWKINS AND EMMA LARKIN, BANNS AT ALDENHAM 18 SEPTEMBER 1842, both resident in the parish. *** The only John-and-Emma pair among the 44, and it falls exactly where Robert's 1843 baptism said it must. THE RECORD IS A BANNS ENTRY AND NOT A MARRIAGE — its marriage-year field is empty, banns are the announcement and the wedding is not proved by them; what makes it near-certain is Robert's baptism to John and Emma in the same parish the next year. THE PARISH REGISTER ANSWERED WHAT THE GRO INDEX WOULD ONLY HAVE HINTED AT: this archive has three times refused MarriageFinder's page-mate suggestions as evidence, and here the register simply names her. Her baptism followed in the same session: EMMA LARKIN, Aldenham 1822, father ROBERT, mother MARY, the only Emma Larkin of that generation in the parish and the birth year matching the 1871 census exactly."
   }
  ]
 }

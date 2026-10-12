@@ -373,8 +373,8 @@
    "title": "Aldenham baptisms, the Hawkins register read entire",
    "source": "Findmypast, Hertfordshire Baptisms",
    "kind": "person",
-   "rows": 22,
-   "people": 22
+   "rows": 25,
+   "people": 25
   },
   {
    "file": "heinrich-leibholz-kreuzberg-1948.tsv",
@@ -1768,6 +1768,24 @@
    ]
   },
   {
+   "name": "Emma Larkin",
+   "slug": "emma-larkin",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: 1822 · father: Robert · mother: Mary"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: - · father: - · mother: -"
+    }
+   ]
+  },
+  {
    "name": "Emma Wear",
    "slug": "emma-wear",
    "records": [
@@ -2837,6 +2855,12 @@
      "title": "Aldenham baptisms, the Hawkins register read entire",
      "source": "Findmypast, Hertfordshire Baptisms",
      "detail": "baptism_year: 1856 · father: John · mother: Emma · note: 1871 census: John, 14 — and the man at 44 Ebury Road, Watford in 1891"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: - · father: - · mother: -"
     },
     {
      "file": "wear-1891-watford.tsv",
@@ -4156,8 +4180,8 @@
   "ambiguous": 2,
   "files": 140,
   "person_files": 26,
-  "people": 203,
-  "records": 290,
+  "people": 204,
+  "records": 293,
   "linked_to_register": 13
  }
 }
