@@ -164,5 +164,104 @@
    "thread": "1a0a30c59c9c8405",
    "chase": 14
   }
+ ],
+ "drafts": [
+  {
+   "file": "21-SEND-THIS-to-mavis.txt",
+   "who": "Ms Mavis Xaba, Reading Room, National Archives of South Africa",
+   "what": "Accepts her offer to retrieve TAB, WLD 2545/1950, and answers the two things she raised: all correspondence on one thread from now on, and an apology for the enquiries that reached her from several addresses at once.",
+   "note": "Reply on her existing thread."
+  },
+  {
+   "file": "22-SEND-THIS-to-anne.txt",
+   "who": "Anne, private researcher, Pretoria",
+   "what": "Accepts her terms — R2,850 for the first file and then by the work, capped — confirms the date she offered, and supplies the detail she asked for and was not given.",
+   "note": "She has quoted; this is the letter that starts paid work."
+  },
+  {
+   "file": "25-SEND-THIS-to-paul.txt",
+   "who": "Paul, a DNA match",
+   "what": "Tells him the shared great-grandparents are not the couple he guessed: they are GEORGE W CASTLE 1862–1916 and CAROLINE WALLIS 1862–1957, already on the far right of his own tree.",
+   "note": ""
+  },
+  {
+   "file": "26-SEND-THIS-to-sandf.txt",
+   "who": "SANDF Documentation Centre, Irene",
+   "what": "An addition to the enquiry of 15 September about WEAR, Leonard Aubrey Robert at Roberts Heights: supplies FORCE NUMBER 141272, found on the British side, which should save them the search they were asked for.",
+   "note": ""
+  },
+  {
+   "file": "27-SEND-THIS-to-paul-correction.txt",
+   "who": "Paul, a DNA match — a correction",
+   "what": "Withdraws a claim made in the previous letter: “if Martha Giddings died in 1863 she cannot have known her son at all”. Three further points that belong to him rather than to this archive.",
+   "note": "Send after 25. It corrects it."
+  },
+  {
+   "file": "28-SEND-THIS-to-koszalin.txt",
+   "who": "Archiwum Państwowe w Koszalinie, Słupsk branch",
+   "what": "Acknowledges their answer on case O-S.6342.406.2026. Polish, with an English translation beneath.",
+   "note": ""
+  },
+  {
+   "file": "29-SEND-THIS-to-arolsen.txt",
+   "who": "Arolsen Archives",
+   "what": "Asks about one tracing file in particular, stating that the consent declaration is in place and that a good deal has already been read in the online archive.",
+   "note": ""
+  },
+  {
+   "file": "30-SEND-THIS-to-bydgoszcz.txt",
+   "who": "Archiwum Państwowe w Bydgoszczy",
+   "what": "Asked for the Szubin marriage entry of 1874. THE DOCUMENT HAS SINCE BEEN READ — Bydgoszcz answered on 22 September by pointing at genealogiawarchiwach.pl and the entry was read at the image the same hour: akt nr 9, USC Szubin Miasto sygn. 141, scan 10.",
+   "note": "SUPERSEDED — DO NOT SEND.",
+   "state": "superseded"
+  },
+  {
+   "file": "31-SEND-THIS-to-naa.txt",
+   "who": "National Archives of Australia",
+   "what": "An access examination request covering five Luwinski and Leibholz items, 1939 to 1965. Four of the five are already open and are listed so the reference staff can answer for the whole family in one reply.",
+   "note": "Free — under the Archives Act an examination costs time, not money."
+  },
+  {
+   "file": "32-SEND-THIS-to-landesarchiv-entschaedigung.txt",
+   "who": "Landesarchiv Berlin — Entschädigungsbehörde files",
+   "what": "An addition to the letter of 14 September about Kurt and the Leibholz brothers, naming the compensation files as a new subject. German.",
+   "note": "Send as a reply on the 14 September thread, so it lands against the same file."
+  },
+  {
+   "file": "33-SEND-THIS-to-bzk.txt",
+   "who": "Bundeszentralkartei, Bezirksregierung Düsseldorf",
+   "what": "Asks the national card index of compensation claims about four people of the LUWINSKI and LEIBHOLZ family. It exists because § 185 BEG decided WHICH Land’s authority was competent, and a Berlin-only enquiry can come back empty while the file sits elsewhere. German.",
+   "note": ""
+  },
+  {
+   "file": "34-SEND-THIS-to-olsztyn.txt",
+   "who": "Archiwum Państwowe w Olsztynie",
+   "what": "The East Prussian enquiry — the Allenstein and Kreis Rössel entries named by the Geneteka sweep. Polish.",
+   "note": "Its own thread. Postal address held as the fallback if the email bounces."
+  },
+  {
+   "file": "35-SEND-THIS-to-landesarchiv-urkunden.txt",
+   "who": "Landesarchiv Berlin — two reproductions",
+   "what": "Asks for TWO entries by exact register number: Kurt’s birth, Standesamt Berlin VIII 1912 Nr. 963, and his mother’s marriage. They answer each other — if Kurt was legitimised by that marriage the note is in the margin of both. German.",
+   "note": "Same thread as 32, and it reads as a follow-up to it. A reproduction carries a fee, so it is David’s to send."
+  },
+  {
+   "file": "36-SEND-THIS-to-bydgoszcz-jewish-registers.txt",
+   "who": "Archiwum Państwowe w Bydgoszczy — the Jewish community registers",
+   "what": "Thanks them and asks a further question on the Szubin Jewish community books. Polish.",
+   "note": "Reply on case IU.631.434.2026."
+  },
+  {
+   "file": "37-SEND-THIS-to-rosebank-thanks-and-parish-register.txt",
+   "who": "Immaculate Conception, Rosebank — Arlene",
+   "what": "Thanks her for the Wear/Robertson marriage of 7 September 1940 and asks the one question that is left. ITS FIRST DRAFT MUST NEVER BE SENT: it asked for a register she had already described in the body of her email, which had not been read because only the attachment had.",
+   "note": ""
+  },
+  {
+   "file": "40-SEND-THIS-to-bydgoszcz-1820-1847.txt",
+   "who": "Archiwum Państwowe w Bydgoszczy — the fourth question",
+   "what": "Asks for ONE year of the Szubin Jewish registers, which survive for 1820–1847 only: ABRAHAM SCHMUL, born 1846, whose entry would name the same parents as Friederike’s if he is her brother. It opens by reporting what their last answer produced, including that their archivist’s reading corrected this archive. Polish.",
+   "note": "Reply on IU.631.434.2026, the fourth on one thread. It asks a single question and offers to pay."
+  }
  ]
 }
