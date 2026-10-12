@@ -156,14 +156,14 @@
      "dates": "b. c. 1820, Aldenham",
      "place": "The Red Lion Cottages, Aldenham",
      "status": "documented",
-     "how": "AGRICULTURAL LABOURER. Eight in the household in 1871, every one of them born in the same parish."
+     "how": "AGRICULTURAL LABOURER. Eight in the household in 1871, every one of them born in the same parish. *** HIS PARENTS ARE NAMED, 12 OCTOBER 2026: WILLIAM HAWKINS AND MARY APPLEYARD. *** Baptised at Aldenham in 1819, the only John the parish register offers in the window and the rest excluded on age, with his whole sibling set present from 1801. The 1841 census — which the work list had nominated as the instrument — could never have answered it: at twenty he was already boarding away from home, at Aldenham Checkers."
     },
     {
-     "name": "Emma Hawkins",
-     "dates": "b. c. 1822, Aldenham",
+     "name": "Emma Larkin",
+     "dates": "b. 1822, Aldenham — baptised there the same year",
      "place": "The Red Lion Cottages, Aldenham",
      "status": "documented",
-     "how": "Her daughter Emma, twelve and a scholar in 1871, would marry in London, bury a husband there, and come home. CORRECTED 17 SEPTEMBER, AND THE ERROR WAS THIS ARCHIVE'S. A script that matched people BY NAME wrote the younger Emma's dates and history over this entry, because mother and daughter carry the same name and the code did not look at the generation. For part of a day this page said that a woman born about 1822 was born on 7 February 1859 and was blind at Letchworth in 1939. SHE IS THE MOTHER. The Pix Road entry belongs to her daughter, one row up. A match on a name is not a match on a person, which is the whole reason this archive keeps saying so about census indexes, and it said it while doing it."
+     "how": "Her daughter Emma, twelve and a scholar in 1871, would marry in London, bury a husband there, and come home. CORRECTED 17 SEPTEMBER, AND THE ERROR WAS THIS ARCHIVE'S. A script that matched people BY NAME wrote the younger Emma's dates and history over this entry, because mother and daughter carry the same name and the code did not look at the generation. For part of a day this page said that a woman born about 1822 was born on 7 February 1859 and was blind at Letchworth in 1939. SHE IS THE MOTHER. The Pix Road entry belongs to her daughter, one row up. A match on a name is not a match on a person, which is the whole reason this archive keeps saying so about census indexes, and it said it while doing it. *** AND SHE HAS A MAIDEN NAME AT LAST, 12 OCTOBER 2026: SHE IS EMMA LARKIN. *** Banns at Aldenham on 18 SEPTEMBER 1842, John Hawkins and Emma Larkin, both resident in the parish — the only John-and-Emma pair among all 44 Hawkins marriage entries, and falling exactly where the baptism of their eldest, Robert, in 1843 said it had to. Her own baptism follows: ALDENHAM 1822, FATHER ROBERT, MOTHER MARY, the birth year matching the 1871 census to the year. SHE WAS CARRIED HERE AS “Emma Hawkins” FOR WEEKS, which is the married name, and the entry that warned about matching a name to a person was itself filed under one."
     },
     {
      "name": "George Castle × Martha Giddings",
@@ -191,6 +191,13 @@
      "place": "Newington, Surrey — and Bermondsey, Aldenham, Baldock",
      "status": "probable",
      "how": "ANSWERED IN PART, 27 SEPTEMBER 2026. WILLIAM WEAR'S PARENTS HAVE NAMES: JOHN WEAR and ELIZABETH, of Newington in Surrey. Four of their children were baptised together at Newington on 10 APRIL 1833 — Matilda 1820, William 1823, Thomas 1825, Mary Ann 1827 — and Matilda and Thomas both give the mother as Elizabeth, which is what makes it a household rather than one index line that happens to match. HELD AS PROBABLE AND NOT DOCUMENTED, for three reasons stated on the Wear page: it is an INDEX of the register and not the register, so it carries no occupation; THE TRADE WAS THE LEVER THIS ARCHIVE NOMINATED and the index cannot pull it; and Newington had a second Wear household under a John Southey Wear, so a forename match there is not an identification. SARAH BLOOM'S PARENTS, THE ELDER HAWKINSES, CASTLES AND GIDDINGSES ARE ALL STILL UNKNOWN."
+    },
+    {
+     "name": "William Hawkins × Mary Appleyard · Robert Larkin × Mary Burch",
+     "dates": "married at Aldenham 1800 and 1814",
+     "place": "Aldenham, Hertfordshire",
+     "status": "probable",
+     "how": "NEW ON 12 OCTOBER 2026, AND THE WHOLE GENERATION CAME OUT OF ONE PARISH REGISTER. William Hawkins and MARY APPLEYARD, banns 20 APRIL 1800, both of Aldenham — the only William-and-Mary pair among the 44 Hawkins entries, and their first child George is baptised in 1801 where an April 1800 marriage puts him. Robert Larkin and MARY BURCH, banns 16 JANUARY 1814, both of Aldenham — the only Robert-and-Mary pair among 30 Larkin entries, with Emma baptised to a Robert and a Mary eight years later. APPLEYARD and BURCH are surnames this archive has never held. *** HELD AS PROBABLE AND NOT DOCUMENTED, for two reasons that apply to all three marriages behind this row. *** EVERY ONE IS A BANNS ENTRY WITH AN EMPTY MARRIAGE-YEAR FIELD, and banns are the announcement on three Sundays, not the wedding; what supports each is a baptism to that couple in the same parish soon after. AND EACH IDENTIFICATION IS BEST-CANDIDATE: the register offers exactly one pair of the right names in the right window, which is a weaker thing than a document naming the person. One more trap measured on the way: THIS SET INDEXES EACH BANNS CALLING SEPARATELY, so one wedding appears two or three times under different record ids — counting entries is not counting marriages."
     }
    ]
   },
