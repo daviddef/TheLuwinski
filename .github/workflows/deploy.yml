@@ -18,7 +18,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Full history, not the default depth of one. The sitemap's <lastmod> is each
+      # page's own last commit; on a shallow clone every page would report the same
+      # date, which is the signal that teaches a crawler to ignore the field.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -35,6 +40,16 @@ jobs:
       # reader can see - and nothing the living-persons rule removed.
       - name: Build the search index
         run: python3 tools/build-search.py
+      # CI runs `astro build` and a chosen few steps, NOT `npm run build`, because that
+      # chain starts by regenerating the register from a private harvest this
+      # repository does not hold. So anything the local chain does after astro build
+      # has to be added here by name or it exists only on the machine that built it.
+      # The sitemap was missed for exactly that reason: robots.txt, a static file in
+      # public/, shipped and pointed at a sitemap.xml that CI never wrote. 13 Oct 2026.
+      # Built from the rendered HTML, so it withholds noindex pages and redirect stubs.
+      - name: Write the sitemap
+        run: python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py
+        working-directory: site
       # The archive promises that living people are not present in the output.
       # This checks the rendered HTML rather than trusting the generator, and the
       # deploy is gated on it. It has already caught one real case: a dateless
