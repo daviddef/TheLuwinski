@@ -29,7 +29,15 @@ const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
    thing that was objected to. So the values are stated here instead. */
 const SITE = 'The Luwinski Archive';
 const ACCENT = '#9A4B2B';
-const ORIGIN = 'https://daviddef.github.io';
+/* THE ORIGIN IS STATED HERE AND NOWHERE ELSE, which is why it had to be changed
+   by hand on 12 October 2026 when this archive moved to its own domain. The
+   siblings take theirs from the kit's archives.json via SocialHead; THIS ARCHIVE
+   IS DELIBERATELY NOT IN THAT FILE (see the note above), so being out of the ring
+   means the origin lives in this constant. A scratch build caught it: base and the
+   links were already right and canonical still read daviddef.github.io, which would
+   have told every search engine that the canonical home of this site is a URL that
+   301-redirects back to it. */
+const ORIGIN = 'https://luwinski.defranceski.com';
 const LINE = 'An evidence-first archive of the Luwinski, Wear, Castle and Figueiredo families.';
 const p = Astro.url.pathname.replace(/\/+$/, '');
 const canonical = ORIGIN + (/\.[a-z0-9]{2,5}$/i.test(p) ? p : p + '/');
