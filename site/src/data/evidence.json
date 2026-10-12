@@ -373,8 +373,8 @@
    "title": "Aldenham baptisms, the Hawkins register read entire",
    "source": "Findmypast, Hertfordshire Baptisms",
    "kind": "person",
-   "rows": 25,
-   "people": 25
+   "rows": 27,
+   "people": 27
   },
   {
    "file": "heinrich-leibholz-kreuzberg-1948.tsv",
@@ -3608,6 +3608,18 @@
    ]
   },
   {
+   "name": "Robert Larkin",
+   "slug": "robert-larkin",
+   "records": [
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: - · father: Mary · mother: Burch"
+    }
+   ]
+  },
+  {
    "name": "Robert Wear",
    "slug": "robert-wear",
    "records": [
@@ -4066,6 +4078,12 @@
      "title": "Aldenham baptisms, the Hawkins register read entire",
      "source": "Findmypast, Hertfordshire Baptisms",
      "detail": "baptism_year: 1814 · father: William · mother: Mary"
+    },
+    {
+     "file": "hawkins-aldenham-baptisms.tsv",
+     "title": "Aldenham baptisms, the Hawkins register read entire",
+     "source": "Findmypast, Hertfordshire Baptisms",
+     "detail": "baptism_year: - · father: Mary · mother: Appleyard"
     }
    ]
   },
@@ -4180,8 +4198,8 @@
   "ambiguous": 2,
   "files": 140,
   "person_files": 26,
-  "people": 204,
-  "records": 293,
+  "people": 205,
+  "records": 295,
   "linked_to_register": 13
  }
 }
