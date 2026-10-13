@@ -209,6 +209,32 @@
     "site/src/data/worklist.json": "dated row notes, same rule",
     "site/src/pages/kurt.astro": "quotes the withdrawn year in the correction note beneath it"
    }
+  },
+  {
+   "id": "george-william-castle-death-1916",
+   "what": "The year George William Castle died",
+   "now": "Registered Q3 1917 at Hitchin, aged 54 (index); one match holder's tree says 1916 and conflicts with the index. Born 1862.",
+   "was": [
+    "George William Castle died in 1916",
+    "husband died in 1916",
+    "1862–1916",
+    "1862-1916",
+    "GEORGE W CASTLE 1862–1916",
+    "She remarried four years later"
+   ],
+   "since": "2026-10-13",
+   "why": "The tree.json entry and two evidence files took 1916 from a match holder's tree. The home page and the DNA page already said 1917, and the death index gives Q3 1917 at Hitchin, aged 54, which also fits Caroline's 1920 remarriage as three years later, not four. Found while building the person pages, which stated both years and so exposed the conflict. The 1916 stays on file only as the tree's quoted claim.",
+   "allow": {
+    "data/superseded.json": "this declaration itself",
+    "site/src/pages/changes.astro": "dated research-log entries, superseded in place and flagged rather than rewritten",
+    "site/src/data/worklist.json": "dated row notes quoting the tree's claim",
+    "site/src/data/letters.json": "letters quote the match holder's tree as sent or drafted, dated records",
+    "data/castle-1911-1921.tsv": "dated evidence file, carries a dated correction line",
+    "data/caroline-james-1920-1957.tsv": "dated evidence file, carries a dated correction line",
+    "site/src/data/evidence.json": "generated from the TSVs, which carry the correction line",
+    "requests/25-REPLY-paul-harrison-brown-castle.md": "Paul's reply as received, quoting his own tree's 1862–1916; a dated record",
+    "requests/25-SEND-THIS-to-paul.txt": "the letter as sent, quoting his tree's dates back to him; a dated record"
+   }
   }
  ]
 }

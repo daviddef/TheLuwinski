@@ -1,0 +1,108 @@
+---
+/* ONE PAGE PER DIRECT ANCESTOR ON THE ENGLISH LINE — the Wear, Castle, Hawkins, Larkin and Giddins
+   people, twenty of them. Added 13 October 2026.
+
+   WHY THESE ROUTES CARRY KIT COMPONENTS. `people/[slug]` and `people/index` are page names six sibling
+   archives already have, and checkpages counts a shared page name as bespoke if the page uses NO kit
+   component at all — this archive's cap is one, set deliberately. PersonTree and Evidence are not
+   there to satisfy that: a person page genuinely wants its relatives drawn as linked nodes and its
+   grade drawn on the shared five-word ladder.
+
+   THE DATA IS HAND-WRITTEN AND SAYS WHAT IT DOES NOT KNOW. Every record has a `gaps` list, and a
+   relationship carries how it is known (read in a record, a best candidate, or a tree's word) as a
+   class on its node AND as a word under the name, because colour is no use to a reader who cannot
+   see it. Nobody here was born after 1895, so no living-person rule is needed; if somebody younger
+   is ever added, that has to be decided first, not discovered by the gate. */
+import Base from '../../layouts/Base.astro';
+import PersonTree from '@daviddef/archive-kit/components/PersonTree.astro';
+import Evidence from '@daviddef/archive-kit/components/Evidence.astro';
+import '@daviddef/archive-kit/styles/persontree.css';
+import data from '../../data/english-people.json';
+
+export function getStaticPaths() {
+  return data.people.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const VIA = { read: 'via-read', inferred: 'via-inferred', tree: 'via-tree' };
+/* A record that was read needs no word under the name; the other two do. */
+const WORD = { inferred: 'best candidate', tree: 'from a tree' };
+const node = (k, small) => ({
+  name: k.n,
+  href: k.href ? base + k.href : k.s ? `${base}/people/${k.s}/` : undefined,
+  dates: k.dates || '',
+  cls: VIA[k.via] || 'via-none',
+  mark: k.mark || WORD[k.via],
+  mar: k.mar,
+  small,
+});
+const kin = p.kin;
+/* THE KIT'S SIBLING ROW NEVER READS `mark`: it emits a name and the dates and nothing else, so a
+   sibling's «half-brother» or «best candidate» would be dropped without a word and left to colour
+   alone, which is exactly what the component's own docs say is no use to a reader who cannot see
+   it. Found 13 October 2026 by checking the rendered text rather than the data. For siblings only,
+   the wording goes on the dates line, which the row does print. */
+const siblings = kin.siblings.map((k) => {
+  const n = node(k, true);
+  n.dates = [n.dates, n.mark].filter(Boolean).join(' \u00b7 ');
+  return n;
+});
+const children = kin.children.map((k) => node(k, kin.children.length > 5));
+const TAG = { doc: 'Documented', inf: 'Read with care', disp: 'Corrected' };
+const lifeLine = [p.born && p.born !== 'not established' ? `Born ${p.born}` : '',
+                  p.died && p.died !== 'not established' ? `died ${p.died}` : ''].filter(Boolean).join(' · ');
+---
+<Base title={p.name} subtitle={p.dates + ' · ' + p.rel} lede={p.dek}>
+
+  <div class="panel">
+    <p>
+      <Evidence level={p.grade} />
+      <span class="small muted">{p.why}</span>
+    </p>
+    {lifeLine && <p class="small" style="margin:.2rem 0 0 0;"><strong>{lifeLine}</strong></p>}
+  </div>
+
+  <section class="blk">
+    <h2>Family</h2>
+    <PersonTree always
+      self={{ name: p.name, dates: p.dates, gen: p.rel }}
+      parents={kin.parents.map((k) => node(k))}
+      spouses={kin.spouses.map((k) => node(k))}
+      children={children}
+      siblings={siblings}
+      keys={[{ cls: 'via-read', label: 'read in a record' },
+             { cls: 'via-inferred', label: 'a best candidate, not proved' },
+             { cls: 'via-tree', label: 'a family tree’s word' }]}>
+    </PersonTree>
+  </section>
+
+  <h2>What is known</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>When</th><th>What</th><th></th><th>Status</th></tr></thead>
+    <tbody>
+      {p.facts.map(([when, what, detail, g]) => (
+        <tr>
+          <td>{when}</td>
+          <td><strong>{what}</strong></td>
+          <td>{detail}</td>
+          <td><span class={'tag ' + g}>{TAG[g]}</span></td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+
+  <div class="panel" id="gaps">
+    <h3>What is not established</h3>
+    <ul class="small">
+      {p.gaps.map((g) => <li>{g}</li>)}
+    </ul>
+  </div>
+
+  <p class="small muted">
+    {p.see.map(([label, href], i) => (
+      <Fragment>{i > 0 && ' · '}<a href={base + href}>{label}</a></Fragment>
+    ))}
+    {' · '}<a href={base + '/people/'}>All twenty people</a>
+  </p>
+</Base>

@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import data from '../data/tree.json';
 import Evidence from '@daviddef/archive-kit/components/Evidence.astro';
+import english from '../data/english-people.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 /* The five-word ladder is shared across the sibling archives so a level means
    the same thing wherever a reader meets it. Two of this page's marks are NOT
@@ -9,6 +10,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
    and 'excluded' is a claim tested and failed. They get their own chips. */
 const LADDER = new Set(['documented', 'probable', 'inferred', 'family', 'disputed']);
 const OFF = { unknown: 'Not established', excluded: 'Ruled out' };
+/* The English line has a page for each direct ancestor (13 October 2026); a tree entry that names
+   them carries a `people` list of slugs, and this turns each into a link. */
+const personName = Object.fromEntries(english.people.map((q) => [q.slug, q.name]));
 ---
 <style is:global>
   /* The two marks that are not evidence levels are drawn deliberately unlike
@@ -51,6 +55,13 @@ const OFF = { unknown: 'Not established', excluded: 'Ruled out' };
               ? <Evidence level={p.status} />
               : <span class={'ev ev-off ev-' + p.status}>{OFF[p.status]}</span>}
           </h4>
+          {p.people && (
+            <p class="small" style="margin:.1rem 0;">
+              {p.people.map((slug, i) => (
+                <Fragment>{i > 0 && ' \u00b7 '}<a href={base + '/people/' + slug + '/'}>{personName[slug]}\u2019s page</a></Fragment>
+              ))}
+            </p>
+          )}
           {p.dates && <p class="small" style="margin:.1rem 0;"><strong>{p.dates}</strong></p>}
           {p.place && <p class="small muted" style="margin:.1rem 0;">{p.place}</p>}
           <p class="small muted" style="margin:.3rem 0 0 0;">{p.how}</p>

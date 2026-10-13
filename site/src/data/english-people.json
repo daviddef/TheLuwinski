@@ -1,0 +1,2476 @@
+{
+ "title": "The people of the English line",
+ "dek": "Twenty ancestors on Derrick's Wear and Hawkins sides, each graded on the same five-word ladder, each with what is not known.",
+ "note": "Everyone here was born before 1900 and is long dead. Where a record was read the page says which; where a statement is a family tree's word, a best candidate or not proved, it says that instead, and the grade on the person is the grade of the weakest link a reader would otherwise take for granted.",
+ "people": [
+  {
+   "slug": "henry-robert-wear",
+   "name": "Henry Robert Wear",
+   "line": "Wear",
+   "gen": 2,
+   "born": "Q3 1889, St Olave, Bermondsey",
+   "died": "11 September 1969, Johannesburg",
+   "dates": "1889–1969",
+   "grade": "documented",
+   "why": "A record was read for every step of his life from birth to burial.",
+   "rel": "Derrick's grandfather",
+   "dek": "Born in Bermondsey, a fatherless boy at Watford, a printer's assistant at Letchworth, a soldier in 1914, and a machine minder who sailed for the Cape in April 1939.",
+   "kin": {
+    "parents": [
+     {
+      "n": "Robert Wear",
+      "dates": "1859–1890",
+      "s": "robert-wear",
+      "via": "read"
+     },
+     {
+      "n": "Emma Hawkins",
+      "dates": "1859–1944",
+      "s": "emma-hawkins-1859",
+      "via": "read"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "Martha Maud Castle",
+      "dates": "1895–1986",
+      "s": "martha-maud-castle",
+      "via": "read",
+      "mar": "married 1914"
+     }
+    ],
+    "children": [
+     {
+      "n": "Leonard Aubrey Robert Wear",
+      "dates": "b. 1917",
+      "via": "read",
+      "mark": "his own page",
+      "href": "/leonard/"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "Louisa S. A. Wear",
+      "dates": "b. 1883",
+      "via": "read"
+     },
+     {
+      "n": "Rosetta E. Wear",
+      "dates": "b. 1886",
+      "via": "read"
+     },
+     {
+      "n": "Albert J. Hull",
+      "dates": "b. 1895",
+      "via": "read",
+      "mark": "half-brother"
+     },
+     {
+      "n": "Edith M. Hull",
+      "dates": "b. 1897",
+      "via": "read",
+      "mark": "half-sister"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "Q3 1889",
+     "Born at St Olave, Bermondsey",
+     "Birth registered at vol 1D p230. Mother's maiden name Hawkins: son of Robert Wear and Emma Hawkins.",
+     "doc"
+    ],
+    [
+     "Q1 1890",
+     "His father dies",
+     "Robert Wear, aged 31 (St Olave Southwark, vol 1D p141), about six months after his son's birth. The boy never knew him.",
+     "doc"
+    ],
+    [
+     "1891",
+     "At Watford",
+     "Aged one, with his widowed mother inside his uncle John Hawkins's household at 44 Ebury Road (RG12 piece 1120, folio 37).",
+     "doc"
+    ],
+    [
+     "1901",
+     "A stepson at St Albans",
+     "Step-son of John Hull, a railway labourer, at 22 Mount Pleasant, aged 11 (RG13 piece 1312).",
+     "doc"
+    ],
+    [
+     "1911",
+     "A printer's assistant at Letchworth",
+     "A boarder at 9 Ridge Road, aged 21 (RG14/7576/0009).",
+     "doc"
+    ],
+    [
+     "31 Oct 1914",
+     "Marries Martha Maud Castle",
+     "At the Congregational Church, Baldock. Two papers reported it and one prints him as 'Harry Ware'. He was in uniform, on furlough from Bury St Edmunds, and his battalion landed in France on 6 November.",
+     "doc"
+    ],
+    [
+     "1914–1918",
+     "Hertfordshire Regiment",
+     "1st Battalion, service number 3010 (WO 363).",
+     "doc"
+    ],
+    [
+     "1917–1936",
+     "Six children, registered at Hitchin",
+     "The eldest, Leonard, has his own page. The others are not named here.",
+     "doc"
+    ],
+    [
+     "5 Apr 1939",
+     "Sails for the Cape",
+     "The Durban Castle, London to the Cape, occupation machine minder (transcribed 'machine minister'). Martha Maud followed on the Dunvegan Castle on 10 August with four of the children.",
+     "doc"
+    ],
+    [
+     "11 Sep 1969",
+     "Dies at Johannesburg",
+     "Aged 80. Buried at West Park Cemetery on 13 September in grave 56045, which his son Leonard bought that day (Private Graves Register, folio W 8).",
+     "doc"
+    ]
+   ],
+   "gaps": [
+    "His Master of the High Court estate file, MHG 10245/69, has been asked for and has not been seen.",
+    "The line from his son Leonard to Derrick rests on DNA and inference, not on a document. See the DNA page."
+   ],
+   "see": [
+    [
+     "His son Leonard",
+     "/leonard/"
+    ],
+    [
+     "The Wear line",
+     "/wear-line/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "martha-maud-castle",
+   "name": "Martha Maud Castle",
+   "line": "Castle",
+   "gen": 2,
+   "born": "21 July 1895, Baldock",
+   "died": "16 March 1986, Johannesburg",
+   "dates": "1895–1986",
+   "grade": "documented",
+   "why": "Her baptism, marriage, passage and burial are all records; only the exact birth day is a tree's word.",
+   "rel": "Derrick's grandmother",
+   "dek": "The sixth of nine children, born at Baldock; she raised six children at Letchworth and sailed for Durban thirteen days before her brother died in London.",
+   "kin": {
+    "parents": [
+     {
+      "n": "George William Castle",
+      "dates": "1862–1917",
+      "s": "george-william-castle-1862",
+      "via": "read"
+     },
+     {
+      "n": "Caroline Wallis",
+      "dates": "1863–1957",
+      "s": "caroline-wallis",
+      "via": "read"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "Henry Robert Wear",
+      "dates": "1889–1969",
+      "s": "henry-robert-wear",
+      "via": "read",
+      "mar": "married 1914"
+     }
+    ],
+    "children": [
+     {
+      "n": "Leonard Aubrey Robert Wear",
+      "dates": "b. 1917",
+      "via": "read",
+      "mark": "his own page",
+      "href": "/leonard/"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "Sarah Ann Wallis",
+      "dates": "b. 1882",
+      "via": "read"
+     },
+     {
+      "n": "George William Castle",
+      "dates": "1884–1939",
+      "via": "read"
+     },
+     {
+      "n": "Ada May Castle",
+      "dates": "b. 1887",
+      "via": "read"
+     },
+     {
+      "n": "Fredrick James Castle",
+      "dates": "b. 1889",
+      "via": "read"
+     },
+     {
+      "n": "Agnes Kate Castle",
+      "dates": "1892–1967",
+      "via": "read"
+     },
+     {
+      "n": "Sidney Charles Castle",
+      "dates": "1898–1900",
+      "via": "read"
+     },
+     {
+      "n": "Florence Margarite Hilda Castle",
+      "dates": "1901–1985",
+      "via": "read"
+     },
+     {
+      "n": "Ernest Albert Cyril Castle",
+      "dates": "1904–1988",
+      "via": "read"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "21 Jul 1895",
+     "Born at Baldock",
+     "Baptised there on 22 September 1895. The day of birth comes from a second-cousin match's family tree; the baptism fixes the year.",
+     "inf"
+    ],
+    [
+     "31 Oct 1914",
+     "Marries Henry Robert Wear",
+     "At the Congregational Church, Baldock. The Hertfordshire Express gives her address as Norton Street, Baldock, the first address this archive has for her.",
+     "doc"
+    ],
+    [
+     "1914–1939",
+     "Raises six children at Letchworth",
+     "At 72 Pix Road, in the same street as her husband's mother.",
+     "doc"
+    ],
+    [
+     "10 Aug 1939",
+     "Sails for Durban",
+     "The Dunvegan Castle, London to Durban, with four of her children. Britain declared war on 3 September.",
+     "doc"
+    ],
+    [
+     "23 Aug 1939",
+     "Her brother dies in London",
+     "George William Castle, of 85 Jackmans-place, Letchworth, in St Bartholomew's Hospital, thirteen days after her ship sailed. He died without a will; administration went to Margaret Castle, widow, and Cyril George Castle, printer.",
+     "doc"
+    ],
+    [
+     "16 Mar 1986",
+     "Dies at Johannesburg",
+     "Aged 90. Buried in her husband's grave, 56045, at West Park.",
+     "doc"
+    ]
+   ],
+   "gaps": [
+    "The exact day of her birth rests on one tree; no record read here gives it.",
+    "Cyril George Castle, who shared her brother's administration, is not claimed as the brother's son."
+   ],
+   "see": [
+    [
+     "The Leonard page, with the sailing and the probate",
+     "/leonard/"
+    ],
+    [
+     "The Wear line",
+     "/wear-line/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "robert-wear",
+   "name": "Robert Wear",
+   "line": "Wear",
+   "gen": 3,
+   "born": "Q2 1859, Bermondsey",
+   "died": "Q1 1890, St Olave Southwark, aged 31",
+   "dates": "1859–1890",
+   "grade": "documented",
+   "why": "His birth, marriage and death are all registered, and he is in his father's household in 1871.",
+   "rel": "Derrick's great-grandfather",
+   "dek": "A harness-maker's youngest son from Jamaica Road, who married Emma Hawkins of Aldenham in 1881 and died eight years later, six months after his son was born.",
+   "kin": {
+    "parents": [
+     {
+      "n": "William Wear",
+      "dates": "b. c.1823",
+      "s": "william-wear",
+      "via": "read"
+     },
+     {
+      "n": "Sarah Bloom",
+      "dates": "b. c.1822",
+      "s": "sarah-bloom",
+      "via": "read"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "Emma Hawkins",
+      "dates": "1859–1944",
+      "s": "emma-hawkins-1859",
+      "via": "read",
+      "mar": "married 1881"
+     }
+    ],
+    "children": [
+     {
+      "n": "Louisa S. A. Wear",
+      "dates": "b. 1883",
+      "via": "read"
+     },
+     {
+      "n": "Rosetta E. Wear",
+      "dates": "b. 1886",
+      "via": "read"
+     },
+     {
+      "n": "Henry Robert Wear",
+      "dates": "1889–1969",
+      "s": "henry-robert-wear",
+      "via": "read"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "William Wear",
+      "dates": "b. c.1850",
+      "via": "read"
+     },
+     {
+      "n": "James Wear",
+      "dates": "b. c.1852",
+      "via": "read"
+     },
+     {
+      "n": "Henry Wear",
+      "dates": "b. c.1854",
+      "via": "read"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "Q2 1859",
+     "Born at Bermondsey",
+     "Birth registered in vol 1D. Mother's maiden name Bloom, which is the only place that name appears.",
+     "doc"
+    ],
+    [
+     "1871",
+     "A schoolboy in Jamaica Road",
+     "Aged 12, a scholar, in the house of his father William Wear, a harness maker, where his three older brothers worked at the same bench (RG10 piece 641, folio 40).",
+     "doc"
+    ],
+    [
+     "Q4 1881",
+     "Marries Emma Hawkins",
+     "At St Olave, Southwark, vol 1D p455.",
+     "doc"
+    ],
+    [
+     "1883–1889",
+     "Three children",
+     "Louisa in 1883 at Wimbledon, Rosetta in 1886 at Bermondsey, and Henry Robert in Q3 1889 at Bermondsey.",
+     "doc"
+    ],
+    [
+     "Q1 1890",
+     "Dies aged 31",
+     "St Olave, Southwark, vol 1D p141.",
+     "doc"
+    ]
+   ],
+   "gaps": [
+    "His own occupation is not recorded in anything this archive holds; his father and his three older brothers were harness makers.",
+    "Why his first child was born at Wimbledon and the others at Bermondsey is not known.",
+    "The cause of his death is not known."
+   ],
+   "see": [
+    [
+     "The Wear line",
+     "/wear-line/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "emma-hawkins-1859",
+   "name": "Emma Hawkins",
+   "line": "Hawkins",
+   "gen": 3,
+   "born": "7 February 1859, Aldenham",
+   "died": "Q2 1944, Hitchin, aged 85",
+   "dates": "1859–1944",
+   "grade": "documented",
+   "why": "Her baptism, both marriages' children, three censuses, the 1939 Register and her death are all records.",
+   "rel": "Derrick's great-grandmother",
+   "dek": "Born at Aldenham, widowed at thirty-one, a stepfather's wife at St Albans, and blind in Pix Road, Letchworth, in 1939. Eighty-five years, two husbands buried, five children.",
+   "kin": {
+    "parents": [
+     {
+      "n": "John Hawkins",
+      "dates": "b. 1819",
+      "s": "john-hawkins-1819",
+      "via": "read"
+     },
+     {
+      "n": "Emma Larkin",
+      "dates": "b. 1822",
+      "s": "emma-larkin-1822",
+      "via": "read"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "Robert Wear",
+      "dates": "1859–1890",
+      "s": "robert-wear",
+      "via": "read",
+      "mar": "married 1881"
+     },
+     {
+      "n": "John Hull",
+      "via": "read",
+      "mark": "a railway labourer",
+      "mar": "married by 1895"
+     }
+    ],
+    "children": [
+     {
+      "n": "Louisa S. A. Wear",
+      "dates": "b. 1883",
+      "via": "read"
+     },
+     {
+      "n": "Rosetta E. Wear",
+      "dates": "b. 1886",
+      "via": "read"
+     },
+     {
+      "n": "Henry Robert Wear",
+      "dates": "1889–1969",
+      "s": "henry-robert-wear",
+      "via": "read"
+     },
+     {
+      "n": "Albert J. Hull",
+      "dates": "b. 1895",
+      "via": "read"
+     },
+     {
+      "n": "Edith M. Hull",
+      "dates": "b. 1897",
+      "via": "read"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "William Hawkins",
+      "dates": "b. 1841",
+      "via": "read"
+     },
+     {
+      "n": "Robert Hawkins",
+      "dates": "b. 1843",
+      "via": "read"
+     },
+     {
+      "n": "John Hawkins",
+      "dates": "b. 1847",
+      "via": "read",
+      "mark": "probably died young"
+     },
+     {
+      "n": "Betsey Hawkins",
+      "dates": "b. 1849",
+      "via": "read"
+     },
+     {
+      "n": "Richard Hawkins",
+      "dates": "b. 1851",
+      "via": "read"
+     },
+     {
+      "n": "Jane Hawkins",
+      "dates": "b. 1853",
+      "via": "read"
+     },
+     {
+      "n": "John Hawkins",
+      "dates": "b. 1856",
+      "via": "read"
+     },
+     {
+      "n": "Mary Hawkins",
+      "dates": "b. 1861",
+      "via": "read"
+     },
+     {
+      "n": "Henry Hawkins",
+      "dates": "b. 1863",
+      "via": "read"
+     },
+     {
+      "n": "Alfred Hawkins",
+      "dates": "b. 1865",
+      "via": "read"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "7 Feb 1859",
+     "Born at Aldenham",
+     "Baptised there in 1859, daughter of John and Emma Hawkins. The day comes from the 1939 Register, given by Emma herself at eighty.",
+     "doc"
+    ],
+    [
+     "1871",
+     "At the Red Lion Cottages",
+     "Aged 12, a scholar, one of six of the family's children still at home (RG10 piece 1380, folio 10).",
+     "doc"
+    ],
+    [
+     "Q4 1881",
+     "Marries Robert Wear",
+     "At St Olave, Southwark. Three children follow, in 1883, 1886 and 1889.",
+     "doc"
+    ],
+    [
+     "Q1 1890",
+     "Widowed",
+     "Robert Wear dies.",
+     "doc"
+    ],
+    [
+     "1891",
+     "Home to her brother's house at Watford",
+     "With her three children at 44 Ebury Road, in the household of her brother John Hawkins, a carter.",
+     "doc"
+    ],
+    [
+     "by 1895",
+     "Marries John Hull",
+     "A railway labourer. Albert is born in 1895 and Edith in 1897, both at St Albans. In 1901 she is 'Emma Hull' at 22 Mount Pleasant, St Albans (RG13 piece 1312).",
+     "doc"
+    ],
+    [
+     "1939",
+     "Blind at Letchworth",
+     "At 63 Pix Road, aged 80, widowed and incapacitated, living with her daughter Louisa and her son-in-law William Shenton. Her son Henry Robert raised his own children at 72 Pix Road, in the same street.",
+     "doc"
+    ],
+    [
+     "Q2 1944",
+     "Dies at Hitchin",
+     "Aged 85, registered at Hitchin.",
+     "doc"
+    ],
+    [
+     "17 Sep 2026",
+     "Once merged with her mother",
+     "This archive wrote her mother's dates and history over her entry, because mother and daughter share a forename, and published the result for part of a day. Corrected.",
+     "disp"
+    ]
+   ],
+   "gaps": [
+    "Her marriage to John Hull has not been read; it is inferred from the births of 1895 and 1897 and the 1901 census.",
+    "When John Hull died is not established."
+   ],
+   "see": [
+    [
+     "Two generations out of the Aldenham registers",
+     "/wear-line/#aldenham"
+    ],
+    [
+     "The Wear line",
+     "/wear-line/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "george-william-castle-1862",
+   "name": "George William Castle",
+   "line": "Castle",
+   "gen": 3,
+   "born": "Q4 1862, Hitchin district",
+   "died": "Q3 1917, Hitchin, aged 54",
+   "dates": "1862–1917",
+   "grade": "probable",
+   "why": "His marriage and his children are one researcher's tree, not records read here; his death is a death-index entry matched to him by name, age and district.",
+   "rel": "Derrick's great-grandfather",
+   "dek": "A farm labourer's son raised by his grandparents at Norton End after his mother died when he was under a year old.",
+   "kin": {
+    "parents": [
+     {
+      "n": "George Castle",
+      "dates": "1840–1885",
+      "s": "george-castle-1840",
+      "via": "read"
+     },
+     {
+      "n": "Martha Giddings",
+      "dates": "1841–1863",
+      "s": "martha-giddings",
+      "via": "read"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "Caroline Wallis",
+      "dates": "1863–1957",
+      "s": "caroline-wallis",
+      "via": "tree",
+      "mark": "from a tree",
+      "mar": "married 1882"
+     }
+    ],
+    "children": [
+     {
+      "n": "Sarah Ann Wallis",
+      "dates": "b. 1882",
+      "via": "read"
+     },
+     {
+      "n": "George William Castle",
+      "dates": "1884–1939",
+      "via": "read"
+     },
+     {
+      "n": "Ada May Castle",
+      "dates": "b. 1887",
+      "via": "read"
+     },
+     {
+      "n": "Fredrick James Castle",
+      "dates": "b. 1889",
+      "via": "read"
+     },
+     {
+      "n": "Agnes Kate Castle",
+      "dates": "1892–1967",
+      "via": "read"
+     },
+     {
+      "n": "Martha Maud Castle",
+      "dates": "1895–1986",
+      "s": "martha-maud-castle",
+      "via": "read"
+     },
+     {
+      "n": "Sidney Charles Castle",
+      "dates": "1898–1900",
+      "via": "read"
+     },
+     {
+      "n": "Florence Margarite Hilda Castle",
+      "dates": "1901–1985",
+      "via": "read"
+     },
+     {
+      "n": "Ernest Albert Cyril Castle",
+      "dates": "1904–1988",
+      "via": "read"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "Q4 1862",
+     "Born",
+     "Birth registered at Hitchin. A baptism at St Mary's, Baldock, on 4 January 1863 (‘parents George & Martha, abode Willian’) comes from another researcher's tree, not from a register read here.",
+     "inf"
+    ],
+    [
+     "Q3 1863",
+     "His mother dies",
+     "Martha Castle, registered at Hitchin. His father took him to her parents rather than his own.",
+     "doc"
+    ],
+    [
+     "1871",
+     "With his grandparents at Norton End",
+     "Aged 8, 'grandson' in the house of James and Elizabeth Giddins, with his widowed father listed as their son-in-law (RG10 piece 1365, folio 27).",
+     "doc"
+    ],
+    [
+     "Oct 1882",
+     "Marries Caroline Wallis",
+     "At Hitchin. The date and the marriage come from the same tree; the certificate has not been read.",
+     "inf"
+    ],
+    [
+     "1891–1901",
+     "A farm labourer at Baldock",
+     "At Middle Row in 1891 and at Norton in 1901, from the same tree.",
+     "inf"
+    ],
+    [
+     "1911",
+     "Nine children born",
+     "His wife told the census nine children born, eight living and one dead. The dead one is Sidney Charles, who died at two.",
+     "doc"
+    ],
+    [
+     "Q3 1917",
+     "Dies at Hitchin",
+     "Aged 54, registered at Hitchin: the England & Wales death index has a George W Castle, born 1863, which fits a man born in Q4 1862. It was read on 15 September 2026, and a match holder's own tree gave 1917 independently. A different match's tree gave 1916 a day later, and this site's tree page copied that without setting it against the index. The index is the record; the identification is by name, age and district.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "The marriage certificate has not been read, and it would settle the marriage and name both fathers.",
+    "His death certificate has not been read, so the place and cause are not known, and the year 1917 rests on an index entry matched by name, age and district. One tree still says 1916.",
+    "The census disagrees with the tree twice: it gives his birthplace as Baldock, not Willian, and his birth year as 1863, not 1862."
+   ],
+   "see": [
+    [
+     "His daughter Martha Maud, and the probate of his son",
+     "/leonard/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "caroline-wallis",
+   "name": "Caroline Wallis",
+   "line": "Castle",
+   "gen": 3,
+   "born": "28 February 1863, Weston",
+   "died": "1957, registered at Hitchin as Caroline James",
+   "dates": "1863–1957",
+   "grade": "probable",
+   "why": "Her later life is documented; her first marriage and her parents are not.",
+   "rel": "Derrick's great-grandmother",
+   "dek": "She remarried in 1920 and died in 1957 as Caroline James, which is why every tree that carries her as Caroline Wallis was hunting a death registered under another surname.",
+   "kin": {
+    "parents": [],
+    "spouses": [
+     {
+      "n": "George William Castle",
+      "dates": "1862–1917",
+      "s": "george-william-castle-1862",
+      "via": "tree",
+      "mark": "from a tree",
+      "mar": "married 1882"
+     },
+     {
+      "n": "James James",
+      "via": "read",
+      "mar": "married 1920"
+     }
+    ],
+    "children": [
+     {
+      "n": "Sarah Ann Wallis",
+      "dates": "b. 1882",
+      "via": "read"
+     },
+     {
+      "n": "George William Castle",
+      "dates": "1884–1939",
+      "via": "read"
+     },
+     {
+      "n": "Ada May Castle",
+      "dates": "b. 1887",
+      "via": "read"
+     },
+     {
+      "n": "Fredrick James Castle",
+      "dates": "b. 1889",
+      "via": "read"
+     },
+     {
+      "n": "Agnes Kate Castle",
+      "dates": "1892–1967",
+      "via": "read"
+     },
+     {
+      "n": "Martha Maud Castle",
+      "dates": "1895–1986",
+      "s": "martha-maud-castle",
+      "via": "read"
+     },
+     {
+      "n": "Sidney Charles Castle",
+      "dates": "1898–1900",
+      "via": "read"
+     },
+     {
+      "n": "Florence Margarite Hilda Castle",
+      "dates": "1901–1985",
+      "via": "read"
+     },
+     {
+      "n": "Ernest Albert Cyril Castle",
+      "dates": "1904–1988",
+      "via": "read"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "28 Feb 1863",
+     "Born at Weston, Hertfordshire",
+     "The day comes from the 1939 Register. The year is given as 1862 in every secondary source; the register and her own age in 1921 both point to 1863.",
+     "doc"
+    ],
+    [
+     "Oct 1882",
+     "Marries George William Castle",
+     "At Hitchin, from a family tree; the certificate has not been read.",
+     "inf"
+    ],
+    [
+     "1911",
+     "Nine children born, eight living",
+     "Her answer to the census question; one child, Sidney Charles, had died at two.",
+     "doc"
+    ],
+    [
+     "Q3 1920",
+     "Marries again, as Caroline Castle",
+     "James James, at Hitchin (vol 3A p2077), three years after George William's death in 1917.",
+     "doc"
+    ],
+    [
+     "19 Jun 1921",
+     "Caroline James at Letchworth",
+     "At 9 Boscombe Place, wife of James James, born at Weston, aged 56 years 4 months. Two children in the house are enumerated as his step-children and carry the surname Castle (RG15 piece 7079, schedule 125).",
+     "doc"
+    ],
+    [
+     "1939",
+     "Widowed again, at Baldock",
+     "At 38 Norton Road, aged 76 (RG101/1598B/017/25).",
+     "doc"
+    ],
+    [
+     "1957",
+     "Dies as Caroline James",
+     "Registered at Hitchin.",
+     "doc"
+    ]
+   ],
+   "gaps": [
+    "Her parents are not established.",
+    "Her first marriage has not been read."
+   ],
+   "see": [
+    [
+     "The tree",
+     "/tree/"
+    ],
+    [
+     "Her daughter Martha Maud",
+     "/leonard/"
+    ]
+   ]
+  },
+  {
+   "slug": "william-wear",
+   "name": "William Wear",
+   "line": "Wear",
+   "gen": 4,
+   "born": "c.1823, Walworth or Newington, Surrey",
+   "died": "not established",
+   "dates": "b. c.1823",
+   "grade": "documented",
+   "why": "He is in two censuses and his son's birth registration; his parents and his marriage are not on the same footing.",
+   "rel": "Derrick's great-great-grandfather",
+   "dek": "A sadler in 1851 and a harness maker by 1871, who brought three of his sons up to his own bench in Jamaica Road.",
+   "kin": {
+    "parents": [
+     {
+      "n": "John Wear",
+      "s": "john-wear",
+      "via": "inferred",
+      "mark": "best candidate"
+     },
+     {
+      "n": "Elizabeth Wear",
+      "s": "elizabeth-wear",
+      "via": "inferred",
+      "mark": "best candidate"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "Sarah Bloom",
+      "dates": "b. c.1822",
+      "s": "sarah-bloom",
+      "via": "inferred",
+      "mark": "not proved",
+      "mar": "married 1842?"
+     }
+    ],
+    "children": [
+     {
+      "n": "William Wear",
+      "dates": "b. c.1850",
+      "via": "read"
+     },
+     {
+      "n": "James Wear",
+      "dates": "b. c.1852",
+      "via": "read"
+     },
+     {
+      "n": "Henry Wear",
+      "dates": "b. c.1854",
+      "via": "read"
+     },
+     {
+      "n": "Robert Wear",
+      "dates": "1859–1890",
+      "s": "robert-wear",
+      "via": "read"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "Elizabeth Wear",
+      "dates": "b. 1812",
+      "via": "inferred",
+      "mark": "baptised 1819"
+     },
+     {
+      "n": "John Wear",
+      "dates": "b. 1817",
+      "via": "inferred",
+      "mark": "baptised 1819"
+     },
+     {
+      "n": "Matilda Wear",
+      "dates": "b. 1820",
+      "via": "inferred"
+     },
+     {
+      "n": "Thomas Wear",
+      "dates": "b. 1825",
+      "via": "inferred"
+     },
+     {
+      "n": "Mary Ann Wear",
+      "dates": "b. 1827",
+      "via": "inferred"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "c.1823",
+     "Born at Walworth or Newington",
+     "Walworth in 1851, Newington in 1871. Walworth is a district inside Newington parish and is the more precise.",
+     "doc"
+    ],
+    [
+     "10 Apr 1833",
+     "Probably baptised at Newington",
+     "Son of John Wear and Elizabeth, with three siblings baptised the same day. Held as probable: it is a transcribed index and not the register, it gives no occupation, and Newington had a second Wear household.",
+     "inf"
+    ],
+    [
+     "Q3 1842",
+     "A marriage that is not proved",
+     "A Sarah Bloom married one of four men registered on Stepney vol 2 p430, and one of the four is 'William Weare'. The index does not say which. A certificate would name both fathers.",
+     "inf"
+    ],
+    [
+     "1851",
+     "A sadler in Salisbury Street",
+     "At Bermondsey (HO107 piece 1560, folio 212), with his wife Sarah and two small sons.",
+     "doc"
+    ],
+    [
+     "1871",
+     "A harness maker in Jamaica Road",
+     "Aged 48 (RG10 piece 641, folio 40), with four sons, three of them harness makers at his bench, and a niece of his wife's from Yarmouth.",
+     "doc"
+    ]
+   ],
+   "gaps": [
+    "His parents are a best candidate, held as probable.",
+    "His marriage is not proved.",
+    "His death is not established."
+   ],
+   "see": [
+    [
+     "The Wear line",
+     "/wear-line/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "sarah-bloom",
+   "name": "Sarah Bloom",
+   "line": "Wear",
+   "gen": 4,
+   "born": "c.1822, Deptford or Bermondsey",
+   "died": "not established",
+   "dates": "b. c.1822",
+   "grade": "probable",
+   "why": "Her maiden name is from one birth registration and one niece, and her birthplace is disputed between two censuses.",
+   "rel": "Derrick's great-great-grandmother",
+   "dek": "Her birthplace is given as Deptford in Kent in 1851 and Bermondsey in Surrey in 1871, which is not a spelling variant.",
+   "kin": {
+    "parents": [],
+    "spouses": [
+     {
+      "n": "William Wear",
+      "dates": "b. c.1823",
+      "s": "william-wear",
+      "via": "inferred",
+      "mark": "not proved",
+      "mar": "married 1842?"
+     }
+    ],
+    "children": [
+     {
+      "n": "William Wear",
+      "dates": "b. c.1850",
+      "via": "read"
+     },
+     {
+      "n": "James Wear",
+      "dates": "b. c.1852",
+      "via": "read"
+     },
+     {
+      "n": "Henry Wear",
+      "dates": "b. c.1854",
+      "via": "read"
+     },
+     {
+      "n": "Robert Wear",
+      "dates": "1859–1890",
+      "s": "robert-wear",
+      "via": "read"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "c.1822",
+     "Born at Deptford, or at Bermondsey",
+     "1851 says Deptford, Kent; 1871 says Bermondsey, Surrey. They are different counties.",
+     "inf"
+    ],
+    [
+     "Q3 1842",
+     "A marriage that is not proved",
+     "A Sarah Bloom married one of four men registered on Stepney vol 2 p430; one of them is 'William Weare'.",
+     "inf"
+    ],
+    [
+     "1851",
+     "In Salisbury Street, Bermondsey",
+     "Aged 29, wife of William Wear, with two small sons (HO107 piece 1560, folio 212).",
+     "doc"
+    ],
+    [
+     "Q2 1859",
+     "Her maiden name is on her son's birth",
+     "Robert Wear's birth registration gives the mother's maiden name as Bloom. A married woman's maiden name is never in a census.",
+     "doc"
+    ],
+    [
+     "1871",
+     "A niece from Yarmouth in the house",
+     "Sarah Ann Bloom, aged 17, born at Yarmouth, Norfolk (RG10 piece 641). With a Norfolk niece and Norfolk marriages in the index, the Blooms may not be a London family at all.",
+     "doc"
+    ]
+   ],
+   "gaps": [
+    "Her parents are not known.",
+    "Where she was born is not settled.",
+    "Her death is not established."
+   ],
+   "see": [
+    [
+     "The Wear line",
+     "/wear-line/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "john-hawkins-1819",
+   "name": "John Hawkins",
+   "line": "Hawkins",
+   "gen": 4,
+   "born": "baptised 1819, Aldenham",
+   "died": "not established",
+   "dates": "b. 1819",
+   "grade": "documented",
+   "why": "He is in three censuses and a banns entry; his parentage is a best candidate.",
+   "rel": "Derrick's great-great-grandfather",
+   "dek": "An agricultural labourer of Aldenham, baptised in 1819, who called the banns for Emma Larkin in 1842 and raised at least eleven children in a hamlet and then at the Red Lion Cottages.",
+   "kin": {
+    "parents": [
+     {
+      "n": "William Hawkins",
+      "s": "william-hawkins",
+      "via": "inferred",
+      "mark": "best candidate"
+     },
+     {
+      "n": "Mary Appleyard",
+      "s": "mary-appleyard",
+      "via": "inferred",
+      "mark": "best candidate"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "Emma Larkin",
+      "dates": "b. 1822",
+      "s": "emma-larkin-1822",
+      "via": "read",
+      "mark": "banns read",
+      "mar": "banns 1842"
+     }
+    ],
+    "children": [
+     {
+      "n": "William Hawkins",
+      "dates": "b. 1841",
+      "via": "read"
+     },
+     {
+      "n": "Robert Hawkins",
+      "dates": "b. 1843",
+      "via": "read"
+     },
+     {
+      "n": "John Hawkins",
+      "dates": "b. 1847",
+      "via": "read",
+      "mark": "probably died young"
+     },
+     {
+      "n": "Betsey Hawkins",
+      "dates": "b. 1849",
+      "via": "read"
+     },
+     {
+      "n": "Richard Hawkins",
+      "dates": "b. 1851",
+      "via": "read"
+     },
+     {
+      "n": "Jane Hawkins",
+      "dates": "b. 1853",
+      "via": "read"
+     },
+     {
+      "n": "John Hawkins",
+      "dates": "b. 1856",
+      "via": "read"
+     },
+     {
+      "n": "Emma Hawkins",
+      "dates": "1859–1944",
+      "s": "emma-hawkins-1859",
+      "via": "read"
+     },
+     {
+      "n": "Mary Hawkins",
+      "dates": "b. 1861",
+      "via": "read"
+     },
+     {
+      "n": "Henry Hawkins",
+      "dates": "b. 1863",
+      "via": "read"
+     },
+     {
+      "n": "Alfred Hawkins",
+      "dates": "b. 1865",
+      "via": "read"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "George Hawkins",
+      "dates": "b. 1801",
+      "via": "read"
+     },
+     {
+      "n": "Sarah Hawkins",
+      "dates": "b. 1803",
+      "via": "read"
+     },
+     {
+      "n": "Mary Hawkins",
+      "dates": "b. 1805",
+      "via": "read"
+     },
+     {
+      "n": "Jane Hawkins",
+      "dates": "b. 1808",
+      "via": "read"
+     },
+     {
+      "n": "Thomas Hawkins",
+      "dates": "b. 1810",
+      "via": "read"
+     },
+     {
+      "n": "Mary Hawkins",
+      "dates": "b. 1812",
+      "via": "read"
+     },
+     {
+      "n": "William Hawkins",
+      "dates": "b. 1814",
+      "via": "read"
+     },
+     {
+      "n": "Charlotte Hawkins",
+      "dates": "b. 1817",
+      "via": "read"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "1819",
+     "Baptised at Aldenham",
+     "Son of William Hawkins and Mary. He is the only John the register offers in the window, the other Johns being excluded by age. Held as a best candidate: the register cannot show that this child is the Red Lion man.",
+     "inf"
+    ],
+    [
+     "1841",
+     "Boarding away from home",
+     "Most likely the John aged 20 at Aldenham Checkers, in a household of three with Katherine Nicholls and William Kimpton (HO107 piece 438). The 1841 census, which the work list nominated, could not give his parents.",
+     "inf"
+    ],
+    [
+     "18 Sep 1842",
+     "Banns with Emma Larkin",
+     "Both resident at Aldenham. What is read is the banns entry; the wedding itself has not been seen.",
+     "doc"
+    ],
+    [
+     "1851",
+     "At Letchmore Heath",
+     "Head, agricultural labourer, aged 39 (HO107 piece 1714, folio 19), with Emma and four children. The age sits eight years from his 1871 age, and the baptism agrees with 1871.",
+     "doc"
+    ],
+    [
+     "1871",
+     "At the Red Lion Cottages",
+     "Aged 51, agricultural labourer, eight in the household, every one of them born in the parish (RG10 piece 1380, folio 10, schedule 58).",
+     "doc"
+    ]
+   ],
+   "gaps": [
+    "His death is not established.",
+    "His parents are a best candidate and not proved.",
+    "His age is given as 39 in 1851 and 51 in 1871, which cannot both be right."
+   ],
+   "see": [
+    [
+     "Two generations out of the Aldenham registers",
+     "/wear-line/#aldenham"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "emma-larkin-1822",
+   "name": "Emma Larkin",
+   "line": "Hawkins",
+   "gen": 4,
+   "born": "1822, Aldenham",
+   "died": "not established",
+   "dates": "b. 1822",
+   "grade": "documented",
+   "why": "Her baptism, her banns and two censuses are records; her parents' marriage is a best candidate.",
+   "rel": "Derrick's great-great-grandmother",
+   "dek": "Carried on this site for weeks as 'Emma Hawkins', which was her married name; she was born Emma Larkin, the sixth of eleven children.",
+   "kin": {
+    "parents": [
+     {
+      "n": "Robert Larkin",
+      "s": "robert-larkin",
+      "via": "inferred",
+      "mark": "best candidate"
+     },
+     {
+      "n": "Mary Burch",
+      "s": "mary-burch",
+      "via": "inferred",
+      "mark": "best candidate"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "John Hawkins",
+      "dates": "b. 1819",
+      "s": "john-hawkins-1819",
+      "via": "read",
+      "mark": "banns read",
+      "mar": "banns 1842"
+     }
+    ],
+    "children": [
+     {
+      "n": "William Hawkins",
+      "dates": "b. 1841",
+      "via": "read"
+     },
+     {
+      "n": "Robert Hawkins",
+      "dates": "b. 1843",
+      "via": "read"
+     },
+     {
+      "n": "John Hawkins",
+      "dates": "b. 1847",
+      "via": "read",
+      "mark": "probably died young"
+     },
+     {
+      "n": "Betsey Hawkins",
+      "dates": "b. 1849",
+      "via": "read"
+     },
+     {
+      "n": "Richard Hawkins",
+      "dates": "b. 1851",
+      "via": "read"
+     },
+     {
+      "n": "Jane Hawkins",
+      "dates": "b. 1853",
+      "via": "read"
+     },
+     {
+      "n": "John Hawkins",
+      "dates": "b. 1856",
+      "via": "read"
+     },
+     {
+      "n": "Emma Hawkins",
+      "dates": "1859–1944",
+      "s": "emma-hawkins-1859",
+      "via": "read"
+     },
+     {
+      "n": "Mary Hawkins",
+      "dates": "b. 1861",
+      "via": "read"
+     },
+     {
+      "n": "Henry Hawkins",
+      "dates": "b. 1863",
+      "via": "read"
+     },
+     {
+      "n": "Alfred Hawkins",
+      "dates": "b. 1865",
+      "via": "read"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "Sarah Larkin",
+      "dates": "b. 1814",
+      "via": "read"
+     },
+     {
+      "n": "Mary Larkin",
+      "dates": "b. 1815",
+      "via": "read"
+     },
+     {
+      "n": "Elizabeth Larkin",
+      "dates": "b. 1818",
+      "via": "read"
+     },
+     {
+      "n": "Joseph Larkin",
+      "dates": "b. 1820",
+      "via": "read"
+     },
+     {
+      "n": "Robert William Larkin",
+      "dates": "b. 1821",
+      "via": "read"
+     },
+     {
+      "n": "Amy Larkin",
+      "dates": "b. 1823",
+      "via": "read"
+     },
+     {
+      "n": "James Larkin",
+      "dates": "b. 1824",
+      "via": "read"
+     },
+     {
+      "n": "John Larkin",
+      "dates": "b. 1828",
+      "via": "read"
+     },
+     {
+      "n": "Joseph Larkin",
+      "dates": "b. 1828",
+      "via": "read"
+     },
+     {
+      "n": "Thomas Larkin",
+      "dates": "b. 1833",
+      "via": "read"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "1822",
+     "Baptised at Aldenham",
+     "Daughter of Robert and Mary Larkin; the only Emma Larkin of her generation in the parish, and the birth year matches the 1871 census to the year.",
+     "doc"
+    ],
+    [
+     "18 Sep 1842",
+     "Banns with John Hawkins",
+     "Both resident at Aldenham; the banns were called, and the wedding has not been seen.",
+     "doc"
+    ],
+    [
+     "1851",
+     "At Letchmore Heath",
+     "Wife, aged 29 (HO107 piece 1714, folio 19).",
+     "doc"
+    ],
+    [
+     "1871",
+     "At the Red Lion Cottages",
+     "Wife, aged 49 (RG10 piece 1380, folio 10).",
+     "doc"
+    ],
+    [
+     "12 Oct 2026",
+     "Her maiden name found",
+     "There was no Emma among the twenty Hawkinses of Aldenham in 1841, which was the clue that she was a Hawkins only by marriage.",
+     "disp"
+    ]
+   ],
+   "gaps": [
+    "Her parents are a best candidate: the register names a Robert and a Mary, and the 1814 banns name a Robert Larkin and a Mary Burch, but no document joins them.",
+    "Her death is not established."
+   ],
+   "see": [
+    [
+     "Two generations out of the Aldenham registers",
+     "/wear-line/#aldenham"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "george-castle-1840",
+   "name": "George Castle",
+   "line": "Castle",
+   "gen": 4,
+   "born": "c.1840, Baldock",
+   "died": "1885 (the year is a tree's)",
+   "dates": "1840–1885",
+   "grade": "documented",
+   "why": "The 1871 census names him as son-in-law and father; his death is one tree's word.",
+   "rel": "Derrick's great-great-grandfather",
+   "dek": "An agricultural labourer who was widowed within a year and took his baby son to his dead wife's parents.",
+   "kin": {
+    "parents": [],
+    "spouses": [
+     {
+      "n": "Martha Giddings",
+      "dates": "1841–1863",
+      "s": "martha-giddings",
+      "via": "inferred",
+      "mark": "index and census",
+      "mar": "married 1862"
+     }
+    ],
+    "children": [
+     {
+      "n": "George William Castle",
+      "dates": "1862–1917",
+      "s": "george-william-castle-1862",
+      "via": "read"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "c.1840",
+     "Born at Baldock",
+     "The 1871 census gives age 30 and Baldock.",
+     "doc"
+    ],
+    [
+     "Q3 1862",
+     "Marries a Giddins",
+     "Registered at Hitchin. The index puts a Castle and a Giddins on the same page; the 1871 census relationship is what ties them.",
+     "inf"
+    ],
+    [
+     "Q4 1862",
+     "A son",
+     "George William, registered at Hitchin, within three months of the wedding.",
+     "doc"
+    ],
+    [
+     "Q3 1863",
+     "Widowed",
+     "Martha dies, nine to twelve months after the birth. It was not childbirth.",
+     "doc"
+    ],
+    [
+     "1871",
+     "Son-in-law at Norton End",
+     "Aged 30, an agricultural labourer, in the house of James and Elizabeth Giddins, with his son George aged 8 (RG10 piece 1365, folio 27).",
+     "doc"
+    ],
+    [
+     "1885",
+     "Dies",
+     "From a tree: 'died when his son was 23'. No record has been read.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "His own parents are not known.",
+    "His death has no record behind it here."
+   ],
+   "see": [
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "martha-giddings",
+   "name": "Martha Giddings",
+   "line": "Castle",
+   "gen": 4,
+   "born": "c.1841, Baldock district",
+   "died": "Q3 1863, Hitchin",
+   "dates": "1841–1863",
+   "grade": "documented",
+   "why": "The 1871 census names her only through the relationships of the people left behind, and that is enough.",
+   "rel": "Derrick's great-great-grandmother",
+   "dek": "She is in neither household she belonged to. Her existence is attested by what the 1871 census says about her widower and her son.",
+   "kin": {
+    "parents": [
+     {
+      "n": "James Giddins",
+      "dates": "b. 1815",
+      "s": "james-giddins",
+      "via": "read"
+     },
+     {
+      "n": "Elizabeth Giddins",
+      "dates": "b. 1815",
+      "s": "elizabeth-giddins",
+      "via": "read"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "George Castle",
+      "dates": "1840–1885",
+      "s": "george-castle-1840",
+      "via": "inferred",
+      "mark": "index and census",
+      "mar": "married 1862"
+     }
+    ],
+    "children": [
+     {
+      "n": "George William Castle",
+      "dates": "1862–1917",
+      "s": "george-william-castle-1862",
+      "via": "read"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "George Giddins",
+      "dates": "b. 1847",
+      "via": "read"
+     },
+     {
+      "n": "John Giddins",
+      "dates": "b. 1849",
+      "via": "read"
+     },
+     {
+      "n": "Emma Giddins",
+      "dates": "b. 1855",
+      "via": "read"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "1861",
+     "Out of her parents' house",
+     "Aged about 20 and not in their household at 9 Cottages, Norton End (RG9 piece 816, folio 69), which lists George, John and Emma.",
+     "doc"
+    ],
+    [
+     "Q3 1862",
+     "Marries George Castle",
+     "Registered at Hitchin. The index gives a Castle and a Giddins on the same page.",
+     "inf"
+    ],
+    [
+     "Q4 1862",
+     "A son",
+     "George William, registered at Hitchin. Baptised in January 1863, from a tree.",
+     "doc"
+    ],
+    [
+     "Q3 1863",
+     "Dies",
+     "A Martha Castle death registered at Hitchin, vol 3A p188. A second Martha Castle death in 1865 cannot be ruled out on the index alone, because the death index before 1866 carries no age.",
+     "inf"
+    ],
+    [
+     "1871",
+     "Attested by the people left behind",
+     "George Castle, 30, is enumerated as son-in-law in her parents' house and a boy of 8 as grandson. Both relationships run only through her.",
+     "doc"
+    ]
+   ],
+   "gaps": [
+    "Her death date is the Q3 1863 entry, which cannot be separated from the 1865 one on the index alone.",
+    "The register indexes spell her Giddings and the census spells the family Giddins; both are carried here."
+   ],
+   "see": [
+    [
+     "Her great-granddaughter Martha Maud",
+     "/leonard/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "james-giddins",
+   "name": "James Giddins",
+   "line": "Castle",
+   "gen": 4,
+   "born": "c.1815, Baldock",
+   "died": "not established",
+   "dates": "b. c.1815",
+   "grade": "documented",
+   "why": "He is in the 1861 and 1871 censuses at the same address.",
+   "rel": "Derrick's great-great-grandfather",
+   "dek": "An agricultural labourer at Norton End who raised a grandson who was not his to raise.",
+   "kin": {
+    "parents": [],
+    "spouses": [
+     {
+      "n": "Elizabeth Giddins",
+      "dates": "b. c.1815",
+      "s": "elizabeth-giddins",
+      "via": "read"
+     }
+    ],
+    "children": [
+     {
+      "n": "Martha Giddings",
+      "dates": "1841–1863",
+      "s": "martha-giddings",
+      "via": "read"
+     },
+     {
+      "n": "George Giddins",
+      "dates": "b. 1847",
+      "via": "read"
+     },
+     {
+      "n": "John Giddins",
+      "dates": "b. 1849",
+      "via": "read"
+     },
+     {
+      "n": "Emma Giddins",
+      "dates": "b. 1855",
+      "via": "read"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "1861",
+     "At 9 Cottages, Norton End",
+     "Aged 46, an agricultural labourer born at Baldock, with Elizabeth and the children George 14, John 12 and Emma 6 (RG9 piece 816, folio 69).",
+     "doc"
+    ],
+    [
+     "1871",
+     "At Norton End, a decade on",
+     "Aged 57, with his wife, his widowed son-in-law George Castle and a grandson of 8 (RG10 piece 1365, folio 27).",
+     "doc"
+    ],
+    [
+     "7 Feb 1859",
+     "A sentence withdrawn",
+     "This archive wrote that his daughter Emma was born on 7 February 1859. That is Emma Hawkins of Aldenham, a different woman in a different parish; the Emma in this house is Emma Giddins, born about 1855.",
+     "disp"
+    ]
+   ],
+   "gaps": [
+    "His parents, his death and his marriage have not been looked for in a register."
+   ],
+   "see": [
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "elizabeth-giddins",
+   "name": "Elizabeth Giddins",
+   "line": "Castle",
+   "gen": 4,
+   "born": "c.1815, Norton",
+   "died": "not established",
+   "dates": "b. c.1815",
+   "grade": "documented",
+   "why": "She is in the 1861 and 1871 censuses with her husband.",
+   "rel": "Derrick's great-great-grandmother",
+   "dek": "Born at Norton, and in 1871 doing platting, the straw-plaiting that kept Hertfordshire women in work for a century.",
+   "kin": {
+    "parents": [],
+    "spouses": [
+     {
+      "n": "James Giddins",
+      "dates": "b. c.1815",
+      "s": "james-giddins",
+      "via": "read"
+     }
+    ],
+    "children": [
+     {
+      "n": "Martha Giddings",
+      "dates": "1841–1863",
+      "s": "martha-giddings",
+      "via": "read"
+     },
+     {
+      "n": "George Giddins",
+      "dates": "b. 1847",
+      "via": "read"
+     },
+     {
+      "n": "John Giddins",
+      "dates": "b. 1849",
+      "via": "read"
+     },
+     {
+      "n": "Emma Giddins",
+      "dates": "b. 1855",
+      "via": "read"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "1861",
+     "At 9 Cottages, Norton End",
+     "Aged 46, wife of James Giddins, born at Norton (RG9 piece 816, folio 69).",
+     "doc"
+    ],
+    [
+     "1871",
+     "Platting",
+     "Aged 57, her occupation straw-plaiting, with a widowed son-in-law and a grandson in the house (RG10 piece 1365, folio 27).",
+     "doc"
+    ]
+   ],
+   "gaps": [
+    "Her maiden name is not known: she appears under her husband's surname in every record.",
+    "Her parents, her marriage and her death are not established."
+   ],
+   "see": [
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "john-wear",
+   "name": "John Wear",
+   "line": "Wear",
+   "gen": 5,
+   "born": "not established",
+   "died": "not established",
+   "dates": "of Newington",
+   "grade": "probable",
+   "why": "An index of the Newington baptism register names him as father of four children baptised together, one of whom is William; no record joins him to William beyond that.",
+   "rel": "Derrick's great-great-great-grandfather",
+   "dek": "A Newington man, the best candidate for William Wear's father, who is on this site only as the name on a baptism index.",
+   "kin": {
+    "parents": [],
+    "spouses": [
+     {
+      "n": "Elizabeth Wear",
+      "s": "elizabeth-wear",
+      "via": "inferred",
+      "mark": "best candidate"
+     }
+    ],
+    "children": [
+     {
+      "n": "Elizabeth Wear",
+      "dates": "b. 1812",
+      "via": "inferred",
+      "mark": "baptised 1819"
+     },
+     {
+      "n": "John Wear",
+      "dates": "b. 1817",
+      "via": "inferred",
+      "mark": "baptised 1819"
+     },
+     {
+      "n": "Matilda Wear",
+      "dates": "b. 1820",
+      "via": "inferred"
+     },
+     {
+      "n": "William Wear",
+      "dates": "b. c.1823",
+      "s": "william-wear",
+      "via": "inferred"
+     },
+     {
+      "n": "Thomas Wear",
+      "dates": "b. 1825",
+      "via": "inferred"
+     },
+     {
+      "n": "Mary Ann Wear",
+      "dates": "b. 1827",
+      "via": "inferred"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "10 Apr 1833",
+     "Four children baptised together",
+     "At Newington, Surrey: Matilda (born 1820), William (1823), Thomas (1825) and Mary Ann (1827). Matilda and Thomas, opened in full, both name John Wear as father and Elizabeth as mother.",
+     "inf"
+    ],
+    [
+     "1819",
+     "Possibly an earlier batch",
+     "Elizabeth (born 1812) and John (born 1817) were baptised together in 1819, in the same parish, with a father named John.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "It is an INDEX of the register and not the register, so it gives no occupation, and the trade is the lever this archive nominated.",
+    "Newington had a second Wear household under a John Southey Wear, so a forename match there is not an identification.",
+    "His marriage, his trade and his death are not known."
+   ],
+   "see": [
+    [
+     "The Wear line",
+     "/wear-line/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "elizabeth-wear",
+   "name": "Elizabeth Wear",
+   "line": "Wear",
+   "gen": 5,
+   "born": "not established",
+   "died": "not established",
+   "dates": "of Newington",
+   "grade": "probable",
+   "why": "Her name is on two of four transcripts of the baptisms of 10 April 1833, and on no other record.",
+   "rel": "Derrick's great-great-great-grandmother",
+   "dek": "Known only as the mother named on two baptism transcripts at Newington, and held as probable.",
+   "kin": {
+    "parents": [],
+    "spouses": [
+     {
+      "n": "John Wear",
+      "s": "john-wear",
+      "via": "inferred",
+      "mark": "best candidate"
+     }
+    ],
+    "children": [
+     {
+      "n": "Elizabeth Wear",
+      "dates": "b. 1812",
+      "via": "inferred",
+      "mark": "baptised 1819"
+     },
+     {
+      "n": "John Wear",
+      "dates": "b. 1817",
+      "via": "inferred",
+      "mark": "baptised 1819"
+     },
+     {
+      "n": "Matilda Wear",
+      "dates": "b. 1820",
+      "via": "inferred"
+     },
+     {
+      "n": "William Wear",
+      "dates": "b. c.1823",
+      "s": "william-wear",
+      "via": "inferred"
+     },
+     {
+      "n": "Thomas Wear",
+      "dates": "b. 1825",
+      "via": "inferred"
+     },
+     {
+      "n": "Mary Ann Wear",
+      "dates": "b. 1827",
+      "via": "inferred"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "10 Apr 1833",
+     "Named as mother",
+     "Two of the four baptism transcripts, those of Matilda and Thomas, were opened in full and both give the mother as Elizabeth. Mary Ann's was not opened.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "Her maiden name, her birth, her marriage and her death are all unknown.",
+    "Which of the Newington children were hers is the same question as whether the household is the right one."
+   ],
+   "see": [
+    [
+     "The Wear line",
+     "/wear-line/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "william-hawkins",
+   "name": "William Hawkins",
+   "line": "Hawkins",
+   "gen": 5,
+   "born": "not established",
+   "died": "not established",
+   "dates": "of Aldenham",
+   "grade": "probable",
+   "why": "The register offers exactly one William-and-Mary pair among 44 Hawkins marriage entries, married in the right year; that is a best candidate and not proof.",
+   "rel": "Derrick's great-great-great-grandfather",
+   "dek": "Called the banns for Mary Appleyard at Aldenham in April 1800; nine children were baptised to a William and Mary Hawkins between 1801 and 1819.",
+   "kin": {
+    "parents": [],
+    "spouses": [
+     {
+      "n": "Mary Appleyard",
+      "s": "mary-appleyard",
+      "via": "read",
+      "mark": "banns read",
+      "mar": "banns 1800"
+     }
+    ],
+    "children": [
+     {
+      "n": "George Hawkins",
+      "dates": "b. 1801",
+      "via": "read"
+     },
+     {
+      "n": "Sarah Hawkins",
+      "dates": "b. 1803",
+      "via": "read"
+     },
+     {
+      "n": "Mary Hawkins",
+      "dates": "b. 1805",
+      "via": "read"
+     },
+     {
+      "n": "Jane Hawkins",
+      "dates": "b. 1808",
+      "via": "read"
+     },
+     {
+      "n": "Thomas Hawkins",
+      "dates": "b. 1810",
+      "via": "read"
+     },
+     {
+      "n": "Mary Hawkins",
+      "dates": "b. 1812",
+      "via": "read"
+     },
+     {
+      "n": "William Hawkins",
+      "dates": "b. 1814",
+      "via": "read"
+     },
+     {
+      "n": "Charlotte Hawkins",
+      "dates": "b. 1817",
+      "via": "read"
+     },
+     {
+      "n": "John Hawkins",
+      "dates": "b. 1819",
+      "s": "john-hawkins-1819",
+      "via": "inferred",
+      "mark": "best candidate"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "20 Apr 1800",
+     "Banns with Mary Appleyard",
+     "At Aldenham, both resident in the parish. It is the only William-and-Mary pair among the 44 Hawkins marriage entries. The set indexes each calling separately, so this one wedding appears twice.",
+     "doc"
+    ],
+    [
+     "1801–1819",
+     "Nine children baptised at Aldenham",
+     "George 1801, Sarah 1803, Mary 1805, Jane 1808, Thomas 1810, Mary 1812, William 1814, Charlotte 1817 and John 1819, to a William and Mary Hawkins. The reused name Mary suggests the first Mary died.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "Banns are the announcement and not the wedding; the marriage entry itself has not been seen.",
+    "His own baptism and parents are unknown.",
+    "That the John of 1819 is the Red Lion man is a best candidate."
+   ],
+   "see": [
+    [
+     "Two generations out of the Aldenham registers",
+     "/wear-line/#aldenham"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "mary-appleyard",
+   "name": "Mary Appleyard",
+   "line": "Hawkins",
+   "gen": 5,
+   "born": "not established",
+   "died": "not established",
+   "dates": "of Aldenham",
+   "grade": "probable",
+   "why": "Her maiden name rests on one banns entry; her own baptism has not been found.",
+   "rel": "Derrick's great-great-great-grandmother",
+   "dek": "A surname this archive had never held. She married into Aldenham from somewhere her own baptism has not been found.",
+   "kin": {
+    "parents": [],
+    "spouses": [
+     {
+      "n": "William Hawkins",
+      "s": "william-hawkins",
+      "via": "read",
+      "mark": "banns read",
+      "mar": "banns 1800"
+     }
+    ],
+    "children": [
+     {
+      "n": "George Hawkins",
+      "dates": "b. 1801",
+      "via": "read"
+     },
+     {
+      "n": "Sarah Hawkins",
+      "dates": "b. 1803",
+      "via": "read"
+     },
+     {
+      "n": "Mary Hawkins",
+      "dates": "b. 1805",
+      "via": "read"
+     },
+     {
+      "n": "Jane Hawkins",
+      "dates": "b. 1808",
+      "via": "read"
+     },
+     {
+      "n": "Thomas Hawkins",
+      "dates": "b. 1810",
+      "via": "read"
+     },
+     {
+      "n": "Mary Hawkins",
+      "dates": "b. 1812",
+      "via": "read"
+     },
+     {
+      "n": "William Hawkins",
+      "dates": "b. 1814",
+      "via": "read"
+     },
+     {
+      "n": "Charlotte Hawkins",
+      "dates": "b. 1817",
+      "via": "read"
+     },
+     {
+      "n": "John Hawkins",
+      "dates": "b. 1819",
+      "s": "john-hawkins-1819",
+      "via": "inferred",
+      "mark": "best candidate"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "20 Apr 1800",
+     "Banns with William Hawkins",
+     "At Aldenham, both resident. 'Of this parish' in a banns entry is residence at the time and not birth.",
+     "doc"
+    ],
+    [
+     "1749–1809",
+     "No Appleyard baptism of her generation at Aldenham",
+     "All 18 Appleyard baptisms there were read: a John-and-Hannah family ending in 1749 and a William-and-Ann family beginning in 1809, with nothing in between. The register is well covered for those decades, so the absence is real.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "Her own baptism has not been found. A county-wide search for it used a forename filter, which does not expand abbreviations, and has not been redone surname-only.",
+    "Her parents, her birthplace and her death are unknown."
+   ],
+   "see": [
+    [
+     "Two generations out of the Aldenham registers",
+     "/wear-line/#aldenham"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "robert-larkin",
+   "name": "Robert Larkin",
+   "line": "Hawkins",
+   "gen": 5,
+   "born": "not established",
+   "died": "not established",
+   "dates": "of Aldenham",
+   "grade": "probable",
+   "why": "The register offers two candidate baptisms and nothing separates them.",
+   "rel": "Derrick's great-great-great-grandfather",
+   "dek": "Called the banns for Mary Burch at Aldenham in January 1814; eleven children were baptised to a Robert and a Mary Larkin between 1814 and 1833.",
+   "kin": {
+    "parents": [],
+    "spouses": [
+     {
+      "n": "Mary Burch",
+      "s": "mary-burch",
+      "via": "read",
+      "mark": "banns read",
+      "mar": "banns 1814"
+     }
+    ],
+    "children": [
+     {
+      "n": "Sarah Larkin",
+      "dates": "b. 1814",
+      "via": "read"
+     },
+     {
+      "n": "Mary Larkin",
+      "dates": "b. 1815",
+      "via": "read"
+     },
+     {
+      "n": "Elizabeth Larkin",
+      "dates": "b. 1818",
+      "via": "read"
+     },
+     {
+      "n": "Joseph Larkin",
+      "dates": "b. 1820",
+      "via": "read"
+     },
+     {
+      "n": "Robert William Larkin",
+      "dates": "b. 1821",
+      "via": "read"
+     },
+     {
+      "n": "Emma Larkin",
+      "dates": "b. 1822",
+      "s": "emma-larkin-1822",
+      "via": "read"
+     },
+     {
+      "n": "Amy Larkin",
+      "dates": "b. 1823",
+      "via": "read"
+     },
+     {
+      "n": "James Larkin",
+      "dates": "b. 1824",
+      "via": "read"
+     },
+     {
+      "n": "John Larkin",
+      "dates": "b. 1828",
+      "via": "read"
+     },
+     {
+      "n": "Joseph Larkin",
+      "dates": "b. 1828",
+      "via": "read"
+     },
+     {
+      "n": "Thomas Larkin",
+      "dates": "b. 1833",
+      "via": "read"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "16 Jan 1814",
+     "Banns with Mary Burch",
+     "At Aldenham, both resident. It is the only Robert-and-Mary pair among 30 Larkin marriage entries.",
+     "doc"
+    ],
+    [
+     "1814–1833",
+     "Eleven children baptised at Aldenham",
+     "Sarah, Mary, Elizabeth, Joseph, Robert William, Emma, Amy, James, John, a second Joseph and Thomas. Two Josephs, so the first had most likely died.",
+     "inf"
+    ],
+    [
+     "1781 or 1789",
+     "Two candidate baptisms",
+     "A Robert baptised in 1789 to Robert and Ann would be 24 at the marriage; a Robert baptised in 1781 to James and Sarah would be 33. Both are ordinary marriage ages and this archive picks neither.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "Which baptism is his is not known. The 1841 census cannot separate them, because the only Robert Larkin at Aldenham in 1841 is his son, aged 20.",
+    "The one Robert Larkin burial at Aldenham, on 1 September 1793, carries no age, so it cannot be told whether it is anyone here.",
+    "His death is not established."
+   ],
+   "see": [
+    [
+     "Two generations out of the Aldenham registers",
+     "/wear-line/#aldenham"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "mary-burch",
+   "name": "Mary Burch",
+   "line": "Hawkins",
+   "gen": 5,
+   "born": "not established",
+   "died": "not established",
+   "dates": "of Aldenham",
+   "grade": "probable",
+   "why": "Her maiden name rests on one banns entry; her own baptism has not been found.",
+   "rel": "Derrick's great-great-great-grandmother",
+   "dek": "Another surname this archive had never held. She married into Aldenham in 1814 from somewhere her baptism has not been found.",
+   "kin": {
+    "parents": [],
+    "spouses": [
+     {
+      "n": "Robert Larkin",
+      "s": "robert-larkin",
+      "via": "read",
+      "mark": "banns read",
+      "mar": "banns 1814"
+     }
+    ],
+    "children": [
+     {
+      "n": "Sarah Larkin",
+      "dates": "b. 1814",
+      "via": "read"
+     },
+     {
+      "n": "Mary Larkin",
+      "dates": "b. 1815",
+      "via": "read"
+     },
+     {
+      "n": "Elizabeth Larkin",
+      "dates": "b. 1818",
+      "via": "read"
+     },
+     {
+      "n": "Joseph Larkin",
+      "dates": "b. 1820",
+      "via": "read"
+     },
+     {
+      "n": "Robert William Larkin",
+      "dates": "b. 1821",
+      "via": "read"
+     },
+     {
+      "n": "Emma Larkin",
+      "dates": "b. 1822",
+      "s": "emma-larkin-1822",
+      "via": "read"
+     },
+     {
+      "n": "Amy Larkin",
+      "dates": "b. 1823",
+      "via": "read"
+     },
+     {
+      "n": "James Larkin",
+      "dates": "b. 1824",
+      "via": "read"
+     },
+     {
+      "n": "John Larkin",
+      "dates": "b. 1828",
+      "via": "read"
+     },
+     {
+      "n": "Joseph Larkin",
+      "dates": "b. 1828",
+      "via": "read"
+     },
+     {
+      "n": "Thomas Larkin",
+      "dates": "b. 1833",
+      "via": "read"
+     }
+    ],
+    "siblings": []
+   },
+   "facts": [
+    [
+     "16 Jan 1814",
+     "Banns with Robert Larkin",
+     "At Aldenham, both resident.",
+     "doc"
+    ],
+    [
+     "1811 onward",
+     "No Burch baptism of her generation at Aldenham",
+     "All 7 Burch baptisms there are of 1811 or later, so none can be hers.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "Her own baptism has not been found. The county-wide search for it used a forename filter and has not been redone surname-only, so it is not leaned on.",
+    "Her parents, her birthplace and her death are unknown."
+   ],
+   "see": [
+    [
+     "Two generations out of the Aldenham registers",
+     "/wear-line/#aldenham"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  }
+ ]
+}

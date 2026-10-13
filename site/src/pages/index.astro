@@ -33,19 +33,17 @@ const lives = [
   ['a', 'Auguste “Lizzy” Luwinski', 1893, 1975, 1975, 'Sauerbaum → Berlin → Kraichtal', [
     [1924,'m','Married Jacob Leibholz','5 January 1924, Berlin. A Mischehe: she was Catholic, from an East Prussian farming family, and she survived the war in Berlin.'],
   ]],
-  ['a', 'Kurt Israel Luwinski', 1912, 1968, 1968, 'Berlin → Johannesburg, 1933', [
-    [1933,'e','Left Germany','Aged 21. By 1 November 1941 he had bought the Piccadilly Hat Company at 81 Eloff Street, Johannesburg, from the widow Ivy Fuchs, with Walter Oppenheimer.'],
+  ['a', 'Kurt Israel Luwinski', 1912, 1968, 1968, 'Berlin → Johannesburg', [
+    [1939,'e','In Johannesburg by July 1939','His German passport, issued at the consulate there on 26 July 1939, is the first document this archive holds placing him in South Africa. The family tree says he left in 1933; a Berlin driving licence of 30 January 1934 says otherwise. By 1 November 1941 he had bought the Piccadilly Hat Company at 81 Eloff Street, Johannesburg, from the widow Ivy Fuchs, with Walter Oppenheimer.'],
     [1948,'m','Married Ivone','19 June 1948, Johannesburg, certificate 858, by special licence taken out ten days before. He 36 and a bachelor; she 24 and entered DIVORCED. Both at 108 Dunottar Street, Sydenham.'],
     [1948,'d','Filed against her the same year','WLD 1950/1948 — Illiquid case, divorce, Kurt Luwinsky versus Ivone (born Mota Figueiredo). Within months of the wedding, and before the child was born.'],
     [1951,'d','Began again, and finished it','WLD 497/1951, restitution of conjugal rights — the step South African law required before a divorce for desertion — then WLD 2368/1951, the divorce itself.'],
     [1956,'m','Married Pauline Rappoport','Entry 169 of 1956. His status on the register is DIVORCEE with the order filed. The parents’ columns, which this form has and the 1948 form did not, are ruled through and empty.'],
   ]],
-  ['b', 'George Castle', 1863, 1917, 1917, 'Baldock — farm, then the brewery', [
-    [1883,'m','Married Caroline Wallis','1883. By the 1911 census they had been married 28 years, and her widowed father Joseph Wallis, 84, was living with them at St Mary’s Cottages, Baldock.'],
+  ['b', 'George William Castle', 1862, 1917, 1917, 'Baldock — farm, then the brewery', [ [1882,'m','Married Caroline Wallis','October 1882, at Hitchin, from a match holder’s tree; the certificate has not been read. By the 1911 census they had been married 28 years, and her widowed father Joseph Wallis, 84, was living with them at St Mary’s Cottages, Baldock.'],
     [1917,'x','Died at Hitchin','Q3 1917, registered Hitchin, Hertfordshire, aged 54 — which confirms to the quarter what his great-granddaughter’s family tree had recorded only as “1917”.'],
   ]],
-  ['b', 'Caroline Wallis', 1863, 1957, 1957, 'Weston, Hertfordshire', [
-    [1883,'m','Married George Castle','1883. Seven children followed, five by 1901 and two more by 1911. She outlived him by forty years.'],
+  ['b', 'Caroline Wallis', 1863, 1957, 1957, 'Weston, Hertfordshire', [ [1882,'m','Married George William Castle','October 1882. The 1911 census records nine children born and eight living. She outlived him by forty years, and from 1920 was Caroline James.'],
   ]],
   ['b', 'Henry Robert Wear', 1889, 1969, 1969, 'Bermondsey → Letchworth → Johannesburg', [
     [1914,'m','Married Martha Maud Castle','Hitchin, last quarter of 1914, vol 3A p.1552 — the only Wear–Castle marriage in the entire England and Wales index. By 1921 they were at 72 Pix Road, Letchworth, and he was a machine minder at J. M. Dent & Sons.'],
@@ -148,9 +146,7 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
       <span class="lane">DNA line</span>
       <b>Not reached</b>
       <p>
-        The oldest names on this lane are <strong>George Castle</strong> and
-        <strong>Caroline Wallis</strong>, both born 1863. Their parents have not been identified,
-        and Henry Robert Wear&rsquo;s have not been found either. This lane is a generation shorter
+        The oldest names on this lane are <strong>George William Castle</strong> and <strong>Caroline Wallis</strong>, born 1862 and 1863. Caroline&rsquo;s parents have not been identified. George William&rsquo;s are <a href={base + '/people/george-castle-1840/'}>George Castle</a> and <a href={base + '/people/martha-giddings/'}>Martha Giddings</a>, and the English side of this lane now runs back through <a href={base + '/people/'}>twenty people</a>. This lane is a generation shorter
         than the one beside it.
       </p>
     </div>
@@ -170,9 +166,9 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
     </div>
     <div class="node b">
       <span class="lane">DNA line</span>
-      <b>George Castle <span class="yr">b. Baldock 1863</span> &amp; Caroline Wallis <span class="yr">b. Weston 1863</span></b>
+      <b>George William Castle <span class="yr">b. 1862</span> &amp; Caroline Wallis <span class="yr">b. Weston 1863</span></b>
       <p>
-        Married 1883. Farm labourer, later a labourer in the Baldock brewery. Hertfordshire —
+        Married October 1882. Farm labourer, later a labourer in the Baldock brewery. Hertfordshire —
         <strong>not Norfolk</strong>, an error this archive carried for weeks.
       </p>
       <b>The Bermondsey side</b>
@@ -484,8 +480,7 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
   </div>
   <p class="wide">
     That does not make the Berlin history untrue, and it does not make it less his. Jacob Leibholz died
-    at Auschwitz; his brothers Samuel and Oskar died there too, and Georg at Chełmno. Kurt escaped in
-    1933 and carried the name. It is the family Derrick was born into and named for. Whether it is also
+    at Auschwitz; his brothers Samuel and Oskar died there too, and Georg at Chełmno. Kurt got out of Germany and carried the name. It is the family Derrick was born into and named for. Whether it is also
     the family he descends from is a different question, and this archive keeps the two apart rather
     than pretending they are one.
   </p>

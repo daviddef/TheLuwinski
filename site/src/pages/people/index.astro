@@ -1,0 +1,58 @@
+---
+/* The index to the English line's person pages. See [slug].astro for why both routes use kit
+   components and why nobody here needs a living-person rule. 13 October 2026. */
+import Base from '../../layouts/Base.astro';
+import Evidence from '@daviddef/archive-kit/components/Evidence.astro';
+import data from '../../data/english-people.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const GEN = {
+  2: 'Grandparents',
+  3: 'Great-grandparents',
+  4: 'Great-great-grandparents',
+  5: 'Three generations further back',
+};
+const groups = [2, 3, 4, 5].map((g) => [g, data.people.filter((p) => p.gen === g)]);
+const documented = data.people.filter((p) => p.grade === 'documented').length;
+---
+<Base title={data.title} subtitle={data.dek} lede={data.note}>
+
+  <div class="panel">
+    <h3>How to read these pages</h3>
+    <p class="small">
+      <strong>{documented} of the {data.people.length} are graded documented and the rest probable.</strong>
+      The grade is the same five-word ladder the <a href={base + '/tree/'}>tree</a> uses. A person can be
+      <em>documented</em> and still have a parent who is only a <em>best candidate</em>: the page names
+      which, and the link to that parent is drawn differently from the links that rest on a record.
+    </p>
+    <p class="small muted">
+      Derrick&rsquo;s father, Leonard, has <a href={base + '/leonard/'}>a page of his own</a>, and so do the
+      people on the Luwinski side. The line from Leonard to Derrick rests on DNA and inference rather than
+      on a document; <a href={base + '/dna/'}>the DNA page</a> says how.
+      <strong>No living person has a page here.</strong>
+    </p>
+  </div>
+
+  {groups.map(([g, list]) => (
+    <section>
+      <h2>{GEN[g]}</h2>
+      <div class="scroll"><table>
+        <thead><tr><th>Person</th><th>Dates</th><th>Line</th><th>Grade</th><th></th></tr></thead>
+        <tbody>
+          {list.map((p) => (
+            <tr>
+              <td><a href={`${base}/people/${p.slug}/`}><strong>{p.name}</strong></a></td>
+              <td>{p.dates}</td>
+              <td>{p.line}</td>
+              <td><Evidence level={p.grade} /></td>
+              <td class="small muted">{p.dek}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+    </section>
+  ))}
+
+  <p class="small muted">
+    Back to <a href={base + '/tree/'}>the tree</a> or <a href={base + '/wear-line/'}>where the Wear line stands</a>.
+  </p>
+</Base>
