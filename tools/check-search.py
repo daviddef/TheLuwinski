@@ -47,8 +47,10 @@ def main():
         if "archive-kit/components/Search.astro" in src:
             wanted.add("searchindex.json")
     if not wanted:
-        print("  ok    check-search — no page fetches a JSON file")
-        return
+        # This archive has a search page; no page fetching an index means the gate cannot
+        # find its subject (the 22 September failure), and that must not read as success.
+        sys.exit("check-search: REFUSED — no page under site/src/pages fetches a JSON index, "
+                 "so nothing was examined. That is not a pass.")
     bad = []
     for rel in sorted(wanted):
         f = DIST / rel

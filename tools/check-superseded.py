@@ -58,11 +58,15 @@ def rel(p):
 def main():
     strict = "--strict" in sys.argv
     if not os.path.exists(DECL):
-        print("  ok    check-superseded — no data/superseded.json, nothing declared")
-        return 0
+        # This archive keeps a declaration; its absence means the gate lost its subject.
+        print("  FAIL  check-superseded — data/superseded.json is missing, so nothing was examined")
+        return 1
 
     decl = json.load(open(DECL, encoding="utf-8"))
     facts = decl.get("facts", [])
+    if not facts:
+        print("  FAIL  check-superseded — data/superseded.json declares no facts, so nothing was examined")
+        return 1
 
     paths = sorted(files())
     texts = {}
@@ -71,6 +75,10 @@ def main():
             texts[p] = open(p, encoding="utf-8").read()
         except (UnicodeDecodeError, OSError):
             continue
+
+    if not texts:
+        print("  FAIL  check-superseded — no readable files under %s, so nothing was examined" % ", ".join(SEARCH))
+        return 1
 
     bad, stale, checked = [], [], 0
     for f in facts:

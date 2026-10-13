@@ -72,8 +72,11 @@ def main():
     pages = [(p, open(p, encoding="utf-8", errors="ignore").read())
              for p in glob.glob(os.path.join(DIST, "**", "*.html"), recursive=True)]
     if not pages:
-        print("  skip  check-matches: no build in %s — run astro build first" % DIST)
-        return 0
+        print("  FAIL  check-matches: no build in %s — run astro build first, nothing was examined" % DIST)
+        return 1
+    if not names:
+        print("  FAIL  check-matches: the export loaded 0 match holders, nothing was examined")
+        return 1
 
     bad = []
     for nm in sorted(names):

@@ -58,6 +58,10 @@ def main():
                 "h": url,
                 "q": fold(" ".join([title, heading or "", content[:1500]])),
             })
+    if not entries:
+        # An empty dist used to publish an empty index to dist AND public, and the next
+        # build would lay the empty one down. Zero sections is a broken input, not an index.
+        sys.exit("build-search: REFUSED -- 0 sections found under dist, so no index was written")
     payload = json.dumps(entries, ensure_ascii=False)
     # Written to BOTH, deliberately, and the reason is the ordering of the build chain.
     # astro build empties dist before it refills it, and build-search runs AFTER astro,

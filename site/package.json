@@ -11,7 +11,7 @@
     "check:living": "python3 ../tools/check-living.py --dist dist --mode harvest && python3 ../tools/check-living.py --dist dist --mode hashes",
     "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root .",
     "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root .",
-    "check:matches": "python3 ../tools/check-matches.py",
+    "check:matches": "python3 ../tools/check-matches.py --strict",
     "build:register": "python3 ../tools/build-register.py",
     "build:evidence": "python3 ../tools/build-evidence.py",
     "check:evidence": "python3 ../tools/check-evidence.py",

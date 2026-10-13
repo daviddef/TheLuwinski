@@ -142,6 +142,12 @@ if __name__ == "__main__":
     if mode == "auto":
         mode = "harvest" if (ROOT / "data" / "myheritage-tree9.json").exists() else "hashes"
     hits, n, guarded, used = (check_harvest if mode == "harvest" else check_hashes)(dist)
+    if not guarded:
+        # A guard list of zero guards nothing and used to print "ok". An empty digests
+        # list or a harvest with nobody flagged living is a broken input, not a clean build.
+        print(f"check-living: REFUSED ({used}) — 0 guarded names loaded, so nothing was checked "
+              f"in {n} files. That is not a pass.")
+        sys.exit(1)
     if hits:
         print(f"check-living: FAILED ({used}) — living people present in the build")
         for f, full, found in hits:
