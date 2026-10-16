@@ -43,6 +43,7 @@ HAND_EDITED = {
     # site/src/data: the narrative pages' own content
     "site/src/data/autoclusters.json",       # a typed summary of a private export (match holders unnamed)
     "site/src/data/dna.json", "site/src/data/emigration.json", "site/src/data/english-people.json",
+    "site/src/data/families.json",           # declarations for the family pages: tree-entry names, verbatim fragments, page lists
     "site/src/data/gedenkbuch.json", "site/src/data/letters.json", "site/src/data/lines.json",
     "site/src/data/litigation.json", "site/src/data/names.json", "site/src/data/negatives.json",
     "site/src/data/open-questions.json", "site/src/data/page-subjects.json", "site/src/data/searched.json",

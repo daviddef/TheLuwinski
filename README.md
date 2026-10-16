@@ -101,6 +101,8 @@ tools/make-guarded.py         writes the digests; reports any name it cannot gua
 tools/people_decisions.py     who the subject is and which records are one person; finds the kit's living_rule
 tools/check-living.py         gates the build on the living-persons rule
 tools/selftest-living.py      plants a fault for every rule of the gate in a copy and demands it is caught
+tools/check-families.py       gates the family pages (/families/): quotations verbatim, declarations match the tree, counts recomputed, no living person named; self-tested
+site/src/data/families.json   declares which people, tree entries and pages belong to which surname (the pages are drawn by site/src/lib/families.js)
 site/src/pages/               the archive itself
 ```
 

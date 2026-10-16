@@ -83,6 +83,14 @@ jobs:
       # that holds the harvest (check:prose-strict makes a missing harvest a failure there).
       - name: Check the prose for living people (name scan NOT RUN in CI)
         run: python3 tools/check-prose.py
+      # The family pages (/families/, added 17 October 2026): every quotation is verbatim in its source, every
+      # declaration matches the tree, every count is recomputed, no living person is named or linked, every
+      # page is in the nav, the index, the sitemap and the search index. Needs only the repository and the build.
+      # The self-test plants a fault for each rule and fails unless each is caught.
+      - name: Check the family pages
+        run: python3 tools/check-families.py --dist site/dist
+      - name: Check that the family-page gate still catches what it should
+        run: python3 tools/check-families.py --dist site/dist --selftest
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
