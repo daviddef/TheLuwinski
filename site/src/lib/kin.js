@@ -83,10 +83,14 @@ export function familyOf(id, { livingSelf = false } = {}) {
       out.unmapped.push({ rel: String(r && r.rel), id: String(r && r.id) });
       continue;
     }
+    /* A LIVING RELATIVE IS DRAWN WITH A NAME AND NO DATES, AND SAYS SO. The register
+       already holds no dates for them; the explicit test is so that a future row that
+       did could not reach a chart. Derrick (`bare`) is drawn exactly as he was. */
+    const alive = other.living === true;
     out[band].push({
       name: other.name,
-      dates: span(other),
-      mark: MARK[String(r.rel)] || undefined,
+      dates: alive ? "" : span(other),
+      mark: (alive ? ["living", MARK[String(r.rel)]].filter(Boolean).join(" · ") : MARK[String(r.rel)]) || undefined,
       title: String(r.rel),
     });
   }

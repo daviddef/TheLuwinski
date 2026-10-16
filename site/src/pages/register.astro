@@ -11,9 +11,19 @@ const fam = register.people.filter(p => p.kind === 'family');
 const idx = register.people.filter(p => p.kind === 'index');
 const doc = register.people.filter(p => p.kind === 'document');
 const c = register.counts;
+/* A LIVING PERSON'S ROW CARRIES A NAME, A RELATIONSHIP AND A PLACE, AND NOTHING ELSE.
+   The relationships are read from the person's own `rel` edges ("Her husband" on a
+   record means the person named is her husband), so they name relatives only and
+   carry no date; the place is the town and country the generator allowed. Added
+   16 October 2026 with the estate-wide living-people standard. */
+const relWord = (r) => String(r).replace(/^(His|Her)\s+/i, '').replace(/^./, (ch) => ch.toUpperCase());
+const livingNote = (p) => [
+  (p.rel || []).map((e) => `${relWord(e.rel)}: ${e.n}`).join('; '),
+  p.place,
+].filter(Boolean).join(' · ');
 ---
 <Base title="The register"
-  subtitle={c.published + ' of ' + c.total + ' people in the source, published'}
+  subtitle={(c.family + c.index) + ' of ' + c.total + ' people in the source, published (' + c.duplicates_collapsed + ' collapsed as duplicates), and ' + c.document + ' found in registers'}
   lede="Everyone the source records and everyone this archive has since established from a document, with the three kinds of entry kept firmly apart: the family proper, a hundred-odd people who share the surname and have not been shown to share anything else, and seven found in Berlin registers who are in nobody’s tree at all.">
 
   <div class="panel">
@@ -35,7 +45,7 @@ const c = register.counts;
     <div class="card stat"><b>{c.family}</b><span>Family</span></div>
     <div class="card stat"><b>{c.index}</b><span>Surname index</span></div>
     <div class="card stat"><b>{c.document}</b><span>From a record</span></div>
-    <div class="card stat"><b>{c.omitted_living}</b><span>Living, omitted</span></div>
+    <div class="card stat"><b>{c.living_named}</b><span>Living, named</span></div>
     <div class="card stat"><b>{c.total}</b><span>In the source</span></div>
   </div>
 
@@ -45,13 +55,13 @@ const c = register.counts;
     <tbody>
       {fam.map(p => (
         <tr>
-          <td><strong>{p.name}</strong>{p.bare && <> <span class="tag inf">Living — named only</span></>}</td>
-          <td>{p.born || (p.by ? String(p.by) : '')}</td>
+          <td><strong>{p.name}</strong>{p.bare && <> <span class="tag inf">Living — named only</span></>}{p.living && <> <span class="tag inf">Living</span></>}</td>
+          <td>{p.living ? '' : (p.born || (p.by ? String(p.by) : ''))}</td>
           <td>{p.no_death_recorded ? <span class="muted small">no death recorded</span> : p.died}</td>
-          <td class="small">{readFor.has(p.id)
+          <td class="small">{p.living ? <span class="muted">&mdash;</span> : readFor.has(p.id)
             ? <><span class="tag doc">Read</span> {readFor.get(p.id).map(r => r.title).join(' · ')}</>
             : (p.corrections ? <span class="tag inf">Corrected</span> : <span class="muted">&mdash;</span>)}</td>
-          <td class="small muted">{(p.facts || []).filter(f => f.place || f.c).slice(0, 2).map(f => (f.t + (f.place ? ': ' + f.place : '') + (f.c ? ' — ' + f.c : ''))).join(' · ').slice(0, 150)}</td>
+          <td class="small muted">{p.living ? livingNote(p) : (p.facts || []).filter(f => f.place || f.c).slice(0, 2).map(f => (f.t + (f.place ? ': ' + f.place : '') + (f.c ? ' — ' + f.c : ''))).join(' · ').slice(0, 150)}</td>
         </tr>
       ))}
     </tbody>
@@ -133,8 +143,8 @@ const c = register.counts;
   <div class="scroll"><table>
     <thead><tr><th>Name</th><th>Born</th><th>Died</th><th>Record read</th></tr></thead>
     <tbody>
-      {idx.map(p => (<tr><td>{p.name}</td><td>{p.born}</td><td>{p.died}</td>
-        <td class="small">{readFor.has(p.id)
+      {idx.map(p => (<tr><td>{p.name}{p.living && <> <span class="tag inf">Living</span><br /><span class="small muted">{livingNote(p)}</span></>}</td><td>{p.born}</td><td>{p.died}</td>
+        <td class="small">{p.living ? <span class="muted">&mdash;</span> : readFor.has(p.id)
           ? <><span class="tag doc">Read</span> {readFor.get(p.id).map(r => r.title).join(' · ')}</>
           : (p.corrections ? <span class="tag inf">Corrected</span> : <span class="muted">&mdash;</span>)}</td></tr>))}
     </tbody>

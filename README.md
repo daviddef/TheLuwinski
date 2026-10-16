@@ -53,21 +53,25 @@ Five duplicate records in the source are collapsed and listed at `/method/`.
 | **Disputed** | Asserted in the family record and contradicted by what can be seen |
 | **Unproven** | Kept because it may matter later, carrying no weight now — the ~100 surname-index Luwinskis |
 
-**Living people are omitted from the build entirely.** One exception: Lynn Derrick Luwinski is
-*named*, with his birth year and parents, and nothing else. A removal request is honoured within
-days, without argument and without requiring a reason.
+**A living person is named, with their relationship and their town and country, and nothing more**
+(the estate-wide standard, 16 October 2026): no dates, no records, no photograph, no structured data.
+Before that date living people were omitted from the build entirely. One person goes the other way:
+Lynn Derrick Luwinski is *named*, with his parents, and not even a town. A removal request is honoured
+within days, without argument and without requiring a reason.
 
-`tools/check-living.py` gates the deploy on that promise by scanning the rendered HTML — and it is
-tested against planted names, not merely assumed to work. Two things follow from the repository being
-public:
+`tools/check-living.py` gates the deploy on that rule by scanning the rendered pages, the served JSON and
+the generated register, and it is tested against planted faults (`tools/selftest-living.py`), not merely
+assumed to work. The rule is applied where the register is generated (`tools/build-register.py`), so a
+living person's dates never reach a committed file. Two things follow from the repository being public:
 
 - **The raw harvest and the working notes are not in it.** `data/myheritage-tree9.json` holds all 164
   people including the living, and `notes/` names living DNA match holders. Both are gitignored. The
-  build needs only `site/src/data/register.json`, from which living people are already gone.
-- **The list of names to keep out cannot itself be in here.** CI therefore guards on salted digests
-  (`data/guarded-hashes.json`), hashing candidate names out of the built HTML. That is obfuscation
-  rather than secrecy, and is documented as such in `tools/make-guarded.py`. The exact check runs
-  locally, where the private source is.
+  build needs only `site/src/data/register.json`, in which each living person is a name, a relationship
+  and a place.
+- **The check cannot be handed the names.** CI therefore recognises the living by salted digests
+  (`data/guarded-hashes.json`) and by the ids of the records flagged living. That is obfuscation rather
+  than secrecy, and is documented as such in `tools/make-guarded.py`. The exact check runs locally,
+  where the private source is.
 
 ## Running it
 
@@ -87,11 +91,13 @@ data/myheritage-tree9.json    the harvest — 164 people, 648 facts (private, gi
 data/leibholz-gedenkbuch.tsv  the four Memorial Book entries
 data/dna-ethnicity-derrick.json
 notes/                        dna-paternity.md, leibholz-holocaust.md (private, gitignored)
-data/guarded-hashes.json      salted digests of the omitted, so CI can check without the names
+data/guarded-hashes.json      salted digests of the living, and their record ids, so CI can check without the harvest
 tools/build-register.py       harvest -> site register, applying the living rule
 tools/names.py                one normaliser, shared, so generator and checker agree
 tools/make-guarded.py         writes the digests; reports any name it cannot guard
-tools/check-living.py         gates the build on the living-persons promise
+tools/livingtest.py            the one definition of who is living (shared by the three tools below)
+tools/check-living.py         gates the build on the living-persons rule
+tools/selftest-living.py      plants a fault for every rule of the gate in a copy and demands it is caught
 site/src/pages/               the archive itself
 ```
 

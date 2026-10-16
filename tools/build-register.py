@@ -1,14 +1,22 @@
 #!/usr/bin/env python3
 """Turn the MyHeritage harvest into the site register.
 
-Living-persons policy for this archive (set by David Defranceski, 14 Sep 2026):
-  - Lynn Derrick Luwinski is NAMED, BARE. Name, birth year, parents. Nothing else.
-  - Everyone else the source flags as living is OMITTED FROM THE BUILD ENTIRELY,
-    unless they were born in 1920 or earlier and so would now be 106 or more, in
-    which case they are presumed dead and published with the fact that no death
-    is recorded stated plainly. Several of those are Holocaust-era people whose
-    fate is unrecorded; saying so is the point of the entry.
+Living-persons policy for this archive (David Defranceski, 14 Sep 2026; the
+second bullet replaced 16 Oct 2026 by the estate-wide standard):
+  - Lynn Derrick Luwinski is NAMED, BARE. Name, parents. Nothing else, not even a
+    town. He is the one exception to the standard below and is left exactly as
+    he was.
+  - Everyone else the source flags as living is NAMED, with their relationship to
+    the people around them and their town and country, AND NOTHING MORE: no date
+    of any kind (no birth year, no marriage or divorce date), no event, no
+    record, no source, no note, no occupation, no photograph, no profile link,
+    no cause of death. That is scrubbed HERE, at the source, so that nothing of
+    it can reach a committed file. Born in 1920 or earlier means presumed dead
+    (106 or more now), and those are published as before with the fact that no
+    death is recorded stated plainly.
   - Everyone else is dead and is narrated in full.
+THE TEST FOR "MIGHT BE ALIVE" IS UNCHANGED: flagged alive in the source, not
+Derrick, not a collapsed duplicate, not born in 1920 or earlier.
 """
 import json, re, sys, pathlib
 
@@ -17,25 +25,16 @@ SRC = ROOT / "data" / "myheritage-tree9.json"
 DOCUMENTED = ROOT / "data" / "register-documented.json"
 OUT = ROOT / "site" / "src" / "data" / "register.json"
 
-NAMED_BARE = {9500003}          # Derrick
+# Who is living, who is Derrick and which records are duplicates: one definition, shared with
+# the generator of the guard digests and with the gate (tools/livingtest.py).
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import livingtest
+from livingtest import NAMED_BARE, DUPLICATES
 
-# Records the source holds twice for one person. Collapsed to the copy that
-# carries both dates and parents. Keyed redundant -> canonical. These are not
-# guesses: each pair shares an identical birth AND death date.
-DUPLICATES = {
-    9500151: 9500026,   # Georg Leibholz, dateless-parent copy
-    9500150: 9500154,   # Leopold Leibke, dateless copy (and the only one flagged living)
-    9500145: 9500104,   # Gertrud Leibke — the copy attached to Georg. The 1939 census
-                        # puts her at Oskar's address, so the Oskar copy (9500104) is canonical.
-    9500148: 9500152,   # Julius Leibke
-    9500149: 9500153,   # Henriette Katz
-}
 # The two placeholder hubs the tree hangs its surname index from.
 PLACEHOLDER_HUBS = {9500035, 9500036, 9500037, 9500039}
 
-def year(s):
-    m = re.search(r"\b(1[5-9]\d\d|20\d\d)\b", s or "")
-    return int(m.group(1)) if m else None
+year = livingtest.year
 
 def qualifier(s):
     """How much the year() of a date string is actually worth.
@@ -66,6 +65,40 @@ def qualifier(s):
     if len(ys) > 1 and int(max(ys)) != int(min(ys)):
         return "range"
     return None
+
+# The countries the source writes as the LAST part of a place. A place is shown for a
+# living person as «town, country» or «country» only; the parts in between (a county,
+# a province) and anything with a digit in it (a street address) are dropped.
+COUNTRIES = {"germany", "deutschland", "south africa", "poland", "polen", "polska",
+             "portugal", "mozambique", "england", "united kingdom", "uk", "scotland",
+             "wales", "austria", "australia", "united states", "usa", "namibia",
+             "zimbabwe", "angola", "switzerland", "france", "netherlands", "israel",
+             "canada", "new zealand", "brazil", "czech republic", "ireland"}
+
+def living_place(p):
+    """(town, country) for a living person, from their OWN birth fact and nothing else.
+
+    The harvest holds no residence for anyone, so the only place that belongs to the
+    person themself is where they were born. Facts about a spouse or a child (marriage
+    to, death of, birth of son) carry their places and are never used. Returns
+    ("", "") when there is nothing safe to show: a place with a digit in it reads as a
+    street address and is dropped whole.
+    """
+    for f in p.get("facts", []):
+        if f.get("t") != "Birth" or f.get("ty") != "BIRT" or not f.get("place"):
+            continue
+        parts = [x.strip() for x in f["place"].split(",") if x.strip()]
+        if not parts or any(re.search(r"\d", x) for x in parts):
+            return "", ""
+        country = parts[-1] if parts[-1].lower() in COUNTRIES else ""
+        town = parts[0] if (len(parts) >= 2 or not country) else ""
+        if town and town == country:
+            town = ""
+        return town, country
+    return "", ""
+
+def living_note():
+    return "Living. Named with relationship, town and country; nothing more, per the archive's standard."
 
 def main():
     people = json.load(open(SRC))
@@ -101,15 +134,48 @@ def main():
                     index_only.add(r["id"])
     index_only |= PLACEHOLDER_HUBS
 
-    out, omitted, dropped = [], [], []
+    # Who is a living person under the standard. Computed first because a relative's
+    # edge to a living person has to be scrubbed wherever it appears, not only in the
+    # living person's own record.
+    LIVING = {p["id"] for p in people if livingtest.might_be_alive(p)}
+    protected = LIVING | NAMED_BARE
+
+    def keep_edge(r):
+        """Edges to a target that is flagged alive in the source are dropped, as they always
+        were, EXCEPT where the target is a living person under the standard or Derrick.
+        That leaves the unchanged behaviour for the two other kinds the source flags alive
+        (collapsed duplicates and the presumed-dead aged 106 or more)."""
+        return not by_id.get(r["id"], {}).get("alive") or r["id"] in protected
+
+    def edge(r):
+        """A relationship edge as published. If the person it points at is living, the
+        source's `ls` field (a life span, «Born: 19xx») is replaced by the word Living."""
+        return dict(r, ls="Living") if r["id"] in protected else r
+
+    out, named_living, dropped = [], [], []
     for p in people:
         pid = p["id"]
         if pid in DUPLICATES:
             dropped.append((p["name"], pid, DUPLICATES[pid])); continue
         by_ = year(p["b"])
         presumed_dead = bool(by_) and by_ <= 1920
-        if p["alive"] and pid not in NAMED_BARE and not presumed_dead:
-            omitted.append(p["name"]); continue
+        if pid in LIVING:
+            assert pid not in by_person, "a correction targets a living person: it would publish a date"
+            town, country = living_place(p)
+            named_living.append(pid)
+            out.append({
+                "id": pid, "name": p["name"], "first": p["first"], "last": p["last"],
+                "sex": p["g"], "kind": "index" if pid in index_only else "family",
+                "living": True,
+                # No date of any kind, spelled out so a template reading these gets a blank.
+                "born": "", "died": "", "by": None, "dy": None, "byq": None, "dyq": None,
+                "facts": [],
+                "town": town, "country": country,
+                "place": ", ".join(x for x in (town, country) if x),
+                "note": living_note(),
+                "rel": [edge(r) for r in p["rel"] if keep_edge(r)],
+            })
+            continue
         rec = {
             "id": pid, "name": p["name"], "first": p["first"], "last": p["last"],
             "sex": p["g"], "born": p["b"], "died": p["d"],
@@ -127,9 +193,9 @@ def main():
         else:
             rec["facts"] = [f for f in p["facts"] if f["t"] and not f["t"].startswith(
                 ("Birth of", "Death of", "Marriage of"))]
-            rec["rel"] = [dict(r, ls="Living") if r["id"] in NAMED_BARE else r
-                          for r in p["rel"]
-                          if not by_id.get(r["id"], {}).get("alive") or r["id"] in NAMED_BARE]
+            # Living relatives are now kept, as an edge carrying a name, a relationship and
+            # nothing else (see edge()). Until 16 Oct 2026 they were filtered out here.
+            rec["rel"] = [edge(r) for r in p["rel"] if keep_edge(r)]
             if p["alive"]:
                 rec["no_death_recorded"] = True
         if pid in by_person:
@@ -186,7 +252,10 @@ def main():
                "duplicates": [{"name": n, "dropped": d, "kept": k} for n, d, k in dropped],
                "corrections": corrections,
                "counts": {"total": len(people), "published": len(out),
-                          "omitted_living": len(omitted),
+                          "living_named": len(named_living),
+                          "living_with_town": sum(1 for r in out if r.get("town")),
+                          "living_country_only": sum(1 for r in out if r.get("living") and r.get("country") and not r.get("town")),
+                          "living_no_place": sum(1 for r in out if r.get("living") and not r.get("place")),
                           "duplicates_collapsed": len(dropped),
                           "family": sum(1 for r in out if r["kind"] == "family"),
                           "index": sum(1 for r in out if r["kind"] == "index"),
@@ -195,8 +264,8 @@ def main():
     print(f"published {len(out)}  family {sum(1 for r in out if r['kind']=='family')}"
           f"  surname-index {sum(1 for r in out if r['kind']=='index')}"
           f"  documented-from-record {sum(1 for r in out if r['kind']=='document')}"
-          f"  omitted living {len(omitted)}")
-    for n in omitted: print("  omitted living:", n)
+          f"  living named {len(named_living)}")
+    # Counts only: a living person's name is not printed into a build log.
     for n, d, k in dropped: print(f"  duplicate collapsed: {n} ({d} -> {k})")
 
 if __name__ == "__main__":

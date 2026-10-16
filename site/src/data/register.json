@@ -47,6 +47,74 @@
    ]
   },
   {
+   "id": 9500161,
+   "name": "Unknown de Witt",
+   "first": "",
+   "last": "",
+   "sex": "F",
+   "kind": "index",
+   "living": true,
+   "born": "",
+   "died": "",
+   "by": null,
+   "dy": null,
+   "byq": null,
+   "dyq": null,
+   "facts": [],
+   "town": "",
+   "country": "",
+   "place": "",
+   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "rel": [
+    {
+     "id": 9500005,
+     "rel": "Her husband",
+     "n": "Johannes Antonie Oelofse de Witt",
+     "ls": "1923 - Deceased"
+    },
+    {
+     "id": 9500160,
+     "rel": "Her son",
+     "n": "Johannes Antonie Oelofse De Witt",
+     "ls": "1923 - 1963"
+    }
+   ]
+  },
+  {
+   "id": 9500165,
+   "name": "Unknown",
+   "first": "",
+   "last": "",
+   "sex": "M",
+   "kind": "family",
+   "living": true,
+   "born": "",
+   "died": "",
+   "by": null,
+   "dy": null,
+   "byq": null,
+   "dyq": null,
+   "facts": [],
+   "town": "",
+   "country": "",
+   "place": "",
+   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "rel": [
+    {
+     "id": 9500016,
+     "rel": "His wife",
+     "n": "SHARON LEE Da Rocha (van Vuren)",
+     "ls": "Living"
+    },
+    {
+     "id": 9500164,
+     "rel": "His son",
+     "n": "Luke",
+     "ls": "Living"
+    }
+   ]
+  },
+  {
    "id": 9500037,
    "name": "Unknown Luwinski",
    "first": "",
@@ -605,6 +673,40 @@
    ]
   },
   {
+   "id": 9500164,
+   "name": "Luke",
+   "first": "Luke",
+   "last": "",
+   "sex": "M",
+   "kind": "family",
+   "living": true,
+   "born": "",
+   "died": "",
+   "by": null,
+   "dy": null,
+   "byq": null,
+   "dyq": null,
+   "facts": [],
+   "town": "",
+   "country": "",
+   "place": "",
+   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "rel": [
+    {
+     "id": 9500165,
+     "rel": "His father",
+     "n": "Unknown",
+     "ls": "Living"
+    },
+    {
+     "id": 9500016,
+     "rel": "His mother",
+     "n": "SHARON LEE Da Rocha (van Vuren)",
+     "ls": "Living"
+    }
+   ]
+  },
+  {
    "id": 9500055,
    "name": "Maryanna Luwinski",
    "first": "Maryanna",
@@ -781,6 +883,34 @@
    ]
   },
   {
+   "id": 9500155,
+   "name": "Rose Eva Bernhardt",
+   "first": "Rose Eva",
+   "last": "Bernhardt",
+   "sex": "F",
+   "kind": "index",
+   "living": true,
+   "born": "",
+   "died": "",
+   "by": null,
+   "dy": null,
+   "byq": null,
+   "dyq": null,
+   "facts": [],
+   "town": "Johannesburg",
+   "country": "South Africa",
+   "place": "Johannesburg, South Africa",
+   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "rel": [
+    {
+     "id": 9500010,
+     "rel": "Her ex-husband",
+     "n": "Morris Isaac Salkow",
+     "ls": "1921 - 1991"
+    }
+   ]
+  },
+  {
    "id": 9500085,
    "name": "Ludovica Blosekiewicz (Luwinski)",
    "first": "Ludovica",
@@ -823,6 +953,34 @@
      "rel": "Her son",
      "n": "Valentinus Luwinski",
      "ls": "1846 - 1848"
+    }
+   ]
+  },
+  {
+   "id": 9500018,
+   "name": "Jacinto Da Oliveira",
+   "first": "Jacinto",
+   "last": "Da Oliveira",
+   "sex": "M",
+   "kind": "family",
+   "living": true,
+   "born": "",
+   "died": "",
+   "by": null,
+   "dy": null,
+   "byq": null,
+   "dyq": null,
+   "facts": [],
+   "town": "",
+   "country": "",
+   "place": "",
+   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "rel": [
+    {
+     "id": 9500002,
+     "rel": "His partner",
+     "n": "Ivone / Mota \"Yvonne\" Figueiredo (de Witt)",
+     "ls": "1924 - Deceased"
     }
    ]
   },
@@ -927,6 +1085,18 @@
      "ls": "1943 - 2009"
     },
     {
+     "id": 9500016,
+     "rel": "His daughter",
+     "n": "SHARON LEE Da Rocha (van Vuren)",
+     "ls": "Living"
+    },
+    {
+     "id": 9500017,
+     "rel": "His son",
+     "n": "RICARDO Da Rocha",
+     "ls": "Living"
+    },
+    {
      "id": 9500012,
      "rel": "His father",
      "n": "Unknown Da Rocha",
@@ -942,6 +1112,98 @@
      "id": 9500003,
      "rel": "Half brother",
      "n": "Lynn Derrick Luwinski",
+     "ls": "Living"
+    }
+   ]
+  },
+  {
+   "id": 9500017,
+   "name": "RICARDO Da Rocha",
+   "first": "RICARDO",
+   "last": "Da Rocha",
+   "sex": "M",
+   "kind": "family",
+   "living": true,
+   "born": "",
+   "died": "",
+   "by": null,
+   "dy": null,
+   "byq": null,
+   "dyq": null,
+   "facts": [],
+   "town": "",
+   "country": "",
+   "place": "",
+   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "rel": [
+    {
+     "id": 9500013,
+     "rel": "His father",
+     "n": "Henrique Figueiredo Pinto Da Rocha",
+     "ls": "1941 - 2022"
+    },
+    {
+     "id": 9500014,
+     "rel": "His mother",
+     "n": "Dawn Elizabeth Hendey (Da Rocha)",
+     "ls": "1943 - 2009"
+    },
+    {
+     "id": 9500016,
+     "rel": "His sister",
+     "n": "SHARON LEE Da Rocha (van Vuren)",
+     "ls": "Living"
+    }
+   ]
+  },
+  {
+   "id": 9500016,
+   "name": "SHARON LEE Da Rocha (van Vuren)",
+   "first": "SHARON LEE",
+   "last": "Da Rocha",
+   "sex": "F",
+   "kind": "family",
+   "living": true,
+   "born": "",
+   "died": "",
+   "by": null,
+   "dy": null,
+   "byq": null,
+   "dyq": null,
+   "facts": [],
+   "town": "",
+   "country": "",
+   "place": "",
+   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "rel": [
+    {
+     "id": 9500165,
+     "rel": "Her husband",
+     "n": "Unknown",
+     "ls": "Living"
+    },
+    {
+     "id": 9500164,
+     "rel": "Her son",
+     "n": "Luke",
+     "ls": "Living"
+    },
+    {
+     "id": 9500013,
+     "rel": "Her father",
+     "n": "Henrique Figueiredo Pinto Da Rocha",
+     "ls": "1941 - 2022"
+    },
+    {
+     "id": 9500014,
+     "rel": "Her mother",
+     "n": "Dawn Elizabeth Hendey (Da Rocha)",
+     "ls": "1943 - 2009"
+    },
+    {
+     "id": 9500017,
+     "rel": "Her brother",
+     "n": "RICARDO Da Rocha",
      "ls": "Living"
     }
    ]
@@ -983,6 +1245,12 @@
      "rel": "His father",
      "n": "Johannes Antonie Oelofse de Witt",
      "ls": "1923 - Deceased"
+    },
+    {
+     "id": 9500161,
+     "rel": "His mother",
+     "n": "Unknown de Witt",
+     "ls": "Living"
     },
     {
      "id": 9500159,
@@ -1409,6 +1677,12 @@
      "rel": "Her husband",
      "n": "Unknown Da Rocha",
      "ls": "Deceased"
+    },
+    {
+     "id": 9500018,
+     "rel": "Her partner",
+     "n": "Jacinto Da Oliveira",
+     "ls": "Living"
     },
     {
      "id": 9500003,
@@ -2729,6 +3003,18 @@
      "rel": "Her husband",
      "n": "Henrique Figueiredo Pinto Da Rocha",
      "ls": "1941 - 2022"
+    },
+    {
+     "id": 9500016,
+     "rel": "Her daughter",
+     "n": "SHARON LEE Da Rocha (van Vuren)",
+     "ls": "Living"
+    },
+    {
+     "id": 9500017,
+     "rel": "Her son",
+     "n": "RICARDO Da Rocha",
+     "ls": "Living"
     }
    ]
   },
@@ -4096,6 +4382,12 @@
     }
    ],
    "rel": [
+    {
+     "id": 9500144,
+     "rel": "His wife",
+     "n": "Frieda Spree (Leibholz)",
+     "ls": "Living"
+    },
     {
      "id": 9500023,
      "rel": "His father",
@@ -6330,6 +6622,46 @@
      "rel": "His brother",
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
+    }
+   ]
+  },
+  {
+   "id": 9500137,
+   "name": "Dagmar Luwinski",
+   "first": "Dagmar",
+   "last": "Luwinski",
+   "sex": "M",
+   "kind": "index",
+   "living": true,
+   "born": "",
+   "died": "",
+   "by": null,
+   "dy": null,
+   "byq": null,
+   "dyq": null,
+   "facts": [],
+   "town": "",
+   "country": "",
+   "place": "",
+   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "rel": [
+    {
+     "id": 9500135,
+     "rel": "His father",
+     "n": "Manfred Joachim Luwinski",
+     "ls": "1933 - 2012"
+    },
+    {
+     "id": 9500136,
+     "rel": "His mother",
+     "n": "Helga Erna Marquardt Wagner (Luwinski)",
+     "ls": "1934 - Deceased"
+    },
+    {
+     "id": 9500138,
+     "rel": "His brother",
+     "n": "Ralf Luwinski",
+     "ls": "Living"
     }
    ]
   },
@@ -8895,6 +9227,18 @@
      "ls": "1934 - Deceased"
     },
     {
+     "id": 9500137,
+     "rel": "His son",
+     "n": "Dagmar Luwinski",
+     "ls": "Living"
+    },
+    {
+     "id": 9500138,
+     "rel": "His son",
+     "n": "Ralf Luwinski",
+     "ls": "Living"
+    },
+    {
      "id": 9500139,
      "rel": "His father",
      "n": "Alfred Luwinski",
@@ -9573,6 +9917,46 @@
      "rel": "His brother",
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
+    }
+   ]
+  },
+  {
+   "id": 9500138,
+   "name": "Ralf Luwinski",
+   "first": "Ralf",
+   "last": "Luwinski",
+   "sex": "M",
+   "kind": "index",
+   "living": true,
+   "born": "",
+   "died": "",
+   "by": null,
+   "dy": null,
+   "byq": null,
+   "dyq": null,
+   "facts": [],
+   "town": "",
+   "country": "Germany",
+   "place": "Germany",
+   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "rel": [
+    {
+     "id": 9500135,
+     "rel": "His father",
+     "n": "Manfred Joachim Luwinski",
+     "ls": "1933 - 2012"
+    },
+    {
+     "id": 9500136,
+     "rel": "His mother",
+     "n": "Helga Erna Marquardt Wagner (Luwinski)",
+     "ls": "1934 - Deceased"
+    },
+    {
+     "id": 9500137,
+     "rel": "His brother",
+     "n": "Dagmar Luwinski",
+     "ls": "Living"
     }
    ]
   },
@@ -11287,6 +11671,12 @@
      "rel": "His ex-wife",
      "n": "Gertrude or Gertie Ambrose (Moagus)",
      "ls": "1928 - 2011"
+    },
+    {
+     "id": 9500155,
+     "rel": "His ex-wife",
+     "n": "Rose Eva Bernhardt",
+     "ls": "Living"
     }
    ],
    "corrections": [
@@ -11569,6 +11959,34 @@
      "rel": "His wife",
      "n": "Frances Hostowsky (Sefton)",
      "ls": "1915 - Deceased"
+    }
+   ]
+  },
+  {
+   "id": 9500144,
+   "name": "Frieda Spree (Leibholz)",
+   "first": "Frieda",
+   "last": "Spree",
+   "sex": "F",
+   "kind": "index",
+   "living": true,
+   "born": "",
+   "died": "",
+   "by": null,
+   "dy": null,
+   "byq": null,
+   "dyq": null,
+   "facts": [],
+   "town": "",
+   "country": "",
+   "place": "",
+   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "rel": [
+    {
+     "id": 9500025,
+     "rel": "Her husband",
+     "n": "Samuel Israel Leibholz",
+     "ls": "1877 - 1943"
     }
    ]
   },
@@ -12235,6 +12653,18 @@
      "rel": "Her husband",
      "n": "Manfred Joachim Luwinski",
      "ls": "1933 - 2012"
+    },
+    {
+     "id": 9500137,
+     "rel": "Her son",
+     "n": "Dagmar Luwinski",
+     "ls": "Living"
+    },
+    {
+     "id": 9500138,
+     "rel": "Her son",
+     "n": "Ralf Luwinski",
+     "ls": "Living"
     }
    ]
   },
@@ -13151,6 +13581,12 @@
      "ls": "Deceased"
     },
     {
+     "id": 9500161,
+     "rel": "His wife",
+     "n": "Unknown de Witt",
+     "ls": "Living"
+    },
+    {
      "id": 9500159,
      "rel": "His daughter",
      "n": "Delina de Witt",
@@ -13450,11 +13886,14 @@
  ],
  "counts": {
   "total": 164,
-  "published": 157,
-  "omitted_living": 10,
+  "published": 167,
+  "living_named": 10,
+  "living_with_town": 1,
+  "living_country_only": 1,
+  "living_no_place": 8,
   "duplicates_collapsed": 5,
-  "family": 49,
-  "index": 100,
+  "family": 54,
+  "index": 105,
   "document": 8
  }
 }

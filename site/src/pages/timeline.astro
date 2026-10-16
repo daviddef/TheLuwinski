@@ -43,6 +43,9 @@ const events = [];
 
 /* 1. The register — a birth and a death are the two dates a person leaves. */
 for (const p of register.people || []) {
+  /* A living person has no dates in the register and is never plotted. Stated here too,
+     so a row that ever carried one still could not reach the axis. */
+  if (p.living || p.bare) continue;
   const name = p.name || [p.first, p.last].filter(Boolean).join(' ');
   if (!name) continue;
   const b = yr(p.by), d = yr(p.dy);

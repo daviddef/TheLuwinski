@@ -2,7 +2,12 @@
 import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
 import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
 import JsonLd from "@daviddef/archive-kit/components/JsonLd.astro";
-const { title, subtitle, lede, hero, structured = true } = Astro.props;
+/* `noindex` is the page-level switch for a page ABOUT a living person: the kit's sitemap tool and this
+   archive's search index both leave out a page that noindexes itself. No page uses it yet, because this
+   archive has no page for anyone in the register; it exists so that the first one is noindex by
+   construction rather than by someone remembering (tools/check-living.py fails a living person's
+   page that lacks it). */
+const { title, subtitle, lede, hero, structured = true, noindex = false } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const nav = [
   ["Start", [["", "The archive"], ["/tree", "The tree"], ["/timeline", "The Timeline"], ["/dna", "The DNA"], ["/1948", "Nineteen forty-eight"]]],
@@ -55,6 +60,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
   <link rel="icon" href={base + '/favicon.svg'} type="image/svg+xml" />
   <meta name="theme-color" content={ACCENT} />
   <link rel="canonical" href={canonical} />
+  {noindex && <meta name="robots" content="noindex" />}
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content={SITE} />
   <meta property="og:title" content={full} />
@@ -65,10 +71,10 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
   <meta name="twitter:description" content={subtitle || LINE} />
   {/* Structured data from the kit's JsonLd, as the sibling archives emit it. Every field is one the
       head and the page already show: the title, the description, the address, the site. Nothing is
-      passed as `about`, so no page here emits a Person (the living are not published, and the
-      twenty ancestors' pages are left to the prose until their dates are ISO). A page that is ABOUT a
-      living person passes structured={false} and emits nothing: the standard is no structured data
-      for the living, so /derrick/ carries none. */}
+      passed as `about`, so no page here emits a Person (a living person is named, with relationship,
+      town and country, and has no structured data; the twenty ancestors' pages are left to the prose
+      until their dates are ISO). A page that is ABOUT a living person passes structured={false} and
+      emits nothing: the standard is no structured data for the living, so /derrick/ carries none. */}
   {structured && <JsonLd type={isHome ? "WebSite" : "Article"} name={title} description={subtitle || LINE}
           url={canonical} site={SITE} />}  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -375,8 +381,9 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     <slot />
   </div></main>
   <footer><div class="wrap">
-    <p><strong>Living people are omitted from this build.</strong> Lynn Derrick Luwinski is named and
-    nothing more. A removal request is honoured within days, without argument and without requiring a reason.</p>
+    <p><strong>A living person is named, with their relationship and their town and country, and nothing more.</strong>
+    No dates, no records, no photograph. Lynn Derrick Luwinski is named with his parents only. A removal
+    request is honoured within days, without argument and without requiring a reason.</p>
     <p>Every claim carries a confidence and a source. Corrections are the most valuable thing you can send.</p>
     {/* The siblings pass this component `thisArchive?.counter` out of the kit's
         archives.json. This archive is deliberately not in that file (see the

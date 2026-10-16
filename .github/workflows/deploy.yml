@@ -50,16 +50,22 @@ jobs:
       - name: Write the sitemap
         run: python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py
         working-directory: site
-      # The archive promises that living people are not present in the output.
-      # This checks the rendered HTML rather than trusting the generator, and the
-      # deploy is gated on it. It has already caught one real case: a dateless
-      # duplicate record of a man who died in 1932, flagged as living.
-      # Runs in --hashes mode here: the names to keep out of a public repository
-      # cannot themselves be in it, so CI guards on salted digests and hashes
-      # candidate names out of the rendered HTML. The exact --harvest check runs
-      # locally, where the private source is.
-      - name: Check that no living person is in the build
+      # The archive's rule for living people (the estate standard, 16 October 2026): a living
+      # person is named, with their relationship, town and country, and nothing more. This
+      # checks the RENDERED pages, the served JSON and the generated register rather than
+      # trusting the generator, and the deploy is gated on it. Before that date the rule was
+      # the opposite (no living name anywhere) and the same step enforced that; it was
+      # inverted, not loosened, and it refuses to pass if it can recognise no living person.
+      # Runs in --hashes mode here: the names cannot be recognised from the harvest, which this
+      # repository does not hold, so CI recognises them by salted digest and finds the living
+      # records by the ids in data/guarded-hashes.json. The exact --harvest check, and the exact
+      # leak scan for the harvest's dates, run locally, where the private source is.
+      - name: Check that every living person is shown as a name, a relationship and a place only
         run: python3 tools/check-living.py --dist site/dist --mode hashes
+      # The gate is tested the way it is meant to be trusted: a fault is planted for every rule in
+      # a copy of the build, and the step fails unless each one is caught and each control passes.
+      - name: Check that the living-people gate still catches what it should
+        run: python3 tools/selftest-living.py --dist site/dist
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
