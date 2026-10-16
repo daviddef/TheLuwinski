@@ -88,9 +88,9 @@ jobs:
       # page is in the nav, the index, the sitemap and the search index. Needs only the repository and the build.
       # The self-test plants a fault for each rule and fails unless each is caught.
       - name: Check the family pages
-        run: python3 tools/check-families.py --dist site/dist
+        run: python3 tools/check-families.py --dist dist
       - name: Check that the family-page gate still catches what it should
-        run: python3 tools/check-families.py --dist site/dist --selftest
+        run: python3 tools/check-families.py --dist dist --selftest
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
