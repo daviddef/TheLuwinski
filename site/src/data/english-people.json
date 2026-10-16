@@ -1430,7 +1430,8 @@
      {
       "n": "Mary Larkin",
       "dates": "b. 1815",
-      "via": "read"
+      "via": "read",
+      "mark": "married William Bilby, 1843"
      },
      {
       "n": "Elizabeth Larkin",
@@ -2048,8 +2049,8 @@
    "name": "William Hawkins",
    "line": "Hawkins",
    "gen": 5,
-   "born": "not established",
-   "died": "not established",
+   "born": "about 1772 to 1776 (the 1841 and 1848 ages)",
+   "died": "23 November 1848, buried at Aldenham aged 76 (matched by name and abode)",
    "dates": "of Aldenham",
    "grade": "probable",
    "why": "The register offers exactly one William-and-Mary pair among 44 Hawkins marriage entries, married in the right year; that is a best candidate and not proof.",
@@ -2119,9 +2120,9 @@
    },
    "facts": [
     [
-     "20 Apr 1800",
-     "Banns with Mary Appleyard",
-     "At Aldenham, both resident in the parish. It is the only William-and-Mary pair among the 44 Hawkins marriage entries. The set indexes each calling separately, so this one wedding appears twice.",
+     "20 Apr and 5 May 1800",
+     "Banns, then marriage, with Mary Appleyard",
+     "The banns were read on 20 April 1800 and they were married at Aldenham on 5 May, both of the parish. The marriage entry is now seen.",
      "doc"
     ],
     [
@@ -2132,13 +2133,25 @@
     ],
     [
      "6 Jun 1841",
-     "A William Hawkins of 65 at Round Bush",
-     "The only William Hawkins at Aldenham old enough to have married in 1800 (HO107 piece 438, book 3, folio 10, page 14, schedule 477). He is in a household of Mash and Rogers with no wife, and ages were rounded in 1841, so this is a candidate and not a find. His identity with the groom of 1800 is not established.",
+     "A widower of 65 at Round Bush",
+     "The only William Hawkins at Aldenham old enough to have married in 1800 (HO107 piece 438, book 3, folio 10, page 14, schedule 477), in a household of Mash and Rogers with no wife. His wife Mary had been buried in 1822, which fits. Ages were rounded in 1841, so this is matching and not a find.",
+     "inf"
+    ],
+    [
+     "24 Apr 1820 and 30 Jan 1822",
+     "Buries a daughter and then his wife",
+     "Mary, daughter of William and Mary Hawkins, was buried on 24 April 1820 aged 7, from near the Church; and Mary, wife of William Hawkins, on 30 January 1822 aged 41, from Aldenham Gate. The wife is the Mary Appleyard of 1800 by the husband's name and the order of events.",
+     "inf"
+    ],
+    [
+     "23 Nov 1848",
+     "Buried at Aldenham, aged 76",
+     "From near the Church, where his daughter's burial of 1820 also places the family. Matched by name and abode: he is the only William Hawkins of that age at Aldenham in 1841.",
      "inf"
     ]
    ],
    "gaps": [
-    "Banns are the announcement and not the wedding; the marriage entry itself has not been seen.",
+    "The marriage entry names Mary Appleyard and no parents. His own baptism is a separate gap, below.",
     "His own baptism and parents are unknown.",
     "That the John of 1819 is the Red Lion man is a best candidate."
    ],
@@ -2158,11 +2171,11 @@
    "name": "Mary Appleyard",
    "line": "Hawkins",
    "gen": 5,
-   "born": "not established",
-   "died": "not established",
+   "born": "about 1780 or 1781 (her burial age)",
+   "died": "30 January 1822, buried at Aldenham aged 41, as 'wife of William Hawkins' (matched by his name)",
    "dates": "of Aldenham",
    "grade": "probable",
-   "why": "Her maiden name rests on one banns entry; her own baptism has not been found.",
+   "why": "Her maiden name is in the banns and the marriage entry of 1800; her own baptism has not been found.",
    "rel": "Derrick's great-great-great-grandmother",
    "dek": "A surname this archive had never held. She married into Aldenham from somewhere her own baptism has not been found.",
    "kin": {
@@ -2235,15 +2248,27 @@
      "doc"
     ],
     [
+     "5 May 1800",
+     "Marries William Hawkins",
+     "At Aldenham, both of the parish; the surname is written Appleyard in the marriage entry as in the banns.",
+     "doc"
+    ],
+    [
      "1749–1809",
      "No Appleyard baptism of her generation at Aldenham",
      "All 18 Appleyard baptisms there were read: a John-and-Hannah family ending in 1749 and a William-and-Ann family beginning in 1809, with nothing in between. The register is well covered for those decades, so the absence is real.",
+     "inf"
+    ],
+    [
+     "30 Jan 1822",
+     "Buried at Aldenham, aged 41",
+     "Entered as the wife of William Hawkins, from Aldenham Gate, so born about 1780 or 1781. The entry does not give her maiden name; she is identified by her husband's name and the nine children of 1801 to 1819. A daughter Mary had been buried in April 1820, aged 7.",
      "inf"
     ]
    ],
    "gaps": [
     "Her own baptism has not been found. A surname-only search of Hertfordshire Baptisms on Findmypast (16 October 2026) returned 24 Appleyard entries, 21 of them at Aldenham, and no Mary before 1851; a free index finds one Appleyard baptism in Hertfordshire, Middlesex and Buckinghamshire in 1750 to 1800, an Ann at Marylebone, and nine Mary Appleyards in England in 1762 to 1782, every one in Yorkshire. That shows where those indexes find the name and not where she was born. Aldenham holds 21 Appleyard baptisms in that set in all, and none is a Mary.",
-    "Her parents and her birthplace are unknown. No Mary Hawkins of her age is indexed at Aldenham in the 1841 or 1851 census, so she probably died before 1841 or left; the Findmypast burial set stops about 1810 and cannot say."
+    "Her parents and her birthplace are unknown. Of the nine Mary Appleyards baptised in Yorkshire between 1762 and 1782, one was baptised at Kippax on 23 January 1780; that is a coincidence of dates and not a lead."
    ],
    "see": [
     [
@@ -2288,7 +2313,8 @@
      {
       "n": "Mary Larkin",
       "dates": "b. 1815",
-      "via": "read"
+      "via": "read",
+      "mark": "married William Bilby, 1843"
      },
      {
       "n": "Elizabeth Larkin",
@@ -2364,7 +2390,7 @@
     [
      "30 Mar 1851",
      "Alive at Aldenham, aged 72",
-     "Head of a household of five (HO107 piece 1714, folio 13, page 19, schedule 75): Robert Larkin, married, agricultural labourer, born Aldenham; his wife Mary, 69, born Aldenham; daughters Mary Bilby, a widow of 33, and Elizabeth, 31, both laundresses; and a granddaughter Mary Bilby, 6. The daughters match the baptisms of 1815 and 1818 in name and, within about three years, in age. Whether he is the Robert of the 1814 banns is an inference from that match and from the banns being the only Robert-and-Mary marriage in the Aldenham register.",
+     "Head of a household of five (HO107 piece 1714, folio 13, page 19, schedule 75): Robert Larkin, married, agricultural labourer, born Aldenham; his wife Mary, 69, born Aldenham; daughters Mary Bilby, a widow of 33, and Elizabeth, 31, both laundresses; and a granddaughter Mary Bilby, 6. The daughters match the baptisms of 1815 and 1818 in name and, within about three years, in age. Whether he is the Robert of the 1814 banns is an inference from that match and from the banns being the only Robert-and-Mary marriage in the Aldenham register. Mary Bilby had married William Bilby by banns on 22 October 1843; he was buried on 8 October 1844, aged 29, three months after their daughter Mary was baptised (7 July 1844). That marriage does not name her father.",
      "doc"
     ],
     [
@@ -2423,7 +2449,8 @@
      {
       "n": "Mary Larkin",
       "dates": "b. 1815",
-      "via": "read"
+      "via": "read",
+      "mark": "married William Bilby, 1843"
      },
      {
       "n": "Elizabeth Larkin",
@@ -2504,7 +2531,7 @@
     ]
    ],
    "gaps": [
-    "Her own baptism has not been found. A surname-only search of Hertfordshire Baptisms on Findmypast returned 236 Burch entries and no Mary baptised Burch between 1738 and 1856. Her ages (69 in 1851, 72 at burial) put her birth at 1782 or 1783. Two Mary Birch baptisms fit within a year or two: Abbots Langley on 13 January 1782 (father Adam), which fits the census, and Watford, born 27 December 1782 (Charles and Mary), which fits the burial and whose sister Trothy was entered as Burch in 1784. None is chosen. A Burch family was at Aldenham from 1810, and her own parents are not in its registers.",
+    "Her own baptism has not been found. A surname-only search of Hertfordshire Baptisms on Findmypast returned 236 Burch entries and no Mary baptised Burch between 1738 and 1856. Her ages (69 in 1851, 72 at burial) put her birth at 1782 or 1783. Two Mary Birch baptisms fit within a year or two: Abbots Langley on 13 January 1782 (father Adam), which fits the census, and Watford, born 27 December 1782 (Charles and Mary), which fits the burial and whose sister Trothy was entered as Burch in 1784. None is chosen. A Burch family was at Aldenham from 1810, and her own parents are not in its registers. Neither candidate is secure: a Mary Birch aged 16 was buried at Abbots Langley in May 1796, who may be the girl of January 1782, and a Mary Birch married James Beech at Watford in February 1804, who may be the Watford girl of December 1782. Either would exclude the candidate, and neither is proved.",
     "Her parents are unknown, and no document says where she was born."
    ],
    "see": [
