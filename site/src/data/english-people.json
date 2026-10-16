@@ -1487,7 +1487,7 @@
     [
      "16 Oct 2026",
      "Which Robert and Mary were her parents",
-     "There were two couples of that name at Aldenham. Emma was born 272 days after Robert William (4 June 1821), so she cannot share a mother with him, and he is the son of the widow Mary born at Edgware about 1800. That leaves the couple of the 1814 banns, who in 1851 are Robert, 72, and Mary, 69, both born at Aldenham, with daughters Mary and Elizabeth at home. This is an argument from birth dates and two censuses, and no document names her as their daughter.",
+     "There were two couples of that name at Aldenham. Emma was born 272 days after Robert William (4 June 1821), so she cannot share a mother with him, and he is the son of the widow Mary born at Edgware about 1800. That leaves the couple of the 1814 banns, who in 1851 are Robert, 72, and Mary, 69, both born at Aldenham, with daughters Mary and Elizabeth at home. Burials add to it: a Robert Larkin of 45 was buried in September 1832 and a Mary Larkin of 62 in February 1860, fitting the widow and her husband, while Mary of 72 (1855) and Robert of 79 (1859) fit the other pair. This is an argument from birth dates, censuses and burials, and no document names her as their daughter.",
      "inf"
     ],
     [
@@ -2261,11 +2261,11 @@
    "name": "Robert Larkin",
    "line": "Hawkins",
    "gen": 5,
-   "born": "not established",
-   "died": "not established",
+   "born": "about 1779 (the 1851 and 1859 ages)",
+   "died": "20 February 1859, buried at Aldenham aged 79 (matched by name, age and abode)",
    "dates": "of Aldenham",
    "grade": "probable",
-   "why": "The register offers two candidate baptisms; his age in 1851 favours one.",
+   "why": "The register offers two candidate baptisms; the ages in 1851 and 1859 favour one, and a second Robert accounts for the other.",
    "rel": "Derrick's great-great-great-grandfather",
    "dek": "Called the banns for Mary Burch at Aldenham in January 1814. Eleven children were baptised to a Robert and a Mary Larkin between 1814 and 1833, and they cannot all be this couple's.",
    "kin": {
@@ -2344,9 +2344,9 @@
    },
    "facts": [
     [
-     "16 Jan 1814",
-     "Banns with Mary Burch",
-     "At Aldenham, both resident. It is the only Robert-and-Mary pair among 30 Larkin marriage entries.",
+     "16 Jan and 6 Feb 1814",
+     "Banns, then marriage, with Mary Burch",
+     "Banns were read on 16 January 1814 and they were married by banns at Aldenham on 6 February, both of the parish, he a bachelor and she a spinster, with Wm Larkins and Wm Nicholls as witnesses. The bride's name is transcribed Barch in the marriage entry. It is the only Robert-and-Mary pair among 30 Larkin marriage entries. Their first child on the register was born on 30 March, 52 days after the wedding.",
      "doc"
     ],
     [
@@ -2357,8 +2357,8 @@
     ],
     [
      "1781 or 1789",
-     "Two candidate baptisms",
-     "A Robert baptised in 1789 to Robert and Ann would be 62 in 1851; one baptised in 1781 to James and Sarah would be 70. The 1851 census gives 72, so the age favours 1781, by a margin and not a proof. No Robert baptism of 1778 or 1779 has been found.",
+     "Two candidate baptisms, and two Roberts",
+     "A Robert baptised in 1789 to Robert and Ann would be 62 in 1851 and 70 in 1859, and one baptised in 1781 to James and Sarah would be 70 and 78. The censuses and the burial give 72 and 79, so the age favours 1781. A different Robert Larkin, aged 45, was buried from the Folly on 16 September 1832; he fits the Robert of 1789 and the husband of the widow Mary, and an older Robert, aged 77, was buried from the Alms Houses in 1826. This is matching by age and place, and no document ties either baptism to either man.",
      "inf"
     ],
     [
@@ -2366,12 +2366,18 @@
      "Alive at Aldenham, aged 72",
      "Head of a household of five (HO107 piece 1714, folio 13, page 19, schedule 75): Robert Larkin, married, agricultural labourer, born Aldenham; his wife Mary, 69, born Aldenham; daughters Mary Bilby, a widow of 33, and Elizabeth, 31, both laundresses; and a granddaughter Mary Bilby, 6. The daughters match the baptisms of 1815 and 1818 in name and, within about three years, in age. Whether he is the Robert of the 1814 banns is an inference from that match and from the banns being the only Robert-and-Mary marriage in the Aldenham register.",
      "doc"
+    ],
+    [
+     "20 Feb 1859",
+     "Buried at Aldenham, aged 79",
+     "From the Round Bush Alms Houses. He is matched to this Robert by name, by an age one year off the 1851 census and by an abode that fits an old labourer in the same hamlet as his wife's burial. No document ties the entry to him.",
+     "inf"
     ]
    ],
    "gaps": [
-    "Which baptism is his is not known. The 1851 age favours 1781 but does not prove it. He is not in the 1841 index at Aldenham: the only Robert Larkin there is his namesake, aged 20, in the widow Mary's household.",
+    "Which baptism is his is not proved: the ages favour 1781 and nothing ties him to it. He is not in the 1841 index at Aldenham, where the only Robert Larkin is his namesake aged 20 in the widow Mary's household.",
     "The one Robert Larkin burial at Aldenham, on 1 September 1793, carries no age, so it cannot be told whether it is anyone here.",
-    "His death is not established. He was alive in March 1851, and the Hertfordshire Burials set on Findmypast stops about 1810, so its silence after that is not a finding.",
+    "His burial, on 20 February 1859 at Round Bush Alms Houses, is matched and not proved. He is in no later census.",
     "Which of the eleven children are his and Mary Burch's is not settled. Emma is, by the argument on her page; Robert William, the second Joseph and Thomas are marked as probably the other couple's."
    ],
    "see": [
@@ -2390,8 +2396,8 @@
    "name": "Mary Burch",
    "line": "Hawkins",
    "gen": 5,
-   "born": "not established",
-   "died": "not established",
+   "born": "about 1782 (census and burial ages)",
+   "died": "14 October 1855, buried at Aldenham aged 72 (matched by name, age and abode)",
    "dates": "of Aldenham",
    "grade": "probable",
    "why": "Her maiden name rests on one banns entry; her own baptism has not been found.",
@@ -2473,9 +2479,9 @@
    },
    "facts": [
     [
-     "16 Jan 1814",
-     "Banns with Robert Larkin",
-     "At Aldenham, both resident.",
+     "16 Jan and 6 Feb 1814",
+     "Banns, then marriage, with Robert Larkin",
+     "Banns were read on 16 January 1814 and they were married by banns at Aldenham on 6 February, both of the parish, he a bachelor and she a spinster, with Wm Larkins and Wm Nicholls as witnesses. The bride's name is transcribed Barch in the marriage entry. It is the only Robert-and-Mary pair among 30 Larkin marriage entries. Their first child on the register was born on 30 March, 52 days after the wedding.",
      "doc"
     ],
     [
@@ -2489,11 +2495,17 @@
      "Wife of Robert Larkin, aged 69",
      "In the household at HO107 piece 1714, folio 13, schedule 75: Mary, born Aldenham, with Robert, 72, and their daughters Mary and Elizabeth. That she is the Mary Burch of the 1814 banns is an inference from the two daughters' baptisms and from the banns being the only Robert-and-Mary marriage at Aldenham.",
      "inf"
+    ],
+    [
+     "14 Oct 1855",
+     "Buried at Aldenham, aged 72",
+     "From Round Bush. A Mary Larkin of that age and hamlet, and the 1851 household was at Round Bush: matched, and the entry does not name a husband. She would be the first of the couple to die, four years before Robert.",
+     "inf"
     ]
    ],
    "gaps": [
-    "Her own baptism has not been found. A surname-only search of Hertfordshire Baptisms on Findmypast (16 October 2026) returned 236 Burch entries and no Mary baptised Burch between 1738 and 1856. Her age in 1851 points to 1781 or 1782. Of the Marys baptised Birch near there at that time, the nearest are Abbots Langley on 13 January 1782 (father Adam), Watford, born 27 December 1782 (Charles and Mary), Northchurch in 1781 (Jonathan and Agnes) and Wigginton in 1783. None is chosen, and the baptisms of 1784 and 1791 fit her age worse.",
-    "Her parents are unknown, and her death is not established: she was alive in March 1851."
+    "Her own baptism has not been found. A surname-only search of Hertfordshire Baptisms on Findmypast returned 236 Burch entries and no Mary baptised Burch between 1738 and 1856. Her ages (69 in 1851, 72 at burial) put her birth at 1782 or 1783. Two Mary Birch baptisms fit within a year or two: Abbots Langley on 13 January 1782 (father Adam), which fits the census, and Watford, born 27 December 1782 (Charles and Mary), which fits the burial and whose sister Trothy was entered as Burch in 1784. None is chosen. A Burch family was at Aldenham from 1810, and her own parents are not in its registers.",
+    "Her parents are unknown, and no document says where she was born."
    ],
    "see": [
     [

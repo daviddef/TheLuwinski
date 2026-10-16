@@ -656,6 +656,25 @@
     "census",
     "findmypast"
    ]
+  },
+  {
+   "src": "Findmypast and FreeREG — the 1814 marriage entry, the 1861 census, and the Larkin burials at Aldenham",
+   "key": "fmp-freereg/larkin-burials-2026-10-17",
+   "url": "https://www.freereg.org.uk/search_queries/new",
+   "what": "The deaths of the two Robert-and-Mary Larkin couples, the marriage entry of 1814, and the Watford and Aldenham Burch families",
+   "when": "2026-10-17",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "Hertfordshire Banns & Marriages: Larkin 1814; 1861 census LARKIN at Aldenham (7); FreeREG Larkin burials in Hertfordshire 1815 to 1860 (32, all read); Hertfordshire Baptisms: BARCH (6) and BIRCH at Watford, St Mary (125, first page read)",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "marriage",
+    "burial",
+    "census",
+    "findmypast"
+   ],
+   "got": "MARRIED BY BANNS 6 FEBRUARY 1814, both of Aldenham, he a bachelor and she a spinster; the bride is entered Barch. BURIALS WITH AGE AND ABODE: Robert 1859 aged 79, Mary 1855 aged 72 (the 1851 couple), Robert 1832 aged 45 and Mary 1860 aged 62 (the widow and her husband), Robert 1826 aged 77. Neither Robert nor either Mary is in the 1861 census. The Watford Birch family enters a Mary of 27 December 1782 as Birch and her sister Trothy as Burch. NOT FOUND: the marriage of the widow Mary's husband."
   }
  ]
 }
