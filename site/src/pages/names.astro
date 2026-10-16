@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { md } from '@daviddef/archive-kit/lib/md.js';
 import data from '../data/names.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const p = data.people[0];
@@ -46,7 +47,7 @@ const groups = [
               <tr>
                 <td><strong>{f.form}</strong></td>
                 <td class="small">{f.where}</td>
-                <td class="small muted">{f.note}</td>
+                <td class="small muted" set:html={md(f.note)}></td>
               </tr>
             ))}
           </tbody>
@@ -96,7 +97,7 @@ const groups = [
             <td><strong>{t.form}</strong></td>
             <td class="small">{t.naairs}</td>
             <td class="small">{t.gendb}</td>
-            <td class="small muted">{t.unique}</td>
+            <td class="small muted" set:html={md(t.unique)}></td>
           </tr>
         ))}
       </tbody>

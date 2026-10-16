@@ -21,22 +21,53 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <h2>Living people</h2>
   <div class="panel">
     <p>
-      <strong>Living people are omitted from this build entirely</strong> — not hidden, not gated, not
-      present in the output. <strong>{register.counts.omitted_living}</strong> people were removed on
-      that ground before this site was generated.
+      <strong>A living person (80 or younger, with no death recorded) is named with their relationships and
+      their town and country, and nothing more.</strong> No date of any kind &mdash; not a birth year, not a
+      marriage or a divorce &mdash; no record, no source, no photograph, no cause of death and no
+      structured data. <strong>{register.counts.living_named}</strong> people are published on that
+      footing, and <strong>every one has a page of their own</strong>, as does every other person in
+      <a href={base + '/register/'}>the register</a>.
     </p>
     <p>
-      One exception, and only one. <a href={base + '/derrick/'}>Lynn Derrick Luwinski</a> is
-      <strong>named</strong>, with his birth year and his parents, and nothing else — no occupation, no
-      address, no photograph, no descendants. An archive about a man's ancestry that would not say whose
-      ancestry it was would be useless; an archive that published him would be a different kind of
-      failure.
+      A living person&rsquo;s page is <code>noindex</code>, which takes it out of the sitemap and out of this
+      site&rsquo;s search, and it carries no table, no image and no year. They are also named in
+      <a href={base + '/bloodline/'}>the blood-relatives chart</a> and in the family drawn on a relative&rsquo;s
+      page. The town and country are the place of birth where the family tree records one for them, and
+      are left blank where it records none, or records only a street address or an institution.
+      <strong>{register.counts.living_with_town}</strong> have a town and a country,
+      <strong>{register.counts.living_country_only}</strong> a country only and
+      <strong>{register.counts.living_no_place}</strong> no place.
     </p>
     <p>
-      Where the source flags someone as living but they were born in 1920 or earlier, and so would now
-      be 106 or more, they are presumed dead and published with the absence of a death record stated
-      plainly. Several of those are Holocaust-era people whose fate was never recorded. Saying so is the
-      entry's purpose.
+      <strong>Who is living</strong> is decided by one definition, shared by every archive in this estate
+      (<code>living_rule.py</code> in the kit), and not by a test of this archive&rsquo;s own: born 80 years ago or
+      less, by year, with no death or burial recorded (dated or not) and no public record source. A person
+      with no birth year cannot be shown to be that young, so is not living; a person the tree flags as
+      possibly alive but who is older than that, or whose birth year is not known, is published as not
+      living, with the absence of a death record stated plainly. Several of those are Holocaust-era people
+      whose fate was never recorded. Saying so is the entry&rsquo;s purpose.
+    </p>
+    <p>
+      <strong>A person who might be a child is not published at all</strong> &mdash; no record, no page, not even as
+      someone&rsquo;s relative. That is anyone not recorded dead, with no public source and no birth year, who has a
+      living parent. A child whose birth year is known is not held out: they are living, and are shown as a
+      living person is. It is computed from the tree, not listed by hand.
+    </p>
+    <p>
+      The rule is applied where the register is generated, not in the templates, so a living person&rsquo;s
+      dates never reach a committed file. <code>check:living</code> then tests the built pages
+      against it, and recomputes who is living from the private tree by the kit&rsquo;s rule without asking the
+      generator: it fails if anything beyond a name, a relationship and a town and country is found
+      with a living person&rsquo;s name, if the generated register carries a field it should not, if
+      a living person&rsquo;s page can be indexed, has structured data, a table, an image or a year, if a person
+      who is held out appears anywhere, or if anyone the archive names has no page.
+    </p>
+    <p>
+      One exception, and it goes the other way. <a href={base + '/derrick/'}>Lynn Derrick Luwinski</a> is
+      <strong>named</strong>, with his parents, and nothing else &mdash; no occupation, no address, not
+      even a town, no photograph, no descendants. An archive about a man&rsquo;s ancestry that would not
+      say whose ancestry it was would be useless; an archive that published him would be a different kind
+      of failure.
     </p>
     <p class="small">
       A removal request is honoured within days, without argument and without requiring a reason.
@@ -380,10 +411,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   </div>
 
   <div class="panel">
-    <h3>One living person is named, and that is all that is published about him</h3>
+    <h3>One living person is named with less than the others, and that is all that is published about him</h3>
     <p>
-      Ten living people are omitted from this archive entirely. The eleventh —
-      <a href={base + '/derrick/'}>Lynn Derrick Luwinski</a> — is named, because the archive is about
+      {register.counts.living_named} other living people are named, with their relationships, town and country, and nothing more
+      (<a href={base + '/method/'}>Living people, above</a>). The last —
+      <a href={base + '/derrick/'}>Lynn Derrick Luwinski</a> — is named with less still, because the archive is about
       his ancestry and cannot be written without saying whose it is.
     </p>
     <p>

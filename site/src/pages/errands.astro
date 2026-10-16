@@ -22,22 +22,13 @@
  * decides what a reader sees.
  */
 import Base from '../layouts/Base.astro';
+import { md } from '@daviddef/archive-kit/lib/md.js';
 import Errands from '@daviddef/archive-kit/components/Errands.astro';
 import { u } from '../lib/url.js';
 import data from '../data/letters.json';
 
 const day = 86400000;
 const today = new Date();
-/* THE CHARACTER CLASS IS LOAD-BEARING. Written the obvious way, as
-   `.replace(/</g, '&lt;')`, the bare `<` after a slash stops being a regex to
-   the TypeScript parser behind `astro check` and starts a JSX tag — and every
-   open tag in the body below is then reported as never closing. It cost 20
-   phantom failures from checktemplates on a page whose markup was correct, and
-   `astro build` itself was happy throughout, so only the gate caught it.
-   corrections.astro gets away with the obvious spelling because it has one
-   self-closing component after its frontmatter and nothing to mis-pair with. */
-const ENT = { '&': '&amp;', '<': '&lt;', '>': '&gt;' };
-const esc = (s) => String(s ?? '').replace(/[&<>]/g, (ch) => ENT[ch]);
 const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB',
   { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 
@@ -86,7 +77,7 @@ const STATE = {
 const why = (r, state) => {
   const bits = [];
   if (state === 'answered') {
-    bits.push(`<strong>Answered ${fmt(r.answered)}.</strong> ${esc(r.outcome)}`);
+    bits.push(`<strong>Answered ${fmt(r.answered)}.</strong> ${md(r.outcome)}`);
   } else if (state === 'due') {
     bits.push(`<strong>${r.left === 0 ? 'Due to be chased today' : `${-r.left} days overdue`}.</strong> `
       + `Waited ${r.waited} days against an interval of ${r.chase}.`);
@@ -95,20 +86,20 @@ const why = (r, state) => {
       + `waited ${r.waited} of ${r.chase}.`);
   }
   if (r.ack) {
-    bits.push(`<span class="muted"><strong>Acknowledged ${fmt(r.ack)}.</strong> ${esc(r.ackNote)}`
+    bits.push(`<span class="muted"><strong>Acknowledged ${fmt(r.ack)}.</strong> ${md(r.ackNote)}`
       + `${state === 'answered' ? '' : ' An acknowledgement is not an answer and this date does not move.'}</span>`);
   }
-  if (r.acknowledged) bits.push(`<span class="muted"><strong>Our thanks:</strong> ${esc(r.acknowledged)}</span>`);
-  if (r.followup) bits.push(`<strong>Followed up.</strong> ${esc(r.followup)}`);
+  if (r.acknowledged) bits.push(`<span class="muted"><strong>Our thanks:</strong> ${md(r.acknowledged)}</span>`);
+  if (r.followup) bits.push(`<strong>Followed up.</strong> ${md(r.followup)}`);
   return bits.join('<br />');
 };
 
 const toRows = (list, state) => list.map((r) => ({
   n: r.n,
-  what: esc(r.what),
-  who: `<strong>${esc(r.who)}</strong> · ${esc(r.addr)}`,
+  what: md(r.what),
+  who: `<strong>${md(r.who)}</strong> · ${md(r.addr)}`,
   sent: fmt(r.sent),
-  ref: esc(r.thread),
+  ref: md(r.thread),
   why: why(r, state),
   stateLabel: STATE[state][0],
   colour: STATE[state][1],

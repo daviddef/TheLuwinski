@@ -86,7 +86,7 @@ const matches = [
     </tbody>
   </table></div>
   <p class="small muted">
-    Additional genetic groups reported: <strong>{dna.additional_genetic_groups.join('</strong>, <strong>')}</strong>.
+    Additional genetic groups reported: {dna.additional_genetic_groups.map((g, i) => <Fragment>{i > 0 && ', '}<strong>{g}</strong></Fragment>)}.
     Everything but the Portuguese — 39.4% of the whole — is northwest European and leans English.
   </p>
 

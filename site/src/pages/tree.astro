@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { md } from '@daviddef/archive-kit/lib/md.js';
 import data from '../data/tree.json';
 import Evidence from '@daviddef/archive-kit/components/Evidence.astro';
 import english from '../data/english-people.json';
@@ -39,8 +40,8 @@ const personName = Object.fromEntries(english.people.map((q) => [q.slug, q.name]
       </tbody>
     </table></div>
     <p class="small muted">
-      <strong>Living people are named and nothing more.</strong> No dates, no ages, nothing that could
-      be worked backwards into one.
+      <strong>A living person (80 or younger, with no death recorded) is named with their relationships and their town and country, and nothing more.</strong>
+      No dates, no ages, nothing that could be worked backwards into one.
     </p>
   </div>
 
@@ -64,7 +65,7 @@ const personName = Object.fromEntries(english.people.map((q) => [q.slug, q.name]
           )}
           {p.dates && <p class="small" style="margin:.1rem 0;"><strong>{p.dates}</strong></p>}
           {p.place && <p class="small muted" style="margin:.1rem 0;">{p.place}</p>}
-          <p class="small muted" style="margin:.3rem 0 0 0;">{p.how}</p>
+          <p class="small muted" style="margin:.3rem 0 0 0;" set:html={md(p.how)}></p>
         </div>
       ))}
     </div>

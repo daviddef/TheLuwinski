@@ -37,9 +37,16 @@ jobs:
         run: npx astro build
         working-directory: site
       # Indexes the RENDERED pages, so what is searchable is exactly what a
-      # reader can see - and nothing the living-persons rule removed.
+      # reader can see - and nothing the living-persons rule removed. A page that
+      # noindexes itself (a living person's page) is left out of the index.
       - name: Build the search index
         run: python3 tools/build-search.py
+      # Fails if the search page fetches a file that was not published, if the index is
+      # stale (an indexable page, now including every person's, absent from it), or if a
+      # noindex page is IN it. Added to CI 16 October 2026 with the person pages; until
+      # then only `npm run build` ran it, which is the gap the comment below describes.
+      - name: Check the search index
+        run: python3 tools/check-search.py
       # CI runs `astro build` and a chosen few steps, NOT `npm run build`, because that
       # chain starts by regenerating the register from a private harvest this
       # repository does not hold. So anything the local chain does after astro build
@@ -50,16 +57,24 @@ jobs:
       - name: Write the sitemap
         run: python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py
         working-directory: site
-      # The archive promises that living people are not present in the output.
-      # This checks the rendered HTML rather than trusting the generator, and the
-      # deploy is gated on it. It has already caught one real case: a dateless
-      # duplicate record of a man who died in 1932, flagged as living.
-      # Runs in --hashes mode here: the names to keep out of a public repository
-      # cannot themselves be in it, so CI guards on salted digests and hashes
-      # candidate names out of the rendered HTML. The exact --harvest check runs
-      # locally, where the private source is.
-      - name: Check that no living person is in the build
+      # The archive's standard for living people (version 2, 16 October 2026): a living person
+      # (80 or younger, with no death recorded) is named with their relationships and their town
+      # and country, and nothing more, on a page that is noindex; an undated person with a
+      # living parent is published nowhere; every person the archive names has a page of their own. This checks the RENDERED
+      # pages, the served JSON, the sitemap, the search index and the generated register rather
+      # than trusting the generator, and the deploy is gated on it. It refuses to pass if it can
+      # recognise no living person or finds no person page.
+      # Runs in --hashes mode here: the names cannot be recognised from the harvest, which this
+      # repository does not hold, so CI recognises them by salted digest, finds the living and the
+      # held out by the ids in data/guarded-hashes.json, and re-applies the kit's living_rule to the
+      # register's own fields. The exact --harvest check, and the exact leak scan for the harvest's
+      # dates, run locally, where the private source is.
+      - name: Check that every living person is shown as a name, a relationship and a place only
         run: python3 tools/check-living.py --dist site/dist --mode hashes
+      # The gate is tested the way it is meant to be trusted: a fault is planted for every rule in
+      # a copy of the build, and the step fails unless each one is caught and each control passes.
+      - name: Check that the living-people gate still catches what it should
+        run: python3 tools/selftest-living.py --dist site/dist
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

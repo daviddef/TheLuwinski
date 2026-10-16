@@ -12,7 +12,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const subject = subjects.subjects.derrick;
 const fam = familyOf(subject.id, { livingSelf: true });
 ---
-<Base title="Lynn Derrick Luwinski"
+<Base title="Lynn Derrick Luwinski" structured={false}
   subtitle="Living. Named, and nothing more."
   lede="This archive is organised around him and tells almost nothing about him. That is deliberate.">
 
@@ -36,8 +36,8 @@ const fam = familyOf(subject.id, { livingSelf: true });
       <Fragment slot="notes">
         <p class="warn">Two lines meet here and go no further. <strong>Nothing below him is
         drawn</strong> — not because nothing is known, but because he is living and this
-        archive publishes a living person's name and their relationship to the dead, and
-        nothing else. Kurt Israel Luwinski is drawn here as his father
+        archive publishes a living person's name, their relationship and their town and
+        country, and nothing else &mdash; and for him not even the town. Kurt Israel Luwinski is drawn here as his father
         <strong>of record and of upbringing</strong>, which is what he was.
         <strong>He is not his biological father and that is not in dispute</strong> &mdash; the
         <a href={base + '/dna/'}>DNA excludes him twice over</a>, 0.0% Ashkenazi where a quarter
@@ -57,10 +57,10 @@ const fam = familyOf(subject.id, { livingSelf: true });
     1948, and they were finished with each other by 1951.
   </p>
   <p>
-    The policy of the sibling archives is that living people are omitted from the build entirely — not
-    hidden, not gated, not present in the output. Here that rule is bent exactly once and no further:
-    Derrick is <em>named</em>, because an archive about his ancestry that refused to say whose ancestry
-    it was would be absurd. Everything else about him is left out.
+    The policy of this archive, as of 16 October 2026, is that a living person (80 or younger, with no
+    death recorded) is named with their relationships and their town and country, and nothing more. Derrick is held to less than that:
+    he is <em>named</em> with his parents, because an archive about his ancestry that refused to say
+    whose ancestry it was would be absurd. Everything else about him, the town included, is left out.
   </p>
 
   <h2>What is known and not published</h2>

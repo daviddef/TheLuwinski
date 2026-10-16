@@ -1,57 +1,72 @@
 #!/usr/bin/env python3
-"""Write the guarded-name digests the CI living-persons check runs against.
+"""Write the guard digests the CI living-people check runs against.
 
-The repository is public, so the list of people to keep OUT of it cannot itself
-be in it in plaintext. This writes salted SHA-256 digests of the omitted living
-people's names instead.
+Under the estate's standard, version 2 (16 October 2026) a living person is NAMED in this archive, with
+their relationship and their town and country and nothing more, and has a page of their own that is
+`noindex`. A possible minor is HELD OUT and appears nowhere at all. The gate therefore has to RECOGNISE
+two groups of names in the built pages and served files, and CI does not hold the private harvest, so it
+recognises them by salted SHA-256 digest:
 
-This is obfuscation, not secrecy: the salt sits beside the digests, so anyone
-determined could test a guess against them. That is accepted. The purpose is
-that the names are not *published* here, and that CI can still verify the build
-without being handed them.
+  digests / living_ids         the living (kit living_rule.is_living), so that what stands with their
+                               name can be tested;
+  held_out_digests / held_out_ids   the held out (living_rule.is_held_out), so that their name and their
+                               id can be shown to be absent.
+
+The ids are local sequence numbers (9500xxx), not identifiers of anyone. A held-out id is recorded by id,
+never by name.
+
+This is obfuscation, not secrecy: the salt sits beside the digests, so anyone determined could test a
+guess against them. That is accepted for the living, whose names are published in any case. For the
+held out it means the digests prove nothing about WHO is held out beyond what a guess would confirm;
+the names themselves are never in the repository.
 """
-import json, pathlib, re, secrets, sys
+import json, pathlib, secrets, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import names
+import people_decisions as pd
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 HARVEST = ROOT / "data" / "myheritage-tree9.json"
 OUT = ROOT / "data" / "guarded-hashes.json"
 
-ALLOWED = {9500003}
-DUPLICATES = {9500151, 9500150, 9500104, 9500148, 9500149}
-PRESUMED_DEAD_BY = 1920
 
-def year(s):
-    m = re.search(r"\b(1[5-9]\d\d|20\d\d)\b", s or "")
-    return int(m.group(1)) if m else None
+def digests_for(salt, p):
+    out = []
+    for variant in {p["name"], (p["first"] or "") + " " + (p["last"] or "")}:
+        d = names.digest(salt, variant)
+        if d:
+            out.append(d)
+    return out
+
 
 def main():
     prev = json.load(open(OUT)) if OUT.exists() else {}
     salt = prev.get("salt") or secrets.token_hex(16)
     people = json.load(open(HARVEST))
-    out, unguardable = [], []
+    status = pd.classify(people)
+    out, held_out, ids, held_ids, unguardable = [], [], [], [], []
     for p in people:
-        if not p["alive"] or p["id"] in ALLOWED or p["id"] in DUPLICATES:
-            continue
-        by = year(p["b"])
-        if by and by <= PRESUMED_DEAD_BY:
-            continue
-        if "unknown" in (p["name"] or "").lower():
-            continue
-        got = False
-        for variant in {p["name"], (p["first"] or "") + " " + (p["last"] or "")}:
-            d = names.digest(salt, variant)
-            if d:
-                out.append(d); got = True
-        if not got:
-            unguardable.append(p["name"])
+        s = status[p["id"]]
+        if s == "living":
+            ids.append(p["id"])
+            got = digests_for(salt, p)
+            out += got
+            if not got:
+                unguardable.append("id %s" % p["id"])
+        elif s == "held_out":
+            held_ids.append(p["id"])
+            held_out += digests_for(salt, p)
     json.dump({"salt": salt, "algorithm": "sha256(salt|<first token> <last token>), particles dropped, first 32 hex",
-               "count": len(out), "digests": sorted(set(out))},
+               "rule": "kit living_rule: living = 80 or younger by year with no death or burial recorded and no public source; "
+                       "held out = possible minor (not recorded dead, no public source, no birth year and a living parent); a child with a known birth year is living, not held out",
+               "count": len(out), "digests": sorted(set(out)),
+               "living_ids": sorted(ids),
+               "held_out_ids": sorted(held_ids), "held_out_digests": sorted(set(held_out))},
               open(OUT, "w"), indent=1)
-    print(f"guarded digests written: {len(set(out))}")
+    print(f"guarded digests written: {len(set(out))}; living ids written: {len(ids)}; "
+          f"held-out ids written: {len(held_ids)} with {len(set(held_out))} digests")
     if unguardable:
-        print("NOT GUARDABLE by digest — single-token names, which cannot be keyed")
+        print("NOT GUARDABLE by digest -- single-token names, which cannot be keyed")
         print("without matching ordinary words all over the site. These rely on the")
         print("full-harvest check run locally before every commit:")
         for n in unguardable:

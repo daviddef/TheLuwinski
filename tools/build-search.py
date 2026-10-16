@@ -20,6 +20,12 @@ def text_of(fragment):
     fragment = re.sub(r"(?s)<[^>]+>", " ", fragment)
     return re.sub(r"\s+", " ", html.unescape(fragment)).strip()
 
+# A page that noindexes itself is left out of the index, by reading the same tag a search engine reads
+# (kit/tools/searchkit.py does the same). This archive's index used to take every index.html, which was
+# harmless while no page was noindex; a LIVING person's page is, so the index must honour it here and the
+# gate (tools/check-living.py) checks that it did. 16 October 2026.
+NOINDEX = re.compile(r'<meta[^>]*name=["\']robots["\'][^>]*noindex|<meta[^>]*noindex[^>]*name=["\']robots["\']', re.I)
+
 def fold(s):
     """Lowercase and strip accents, so a reader typing `Schoneberg` finds
        Schöneberg. The shared box folds the query the same way."""
@@ -29,9 +35,12 @@ def fold(s):
 def main():
     if not DIST.exists():
         sys.exit("build-search: no dist; run astro build first")
-    entries = []
+    entries, withheld = [], 0
     for f in sorted(DIST.rglob("index.html")):
         raw = f.read_text(encoding="utf-8", errors="ignore")
+        if NOINDEX.search(raw):
+            withheld += 1
+            continue
         url = "/" + str(f.parent.relative_to(DIST)).replace(".", "").strip("/")
         url = (url.rstrip("/") + "/") if url != "/" else "/"
         title = text_of((re.search(r"(?is)<title>(.*?)</title>", raw) or [None, ""])[1])
@@ -78,7 +87,7 @@ def main():
     keep.write_text(payload, encoding="utf-8")
     print(f"build-search: {len(entries)} sections across "
           f"{len(set(e['h'] for e in entries))} pages -> {out.relative_to(ROOT)} "
-          f"and {keep.relative_to(ROOT)}")
+          f"and {keep.relative_to(ROOT)}; {withheld} noindex page(s) left out")
 
 if __name__ == "__main__":
     main()

@@ -97,7 +97,7 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
     <div class="card stat"><b>{c.family}</b><span>People in the family proper</span></div>
     <div class="card stat"><b>4</b><span>In the Gedenkbuch</span></div>
     <div class="card stat"><b>{c.index}</b><span>Surname-index entries, not descent</span></div>
-    <div class="card stat"><b>{c.omitted_living}</b><span>Living people omitted</span></div>
+    <div class="card stat"><b>{c.living_named}</b><span>Living people, named</span></div>
   </div>
 
   <h2>Two spines</h2>
@@ -530,7 +530,7 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
   .tl-axis { position: relative; height: 1.5rem; margin-left: 15rem; border-bottom: 1px solid var(--rule); }
   .tl-tick { position: absolute; top: 0; transform: translateX(-50%); }
   .tl-tick span {
-    font-family: ui-sans-serif, system-ui, sans-serif; font-size: .62rem;
+    font-family: ui-sans-serif, system-ui, sans-serif; font-size: .6875rem;
     letter-spacing: .08em; color: var(--ink-faint);
   }
   .tl-row { display: grid; grid-template-columns: 15rem 1fr; align-items: center; min-height: 2.2rem; }
@@ -609,7 +609,7 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
   .spines .sib .rel {
     display: block;
     font-family: ui-sans-serif, system-ui, sans-serif;
-    font-size: .6rem; letter-spacing: .1em; text-transform: uppercase;
+    font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase;
     color: var(--ink-faint); margin-bottom: .45rem;
   }
   .spines .sib .rel em { font-style: normal; color: var(--ink); font-weight: 600; }
@@ -624,7 +624,7 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
   .spines .sibs > span:first-child {
     display: block;
     font-family: ui-sans-serif, system-ui, sans-serif;
-    font-size: .58rem; letter-spacing: .1em; text-transform: uppercase;
+    font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase;
     color: var(--ink-faint); margin-bottom: .25rem;
   }
   .spines .sibs strong { color: var(--ink); font-weight: 600; }
@@ -669,7 +669,7 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
     .spines .lane {
       display: block;
       font-family: ui-sans-serif, system-ui, sans-serif;
-      font-size: .6rem; letter-spacing: .1em; text-transform: uppercase;
+      font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase;
       color: var(--ink-faint); margin-bottom: .4rem;
     }
   }
@@ -682,7 +682,7 @@ for (let y = 1860; y <= 2030; y += 20) decades.push(y);
     <div class="card"><a href={base + '/1948/'}>The year 1948</a><p>Two marriages four and a half months apart, and a divorce filed before the child was born.</p></div>
     <div class="card"><a href={base + '/east-prussia/'}>Sauerbaum and Allenstein</a><p>The Catholic half: a farmer, a milliner, and a son born twelve years before his parents married.</p></div>
     <div class="card"><a href={base + '/register/'}>The register</a><p>Every person in the source, labelled — including the hundred who are a surname index and not ancestry.</p></div>
-    <div class="card"><a href={base + '/method/'}>Method</a><p>What “documented”, “inferred” and “disputed” mean here, and why living people are absent.</p></div>
+    <div class="card"><a href={base + '/method/'}>Method</a><p>What “documented”, “inferred” and “disputed” mean here, and how living people are shown.</p></div>
   </div>
 
 <script is:inline>
