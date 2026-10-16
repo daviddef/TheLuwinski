@@ -224,7 +224,7 @@ def main():
             for q in data["people"]:
                 for e in q.get("rel", []):
                     if str(e["id"]) == LID:
-                        e["ls"] = "Born: 1961"
+                        e["ls"] = "Born: 1799"
                         return
         case("the source's life span on a relationship edge to a living person", mode, True,
              reg_edit(lambda r, data: edge_ls(r, data)), "life span")
