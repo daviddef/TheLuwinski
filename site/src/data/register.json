@@ -13,6 +13,7 @@
    "byq": null,
    "dyq": null,
    "kind": "index",
+   "placeholder": true,
    "facts": [
     {
      "t": "Marriage to:",
@@ -44,7 +45,8 @@
      "n": "Delina de Witt",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "unknown-de-witt-9500158"
   },
   {
    "id": 9500161,
@@ -52,19 +54,15 @@
    "first": "",
    "last": "",
    "sex": "F",
-   "kind": "index",
-   "living": true,
    "born": "",
    "died": "",
    "by": null,
    "dy": null,
    "byq": null,
    "dyq": null,
+   "kind": "index",
+   "placeholder": true,
    "facts": [],
-   "town": "",
-   "country": "",
-   "place": "",
-   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
    "rel": [
     {
      "id": 9500005,
@@ -78,7 +76,9 @@
      "n": "Johannes Antonie Oelofse De Witt",
      "ls": "1923 - 1963"
     }
-   ]
+   ],
+   "no_death_recorded": true,
+   "slug": "unknown-de-witt-9500161"
   },
   {
    "id": 9500165,
@@ -86,33 +86,34 @@
    "first": "",
    "last": "",
    "sex": "M",
-   "kind": "family",
-   "living": true,
    "born": "",
    "died": "",
    "by": null,
    "dy": null,
    "byq": null,
    "dyq": null,
-   "facts": [],
-   "town": "",
-   "country": "",
-   "place": "",
-   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "kind": "family",
+   "placeholder": true,
+   "facts": [
+    {
+     "t": "Marriage to:",
+     "ty": "MARR",
+     "date": "",
+     "place": "",
+     "c": "",
+     "ac": ""
+    }
+   ],
    "rel": [
     {
      "id": 9500016,
      "rel": "His wife",
      "n": "SHARON LEE Da Rocha (van Vuren)",
      "ls": "Living"
-    },
-    {
-     "id": 9500164,
-     "rel": "His son",
-     "n": "Luke",
-     "ls": "Living"
     }
-   ]
+   ],
+   "no_death_recorded": true,
+   "slug": "unknown-9500165"
   },
   {
    "id": 9500037,
@@ -127,6 +128,7 @@
    "byq": null,
    "dyq": null,
    "kind": "index",
+   "placeholder": true,
    "facts": [],
    "rel": [
     {
@@ -147,7 +149,8 @@
      "n": "Germany Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "unknown-luwinski-9500037"
   },
   {
    "id": 9500101,
@@ -162,6 +165,7 @@
    "byq": null,
    "dyq": null,
    "kind": "family",
+   "placeholder": true,
    "facts": [
     {
      "t": "Partner:",
@@ -209,7 +213,8 @@
      "n": "Edith, Charlotte Zelenka (Leibholz)",
      "ls": "1929 - 2005"
     }
-   ]
+   ],
+   "slug": "unknown-9500101"
   },
   {
    "id": 9500039,
@@ -224,6 +229,7 @@
    "byq": null,
    "dyq": null,
    "kind": "index",
+   "placeholder": true,
    "facts": [],
    "rel": [
     {
@@ -370,7 +376,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "unknown-luwinski-9500039"
   },
   {
    "id": 9500051,
@@ -385,6 +392,7 @@
    "byq": null,
    "dyq": null,
    "kind": "index",
+   "placeholder": true,
    "facts": [],
    "rel": [
     {
@@ -399,7 +407,8 @@
      "n": "Karoline Amalie Luwinski (Mächtig)",
      "ls": "1818 - Deceased"
     }
-   ]
+   ],
+   "slug": "unknown-luwinski-9500051"
   },
   {
    "id": 9500113,
@@ -414,6 +423,7 @@
    "byq": null,
    "dyq": null,
    "kind": "family",
+   "placeholder": true,
    "facts": [],
    "rel": [
     {
@@ -440,7 +450,8 @@
      "n": "Franz Fuhl",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "unknown-9500113"
   },
   {
    "id": 9500099,
@@ -486,7 +497,8 @@
      "n": "Thomas Luwinski",
      "ls": "1859 - 1859"
     }
-   ]
+   ],
+   "slug": "agathae-luwinski"
   },
   {
    "id": 9500073,
@@ -532,7 +544,8 @@
      "n": "Hedvigem Luwinski",
      "ls": "1757 - Deceased"
     }
-   ]
+   ],
+   "slug": "barbara-luwinski"
   },
   {
    "id": 9500034,
@@ -578,7 +591,8 @@
      "n": "Johanna Thimm (Luwinski)",
      "ls": "1871 - 1955"
     }
-   ]
+   ],
+   "slug": "elisabeth-thimm"
   },
   {
    "id": 9500076,
@@ -624,7 +638,8 @@
      "n": "Valentinus Luwinski",
      "ls": "1774 - Deceased"
     }
-   ]
+   ],
+   "slug": "heva-luwinski"
   },
   {
    "id": 9500045,
@@ -670,41 +685,8 @@
      "n": "Juste Luwinski",
      "ls": "1826 - Deceased"
     }
-   ]
-  },
-  {
-   "id": 9500164,
-   "name": "Luke",
-   "first": "Luke",
-   "last": "",
-   "sex": "M",
-   "kind": "family",
-   "living": true,
-   "born": "",
-   "died": "",
-   "by": null,
-   "dy": null,
-   "byq": null,
-   "dyq": null,
-   "facts": [],
-   "town": "",
-   "country": "",
-   "place": "",
-   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
-   "rel": [
-    {
-     "id": 9500165,
-     "rel": "His father",
-     "n": "Unknown",
-     "ls": "Living"
-    },
-    {
-     "id": 9500016,
-     "rel": "His mother",
-     "n": "SHARON LEE Da Rocha (van Vuren)",
-     "ls": "Living"
-    }
-   ]
+   ],
+   "slug": "lovise-luwinski"
   },
   {
    "id": 9500055,
@@ -750,7 +732,8 @@
      "n": "Edmund Luwinski",
      "ls": "1880 - Deceased"
     }
-   ]
+   ],
+   "slug": "maryanna-luwinski"
   },
   {
    "id": 9500011,
@@ -814,7 +797,8 @@
      "n": "Morris Isaac Salkow",
      "ls": "1921 - 1991"
     }
-   ]
+   ],
+   "slug": "gertrude-or-gertie-ambrose-moagus"
   },
   {
    "id": 9600007,
@@ -840,7 +824,8 @@
    "by": null,
    "dy": 1993,
    "byq": null,
-   "dyq": null
+   "dyq": null,
+   "slug": "gerda-felicitas-bade-leibholz"
   },
   {
    "id": 9500008,
@@ -855,6 +840,7 @@
    "byq": null,
    "dyq": null,
    "kind": "index",
+   "placeholder": true,
    "facts": [
     {
      "t": "Marriage to:",
@@ -880,7 +866,8 @@
      "n": "Frances Hostowsky (Berner)",
      "ls": "1915 - Deceased"
     }
-   ]
+   ],
+   "slug": "unknown-berner"
   },
   {
    "id": 9500155,
@@ -888,19 +875,39 @@
    "first": "Rose Eva",
    "last": "Bernhardt",
    "sex": "F",
-   "kind": "index",
-   "living": true,
-   "born": "",
+   "born": "Jan 20 1924",
    "died": "",
-   "by": null,
+   "by": 1924,
    "dy": null,
    "byq": null,
    "dyq": null,
-   "facts": [],
-   "town": "Johannesburg",
-   "country": "South Africa",
-   "place": "Johannesburg, South Africa",
-   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "kind": "index",
+   "facts": [
+    {
+     "t": "Birth",
+     "ty": "BIRT",
+     "date": "Jan 20 1924",
+     "place": "Johannesburg, Transvaal, South Africa",
+     "c": "",
+     "ac": ""
+    },
+    {
+     "t": "Marriage to:",
+     "ty": "MARR",
+     "date": "June 6 1943",
+     "place": "Orange Grove, Johannesburg, Transvaal, South Africa",
+     "c": "",
+     "ac": ""
+    },
+    {
+     "t": "Divorce from:",
+     "ty": "DIV",
+     "date": "1962",
+     "place": "Transvaal, South Africa",
+     "c": "",
+     "ac": ""
+    }
+   ],
    "rel": [
     {
      "id": 9500010,
@@ -908,7 +915,9 @@
      "n": "Morris Isaac Salkow",
      "ls": "1921 - 1991"
     }
-   ]
+   ],
+   "no_death_recorded": true,
+   "slug": "rose-eva-bernhardt"
   },
   {
    "id": 9500085,
@@ -954,7 +963,8 @@
      "n": "Valentinus Luwinski",
      "ls": "1846 - 1848"
     }
-   ]
+   ],
+   "slug": "ludovica-blosekiewicz-luwinski"
   },
   {
    "id": 9500018,
@@ -962,19 +972,23 @@
    "first": "Jacinto",
    "last": "Da Oliveira",
    "sex": "M",
-   "kind": "family",
-   "living": true,
    "born": "",
    "died": "",
    "by": null,
    "dy": null,
    "byq": null,
    "dyq": null,
-   "facts": [],
-   "town": "",
-   "country": "",
-   "place": "",
-   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "kind": "family",
+   "facts": [
+    {
+     "t": "Partner:",
+     "ty": "MYHERITAGE:REL_PARTNERS",
+     "date": "After 1953",
+     "place": "",
+     "c": "",
+     "ac": ""
+    }
+   ],
    "rel": [
     {
      "id": 9500002,
@@ -982,7 +996,9 @@
      "n": "Ivone / Mota \"Yvonne\" Figueiredo (de Witt)",
      "ls": "1924 - Deceased"
     }
-   ]
+   ],
+   "no_death_recorded": true,
+   "slug": "jacinto-da-oliveira"
   },
   {
    "id": 9500012,
@@ -997,6 +1013,7 @@
    "byq": null,
    "dyq": null,
    "kind": "index",
+   "placeholder": true,
    "facts": [
     {
      "t": "Marriage to:",
@@ -1028,7 +1045,8 @@
      "n": "Henrique Figueiredo Pinto Da Rocha",
      "ls": "1941 - 2022"
     }
-   ]
+   ],
+   "slug": "unknown-da-rocha"
   },
   {
    "id": 9500013,
@@ -1114,7 +1132,8 @@
      "n": "Lynn Derrick Luwinski",
      "ls": "Living"
     }
-   ]
+   ],
+   "slug": "henrique-figueiredo-pinto-da-rocha"
   },
   {
    "id": 9500017,
@@ -1139,14 +1158,12 @@
     {
      "id": 9500013,
      "rel": "His father",
-     "n": "Henrique Figueiredo Pinto Da Rocha",
-     "ls": "1941 - 2022"
+     "n": "Henrique Figueiredo Pinto Da Rocha"
     },
     {
      "id": 9500014,
      "rel": "His mother",
-     "n": "Dawn Elizabeth Hendey (Da Rocha)",
-     "ls": "1943 - 2009"
+     "n": "Dawn Elizabeth Hendey (Da Rocha)"
     },
     {
      "id": 9500016,
@@ -1154,7 +1171,8 @@
      "n": "SHARON LEE Da Rocha (van Vuren)",
      "ls": "Living"
     }
-   ]
+   ],
+   "slug": "ricardo-da-rocha"
   },
   {
    "id": 9500016,
@@ -1179,26 +1197,17 @@
     {
      "id": 9500165,
      "rel": "Her husband",
-     "n": "Unknown",
-     "ls": "Living"
-    },
-    {
-     "id": 9500164,
-     "rel": "Her son",
-     "n": "Luke",
-     "ls": "Living"
+     "n": "Unknown"
     },
     {
      "id": 9500013,
      "rel": "Her father",
-     "n": "Henrique Figueiredo Pinto Da Rocha",
-     "ls": "1941 - 2022"
+     "n": "Henrique Figueiredo Pinto Da Rocha"
     },
     {
      "id": 9500014,
      "rel": "Her mother",
-     "n": "Dawn Elizabeth Hendey (Da Rocha)",
-     "ls": "1943 - 2009"
+     "n": "Dawn Elizabeth Hendey (Da Rocha)"
     },
     {
      "id": 9500017,
@@ -1206,7 +1215,8 @@
      "n": "RICARDO Da Rocha",
      "ls": "Living"
     }
-   ]
+   ],
+   "slug": "sharon-lee-da-rocha-van-vuren"
   },
   {
    "id": 9500160,
@@ -1250,7 +1260,7 @@
      "id": 9500161,
      "rel": "His mother",
      "n": "Unknown de Witt",
-     "ls": "Living"
+     "ls": ""
     },
     {
      "id": 9500159,
@@ -1268,7 +1278,8 @@
      "now": "NOT A SECOND PERSON — the same man as 9500005, duplicated",
      "source": "Same name, same birth year as his supposed father, same place of death, and a father-son relationship that is arithmetically impossible. The duplication also invented a wife for him — 'Unknown de Witt', 9500161, who exists only to be his mother — and gave Delina de Witt a half-brother who is really her father. Found by tools/audit-tree.py, 20 September 2026, which flags a parent under fourteen at a child's birth. *** DELIBERATELY NOT COLLAPSED INTO 9500005. *** The DUPLICATES map in tools/build-register.py collapses records only where the pair shares AN IDENTICAL BIRTH AND DEATH DATE, and says in its own comment that those are not guesses. This pair does not meet that bar: the birth places differ, Johannesburg against Pretoria, one birth is 'circa' and only one record carries a death. It is a strong inference and not an identity, so both records stay in the register with this correction attached to them, which is what corrections are for. *** 20 SEPTEMBER 2026: THE BAR HAS BEEN PARTLY MET AND THE RECORDS STILL STAY APART. *** The civil death register gives the birthplace as PRETORIA, which is the duplicate's birthplace and not 9500005's Johannesburg, so the two records now differ on a point where an outside source backs one of them. That strengthens the inference that they are one man and does not turn it into an identity, because nothing yet ties the Johannesburg birth to anybody at all. Both records stay in the register."
     }
-   ]
+   ],
+   "slug": "johannes-antonie-oelofse-de-witt-9500160"
   },
   {
    "id": 9500103,
@@ -1508,7 +1519,8 @@
      "n": "Michael, Kurt Leibholz",
      "ls": "1951 - 2005"
     }
-   ]
+   ],
+   "slug": "cornelia-silke-deul-leibholz"
   },
   {
    "id": 9500009,
@@ -1548,7 +1560,8 @@
      "n": "Frances Hostowsky (Eisenhardt)",
      "ls": "1915 - Deceased"
     }
-   ]
+   ],
+   "slug": "rolf-eisenhardt"
   },
   {
    "id": 9500002,
@@ -1682,7 +1695,7 @@
      "id": 9500018,
      "rel": "Her partner",
      "n": "Jacinto Da Oliveira",
-     "ls": "Living"
+     "ls": ""
     },
     {
      "id": 9500003,
@@ -1722,7 +1735,8 @@
      "now": "14 March 2010, at home at Rua Nova das Marinhas 82, Gulpilhares, Vila Nova de Gaia",
      "source": "Certificado de óbito n.º 12893536, Ministério da Saúde: died at 04:30 in a private dwelling, of cardio-respiratory failure with dementia contributing, aged 88. Supplied by the family 27 September 2026. The day is confirmed by the family and is consistent with the form: the physician signed on 16 March, two days after. This archive first read the boxed digits as \"the 16th or the 17th\" — the 17th was impossible on the certificate's own evidence, since a doctor cannot certify a death that has not yet happened."
     }
-   ]
+   ],
+   "slug": "ivone-mota-yvonne-figueiredo-de-witt"
   },
   {
    "id": 9500094,
@@ -1770,7 +1784,8 @@
      "n": "Thomam Luwinski",
      "ls": "1815 - Deceased"
     }
-   ]
+   ],
+   "slug": "barbaram-gensler-frankenbergx-luwinski"
   },
   {
    "id": 9500031,
@@ -1818,7 +1833,8 @@
      "n": "Auguste (Lizzy) Luwinski (Fricke)",
      "ls": "1893 - 1975"
     }
-   ]
+   ],
+   "slug": "paul-heinrich-bernhard-fricke"
   },
   {
    "id": 9500114,
@@ -1868,7 +1884,8 @@
      "n": "Franz Fuhl",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "andreas-fuhl"
   },
   {
    "id": 9500115,
@@ -1918,7 +1935,8 @@
      "n": "Franz Fuhl",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "anna-fuhl-piontek"
   },
   {
    "id": 9500116,
@@ -1976,7 +1994,8 @@
      "n": "Anna Fuhl (Piontek)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "franz-fuhl"
   },
   {
    "id": 9500110,
@@ -2066,7 +2085,8 @@
      "n": "Klara Fuhl",
      "ls": "1913 - 1932"
     }
-   ]
+   ],
+   "slug": "gertrud-fuhl-materna"
   },
   {
    "id": 9500109,
@@ -2186,7 +2206,8 @@
      "n": "Klara Fuhl",
      "ls": "1913 - 1932"
     }
-   ]
+   ],
+   "slug": "helene-auguste-fuhl-turowski"
   },
   {
    "id": 9500107,
@@ -2298,7 +2319,8 @@
      "n": "Klara Fuhl",
      "ls": "1913 - 1932"
     }
-   ]
+   ],
+   "slug": "herbert-josef-fuhl"
   },
   {
    "id": 9500105,
@@ -2414,7 +2436,8 @@
      "n": "Franz Fuhl",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "josef-fuhl"
   },
   {
    "id": 9500111,
@@ -2490,7 +2513,8 @@
      "n": "Gertrud Fuhl (Materna)",
      "ls": "1907 - Deceased"
     }
-   ]
+   ],
+   "slug": "klara-fuhl"
   },
   {
    "id": 9500108,
@@ -2586,7 +2610,8 @@
      "n": "Klara Fuhl",
      "ls": "1913 - 1932"
     }
-   ]
+   ],
+   "slug": "margarethe-fuhl-ganswindt"
   },
   {
    "id": 9500041,
@@ -2680,7 +2705,8 @@
      "n": "Klara Fuhl",
      "ls": "1913 - 1932"
     }
-   ]
+   ],
+   "slug": "martha-fuhl-luwinski"
   },
   {
    "id": 9500117,
@@ -2742,7 +2768,8 @@
      "n": "Leni Gaidner (Fuhl)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "wolfram-herbert-fuhl"
   },
   {
    "id": 9500112,
@@ -2788,7 +2815,8 @@
      "n": "Wolfram Herbert Fuhl",
      "ls": "1943 - 2014"
     }
-   ]
+   ],
+   "slug": "leni-gaidner-fuhl"
   },
   {
    "id": 9500133,
@@ -2826,7 +2854,8 @@
      "n": "Margarethe Fuhl (Ganswindt)",
      "ls": "1902 - Deceased"
     }
-   ]
+   ],
+   "slug": "hildegard-ganswindt"
   },
   {
    "id": 9500132,
@@ -2872,7 +2901,8 @@
      "n": "Hildegard Ganswindt",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "paul-ganswindt"
   },
   {
    "id": 9500058,
@@ -2924,7 +2954,8 @@
      "n": "Valentin Luwinski",
      "ls": "1874 - 1878"
     }
-   ]
+   ],
+   "slug": "leonharda-grzegorzewska-luwinski"
   },
   {
    "id": 9500007,
@@ -2939,6 +2970,7 @@
    "byq": null,
    "dyq": null,
    "kind": "family",
+   "placeholder": true,
    "facts": [
     {
      "t": "Death",
@@ -2956,7 +2988,8 @@
      "n": "Frances Hostowsky (Berner)",
      "ls": "1915 - Deceased"
     }
-   ]
+   ],
+   "slug": "unknown-hostowsky"
   },
   {
    "id": 9500014,
@@ -3016,7 +3049,8 @@
      "n": "RICARDO Da Rocha",
      "ls": "Living"
     }
-   ]
+   ],
+   "slug": "dawn-elizabeth-hendey-da-rocha"
   },
   {
    "id": 9500004,
@@ -3120,7 +3154,8 @@
      "n": "Unknown HOSTOWSKY",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "frances-hostowsky-berner"
   },
   {
    "id": 9500071,
@@ -3160,7 +3195,8 @@
      "n": "Antonium Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "susanna-jr-luwinski"
   },
   {
    "id": 9500153,
@@ -3209,10 +3245,9 @@
      "ls": "1870 - 1942"
     },
     {
-     "id": 9500145,
+     "id": 9500104,
      "rel": "Her daughter",
-     "n": "Gertrud Leibke (Leibholz)",
-     "ls": "1894 - 1943"
+     "n": "Trude Gertrud Leibke (Leibholz)"
     },
     {
      "id": 9500154,
@@ -3220,7 +3255,8 @@
      "n": "Leopold Leibke",
      "ls": "1892 - 1932"
     }
-   ]
+   ],
+   "slug": "henriette-katz-leibke"
   },
   {
    "id": 9500068,
@@ -3258,7 +3294,8 @@
      "n": "Johann Luwinski",
      "ls": "1883 - Deceased"
     }
-   ]
+   ],
+   "slug": "martha-klesse-luwinski"
   },
   {
    "id": 9500091,
@@ -3304,7 +3341,8 @@
      "n": "Vanda Maria Luwinski",
      "ls": "1893 - Deceased"
     }
-   ]
+   ],
+   "slug": "catharina-klich-luwinski"
   },
   {
    "id": 9500062,
@@ -3350,7 +3388,8 @@
      "n": "Hermann Luwinski",
      "ls": "1887 - Deceased"
     }
-   ]
+   ],
+   "slug": "julianna-kruczynska-luwinski"
   },
   {
    "id": 9500082,
@@ -3396,7 +3435,8 @@
      "n": "Stanilaus Luwinski",
      "ls": "1810 - Deceased"
     }
-   ]
+   ],
+   "slug": "magdalena-kuniewiczow-luwinski"
   },
   {
    "id": 9500079,
@@ -3442,7 +3482,8 @@
      "n": "Ludwik Luwinski",
      "ls": "1929 - 1929"
     }
-   ]
+   ],
+   "slug": "marjanna-leciejerska-luwinski"
   },
   {
    "id": 9600002,
@@ -3500,7 +3541,8 @@
    "by": 1889,
    "dy": null,
    "byq": null,
-   "dyq": null
+   "dyq": null,
+   "slug": "agnes-leibholz-kerger"
   },
   {
    "id": 9600004,
@@ -3526,7 +3568,8 @@
    "by": null,
    "dy": 1982,
    "byq": null,
-   "dyq": null
+   "dyq": null,
+   "slug": "charlotte-herta-marie-leibholz-schotzow"
   },
   {
    "id": 9600003,
@@ -3552,7 +3595,8 @@
    "by": null,
    "dy": 1974,
    "byq": null,
-   "dyq": null
+   "dyq": null,
+   "slug": "ella-josephine-martha-leibholz-baesler"
   },
   {
    "id": 9500147,
@@ -3609,10 +3653,15 @@
      "ls": "1884 - 1942"
     },
     {
-     "id": 9500145,
+     "id": 9500104,
      "rel": "Her mother",
-     "n": "Gertrud Leibke (Leibholz)",
-     "ls": "1894 - 1943"
+     "n": "Trude Gertrud Leibke (Leibholz)"
+    },
+    {
+     "id": 9500146,
+     "rel": "Her brother",
+     "n": "Werner Leibholz",
+     "ls": "Born: 1913"
     }
    ],
    "corrections": [
@@ -3625,7 +3674,8 @@
      "source": "Bundesarchiv Gedenkbuch entry en1169257, read 22 September 2026: Elli Struzik née Leibholz, born 07.11.1915 in Berlin, of Berlin (Mitte), deported from Berlin to the Litzmannstadt (Łódź) ghetto on 1 November 1941 and from there to Kulmhof on 13 May 1942; place of death Kulmhof, date of death 00.05.1942. The birth date matches the family record to the day, which is what identifies her.",
      "why": "IT EXPLAINS THE FAMILY RECORD RATHER THAN CONTRADICTING IT. \"After May 13 1942\" is not a guess — it is the DEPORTATION DATE, the last day anybody knew she was alive, written down as the only honest thing that could be said. The Gedenkbuch closes the gap by a fortnight and names the place. THE YEAR ON THE PAGE DOES NOT CHANGE and that is the point: this archive was right by accident, because a floor and the truth happened to fall in the same year. Joachim Luwinski's \"Before 1955\" has no such luck behind it and is still only a bound, which the bloodline and the timeline now say in words."
     }
-   ]
+   ],
+   "slug": "elli-leibholz-struzik"
   },
   {
    "id": 9500026,
@@ -3684,10 +3734,15 @@
    ],
    "rel": [
     {
-     "id": 9500145,
+     "id": 9500104,
      "rel": "His wife",
-     "n": "Gertrud Leibke (Leibholz)",
-     "ls": "1894 - 1943"
+     "n": "Trude Gertrud Leibke (Leibholz)"
+    },
+    {
+     "id": 9500146,
+     "rel": "His son",
+     "n": "Werner Leibholz",
+     "ls": "Born: 1913"
     },
     {
      "id": 9500147,
@@ -3735,7 +3790,8 @@
      "now": "NOT A BROTHER — the dates forbid it. Probably a cousin or nephew of the same family",
      "source": "Jacob was born at Schubin on 8 August 1884 and Georg at Hammerstein on 7 June 1884 — SIXTY-TWO DAYS APART. Two sons of one mother cannot be. Both dates are the Bundesarchiv's, independently of the family, and that arithmetic is what this correction rests on. *** THE WORDING BEFORE 20 SEPTEMBER 2026 ALSO SAID 'two hundred kilometres apart' AND CALLED GEORG 'a different Leibholz family'. BOTH ARE WITHDRAWN. *** SALLY LEIBHOLZ, JACOB'S OWN FATHER, WAS BORN AT HAMMERSTEIN ON 7 JULY 1847 and married at Szubin on 24 December 1874 (corrected 27 September 2026 from 24 November, which was the family record's date and is not the register's). The family had people in both towns, so the distance between them is not evidence of anything and the surname at Hammerstein is not a stranger's. What the dates rule out is BROTHERHOOD; what they leave standing is a cousin or a nephew in the town Sally came from. The Leibholz page has said exactly that in its 'A likelier reading' panel since the start — 'right surname, right family, wrong generation' — and this correction contradicted it. It no longer does."
     }
-   ]
+   ],
+   "slug": "georg-leibholz"
   },
   {
    "id": 9600001,
@@ -3792,7 +3848,8 @@
    "by": 1890,
    "dy": 1948,
    "byq": null,
-   "dyq": null
+   "dyq": null,
+   "slug": "heinrich-leibholz"
   },
   {
    "id": 9600006,
@@ -3818,7 +3875,8 @@
    "by": null,
    "dy": 1983,
    "byq": null,
-   "dyq": null
+   "dyq": null,
+   "slug": "hertha-leibholz"
   },
   {
    "id": 9600005,
@@ -3844,7 +3902,8 @@
    "by": null,
    "dy": 1983,
    "byq": null,
-   "dyq": null
+   "dyq": null,
+   "slug": "hilde-henriette-leibholz"
   },
   {
    "id": 9500020,
@@ -3968,7 +4027,8 @@
      "now": "not documented; deported to Auschwitz 26 February 1943",
      "source": "Bundesarchiv Gedenkbuch en1100957, which records the deportation and deliberately gives no date of death."
     }
-   ]
+   ],
+   "slug": "jacob-leibholz"
   },
   {
    "id": 9500022,
@@ -4124,7 +4184,8 @@
      "n": "Edith, Charlotte Zelenka (Leibholz)",
      "ls": "1929 - 2005"
     }
-   ]
+   ],
+   "slug": "michael-kurt-leibholz"
   },
   {
    "id": 9500027,
@@ -4218,7 +4279,8 @@
      "n": "Georg Leibholz",
      "ls": "1884 - 1942"
     }
-   ]
+   ],
+   "slug": "oskar-leibholz"
   },
   {
    "id": 9500023,
@@ -4308,7 +4370,8 @@
      "n": "Germany Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "sally-leibholz"
   },
   {
    "id": 9500025,
@@ -4386,7 +4449,7 @@
      "id": 9500144,
      "rel": "His wife",
      "n": "Frieda Spree (Leibholz)",
-     "ls": "Living"
+     "ls": ""
     },
     {
      "id": 9500023,
@@ -4418,7 +4481,8 @@
      "n": "Oskar Leibholz",
      "ls": "1887 - 1944"
     }
-   ]
+   ],
+   "slug": "samuel-israel-leibholz"
   },
   {
    "id": 9500019,
@@ -4546,7 +4610,8 @@
      "n": "Kurt Israel Luwinski",
      "ls": "1912 - 1969"
     }
-   ]
+   ],
+   "slug": "siegfried-leibholz"
   },
   {
    "id": 9500146,
@@ -4579,10 +4644,9 @@
      "ls": "1884 - 1942"
     },
     {
-     "id": 9500145,
+     "id": 9500104,
      "rel": "His mother",
-     "n": "Gertrud Leibke (Leibholz)",
-     "ls": "1894 - 1943"
+     "n": "Trude Gertrud Leibke (Leibholz)"
     },
     {
      "id": 9500147,
@@ -4591,7 +4655,8 @@
      "ls": "1915 - 1942"
     }
    ],
-   "no_death_recorded": true
+   "no_death_recorded": true,
+   "slug": "werner-leibholz"
   },
   {
    "id": 9500152,
@@ -4640,10 +4705,9 @@
      "ls": "1861 - 1926"
     },
     {
-     "id": 9500145,
+     "id": 9500104,
      "rel": "His daughter",
-     "n": "Gertrud Leibke (Leibholz)",
-     "ls": "1894 - 1943"
+     "n": "Trude Gertrud Leibke (Leibholz)"
     },
     {
      "id": 9500154,
@@ -4651,7 +4715,8 @@
      "n": "Leopold Leibke",
      "ls": "1892 - 1932"
     }
-   ]
+   ],
+   "slug": "julius-leibke"
   },
   {
    "id": 9500154,
@@ -4698,12 +4763,12 @@
      "ls": "1861 - 1926"
     },
     {
-     "id": 9500145,
+     "id": 9500104,
      "rel": "His sister",
-     "n": "Gertrud Leibke (Leibholz)",
-     "ls": "1894 - 1943"
+     "n": "Trude Gertrud Leibke (Leibholz)"
     }
-   ]
+   ],
+   "slug": "leopold-leibke"
   },
   {
    "id": 9500104,
@@ -4776,24 +4841,27 @@
      "ls": "1887 - 1944"
     },
     {
-     "id": 9500151,
+     "id": 9500026,
      "rel": "Her husband",
-     "n": "Georg Leibholz",
-     "ls": "1884 - 1942"
+     "n": "Georg Leibholz"
     },
     {
-     "id": 9500148,
+     "id": 9500152,
      "rel": "Her father",
-     "n": "Julius Leibke",
-     "ls": "1870 - 1942"
+     "n": "Julius Leibke"
     },
     {
-     "id": 9500149,
+     "id": 9500153,
      "rel": "Her mother",
-     "n": "Henriette Katz (Leibke)",
-     "ls": "1861 - 1926"
+     "n": "Henriette Katz (Leibke)"
+    },
+    {
+     "id": 9500154,
+     "rel": "Her brother",
+     "n": "Leopold Leibke"
     }
-   ]
+   ],
+   "slug": "trude-gertrud-leibke-leibholz"
   },
   {
    "id": 9600008,
@@ -4819,7 +4887,8 @@
    "by": null,
    "dy": 1960,
    "byq": null,
-   "dyq": null
+   "dyq": null,
+   "slug": "johanne-klara-leipsholz-diedring"
   },
   {
    "id": 9500098,
@@ -4834,6 +4903,7 @@
    "byq": null,
    "dyq": null,
    "kind": "index",
+   "placeholder": true,
    "facts": [
     {
      "t": "Marriage to:",
@@ -5001,7 +5071,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "unknown-luwinski-9500098"
   },
   {
    "id": 9500075,
@@ -5191,7 +5262,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "adalbertus-luwinski"
   },
   {
    "id": 9500090,
@@ -5381,7 +5453,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "adolph-luwinski"
   },
   {
    "id": 9500064,
@@ -5571,7 +5644,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "alexander-luwinski"
   },
   {
    "id": 9500139,
@@ -5767,7 +5841,8 @@
      "n": "Felix Luwinski",
      "ls": "1923 - Deceased"
     }
-   ]
+   ],
+   "slug": "alfred-luwinski"
   },
   {
    "id": 9500070,
@@ -5951,7 +6026,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "antonium-luwinski"
   },
   {
    "id": 9500047,
@@ -6135,7 +6211,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "antonius-luwinski"
   },
   {
    "id": 9500054,
@@ -6325,7 +6402,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "atharassius-luwinski"
   },
   {
    "id": 9500006,
@@ -6433,7 +6511,8 @@
      "n": "Hilda Luwinski (Böttiger)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "auguste-lizzy-luwinski-fricke"
   },
   {
    "id": 9500067,
@@ -6623,7 +6702,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "carl-luwinski"
   },
   {
    "id": 9500137,
@@ -6648,14 +6728,12 @@
     {
      "id": 9500135,
      "rel": "His father",
-     "n": "Manfred Joachim Luwinski",
-     "ls": "1933 - 2012"
+     "n": "Manfred Joachim Luwinski"
     },
     {
      "id": 9500136,
      "rel": "His mother",
-     "n": "Helga Erna Marquardt Wagner (Luwinski)",
-     "ls": "1934 - Deceased"
+     "n": "Helga Erna Marquardt Wagner (Luwinski)"
     },
     {
      "id": 9500138,
@@ -6663,7 +6741,8 @@
      "n": "Ralf Luwinski",
      "ls": "Living"
     }
-   ]
+   ],
+   "slug": "dagmar-luwinski"
   },
   {
    "id": 9500043,
@@ -6841,7 +6920,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "doroth-austonder-luwinski"
   },
   {
    "id": 9500056,
@@ -6887,7 +6967,8 @@
      "n": "Maryanna Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "edmund-luwinski"
   },
   {
    "id": 9500134,
@@ -7065,7 +7146,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "felix-luwinski"
   },
   {
    "id": 9500057,
@@ -7269,7 +7351,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "franz-luwinski"
   },
   {
    "id": 9500044,
@@ -7459,7 +7542,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "friedrich-luwinski"
   },
   {
    "id": 9500036,
@@ -7474,6 +7558,7 @@
    "byq": null,
    "dyq": null,
    "kind": "index",
+   "placeholder": true,
    "facts": [
     {
      "t": "Death",
@@ -7647,7 +7732,8 @@
      "n": "Sally Leibholz",
      "ls": "1847 - Deceased"
     }
-   ]
+   ],
+   "slug": "germany-luwinski"
   },
   {
    "id": 9500074,
@@ -7693,7 +7779,8 @@
      "n": "Barbara Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "hedvigem-luwinski"
   },
   {
    "id": 9500063,
@@ -7739,7 +7826,8 @@
      "n": "Julianna Kruczynska (Luwinski)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "hermann-luwinski"
   },
   {
    "id": 9500032,
@@ -7783,7 +7871,8 @@
      "n": "Auguste (Lizzy) Luwinski (Fricke)",
      "ls": "1893 - 1975"
     }
-   ]
+   ],
+   "slug": "hilda-luwinski-bottiger"
   },
   {
    "id": 9500081,
@@ -7973,7 +8062,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "jacobi-luwinski"
   },
   {
    "id": 9500095,
@@ -8163,7 +8253,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "jacobo-luwinski"
   },
   {
    "id": 9500028,
@@ -8247,7 +8338,8 @@
      "n": "Hilda Luwinski (Böttiger)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "joachim-luwinski-9500028"
   },
   {
    "id": 9500141,
@@ -8321,7 +8413,8 @@
      "n": "Manfred Joachim Luwinski",
      "ls": "1933 - 2012"
     }
-   ]
+   ],
+   "slug": "joachim-luwinski-9500141"
   },
   {
    "id": 9500069,
@@ -8367,7 +8460,8 @@
      "n": "Martha Klesse (Luwinski)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "johann-luwinski"
   },
   {
    "id": 9500049,
@@ -8549,7 +8643,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "joseph-luwinski"
   },
   {
    "id": 9500046,
@@ -8595,7 +8690,8 @@
      "n": "Lovise Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "juste-luwinski"
   },
   {
    "id": 9500050,
@@ -8655,7 +8751,8 @@
      "n": "Unknown Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "karoline-amalie-luwinski-machtig"
   },
   {
    "id": 9500040,
@@ -8699,7 +8796,8 @@
      "n": "Siegfried Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "kurt-luwinski"
   },
   {
    "id": 9500001,
@@ -8889,7 +8987,8 @@
      "now": "dress designer (1933); shop keeper (1948)",
      "source": "Johannesburg marriage register no. 858 of 1948, column 6: Shop Keeper. The 1933 emigration record gives dress designer. Both are true of one man."
     }
-   ]
+   ],
+   "slug": "kurt-israel-luwinski"
   },
   {
    "id": 9500038,
@@ -9093,7 +9192,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "leo-luwinski"
   },
   {
    "id": 9500080,
@@ -9139,7 +9239,8 @@
      "n": "Marjanna Leciejerska (Luwinski)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "ludwik-luwinski"
   },
   {
    "id": 9500003,
@@ -9161,16 +9262,15 @@
     {
      "id": 9500001,
      "rel": "His father",
-     "n": "Kurt Israel Luwinski",
-     "ls": "1912 - 1969"
+     "n": "Kurt Israel Luwinski"
     },
     {
      "id": 9500002,
      "rel": "His mother",
-     "n": "Ivone / Mota \"Yvonne\" Figueiredo (de Witt)",
-     "ls": "1924 - Deceased"
+     "n": "Ivone / Mota \"Yvonne\" Figueiredo (de Witt)"
     }
-   ]
+   ],
+   "slug": "lynn-derrick-luwinski"
   },
   {
    "id": 9500135,
@@ -9256,7 +9356,8 @@
      "n": "Joachim Luwinski",
      "ls": "1940 - 2006"
     }
-   ]
+   ],
+   "slug": "manfred-joachim-luwinski"
   },
   {
    "id": 9500061,
@@ -9446,7 +9547,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "marian-luwinski"
   },
   {
    "id": 9500089,
@@ -9492,7 +9594,8 @@
      "n": "Francisca Sabedzka (Luwinski)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "marianna-luwinski-9500089"
   },
   {
    "id": 9500097,
@@ -9538,7 +9641,8 @@
      "n": "Agnete Melkowa (Luwinski)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "marianna-luwinski-9500097"
   },
   {
    "id": 9500087,
@@ -9728,7 +9832,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "michael-luwinski"
   },
   {
    "id": 9500072,
@@ -9918,7 +10023,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "michaelis-luwinski"
   },
   {
    "id": 9500138,
@@ -9943,14 +10049,12 @@
     {
      "id": 9500135,
      "rel": "His father",
-     "n": "Manfred Joachim Luwinski",
-     "ls": "1933 - 2012"
+     "n": "Manfred Joachim Luwinski"
     },
     {
      "id": 9500136,
      "rel": "His mother",
-     "n": "Helga Erna Marquardt Wagner (Luwinski)",
-     "ls": "1934 - Deceased"
+     "n": "Helga Erna Marquardt Wagner (Luwinski)"
     },
     {
      "id": 9500137,
@@ -9958,7 +10062,8 @@
      "n": "Dagmar Luwinski",
      "ls": "Living"
     }
-   ]
+   ],
+   "slug": "ralf-luwinski"
   },
   {
    "id": 9500042,
@@ -10002,7 +10107,8 @@
      "n": "Kurt Luwinski",
      "ls": "Died: 1995"
     }
-   ]
+   ],
+   "slug": "siegfried-luwinski"
   },
   {
    "id": 9500083,
@@ -10048,7 +10154,8 @@
      "n": "Magdalena, Kuniewiczow (Luwinski)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "stanilaus-luwinski"
   },
   {
    "id": 9500093,
@@ -10240,7 +10347,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "thomam-luwinski"
   },
   {
    "id": 9500084,
@@ -10430,7 +10538,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "thomas-luwinski-9500084"
   },
   {
    "id": 9500100,
@@ -10476,7 +10585,8 @@
      "n": "Agathae Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "thomas-luwinski-9500100"
   },
   {
    "id": 9500035,
@@ -10491,6 +10601,7 @@
    "byq": null,
    "dyq": null,
    "kind": "index",
+   "placeholder": true,
    "facts": [
     {
      "t": "Death",
@@ -10520,7 +10631,8 @@
      "n": "Germany Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "unknown-placeholders-luwinski"
   },
   {
    "id": 9500060,
@@ -10572,7 +10684,8 @@
      "n": "Veronika Luwinski",
      "ls": "1882 - Deceased"
     }
-   ]
+   ],
+   "slug": "valentin-luwinski"
   },
   {
    "id": 9500077,
@@ -10618,7 +10731,8 @@
      "n": "Heva Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "valentinus-luwinski-9500077"
   },
   {
    "id": 9500086,
@@ -10672,7 +10786,8 @@
      "n": "Ludovica Blosekiewicz (Luwinski)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "valentinus-luwinski-9500086"
   },
   {
    "id": 9500092,
@@ -10718,7 +10833,8 @@
      "n": "Catharina Klich (Luwinski)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "vanda-maria-luwinski"
   },
   {
    "id": 9500059,
@@ -10770,7 +10886,8 @@
      "n": "Valentin Luwinski",
      "ls": "1874 - 1878"
     }
-   ]
+   ],
+   "slug": "veronika-luwinski"
   },
   {
    "id": 9500066,
@@ -10816,7 +10933,8 @@
      "n": "Anna Paturalska (Luwinski)",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "wanda-luwinski"
   },
   {
    "id": 9500078,
@@ -11006,7 +11124,8 @@
      "n": "Alfred Luwinski",
      "ls": "1917 - Deceased"
     }
-   ]
+   ],
+   "slug": "wladyslaw-luwinski"
   },
   {
    "id": 9500131,
@@ -11054,7 +11173,8 @@
      "n": "Gertrud Fuhl (Materna)",
      "ls": "1907 - Deceased"
     }
-   ]
+   ],
+   "slug": "ludwig-materna"
   },
   {
    "id": 9500096,
@@ -11100,7 +11220,8 @@
      "n": "Marianna Luwinski",
      "ls": "1843 - Deceased"
     }
-   ]
+   ],
+   "slug": "agnete-melkowa-luwinski"
   },
   {
    "id": 9500053,
@@ -11132,7 +11253,8 @@
      "n": "Julius Friedrich Mächtig",
      "ls": "1812 - Deceased"
     }
-   ]
+   ],
+   "slug": "andreas-machtig"
   },
   {
    "id": 9500052,
@@ -11186,7 +11308,8 @@
      "n": "Andreas Mächtig",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "julius-friedrich-machtig"
   },
   {
    "id": 9500157,
@@ -11252,7 +11375,8 @@
      "n": "Maria Elizabeth van Straaten (Oelofse)",
      "ls": "1876 - 1942"
     }
-   ]
+   ],
+   "slug": "delina-johanna-oelofse-de-witt"
   },
   {
    "id": 9500162,
@@ -11322,7 +11446,8 @@
      "n": "Delina Johanna Oelofse (De Witt)",
      "ls": "1899 - Deceased"
     }
-   ]
+   ],
+   "slug": "nicolaas-jacobus-oelofse"
   },
   {
    "id": 9500065,
@@ -11368,7 +11493,8 @@
      "n": "Wanda Luwinski",
      "ls": "1891 - Deceased"
     }
-   ]
+   ],
+   "slug": "anna-paturalska-luwinski"
   },
   {
    "id": 9500015,
@@ -11416,7 +11542,8 @@
      "n": "Kurt Israel Luwinski",
      "ls": "1912 - 1969"
     }
-   ]
+   ],
+   "slug": "pauline-rappoport-miller-luwinski"
   },
   {
    "id": 9500125,
@@ -11532,7 +11659,8 @@
      "n": "Josef Zelenka",
      "ls": "1907 - 1969"
     }
-   ]
+   ],
+   "slug": "theresia-anna-richter-zelenka"
   },
   {
    "id": 9500088,
@@ -11578,7 +11706,8 @@
      "n": "Marianna Luwinski",
      "ls": "1836 - Deceased"
     }
-   ]
+   ],
+   "slug": "francisca-sabedzka-luwinski"
   },
   {
    "id": 9500010,
@@ -11676,7 +11805,7 @@
      "id": 9500155,
      "rel": "His ex-wife",
      "n": "Rose Eva Bernhardt",
-     "ls": "Living"
+     "ls": "Born: 1924"
     }
    ],
    "corrections": [
@@ -11688,7 +11817,8 @@
      "now": "8 November 1991",
      "source": "Johannesburg Chevrah Kadisha burial register: died 08.11.1991, buried 10.11.1991, Westpark block U grave 2469."
     }
-   ]
+   ],
+   "slug": "morris-isaac-salkow"
   },
   {
    "id": 9500143,
@@ -11703,6 +11833,7 @@
    "byq": null,
    "dyq": null,
    "kind": "index",
+   "placeholder": true,
    "facts": [
     {
      "t": "Marriage to:",
@@ -11728,7 +11859,8 @@
      "n": "Joachim Luwinski",
      "ls": "1940 - 2006"
     }
-   ]
+   ],
+   "slug": "unknown-scherka-luwinski"
   },
   {
    "id": 9500024,
@@ -11792,7 +11924,8 @@
      "n": "Oskar Leibholz",
      "ls": "1887 - 1944"
     }
-   ]
+   ],
+   "slug": "friederike-schmul-leibholz"
   },
   {
    "id": 9500140,
@@ -11836,7 +11969,8 @@
      "n": "Joachim Luwinski",
      "ls": "1940 - 2006"
     }
-   ]
+   ],
+   "slug": "martha-schuenke-luwinski"
   },
   {
    "id": 9500106,
@@ -11920,7 +12054,8 @@
      "n": "Klara Fuhl",
      "ls": "1913 - 1932"
     }
-   ]
+   ],
+   "slug": "martha-schulz-fuhl"
   },
   {
    "id": 9500166,
@@ -11935,6 +12070,7 @@
    "byq": null,
    "dyq": null,
    "kind": "index",
+   "placeholder": true,
    "facts": [
     {
      "t": "Marriage to:",
@@ -11960,7 +12096,8 @@
      "n": "Frances Hostowsky (Sefton)",
      "ls": "1915 - Deceased"
     }
-   ]
+   ],
+   "slug": "unknown-sefton"
   },
   {
    "id": 9500144,
@@ -11968,19 +12105,23 @@
    "first": "Frieda",
    "last": "Spree",
    "sex": "F",
-   "kind": "index",
-   "living": true,
    "born": "",
    "died": "",
    "by": null,
    "dy": null,
    "byq": null,
    "dyq": null,
-   "facts": [],
-   "town": "",
-   "country": "",
-   "place": "",
-   "note": "Living. Named with relationship, town and country; nothing more, per the archive's standard.",
+   "kind": "index",
+   "facts": [
+    {
+     "t": "Marriage to:",
+     "ty": "MARR",
+     "date": "",
+     "place": "",
+     "c": "",
+     "ac": ""
+    }
+   ],
    "rel": [
     {
      "id": 9500025,
@@ -11988,7 +12129,9 @@
      "n": "Samuel Israel Leibholz",
      "ls": "1877 - 1943"
     }
-   ]
+   ],
+   "no_death_recorded": true,
+   "slug": "frieda-spree-leibholz"
   },
   {
    "id": 9500033,
@@ -12034,7 +12177,8 @@
      "n": "Johanna Thimm (Luwinski)",
      "ls": "1871 - 1955"
     }
-   ]
+   ],
+   "slug": "anton-thimm"
   },
   {
    "id": 9500029,
@@ -12138,7 +12282,8 @@
      "n": "Elisabeth Thimm",
      "ls": "1845 - Deceased"
     }
-   ]
+   ],
+   "slug": "johanna-thimm-luwinski"
   },
   {
    "id": 9500048,
@@ -12178,7 +12323,8 @@
      "n": "Antonius Luwinski",
      "ls": "Deceased"
     }
-   ]
+   ],
+   "slug": "susanna-treptau-luwinski"
   },
   {
    "id": 9500123,
@@ -12240,7 +12386,8 @@
      "n": "Erwin Turowski",
      "ls": "Died: 1946"
     }
-   ]
+   ],
+   "slug": "elisabeth-turowski"
   },
   {
    "id": 9500122,
@@ -12302,7 +12449,8 @@
      "n": "Elisabeth Turowski",
      "ls": "Died: 1937"
     }
-   ]
+   ],
+   "slug": "erwin-turowski"
   },
   {
    "id": 9500120,
@@ -12372,7 +12520,8 @@
      "n": "Elisabeth Turowski",
      "ls": "Died: 1937"
     }
-   ]
+   ],
+   "slug": "heinrich-turowski"
   },
   {
    "id": 9500121,
@@ -12450,7 +12599,8 @@
      "n": "Elisabeth Turowski",
      "ls": "Died: 1937"
     }
-   ]
+   ],
+   "slug": "helene-maria-turowski-frubrich"
   },
   {
    "id": 9500118,
@@ -12536,7 +12686,8 @@
      "n": "Elisabeth Turowski",
      "ls": "Died: 1937"
     }
-   ]
+   ],
+   "slug": "josef-turowski"
   },
   {
    "id": 9500119,
@@ -12598,7 +12749,8 @@
      "n": "Elisabeth Turowski",
      "ls": "Died: 1937"
     }
-   ]
+   ],
+   "slug": "renate-turowski-thomas"
   },
   {
    "id": 9500136,
@@ -12666,7 +12818,8 @@
      "n": "Ralf Luwinski",
      "ls": "Living"
     }
-   ]
+   ],
+   "slug": "helga-erna-marquardt-wagner-luwinski"
   },
   {
    "id": 9500102,
@@ -12778,7 +12931,8 @@
      "n": "Josef Zelenka",
      "ls": "1907 - 1969"
     }
-   ]
+   ],
+   "slug": "anna-antonia-zelenka-kosename-anny"
   },
   {
    "id": 9500124,
@@ -12886,7 +13040,8 @@
      "n": "Josef Zelenka",
      "ls": "1907 - 1969"
     }
-   ]
+   ],
+   "slug": "anton-zelenka"
   },
   {
    "id": 9500021,
@@ -13008,7 +13163,8 @@
      "n": "Anna, Antonia Zelenka, Kosename: Anny",
      "ls": "1909 - 1970"
     }
-   ]
+   ],
+   "slug": "edith-charlotte-zelenka-leibholz"
   },
   {
    "id": 9500126,
@@ -13092,7 +13248,8 @@
      "n": "Josef Zelenka",
      "ls": "1907 - 1969"
     }
-   ]
+   ],
+   "slug": "ernestine-zelenka"
   },
   {
    "id": 9500128,
@@ -13168,7 +13325,8 @@
      "n": "Josef Zelenka",
      "ls": "1907 - 1969"
     }
-   ]
+   ],
+   "slug": "franz-anton-zelenka"
   },
   {
    "id": 9500130,
@@ -13252,7 +13410,8 @@
      "n": "Maria, Anna Zelenka, Kosename: Mizzi",
      "ls": "1901 - 1975"
     }
-   ]
+   ],
+   "slug": "josef-zelenka"
   },
   {
    "id": 9500129,
@@ -13328,7 +13487,8 @@
      "n": "Josef Zelenka",
      "ls": "1907 - 1969"
     }
-   ]
+   ],
+   "slug": "maria-anna-zelenka-kosename-mizzi"
   },
   {
    "id": 9500127,
@@ -13420,7 +13580,8 @@
      "n": "Josef Zelenka",
      "ls": "1907 - 1969"
     }
-   ]
+   ],
+   "slug": "wilhelm-august-zelenka"
   },
   {
    "id": 9500159,
@@ -13464,7 +13625,8 @@
      "n": "Johannes Antonie Oelofse De Witt",
      "ls": "1923 - 1963"
     }
-   ]
+   ],
+   "slug": "delina-de-witt"
   },
   {
    "id": 9500156,
@@ -13518,7 +13680,8 @@
      "n": "Johannes Antonie Oelofse de Witt",
      "ls": "1923 - Deceased"
     }
-   ]
+   ],
+   "slug": "frederik-petrus-johannes-de-witt"
   },
   {
    "id": 9500005,
@@ -13584,7 +13747,7 @@
      "id": 9500161,
      "rel": "His wife",
      "n": "Unknown de Witt",
-     "ls": "Living"
+     "ls": ""
     },
     {
      "id": 9500159,
@@ -13620,7 +13783,8 @@
      "now": "2 April 1963, Sasolburg",
      "source": "THE TREE'S OWN DUPLICATE, not an outside record. The harvest holds this man twice: 9500005, born December 1923 at Johannesburg, with a death place and no date; and 9500160, listed as HIS SON, of exactly the same name, born circa 1923 at Pretoria, died 2 April 1963 at Sasolburg. A father cannot be born in the same year as his son, and the two die in the same small Free State town. They are one man, and the date of death is on the duplicate. *** INDEPENDENT CONFIRMATION OBTAINED, 20 SEPTEMBER 2026, AND IT DID NOT NEED THE ESTATE FILES. *** \"South Africa, Civil Death Registration, 1953-1967\" — Entry for JOHANNES ANTONIE OELOFSE DE WITT, 2 APRIL 1963, SASOLBURG, ORANGE FREE STATE, aged 40, born 1923 at PRETORIA (FamilySearch ark:/61903/1:1:DD9Y-PLT2). A national death register says what the tree's uncited duplicate said. IT ALSO SETTLES WHICH HALF OF THE DUPLICATE WAS RIGHT ABOUT THE BIRTHPLACE — Pretoria, not Johannesburg. AND IT RAISES A DOUBT ABOUT THE BIRTH DATE: the death register makes him 40 on 2 April 1963, and a second marriage found the same day — to ELSIE MARIE GEYER on 25 FEBRUARY 1950 (ark 1:1:6ZHR-NVYN) — makes him 27 then. The two ranges overlap at April 1922 to February 1923, and the tree's \"December 1923\" falls outside both. Declared ages are not proof; two of them thirteen years apart, agreeing against the same date, are worth recording. See data/dewitt-confirmed.tsv."
     }
-   ]
+   ],
+   "slug": "johannes-antonie-oelofse-de-witt-9500005"
   },
   {
    "id": 9500163,
@@ -13666,7 +13830,8 @@
      "n": "Delina Johanna Oelofse (De Witt)",
      "ls": "1899 - Deceased"
     }
-   ]
+   ],
+   "slug": "maria-elizabeth-van-straaten-oelofse"
   }
  ],
  "duplicates": [
@@ -13885,14 +14050,14 @@
   }
  ],
  "counts": {
-  "total": 164,
-  "published": 167,
-  "living_named": 10,
-  "living_with_town": 1,
+  "total": 163,
+  "published": 166,
+  "living_named": 4,
+  "living_with_town": 0,
   "living_country_only": 1,
-  "living_no_place": 8,
+  "living_no_place": 3,
   "duplicates_collapsed": 5,
-  "family": 54,
+  "family": 53,
   "index": 105,
   "document": 8
  }

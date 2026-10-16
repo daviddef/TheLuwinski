@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # The default is still dist, which CI uploads.
 DIST = ROOT / "site" / (os.environ.get("ARCHIVE_OUT") or "dist")
 SRC  = ROOT / "site" / "src" / "pages"
+NOINDEX = re.compile(r'<meta[^>]*name=["\']robots["\'][^>]*noindex|<meta[^>]*noindex[^>]*name=["\']robots["\']', re.I)
 
 def main():
     if not DIST.exists():
@@ -83,21 +84,31 @@ def main():
             urls = {e.get("h") or e.get("url", "") for e in _r}
         except Exception:
             urls = set()
-        built, absent = 0, []
+        built, absent, noindexed = 0, [], []
         for page in sorted(DIST.rglob("index.html")):
             slug = "/" + str(page.parent.relative_to(DIST)).replace("\\", "/").strip(".")
             slug = "/" if slug in ("/.", "/") else slug.rstrip("/") + "/"
+            # A page that noindexes itself (a living person's) is deliberately NOT in the index, and
+            # being in it is the fault: the index is a public file and the page asked to be left out.
+            is_noindex = bool(NOINDEX.search(page.read_text(encoding="utf-8", errors="ignore")))
+            in_index = any(u.rstrip("/") + "/" == slug for u in urls)
+            if is_noindex:
+                if in_index:
+                    noindexed.append(slug)
+                continue
             built += 1
             if not any(u.rstrip("/") + "/" == slug or u.rstrip("/").endswith(slug.rstrip("/")) for u in urls):
                 absent.append(slug)
         skip = {"/search/", "/404/"}
         absent = [a for a in absent if a not in skip]
+        if noindexed:
+            bad.append(f"{rel} — {len(noindexed)} page(s) that carry noindex are IN the index, first few {noindexed[:5]}")
         if absent:
             bad.append(f"{rel} — STALE: {len(absent)} of {built} built page(s) absent from the index, "
                        f"first few {absent[:5]} — the index describes a site that is no longer there")
         else:
             print(f"  ok    check-search — {rel} published, {n} entries, "
-                  f"all {built} built page(s) represented")
+                  f"all {built} indexable page(s) represented, no noindex page in it")
     if bad:
         for b in bad:
             print(f"  FAIL  check-search — {b}")

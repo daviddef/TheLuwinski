@@ -1,9 +1,13 @@
 ---
-/* The index to the English line's person pages. See [slug].astro for why both routes use kit
-   components and why nobody here needs a living-person rule. 13 October 2026. */
+/* The index to every person page in this archive: the twenty of the English line, hand-written, and
+   everybody in the register (the family, the people found in a register, the surname index). See
+   [slug].astro for what a page may say. A living person is listed by name with the word Living and
+   nothing else; the year column is for people who are not living. 13 October 2026; widened to the whole
+   register 16 October 2026, when every person the archive names was given a page. */
 import Base from '../../layouts/Base.astro';
 import Evidence from '@daviddef/archive-kit/components/Evidence.astro';
 import data from '../../data/english-people.json';
+import register from '../../data/register.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const GEN = {
   2: 'Grandparents',
@@ -13,28 +17,44 @@ const GEN = {
 };
 const groups = [2, 3, 4, 5].map((g) => [g, data.people.filter((p) => p.gen === g)]);
 const documented = data.people.filter((p) => p.grade === 'documented').length;
+
+const qy = (y, q) => (y ? (q ? `${q} ${y}` : String(y)) : '');
+const years = (p) => (p.living || p.bare) ? '' : [qy(p.by, p.byq), qy(p.dy, p.dyq)].filter(Boolean).join(' – ');
+const sets = [
+  ['The family', 'family', 'The people of the family tree this archive was built from.'],
+  ['Found in a register, in nobody’s tree', 'document', 'Read here in Berlin registers. None is proved kin.'],
+  ['The surname index', 'index', 'The people the source tree hangs from its surname index, listed in the register under that heading. The register says what that grouping does and does not claim.'],
+].map(([title, kind, note]) => [title, note, register.people.filter((p) => p.kind === kind)]);
+const nLiving = register.people.filter((p) => p.living).length;
 ---
-<Base title={data.title} subtitle={data.dek} lede={data.note}>
+<Base title="The people"
+  subtitle={`Every person this archive names has a page: ${data.people.length} on the English line and ${register.people.length} in the register.`}
+  lede="One page for each person the archive names, the living included. A living person's page says their name, their relationships and their town and country, and nothing more.">
 
   <div class="panel">
     <h3>How to read these pages</h3>
     <p class="small">
+      The <strong>English line</strong> below is hand-written: twenty ancestors, each graded on the
+      same five-word ladder as the <a href={base + '/tree/'}>tree</a>, each with what is not known.
       <strong>{documented} of the {data.people.length} are graded documented and the rest probable.</strong>
-      The grade is the same five-word ladder the <a href={base + '/tree/'}>tree</a> uses. A person can be
-      <em>documented</em> and still have a parent who is only a <em>best candidate</em>: the page names
-      which, and the link to that parent is drawn differently from the links that rest on a record.
+      The <strong>register</strong> pages are drawn from <a href={base + '/register/'}>the register</a> and from
+      nothing else: what the source tree says, what has been read about the person here, and who they
+      are said to be related to.
     </p>
     <p class="small muted">
-      Derrick&rsquo;s father, Leonard, has <a href={base + '/leonard/'}>a page of his own</a>, and so do the
-      people on the Luwinski side. The line from Leonard to Derrick rests on DNA and inference rather than
+      <strong>A living person (80 or younger, with no death recorded) is named with their relationships
+      and their town and country, and nothing more.</strong> {nLiving} such people have a page; it is
+      not indexed by search engines and not in this site&rsquo;s search. Derrick&rsquo;s father, Leonard, has
+      <a href={base + '/leonard/'}>a page of his own</a>, and so do the people on the Luwinski side. The line from Leonard to Derrick rests on DNA and inference rather than
       on a document; <a href={base + '/dna/'}>the DNA page</a> says how.
-      <strong>No living person has a page here.</strong>
     </p>
   </div>
 
+  <h2 id="english-line">{data.title}</h2>
+  <p class="small muted">{data.note}</p>
   {groups.map(([g, list]) => (
     <section>
-      <h2>{GEN[g]}</h2>
+      <h3>{GEN[g]}</h3>
       <div class="scroll"><table>
         <thead><tr><th>Person</th><th>Dates</th><th>Line</th><th>Grade</th><th></th></tr></thead>
         <tbody>
@@ -45,6 +65,25 @@ const documented = data.people.filter((p) => p.grade === 'documented').length;
               <td>{p.line}</td>
               <td><Evidence level={p.grade} /></td>
               <td class="small muted">{p.dek}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+    </section>
+  ))}
+
+  <h2 id="register">Everyone in the register</h2>
+  {sets.map(([title, note, list]) => (
+    <section>
+      <h3>{title} <span class="small muted">&mdash; {list.length}</span></h3>
+      <p class="small muted">{note}</p>
+      <div class="scroll"><table>
+        <thead><tr><th>Person</th><th>Years</th></tr></thead>
+        <tbody>
+          {list.map((p) => (
+            <tr>
+              <td><a href={`${base}/people/${p.slug}/`}>{p.name}</a>{p.living && <> <span class="tag inf">Living</span></>}{p.bare && <> <span class="tag inf">Living &mdash; named only</span></>}</td>
+              <td>{years(p)}</td>
             </tr>
           ))}
         </tbody>

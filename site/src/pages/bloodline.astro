@@ -23,6 +23,7 @@ import Bloodline from '@daviddef/archive-kit/components/Bloodline.astro';
 import { graph, components } from '@daviddef/archive-kit/lib/bloodline.js';
 import '@daviddef/archive-kit/styles/bloodline.css';
 import register from '../data/register.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const PARENT = new Set(['His mother', 'His father', 'Her mother', 'Her father', 'Her parent']);
 const CHILD  = new Set(['Her son', 'His son', 'Her daughter', 'His daughter', 'Daughter', 'Son']);
@@ -77,6 +78,10 @@ const strays = [...unknown.entries()].sort((a, b) => b[1] - a[1]);
   subtitle={`${linked.length} people joined by what this archive has read`}
   lede="Choose a person and they go to the middle of the chart: parents above, brothers and sisters beside them, children below — and through them the aunts, uncles and cousins. Every line is drawn in the colour of the record that made it.">
   <Bloodline people={people} start={start} total={rows.length} />
+
+  <p class="small muted">Every person drawn on this chart has a page of their own: find them in
+    <a href={base + '/register/'}>the register</a> or <a href={base + '/people/'}>the list of all the people</a>.
+    A living person&rsquo;s page says their name, their relationships and their town and country, and nothing more.</p>
 
   {strays.length > 0 && (
     <div class="note" style="margin-top:20px">

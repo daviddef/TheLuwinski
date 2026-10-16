@@ -3,17 +3,18 @@ import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
 import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
 import JsonLd from "@daviddef/archive-kit/components/JsonLd.astro";
 /* `noindex` is the page-level switch for a page ABOUT a living person: the kit's sitemap tool and this
-   archive's search index both leave out a page that noindexes itself. No page uses it yet, because this
-   archive has no page for anyone in the register; it exists so that the first one is noindex by
-   construction rather than by someone remembering (tools/check-living.py fails a living person's
-   page that lacks it). */
-const { title, subtitle, lede, hero, structured = true, noindex = false } = Astro.props;
+   archive's search index (tools/build-search.py) both leave out a page that noindexes itself. Every
+   person in the register has a page since 16 October 2026 and a LIVING person's passes noindex and
+   structured={false} (tools/check-living.py fails a living person's page that lacks the one or carries
+   the other). `about` is { name, birthDate, deathDate } for a page about a person who is NOT living;
+   it reaches the kit's JsonLd as a Person and is never passed for the living. */
+const { title, subtitle, lede, hero, structured = true, noindex = false, about = undefined } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const nav = [
   ["Start", [["", "The archive"], ["/tree", "The tree"], ["/timeline", "The Timeline"], ["/dna", "The DNA"], ["/1948", "Nineteen forty-eight"]]],
   ["Our line", [["/derrick", "Derrick"], ["/leonard", "Leonard Wear"], ["/wear-line", "Where the Wear line stands"], ["/kurt", "Kurt"], ["/ivone", "Ivone"], ["/leibholz", "The Leibholz brothers"]]],
   ["Places", [["/east-prussia", "East Prussia"], ["/mozambique", "Mozambique"], ["/australia", "Australia"], ["/atlas", "Atlas"]]],
-  ["People & names", [["/register", "The register"], ["/bloodline", "Blood relatives"], ["/people", "The English line"], ["/lines", "The lines of the name"], ["/names", "Her names"]]],
+  ["People & names", [["/register", "The register"], ["/bloodline", "Blood relatives"], ["/people", "All the people"], ["/lines", "The lines of the name"], ["/names", "Her names"]]],
   ["Evidence", [["/method", "Method"], ["/sources", "Sources"], ["/searched", "What Has Been Read"], ["/open-questions", "Open Questions"], ["/errands", "Errands"], ["/worklist", "The work list"], ["/corrections", "Corrections"], ["/changes", "What changed"]]],
   ["Investigations", [["/status", "Status"]]],
 ];
@@ -71,12 +72,13 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
   <meta name="twitter:description" content={subtitle || LINE} />
   {/* Structured data from the kit's JsonLd, as the sibling archives emit it. Every field is one the
       head and the page already show: the title, the description, the address, the site. Nothing is
-      passed as `about`, so no page here emits a Person (a living person is named, with relationship,
-      town and country, and has no structured data; the twenty ancestors' pages are left to the prose
+      passed as `about` except on the page of a person who is not living, where it is the name and
+      the dates the page itself prints (a living person is named, with relationship, town and
+      country, and has no structured data; the twenty ancestors' pages are left to the prose
       until their dates are ISO). A page that is ABOUT a living person passes structured={false} and
       emits nothing: the standard is no structured data for the living, so /derrick/ carries none. */}
   {structured && <JsonLd type={isHome ? "WebSite" : "Article"} name={title} description={subtitle || LINE}
-          url={canonical} site={SITE} />}  <link rel="preconnect" href="https://fonts.googleapis.com" />
+          url={canonical} site={SITE} about={structured ? about : undefined} />}  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
   <link rel="stylesheet" href={base + '/styles.css'} />
@@ -381,7 +383,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     <slot />
   </div></main>
   <footer><div class="wrap">
-    <p><strong>A living person is named, with their relationship and their town and country, and nothing more.</strong>
+    <p><strong>A living person (80 or younger, with no death recorded) is named with their relationships and their town and country, and nothing more.</strong>
     No dates, no records, no photograph. Lynn Derrick Luwinski is named with his parents only. A removal
     request is honoured within days, without argument and without requiring a reason.</p>
     <p>Every claim carries a confidence and a source. Corrections are the most valuable thing you can send.</p>

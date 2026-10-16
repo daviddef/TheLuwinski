@@ -22,7 +22,16 @@ THREE THINGS ARE CHECKED.
   3. NO DOCUMENTED PERSON IS PUBLISHED AS UNDOCUMENTED. For every person named
      in an evidence file, the rendered site must carry EITHER a record for them
      OR a correction. If a documented person reaches dist/ with neither, the
-     build stops and the person is named.
+     build stops and the person is named. (Since 16 October 2026 the pages of the
+     register people are left out of the text this reads, because every register
+     person now has a page that carries their own name: a name found there proves
+     nothing about the evidence.)
+
+  4. A PERSON'S OWN PAGE SAYS WHAT HAS BEEN READ ABOUT THEM. Every person page
+     exists since 16 October 2026, and a page that says «no record has been read»
+     about someone with a record in an evidence file is the Mazza fault exactly.
+     For every evidence person matched to a register entry, the built page of
+     that entry must carry the title of every record about them.
 
     python3 tools/check-evidence.py
 """
@@ -89,8 +98,13 @@ def main():
         print("  check-evidence: site/dist holds NO HTML AT ALL — that is not a finished "
               "build. Not judging the evidence.")
         return 1
+    reg_slugs = set()
+    if REG.exists():
+        reg_slugs = {p.get("slug") for p in json.load(open(REG))["people"] if p.get("slug")}
     pages = {}
     for q in map(pathlib.Path, before_pages):
+        if q.parent.parent.name == "people" and q.parent.name in reg_slugs:
+            continue            # a register person's own page: see (3) above
         try:
             pages[q] = html.unescape(re.sub(r"<[^>]+>", " ", q.read_text(encoding="utf-8", errors="ignore")))
         except FileNotFoundError:
@@ -140,6 +154,28 @@ def main():
         if len(silent) > 25:
             problems.append(f"    ... and {len(silent) - 25} more, not listed")
 
+    # (4) a person's own page carries every record read about them.
+    unread = []
+    if REG.exists():
+        slug_of = {p["id"]: p.get("slug") for p in json.load(open(REG))["people"]}
+        for person in ev["people"]:
+            rid = person.get("register_id")
+            if not rid:
+                continue
+            slug = slug_of.get(rid)
+            f = DIST / "people" / str(slug) / "index.html" if slug else None
+            if not f or not f.exists():
+                unread.append(f"{person['name']}: matched to register entry {rid}, whose page was not built")
+                continue
+            text = html.unescape(re.sub(r"<[^>]+>", " ", f.read_text(encoding="utf-8", errors="ignore")))
+            text = re.sub(r"\s+", " ", text)
+            for rec in person["records"]:
+                if re.sub(r"\s+", " ", rec["title"]) not in text:
+                    unread.append(f"{person['name']}: the page does not say that «{rec['title'][:60]}» was read")
+        if unread:
+            problems.append(f"{len(unread)} record(s) about a person with a page of their own do not reach that page:")
+            problems.extend("    " + u for u in unread[:25])
+
     if problems:
         print("")
         for p in problems: fail(p)
@@ -155,7 +191,7 @@ def main():
               f"entry and are deliberately NOT linked: {', '.join(ev['ambiguous'])}")
     print(f"  ok    check-evidence — {c['records']} records about {c['people']} people from "
           f"{c['files']} files, all declared, all reaching the page "
-          f"({c['linked_to_register']} matched to a register entry)")
+          f"({c['linked_to_register']} matched to a register entry, each of whose own page carries its records)")
     return 0
 
 if __name__ == "__main__":

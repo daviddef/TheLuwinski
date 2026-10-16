@@ -4,6 +4,9 @@ import { md } from '@daviddef/archive-kit/lib/md.js';
 import register from '../data/register.json';
 import evidence from '../data/evidence.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+/* EVERY ROW LINKS TO THE PERSON'S OWN PAGE (/people/<slug>/), the living included: since 16 October 2026
+   nobody in this register is a name without a page. */
+const page = (p) => `${base}/people/${p.slug}/`;
 // Records read about a person, attached by build-evidence.py. The register still
 // draws the export as given; this only says whether anything has been READ.
 const readFor = new Map(evidence.people.filter(p => p.register_id).map(p => [p.register_id, p.records]));
@@ -23,7 +26,7 @@ const livingNote = (p) => [
 ].filter(Boolean).join(' · ');
 ---
 <Base title="The register"
-  subtitle={(c.family + c.index) + ' of ' + c.total + ' people in the source, published (' + c.duplicates_collapsed + ' collapsed as duplicates), and ' + c.document + ' found in registers'}
+  subtitle={(c.family + c.index) + ' people from the source tree (' + c.duplicates_collapsed + ' records it holds twice are collapsed), and ' + c.document + ' found in registers, each with a page of their own'}
   lede="Everyone the source records and everyone this archive has since established from a document, with the three kinds of entry kept firmly apart: the family proper, a hundred-odd people who share the surname and have not been shown to share anything else, and seven found in Berlin registers who are in nobody’s tree at all.">
 
   <div class="panel">
@@ -46,7 +49,7 @@ const livingNote = (p) => [
     <div class="card stat"><b>{c.index}</b><span>Surname index</span></div>
     <div class="card stat"><b>{c.document}</b><span>From a record</span></div>
     <div class="card stat"><b>{c.living_named}</b><span>Living, named</span></div>
-    <div class="card stat"><b>{c.total}</b><span>In the source</span></div>
+    <div class="card stat"><b>{c.published}</b><span>Pages</span></div>
   </div>
 
   <h2>The family</h2>
@@ -55,7 +58,7 @@ const livingNote = (p) => [
     <tbody>
       {fam.map(p => (
         <tr>
-          <td><strong>{p.name}</strong>{p.bare && <> <span class="tag inf">Living — named only</span></>}{p.living && <> <span class="tag inf">Living</span></>}</td>
+          <td><a href={page(p)}><strong>{p.name}</strong></a>{p.bare && <> <span class="tag inf">Living — named only</span></>}{p.living && <> <span class="tag inf">Living</span></>}</td>
           <td>{p.living ? '' : (p.born || (p.by ? String(p.by) : ''))}</td>
           <td>{p.no_death_recorded ? <span class="muted small">no death recorded</span> : p.died}</td>
           <td class="small">{p.living ? <span class="muted">&mdash;</span> : readFor.has(p.id)
@@ -90,7 +93,7 @@ const livingNote = (p) => [
     <tbody>
       {doc.map(p => (
         <tr>
-          <td><strong>{p.name}</strong></td>
+          <td><a href={page(p)}><strong>{p.name}</strong></a></td>
           <td>{p.born || <span class="muted">&mdash;</span>}</td>
           <td>{p.no_death_recorded ? <span class="muted small">not established</span> : p.died}</td>
           <td class="small muted" set:html={md(p.basis)}></td>
@@ -143,7 +146,7 @@ const livingNote = (p) => [
   <div class="scroll"><table>
     <thead><tr><th>Name</th><th>Born</th><th>Died</th><th>Record read</th></tr></thead>
     <tbody>
-      {idx.map(p => (<tr><td>{p.name}{p.living && <> <span class="tag inf">Living</span><br /><span class="small muted">{livingNote(p)}</span></>}</td><td>{p.born}</td><td>{p.died}</td>
+      {idx.map(p => (<tr><td><a href={page(p)}>{p.name}</a>{p.living && <> <span class="tag inf">Living</span><br /><span class="small muted">{livingNote(p)}</span></>}</td><td>{p.born}</td><td>{p.died}</td>
         <td class="small">{p.living ? <span class="muted">&mdash;</span> : readFor.has(p.id)
           ? <><span class="tag doc">Read</span> {readFor.get(p.id).map(r => r.title).join(' · ')}</>
           : (p.corrections ? <span class="tag inf">Corrected</span> : <span class="muted">&mdash;</span>)}</td></tr>))}
