@@ -59,8 +59,8 @@ jobs:
         working-directory: site
       # The archive's standard for living people (version 2, 16 October 2026): a living person
       # (80 or younger, with no death recorded) is named with their relationships and their town
-      # and country, and nothing more, on a page that is noindex; a possible minor is published
-      # nowhere; every person the archive names has a page of their own. This checks the RENDERED
+      # and country, and nothing more, on a page that is noindex; an undated person with a
+      # living parent is published nowhere; every person the archive names has a page of their own. This checks the RENDERED
       # pages, the served JSON, the sitemap, the search index and the generated register rather
       # than trusting the generator, and the deploy is gated on it. It refuses to pass if it can
       # recognise no living person or finds no person page.

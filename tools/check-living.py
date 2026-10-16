@@ -10,8 +10,9 @@ THE RULE (David Defranceski; the estate's standard, kit/tools/living_rule.py).
            search index.
   PAGES    every person in the register has a page of their own, /people/<slug>/. No name stands
            without one: not in a register row, a chart node, or a relative's family.
-  HELD OUT a possible minor (not recorded dead, no public source, under 18 by year, or no birth year and
-           a living parent) is published nowhere: no record, no page, not even as someone's relative.
+  HELD OUT a possible minor (not recorded dead, no public source, NO birth year, and a living parent) is
+           published nowhere: no record, no page, not even as someone's relative. A child with a KNOWN
+           birth year is not held out (David, 16 October 2026): they follow the standard and are living.
   EXCEPTION Derrick, the subject of the archive, is named with his parents and nothing else, not even a
            town. His page is built to the same bounds and is also `noindex`.
 

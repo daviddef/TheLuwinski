@@ -1,7 +1,7 @@
 {
  "salt": "15ab284db37b9d1da579c3b21b9a810b",
  "algorithm": "sha256(salt|<first token> <last token>), particles dropped, first 32 hex",
- "rule": "kit living_rule: living = 80 or younger by year with no death or burial recorded and no public source; held out = possible minor (not recorded dead, no public source, under 18 by year, or no birth year and a living parent)",
+ "rule": "kit living_rule: living = 80 or younger by year with no death or burial recorded and no public source; held out = possible minor (not recorded dead, no public source, no birth year and a living parent); a child with a known birth year is living, not held out",
  "count": 5,
  "digests": [
   "5ee5da9936e223e84a90951f3d85baa0",

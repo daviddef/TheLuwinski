@@ -58,7 +58,7 @@ def main():
             held_out += digests_for(salt, p)
     json.dump({"salt": salt, "algorithm": "sha256(salt|<first token> <last token>), particles dropped, first 32 hex",
                "rule": "kit living_rule: living = 80 or younger by year with no death or burial recorded and no public source; "
-                       "held out = possible minor (not recorded dead, no public source, under 18 by year, or no birth year and a living parent)",
+                       "held out = possible minor (not recorded dead, no public source, no birth year and a living parent); a child with a known birth year is living, not held out",
                "count": len(out), "digests": sorted(set(out)),
                "living_ids": sorted(ids),
                "held_out_ids": sorted(held_ids), "held_out_digests": sorted(set(held_out))},

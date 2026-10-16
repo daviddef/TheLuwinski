@@ -301,13 +301,15 @@ def main():
              reg_edit(lambda r, data: r["rel"].append({"id": HID, "n": "x", "rel": "His son"}), D["id"]), "held-out")
 
         def minor(b, d):
+            # an UNDATED person with a living parent: still held out, so still caught if published
             p = b / "site" / "src" / "data" / "register.json"
             data = json.load(open(p))
             for r in data["people"]:
                 if r["id"] == D["id"]:
-                    r.update(by=year_now - 10, dy=None, died="", facts=[], no_death_recorded=None)
+                    r.update(by=None, dy=None, died="", born="", facts=[], no_death_recorded=None)
+                    r["rel"] = [{"id": L["id"], "n": L["name"], "rel": "His mother", "ls": "Living"}]
             json.dump(data, open(p, "w"))
-        case("a possible minor published (a child, no death recorded)", mode, True, minor, "possible minor")
+        case("a possible minor published (undated, a living parent, no death recorded)", mode, True, minor, "possible minor")
 
         def young(b, d):
             p = b / "site" / "src" / "data" / "register.json"
@@ -326,6 +328,24 @@ def main():
                     r.update(by=year_now - 95, dy=None, died="", facts=[])
             json.dump(data, open(p, "w"))
         case("CONTROL: a person over eighty with no death recorded is NOT living and passes", mode, False, old_alive)
+
+    # --- a child with a KNOWN birth year is not held out (David, 16 October 2026)
+    sys.path.insert(0, str(ROOT / "site" / "node_modules" / "@daviddef" / "archive-kit" / "kit" / "tools"))
+    import living_rule as _lr
+    ok_rule = (not _lr.is_held_out(1, year_now - 10, False, (), True, ()) and _lr.is_living(year_now - 10, False, ())
+               and _lr.is_held_out(1, None, False, (), True, ()) and not _lr.is_held_out(1, None, False, (), False, ()))
+    results.append(("[rule] CONTROL: the kit holds out an undated person with a living parent, and not a dated child (who is living)",
+                    "passes", ok_rule, "" if ok_rule else "the kit's rule is not the one this gate assumes"))
+    if harvest:
+        def dated_child(b, d):
+            p = b / "data" / "myheritage-tree9.json"
+            hv_ = json.load(open(p))
+            for q in hv_:
+                if q["id"] == L["id"]:
+                    q["b"] = f"Jan 1 {year_now - 10}"
+            json.dump(hv_, open(p, "w"))
+        case("CONTROL: a living person with a known birth year under 18 is published, not held out, and the gate passes",
+             "harvest", False, dated_child)
 
     # --- hashes mode: a held-out NAME, by digest. The held-out person here has a single-token name, which a digest cannot
     # key, so the digest path is proved with a name that cannot belong to anyone.

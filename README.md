@@ -58,8 +58,8 @@ country, and nothing more** (the estate-wide standard, version 2, 16 October 202
 `kit/tools/living_rule.py` in the pinned kit, and this archive keeps no test of its own). No dates, no records,
 no photograph, no structured data. Every person in the register has a page of their own at `/people/<slug>/`,
 the living included: a living person's page is `noindex`, which keeps it out of the sitemap and the search
-index. A possible minor (not recorded dead, no public source, under 18 by year, or with no birth year and a
-living parent) is **held out**: no record, no page, not even as someone's relative. One person goes the other
+index. A possible minor (not recorded dead, no public source, no birth year, and a living parent) is **held
+out**; a child with a known birth year is living, not held out,: no record, no page, not even as someone's relative. One person goes the other
 way: Lynn Derrick Luwinski is *named*, with his parents, and not even a town. A removal request is honoured
 within days, without argument and without requiring a reason.
 

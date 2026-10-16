@@ -14,7 +14,8 @@ Living-persons policy for this archive: the estate's standard, version 2 (David 
   - Lynn Derrick Luwinski is NAMED, BARE. Name, parents. Nothing else, not even a town. He is the one
     exception (standard, point 9) and is left exactly as he was.
   - HELD OUT, published nowhere (no record, no page, no name as anyone's relative): a possible minor
-    (not recorded dead, no public source, under 18 by year, or no birth year and a living parent) and
+    (not recorded dead, no public source, no birth year, and a living parent; a child with a known birth
+    year is NOT held out and is living under the standard) and
     anyone promised privacy by id (none here). Computed, not hand-listed.
   - Everyone else is not living and is narrated in full.
 THE OLD TEST (flagged alive in the source, not born in 1920 or earlier) IS GONE. It called ten people
