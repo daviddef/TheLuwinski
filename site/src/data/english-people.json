@@ -176,7 +176,7 @@
      },
      {
       "n": "Caroline Wallis",
-      "dates": "1863–1957",
+      "dates": "1862 or 1863–1957",
       "s": "caroline-wallis",
       "via": "read"
      }
@@ -627,7 +627,7 @@
    "died": "Q3 1917, Hitchin, aged 54",
    "dates": "1862–1917",
    "grade": "probable",
-   "why": "His marriage and his children are one researcher's tree, not records read here; his death is a death-index entry matched to him by name, age and district.",
+   "why": "His marriage and his death are index entries matched by name, age and district, with no certificate read. His birthplace and his parents are one researcher's tree, and the census disagrees with it.",
    "rel": "Derrick's great-grandfather",
    "dek": "A farm labourer's son raised by his grandparents at Norton End after his mother died when he was under a year old.",
    "kin": {
@@ -648,7 +648,7 @@
     "spouses": [
      {
       "n": "Caroline Wallis",
-      "dates": "1863–1957",
+      "dates": "1862 or 1863–1957",
       "s": "caroline-wallis",
       "via": "tree",
       "mark": "from a tree",
@@ -725,10 +725,10 @@
      "doc"
     ],
     [
-     "Oct 1882",
+     "Q4 1882",
      "Marries Caroline Wallis",
-     "At Hitchin. The date and the marriage come from the same tree; the certificate has not been read.",
-     "inf"
+     "At Hitchin, registered in the December quarter of 1882, vol 3a p567, where the free index carries both names on one page. A tree gives October, which sits inside the quarter. The certificate has not been read.",
+     "doc"
     ],
     [
      "1891–1901",
@@ -745,13 +745,13 @@
     [
      "Q3 1917",
      "Dies at Hitchin",
-     "Aged 54, registered at Hitchin: the England & Wales death index has a George W Castle, born 1863, which fits a man born in Q4 1862. It was read on 15 September 2026, and a match holder's own tree gave 1917 independently. A different match's tree gave 1916 a day later, and this site's tree page copied that without setting it against the index. The index is the record; the identification is by name, age and district.",
+     "Aged 54, registered at Hitchin, vol 3a p607: a George W Castle, which fits a man born in Q4 1862. A search of England and Wales for a George Castle aged 54 between March 1916 and December 1917 returns this entry alone, and Hitchin has no George Castle death in 1916 at all. A match holder's own tree gave 1917 independently. The identification is by name, age and district; the certificate has not been read.",
      "inf"
     ]
    ],
    "gaps": [
-    "The marriage certificate has not been read, and it would settle the marriage and name both fathers.",
-    "His death certificate has not been read, so the place and cause are not known, and the year 1917 rests on an index entry matched by name, age and district. One tree still says 1916.",
+    "The marriage certificate has not been read. It would name both fathers, and with them Caroline's.",
+    "His death certificate has not been read, so the place and cause are not known, and the year 1917 rests on an index entry matched by name, age and district. One tree still says 1916; the index has no George Castle death at Hitchin in 1916.",
     "The census disagrees with the tree twice: it gives his birthplace as Baldock, not Willian, and his birth year as 1863, not 1862."
    ],
    "see": [
@@ -770,11 +770,11 @@
    "name": "Caroline Wallis",
    "line": "Castle",
    "gen": 3,
-   "born": "28 February 1863, Weston",
+   "born": "28 February 1862 or 1863, Weston",
    "died": "1957, registered at Hitchin as Caroline James",
-   "dates": "1863–1957",
+   "dates": "1862 or 1863–1957",
    "grade": "probable",
-   "why": "Her later life is documented; her first marriage and her parents are not.",
+   "why": "Her later life is documented and her marriage is an index entry. Her parents are not established and her year of birth is disputed.",
    "rel": "Derrick's great-grandmother",
    "dek": "She remarried in 1920 and died in 1957 as Caroline James, which is why every tree that carries her as Caroline Wallis was hunting a death registered under another surname.",
    "kin": {
@@ -846,16 +846,16 @@
    },
    "facts": [
     [
-     "28 Feb 1863",
+     "28 Feb 1862 or 1863",
      "Born at Weston, Hertfordshire",
-     "The day comes from the 1939 Register. The year is given as 1862 in every secondary source; the register and her own age in 1921 both point to 1863.",
-     "doc"
+     "The day and month come from the 1939 Register, which gives 28 February 1863. The 1957 death index gives 1862. Her age of 48 at the 1911 census fits 1863 and not 1862; her 56 years 4 months in 1921 fits neither, since it works out at February 1865. Two Hitchin births are registered under Wallis: a Caroline in the March quarter of 1862 (vol 3a p230) and an unnamed female in the March quarter of 1863 (vol 3a p247). Neither has been tied to her.",
+     "disp"
     ],
     [
-     "Oct 1882",
+     "Q4 1882",
      "Marries George William Castle",
-     "At Hitchin, from a family tree; the certificate has not been read.",
-     "inf"
+     "At Hitchin, registered in the December quarter of 1882, vol 3a p567, with both names on the one page of the free index. A tree gives October. The certificate has not been read.",
+     "doc"
     ],
     [
      "1911",
@@ -889,8 +889,8 @@
     ]
    ],
    "gaps": [
-    "Her parents are not established.",
-    "Her first marriage has not been read."
+    "Her parents are not established, and no baptism has been found. FreeCEN has no Caroline Wallis born in Hertfordshire in the 1860s, but its Hertfordshire coverage is patchy and that is not a finding. It does hold a John Wallis, born at Weston about 1863, lodging at Clothall in 1891: a Wallis was born at Weston in her year, and he is not claimed as kin.",
+    "Her first marriage certificate has not been read. It would name her father, and ordering it is a purchase for the family to decide."
    ],
    "see": [
     [
@@ -1527,10 +1527,10 @@
    "line": "Castle",
    "gen": 4,
    "born": "c.1840, Baldock",
-   "died": "1885 (the year is a tree's)",
+   "died": "Q4 1885, Hitchin, aged 46 (an index entry matched by name, age and district)",
    "dates": "1840–1885",
    "grade": "documented",
-   "why": "The 1871 census names him as son-in-law and father; his death is one tree's word.",
+   "why": "The 1871 census names him as son-in-law and father; his death is an index entry matched by name, age and district.",
    "rel": "Derrick's great-great-grandfather",
    "dek": "An agricultural labourer who was widowed within a year and took his baby son to his dead wife's parents.",
    "kin": {
@@ -1587,15 +1587,15 @@
      "doc"
     ],
     [
-     "1885",
-     "Dies",
-     "From a tree: 'died when his son was 23'. No record has been read.",
+     "Q4 1885",
+     "Dies at Hitchin",
+     "Aged 46, registered at Hitchin, vol 3a p249: the only George Castle death at Hitchin between 1884 and 1886, and the age fits a man born about 1839 to 1840. A tree had said 'died when his son was 23', which agrees. Matched by name, age and district; the certificate has not been read.",
      "inf"
     ]
    ],
    "gaps": [
     "His own parents are not known.",
-    "His death has no record behind it here."
+    "His death certificate has not been read, so the entry above is matched and not proved."
    ],
    "see": [
     [
@@ -1782,7 +1782,7 @@
     ]
    ],
    "gaps": [
-    "His parents, his death and his marriage have not been looked for in a register."
+    "His parents and his marriage have not been looked for in a register. A James Giddings aged 68 was registered at Hitchin in Q1 1883 (vol 3a p257), which fits a man born about 1815, and an Elizabeth Giddings aged 68 in Q2 1883 (vol 3a p250) fits his wife. They are the only James and Elizabeth of that age under any spelling at Hitchin from Q2 1871 to 1895. No record ties them to Norton End, so his death is a candidate and not established."
    ],
    "see": [
     [
@@ -1854,7 +1854,7 @@
    ],
    "gaps": [
     "Her maiden name is not known: she appears under her husband's surname in every record.",
-    "Her parents, her marriage and her death are not established."
+    "Her parents and her marriage are not established. An Elizabeth Giddings aged 68, registered at Hitchin in Q2 1883 (vol 3a p250), fits her death and is not tied to her by any record."
    ],
    "see": [
     [
@@ -2227,7 +2227,7 @@
     ]
    ],
    "gaps": [
-    "Her own baptism has not been found. A county-wide search for it used a forename filter, which does not expand abbreviations, and has not been redone surname-only.",
+    "Her own baptism has not been found. A surname-only free-index search (16 October 2026) found one Appleyard baptism of any forename in Hertfordshire, Middlesex and Buckinghamshire between 1750 and 1800, an Ann at Marylebone, and nine Mary Appleyards in all England 1762 to 1782, every one in Yorkshire. That shows where the index finds the name and not where she was born. The Aldenham registers hold 18 Appleyard baptisms and that index does not carry them.",
     "Her parents, her birthplace and her death are unknown."
    ],
    "see": [
@@ -2458,7 +2458,7 @@
     ]
    ],
    "gaps": [
-    "Her own baptism has not been found. The county-wide search for it used a forename filter and has not been redone surname-only, so it is not leaned on.",
+    "Her own baptism has not been found. A free-index search of Hertfordshire, Middlesex and Buckinghamshire (16 October 2026) found no Mary BURCH baptised 1770 to 1800 and five Marys baptised BIRCH who could be her: Abbots Langley 1782 and 1784, Watford 1783, Great Stanmore 1791 and Bovingdon 1791. None is chosen. The same search on Findmypast, surname-only and county-wide, has still not been done.",
     "Her parents, her birthplace and her death are unknown."
    ],
    "see": [

@@ -297,6 +297,14 @@
    "people": 0
   },
   {
+   "file": "free-indexes-2026-10-16.tsv",
+   "title": "Free indexes read on 16 October 2026: FreeBMD, FreeCEN and FreeREG",
+   "source": "FreeBMD, FreeCEN and FreeREG (Free UK Genealogy), searched without an account; INDEXES, and Hertfordshire coverage in FreeCEN and FreeREG is partial",
+   "kind": "ref",
+   "rows": 12,
+   "people": 0
+  },
+  {
    "file": "gazette-wear-sweep.tsv",
    "title": "The gazette sweep for the Wears and for Phyllis",
    "source": "gazettes.africa, 54,313 South African issues",
@@ -4364,7 +4372,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 140,
+  "files": 141,
   "person_files": 26,
   "people": 216,
   "records": 312,

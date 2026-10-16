@@ -74,6 +74,7 @@ MANIFEST = {
  "kurt-papers-1934-1939.tsv":   (["field","value"], "Kurt's own papers, 1934 and 1939", "family papers", "ref"),
  "wear-pow-1943-45.tsv":         ([], "War Office prisoner-of-war lists", "TNA WO 392/15 and WO 392/21", "ref"),
  "caroline-james-1920-1957.tsv": ([], "Caroline Castle, later James, 1920 to 1957", "GRO indexes; 1939 Register RG101/1598B/017/25", "ref"),
+ "free-indexes-2026-10-16.tsv": ([], "Free indexes read on 16 October 2026: FreeBMD, FreeCEN and FreeREG", "FreeBMD, FreeCEN and FreeREG (Free UK Genealogy), searched without an account; INDEXES, and Hertfordshire coverage in FreeCEN and FreeREG is partial", "ref"),
  "litigation.tsv":               (["plaintiff","defendant"], "Transvaal court files", "National Archives of South Africa, WLD and TPD series", "person"),
  "naairs-figueiredo.tsv":        ([], "The NAAIRS index under FIGUEIREDO", "National Archives of South Africa", "ref"),
  "yadvashem-leibholz.tsv":       (["who"], "Yad Vashem, Central Database of Shoah Victims' Names", "collections.yadvashem.org — records 13520936 and 13449776, item IDs 11572198, 4113817, 11572206", "person"),

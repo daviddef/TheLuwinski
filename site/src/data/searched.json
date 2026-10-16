@@ -569,6 +569,57 @@
     "findmypast"
    ],
    "got": "THE 1851 HOUSEHOLD AT LETCHMORE HEATH (HO107/1714 f.19 p.1 sch.2): John head, ag lab, 39; EMMA WIFE BORN 1822, which is Emma Larkin to the year and identifies the household; then WILLIAM b.1841, ROBERT b.1843, JOHN b.1847, BETSEY b.1849. *** THREE REVISIONS. *** (1) THE ELDEST SON WAS BORN ABOUT A YEAR BEFORE THE BANNS of September 1842 — stated as a fact about dates, and the likeliest reason the banns fell when they did. (2) WILLIAM 1841 AND JOHN 1847 ARE ABSENT FROM THE ALDENHAM BAPTISM REGISTER, so the nine children are at least eleven, and the 1856 baptised John is a SECOND John. The caveat written yesterday — that a register read entire is complete for the register and not for the family — was needed within a day. (3) AN EIGHT-YEAR AGE DISCREPANCY ON JOHN: 39 in 1851, 51 in 1871, baptised 1819. Two of three agree; the register holds no John baptised 1810-14, so no second candidate opens and the 1851 age is simply the outlier. *** AND THE FOURTH GENERATION IS OUTSIDE THE COUNTY. *** Neither MARY APPLEYARD (married 1800) nor MARY BURCH (married 1814) was baptised anywhere in Hertfordshire in her window. CONTROLLED BY THIS ARCHIVE'S OWN SWEEPS: the Aldenham register is demonstrably well covered for 1770-1800, since the Larkin and Hawkins passes returned baptisms at 1772 through 1794. Both women married into the parish from outside it — “of this parish” in a banns entry is RESIDENCE, not birth. RESIDUAL RISK NAMED: the county-wide passes used a forename filter, which this archive learned yesterday does not expand abbreviations; the Burch one should be redone surname-only before the negative is leaned on."
+  },
+  {
+   "src": "FreeBMD — Hitchin deaths, births and marriages, 1862 to 1918 (George William Castle, Caroline Wallis, George Castle, Giddings)",
+   "key": "freebmd/hitchin-castle-wallis-2026-10-16",
+   "url": "https://www.freebmd.org.uk/cgi/search.pl",
+   "what": "The death of George William Castle, the Castle and Wallis marriage, Caroline Wallis's birth, and three more open deaths on the English line",
+   "outcome": "yield",
+   "pages": "Hitchin district: deaths March 1916 to December 1918, 1884 to 1886, 1862 to 1866, Q2 1871 to 1895; births March 1862 to December 1863; marriages 1881 to 1884. England and Wales for George Castle aged 54, 1916 to 1917.",
+   "got": "George W Castle died Q3 1917, Hitchin 3a p607, the only George Castle aged 54 in England and Wales in 1916 and 1917 and no George Castle death at Hitchin in 1916. CASTLE George William and WALLIS Caroline share Hitchin 3a p567 in Q4 1882. Two Hitchin births fit Caroline Wallis: a Caroline in Q1 1862 (3a p230) and an unnamed WALLIS Female in Q1 1863 (3a p247). George Castle died Q4 1885 aged 46 (3a p249). James and Elizabeth Giddings, both 68, died Q1 and Q2 1883 at Hitchin and are candidates only. NOT RESOLVED: which Martha Castle (Q3 1863 or Q3 1865) is George Castle's wife, because ages begin in 1866.",
+   "when": "2026-10-16",
+   "walked": false,
+   "tags": [
+    "england",
+    "hertfordshire",
+    "index",
+    "free"
+   ]
+  },
+  {
+   "src": "FreeCEN — Hertfordshire censuses, WALLIS born in Hertfordshire 1855 to 1870",
+   "key": "freecen/wallis-hertfordshire-2026-10-16",
+   "url": "https://www.freecen.org.uk/search_queries/new",
+   "what": "Caroline Wallis's family",
+   "outcome": "nothing",
+   "pages": "surname WALLIS, born Hertfordshire 1855 to 1870, census county Hertfordshire (28 results); forename Caroline, born Hertfordshire 1861 to 1866 (0 results)",
+   "got": "No Caroline Wallis. COVERAGE IS PATCHY, so this is not a finding. A John Wallis born at Weston about 1863 lodged at Clothall in 1891 (RG12 piece 1105 folio 72); a lead on the surname, not a link.",
+   "when": "2026-10-16",
+   "walked": false,
+   "tags": [
+    "england",
+    "hertfordshire",
+    "index",
+    "free"
+   ]
+  },
+  {
+   "src": "FreeREG — Hertfordshire, Middlesex and Buckinghamshire baptisms for BURCH and APPLEYARD",
+   "key": "freereg/burch-appleyard-2026-10-16",
+   "url": "https://www.freereg.org.uk/search_queries/new",
+   "what": "Baptisms for Mary Burch and Mary Appleyard, the two Aldenham brides of 1800 and 1814",
+   "outcome": "nothing",
+   "pages": "BURCH Hertfordshire 1700 to 1850 (70); Mary BURCH 1770 to 1800 (0); Mary BURCH phonetic, three counties, 1765 to 1800 (98, five plausible); APPLEYARD three counties 1750 to 1800 (1); Mary APPLEYARD all counties 1762 to 1782 (9)",
+   "got": "No Mary BURCH baptism in the window; five Mary BIRCH baptisms are possible (Abbots Langley 1782 and 1784, Watford 1783, Great Stanmore 1791, Bovingdon 1791) and none is chosen. One Appleyard baptism in the three counties, an Ann at Marylebone 1779; nine Mary Appleyards in England 1762 to 1782, all Yorkshire. The Aldenham registers are not in this index.",
+   "when": "2026-10-16",
+   "walked": false,
+   "tags": [
+    "england",
+    "hertfordshire",
+    "index",
+    "free"
+   ]
   }
  ]
 }
