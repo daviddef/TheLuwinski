@@ -246,7 +246,7 @@
     [
      "21 Jul 1895",
      "Born at Baldock",
-     "Baptised there on 22 September 1895. The day of birth comes from a second-cousin match's family tree; the baptism fixes the year.",
+     "Birth registered in the September quarter of 1895 at Hitchin, vol 3a p551, which agrees with a birth in July. Baptised at Baldock on 22 September 1895. The day of birth, 21 July, comes from a second-cousin match's family tree.",
      "inf"
     ],
     [
@@ -575,9 +575,9 @@
      "doc"
     ],
     [
-     "by 1895",
+     "Q2 1894",
      "Marries John Hull",
-     "A railway labourer. Albert is born in 1895 and Edith in 1897, both at St Albans. In 1901 she is 'Emma Hull' at 22 Mount Pleasant, St Albans (RG13 piece 1312).",
+     "At St Albans, vol 3a p758, where the free index carries Wear Emma and Hull John on one page. He is a railway labourer; Albert is born in 1895 and Edith in 1897, both at St Albans. In 1901 she is 'Emma Hull' at 22 Mount Pleasant, St Albans (RG13 piece 1312). The certificate has not been read.",
      "doc"
     ],
     [
@@ -600,7 +600,7 @@
     ]
    ],
    "gaps": [
-    "Her marriage to John Hull has not been read; it is inferred from the births of 1895 and 1897 and the 1901 census.",
+    "The marriage certificate to John Hull has not been read.",
     "When John Hull died is not established."
    ],
    "see": [
@@ -1334,22 +1334,22 @@
    "died": "not established",
    "dates": "b. 1822",
    "grade": "documented",
-   "why": "Her baptism, her banns and two censuses are records; her parents' marriage is a best candidate.",
+   "why": "Her baptism, her banns and two censuses are records. Her parents are probable: the register names a Robert and a Mary, and only one of two Robert-and-Mary couples at Aldenham can have had her.",
    "rel": "Derrick's great-great-grandmother",
-   "dek": "Carried on this site for weeks as 'Emma Hawkins', which was her married name; she was born Emma Larkin, the sixth of eleven children.",
+   "dek": "Carried on this site for weeks as 'Emma Hawkins', which was her married name; she was born Emma Larkin at Aldenham on 3 March 1822.",
    "kin": {
     "parents": [
      {
       "n": "Robert Larkin",
       "s": "robert-larkin",
       "via": "inferred",
-      "mark": "best candidate"
+      "mark": "probable"
      },
      {
       "n": "Mary Burch",
       "s": "mary-burch",
       "via": "inferred",
-      "mark": "best candidate"
+      "mark": "probable"
      }
     ],
     "spouses": [
@@ -1445,7 +1445,8 @@
      {
       "n": "Robert William Larkin",
       "dates": "b. 1821",
-      "via": "read"
+      "via": "read",
+      "mark": "probably the other couple's"
      },
      {
       "n": "Amy Larkin",
@@ -1465,21 +1466,29 @@
      {
       "n": "Joseph Larkin",
       "dates": "b. 1828",
-      "via": "read"
+      "via": "read",
+      "mark": "probably the other couple's"
      },
      {
       "n": "Thomas Larkin",
       "dates": "b. 1833",
-      "via": "read"
+      "via": "read",
+      "mark": "probably the other couple's"
      }
     ]
    },
    "facts": [
     [
-     "1822",
-     "Baptised at Aldenham",
-     "Daughter of Robert and Mary Larkin; the only Emma Larkin of her generation in the parish, and the birth year matches the 1871 census to the year.",
+     "3 Mar 1822",
+     "Born at Aldenham",
+     "Baptised on 24 March, daughter of Robert, a labourer, and Mary Larkin; the only Emma Larkin of her generation in the parish, and the birth year matches the 1871 census to the year.",
      "doc"
+    ],
+    [
+     "16 Oct 2026",
+     "Which Robert and Mary were her parents",
+     "There were two couples of that name at Aldenham. Emma was born 272 days after Robert William (4 June 1821), so she cannot share a mother with him, and he is the son of the widow Mary born at Edgware about 1800. That leaves the couple of the 1814 banns, who in 1851 are Robert, 72, and Mary, 69, both born at Aldenham, with daughters Mary and Elizabeth at home. This is an argument from birth dates and two censuses, and no document names her as their daughter.",
+     "inf"
     ],
     [
      "18 Sep 1842",
@@ -1507,7 +1516,7 @@
     ]
    ],
    "gaps": [
-    "Her parents are a best candidate: the register names a Robert and a Mary, and the 1814 banns name a Robert Larkin and a Mary Burch, but no document joins them.",
+    "Her parents are probable and not proved: no document names her as the daughter of the couple of the 1814 banns, and the argument rests on one birth interval and the identification of Robert William with the son in the widow's household.",
     "Her death is not established."
    ],
    "see": [
@@ -2120,6 +2129,12 @@
      "Nine children baptised at Aldenham",
      "George 1801, Sarah 1803, Mary 1805, Jane 1808, Thomas 1810, Mary 1812, William 1814, Charlotte 1817 and John 1819, to a William and Mary Hawkins. The reused name Mary suggests the first Mary died.",
      "inf"
+    ],
+    [
+     "6 Jun 1841",
+     "A William Hawkins of 65 at Round Bush",
+     "The only William Hawkins at Aldenham old enough to have married in 1800 (HO107 piece 438, book 3, folio 10, page 14, schedule 477). He is in a household of Mash and Rogers with no wife, and ages were rounded in 1841, so this is a candidate and not a find. His identity with the groom of 1800 is not established.",
+     "inf"
     ]
    ],
    "gaps": [
@@ -2227,8 +2242,8 @@
     ]
    ],
    "gaps": [
-    "Her own baptism has not been found. A surname-only free-index search (16 October 2026) found one Appleyard baptism of any forename in Hertfordshire, Middlesex and Buckinghamshire between 1750 and 1800, an Ann at Marylebone, and nine Mary Appleyards in all England 1762 to 1782, every one in Yorkshire. That shows where the index finds the name and not where she was born. The Aldenham registers hold 18 Appleyard baptisms and that index does not carry them.",
-    "Her parents, her birthplace and her death are unknown."
+    "Her own baptism has not been found. A surname-only search of Hertfordshire Baptisms on Findmypast (16 October 2026) returned 24 Appleyard entries, 21 of them at Aldenham, and no Mary before 1851; a free index finds one Appleyard baptism in Hertfordshire, Middlesex and Buckinghamshire in 1750 to 1800, an Ann at Marylebone, and nine Mary Appleyards in England in 1762 to 1782, every one in Yorkshire. That shows where those indexes find the name and not where she was born. Aldenham holds 21 Appleyard baptisms in that set in all, and none is a Mary.",
+    "Her parents and her birthplace are unknown. No Mary Hawkins of her age is indexed at Aldenham in the 1841 or 1851 census, so she probably died before 1841 or left; the Findmypast burial set stops about 1810 and cannot say."
    ],
    "see": [
     [
@@ -2250,9 +2265,9 @@
    "died": "not established",
    "dates": "of Aldenham",
    "grade": "probable",
-   "why": "The register offers two candidate baptisms and nothing separates them.",
+   "why": "The register offers two candidate baptisms; his age in 1851 favours one.",
    "rel": "Derrick's great-great-great-grandfather",
-   "dek": "Called the banns for Mary Burch at Aldenham in January 1814; eleven children were baptised to a Robert and a Mary Larkin between 1814 and 1833.",
+   "dek": "Called the banns for Mary Burch at Aldenham in January 1814. Eleven children were baptised to a Robert and a Mary Larkin between 1814 and 1833, and they cannot all be this couple's.",
    "kin": {
     "parents": [],
     "spouses": [
@@ -2288,7 +2303,8 @@
      {
       "n": "Robert William Larkin",
       "dates": "b. 1821",
-      "via": "read"
+      "via": "read",
+      "mark": "probably the other couple's"
      },
      {
       "n": "Emma Larkin",
@@ -2314,12 +2330,14 @@
      {
       "n": "Joseph Larkin",
       "dates": "b. 1828",
-      "via": "read"
+      "via": "read",
+      "mark": "probably the other couple's"
      },
      {
       "n": "Thomas Larkin",
       "dates": "b. 1833",
-      "via": "read"
+      "via": "read",
+      "mark": "probably the other couple's"
      }
     ],
     "siblings": []
@@ -2333,21 +2351,28 @@
     ],
     [
      "1814–1833",
-     "Eleven children baptised at Aldenham",
-     "Sarah, Mary, Elizabeth, Joseph, Robert William, Emma, Amy, James, John, a second Joseph and Thomas. Two Josephs, so the first had most likely died.",
+     "Eleven children baptised to a Robert and a Mary",
+     "Sarah, Mary, Elizabeth, Joseph, Robert William, Emma, Amy, James, John, a second Joseph and Thomas, the father a labourer in every entry. They cannot be one mother's: Emma was born on 3 March 1822, 272 days after Robert William (4 June 1821). A widow Mary Larkin, born at Edgware about 1800, heads a household in 1851 with Robert (30) and Eliza (20), and in 1841 with Robert, Joseph, Eliza and Thomas; she would have been 21 at Robert William's birth. So two Robert-and-Mary couples baptised children at Aldenham. The earlier note here that the first of two Josephs 'had most likely died' is withdrawn: there may be one Joseph in each family.",
      "inf"
     ],
     [
      "1781 or 1789",
      "Two candidate baptisms",
-     "A Robert baptised in 1789 to Robert and Ann would be 24 at the marriage; a Robert baptised in 1781 to James and Sarah would be 33. Both are ordinary marriage ages and this archive picks neither.",
+     "A Robert baptised in 1789 to Robert and Ann would be 62 in 1851; one baptised in 1781 to James and Sarah would be 70. The 1851 census gives 72, so the age favours 1781, by a margin and not a proof. No Robert baptism of 1778 or 1779 has been found.",
      "inf"
+    ],
+    [
+     "30 Mar 1851",
+     "Alive at Aldenham, aged 72",
+     "Head of a household of five (HO107 piece 1714, folio 13, page 19, schedule 75): Robert Larkin, married, agricultural labourer, born Aldenham; his wife Mary, 69, born Aldenham; daughters Mary Bilby, a widow of 33, and Elizabeth, 31, both laundresses; and a granddaughter Mary Bilby, 6. The daughters match the baptisms of 1815 and 1818 in name and, within about three years, in age. Whether he is the Robert of the 1814 banns is an inference from that match and from the banns being the only Robert-and-Mary marriage in the Aldenham register.",
+     "doc"
     ]
    ],
    "gaps": [
-    "Which baptism is his is not known. The 1841 census cannot separate them, because the only Robert Larkin at Aldenham in 1841 is his son, aged 20.",
+    "Which baptism is his is not known. The 1851 age favours 1781 but does not prove it. He is not in the 1841 index at Aldenham: the only Robert Larkin there is his namesake, aged 20, in the widow Mary's household.",
     "The one Robert Larkin burial at Aldenham, on 1 September 1793, carries no age, so it cannot be told whether it is anyone here.",
-    "His death is not established."
+    "His death is not established. He was alive in March 1851, and the Hertfordshire Burials set on Findmypast stops about 1810, so its silence after that is not a finding.",
+    "Which of the eleven children are his and Mary Burch's is not settled. Emma is, by the argument on her page; Robert William, the second Joseph and Thomas are marked as probably the other couple's."
    ],
    "see": [
     [
@@ -2407,7 +2432,8 @@
      {
       "n": "Robert William Larkin",
       "dates": "b. 1821",
-      "via": "read"
+      "via": "read",
+      "mark": "probably the other couple's"
      },
      {
       "n": "Emma Larkin",
@@ -2433,12 +2459,14 @@
      {
       "n": "Joseph Larkin",
       "dates": "b. 1828",
-      "via": "read"
+      "via": "read",
+      "mark": "probably the other couple's"
      },
      {
       "n": "Thomas Larkin",
       "dates": "b. 1833",
-      "via": "read"
+      "via": "read",
+      "mark": "probably the other couple's"
      }
     ],
     "siblings": []
@@ -2453,13 +2481,19 @@
     [
      "1811 onward",
      "No Burch baptism of her generation at Aldenham",
-     "All 7 Burch baptisms there are of 1811 or later, so none can be hers.",
+     "All 7 Burch baptisms there are of 1811 or later, so none can be hers. The 1851 census says she was born at Aldenham about 1781 or 1782. If that is right her baptism is not under Burch in the Aldenham register, and no Mary Birch was baptised there in the 1770s or 1780s in either free index or Findmypast.",
+     "inf"
+    ],
+    [
+     "30 Mar 1851",
+     "Wife of Robert Larkin, aged 69",
+     "In the household at HO107 piece 1714, folio 13, schedule 75: Mary, born Aldenham, with Robert, 72, and their daughters Mary and Elizabeth. That she is the Mary Burch of the 1814 banns is an inference from the two daughters' baptisms and from the banns being the only Robert-and-Mary marriage at Aldenham.",
      "inf"
     ]
    ],
    "gaps": [
-    "Her own baptism has not been found. A free-index search of Hertfordshire, Middlesex and Buckinghamshire (16 October 2026) found no Mary BURCH baptised 1770 to 1800 and five Marys baptised BIRCH who could be her: Abbots Langley 1782 and 1784, Watford 1783, Great Stanmore 1791 and Bovingdon 1791. None is chosen. The same search on Findmypast, surname-only and county-wide, has still not been done.",
-    "Her parents, her birthplace and her death are unknown."
+    "Her own baptism has not been found. A surname-only search of Hertfordshire Baptisms on Findmypast (16 October 2026) returned 236 Burch entries and no Mary baptised Burch between 1738 and 1856. Her age in 1851 points to 1781 or 1782. Of the Marys baptised Birch near there at that time, the nearest are Abbots Langley on 13 January 1782 (father Adam), Watford, born 27 December 1782 (Charles and Mary), Northchurch in 1781 (Jonathan and Agnes) and Wigginton in 1783. None is chosen, and the baptisms of 1784 and 1791 fit her age worse.",
+    "Her parents are unknown, and her death is not established: she was alive in March 1851."
    ],
    "see": [
     [

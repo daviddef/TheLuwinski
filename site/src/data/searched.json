@@ -620,6 +620,42 @@
     "index",
     "free"
    ]
+  },
+  {
+   "src": "Findmypast — Hertfordshire Baptisms, surname-only and county-wide, for BURCH, BIRCH (Mary) and APPLEYARD",
+   "key": "fmp/herts-baptisms-burch-appleyard-2026-10-16",
+   "url": "https://www.findmypast.com.au/search/results?datasetname=hertfordshire%20baptisms&lastname=burch",
+   "what": "The baptisms of Mary Burch and Mary Appleyard, searched without a forename filter, which is the pass the session of 13 October could not repeat",
+   "outcome": "nothing",
+   "pages": "BURCH all years (236 entries, 12 pages, all read); Mary BIRCH all years (56, all read); APPLEYARD all years (24, all read)",
+   "got": "No Mary baptised Burch in Hertfordshire between 1738 and 1856. No Mary Appleyard before 1851. Mary BIRCH baptisms of 1781 to 1783 are listed as candidates for Mary Burch and none is chosen. HERTFORDSHIRE BURIALS at Aldenham stop about 1810, so a burial missing after that is not a finding.",
+   "when": "2026-10-16",
+   "walked": false,
+   "tags": [
+    "england",
+    "hertfordshire",
+    "baptism",
+    "census",
+    "findmypast"
+   ]
+  },
+  {
+   "src": "Findmypast — 1851 and 1841 censuses at Aldenham for LARKIN, and 1841 and 1851 for HAWKINS",
+   "key": "fmp/larkin-two-couples-2026-10-16",
+   "url": "https://www.findmypast.com.au/search/results?datasetname=1851+england%2c+wales+%26+scotland+census&lastname=larkin&keywordsplace=aldenham",
+   "what": "Robert Larkin and Mary Burch alive in 1851, and the discovery that the eleven Larkin children are two families",
+   "outcome": "yield",
+   "pages": "1851 LARKIN at Aldenham (19); 1841 LARKIN (14); 1851 HAWKINS (23); 1841 HAWKINS (20); Hertfordshire Baptisms LARKIN at Aldenham (105, all read) with the birth dates of nine of the eleven children",
+   "got": "ROBERT LARKIN, 72, AND MARY, 69, BOTH BORN ALDENHAM, with daughters Mary Bilby and Elizabeth, HO107/1714 f13 sch 75. A WIDOW MARY LARKIN BORN AT EDGWARE ABOUT 1800, with Robert (30) and Eliza (20), HO107/1714 f22 sch 21. EMMA WAS BORN 3 MARCH 1822, 272 DAYS AFTER ROBERT WILLIAM (4 JUNE 1821), so the children are two families. No Mary Hawkins of Mary Appleyard's age at Aldenham in 1841 or 1851.",
+   "when": "2026-10-16",
+   "walked": false,
+   "tags": [
+    "england",
+    "hertfordshire",
+    "baptism",
+    "census",
+    "findmypast"
+   ]
   }
  ]
 }

@@ -301,7 +301,7 @@
    "title": "Free indexes read on 16 October 2026: FreeBMD, FreeCEN and FreeREG",
    "source": "FreeBMD, FreeCEN and FreeREG (Free UK Genealogy), searched without an account; INDEXES, and Hertfordshire coverage in FreeCEN and FreeREG is partial",
    "kind": "ref",
-   "rows": 12,
+   "rows": 14,
    "people": 0
   },
   {
@@ -527,6 +527,14 @@
    "kind": "ref",
    "rows": 13,
    "people": 1
+  },
+  {
+   "file": "larkin-burch-appleyard-findmypast-2026-10-16.tsv",
+   "title": "Findmypast, 16 October 2026: the Larkin couples, and the surname-only passes for Burch and Appleyard",
+   "source": "Findmypast: Hertfordshire Baptisms and Burials; 1841 and 1851 England, Wales & Scotland Census, HO107/1714 and HO107/438",
+   "kind": "ref",
+   "rows": 10,
+   "people": 0
   },
   {
    "file": "leibholz-gedenkbuch.tsv",
@@ -4372,7 +4380,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 141,
+  "files": 142,
   "person_files": 26,
   "people": 216,
   "records": 312,
