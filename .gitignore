@@ -20,3 +20,7 @@ data/myheritage-tree9.json
 data/autoclusters-*.csv
 notes/
 site/public/searchindex.json
+
+# The prose gate's feed holds living people's names (tools/build-checkprose-feed.py writes it here, mode 0600).
+# It is rebuilt on every run and never committed.
+private/

@@ -4,7 +4,9 @@
 THE RULE (David Defranceski; the estate's standard, kit/tools/living_rule.py).
   LIVING   born 80 years ago or less (this year minus the birth year) with no death or burial recorded
            and no public source. A person with no birth year cannot be shown to be that young, so is
-           not living. A living person is shown as a NAME, their RELATIONSHIPS and their TOWN AND
+           not living, EXCEPT an undated parent whose youngest child with a known birth year was born 60
+           years ago or less (17 October 2026): that parent is 80 or younger, so is living, not held out.
+           A living person is shown as a NAME, their RELATIONSHIPS and their TOWN AND
            COUNTRY, and nothing more: no date, no record, no source, no photograph, no occupation or
            note, no structured data. Their page is `noindex`, so it is in neither the sitemap nor the
            search index.
@@ -172,12 +174,32 @@ def g_cites(p):
     return out
 
 
+def g_youngest_child(people, pid):
+    """The latest known birth year among this person's children, or None: the recent-child input of the kit's
+    rule (an UNDATED parent whose youngest child with a known birth year was born 60 years ago or less is living).
+    Computed here from the harvest's own edges, NOT shared with tools/people_decisions.py: a child is anyone the
+    person's own «son / daughter / child» edge names, or whose own «father / mother / parent» edge names the
+    person. A redundant duplicate record counts as the copy it collapses to."""
+    me = {pid} | {d for d, c in DUPLICATES.items() if c == pid}
+    kids = set()
+    for q in people:
+        for r in q["rel"]:
+            if q["id"] in me and re.search(r"\b(son|daughter|child)\b", r["rel"], re.I):
+                kids.add(r["id"])
+            if r["id"] in me and q["id"] not in me and re.search(r"father|mother|parent", r["rel"], re.I):
+                kids.add(q["id"])
+    kids -= me
+    ys = [g_year(q) for q in people if q["id"] in kids]
+    ys = [y for y in ys if y]
+    return max(ys) if ys else None
+
+
 def g_classify(people, lr, today=None):
     """{id: 'living' | 'held_out' | 'bare' | 'duplicate' | 'dead'} from the harvest, by the kit's rule."""
     by = {p["id"]: p for p in people}
 
     def living(p):
-        return lr.is_living(g_year(p), g_dead(p), g_cites(p), today)
+        return lr.is_living(g_year(p), g_dead(p), g_cites(p), today, g_youngest_child(people, p["id"]))
 
     def parents_of(pid):
         out = set()
@@ -198,7 +220,7 @@ def g_classify(people, lr, today=None):
             out[pid] = "bare"
         else:
             plive = any(living(by[x]) for x in parents_of(pid) if x in by)
-            if lr.is_held_out(pid, g_year(p), g_dead(p), g_cites(p), plive, (), today):
+            if lr.is_held_out(pid, g_year(p), g_dead(p), g_cites(p), plive, (), today, g_youngest_child(people, pid)):
                 out[pid] = "held_out"
             elif living(p):
                 out[pid] = "living"
@@ -743,6 +765,19 @@ def check_register(reg_path, expected, held_ids, digest_set, salt, F, lr):
     # would be a loud failure here even if the tree called them dead: that is the safe direction, and it
     # is a person for a human to look at.
     year_now = datetime.date.today().year
+
+    def reg_youngest_child(p, everyone):
+        """The latest PUBLISHED birth year among p's children in the register (an edge either way). A living
+        child has no published year, so this sees only the dead; the exact computation is the harvest mode's."""
+        ys = []
+        for q in everyone:
+            child_of_p = any(e["id"] == q["id"] and re.search(r"\b(son|daughter|child)\b", e["rel"], re.I)
+                             for e in p.get("rel", [])) or \
+                any(e["id"] == p["id"] and PARENT_WORDS.search(e["rel"]) for e in q.get("rel", []))
+            if child_of_p and q.get("by"):
+                ys.append(q["by"])
+        return max(ys) if ys else None
+
     flagged_or_bare = flagged | {p["id"] for p in people if p.get("bare")}
     for p in people:
         if p["id"] in flagged_or_bare or p.get("kind") == "document":
@@ -754,9 +789,10 @@ def check_register(reg_path, expected, held_ids, digest_set, salt, F, lr):
         plive = any(e["id"] in flagged_or_bare and PARENT_WORDS.search(e["rel"]) for e in p.get("rel", [])) or \
             any(p["id"] == e["id"] and re.search(r"\b(son|daughter|child)\b", e["rel"], re.I)
                 for q in people if q["id"] in flagged_or_bare for e in q.get("rel", []))
-        if lr.is_living(by, dead, cites, year_now):
+        yc = reg_youngest_child(p, people)
+        if lr.is_living(by, dead, cites, year_now, yc):
             F.add(where, "a record the kit's rule calls living is published as if not living", f"person id {p['id']}")
-        if lr.possible_minor(by, dead, cites, plive, year_now):
+        if lr.possible_minor(by, dead, cites, plive, year_now, yc):
             F.add(where, "a possible minor is published", f"person id {p['id']}")
     return reg, flagged
 

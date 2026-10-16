@@ -110,17 +110,53 @@ def parent_ids(people, pid):
     return out
 
 
+def child_index(people):
+    """{parent id: {child ids}}, read from BOTH directions (the parent's own «His son» edges and any other record's
+    «Her father» edge), with a redundant duplicate record folded into the copy it collapses to, so that a child
+    attached to either copy counts for the one person."""
+    canon = lambda i: DUPLICATES.get(i, i)
+    out = {}
+    for q in people:
+        qid = canon(q["id"])
+        for r in q["rel"]:
+            rid = canon(r["id"])
+            if rid == qid:
+                continue
+            if _CHILD.search(r["rel"]):
+                out.setdefault(qid, set()).add(rid)
+            elif _PARENT.search(r["rel"]):
+                out.setdefault(rid, set()).add(qid)
+    return out
+
+
+def youngest_child_year(people, pid, index=None):
+    """The latest known birth YEAR among this person's children, or None. A child whose birth year is not
+    known does not count, and neither does a child who is not in the harvest. The kit's rule
+    (living_rule.is_living, youngest_child_year, 17 October 2026) calls an UNDATED parent living when this
+    is 60 years ago or less, because a parent is about twenty years older than a child."""
+    index = index if index is not None else child_index(people)
+    by = {p["id"]: p for p in people}
+    ys = [year(by[c].get("b")) for c in index.get(DUPLICATES.get(pid, pid), ()) if c in by]
+    ys = [y for y in ys if y]
+    return max(ys) if ys else None
+
+
 def classify(people, lr=None, today=None):
     """{id: 'living' | 'dead' | 'held_out' | 'duplicate' | 'bare'} for every harvest record.
 
     'bare' is Derrick: living by the rule, kept as he has always been. 'dead' means NOT LIVING:
     older than 80, or a recorded death, or no birth year to show them younger. 'held_out' is
-    published nowhere (see living_rule.is_held_out)."""
+    published nowhere (see living_rule.is_held_out). An UNDATED person with no recorded death and no public
+    source is living when their youngest child with a known birth year was born 60 years ago or less
+    (youngest_child_year above); the same child year is given to is_held_out, so that such an adult parent is
+    not held out as a possible minor."""
     lr = lr or load_living_rule()
     by = {p["id"]: p for p in people}
+    index = child_index(people)
 
     def living(p):
-        return lr.is_living(year(p.get("b")), recorded_dead(p), citations(p), today)
+        return lr.is_living(year(p.get("b")), recorded_dead(p), citations(p), today,
+                            youngest_child_year(people, p["id"], index))
 
     out = {}
     for p in people:
@@ -131,7 +167,8 @@ def classify(people, lr=None, today=None):
             out[pid] = "bare"
         else:
             plive = any(living(by[x]) for x in parent_ids(people, pid) if x in by)
-            if lr.is_held_out(pid, year(p.get("b")), recorded_dead(p), citations(p), plive, HELD_IDS, today):
+            if lr.is_held_out(pid, year(p.get("b")), recorded_dead(p), citations(p), plive, HELD_IDS, today,
+                              youngest_child_year(people, pid, index)):
                 out[pid] = "held_out"
             elif living(p):
                 out[pid] = "living"

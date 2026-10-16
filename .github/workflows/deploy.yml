@@ -75,6 +75,14 @@ jobs:
       # a copy of the build, and the step fails unless each one is caught and each control passes.
       - name: Check that the living-people gate still catches what it should
         run: python3 tools/selftest-living.py --dist site/dist
+      # The prose gate (kit checkprose.py, wired by tools/check-prose.py): a hand-written page, a hand-edited
+      # data file or a letter may not put a year, a date, a life-event word or a DNA result beside a living
+      # person's name. Who is living comes from the private harvest, which CI does not hold, so here the gate
+      # checks only that every data file is classified as hand-edited or generated and then prints
+      # "NOT RUN, this is NOT A PASS" for the name scan. The name scan runs in `npm run build` on the machine
+      # that holds the harvest (check:prose-strict makes a missing harvest a failure there).
+      - name: Check the prose for living people (name scan NOT RUN in CI)
+        run: python3 tools/check-prose.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -347,6 +347,86 @@ def main():
         case("CONTROL: a living person with a known birth year under 18 is published, not held out, and the gate passes",
              "harvest", False, dated_child)
 
+    # --- the recent-child rule (17 October 2026; kit living_rule youngest_child_year): an UNDATED person with no
+    # recorded death and no public source whose youngest child with a known birth year was born 60 years ago or
+    # less is LIVING (an adult parent: not held out). The values planted are computed from the current year.
+    ok_rc = (_lr.is_living(None, False, (), None, year_now - 30) and not _lr.is_living(None, False, (), None, year_now - 70)
+             and not _lr.is_living(None, True, (), None, year_now - 30) and not _lr.is_living(None, False, ("FamilySearch",), None, year_now - 30)
+             and not _lr.is_held_out(1, None, False, (), True, (), None, year_now - 30)
+             and _lr.is_held_out(1, None, False, (), True, (), None, None))
+    results.append(("[rule] CONTROL: the kit's recent-child rule calls an undated parent of a child born 30 years ago living (not held out), "
+                    "and not one whose youngest child is 70, or who has a death or a public source", "passes", ok_rc,
+                    "" if ok_rc else "the kit's rule is not the one this gate assumes"))
+    import people_decisions as _pd
+    # The planted fault uses an EXISTING parent-child edge (the built pages already link it), so that the only thing
+    # that changes is the child's birth year: an undated parent with no recorded death and no public source,
+    # whose child has a published birth year. Moving that year to 30 years ago must make the kit call the parent living.
+    pidx = _pd.child_index(json.load(open(ROOT / "data" / "myheritage-tree9.json"))) if harvest else None
+    reg_pair = None
+    for r in people:
+        if r.get("kind") == "document" or r.get("living") or r.get("bare") or r.get("by") or r.get("dy") or r.get("died") \
+                or r.get("facts"):
+            continue
+        for q in people:
+            if q["id"] == r["id"] or not q.get("by") or not q.get("dy") or q.get("living"):
+                continue
+            if any(e["id"] == q["id"] and re.search(r"\b(son|daughter|child)\b", e["rel"], re.I) for e in r.get("rel", [])) or \
+                    any(e["id"] == r["id"] and re.search(r"father|mother|parent", e["rel"], re.I) for e in q.get("rel", [])):
+                reg_pair = (r, q)
+                break
+        if reg_pair:
+            break
+    if reg_pair:
+        reg_u, reg_c = reg_pair
+
+        def reg_child(year_):
+            def f(b, d):
+                p = b / "site" / "src" / "data" / "register.json"
+                data = json.load(open(p))
+                for r in data["people"]:
+                    if r["id"] == reg_c["id"]:
+                        r["by"] = year_
+                json.dump(data, open(p, "w"))
+            return f
+        case("an undated parent whose published child is moved to a birth 30 years ago is published as if not living",
+             "hashes", True, reg_child(year_now - 30), "calls living")
+        case("CONTROL: the same parent whose child's birth year is 70 years ago is not living and passes", "hashes", False,
+             reg_child(year_now - 70))
+    else:
+        results.append(("[hashes] recent-child fault (no undated, undead parent with a dated child in the register)", "fails", False,
+                        "cannot plant"))
+    if harvest:
+        hv0 = json.load(open(ROOT / "data" / "myheritage-tree9.json"))
+        st0 = _pd.classify(hv0, _lr)
+        hby = {q["id"]: q for q in hv0}
+        hpair = None
+        for q in hv0:
+            if st0[q["id"]] != "dead" or _pd.year(q.get("b")) or _pd.recorded_dead(q) or _lr.public_source(_pd.citations(q)):
+                continue
+            kid = next((c for c in sorted(pidx.get(q["id"], ())) if c in hby and _pd.year(hby[c].get("b"))), None)
+            if kid is not None:
+                hpair = (q, hby[kid])
+                break
+        if hpair:
+            hu, hc = hpair
+
+            def hv_child(year_):
+                def f(b, d):
+                    p = b / "data" / "myheritage-tree9.json"
+                    h_ = json.load(open(p))
+                    for q in h_:
+                        if q["id"] == hc["id"]:
+                            q["b"] = f"Jan 1 {year_}"
+                    json.dump(h_, open(p, "w"))
+                return f
+            case("an undated parent whose child is moved to a birth 30 years ago is living by the kit's rule, but the guard file "
+                 "and register say not", "harvest", True, hv_child(year_now - 30), "guard file")
+            case("CONTROL: the same parent whose child's birth year is 70 years ago is not living and passes",
+                 "harvest", False, hv_child(year_now - 70))
+        else:
+            results.append(("[harvest] recent-child fault (no undated, undead parent with a dated child)", "fails", False,
+                            "cannot plant"))
+
     # --- hashes mode: a held-out NAME, by digest. The held-out person here has a single-token name, which a digest cannot
     # key, so the digest path is proved with a name that cannot belong to anyone.
     planted = "Zzyzx Plantedwho"
