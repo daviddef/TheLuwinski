@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { md } from '@daviddef/archive-kit/lib/md.js';
 import BranchRivers from "@daviddef/archive-kit/components/BranchRivers.astro";
 import lines from '../data/lines.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -65,9 +66,9 @@ const u = (h) => base + h;
   {lines.sets.map((set) => (
     <section>
       <h2>{set.name}</h2>
-      <p class="small muted">{set.dek}</p>
+      <p class="small muted" set:html={md(set.dek)}></p>
       <figure class="rivers">
-        <BranchRivers rivers={{ ...set, unplaced: [], loose: [] }} caption={set.dek} />
+        <BranchRivers rivers={{ ...set, unplaced: [], loose: [] }} caption={md(set.dek)} />
         <figcaption>
           Hover or tab any dot and it says what the document behind it is. The top lane of each
           diagram is the one this archive descends from. <strong>A dashed band is a family of the

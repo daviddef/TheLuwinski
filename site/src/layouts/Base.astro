@@ -1,6 +1,8 @@
 ---
 import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
-const { title, subtitle, lede, hero } = Astro.props;
+import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
+import JsonLd from "@daviddef/archive-kit/components/JsonLd.astro";
+const { title, subtitle, lede, hero, structured = true } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const nav = [
   ["Start", [["", "The archive"], ["/tree", "The tree"], ["/timeline", "The Timeline"], ["/dna", "The DNA"], ["/1948", "Nineteen forty-eight"]]],
@@ -41,6 +43,7 @@ const ORIGIN = 'https://luwinski.defranceski.com';
 const LINE = 'An evidence-first archive of the Luwinski, Wear, Castle and Figueiredo families.';
 const p = Astro.url.pathname.replace(/\/+$/, '');
 const canonical = ORIGIN + (/\.[a-z0-9]{2,5}$/i.test(p) ? p : p + '/');
+const isHome = Astro.url.pathname.replace(/\/+$/, '') === base;
 const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
 ---
 <html lang="en">
@@ -60,16 +63,29 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content={full} />
   <meta name="twitter:description" content={subtitle || LINE} />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  {/* Structured data from the kit's JsonLd, as the sibling archives emit it. Every field is one the
+      head and the page already show: the title, the description, the address, the site. Nothing is
+      passed as `about`, so no page here emits a Person (the living are not published, and the
+      twenty ancestors' pages are left to the prose until their dates are ISO). A page that is ABOUT a
+      living person passes structured={false} and emits nothing: the standard is no structured data
+      for the living, so /derrick/ carries none. */}
+  {structured && <JsonLd type={isHome ? "WebSite" : "Article"} name={title} description={subtitle || LINE}
+          url={canonical} site={SITE} />}  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
   <link rel="stylesheet" href={base + '/styles.css'} />
   <style is:global>
     :root {
-      --ink: #1b1a17; --ink-soft: #55514a; --ink-faint: #857f75;
+      --ink: #1b1a17; --ink-soft: #55514a; --ink-faint: #6b675f; /* was #857f75: 3.6-3.9:1 on the ground and panel, AA needs 4.5 */
       --ground: #f7f5f0; --panel: #fffdf8; --rule: #ddd7cb;
       --accent: #7a2e1f; --accent-soft: #a8563f;
-      --doc: #2f5d50; --inf: #6b5a12; --disp: #8a2f2f; --open: #4a4a52;
+      --doc: #2f5d50; --inf: #6b5a12; --disp: #8a2f2f; --open: #4a4a52; --eng: #3b5b78;
+      /* The kit's WorkList paints its five statuses with fixed hex colours; these are the same hues
+         at a depth that reads on this page's surfaces, applied by the overrides further down. */
+      --wl-running: #1e5f8c; --wl-next: #98660f; --wl-blocked: #b04a16; --wl-done: #12703f; --wl-struck: #707070;
+      /* Kit components that paint a surface (PersonTree's nodes) ask for --paper; it was never
+         defined here, so they fell back to #fff, a white tile under pale text in the dark scheme. */
+      --paper: var(--panel);
       /* Aliases so the shared archive-kit component CSS resolves against this
          archive's own palette rather than shipping a second set of colours. */
       --ink-2: var(--ink-soft); --ink-3: var(--ink-faint);
@@ -85,18 +101,20 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     }
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
-        --ink: #ece7dd; --ink-soft: #b3aca0; --ink-faint: #857f75;
+        --ink: #ece7dd; --ink-soft: #b3aca0; --ink-faint: #959087;
         --ground: #14130f; --panel: #1c1a16; --rule: #35312a;
         --accent: #d98b72; --accent-soft: #b5674f;
-        --doc: #7fb8a4; --inf: #cbb45f; --disp: #d98080; --open: #a5a5b0;
+        --doc: #7fb8a4; --inf: #cbb45f; --disp: #d98080; --open: #a5a5b0; --eng: #5a86ae;
+        --wl-running: #2b88c8; --wl-next: #e9a020; --wl-blocked: #d95b1b; --wl-done: #189554; --wl-struck: #828282;
         color-scheme: dark;
       }
     }
     :root[data-theme="dark"] {
-      --ink: #ece7dd; --ink-soft: #b3aca0; --ink-faint: #857f75;
+      --ink: #ece7dd; --ink-soft: #b3aca0; --ink-faint: #959087;
       --ground: #14130f; --panel: #1c1a16; --rule: #35312a;
       --accent: #d98b72; --accent-soft: #b5674f;
-      --doc: #7fb8a4; --inf: #cbb45f; --disp: #d98080; --open: #a5a5b0;
+      --doc: #7fb8a4; --inf: #cbb45f; --disp: #d98080; --open: #a5a5b0; --eng: #5a86ae;
+      --wl-running: #2b88c8; --wl-next: #e9a020; --wl-blocked: #d95b1b; --wl-done: #189554; --wl-struck: #828282;
       color-scheme: dark;
     }
     * { box-sizing: border-box; }
@@ -121,7 +139,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     .xlat { display: grid; grid-template-columns: 1fr 1fr; gap: .2rem 1.8rem;
       max-width: var(--measure); margin: 1.1rem 0 1.8rem;
       border-top: 1px solid var(--rule); padding-top: .9rem; }
-    .xlat > div > h4 { font-family: ui-sans-serif, system-ui, sans-serif; font-size: .64rem;
+    .xlat > div > h4 { font-family: ui-sans-serif, system-ui, sans-serif; font-size: .6875rem;
       letter-spacing: .11em; text-transform: uppercase; color: var(--ink-faint);
       margin: 0 0 .5rem; font-weight: 600; max-width: none; }
     .xlat p { margin: 0 0 .45rem; font-size: .9rem; line-height: 1.5; max-width: none; }
@@ -162,7 +180,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     nav.topnav .dropdown a.on { color: var(--ink); font-weight: 600; }
     .findbtn { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif;
       font-size: .76rem; line-height: 1; text-decoration: none; margin-left: .55rem;
-      color: var(--paper); background: var(--accent); padding: .45rem .85rem; border-radius: 999px; white-space: nowrap; }
+      color: var(--ground); background: var(--accent); padding: .45rem .85rem; border-radius: 999px; white-space: nowrap; }
     .drawerbox { display: none; }
     .drawerbox > summary { list-style: none; cursor: pointer; font-size: .8rem;
       border: 1px solid var(--rule); border-radius: 999px; padding: .38rem .8rem; color: var(--ink); }
@@ -171,7 +189,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
       border-bottom: 1px solid var(--rule); padding: .8rem 1rem 1.2rem; max-height: 72vh; overflow: auto; z-index: 65; }
     .drawer .dgrp { padding: .5rem 0; border-bottom: 1px solid var(--rule); }
     .drawer .dgrp:last-child { border-bottom: 0; }
-    .drawer .gl { display: block; font-size: .62rem; font-weight: 600; letter-spacing: .16em;
+    .drawer .gl { display: block; font-size: .6875rem; font-weight: 600; letter-spacing: .16em;
       text-transform: uppercase; color: var(--ink-faint); margin-bottom: .35rem; }
     .drawer a { display: inline-block; font-size: .88rem; color: var(--ink-soft);
       text-decoration: none; padding: .25rem .8rem .25rem 0; }
@@ -205,7 +223,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     th, td { text-align: left; padding: .55rem .8rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
     th { font-weight: 600; font-size: .74rem; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-faint); white-space: nowrap; }
     tbody tr:last-child td { border-bottom: 0; }
-    .tag { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; padding: .15rem .45rem; border: 1px solid currentColor; border-radius: 2px; white-space: nowrap; }
+    .tag { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase; padding: .15rem .45rem; border: 1px solid currentColor; border-radius: 2px; white-space: nowrap; }
     .tag.doc { color: var(--doc); } .tag.inf { color: var(--inf); } .tag.disp { color: var(--disp); } .tag.open { color: var(--open); }
     .panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 3px; padding: 1.2rem 1.4rem; margin: 1.6rem 0; max-width: var(--measure); }
     .panel > :last-child { margin-bottom: 0; }
@@ -236,7 +254,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     .segmap .a { fill: var(--accent); }
     .segmap .b { fill: var(--doc); }
     .segmap .ov { fill: none; stroke: var(--inf); stroke-width: 1.6; }
-    .segmap .cl { font: 600 9px ui-sans-serif, system-ui, sans-serif; fill: var(--ink-faint); }
+    .segmap .cl { font: 600 11px ui-sans-serif, system-ui, sans-serif; fill: var(--ink-faint); }
     .segmap figcaption { display: flex; flex-wrap: wrap; gap: .3rem 1.4rem; margin-top: .75rem; color: var(--ink-soft); max-width: none; }
     .segmap .key { display: inline-flex; align-items: center; gap: .4rem; }
     .segmap .key i { width: 1.1rem; height: .5rem; border-radius: 2px; display: inline-block; flex: none; }
@@ -253,16 +271,13 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     .hero .cap { position: absolute; left: 0; right: 0; bottom: 0;
       background: linear-gradient(to top, rgba(14,13,11,.90), rgba(14,13,11,.52) 46%, rgba(14,13,11,.06) 78%, transparent); }
     .hero .cap .wrap { padding-top: 3.2rem; padding-bottom: 1.5rem; }
-    .hero .kick { font-family: ui-sans-serif, system-ui, sans-serif; font-size: .66rem;
+    .hero .kick { font-family: ui-sans-serif, system-ui, sans-serif; font-size: .6875rem;
       letter-spacing: .2em; text-transform: uppercase; color: #E9C489; margin: 0; }
     .hero h1 { color: #FBF8F1; font-size: clamp(1.9rem, 5vw, 3.5rem); line-height: 1.04;
       margin: .45rem 0 0; max-width: 20ch; font-weight: 600; letter-spacing: -.018em; }
     .hero .sub { color: #E2DCD0; font-size: clamp(.9rem, 1.5vw, 1.02rem); margin: .7rem 0 0;
       max-width: 60ch; line-height: 1.5; }
     .hero-note { display: block; padding: .5rem 0 0; font-size: .72rem; color: var(--ink-faint); }
-    /* Where the hero carries the title, the page must not print it again. */
-    body.has-hero main > .wrap > h1:first-child,
-    body.has-hero main > .wrap > h1:first-child + .sub { display: none; }
     /* Phones. The caption block is nearly as tall as the plate, so at 375px the
        text had covered the whole painting and there was no picture left to see.
        Give the image more height, take the headline down, and tighten the sub. */
@@ -271,7 +286,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
       .hero .cap .wrap { padding-top: 1.6rem; padding-bottom: 1.1rem; }
       .hero h1 { font-size: 1.5rem; line-height: 1.12; max-width: 17ch; }
       .hero .sub { font-size: .82rem; line-height: 1.45; margin-top: .5rem; }
-      .hero .kick { font-size: .58rem; letter-spacing: .16em; }
+      .hero .kick { font-size: .6875rem; letter-spacing: .16em; }
     }
     /* Phones: four full-width stat cards is a great deal of scrolling for
        four numbers. Two across reads better and still fits at 320px. */
@@ -285,11 +300,32 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
          enough to push a phone page sideways on their own, so let them wrap here. */
       .tag { white-space: normal; }
     }
+    /* A SIZE FLOOR OF 11px FOR LABELS. The kit's components set their small uppercase labels at 9px
+       to 9.5px in their own scoped styles, which this archive cannot edit; the selectors below match
+       them from outside, one element heavier, so they win without !important. Added 16 October 2026
+       after the audit counted 43 pages with text under 10px. */
+    body main :is(.ch-k, .ch-lab, .tl-kind, .tl-k, .tl-b, .tl-d, .tl-lab, .cx-t, .cx-lab, .sp-k, .sp-n .mono,
+      .sp-hl, .qs-dl dt, .qs-lab, .ft-lab, .chip, .ptree .mar, .ptree .via, .sr-tag, .dc-k, .gy-k, .hh-lab,
+      .hh-lk, .mg-ca, .mg-badge, .mg-dl dt, .nl-one i, .syn-lab, .syn-card h4, .lane-conf, .rr-lane,
+      .omit-rel, .rel) { font-size: 11px; }
+    main:focus { outline: none; }
+    /* styles.css pins the Search button's text to #fff with !important, which is 2.7:1 on the pale
+       accent of the dark scheme. This sheet loads after it, so the same weight wins. */
+    .findbtn { color: var(--ground) !important; }
+    /* WorkList status colours, from inline style attributes in the kit, so !important is the only way
+       to reach them. Matched on the hex the kit writes. */
+    .wl [style*="#1E5F8C" i] { color: var(--wl-running) !important; --c: var(--wl-running) !important; }
+    .wl [style*="#E9A020" i] { color: var(--wl-next) !important; --c: var(--wl-next) !important; }
+    .wl [style*="#B04A16" i] { color: var(--wl-blocked) !important; --c: var(--wl-blocked) !important; }
+    .wl [style*="#12703F" i] { color: var(--wl-done) !important; --c: var(--wl-done) !important; }
+    .wl [style*="#7A7A7A" i] { color: var(--wl-struck) !important; --c: var(--wl-struck) !important; }
+    body .wl .wl-stale { color: var(--wl-blocked); }
     .muted { color: var(--ink-soft); }
     .small { font-size: .85rem; }
   </style>
 </head>
 <body class={hero ? "has-hero" : undefined}>
+  <SkipLink />
   <header class="masthead"><div class="wrap sitein">
     <a class="brand" href={base + '/'}>The Luwinski <em>Archive</em></a>
     <nav class="topnav" aria-label="Main">
@@ -330,9 +366,11 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     </figure>
   )}
   {hero && <div class="wrap"><figcaption class="hero-note">{hero.caption}</figcaption></div>}
-  <main><div class="wrap">
-    <h1>{title}</h1>
-    {subtitle && <p class="sub">{subtitle}</p>}
+  <main id="main" tabindex="-1"><div class="wrap">
+    {/* Where a hero carries the page's h1, this one is not rendered at all: it used to be
+        printed and hidden with CSS, which left two h1 elements in the document. */}
+    {!hero && <h1>{title}</h1>}
+    {!hero && subtitle && <p class="sub">{subtitle}</p>}
     {lede && <p class="lede">{lede}</p>}
     <slot />
   </div></main>

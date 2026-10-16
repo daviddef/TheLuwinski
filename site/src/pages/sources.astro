@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Sources from "@daviddef/archive-kit/components/Sources.astro";
 import { u } from '../lib/url.js';
+import { emphasis } from '@daviddef/archive-kit/lib/emphasis.js';
 import sources from '../data/sources.json';
 
 /* 21 September 2026. This page was two hand-written lists and nothing else in
@@ -18,7 +19,13 @@ import sources from '../data/sources.json';
    the link and is printed under it; a bracket holding anything else —
    "(Laws.Africa / AfricanLII)", "(public, no account)" — stayed in the prose,
    because that is content and not an address. */
-const groups = sources.groups.map((g) => ({ label: g.group, rows: g.rows }));
+/* `what` holds HTML here already (<em>, <strong>, <code>), so it cannot go through md(), which would
+   escape the tags. emphasis() is the marker scanner md() uses and touches nothing else. One row
+   carried a *** banner that printed as asterisks (16 October 2026). */
+const groups = sources.groups.map((g) => ({
+  label: g.group,
+  rows: g.rows.map((r) => (r.what ? { ...r, what: emphasis(r.what) } : r)),
+}));
 const read = sources.groups[0].rows;
 const reachable = read.filter((r) => r.url || r.held).length;
 ---

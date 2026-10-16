@@ -23,6 +23,7 @@
  * object from the register and stay as they were.
  */
 import Base from '../layouts/Base.astro';
+import { md } from '@daviddef/archive-kit/lib/md.js';
 import Searched from '@daviddef/archive-kit/components/Searched.astro';
 import { u } from '../lib/url.js';
 import data from '../data/evidence.json';
@@ -38,18 +39,9 @@ const ambiguous = data.people.filter(p => p.ambiguous);
 
 /* The component escapes `src`, `when` and `outcome` itself and takes `what`,
    `got` and `extra` as HTML the archive has already rendered. This archive
-   holds them as plain text, markers and all, so they are escaped here —
-   printed as the data holds them, the same rule corrections.astro works to. */
-/* THE CHARACTER CLASS IS LOAD-BEARING. Written the obvious way, as
-   `.replace(/</g, '&lt;')`, the bare `<` after a slash stops being a regex to
-   the TypeScript parser behind `astro check` and starts a JSX tag — and every
-   open tag in the body below is then reported as never closing. It cost 20
-   phantom failures from checktemplates on a page whose markup was correct, and
-   `astro build` itself was happy throughout, so only the gate caught it.
-   corrections.astro gets away with the obvious spelling because it has one
-   self-closing component after its frontmatter and nothing to mis-pair with. */
-const ENT = { '&': '&amp;', '<': '&lt;', '>': '&gt;' };
-const esc = (s) => String(s ?? '').replace(/[&<>]/g, (ch) => ENT[ch]);
+   holds them as plain text with emphasis markers, so md() escapes them here and
+   turns only the markers into tags. The same goes for the evidence and bounded-negative
+   text further down (16 October 2026: they printed their *** markers). */
 const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB',
   { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 
@@ -61,9 +53,9 @@ const srows = [...searched.rows]
   .map((r) => ({
     when: fmt(r.when),
     src: r.src,
-    what: esc(r.what),
-    got: esc(r.got),
-    extra: esc([r.pages ? `pages ${r.pages}` : '', r.walked ? 'walked page by page' : 'queried, not walked']
+    what: md(r.what),
+    got: md(r.got),
+    extra: md([r.pages ? `pages ${r.pages}` : '', r.walked ? 'walked page by page' : 'queried, not walked']
       .filter(Boolean).join(' · ')),
     href: r.url,
     outcome: r.outcome,
@@ -173,7 +165,7 @@ const nilCount = searched.rows.filter((r) => NIL.includes(r.outcome)).length;
       <tr>
         <td>{i === 0 ? <strong>{p.name}</strong> : <span class="muted small">&nbsp;</span>}</td>
         <td class="small">{r.title}<br /><span class="muted">{r.source}</span></td>
-        <td class="small muted">{r.detail}</td>
+        <td class="small muted" set:html={md(r.detail)}></td>
       </tr>
     )))}</tbody>
   </table></div>
@@ -247,9 +239,9 @@ const nilCount = searched.rows.filter((r) => NIL.includes(r.outcome)).length;
   {data_neg.rows.map((r) => (
     <div class="panel">
       <h3>{r.claim} <span class="tag doc">{r.date}</span></h3>
-      <p class="small"><strong>Searched:</strong> {r.searched}</p>
-      <p class="small"><strong>Result:</strong> {r.result}</p>
-      <p class="small muted"><strong>What would fall outside it:</strong> {r.bound}</p>
+      <p class="small"><strong>Searched:</strong> <Fragment set:html={md(r.searched)} /></p>
+      <p class="small"><strong>Result:</strong> <Fragment set:html={md(r.result)} /></p>
+      <p class="small muted"><strong>What would fall outside it:</strong> <Fragment set:html={md(r.bound)} /></p>
     </div>
   ))}
 

@@ -43,6 +43,11 @@ const cats = [
   ['fig',  'Figueiredo — Portugal and Mozambique', '#2f5d50'],  /* --doc    */
   ['eng',  'Wear, Castle and Hawkins — England',     '#3b5b78'],  /* not a Base token */
 ];
+/* The same six colours as TEXT, by token. `cats` keeps the hex because the map draws with it, but a hex
+   written into the table's text is one colour in both schemes, and the light-scheme ones are 1.9:1 to 2.6:1
+   on the dark page. The tokens flip with the scheme. */
+const TEXT = { leib: 'var(--disp)', luw: 'var(--inf)', both: 'var(--ink-soft)', end: 'var(--accent)',
+  fig: 'var(--doc)', eng: 'var(--eng)' };
 ---
 <Base title="Atlas"
   subtitle="Every place this archive can put a date to"
@@ -75,7 +80,7 @@ const cats = [
     <tbody>
       {atlas.places.map(p => (
         <tr>
-          <td><strong style={`color:${(cats.find(c => c[0] === p.cat) || [,,'inherit'])[2]}`}>{p.name}</strong></td>
+          <td><strong style={`color:${TEXT[p.cat] || 'inherit'}`}>{p.name}</strong></td>
           <td class="small">{p.what}</td>
         </tr>
       ))}

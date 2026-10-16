@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { md } from '@daviddef/archive-kit/lib/md.js';
 import Questions from "@daviddef/archive-kit/components/Questions.astro";
 import { u } from '../lib/url.js';
 import data from '../data/open-questions.json';
@@ -22,7 +23,15 @@ import data from '../data/open-questions.json';
    when there is nothing to filter. Question 2 says ANSWERED SO FAR AS
    RECORDS CAN in its own first line, which is a sentence and not a grade,
    and turning it into one would be this archive's call. */
-const rows = data.rows;
+/* The kit's Questions component writes these fields with set:html and never calls md(), so the
+   archive renders them first (16 October 2026: two rows printed their *** markers). None of the
+   fields holds markup, so md()'s escaping changes nothing but the markers. */
+const rows = data.rows.map((r) => ({
+  ...r,
+  q: md(r.q),
+  known: r.known ? md(r.known) : r.known,
+  settles: r.settles ? md(r.settles) : r.settles,
+}));
 ---
 <Base title="Open questions"
   subtitle="Ten things this archive cannot answer yet, in the order they are worth attacking"

@@ -6,24 +6,25 @@
  * other archive in the estate has a /corrections/ page, so a reader who knew the
  * menu from another archive found nothing here under that name. This is the
  * same register (data/corrections.json through register.json), drawn by the
- * kit's Corrections component. Nothing is rewritten: the strings are escaped
- * and printed as the data holds them, markers and all, because «was» is the
- * archive's record of what it used to say. Method now links here instead of
+ * kit's Corrections component. Nothing is rewritten: the strings are printed as
+ * the data holds them. md() escapes them first and then turns only the emphasis markers
+ * into tags, so the words are exactly the data's words (16 October 2026: the markers used
+ * to print as literal asterisks). Method now links here instead of
  * carrying a second copy.
  */
 import Base from '../layouts/Base.astro';
+import { md } from '@daviddef/archive-kit/lib/md.js';
 import Corrections from '@daviddef/archive-kit/components/Corrections.astro';
 import register from '../data/register.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = (p) => (/^https?:/.test(p) ? p : base + p);
-const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const rows = register.corrections.map((c) => ({
   id: 'c' + c.id,
-  who: esc(c.who) + ' <span class="muted">· ' + esc(c.field) + '</span>',
-  was: esc(c.was),
-  now: esc(c.now),
-  how: esc(c.source),
-  why: c.why ? esc(c.why) : '',
+  who: md(c.who) + ' <span class="muted">· ' + md(c.field) + '</span>',
+  was: md(c.was),
+  now: md(c.now),
+  how: md(c.source),
+  why: c.why ? md(c.why) : '',
 }));
 ---
 <Base title="Corrections"
