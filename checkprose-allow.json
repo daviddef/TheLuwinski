@@ -1,0 +1,24 @@
+[
+ {
+  "file": "requests/09-castle-followup.md",
+  "phrase": "derrick luwinski",
+  "reason": "the subject of the archive (harvest id 9500003), shown as he is now by David's design: a stated exception to the living standard, recorded here and nowhere else (the feed treats him as living like anyone); a letter to a cousin about his own DNA match"
+ },
+ {
+  "file": "site/src/data/sources.json",
+  "phrase": "derrick luwinski",
+  "year": "2026",
+  "reason": "the subject of the archive (harvest id 9500003), shown as he is now by David's design: a stated exception to the living standard, recorded here and nowhere else (the feed treats him as living like anyone); the source row that records the date his DNA kit was read, which is the kit's date and not a life date"
+ },
+ {
+  "file": "site/src/data/sources.json",
+  "phrase": "lynn derrick luwinski",
+  "year": "2026",
+  "reason": "the subject of the archive (harvest id 9500003), shown as he is now by David's design: a stated exception to the living standard, recorded here and nowhere else (the feed treats him as living like anyone); the source row that records the date his DNA kit was read, which is the kit's date and not a life date"
+ },
+ {
+  "file": "site/src/data/tree.json",
+  "phrase": "derrick luwinski",
+  "reason": "the subject of the archive (harvest id 9500003), shown as he is now by David's design: a stated exception to the living standard, recorded here and nowhere else (the feed treats him as living like anyone); the family-tree page's own entry for him, which carries the single word 'Living' where a date would be and the note that he is named only"
+ }
+]
