@@ -81,7 +81,11 @@ def main():
     bad = []
     for nm in sorted(names):
         for path, text in pages:
-            if re.search(r"\b" + re.escape(nm) + r"\b", text, re.I):
+            # Parts may be joined by space, hyphen, underscore or dot: a note that wrote
+            # "Penelope-Browne" for a living match holder passed this gate as a clean build
+            # until 17 October 2026, because only the spaced form was searched.
+            pat = r"\b" + r"[\s\-_.]+".join(re.escape(x) for x in nm.split()) + r"\b"
+            if re.search(pat, text, re.I):
                 bad.append(("FULL NAME", nm, rel(path)))
                 break
 

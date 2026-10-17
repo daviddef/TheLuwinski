@@ -3,7 +3,8 @@ NOTE TO DAVID BEFORE SENDING — this one is new ground and it is cheap.
 The BUNDESZENTRALKARTEI (BZK) is a NATIONAL card index of compensation claims under the
 Bundesentschädigungsgesetz, held by the Bezirksregierung Düsseldorf. Every western Bundesland ran
 its own compensation authority and § 185 BEG decided which one was competent in a given case —
-so for a man who left Berlin in 1933 and lived thirty-six years in Johannesburg, WHICH AUTHORITY
+so for a man who left Berlin for Johannesburg (the year is open: 1933 by the family tree, in
+South Africa by July 1939 by his passport) and lived there until 1968, WHICH AUTHORITY
 HE FILED WITH IS NOT OBVIOUS, and Berlin may not be the answer.
 
 The BZK answers the question that comes BEFORE Berlin's: did this person ever file at all, and
@@ -29,14 +30,15 @@ ENTSCHÄDIGUNGSVERFAHREN VOR, UND WENN JA, BEI WELCHER ENTSCHÄDIGUNGSBEHÖRDE U
 AKTENZEICHEN?
 
 Ich wende mich deshalb zuerst an Sie und nicht an ein Landesarchiv, weil bei dieser Familie
-gerade nicht feststeht, welches Land zuständig war. Kurt Luwinski verließ Berlin 1933 und lebte
-bis 1968 in Südafrika; seine Mutter starb 1975 in Baden-Württemberg; sein Bruder lebte in Potsdam,
+gerade nicht feststeht, welches Land zuständig war. Kurt Luwinski verließ Berlin in einem Jahr, das nicht feststeht (nach der Familienüberlieferung 1933,
+spätestens 1939), und lebte bis 1968 in Südafrika; seine Mutter starb 1975 in Baden-Württemberg; sein Bruder lebte in Potsdam,
 also in der DDR. Drei Personen, drei mögliche Zuständigkeiten.
 
     1. KURT ISRAEL LUWINSKI
        geboren 11. Mai 1912 in Berlin
        gestorben 15. Dezember 1968 in Johannesburg, Südafrika
-       Auswanderung 1933. Letzte bekannte deutsche Adresse: Berlin.
+       Auswanderung nach Südafrika, Jahr nicht gesichert (Familienüberlieferung 1933; in Johannesburg
+       spätestens im Juli 1939). Letzte bekannte deutsche Adresse: Berlin.
        Ein Antrag wäre aus dem Ausland gestellt worden, vermutlich in den 1950er Jahren.
 
     2. AUGUSTE LUWINSKI, verwitwete FRICKE, geschiedene LEIBHOLZ
@@ -70,4 +72,4 @@ david.defranceski@gmail.com
 +49 — kein deutscher Anschluss; erreichbar unter +61 459 881 486
 Australien
 
-    Das Familienarchiv mit allen Belegen ist unter daviddef.github.io/TheLuwinski einsehbar.
+    Das Familienarchiv mit allen Belegen ist unter luwinski.defranceski.com einsehbar.

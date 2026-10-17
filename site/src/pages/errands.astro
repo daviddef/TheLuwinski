@@ -152,12 +152,18 @@ const groups = [
       here rather than in the work list, because a letter that exists and has not gone out is an
       errand and not a research question. <strong>This archive drafts; it does not send.</strong>
       Each one is a file under <code>requests/</code> in the repository.
+      <strong>They are listed in the order to send them.</strong> A person who is waiting on an
+      answer comes first, then a correction to something already sent, then the requests
+      that could open the most of the Kurt and Ivone gaps, and the ones that touch other families
+      come last. Five drafts that stood here as unsent had gone out on 15 to 17 September; they
+      are counted with the sent letters below and kept in <code>requests/</code> as records.
     </p>
     <div class="scroll"><table>
-      <thead><tr><th>To</th><th>What it asks</th><th>Before sending</th></tr></thead>
+      <thead><tr><th>Order</th><th>To</th><th>What it asks</th><th>Why here, and before sending</th></tr></thead>
       <tbody>
-        {toSend.map((d) => (
+        {toSend.map((d, i) => (
           <tr>
+            <td><strong>{i + 1}</strong></td>
             <td><strong set:html={d.who} /><br /><code class="small">{d.file}</code></td>
             <td set:html={d.what} />
             <td class="small">{d.note ? <span set:html={d.note} /> : <span class="muted">—</span>}</td>

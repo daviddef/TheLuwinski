@@ -38,7 +38,7 @@ never by name. **That rule was always about the public site, not about David's o
 His guess is reasonable and wrong in a specific way. **He assumed that because his match list says
 BROWN, the shared ancestors must be Browns.** They are not.
 
-- Penelope Browne, 292.7 cM, descends from **AGNES KATE CASTLE and WALTER GEORGE BROWN**.
+- [name withheld — a living match holder], 292.7 cM, descends from **AGNES KATE CASTLE and WALTER GEORGE BROWN**.
 - Derrick descends from **MARTHA MAUD CASTLE**, Agnes Kate's sister.
 - **Agnes Kate and Martha Maud were both daughters of GEORGE CASTLE and CAROLINE WALLS of Baldock.**
 
@@ -114,7 +114,7 @@ thirty-two years later was christened Martha Maude.
 
 I will gladly send the census images for any of it.
 
-**On your other question — the cousin with the Brown interest. It is PENELOPE BROWNE.**
+**On your other question — the cousin with the Brown interest. It is [NAME WITHHELD — a living match holder; held in notes/].**
 
 She is in Australia, born in the 1950s, and she shares **292.7 cM** with Derrick across twelve
 segments — almost exactly what you and he share. She keeps a very large English tree, upwards of ten
