@@ -9,13 +9,10 @@
    tools/people_decisions.py, which asks the kit's one definition (kit/tools/living_rule.py), with the
    private harvest in hand, and writes the answer into register.json as `living` (four people) or `bare`
    (the subject). That is the generator's output, not a hand-set flag. The page cannot recompute it,
-   because the register withholds a living person's birth year BY DESIGN (it is a date of birth), and the
-   kit's JavaScript rule (kit/lib/person.js isLiving) needs that year. So, for those five records only,
-   the adapter hands the kit rule a stand-in birth year (the current year) that makes the JavaScript
-   twin agree with the generator. The stand-in is read by the rule and printed nowhere: a living page
-   prints no date. Python's rule has `said_living` for exactly this case (an archive's own statement
-   that someone is living); the JavaScript twin has no counterpart, so this is a gap in the kit, not
-   something to be generalised here. See `agreeWithGenerator` below, which is the safety net.
+   because the register withholds a living person's birth year BY DESIGN (it is a date of birth). So, for
+   those five records only, the adapter passes the kit rule's own `saidLiving: true` (the JavaScript twin
+   of living_rule.py's `said_living`): the archive's statement, from its generator, that the person is
+   living. No year is invented. See `agreeWithGenerator` below, which is the safety net.
 
    FOR EVERYONE ELSE the adapter passes only fields the register publishes (born, died, dead,
    citations, the children's birth years) and `agreeWithGenerator` runs the kit's rule over them at
@@ -86,7 +83,7 @@ function row(other, rel, mark, { source = 'tree', quiet = false } = {}) {
   const live = isLivingRecord(other);
   return {
     id: other.id, name: other.name, href: pageOf(other.id), source,
-    ...(live ? { birthYear: NOW } : { ...publicFields(other), parentLiving: livingParent(other) || undefined }),
+    ...(live ? { saidLiving: true } : { ...publicFields(other), parentLiving: livingParent(other) || undefined }),
     /* ON A LIVING PERSON'S PAGE no relative carries a date. This archive's gate (tools/check-living.py) fails
        any year on such a page, because a dead parent's life span beside a living child's name is the child's
        age worked backwards; the kit's chart would print a dead relative's years there. So the fields the
@@ -108,7 +105,7 @@ export function registerPerson(r) {
     for (const rec of x.records) if (!read.some((q) => q.title === rec.title)) read.push(rec);
   const person = {
     id: r.id, name: r.name,
-    ...(live ? { birthYear: NOW, town: r.town || '', country: r.country || '', place: r.place || '' }
+    ...(live ? { saidLiving: true, town: r.town || '', country: r.country || '', place: r.place || '' }
              : { ...publicFields(r), parentLiving: livingParent(r) || undefined, youngestChildYear: youngestChildYear(r) }),
     relations: { parents: rows('parents'), spouses: rows('spouses'), children: rows('children'), siblings: rows('siblings') },
     ...(live ? {} : { events: r.facts || [], sources: read.map((x) => x.title) }),
