@@ -1,0 +1,203 @@
+{
+  "_why": [
+    "THE FAMILY PAGES: WHICH SURNAMES GET ONE, AND WHAT EACH IS ALLOWED TO SAY. Written 17 October 2026.",
+    "",
+    "A family page here is about one SURNAME LINE: who bears it in this archive, where and when, and how it joins the",
+    "others. It is not the people index (/people/) and it is not a research page (/leibholz/, /wear-line/, /kurt/): it",
+    "is drawn from data this archive already holds and says nothing that data does not.",
+    "",
+    "THE RULE FOR A CORE FAMILY. A surname is core if (1) a direct-line ancestor on the tree carries it, or (2) it has",
+    "at least eight published people, or (3) the work list names it in three or more row titles. Direct-line comes",
+    "first, then the number of published people who have died, then the number of work-list mentions; the first twelve",
+    "missing from the list are made. Twelve are made. Not made, and why, is in the report that came with this change,",
+    "not here: a reason written into a data file goes stale the day the next page is added.",
+    "",
+    "WHAT IS DERIVED AT BUILD TIME (src/lib/families.js), NEVER TYPED HERE: the people, their years and places, the",
+    "marriages that join one family to another, the tree entries, the lanes (src/data/lines.json) and the counts. Nothing",
+    "in this file is a research claim. What is typed here is only a DECLARATION, in the way page-subjects.json is:",
+    "  register / register_ids / english   which people the page counts (by surname, plus ids the surname misses);",
+    "  tree                                which tree entries carry the name;",
+    "  tree_links                          which people each tree entry is about, DECLARED rather than matched;",
+    "  say                                 verbatim fragments of the tree's own wording for an entry;",
+    "  notes                               a verbatim sentence from another page of this archive, with where it is from;",
+    "  forms                               the spellings this archive already groups, with the page that groups them;",
+    "  pages                               the pages of this archive that tell the family's story.",
+    "tools/check-families.py reads the built site and fails if a fragment is not verbatim in its source, a declared",
+    "person is not the one the tree entry names, a listed page does not mention the family, a living person appears,",
+    "or a family page is missing from the nav, the index or the sitemap. It is tested against planted faults.",
+    "",
+    "THE LIVING STANDARD (version 2): a family page counts the living and names none of them. Their names, relationships",
+    "and place are on their own pages and on their relatives' pages, which is where the standard puts them; a family",
+    "page that listed them would make them easier to find than their own pages do."
+  ],
+
+  "kind_labels": {
+    "family": "In the family tree this archive was built from",
+    "index": "Listed in the register's surname index",
+    "document": "Found in a register, in nobody's tree"
+  },
+
+  "tree_links": {
+    "Kurt Israel Luwinski": ["id:9500001"],
+    "Ivone de Figueiredo": ["id:9500002"],
+    "Leonard Aubrey Robert Wear": ["href:/leonard/"],
+    "Henry Robert Wear": ["slug:henry-robert-wear"],
+    "Martha Maud Castle": ["slug:martha-maud-castle"],
+    "Robert Wear": ["slug:robert-wear"],
+    "Emma Hawkins": ["slug:emma-hawkins-1859"],
+    "George William Castle × Caroline Wallis": ["slug:george-william-castle-1862", "slug:caroline-wallis"],
+    "William Wear": ["slug:william-wear"],
+    "Sarah Bloom": ["slug:sarah-bloom"],
+    "John Hawkins": ["slug:john-hawkins-1819"],
+    "Emma Larkin": ["slug:emma-larkin-1822"],
+    "George Castle × Martha Giddings": ["slug:george-castle-1840", "slug:martha-giddings"],
+    "James Giddins × Elizabeth Giddins": ["slug:james-giddins", "slug:elizabeth-giddins"],
+    "John Wear × Elizabeth · and the other elders above the line": ["slug:john-wear", "slug:elizabeth-wear"],
+    "William Hawkins × Mary Appleyard · Robert Larkin × Mary Burch": ["slug:william-hawkins", "slug:mary-appleyard", "slug:robert-larkin", "slug:mary-burch"],
+    "Jacob Leibholz": ["id:9500020"],
+    "Auguste (Lizzy) Luwinski": ["id:9500006"],
+    "Sally Leibholz × Friederike Schmul": ["id:9500023", "id:9500024"],
+    "Joachim Luwinski × Johanna Thimm": ["id:9500028", "id:9500029"],
+    "Heinrich Leibholz × Agnes née Kerger": ["id:9600001", "id:9600002"],
+    "Ella Josephine Martha Leibholz née Baesler": ["id:9600003"],
+    "Charlotte Herta Marie Leibholz née Schötzow": ["id:9600004"],
+    "Hilde Henriette Leibholz": ["id:9600005"],
+    "Hertha Leibholz, divorced Katznol": ["id:9600006"],
+    "Gerda Felicitas Bade née Leibholz": ["id:9600007"]
+  },
+
+  "say": {
+    "Kurt Israel Luwinski": ["NOT HIS BIOLOGICAL FATHER", "AND HE IS THE MAN WHO RAISED HIM"],
+    "Auguste (Lizzy) Luwinski": ["KURT'S MOTHER — AND THE REASON THE NAME ON THIS ARCHIVE IS LUWINSKI AND NOT LEIBHOLZ."],
+    "Joachim Luwinski × Johanna Thimm": ["AUGUSTE'S PARENTS", "THEIR MARRIAGE IS STILL UNFOUND — the one line that would name Joachim's own parents."],
+    "Ivone de Figueiredo": ["Recorded under six spellings of her maiden surname, three forenames and five married names."],
+    "Leonard Aubrey Robert Wear": ["THE WEAKEST LINK ON THE TREE, AND THE MOST IMPORTANT.", "NO DOCUMENT YET NAMES LEONARD AS ANYBODY'S FATHER."],
+    "Henry Robert Wear": ["Birth index vol 1D p230."],
+    "Martha Maud Castle": ["Baptised at Baldock 22 September 1895."],
+    "Robert Wear": ["Married Emma Hawkins Q4 1881, St Olave Southwark, vol 1D p455."],
+    "Emma Hawkins": ["A widow at thirty-two"],
+    "George William Castle × Caroline Wallis": ["REGRADED 16 September from DOCUMENTED to PROBABLE, and the demotion is the point.", "The marriage certificate would."],
+    "William Wear": ["SADLER in 1851, harness maker by 1871"],
+    "Sarah Bloom": ["HER BIRTHPLACE IS DISPUTED BETWEEN TWO CENSUSES", "Marked probable rather than documented until one record settles where she was born."],
+    "John Hawkins": ["AGRICULTURAL LABOURER.", "HIS PARENTS ARE NAMED, 12 OCTOBER 2026: WILLIAM HAWKINS AND MARY APPLEYARD."],
+    "Emma Larkin": ["SHE HAS A MAIDEN NAME AT LAST, 12 OCTOBER 2026: SHE IS EMMA LARKIN."],
+    "George Castle × Martha Giddings": ["ENUMERATED AS SON-IN-LAW in the house of James and Elizabeth Giddins"],
+    "James Giddins × Elizabeth Giddins": ["NEW ON 16 SEPTEMBER, and they are the reason this branch of the family stayed in Hertfordshire."],
+    "John Wear × Elizabeth · and the other elders above the line": ["WILLIAM WEAR'S PARENTS HAVE NAMES: JOHN WEAR and ELIZABETH, of Newington in Surrey.", "HELD AS PROBABLE AND NOT DOCUMENTED"],
+    "William Hawkins × Mary Appleyard · Robert Larkin × Mary Burch": ["APPLEYARD and BURCH are surnames this archive has never held.", "HELD AS PROBABLE AND NOT DOCUMENTED"],
+    "Jacob Leibholz": ["KURT'S FATHER, AND SO DERRICK'S GRANDFATHER OF RECORD."],
+    "Sally Leibholz × Friederike Schmul": ["JACOB'S PARENTS.", "the oldest document this archive holds on this line"],
+    "Jacob Leibholz the elder × H—— née Pollnow": ["SALLY'S PARENTS, named in his marriage entry of 1874", "HER GIVEN NAME IS AN INITIAL BECAUSE THAT IS ALL THE PAGE YIELDS"],
+    "Juda Schmul × Jutta née Machol": ["FRIEDERIKE'S PARENTS, from the same 1874 entry.", "HE KEPT AN INN"],
+    "Joaquim Júlio de Figueiredo × Leónia dos Santos Mota": ["ANSWERED 27 SEPTEMBER 2026, AND NOT BY AN INDEX.", "The two documents disagree between MATA and MOTA, which is the one thing still open."],
+    "Heinrich Leibholz × Agnes née Kerger": ["THE ONLY COMPLETE HOUSEHOLD OF THE SEVEN"],
+    "Ella Josephine Martha Leibholz née Baesler": ["THE DEATH IS CERTAIN.", "One certificate decides it."],
+    "Charlotte Herta Marie Leibholz née Schötzow": ["THE WEAKEST OF THE THREE: the gap is fifteen years."],
+    "Hilde Henriette Leibholz": ["THE STRONGEST OF THE THREE"],
+    "Hertha Leibholz, divorced Katznol": ["ON THE CHART AS A LEAD, NOT AS A FINDING."],
+    "Gerda Felicitas Bade née Leibholz": ["SHE WAS BORN A LEIBHOLZ AND MARRIED OUT"]
+  },
+
+  "families": [
+    {
+      "slug": "luwinski", "name": "Luwinski",
+      "register": ["Luwinski"], "register_ids": [], "english": [], "tree": ["Luwinski"],
+      "forms": ["LUWINSKI", "LUWINSKY", "LUWENSKI", "LUWWINSKY", "LOWINSKI", "LOWINSKY", "JUWINSKI"],
+      "forms_src": ["The lines of the name", "/lines/"],
+      "lanes": "LUWINSKI",
+      "notes": [
+        {"text": "That is a collection of every Luwinski found in the German and Polish registers, parked under a placeholder so it could be kept. It is useful and worth keeping. It is not descent, and it is not presented here as though it were.",
+         "from": ["The register", "/register/"], "file": "src/pages/register.astro"},
+        {"text": "Not one of these people has been shown to connect to Joachim Luwinski of Allenstein.",
+         "from": ["The register", "/register/"], "file": "src/pages/register.astro"}
+      ],
+      "pages": [["The lines of the name", "/lines/"], ["Kurt", "/kurt/"], ["East Prussia", "/east-prussia/"], ["The register", "/register/"], ["Blood relatives", "/bloodline/"], ["The tree", "/tree/"]]
+    },
+    {
+      "slug": "leibholz", "name": "Leibholz",
+      "register": ["Leibholz", "Leipsholz"], "register_ids": ["9600007"], "english": [], "tree": ["Leibholz"],
+      "forms": ["LEIBHOLZ", "LAIBHOLZ", "LEIBBHOLZ", "LEIBHOLTZ", "LEIPHOLZ", "LEIPSHOLZ"],
+      "forms_src": ["The lines of the name", "/lines/"],
+      "lanes": "LEIBHOLZ",
+      "notes": [
+        {"text": "Eight households of one surname, seven of them in one city and the eighth in Melbourne.",
+         "from": ["The lines of the name", "/lines/"], "file": "src/data/lines.json"},
+        {"text": "None of the seven is proved kin to Derrick's line",
+         "from": ["The register", "/register/"], "file": "src/pages/register.astro"}
+      ],
+      "pages": [["The Leibholz brothers", "/leibholz/"], ["The lines of the name", "/lines/"], ["Kurt", "/kurt/"], ["Australia", "/australia/"], ["The timeline", "/timeline/"], ["Corrections", "/corrections/"], ["The tree", "/tree/"]]
+    },
+    {
+      "slug": "wear", "name": "Wear",
+      "register": [], "register_ids": [], "english": ["Wear"], "tree": ["Wear"],
+      "forms": [], "forms_src": ["Her names", "/names/"], "forms_from_other": "The Wear family", "lanes": null,
+      "notes": [],
+      "pages": [["Leonard Wear", "/leonard/"], ["Where the Wear line stands", "/wear-line/"], ["The DNA", "/dna/"], ["The tree", "/tree/"], ["Status", "/status/"]]
+    },
+    {
+      "slug": "thimm", "name": "Thimm",
+      "register": ["Thimm"], "register_ids": [], "english": [], "tree": ["Thimm"],
+      "forms": [], "forms_src": null, "lanes": null,
+      "notes": [],
+      "pages": [["East Prussia", "/east-prussia/"], ["The Leibholz brothers", "/leibholz/"], ["The register", "/register/"], ["The tree", "/tree/"]]
+    },
+    {
+      "slug": "castle", "name": "Castle",
+      "register": [], "register_ids": [], "english": ["Castle"], "tree": ["Castle"],
+      "forms": [], "forms_src": null, "lanes": null,
+      "notes": [],
+      "pages": [["Leonard Wear", "/leonard/"], ["Where the Wear line stands", "/wear-line/"], ["The DNA", "/dna/"], ["The tree", "/tree/"]]
+    },
+    {
+      "slug": "hawkins", "name": "Hawkins",
+      "register": [], "register_ids": [], "english": ["Hawkins"], "tree": ["Hawkins"],
+      "forms": [], "forms_src": null, "lanes": null,
+      "notes": [],
+      "pages": [["Where the Wear line stands", "/wear-line/"], ["Leonard Wear", "/leonard/"], ["What has been read", "/searched/"], ["The tree", "/tree/"]]
+    },
+    {
+      "slug": "giddins", "name": "Giddins",
+      "register": [], "register_ids": [], "english": ["Giddins", "Giddings"], "tree": ["Giddins", "Giddings"],
+      "forms": [], "forms_src": ["Her names", "/names/"], "forms_from_other": "Giddins / Giddings",
+      "lanes": null,
+      "notes": [],
+      "pages": [["What has been read", "/searched/"], ["Her names", "/names/"], ["The tree", "/tree/"]]
+    },
+    {
+      "slug": "larkin", "name": "Larkin",
+      "register": [], "register_ids": [], "english": ["Larkin"], "tree": ["Larkin"],
+      "forms": [], "forms_src": null, "lanes": null,
+      "notes": [],
+      "pages": [["Where the Wear line stands", "/wear-line/"], ["What has been read", "/searched/"], ["The tree", "/tree/"]]
+    },
+    {
+      "slug": "figueiredo", "name": "Figueiredo",
+      "register": ["Figueiredo"], "register_ids": [], "english": [], "tree": ["Figueiredo"],
+      "forms": [], "forms_src": ["Her names", "/names/"], "forms_from_names": {"person": "Ivone de Figueiredo", "kind": "maiden"},
+      "lanes": null,
+      "notes": [],
+      "pages": [["Ivone", "/ivone/"], ["Mozambique", "/mozambique/"], ["Her names", "/names/"], ["Nineteen forty-eight", "/1948/"], ["The tree", "/tree/"]]
+    },
+    {
+      "slug": "schmul", "name": "Schmul",
+      "register": ["Schmul"], "register_ids": [], "english": [], "tree": ["Schmul"],
+      "forms": [], "forms_src": null, "lanes": null,
+      "notes": [],
+      "pages": [["The Leibholz brothers", "/leibholz/"], ["What has been read", "/searched/"], ["Errands", "/errands/"], ["The tree", "/tree/"]]
+    },
+    {
+      "slug": "bloom", "name": "Bloom",
+      "register": [], "register_ids": [], "english": ["Bloom"], "tree": ["Bloom"],
+      "forms": [], "forms_src": null, "lanes": null,
+      "notes": [],
+      "pages": [["Where the Wear line stands", "/wear-line/"], ["Leonard Wear", "/leonard/"], ["What has been read", "/searched/"], ["The tree", "/tree/"]]
+    },
+    {
+      "slug": "wallis", "name": "Wallis",
+      "register": [], "register_ids": [], "english": ["Wallis"], "tree": ["Wallis"],
+      "forms": [], "forms_src": ["Her names", "/names/"], "forms_from_other": "Caroline Wallis (not Walls)", "lanes": null,
+      "notes": [],
+      "pages": [["What has been read", "/searched/"], ["The DNA", "/dna/"], ["Her names", "/names/"], ["The tree", "/tree/"]]
+    }
+  ]
+}

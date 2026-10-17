@@ -1,0 +1,79 @@
+---
+/* /families/ - THE INDEX TO THE FAMILY PAGES. Added 17 October 2026.
+
+   One card per family, drawn by the kit's Families component, which Blazevic, D'Arcy and Falco use for the
+   same page. What this archive can put behind each card is what its data holds: a count of the people who
+   have died, the years recorded, the spellings it groups, the places the tree names, how many tree entries
+   carry the name, and the names it joins by marriage. Every number is computed by src/lib/families.js; none is
+   typed. The living are not counted here.
+
+   Under the cards: the other surnames the register holds three or more of, as a plain list with counts and no
+   claim about them, so that a name with no family page is visible as a name with no family page. */
+import Base from '../../layouts/Base.astro';
+import Families from '@daviddef/archive-kit/components/Families.astro';
+import { familyModel, familySlugs, otherSurnames, cfg } from '../../lib/families.js';
+import { u } from '../../lib/url.js';
+
+const models = familySlugs().map(familyModel);
+const total = models.reduce((n, m) => n + m.nDead, 0);
+const WORD = ['no', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen'];
+const rows = models.map((m) => ({
+  label: m.f.name,
+  slug: m.f.slug,
+  href: `/families/${m.f.slug}/`,
+  hrefLabel: `The ${m.f.name} family`,
+  count: m.nDead,
+  countLabel: m.nDead === 1 ? 'person' : 'people',
+  gloss: m.nTree
+    ? `${m.nTree} entr${m.nTree === 1 ? 'y' : 'ies'} on the tree, graded ${m.gradeWords}.`
+    : 'No entry of the tree carries the name.',
+  facts: [
+    m.earliest ? ['Years recorded', m.earliest === m.latest ? String(m.earliest) : `${m.earliest} – ${m.latest}`] : null,
+    m.forms.length ? ['Written', m.forms.map((x) => x.form).join(' · ')] : null,
+    m.towns.length ? ['Places', m.towns.slice(0, 4).map((t) => t.town).join(' · ')] : (m.treePlaces.length ? ['On the tree', m.treePlaces.slice(0, 2).join('; ')] : null),
+    m.joinRows.length ? ['Joined by marriage to', m.joinRows.slice(0, 6).map((j) => j.surname).join(' · ') + (m.joinRows.length > 6 ? ` and ${m.joinRows.length - 6} more` : '')] : null,
+  ].filter(Boolean),
+}));
+const groups = [{ rows }];
+const others = otherSurnames(3);
+---
+<Base title="The families"
+  subtitle={`${WORD[models.length] || models.length} surname lines, ${total} people who have died, each with a page of its own.`}
+  lede="A family page is about a name: who bears it here, where and when, how well each link is known, and which other names it joins. The research pages and the people pages stay what they are, and are linked from each.">
+
+  <div class="panel">
+    <h3>How to read these pages</h3>
+    <p class="small">
+      These are the surnames carried by the people on <a href={u('/tree/')}>the tree</a>, in both of its lines.
+      They are not one family. The tree says which line is which in its own words, and each page here repeats
+      those words rather than add to them.
+    </p>
+    <p class="small muted">
+      Every figure on these pages is counted from the register, the English line and the tree; none is typed.
+      <strong>A living person is counted and never named.</strong> Their names, relationships and place are on
+      their own pages, where the standard puts them. A name that appears here means a person who bears it has a
+      page, not that two people of one name are kin: <a href={u('/lines/')}>the lines of the name</a> keeps the
+      households of a name apart until a document joins them.
+    </p>
+  </div>
+
+  <section class="blk">
+    <Families groups={groups} u={u} html={false} />
+  </section>
+
+  {others.length > 0 && (
+    <section>
+      <h2>Other names in the register</h2>
+      <p class="small muted">
+        Surnames the register holds {WORD[3].toLowerCase()} or more people of, counting only the dead, that have no family page here.
+        This is a count of a name, not a statement that those people are one family or kin to anyone on the tree.
+      </p>
+      <p>{others.map((o, i) => <span>{i > 0 && ' · '}<strong>{o.surname}</strong> {o.n}</span>)}</p>
+    </section>
+  )}
+
+  <p class="small muted">
+    <a href={u('/people/')}>All the people</a> &middot; <a href={u('/lines/')}>The lines of the name</a> &middot;
+    <a href={u('/register/')}>The register</a>
+  </p>
+</Base>

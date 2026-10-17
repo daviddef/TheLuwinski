@@ -1,0 +1,260 @@
+---
+/* /families/<surname>/ - ONE SURNAME LINE, DRAWN FROM DATA THE ARCHIVE ALREADY HOLDS. Added 17 October 2026.
+
+   A family page answers: who bears this name here, where and when, how well is it known, and which other
+   names it joins. It is NOT the people index (/people/) and not a research page (/leibholz/, /wear-line/,
+   /kurt/ stay what they are, and are linked from here). Everything on it is computed by src/lib/families.js
+   from the register, the English line, the tree and the lanes; src/data/families.json only declares which
+   people and which tree entries carry the name. See that file's _why, and tools/check-families.py.
+
+   THE LIVING STANDARD (version 2): the living are counted and never named here. The tree's wording is
+   quoted only as whole fragments that tools/check-families.py proves are verbatim in their source.
+
+   The people tiles are the kit's Families component, which the other archives use for the same job; the
+   tree, the marriages and the grades are this archive's own and are drawn below. */
+import Base from '../../layouts/Base.astro';
+import Families from '@daviddef/archive-kit/components/Families.astro';
+import Evidence from '@daviddef/archive-kit/components/Evidence.astro';
+import { familyModel, familySlugs } from '../../lib/families.js';
+import { u } from '../../lib/url.js';
+
+export function getStaticPaths() {
+  return familySlugs().map((slug) => ({ params: { slug }, props: { slug } }));
+}
+const { slug } = Astro.props;
+const M = familyModel(slug);
+const { f } = M;
+const FIVE = new Set(['documented', 'probable', 'inferred', 'family', 'disputed']);
+const many = (n, one, more) => `${n} ${n === 1 ? one : more}`;
+const where = M.nEng > 0 && M.nReg > 0 ? ` \u2014 ${M.nEng} on the English line, ${M.nReg} in the register`
+  : M.nEng > 0 ? ' \u2014 all on the English line' : M.nReg > 0 ? ' \u2014 all in the register' : '';
+const dated = M.nDated < M.nDead ? `; ${M.nDated} ${M.nDated === 1 ? 'has' : 'have'} a recorded year` : '';
+
+const range = M.earliest && M.latest && M.earliest !== M.latest ? `${M.earliest} to ${M.latest}` : (M.earliest ? String(M.earliest) : '');
+const sub = `${f.name}: ${many(M.nDead, 'person who has died', 'people who have died')} in this archive` +
+  (range ? `, years recorded ${range}` : '') + `. Who bears the name, where, and how well each link is known.`;
+
+/* the tiles for the kit's Families component */
+const tile = (t) => ({ name: t.name, href: t.href, life: t.life, place: t.place });
+const rows = [];
+if (M.regOnTree.length) rows.push({
+  label: 'On the tree', count: M.regOnTree.length, countLabel: M.regOnTree.length === 1 ? 'person' : 'people',
+  gloss: 'People of the name that the tree entries above are about.',
+  people: M.regOnTree.map(tile),
+});
+const KLAB = { family: 'Elsewhere in the family tree', index: 'In the surname index', document: 'Found in a register' };
+for (const g of M.elsewhereByKind) rows.push({
+  label: KLAB[g.kind],
+  count: g.people.length, countLabel: g.people.length === 1 ? 'person' : 'people',
+  gloss: `As the register files them: “${g.label}.”`,
+  people: g.people.map(tile),
+});
+const groups = rows.length ? [{ rows }] : [];
+const hasTree = M.groups.length > 0;
+---
+<Base title={`The ${f.name} family`} subtitle={sub}
+  lede={`${f.name} as this archive holds it: the people of the name, the tree’s own words about each link, and the names it joins.`}>
+
+  <div class="panel">
+    <h3>At a glance</h3>
+    <dl class="kv">
+      <dt>Published</dt>
+      <dd><strong>{many(M.nDead, 'person who has died', 'people who have died')}</strong>{where}{dated}.</dd>
+      <dt>Living</dt>
+      <dd>
+        {M.nLiving > 0
+          ? <>{many(M.nLiving, 'living person', 'living people')} bear{M.nLiving === 1 ? 's' : ''} the name in the register. A living person is named on their own page and on their relatives&rsquo; pages, with relationships and place and nothing more; they are not listed here.</>
+          : <>None in the register. A living person is named on their own page, with relationships and place and nothing more, and is never listed on a family page.</>}
+      </dd>
+      {range && <><dt>Years recorded</dt><dd>{range}, {M.nDead === 1 ? 'for the one person who has died' : `across all ${M.nDead} people who have died`}.</dd></>}
+      {M.towns.length > 0 && <><dt>Places</dt><dd>{M.towns.map((t) => t.town).join(' · ')} <span class="muted small">(the towns the tree names for these people, most often first)</span></dd></>}
+      {M.nTree > 0 && <><dt>On the tree</dt><dd>{many(M.nTree, 'entry', 'entries')} {M.nTree === 1 ? 'carries' : 'carry'} the name, graded {M.gradeWords}. <span class="muted small">An entry can hold a couple.</span></dd></>}
+      {M.forms.length > 0 && <><dt>Also written</dt><dd>
+        {M.forms.map((x, i) => <span>{i > 0 && ' · '}<strong>{x.form}</strong>{x.where && <span class="muted small"> ({x.where})</span>}</span>)}
+        {f.forms_src && <> <span class="muted small">&mdash; as grouped on <a href={u(f.forms_src[1])}>{f.forms_src[0].toLowerCase()}</a></span></>}
+      </dd></>}
+    </dl>
+    {M.placeholders > 0 && <p class="small muted">{many(M.placeholders, 'placeholder record', 'placeholder records')} in the register carry the name for a person the source tree could not name; they are not counted or listed.</p>}
+  </div>
+
+  {hasTree && (
+    <section id="tree">
+      <h2>Where the tree puts the name</h2>
+      <p class="small muted">
+        These are the entries of <a href={u('/tree/')}>the tree</a> that carry the name, grouped under the
+        tree&rsquo;s own headings, each with the grade the tree gives it on the shared five-word ladder. The
+        quoted words are the tree&rsquo;s, whole and unchanged. Its headings count outward from its own subject.
+      </p>
+      {M.groups.map((g) => (
+        <div class="panel">
+          <h3>{g.label}</h3>
+          {g.n && <p class="small muted">Tree generation {g.n}</p>}
+          {g.entries.map((en) => (
+            <div class="entry">
+              <p>
+                {en.links.length === 1 && en.links[0].name
+                  ? <a href={en.links[0].href}><strong>{en.name}</strong></a>
+                  : en.links.length === 1
+                    ? <a href={en.links[0].href}><strong>{en.name}</strong></a>
+                    : <strong>{en.name}</strong>}
+                {en.links.length > 1 && <span class="small"> &mdash; pages: {en.links.map((l, i) => <span>{i > 0 && ', '}<a href={l.href}>{l.name}</a></span>)}</span>}
+                {' '}{FIVE.has(en.status) ? <Evidence level={en.status} /> : <span class="tag disp">{en.statusLabel}</span>}
+              </p>
+              {!FIVE.has(en.status) && en.statusWhat && <p class="small muted">The tree&rsquo;s own legend for &ldquo;{en.statusLabel}&rdquo;: {en.statusWhat}</p>}
+              <p class="small muted">{[en.dates, en.place].filter(Boolean).join(' · ')}</p>
+              {en.say.length > 0 && <blockquote class="say">{en.say.map((s, i) => <span>{i > 0 && ' … '}&ldquo;{s}&rdquo;</span>)}</blockquote>}
+            </div>
+          ))}
+        </div>
+      ))}
+    </section>
+  )}
+
+  {f.notes.length > 0 && (
+    <section id="caution">
+      <h2>What this archive says about the name</h2>
+      {f.notes.map((n) => (
+        <blockquote>{n.text} <span class="small">&mdash; <a href={u(n.from[1])}>{n.from[0]}</a></span></blockquote>
+      ))}
+    </section>
+  )}
+
+  {M.lanes.length > 0 && (
+    <section id="lanes">
+      <h2>The lanes of the name</h2>
+      <p class="small muted">
+        This archive keeps every household of the name in a lane of its own until a document joins it
+        (<a href={u('/lines/')}>the lines of the name</a>). The lanes, with the grade each carries, are:
+      </p>
+      <div class="scroll"><table>
+        <thead><tr><th>Lane</th><th>Grade</th><th></th></tr></thead>
+        <tbody>
+          {M.lanes.map((l) => (
+            <tr>
+              <td><strong>{l.label}</strong></td>
+              <td class="small">{l.conf}</td>
+              <td class="small"><a href={l.href}>{l.read}</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+    </section>
+  )}
+
+  <section id="people">
+    <h2>The people</h2>
+    {M.engRows.length > 0 && (
+      <div>
+        <h3>The English line <span class="small muted">&mdash; {M.engRows.length}</span></h3>
+        <div class="scroll"><table>
+          <thead><tr><th>Person</th><th>Dates</th><th>Grade</th><th>How we know</th></tr></thead>
+          <tbody>
+            {M.engRows.map((p) => (
+              <tr>
+                <td><a href={p.href}><strong>{p.name}</strong></a></td>
+                <td>{p.dates}</td>
+                <td><Evidence level={p.grade} /></td>
+                <td class="small muted">{p.why}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table></div>
+      </div>
+    )}
+    {M.kinRows.length > 0 && (
+      <div>
+        <h3>Also named in the archive&rsquo;s family charts <span class="small muted">&mdash; {M.kinRows.length}, without a page in the people index</span></h3>
+        <p class="small muted">Taken from the kin lists on the pages above. Nothing here is a finding of its own; each is as the chart gives it.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Name</th><th>Dates</th><th>Named as</th></tr></thead>
+          <tbody>
+            {M.kinRows.map((k) => (
+              <tr>
+                <td>{k.href ? <a href={k.href}>{k.name}</a> : k.name}{k.mark && <span class="small muted"> ({k.mark})</span>}</td>
+                <td>{k.dates}</td>
+                <td class="small muted">{k.rels.join('; ')}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table></div>
+      </div>
+    )}
+    {groups.length > 0 && (
+      <div>
+        <h3>In the register <span class="small muted">&mdash; {M.nReg}</span></h3>
+        <Families groups={groups} u={u} html={false} />
+      </div>
+    )}
+    {M.nDead === 0 && <p>No published person has died under this name.</p>}
+  </section>
+
+  {M.joinRows.length > 0 && (
+    <section id="joins">
+      <h2>The names it joins</h2>
+      <p class="small muted">Marriages recorded between a person of this name and a person of another. A name with a family page of its own is linked.</p>
+      <div class="scroll"><table>
+        <thead><tr><th>Name</th><th>Marriages</th><th>Who</th></tr></thead>
+        <tbody>
+          {M.joinRows.map((j) => (
+            <tr>
+              <td>{j.family ? <a href={j.family.href}><strong>{j.surname}</strong></a> : <strong>{j.surname}</strong>}</td>
+              <td>{j.pairs.length}</td>
+              <td class="small">
+                {j.pairs.map((p) => (
+                  <div>
+                    <a href={p.a.href}>{p.a.name}</a> and {p.b.href ? <a href={p.b.href}>{p.b.name}</a> : p.b.name}
+                    {p.note && <span class="muted"> ({p.note})</span>}
+                  </div>
+                ))}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+    </section>
+  )}
+
+  {M.joinOther.length > 0 && (
+    <section id="joins-other">
+      <h2>Other marriages in the register</h2>
+      <details>
+        <summary>{many(M.nJoinOther, 'marriage', 'marriages')} among the other people of the name, in {many(M.joinOther.length, 'surname', 'surnames')}</summary>
+        <p class="small muted">
+          These are marriages between people the register holds under this name and people it holds under another, none of them a person the tree entries above are about. They are the source tree&rsquo;s
+          and are listed so that nothing is lost; they are not offered as families this one joined.
+        </p>
+        <div class="scroll"><table>
+          <thead><tr><th>Name</th><th>Who</th></tr></thead>
+          <tbody>
+            {M.joinOther.map((j) => (
+              <tr>
+                <td>{j.family ? <a href={j.family.href}><strong>{j.surname}</strong></a> : <strong>{j.surname}</strong>}</td>
+                <td class="small">
+                  {j.pairs.map((p) => (
+                    <div><a href={p.a.href}>{p.a.name}</a> and {p.b.href ? <a href={p.b.href}>{p.b.name}</a> : p.b.name}{p.note && <span class="muted"> ({p.note})</span>}</div>
+                  ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table></div>
+      </details>
+    </section>
+  )}
+
+  <section id="more">
+    <h2>Where this family&rsquo;s story is told</h2>
+    <ul>
+      {M.pages.map((p) => <li><a href={p.href}>{p.label}</a></li>)}
+      <li><a href={u('/families/')}>All the family pages</a></li>
+      <li><a href={u('/people/')}>All the people</a></li>
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .entry + .entry { border-top: 1px solid var(--rule); margin-top: .9rem; padding-top: .9rem; }
+  .entry p { margin-bottom: .35rem; }
+  blockquote.say { margin: .5rem 0 0; font-size: .92rem; }
+  .kv dd { overflow-wrap: break-word; min-width: 0; }
+</style>
