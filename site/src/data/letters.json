@@ -14,7 +14,7 @@
    "sent": "2026-09-14",
    "who": "Arquivo Histórico de Moçambique, Maputo",
    "addr": "ahm@uem.mz",
-   "what": "Ivone's 1924 birth certificate",
+   "what": "Ivone's 1924 birth certificate — THE YEAR IN THIS LETTER IS WRONG (she was born 4 March 1922); the correction is drafted as letter 41",
    "thread": "1a0a17e3f001a60d",
    "chase": 28
   },
@@ -175,46 +175,58 @@
    "note": "FIRST. Reply on her thread of 29 September (a new thread, not the one of 14 September). A named archivist has been waiting since the 29th for the one fact she asked for, and it opens the route to Kurt's birth entry. The birth entry itself is then ordered through the Digitaler Antrag (work list row 226), which costs money and is David's. Delete the older draft of 20 September in the mailbox."
   },
   {
+   "file": "41-SEND-THIS-to-ahm-correction.txt",
+   "who": "Arquivo Histórico de Moçambique, Maputo — correcting the request of 14 September",
+   "what": "Corrects the year of Ivone's birth in the letter of 14 September (4 March 1922, not 1924), gives what is now known from the 1987 transcription made in Lisbon, and asks for the ORIGINAL 1922 entry at Lourenço Marques, because the mother's surname reads Mata in the transcription and Mota elsewhere and only the original can settle it. Portuguese, with an English translation beneath.",
+   "note": "SECOND. Reply on your own thread of 14 September (mail thread 1a0a17e3f001a60d). That letter asked for the wrong year, so a search of the 1865 to 1934 books would find nothing, and it has had no answer in 33 days. It costs nothing to send."
+  },
+  {
    "file": "27-SEND-THIS-to-paul-correction.txt",
    "who": "Paul, a DNA match — corrections to the message of 16 September",
    "what": "Corrects three things that went on 16 September: that Martha Giddings could not have known her son (she had him for most of a year); that George William Castle died in 1916 (the index has him in the third quarter of 1917); and Caroline Wallis's year of birth, which is open between 1862 and 1863. Then gives him the census that proves his line above George William, Caroline's remarriage, and Emma Hawkins's marriage to John Hull.",
-   "note": "SECOND. Reply on the MyHeritage thread. A correction to something already sent goes before any new request. Rewritten on 17 October; the earlier text carried 1916 and an 'exact' 1863."
+   "note": "THIRD. Reply on the MyHeritage thread. A correction to something already sent goes before any new request. Rewritten on 17 October; the earlier text carried 1916 and an 'exact' 1863."
   },
   {
    "file": "32-SEND-THIS-to-landesarchiv-entschaedigung.txt",
    "who": "Landesarchiv Berlin — Entschädigungsbehörde files",
    "what": "An addition to the letter of 14 September about Kurt and the Leibholz brothers, naming the compensation files as a new subject. German.",
-   "note": "THIRD. Straight after 39, as a reply on the same thread of 29 September, so it reaches the same case officer. This is the highest-value document in the Kurt backlog: a compensation file holds the claimant's own sworn account of his life before emigration, which is the largest gap in his biography. Free digitisation of up to ten files a year may apply and the letter leaves that to them. Expect a form to shorten the protection period. Corrected on 17 October: Kurt's emigration year is stated as open, and Jacob's last address is Treuchtlingerstraße 4."
+   "note": "FOURTH. Straight after 39, as a reply on the same thread of 29 September, so it reaches the same case officer. This is the highest-value document in the Kurt backlog: a compensation file holds the claimant's own sworn account of his life before emigration, which is the largest gap in his biography. Free digitisation of up to ten files a year may apply and the letter leaves that to them. Expect a form to shorten the protection period. Corrected on 17 October: Kurt's emigration year is stated as open, and Jacob's last address is Treuchtlingerstraße 4."
+  },
+  {
+   "file": "42-SEND-THIS-to-registos-centrais.txt",
+   "who": "Conservatória dos Registos Centrais, Lisboa",
+   "what": "Asks for the marriage entry of Frederico Pinto da Rocha and Ivone, Lourenço Marques, 18 November 1939, which should name the parents of both and so open Frederico's family, and for Henrique's birth entry of 11 March 1941, which should name his father. Asks what proof of kinship is needed for a record under a hundred years old. Portuguese, with an English translation beneath.",
+   "note": "FIFTH. A new correspondent; send on its own thread. Check the address at irn.justica.gov.pt first: the email held for this office comes from 2017 to 2018 listings. The quickest route for Henrique's birth may be for Derrick to sign the request himself, since he is the half-brother. Certificates are paid, and the fee is yours to decide."
   },
   {
    "file": "33-SEND-THIS-to-bzk.txt",
    "who": "Bundeszentralkartei, Bezirksregierung Düsseldorf",
    "what": "Asks the national card index of compensation claims about four people of the LUWINSKI and LEIBHOLZ family. It exists because § 185 BEG decided WHICH Land’s authority was competent, and a Berlin-only enquiry can come back empty while the file sits elsewhere. German.",
-   "note": "FOURTH. A new body and a new thread, sent on its own. It answers the question that comes before the Berlin one: whether Kurt, Auguste, Siegfried or Jacob filed at all, and with which authority. One enquiry covers all four, and a plain 'nothing on file' is a usable answer."
+   "note": "SIXTH. A new body and a new thread, sent on its own. It answers the question that comes before the Berlin one: whether Kurt, Auguste, Siegfried or Jacob filed at all, and with which authority. One enquiry covers all four, and a plain 'nothing on file' is a usable answer."
   },
   {
    "file": "34-SEND-THIS-to-olsztyn.txt",
    "who": "Archiwum Państwowe w Olsztynie",
    "what": "The East Prussian enquiry — the Allenstein and Kreis Rössel entries named by the Geneteka sweep. Polish.",
-   "note": "FIFTH. A new correspondent; send on its own thread. It asks for the marriage of Joachim Luwinski and Johanna Thimm, the one line that would name Joachim's parents, the oldest generation of Kurt's mother's side this archive can reach. Polish. Slow, and worth starting early. Postal address held as the fallback if the email bounces."
+   "note": "SEVENTH. A new correspondent; send on its own thread. It asks for the marriage of Joachim Luwinski and Johanna Thimm, the one line that would name Joachim's parents, the oldest generation of Kurt's mother's side this archive can reach. Polish. Slow, and worth starting early. Postal address held as the fallback if the email bounces."
   },
   {
    "file": "40-SEND-THIS-to-bydgoszcz-1820-1847.txt",
    "who": "Archiwum Państwowe w Bydgoszczy — the fourth question",
    "what": "Asks for ONE year of the Szubin Jewish registers, which survive for 1820–1847 only: ABRAHAM SCHMUL, born 1846, whose entry would name the same parents as Friederike’s if he is her brother. It opens by reporting what their last answer produced, including that their archivist’s reading corrected this archive. Polish.",
-   "note": "SIXTH. Reply on IU.631.434.2026, the fourth on one thread. It asks a single question and offers to pay. Bydgoszcz has answered every letter and sent a 76 MB volume unprompted, so it can wait for a good moment. Corrected on 17 October: it no longer calls Jacob Leibholz the father-in-law's grandfather."
+   "note": "EIGHTH. Reply on IU.631.434.2026, the fourth on one thread. It asks a single question and offers to pay. Bydgoszcz has answered every letter and sent a 76 MB volume unprompted, so it can wait for a good moment. Corrected on 17 October: it no longer calls Jacob Leibholz the father-in-law's grandfather."
   },
   {
    "file": "29-SEND-THIS-to-arolsen.txt",
    "who": "Arolsen Archives",
    "what": "Asks about one tracing file in particular, stating that the consent declaration is in place and that a good deal has already been read in the online archive.",
-   "note": "SEVENTH. Asks who opened the tracing file on Oskar Leibholz in 1949, the first possible survivor of the Schubin family. Corrected on 17 October: it now says Kurt was Auguste's son and that Jacob's fatherhood is what is unknown."
+   "note": "NINTH. Asks who opened the tracing file on Oskar Leibholz in 1949, the first possible survivor of the Schubin family. Corrected on 17 October: it now says Kurt was Auguste's son and that Jacob's fatherhood is what is unknown."
   },
   {
    "file": "31-SEND-THIS-to-naa.txt",
    "who": "National Archives of Australia",
    "what": "An access examination request covering five Luwinski and Leibholz items, 1939 to 1965. Four of the five are already open and are listed so the reference staff can answer for the whole family in one reply.",
-   "note": "EIGHTH. Free, an access examination and not an order. It concerns two other families, Manfred Luwinski's of 1965 and Joachim Leibholz's of 1939, and touches Kurt and Ivone only at the edges. Send when there is time."
+   "note": "TENTH. Free, an access examination and not an order. It concerns two other families, Manfred Luwinski's of 1965 and Joachim Leibholz's of 1939, and touches Kurt and Ivone only at the edges. Send when there is time."
   },
   {
    "file": "30-SEND-THIS-to-bydgoszcz.txt",
