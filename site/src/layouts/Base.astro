@@ -2,6 +2,10 @@
 import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
 import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
 import JsonLd from "@daviddef/archive-kit/components/JsonLd.astro";
+import BookHead from "@daviddef/archive-kit/components/BookHead.astro";
+import BookFoot from "@daviddef/archive-kit/components/BookFoot.astro";
+import book from "../data/book.json";
+import { u } from "../lib/url.js";
 /* `noindex` is the page-level switch for a page ABOUT a living person: the kit's sitemap tool and this
    archive's search index (tools/build-search.py) both leave out a page that noindexes itself. Every
    person in the register has a page since 16 October 2026 and a LIVING person's passes noindex and
@@ -336,6 +340,21 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
       .hh-lk, .mg-ca, .mg-badge, .mg-dl dt, .nl-one i, .syn-lab, .syn-card h4, .lane-conf, .rr-lane,
       .omit-rel, .rel) { font-size: 11px; }
     main:focus { outline: none; }
+    /* THE BOOK's running head and foot (kit BookHead / BookFoot) take their width and side padding from
+       these two lines, so they sit on the same left edge as the page and its masthead. */
+    :root { --bk-width: var(--wide); }
+    body .bk-head .bk-row { padding-left: 1.5rem; padding-right: 1.5rem; }
+    /* The foot has a rule above it, so it takes the page column's own width (the .wrap's content box) rather
+       than padding inside a wider box: the rule then runs exactly as wide as the text above it. */
+    body .bk-foot.bk-foot { width: calc(100% - 3rem); max-width: calc(var(--wide) - 3rem); padding-left: 0; padding-right: 0; }
+    @media (max-width: 34rem) { body .bk-head .bk-row { padding-left: 1rem; padding-right: 1rem; } body .bk-foot.bk-foot { width: calc(100% - 2rem); } }
+    /* The kit's Contents page lays each part out as a grid whose second column is "1fr" and whose parent has
+       an automatic column. With nothing to cap it, a chapter list that auto-fills 250px columns sizes the whole
+       page to its own natural width (873px on a 390px phone, 17 October 2026). minmax(0, 1fr) lets the column
+       be as narrow as the page. Same tracks and gaps as the kit's; only the floor is removed. */
+    body .bk-book { grid-template-columns: minmax(0, 1fr); }
+    body .bk-book .bk-part { grid-template-columns: 52px minmax(0, 1fr); }
+    @media (max-width: 640px) { body .bk-book .bk-part { grid-template-columns: 34px minmax(0, 1fr); } }
     /* styles.css pins the Search button's text to #fff with !important, which is 2.7:1 on the pale
        accent of the dark scheme. This sheet loads after it, so the same weight wins. */
     .findbtn { color: var(--ground) !important; }
@@ -382,6 +401,10 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
       </div>
     </details>
   </div></header>
+  {/* THE BOOK (17 October 2026): the running head sits below the site header on every page and the
+      Previous / Next above the footer. src/data/book.json places every page; kit/tools/checkbook.py fails the
+      build on one nobody placed. This archive stays outside the kit's sibling ring, so the width is stated here. */}
+  <BookHead book={book} u={u} />
   {hero && (
     <figure class="hero" style="margin:0">
       <img src={hero.src} alt={hero.alt} />
@@ -401,6 +424,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     {lede && !ownHeading && <p class="lede">{lede}</p>}
     <slot />
   </div></main>
+  <BookFoot book={book} u={u} />
   <footer><div class="wrap">
     <p><strong>A living person (80 or younger, with no death recorded) is named with their relationships and their town and country, and nothing more.</strong>
     No dates, no records, no photograph. Lynn Derrick Luwinski is named with his parents only. A removal

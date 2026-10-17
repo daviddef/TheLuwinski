@@ -1,0 +1,20 @@
+---
+/* /part/<id>/ - THE OPENER OF EACH PART OF THE BOOK (17 October 2026).
+   One page per part in src/data/book.json: the part's paragraph, its chapters, and the way in. The kit's
+   BookPart draws it; the words are the book's own and nothing here is typed. */
+import Base from '../../layouts/Base.astro';
+import BookPart from '@daviddef/archive-kit/components/BookPart.astro';
+import book from '../../data/book.json';
+import { u } from '../../lib/url.js';
+
+export function getStaticPaths() {
+  return book.parts.map((part) => ({ params: { id: part.id }, props: { part } }));
+}
+const { part } = Astro.props;
+---
+{/* ownHeading: the part's paragraph is drawn once, by BookPart, so Base prints no subtitle (it would repeat it)
+    and uses the paragraph as the page's description. The one h1 is the part's title. */}
+<Base title={`Part ${part.numeral}: ${part.title}`} subtitle={part.intro} ownHeading={true}>
+  <h1>{part.title}</h1>
+  <BookPart book={book} id={part.id} u={u} />
+</Base>
