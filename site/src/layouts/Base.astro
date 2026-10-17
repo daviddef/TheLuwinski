@@ -232,6 +232,20 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     th, td { text-align: left; padding: .55rem .8rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
     th { font-weight: 600; font-size: .74rem; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-faint); white-space: nowrap; }
     tbody tr:last-child td { border-bottom: 0; }
+    /* TABLE CELLS KEEP THEIR WORDS WHOLE (17 October 2026 layout audit: 15 of 50 sampled pages had cells
+       squeezed into stacks of one or two letters, dates three lines high, file names at 90px). Cause: in
+       an auto-layout table a short column (a date, a count, a file name) is the first to give way when a
+       long prose column wants the room. break-word above keeps each column's minimum at its longest word;
+       the floor below keeps a date or a short code from being squeezed to that minimum. Tables of five
+       columns or fewer get 7.5rem, enough for "29 Sept 2026" on one line; wider tables get 6rem, and a
+       table that still cannot fit scrolls inside its .scroll box rather than the page. Phones and print are left
+       to wrap, as before. A panel that holds a table runs the full width of the column the table uses. */
+    main td, main th { word-break: normal; hyphens: manual; }
+    @media screen and (min-width: 48rem) {
+      main td { min-width: 6rem; }
+      main table:not(:has(tr > :nth-child(6))) td { min-width: 7.5rem; }
+      .panel:has(.scroll) { max-width: none; }
+    }
     .tag { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase; padding: .15rem .45rem; border: 1px solid currentColor; border-radius: 2px; white-space: nowrap; }
     .tag.doc { color: var(--doc); } .tag.inf { color: var(--inf); } .tag.disp { color: var(--disp); } .tag.open { color: var(--open); }
     .panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 3px; padding: 1.2rem 1.4rem; margin: 1.6rem 0; max-width: var(--measure); }
