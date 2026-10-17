@@ -709,6 +709,24 @@
     "catalogue"
    ],
    "got": "No Viseu passport application under that name on the results read. The Torre do Tombo personnel file, caixa 6377 processo 103541, 1922 to 1954, is catalogued as 'not archivally processed': the entry gives a title, a date range and a shelfmark and no parish, birth date or parent, so it cannot identify him from the catalogue. The rest of the results are other men named Gouveia Guedes Figueiredo. The search is phrase-based and the index is by catalogued name, so this is not a finding that no application exists."
+  },
+  {
+   "src": "Findmypast — the 1871 and 1881 censuses and Hertfordshire Baptisms, for Caroline Wallis of Weston",
+   "key": "fmp/caroline-wallis-weston-2026-10-18",
+   "url": "https://www.findmypast.com.au/search/results?datasetname=1871+england%2c+wales+%26+scotland+census&firstname=caroline&keywordsplace=weston&yearofbirth=1863&yearofbirth_offset=2",
+   "what": "Caroline Wallis's baptism and her parents",
+   "when": "2026-10-18",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "1871 census: Caroline WALLIS born 1861 to 1865 in England (12, none Hertfordshire-born); WALLIS in the Hitchin district (8); forename Caroline at Weston born 1861 to 1865 with no surname (18); WALLACE at Weston (20, one household read). 1881 census: Caroline WALLIS born 1861 to 1863 (9, one at Weston read). Hertfordshire Baptisms: WALLIS at Weston, forename Caroline.",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "census",
+    "baptism",
+    "findmypast"
+   ],
+   "got": "CAROLINE WALLIS BAPTISED AT WESTON 16 APRIL 1862, daughter of Joseph, a labourer, and Sarah. CAROLINE WALLACE, 9, a straw plaiter, in Joseph and Sarah Wallace's household at Maiden Street, Weston in 1871 (RG10/1366 f41), and CAROLINE WALLIS, 19, single, in the same household in 1881 (RG11/1417 f97). THE SEARCH THAT FOUND HER HAD NO SURNAME: the 1871 index spells the family Wallace, so a search on Wallis returned nothing from Hertfordshire. Her year is 1862 and her parents are probably Joseph and Sarah. NOT FOUND: any document joining this girl to Caroline Castle."
   }
  ]
 }

@@ -985,6 +985,14 @@
    "people": 0
   },
   {
+   "file": "wallis-weston-2026-10-18.tsv",
+   "title": "Caroline Wallis of Weston: the baptism of April 1862 and two censuses",
+   "source": "Findmypast: Hertfordshire Baptisms; 1871 census RG10/1366 f41 (indexed Wallace); 1881 census RG11/1417 f97",
+   "kind": "ref",
+   "rows": 7,
+   "people": 0
+  },
+  {
    "file": "wear-1851-bermondsey.tsv",
    "title": "1851 census, Salisbury Street, Bermondsey",
    "source": "HO107 piece 1560 folio 212",
@@ -4380,7 +4388,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 142,
+  "files": 143,
   "person_files": 26,
   "people": 216,
   "records": 312,

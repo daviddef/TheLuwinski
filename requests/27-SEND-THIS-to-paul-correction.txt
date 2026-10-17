@@ -1,7 +1,7 @@
 NOTE TO DAVID BEFORE SENDING (rewritten 17 October 2026) — Paul, on the MyHeritage thread myheritage-222465518.
 
-Letter 25 went on 16 September. Since then three things it said have been corrected on the site, so this
-letter now corrects three things and not one:
+Letter 25 went on 16 September. Since then two things it said have been corrected on the site, and a third
+has turned out right after all and gains a better source, so this letter corrects two things and adds a find:
 
   (1) "If Martha Giddings died in 1863 she cannot have known her son at all" — wrong, as the first draft of
       this letter already said.
@@ -9,8 +9,11 @@ letter now corrects three things and not one:
       George Castle aged 54 in England and Wales between March 1916 and December 1917: Hitchin, September
       quarter 1917, vol 3a p607; and Hitchin registered no George Castle death in 1916. Matched by name, age
       and district; the certificate has not been read. It makes Caroline's remarriage three years later, not four.
-  (3) Caroline Wallis's birth year is OPEN, between 1862 (the 1957 death index) and 1863 (the 1939 Register and
-      her age in 1911). Letter 25 said 1862; the first draft of this one said 1863 was exact. Neither is safe.
+  (3) NOT A CORRECTION: Caroline's birth year 1862, which letter 25 gave, is right. She was baptised at Weston on
+      16 April 1862, daughter of Joseph, a labourer, and Sarah Wallis; she is in the 1871 census (indexed
+      WALLACE) at nine and the 1881 census (WALLIS) at 19, in Joseph and Sarah's household in Maiden Street,
+      Weston. The 1939 Register's 1863 is a year out. Her parents are therefore PROBABLY Joseph and Sarah Wallis;
+      no certificate says so. That is the find, and it came from Paul's tree having the right name.
 
 Everything below is public on the site (luwinski.defranceski.com/people/). Send as a reply on the same thread.
 A correction goes before a new request.
@@ -19,7 +22,7 @@ A correction goes before a new request.
 
 Paul,
 
-Three corrections to my last message, and then three things that are yours rather than mine.
+Two corrections to my last message, a find that is yours as much as mine, and then three smaller things.
 
 THE CORRECTIONS FIRST, BECAUSE I WOULD RATHER YOU HEARD THEM FROM ME.
 
@@ -40,11 +43,15 @@ The father is IN the house. He is not a man who gave his son away; he is a widow
 
 2. I gave George William Castle's years as 1862 to 1916. The 1916 was another tree's, and I copied it without setting it against the death index. The index has one George Castle aged 54 who died between March 1916 and December 1917: George W Castle, registered at Hitchin in the September quarter of 1917, volume 3A page 607. Hitchin has no George Castle death in 1916 at all. So 1917, as an index match by name, age and district; I have not read the certificate. If your tree has a source for 1916 I would like to see it.
 
-3. I gave Caroline's years as 1862 to 1957. Her year of birth is not settled either way, and I should not have given one. The 1957 death index says 1862. The 1939 Register says 28 February 1863. Her age in the 1911 census, 48 on 2 April, fits 1863. Two Hitchin births fit: a Caroline, March quarter 1862, volume 3A page 230, and an unnamed girl entered only as WALLIS, March quarter 1863, page 247. I cannot say which, if either, is her, and a birth certificate is what would say.
+THE FIND, WHICH IS YOUR CAROLINE'S PARENTS.
 
-NOW THE THREE THINGS.
+Caroline's years in my last message, 1862 to 1957, were right, and I now have a better reason than a tree. She was baptised at Weston on 16 April 1862 as Caroline Wallis, daughter of Joseph, a labourer, and Sarah. In the 1871 census she is nine, a straw plaiter, in Maiden Street, Weston, in Joseph and Sarah's household with eight brothers and sisters (the index spells the surname Wallace, which is why I had not found her). In the 1881 census she is 19 and single, a straw plaiter, in the same house, with Joseph and Sarah and the surname spelt Wallis. Eighteen months later she married your George William at Hitchin.
 
-1. CAROLINE DID NOT STAY A WALLIS, AND THAT IS WHY SHE CANNOT BE FOUND.
+So her parents are, very probably, JOSEPH AND SARAH WALLIS of Weston. I say probably because no certificate names her father. The match is the name, the parish, the age and the straw plaiting, and the 1939 Register and the 1911 census put her a year younger than she was, which is common. Her marriage certificate would settle it. Her first child was registered as Sarah Ann Wallis in 1882, which is her mother's name.
+
+NOW THREE SMALLER THINGS.
+
+1. CAROLINE DID NOT STAY A WALLIS, AND THAT IS WHY SHE CANNOT BE FOUND AFTER 1920.
 
 Your Caroline Wallis is your great-grandmother, and every tree I can see loses her after George William died in 1917. Their own marriage is in the index, Hitchin, December quarter 1882, volume 3A page 567, with both names on the one page.
 
@@ -54,9 +61,9 @@ FROM 1920 SHE WAS CAROLINE JAMES. That is the whole reason she disappears: anyon
 
 2. THE 1939 REGISTER CARRIES HER DAY AND MONTH.
 
-RG101/1598B/017/25 has her at 38 NORTON ROAD, BALDOCK, widowed a second time, aged 76, and it gives her full date of birth, 28 February, because she gave it to a registrar herself. The year it prints is 1863, which is the year I have just said I cannot be sure of.
+RG101/1598B/017/25 has her at 38 NORTON ROAD, BALDOCK, widowed a second time, aged 76, and it gives her full date of birth, 28 February, because she gave it to a registrar herself. The year it prints is 1863, which is a year out; the baptism says 1862, and a birth in the first quarter of 1862 fits 28 February.
 
-3. AND THE SURNAME IS WALLIS, NOT WALLS.
+3. AND THE SURNAME IS WALLIS, NOT WALLS, THOUGH A CENSUS INDEX SPELLS IT WALLACE.
 
 I had this the other way round for a while. The GRO birth index can be searched on the mother's maiden name: six Castle children come back under WALLIS and none at all under Walls. Six to nothing is as settled as that kind of thing gets.
 

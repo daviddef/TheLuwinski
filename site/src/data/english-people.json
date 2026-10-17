@@ -176,7 +176,7 @@
      },
      {
       "n": "Caroline Wallis",
-      "dates": "1862 or 1863–1957",
+      "dates": "1862–1957",
       "s": "caroline-wallis",
       "via": "read"
      }
@@ -648,7 +648,7 @@
     "spouses": [
      {
       "n": "Caroline Wallis",
-      "dates": "1862 or 1863–1957",
+      "dates": "1862–1957",
       "s": "caroline-wallis",
       "via": "tree",
       "mark": "from a tree",
@@ -770,15 +770,28 @@
    "name": "Caroline Wallis",
    "line": "Castle",
    "gen": 3,
-   "born": "28 February 1862 or 1863, Weston",
+   "born": "28 February 1862, Weston (the year from her baptism; the day and month from the 1939 Register)",
    "died": "1957, registered at Hitchin as Caroline James",
-   "dates": "1862 or 1863–1957",
+   "dates": "1862–1957",
    "grade": "probable",
-   "why": "Her later life is documented and her marriage is an index entry. Her parents are not established and her year of birth is disputed.",
+   "why": "Her later life is documented and her marriage is an index entry. Her birth in early 1862 and her parents, Joseph and Sarah Wallis of Weston, rest on a baptism and two censuses that name a Caroline Wallis at Weston; no document yet joins that girl to Caroline Castle.",
    "rel": "Derrick's great-grandmother",
    "dek": "She remarried in 1920 and died in 1957 as Caroline James, which is why every tree that carries her as Caroline Wallis was hunting a death registered under another surname.",
    "kin": {
-    "parents": [],
+    "parents": [
+     {
+      "n": "Joseph Wallis, a labourer of Weston",
+      "dates": "b. c.1829",
+      "via": "inferred",
+      "mark": "best candidate"
+     },
+     {
+      "n": "Sarah Wallis, his wife",
+      "dates": "b. c.1831",
+      "via": "inferred",
+      "mark": "best candidate"
+     }
+    ],
     "spouses": [
      {
       "n": "George William Castle",
@@ -842,14 +855,80 @@
       "via": "read"
      }
     ],
-    "siblings": []
+    "siblings": [
+     {
+      "n": "James Wallis",
+      "dates": "b. c.1852",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "William Wallis",
+      "dates": "b. c.1856",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "Emma Wallis",
+      "dates": "b. c.1859",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "Eliza Wallis",
+      "dates": "b. c.1861",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "Joseph Wallis",
+      "dates": "b. c.1865",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "Jerimia Wallis",
+      "dates": "b. c.1867",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "Sarah Wallis",
+      "dates": "b. c.1869",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "George Wallis",
+      "via": "inferred",
+      "mark": "same household"
+     }
+    ]
    },
    "facts": [
     [
-     "28 Feb 1862 or 1863",
+     "28 Feb 1862",
      "Born at Weston, Hertfordshire",
-     "The day and month come from the 1939 Register, which gives 28 February 1863. The 1957 death index gives 1862. Her age of 48 at the 1911 census fits 1863 and not 1862; her 56 years 4 months in 1921 fits neither, since it works out at February 1865. Two Hitchin births are registered under Wallis: a Caroline in the March quarter of 1862 (vol 3a p230) and an unnamed female in the March quarter of 1863 (vol 3a p247). Neither has been tied to her.",
-     "disp"
+     "Baptised at Weston on 16 April 1862 as Caroline Wallis, daughter of Joseph, a labourer, and Sarah; her birth was registered at Hitchin in the March quarter of 1862 (vol 3a p230). The day and month, 28 February, come from the 1939 Register, which prints 1863; her age of 48 in the 1911 census fits 1863 and her 56 years 4 months in 1921 fits neither. The baptism, the 1871 and 1881 censuses and the 1957 death index all say 1862, so the later ages are a year or more out. The unnamed girl registered at Hitchin in March 1863 (p247) is not her.",
+     "inf"
+    ],
+    [
+     "16 Apr 1862",
+     "Baptised at Weston",
+     "Caroline Wallis, daughter of Joseph, a labourer, and Sarah, in the Hertfordshire baptism register at Weston. She is the only Caroline Wallis baptised there in the early 1860s.",
+     "inf"
+    ],
+    [
+     "2 Apr 1871",
+     "A straw plaiter of nine, in Maiden Street",
+     "Indexed as Caroline WALLACE, nine, daughter, born at Weston, a straw plaiter, in the household of Joseph Wallace, born about 1829, and Sarah, born about 1831, with eight brothers and sisters (RG10 piece 1366, folio 41, schedule 74). The index spells the surname differently from the baptism, which is why a search on Wallis missed her.",
+     "inf"
+    ],
+    [
+     "3 Apr 1881",
+     "Single, 19, still in Maiden Street",
+     "Caroline Wallis, daughter, single, a straw plaiter, born at Weston, in the household of Joseph and Sarah Wallis with Emma, Eliza, Joseph, Sarah and George (RG11 piece 1417, folio 97, schedule 81). Eighteen months before the marriage at Hitchin in the December quarter of 1882. Her first child, Sarah Ann, was registered as a Wallis in 1882, and takes the name of the mother of this household.",
+     "inf"
     ],
     [
      "Q4 1882",
@@ -889,7 +968,7 @@
     ]
    ],
    "gaps": [
-    "Her parents are not established, and no baptism has been found. FreeCEN has no Caroline Wallis born in Hertfordshire in the 1860s, but its Hertfordshire coverage is patchy and that is not a finding. It does hold a John Wallis, born at Weston about 1863, lodging at Clothall in 1891: a Wallis was born at Weston in her year, and he is not claimed as kin.",
+    "Her parents are probable and not proved. No document joins Caroline Castle to the girl baptised at Weston in April 1862; the join is the name, the parish, the date and the age. The marriage certificate of 1882 would name her father, and it is the one document that would settle it.",
     "Her first marriage certificate has not been read. It would name her father, and ordering it is a purchase for the family to decide."
    ],
    "see": [
