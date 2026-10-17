@@ -79,6 +79,24 @@ export function pageOf(id) {
   return p && p.slug ? u(`/people/${p.slug}/`) : undefined;
 }
 
+/* THE EDGES OF ONE REGISTER PERSON, UNDRAWN: [{ other, rel, mark }] per band, for the shared person page
+   (src/lib/people.js), which hands them to the kit's PersonChart as rows with fields rather than as
+   strings. `familyOf` below is the old shape, kept for /kurt/, /ivone/ and /derrick/, which still draw
+   their own chart. Same band table, same reading of `rel`; an edge the table does not know, or to a
+   record that is not in the register, is counted in `unmapped` and not drawn. */
+export function edgesOf(id) {
+  const me = BY_ID.get(String(id));
+  if (!me) return null;
+  const out = { parents: [], spouses: [], children: [], siblings: [], unmapped: [] };
+  for (const r of rels(me)) {
+    const band = BAND.get(String(r && r.rel));
+    const other = BY_ID.get(String(r && r.id));
+    if (!band || !other) { out.unmapped.push({ rel: String(r && r.rel), id: String(r && r.id) }); continue; }
+    out[band].push({ other, rel: String(r.rel), mark: MARK[String(r.rel)] });
+  }
+  return out;
+}
+
 /* { self, parents, spouses, children, siblings, unmapped } for one register id.
    `datesOff` draws EVERY node without a date: a living person's own page names their relatives and
    their relationship and nothing else, and a dead parent's life span beside a living child's name is

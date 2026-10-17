@@ -8,7 +8,11 @@ import JsonLd from "@daviddef/archive-kit/components/JsonLd.astro";
    structured={false} (tools/check-living.py fails a living person's page that lacks the one or carries
    the other). `about` is { name, birthDate, deathDate } for a page about a person who is NOT living;
    it reaches the kit's JsonLd as a Person and is never passed for the living. */
-const { title, subtitle, lede, hero, structured = true, noindex = false, about = undefined } = Astro.props;
+/* `ownHeading` is for a page whose content draws its own h1, subtitle and lede (the shared people page,
+   kit PersonPage: it carries the name, the life dates and the one sentence inside its own header). Base
+   then renders none of the three, so the document keeps exactly one h1, and `subtitle` is used for the
+   description only. */
+const { title, subtitle, lede, hero, structured = true, noindex = false, about = undefined, ownHeading = false } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const nav = [
   ["Start", [["", "The archive"], ["/tree", "The tree"], ["/timeline", "The Timeline"], ["/dna", "The DNA"], ["/1948", "Nineteen forty-eight"]]],
@@ -392,9 +396,9 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
   <main id="main" tabindex="-1"><div class="wrap">
     {/* Where a hero carries the page's h1, this one is not rendered at all: it used to be
         printed and hidden with CSS, which left two h1 elements in the document. */}
-    {!hero && <h1>{title}</h1>}
-    {!hero && subtitle && <p class="sub">{subtitle}</p>}
-    {lede && <p class="lede">{lede}</p>}
+    {!hero && !ownHeading && <h1>{title}</h1>}
+    {!hero && !ownHeading && subtitle && <p class="sub">{subtitle}</p>}
+    {lede && !ownHeading && <p class="lede">{lede}</p>}
     <slot />
   </div></main>
   <footer><div class="wrap">
