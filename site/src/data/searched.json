@@ -693,6 +693,22 @@
     "findmypast"
    ],
    "got": "MARY LARKIN MARRIED WILLIAM BILBY BY BANNS 22 OCTOBER 1843 and he was buried 8 October 1844 aged 29. WILLIAM HAWKINS AND MARY APPLEYARD MARRIED 5 MAY 1800. MARY, WIFE OF WILLIAM HAWKINS, BURIED 30 JANUARY 1822 AGED 41; William buried 23 November 1848 aged 76. A Mary Birch aged 16 buried at Abbots Langley in 1796 and one married at Watford in 1804 may be the two candidates for Mary Burch. NOT FOUND: Mary Appleyard's baptism, and Mary Burch's."
+  },
+  {
+   "src": "Digitarq — the exact name JOAQUIM JÚLIO DE FIGUEIREDO, and the Torre do Tombo personnel file",
+   "key": "digitarq/joaquim-julio-de-figueiredo-2026-10-17",
+   "url": "https://digitarq.arquivos.pt/search?query=%22Joaquim+J%C3%BAlio+de+Figueiredo%22&isAdvancedSearch=false",
+   "what": "Ivone's father: whether the Viseu passport applications or the personnel file say anything about his parish or parents",
+   "when": "2026-10-17",
+   "outcome": "nothing",
+   "walked": false,
+   "pages": "phrase search on the full name (first page of the results read); the catalogue entry PT/TT/DGAP-DIA/001/056204 opened",
+   "tags": [
+    "portugal",
+    "viseu",
+    "catalogue"
+   ],
+   "got": "No Viseu passport application under that name on the results read. The Torre do Tombo personnel file, caixa 6377 processo 103541, 1922 to 1954, is catalogued as 'not archivally processed': the entry gives a title, a date range and a shelfmark and no parish, birth date or parent, so it cannot identify him from the catalogue. The rest of the results are other men named Gouveia Guedes Figueiredo. The search is phrase-based and the index is by catalogued name, so this is not a finding that no application exists."
   }
  ]
 }
