@@ -298,8 +298,16 @@
    "lon": 13.55,
    "region": "bohemia"
   },
-  "Sasolburg": null,
-  "Sasolburg, South Africa": null,
+  "Sasolburg": {
+   "lat": -26.81,
+   "lon": 27.82,
+   "region": "orange-free-state"
+  },
+  "Sasolburg, South Africa": {
+   "lat": -26.81,
+   "lon": 27.82,
+   "region": "orange-free-state"
+  },
   "Sauerbaum, Kreis Rössel, Germany": {
    "lat": 54.05,
    "lon": 21.14,

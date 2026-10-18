@@ -13,17 +13,25 @@ the rows and the data disagree. Run from site/ (every path the CI workflow uses 
                                                         page prints beside a fact has a row, no row is stale, the born / died pattern the page
                                                         uses is the one this tool uses, and no mapped place has a dated event in an Atlas era
                                                         that describes only PART of its region (SPLIT_ERAS) unless its row says "split-ok:"
-    python3 ../tools/build-era.py --snapshot <Record Atlas>/site/public/context.json --rings <Record Atlas>/data/regions.json
+    python3 ../tools/build-era.py --snapshot <a copy of the Record Atlas's site/public/context.json> [--report drops.json]
                                                         also rebuild src/data/era-snapshot.json from the Atlas's versioned contract (the
-                                                        deliberate refresh: nothing in a build ever reads the Atlas). The contract carries no
-                                                        rings; they come from the Atlas's regions.json.
+                                                        deliberate refresh: nothing in a build ever reads the Atlas). From contract 1.8.0 the
+                                                        rings and boxes are IN the contract; --rings <regions.json> is only an optional override.
+                                                        The snapshot is version 4 (kit 3a30314): the margin rule, the edge rule and the
+                                                        contested scope are the kit's defaults, written out below so the policy is on the record.
     python3 ../tools/build-era.py --living-urls PATH    write the page paths the notes must never appear on (the register's living and
                                                         named-only people), from the committed register alone, for check:era (CI too)
 
-THE POLICY ON ERAS THE ATLAS HAS NOT ASSESSED. The contract (1.7.0) carries `contested` and `approx` as null on every region era: nobody has
-assessed them. The kit refuses such an era by default, which leaves no note at all, so this archive builds its snapshot with
---unassessed allow, on purpose and on the record (David approved it for now, 18 October 2026): the snapshot's policy says so, the gate prints
-how many notes rest on an unassessed era, and dropping that flag below (then rebuilding) is the whole of going strict.
+THE POLICY ON ERAS THE ATLAS HAS NOT ASSESSED. The contract carries `contested` and `approx` as null on a region era nobody has assessed. The kit
+refuses such an era by default, which leaves no note at all, so this archive builds its snapshot with --unassessed allow, on purpose and on the
+record (David approved it for now, 18 October 2026): the snapshot's policy says so, the gate prints how many notes rest on an unassessed era, and
+dropping that flag below (then rebuilding) is the whole of going strict. Since kit 3a30314 (snapshot version 4) an unassessed era also has no
+margins (null), and a null margin is unknowable, so the kit refuses it anyway: --unassessed allow now lets through only an era that is
+assessed on one flag and not the other, and the gate's count says how many notes rest on that.
+THE REST OF THE POLICY (the kit's defaults, spelled out): --approx margin (an era the Atlas marks approximate is used only for a year more than
+max(5, its margin) from each bound), --contested scope (a contested era only where its contestedScope is `bounds`/`none`), --margin-years 5
+(the floor N, PROVISIONAL: not an Atlas figure), --edge agree (a place near a ring edge keeps its note only where every neighbouring region says
+the same). The Atlas's own rulers/language fields (contract 1.11.0 and later) are not read.
 
 Only places of people who are NOT living are read: a living person's page prints a town and a country and no fact, and the notes are never
 drawn there. A held-out person has no page and is in no register, so is in no row.
@@ -173,7 +181,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--check", action="store_true")
     ap.add_argument("--snapshot", default=None, help="a local copy of the Record Atlas's context.json (the versioned contract): also rebuild era-snapshot.json")
-    ap.add_argument("--rings", default=None, help="the Atlas's regions.json (data/regions.json in the Atlas repository), for the ring-edge rule")
+    ap.add_argument("--rings", default=None, help="OPTIONAL override: the Atlas's regions.json. By default the rings are read from the contract (1.8.0 and later)")
     ap.add_argument("--report", default=None, help="with --snapshot: also write the per-region drops (counts) here, for the Atlas session")
     ap.add_argument("--living-urls", default=None, help="write the living / named-only page paths here (JSON list) and stop")
     a = ap.parse_args()
@@ -233,11 +241,11 @@ def main():
         print("  WARNING %d place string(s) have no row in data/era/ground.tsv" % len(missing))
         return 1
     if a.snapshot:
-        if not a.rings:
-            print("  FAIL  era-ground  --snapshot needs --rings <the Atlas's regions.json>: the contract carries no rings")
-            return 2
-        cmd = [sys.executable, os.path.join(KIT_TOOLS, "erasnap.py"), "--contract", a.snapshot, "--rings", a.rings,
-               "--places", OUT, "--out", SNAP, "--unassessed", "allow"]
+        cmd = [sys.executable, os.path.join(KIT_TOOLS, "erasnap.py"), "--contract", a.snapshot,
+               "--places", OUT, "--out", SNAP, "--unassessed", "allow",
+               "--approx", "margin", "--contested", "scope", "--margin-years", "5", "--edge", "agree"]
+        if a.rings:
+            cmd += ["--rings", a.rings]
         if a.report:
             cmd += ["--report", a.report]
         r = subprocess.run(cmd)

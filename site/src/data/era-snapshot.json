@@ -1,14 +1,15 @@
 {
  "atlas": {
   "base": "https://recordatlas.org",
-  "rings_sha256": "da1972abcb8b3fee942ad2e123dd9151a3e499a7647a597a9ad96f519e80b338"
+  "rings_sha256": null,
+  "rings_source": "contract"
  },
  "built": "2026-10-18",
  "contract": {
   "generated": "2026-10-18",
   "name": "recordatlas-context",
-  "sha256": "894aa556ba590f37af42b70b7b22c27671d0f7c401a67036bf77cf36d8b444a2",
-  "version": "1.8.0"
+  "sha256": "e649c1c925dbf4da9f54c1ebadf1a10c7c7da45d3d7512b42c7bf3405e7772e3",
+  "version": "1.12.0"
  },
  "dropped": [
   {
@@ -19,11 +20,109 @@
    "to": 1526
   },
   {
+   "from": 1526,
+   "id": "bohemia--era-1526",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "bohemia",
+   "to": 1918
+  },
+  {
+   "from": 1918,
+   "id": "bohemia--era-1918",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "bohemia",
+   "to": 1938
+  },
+  {
    "from": 1938,
    "id": "bohemia--era-1938",
    "reason": "regime is the project's own shorthand, not a state",
    "region": "bohemia",
    "to": 1945
+  },
+  {
+   "from": 1945,
+   "id": "bohemia--era-1945",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "bohemia",
+   "to": 1992
+  },
+  {
+   "from": 1993,
+   "id": "bohemia--era-1993",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "bohemia",
+   "to": null
+  },
+  {
+   "from": 1795,
+   "id": "cape--era-1795",
+   "reason": "contested about its regime or a part, not its bounds only (contestedScope)",
+   "region": "cape",
+   "to": 1803
+  },
+  {
+   "from": 1803,
+   "id": "cape--era-1803",
+   "reason": "contested about its regime or a part, not its bounds only (contestedScope)",
+   "region": "cape",
+   "to": 1806
+  },
+  {
+   "from": 1806,
+   "id": "cape--era-1806",
+   "reason": "contested about its regime or a part, not its bounds only (contestedScope)",
+   "region": "cape",
+   "to": 1910
+  },
+  {
+   "from": 1795,
+   "id": "congress-poland--era-1795",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "congress-poland",
+   "to": 1807
+  },
+  {
+   "from": 1807,
+   "id": "congress-poland--era-1807",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "congress-poland",
+   "to": 1815
+  },
+  {
+   "from": 1815,
+   "id": "congress-poland--era-1815",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "congress-poland",
+   "to": 1868
+  },
+  {
+   "from": 1868,
+   "id": "congress-poland--era-1868",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "congress-poland",
+   "to": 1918
+  },
+  {
+   "from": 1918,
+   "id": "congress-poland--era-1918",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "congress-poland",
+   "to": 1939
+  },
+  {
+   "from": 1939,
+   "id": "congress-poland--era-1939",
+   "reason": "regime is the project's own shorthand, not a state",
+   "region": "congress-poland",
+   "to": 1945
+  },
+  {
+   "from": 1945,
+   "id": "congress-poland--era-1945",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "congress-poland",
+   "to": null
   },
   {
    "from": 1226,
@@ -33,11 +132,39 @@
    "to": 1525
   },
   {
+   "from": 1372,
+   "id": "frankfurt--era-1372",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "frankfurt",
+   "to": 1806
+  },
+  {
    "from": 1200,
    "id": "galicia--era-1200",
    "reason": "regime is the project's own shorthand, not a state",
    "region": "galicia",
    "to": 1340
+  },
+  {
+   "from": 1340,
+   "id": "galicia--era-1340",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "galicia",
+   "to": 1772
+  },
+  {
+   "from": 1772,
+   "id": "galicia--era-1772",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "galicia",
+   "to": 1918
+  },
+  {
+   "from": 1918,
+   "id": "galicia--era-1918",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "galicia",
+   "to": 1939
   },
   {
    "from": 1939,
@@ -47,11 +174,32 @@
    "to": 1945
   },
   {
+   "from": 1945,
+   "id": "galicia--era-1945",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "galicia",
+   "to": null
+  },
+  {
    "from": 1181,
    "id": "pomerania--era-1181",
    "reason": "regime is the project's own shorthand, not a state",
    "region": "pomerania",
    "to": 1637
+  },
+  {
+   "from": 1637,
+   "id": "pomerania--era-1637",
+   "reason": "contested about its regime or a part, not its bounds only (contestedScope)",
+   "region": "pomerania",
+   "to": 1815
+  },
+  {
+   "from": 1920,
+   "id": "pomerania--era-1920",
+   "reason": "contested about its regime or a part, not its bounds only (contestedScope)",
+   "region": "pomerania",
+   "to": 1939
   },
   {
    "from": 1939,
@@ -61,6 +209,34 @@
    "to": 1945
   },
   {
+   "from": 1945,
+   "id": "pomerania--era-1945",
+   "reason": "contested about its regime or a part, not its bounds only (contestedScope)",
+   "region": "pomerania",
+   "to": null
+  },
+  {
+   "from": 1563,
+   "id": "portugal--era-1563",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "portugal",
+   "to": 1832
+  },
+  {
+   "from": 1832,
+   "id": "portugal--era-1832",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "portugal",
+   "to": 1911
+  },
+  {
+   "from": 1911,
+   "id": "portugal--era-1911",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "portugal",
+   "to": null
+  },
+  {
    "from": 1939,
    "id": "posen--era-1939",
    "reason": "regime is the project's own shorthand, not a state",
@@ -68,13 +244,99 @@
    "to": 1945
   },
   {
+   "from": 1526,
+   "id": "silesia--era-1526",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "silesia",
+   "to": 1742
+  },
+  {
+   "from": 1742,
+   "id": "silesia--era-1742",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "silesia",
+   "to": 1871
+  },
+  {
+   "from": 1871,
+   "id": "silesia--era-1871",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "silesia",
+   "to": 1918
+  },
+  {
+   "from": 1918,
+   "id": "silesia--era-1918",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "silesia",
+   "to": 1939
+  },
+  {
    "from": 1939,
    "id": "silesia--era-1939",
    "reason": "regime is the project's own shorthand, not a state",
    "region": "silesia",
    "to": 1945
+  },
+  {
+   "from": 1945,
+   "id": "silesia--era-1945",
+   "reason": "a bound whose margin is unknowable (null) or not a whole number of years",
+   "region": "silesia",
+   "to": null
+  },
+  {
+   "from": 1939,
+   "id": "west-prussia--era-1939",
+   "reason": "regime is the project's own shorthand, not a state",
+   "region": "west-prussia",
+   "to": 1945
   }
  ],
+ "edge_neighbours": {
+  "frankfurt am main homburgerlandstrasse 112": {
+   "kind": "edge",
+   "regions": [
+    "hesse-darmstadt"
+   ]
+  },
+  "neumark lobau westpreußen preußen deutschland": {
+   "kind": "ring-conflict",
+   "regions": [
+    "congress-poland"
+   ]
+  },
+  "putzig west prussia prussia german empire": {
+   "kind": "edge",
+   "regions": [
+    "pomerania"
+   ]
+  },
+  "putzig westpreußen preußen deutschland": {
+   "kind": "edge",
+   "regions": [
+    "pomerania"
+   ]
+  },
+  "sasolburg": {
+   "kind": "edge",
+   "regions": [
+    "transvaal"
+   ]
+  },
+  "sasolburg south africa": {
+   "kind": "edge",
+   "regions": [
+    "transvaal"
+   ]
+  },
+  "skarlin lobau westpreußen preußen deutschland": {
+   "kind": "ring-conflict",
+   "regions": [
+    "congress-poland"
+   ]
+  }
+ },
  "places": {
   "aldenham": "england",
   "baldock": "england",
@@ -87,6 +349,7 @@
   "deuthen": "east-prussia",
   "deuthen ostpreußen deutschland": "east-prussia",
   "dreidorf wirsitz posen preußen deutschland": "posen",
+  "frankfurt am main homburgerlandstrasse 112": "frankfurt",
   "germiston johannesburg south africa": "transvaal",
   "gorkau": "bohemia",
   "gorkau kreis komotau": "bohemia",
@@ -99,6 +362,7 @@
   "johannesburg transvaal south africa": "transvaal",
   "kolleschowitz bei saaz sudetengau": "bohemia",
   "molteno cape colony south africa": "cape",
+  "neumark lobau westpreußen preußen deutschland": "west-prussia",
   "neustettin pomerania": "pomerania",
   "orange grove johannesburg transvaal south africa": "transvaal",
   "osielsk bromberg posen prussia german empire": "posen",
@@ -110,10 +374,15 @@
   "poznan woiwodschaft großpolen polen": "posen",
   "pretoria": "transvaal",
   "pretoria transvaal south africa": "transvaal",
+  "putzig west prussia prussia german empire": "west-prussia",
+  "putzig westpreußen preußen deutschland": "west-prussia",
   "quednau konigsberg ostpreußen preußen deutschland": "east-prussia",
   "saaz": "bohemia",
+  "sasolburg": "orange-free-state",
+  "sasolburg south africa": "orange-free-state",
   "sauerbaum kreis rossel germany": "east-prussia",
   "schubin szubin nakło county kuyavian pomeranian voivodeship germany now poland": "posen",
+  "skarlin lobau westpreußen preußen deutschland": "west-prussia",
   "sokolnik kreis wreschen provinz posen preußen": "posen",
   "st antonius friedhof in satec saaz": "bohemia",
   "szubin nakielski kujawsko pomorskie poland": "posen",
@@ -128,21 +397,21 @@
  "places_silent": {
   "allenstein germany": "edge",
   "allenstein st jacobi": "edge",
-  "frankfurt am main homburgerlandstrasse 112": "edge",
   "mallmitz kreis sprottau silesia today małomice poland": "edge",
   "nattern allenstein": "edge",
-  "neumark lobau westpreußen preußen deutschland": "ring-conflict",
   "ostrowo posen ostrow wielkopolski": "edge",
-  "putzig west prussia prussia german empire": "edge",
-  "putzig westpreußen preußen deutschland": "edge",
   "queenstown cape colony south africa": "edge",
   "schonbruck allenstein": "edge",
-  "skarlin lobau westpreußen preußen deutschland": "ring-conflict",
   "zenkendorf allenstein": "edge"
  },
  "policy": {
+  "approx": "margin",
   "boundary": "newer",
+  "contested": "scope",
+  "edge": "agree",
   "edge_km": 15,
+  "margin_years": 5,
+  "margins": {},
   "recent_from": 1990,
   "unassessed": "allow"
  },
@@ -155,703 +424,1206 @@
   "overlaps": []
  },
  "regions": {
-  "bohemia": [
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1526,
-    "id": "bohemia--era-1526",
-    "label": "Habsburg / Austria–Hungary",
-    "polity": "Austria — Kingdom of Bohemia",
-    "present": false,
-    "regime": "habsburg",
-    "seeded_from_archive": false,
-    "to": 1918,
-    "url": "/region/bohemia/#era-1526"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1918,
-    "id": "bohemia--era-1918",
-    "label": "Czechoslovakia · Czechia",
-    "polity": "Czechoslovakia",
-    "present": false,
-    "regime": "czechoslovakia",
-    "seeded_from_archive": false,
-    "to": 1938,
-    "url": "/region/bohemia/#era-1918"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1945,
-    "id": "bohemia--era-1945",
-    "label": "Czechoslovakia · Czechia",
-    "polity": "Czechoslovakia",
-    "present": false,
-    "regime": "czechoslovakia",
-    "seeded_from_archive": false,
-    "to": 1992,
-    "url": "/region/bohemia/#era-1945"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1993,
-    "id": "bohemia--era-1993",
-    "label": "Czechoslovakia · Czechia",
-    "polity": "Czechia",
-    "present": true,
-    "regime": "czechoslovakia",
-    "seeded_from_archive": false,
-    "to": null,
-    "url": "/region/bohemia/#era-1993"
-   }
-  ],
+  "bohemia": [],
   "cape": [
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": true,
+    "contested_scope": "bounds",
     "from": 1652,
+    "from_margin": 134,
     "id": "cape--era-1652",
     "label": "Dutch — the Company and the Batavian Republic",
+    "margin_ok": {
+     "first": 1787,
+     "kind": "both",
+     "last": 1789
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Dutch East India Company — Cape of Good Hope",
     "present": false,
     "regime": "dutch",
     "seeded_from_archive": false,
     "to": 1795,
-    "url": "/region/cape/#era-1652"
+    "to_margin": 0,
+    "url": "/region/cape/#era-1652",
+    "why": "Dutch settlement at the Cape founded April 1652 (van Riebeeck); that is a founding date, not control of the district. For the eastern ground this is far earlier than any control: the Great Fish River was agreed as the boundary only in 1780 (Wikipedia: many Xhosa already lived west of it), and the Graaff-Reinet magistracy dates from 1786. FIX: for the eastern Cape the Dutch era effectively begins about 1780-1786, not 1652; the earlier ground was held by Khoikhoi and Xhosa polities."
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
-    "from": 1795,
-    "id": "cape--era-1795",
-    "label": "Britain and its colonies",
-    "polity": "First British occupation",
-    "present": false,
-    "regime": "britain",
-    "seeded_from_archive": false,
-    "to": 1803,
-    "url": "/region/cape/#era-1795"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1803,
-    "id": "cape--era-1803",
-    "label": "Dutch — the Company and the Batavian Republic",
-    "polity": "Batavian Republic",
-    "present": false,
-    "regime": "dutch",
-    "seeded_from_archive": false,
-    "to": 1806,
-    "url": "/region/cape/#era-1803"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1806,
-    "id": "cape--era-1806",
-    "label": "Britain and its colonies",
-    "polity": "Cape Colony",
-    "present": false,
-    "regime": "britain",
-    "seeded_from_archive": false,
-    "to": 1910,
-    "url": "/region/cape/#era-1806"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1910,
+    "from_margin": 0,
     "id": "cape--era-1910",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1916,
+     "kind": "margin",
+     "last": 1955
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Union of South Africa",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1961,
-    "url": "/region/cape/#era-1910"
+    "to_margin": 0,
+    "url": "/region/cape/#era-1910",
+    "why": "Union of South Africa came into existence 31 May 1910; Cape Colony ended then. Later wars east of the Fish are outside this ring."
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1961,
+    "from_margin": 0,
     "id": "cape--era-1961",
     "label": "South Africa",
+    "margin_ok": {
+     "first": 1967,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "South Africa — Eastern Cape",
     "present": true,
     "regime": "southafrica",
     "seeded_from_archive": false,
     "to": null,
-    "url": "/region/cape/#era-1961"
+    "to_margin": null,
+    "url": "/region/cape/#era-1961",
+    "why": "Republic of South Africa 31 May 1961. Ciskei (nominal independence 4 Dec 1981 to 27 Apr 1994, unrecognised) lay east of this ring's towns; Graaff-Reinet, Cradock and Somerset East are not in it, though the ring's eastern edge near 26.5-27E is marginal."
    }
   ],
+  "congress-poland": [],
   "east-prussia": [
    {
-    "approx": null,
+    "approx": false,
+    "assessed": false,
     "basis": "not-recorded",
     "contested": null,
+    "contested_scope": null,
     "from": 1525,
+    "from_margin": 0,
     "id": "east-prussia--era-1525",
     "label": "Prussia / German Empire",
+    "margin_ok": {
+     "first": 1531,
+     "kind": "margin",
+     "last": 1865
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Duchy, then Kingdom, of Prussia",
     "present": false,
     "regime": "prussia",
     "seeded_from_archive": false,
     "to": 1871,
-    "url": "/region/east-prussia/#era-1525"
+    "to_margin": 0,
+    "url": "/region/east-prussia/#era-1525",
+    "why": "Treaty of Krakow 8 April 1525 ended the war; Prussian Homage 10 April 1525 made Albert Duke of Prussia, Polish fief (Wikipedia, Duchy of Prussia and Prussian Homage; both give 1525). Whether the Order or the Emperor contested it is not stated in the fetched pages, so contested is unassessed. Note the polity was a Polish fief until the Treaty of Wehlau 1657 and a kingdom from 1701, both inside this era."
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1871,
+    "from_margin": 0,
     "id": "east-prussia--era-1871",
     "label": "Prussia / German Empire",
+    "margin_ok": {
+     "first": 1877,
+     "kind": "margin",
+     "last": 1899
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "German Empire — Province of East Prussia",
     "present": false,
     "regime": "prussia",
     "seeded_from_archive": false,
     "to": 1945,
-    "url": "/region/east-prussia/#era-1871"
+    "to_margin": 45,
+    "url": "/region/east-prussia/#era-1871",
+    "why": "German Empire 1871 is a clean date for the sovereignty (Wikipedia, Province of East Prussia). But the province itself was merged with West Prussia into the Province of Prussia 1829-1878 and re-separated in 1878, so a 'Province of East Prussia' label is wrong for 1871-77. Interwar: Memel under League/French admin 1920, Lithuanian 1923-1939, back to Germany 1939; Dzialdowo to Poland 1920."
    },
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": true,
+    "contested_scope": "bounds",
     "from": 1945,
+    "from_margin": 45,
     "id": "east-prussia--era-1945",
     "label": "Russia",
+    "margin_ok": {
+     "first": 1991,
+     "kind": "both",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Russia in the north; Poland in the south; Lithuania at Memel",
     "present": true,
     "regime": "russia",
     "seeded_from_archive": false,
     "to": null,
-    "url": "/region/east-prussia/#era-1945"
+    "to_margin": null,
+    "url": "/region/east-prussia/#era-1945",
+    "why": "Southern East Prussia under Polish administration from May 1945; province disestablished 1 Aug 1945 at Potsdam; northern part to the USSR, Konigsberg renamed Kaliningrad 1946, Memel region into the Lithuanian SSR 1945 (Wikipedia). Potsdam put it under Soviet/Polish control 'pending the final peace settlement'; final settlement only 12 Sept 1990, West Germany long held the 1937 frontiers (Oder-Neisse page)."
    }
   ],
   "england": [
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1538,
+    "from_margin": 0,
     "id": "england--era-1538",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1544,
+     "kind": "approx",
+     "last": 1831
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "England — the parish register",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1837,
-    "url": "/region/england/#era-1538"
+    "to_margin": 0,
+    "url": "/region/england/#era-1538",
+    "why": "Cromwell's injunction to keep registers is dated 5 Sept 1538 (Wikipedia), but a search found other sources giving 29 Sept 1538 for publication, compliance was uneven, and it was repeated in 1547 and reaffirmed in 1597; this is a record-keeping start, not a change of sovereignty. England under Henry VIII governed through Cromwell as Vicar General, no rival authority reported."
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1837,
+    "from_margin": 0,
     "id": "england--era-1837",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1843,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "England and Wales — civil registration",
     "present": true,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": null,
-    "url": "/region/england/#era-1837"
+    "to_margin": null,
+    "url": "/region/england/#era-1837",
+    "why": "Civil registration began 1 July 1837 (Wikipedia GRO; several family-history sites agree; one source cites 1 March 1837 as the Act's commencement, registration itself started 1 July). Registration became compulsory only in 1874/75 (Wikipedia says 1875, other sources the 1874 Act), which the era note already says. No rival authority."
    }
   ],
-  "galicia": [
+  "frankfurt": [
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
-    "from": 1340,
-    "id": "galicia--era-1340",
-    "label": "Poland",
-    "polity": "Poland — the Crown lands",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1806,
+    "from_margin": 0,
+    "id": "frankfurt--era-1806",
+    "label": "Napoleonic order — Principality, then Grand Duchy, of Frankfurt",
+    "margin_ok": {
+     "first": 1812,
+     "kind": "approx",
+     "last": 1809
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Napoleonic order — Principality, then Grand Duchy, of Frankfurt",
     "present": false,
-    "regime": "poland",
+    "regime": "napo",
     "seeded_from_archive": false,
-    "to": 1772,
-    "url": "/region/galicia/#era-1340"
+    "to": 1815,
+    "to_margin": 2,
+    "url": "/region/frankfurt/#era-1806",
+    "why": "the Grand Duchy ended in 1813 and the city was restored in 1815; the years between are not described"
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
-    "from": 1772,
-    "id": "galicia--era-1772",
-    "label": "Austria — Kingdom of Galicia and Lodomeria",
-    "polity": "Austria — Kingdom of Galicia and Lodomeria",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1815,
+    "from_margin": 2,
+    "id": "frankfurt--era-1815",
+    "label": "German Confederation — the free cities and small states",
+    "margin_ok": {
+     "first": 1821,
+     "kind": "margin",
+     "last": 1860
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Free City of Frankfurt (German Confederation)",
     "present": false,
-    "regime": "galicia",
+    "regime": "confed",
     "seeded_from_archive": false,
-    "to": 1918,
-    "url": "/region/galicia/#era-1772"
+    "to": 1866,
+    "to_margin": 0,
+    "url": "/region/frankfurt/#era-1815",
+    "why": null
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
-    "from": 1918,
-    "id": "galicia--era-1918",
-    "label": "Poland",
-    "polity": "Poland — Second Republic",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1866,
+    "from_margin": 0,
+    "id": "frankfurt--era-1866",
+    "label": "Prussia / German Empire",
+    "margin_ok": {
+     "first": 1872,
+     "kind": "margin",
+     "last": 1939
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Prussia — Province of Hesse-Nassau",
     "present": false,
-    "regime": "poland",
+    "regime": "prussia",
     "seeded_from_archive": false,
-    "to": 1939,
-    "url": "/region/galicia/#era-1918"
+    "to": 1945,
+    "to_margin": 0,
+    "url": "/region/frankfurt/#era-1866",
+    "why": null
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1945,
-    "id": "galicia--era-1945",
-    "label": "Ukraine",
-    "polity": "Poland west of the San; Ukraine east of it",
+    "from_margin": 0,
+    "id": "frankfurt--era-1945",
+    "label": "Germany (the federal republic)",
+    "margin_ok": {
+     "first": 1951,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Germany — Hesse",
     "present": true,
-    "regime": "ukraine",
+    "regime": "germany",
     "seeded_from_archive": false,
     "to": null,
-    "url": "/region/galicia/#era-1945"
+    "to_margin": null,
+    "url": "/region/frankfurt/#era-1945",
+    "why": null
+   }
+  ],
+  "galicia": [],
+  "hesse-darmstadt": [
+   {
+    "approx": true,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1600,
+    "from_margin": 50,
+    "id": "hesse-darmstadt--era-1600",
+    "label": "Holy Roman Empire — the prince-bishoprics and imperial states",
+    "margin_ok": {
+     "first": 1651,
+     "kind": "approx",
+     "last": 1800
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Landgraviate of Hesse-Darmstadt (Holy Roman Empire)",
+    "present": false,
+    "regime": "hre",
+    "seeded_from_archive": false,
+    "to": 1806,
+    "to_margin": 0,
+    "url": "/region/hesse-darmstadt/#era-1600",
+    "why": "a lower bound: the Landgraviate of Hesse-Darmstadt existed before 1806, and the source gives no start"
+   },
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1806,
+    "from_margin": 0,
+    "id": "hesse-darmstadt--era-1806",
+    "label": "Hesse-Darmstadt — the Landgraviate, Grand Duchy and People's State",
+    "margin_ok": {
+     "first": 1812,
+     "kind": "margin",
+     "last": 1912
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Grand Duchy of Hesse",
+    "present": false,
+    "regime": "hesse",
+    "seeded_from_archive": false,
+    "to": 1918,
+    "to_margin": 0,
+    "url": "/region/hesse-darmstadt/#era-1806",
+    "why": null
+   },
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1918,
+    "from_margin": 0,
+    "id": "hesse-darmstadt--era-1918",
+    "label": "Hesse-Darmstadt — the Landgraviate, Grand Duchy and People's State",
+    "margin_ok": {
+     "first": 1924,
+     "kind": "margin",
+     "last": 1939
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "People's State of Hesse",
+    "present": false,
+    "regime": "hesse",
+    "seeded_from_archive": false,
+    "to": 1945,
+    "to_margin": 0,
+    "url": "/region/hesse-darmstadt/#era-1918",
+    "why": null
+   },
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1945,
+    "from_margin": 0,
+    "id": "hesse-darmstadt--era-1945",
+    "label": "Germany (the federal republic)",
+    "margin_ok": {
+     "first": 1951,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Germany — Hesse",
+    "present": true,
+    "regime": "germany",
+    "seeded_from_archive": false,
+    "to": null,
+    "to_margin": null,
+    "url": "/region/hesse-darmstadt/#era-1945",
+    "why": null
+   }
+  ],
+  "orange-free-state": [
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1848,
+    "from_margin": 0,
+    "id": "orange-free-state--era-1848",
+    "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1854,
+     "kind": "margin",
+     "last": 1848
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Orange River Sovereignty",
+    "present": false,
+    "regime": "britain",
+    "seeded_from_archive": false,
+    "to": 1854,
+    "to_margin": 0,
+    "url": "/region/orange-free-state/#era-1848",
+    "why": null
+   },
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1854,
+    "from_margin": 0,
+    "id": "orange-free-state--era-1854",
+    "label": "The Boer republics and the Voortrekker states",
+    "margin_ok": {
+     "first": 1860,
+     "kind": "margin",
+     "last": 1896
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Orange Free State",
+    "present": false,
+    "regime": "boer",
+    "seeded_from_archive": false,
+    "to": 1902,
+    "to_margin": 2,
+    "url": "/region/orange-free-state/#era-1854",
+    "why": null
+   },
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1902,
+    "from_margin": 2,
+    "id": "orange-free-state--era-1902",
+    "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1908,
+     "kind": "margin",
+     "last": 1904
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Orange River Colony",
+    "present": false,
+    "regime": "britain",
+    "seeded_from_archive": false,
+    "to": 1910,
+    "to_margin": 0,
+    "url": "/region/orange-free-state/#era-1902",
+    "why": null
+   },
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1910,
+    "from_margin": 0,
+    "id": "orange-free-state--era-1910",
+    "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1916,
+     "kind": "margin",
+     "last": 1955
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Union of South Africa — Province of the Orange Free State",
+    "present": false,
+    "regime": "britain",
+    "seeded_from_archive": false,
+    "to": 1961,
+    "to_margin": 0,
+    "url": "/region/orange-free-state/#era-1910",
+    "why": null
+   },
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1961,
+    "from_margin": 0,
+    "id": "orange-free-state--era-1961",
+    "label": "South Africa",
+    "margin_ok": {
+     "first": 1967,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "South Africa — Free State",
+    "present": true,
+    "regime": "southafrica",
+    "seeded_from_archive": false,
+    "to": null,
+    "to_margin": null,
+    "url": "/region/orange-free-state/#era-1961",
+    "why": null
    }
   ],
   "pomerania": [
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
-    "from": 1637,
-    "id": "pomerania--era-1637",
-    "label": "Prussia / German Empire",
-    "polity": "Swedish Pomerania in the west; Brandenburg-Prussia in the east",
-    "present": false,
-    "regime": "prussia",
-    "seeded_from_archive": false,
-    "to": 1815,
-    "url": "/region/pomerania/#era-1637"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1815,
+    "from_margin": 0,
     "id": "pomerania--era-1815",
     "label": "Prussia / German Empire",
+    "margin_ok": {
+     "first": 1821,
+     "kind": "margin",
+     "last": 1865
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Prussia — Province of Pomerania",
     "present": false,
     "regime": "prussia",
     "seeded_from_archive": false,
     "to": 1871,
-    "url": "/region/pomerania/#era-1815"
+    "to_margin": 0,
+    "url": "/region/pomerania/#era-1815",
+    "why": "Province of Pomerania constituted 30 April 1815; Swedish Pomerania handed to Prussia 23 Oct 1815 after a 7 June 1815 treaty (Wikipedia), with Sweden ceding it to Denmark in 1814 (Treaty of Kiel) and exchanging it for Saxe-Lauenburg at Vienna. Stralsund region only organised 1818. Danzig was in the Province of West Prussia, not Pomerania."
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1871,
+    "from_margin": 0,
     "id": "pomerania--era-1871",
     "label": "Prussia / German Empire",
+    "margin_ok": {
+     "first": 1877,
+     "kind": "margin",
+     "last": 1913
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "German Empire",
     "present": false,
     "regime": "prussia",
     "seeded_from_archive": false,
     "to": 1919,
-    "url": "/region/pomerania/#era-1871"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1920,
-    "id": "pomerania--era-1920",
-    "label": "Prussia / German Empire",
-    "polity": "Germany; Danzig a Free City",
-    "present": false,
-    "regime": "prussia",
-    "seeded_from_archive": false,
-    "to": 1939,
-    "url": "/region/pomerania/#era-1920"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1945,
-    "id": "pomerania--era-1945",
-    "label": "Poland",
-    "polity": "Poland — West Pomerania and Pomerania",
-    "present": true,
-    "regime": "poland",
-    "seeded_from_archive": false,
-    "to": null,
-    "url": "/region/pomerania/#era-1945"
+    "to_margin": 1,
+    "url": "/region/pomerania/#era-1871",
+    "why": "Province of Pomerania became part of the German Empire in 1871 (Wikipedia); sovereign Prussia unchanged. Civil registration 1 Oct 1874 not checked here."
    }
   ],
-  "portugal": [
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1563,
-    "id": "portugal--era-1563",
-    "label": "Portugal",
-    "polity": "Kingdom of Portugal",
-    "present": false,
-    "regime": "portugal",
-    "seeded_from_archive": false,
-    "to": 1832,
-    "url": "/region/portugal/#era-1563"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1832,
-    "id": "portugal--era-1832",
-    "label": "Portugal",
-    "polity": "Kingdom of Portugal — after the civil war",
-    "present": false,
-    "regime": "portugal",
-    "seeded_from_archive": false,
-    "to": 1911,
-    "url": "/region/portugal/#era-1832"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1911,
-    "id": "portugal--era-1911",
-    "label": "Portugal",
-    "polity": "Portuguese Republic",
-    "present": true,
-    "regime": "portugal",
-    "seeded_from_archive": false,
-    "to": null,
-    "url": "/region/portugal/#era-1911"
-   }
-  ],
+  "portugal": [],
   "posen": [
    {
-    "approx": null,
+    "approx": true,
+    "assessed": false,
     "basis": "not-recorded",
     "contested": null,
+    "contested_scope": null,
     "from": 1200,
+    "from_margin": 50,
     "id": "posen--era-1200",
     "label": "Poland",
+    "margin_ok": {
+     "first": 1251,
+     "kind": "approx",
+     "last": 1787
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Poland — the Crown lands",
     "present": false,
     "regime": "poland",
     "seeded_from_archive": false,
     "to": 1793,
-    "url": "/region/posen/#era-1200"
+    "to_margin": 0,
+    "url": "/region/posen/#era-1200",
+    "why": "1200 is a lower bound, not an event; no page fetched dates Poland's holding of Greater Poland in 1200 (the region sat inside the fragmented Piast duchies then). Contested unassessed."
    },
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1793,
+    "from_margin": 0,
     "id": "posen--era-1793",
     "label": "Prussia / German Empire",
+    "margin_ok": {
+     "first": 1799,
+     "kind": "approx",
+     "last": 1801
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Prussia — South Prussia",
     "present": false,
     "regime": "prussia",
     "seeded_from_archive": false,
     "to": 1807,
-    "url": "/region/posen/#era-1793"
+    "to_margin": 1,
+    "url": "/region/posen/#era-1793",
+    "why": "Prussia-Russia treaty 23 Jan 1793; Prussian share accepted by the Grodno Sejm 23 or 25 Sept 1793 depending on source; South Prussia dated 25 Sept 1793 (Wikipedia, Second Partition and South Prussia). Prussian troops met little resistance. BUT Szubin (Prussian from 1773) and Bydgoszcz (Netze District, Prussian from 1772) were already Prussian before 1793."
    },
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1807,
+    "from_margin": 1,
     "id": "posen--era-1807",
     "label": "Napoleonic — Duchy of Warsaw",
+    "margin_ok": {
+     "first": 1813,
+     "kind": "approx",
+     "last": 1809
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Duchy of Warsaw",
     "present": false,
     "regime": "napo",
     "seeded_from_archive": false,
     "to": 1815,
-    "url": "/region/posen/#era-1807"
+    "to_margin": 2,
+    "url": "/region/posen/#era-1807",
+    "why": "Duchy of Warsaw created by the Treaties of Tilsit 7 and 9 July 1807 (Wikipedia). But the Greater Poland uprising of 1806 put Poles in control earlier, and Wikipedia's Greater Poland navbox ends South Prussia at 1806 while its article says 1807. Cession itself is by treaty."
    },
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1815,
+    "from_margin": 2,
     "id": "posen--era-1815",
     "label": "Prussia / German Empire",
+    "margin_ok": {
+     "first": 1821,
+     "kind": "approx",
+     "last": 1865
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Prussia — Grand Duchy of Posen",
     "present": false,
     "regime": "prussia",
     "seeded_from_archive": false,
     "to": 1871,
-    "url": "/region/posen/#era-1815"
+    "to_margin": 0,
+    "url": "/region/posen/#era-1815",
+    "why": "Grand Duchy of Posen established at the Congress of Vienna, 9 June 1815 (Wikipedia). The Duchy of Warsaw ended de facto in Jan 1813 (Russian occupation), de jure 9 June 1815; the Bydgoszcz article says re-annexed by Prussia in 1813, the Szubin article says 1815. Autonomy was abolished 5 Dec 1848 and renamed Province of Posen 9 Feb 1849 (or 26 April 1848 per another page), inside this era."
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1871,
+    "from_margin": 0,
     "id": "posen--era-1871",
     "label": "Prussia / German Empire",
+    "margin_ok": {
+     "first": 1877,
+     "kind": "margin",
+     "last": 1912
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "German Empire — Province of Posen",
     "present": false,
     "regime": "prussia",
     "seeded_from_archive": false,
     "to": 1918,
-    "url": "/region/posen/#era-1871"
+    "to_margin": 2,
+    "url": "/region/posen/#era-1871",
+    "why": "Posen was already Prussian; it joined the North German Confederation in 1866 and the German Empire in 1871 (Wikipedia, Province of Posen). The sovereign (Prussia) did not change; the Empire dates cleanly to 1871. Standesamt civil registration 1 Oct 1874 not checked here."
    },
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": true,
+    "contested_scope": "bounds",
     "from": 1918,
+    "from_margin": 2,
     "id": "posen--era-1918",
     "label": "Poland",
+    "margin_ok": {
+     "first": 1924,
+     "kind": "both",
+     "last": 1933
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Poland — Second Republic",
     "present": false,
     "regime": "poland",
     "seeded_from_archive": false,
     "to": 1939,
-    "url": "/region/posen/#era-1918"
+    "to_margin": 0,
+    "url": "/region/posen/#era-1918",
+    "why": "Greater Poland Uprising began 27 Dec 1918, most of the province taken by mid-January 1919; Trier armistice 16 Feb 1919 fixed a front; Treaty of Versailles signed 28 June 1919, in force 10 Jan 1920; Polish forces took the remaining German-held areas from 17 Jan 1920; front dissolved 8 March 1920. Szubin retaken 3 Jan 1919 (Szubin article). Bydgoszcz only passed to Poland after Versailles (1920). About 2,200 km2 stayed German as Posen-West Prussia (1922)."
    },
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1945,
+    "from_margin": 0,
     "id": "posen--era-1945",
     "label": "Poland",
+    "margin_ok": {
+     "first": 1951,
+     "kind": "approx",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Poland — Wielkopolska and Kujawy-Pomerania",
     "present": true,
     "regime": "poland",
     "seeded_from_archive": false,
     "to": null,
-    "url": "/region/posen/#era-1945"
+    "to_margin": null,
+    "url": "/region/posen/#era-1945",
+    "why": "Szubin taken by the Red Army 21 Jan 1945, Bydgoszcz in Jan/spring 1945 (Szubin and Bydgoszcz articles); disestablishment of the Wartheland 1 Aug 1945 at Potsdam (Wikipedia); the Province of Posen article says all historic parts were under Polish control by 1947. The Oder-Neisse dispute (West Germany claimed the 1937 frontiers) concerned lands that Poland did not hold in 1937; Posen was Polish 1920-1939, so no rival claim to this ground was found."
    }
   ],
   "queensland": [
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1788,
+    "from_margin": 54,
     "id": "queensland--era-1788",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1843,
+     "kind": "approx",
+     "last": 1853
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "New South Wales",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1859,
-    "url": "/region/queensland/#era-1788"
+    "to_margin": 0,
+    "url": "/region/queensland/#era-1788",
+    "why": "1788 is the founding of New South Wales (arrival 18 Jan, colony proclaimed 7 Feb 1788), not of European authority at Moreton Bay: convict settlement there began 1824 (Brisbane site 2 Dec 1824), free settlement allowed 1842. Much of the region's ground (north, west to 138E) was not administered for decades. No rival state claimant found in sources read; Indigenous sovereignty is not discussed in them."
    },
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1859,
+    "from_margin": 0,
     "id": "queensland--era-1859",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1865,
+     "kind": "approx",
+     "last": 1895
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Colony of Queensland",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1901,
-    "url": "/region/queensland/#era-1859"
+    "to_margin": 0,
+    "url": "/region/queensland/#era-1859",
+    "why": "Queensland separation: Letters Patent signed 6 Jun 1859, but the colony was proclaimed in Brisbane 10 Dec 1859, 'separation became a legal reality' only then. Two dates six months apart; Queensland Day marks 6 June but the Queensland State Archives says the colony was born at the proclamation. Until then NSW law applied. The 1862 western boundary move (141E to 138E) is noted, and the 28 deg S border is stated differently in one Archives post (29 deg)."
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1901,
+    "from_margin": 0,
     "id": "queensland--era-1901",
     "label": "Australia",
+    "margin_ok": {
+     "first": 1907,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Australia — State of Queensland",
     "present": true,
     "regime": "australia",
     "seeded_from_archive": false,
     "to": null,
-    "url": "/region/queensland/#era-1901"
+    "to_margin": null,
+    "url": "/region/queensland/#era-1901",
+    "why": "Commonwealth proclaimed and Queensland became a State on 1 Jan 1901 (Constitution in force); one clean date."
    }
   ],
-  "silesia": [
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1526,
-    "id": "silesia--era-1526",
-    "label": "Habsburg / Austria–Hungary",
-    "polity": "Habsburg Bohemian crown lands",
-    "present": false,
-    "regime": "habsburg",
-    "seeded_from_archive": false,
-    "to": 1742,
-    "url": "/region/silesia/#era-1526"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1742,
-    "id": "silesia--era-1742",
-    "label": "Prussia / German Empire",
-    "polity": "Prussia — Province of Silesia (Austrian Silesia stays Habsburg)",
-    "present": false,
-    "regime": "prussia",
-    "seeded_from_archive": false,
-    "to": 1871,
-    "url": "/region/silesia/#era-1742"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1871,
-    "id": "silesia--era-1871",
-    "label": "Prussia / German Empire",
-    "polity": "German Empire — Prussian Silesia",
-    "present": false,
-    "regime": "prussia",
-    "seeded_from_archive": false,
-    "to": 1918,
-    "url": "/region/silesia/#era-1871"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1918,
-    "id": "silesia--era-1918",
-    "label": "Poland",
-    "polity": "Divided — East Upper Silesia to Poland in 1922, the rest German; Těšín split with Czechoslovakia",
-    "present": false,
-    "regime": "poland",
-    "seeded_from_archive": false,
-    "to": 1939,
-    "url": "/region/silesia/#era-1918"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1945,
-    "id": "silesia--era-1945",
-    "label": "Poland",
-    "polity": "Poland, and Czech Silesia in the south",
-    "present": true,
-    "regime": "poland",
-    "seeded_from_archive": false,
-    "to": null,
-    "url": "/region/silesia/#era-1945"
-   }
-  ],
+  "silesia": [],
   "transvaal": [
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1852,
+    "from_margin": 5,
     "id": "transvaal--era-1852",
     "label": "The Boer republics and the Voortrekker states",
+    "margin_ok": {
+     "first": 1863,
+     "kind": "margin",
+     "last": 1866
+    },
+    "margin_sourced": false,
+    "margin_src": "contract",
     "polity": "South African Republic (Transvaal)",
     "present": false,
     "regime": "boer",
     "seeded_from_archive": false,
     "to": 1877,
-    "url": "/region/transvaal/#era-1852"
+    "to_margin": 0,
+    "url": "/region/transvaal/#era-1852",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1877,
+    "from_margin": 0,
     "id": "transvaal--era-1877",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1883,
+     "kind": "margin",
+     "last": 1875
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Transvaal — British annexation",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1881,
-    "url": "/region/transvaal/#era-1877"
+    "to_margin": 1,
+    "url": "/region/transvaal/#era-1877",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1881,
+    "from_margin": 1,
     "id": "transvaal--era-1881",
     "label": "The Boer republics and the Voortrekker states",
+    "margin_ok": {
+     "first": 1887,
+     "kind": "margin",
+     "last": 1896
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "South African Republic (Transvaal)",
     "present": false,
     "regime": "boer",
     "seeded_from_archive": false,
     "to": 1902,
-    "url": "/region/transvaal/#era-1881"
+    "to_margin": 2,
+    "url": "/region/transvaal/#era-1881",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1902,
+    "from_margin": 2,
     "id": "transvaal--era-1902",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1908,
+     "kind": "margin",
+     "last": 1904
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Transvaal Colony",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1910,
-    "url": "/region/transvaal/#era-1902"
+    "to_margin": 0,
+    "url": "/region/transvaal/#era-1902",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1910,
+    "from_margin": 0,
     "id": "transvaal--era-1910",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1916,
+     "kind": "margin",
+     "last": 1955
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Union of South Africa — Province of the Transvaal",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1961,
-    "url": "/region/transvaal/#era-1910"
+    "to_margin": 0,
+    "url": "/region/transvaal/#era-1910",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1961,
+    "from_margin": 0,
     "id": "transvaal--era-1961",
     "label": "South Africa",
+    "margin_ok": {
+     "first": 1967,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "South Africa — the former Transvaal",
     "present": true,
     "regime": "southafrica",
     "seeded_from_archive": false,
     "to": null,
-    "url": "/region/transvaal/#era-1961"
+    "to_margin": null,
+    "url": "/region/transvaal/#era-1961",
+    "why": null
+   }
+  ],
+  "west-prussia": [
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1466,
+    "from_margin": 12,
+    "id": "west-prussia--era-1466",
+    "label": "Poland",
+    "margin_ok": {
+     "first": 1479,
+     "kind": "margin",
+     "last": 1766
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Royal Prussia (Polish Crown)",
+    "present": false,
+    "regime": "poland",
+    "seeded_from_archive": false,
+    "to": 1772,
+    "to_margin": 0,
+    "url": "/region/west-prussia/#era-1466",
+    "why": null
+   },
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1772,
+    "from_margin": 0,
+    "id": "west-prussia--era-1772",
+    "label": "Prussia / German Empire",
+    "margin_ok": {
+     "first": 1778,
+     "kind": "margin",
+     "last": 1801
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Prussia — West Prussia",
+    "present": false,
+    "regime": "prussia",
+    "seeded_from_archive": false,
+    "to": 1807,
+    "to_margin": 0,
+    "url": "/region/west-prussia/#era-1772",
+    "why": null
+   },
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1807,
+    "from_margin": 0,
+    "id": "west-prussia--era-1807",
+    "label": "Napoleonic order — the Duchy of Warsaw and the Free City of Danzig",
+    "margin_ok": {
+     "first": 1813,
+     "kind": "margin",
+     "last": 1809
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Napoleonic order — the Duchy of Warsaw and the Free City of Danzig",
+    "present": false,
+    "regime": "napo",
+    "seeded_from_archive": false,
+    "to": 1815,
+    "to_margin": 2,
+    "url": "/region/west-prussia/#era-1807",
+    "why": null
+   },
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1815,
+    "from_margin": 2,
+    "id": "west-prussia--era-1815",
+    "label": "Prussia / German Empire",
+    "margin_ok": {
+     "first": 1821,
+     "kind": "margin",
+     "last": 1914
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Prussia — Province of West Prussia",
+    "present": false,
+    "regime": "prussia",
+    "seeded_from_archive": false,
+    "to": 1920,
+    "to_margin": 1,
+    "url": "/region/west-prussia/#era-1815",
+    "why": null
+   },
+   {
+    "approx": true,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1920,
+    "from_margin": 1,
+    "id": "west-prussia--era-1920",
+    "label": "Poland",
+    "margin_ok": {
+     "first": 1926,
+     "kind": "approx",
+     "last": 1933
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Poland (the Corridor), the Free City of Danzig, and East Prussia",
+    "present": false,
+    "regime": "poland",
+    "seeded_from_archive": false,
+    "to": 1939,
+    "to_margin": 0,
+    "url": "/region/west-prussia/#era-1920",
+    "why": "the Treaty of Versailles was signed in 1919 and the transfer followed"
+   },
+   {
+    "approx": false,
+    "assessed": true,
+    "basis": "not-recorded",
+    "contested": false,
+    "contested_scope": "none",
+    "from": 1945,
+    "from_margin": 0,
+    "id": "west-prussia--era-1945",
+    "label": "Poland",
+    "margin_ok": {
+     "first": 1951,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
+    "polity": "Poland — Pomerania and Kuyavian-Pomerania",
+    "present": true,
+    "regime": "poland",
+    "seeded_from_archive": false,
+    "to": null,
+    "to_margin": null,
+    "url": "/region/west-prussia/#era-1945",
+    "why": null
    }
   ]
  },
  "unchecked_edge": [
   "transvaal south africa"
  ],
- "version": 2
+ "version": 4
 }
