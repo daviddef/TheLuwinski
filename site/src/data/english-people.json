@@ -1004,15 +1004,17 @@
     "parents": [
      {
       "n": "William Wallis",
-      "dates": "b. 1807, d. before 1851",
+      "dates": "1807–c.1850",
       "via": "inferred",
-      "mark": "best candidate"
+      "s": "william-wallis-1807",
+      "mark": "probable"
      },
      {
       "n": "Mary Foster",
-      "dates": "b. c.1806",
+      "dates": "bapt. 1806",
       "via": "inferred",
-      "mark": "best candidate"
+      "s": "mary-foster-1806",
+      "mark": "probable"
      }
     ],
     "spouses": [
@@ -1127,6 +1129,12 @@
      "doc"
     ],
     [
+     "1827 to 1912",
+     "His wife is his second cousin",
+     "Joseph's father, William Wallis, was the son of Ann Phillips; Sarah's mother, Elizabeth Phillips, was the daughter of Ann's brother James. William and Elizabeth were therefore first cousins, and their children Joseph and Sarah were second cousins. The register names the brother and sister by baptism, the marriage of James Phillips and the baptisms of his children, and the link is by name, parish and the middle name of a Wallis daughter, not by a certificate.",
+     "inf"
+    ],
+    [
      "22 Jul 1827",
      "Baptised at Weston",
      "Joseph, son of William and Mary Wallis, a labourer, at Weston Holy Trinity (FreeREG, transcribed by a volunteer from the register). He is the only Joseph Wallis baptised at Weston between 1825 and 1833. An older Joseph Wallis, baptised there in 1822 to George and Betsey, is a different man.",
@@ -1171,9 +1179,7 @@
    ],
    "gaps": [
     "No certificate has been read. His marriage certificate of 1851 would name his father and Sarah's, and his death certificate his age and the informant.",
-    "His father, William Wallis, died between May 1848 and March 1851 and his death has not been found; the index gives no age before 1866, so several men of that name are possible.",
-    "The William Wallis baptised at Weston on 13 September 1807 to Joseph and Ann Wallis is the only baptism that fits William's marriage at 19 in 1827; a Joseph Wallis married Ann Phillips at Weston on 13 October 1804, so these are probably William's parents. That is a candidate and it stops there; no earlier Wallis of this line has been found, and no baptism of Joseph Wallis the elder in 1765 to 1785.",
-    "His mother, Mary Foster, is probably the Mary baptised at Wallington on 26 October 1806 to Thomas and Elizabeth Foster, which matches the census's Wallington but is about two years older than her census age. Thomas Foster married Elizabeth South at Wallington in 1793. Both are candidates and not claims."
+    "His father's death, and his grandparents, are on his father's page; every rung there is a register or an index entry and none is a certificate."
    ],
    "see": [
     [
@@ -1202,15 +1208,17 @@
     "parents": [
      {
       "n": "William Field",
-      "dates": "",
+      "dates": "1802–1879 (probably)",
       "via": "inferred",
-      "mark": "two candidates, both baptised at Weston"
+      "s": "william-field-1802",
+      "mark": "probable, with a doubt about which William"
      },
      {
       "n": "Elizabeth Phillips",
-      "dates": "",
-      "via": "read",
-      "mark": "married William Field 1823"
+      "dates": "b. 1798",
+      "via": "inferred",
+      "s": "elizabeth-phillips-1798",
+      "mark": "probable"
      }
     ],
     "spouses": [
@@ -1258,6 +1266,12 @@
      "doc"
     ],
     [
+     "1823 to 1851",
+     "She married her second cousin",
+     "See Joseph Wallis's page: his father and her mother were first cousins, through Ann Phillips and her brother James.",
+     "inf"
+    ],
+    [
      "12 Jul 1829",
      "Baptised at Weston",
      "Sarah, daughter of William and Elizabeth Field, a labourer, at Weston Holy Trinity. Her brothers and sisters baptised there to the same parents are Emma (23 May 1824), James (25 Feb 1827) and Charlotte (4 Nov 1832); every Field baptism at Weston in FreeREG for 1824 to 1833 was read, eight in all.",
@@ -1290,8 +1304,8 @@
    ],
    "gaps": [
     "No certificate has been read. The marriage certificate of 1851 would give her father's name as written.",
-    "Her father is one of two William Fields baptised at Weston to Thomas and Sarah Field, on 19 March 1797 and 24 January 1802; both would be bachelors at the marriage of 1823 and nothing here chooses between them. Elizabeth Phillips has not been traced to a baptism.",
-    "A Field family lodged with Joseph and Sarah in 1881 and has not been placed."
+    "A Field family lodged with Joseph and Sarah in 1881 and has not been placed.",
+    "Her father's identity among the William Fields is on his page: the baptism of 1802 is the better fit but is not settled."
    ],
    "see": [
     [
@@ -1301,6 +1315,527 @@
     [
      "Her daughter Caroline",
      "/people/caroline-wallis/"
+    ]
+   ]
+  },
+  {
+   "slug": "william-wallis-1807",
+   "name": "William Wallis",
+   "line": "Castle",
+   "gen": 5,
+   "rel": "Derrick's great-great-great-grandfather",
+   "born": "Weston, Hertfordshire, baptised 13 September 1807",
+   "died": "between May 1848 and March 1851 (not found)",
+   "dates": "1807–c.1850",
+   "grade": "probable",
+   "why": "His baptism and his marriage are register entries matched by name and parish, and he is the only William Wallis baptised at Weston between 1790 and 1810; his death is inferred from the 1851 census, in which his wife is a widow.",
+   "dek": "A labourer's son who married at nineteen, fathered at least eight children and died before the census of 1851 left his widow on the parish.",
+   "kin": {
+    "parents": [
+     {
+      "n": "Joseph Wallis",
+      "dates": "c.1783–1827",
+      "via": "inferred",
+      "mark": "best candidate"
+     },
+     {
+      "n": "Ann Phillips",
+      "dates": "bapt. 1783–1833",
+      "via": "read",
+      "mark": "her daughter's middle name says so"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "Mary Foster",
+      "dates": "bapt. 1806",
+      "via": "read",
+      "s": "mary-foster-1806",
+      "mar": "married 10 Feb 1827"
+     }
+    ],
+    "children": [
+     {
+      "n": "Joseph Wallis",
+      "dates": "1827–1912",
+      "via": "read",
+      "s": "joseph-wallis-1827",
+      "mark": "baptised to William and Mary"
+     },
+     {
+      "n": "Emma Wallis",
+      "dates": "b. c.1830",
+      "via": "inferred",
+      "mark": "same household in 1851"
+     },
+     {
+      "n": "Ann Wallis",
+      "dates": "b. c.1834",
+      "via": "inferred",
+      "mark": "same household in 1851"
+     },
+     {
+      "n": "Hesther Wallis",
+      "dates": "b. c.1836",
+      "via": "inferred",
+      "mark": "same household in 1851"
+     },
+     {
+      "n": "Eliza Wallis",
+      "dates": "bapt. 1842",
+      "via": "read"
+     },
+     {
+      "n": "Jeremiah Wallis",
+      "dates": "bapt. 1845",
+      "via": "read"
+     },
+     {
+      "n": "William Wallis",
+      "dates": "bapt. 1848",
+      "via": "read"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "Jane Wallis",
+      "dates": "bapt. 1805",
+      "via": "read"
+     },
+     {
+      "n": "Esther Philips Wallis",
+      "dates": "bapt. 1810",
+      "via": "read"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "13 Oct 1804",
+     "His parents marry at Weston",
+     "Joseph Wallis, bachelor, and Ann Phillips, spinster, both of Weston Holy Trinity; witnesses James Swaine and Robert Hide.",
+     "doc"
+    ],
+    [
+     "13 Sep 1807",
+     "Baptised at Weston",
+     "William, son of Joseph and Ann Wallis. His sister Jane was baptised on 2 June 1805 and his sister Esther Philips on 6 May 1810, to the same parents. The second sister's names are the clue to the mother: Esther was the name of Ann Phillips's own mother.",
+     "doc"
+    ],
+    [
+     "10 Feb 1827",
+     "Marries Mary Foster at Weston",
+     "William Wallis, bachelor, and Mary Foster, spinster, both of Weston Holy Trinity, witnesses James Watson and William Kent. He is nineteen, if this is the William baptised in 1807, and the only William Wallis baptised at Weston from 1790 to 1810. His son Joseph is baptised five months later. A Joseph Wallis aged 43, probably his father, is buried at Weston on 6 April 1827, two months after the wedding.",
+     "inf"
+    ],
+    [
+     "1827 to 1848",
+     "At least seven children baptised at Weston",
+     "Joseph (22 Jul 1827), Eliza (6 Nov 1842), Jeremiah (5 Oct 1845) and William (7 May 1848) are in the register to William and Mary Wallis, labourer. Emma, Ann and Hesther are in their mother's household in 1851 and their baptisms were not found.",
+     "doc"
+    ],
+    [
+     "30 Mar 1851",
+     "His widow is on the parish",
+     "Mary Wallis, 42, a labourer's widow and a pauper, in Weston village with Emma, Ann, Hesther, Eliza, Jeremiah, William and a granddaughter, Eliza Ann, aged one (HO 107 piece 1709, schedule 81). So William died between the baptism of May 1848 and the census.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "His death has not been found; the index gives no age before 1866 and several William Wallises are possible.",
+    "His own parents are one candidate, not a finding. Joseph Wallis and Ann Phillips married at Weston in 1804 and had Jane, William and Esther Philips baptised there; the register names no surname for the mother, and the identification of the William of 1827 with the baptism of 1807 rests on his being the only one.",
+    "His father Joseph is most probably the Joseph baptised at Clothall on 5 January 1783 to Joseph and Mary Wallis (who married at Clothall on 26 December 1771), but he was buried at Weston aged 43, which is a year younger than the baptism, and no document names him as the Weston groom of 1804. A Joseph Wallis baptised at Great Munden in 1781 is accounted for as another man: he married a Stains in 1801 and was buried at Great Munden in 1848.",
+    "His mother Ann's baptism is the one at Weston on 16 November 1783 to William and Esther Phillips, who are in the next generation as candidates only: a William Phillips, yeoman, was buried at Weston on 20 October 1793, and no marriage of William and Esther has been found. Ann was buried at Weston on 5 April 1833 aged 48, a year younger than the baptism."
+   ],
+   "see": [
+    [
+     "His son Joseph",
+     "/people/joseph-wallis-1827/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "mary-foster-1806",
+   "name": "Mary Foster",
+   "line": "Castle",
+   "gen": 5,
+   "rel": "Derrick's great-great-great-grandmother",
+   "born": "Wallington, Hertfordshire, baptised 26 October 1806",
+   "died": "after 1851 (not found)",
+   "dates": "1806–after 1851",
+   "grade": "probable",
+   "why": "Her marriage is a register entry and the baptism at Wallington is matched to the birthplace the 1851 census gives; her age in 1851 is about two years under the baptism and nothing else names her parents.",
+   "dek": "A Wallington girl who married a Weston labourer at twenty, bore at least seven children and was left a pauper widow of forty-four with the youngest still at home.",
+   "kin": {
+    "parents": [
+     {
+      "n": "Thomas Foster",
+      "dates": "",
+      "via": "read",
+      "mark": "married 1793"
+     },
+     {
+      "n": "Elizabeth South",
+      "dates": "",
+      "via": "read",
+      "mark": "married 1793"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "William Wallis",
+      "dates": "1807–c.1850",
+      "via": "read",
+      "s": "william-wallis-1807",
+      "mar": "married 10 Feb 1827"
+     }
+    ],
+    "children": [
+     {
+      "n": "Joseph Wallis",
+      "dates": "1827–1912",
+      "via": "read",
+      "s": "joseph-wallis-1827"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "Sarah Foster",
+      "dates": "bapt. 1794",
+      "via": "read"
+     },
+     {
+      "n": "Ann Foster",
+      "dates": "bapt. 1797",
+      "via": "read"
+     },
+     {
+      "n": "Thomas Foster",
+      "dates": "bapt. 1799",
+      "via": "read"
+     },
+     {
+      "n": "Edith Foster",
+      "dates": "bapt. 1802",
+      "via": "read"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "11 Oct 1793",
+     "Her parents marry at Wallington",
+     "Thomas Foster and Elizabeth South, at Wallington St Mary. Their first child is baptised in March 1794.",
+     "doc"
+    ],
+    [
+     "26 Oct 1806",
+     "Baptised at Wallington",
+     "Mary, daughter of Thomas and Elizabeth Foster, the youngest of five baptised there to them: Sarah (16 Mar 1794), Ann (16 Apr 1797), Thomas (30 Jun 1799), Edith (10 Oct 1802) and Mary.",
+     "inf"
+    ],
+    [
+     "10 Feb 1827",
+     "Marries William Wallis at Weston",
+     "Both of Weston Holy Trinity, she a spinster; witnesses James Watson and William Kent.",
+     "doc"
+    ],
+    [
+     "30 Mar 1851",
+     "A pauper widow of 42, born at Wallington",
+     "Mary Wallis, head, in Weston village with six children and a granddaughter. The census gives Wallington as her birthplace and an age two years under the baptism.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "No death or burial after 1851 has been looked for.",
+    "Her baptism is matched to her birthplace by the census and to nothing else; no other Mary Foster was baptised at Wallington in the years around 1806.",
+    "The baptisms of her parents have not been found: Elizabeth South in particular was not found at Wallington or nearby."
+   ],
+   "see": [
+    [
+     "Her husband William Wallis",
+     "/people/william-wallis-1807/"
+    ],
+    [
+     "Her son Joseph",
+     "/people/joseph-wallis-1827/"
+    ]
+   ]
+  },
+  {
+   "slug": "william-field-1802",
+   "name": "William Field",
+   "line": "Castle",
+   "gen": 5,
+   "rel": "Derrick's great-great-great-grandfather",
+   "born": "Weston, Hertfordshire, baptised 24 January 1802",
+   "died": "1879, Weston, aged 80 (probably)",
+   "dates": "1802–1879 (probably)",
+   "grade": "probable",
+   "why": "His marriage is a register entry. Which William Field it was is the problem: the baptism of 1802 is the better fit, because a William Field was buried as an infant in March 1798 and the William baptised in 1797 to the same parents may be he, but his age at burial in 1879 fits the baptism of 1797 slightly better than that of 1802.",
+   "dek": "A Weston labourer, the son of a labourer who died when he was about a year old, and the father of the girl who married his wife's cousin's son.",
+   "kin": {
+    "parents": [
+     {
+      "n": "Thomas Field",
+      "dates": "d. 1803",
+      "via": "read",
+      "mark": "married 1791"
+     },
+     {
+      "n": "Sarah Wallduck",
+      "dates": "",
+      "via": "read",
+      "mark": "married 1791"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "Elizabeth Phillips",
+      "dates": "b. 1798",
+      "via": "read",
+      "s": "elizabeth-phillips-1798",
+      "mar": "married 2 Jun 1823"
+     }
+    ],
+    "children": [
+     {
+      "n": "Emma Field",
+      "dates": "bapt. 1824",
+      "via": "read"
+     },
+     {
+      "n": "James Field",
+      "dates": "bapt. 1827",
+      "via": "read",
+      "mark": "a lodger in his sister's house, 1851"
+     },
+     {
+      "n": "Sarah Field",
+      "dates": "1829–1887",
+      "via": "read",
+      "s": "sarah-field-1829"
+     },
+     {
+      "n": "Charlotte Field",
+      "dates": "bapt. 1832",
+      "via": "read"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "Sarah Field",
+      "dates": "bapt. 1791",
+      "via": "read"
+     },
+     {
+      "n": "Thomas Field",
+      "dates": "bapt. 1793",
+      "via": "read"
+     },
+     {
+      "n": "Mary Field",
+      "dates": "bapt. 1795",
+      "via": "read"
+     },
+     {
+      "n": "David Field",
+      "dates": "bapt. 1799",
+      "via": "read",
+      "mark": "a bricklayer at Weston in 1851"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "19 Mar 1791",
+     "His parents marry at Weston",
+     "Thomas Field and Sarah Wallduck, at Holy Trinity. Their children baptised there: Sarah 1791, Thomas 1793, Mary 1795, William 1797, David 1799 and William 1802.",
+     "doc"
+    ],
+    [
+     "8 Mar 1798",
+     "A William Field is buried as an infant",
+     "The William baptised on 19 March 1797 to Thomas and Sarah would be under a year old, and a second William is baptised to the same parents on 24 January 1802, which is what a family usually did when the first had died. The register does not say whose child the infant was.",
+     "inf"
+    ],
+    [
+     "24 Jan 1802",
+     "Baptised at Weston",
+     "William, son of Thomas and Sarah Field. His father is buried at Weston on 4 April 1803, a labourer.",
+     "inf"
+    ],
+    [
+     "2 Jun 1823",
+     "Marries Elizabeth Phillips",
+     "Both of Weston Holy Trinity; witnesses James Wallis and Mary Warren. A different William Field, baptised in 1788 to William and Sarah Field of Weston, would have been 35.",
+     "doc"
+    ],
+    [
+     "1824 to 1832",
+     "Four children baptised",
+     "Emma (23 May 1824), James (25 Feb 1827), Sarah (12 Jul 1829) and Charlotte (4 Nov 1832), to William and Elizabeth Field, a labourer.",
+     "doc"
+    ],
+    [
+     "29 Aug 1879",
+     "A William Field of Weston is buried aged 80",
+     "Which gives a birth in 1798 or 1799. It is two years from the baptism of 1797 and three from that of 1802, so the age is no help in choosing between them, and it is the only William Field of a plausible age buried at Weston after 1832.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "Which William Field it was is not settled. The baptism of 1802 is the better fit if the infant buried in 1798 was the William of 1797, which the register does not say, and the household of William and Elizabeth Field has not been found in the 1851 census in FreeCEN.",
+    "His mother Sarah Wallduck belongs to a Wallduck family at Weston that had six children baptised between 1762 and 1777, and she is not one of the six; her own baptism has not been found.",
+    "Thomas Field, his father, cannot be told from the other Thomas Fields baptised in Hertfordshire between 1750 and 1775, of whom there are eighteen."
+   ],
+   "see": [
+    [
+     "His daughter Sarah",
+     "/people/sarah-field-1829/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "elizabeth-phillips-1798",
+   "name": "Elizabeth Phillips",
+   "line": "Castle",
+   "gen": 5,
+   "rel": "Derrick's great-great-great-grandmother",
+   "born": "Weston, Hertfordshire, baptised 21 January 1798",
+   "died": "not found",
+   "dates": "b. 1798",
+   "grade": "probable",
+   "why": "Her marriage is a register entry and the only Elizabeth Phillips baptised at Weston around 1798, indexed Philips, is the daughter of the Weston couple whose marriage of 1796 is a register entry. Her death has not been found.",
+   "dek": "A Weston girl whose daughter married her own first cousin's son.",
+   "kin": {
+    "parents": [
+     {
+      "n": "James Phillips",
+      "dates": "1776–1825",
+      "via": "read",
+      "mark": "baptised to William and Esther"
+     },
+     {
+      "n": "Sarah Kiddell",
+      "dates": "c.1776–1832",
+      "via": "read",
+      "mark": "married 1796"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "William Field",
+      "dates": "1802–1879 (probably)",
+      "via": "read",
+      "s": "william-field-1802",
+      "mar": "married 2 Jun 1823"
+     }
+    ],
+    "children": [
+     {
+      "n": "Sarah Field",
+      "dates": "1829–1887",
+      "via": "read",
+      "s": "sarah-field-1829"
+     },
+     {
+      "n": "James Field",
+      "dates": "bapt. 1827",
+      "via": "read"
+     },
+     {
+      "n": "Emma Field",
+      "dates": "bapt. 1824",
+      "via": "read"
+     },
+     {
+      "n": "Charlotte Field",
+      "dates": "bapt. 1832",
+      "via": "read"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "William Philips",
+      "dates": "bapt. 1800",
+      "via": "read"
+     },
+     {
+      "n": "Jane Phillips",
+      "dates": "bapt. 1803",
+      "via": "read"
+     },
+     {
+      "n": "Sarah Phillips",
+      "dates": "bapt. 1806",
+      "via": "read"
+     },
+     {
+      "n": "Mary Phillips",
+      "dates": "bapt. 1808",
+      "via": "read"
+     },
+     {
+      "n": "James Phillips",
+      "dates": "bapt. 1812",
+      "via": "read"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "19 Sep 1776",
+     "Her father is baptised at Weston",
+     "James, son of William and Esther Phillips. His sister Ann was baptised there on 16 November 1783, and Ann became the wife of Joseph Wallis.",
+     "doc"
+    ],
+    [
+     "9 Nov 1796",
+     "Her parents marry at Weston",
+     "James Phillips and Sarah Kiddell, Holy Trinity.",
+     "doc"
+    ],
+    [
+     "21 Jan 1798",
+     "Baptised at Weston",
+     "Elizabeth, daughter of James and Sarah Philips (so spelt in the index). Her brothers and sisters, baptised there to the same parents, are William (21 Sep 1800), Jane (1803), Sarah (1806), Mary (1808) and James (1812).",
+     "inf"
+    ],
+    [
+     "2 Jun 1823",
+     "Marries William Field",
+     "Both of Weston; witnesses James Wallis and Mary Warren, so a Wallis stood at the wedding of a Phillips whose aunt had married a Wallis.",
+     "doc"
+    ],
+    [
+     "20 Feb 1825",
+     "Her father is buried at Weston aged 49",
+     "James Philips, which fits a birth in 1775 or 1776; her mother, a Sarah Phillips, is buried there on 13 May 1832 aged 56.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "Her death or burial has not been found. An Elizabeth Field buried in the Hitchin workhouse in 1876 aged 83 is five years older than a birth in 1798 and is not claimed.",
+    "Her grandparents William and Esther Phillips are candidates only: a William Phillips, yeoman, was buried at Weston on 20 October 1793, no marriage of William and Esther has been found, and Esther's burial has not been found."
+   ],
+   "see": [
+    [
+     "Her husband William Field",
+     "/people/william-field-1802/"
+    ],
+    [
+     "Her daughter Sarah",
+     "/people/sarah-field-1829/"
     ]
    ]
   },

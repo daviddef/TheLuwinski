@@ -781,6 +781,28 @@
    "got": "JOSEPH WALLIS baptised 22 Jul 1827 to William and Mary; WILLIAM WALLIS and MARY FOSTER married 10 Feb 1827; SARAH FIELD baptised 12 Jul 1829 to William and Elizabeth; WILLIAM FIELD and ELIZABETH PHILLIPS married 2 Jun 1823; JAMES FIELD baptised 25 Feb 1827; JAMES WALLIS baptised 6 Jul 1851 to Joseph and Sarah. Candidates a generation above: Joseph Wallis married Ann Phillips 1804; William Wallis baptised 1807 to Joseph and Ann; Mary Foster baptised 1806 at Wallington. FreeREG's search needs no account, and the page's 'you must be logged in' is about saving searches. NOT FOUND: a Joseph Wallis baptised 1765 to 1785; Elizabeth Phillips's baptism.",
    "when": "2026-10-18",
    "walked": false
+  },
+  {
+   "src": "FreeREG — Weston, Clothall and Wallington registers, 1740 to 1879, Wallis, Field, Phillips, Foster and Wallduck",
+   "key": "freereg/weston-grandparents-2026-10-18",
+   "url": "https://www.freereg.org.uk/search_queries/new",
+   "what": "the generation above Joseph Wallis's and Sarah Field's parents",
+   "when": "2026-10-18",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "Baptisms Wallis 1735 to 1830, Phillips 1765 to 1812, Philips 1765 to 1812, Field 1785 to 1815, Foster 1793 to 1815, Wallduck and Walduck 1755 to 1780, Williamson and South by forename; marriages Wallis Joseph 1750 to 1812, Phillips James 1790 to 1799, Phillips William 1755 to 1783, Phillips 1760 to 1776, Field Thomas 1785 to 1798; burials Wallis, Phillips, Philips, Field at Weston",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "baptism",
+    "marriage",
+    "burial",
+    "freereg",
+    "weston",
+    "clothall",
+    "wallington"
+   ],
+   "got": "JOSEPH WALLIS and ANN PHILLIPS married at Weston 1804 (children Jane, William 1807, ESTHER PHILIPS 1810); ANN was baptised 1783 to William and Esther Phillips, with a brother JAMES (1776) whose daughter ELIZABETH (1798) married WILLIAM FIELD in 1823, so Joseph Wallis and Sarah Field were second cousins. Joseph Wallis the elder was probably baptised at Clothall 1783 to Joseph and Mary (Williamson, m. 1771). THOMAS FIELD married SARAH WALLDUCK at Weston 1791, and a William Field was buried as an infant in 1798, which is why the baptism of 1802 is probably the one. THOMAS FOSTER married ELIZABETH SOUTH at Wallington 1793 with Mary (1806) the youngest of five. NOT FOUND: the baptisms of Joseph Wallis the elder, Mary Williamson, Elizabeth South, Sarah Wallduck; the marriage of William Phillips and Esther; William Wallis's death; William Field's 1851 household. FreeREG searches with the helper run in one fetch can time out the browser pane after about 45 seconds; split them."
   }
  ]
 }
