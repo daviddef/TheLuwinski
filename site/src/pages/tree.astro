@@ -59,7 +59,7 @@ const personName = Object.fromEntries(english.people.map((q) => [q.slug, q.name]
           {p.people && (
             <p class="small" style="margin:.1rem 0;">
               {p.people.map((slug, i) => (
-                <Fragment>{i > 0 && ' \u00b7 '}<a href={base + '/people/' + slug + '/'}>{personName[slug]}\u2019s page</a></Fragment>
+                <Fragment>{i > 0 && ' \u00b7 '}<a href={base + '/people/' + slug + '/'}>{personName[slug]}&rsquo;s page</a></Fragment>
               ))}
             </p>
           )}

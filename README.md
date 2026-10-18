@@ -11,7 +11,7 @@ Sauerbaum, Lourenço Marques, Johannesburg, Porto.
 
 | | |
 |---|---|
-| **Sally Leibholz** & **Friederike Schmul** | Hammerstein; married at Szubin, 24 Nov 1874. A Jewish family of the Posen–West Prussia borderland |
+| **Sally Leibholz** & **Friederike Schmul** | Hammerstein; married at Szubin, 24 Dec 1874. A Jewish family of the Posen–West Prussia borderland |
 | **Joachim Luwinski** (b. Allenstein 1865, *Landwirt*) & **Johanna Thimm** (b. Sauerbaum 1871) | Catholic farming people of the Ermland |
 | **Jacob Leibholz** | b. Schubin 8 Aug 1884; *Kaufmann* of Berlin-Schöneberg. **Deported to Auschwitz, 26 February 1943** |
 | **Auguste "Lizzy" Luwinski** | b. Sauerbaum 1893, *Schneiderin und Modistin*; d. Kraichtal 1975. Survived |
