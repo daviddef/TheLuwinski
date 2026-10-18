@@ -727,6 +727,60 @@
     "findmypast"
    ],
    "got": "CAROLINE WALLIS BAPTISED AT WESTON 16 APRIL 1862, daughter of Joseph, a labourer, and Sarah. CAROLINE WALLACE, 9, a straw plaiter, in Joseph and Sarah Wallace's household at Maiden Street, Weston in 1871 (RG10/1366 f41), and CAROLINE WALLIS, 19, single, in the same household in 1881 (RG11/1417 f97). THE SEARCH THAT FOUND HER HAD NO SURNAME: the 1871 index spells the family Wallace, so a search on Wallis returned nothing from Hertfordshire. Her year is 1862 and her parents are probably Joseph and Sarah. NOT FOUND: any document joining this girl to Caroline Castle."
+  },
+  {
+   "src": "FreeBMD — the March 1851 marriage page at Hitchin, and two deaths",
+   "key": "freebmd/wallis-field-hitchin-2026-10-18",
+   "url": "https://www.freebmd.org.uk/cgi/search.pl",
+   "what": "Joseph Wallis's marriage, and the deaths of Joseph and Sarah Wallis",
+   "outcome": "yield",
+   "pages": "Marriages Mar 1851 Hitchin vol 6 p711; Deaths Mar 1881 to Dec 1915 Hitchin, Joseph and Sarah Wallis",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "freebmd",
+    "marriage",
+    "death"
+   ],
+   "got": "JOSEPH WALLIS married at Hitchin, March quarter 1851, vol 6 p711, on a page that also carries Field Sarah, Bigg Charlotte and Dearman George (two couples). JOSEPH WALLIS died aged 82 in Q4 1912 (3a p729); SARAH WALLIS aged 56 in Q1 1887 (3a p268). THE VOLUME-AND-PAGE FIELDS WITH NO SURNAME LIST EVERYONE ON ONE PAGE, which is the way to find a spouse the index does not name. NOT ESTABLISHED: that Field Sarah is the bride. The index sits her on the page and does not name her as Joseph's spouse.",
+   "when": "2026-10-18",
+   "walked": false
+  },
+  {
+   "src": "FreeCEN — the 1851 census of Hertfordshire, Wallis and Field born in the county",
+   "key": "freecen/wallis-field-1851-2026-10-18",
+   "url": "https://www.freecen.org.uk/search_queries/new",
+   "what": "Joseph and Sarah Wallis in 1851, and their mothers' households",
+   "outcome": "yield",
+   "pages": "1851 census, Baldock district: WALLIS (81 results) and FIELD (99 results), Hertfordshire born; Weston households opened",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "census",
+    "freecen"
+   ],
+   "got": "HO 107/1709: JOSEPH WALLIS 23 and SARAH 21 in Weston village with JAMES FIELD, lodger, 24; a widow, MARY WALLIS 42, born Wallington, two streets away with six children. NOT FOUND: any 1841 or 1861 Hertfordshire record (the searches returned none, which is not a finding that none exist). FreeCEN needs no account, and its Hertfordshire 1851 coverage includes the Baldock district.",
+   "when": "2026-10-18",
+   "walked": false
+  },
+  {
+   "src": "FreeREG — Weston Holy Trinity baptisms and marriages, 1815 to 1851, Wallis and Field",
+   "key": "freereg/weston-wallis-field-2026-10-18",
+   "url": "https://www.freereg.org.uk/search_queries/new",
+   "what": "Joseph and Sarah's baptisms, their parents' marriages, and one generation above",
+   "outcome": "yield",
+   "pages": "Baptisms Wallis 1812 to 1852 (182 results), 1825 to 1833, 1790 to 1810; Field 1824 to 1833 (174 results), 1790 to 1805; marriages Wallis William 1815 to 1830, Field William 1815 to 1827, Wallis Joseph 1795 to 1812, Foster Thomas 1790 to 1806",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "baptism",
+    "marriage",
+    "freereg",
+    "weston"
+   ],
+   "got": "JOSEPH WALLIS baptised 22 Jul 1827 to William and Mary; WILLIAM WALLIS and MARY FOSTER married 10 Feb 1827; SARAH FIELD baptised 12 Jul 1829 to William and Elizabeth; WILLIAM FIELD and ELIZABETH PHILLIPS married 2 Jun 1823; JAMES FIELD baptised 25 Feb 1827; JAMES WALLIS baptised 6 Jul 1851 to Joseph and Sarah. Candidates a generation above: Joseph Wallis married Ann Phillips 1804; William Wallis baptised 1807 to Joseph and Ann; Mary Foster baptised 1806 at Wallington. FreeREG's search needs no account, and the page's 'you must be logged in' is about saving searches. NOT FOUND: a Joseph Wallis baptised 1765 to 1785; Elizabeth Phillips's baptism.",
+   "when": "2026-10-18",
+   "walked": false
   }
  ]
 }

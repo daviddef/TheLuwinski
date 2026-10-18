@@ -774,22 +774,24 @@
    "died": "1957, registered at Hitchin as Caroline James",
    "dates": "1862–1957",
    "grade": "probable",
-   "why": "Her later life is documented and her marriage is an index entry. Her birth in early 1862 and her parents, Joseph and Sarah Wallis of Weston, rest on a baptism and two censuses that name a Caroline Wallis at Weston; no document yet joins that girl to Caroline Castle.",
+   "why": "Her later life is documented and her marriage is an index entry. Her birth in early 1862 and her parents, Joseph Wallis and Sarah Field of Weston, rest on a baptism, two censuses and a run of Weston registers that name a Caroline Wallis and her family; no document yet joins that girl to Caroline Castle.",
    "rel": "Derrick's great-grandmother",
    "dek": "She remarried in 1920 and died in 1957 as Caroline James, which is why every tree that carries her as Caroline Wallis was hunting a death registered under another surname.",
    "kin": {
     "parents": [
      {
-      "n": "Joseph Wallis, a labourer of Weston",
-      "dates": "b. c.1829",
+      "n": "Joseph Wallis",
+      "dates": "c.1827–1912",
+      "s": "joseph-wallis-1827",
       "via": "inferred",
-      "mark": "best candidate"
+      "mark": "probable"
      },
      {
-      "n": "Sarah Wallis, his wife",
-      "dates": "b. c.1831",
+      "n": "Sarah Field",
+      "dates": "c.1829–1887",
+      "s": "sarah-field-1829",
       "via": "inferred",
-      "mark": "best candidate"
+      "mark": "probable"
      }
     ],
     "spouses": [
@@ -968,10 +970,14 @@
     ]
    ],
    "gaps": [
-    "Her parents are probable and not proved. No document joins Caroline Castle to the girl baptised at Weston in April 1862; the join is the name, the parish, the date and the age. The marriage certificate of 1882 would name her father, and it is the one document that would settle it.",
+    "Her parents are probable and not proved. No document joins Caroline Castle to the girl baptised at Weston in April 1862; the join is the name, the parish, the date and the age, and it is strengthened by what her own children and her parents' were called. The marriage certificate of 1882 would name her father, and it is the one document that would settle it.",
     "Her first marriage certificate has not been read. It would name her father, and ordering it is a purchase for the family to decide."
    ],
    "see": [
+    [
+     "Her parents, Joseph Wallis and Sarah Field",
+     "/people/joseph-wallis-1827/"
+    ],
     [
      "The tree",
      "/tree/"
@@ -979,6 +985,322 @@
     [
      "Her daughter Martha Maud",
      "/leonard/"
+    ]
+   ]
+  },
+  {
+   "slug": "joseph-wallis-1827",
+   "name": "Joseph Wallis",
+   "line": "Castle",
+   "gen": 4,
+   "rel": "Derrick's great-great-grandfather",
+   "born": "Weston, Hertfordshire, baptised 22 July 1827",
+   "died": "Q4 1912, Hitchin, aged 82",
+   "dates": "1827–1912",
+   "grade": "probable",
+   "why": "His baptism, his marriage and his death are register and index entries matched by name, parish and age; the censuses of 1851, 1871 and 1881 fit them, and no document names him as Caroline's father. His age in the censuses and at death differs by up to three years.",
+   "dek": "A farm labourer of Weston who married the girl whose brother was lodging with him, and whose widowed mother was left with six children in 1851.",
+   "kin": {
+    "parents": [
+     {
+      "n": "William Wallis",
+      "dates": "b. 1807, d. before 1851",
+      "via": "inferred",
+      "mark": "best candidate"
+     },
+     {
+      "n": "Mary Foster",
+      "dates": "b. c.1806",
+      "via": "inferred",
+      "mark": "best candidate"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "Sarah Field",
+      "dates": "c.1829–1887",
+      "s": "sarah-field-1829",
+      "via": "read",
+      "mar": "married Q1 1851"
+     }
+    ],
+    "children": [
+     {
+      "n": "James Wallis",
+      "dates": "bapt. 1851",
+      "via": "read"
+     },
+     {
+      "n": "William Wallis",
+      "dates": "b. c.1856",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "Emma Wallis",
+      "dates": "b. c.1859",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "Eliza Wallis",
+      "dates": "b. c.1861",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "Caroline Wallis",
+      "dates": "1862–1957",
+      "s": "caroline-wallis",
+      "via": "inferred",
+      "mark": "probable"
+     },
+     {
+      "n": "Joseph Wallis",
+      "dates": "b. c.1865",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "Jerimia Wallis",
+      "dates": "b. c.1867",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "Sarah Wallis",
+      "dates": "b. c.1869",
+      "via": "inferred",
+      "mark": "same household"
+     },
+     {
+      "n": "George Wallis",
+      "dates": "",
+      "via": "inferred",
+      "mark": "same household"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "Eliza Wallis",
+      "dates": "bapt. 1842",
+      "via": "read",
+      "mark": "baptised to William and Mary"
+     },
+     {
+      "n": "Jeremiah Wallis",
+      "dates": "bapt. 1845",
+      "via": "read",
+      "mark": "baptised to William and Mary"
+     },
+     {
+      "n": "William Wallis",
+      "dates": "bapt. 1848",
+      "via": "read",
+      "mark": "baptised to William and Mary"
+     },
+     {
+      "n": "Emma Wallis",
+      "dates": "b. c.1830",
+      "via": "inferred",
+      "mark": "same household in 1851"
+     },
+     {
+      "n": "Ann Wallis",
+      "dates": "b. c.1834",
+      "via": "inferred",
+      "mark": "same household in 1851"
+     },
+     {
+      "n": "Hesther Wallis",
+      "dates": "b. c.1836",
+      "via": "inferred",
+      "mark": "same household in 1851"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "10 Feb 1827",
+     "His parents marry at Weston",
+     "William Wallis, bachelor, and Mary Foster, spinster, both of Weston, at Holy Trinity; witnesses James Watson and William Kent. Joseph is baptised five months later.",
+     "doc"
+    ],
+    [
+     "22 Jul 1827",
+     "Baptised at Weston",
+     "Joseph, son of William and Mary Wallis, a labourer, at Weston Holy Trinity (FreeREG, transcribed by a volunteer from the register). He is the only Joseph Wallis baptised at Weston between 1825 and 1833. An older Joseph Wallis, baptised there in 1822 to George and Betsey, is a different man.",
+     "doc"
+    ],
+    [
+     "30 Mar 1851",
+     "Married, 23, an agricultural labourer, in Weston village",
+     "With Sarah, his wife, aged 21, and James Field, a lodger of 24, all born at Weston (HO 107 piece 1709, ED 10c, folio 190, schedule 117, FreeCEN). Sarah's and James's baptisms are on her page. His widowed mother is in the same village the same night: Mary Wallis, 42, born at Wallington, a labourer's widow and a pauper, with Emma, Ann, Hesther, Eliza, Jeremiah and William and a granddaughter of one (schedule 81). Eliza, Jeremiah and William were baptised at Weston to William and Mary Wallis in 1842, 1845 and 1848; the census puts each of them a year older than the baptism does. The head of that house is a widow, so William Wallis was dead.",
+     "inf"
+    ],
+    [
+     "Q1 1851",
+     "Marries Sarah Field",
+     "At Hitchin, vol 6 p711. The index names Joseph Wallis, Sarah Field, Charlotte Bigg and George Dearman on that page, which is two couples, and the Bigg and Dearman pair are the other. Not a certificate.",
+     "inf"
+    ],
+    [
+     "6 Jul 1851",
+     "His first son, James, is baptised at Weston",
+     "Father Joseph, a labourer; mother Sarah. Probably named for Sarah's brother, the lodger of the census.",
+     "doc"
+    ],
+    [
+     "16 Apr 1862",
+     "His daughter Caroline is baptised",
+     "As Caroline Wallis, daughter of Joseph, a labourer, and Sarah, at Weston.",
+     "doc"
+    ],
+    [
+     "Apr 1871 and Apr 1881",
+     "In Maiden Street, Weston, with nine children",
+     "Indexed Wallace in 1871 and Wallis in 1881; a straw-plaiting household. The 1871 index puts his birth in 1829, two years after the baptism. A family called Field lodged with them in 1881.",
+     "inf"
+    ],
+    [
+     "Q4 1912",
+     "Dies aged 82",
+     "At Hitchin, vol 3a p729. One Joseph Wallis of that age in the district between 1881 and 1915; a Joseph Wallis who died in 1900 was an infant, and is not him.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "No certificate has been read. His marriage certificate of 1851 would name his father and Sarah's, and his death certificate his age and the informant.",
+    "His father, William Wallis, died between May 1848 and March 1851 and his death has not been found; the index gives no age before 1866, so several men of that name are possible.",
+    "The William Wallis baptised at Weston on 13 September 1807 to Joseph and Ann Wallis is the only baptism that fits William's marriage at 19 in 1827; a Joseph Wallis married Ann Phillips at Weston on 13 October 1804, so these are probably William's parents. That is a candidate and it stops there; no earlier Wallis of this line has been found, and no baptism of Joseph Wallis the elder in 1765 to 1785.",
+    "His mother, Mary Foster, is probably the Mary baptised at Wallington on 26 October 1806 to Thomas and Elizabeth Foster, which matches the census's Wallington but is about two years older than her census age. Thomas Foster married Elizabeth South at Wallington in 1793. Both are candidates and not claims."
+   ],
+   "see": [
+    [
+     "His daughter Caroline",
+     "/people/caroline-wallis/"
+    ],
+    [
+     "The tree",
+     "/tree/"
+    ]
+   ]
+  },
+  {
+   "slug": "sarah-field-1829",
+   "name": "Sarah Field",
+   "line": "Castle",
+   "gen": 4,
+   "rel": "Derrick's great-great-grandmother",
+   "born": "Weston, Hertfordshire, baptised 12 July 1829",
+   "died": "Q1 1887, Hitchin, aged 56",
+   "dates": "1829–1887",
+   "grade": "probable",
+   "why": "Her baptism, her marriage and her death are register and index entries matched by name, parish and age; her brother's lodging in her house in 1851 makes the match to her baptism as firm as a name can. Her age at death is two years younger than the baptism.",
+   "dek": "The daughter of a Weston labourer, married at 21 to a man whose own sister and mother lived in the same village.",
+   "kin": {
+    "parents": [
+     {
+      "n": "William Field",
+      "dates": "",
+      "via": "inferred",
+      "mark": "two candidates, both baptised at Weston"
+     },
+     {
+      "n": "Elizabeth Phillips",
+      "dates": "",
+      "via": "read",
+      "mark": "married William Field 1823"
+     }
+    ],
+    "spouses": [
+     {
+      "n": "Joseph Wallis",
+      "dates": "1827–1912",
+      "s": "joseph-wallis-1827",
+      "via": "read",
+      "mar": "married Q1 1851"
+     }
+    ],
+    "children": [
+     {
+      "n": "Caroline Wallis",
+      "dates": "1862–1957",
+      "s": "caroline-wallis",
+      "via": "inferred",
+      "mark": "probable"
+     }
+    ],
+    "siblings": [
+     {
+      "n": "Emma Field",
+      "dates": "bapt. 1824",
+      "via": "read"
+     },
+     {
+      "n": "James Field",
+      "dates": "bapt. 1827",
+      "via": "read",
+      "mark": "lodger in her house, 1851"
+     },
+     {
+      "n": "Charlotte Field",
+      "dates": "bapt. 1832",
+      "via": "read"
+     }
+    ]
+   },
+   "facts": [
+    [
+     "2 Jun 1823",
+     "Her parents marry at Weston",
+     "William Field, bachelor, and Elizabeth Phillips, spinster, both of Weston Holy Trinity; witnesses James Wallis and Mary Warren. A James Wallis stood witness at this wedding, which is the first sign of the two families knowing each other.",
+     "doc"
+    ],
+    [
+     "12 Jul 1829",
+     "Baptised at Weston",
+     "Sarah, daughter of William and Elizabeth Field, a labourer, at Weston Holy Trinity. Her brothers and sisters baptised there to the same parents are Emma (23 May 1824), James (25 Feb 1827) and Charlotte (4 Nov 1832); every Field baptism at Weston in FreeREG for 1824 to 1833 was read, eight in all.",
+     "doc"
+    ],
+    [
+     "30 Mar 1851",
+     "A labourer's wife of 21, with her brother lodging",
+     "Sarah Wallis, wife, born at Weston, in her husband's house with James Field, a lodger of 24, an agricultural labourer also born at Weston (FreeCEN). His age and parish fit the James baptised in 1827 to her parents.",
+     "inf"
+    ],
+    [
+     "Q1 1851",
+     "Marries Joseph Wallis",
+     "At Hitchin, vol 6 p711 (see his page for the reading of the page).",
+     "inf"
+    ],
+    [
+     "16 Apr 1862",
+     "Her daughter Caroline is baptised",
+     "Mother Sarah, father Joseph, a labourer, at Weston.",
+     "doc"
+    ],
+    [
+     "Q1 1887",
+     "Dies aged 56",
+     "At Hitchin, vol 3a p268. Two other Sarah Wallises died in the district in 1885, aged 82 and 84, and are not her.",
+     "inf"
+    ]
+   ],
+   "gaps": [
+    "No certificate has been read. The marriage certificate of 1851 would give her father's name as written.",
+    "Her father is one of two William Fields baptised at Weston to Thomas and Sarah Field, on 19 March 1797 and 24 January 1802; both would be bachelors at the marriage of 1823 and nothing here chooses between them. Elizabeth Phillips has not been traced to a baptism.",
+    "A Field family lodged with Joseph and Sarah in 1881 and has not been placed."
+   ],
+   "see": [
+    [
+     "Her husband Joseph Wallis",
+     "/people/joseph-wallis-1827/"
+    ],
+    [
+     "Her daughter Caroline",
+     "/people/caroline-wallis/"
     ]
    ]
   },

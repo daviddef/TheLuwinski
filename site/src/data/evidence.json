@@ -985,6 +985,14 @@
    "people": 0
   },
   {
+   "file": "wallis-field-weston-2026-10-18.tsv",
+   "title": "Joseph Wallis and Sarah Field of Weston: their marriage, their baptisms and the generation above",
+   "source": "FreeBMD; FreeCEN HO 107/1709; FreeREG, Weston Holy Trinity",
+   "kind": "ref",
+   "rows": 14,
+   "people": 0
+  },
+  {
    "file": "wallis-weston-2026-10-18.tsv",
    "title": "Caroline Wallis of Weston: the baptism of April 1862 and two censuses",
    "source": "Findmypast: Hertfordshire Baptisms; 1871 census RG10/1366 f41 (indexed Wallace); 1881 census RG11/1417 f97",
@@ -4388,7 +4396,7 @@
  ],
  "counts": {
   "ambiguous": 2,
-  "files": 143,
+  "files": 144,
   "person_files": 26,
   "people": 216,
   "records": 312,
