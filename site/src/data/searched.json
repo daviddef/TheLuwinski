@@ -803,6 +803,45 @@
     "wallington"
    ],
    "got": "JOSEPH WALLIS and ANN PHILLIPS married at Weston 1804 (children Jane, William 1807, ESTHER PHILIPS 1810); ANN was baptised 1783 to William and Esther Phillips, with a brother JAMES (1776) whose daughter ELIZABETH (1798) married WILLIAM FIELD in 1823, so Joseph Wallis and Sarah Field were second cousins. Joseph Wallis the elder was probably baptised at Clothall 1783 to Joseph and Mary (Williamson, m. 1771). THOMAS FIELD married SARAH WALLDUCK at Weston 1791, and a William Field was buried as an infant in 1798, which is why the baptism of 1802 is probably the one. THOMAS FOSTER married ELIZABETH SOUTH at Wallington 1793 with Mary (1806) the youngest of five. NOT FOUND: the baptisms of Joseph Wallis the elder, Mary Williamson, Elizabeth South, Sarah Wallduck; the marriage of William Phillips and Esther; William Wallis's death; William Field's 1851 household. FreeREG searches with the helper run in one fetch can time out the browser pane after about 45 seconds; split them."
+  },
+  {
+   "src": "Hertfordshire Names Online — wills, licences, marriages and poor-law indexes, Phillips of Weston",
+   "key": "hertfordshire-names-online/phillips-weston-2026-10-18",
+   "url": "https://www.hertfordshire.gov.uk/ufs/ufsmain?formid=HALS_INDEXES",
+   "what": "William and Esther Phillips of Weston",
+   "when": "2026-10-18",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "Philips and Phillips, keyword Weston, 1700 to 1860: marriages and licences (11), wills (2), the poor (2), crime and punishment (2, not opened); the same index for Philips 1770 to 1800 (1 marriage)",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "will",
+    "marriage-licence",
+    "hals",
+    "weston"
+   ],
+   "got": "THE MARRIAGE OF WILLIAM PHILIPS AND ESTHER WRIGHT of Weston, 21 Feb 1775, in the register AND by licence (AHH20/21); a William Phillips, yeoman, of Weston has a WILL of 1760 (107HW16 and 16HR150), unread; a William Phillips of Knebworth appears in a maintenance order of 1804 and is another man. THE INDEX IS FREE AND NEEDS NO ACCOUNT; copies of a document cost £11.45 and can be viewed free at Hertfordshire Archives. NOT OPENED: the two Crime and Punishment results. NOT DONE: reading the will or the licence bond."
+  },
+  {
+   "src": "FreeREG — Weston marriages and baptisms, Phillips and Philips, Wright, 1730 to 1795",
+   "key": "freereg/weston-phillips-wright-2026-10-18",
+   "url": "https://www.freereg.org.uk/search_queries/new",
+   "what": "William and Esther Phillips's marriage, children and burials",
+   "when": "2026-10-18",
+   "outcome": "yield",
+   "walked": false,
+   "pages": "Marriages Phillips and Philips William 1745 to 1776, Phillips 1760 to 1776; baptisms Phillips and Philips 1765 to 1795, William 1730 to 1756, Wright Esther and Hester 1738 to 1757; burials Phillips William 1793, Esther, Hester, Hesther, Easter 1783 to 1860",
+   "tags": [
+    "england",
+    "hertfordshire",
+    "baptism",
+    "marriage",
+    "burial",
+    "freereg",
+    "weston"
+   ],
+   "got": "THE MARRIAGE WAS UNDER THE OTHER SPELLING: William PHILIPS and 'Edther' WRIGHT, Weston 21 Feb 1775, which a search for PHILLIPS had missed (nine William Phillips marriages 1755 to 1783, none to an Esther). Only two children found at Weston (1776 and 1783). William, yeoman, buried 1793; no burial for Esther under five spellings. Candidates for William's parents: the will of 1760 (see the Names Online row) and a William Philips baptised at Baldock in 1746 to Charles and Eliz; for Esther's, a Hester Wright baptised at Stevenage in 1754 to John and Sarah. NOT FOUND: Esther's baptism and burial, William's baptism."
   }
  ]
 }
