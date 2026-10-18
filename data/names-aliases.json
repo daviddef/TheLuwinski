@@ -1,0 +1,67 @@
+{
+  "note": "FORMS OF A NAME THE ARCHIVE'S OWN DATA STATES FOR A PERSON WHO ALREADY HAS A PAGE. tools/build-names-index.py reads this file and adds each form to that person's page in the names index, so the linker (autolink) can link it. An alias is a claim that two written names are one person, so each carries the record that says so; the generator checks that the person exists and is not living, and then applies the same safety filters as every other form (a form a living, held-out, not-known-dead or second person also bears is dropped, so is a form inside a longer unlinked name). Edit by hand, with the record, in a commit that says why. No living person, ever.",
+  "aliases": [
+    {
+      "slug": "trude-gertrud-leibke-leibholz",
+      "forms": [
+        "Gertrud Leibke",
+        "Gertrud Sara Leibholz"
+      ],
+      "basis": "The Wedding death entry of 27 February 1943 (Sterberegister 1943 Nr. 1291) names her Gertrud Sara Leibholz, and her birth family is Leibke (data/gertrud-leibholz-sterbeeintrag-1943.tsv). The bare form Gertrud Leibholz is NOT added: a Gertrud Meyer née Leibholz is also in the Gedenkbuch."
+    },
+    {
+      "slug": "auguste-lizzy-luwinski-fricke",
+      "forms": [
+        "Auguste Leibholz"
+      ],
+      "basis": "She married Jacob Leibholz at Schöneberg on 5 January 1924 (data/leibholz-luwinski-1924-entry.tsv); the Arolsen index enters her as Leibholz, Auguste, maiden name Luwwinsky (data/arolsen-leibholz-luwinski.tsv), and the 1939 census card is hers under that name."
+    },
+    {
+      "slug": "kurt-israel-luwinski",
+      "forms": [
+        "Israel Kurt Luwinski",
+        "Kurt Luwinsky"
+      ],
+      "basis": "He signs his 1939 passport Israel Kurt Luwinski (data/kurt-papers-1934-1939.tsv); the Transvaal court files index him as Luwinsky and Luwenski (data/litigation.tsv, site/src/data/names.json)."
+    },
+    {
+      "slug": "ivone-mota-yvonne-figueiredo-de-witt",
+      "forms": [
+        "Ivone de Figueiredo",
+        "Ivone Mota Figueiredo",
+        "Ivone Mota de Figueiredo",
+        "Ivone Mata de Figueiredo",
+        "Ivone Luwenski"
+      ],
+      "basis": "Her spellings are the subject of site/src/data/names.json: the 1922 birth registration and its averbamento (Mata), the 2010 death certificate (Mota de Figueiredo), the Transvaal court files (de Figueiredo, Mota Figueiredo, Luwenski) (data/ivone-assento-nascimento-1922.tsv, data/ivone-death-certificate-2010.tsv, data/litigation.tsv)."
+    },
+    {
+      "slug": "martha-maud-castle",
+      "forms": [
+        "Martha Maude Castle"
+      ],
+      "basis": "The Citizen (Letchworth) of 6 November 1914 prints her wedding as Miss Martha Maude Castle of Baldock (data/wear-castle-wedding-1914-newspapers.tsv)."
+    },
+    {
+      "slug": "helga-erna-marquardt-wagner-luwinski",
+      "forms": [
+        "Helga Erna Marquardt"
+      ],
+      "basis": "data/naa-recordsearch.tsv and data/luwinski-emigration-1965.tsv write Manfred's wife as Helga Erna Marquardt; the family tree carries her as Helga Erna Marquardt Wagner (Luwinski), the form on her page."
+    },
+    {
+      "slug": "emma-hawkins-1859",
+      "forms": [
+        "Emma Hull"
+      ],
+      "basis": "data/shenton-line-closed.tsv and data/shenton-1939-pix-road.tsv: Emma Hull, born Aldenham, is Emma Hawkins, widow of Robert Wear and remarried to John Hull; the 1939 Register enters her at 63 Pix Road as Emma Hull, widowed, and the death index has Emma Hull in Q2 1944, aged 85."
+    },
+    {
+      "slug": "joachim-peter-leibholz",
+      "forms": [
+        "Peter Leibholz"
+      ],
+      "basis": "He is Joachim Peter on every official document and Peter in Melbourne society: the Age of 2 October 1954 prints him as Mr. and Mrs. Peter Leibholz (data/trove-2026-09-27.tsv)."
+    }
+  ]
+}

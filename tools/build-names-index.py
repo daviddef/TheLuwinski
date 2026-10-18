@@ -14,7 +14,10 @@ WHO IS IN IT ("people"). A form of a name that is borne by exactly ONE person in
 person
   * has an indexable /people/<slug>/ page (a register person who is not living, not the named-only subject, not a
     placeholder; or an English-line ancestor),
-  * has a death recorded (a register person with `no_death_recorded` is not known to be dead, so is never linked),
+  * has a death recorded (a register person with `no_death_recorded` is not known to be dead, so is never linked). ONE
+    EXCEPTION, for a person the archive read from a document (kind `document`): a birth year of 1900 or earlier that the
+    document states (a person of 126 or more) is shown dead by the date alone, so that person may be linked although no
+    death was found. Nobody else gets that: a tree person with no death recorded and an old birth year stays unlinked,
   * and shares that form with nobody else: not a living person, not a held-out person (the private feed, when this
     machine has it), not a person with no death recorded, not a second dead person.
 A form borne by two or more DEAD people who all have pages is "ambiguous": it goes to /search/?q=<name>, the archive's own
@@ -25,7 +28,9 @@ THE FORMS (the archive's own data and nothing invented):
   * the name as the register writes it, with a parenthesised surname taken out ("Given Maiden (Married)" gives "Given Maiden");
   * the same with the parenthesised surname in place of the last name ("Given Married");
   * the first given name beside the register's `last` field, where the name carries more given names;
-  * for the English line the name as written in english-people.json, and nothing else.
+  * for the English line the name as written in english-people.json;
+  * the forms in data/names-aliases.json, each with the record that says the two names are one person (a person who
+    already has a page; the generator refuses a slug that is not one, and every form goes through the same filters).
 A form is dropped if it is one word, begins "Unknown", or carries a character that no name has (a slash, a comma, a
 quotation mark, a digit, the word "or": the register keeps some of the harvest's own muddle in a name). Never a bare given name.
 
@@ -45,6 +50,8 @@ ENGLISH = SITE / "src" / "data" / "english-people.json"
 OUT = SITE / "src" / "data" / "names-index.json"
 FEED = pathlib.Path(os.environ.get("CHECKPROSE_FEED") or ROOT / "private" / "checkprose-feed.json")
 BLOCKERS = HERE / "autolink-blockers.json"
+ALIASES = ROOT / "data" / "names-aliases.json"
+DOC_DEAD_BY = 1900          # a document person born in or before this year is shown dead by the date alone
 PARTICLES = {"da", "de", "del", "della", "di", "do", "dos", "du", "la", "le", "van", "von", "der", "den", "ten", "ter"}
 BAD = re.compile(r"[/,\"“”()\d]|\bor\b|\band\b|\?", re.I)
 
@@ -157,8 +164,11 @@ def other_people(reg, eng, page_forms, page_surnames):
     for q in data_json("evidence.json")["people"]:
         raw.append(q.get("name", ""))
     if BLOCKERS.exists():
-        for n in json.load(io.open(BLOCKERS, encoding="utf-8"))["names"]:
+        bl = json.load(io.open(BLOCKERS, encoding="utf-8"))
+        for n in bl["names"]:
             raw.append(n)
+        for x in bl.get("namesakes", []):          # a second person bears the form: it is never linked
+            nopage.add(fold(x["name"]))
     NEE = re.compile(r"^(.+?)\s+(?:n\u00e9e|nee|geb\.)\s+(.+)$", re.I)
     for r0 in raw:
         for r in re.split(r"[×·]", clean(r0)):         # «A × B» names a couple
@@ -210,6 +220,31 @@ def married_forms(reg, eng):
     return [(f, i) for (f, i) in out if ok_form(f)]
 
 
+def add_aliases(persons):
+    """Add the forms of data/names-aliases.json to the person each names. Refuses (SystemExit) a slug that is not a page, a
+    living or placeholder person, a form that is not a name, and an entry with no basis. Returns the number of forms added."""
+    if not ALIASES.exists():
+        return 0
+    data = json.load(io.open(ALIASES, encoding="utf-8"))
+    by_url = {q["url"]: q for q in persons}
+    n = 0
+    for a in data.get("aliases", []):
+        q = by_url.get("/people/%s/" % a.get("slug"))
+        if q is None:
+            raise SystemExit("build-names-index: names-aliases.json names a page that does not exist: %s" % a.get("slug"))
+        if not q["linkable"]:
+            raise SystemExit("build-names-index: names-aliases.json gives a form to a person who is living, a placeholder or not known to be dead (%s)" % a.get("slug"))
+        if len(clean(a.get("basis"))) < 20:
+            raise SystemExit("build-names-index: an alias entry has no basis (%s)" % a.get("slug"))
+        for f in a.get("forms", []):
+            if not ok_form(f):
+                raise SystemExit("build-names-index: an alias form is not a name (%s)" % f)
+            if fold(f) not in {fold(x) for x in q["forms"]}:
+                q["forms"].append(clean(f))
+                n += 1
+    return n
+
+
 def build():
     reg, eng = load()
     living_fold, have_feed = feed_names()
@@ -219,12 +254,15 @@ def build():
         living = bool(p.get("living") or p.get("bare"))
         placeholder = bool(p.get("placeholder"))
         known_dead = not p.get("no_death_recorded")
+        if p.get("kind") == "document" and not known_dead and isinstance(p.get("by"), int) and p["by"] <= DOC_DEAD_BY:
+            known_dead = True
         persons.append({"id": "r%s" % p["id"], "url": "/people/%s/" % slug, "forms": register_forms(p),
                         "linkable": (not living) and (not placeholder) and known_dead})
     for p in eng["people"]:
         n = clean(p["name"])
         persons.append({"id": "e:%s" % p["slug"], "url": "/people/%s/" % p["slug"], "forms": [n] if ok_form(n) else [],
                         "linkable": True})
+    n_alias = add_aliases(persons)
     bearers = {}
     page_surnames = {}
     for q in persons:
@@ -243,6 +281,7 @@ def build():
             n_married += 1
             bearers.setdefault(key, []).append(dict(by_pid[pid], implicit=True))
     stats = {"register people": len(reg["people"]), "English-line people": len(eng["people"]),
+             "forms added from data/names-aliases.json": n_alias,
              "forms with a bearer": len(bearers), "married names counted as extra bearers (never linked)": n_married,
              "dropped: a living, held-out, placeholder or not-known-dead person also bears it": 0,
              "dropped: a living or held-out name from the private feed": 0,

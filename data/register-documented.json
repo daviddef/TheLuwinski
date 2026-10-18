@@ -231,6 +231,280 @@
         }
       ],
       "rel": []
+    },
+    {
+      "id": 9600009,
+      "name": "Georg Rosenberg",
+      "first": "Georg",
+      "last": "Rosenberg",
+      "sex": "M",
+      "born": "Dec 3 1888",
+      "died": "murdered at Auschwitz, aged 54",
+      "basis": "DOCUMENTED. Yad Vashem, Central Database of Shoah Victims' Names, Page of Testimony item 1057746: born Schlochau 3 December 1888, a Kaufmann, of Berlin before and during the war, murdered aged 54, place of death Auschwitz, with no date. A second Page (item 423812) gives the same birth to the day, the same town and the same trade. His sister Jenny married a Leipholz of Berlin. NOT PROVED KIN to the Schubin Leibholz family or to any Luwinski: Rosenberg is among the commonest Jewish surnames in Germany. Found by searching the database's submitter tab, 11 October 2026.",
+      "facts": [
+        {
+          "t": "Birth",
+          "ty": "BIRT",
+          "date": "Dec 3 1888",
+          "place": "Schlochau, Pomerania",
+          "c": "Yad Vashem Page of Testimony item 1057746; a second Page, item 423812, agrees to the day",
+          "ac": ""
+        },
+        {
+          "t": "Occupation",
+          "ty": "OCCU",
+          "date": "",
+          "place": "Berlin",
+          "c": "Kaufmann, Page of Testimony 1057746",
+          "ac": ""
+        },
+        {
+          "t": "Death",
+          "ty": "DEAT",
+          "date": "",
+          "place": "Auschwitz",
+          "c": "Murdered, aged 54, place of death Auschwitz, no date given (Page of Testimony 1057746)",
+          "ac": ""
+        }
+      ],
+      "rel": []
+    },
+    {
+      "id": 9600010,
+      "name": "Joseph Ehrlich",
+      "first": "Joseph",
+      "last": "Ehrlich",
+      "sex": "M",
+      "born": "Dec 7 1862",
+      "died": "Feb 1 1944",
+      "basis": "DOCUMENTED, in four places. The Bundesarchiv memorial list, the Berlin deportation list and the Theresienstadt inmate list agree: born at Reetz in Pomerania, of Berlin, deported from Berlin to Theresienstadt on 17 March 1943, dead there on 1 February 1944. A Yad Vashem Page of Testimony (item 5369883) disagrees on two fields, giving 7 November 1862 and 1943; the lists win on both, as the page of testimony is written from memory, often decades later. NOT PROVED KIN to the Schubin Leibholz family: he is the father-in-law of a Georg Rosenberg and belongs to a second family entirely.",
+      "facts": [
+        {
+          "t": "Birth",
+          "ty": "BIRT",
+          "date": "Dec 7 1862",
+          "place": "Reetz, Pomerania",
+          "c": "Bundesarchiv memorial list and Berlin deportation list; the Page of Testimony says 7 November",
+          "ac": ""
+        },
+        {
+          "t": "Deportation",
+          "ty": "EVEN",
+          "date": "Mar 17 1943",
+          "place": "Berlin to Theresienstadt",
+          "c": "Berlin deportation list; Theresienstadt inmate list",
+          "ac": ""
+        },
+        {
+          "t": "Death",
+          "ty": "DEAT",
+          "date": "Feb 1 1944",
+          "place": "Theresienstadt",
+          "c": "Theresienstadt inmate list and Bundesarchiv memorial list; the Page of Testimony says 1943 and loses",
+          "ac": ""
+        }
+      ],
+      "rel": []
+    },
+    {
+      "id": 9600011,
+      "name": "Joachim Peter Leibholz",
+      "first": "Joachim Peter",
+      "last": "Leibholz",
+      "sex": "M",
+      "born": "Aug 20 1903",
+      "died": "1971",
+      "basis": "DOCUMENTED. Born at Berlin on 20 August 1903 and registered at Standesamt Charlottenburg I (birth found 11 October 2026). Landed at Melbourne from the Anchises on 12 June 1939 (National Archives of Australia, passenger statement A12508, 21/2464); naturalised at South Yarra in 1944 (A714, 18/8913); died at Toorak in 1971, aged 68, registration 26252/1971 in the Victorian death index, which names his parents as William Leibholz and Nanette née Netter. NOT PROVED KIN to the Schubin Leibholz family: nothing joins them but the surname. Known in Melbourne as Peter.",
+      "facts": [
+        {
+          "t": "Birth",
+          "ty": "BIRT",
+          "date": "Aug 20 1903",
+          "place": "Berlin-Charlottenburg",
+          "c": "Landesarchiv Berlin, Charlottenburg I birth index; NAA A12508, 21/2464",
+          "ac": ""
+        },
+        {
+          "t": "Immigration",
+          "ty": "IMMI",
+          "date": "Jun 12 1939",
+          "place": "Melbourne",
+          "c": "NAA A12508, 21/2464: arrived per Anchises",
+          "ac": ""
+        },
+        {
+          "t": "Naturalization",
+          "ty": "NATU",
+          "date": "Jul 27 1944",
+          "place": "South Yarra, Victoria",
+          "c": "NAA A714, 18/8913, naturalisation index card",
+          "ac": ""
+        },
+        {
+          "t": "Death",
+          "ty": "DEAT",
+          "date": "1971",
+          "place": "Toorak, Victoria",
+          "c": "Victorian death index, reg. 26252/1971, age 68",
+          "ac": ""
+        }
+      ],
+      "rel": []
+    },
+    {
+      "id": 9600012,
+      "name": "Marie Leipholz",
+      "first": "Marie",
+      "last": "Leipholz",
+      "sex": "F",
+      "born": "",
+      "died": "Nov 5 1988",
+      "basis": "DOCUMENTED. Standesamt Reinickendorf, Sterberegister 1988 Nr. 2306, read at the image (Landesarchiv Berlin P Rep. 130 Nr. 1484, page 76). Entered ev., Protestant, which points toward the Masurian Leipholz family and away from the Schubin one. NOT PROVED KIN: the only name of the family's letters in thirteen years of Reinickendorf's death indexes, and she is not the widow of a Fritz Leipholz, who is entered as already widowed in 1985.",
+      "facts": [
+        {
+          "t": "Death",
+          "ty": "DEAT",
+          "date": "Nov 5 1988",
+          "place": "Berlin-Reinickendorf",
+          "c": "Sterberegister Reinickendorf 1988 Nr. 2306, ev.",
+          "ac": ""
+        }
+      ],
+      "rel": []
+    },
+    {
+      "id": 9600013,
+      "name": "Erna Frida Else Leipholz",
+      "first": "Erna Frida Else",
+      "last": "Leipholz",
+      "sex": "F",
+      "born": "",
+      "died": "Jan 13 1975",
+      "basis": "DOCUMENTED. Standesamt Schöneberg, Sterberegister 1975 Nr. 79, from the name index (Landesarchiv Berlin P Rep. 163 Nr. 602, the Le- block): \"Leipholz | Erna Frida Else | 13.1. | 79 | ev\". Protestant. She is NOT the Erna Leipholz of Streitstraße 39 in Spandau, who is in the telephone books of 1975-76 to 1980-81 after this woman died. NOT PROVED KIN.",
+      "facts": [
+        {
+          "t": "Death",
+          "ty": "DEAT",
+          "date": "Jan 13 1975",
+          "place": "Berlin-Schöneberg",
+          "c": "Namensverzeichnis zum Sterberegister Schöneberg 1975, Nr. 79, ev.",
+          "ac": ""
+        }
+      ],
+      "rel": []
+    },
+    {
+      "id": 9600014,
+      "name": "Gertrud Eisenberg (Haake)",
+      "first": "Gertrud",
+      "last": "Eisenberg",
+      "sex": "F",
+      "born": "Jun 9 1879",
+      "died": "",
+      "no_death_recorded": true,
+      "basis": "DOCUMENTED, DEATH NOT FOUND. Born 9 June 1879 (1939 census database of persecuted people, where she is entered as Trude Eisenberg née Haake): a commercial court councillor's widow who owned the building at Treuchtlinger Straße 4, Berlin, and lived in it on census night, 17 May 1939. The Berlin directory of 1941 enters the house under the owner, \"Eisenberg, G. Sara, Ww.\", carrying the compulsory Sara. NOT PROVED KIN. Born 1879, so not living by the estate's rule on the date alone.",
+      "facts": [
+        {
+          "t": "Birth",
+          "ty": "BIRT",
+          "date": "Jun 9 1879",
+          "place": "",
+          "c": "1939 census, persecuted-persons database, entry Eisenberg Trude née Haake",
+          "ac": ""
+        },
+        {
+          "t": "Residence",
+          "ty": "RESI",
+          "date": "May 17 1939",
+          "place": "Treuchtlinger Straße 4, Berlin",
+          "c": "1939 census; owner of the house in the Berliner Adressbuch 1939 and 1941",
+          "ac": ""
+        },
+        {
+          "t": "Death",
+          "ty": "DEAT",
+          "date": "",
+          "place": "",
+          "c": "NOT ESTABLISHED.",
+          "ac": ""
+        }
+      ],
+      "rel": []
+    },
+    {
+      "id": 9600015,
+      "name": "Elisabeth Weiler (Leipholz)",
+      "first": "Elisabeth",
+      "last": "Weiler",
+      "sex": "F",
+      "born": "1891",
+      "died": "",
+      "no_death_recorded": true,
+      "basis": "DOCUMENTED, SURVIVED, DEATH NOT FOUND. The Bundesarchiv Residents' List (ID 1166673) enters Elisabeth Weiler née Leipholz, born 1 January 1891 at Neustettin in Pomerania, of Berlin, persecuted on racial grounds, emigrated to Palestine; she is not in the Gedenkbuch because she survived. Mapping the Lives gives Berlin as the birthplace. A first of January is the commonest placeholder for a year known without a day, so only the year is taken. NOT PROVED KIN: the first person the eighth spelling of the surname produced. Born 1891, so not living by the estate's rule on the date alone.",
+      "facts": [
+        {
+          "t": "Birth",
+          "ty": "BIRT",
+          "date": "1891",
+          "place": "Neustettin, Pomerania",
+          "c": "Bundesarchiv Residents' List ID 1166673; Mapping the Lives gives Berlin",
+          "ac": ""
+        },
+        {
+          "t": "Emigration",
+          "ty": "EMIG",
+          "date": "",
+          "place": "Palestine",
+          "c": "Bundesarchiv Residents' List ID 1166673",
+          "ac": ""
+        },
+        {
+          "t": "Death",
+          "ty": "DEAT",
+          "date": "",
+          "place": "",
+          "c": "NOT ESTABLISHED.",
+          "ac": ""
+        }
+      ],
+      "rel": []
+    },
+    {
+      "id": 9600016,
+      "name": "Agnes Kate Castle",
+      "first": "Agnes Kate",
+      "last": "Castle",
+      "sex": "F",
+      "born": "1892",
+      "died": "Jan 1967",
+      "basis": "DOCUMENTED. One of the nine children of George William Castle and Caroline Wallis of Baldock: General Register Office birth index 1892, Baldock, mother's maiden name Wallis; the 1901 census at nine. Died in January 1967. Married Walter George Brown. A sister of Martha Maud Castle, who married Henry Robert Wear.",
+      "facts": [
+        {
+          "t": "Birth",
+          "ty": "BIRT",
+          "date": "1892",
+          "place": "Baldock, Hertfordshire",
+          "c": "GRO birth index (mother Wallis); 1901 census, aged 9",
+          "ac": ""
+        },
+        {
+          "t": "Marriage",
+          "ty": "MARR",
+          "date": "",
+          "place": "",
+          "c": "Married Walter George Brown",
+          "ac": ""
+        },
+        {
+          "t": "Death",
+          "ty": "DEAT",
+          "date": "Jan 1967",
+          "place": "",
+          "c": "Death recorded January 1967 in the ledger of the nine Castle children (data/castle-nine-children.tsv)",
+          "ac": ""
+        }
+      ],
+      "rel": []
     }
   ]
 }

@@ -53,6 +53,7 @@ HAND_EDITED = {
     # data/: the archive's own records and corrections
     "data/corrections.json", "data/dna-ethnicity-derrick.json", "data/dna-segments.json",
     "data/register-documented.json", "data/superseded.json", "data/wear-signature.json",
+    "data/names-aliases.json",               # forms of a name the data states for a person who has a page (18 Oct 2026)
 }
 
 # Data files a script writes. Their generator's own scrub gate is the guard; scanning them here would only meet

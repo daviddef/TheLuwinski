@@ -16,6 +16,20 @@
    "url": "/people/agathae-luwinski/"
   },
   {
+   "name": "Agnes Kate Castle",
+   "aliases": [
+    "Agnes Castle"
+   ],
+   "url": "/people/agnes-kate-castle/"
+  },
+  {
+   "name": "Agnes Leibholz",
+   "aliases": [
+    "Agnes Kerger"
+   ],
+   "url": "/people/agnes-leibholz-kerger/"
+  },
+  {
    "name": "Agnete Luwinski",
    "aliases": [
     "Agnete Melkowa"
@@ -82,8 +96,9 @@
    "url": "/people/atharassius-luwinski/"
   },
   {
-   "name": "Auguste Luwinski",
+   "name": "Auguste Leibholz",
    "aliases": [
+    "Auguste Luwinski",
     "Auguste Fricke",
     "Auguste Lizzy"
    ],
@@ -158,6 +173,13 @@
    "url": "/people/edmund-luwinski/"
   },
   {
+   "name": "Elisabeth Leipholz",
+   "aliases": [
+    "Elisabeth Weiler"
+   ],
+   "url": "/people/elisabeth-weiler-leipholz/"
+  },
+  {
    "name": "Elisabeth Thimm",
    "aliases": [],
    "url": "/people/elisabeth-thimm/"
@@ -194,9 +216,19 @@
    "url": "/people/elli-leibholz-struzik/"
   },
   {
+   "name": "Emma Hull",
+   "aliases": [],
+   "url": "/people/emma-hawkins-1859/"
+  },
+  {
    "name": "Emma Larkin",
    "aliases": [],
    "url": "/people/emma-larkin-1822/"
+  },
+  {
+   "name": "Erna Frida Else Leipholz",
+   "aliases": [],
+   "url": "/people/erna-frida-else-leipholz/"
   },
   {
    "name": "Ernestine Zelenka",
@@ -262,6 +294,11 @@
    "url": "/people/georg-leibholz/"
   },
   {
+   "name": "Georg Rosenberg",
+   "aliases": [],
+   "url": "/people/georg-rosenberg/"
+  },
+  {
    "name": "Gerda Felicitas Leibholz",
    "aliases": [
     "Gerda Felicitas Bade",
@@ -269,6 +306,13 @@
     "Gerda Bade"
    ],
    "url": "/people/gerda-felicitas-bade-leibholz/"
+  },
+  {
+   "name": "Gertrud Eisenberg",
+   "aliases": [
+    "Gertrud Haake"
+   ],
+   "url": "/people/gertrud-eisenberg-haake/"
   },
   {
    "name": "Gertrud Materna",
@@ -319,6 +363,7 @@
    "name": "Helga Erna Marquardt Luwinski",
    "aliases": [
     "Helga Erna Marquardt Wagner",
+    "Helga Erna Marquardt",
     "Helga Luwinski",
     "Helga Wagner"
    ],
@@ -385,9 +430,22 @@
    "url": "/people/hildegard-ganswindt/"
   },
   {
-   "name": "Ivone de Witt",
+   "name": "Israel Kurt Luwinski",
    "aliases": [
-    "Ivone Figueiredo"
+    "Kurt Israel Luwinski",
+    "Kurt Luwinsky"
+   ],
+   "url": "/people/kurt-israel-luwinski/"
+  },
+  {
+   "name": "Ivone Mata de Figueiredo",
+   "aliases": [
+    "Ivone Mota de Figueiredo",
+    "Ivone Mota Figueiredo",
+    "Ivone de Figueiredo",
+    "Ivone de Witt",
+    "Ivone Figueiredo",
+    "Ivone Luwenski"
    ],
    "url": "/people/ivone-mota-yvonne-figueiredo-de-witt/"
   },
@@ -405,6 +463,14 @@
    "name": "James Giddins",
    "aliases": [],
    "url": "/people/james-giddins/"
+  },
+  {
+   "name": "Joachim Peter Leibholz",
+   "aliases": [
+    "Joachim Leibholz",
+    "Peter Leibholz"
+   ],
+   "url": "/people/joachim-peter-leibholz/"
   },
   {
    "name": "Johann Luwinski",
@@ -441,6 +507,11 @@
    "name": "Josef Zelenka",
    "aliases": [],
    "url": "/people/josef-zelenka/"
+  },
+  {
+   "name": "Joseph Ehrlich",
+   "aliases": [],
+   "url": "/people/joseph-ehrlich/"
   },
   {
    "name": "Joseph Luwinski",
@@ -484,11 +555,6 @@
    "name": "Klara Fuhl",
    "aliases": [],
    "url": "/people/klara-fuhl/"
-  },
-  {
-   "name": "Kurt Israel Luwinski",
-   "aliases": [],
-   "url": "/people/kurt-israel-luwinski/"
   },
   {
    "name": "Leni Gaidner",
@@ -572,6 +638,11 @@
    "url": "/people/marian-luwinski/"
   },
   {
+   "name": "Marie Leipholz",
+   "aliases": [],
+   "url": "/people/marie-leipholz/"
+  },
+  {
    "name": "Marjanna Leciejerska",
    "aliases": [
     "Marjanna Luwinski"
@@ -589,8 +660,10 @@
    "url": "/people/martha-klesse-luwinski/"
   },
   {
-   "name": "Martha Maud Castle",
-   "aliases": [],
+   "name": "Martha Maude Castle",
+   "aliases": [
+    "Martha Maud Castle"
+   ],
    "url": "/people/martha-maud-castle/"
   },
   {
@@ -736,7 +809,9 @@
   {
    "name": "Trude Gertrud Leibholz",
    "aliases": [
+    "Gertrud Sara Leibholz",
     "Trude Gertrud Leibke",
+    "Gertrud Leibke",
     "Trude Leibholz",
     "Trude Leibke"
    ],
