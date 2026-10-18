@@ -157,6 +157,27 @@ jobs:
       - name: Check that the linking-standard gate still catches what it should
         run: python3 node_modules/@daviddef/archive-kit/kit/tools/checkstandard_selftest.py
         working-directory: site
+      # THE «AT THE TIME» NOTES (18 October 2026): beside a dated place-event on a person who is not living, a small muted line saying who
+      # held that ground in that year, from the Record Atlas's region eras, as this archive committed them (site/src/data/era-snapshot.json,
+      # refreshed only deliberately by tools/build-era.py --snapshot; nothing in a build reads the Atlas). Context about the ground, never a
+      # claim about the family, and silence wherever the data does not support one. The place -> region table is data/era/ground.tsv: the first
+      # step fails if a place a person's page prints has no row, if a row is stale, if the committed places file is not what the rows build,
+      # or if a mapped place has a dated event in an Atlas era that describes only part of its region. The second reads the BUILT pages:
+      # every note is an era the snapshot holds, in the right year, with the snapshot's own words and the Atlas's own link; none on a
+      # noindex page, a data-living page or a page of the register's living list (built here from the committed register: every path is a
+      # living or named-only person's page, no name). It prints counts only. The third plants a fault for each rule in the kit's own
+      # self-test and fails unless each is caught. Every path is site-relative, as in the steps above.
+      - name: Check that the era-place table still matches the data
+        run: python3 ../tools/build-era.py --check
+        working-directory: site
+      - name: Check the at-the-time notes on the built pages
+        run: |
+          python3 ../tools/build-era.py --living-urls "$RUNNER_TEMP/era-living.json"
+          python3 node_modules/@daviddef/archive-kit/kit/tools/checkera.py --dist dist --snapshot src/data/era-snapshot.json --living-urls "$RUNNER_TEMP/era-living.json" --require-tracked
+        working-directory: site
+      - name: Check that the at-the-time gate still catches what it should
+        run: python3 node_modules/@daviddef/archive-kit/kit/tools/era_selftest.py
+        working-directory: site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

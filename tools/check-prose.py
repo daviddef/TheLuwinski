@@ -66,6 +66,8 @@ GENERATED = {
     "data/guarded-hashes.json",              # tools/make-guarded.py: salted digests, no names
     "data/labsa-catalogue.json",             # tools/labsa.py: the Landesarchiv's own catalogue of index volumes
     "site/src/data/records.json",            # tools/build-records.py: one row per ledger entry, scan or public address
+    "site/src/data/era-places.json",         # tools/build-era.py, from data/era/ground.tsv and era/towns.tsv: place strings and a region id, no names
+    "site/src/data/era-snapshot.json",       # tools/build-era.py --snapshot, from the Record Atlas's context contract: region eras and regime labels, no names
 }
 
 # Prose typed outside src/pages and notes/*.md: the layout (a sentence can be typed there), the research logs

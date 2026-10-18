@@ -1,0 +1,165 @@
+# Which Record Atlas region (the contract's region ids) each place string this archive prints beside a date on a person's page belongs to, for the
+# 'at the time' notes (site/src/pages/people/[slug].astro, kit/docs/era-notes.md). One row per place string AS PRINTED: the place of each dated fact of every
+# register person who is not living, and the place of a born / died line in the English line (date, then one place). A region of '-' means: looked at, and
+# no Atlas region covers it (or the string is not one place, or a regime note would be wrong or glib there), so no note. A new place string fails
+# tools/build-era.py --check until it is decided here. Mapped by hand against the Atlas's regions; erasnap.py then refuses any town whose point
+# (data/era/towns.tsv, column 4 here names the town) falls in a DIFFERENT region's ring, or within 15 km of its own region's edge.
+# ONE CAVEAT the table cannot carry, because a region's eras are region-wide: a few Atlas eras describe only PART of their region (east-prussia 1945:
+# Russia / Poland / Lithuania; galicia 1945: Poland west of the San, Ukraine east; silesia 1918: divided; west-prussia 1920: the Corridor).
+# tools/build-era.py --check fails if a mapped place has a dated event in one of those eras, so a person looks at it before a note can say it.
+place	region	why	town
+59067, Hamm, NRW, Deutschland	-	Hamm: no Atlas region covers Westphalia	
+Aldenham	england	Aldenham, Hertfordshire: England	Aldenham
+Allenstein, Germany	east-prussia	Allenstein (Olsztyn): East Prussia until 1945	Allenstein
+Allenstein, St. Jacobi	east-prussia	Allenstein (Olsztyn): East Prussia until 1945	Allenstein
+Auschwitz	-	a camp, or a memorial's name: where a person was deported to or murdered, not ground they lived on; a regime note beside it would be glib	
+Auschwitz, extermination camp	-	a camp, or a memorial's name: where a person was deported to or murdered, not ground they lived on; a regime note beside it would be glib	
+Austria	-	Austria: a country, no Atlas region	
+Bad Wörishofen	-	Bad Worishofen: no Atlas region covers Bavaria	
+Baldock	england	Baldock, Hertfordshire: England	Baldock
+Baldock, Hertfordshire	england	Baldock, Hertfordshire: England	Baldock
+Beethovenstr.Stahnsdorf	-	Stahnsdorf: no Atlas region covers Brandenburg	
+Beethovenstrasse 20Stahnsdorf, Brandenburg Deutschland	-	Stahnsdorf: no Atlas region covers Brandenburg	
+Berlin	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin Deutschland	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin Germany	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin Schöneberg	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin Schöneberg, Martin-Luther-Str. 60	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin to Theresienstadt	-	a camp, or a memorial's name: where a person was deported to or murdered, not ground they lived on; a regime note beside it would be glib	
+Berlin, Berlin, Germany	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin, Germany	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin, Marx-Engels-Platz 2	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin, Wilmersdorf, Germany	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin-Charlottenburg	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin-Kreuzberg	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin-Reinickendorf	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin-Schöneberg	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin-Tempelhof	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin-Tiergarten	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin-Wilmersdorf	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Berlin-Zehlendorf	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Besingstraße 110Zeutern, Baden-Württemberg 76698	-	Zeutern: no Atlas region covers Baden	
+Breslau, Schlesien, Preußen, Deutschland	silesia	Breslau: Prussian Silesia	Breslau
+Brisbane Australia	queensland	Brisbane: Queensland	Brisbane
+Bruno-Baum-Str.Potsdam-Babelsberg, Brandenburg Deutschland	-	Potsdam: no Atlas region covers Brandenburg	
+Brüx	bohemia	Brüx (Most): Bohemia	Brüx
+Burgersdorp, Cape Province, South Africa	cape	Burgersdorp (Albert district): the eastern Cape	Burgersdorp
+Chevra Kadisha, Johannesburg	transvaal	Johannesburg: the Transvaal	Johannesburg
+Deuthen	east-prussia	Deuthen (Dajtki) by Allenstein: East Prussia	Deuthen
+Deuthen, Ostpreußen, Deutschland	east-prussia	Deuthen (Dajtki) by Allenstein: East Prussia	Deuthen
+Dreidorf, Wirsitz, Posen, Preußen, Deutschland	posen	Dreidorf, Kreis Wirsitz: the Posen province, then Poland from 1920	Wirsitz
+Dębowo	-	the name is shared by several places, or is a spelling the data does not settle: no region is claimed	
+Edith wuchs bei ihrer Tante Erna Schöppel (geb.Zelenka) und ihrem Mann auf.	-	not a place: a sentence or a description the source tree put in the place field	
+Eisenbahnstrasse 82Eberswalde, Berlin	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Frankfurt am Main (Homburgerlandstrasse 112)	frankfurt	Frankfurt am Main	Frankfurt
+Geretsried	-	Geretsried: no Atlas region covers Bavaria	
+Germiston, Johannesburg, South Africa	transvaal	Germiston: the Transvaal	Germiston
+Grafenau, Germany	-	Grafenau: no Atlas region covers it	
+Gręboszów, Powiat dąbrowski, Krakowskie, Polska	galicia	Gręboszów, Powiat dąbrowski: Austrian Galicia	Gręboszów
+Görkau	bohemia	Görkau (Jirkov): Bohemia	Görkau
+Görkau/ Kreis Komotau	bohemia	Görkau (Jirkov): Bohemia	Görkau
+Görkau/ Sokolov	-	the name is shared by several places, or is a spelling the data does not settle: no region is claimed	
+Hamm Westenfriedhof	-	Hamm: no Atlas region covers Westphalia	
+Hamm, Arnsberg, NRW, Germany	-	Hamm: no Atlas region covers Westphalia	
+Hammerstein (Czarne), Pomerania, Germany	-	Kreis Schlochau stayed German in 1920 while the Atlas's West Prussia era for 1920 says Poland; the label would be wrong here	
+Hammerstein, Westpreußen, Germany now Poland	-	Kreis Schlochau stayed German in 1920 while the Atlas's West Prussia era for 1920 says Poland; the label would be wrong here	
+Haus mit Grundstück	-	not a place: a sentence or a description the source tree put in the place field	
+Hohenbrucher ChausseeSommerfeld, Brandenburg 16766	-	Sommerfeld, Osthavelland: no Atlas region covers Brandenburg	
+Jews Of Germany Murdered In The Holocaust, Berlin, Germany	-	a camp, or a memorial's name: where a person was deported to or murdered, not ground they lived on; a regime note beside it would be glib	
+Johannesburg	transvaal	Johannesburg: the Transvaal	Johannesburg
+Johannesburg, City of Johannesburg Metropolitan Municipality, GP, South Africa	transvaal	Johannesburg: the Transvaal	Johannesburg
+Johannesburg, Gauteng, South Africa	transvaal	Johannesburg: the Transvaal	Johannesburg
+Johannesburg, South Africa	transvaal	Johannesburg: the Transvaal	Johannesburg
+Johannesburg, Süd Afrika	transvaal	Johannesburg: the Transvaal	Johannesburg
+Johannesburg, Transvaal, South Africa	transvaal	Johannesburg: the Transvaal	Johannesburg
+kleine Wohnung mit Balkon	-	not a place: a sentence or a description the source tree put in the place field	
+Kleinmachnow	-	Kleinmachnow: no Atlas region covers Brandenburg	
+Kleinmachnow, im Kamp 2	-	Kleinmachnow: no Atlas region covers Brandenburg	
+Kleinmachnow, Seemannsheimweg 14a	-	Kleinmachnow: no Atlas region covers Brandenburg	
+Kleinmachnow, Waldfriedhof	-	Kleinmachnow: no Atlas region covers Brandenburg	
+Kolleschowitz, bei Saaz, Sudetengau	bohemia	Saaz (Žatec): Bohemia	Saaz
+Kraichtal, Baden-Württemberg, Germany	-	Kraichtal: no Atlas region covers Baden	
+Kulmhof (Chelmno), Vernichtungslager	-	a camp, or a memorial's name: where a person was deported to or murdered, not ground they lived on; a regime note beside it would be glib	
+KZ Auschwitz, Oświęcim County, Lesser Poland Voivodeship, Poland	-	a camp, or a memorial's name: where a person was deported to or murdered, not ground they lived on; a regime note beside it would be glib	
+KZ Kulmhof | Chełmno, Kuyavian-Pomeranian Voivodeship, Poland	-	a camp, or a memorial's name: where a person was deported to or murdered, not ground they lived on; a regime note beside it would be glib	
+Kütten, Kreis Bitterfeld, Saxony-Anhalt, Germany	-	Kutten, Saxony-Anhalt: no Atlas region covers it	
+Leinestraße 32 III. rechts, Neukölln	-	Berlin-Neukolln: no Atlas region covers Berlin	
+Lourenso Margues, Mozambique	-	Lourenco Marques, Mozambique: no Atlas region covers Portuguese Africa	
+Ludwigsfelde	-	Ludwigsfelde: no Atlas region covers Brandenburg	
+Magdeburg-Buckau	-	Magdeburg: no Atlas region covers Saxony-Anhalt	
+Mahlow/ Kreis Zossen	-	Mahlow: no Atlas region covers Brandenburg	
+Mallmitz, Kreis Sprottau, Silesia — today Małomice, Poland	silesia	Mallmitz (Małomice), Kreis Sprottau: Prussian Silesia	Mallmitz
+Mehringdamm 109, Kreuzberg	-	Berlin-Kreuzberg: no Atlas region covers Berlin	
+Melbourne	-	Melbourne: no Atlas region covers Victoria	
+Molteno, Cape Colony, South Africa	cape	Molteno: the eastern Cape	Molteno
+München	-	Munich: no Atlas region covers Bavaria	
+Nattern, Allenstein	east-prussia	Allenstein (Olsztyn): East Prussia until 1945	Allenstein
+Neumark, Löbau, Westpreußen, Preußen, Deutschland	west-prussia	Neumark (Nowe Miasto Lubawskie), Kreis Löbau: West Prussia, Poland from 1920	Neumark
+Neustettin, Pomerania	pomerania	Neustettin (Szczecinek): Prussian Pomerania	Neustettin
+Orange Grove, Johannesburg, Transvaal, South Africa	transvaal	Orange Grove, Johannesburg: the Transvaal	Orange Grove
+Osielsk, Bromberg, Posen, Prussia, German Empire	posen	Osielsk by Bromberg: the Posen province	Osielsk
+Ostrowo, Posen | Ostrów Wielkopolski	posen	Ostrowo (Ostrów Wielkopolski): the Posen province	Ostrowo
+Palestine	-	Palestine: no Atlas region covers it	
+Porto, Porto, Portugal	portugal	Porto: Portugal	Porto
+Posen | Poznan	posen	Posen (Poznań): the Posen province	Posen
+Posen, poznańskie, Polen	posen	Posen (Poznań): the Posen province	Posen
+Posen, Preußen, Deutschland	posen	Posen (Poznań): the Posen province	Posen
+Postelberg (Postoloprty) Tschechische Republik	bohemia	Postelberg (Postoloprty): Bohemia	Postelberg
+Potsdam	-	Potsdam: no Atlas region covers Brandenburg	
+Potsdam Babelsberg	-	Potsdam: no Atlas region covers Brandenburg	
+Potsdam Babelsberg, Bruno-Baum-Strasse 25/75	-	Potsdam: no Atlas region covers Brandenburg	
+Potsdam Babelsberg, Hans-Marchwitza Ring 22	-	Potsdam: no Atlas region covers Brandenburg	
+Potsdam, Brandenburg, Germany	-	Potsdam: no Atlas region covers Brandenburg	
+Potsdam, Gerlachstr.11	-	Potsdam: no Atlas region covers Brandenburg	
+Potsdam, Otto-Meier Strasse 8	-	Potsdam: no Atlas region covers Brandenburg	
+Poznań, Woiwodschaft Großpolen, Polen	posen	Posen (Poznań): the Posen province	Posen
+Pretoria	transvaal	Pretoria: the Transvaal	Pretoria
+Pretoria, Transvaal, South Africa	transvaal	Pretoria: the Transvaal	Pretoria
+Putzig, West Prussia, Prussia, German Empire	west-prussia	Putzig (Puck): West Prussia, Royal Prussia before 1772, Prussia 1772-1920, Poland from 1920	Putzig
+Putzig, Westpreußen, Preußen, Deutschland	west-prussia	Putzig (Puck): West Prussia, Royal Prussia before 1772, Prussia 1772-1920, Poland from 1920	Putzig
+Quednau, Königsberg, Ostpreußen, Preußen, Deutschland	east-prussia	Quednau by Königsberg: East Prussia	Quednau
+Queenstown, Cape Colony, South Africa	cape	Queenstown: the eastern Cape	Queenstown
+Reetz, Pomerania	-	the name is shared by several places, or is a spelling the data does not settle: no region is claimed	
+Richard-Wagnerstraße 42Charlottenburg, Berlin	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Saaz	bohemia	Saaz (Žatec): Bohemia	Saaz
+Sasolburg	-	on the line between the Transvaal and the Free State; the Atlas rings overlap there	
+Sasolburg, South Africa	-	on the line between the Transvaal and the Free State; the Atlas rings overlap there	
+Sauerbaum, Kreis Rössel, Germany	east-prussia	Sauerbaum, Kreis Rössel: East Prussia	Rössel
+Schlochau, Pomerania	-	Kreis Schlochau stayed German in 1920 while the Atlas's West Prussia era for 1920 says Poland; the label would be wrong here	
+Schubin | Szubin, Nakło County, Kuyavian-Pomeranian Voivodeship, Germany now Poland	posen	Schubin (Szubin): the Posen province	Szubin
+Schönbrück, Allenstein	east-prussia	Allenstein (Olsztyn): East Prussia until 1945	Allenstein
+Schöneberg, Berlin, Germany	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Seemannsheimweg 14aKleinmachnow, Brandenburg 14532 Deutschland	-	Kleinmachnow: no Atlas region covers Brandenburg	
+Skarlin, Löbau, Westpreußen, Preußen, Deutschland	west-prussia	Skarlin, Kreis Löbau: West Prussia, Poland from 1920	Löbau
+Sokolnik, Kreis Wreschen, Provinz Posen, Preußen	posen	Sokolnik, Kreis Wreschen: the Posen province	Wreschen
+Sommerfeld	-	Sommerfeld, Osthavelland: no Atlas region covers Brandenburg	
+Sommerfeld, Osthaveliand, Germany	-	Sommerfeld, Osthavelland: no Atlas region covers Brandenburg	
+Sommerfeld/ Osthavelland	-	Sommerfeld, Osthavelland: no Atlas region covers Brandenburg	
+Sommerfeld/Osthavelland	-	Sommerfeld, Osthavelland: no Atlas region covers Brandenburg	
+South Yarra, Victoria	-	Melbourne: no Atlas region covers Victoria	
+St. Antonius Friedhof in Satec/ Saaz	bohemia	Saaz (Žatec): Bohemia	Saaz
+Stahnsdorf	-	Stahnsdorf: no Atlas region covers Brandenburg	
+Stahnsdorf, Bahnhofstrasse	-	Stahnsdorf: no Atlas region covers Brandenburg	
+Stahnsdorf, Beethovenstrasse 20	-	Stahnsdorf: no Atlas region covers Brandenburg	
+Stahnsdorf, Südwest Kirchhof	-	Stahnsdorf: no Atlas region covers Brandenburg	
+Steinberg	-	the name is shared by several places, or is a spelling the data does not settle: no region is claimed	
+Sulzelder Str. 70 = Brzezinska 70 = (aktueller Name) Woiska Polskiego 70Litzmannstadt	-	an address in the Lodz ghetto: not a place of residence by choice; no note	
+Szubin, nakielski, kujawsko-pomorskie, Poland	posen	Schubin (Szubin): the Posen province	Szubin
+Szubin/ SchubinPolen	posen	Schubin (Szubin): the Posen province	Szubin
+Südafrika	-	South Africa as a whole: a country, not a region	
+Tarkastad, Cape Colony, South Africa	cape	Tarkastad: the eastern Cape	Tarkastad
+Teltow	-	Teltow: no Atlas region covers Brandenburg	
+Teplice-Schönau	bohemia	Teplitz (Teplice): Bohemia	Teplice
+Theresienstadt	-	a camp, or a memorial's name: where a person was deported to or murdered, not ground they lived on; a regime note beside it would be glib	
+Toorak, Victoria	-	Melbourne: no Atlas region covers Victoria	
+Transvaal, South Africa	transvaal	the Transvaal named as a region	
+Treplice (bei Zinnwald)	-	the name is shared by several places, or is a spelling the data does not settle: no region is claimed	
+Treuchtlingenstr. 4, bei LoewenheimSchöneberg, Berlin Deutschland	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Treuchtlinger Straße 4, Berlin	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Urn with Family	-	not a place: a sentence or a description the source tree put in the place field	
+Vinkelmeer, Burgersdorp, Albert	cape	Burgersdorp (Albert district): the eastern Cape	Burgersdorp
+West Park Cemetery, Johannesburg, Johannesburg, Transvaal, South Africa	transvaal	Johannesburg: the Transvaal	Johannesburg
+Westpark Cemetery Johannesburg Gauteng South Africa	transvaal	Johannesburg: the Transvaal	Johannesburg
+Wilmersdorf, Berlin, Germany	-	Berlin: no Atlas region covers Berlin or Brandenburg	
+Zenkendorf, Allenstein	east-prussia	Allenstein (Olsztyn): East Prussia until 1945	Allenstein
+Zeutern, bei Bruchsal (Baden Württemberg), Germany	-	Zeutern: no Atlas region covers Baden	

@@ -47,6 +47,10 @@ import data from '../../data/english-people.json';
 import register from '../../data/register.json';
 import { isoDate } from '../../lib/kin.js';
 import { registerPerson, englishPerson, agreeWithGenerator, lineNotes, halfSiblings, isLivingRecord } from '../../lib/people.js';
+import EraNote from '@daviddef/archive-kit/components/EraNote.astro';
+import { eraAt, plainYear } from '@daviddef/archive-kit/lib/era.js';
+import eraSnapshot from '../../data/era-snapshot.json';
+import { lifePlace, dayFirst, yearOf } from '../../lib/eraplace.js';
 
 export function getStaticPaths() {
   return [
@@ -102,6 +106,29 @@ if (p) {
 }
 /* The subject keeps the sentence he always had for the description; every other living person gets the
    standard's one fixed sentence from personMeta. */
+/* AN «AT THE TIME» NOTE beside a dated place (kit/docs/era-notes.md; David, 18 October 2026): who held that ground in that year, from the
+   Record Atlas's REGION eras, as this archive committed them (src/data/era-snapshot.json, rebuilt deliberately by tools/build-era.py
+   --snapshot; the place -> region table is data/era/ground.tsv). Context about the ground, never a claim about the family.
+   NEVER ON A LIVING, NAMED-ONLY OR NOINDEX PAGE: `noNotes` is the page's own decision (the register's living / bare flag, and the kit's noindex),
+   no fact is drawn for such a person at all, and the build gate check:era fails any note found on a noindex page, a data-living page or a page
+   in the register's living list. Two kinds of page print a dated place:
+     - a register person's facts table (date in «When», place in «Where»): the note sits under the place;
+     - the English line's born / died line, but ONLY where it is «<plain date>, <one place>» (src/lib/eraplace.js); the line's longer prose
+       («Q1 1890, St Olave Southwark, aged 31») is not read, and gets no note.
+   The year is read off the date the page prints (the tree writes «Nov 12 1807»; dayFirst puts it in the kit's form), and plainYear refuses it
+   unless the whole date is a plain one («23 Jan 1865», «Jul 1972», «1802»): «Circa 1860», «Between ...», «June 28 1877?» give no note. eraAt
+   gives none for a year on an era's edge (it words that one «From that year»), an unassessed era unless the snapshot's policy allows it, a
+   place with no region or too near its ring's edge, an era the Atlas labels as shorthand, or a modern year in the era still running. */
+const noNotes = !!(reg && view.living) || !!meta.noindex;
+const eraOn = (place, date) => {
+  if (noNotes || !place || !date) return null;
+  const d = dayFirst(date);
+  return eraAt(eraSnapshot, place, plainYear(d, yearOf(d)));
+};
+if (reg) view.facts = view.facts.map((f) => ({ ...f, era: eraOn(f.where, f.when) }));
+const lifeEra = (text) => { const lp = p ? lifePlace(text) : null; return lp ? eraOn(lp.place, lp.date) : null; };
+const bornEra = p ? lifeEra(p.born) : null;
+const diedEra = p ? lifeEra(p.died) : null;
 const description = view.bare ? 'Living. Named with his parents, and nothing more.' : meta.description;
 const peopleHref = base + '/people/';
 const stubNote = 'the household that names them';
@@ -128,7 +155,12 @@ const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   
         <EvidenceChip level={p.grade} />
         <span class="small muted">{p.why}</span>
       </p>
-      {view.lifeLine && <p class="small"><strong>{view.lifeLine}</strong></p>}
+      {view.lifeLine && (bornEra || diedEra) ? (
+        <div class="small" style="margin:1em 0">
+          {p.born && p.born !== 'not established' ? <p style="margin:0"><strong>{`Born ${p.born}`}</strong><EraNote era={bornEra} /></p> : null}
+          {p.died && p.died !== 'not established' ? <p style="margin:.2rem 0 0"><strong>{`Died ${p.died}`}</strong><EraNote era={diedEra} /></p> : null}
+        </div>
+      ) : view.lifeLine && <p class="small"><strong>{view.lifeLine}</strong></p>}
       <div class="scroll"><table>
         <thead><tr><th>When</th><th>What</th><th></th><th>Status</th></tr></thead>
         <tbody>
@@ -198,7 +230,7 @@ const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   
           <thead><tr><th>What</th><th>When</th><th>Where</th><th>Noted</th></tr></thead>
           <tbody>
             {view.facts.map((f) => (
-              <tr><td><strong>{f.what}</strong></td><td>{f.when}</td><td>{f.where}</td><td class="small muted">{f.note}</td></tr>
+              <tr><td><strong>{f.what}</strong></td><td>{f.when}</td><td>{f.where}<EraNote era={f.era} /></td><td class="small muted">{f.note}</td></tr>
             ))}
           </tbody>
         </table></div>

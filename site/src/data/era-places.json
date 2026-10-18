@@ -1,0 +1,402 @@
+{
+ "_about": "Built by tools/build-era.py from data/era/ground.tsv and data/era/towns.tsv. Place as printed -> {region, lat, lon}, or null where no Atlas region covers it. Read by kit erasnap.py.",
+ "places": {
+  "59067, Hamm, NRW, Deutschland": null,
+  "Aldenham": {
+   "lat": 51.69,
+   "lon": -0.35,
+   "region": "england"
+  },
+  "Allenstein, Germany": {
+   "lat": 53.78,
+   "lon": 20.49,
+   "region": "east-prussia"
+  },
+  "Allenstein, St. Jacobi": {
+   "lat": 53.78,
+   "lon": 20.49,
+   "region": "east-prussia"
+  },
+  "Auschwitz": null,
+  "Auschwitz, extermination camp": null,
+  "Austria": null,
+  "Bad Wörishofen": null,
+  "Baldock": {
+   "lat": 51.99,
+   "lon": -0.19,
+   "region": "england"
+  },
+  "Baldock, Hertfordshire": {
+   "lat": 51.99,
+   "lon": -0.19,
+   "region": "england"
+  },
+  "Beethovenstr.Stahnsdorf": null,
+  "Beethovenstrasse 20Stahnsdorf, Brandenburg Deutschland": null,
+  "Berlin": null,
+  "Berlin Deutschland": null,
+  "Berlin Germany": null,
+  "Berlin Schöneberg": null,
+  "Berlin Schöneberg, Martin-Luther-Str. 60": null,
+  "Berlin to Theresienstadt": null,
+  "Berlin, Berlin, Germany": null,
+  "Berlin, Germany": null,
+  "Berlin, Marx-Engels-Platz 2": null,
+  "Berlin, Wilmersdorf, Germany": null,
+  "Berlin-Charlottenburg": null,
+  "Berlin-Kreuzberg": null,
+  "Berlin-Reinickendorf": null,
+  "Berlin-Schöneberg": null,
+  "Berlin-Tempelhof": null,
+  "Berlin-Tiergarten": null,
+  "Berlin-Wilmersdorf": null,
+  "Berlin-Zehlendorf": null,
+  "Besingstraße 110Zeutern, Baden-Württemberg 76698": null,
+  "Breslau, Schlesien, Preußen, Deutschland": {
+   "lat": 51.11,
+   "lon": 17.03,
+   "region": "silesia"
+  },
+  "Brisbane Australia": {
+   "lat": -27.47,
+   "lon": 153.02,
+   "region": "queensland"
+  },
+  "Bruno-Baum-Str.Potsdam-Babelsberg, Brandenburg Deutschland": null,
+  "Brüx": {
+   "lat": 50.5,
+   "lon": 13.64,
+   "region": "bohemia"
+  },
+  "Burgersdorp, Cape Province, South Africa": {
+   "lat": -31.0,
+   "lon": 26.33,
+   "region": "cape"
+  },
+  "Chevra Kadisha, Johannesburg": {
+   "lat": -26.2,
+   "lon": 28.05,
+   "region": "transvaal"
+  },
+  "Deuthen": {
+   "lat": 53.76,
+   "lon": 20.44,
+   "region": "east-prussia"
+  },
+  "Deuthen, Ostpreußen, Deutschland": {
+   "lat": 53.76,
+   "lon": 20.44,
+   "region": "east-prussia"
+  },
+  "Dreidorf, Wirsitz, Posen, Preußen, Deutschland": {
+   "lat": 53.15,
+   "lon": 17.27,
+   "region": "posen"
+  },
+  "Dębowo": null,
+  "Edith wuchs bei ihrer Tante Erna Schöppel (geb.Zelenka) und ihrem Mann auf.": null,
+  "Eisenbahnstrasse 82Eberswalde, Berlin": null,
+  "Frankfurt am Main (Homburgerlandstrasse 112)": {
+   "lat": 50.11,
+   "lon": 8.68,
+   "region": "frankfurt"
+  },
+  "Geretsried": null,
+  "Germiston, Johannesburg, South Africa": {
+   "lat": -26.22,
+   "lon": 28.17,
+   "region": "transvaal"
+  },
+  "Grafenau, Germany": null,
+  "Gręboszów, Powiat dąbrowski, Krakowskie, Polska": {
+   "lat": 50.19,
+   "lon": 20.99,
+   "region": "galicia"
+  },
+  "Görkau": {
+   "lat": 50.5,
+   "lon": 13.45,
+   "region": "bohemia"
+  },
+  "Görkau/ Kreis Komotau": {
+   "lat": 50.5,
+   "lon": 13.45,
+   "region": "bohemia"
+  },
+  "Görkau/ Sokolov": null,
+  "Hamm Westenfriedhof": null,
+  "Hamm, Arnsberg, NRW, Germany": null,
+  "Hammerstein (Czarne), Pomerania, Germany": null,
+  "Hammerstein, Westpreußen, Germany now Poland": null,
+  "Haus mit Grundstück": null,
+  "Hohenbrucher ChausseeSommerfeld, Brandenburg 16766": null,
+  "Jews Of Germany Murdered In The Holocaust, Berlin, Germany": null,
+  "Johannesburg": {
+   "lat": -26.2,
+   "lon": 28.05,
+   "region": "transvaal"
+  },
+  "Johannesburg, City of Johannesburg Metropolitan Municipality, GP, South Africa": {
+   "lat": -26.2,
+   "lon": 28.05,
+   "region": "transvaal"
+  },
+  "Johannesburg, Gauteng, South Africa": {
+   "lat": -26.2,
+   "lon": 28.05,
+   "region": "transvaal"
+  },
+  "Johannesburg, South Africa": {
+   "lat": -26.2,
+   "lon": 28.05,
+   "region": "transvaal"
+  },
+  "Johannesburg, Süd Afrika": {
+   "lat": -26.2,
+   "lon": 28.05,
+   "region": "transvaal"
+  },
+  "Johannesburg, Transvaal, South Africa": {
+   "lat": -26.2,
+   "lon": 28.05,
+   "region": "transvaal"
+  },
+  "KZ Auschwitz, Oświęcim County, Lesser Poland Voivodeship, Poland": null,
+  "KZ Kulmhof | Chełmno, Kuyavian-Pomeranian Voivodeship, Poland": null,
+  "Kleinmachnow": null,
+  "Kleinmachnow, Seemannsheimweg 14a": null,
+  "Kleinmachnow, Waldfriedhof": null,
+  "Kleinmachnow, im Kamp 2": null,
+  "Kolleschowitz, bei Saaz, Sudetengau": {
+   "lat": 50.33,
+   "lon": 13.55,
+   "region": "bohemia"
+  },
+  "Kraichtal, Baden-Württemberg, Germany": null,
+  "Kulmhof (Chelmno), Vernichtungslager": null,
+  "Kütten, Kreis Bitterfeld, Saxony-Anhalt, Germany": null,
+  "Leinestraße 32 III. rechts, Neukölln": null,
+  "Lourenso Margues, Mozambique": null,
+  "Ludwigsfelde": null,
+  "Magdeburg-Buckau": null,
+  "Mahlow/ Kreis Zossen": null,
+  "Mallmitz, Kreis Sprottau, Silesia — today Małomice, Poland": {
+   "lat": 51.52,
+   "lon": 15.28,
+   "region": "silesia"
+  },
+  "Mehringdamm 109, Kreuzberg": null,
+  "Melbourne": null,
+  "Molteno, Cape Colony, South Africa": {
+   "lat": -31.4,
+   "lon": 26.36,
+   "region": "cape"
+  },
+  "München": null,
+  "Nattern, Allenstein": {
+   "lat": 53.78,
+   "lon": 20.49,
+   "region": "east-prussia"
+  },
+  "Neumark, Löbau, Westpreußen, Preußen, Deutschland": {
+   "lat": 53.42,
+   "lon": 19.59,
+   "region": "west-prussia"
+  },
+  "Neustettin, Pomerania": {
+   "lat": 53.72,
+   "lon": 16.7,
+   "region": "pomerania"
+  },
+  "Orange Grove, Johannesburg, Transvaal, South Africa": {
+   "lat": -26.15,
+   "lon": 28.09,
+   "region": "transvaal"
+  },
+  "Osielsk, Bromberg, Posen, Prussia, German Empire": {
+   "lat": 53.19,
+   "lon": 17.89,
+   "region": "posen"
+  },
+  "Ostrowo, Posen | Ostrów Wielkopolski": {
+   "lat": 51.65,
+   "lon": 17.81,
+   "region": "posen"
+  },
+  "Palestine": null,
+  "Porto, Porto, Portugal": {
+   "lat": 41.15,
+   "lon": -8.61,
+   "region": "portugal"
+  },
+  "Posen | Poznan": {
+   "lat": 52.41,
+   "lon": 16.93,
+   "region": "posen"
+  },
+  "Posen, Preußen, Deutschland": {
+   "lat": 52.41,
+   "lon": 16.93,
+   "region": "posen"
+  },
+  "Posen, poznańskie, Polen": {
+   "lat": 52.41,
+   "lon": 16.93,
+   "region": "posen"
+  },
+  "Postelberg (Postoloprty) Tschechische Republik": {
+   "lat": 50.36,
+   "lon": 13.69,
+   "region": "bohemia"
+  },
+  "Potsdam": null,
+  "Potsdam Babelsberg": null,
+  "Potsdam Babelsberg, Bruno-Baum-Strasse 25/75": null,
+  "Potsdam Babelsberg, Hans-Marchwitza Ring 22": null,
+  "Potsdam, Brandenburg, Germany": null,
+  "Potsdam, Gerlachstr.11": null,
+  "Potsdam, Otto-Meier Strasse 8": null,
+  "Poznań, Woiwodschaft Großpolen, Polen": {
+   "lat": 52.41,
+   "lon": 16.93,
+   "region": "posen"
+  },
+  "Pretoria": {
+   "lat": -25.75,
+   "lon": 28.19,
+   "region": "transvaal"
+  },
+  "Pretoria, Transvaal, South Africa": {
+   "lat": -25.75,
+   "lon": 28.19,
+   "region": "transvaal"
+  },
+  "Putzig, West Prussia, Prussia, German Empire": {
+   "lat": 54.72,
+   "lon": 18.41,
+   "region": "west-prussia"
+  },
+  "Putzig, Westpreußen, Preußen, Deutschland": {
+   "lat": 54.72,
+   "lon": 18.41,
+   "region": "west-prussia"
+  },
+  "Quednau, Königsberg, Ostpreußen, Preußen, Deutschland": {
+   "lat": 54.76,
+   "lon": 20.55,
+   "region": "east-prussia"
+  },
+  "Queenstown, Cape Colony, South Africa": {
+   "lat": -31.9,
+   "lon": 26.88,
+   "region": "cape"
+  },
+  "Reetz, Pomerania": null,
+  "Richard-Wagnerstraße 42Charlottenburg, Berlin": null,
+  "Saaz": {
+   "lat": 50.33,
+   "lon": 13.55,
+   "region": "bohemia"
+  },
+  "Sasolburg": null,
+  "Sasolburg, South Africa": null,
+  "Sauerbaum, Kreis Rössel, Germany": {
+   "lat": 54.05,
+   "lon": 21.14,
+   "region": "east-prussia"
+  },
+  "Schlochau, Pomerania": null,
+  "Schubin | Szubin, Nakło County, Kuyavian-Pomeranian Voivodeship, Germany now Poland": {
+   "lat": 53.0,
+   "lon": 17.99,
+   "region": "posen"
+  },
+  "Schönbrück, Allenstein": {
+   "lat": 53.78,
+   "lon": 20.49,
+   "region": "east-prussia"
+  },
+  "Schöneberg, Berlin, Germany": null,
+  "Seemannsheimweg 14aKleinmachnow, Brandenburg 14532 Deutschland": null,
+  "Skarlin, Löbau, Westpreußen, Preußen, Deutschland": {
+   "lat": 53.51,
+   "lon": 19.74,
+   "region": "west-prussia"
+  },
+  "Sokolnik, Kreis Wreschen, Provinz Posen, Preußen": {
+   "lat": 52.33,
+   "lon": 17.57,
+   "region": "posen"
+  },
+  "Sommerfeld": null,
+  "Sommerfeld, Osthaveliand, Germany": null,
+  "Sommerfeld/ Osthavelland": null,
+  "Sommerfeld/Osthavelland": null,
+  "South Yarra, Victoria": null,
+  "St. Antonius Friedhof in Satec/ Saaz": {
+   "lat": 50.33,
+   "lon": 13.55,
+   "region": "bohemia"
+  },
+  "Stahnsdorf": null,
+  "Stahnsdorf, Bahnhofstrasse": null,
+  "Stahnsdorf, Beethovenstrasse 20": null,
+  "Stahnsdorf, Südwest Kirchhof": null,
+  "Steinberg": null,
+  "Sulzelder Str. 70 = Brzezinska 70 = (aktueller Name) Woiska Polskiego 70Litzmannstadt": null,
+  "Szubin, nakielski, kujawsko-pomorskie, Poland": {
+   "lat": 53.0,
+   "lon": 17.99,
+   "region": "posen"
+  },
+  "Szubin/ SchubinPolen": {
+   "lat": 53.0,
+   "lon": 17.99,
+   "region": "posen"
+  },
+  "Südafrika": null,
+  "Tarkastad, Cape Colony, South Africa": {
+   "lat": -32.01,
+   "lon": 26.26,
+   "region": "cape"
+  },
+  "Teltow": null,
+  "Teplice-Schönau": {
+   "lat": 50.64,
+   "lon": 13.82,
+   "region": "bohemia"
+  },
+  "Theresienstadt": null,
+  "Toorak, Victoria": null,
+  "Transvaal, South Africa": {
+   "region": "transvaal"
+  },
+  "Treplice (bei Zinnwald)": null,
+  "Treuchtlingenstr. 4, bei LoewenheimSchöneberg, Berlin Deutschland": null,
+  "Treuchtlinger Straße 4, Berlin": null,
+  "Urn with Family": null,
+  "Vinkelmeer, Burgersdorp, Albert": {
+   "lat": -31.0,
+   "lon": 26.33,
+   "region": "cape"
+  },
+  "West Park Cemetery, Johannesburg, Johannesburg, Transvaal, South Africa": {
+   "lat": -26.2,
+   "lon": 28.05,
+   "region": "transvaal"
+  },
+  "Westpark Cemetery Johannesburg Gauteng South Africa": {
+   "lat": -26.2,
+   "lon": 28.05,
+   "region": "transvaal"
+  },
+  "Wilmersdorf, Berlin, Germany": null,
+  "Zenkendorf, Allenstein": {
+   "lat": 53.78,
+   "lon": 20.49,
+   "region": "east-prussia"
+  },
+  "Zeutern, bei Bruchsal (Baden Württemberg), Germany": null,
+  "kleine Wohnung mit Balkon": null
+ }
+}

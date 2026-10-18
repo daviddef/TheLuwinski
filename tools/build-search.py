@@ -26,6 +26,28 @@ def text_of(fragment):
 # gate (tools/check-living.py) checks that it did. 16 October 2026.
 NOINDEX = re.compile(r'<meta[^>]*name=["\']robots["\'][^>]*noindex|<meta[^>]*noindex[^>]*name=["\']robots["\']', re.I)
 
+def without_era_notes(raw):
+    """The «at the time» notes (kit EraNote, 18 October 2026) are context about the ground, beside a record: not part of the record, so not
+    searchable. Without this a search for a regime's name would land on every person page that has a note. Removes each
+    <span class="era-note" ...> ... </span> by counting spans, so nothing else on the page is touched."""
+    out, i, tag = [], 0, '<span class="era-note"'
+    while True:
+        j = raw.find(tag, i)
+        if j < 0:
+            out.append(raw[i:])
+            return "".join(out)
+        out.append(raw[i:j])
+        depth, k = 0, j
+        for m in re.finditer(r"<(/?)span\b[^>]*>", raw[j:]):
+            depth += -1 if m.group(1) else 1
+            if depth == 0:
+                k = j + m.end()
+                break
+        else:
+            sys.exit("build-search: an era note that never closes")
+        i = k
+
+
 def fold(s):
     """Lowercase and strip accents, so a reader typing `Schoneberg` finds
        Schöneberg. The shared box folds the query the same way."""
@@ -45,6 +67,7 @@ def main():
         url = (url.rstrip("/") + "/") if url != "/" else "/"
         title = text_of((re.search(r"(?is)<title>(.*?)</title>", raw) or [None, ""])[1])
         title = title.split(" — ")[0].strip() or url
+        raw = without_era_notes(raw)
         body = raw.split("<main", 1)[-1]
         # one entry per section, so a hit lands on the right part of a long page
         sections = re.split(r"(?i)(?=<h2\b)", body)

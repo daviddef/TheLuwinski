@@ -1,0 +1,41 @@
+# Where each town named in data/era/ground.tsv is, for ONE purpose: tools/build-era.py hands the point to the kit's erasnap.py, which
+# REFUSES a place whose point falls inside a DIFFERENT region's ring than the one it was given, or within 15 km of its own region's ring edge
+# (the Atlas's rings are 4-11 vertex shapes, "approximate by design"). It decides nothing else: the region of a place is the row in era/ground.tsv.
+# how: «hand» = the centre of the town to two decimals, written by hand and checked against the Atlas's place file or the kit's gazetteer where
+# one holds the town (a cross-check, never a boundary); a village known only to its district (Kreis) is given its Kreis seat and says so.
+town	lat	lon	how
+Aldenham	51.69	-0.35	hand
+Allenstein	53.78	20.49	hand; matches the Atlas place file for Olsztyn
+Baldock	51.99	-0.19	hand
+Breslau	51.11	17.03	hand; matches the Atlas place file for Wroclaw
+Brisbane	-27.47	153.02	hand; matches the kit gazetteer
+Brüx	50.5	13.64	hand; matches the Atlas place file for Most
+Burgersdorp	-31.0	26.33	hand
+Deuthen	53.76	20.44	hand (Dajtki, a suburb of Olsztyn)
+Frankfurt	50.11	8.68	hand; matches the Atlas place file
+Germiston	-26.22	28.17	hand; matches the Atlas place file
+Gręboszów	50.19	20.99	hand (near Dabrowa Tarnowska)
+Görkau	50.5	13.45	hand; matches the Atlas place file for Jirkov
+Johannesburg	-26.2	28.05	hand; matches the kit gazetteer
+Löbau	53.51	19.74	hand: the Kreis seat (Lubawa); Skarlin itself is somewhere in the Kreis
+Mallmitz	51.52	15.28	hand (Malomice)
+Molteno	-31.4	26.36	hand; matches the Atlas place file
+Neumark	53.42	19.59	hand (Nowe Miasto Lubawskie)
+Neustettin	53.72	16.7	hand (Szczecinek)
+Orange Grove	-26.15	28.09	hand
+Osielsk	53.19	17.89	hand (Osielsko by Bydgoszcz)
+Ostrowo	51.65	17.81	hand (Ostrow Wielkopolski)
+Porto	41.15	-8.61	hand
+Posen	52.41	16.93	hand; matches the Atlas place file for Poznan
+Postelberg	50.36	13.69	hand; matches the Atlas place file for Postoloprty
+Pretoria	-25.75	28.19	hand
+Putzig	54.72	18.41	hand (Puck)
+Quednau	54.76	20.55	hand (a suburb of Königsberg, now Kaliningrad)
+Queenstown	-31.9	26.88	hand
+Rössel	54.05	21.14	hand: the Kreis seat (Reszel); Sauerbaum itself is somewhere in the Kreis
+Saaz	50.33	13.55	hand; matches the Atlas place file for Zatec
+Szubin	53.0	17.99	hand
+Tarkastad	-32.01	26.26	hand; matches the Atlas place file
+Teplice	50.64	13.82	hand; matches the Atlas place file
+Wirsitz	53.15	17.27	hand: the Kreis seat (Wyrzysk); Dreidorf itself is somewhere in the Kreis
+Wreschen	52.33	17.57	hand: the Kreis seat (Wrzesnia); Sokolnik itself is somewhere in the Kreis
