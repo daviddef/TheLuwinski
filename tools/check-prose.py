@@ -60,6 +60,7 @@ HAND_EDITED = {
 GENERATED = {
     "site/src/data/register.json",           # tools/build-register.py, guarded by tools/check-living.py
     "site/src/data/evidence.json",           # tools/build-evidence.py, guarded by tools/check-evidence.py
+    "site/src/data/names-index.json",        # tools/build-names-index.py (dead people with a page; checked against the register by check:names)
     "data/guarded-hashes.json",              # tools/make-guarded.py: salted digests, no names
     "data/labsa-catalogue.json",             # tools/labsa.py: the Landesarchiv's own catalogue of index volumes
 }
