@@ -57,6 +57,15 @@ jobs:
       - name: Write the sitemap
         run: python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py
         working-directory: site
+      # THE BOOK (17 October 2026): the whole site is one book, and a page nobody placed fails the build. This
+      # reads the BUILT pages against site/src/data/book.json: every page is a chapter, inherits one (a person's
+      # page belongs to The people), or is outside on purpose; every page carries its running head; every
+      # Previous and Next matches the book's order; nothing is empty. The tool resolves --dist and --book against
+      # its working directory, so this step runs from site/ like the sitemap above, with site-relative paths. An
+      # earlier step that passed `site/dist` from the repository root looked for site/site/dist and failed.
+      - name: Check that every page is placed in the book
+        run: python3 node_modules/@daviddef/archive-kit/kit/tools/checkbook.py --dist dist --book src/data/book.json
+        working-directory: site
       # The archive's standard for living people (version 2, 16 October 2026): a living person
       # (80 or younger, with no death recorded) is named with their relationships and their town
       # and country, and nothing more, on a page that is noindex; an undated person with a

@@ -1,0 +1,296 @@
+{
+  "title": "The Luwinski Archive",
+  "front": {
+    "label": "Front matter",
+    "intro": "",
+    "chapters": [
+      {
+        "path": "/",
+        "title": "The cover",
+        "blurb": "Berlin, Schubin, Sauerbaum, Lourenço Marques, Johannesburg, Porto."
+      },
+      {
+        "path": "/method/",
+        "title": "Method",
+        "blurb": "What the labels mean, and who is missing."
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "where-from",
+      "numeral": "I",
+      "title": "From Posen and East Prussia to Berlin",
+      "intro": "Schubin and Hammerstein in Posen, Sauerbaum and Allenstein in East Prussia, then Berlin. The Atlas puts every place the archive can date on one map, and the lines of the name keep the households of one surname apart until a document joins them.",
+      "flags": "🇵🇱 🇩🇪",
+      "chapters": [
+        {
+          "path": "/atlas/",
+          "title": "Atlas",
+          "blurb": "Every place this archive can put a date to."
+        },
+        {
+          "path": "/lines/",
+          "title": "The lines of the name",
+          "blurb": "Households of these surnames kept apart, each on a lane of its own, until a document joins them."
+        },
+        {
+          "path": "/east-prussia/",
+          "title": "Sauerbaum and Allenstein",
+          "blurb": "The Catholic half: Joachim Luwinski, Johanna Thimm, and their daughter Auguste."
+        },
+        {
+          "path": "/leibholz/",
+          "title": "The Leibholz brothers",
+          "blurb": "Schubin in Posen, then Berlin, then Auschwitz and Chełmno."
+        }
+      ]
+    },
+    {
+      "id": "two-lines",
+      "numeral": "II",
+      "title": "Two lines, and the families behind them",
+      "intro": "The tree grades every person on a five-word ladder, and behind it run two lines: the family of record, and the English line the DNA points to. Twelve surname lines each have a page of their own, and each repeats the tree's own words about its links.",
+      "flags": "🇩🇪 🇬🇧 🇵🇹",
+      "chapters": [
+        {
+          "path": "/tree/",
+          "title": "The tree",
+          "blurb": "The ancestry as it now stands, graded on the five-word ladder."
+        },
+        {
+          "path": "/families/",
+          "title": "The families",
+          "blurb": "Twelve surname lines, each with a page of its own."
+        },
+        {
+          "path": "/families/luwinski/",
+          "title": "The Luwinski family",
+          "blurb": "Luwinski: who bears the name, where, and how well each link is known.",
+          "group": "The line of record"
+        },
+        {
+          "path": "/families/leibholz/",
+          "title": "The Leibholz family",
+          "blurb": "Leibholz: who bears the name, where, and how well each link is known.",
+          "group": "The line of record"
+        },
+        {
+          "path": "/families/thimm/",
+          "title": "The Thimm family",
+          "blurb": "Thimm: who bears the name, where, and how well each link is known.",
+          "group": "The line of record"
+        },
+        {
+          "path": "/families/schmul/",
+          "title": "The Schmul family",
+          "blurb": "Schmul: who bears the name, where, and how well each link is known.",
+          "group": "The line of record"
+        },
+        {
+          "path": "/wear-line/",
+          "title": "Where the Wear line stands",
+          "blurb": "Five generations, and the four questions above them.",
+          "group": "The English line"
+        },
+        {
+          "path": "/families/wear/",
+          "title": "The Wear family",
+          "blurb": "Wear: who bears the name, where, and how well each link is known.",
+          "group": "The English line"
+        },
+        {
+          "path": "/families/castle/",
+          "title": "The Castle family",
+          "blurb": "Castle: who bears the name, where, and how well each link is known.",
+          "group": "The English line"
+        },
+        {
+          "path": "/families/hawkins/",
+          "title": "The Hawkins family",
+          "blurb": "Hawkins: who bears the name, where, and how well each link is known.",
+          "group": "The English line"
+        },
+        {
+          "path": "/families/giddins/",
+          "title": "The Giddins family",
+          "blurb": "Giddins: who bears the name, where, and how well each link is known.",
+          "group": "The English line"
+        },
+        {
+          "path": "/families/larkin/",
+          "title": "The Larkin family",
+          "blurb": "Larkin: who bears the name, where, and how well each link is known.",
+          "group": "The English line"
+        },
+        {
+          "path": "/families/wallis/",
+          "title": "The Wallis family",
+          "blurb": "Wallis: who bears the name, where, and how well each link is known.",
+          "group": "The English line"
+        },
+        {
+          "path": "/families/bloom/",
+          "title": "The Bloom family",
+          "blurb": "Bloom: who bears the name, where, and how well each link is known.",
+          "group": "The English line"
+        },
+        {
+          "path": "/families/figueiredo/",
+          "title": "The Figueiredo family",
+          "blurb": "Figueiredo: who bears the name, where, and how well each link is known.",
+          "group": "Portugal and Mozambique"
+        }
+      ]
+    },
+    {
+      "id": "away",
+      "numeral": "III",
+      "title": "Away: Johannesburg, Lourenço Marques, Melbourne",
+      "intro": "One man left Berlin for Johannesburg. One woman born at Lourenço Marques married there and was buried at Porto, and a survey sets out where the Mozambican records are kept. A branch sailed to Australia in 1965, and the National Archives of Australia holds files nobody has opened.",
+      "flags": "🇿🇦 🇲🇿 🇵🇹 🇦🇺",
+      "chapters": [
+        {
+          "path": "/kurt/",
+          "title": "Kurt Israel Luwinski",
+          "blurb": "Berlin 1912, Johannesburg 1968."
+        },
+        {
+          "path": "/ivone/",
+          "title": "Ivone de Figueiredo",
+          "blurb": "Lourenço Marques 1922, Vila Nova de Gaia 2010."
+        },
+        {
+          "path": "/mozambique/",
+          "title": "Where the Mozambican records are",
+          "blurb": "A survey: searched, not assumed."
+        },
+        {
+          "path": "/australia/",
+          "title": "Australia",
+          "blurb": "A branch that sailed in 1965, a Leibholz who got out in 1939, and eleven files nobody has opened."
+        }
+      ]
+    },
+    {
+      "id": "how-they-join",
+      "numeral": "IV",
+      "title": "How the lines join",
+      "intro": "Two marriages in 1948 and a divorce action; a DNA test the paper record set for itself; the English household the shared segments point to; and the people joined by what the archive has read, drawn around any one of them. No document yet joins the second line to the first.",
+      "flags": "🇿🇦 🇬🇧",
+      "chapters": [
+        {
+          "path": "/1948/",
+          "title": "1948",
+          "blurb": "Two marriages, one divorce action, and a child."
+        },
+        {
+          "path": "/dna/",
+          "title": "What the DNA says",
+          "blurb": "A test the paper record set for itself, and failed."
+        },
+        {
+          "path": "/leonard/",
+          "title": "Leonard Aubrey Robert Wear",
+          "blurb": "Hitchin 1917, Johannesburg, died 1973 or 1979, and this archive cannot say which."
+        },
+        {
+          "path": "/derrick/",
+          "title": "Derrick",
+          "blurb": "Named, and nothing more."
+        },
+        {
+          "path": "/bloodline/",
+          "title": "Blood relatives",
+          "blurb": "People joined by what this archive has read, drawn around a chosen person."
+        }
+      ]
+    },
+    {
+      "id": "everyone",
+      "numeral": "V",
+      "title": "Everyone, and everything in order",
+      "intro": "Every person this archive names has a page, and each belongs to The people and links back to it. The register, the names a woman is filed under and the dated events in order follow.",
+      "chapters": [
+        {
+          "path": "/people/",
+          "title": "The people",
+          "blurb": "Every person this archive names has a page of their own."
+        },
+        {
+          "path": "/register/",
+          "title": "The register",
+          "blurb": "People from the source tree and people found in registers, each with a page of their own."
+        },
+        {
+          "path": "/names/",
+          "title": "The names she is filed under",
+          "blurb": "Six spellings of a maiden surname, three of a forename and four married surnames."
+        },
+        {
+          "path": "/timeline/",
+          "title": "The Timeline",
+          "blurb": "Every dated event in the archive's own record files, in order."
+        }
+      ]
+    },
+    {
+      "id": "how-we-know",
+      "numeral": "VI",
+      "title": "How we know, and what is missing",
+      "intro": "The working notes, kept inside the book: what has been read and what has only been identified, what cannot be answered yet, the corrections to the family's own record, the letters drafted and sent, and the work still to do.",
+      "chapters": [
+        {
+          "path": "/sources/",
+          "title": "Sources",
+          "blurb": "What has been read, and what has only been identified."
+        },
+        {
+          "path": "/searched/",
+          "title": "What has actually been read",
+          "blurb": "The records and files this archive has actually read."
+        },
+        {
+          "path": "/open-questions/",
+          "title": "Open questions",
+          "blurb": "Things this archive cannot answer yet, in the order they are worth attacking."
+        },
+        {
+          "path": "/corrections/",
+          "title": "Corrections",
+          "blurb": "What the family record said, what this archive says instead, and the evidence."
+        },
+        {
+          "path": "/errands/",
+          "title": "Errands",
+          "blurb": "Letters drafted and sent, and who has answered."
+        },
+        {
+          "path": "/worklist/",
+          "title": "The work list",
+          "blurb": "What is being done here, as opposed to what is known."
+        },
+        {
+          "path": "/status/",
+          "title": "Status",
+          "blurb": "Every open thread in one place, and the date it last moved."
+        },
+        {
+          "path": "/changes/",
+          "title": "What changed",
+          "blurb": "What was done, in the order it was done."
+        }
+      ]
+    }
+  ],
+  "inherit": {
+    "/people/": "/people/"
+  },
+  "outside": [
+    "/search/",
+    "/letters/",
+    "/research-log/",
+    "/negatives/",
+    "/evidence/"
+  ]
+}

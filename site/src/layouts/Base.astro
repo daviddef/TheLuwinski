@@ -2,13 +2,21 @@
 import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
 import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
 import JsonLd from "@daviddef/archive-kit/components/JsonLd.astro";
+import BookHead from "@daviddef/archive-kit/components/BookHead.astro";
+import BookFoot from "@daviddef/archive-kit/components/BookFoot.astro";
+import book from "../data/book.json";
+import { u } from "../lib/url.js";
 /* `noindex` is the page-level switch for a page ABOUT a living person: the kit's sitemap tool and this
    archive's search index (tools/build-search.py) both leave out a page that noindexes itself. Every
    person in the register has a page since 16 October 2026 and a LIVING person's passes noindex and
    structured={false} (tools/check-living.py fails a living person's page that lacks the one or carries
    the other). `about` is { name, birthDate, deathDate } for a page about a person who is NOT living;
    it reaches the kit's JsonLd as a Person and is never passed for the living. */
-const { title, subtitle, lede, hero, structured = true, noindex = false, about = undefined } = Astro.props;
+/* `ownHeading` is for a page whose content draws its own h1, subtitle and lede (the shared people page,
+   kit PersonPage: it carries the name, the life dates and the one sentence inside its own header). Base
+   then renders none of the three, so the document keeps exactly one h1, and `subtitle` is used for the
+   description only. */
+const { title, subtitle, lede, hero, structured = true, noindex = false, about = undefined, ownHeading = false } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const nav = [
   ["Start", [["", "The archive"], ["/tree", "The tree"], ["/timeline", "The Timeline"], ["/dna", "The DNA"], ["/1948", "Nineteen forty-eight"]]],
@@ -232,6 +240,20 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     th, td { text-align: left; padding: .55rem .8rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
     th { font-weight: 600; font-size: .74rem; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-faint); white-space: nowrap; }
     tbody tr:last-child td { border-bottom: 0; }
+    /* TABLE CELLS KEEP THEIR WORDS WHOLE (17 October 2026 layout audit: 15 of 50 sampled pages had cells
+       squeezed into stacks of one or two letters, dates three lines high, file names at 90px). Cause: in
+       an auto-layout table a short column (a date, a count, a file name) is the first to give way when a
+       long prose column wants the room. break-word above keeps each column's minimum at its longest word;
+       the floor below keeps a date or a short code from being squeezed to that minimum. Tables of five
+       columns or fewer get 7.5rem, enough for "29 Sept 2026" on one line; wider tables get 6rem, and a
+       table that still cannot fit scrolls inside its .scroll box rather than the page. Phones and print are left
+       to wrap, as before. A panel that holds a table runs the full width of the column the table uses. */
+    main td, main th { word-break: normal; hyphens: manual; }
+    @media screen and (min-width: 48rem) {
+      main td { min-width: 6rem; }
+      main table:not(:has(tr > :nth-child(6))) td { min-width: 7.5rem; }
+      .panel:has(.scroll) { max-width: none; }
+    }
     .tag { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase; padding: .15rem .45rem; border: 1px solid currentColor; border-radius: 2px; white-space: nowrap; }
     .tag.doc { color: var(--doc); } .tag.inf { color: var(--inf); } .tag.disp { color: var(--disp); } .tag.open { color: var(--open); }
     .panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 3px; padding: 1.2rem 1.4rem; margin: 1.6rem 0; max-width: var(--measure); }
@@ -318,6 +340,21 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
       .hh-lk, .mg-ca, .mg-badge, .mg-dl dt, .nl-one i, .syn-lab, .syn-card h4, .lane-conf, .rr-lane,
       .omit-rel, .rel) { font-size: 11px; }
     main:focus { outline: none; }
+    /* THE BOOK's running head and foot (kit BookHead / BookFoot) take their width and side padding from
+       these two lines, so they sit on the same left edge as the page and its masthead. */
+    :root { --bk-width: var(--wide); }
+    body .bk-head .bk-row { padding-left: 1.5rem; padding-right: 1.5rem; }
+    /* The foot has a rule above it, so it takes the page column's own width (the .wrap's content box) rather
+       than padding inside a wider box: the rule then runs exactly as wide as the text above it. */
+    body .bk-foot.bk-foot { width: calc(100% - 3rem); max-width: calc(var(--wide) - 3rem); padding-left: 0; padding-right: 0; }
+    @media (max-width: 34rem) { body .bk-head .bk-row { padding-left: 1rem; padding-right: 1rem; } body .bk-foot.bk-foot { width: calc(100% - 2rem); } }
+    /* The kit's Contents page lays each part out as a grid whose second column is "1fr" and whose parent has
+       an automatic column. With nothing to cap it, a chapter list that auto-fills 250px columns sizes the whole
+       page to its own natural width (873px on a 390px phone, 17 October 2026). minmax(0, 1fr) lets the column
+       be as narrow as the page. Same tracks and gaps as the kit's; only the floor is removed. */
+    body .bk-book { grid-template-columns: minmax(0, 1fr); }
+    body .bk-book .bk-part { grid-template-columns: 52px minmax(0, 1fr); }
+    @media (max-width: 640px) { body .bk-book .bk-part { grid-template-columns: 34px minmax(0, 1fr); } }
     /* styles.css pins the Search button's text to #fff with !important, which is 2.7:1 on the pale
        accent of the dark scheme. This sheet loads after it, so the same weight wins. */
     .findbtn { color: var(--ground) !important; }
@@ -364,6 +401,10 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
       </div>
     </details>
   </div></header>
+  {/* THE BOOK (17 October 2026): the running head sits below the site header on every page and the
+      Previous / Next above the footer. src/data/book.json places every page; kit/tools/checkbook.py fails the
+      build on one nobody placed. This archive stays outside the kit's sibling ring, so the width is stated here. */}
+  <BookHead book={book} u={u} />
   {hero && (
     <figure class="hero" style="margin:0">
       <img src={hero.src} alt={hero.alt} />
@@ -378,11 +419,12 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
   <main id="main" tabindex="-1"><div class="wrap">
     {/* Where a hero carries the page's h1, this one is not rendered at all: it used to be
         printed and hidden with CSS, which left two h1 elements in the document. */}
-    {!hero && <h1>{title}</h1>}
-    {!hero && subtitle && <p class="sub">{subtitle}</p>}
-    {lede && <p class="lede">{lede}</p>}
+    {!hero && !ownHeading && <h1>{title}</h1>}
+    {!hero && !ownHeading && subtitle && <p class="sub">{subtitle}</p>}
+    {lede && !ownHeading && <p class="lede">{lede}</p>}
     <slot />
   </div></main>
+  <BookFoot book={book} u={u} />
   <footer><div class="wrap">
     <p><strong>A living person (80 or younger, with no death recorded) is named with their relationships and their town and country, and nothing more.</strong>
     No dates, no records, no photograph. Lynn Derrick Luwinski is named with his parents only. A removal

@@ -1,0 +1,13 @@
+---
+/* /contents/ - THE BOOK'S TABLE OF CONTENTS (17 October 2026).
+   The whole site read as one book: front matter and six parts, every chapter with its one line. The order
+   and the words are in src/data/book.json; nothing here is typed. Previous / Next at the foot of every page
+   follow this order. The kit's BookContents draws it. */
+import Base from '../layouts/Base.astro';
+import BookContents from '@daviddef/archive-kit/components/BookContents.astro';
+import book from '../data/book.json';
+import { u } from '../lib/url.js';
+---
+<Base title="Contents" subtitle="The whole archive as one book: front matter and six parts, in reading order.">
+  <BookContents book={book} u={u} />
+</Base>
