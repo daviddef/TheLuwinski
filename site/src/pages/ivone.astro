@@ -160,6 +160,7 @@ const fam = familyOf(subject.id);
 
   <section class="blk">
   <h2>Her family</h2>
+  <div data-no-autolink>
   <PersonTree always self={fam.self} parents={fam.parents} spouses={fam.spouses}
               children={fam.children} siblings={fam.siblings}
               labels={{ parents: 'Her parents' }}>
@@ -167,6 +168,7 @@ const fam = familyOf(subject.id);
       <p class="warn">Four husbands and two sons, and <strong>no parents drawn</strong> &mdash; and that is a limit of the register rather than an open question. <strong>Her parents are known</strong>: JOAQUIM J&Uacute;LIO DE FIGUEIREDO and LE&Oacute;NIA DOS SANTOS MOTA, named in her own 1922 birth registration, with all four of her grandparents besides. They cannot appear in this chart because the register is generated from the family&rsquo;s own tree and has no mechanism for people found in documents afterwards. The section below has them. One son is living and appears as a name with no dates; the other died in 2022.</p>
     </Fragment>
   </PersonTree>
+  </div>
 </section>
 
 <h2>Which gives us her parents' surnames</h2>

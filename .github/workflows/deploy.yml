@@ -36,6 +36,29 @@ jobs:
       - name: Build
         run: npx astro build
         working-directory: site
+      # THE NAME LINKER (kit/tools/autolink.py, 18 October 2026). Rewrites the BUILT pages so that the first mention, in
+      # each section, of a name that is one dead person with a page becomes a link to that page, and a name several
+      # dead people bear becomes a link to /search/?q=. It runs HERE, before the search index and before every check that
+      # reads the built HTML, so those see the linked pages exactly as they will be served.
+      #
+      # WHAT CI CAN AND CANNOT SEE. The index (site/src/data/names-index.json) is COMMITTED: it holds only dead people who
+      # have a public page, and it was generated on the machine that holds the private harvest, so the deploy links exactly
+      # the names that were checked there. CI cannot regenerate it and does not try; it checks that every committed entry
+      # is one the committed register still gives (tools/build-names-index.py --check, the public half of the same test).
+      # CI cannot read the private feed (living and held-out spellings), so its living list is built from the committed
+      # register alone (tools/build-living-list.py --public): all five people the register flags as living or named-only,
+      # their names and page addresses. A held-out person is in no register and in no page, so is not in the index, and
+      # autolink refuses (exit 2) to run if the index and the living list ever meet. The full list runs in `npm run build`
+      # on the machine that holds the harvest, which is where the index is made. All paths are site-relative, as in the
+      # check:book step below.
+      - name: Check that the names index still matches the register
+        run: python3 ../tools/build-names-index.py --check
+        working-directory: site
+      - name: Link the names on the built pages
+        run: |
+          python3 ../tools/build-living-list.py --public --out "$RUNNER_TEMP/living.json"
+          python3 node_modules/@daviddef/archive-kit/kit/tools/autolink.py --dist dist --index src/data/names-index.json --living "$RUNNER_TEMP/living.json" --allow-prefix /people/ --allow-prefix /search/
+        working-directory: site
       # Indexes the RENDERED pages, so what is searchable is exactly what a
       # reader can see - and nothing the living-persons rule removed. A page that
       # noindexes itself (a living person's page) is left out of the index.
@@ -100,6 +123,14 @@ jobs:
         run: python3 tools/check-families.py --dist dist
       - name: Check that the family-page gate still catches what it should
         run: python3 tools/check-families.py --dist dist --selftest
+      # The ratchet behind the name linker: a page may only get better. A name that resolves and is left unlinked, a link whose
+      # person has since been merged or hidden, or any link to a living address fails the deploy. Counts only; it prints no name.
+      - name: Check that every name that resolves is linked, and that no page got worse
+        run: python3 node_modules/@daviddef/archive-kit/kit/tools/checklinks.py --dist dist --index src/data/names-index.json --living "$RUNNER_TEMP/living.json" --allow-prefix /people/ --allow-prefix /search/ --floor .linkfloor.json
+        working-directory: site
+      - name: Check that the name linker still catches what it should
+        run: python3 node_modules/@daviddef/archive-kit/kit/tools/autolink_selftest.py
+        working-directory: site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

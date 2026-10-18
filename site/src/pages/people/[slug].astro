@@ -108,7 +108,7 @@ const stubNote = 'the household that names them';
 const chartLabels = view.bare ? { parents: 'His parents' } : {};
 const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   // no Person for a placeholder: it stands for nobody
 ---
-<Base title={meta.title} subtitle={description} noindex={meta.noindex} structured={!meta.living} about={about} ownHeading>
+<Base title={meta.title} subtitle={description} noindex={meta.noindex} structured={!meta.living} about={about} ownHeading noAutolink>
 
   {p && (
   <PersonPage person={person} peopleHref={peopleHref} stubNote={stubNote}>

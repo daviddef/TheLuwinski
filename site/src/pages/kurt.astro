@@ -44,6 +44,7 @@ const fam = familyOf(subject.id);
 
   <section class="blk">
   <h2>His family</h2>
+  <div data-no-autolink>
   <PersonTree always self={fam.self} parents={fam.parents} spouses={fam.spouses}
               children={fam.children} siblings={fam.siblings}
               labels={{ parents: 'His parents' }}>
@@ -51,6 +52,7 @@ const fam = familyOf(subject.id);
       <p class="warn">Three marriages, one son, one brother, and a father whose death this archive cannot date — Jacob Leibholz's record ends with a deportation and not with a date, which is why the node beside his name carries only a birth. The prose below says what the chart cannot.</p>
     </Fragment>
   </PersonTree>
+  </div>
 </section>
 
 <h2>1933 &mdash; and now a question mark over it</h2>
