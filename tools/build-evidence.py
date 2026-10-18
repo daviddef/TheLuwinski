@@ -76,6 +76,7 @@ MANIFEST = {
  "caroline-james-1920-1957.tsv": ([], "Caroline Castle, later James, 1920 to 1957", "GRO indexes; 1939 Register RG101/1598B/017/25", "ref"),
  "free-indexes-2026-10-16.tsv": ([], "Free indexes read on 16 October 2026: FreeBMD, FreeCEN and FreeREG", "FreeBMD, FreeCEN and FreeREG (Free UK Genealogy), searched without an account; INDEXES, and Hertfordshire coverage in FreeCEN and FreeREG is partial", "ref"),
  "wallis-weston-2026-10-18.tsv": ([], "Caroline Wallis of Weston: the baptism of April 1862 and two censuses", "Findmypast: Hertfordshire Baptisms; 1871 census RG10/1366 f41 (indexed Wallace); 1881 census RG11/1417 f97", "ref"),
+ "wallis-field-weston-2026-10-18.tsv": ([], "Joseph Wallis and Sarah Field of Weston: their marriage, their baptisms and the generation above", "FreeBMD; FreeCEN HO 107/1709; FreeREG, Weston Holy Trinity", "ref"),
  "larkin-burch-appleyard-findmypast-2026-10-16.tsv": ([], "Findmypast, 16 October 2026: the Larkin couples, and the surname-only passes for Burch and Appleyard", "Findmypast: Hertfordshire Baptisms and Burials; 1841 and 1851 England, Wales & Scotland Census, HO107/1714 and HO107/438", "ref"),
  "litigation.tsv":               (["plaintiff","defendant"], "Transvaal court files", "National Archives of South Africa, WLD and TPD series", "person"),
  "naairs-figueiredo.tsv":        ([], "The NAAIRS index under FIGUEIREDO", "National Archives of South Africa", "ref"),
