@@ -6,6 +6,19 @@ import lines from '../data/lines.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = (h) => base + h;
 
+/* THE FIGURE'S TWO TEXTS. The dek is printed once, by the paragraph above each figure; it was also being
+   handed to the figure as its caption, so it appeared twice under every heading, and the page's own
+   explanation of the figure sat in a second caption beneath that. The explanation is the figure's caption now.
+   The accessible title carries no number and no surname: both figures are given this one text, so
+   a title that said "8 lanes" or named LEIBHOLZ would be read aloud over the LUWINSKI figure too. This one
+   is true of both. (The kit now gives each figure its own <title> id and points that figure's
+   aria-labelledby at it, so each figure announces its own title; check:lines checks the pairing.) */
+const FIGURE_TITLE = 'The lanes of one surname, each kept apart, and the road each of them took';
+const FIGURE_CAPTION = `Hover or tab any dot and it says what the document behind it is. The top lane of each
+          diagram is the one this archive descends from. <strong>A dashed band is a family of the
+          same name that is documented and is definitely <em>not</em> ours</strong> &mdash; drawn
+          here so that the next person who finds the name does not have to make the mistake again.`;
+
 /* 21 September 2026. The lanes are the kit's figure now. Three archives drew
    this by hand — Defranceski's five families arriving in Istria, Falco's five
    strands of one surname, and this one's lanes — and Falco's own component
@@ -68,16 +81,14 @@ const u = (h) => base + h;
       <h2>{set.name}</h2>
       <p class="small muted" set:html={md(set.dek)}></p>
       <figure class="rivers">
-        <BranchRivers rivers={{ ...set, unplaced: [], loose: [] }} caption={md(set.dek)} />
-        <figcaption>
-          Hover or tab any dot and it says what the document behind it is. The top lane of each
-          diagram is the one this archive descends from. <strong>A dashed band is a family of the
-          same name that is documented and is definitely <em>not</em> ours</strong> &mdash; drawn
-          here so that the next person who finds the name does not have to make the mistake again.
-        </figcaption>
+        <BranchRivers rivers={{ ...set, unplaced: [], loose: [] }} title={FIGURE_TITLE} caption={FIGURE_CAPTION} />
       </figure>
 
       <div class="panel">
+        <p class="small muted">
+          {set.lanes.length} lanes drawn above &middot; {set.unplaced.length} households of the name not yet
+          on any lane &middot; {set.loose.length} names attached to no lane.
+        </p>
         <h3>Real households of the name, not yet on any lane</h3>
         <ul class="tight">
           {set.unplaced.map((x) => (

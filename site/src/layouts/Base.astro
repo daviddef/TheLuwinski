@@ -348,13 +348,6 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
        than padding inside a wider box: the rule then runs exactly as wide as the text above it. */
     body .bk-foot.bk-foot { width: calc(100% - 3rem); max-width: calc(var(--wide) - 3rem); padding-left: 0; padding-right: 0; }
     @media (max-width: 34rem) { body .bk-head .bk-row { padding-left: 1rem; padding-right: 1rem; } body .bk-foot.bk-foot { width: calc(100% - 2rem); } }
-    /* The kit's Contents page lays each part out as a grid whose second column is "1fr" and whose parent has
-       an automatic column. With nothing to cap it, a chapter list that auto-fills 250px columns sizes the whole
-       page to its own natural width (873px on a 390px phone, 17 October 2026). minmax(0, 1fr) lets the column
-       be as narrow as the page. Same tracks and gaps as the kit's; only the floor is removed. */
-    body .bk-book { grid-template-columns: minmax(0, 1fr); }
-    body .bk-book .bk-part { grid-template-columns: 52px minmax(0, 1fr); }
-    @media (max-width: 640px) { body .bk-book .bk-part { grid-template-columns: 34px minmax(0, 1fr); } }
     /* styles.css pins the Search button's text to #fff with !important, which is 2.7:1 on the pale
        accent of the dark scheme. This sheet loads after it, so the same weight wins. */
     .findbtn { color: var(--ground) !important; }

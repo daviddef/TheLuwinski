@@ -180,20 +180,21 @@ function modelOf(f) {
   const treePlaces = groups.flatMap((g) => g.entries.map((en) => en.place)).filter(Boolean);
 
   /* the English line's relatives who have no page of their own: named in the archive's charts of a published
-     person's kin. Born after 1940 (none is) would be counted and left off. */
+     person's kin (children, brothers and sisters, and parents of the name; spouses carry another name and are
+     shown under the marriages that join the names). Born after 1940 (none is) would be counted and left off. */
   const have = new Set(eng.map((p) => p.slug));
   const surnameKeys = KEYS.get(f.slug).eng;
   const kin = new Map();
   let nHeld = 0;
   for (const p of english.people) {
-    for (const rel of ['children', 'siblings']) {
+    for (const rel of ['children', 'siblings', 'parents']) {
       for (const k of p.kin[rel] || []) {
         if (k.s && have.has(k.s)) continue;
         if (!surnameKeys.has(fold(String(k.n).split(/\s+/).pop()))) continue;
         const ys = yearsIn(k.dates);
         if (ys.length && ys[0] > 1940) { nHeld += 1; continue; }
         const key = k.n + '|' + (k.dates || '');
-        const rl = (rel === 'children' ? 'child of ' : 'brother or sister of ') + p.name;
+        const rl = (rel === 'children' ? 'child of ' : rel === 'parents' ? 'parent of ' : 'brother or sister of ') + p.name;
         const cur = kin.get(key) || { name: k.n, dates: k.dates || '', mark: k.mark || '', href: k.href ? u(k.href) : (k.s ? u(`/people/${k.s}/`) : null), rels: [] };
         if (!cur.rels.includes(rl)) cur.rels.push(rl);
         kin.set(key, cur);
