@@ -20,8 +20,9 @@ check-superseded.py's business (data/superseded.json); this gate checks the SHAP
   text      no unbalanced *** (it prints), no lane numbered "L3" or "U2" (the page does not number its lanes),
             no lane key used twice.
   page      each set's dek appears once on the built page, not twice; the figure's accessible title carries no
-            count that is not the number of lanes of every figure on the page (the kit points both figures'
-            aria-labelledby at the first title, so a count or a surname in it is wrong for the other figure);
+            count that is not the number of lanes of every figure on the page, and each figure's aria-labelledby
+            points at its own <title> (the kit gives every figure a unique id; a title shared by both figures
+            must still be true of both, so it carries no count and no surname);
             no literal \\uXXXX escape and no raw *** is visible in the text of any built page.
 
 EXIT CODES. 0 passed. 1 failed. 2 could not run (no build to read): "I could not look" is not a pass.
@@ -113,6 +114,22 @@ def check_data(data, page_of):
     return probs
 
 
+def _rt_ids(page):
+    return re.findall(r"""<title id="(rt-[^"]+)">""", page)
+
+
+def _share_id(page):
+    """Planted fault: the second figure's title and aria-labelledby take the first figure's id."""
+    ids = _rt_ids(page)
+    return page.replace(ids[1], ids[0]) if len(ids) > 1 else page
+
+
+def _point_away(page):
+    """Planted fault: the second figure's aria-labelledby names the first figure's title."""
+    ids = _rt_ids(page)
+    return page.replace('aria-labelledby="%s"' % ids[1], 'aria-labelledby="%s"' % ids[0]) if len(ids) > 1 else page
+
+
 def check_built(data, dist):
     probs = []
     lp = dist / "lines" / "index.html"
@@ -125,9 +142,19 @@ def check_built(data, dist):
         n = text.count(head)
         if n != 1:
             probs.append("page: the %s dek appears %d times on /lines/ (it should be once)" % (s["name"], n))
-    titles = re.findall(r"""<title id="riversttl">(.*?)</title>""", page, re.S)
+    titled = re.findall(r"""<title id="(rt-[^"]+)">(.*?)</title>""", page, re.S)
+    titles = [t for _, t in titled]
     if len(titles) != len(data["sets"]):
         probs.append("page: %d figure title(s) for %d set(s)" % (len(titles), len(data["sets"])))
+    ids = [i for i, _ in titled]
+    if len(set(ids)) != len(ids):
+        probs.append("page: two figures share a title id (%s), so one of them reads the other's title" % ", ".join(ids))
+    # each figure's own svg must point at its own title, not at the first one in the document
+    for m in re.finditer(r"""<svg\b[^>]*aria-labelledby="(rt-[^"]+)"[^>]*>\s*<title id="([^"]+)">""", page):
+        if m.group(1) != m.group(2):
+            probs.append("page: a figure's aria-labelledby %s points away from its own title %s" % (m.group(1), m.group(2)))
+    if len(re.findall(r"""aria-labelledby="rt-""", page)) != len(titles):
+        probs.append("page: the figures' aria-labelledby and their titles do not pair up")
     counts = {len(s["lanes"]) for s in data["sets"]}
     for t in titles:
         t = html.unescape(t)
@@ -219,7 +246,9 @@ def selftest(root, dist):
             dek = html.escape(re.sub(r"\*+", "", data["sets"][1]["dek"])[:70], quote=False)
             planted = {
                 "the dek printed twice": good.replace("</main>", "<p>" + dek + "</p></main>", 1),
-                "a figure title that says Six": re.sub(r"(<title id=\"riversttl\">).*?(</title>)", r"\1Six families of one surname\2", good),
+                "a figure title that says Six": re.sub(r"(<title id=\"rt-[^\"]+\">).*?(</title>)", r"\1Six families of one surname\2", good),
+                "both figures sharing one title id": _share_id(good),
+                "the second figure pointing at the first's title": _point_away(good),
                 "a raw *** on the page": good.replace("</main>", "<p>*** UPDATED</p></main>", 1),
             }
             for label, page in planted.items():

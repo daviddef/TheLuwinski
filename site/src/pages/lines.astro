@@ -9,10 +9,10 @@ const u = (h) => base + h;
 /* THE FIGURE'S TWO TEXTS. The dek is printed once, by the paragraph above each figure; it was also being
    handed to the figure as its caption, so it appeared twice under every heading, and the page's own
    explanation of the figure sat in a second caption beneath that. The explanation is the figure's caption now.
-   The accessible title carries no number and no surname on purpose: the kit gives its <title> the id
-   "riversttl" and points the SVG's aria-labelledby at it, so both figures on this page resolve to the FIRST
-   title in the document, and a title that said "8 lanes" or named LEIBHOLZ would be read aloud over the
-   LUWINSKI figure too. This one is true of both. */
+   The accessible title carries no number and no surname: both figures are given this one text, so
+   a title that said "8 lanes" or named LEIBHOLZ would be read aloud over the LUWINSKI figure too. This one
+   is true of both. (The kit now gives each figure its own <title> id and points that figure's
+   aria-labelledby at it, so each figure announces its own title; check:lines checks the pairing.) */
 const FIGURE_TITLE = 'The lanes of one surname, each kept apart, and the road each of them took';
 const FIGURE_CAPTION = `Hover or tab any dot and it says what the document behind it is. The top lane of each
           diagram is the one this archive descends from. <strong>A dashed band is a family of the
