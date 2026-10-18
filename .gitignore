@@ -24,3 +24,7 @@ site/public/searchindex.json
 # The prose gate's feed holds living people's names (tools/build-checkprose-feed.py writes it here, mode 0600).
 # It is rebuilt on every run and never committed.
 private/
+
+# The given-name vocabulary for the linking standard: derived from the committed register in every build and in CI
+# (tools/build-given-names.py), never committed, so no stale copy can drift from the register.
+site/given.json

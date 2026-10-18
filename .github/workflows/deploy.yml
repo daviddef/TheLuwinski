@@ -54,6 +54,13 @@ jobs:
       - name: Check that the names index still matches the register
         run: python3 ../tools/build-names-index.py --check
         working-directory: site
+      # The records table (site/src/data/records.json) is committed, written by tools/build-records.py from the ledger
+      # (evidence.json) and data/record-plates.json. CI cannot see the private feed that holds back a ledger entry naming a
+      # living person, so it checks the public half: every committed row is one the public data gives, and no entry on the
+      # hold list is in the table.
+      - name: Check that the records table still matches the ledger
+        run: python3 ../tools/build-records.py --check
+        working-directory: site
       - name: Link the names on the built pages
         run: |
           python3 ../tools/build-living-list.py --public --out "$RUNNER_TEMP/living.json"
@@ -130,6 +137,25 @@ jobs:
         working-directory: site
       - name: Check that the name linker still catches what it should
         run: python3 node_modules/@daviddef/archive-kit/kit/tools/autolink_selftest.py
+        working-directory: site
+      # THE LINKING STANDARD (18 October 2026): the twelve narrative pages are held to five rules, and the number of
+      # violations of each may only go down (site/.standardfloor.json, counts only, no name, no address of a person).
+      # L1 names that resolve are linked, L2 a person read from a record has an entry, L3 a passage that cites a record
+      # links to it, L4 a held scan sits in the section that cites it, L5 forms the machine cannot resolve are counted.
+      # WHAT CI CAN AND CANNOT SEE, as for the linker above: it reads the BUILT pages, the committed names index, the
+      # committed records table (site/src/data/records.json) and standard.json, and the living list built from the
+      # committed register (--public), so it counts exactly what the machine with the private harvest counts. The one
+      # input it must build itself is the given-name vocabulary (site/given.json, gitignored): tools/build-given-names.py
+      # derives it from the committed register and English-line files, living and named-only people leaving nothing in it.
+      # Every path is site-relative, as in the steps above.
+      - name: Build the given-name vocabulary for the linking standard
+        run: python3 ../tools/build-given-names.py
+        working-directory: site
+      - name: Check the linking standard, and that no page got worse
+        run: python3 node_modules/@daviddef/archive-kit/kit/tools/checkstandard.py --dist dist --index src/data/names-index.json --config standard.json --living "$RUNNER_TEMP/living.json" --floor .standardfloor.json --strict-config
+        working-directory: site
+      - name: Check that the linking-standard gate still catches what it should
+        run: python3 node_modules/@daviddef/archive-kit/kit/tools/checkstandard_selftest.py
         working-directory: site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

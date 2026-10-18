@@ -1,0 +1,365 @@
+{
+ "version": 1,
+ "scope": "main",
+ "include": [
+  "/leibholz/",
+  "/dna/",
+  "/kurt/",
+  "/leonard/",
+  "/ivone/",
+  "/method/",
+  "/errands/",
+  "/australia/",
+  "/wear-line/",
+  "/mozambique/",
+  "/east-prussia/",
+  "/1948/"
+ ],
+ "allow_prefixes": [
+  "/people/",
+  "/search/"
+ ],
+ "names": {
+  "entry_prefixes": [
+   "/people/",
+   "/who/"
+  ],
+  "read_blocks": [
+   ".xlat",
+   ".er-dl",
+   "figcaption"
+  ],
+  "skip": [
+   "table",
+   ".scroll",
+   ".ptree",
+   "svg"
+  ],
+  "stop_words": [
+   "Standesamt",
+   "Standes",
+   "Amt",
+   "Landesarchiv",
+   "Archiwum",
+   "Bundesarchiv",
+   "Archiv",
+   "Sterberegister",
+   "Heiratsregister",
+   "Geburtsregister",
+   "Namensverzeichnis",
+   "Register",
+   "Berliner",
+   "Berlin",
+   "Adressbuch",
+   "Gedenkbuch",
+   "Census",
+   "Witnesses",
+   "Witness",
+   "Neither",
+   "Whether",
+   "Nr",
+   "No",
+   "Akt",
+   "Kaufmann",
+   "Arbeiterin",
+   "Modistin",
+   "Fleischermeister",
+   "Schneider",
+   "Tochter",
+   "Sohn",
+   "Witwe",
+   "Ehefrau",
+   "Ehemann",
+   "Mr",
+   "Mrs",
+   "Miss",
+   "Dr",
+   "Herr",
+   "Frau",
+   "Fräulein",
+   "Married",
+   "Versus",
+   "Eight",
+   "DNA",
+   "Portuguese",
+   "Afrikaner",
+   "Hebrew",
+   "Sara",
+   "Porto"
+  ],
+  "not_names": [
+   "^(Santa|San|Santo|Sant|Santo) ",
+   "^(Mount|Monte|Cape|Port|Fort|Lake|New|North|South|East|West|Great|Little|Saint|Holy|Our|Old|Upper|Lower|St|Bad|Alt|Neu|Gross|Groß|Klein|Rua|Praça|Avenida|Praceta)\\b",
+   "\\b(Island|Street|Road|Church|Hospital|Ship|Line|Register|Archive|Archives|Census|Index|Directory|Strasse|Straße|Platz|Allee|Ufer|Damm|Kreis|Gemeinde|Gazette|Court|Office|Department|Ministry|Council|Society|Committee|Cemetery|Synagogue|Station|Camp|Trust|Bank|Company|Limited|Club|School|Hotel|Hospital|Laboratories|Estate|Province|District|Colony|Republic|Empire|Reich|Bureau|Service|Consulate|Embassy|Records?)\\b",
+   "\\b(Schubin|Szubin|Berlin|Johannesburg|Pretoria|Posen|Bromberg|Bydgoszcz|Sauerbaum|Hitchin|Baldock|Lisboa|Lourenço Marques|Maputo|Germiston|Rosebank|Kreuzberg|Tiergarten|Tempelhof|Wilmersdorf|Reinickendorf|Schöneberg|Charlottenburg|Wedding|Auschwitz|Theresienstadt|Sachsenhausen)\\b",
+   "\\bDNA\\b",
+   "Yad Vashem",
+   "\\bY chromosome\\b",
+   "^(Married|Versus|Eight)\\b"
+  ],
+  "given_names_file": "given.json",
+  "surname_words": [
+   "august",
+   "israel",
+   "mota",
+   "figueiredo",
+   "marquardt",
+   "wear",
+   "castle",
+   "leibholz",
+   "luwinski",
+   "weare",
+   "mata"
+  ],
+  "never_complete": [
+   {
+    "name": "Derrick",
+    "reason": "the subject of the DNA pages is treated as living and is named by this one word throughout; a full name is never shown, so no sentence can complete it"
+   }
+  ],
+  "given_names": [
+   "Derrick"
+  ]
+ },
+ "citations": {
+  "blocks": [
+   "p",
+   "li",
+   "dd",
+   "blockquote",
+   "figcaption"
+  ],
+  "patterns": [
+   {
+    "id": "k-szubin9",
+    "flags": "i",
+    "regex": "\\bakt(?:\\s+\\w+)?\\s+(?:nr\\.?\\s*)?9\\b(?!\\d)(?:\\s*/\\s*1874|\\s+of\\s+24 December 1874)?",
+    "key": "szubin-1874-9"
+   },
+   {
+    "id": "k-szubin8",
+    "flags": "i",
+    "regex": "\\bakt(?:\\s+\\w+)?\\s+(?:nr\\.?\\s*)?8\\b(?!\\d)",
+    "key": "szubin-1874-8"
+   },
+   {
+    "id": "k-szubin-idx",
+    "flags": "i",
+    "regex": "sygnatura 246|sygn\\. 246|Sterbe-Register über Standes-Amt Schubin|Szubin death.index|skorowidz",
+    "key": "szubin-sterbe-index"
+   },
+   {
+    "id": "k-schoeneberg",
+    "flags": "i",
+    "regex": "Sch(?:ö|oe)neberg(?: II)?,? (?:Heiratsregister|marriage (?:register|entry|index))[^.]{0,20}1924|1924 (?:Sch(?:ö|oe)neberg )?marriage (?:entry|register|index)",
+    "key": "schoeneberg-1924"
+   },
+   {
+    "id": "k-gertrud43",
+    "flags": "i",
+    "regex": "Berlin-Wedding, Sterberegister 1943|1943 death entry|Sterbeeintrag",
+    "key": "wedding-1943"
+   },
+   {
+    "id": "k-rgbl",
+    "flags": "i",
+    "regex": "Reichsgesetzblatt|RGBl",
+    "key": "rgbl-1938"
+   },
+   {
+    "id": "k-fuehrerschein",
+    "flags": "i",
+    "regex": "Führerschein|driving licen[cs]e",
+    "key": "licence-1934"
+   },
+   {
+    "id": "k-reisepass",
+    "flags": "i",
+    "regex": "Reisepass|1939 passport",
+    "key": "passport-1939"
+   },
+   {
+    "id": "k-adressbuch1913",
+    "flags": "i",
+    "regex": "Adre(?:ss|ß)buch(?: for)? 1913|1913 (?:Berlin )?(?:directory|Adre(?:ss|ß)buch)",
+    "key": "adressbuch-1913"
+   },
+   {
+    "id": "k-birth1912",
+    "flags": "i",
+    "regex": "(?:1912 birth (?:index|register))|P Rep\\. 523",
+    "key": "birth-index-1912"
+   },
+   {
+    "id": "k-rosebank",
+    "flags": "i",
+    "regex": "Rosebank[^.]{0,40}1940|1940[^.]{0,30}Rosebank",
+    "key": "rosebank-1940"
+   },
+   {
+    "id": "k-assento",
+    "flags": "i",
+    "regex": "\\bassento\\b",
+    "key": "assento-1922"
+   },
+   {
+    "id": "k-obito",
+    "flags": "i",
+    "regex": "\\bóbito\\b|\\bobito\\b|certificado de óbito",
+    "key": "obito-2010"
+   },
+   {
+    "id": "akt",
+    "flags": "i",
+    "regex": "\\bakt(?:\\s+\\w+)?\\s+(?:nr\\.?\\s*)?\\d+(?:\\s*/\\s*\\d{4})?"
+   },
+   {
+    "id": "sygn",
+    "flags": "i",
+    "regex": "\\bsygn(?:atura|\\.)?\\s*\\d+"
+   },
+   {
+    "id": "scan",
+    "flags": "i",
+    "regex": "\\bscans?\\s+\\d+"
+   },
+   {
+    "id": "film-ark",
+    "flags": "i",
+    "regex": "\\bfilm\\s+\\d+|\\bark:/|\\bimage\\s+\\d+|\\bfolio\\s+\\d+|\\bPI\\s+\\d{5,}|\\bP Rep\\. \\d+"
+   },
+   {
+    "id": "vital",
+    "flags": "i",
+    "regex": "\\b(?:marriage|birth|death|baptism|burial|banns)\\s+(?:register|entry|certificate|record|index)|Heiratsregister|Sterberegister|Geburtsregister|Sterbeeintrag|Heiratseintrag|Sterbeurkunde|Heiratsurkunde|Standesamt|\\bUSC\\b|certid[aã]o"
+   },
+   {
+    "id": "census",
+    "flags": "i",
+    "regex": "\\bcensus\\b|Volksz[äa]hlung|Minderheitenz[äa]hlung|Ergänzungskarte"
+   },
+   {
+    "id": "directory",
+    "flags": "i",
+    "regex": "Adre(?:ss|ß)buch|\\bBerlin directory|\\bdirectories\\b|\\bstreet directory"
+   },
+   {
+    "id": "holocaust",
+    "flags": "i",
+    "regex": "Gedenkbuch|Yad Vashem|Arolsen|Stolperstein|Pages? of Testimony|Opferdatenbank"
+   },
+   {
+    "id": "travel",
+    "flags": "i",
+    "regex": "\\bmanifest\\b|passenger list|\\bBT ?27\\b|\\bpassport\\b|naturali[sz]ation|\\bshipping list"
+   },
+   {
+    "id": "court",
+    "flags": "i",
+    "regex": "\\bprobate\\b|estate file|Master of the High Court|Landgericht|Amtsgericht|Sammelakte|death notice"
+   },
+   {
+    "id": "gazette",
+    "flags": "",
+    "regex": "Government Gazette|Gazette\\b"
+   },
+   {
+    "id": "archive",
+    "flags": "",
+    "regex": "Landesarchiv|Archiwum|Bundesarchiv|National Archives|\\bTNA\\b|FamilySearch|Findmypast|MyHeritage|\\bGRO\\b|FreeBMD|GenDatabase|genealogiawarchiwach|Geneteka|\\bZLB\\b|\\bLABSA\\b"
+   }
+  ],
+  "record_links": {
+   "prefixes": [
+    "/searched/",
+    "/sources/"
+   ],
+   "hosts": [
+    "familysearch.org",
+    "gazettes.africa",
+    "apps.bundesarchiv.de",
+    "bundesarchiv.de",
+    "gendatabase.com",
+    "documentos.uem.mz",
+    "digitarq.arquivos.pt",
+    "genealogiawarchiwach.pl",
+    "collections.arolsen-archives.org",
+    "collections.yadvashem.org",
+    "content.landesarchiv-berlin.de",
+    "digital.zlb.de",
+    "findmypast.co.uk",
+    "myheritage.com",
+    "nationalarchives.gov.uk",
+    "nationalarchives.gov.za",
+    "national.archsrch.gov.za",
+    "trove.nla.gov.au",
+    "geneteka.genealodzy.pl",
+    "stolpersteine-berlin.de"
+   ],
+   "fragments": [
+    "#plate-"
+   ]
+  },
+  "next_block_max_chars": 240
+ },
+ "scans": {
+  "image_patterns": [
+   {
+    "regex": "/pollnow-1874-(?:marriage|control-[HP])",
+    "key": "szubin-1874-9"
+   },
+   {
+    "regex": "/(?:akt8-december-1874|pollnow-1874-control-W)",
+    "key": "szubin-1874-8"
+   },
+   {
+    "regex": "/szubin-sterbe-index",
+    "key": "szubin-sterbe-index"
+   },
+   {
+    "regex": "/leibholz-luwinski-1924-blatt",
+    "key": "schoeneberg-1924"
+   },
+   {
+    "regex": "/gertrud-leibholz-sterbeeintrag-1943",
+    "key": "wedding-1943"
+   },
+   {
+    "regex": "/rgbl-1938-1044",
+    "key": "rgbl-1938"
+   },
+   {
+    "regex": "/kurt-(?:fuehrerschein|idp)-1934",
+    "key": "licence-1934"
+   },
+   {
+    "regex": "/kurt-reisepass-1939",
+    "key": "passport-1939"
+   },
+   {
+    "regex": "/(?:charlottenburg-standesamt-i|ostviertel-2|lutherstrasse-34)-1913",
+    "key": "adressbuch-1913"
+   },
+   {
+    "regex": "/kurt-963",
+    "key": "birth-index-1912"
+   },
+   {
+    "regex": "/wear-robertson-1940",
+    "key": "rosebank-1940"
+   },
+   {
+    "regex": "/ivone-assento-1922",
+    "key": "assento-1922"
+   },
+   {
+    "regex": "/ivone-obito-2010",
+    "key": "obito-2010"
+   }
+  ],
+  "link_only": [
+   "travel",
+   "holocaust"
+  ]
+ }
+}
