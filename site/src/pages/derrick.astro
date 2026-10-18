@@ -30,6 +30,7 @@ const fam = familyOf(subject.id, { livingSelf: true });
 
   <section class="blk">
     <h2>The join</h2>
+    <div data-no-autolink>
     <PersonTree always self={fam.self} parents={fam.parents} spouses={fam.spouses}
                 children={fam.children} siblings={fam.siblings}
                 labels={{ parents: 'His parents' }}>
@@ -47,6 +48,7 @@ const fam = familyOf(subject.id, { livingSelf: true });
         <a href={base + '/tree/#twolines'}>The tree draws both lines.</a></p>
       </Fragment>
     </PersonTree>
+    </div>
   </section>
 
   <h2>Why a living man is the centre of an archive that will not describe him</h2>

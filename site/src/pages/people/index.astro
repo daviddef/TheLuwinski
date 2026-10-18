@@ -27,7 +27,7 @@ const sets = [
 ].map(([title, kind, note]) => [title, note, register.people.filter((p) => p.kind === kind)]);
 const nLiving = register.people.filter((p) => p.living).length;
 ---
-<Base title="The people"
+<Base title="The people" noAutolink
   subtitle={`Every person this archive names has a page: ${data.people.length} on the English line and ${register.people.length} in the register.`}
   lede="One page for each person the archive names, the living included. A living person's page says their name, their relationships and their town and country, and nothing more.">
 

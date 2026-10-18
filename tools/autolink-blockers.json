@@ -1,0 +1,6 @@
+{
+  "_why": "Longer written names, found in the pages' own text by reading the build-time links back against their neighbours (the context audit of 18 October 2026), that contain the name of a person who has a page but are NOT that person. tools/build-names-index.py leaves a form out of tools/../site/src/data/names-index.json when it sits inside one of these, so «Cyril George Castle» is not linked as «George Castle». Dead people only; a living person's name never goes in a committed file. Add a name here when a link is found cutting a longer name.",
+  "names": [
+    "Cyril George Castle"
+  ]
+}
