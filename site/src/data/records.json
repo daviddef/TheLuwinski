@@ -1,0 +1,978 @@
+{
+ "records": [
+  {
+   "id": "adressbuch-boroughs-1938-1943",
+   "url": "/searched/#adressbuch-boroughs-1938-1943",
+   "label": "The forty-four boroughs laid against the households — and there are forty-seven of them",
+   "kind": "ledger"
+  },
+  {
+   "id": "adressbuch-fulltext-sweep",
+   "url": "/searched/#adressbuch-fulltext-sweep",
+   "label": "Five rows put to the Berlin directories' full-text index at once",
+   "kind": "ledger"
+  },
+  {
+   "id": "adressbuch-namenteil-runs",
+   "url": "/searched/#adressbuch-namenteil-runs",
+   "label": "The householder runs read as runs — and two published facts that did not survive it",
+   "kind": "ledger"
+  },
+  {
+   "id": "agnes-leibholz-kerger",
+   "url": "/searched/#agnes-leibholz-kerger",
+   "label": "Agnes Leibholz née Kerger — not found, and the search is now bounded instead of open",
+   "kind": "ledger"
+  },
+  {
+   "id": "alfred-luwinski-sachsenhausen",
+   "url": "/searched/#alfred-luwinski-sachsenhausen",
+   "label": "Alfred Luwinski born 9 September 1917 — who he actually was",
+   "kind": "ledger"
+  },
+  {
+   "id": "arolsen-leibholz-luwinski",
+   "url": "/searched/#arolsen-leibholz-luwinski",
+   "label": "The Arolsen Archives index",
+   "kind": "ledger"
+  },
+  {
+   "id": "arolsen-tracing-files",
+   "url": "/searched/#arolsen-tracing-files",
+   "label": "The tracing files — what the consent opens and what it does not",
+   "kind": "ledger"
+  },
+  {
+   "id": "atlas-pin-audit",
+   "url": "/searched/#atlas-pin-audit",
+   "label": "Every atlas pin checked against a gazetteer",
+   "kind": "ledger"
+  },
+  {
+   "id": "australia-indexes",
+   "url": "/searched/#australia-indexes",
+   "label": "The other Australian instruments — what each one can and cannot hold",
+   "kind": "ledger"
+  },
+  {
+   "id": "berlin-adressbuch-names",
+   "url": "/searched/#berlin-adressbuch-names",
+   "label": "The Berliner Adressbuch, alphabetical name section",
+   "kind": "ledger"
+  },
+  {
+   "id": "berlin-adressbuch",
+   "url": "/searched/#berlin-adressbuch",
+   "label": "The Berliner Adressbücher",
+   "kind": "ledger"
+  },
+  {
+   "id": "berlin-directories-before-1903",
+   "url": "/searched/#berlin-directories-before-1903",
+   "label": "Sally was never a Berlin householder, and the pre-1903 directories are under another number",
+   "kind": "ledger"
+  },
+  {
+   "id": "berlin-marriage-indexes-are-blind",
+   "url": "/searched/#berlin-marriage-indexes-are-blind",
+   "label": "The Berlin marriage indexes are free and unsearchable, and several rows cost them wrong",
+   "kind": "ledger"
+  },
+  {
+   "id": "berlin-namensverzeichnisse",
+   "url": "/searched/#berlin-namensverzeichnisse",
+   "label": "The Berlin registry offices put their name indexes online, and one of them holds Kurt's birth number",
+   "kind": "ledger"
+  },
+  {
+   "id": "berlin-postwar-luwinski",
+   "url": "/searched/#berlin-postwar-luwinski",
+   "label": "Post-war West Berlin — the Luwinskis, Auguste under her last surname, and who was still called Leibholz",
+   "kind": "ledger"
+  },
+  {
+   "id": "bloom-1861-yarmouth",
+   "url": "/searched/#bloom-1861-yarmouth",
+   "label": "1861 census, 80 Howard Street, Great Yarmouth",
+   "kind": "ledger"
+  },
+  {
+   "id": "bydgoszcz-reply-2026-09-25",
+   "url": "/searched/#bydgoszcz-reply-2026-09-25",
+   "label": "Bydgoszcz answers all three questions — the Jewish registers survive 1820-1847, the death indexes have a gap, and an archivist read the hard line",
+   "kind": "ledger"
+  },
+  {
+   "id": "caroline-james-1920-1957",
+   "url": "/searched/#caroline-james-1920-1957",
+   "label": "Caroline Castle, later James, 1920 to 1957",
+   "kind": "ledger"
+  },
+  {
+   "id": "castle-1911-1921",
+   "url": "/searched/#castle-1911-1921",
+   "label": "1911 and 1921 censuses, Baldock and Letchworth",
+   "kind": "ledger"
+  },
+  {
+   "id": "castle-1911-meeanee-barracks",
+   "url": "/searched/#castle-1911-meeanee-barracks",
+   "label": "Frederick Castle in barracks, 1911",
+   "kind": "ledger"
+  },
+  {
+   "id": "castle-baptisms-weston",
+   "url": "/searched/#castle-baptisms-weston",
+   "label": "The Hertfordshire baptism register, worked to its coverage bound",
+   "kind": "ledger"
+  },
+  {
+   "id": "castle-frederick-soldier",
+   "url": "/searched/#castle-frederick-soldier",
+   "label": "Frederick James Castle, soldier — 1901 to the 1920s",
+   "kind": "ledger"
+  },
+  {
+   "id": "castle-from-match-tree",
+   "url": "/searched/#castle-from-match-tree",
+   "label": "A match holder's Ancestry tree",
+   "kind": "ledger"
+  },
+  {
+   "id": "castle-giddings-1862",
+   "url": "/searched/#castle-giddings-1862",
+   "label": "Martha Giddings, George Castle and a marriage of one year",
+   "kind": "ledger"
+  },
+  {
+   "id": "castle-nine-children",
+   "url": "/searched/#castle-nine-children",
+   "label": "The nine children of George William Castle and Caroline Wallis",
+   "kind": "ledger"
+  },
+  {
+   "id": "charlotte-leibholz-tempelhof-1982",
+   "url": "/searched/#charlotte-leibholz-tempelhof-1982",
+   "label": "Charlotte Leibholz, and she is not in the borough she lived in",
+   "kind": "ledger"
+  },
+  {
+   "id": "chodowieckistrasse-1913",
+   "url": "/searched/#chodowieckistrasse-1913",
+   "label": "A Luwinski and a Leibholz in adjacent houses in 1913",
+   "kind": "ledger"
+  },
+  {
+   "id": "dewitt-confirmed",
+   "url": "/searched/#dewitt-confirmed",
+   "label": "Ivone's first husband — the death date confirmed, and a second marriage",
+   "kind": "ledger"
+  },
+  {
+   "id": "dieffenbachstrasse-58a",
+   "url": "/searched/#dieffenbachstrasse-58a",
+   "label": "Dieffenbachstraße 58a — the thirty-three-year gap bridged, and the OCR was hiding the bridge",
+   "kind": "ledger"
+  },
+  {
+   "id": "east-berlin-1990-1994-deaths",
+   "url": "/searched/#east-berlin-1990-1994-deaths",
+   "label": "East Berlin, the reading that was only ever an argument — two thirds of it is now a reading",
+   "kind": "ledger"
+  },
+  {
+   "id": "ella-leibholz-tiergarten-1974",
+   "url": "/searched/#ella-leibholz-tiergarten-1974",
+   "label": "Ella Leibholz, found in the wrong borough on the same day as Charlotte",
+   "kind": "ledger"
+  },
+  {
+   "id": "entschaedigung-berlin",
+   "url": "/searched/#entschaedigung-berlin",
+   "label": "The compensation files moved four months ago, and nobody has asked for them",
+   "kind": "ledger"
+  },
+  {
+   "id": "ermland-sauerbaum",
+   "url": "/searched/#ermland-sauerbaum",
+   "label": "Sauerbaum, Kreis Rössel — the parish, the films, and what is not online",
+   "kind": "ledger"
+  },
+  {
+   "id": "family-testimony",
+   "url": "/searched/#family-testimony",
+   "label": "Family testimony, attributed and dated — and the first of it closes the largest hole in the archive",
+   "kind": "ledger"
+  },
+  {
+   "id": "familysearch-sa-family",
+   "url": "/searched/#familysearch-sa-family",
+   "label": "This family in FamilySearch's South African collections",
+   "kind": "ledger"
+  },
+  {
+   "id": "familysearch-south-africa",
+   "url": "/searched/#familysearch-south-africa",
+   "label": "What FamilySearch actually holds for South Africa",
+   "kind": "ledger"
+  },
+  {
+   "id": "findmypast-newspapers",
+   "url": "/searched/#findmypast-newspapers",
+   "label": "The newspaper half of the subscription, and why the surname defeats it",
+   "kind": "ledger"
+  },
+  {
+   "id": "free-indexes-2026-10-16",
+   "url": "/searched/#free-indexes-2026-10-16",
+   "label": "Free indexes read on 16 October 2026: FreeBMD, FreeCEN and FreeREG",
+   "kind": "ledger"
+  },
+  {
+   "id": "gazette-wear-sweep",
+   "url": "/searched/#gazette-wear-sweep",
+   "label": "The gazette sweep for the Wears and for Phyllis",
+   "kind": "ledger"
+  },
+  {
+   "id": "gazettes-africa-sweep",
+   "url": "/searched/#gazettes-africa-sweep",
+   "label": "Gazettes.Africa swept across every spelling — and a find this archive already had",
+   "kind": "ledger"
+  },
+  {
+   "id": "gedenkbuch-fifty",
+   "url": "/searched/#gedenkbuch-fifty",
+   "label": "Fifty Leibholz in the Gedenkbuch, and only three of them were born at Schubin",
+   "kind": "ledger"
+  },
+  {
+   "id": "gedenkbuch-leibholz-findings",
+   "url": "/searched/#gedenkbuch-leibholz-findings",
+   "label": "The fifty opened — deportation, death, and two more under LAIBHOLZ",
+   "kind": "ledger"
+  },
+  {
+   "id": "geneteka-pomorskie-2026-10-11",
+   "url": "/searched/#geneteka-pomorskie-2026-10-11",
+   "label": "Geneteka holds no Jewish records in pomorskie, and that is the result — not the zeroes",
+   "kind": "ledger"
+  },
+  {
+   "id": "gerda-leibholz-marriage-chase",
+   "url": "/searched/#gerda-leibholz-marriage-chase",
+   "label": "Chasing Gerda's marriage for her father, and the route is closed",
+   "kind": "ledger"
+  },
+  {
+   "id": "gertrud-leibholz-sterbeeintrag-1943",
+   "url": "/searched/#gertrud-leibholz-sterbeeintrag-1943",
+   "label": "Gertrud Leibholz, Standesamt Wedding 1943 Nr. 1291",
+   "kind": "ledger"
+  },
+  {
+   "id": "giddins-norton-end",
+   "url": "/searched/#giddins-norton-end",
+   "label": "1861 and 1871 censuses, Norton End, Baldock",
+   "kind": "ledger"
+  },
+  {
+   "id": "hawkins-1871-aldenham",
+   "url": "/searched/#hawkins-1871-aldenham",
+   "label": "1871 census, The Red Lion Cottages, Aldenham",
+   "kind": "ledger"
+  },
+  {
+   "id": "hawkins-aldenham-baptisms",
+   "url": "/searched/#hawkins-aldenham-baptisms",
+   "label": "Aldenham baptisms, the Hawkins register read entire",
+   "kind": "ledger"
+  },
+  {
+   "id": "heinrich-leibholz-kreuzberg-1948",
+   "url": "/searched/#heinrich-leibholz-kreuzberg-1948",
+   "label": "Heinrich Leibholz died in Kreuzberg, not in the borough he lived in",
+   "kind": "ledger"
+  },
+  {
+   "id": "hilde-leibholz-wilmersdorf-1983",
+   "url": "/searched/#hilde-leibholz-wilmersdorf-1983",
+   "label": "Hilde Leibholz, the only one of the three who died in her own borough",
+   "kind": "ledger"
+  },
+  {
+   "id": "hull-1901-st-albans",
+   "url": "/searched/#hull-1901-st-albans",
+   "label": "1901 census, 22 Mount Pleasant, St Albans",
+   "kind": "ledger"
+  },
+  {
+   "id": "ivone-assento-nascimento-1922",
+   "url": "/searched/#ivone-assento-nascimento-1922",
+   "label": "Ivone's own birth registration — and the marriage this archive said never happened",
+   "kind": "ledger"
+  },
+  {
+   "id": "ivone-death-certificate-2010",
+   "url": "/searched/#ivone-death-certificate-2010",
+   "label": "Ivone's death at Vila Nova de Gaia — a date, a place and a cause this archive did not have",
+   "kind": "ledger"
+  },
+  {
+   "id": "ivone-portuguese-origins",
+   "url": "/searched/#ivone-portuguese-origins",
+   "label": "One concelho in the Beira Alta — and the DNA thread filed as not worth believing",
+   "kind": "ledger"
+  },
+  {
+   "id": "jacob-leibholz-birth-1884",
+   "url": "/searched/#jacob-leibholz-birth-1884",
+   "label": "Jacob Leibholz's birth entry, read at the image — Schubin 1884 Nr. 63",
+   "kind": "ledger"
+  },
+  {
+   "id": "jacob-leibholz-deportation",
+   "url": "/searched/#jacob-leibholz-deportation",
+   "label": "Jacob Leibholz, 26 February 1943 — the line on the list",
+   "kind": "ledger"
+  },
+  {
+   "id": "joachim-peter-leibholz-birth-1903",
+   "url": "/searched/#joachim-peter-leibholz-birth-1903",
+   "label": "Joachim Peter's birth is found, and the marriage row 242 wanted is not the one that is there",
+   "kind": "ledger"
+  },
+  {
+   "id": "klara-leipsholz-kreuzberg-1960",
+   "url": "/searched/#klara-leipsholz-kreuzberg-1960",
+   "label": "Klara is found, and the surname has a ninth spelling",
+   "kind": "ledger"
+  },
+  {
+   "id": "kreuzberg-1938-1979-deaths",
+   "url": "/searched/#kreuzberg-1938-1979-deaths",
+   "label": "Kreuzberg is closed, 1938 to 1994, and the text layer begins in a year nobody had measured",
+   "kind": "ledger"
+  },
+  {
+   "id": "kreuzberg-ocr-control",
+   "url": "/searched/#kreuzberg-ocr-control",
+   "label": "An OCR label is not a searchable index — measured",
+   "kind": "ledger"
+  },
+  {
+   "id": "kreuzberg-reinickendorf-deaths",
+   "url": "/searched/#kreuzberg-reinickendorf-deaths",
+   "label": "Eleven more death volumes, no hits, and two ways the method almost lied",
+   "kind": "ledger"
+  },
+  {
+   "id": "kurt-birth-entry",
+   "url": "/searched/#kurt-birth-entry",
+   "label": "Kurt's birth entry number, found — Standesamt Berlin VIII, 1912, Nr. 963",
+   "kind": "ledger"
+  },
+  {
+   "id": "kurt-papers-1934-1939",
+   "url": "/searched/#kurt-papers-1934-1939",
+   "label": "Kurt's own papers, 1934 and 1939",
+   "kind": "ledger"
+  },
+  {
+   "id": "labsa-berlin-catalogue",
+   "url": "/searched/#labsa-berlin-catalogue",
+   "label": "Every free Berlin name index, catalogued — 5,383 volumes, and a trap that hid a tenth of it",
+   "kind": "ledger"
+  },
+  {
+   "id": "labsa-charlottenburg-inventory",
+   "url": "/searched/#labsa-charlottenburg-inventory",
+   "label": "The Charlottenburg name indexes inventoried — 143 volumes, and the finder has a defect",
+   "kind": "ledger"
+  },
+  {
+   "id": "landesarchiv-reply-2026-09-29",
+   "url": "/searched/#landesarchiv-reply-2026-09-29",
+   "label": "The Landesarchiv Berlin reply of 29 September 2026",
+   "kind": "ledger"
+  },
+  {
+   "id": "larkin-burch-appleyard-findmypast-2026-10-16",
+   "url": "/searched/#larkin-burch-appleyard-findmypast-2026-10-16",
+   "label": "Findmypast, 16 October 2026: the Larkin couples, and the surname-only passes for Burch and Appleyard",
+   "kind": "ledger"
+  },
+  {
+   "id": "leibholz-gedenkbuch",
+   "url": "/searched/#leibholz-gedenkbuch",
+   "label": "The Bundesarchiv Gedenkbuch",
+   "kind": "ledger"
+  },
+  {
+   "id": "leibholz-luwinski-1924-entry",
+   "url": "/searched/#leibholz-luwinski-1924-entry",
+   "label": "The marriage entry, Schoeneberg II 1924 Nr. 6",
+   "kind": "ledger"
+  },
+  {
+   "id": "leibholz-luwinski-marriage",
+   "url": "/searched/#leibholz-luwinski-marriage",
+   "label": "The marriage entry, found — Schöneberg II, 1924, Nr. 6, and the index records the Mischehe",
+   "kind": "ledger"
+  },
+  {
+   "id": "leibholz-registration-card",
+   "url": "/searched/#leibholz-registration-card",
+   "label": "DocID 11214358 read — the Berlin registration card, and the guess it withdraws",
+   "kind": "ledger"
+  },
+  {
+   "id": "leibholz-schmul-marriage-1874",
+   "url": "/searched/#leibholz-schmul-marriage-1874",
+   "label": "Hammerstein, from a document at last — the 1874 marriage, and a generation above",
+   "kind": "ledger"
+  },
+  {
+   "id": "leibholz-shanghai",
+   "url": "/searched/#leibholz-shanghai",
+   "label": "A Berlin Leibholz family got out to Shanghai",
+   "kind": "ledger"
+  },
+  {
+   "id": "leipholz-postwar-berlin",
+   "url": "/searched/#leipholz-postwar-berlin",
+   "label": "The eighth spelling in post-war Berlin — seven volumes the sweep had never seen",
+   "kind": "ledger"
+  },
+  {
+   "id": "leipholz-sweep",
+   "url": "/searched/#leipholz-sweep",
+   "label": "The eighth spelling, and the directory printed it itself — LEIPHOLZ",
+   "kind": "ledger"
+  },
+  {
+   "id": "leipholz-telephone-slot-audit",
+   "url": "/searched/#leipholz-telephone-slot-audit",
+   "label": "The telephone books read at the alphabetical slot — twelve volumes, and the name search was wrong in eight",
+   "kind": "ledger"
+  },
+  {
+   "id": "litigation",
+   "url": "/searched/#litigation",
+   "label": "Transvaal court files",
+   "kind": "ledger"
+  },
+  {
+   "id": "lutherstrasse-34-standesamt",
+   "url": "/searched/#lutherstrasse-34-standesamt",
+   "label": "Lutherstraße 34 is Standesamt Charlottenburg I, and the chain is four pages",
+   "kind": "ledger"
+  },
+  {
+   "id": "luwinski-germany-2001",
+   "url": "/searched/#luwinski-germany-2001",
+   "label": "What the surname looked like in Germany in 2001 — and Derrick was looking for it himself",
+   "kind": "ledger"
+  },
+  {
+   "id": "mappingthelives-leibholz",
+   "url": "/searched/#mappingthelives-leibholz",
+   "label": "The Berlin directory against the 1939 census, household by household",
+   "kind": "ledger"
+  },
+  {
+   "id": "melbourne-leibholz-death",
+   "url": "/searched/#melbourne-leibholz-death",
+   "label": "Joachim Peter Leibholz died at Toorak in 1971, and the index names his parents",
+   "kind": "ledger"
+  },
+  {
+   "id": "naairs-figueiredo",
+   "url": "/searched/#naairs-figueiredo",
+   "label": "The NAAIRS index under FIGUEIREDO",
+   "kind": "ledger"
+  },
+  {
+   "id": "naairs-is-back-2026-10-11",
+   "url": "/searched/#naairs-is-back-2026-10-11",
+   "label": "NAAIRS is back under a new name at a new address, and the negative it blocked now holds",
+   "kind": "ledger"
+  },
+  {
+   "id": "naairs-sweep-2026-10-11b",
+   "url": "/searched/#naairs-sweep-2026-10-11b",
+   "label": "The six blocked rows, worked the day the block lifted — and MOTA is an African surname",
+   "kind": "ledger"
+  },
+  {
+   "id": "naairs-two-databases",
+   "url": "/searched/#naairs-two-databases",
+   "label": "Two NAAIRS databases, one of them incomplete — and six nils here were taken without knowing which answered",
+   "kind": "ledger"
+  },
+  {
+   "id": "negatives-classified-2026-10-10",
+   "url": "/searched/#negatives-classified-2026-10-10",
+   "label": "The published negatives, classified by the width of their own search",
+   "kind": "ledger"
+  },
+  {
+   "id": "negatives-classified",
+   "url": "/searched/#negatives-classified",
+   "label": "Every published negative classified, and three re-run",
+   "kind": "ledger"
+  },
+  {
+   "id": "negatives-control-audit",
+   "url": "/searched/#negatives-control-audit",
+   "label": "Does every negative show its instrument was answering?",
+   "kind": "ledger"
+  },
+  {
+   "id": "oskar-leibholz-theresienstadt",
+   "url": "/searched/#oskar-leibholz-theresienstadt",
+   "label": "Oskar Leibholz, from Schubin to a transport number leaving Theresienstadt",
+   "kind": "ledger"
+  },
+  {
+   "id": "other-offices-deaths-2026-10-07",
+   "url": "/searched/#other-offices-deaths-2026-10-07",
+   "label": "Fifty-one more death volumes, four people of the name, and an instrument that proves its own eyesight",
+   "kind": "ledger"
+  },
+  {
+   "id": "pollnow-1874-reread-2026-09-27",
+   "url": "/searched/#pollnow-1874-reread-2026-09-27",
+   "label": "The 1874 entry re-read at the image — the given name is neither Wilhelmine nor Philipine, and the marriage is not in November",
+   "kind": "ledger"
+  },
+  {
+   "id": "probate-calendar-wear",
+   "url": "/searched/#probate-calendar-wear",
+   "label": "The probate calendar, finally read — sixteen Wear grants and none is Leonard",
+   "kind": "ledger"
+  },
+  {
+   "id": "register-date-audit",
+   "url": "/searched/#register-date-audit",
+   "label": "Every date in the register audited — a bound is not a date",
+   "kind": "ledger"
+  },
+  {
+   "id": "reinickendorf-1982-1994-deaths",
+   "url": "/searched/#reinickendorf-1982-1994-deaths",
+   "label": "Reinickendorf 1982-1994 — thirteen volumes, and the only Leipholz in twenty-one years",
+   "kind": "ledger"
+  },
+  {
+   "id": "rosebank-1940-marriage-register",
+   "url": "/searched/#rosebank-1940-marriage-register",
+   "label": "Rosebank answered — with a document this archive already had",
+   "kind": "ledger"
+  },
+  {
+   "id": "rosenberg-of-schlochau",
+   "url": "/searched/#rosenberg-of-schlochau",
+   "label": "Isidor and Cecillie have a second child, and Isidor has a Hebrew name",
+   "kind": "ledger"
+  },
+  {
+   "id": "schmul-and-thimm",
+   "url": "/searched/#schmul-and-thimm",
+   "label": "The two great-grandmothers' surnames — what can be reached and what cannot",
+   "kind": "ledger"
+  },
+  {
+   "id": "schmul-half-of-the-1874-entry",
+   "url": "/searched/#schmul-half-of-the-1874-entry",
+   "label": "The bride's half — “Tochter der”, and a correction to the 119",
+   "kind": "ledger"
+  },
+  {
+   "id": "schmul-szubin-index-2026-09-27",
+   "url": "/searched/#schmul-szubin-index-2026-09-27",
+   "label": "The Schmul side searched — and the 1874 index names six people, not four",
+   "kind": "ledger"
+  },
+  {
+   "id": "schoeneberg-1938-1968-instrument",
+   "url": "/searched/#schoeneberg-1938-1968-instrument",
+   "label": "The other thirty-one years cannot be read the way the last twenty-five were",
+   "kind": "ledger"
+  },
+  {
+   "id": "schoeneberg-1939-guenther-leibholz",
+   "url": "/searched/#schoeneberg-1939-guenther-leibholz",
+   "label": "Günther Leibholz, Schöneberg 1939 Nr. 780 — the first hit in eleven years of reading",
+   "kind": "ledger"
+  },
+  {
+   "id": "schoeneberg-death-indexes",
+   "url": "/searched/#schoeneberg-death-indexes",
+   "label": "The Schöneberg death indexes, and the eighth spelling in one of them",
+   "kind": "ledger"
+  },
+  {
+   "id": "schoeneberg-marriage-indexes",
+   "url": "/searched/#schoeneberg-marriage-indexes",
+   "label": "Every Schöneberg marriage index, and what reading them would actually cost",
+   "kind": "ledger"
+  },
+  {
+   "id": "schoeneberg-progress",
+   "url": "/searched/#schoeneberg-progress",
+   "label": "The resume pointer for the Schöneberg death-index read",
+   "kind": "ledger"
+  },
+  {
+   "id": "shenton-1939-pix-road",
+   "url": "/searched/#shenton-1939-pix-road",
+   "label": "1939 Register, 63 Pix Road, Letchworth",
+   "kind": "ledger"
+  },
+  {
+   "id": "shenton-line-closed",
+   "url": "/searched/#shenton-line-closed",
+   "label": "The 63 Pix Road household, traced end to end",
+   "kind": "ledger"
+  },
+  {
+   "id": "spandau-1980-1982-deaths",
+   "url": "/searched/#spandau-1980-1982-deaths",
+   "label": "The gap in Agnes's own window, found by counting the sweeps instead of trusting them",
+   "kind": "ledger"
+  },
+  {
+   "id": "spandau-1982-leibholz-schoenfeld",
+   "url": "/searched/#spandau-1982-leibholz-schoenfeld",
+   "label": "A Jewish woman born Leibholz, married Schönfeld, who survived and died in 1982",
+   "kind": "ledger"
+  },
+  {
+   "id": "surname-lines",
+   "url": "/searched/#surname-lines",
+   "label": "The lines of the name — every family of Leibholz and Luwinski, kept apart",
+   "kind": "ledger"
+  },
+  {
+   "id": "szubin-civil-registers",
+   "url": "/searched/#szubin-civil-registers",
+   "label": "The Szubin civil registers of 1874 — found, filmed and online",
+   "kind": "ledger"
+  },
+  {
+   "id": "szubin-death-registers-searched",
+   "url": "/searched/#szubin-death-registers-searched",
+   "label": "Sally's death — the Szubin registers have no index, and Berlin may be the right town",
+   "kind": "ledger"
+  },
+  {
+   "id": "szubin-pre1874-jewish-records",
+   "url": "/searched/#szubin-pre1874-jewish-records",
+   "label": "No Jewish records for Szubin before 1874 — and civil registration had not started",
+   "kind": "ledger"
+  },
+  {
+   "id": "szubin-registers-online",
+   "url": "/searched/#szubin-registers-online",
+   "label": "Szubin said yes — the registers were online before the letter was written",
+   "kind": "ledger"
+  },
+  {
+   "id": "szubin-sterbe-index-1894-1908",
+   "url": "/searched/#szubin-sterbe-index-1894-1908",
+   "label": "The Szubin death index this archive said did not exist — sent by Bydgoszcz, and the L slot read out",
+   "kind": "ledger"
+  },
+  {
+   "id": "tna-discovery",
+   "url": "/searched/#tna-discovery",
+   "label": "The National Archives Discovery catalogue",
+   "kind": "ledger"
+  },
+  {
+   "id": "tree-audit",
+   "url": "/searched/#tree-audit",
+   "label": "Every citation in the family tree, checked against what it cites",
+   "kind": "ledger"
+  },
+  {
+   "id": "treuchtlingerstrasse-2-4",
+   "url": "/searched/#treuchtlingerstrasse-2-4",
+   "label": "The house Jacob Leibholz was deported from, and its owner disappears out of it in print",
+   "kind": "ledger"
+  },
+  {
+   "id": "trove-2026-09-27",
+   "url": "/searched/#trove-2026-09-27",
+   "label": "Trove opened — the Canberra Times runs to 1995, and the Melbourne Leibholz is naturalised in a 1944 gazette",
+   "kind": "ledger"
+  },
+  {
+   "id": "trove-and-ryerson-22-september",
+   "url": "/searched/#trove-and-ryerson-22-september",
+   "label": "Trove answered and corrected its own row; Ryerson's coverage settled without a search",
+   "kind": "ledger"
+  },
+  {
+   "id": "twenty-alone",
+   "url": "/searched/#twenty-alone",
+   "label": "Twenty things this archive can do without David",
+   "kind": "ledger"
+  },
+  {
+   "id": "twenty-next",
+   "url": "/searched/#twenty-next",
+   "label": "Twenty ways to open the Luwinskis abroad",
+   "kind": "ledger"
+  },
+  {
+   "id": "wallis-field-weston-2026-10-18",
+   "url": "/searched/#wallis-field-weston-2026-10-18",
+   "label": "Joseph Wallis and Sarah Field of Weston: their marriage, their baptisms and the generation above",
+   "kind": "ledger"
+  },
+  {
+   "id": "wallis-weston-2026-10-18",
+   "url": "/searched/#wallis-weston-2026-10-18",
+   "label": "Caroline Wallis of Weston: the baptism of April 1862 and two censuses",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-1851-bermondsey",
+   "url": "/searched/#wear-1851-bermondsey",
+   "label": "1851 census, Salisbury Street, Bermondsey",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-1871-bermondsey",
+   "url": "/searched/#wear-1871-bermondsey",
+   "label": "1871 census, Jamaica Road, Bermondsey",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-1891-watford",
+   "url": "/searched/#wear-1891-watford",
+   "label": "1891 census, Watford",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-1911-letchworth",
+   "url": "/searched/#wear-1911-letchworth",
+   "label": "1911 census, Letchworth",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-1939-bt27-images",
+   "url": "/searched/#wear-1939-bt27-images",
+   "label": "The 1939 passenger-list pages, read as images",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-1939-register",
+   "url": "/searched/#wear-1939-register",
+   "label": "1939 Register, 72 Pix Road, Letchworth",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-bloom-1842",
+   "url": "/searched/#wear-bloom-1842",
+   "label": "The William Weare x Sarah Bloom marriage, Stepney 1842",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-brothers-1881",
+   "url": "/searched/#wear-brothers-1881",
+   "label": "1881 census, two Bermondsey households",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-castle-wedding-1914-newspapers",
+   "url": "/searched/#wear-castle-wedding-1914-newspapers",
+   "label": "The newspaper archive opened at last — the 1914 wedding dated to the day, her street, and his regiment on furlough",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-emigration-bt27",
+   "url": "/searched/#wear-emigration-bt27",
+   "label": "BT 27 outbound passenger lists",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-newington-baptisms-1833",
+   "url": "/searched/#wear-newington-baptisms-1833",
+   "label": "The top of the Wear line moves up a generation — John Wear and Elizabeth of Newington, and four children baptised on one day",
+   "kind": "ledger"
+  },
+  {
+   "id": "wear-pow-1943-45",
+   "url": "/searched/#wear-pow-1943-45",
+   "label": "War Office prisoner-of-war lists",
+   "kind": "ledger"
+  },
+  {
+   "id": "weinstrasse-pages-of-testimony",
+   "url": "/searched/#weinstrasse-pages-of-testimony",
+   "label": "The Weinstraße household was at Yad Vashem all along, under the eighth spelling",
+   "kind": "ledger"
+  },
+  {
+   "id": "west-berlin-deaths-2026-10-08",
+   "url": "/searched/#west-berlin-deaths-2026-10-08",
+   "label": "The rest of West Berlin — 193 volumes, and the surname is in six of them",
+   "kind": "ledger"
+  },
+  {
+   "id": "westpark-films",
+   "url": "/searched/#westpark-films",
+   "label": "The Johannesburg cemetery films, mapped",
+   "kind": "ledger"
+  },
+  {
+   "id": "worklist-triage-2026-10-10",
+   "url": "/searched/#worklist-triage-2026-10-10",
+   "label": "What the work list is actually waiting on",
+   "kind": "ledger"
+  },
+  {
+   "id": "yadvashem-leibholz",
+   "url": "/searched/#yadvashem-leibholz",
+   "label": "Yad Vashem, Central Database of Shoah Victims' Names",
+   "kind": "ledger"
+  },
+  {
+   "id": "ydna-s11477-2026-10-10",
+   "url": "/searched/#ydna-s11477-2026-10-10",
+   "label": "R-S11477, the standing check, and the earlier passes were seeing a third of it",
+   "kind": "ledger"
+  },
+  {
+   "id": "ydna-s11477-enrichment",
+   "url": "/searched/#ydna-s11477-enrichment",
+   "label": "The two geographic projects carry no signal, and the five surname ones carry all of it",
+   "kind": "ledger"
+  },
+  {
+   "id": "plate-szubin-1874-9",
+   "url": "/searched/#leibholz-schmul-marriage-1874",
+   "label": "Standesamt Schubin, marriage entry akt 9 of 1874, the line naming the groom's parents",
+   "kind": "plate",
+   "plate": "pollnow-1874-marriage.jpg",
+   "w": 2500,
+   "h": 330,
+   "show": true
+  },
+  {
+   "id": "plate-szubin-1874-8",
+   "url": "/searched/#pollnow-1874-reread-2026-09-27",
+   "label": "Standesamt Schubin, akt 8 of 1874, the date line used as a control",
+   "kind": "plate",
+   "plate": "akt8-december-1874.jpg",
+   "w": 1280,
+   "h": 400,
+   "show": true
+  },
+  {
+   "id": "plate-szubin-sterbe-index",
+   "url": "/searched/#szubin-sterbe-index-1894-1908",
+   "label": "Szubin death-register index 1894 to 1908, sygnatura 246, the cover",
+   "kind": "plate",
+   "plate": "szubin-sterbe-index-cover.jpg",
+   "w": 1000,
+   "h": 1544,
+   "show": true
+  },
+  {
+   "id": "plate-schoeneberg-1924",
+   "url": "/searched/#leibholz-luwinski-1924-entry",
+   "label": "Standesamt Schöneberg II, marriage register 1924 Nr. 6, first sheet",
+   "kind": "plate",
+   "plate": "leibholz-luwinski-1924-blatt1.jpg",
+   "w": 1388,
+   "h": 2000,
+   "show": true
+  },
+  {
+   "id": "plate-wedding-1943",
+   "url": "/searched/#gertrud-leibholz-sterbeeintrag-1943",
+   "label": "Standesamt Berlin-Wedding, death register 1943 Nr. 1291",
+   "kind": "plate",
+   "plate": "gertrud-leibholz-sterbeeintrag-1943.jpg",
+   "w": 1495,
+   "h": 2000,
+   "show": true
+  },
+  {
+   "id": "plate-licence-1934",
+   "url": "/searched/#kurt-papers-1934-1939",
+   "label": "Kurt's Berlin driving licence of 1934, the cover",
+   "kind": "plate",
+   "plate": "kurt-fuehrerschein-1934-cover.jpg",
+   "w": 1200,
+   "h": 1600,
+   "show": true
+  },
+  {
+   "id": "plate-passport-1939",
+   "url": "/searched/#kurt-papers-1934-1939",
+   "label": "Kurt's German passport of 1939, the description page",
+   "kind": "plate",
+   "plate": "kurt-reisepass-1939-beschreibung.jpg",
+   "w": 1200,
+   "h": 1600,
+   "show": true
+  },
+  {
+   "id": "plate-adressbuch-1913",
+   "url": "/searched/#lutherstrasse-34-standesamt",
+   "label": "Berliner Adressbuch 1913, Charlottenburg part, printed page 505: Standesamt I",
+   "kind": "plate",
+   "plate": "charlottenburg-standesamt-i-1913.png",
+   "w": 1572,
+   "h": 354,
+   "show": true
+  },
+  {
+   "id": "plate-birth-index-1912",
+   "url": "/searched/#kurt-birth-entry",
+   "label": "Landesarchiv Berlin P Rep. 523 Nr. 1395: the 1912 birth index, Luwinski Kurt Myszislaus, 963",
+   "kind": "plate",
+   "plate": "kurt-963.png",
+   "w": 1700,
+   "h": 261,
+   "show": true
+  },
+  {
+   "id": "plate-rosebank-1940",
+   "url": "/searched/#rosebank-1940-marriage-register",
+   "label": "Rosebank parish marriage register, entry 13 of 1940",
+   "kind": "plate",
+   "plate": "wear-robertson-1940.png",
+   "w": 1755,
+   "h": 1240,
+   "show": true
+  },
+  {
+   "id": "plate-assento-1922",
+   "url": "/searched/#ivone-assento-nascimento-1922",
+   "label": "Assento de nascimento n.º 447-D, Lourenço Marques 1922",
+   "kind": "plate",
+   "plate": "ivone-assento-1922.jpg",
+   "w": 1126,
+   "h": 1456,
+   "show": true
+  },
+  {
+   "id": "fs-dewitt-geyer-1950",
+   "url": "https://www.familysearch.org/ark:/61903/1:1:6ZHR-NVYN",
+   "label": "FamilySearch: South Africa, Civil Marriage Records 1801-1974, Dewitt and Geyer, 25 February 1950 (link only)",
+   "kind": "familysearch"
+  },
+  {
+   "id": "fs-dewitt-death-1963",
+   "url": "https://www.familysearch.org/ark:/61903/1:1:DD9Y-PLT2",
+   "label": "FamilySearch: South Africa, Civil Death Registration 1953-1967, De Witt, 2 April 1963 (link only)",
+   "kind": "familysearch"
+  }
+ ]
+}

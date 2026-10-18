@@ -1,0 +1,22 @@
+---
+/* <Rec id="leibholz-schmul-marriage-1874">akt nr 9</Rec>
+ *
+ * THE ARCHIVE'S WRAPPER ROUND THE KIT'S Rec (kit/components/Rec.astro, the linking standard's record link). It imports this
+ * archive's records table once, so a page writes only the id and the words it had already written:
+ *
+ *   <Rec id="gertrud-leibholz-sterbeeintrag-1943">death entry</Rec>      a link to the record, the author's own words
+ *   <Rec id="plate-wedding-1943" thumb />                                   the held scan beside the passage (between paragraphs)
+ *
+ * WHERE A LINK GOES. site/src/data/records.json (written by tools/build-records.py from the 144 ledger files and
+ * data/record-plates.json): the ledger entry for the record on /searched/, a FamilySearch ark where the ledger prints one
+ * (link only), and, for a `thumb`, the scan the archive holds and its rules let it show. A scan is a file in site/public, so
+ * plateBase is "/". An id the table does not hold STOPS THE BUILD: a link that is a guess is worse than no link. A record the
+ * living gate holds is not in the table at all, so no passage may be given a link to it.
+ */
+import KitRec from "@daviddef/archive-kit/components/Rec.astro";
+import records from "../data/records.json";
+const { id, thumb = false } = Astro.props;
+const words = Astro.slots.has("default");   // the kit draws the record's label when the author wrote no words
+---
+{words ? <KitRec records={records} id={id} thumb={thumb} plateBase="/"><slot /></KitRec>
+       : <KitRec records={records} id={id} thumb={thumb} plateBase="/" />}

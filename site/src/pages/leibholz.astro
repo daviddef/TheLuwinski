@@ -1,4 +1,5 @@
 ---
+import Rec from '../components/Rec.astro';
 import Base from '../layouts/Base.astro';
 import gb from '../data/gedenkbuch.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -9,7 +10,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <h2>The entries, as the Bundesarchiv has them</h2>
   <p class="small muted">
-    Bundesarchiv, <em>Gedenkbuch — Opfer der Verfolgung der Juden unter der nationalsozialistischen
+    Bundesarchiv, <em><Rec id="leibholz-gedenkbuch">Gedenkbuch</Rec> — Opfer der Verfolgung der Juden unter der nationalsozialistischen
     Gewaltherrschaft in Deutschland 1933–1945</em>, online edition, read 14 September 2026.
     Each entry is cited by its stable identifier.
   </p>
@@ -34,7 +35,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h3>Why Jacob lasted until February 1943, in one line of a form
       <span class="tag doc">Documented &middot; 20 September 2026</span></h3>
     <p>
-      The 1939 census supplementary card recorded the ancestry of all four of a person&rsquo;s
+      The <Rec id="mappingthelives-leibholz">1939 census supplementary card</Rec> recorded the ancestry of all four of a person&rsquo;s
       grandparents. <strong>Auguste Leibholz n&eacute;e Luwinski&rsquo;s card reads
       &ldquo;Race&rdquo;: NNNN</strong> &mdash; four times <em>nicht-j&uuml;disch</em>. The German state
       classified Kurt&rsquo;s mother as not Jewish, on its own form, in 1939. Her basis of persecution is
@@ -71,7 +72,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </p>
     <p class="small">
       <strong>And the place is now corroborated, 20 September 2026.</strong> The Reichssippenamt
-      census card of 17 May 1939 &mdash; Bundesarchiv R 1509, through Mapping the Lives &mdash; carries
+      census card of 17 May 1939 &mdash; Bundesarchiv R 1509, through <Rec id="mappingthelives-leibholz">Mapping the Lives</Rec> &mdash; carries
       Jacob in the family block of his wife&rsquo;s record as
       <em>&ldquo;&dagger; before 08.05.1945 <strong>in Auschwitz</strong>&rdquo;</em>. The Memorial Book
       leaves the place blank as well as the date. A second source names it, and it is the place the
@@ -88,7 +89,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     argument.
   </p>
   <p>
-    A Memorial Book search on the surname returns fifty Leibholz entries, and they cluster in two
+    A Memorial Book search on the surname returns <Rec id="gedenkbuch-fifty">fifty Leibholz entries</Rec>, and they cluster in two
     places: Schubin in Posen, and Hammerstein, Karwen and B&auml;rwalde in West Prussia and Pomerania.
     <strong>Those two clusters are not two families.</strong> Sally Leibholz &mdash; Jacob&rsquo;s own
     father &mdash; was born at Hammerstein, and the Schubin marriage register says so in as many words:
@@ -109,7 +110,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h3>The marriage entry, read 22 September 2026 <span class="tag doc">Documented</span></h3>
     <p>
       Everything below this panel was argued from a family record and the Gedenkbuch.
-      <strong>It is now on a document.</strong> Standesamt Schubin, marriage akt nr 9 of
+      <strong>It is now on a document.</strong> <Rec id="leibholz-schmul-marriage-1874">Standesamt Schubin, marriage akt nr 9 of</Rec>
       <strong>24 December 1874</strong>, the ninth and last marriage of that year, gives the groom as
       <em>der Kaufmann Sally Leibholz</em>, j&uuml;discher Religion, <strong>sieben u. zwanzig Jahre
       alt</strong>, <strong>geboren zu Hammerstein, wohnhaft zu Hammerstein</strong>. Twenty-seven on
@@ -120,10 +121,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       would have done.</strong> The bride is <em>Friederica Schmul</em>, born and living at Schubin.
       So the move east is not an inference: it happens at this wedding.
     </p>
+      <Rec id="plate-szubin-1874-9" thumb />
     <p>
       And the entry reaches a generation higher than anything else this archive holds. Sally is
-      <em>Sohn des Kaufmann <strong>Jacob Leibholz</strong> und der <strong>H&mdash;&mdash; geb.
-      Pollnow</strong></em> &mdash; Kurt&rsquo;s great-great-grandparents, neither of whom existed here
+      <em>Sohn des Kaufmann <strong>Jacob Leibholz</strong> und der <strong>H&mdash;&mdash; <Rec id="leibholz-schmul-marriage-1874">geb.
+      Pollnow</Rec></strong></em> &mdash; Kurt&rsquo;s great-great-grandparents, neither of whom existed here
       in any form before that evening. <strong>Her given name is an initial because that is all the
       page yields</strong>; the panel below says how it was tested and what it cost to find out. The grandson born at Schubin ten years later was named
       <strong>Jacob</strong> for him. The maiden name was the least certain thing on the page &mdash; Kurrent, where P, T and Z
@@ -134,8 +136,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       guess.
     </p>
     <p class="small">
-      Archiwum Pa&#324;stwowe w Bydgoszczy, USC Szubin Miasto, sygn. 141, akt ma&#322;&#380;e&#324;stwa
-      nr 9/1874, scan 10, on genealogiawarchiwach.pl. Found because Bydgoszcz answered a letter by
+      Archiwum Pa&#324;stwowe w Bydgoszczy, USC Szubin Miasto, sygn. 141, <Rec id="leibholz-schmul-marriage-1874">akt ma&#322;&#380;e&#324;stwa
+      nr 9/1874</Rec>, scan 10, on genealogiawarchiwach.pl. Found because Bydgoszcz answered a letter by
       pointing at a portal where the registers had been published since 2015.
     </p>
   </div>
@@ -148,7 +150,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <strong>Juda Schmul</strong>, <strong>Jette Machot</strong>.</em>
     </p>
     <p>
-      <strong>JUDA SCHMUL and JETTE MACHOT are Friederica&rsquo;s father and mother</strong>, and
+      <strong><Rec id="schmul-half-of-the-1874-entry">JUDA SCHMUL and JETTE MACHOT</Rec> are Friederica&rsquo;s father and mother</strong>, and
       neither name has ever been held here. A Prussian marriage entry names the parents of both
       parties &mdash; something this archive has said about other people&rsquo;s marriage records
       repeatedly, and did not apply to the one in its own hands. She was about twenty in November
@@ -173,7 +175,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </p>
     <p>
       <strong>The Jewish registers of Szubin survive &mdash; and only for 1820 to 1847.</strong>
-      <em>&ldquo;Archiwum Pa&#324;stwowe w Bydgoszczy &hellip; przechowuje Akta metrykalne
+      <em>&ldquo;<Rec id="bydgoszcz-reply-2026-09-25">Archiwum Pa&#324;stwowe w Bydgoszczy</Rec> &hellip; przechowuje Akta metrykalne
       &#380;ydowskiej gminy wyznaniowej w Szubinie jedynie z lat 1820-1847.&rdquo;</em> That span is
       exactly wrong for the woman it was asked about: <strong>Friederica Schmul was born about
       1852 and is not in them</strong>. It is exactly right for somebody else.
@@ -182,22 +184,23 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       a volunteer&rsquo;s transcription. That is the document that decides whether he is her brother.
     </p>
     <p>
-      <strong>The death indexes survive for 1874&ndash;1878 and 1894&ndash;1924, and for nothing
+      <strong>The <Rec id="bydgoszcz-reply-2026-09-25">death indexes survive</Rec> for 1874&ndash;1878 and 1894&ndash;1924, and for nothing
       else.</strong> The word is <em>wy&#322;&#261;cznie</em> &mdash; exclusively &mdash; so
       <strong>1879 to 1893 is a stated gap, not an omission</strong>. They attached the 1894&ndash;1908
       volume, which is the one read above.
     </p>
     <h4>And then the paragraph nobody asked for</h4>
     <p>
-      The 22 September letter ended with a small favour: the printed form at akt nr 9/1874 reads
+      The 22 September letter ended with a small favour: the printed form at <Rec id="schmul-half-of-the-1874-entry">akt nr 9/1874</Rec> reads
       <em>Tochter der&hellip;</em>, and this archive could not read the words after it. She read them.
     </p>
+      <Rec id="plate-szubin-1874-9" thumb />
     <blockquote>
       &hellip; interesuj&#261;cy Pana zapis mo&#380;e dotyczy&#263; <strong>zawodu ojca panny
       m&#322;odej</strong>. Niestety jest trudno czytelny, by&#263; mo&#380;e jest to
       <strong>Gastwirt</strong> w starszej pisowni przez <em>th</em>: <strong>Gastwirth Juda i Jutta
       z domu Machol Schmul jego &#380;ona.</strong>
-      <span class="small">&mdash; Archiwum Pa&#324;stwowe w Bydgoszczy, IU.631.434.2026</span>
+      <span class="small">&mdash; Archiwum Pa&#324;stwowe w Bydgoszczy, <Rec id="bydgoszcz-reply-2026-09-25">IU.631.434.2026</Rec></span>
     </blockquote>
     <p>
       <strong>Friederica&rsquo;s father has an occupation: he kept an inn.</strong> <em>Gastwirth</em>,
@@ -217,7 +220,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       the book in front of her. The name stays as published and is flagged.
     </p>
     <p class="small muted">
-      <strong>And a mistake, which is this archive&rsquo;s.</strong> The reply arrived on 25 September
+      <strong>And a mistake, which is this archive&rsquo;s.</strong> <Rec id="bydgoszcz-reply-2026-09-25">The reply arrived on 25 September</Rec>
       as two e-mails: a covering note <strong>with this letter attached</strong>, and a separate folder
       share carrying the index. <strong>The folder was opened and the attachment was not</strong>, and
       a letter then went back asking whether a death index survives for 1874&ndash;1893 &mdash; when
@@ -232,7 +235,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h3>Bydgoszcz sent the index this archive had published as non-existent
       <span class="tag doc">25 September 2026</span></h3>
     <p>
-      A letter went to the Archiwum Pa&#324;stwowe w Bydgoszczy on 22 September asking about the
+      <Rec id="szubin-sterbe-index-1894-1908">A letter went to the Archiwum Pa&#324;stwowe w Bydgoszczy</Rec> on 22 September asking about the
       pre-1874 Jewish community books of Szubin. <strong>The answer came back with something nobody
       asked for.</strong> Sandra Do&#324;czyk shared a folder; inside it, uploaded by the case officer
       Ma&#322;gorzata Urbanowska-Chy&#322;a, was a 103-scan volume:
@@ -240,14 +243,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <figure class="doc-scan">
       <img src={base + '/szubin-sterbe-index-cover.jpg'} alt="The cover of a bound register, labelled Alphabetisches Verzeichnis zu dem Sterbe-Register über Standes-Amt Schubin von 1894 bis 1908" />
       <figcaption class="small muted">
-        <strong>USC Szubin Miasto, sygnatura 246</strong> &mdash; <em>&ldquo;Alphabetisches Verzeichnis
+        <strong>USC Szubin Miasto, <Rec id="szubin-sterbe-index-1894-1908">sygnatura 246</Rec></strong> &mdash; <em>&ldquo;Alphabetisches Verzeichnis
         zu dem Sterbe-Register &uuml;ber Standes-Amt Schubin von 1894 bis 1908&rdquo;</em>. A bound,
         thumb-indexed volume on forms printed by A. Dittmann&rsquo;s Formular-Magazin of Bromberg.
       </figcaption>
     </figure>
     <p>
       <strong>This archive had published that it does not exist.</strong> The reasoning was careful and
-      it is worth repeating because it was sound: filtering the portal to <em>skorowidze zgon&oacute;w</em>
+      it is worth repeating because it was sound: filtering the portal to <em><Rec id="szubin-sterbe-index-1894-1908">skorowidze zgon&oacute;w</Rec></em>
       returns zero, while the identical query on <em>akta zgon&oacute;w</em> returns 190 units &mdash; so
       the zero is a real absence and not a broken filter. From that, the file concluded that
       &ldquo;deaths at Szubin have no name index and must be paged&rdquo;, and row 264 costed Sally
@@ -272,7 +275,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <figure class="doc-scan">
       <img src={base + '/szubin-sterbe-index-L.jpg'} alt="A page of the alphabetical index showing surnames beginning with L, grouped under year headings" />
       <figcaption class="small muted">
-        <strong>The head of the L slot</strong>, scan 45. K ends on scan 44 and M begins on scan 49,
+        <strong>The head of the L slot</strong>, <Rec id="szubin-sterbe-index-1894-1908">scan 45</Rec>. K ends on scan 44 and M begins on scan 49,
         so the slot is bracketed at both ends; every year from 1894 to 1911 is present in the run.
         The first name in it is <strong>Lehmann, Moses, Schneider</strong>.
       </figcaption>
@@ -301,7 +304,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       closed.</strong> The next letter should ask whether an equivalent index survives for 1874&ndash;1893.
     </p>
     <p class="small">
-      The bride&rsquo;s family was read in the same sitting. The S and Sch slots run scans 80 to 88 and
+      The bride&rsquo;s family was read in the same sitting. The S and Sch slots run <Rec id="szubin-sterbe-index-1894-1908">scans 80 to 88</Rec> and
       hold no <strong>Schmul</strong> &mdash; so Juda Schmul, Jette Machot and Friederica herself did
       not die at Szubin town between 1894 and 1911 either. The nearest thing is <em>Schimmel, Julius,
       Altsitzer, 1895</em>, checked at magnification because a reduced image made it look like the name.
@@ -314,7 +317,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       Row 264&rsquo;s instruction was <em>&ldquo;try Berlin first&rdquo;</em>: Kurt was born there in
       1912, the household is at Chodowieckistraße in 1913, Jacob married there in 1924 &mdash; so if
       Sally followed his sons to Berlin, his death is a Berlin death and the directory would place
-      him. <strong>There is no Sally Leibholz in any Berlin directory from 1903 to 1920.</strong>
+      him. <strong>There is no Sally Leibholz in any <Rec id="berlin-directories-before-1903">Berlin directory</Rec> from 1903 to 1920.</strong>
     </p>
     <p>
       Eighteen years of the Leibholz run, in volumes that print <em>full forenames</em> rather than
@@ -334,7 +337,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </p>
     <p class="small muted">
       <strong>And the instrument had a hole in it that nobody had noticed for three weeks.</strong>
-      The ZLB record this archive has queried throughout, PI 34115495, is the Berliner Adreßbuch for
+      The ZLB record this archive has queried throughout, <Rec id="berlin-directories-before-1903">PI 34115495</Rec>, is the Berliner Adreßbuch for
       <strong>1903 to 1943 and nothing earlier</strong> &mdash; 1902 and before return zero pages
       <em>and zero Schmidt</em>, so it is the record and not the surname. The earlier volumes are a
       different record, <strong>PI 34115512, 1873 to 1896</strong>, now tested year by year with
@@ -368,7 +371,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <figure class="doc-scan">
       <img src={base + '/pollnow-1874-marriage.jpg'} alt="A line of Kurrent handwriting from the 1874 Schubin marriage register, reading: -holz und der [name] geb. Pollnow" />
       <figcaption class="small muted">
-        <strong>Standesamt Schubin, Heiratsregister 1874, akt nr 9</strong>, the line naming the
+        <strong>Standesamt Schubin, Heiratsregister 1874, <Rec id="leibholz-schmul-marriage-1874">akt nr 9</Rec></strong>, the line naming the
         groom&rsquo;s parents: <em>&hellip;holz und der <strong>[name]</strong> geb. Pollnow</em>. The
         disputed capital and the clerk&rsquo;s certain <strong>P</strong> of <em>Pollnow</em> are on
         this one line, in one stroke of one nib.
@@ -405,7 +408,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       is not being written down.</strong> The layer is unreadable; that is the finding.
     </p>
     <p>
-      <strong>And the W control has since been found, one page away.</strong> When this was first
+      <strong>And the <Rec id="pollnow-1874-reread-2026-09-27">W control</Rec> has since been found, one page away.</strong> When this was first
       written the weakness was stated plainly: Kurrent W and H are genuinely alike, both built from two
       tall strokes, and there was no W anywhere in this clerk&rsquo;s hand on either page of the spread
       &mdash; so W was excluded on the positive match to his H rather than on a W exemplar. <strong>The
@@ -416,7 +419,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <figure class="doc-scan">
       <img src={base + '/pollnow-1874-control-W.jpg'} alt="The surname Wengatz in Kurrent, showing the registrar's capital W as two rounded looping arches" />
       <figcaption class="small muted">
-        <strong>W</strong>, from <em>Wengatz</em> &mdash; Standesamt Schubin, akt nr 8, the scan before
+        <strong>W</strong>, from <em>Wengatz</em> &mdash; Standesamt Schubin, <Rec id="pollnow-1874-reread-2026-09-27">akt nr 8</Rec>, the scan before
         this one, same registrar and same ink.
       </figcaption>
     </figure>
@@ -456,11 +459,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <p>
       Everything around it agrees with December, and never agreed with November. <strong>Prussian civil
       registration began on 1 October 1874</strong>, so this volume covers three months and holds nine
-      marriages; akt nr 9 is the last wedding of the year, and late December is where the last wedding
+      marriages; <Rec id="pollnow-1874-reread-2026-09-27">akt nr 9</Rec> is the last wedding of the year, and late December is where the last wedding
       of the year belongs. <strong>The archive was already holding the contradiction.</strong> Its own
       note on the near-miss records that <em>akt nr 7 is dated 24 November 1874</em> &mdash; &ldquo;the
       right date and the wrong people&rdquo;. Two entries cannot both be the 24 November it was hunting.
     </p>
+      <Rec id="plate-szubin-1874-9" thumb />
     <p>
       <strong>Which is how the wrong date got published.</strong> The reader went to the document
       already knowing the answer, was shown a genuine 24 November on the way in, and then read the
@@ -471,23 +475,24 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <figure class="doc-scan">
       <img src={base + '/akt8-december-1874.jpg'} alt="The word December in Kurrent from the date line of marriage entry number 8" />
       <figcaption class="small muted">
-        <strong>December</strong> on the date line of <strong>akt nr 8</strong> &mdash; the previous
+        <strong>December</strong> on the date line of <strong><Rec id="pollnow-1874-reread-2026-09-27">akt nr 8</Rec></strong> &mdash; the previous
         entry, same hand, written heavily. The word on akt nr 9 has the same construction: one large
         looped capital D, then <em>ecember</em>.
       </figcaption>
     </figure>
     <p>
       That is a second, independent control on the month, and it puts the whole volume in order.
-      <strong>Akt nr 7 is 24 November, akt nr 8 is December, akt nr 9 is 24 December</strong> &mdash;
+      <strong>Akt nr 7 is 24 November, <Rec id="pollnow-1874-reread-2026-09-27">akt nr 8</Rec> is December, akt nr 9 is 24 December</strong> &mdash;
       nine marriages running from the day the registry office opened to the end of the year, in
       sequence. The November reading had akt nr 7 and akt nr 9 sharing a date with akt nr 8 stranded
       between them.
     </p>
+      <Rec id="plate-szubin-1874-8" thumb />
     <p class="small muted">
       What survives: <em>sieben u. zwanzig Jahre alt</em> is confirmed at the image. Twenty-seven on
       24 December 1874 puts Sally&rsquo;s birth between 25 December 1846 and 24 December 1847, and the
       family&rsquo;s <strong>7 July 1847 sits inside that window</strong> &mdash; so the month change
-      does not disturb his birth year, and the marriage entry still does the work the destroyed
+      does not disturb his birth year, and the <Rec id="pollnow-1874-reread-2026-09-27">marriage entry</Rec> still does the work the destroyed
       Hammerstein register cannot.
     </p>
   </div>
@@ -558,8 +563,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <h2 id="landesarchiv2909">Three documents from Berlin, and a letter worth more than two of them</h2>
   <p>
-    On <strong>29 September 2026</strong> the <strong>Landesarchiv Berlin</strong> answered this
-    archive&rsquo;s enquiry. <em>Arabella Oberle, im Auftrag,</em> sent three scans, summarised each
+    On <strong>29 September 2026</strong> the <strong>Landesarchiv Berlin</strong> <Rec id="landesarchiv-reply-2026-09-29">answered this
+    archive&rsquo;s enquiry</Rec>. <em>Arabella Oberle, im Auftrag,</em> sent three scans, summarised each
     before this archive had read it, explained in detail what she could not do and why, taught the
     method for doing it without her &mdash; and wrote at the foot: <em>&ldquo;Diese Antwort ist f&uuml;r
     Sie kostenlos.&rdquo;</em> This answer is free of charge.
@@ -574,7 +579,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <p>
     On 20 September this archive found the marriage in an <em>index</em> &mdash; two lines in a
     Namensverzeichnis, giving a number and two religions. <strong>This is the register.</strong>
-    Standesamt Sch&ouml;neberg II, Heiratsregister 1924, Nr. 6, <strong>P Rep. 161 Nr. 171</strong>
+    Standesamt Sch&ouml;neberg II, <Rec id="leibholz-luwinski-1924-entry">Heiratsregister 1924, Nr. 6</Rec>, <strong>P Rep. 161 Nr. 171</strong>
     &mdash; and note that the index this archive had been citing is <strong>Nr. 271</strong>, a
     different volume. Index and register were never the same shelfmark.
   </p>
@@ -582,7 +587,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <figure class="doc-scan">
     <img src={base + '/leibholz-luwinski-1924-blatt1.jpg'} alt="First sheet of the 1924 marriage entry, handwritten in German script on a printed form, with two later notes in the right margin" />
     <figcaption class="small muted">
-      <strong>Standesamt Sch&ouml;neberg II, Heiratsregister 1924, Nr. 6, first sheet.</strong>
+      <strong>Standesamt Sch&ouml;neberg II, <Rec id="leibholz-luwinski-1924-entry">Heiratsregister 1924, Nr. 6</Rec>, first sheet.</strong>
       Landesarchiv Berlin, P Rep. 161 Nr. 171. The two blocks in the right margin were added
       <strong>fifteen and sixteen years after the wedding</strong>.
     </figcaption>
@@ -594,23 +599,23 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <p>Nr. 6. (Aufgebotsverzeichnis Nr. 11<span class="unclear">[..]</span>)</p>
       <p>Berlin-Sch&ouml;neberg am <strong>f&uuml;nften Januar tausend neunhundert vier und zwanzig</strong>.</p>
       <p>Vor dem unterzeichneten Standesbeamten erschienen heute zum Zwecke der Eheschlie&szlig;ung:</p>
-      <p>1. der <strong>Kaufmann Jakob Leibholz</strong>, der Pers&ouml;nlichkeit nach auf Grund der Aufgebotsverhandlung anerkannt, geboren am <strong>achten August</strong> des Jahres tausend acht hundert <strong>vier und achtzig</strong> zu <strong>Schubin</strong>, Geburtsregister Nr. &mdash; des Standesamts in Schubin, wohnhaft in <strong>Berlin-Sch&ouml;neberg, Freisinger Stra&szlig;e 19</strong></p>
-      <p>2. die <strong>Modistin Auguste Luwinski</strong>, der Pers&ouml;nlichkeit nach auf Grund der Aufgebotsverhandlung anerkannt, geboren am <strong>acht und zwanzigsten August</strong> des Jahres tausend acht hundert <strong>drei und neunzig</strong> zu <strong>Sauerbaum Kreis R&ouml;ssel</strong>, <strong>Geburtsregister Nr. 88 des Standesamts in Gro&szlig;-B&ouml;ssau</strong>, wohnhaft in <strong>Berlin-Sch&ouml;neberg, Innsbrucker Stra&szlig;e 39</strong>.</p>
+      <p>1. der <strong><Rec id="leibholz-luwinski-1924-entry">Kaufmann Jakob Leibholz</Rec></strong>, der Pers&ouml;nlichkeit nach auf Grund der Aufgebotsverhandlung anerkannt, geboren am <strong>achten August</strong> des Jahres tausend acht hundert <strong>vier und achtzig</strong> zu <strong>Schubin</strong>, Geburtsregister Nr. &mdash; des Standesamts in Schubin, wohnhaft in <strong>Berlin-Sch&ouml;neberg, Freisinger Stra&szlig;e 19</strong></p>
+      <p>2. die <strong><Rec id="leibholz-luwinski-1924-entry">Modistin Auguste Luwinski</Rec></strong>, der Pers&ouml;nlichkeit nach auf Grund der Aufgebotsverhandlung anerkannt, geboren am <strong>acht und zwanzigsten August</strong> des Jahres tausend acht hundert <strong>drei und neunzig</strong> zu <strong>Sauerbaum Kreis R&ouml;ssel</strong>, <strong>Geburtsregister Nr. 88 des Standesamts in Gro&szlig;-B&ouml;ssau</strong>, wohnhaft in <strong>Berlin-Sch&ouml;neberg, Innsbrucker Stra&szlig;e 39</strong>.</p>
     </div>
     <div class="en">
       <h4>In English</h4>
-      <p>No. 6. (Banns register no. 11<span class="unclear">[..]</span>)</p>
+      <p>No. 6. (<Rec id="leibholz-luwinski-1924-entry">Banns register</Rec> no. 11<span class="unclear">[..]</span>)</p>
       <p>Berlin-Sch&ouml;neberg, on the <strong>fifth of January one thousand nine hundred and twenty-four</strong>.</p>
       <p>Before the undersigned registrar there appeared today for the purpose of marriage:</p>
-      <p>1. the <strong>merchant Jakob Leibholz</strong>, his identity accepted on the strength of the banns proceedings, born on the <strong>eighth of August</strong> in the year one thousand eight hundred and <strong>eighty-four</strong> at <strong>Schubin</strong>, birth register no. &mdash; of the registry office at Schubin, resident at <strong>Berlin-Sch&ouml;neberg, Freisinger Stra&szlig;e 19</strong></p>
-      <p>2. the <strong>milliner Auguste Luwinski</strong>, her identity accepted on the strength of the banns proceedings, born on the <strong>twenty-eighth of August</strong> in the year one thousand eight hundred and <strong>ninety-three</strong> at <strong>Sauerbaum, district of R&ouml;ssel</strong>, <strong>birth register no. 88 of the registry office at Gro&szlig;-B&ouml;ssau</strong>, resident at <strong>Berlin-Sch&ouml;neberg, Innsbrucker Stra&szlig;e 39</strong>.</p>
+      <p>1. the <strong><Rec id="leibholz-luwinski-1924-entry">merchant Jakob Leibholz</Rec></strong>, his identity accepted on the strength of the banns proceedings, born on the <strong>eighth of August</strong> in the year one thousand eight hundred and <strong>eighty-four</strong> at <strong>Schubin</strong>, birth register no. &mdash; of the registry office at Schubin, resident at <strong>Berlin-Sch&ouml;neberg, Freisinger Stra&szlig;e 19</strong></p>
+      <p>2. the <strong><Rec id="leibholz-luwinski-1924-entry">milliner Auguste Luwinski</Rec></strong>, her identity accepted on the strength of the banns proceedings, born on the <strong>twenty-eighth of August</strong> in the year one thousand eight hundred and <strong>ninety-three</strong> at <strong>Sauerbaum, district of R&ouml;ssel</strong>, <strong>birth register no. 88 of the registry office at Gro&szlig;-B&ouml;ssau</strong>, resident at <strong>Berlin-Sch&ouml;neberg, Innsbrucker Stra&szlig;e 39</strong>.</p>
     </div>
   </div>
 
   <div class="panel" id="bossau88">
     <h3>The single most useful line on the page <span class="tag doc">29 September</span></h3>
     <p>
-      <strong>Geburtsregister Nr. 88 des Standesamts in Gro&szlig;-B&ouml;ssau.</strong> This archive has
+      <strong><Rec id="leibholz-luwinski-1924-entry">Geburtsregister Nr. 88 des Standesamts in Gro&szlig;-B&ouml;ssau</Rec>.</strong> This archive has
       swept the Ermland for Luwinskis for weeks with nothing to go on but a village name.
       <strong>Auguste&rsquo;s birth entry now has a number and an office.</strong> A German birth entry
       names the parents &mdash; so <em>Joachim Luwinski</em> and <em>Johanna n&eacute;e Thimm</em>, two of
@@ -665,7 +670,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <h4>In English</h4>
       <p>Called and appearing as witnesses:</p>
       <p>3. the <strong>merchant Samuel Leibholz</strong>, his identity accepted on the strength of <strong>his identity card</strong>, <strong>46 years old</strong>, resident at <strong>Berlin, Belle-Alliance-Platz 6</strong>;</p>
-      <p>4. the <strong>merchant Walter Wottrich</strong>, his identity accepted on the strength of <strong>his birth certificate</strong>, <strong>26 years old</strong>, resident at <strong>Berlin-Lichtenberg, Simonstra&szlig;e 18</strong>.</p>
+      <p>4. the <strong><Rec id="leibholz-luwinski-1924-entry">merchant Walter Wottrich</Rec></strong>, his identity accepted on the strength of <strong>his birth certificate</strong>, <strong>26 years old</strong>, resident at <strong>Berlin-Lichtenberg, Simonstra&szlig;e 18</strong>.</p>
       <p>The registrar put to the betrothed, individually and one after the other, the question whether they wished to enter into marriage with one another. The betrothed answered this question in the affirmative, and the registrar thereupon pronounced that they were now, by force of the Civil Code, lawfully joined as husband and wife.</p>
       <p>Read aloud, approved and signed: <strong>Jakob Leibholz &middot; Auguste Leibholz n&eacute;e Luwinski &middot; Samuel Leibholz &middot; Walter Wottrich</strong></p>
       <p>Note to party 1: &ldquo;married for the 2nd time, no. 2476/1940&rdquo; <span class="unclear">[office blotted]</span></p>
@@ -689,7 +694,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       held for him.
     </p>
     <p class="small muted">
-      <strong>Walter Wottrich</strong>, twenty-six, of Berlin-Lichtenberg, is a name entirely new here.
+      <strong><Rec id="leibholz-luwinski-1924-entry">Walter Wottrich</Rec></strong>, twenty-six, of Berlin-Lichtenberg, is a name entirely new here.
       He was identified by his birth certificate rather than by an identity card, which is what a young
       man without papers of standing would have produced.
     </p>
@@ -701,7 +706,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <h4>Berlin-Sch&ouml;neberg, am 5. Juni 1939</h4>
       <p>Auf Grund der Zweiten Verordnung vom 17. August 1938 zur Durchf&uuml;hrung des Gesetzes &uuml;ber die &Auml;nderung von Familiennamen und Vornamen f&uuml;hrt der nebenbezeichnete Ehemann zus&auml;tzlich den Vornamen: <strong>Israel</strong></p>
       <h4>Berlin-Sch&ouml;neberg, am 4. April 1940</h4>
-      <p>Durch das am <strong>21. M&auml;rz 1940</strong> rechtskr&auml;ftig gewordene Urteil des <strong>Landgerichts Berlin 251. R. 80. 40</strong> ist die Ehe zwischen dem <strong>Jakob Leibholz</strong> und der <strong>Auguste Leibholz geborene Luwinski geschieden worden</strong>.</p>
+      <p>Durch das am <strong>21. M&auml;rz 1940</strong> rechtskr&auml;ftig gewordene Urteil des <strong><Rec id="leibholz-luwinski-1924-entry">Landgerichts Berlin 251. R. 80. 40</Rec></strong> ist die Ehe zwischen dem <strong>Jakob Leibholz</strong> und der <strong>Auguste Leibholz geborene Luwinski geschieden worden</strong>.</p>
     </div>
     <div class="en">
       <h4>Berlin-Sch&ouml;neberg, 5 June 1939</h4>
@@ -718,10 +723,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <div class="panel" id="divorce1940">
     <h3>A question this archive refused to guess, and the answer it refused to invent <span class="tag doc">Documented</span></h3>
     <p>
-      The 1940 Berliner Adressbuch carries <em>&ldquo;Leibholz Auguste, Witwe, Sch&ouml;neberg, Badensche
+      <Rec id="berlin-adressbuch-names">The 1940 Berliner Adressbuch</Rec> carries <em>&ldquo;Leibholz Auguste, Witwe, Sch&ouml;neberg, Badensche
       Str 9&rdquo;</em> &mdash; <strong>a widow, three years before Jacob was deported</strong>. This
       archive set out three possibilities and picked none of them: an error in the directory, a different
-      Auguste Leibholz, or something that happened to the marriage before 1940 that it did not know about.
+      <span data-no-autolink>Auguste Leibholz</span>, or something that happened to the marriage before 1940 that it did not know about.
     </p>
     <p>
       <strong>The third is now documented.</strong> The marriage ended by judgment on 21 March 1940, and
@@ -752,7 +757,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       seen confirmed on one document&rdquo;</em>.
     </p>
     <p>
-      <strong>It names no parents at all.</strong> The Prussian marriage entry of the 1920s cites each
+      <strong>It names no parents at all.</strong> The <Rec id="leibholz-luwinski-1924-entry">Prussian marriage entry</Rec> of the 1920s cites each
       party&rsquo;s <em>birth register</em> instead of naming their parents. The four names are still
       unconfirmed on one document.
     </p>
@@ -784,7 +789,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <figure class="doc-scan">
     <img src={base + '/gertrud-leibholz-sterbeeintrag-1943.jpg'} alt="Death register entry no. 1291 of 1943, typed on a printed German form, with the cause of death written at the foot" />
     <figcaption class="small muted">
-      <strong>Standesamt Berlin-Wedding, Sterberegister 1943, Nr. 1291.</strong> Landesarchiv Berlin,
+      <strong>Standesamt Berlin-Wedding, <Rec id="gertrud-leibholz-sterbeeintrag-1943">Sterberegister 1943, Nr. 1291</Rec>.</strong> Landesarchiv Berlin,
       P Rep. 830 Nr. 114. <em>This archive had worked the office out from the hospital&rsquo;s street and
       was about to publish it as a deduction; the covering letter stated it outright, with the
       shelfmark.</em>
@@ -797,14 +802,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <p>Nr. 1291. Berlin, den <strong>8. M&auml;rz 1943</strong></p>
       <p>Die <strong>Arbeiterin Gertrud Sara Leibholz</strong>, <strong>mosaisch</strong>, wohnhaft in <strong>Berlin-Charlottenburg, Marburger Stra&szlig;e 13</strong>,</p>
       <p>ist am <strong>27. Februar 1943</strong> um <strong>08 Uhr 45 Minuten</strong> in Berlin, <strong>Iranische Stra&szlig;e 2, im Judenkrankenhause</strong>, verstorben.</p>
-      <p>Die Verstorbene war geboren am <strong>13. Juli 1894</strong> in <strong>Berlin</strong>. (Standesamt Berlin <span class="unclear">?</span> Nr. <span class="unclear">&mdash;</span>)</p>
+      <p>Die Verstorbene war geboren am <strong>13. Juli 1894</strong> in <strong>Berlin</strong>. (<Rec id="gertrud-leibholz-sterbeeintrag-1943">Standesamt Berlin</Rec> <span class="unclear">?</span> Nr. <span class="unclear">&mdash;</span>)</p>
       <p><strong>Vater: Namen nicht bekannt.</strong></p>
       <p><strong>Mutter: Namen nicht bekannt.</strong></p>
       <p>Die Verstorbene war <span class="unclear">[nicht verheiratet &mdash; struck out]</span> <strong>Familienstand nicht bekannt</strong>.</p>
       <p>Eingetragen auf <span class="unclear">[m&uuml;ndliche &mdash; struck out]</span> <strong>schriftliche Anzeige des Polizeipr&auml;sidenten in Berlin</strong>.</p>
       <p>Der Standesbeamte, In Vertretung <span class="unclear">[signature]</span></p>
       <p><strong>Todesursache: Selbstmord durch Zyankalivergiftung</strong></p>
-      <p>Eheschlie&szlig;ung der Verstorbenen am <span class="unclear">?</span> in <span class="unclear">?</span> (Standesamt <span class="unclear">?</span> Nr. <span class="unclear">?</span>)</p>
+      <p>Eheschlie&szlig;ung der Verstorbenen am <span class="unclear">?</span> in <span class="unclear">?</span> (<Rec id="gertrud-leibholz-sterbeeintrag-1943">Standesamt</Rec> <span class="unclear">?</span> Nr. <span class="unclear">?</span>)</p>
     </div>
     <div class="en">
       <h4>In English</h4>
@@ -834,7 +839,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <p class="small muted">
       <strong>&ldquo;Sara&rdquo; is not a name she was given.</strong> It is the compulsory forename
       imposed on Jewish women by the Second Decree of 17 August 1938 &mdash; the same law that put
-      <em>Israel</em> in the margin of her brother-in-law&rsquo;s marriage entry, scanned in the same
+      <em>Israel</em> in the margin of her brother-in-law&rsquo;s <Rec id="leibholz-luwinski-1924-entry">marriage entry</Rec>, scanned in the same
       email. <strong>&ldquo;Arbeiterin&rdquo; is not a trade she chose</strong>: a Jewish woman of
       forty-eight described as a labourer in Berlin in February 1943 was in forced labour. Both words
       are the state&rsquo;s.
@@ -866,7 +871,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </p>
     <p class="small">
       One small correction the entry makes: the Gedenkbuch gives her residence as
-      <strong>Wilmersdorf</strong> and the register says <strong>Charlottenburg</strong>. Both are right
+      <strong>Wilmersdorf</strong> and <Rec id="gertrud-leibholz-sterbeeintrag-1943">the register says</Rec> <strong>Charlottenburg</strong>. Both are right
       about different years &mdash; the census of 17 May 1939 has Oskar and Gertrud at Waghäuseler
       Stra&szlig;e 9/10, which is Wilmersdorf. <em>A move, not a contradiction.</em>
     </p>
@@ -875,19 +880,19 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <div class="panel" id="sammelakte">
     <h3>What the letter gave that the scans did not <span class="tag open">Next</span></h3>
     <p>
-      <strong>The Sammelakte exists, and the 1923 banns papers are in it.</strong>
+      <strong>The <Rec id="landesarchiv-reply-2026-09-29">Sammelakte</Rec> exists, and the 1923 banns papers are in it.</strong>
       <em>&ldquo;In der zum Heiratsregister angelegten Sammelakte befinden sich keine Unterlagen zur
       Ehescheidung, es sind nur die Aufgebotsunterlagen aus dem Jahre 1923 vorhanden.&rdquo;</em>
     </p>
     <p>
-      A German banns file of 1923 normally contains <strong>the birth certificates of both parties</strong>
+      A German <Rec id="landesarchiv-reply-2026-09-29">banns file of 1923</Rec> normally contains <strong>the birth certificates of both parties</strong>
       &mdash; and a birth certificate names the parents. <strong>The four names the marriage entry failed
       to give may be sitting in a box in Berlin.</strong> It is not digitised, so there is no scan; copies
       can be ordered for a fee.
     </p>
     <p class="small muted">
       <strong>That is a purchase, and it is David&rsquo;s to make.</strong> Drafted, not ordered. And a
-      clean negative to save anyone the trouble: <strong>the Sammelakte holds no divorce papers.</strong>
+      clean negative to save anyone the trouble: <strong>the <Rec id="landesarchiv-reply-2026-09-29">Sammelakte</Rec> holds no divorce papers.</strong>
       The judgment is Landgericht Berlin 251. R. 80. 40 and it lives, if it lives, in a court series.
     </p>
   </div>
@@ -895,15 +900,16 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <div class="panel" id="kurtbirth">
     <h3>She asked for the one thing this archive has had for nine days <span class="tag disp">Our failure, not hers</span></h3>
     <p>
-      <em>&ldquo;Leider reichen die von Ihnen gemachten Angaben nicht aus.&rdquo;</em> The 1912 birth
-      registers are not digitised, and to search the analogue registers the Landesarchiv needs a full
+      <em>&ldquo;Leider reichen die von Ihnen gemachten Angaben nicht aus.&rdquo;</em> The <Rec id="landesarchiv-reply-2026-09-29">1912 birth
+      registers</Rec> are not digitised, and to search the analogue registers the Landesarchiv needs a full
       name, a date, and <strong>the responsible Standesamt</strong> &mdash;
       <em>&ldquo;die blo&szlig;e Angabe Berlin reicht nicht&rdquo;</em>. The letter she was answering,
       sent on 14 September, gave her a name, a date and the word Berlin.
     </p>
+      <Rec id="plate-birth-index-1912" thumb />
     <p>
       <strong>This archive established the office on 20 September, and the entry number with it.</strong>
-      <em>Standesamt Berlin VIII, Geburtsregister 1912, Nr. 963</em> &mdash;
+      <em><Rec id="kurt-birth-entry">Standesamt Berlin VIII, Geburtsregister 1912, Nr. 963</Rec></em> &mdash;
       <strong>LUWINSKI &middot; KURT MYSZISLAUS &middot; 963</strong>, from the May block of the L section
       of the name index, P Rep. 523 Nr. 1395. Sch&ouml;neberg was excluded by reading its whole 1912 L
       section; Chodowieckistra&szlig;e 32 put the household in Prenzlauer Berg; and the Berliner
@@ -948,7 +954,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <h2>The addresses, and two corrections</h2>
   <p class="small muted">
-    <em>Mapping the Lives</em> (Tracing the Past e.V.), built on the <strong>census of 17 May
+    <em><Rec id="mappingthelives-leibholz">Mapping the Lives</Rec></em> (Tracing the Past e.V.), built on the <strong>census of 17 May
     1939</strong>, read 14 September 2026. Every district it gives matches the Gedenkbuch
     independently — and it adds the street.
   </p>
@@ -980,8 +986,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h3>Jacob was not taken from the family flat <span class="tag doc">Documented</span></h3>
     <p>
       The table above puts Jacob, Auguste and Siegfried together at <strong>Meraner Straße 2</strong>
-      on census night, 17 May 1939. On 20 September 2026 the Arolsen Archives served the transport
-      list itself, and it gives a different street.
+      on census night, 17 May 1939. On 20 September 2026 the Arolsen Archives served <Rec id="jacob-leibholz-deportation">the transport
+      list itself</Rec>, and it gives a different street.
     </p>
     <p>
       <em>Wave 44 &mdash; 30th Osttransport to CC Auschwitz, 26 February 1943</em>, page 153,
@@ -993,7 +999,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <em>bei</em> Spier, care of a family called Spier.
     </p>
     <p>
-      The same page of the list carries &ldquo;49 b/Grindel&rdquo;, &ldquo;b/Gottfeld&rdquo; and
+      <Rec id="jacob-leibholz-deportation">The same page of the list</Rec> carries &ldquo;49 b/Grindel&rdquo;, &ldquo;b/Gottfeld&rdquo; and
       &ldquo;b/Neumann&rdquo; against other names. <strong>He was lodging in somebody else&rsquo;s
       flat</strong>, as many of the 1,100 on that list were. Between the census and the transport
       he had been moved out of his own home, and nothing read here says when, or by whom.
@@ -1009,7 +1015,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h3>And the Spiers have names <span class="tag doc">Documented</span></h3>
     <p>
       The 1939 census database was then searched by <em>street and house number</em> rather than by
-      surname. <strong>Treuchtlinger Straße 4 held seventeen persecuted people from eleven family
+      surname. <strong><Rec id="treuchtlingerstrasse-2-4">Treuchtlinger Straße 4</Rec> held seventeen persecuted people from eleven family
       names</strong> on census night &mdash; Brück, Cohn, Eisenberg, Eisenberger, Kaphan,
       Kochanowska, Löwenheim, Podbielski, Rosenstock, Sundheimer &mdash; and Spier.
     </p>
@@ -1046,7 +1052,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       </p>
     </blockquote>
     <p>
-      The <strong>E</strong> is <em>Eigentümer</em>. The building belonged to
+      The <strong>E</strong> is <em>Eigentümer</em>. <Rec id="treuchtlingerstrasse-2-4">The building belonged to</Rec>
       <strong>Gertrud Eisenberg née Haake</strong>, born 9 June 1879, a commercial court
       councillor&rsquo;s widow &mdash; and the census has her living in it.
       <strong>Spier, H.</strong> is <strong>Hans Spier</strong>, born 2 December 1894, a commercial
@@ -1101,7 +1107,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </p>
     <p class="small muted">
       <strong>A small correction to that name.</strong> This page read it <em>Stephan</em> from the
-      1941 directory; the 1940 and 1941 images read <em>Kephan</em>; and the 1939 census list of this
+      <Rec id="treuchtlingerstrasse-2-4">1941 directory</Rec>; the 1940 and 1941 images read <em>Kephan</em>; and the 1939 census list of this
       house, eleven surnames at one address, has <strong>Kaphan</strong>. The census is a typed index
       and the directory is Fraktur, so <strong>Kaphan</strong> is the reading to keep. One household,
       three spellings, and the only one not taken off a Fraktur page is the one that wins.
@@ -1141,8 +1147,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <p>
       <strong>Agnes</strong> is the one that closes a loop. &ldquo;<em>Leibholz Agnes, Rentn., SW 61
       Mehringdamm 109</em>&rdquo; in 1957 and 1959 &mdash; and still at
-      <strong>Mehringdamm 109</strong> &mdash; read at the slot, she is in <strong>eight consecutive
-      telephone books, 1972&ndash;73 to 1979&ndash;80</strong>, on one number, and the slot is complete and
+      <strong>Mehringdamm 109</strong> &mdash; read at the slot, she is in <strong><Rec id="agnes-leibholz-kerger">eight consecutive
+      telephone books</Rec>, 1972&ndash;73 to 1979&ndash;80</strong>, on one number, and the slot is complete and
       empty in 1980&ndash;81. <strong>Twenty-three years at one address</strong>, 1957 to 1979&ndash;80.
       Two of those eight volumes print her <em>Leihholz</em> and <em>Leibheiz</em>. Heinrich Leibholz is this archive&rsquo;s control case, the man who
       proved that vanishing from the directory after 1942 does not mean death, because he died on
@@ -1168,7 +1174,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <img src={base + '/heinrich-leibholz-kreuzberg-1948.png'} loading="lazy"
          alt="A handwritten page of the Kreuzberg 1948 death index under the month heading August, with the line Leibholz, Heinrich, number 2493, day 9, among neighbouring surnames beginning with L" />
     <figcaption class="small muted">
-      <strong>Sterberegister Kreuzberg 1948 Nr. 2493</strong>, under the month heading
+      <strong><Rec id="heinrich-leibholz-kreuzberg-1948">Sterberegister Kreuzberg 1948 Nr. 2493</Rec></strong>, under the month heading
       <em>August</em>: <strong>&ldquo;Leibholz &middot; Heinrich &middot; 2493 &middot; 9.&rdquo;</strong>
       The index is handwritten, and the surnames either side &mdash; L&uuml;cke verw. Haase, Liebigski,
       Langner geb. Roemer, Lehmann verw. Golchert, Lange verw. G&auml;rtner, Lenz verw. Martin &mdash;
@@ -1290,7 +1296,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <div class="panel">
     <h3>The eighth spelling, and what it has produced <span class="tag doc">Documented</span></h3>
     <p>
-      On 20 September the Berliner Adressbuch was found to print its own cross-reference &mdash;
+      On 20 September the Berliner Adressbuch was found to print its own <Rec id="leipholz-sweep">cross-reference</Rec> &mdash;
       <strong>&ldquo;Leipholz, s. a. Leibholz&rdquo;</strong>, and in the 1940 volume the other way round.
       The compiler of the city these people lived in treated the two names as one for at least twenty-seven
       years. <strong>Every bounded negative this archive had recorded was one spelling short of complete.</strong>
@@ -1306,8 +1312,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       Jacob Leibholz&rsquo;s generation.
     </p>
     <p>
-      <strong>And his own borough has now been read out.</strong> All twenty-one years of Reinickendorf&rsquo;s
-      death-register indexes, <strong>1974 to 1994</strong>, bracketed on both sides of both spellings:
+      <strong>And his own borough has now been read out.</strong> All twenty-one years of <Rec id="reinickendorf-1982-1994-deaths">Reinickendorf&rsquo;s
+      death-register indexes</Rec>, <strong>1974 to 1994</strong>, bracketed on both sides of both spellings:
       <strong>his death is not registered there.</strong> So he moved and died elsewhere, or he died after
       1994 at nearly a hundred, or he simply gave up the telephone. Heinrich Leibholz &mdash; who left the
       Berlin directory in 1942 and did not die until 1948 &mdash; forbids the easy reading.
@@ -1320,8 +1326,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <figure class="doc-scan">
       <img src={base + '/leipholz-marie-1988.jpg'} alt="A typewritten row from the alphabetical index to the Reinickendorf death register for 1988, reading: Leipholz, Marie" />
       <figcaption class="small muted">
-        <strong>Namensverzeichnis zum Sterberegister, Standesamt Reinickendorf 1988</strong>, P Rep. 130
-        Nr. 1484, page 76, printed between <em>Leinkram</em> and <em>Leisegang</em>. The full row reads
+        <strong>Namensverzeichnis zum Sterberegister, Standesamt Reinickendorf 1988</strong>, <Rec id="reinickendorf-1982-1994-deaths">P Rep. 130
+        Nr. 1484</Rec>, page 76, printed between <em>Leinkram</em> and <em>Leisegang</em>. The full row reads
         <strong>&ldquo;Leipholz | Marie | 05.11. | 2306 | ev.&rdquo;</strong> Read at the image on
         23 September 2026 through pdf.js over HTTP range requests; nothing downloaded.
       </figcaption>
@@ -1357,7 +1363,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <p class="small">
       <strong>And a tenth, found 11 October in a borough nobody had finished reading.</strong>
       <em>&ldquo;Herfert verh. Leipholz &middot; Else Hedwig &middot; 24.11. &middot; 3483 &middot; ev.
-      &middot; verh.&rdquo;</em> &mdash; Standesamt Spandau I, Sterberegister <strong>1980 Nr.
+      &middot; verh.&rdquo;</em> &mdash; <Rec id="spandau-1980-1982-deaths">Standesamt Spandau I, Sterberegister</Rec> <strong>1980 Nr.
       3483</strong>, died <strong>24 November 1980</strong>, read at the page image. Born
       <strong>Herfert</strong>, married a <strong>Leipholz</strong>, and the column says still
       married &mdash; so there was a living Mr Leipholz in Spandau that year, in the same borough
@@ -1385,8 +1391,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </p>
     <blockquote>
       <p><strong>Leipsholz geb. Diedring &middot; Johanne Klara &middot; 4. &middot; &ndash; &middot; 316</strong></p>
-      <p class="small">Namensverzeichnis zum Sterberegister, Standesamt Kreuzberg 1960, P Rep. 510
-      Nr. 679, page 123, under the <em>Februar</em> heading. Died <strong>4 February 1960</strong>,
+      <p class="small">Namensverzeichnis zum Sterberegister, Standesamt Kreuzberg 1960, <Rec id="klara-leipsholz-kreuzberg-1960">P Rep. 510
+      Nr. 679</Rec>, page 123, under the <em>Februar</em> heading. Died <strong>4 February 1960</strong>,
       no confession stated. Read at the page image at five times magnification.</p>
     </blockquote>
     <p>
@@ -1452,7 +1458,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       and it did not save them.
     </p>
     <p class="small muted">
-      Samuel is <strong>not in the Arolsen index at all</strong>, searched twice, the second time
+      Samuel is <strong>not in the <Rec id="arolsen-leibholz-luwinski">Arolsen index</Rec> at all</strong>, searched twice, the second time
       with the consent declaration ticked. He is in the German Federal Archives census set with a
       card number, a household and a wife. The gap is Arolsen&rsquo;s, not this family&rsquo;s.
       The clerk spelt her surname <strong>Leibbholz</strong>, with a doubled B.
@@ -1463,7 +1469,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h3>And Oskar&rsquo;s own registration card says so too <span class="tag doc">Corroborated</span></h3>
     <p>
       The paragraph above was argued from a shared address in the 1939 census. On 20 September 2026
-      the Arolsen Archives served <strong>Oskar&rsquo;s Berlin registration card</strong> &mdash; a
+      the Arolsen Archives served <strong><Rec id="oskar-leibholz-theresienstadt">Oskar&rsquo;s Berlin registration card</Rec></strong> &mdash; a
       <em>Vordruck Nr.&nbsp;25&nbsp;B</em> in the series <em>Berlin: Registration Cards from Jewish
       Residents</em> &mdash; and it has two lines on it: &ldquo;<strong>Oskar Israel, verh.,
       13.5.87, Schubin</strong>&rdquo; and, directly beneath, &ldquo;<strong>Ehefr. geb. Leibke
@@ -1477,7 +1483,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <div class="panel">
     <h3>Oskar&rsquo;s two transports, from the two ends <span class="tag doc">Documented</span></h3>
     <p>
-      The Memorial Book gives Oskar two dates. Four Arolsen documents now give the paperwork behind
+      The Memorial Book gives Oskar two dates. <Rec id="oskar-leibholz-theresienstadt">Four Arolsen documents</Rec> now give the paperwork behind
       them, and it fits together.
     </p>
     <p>
@@ -1542,7 +1548,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       from the Łódź ghetto to Chełmno. <strong>They went together.</strong>
     </p>
     <p class="small">
-      And <strong>two Pages of Testimony</strong> filed for Georg at Yad Vashem, by
+      And <strong>two <Rec id="yadvashem-leibholz">Pages of Testimony</Rec></strong> filed for Georg at Yad Vashem, by
       <strong>two different nieces</strong> and years apart, both give his wife's name as
       <strong>Lydia</strong>. Neither mentions Gertrud. Three sources, none quoting the other.
     </p>
@@ -1579,8 +1585,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h3>Auguste is in the persecution records herself</h3>
     <p>
       She was not Jewish, and she is in the dataset anyway — <strong>Auguste Leibholz née Luwinski,
-      Meraner Straße 2, Schöneberg</strong> — registered at her Jewish husband's address in the census
-      whose supplementary card asked about grandparents. That is what a <em>Mischehe</em> looked like
+      Meraner Straße 2, Schöneberg</strong> — registered at her Jewish husband's address in the <Rec id="mappingthelives-leibholz">census
+      whose supplementary card</Rec> asked about grandparents. That is what a <em>Mischehe</em> looked like
       on paper in May 1939. Note the name: <strong>she is recorded as Frau Leibholz</strong>, which
       the family tree does not carry.
     </p>
@@ -1601,7 +1607,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h3>What is still open about Gertrud <span class="tag inf">Open</span></h3>
     <p>
       Which brother she married is now answered. What is not: <strong>she died in Berlin on 27
-      February 1943</strong>, the day of the <em>Fabrikaktion</em>, and not in a camp. Yad Vashem
+      February 1943</strong>, the day of the <em>Fabrikaktion</em>, and not in a camp. <Rec id="yadvashem-leibholz">Yad Vashem</Rec>
       categorises her as <strong>murdered</strong>. A death in Berlin on that particular day has an
       obvious and terrible range of explanations, and the record does not choose between them.
       The Berlin death register would.
@@ -1637,18 +1643,18 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <strong>Mother&rsquo;s maiden name: SCHMUL</strong><br />
       Married — spouse <strong>Frieda</strong><br />
       Died <strong>Auschwitz, 10 April 1943</strong></p>
-      <p class="small">Yad Vashem 5415605. Content note: <em>document number 18258/1943</em>.
+      <p class="small"><Rec id="yadvashem-leibholz">Yad Vashem 5415605</Rec>. Content note: <em>document number 18258/1943</em>.
       Source: <strong>the Auschwitz Death Registers</strong>, State Museum Auschwitz-Birkenau.</p>
     </blockquote>
     <p>
-      <strong>Both great-grandparents are named on a German death register kept at Auschwitz, against a
+      <strong>Both great-grandparents are named on a German <Rec id="yadvashem-leibholz">death register</Rec> kept at Auschwitz, against a
       numbered entry, for a man born at Schubin in 1877.</strong> The spellings are <em>Sali</em> and
       <em>Fridericke</em> — what the clerk wrote. It is the first primary source this archive has ever
       held for that generation. And it gives Samuel a wife, <strong>Frieda</strong>, whom nobody here
       knew about.
     </p>
     <p class="small muted">
-      <strong>A test was built out of it and run.</strong> Yad Vashem can be searched on mother&rsquo;s
+      <strong>A test was built out of it and run.</strong> <Rec id="yadvashem-leibholz">Yad Vashem</Rec> can be searched on mother&rsquo;s
       maiden name. SCHMUL returns people from Berlin to Łódź to Komarów — it is a common name — and
       <strong>exactly one Leibholz</strong>. No brother of Jacob and Samuel is recorded anywhere in that
       database with those parents. <strong>That is a limit of the records, not of the family:</strong>
@@ -1663,7 +1669,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <h2>Two people survived to write these names down</h2>
   <div class="panel">
     <p>
-      A <strong>Page of Testimony</strong> is not a list. It is a form filled in <em>by a person who
+      A <strong><Rec id="yadvashem-leibholz">Page of Testimony</Rec></strong> is not a list. It is a form filled in <em>by a person who
       knew the dead</em>, and it names that person and what they were to the victim. Eighteen exist
       under this surname. <strong>Two have been opened.</strong>
     </p>
@@ -1708,7 +1714,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       And three discrepancies are carried rather than resolved. <strong>Georg&rsquo;s birth year is now
       1884, 1885 and 1883</strong> — three sources, three years. <strong>Lydia&rsquo;s maiden name is
       PERL on one page and PERETZ on the other.</strong> And his place of death is <strong>Auschwitz</strong>
-      on this page but <strong>Chełmno</strong> on the deportation lists. A Page of Testimony is written
+      on this page but <strong>Chełmno</strong> on the deportation lists. A <Rec id="yadvashem-leibholz">Page of Testimony</Rec> is written
       from memory, years afterwards, by somebody who was not there; <strong>the deportation list is the
       better source and this archive keeps Chełmno.</strong>
     </p>
@@ -1718,14 +1724,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <div class="panel">
     <p>
       This site has carried Jacob&rsquo;s deportation as a date — <strong>26 February 1943, Berlin to
-      Auschwitz</strong> — since the first day. Yad Vashem&rsquo;s Central Database of Shoah
-      Victims&rsquo; Names, searched properly on 17 September 2026, carries a field this archive never
+      Auschwitz</strong> — since the first day. <Rec id="yadvashem-leibholz">Yad Vashem&rsquo;s Central Database of Shoah
+      Victims&rsquo; Names</Rec>, searched properly on 17 September 2026, carries a field this archive never
       had.
     </p>
     <blockquote>
       <p><strong>Details of Transport:</strong> <em>Transport 30 from Berlin, City of Berlin, Germany
       to Auschwitz Birkenau, Extermination Camp, Poland on 26/02/1943.</em></p>
-      <p class="small">Yad Vashem record <strong>13520936</strong>, item IDs 11572198 and 4113817.
+      <p class="small"><Rec id="yadvashem-leibholz">Yad Vashem record</Rec> <strong>13520936</strong>, item IDs 11572198 and 4113817.
       Date of birth 08/08/1884; place of birth Schubin; permanent residence Berlin;
       <strong>citizenship Germany</strong>.</p>
     </blockquote>
@@ -1735,8 +1741,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </p>
     <p>
       <strong>And it comes from a memorial book this archive did not know it was standing on.</strong>
-      That record is sourced not to the Bundesarchiv but to the <em>Gedenkbuch Berlins der jüdischen
-      Opfer des Nationalsozialismus</em> — Freie Universität Berlin, Edition Hentrich, Berlin 1995.
+      That record is sourced not to the Bundesarchiv but to the <em><Rec id="yadvashem-leibholz">Gedenkbuch Berlins der jüdischen
+      Opfer</Rec> des Nationalsozialismus</em> — Freie Universität Berlin, Edition Hentrich, Berlin 1995.
       <strong>Berlin&rsquo;s own memorial book, a different work from the national one cited on every
       other page here</strong>, and the source of the transport number. It has not been consulted
       directly, and it should be: for Auguste, for Siegfried, and for an address.
@@ -1748,7 +1754,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       — the same day the second transport left.
     </p>
     <p class="small muted">
-      One discrepancy settles in the Bundesarchiv&rsquo;s favour. Yad Vashem gives <strong>Georg as born
+      One discrepancy settles in the Bundesarchiv&rsquo;s favour. <Rec id="yadvashem-leibholz">Yad Vashem gives</Rec> <strong>Georg as born
       in 1884</strong>, agreeing with the Gedenkbuch and disagreeing with Arolsen&rsquo;s 1885. Two
       against one, and the two are the older and better-sourced. <strong>Lydia Leibholz</strong> appears
       on the <strong>Łódź ghetto list</strong>, which is where this archive already believed
@@ -1767,7 +1773,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <div class="panel">
     <p>
       Everything on this page rested on one source: the Bundesarchiv&rsquo;s <em>Gedenkbuch</em>. On
-      17 September 2026 the <strong>Arolsen Archives</strong> were searched for the first time — the
+      17 September 2026 the <strong><Rec id="arolsen-leibholz-luwinski">Arolsen Archives</Rec></strong> were searched for the first time — the
       international centre on Nazi persecution, thirty million documents naming some seventeen and a
       half million people. <strong>213 person entries carry the name Leibholz.</strong>
     </p>
@@ -1797,11 +1803,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <p class="small muted">
       <strong>Samuel is the one absence, and it is recorded as unfinished rather than as a negative.</strong>
       A search under his name returns nothing, although both Yad Vashem and the Gedenkbuch have him.
-      Only twenty-five of the 213 entries were read. He may be on a page not yet turned.
+      Only <Rec id="arolsen-leibholz-luwinski">twenty-five of the 213 entries</Rec> were read. He may be on a page not yet turned.
     </p>
     <p class="verdict disp">
       <strong>The documents were not opened, and that is deliberate.</strong> Reading one requires
-      ticking Arolsen&rsquo;s declaration of consent to the use of sensitive personal data — a
+      ticking Arolsen&rsquo;s <Rec id="arolsen-tracing-files">declaration of consent</Rec> to the use of sensitive personal data — a
       statement a named person makes about their own conduct. <strong>This archive does not tick it on
       anybody&rsquo;s behalf.</strong> Everything above is from the index, which asks nothing of anyone.
     </p>
@@ -1862,20 +1868,20 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <h2>Still to find</h2>
   <ul>
-    <li>Whether Jacob has a <em>Stolperstein</em> in Schöneberg. The Leibholz stones located so far — Willmanndamm 6, Danckelmannstraße 44 — belong to other Leibholz families. <strong>Danckelmannstraße 44 is now identified</strong>: the 1939 census puts <strong>Hans Leibholz</strong>, born 25 January 1912 at <em>Preußisch Friedland, Kreis Schlochau</em>, his mother <strong>Else née Rothenberg</strong>, born at <em>Schlochau</em>, and his sister <strong>Liselott</strong> in that flat — <strong>the first Berlin Leibholz household documented as coming from Sally Leibholz&rsquo;s own district</strong>. A district is not a family, and it is not claimed as one.</li>
+    <li>Whether Jacob has a <em>Stolperstein</em> in Schöneberg. The Leibholz stones located so far — Willmanndamm 6, Danckelmannstraße 44 — belong to other Leibholz families. <strong>Danckelmannstraße 44 is now identified</strong>: <Rec id="mappingthelives-leibholz">the 1939 census puts</Rec> <strong>Hans Leibholz</strong>, born 25 January 1912 at <em>Preußisch Friedland, Kreis Schlochau</em>, his mother <strong>Else née Rothenberg</strong>, born at <em>Schlochau</em>, and his sister <strong>Liselott</strong> in that flat — <strong>the first Berlin Leibholz household documented as coming from Sally Leibholz&rsquo;s own district</strong>. A district is not a family, and it is not claimed as one.</li>
     <li>The Schubin (Szubin) Jewish registers, for Sally and Friederike's children and the brothers' births.</li>
     <li>The 17 May 1939 census card for Oskar at Berlin-Wilmersdorf, which recorded grandparents.</li>
     <li>Arolsen Archives, for all four, and for Elli and Werner.</li>
     <li><strong>Jacob in the Berlin directory, year by year, at Meraner Straße 2.</strong> The volumes are open and the counting works; reading a named line needs the page image, because the Fraktur columns jam exactly as the South African gazettes did. <strong>The year he stops appearing is the year the record of his life in that city stops.</strong></li>
-    <li><strong>The eighteen Pages of Testimony under this surname.</strong> A Page names <em>who submitted it</em> — a living relative writing down a dead one. None has been opened.</li>
-    <li><strong>The <em>Gedenkbuch Berlins</em> itself</strong>, Edition Hentrich 1995, which is where Transport 30 comes from and which this archive has been quoting at second hand without knowing it.</li>
+    <li><strong>The eighteen <Rec id="yadvashem-leibholz">Pages of Testimony</Rec> under this surname.</strong> A Page names <em>who submitted it</em> — a living relative writing down a dead one. None has been opened.</li>
+    <li><strong>The <em><Rec id="yadvashem-leibholz">Gedenkbuch Berlins</Rec></em> itself</strong>, Edition Hentrich 1995, which is where Transport 30 comes from and which this archive has been quoting at second hand without knowing it.</li>
     <li><strong>The other Berlin Leibholzes</strong> — Wilhelm 1890, Else 1889, Ruth 1923, Lieselotte 1923, Walter 1922, Chana 1938, Heinrich 1890, Albert 1886, Max 1877, Hans Israel 1912. Sally and Friederike had more sons than this archive has names for, and a Berlin Leibholz of the right age is where a fifth would show.</li>
     <li><strong>Auguste</strong> in the same books — before 1924 under <em>Luwinski</em>, after it under <em>Leibholz</em>, and after the war under <em>Fricke</em>.</li>
   </ul>
 
   <h2>Fifty in the memorial book, and only three born at Schubin</h2>
   <p>
-    The Bundesarchiv Gedenkbuch was opened only to control a search for the eighth spelling of the
+    <Rec id="gedenkbuch-leibholz-findings">The Bundesarchiv Gedenkbuch</Rec> was opened only to control a search for the eighth spelling of the
     name. The control returned <strong>fifty Leibholz</strong>, and the fifty say something the four
     this archive already held could not.
   </p>
@@ -1936,7 +1942,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <h2>The Weinstraße household was at Yad Vashem all along</h2>
   <p>
     This archive had the household from two sources and thought it had exhausted a third. The
-    directories give <em>“Wilhelm, Vertreter, NO18 Weinstr 6”</em> from 1938, then in 1941
+    directories give <em>“Wilhelm, Vertreter, <Rec id="weinstrasse-pages-of-testimony">NO18 Weinstr 6</Rec>”</em> from 1938, then in 1941
     <strong>“Wilhelm Israel, Bauarbeiter”</strong> — a sales representative reduced to a building
     labourer — and then nothing. The 1939 census gives Wilhelm Leibholz, born 30 December 1887, and
     Jenny née Rosenberg, born 11 February 1893, both <em>died before 8 May 1945</em>, which is what a
@@ -1944,14 +1950,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   </p>
   <p>
     And the <a href={base + '/lines/'}>register of lines</a> carried a note saying he was
-    <em>not</em> the Wilhelm Yad Vashem has. That was written off a search for LEIBHOLZ, and it was
+    <em>not</em> the Wilhelm <Rec id="weinstrasse-pages-of-testimony">Yad Vashem</Rec> has. That was written off a search for LEIBHOLZ, and it was
     true of that search.
   </p>
 
   <div class="panel">
     <h3>Both Wilhelms are there. One is filed under LEIPHOLZ <span class="tag doc">New, 21 September 2026</span></h3>
     <p>
-      Page of Testimony 5369884: <strong>“Leipholz · Willi · Willhelm · Date of Birth 30/12/1887 ·
+      <Rec id="weinstrasse-pages-of-testimony">Page of Testimony 5369884</Rec>: <strong>“Leipholz · Willi · Willhelm · Date of Birth 30/12/1887 ·
       Married · Spouse Jenny · Spouse's Maiden Name Rosenberg · Address of Permanent Residence
       WEINSTR 6.”</strong> The birth date, the wife, her maiden name and the street. There is no room
       for a second reading.
@@ -1960,7 +1966,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       And it says the thing the census could not: <strong>place of death, Auschwitz.</strong>
     </p>
     <p>
-      Jenny's own page, 1122806, gives her birthplace as <strong>Schlochau</strong> and her parents as
+      Jenny's own page, <Rec id="rosenberg-of-schlochau">1122806</Rec>, gives her birthplace as <strong>Schlochau</strong> and her parents as
       <strong>Isidor and Cecillie Rosenberg</strong> — two names this archive did not have. Schlochau
       is the district Sally Leibholz was born in, and the district
       <a href="#">the Gedenkbuch's fifty cluster in</a>. The Bundesarchiv gives her birthplace as
@@ -1995,7 +2001,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h3>And he wrote five, not two <span class="tag doc">New, 11 October 2026</span></h3>
     <p>
       The panel above has sat here for three weeks with a test written into it and never run:
-      <em>Yad Vashem indexes submitters as well as victims, so searching the man who wrote these two
+      <em><Rec id="rosenberg-of-schlochau">Yad Vashem indexes submitters</Rec> as well as victims, so searching the man who wrote these two
       pages would give every page he filed.</em> A names search returns <strong>three tabs</strong>,
       and the second &mdash; <em>Results Regarding Data Submitters</em> &mdash; lists every record
       whose <strong>submitter</strong> matched. <strong>Searching a survivor&rsquo;s name returns the
@@ -2007,7 +2013,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         &middot; father <strong>Isidor</strong>, mother <strong>Cecillie</strong> &middot;
         <em>Kaufmann</em> &middot; of Berlin before and during the war &middot; murdered, aged 54
       </p>
-      <p class="small">Page of Testimony 1057746. Submitter: Khanan Rosenberg Varadi. Relationship
+      <p class="small"><Rec id="rosenberg-of-schlochau">Page of Testimony 1057746</Rec>. Submitter: Khanan Rosenberg Varadi. Relationship
       to victim: <strong>Son</strong>.</p>
     </blockquote>
     <p>
@@ -2031,8 +2037,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <strong>Georg Rosenberg&rsquo;s father-in-law</strong>, and names the family Georg married into.
     </p>
     <p class="small muted">
-      <strong>And a lesson that applies to every Page of Testimony in this archive.</strong> The
-      Ehrlich Page disagrees with the German federal memorial list on his birth <em>day</em> and with
+      <strong>And a lesson that applies to every Page of Testimony in this archive.</strong> <Rec id="rosenberg-of-schlochau">The
+      Ehrlich Page</Rec> disagrees with the German federal memorial list on his birth <em>day</em> and with
       three lists on his death <em>year</em>, and the lists win both times. <strong>A Page of
       Testimony is a relationship document, not a date document.</strong> Written from memory, often
       decades later, often in Hebrew and auto-translated back, it is the best evidence there is for
@@ -2083,7 +2089,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <p>
       No Leibholz anywhere in that 1941 entry — and the 1941 volume was compiled in the autumn of
       1940. So: <strong>Meraner Straße 2 on the census of 17 May 1939. Still not at Treuchtlinger in
-      autumn 1940. At Treuchtlinger 4 <em>bei Spier</em> on 26 February 1943.</strong> The forced
+      autumn 1940. <Rec id="treuchtlingerstrasse-2-4">At Treuchtlinger 4</Rec> <em>bei Spier</em> on 26 February 1943.</strong> The forced
       move happened inside that window.
     </p>
     <p>

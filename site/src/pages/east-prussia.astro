@@ -1,4 +1,5 @@
 ---
+import Rec from '../components/Rec.astro';
 import Base from '../layouts/Base.astro';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
@@ -48,8 +49,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <p>
       And the letter has to get one thing right that a careless one would not: Prussian civil
       registration began on <strong>1 October 1874</strong>. The births of Joachim in 1865 and Johanna
-      in 1871 are therefore <em>church</em> records — St Jakobi at Allenstein, and the Catholic parish
-      of Gross Bössau, whose register runs 1690 to 1897 and names Sauerbaum expressly. Those may be at
+      in 1871 are therefore <em>church</em> records — St Jakobi at Allenstein, and the <Rec id="ermland-sauerbaum">Catholic parish
+      of Gross Bössau</Rec>, whose register runs 1690 to 1897 and names Sauerbaum expressly. Those may be at
       Olsztyn or at the Archiwum Archidiecezji Warmińskiej, so the letter asks which.
       <a href={base + '/errands/'}>It is drafted</a>, in Polish, with all six spellings listed.
     </p>
@@ -59,16 +60,17 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h3>And Auguste&rsquo;s own birth entry now has a number <span class="tag doc">29 September</span></h3>
     <p>
       Everything above is about reaching the generation <em>before</em> her, and it has been slow because
-      this archive has had nothing but a village name to ask with. <strong>Her 1924 marriage entry, sent
+      this archive has had nothing but a village name to ask with. <strong>Her <Rec id="leibholz-luwinski-1924-entry">1924 marriage entry</Rec>, sent
       by the Landesarchiv Berlin on 29 September 2026, cites her birth register directly:</strong>
     </p>
+      <Rec id="plate-schoeneberg-1924" thumb />
     <blockquote class="small">
       <em>&ldquo;geboren am acht und zwanzigsten August des Jahres tausend acht hundert drei und neunzig
-      zu <strong>Sauerbaum Kreis R&ouml;ssel</strong>, <strong>Geburtsregister Nr. 88 des Standesamts in
+      zu <strong>Sauerbaum Kreis R&ouml;ssel</strong>, <strong><Rec id="leibholz-luwinski-1924-entry">Geburtsregister Nr. 88</Rec> des Standesamts in
       Gro&szlig;-B&ouml;ssau</strong>&rdquo;</em>
     </blockquote>
     <p>
-      <strong>Standesamt Gro&szlig;-B&ouml;ssau, Geburtsregister 1893, Nr. 88.</strong> That is a
+      <strong><Rec id="ermland-sauerbaum">Standesamt Gro&szlig;-B&ouml;ssau, Geburtsregister 1893, Nr. 88</Rec>.</strong> That is a
       <em>civil</em> register, well after 1874, and it is a different thing from the Catholic parish
       register discussed above &mdash; the letter drafted for Olsztyn asks for church records for her
       parents, and this asks for a civil record for her. <strong>A German birth entry names the
@@ -91,8 +93,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     born the following year at Martin-Luther-Straße 60 in Schöneberg.
   </p>
   <p>
-    Then the marriage ends. <strong>The date is no longer missing.</strong> The margin of the marriage
-    entry itself, written on 4 April 1940, records that by the judgment of the
+    Then the marriage ends. <strong>The date is no longer missing.</strong> The margin of the <Rec id="leibholz-luwinski-1924-entry">marriage
+    entry</Rec> itself, written on 4 April 1940, records that by the judgment of the
     <strong>Landgericht Berlin 251. R. 80. 40</strong>, which became final on
     <strong>21 March 1940</strong>, the marriage <em>&ldquo;ist &hellip; geschieden worden&rdquo;</em>.
     <a href={base + '/leibholz/#divorce1940'}>The scan is published</a>, with the German and an English
@@ -133,7 +135,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       know <em>why</em> Auguste divorced Jacob, and having the date does not tell it. A date is not a
       motive. Nothing in the register says who petitioned, on what ground, or under what pressure &mdash;
       and the one file that might, the divorce case of the Landgericht Berlin, is
-      <strong>not</strong> in the marriage register&rsquo;s Sammelakte: the Landesarchiv has confirmed
+      <strong>not</strong> in the marriage register&rsquo;s Sammelakte: the <Rec id="landesarchiv-reply-2026-09-29">Landesarchiv</Rec> has confirmed
       that the Sammelakte holds only the 1923 banns papers.
     </p>
     <p class="small muted">
@@ -178,7 +180,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <div class="panel">
     <p>
       This archive has carried Auguste &ldquo;Lizzy&rdquo; Luwinski as <strong>1893&ndash;1975</strong>
-      with no day and no month. The <a href={base + '/leibholz/'}>Arolsen Archives</a> index, read on
+      with no day and no month. The <a href={base + '/leibholz/'}>Arolsen Archives</a> <Rec id="arolsen-leibholz-luwinski">index</Rec>, read on
       17 September 2026, has her:
     </p>
     <blockquote>
@@ -201,7 +203,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </p>
     <p>
       <strong>And on 20 September 2026 that document was opened.</strong> It is the family&rsquo;s
-      Berlin registration card, and its second line reads &ldquo;<em>Auguste geb. Luwwinsky &middot;
+      <Rec id="leibholz-registration-card">Berlin registration card</Rec>, and its second line reads &ldquo;<em>Auguste geb. Luwwinsky &middot;
       28.8.93 &middot; <strong>Sauerbaum</strong></em>&rdquo;. Until then her birthplace rested on a
       single source &mdash; the 1939 census card, which gives Sauerbaum/Rössel. Now a Berlin clerk
       writing a different form for a different purpose has written the same village. The card also
@@ -242,9 +244,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <h2>Still to find</h2>
   <ul>
     <li>The Sauerbaum and Allenstein Catholic parish registers, for Joachim, Johanna and their parents.</li>
-    <li>Kurt's 1912 Berlin birth register entry — whether Jacob acknowledged him at the time or only in 1924.</li>
-    <li>The Berlin-Schöneberg marriage entry of 5 January 1924, and the divorce file that followed it.</li>
+    <li>Kurt's 1912 Berlin <Rec id="kurt-birth-entry">birth register entry</Rec> — whether Jacob acknowledged him at the time or only in 1924.</li>
+    <li>The Berlin-Schöneberg <Rec id="leibholz-luwinski-1924-entry">marriage entry of 5 January 1924</Rec>, and the divorce file that followed it.</li>
     <li>Joachim's death at Sommerfeld, dated in the tree only as “before 1955”.</li>
     <li><strong>Whether Alfred Luwinski of Putbusser Straße 24 was Auguste's brother.</strong> The Berlin registration records, or a Sauerbaum baptism naming Joachim and Johanna's children, would settle it either way.</li>
   </ul>
+    <Rec id="plate-schoeneberg-1924" thumb />
 </Base>

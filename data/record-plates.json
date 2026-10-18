@@ -1,0 +1,54 @@
+{
+  "note": "THE ARCHIVE'S OWN WORD ON WHICH SCANS IT HOLDS, WHAT RECORD EACH BELONGS TO, AND WHETHER ITS RULES LET IT SHOW THEM, plus the records it holds a public address for and the ledger entries it will not link to. tools/build-records.py reads this file with site/src/data/evidence.json and writes site/src/data/records.json, the table the <Rec> component draws every record link from (linking standard, L3 and L4). Edit by hand, with the reason, in a commit that says why.\n\nSHOW. A scan is `show: true` only where the archive's rules say so: images from the Landesarchiv Berlin, the Berlin directories (ZLB), the Archiwum Państwowe w Bydgoszczy, the Reichsgesetzblatt, family papers in the family's keeping, and the Rosebank register page the parish supplied for this archive. NEVER shown here, whatever else is said: a Findmypast, GenDatabase, Arolsen, FamilySearch, MyHeritage or NAA image (link-only), a Matricula image (link-only until David rules), and anything that prints a living or possibly living person's name, address or an identity, tax or licence number (see `withheld`). Only a scan already published on a page of this site is listed: this file places no new scan on the site, it lets a page show a published one beside the passage that cites it.",
+  "plates": [
+    {"id": "plate-szubin-1874-9", "file": "pollnow-1874-marriage.jpg", "w": 2500, "h": 330, "record": "leibholz-schmul-marriage-1874", "show": true,
+     "label": "Standesamt Schubin, marriage entry akt 9 of 1874, the line naming the groom's parents",
+     "basis": "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto sygn. 141: a public archive; published on /leibholz/."},
+    {"id": "plate-szubin-1874-8", "file": "akt8-december-1874.jpg", "w": 1280, "h": 400, "record": "pollnow-1874-reread-2026-09-27", "show": true,
+     "label": "Standesamt Schubin, akt 8 of 1874, the date line used as a control",
+     "basis": "Same register, the previous entry; published on /leibholz/."},
+    {"id": "plate-szubin-sterbe-index", "file": "szubin-sterbe-index-cover.jpg", "w": 1000, "h": 1544, "record": "szubin-sterbe-index-1894-1908", "show": true,
+     "label": "Szubin death-register index 1894 to 1908, sygnatura 246, the cover",
+     "basis": "Sent by the Archiwum Państwowe w Bydgoszczy under case IU.631.434.2026; published on /leibholz/."},
+    {"id": "plate-schoeneberg-1924", "file": "leibholz-luwinski-1924-blatt1.jpg", "w": 1388, "h": 2000, "record": "leibholz-luwinski-1924-entry", "show": true,
+     "label": "Standesamt Schöneberg II, marriage register 1924 Nr. 6, first sheet",
+     "basis": "Sent by the Landesarchiv Berlin (P Rep. 161 Nr. 171); published on /leibholz/."},
+    {"id": "plate-wedding-1943", "file": "gertrud-leibholz-sterbeeintrag-1943.jpg", "w": 1495, "h": 2000, "record": "gertrud-leibholz-sterbeeintrag-1943", "show": true,
+     "label": "Standesamt Berlin-Wedding, death register 1943 Nr. 1291",
+     "basis": "Sent by the Landesarchiv Berlin (P Rep. 830 Nr. 114); published on /leibholz/."},
+    {"id": "plate-licence-1934", "file": "kurt-fuehrerschein-1934-cover.jpg", "w": 1200, "h": 1600, "record": "kurt-papers-1934-1939", "show": true,
+     "label": "Kurt's Berlin driving licence of 1934, the cover",
+     "basis": "Family papers in the family's keeping; the person is dead (1968); published on /kurt/."},
+    {"id": "plate-passport-1939", "file": "kurt-reisepass-1939-beschreibung.jpg", "w": 1200, "h": 1600, "record": "kurt-papers-1934-1939", "show": true,
+     "label": "Kurt's German passport of 1939, the description page",
+     "basis": "Family papers in the family's keeping; the person is dead (1968); published on /kurt/."},
+    {"id": "plate-adressbuch-1913", "file": "charlottenburg-standesamt-i-1913.png", "w": 1572, "h": 354, "record": "lutherstrasse-34-standesamt", "show": true,
+     "label": "Berliner Adressbuch 1913, Charlottenburg part, printed page 505: Standesamt I",
+     "basis": "Zentral- und Landesbibliothek Berlin, the Berlin directories: shown today and fine to show again; published on /kurt/."},
+    {"id": "plate-birth-index-1912", "file": "kurt-963.png", "w": 1700, "h": 261, "record": "kurt-birth-entry", "show": true,
+     "label": "Landesarchiv Berlin P Rep. 523 Nr. 1395: the 1912 birth index, Luwinski Kurt Myszislaus, 963",
+     "basis": "Landesarchiv Berlin (LABSA) free name index; published on /kurt/."},
+    {"id": "plate-rosebank-1940", "file": "wear-robertson-1940.png", "w": 1755, "h": 1240, "record": "rosebank-1940-marriage-register", "show": true,
+     "label": "Rosebank parish marriage register, entry 13 of 1940",
+     "basis": "The parish supplied this page for this archive (22 September 2026); published on /dna/."},
+    {"id": "plate-assento-1922", "file": "ivone-assento-1922.jpg", "w": 1126, "h": 1456, "record": "ivone-assento-nascimento-1922", "show": true,
+     "label": "Assento de nascimento n.º 447-D, Lourenço Marques 1922",
+     "basis": "Photographed from the family's own papers; the person is dead (2010); published on /ivone/."}
+  ],
+  "withheld": [
+    {"record": "ivone-death-certificate-2010",
+     "reason": "The 2010 death-certificate scan and the 2010 declaration scan are withheld (commits 7e4c71f and 1992a19): they print a possibly living physician's address and licence number, and a declarant's street address. The ledger entry stays linkable; no plate is attached to it and none may be."}
+  ],
+  "hold": [
+    {"record": "luwinski-emigration-1965",
+     "reason": "The 1965 roll lists two children who are flagged living in the family tree. The passage that relies on it stays plain text; the ledger entry is not linked from a narrative page."},
+    {"record": "naa-recordsearch",
+     "reason": "The National Archives of Australia catalogue names the same two living children (the archive's own rule is stricter than the public catalogue). Same: not linked."}
+  ],
+  "external": [
+    {"id": "fs-dewitt-geyer-1950", "url": "https://www.familysearch.org/ark:/61903/1:1:6ZHR-NVYN", "kind": "familysearch", "from": "dewitt-confirmed", "needle": "1:1:6ZHR-NVYN",
+     "label": "FamilySearch: South Africa, Civil Marriage Records 1801-1974, Dewitt and Geyer, 25 February 1950 (link only)"},
+    {"id": "fs-dewitt-death-1963", "url": "https://www.familysearch.org/ark:/61903/1:1:DD9Y-PLT2", "kind": "familysearch", "from": "dewitt-confirmed", "needle": "1:1:DD9Y-PLT2",
+     "label": "FamilySearch: South Africa, Civil Death Registration 1953-1967, De Witt, 2 April 1963 (link only)"}
+  ]
+}

@@ -1,4 +1,5 @@
 ---
+import Rec from '../components/Rec.astro';
 import Base from '../layouts/Base.astro';
 import litigation from '../data/litigation.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -160,7 +161,7 @@ const t = [
     <p>
       <strong>“Order Filed” is a physical document, in a second place.</strong> A divorcée could not
       remarry in 1948 without producing the decree, so the remark means the order in
-      <strong>TPD 534/1948</strong> was handed in on the day and <strong>filed with Johannesburg
+      <strong><Rec id="litigation">TPD 534/1948</Rec></strong> was handed in on the day and <strong>filed with Johannesburg
       entry 858</strong>. The court file is already on the Pretoria request; this says a copy also sits
       behind the marriage entry at Home Affairs. Two custodies for one document that nobody has read.
     </p>
@@ -189,14 +190,14 @@ const t = [
     </p>
     <p>
       So this is not a jump. <strong>It is a stated age drifting steadily younger, and against her
-      real birth date not one of the three is right.</strong> Her own birth registration, supplied by
+      real birth date not one of the three is right.</strong> Her own <Rec id="ivone-assento-nascimento-1922">birth registration</Rec>, supplied by
       the family in September 2026, gives <strong>4 March 1922</strong> &mdash; confirmed
       independently by her death certificate. She was 25 at Germiston, 26 in Johannesburg that June,
       and 30 when she married Salkow, and she gave 22, 24 and 25.
     </p>
     <p>
       <strong>This panel&rsquo;s own rule is what saved it.</strong> It said that any inference resting
-      on an age Ivone gave a clerk had to be re-checked against a birth record rather than against
+      on an age Ivone gave a clerk had to be re-checked against a <Rec id="ivone-assento-nascimento-1922">birth record</Rec> rather than against
       another register &mdash; and when the birth record arrived it destroyed all three figures,
       including the one this panel had called &ldquo;the only one that fits&rdquo;. That entry fitted a
       birth year that was itself wrong by two years. <strong>Two wrong numbers agreeing is not

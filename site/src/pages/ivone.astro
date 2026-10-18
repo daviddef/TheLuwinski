@@ -1,4 +1,5 @@
 ---
+import Rec from '../components/Rec.astro';
 import Base from '../layouts/Base.astro';
 import PersonTree from '@daviddef/archive-kit/components/PersonTree.astro';
 import '@daviddef/archive-kit/styles/persontree.css';
@@ -56,13 +57,13 @@ const fam = familyOf(subject.id);
     </p>
     <p>It is not a nickname. It is half her surname. The Transvaal Supreme Court, 1948:</p>
     <blockquote>Illiquid case divorce. <strong>Kurt Luwinsky</strong> versus <strong>Ivone (born Mota Figueiredo)</strong>.<br />
-      <span class="small">— National Archives of South Africa, Transvaal depot, Witwatersrand Local Division, <strong>WLD 1950/1948</strong></span></blockquote>
+      <span class="small">— National Archives of South Africa, Transvaal depot, Witwatersrand Local Division, <strong><Rec id="litigation">WLD 1950/1948</Rec></strong></span></blockquote>
     <p>
       She was born <strong>Ivone Mota Figueiredo</strong>, in all likelihood <em>Ivone da Mota Figueiredo</em>.
     </p>
     <p>
       <strong>That was written before her birth registration was in the room, and it now has a rival
-      that outranks the court index.</strong> The assento Derrick supplied on 27 September 2026 spells
+      that outranks the court index.</strong> The <Rec id="ivone-assento-nascimento-1922">assento</Rec> Derrick supplied on 27 September 2026 spells
       it <strong>MATA</strong> twice: her mother is <em>Leonia dos Santos <strong>Mata</strong></em>,
       and <strong>averbamento 3 is a deliberate legal act rectifying her full name</strong> to
       <em>Ivone <strong>Mata</strong> de Figueiredo</em>. The 2010 death certificate spells it
@@ -70,7 +71,7 @@ const fam = familyOf(subject.id);
     </p>
     <p class="small muted">
       <strong>Two Portuguese civil documents disagree, and this archive is not picking one quietly.</strong>
-      What can be said: a rectification averbamento on the birth entry is the registrar of record
+      What can be said: a rectification averbamento on the <Rec id="ivone-assento-nascimento-1922">birth entry</Rec> is the registrar of record
       correcting the register on purpose, and a death certificate typed sixty years later is
       derivative of whatever was in front of the typist. That favours <strong>Mata</strong>. It is not
       being adopted across the site on that reasoning alone, because the South African court index of
@@ -82,7 +83,7 @@ const fam = familyOf(subject.id);
   <figure class="doc-scan">
     <img src={base + '/ivone-assento-1922.jpg'} alt="Ivone's Portuguese birth registration of 1922, handwritten, with three marginal averbamentos" />
     <figcaption class="small muted">
-      <strong>Assento de nascimento n.º 447-D, fls. 224</strong>, Conservatória dos Registos Centrais,
+      <strong><Rec id="ivone-assento-nascimento-1922">Assento de nascimento n.º 447-D</Rec>, fls. 224</strong>, Conservatória dos Registos Centrais,
       Lisboa, 7 May 1987, transcribed from the certidão issued by the 1.ª Conservatória do Registo
       Civil de Lourenço Marques on 14 October 1974. <strong>Photographed from the family&rsquo;s own
       papers and supplied by Derrick on 27 September 2026.</strong> It gives <em>dia quatro, mês
@@ -104,7 +105,7 @@ const fam = familyOf(subject.id);
   <div class="xlat">
     <div class="pt">
       <h4>What the entry says</h4>
-      <p>Assento de nascimento n.º 447-D — Fls. 224</p>
+      <p><Rec id="ivone-assento-nascimento-1922">Assento de nascimento n.º 447-D</Rec> — Fls. 224</p>
       <p>Nome próprio: <strong>Ivone</strong></p>
       <p>Sexo: feminino</p>
       <p>Hora e data do nascimento: dia <strong>quatro</strong>, mês <strong>Março</strong>, ano <strong>mil novecentos e vinte e dois</strong></p>
@@ -114,13 +115,13 @@ const fam = familyOf(subject.id);
       <p>Residência habitual de ambos em Lourenço Marques</p>
       <p>Avós paternos: <strong>António Júlio de Figueiredo e Ana Pereira de Figueiredo</strong></p>
       <p>Avós maternos: <strong>Augusto Mata e Júlia Durães Mata</strong></p>
-      <p>Menções especiais: assento com base em certidão de registo lavrado na 1.ª Conservatória do Registo Civil de Lourenço Marques, aí passada aos 14 de Outubro de 1974</p>
+      <p>Menções especiais: <Rec id="ivone-assento-nascimento-1922">assento</Rec> com base em certidão de registo lavrado na 1.ª Conservatória do Registo Civil de Lourenço Marques, aí passada aos 14 de Outubro de 1974</p>
       <p>Lisboa e Conservatória dos Registos Centrais, no dia 7 de Maio de 1987</p>
       <p>Registado no Diário sob o n.º 8700-C · Cédula n.º 307361, série E · Processo n.º 10.277/87</p>
     </div>
     <div class="en">
       <h4>In English</h4>
-      <p>Birth entry no. 447-D — folio 224</p>
+      <p><Rec id="ivone-assento-nascimento-1922">Birth entry no. 447-D</Rec> — folio 224</p>
       <p>Given name: <strong>Ivone</strong></p>
       <p>Sex: female</p>
       <p>Date of birth: day <strong>four</strong>, month <strong>March</strong>, year <strong>one thousand nine hundred and twenty-two</strong></p>
@@ -139,14 +140,14 @@ const fam = familyOf(subject.id);
   <div class="xlat">
     <div class="pt">
       <h4>The three averbamentos, in the margin</h4>
-      <p><strong>1</strong> — Casou civilmente com <strong>Frederico Pinto da Rocha</strong>, em <strong>18 de Novembro de 1939</strong>, na 1.ª Conservatória do Registo Civil de Lourenço Marques. Averbamento ao assento transcrito em 7 de Maio de 1987. — Rasurei: &ldquo;em&rdquo;, entrelinhei &ldquo;Marques&rdquo;. […] O casamento referido no averbamento n.º 1 foi transcrito nesta Conservatória sob o n.º <span class="unclear">268-B/87 [?]</span></p>
-      <p><strong>2</strong> — O casamento averbado sob o n.º 1 foi <strong>dissolvido por divórcio</strong> decretado por sentença de <strong>6 de Dezembro de 1945</strong>, transitada em julgado, proferida pelo 1.º Ofício do Juízo de Direito da <strong>Beira</strong>. Averbamento n.º 2 ao assento do casamento já referido, em 30 de Setembro de 1987.</p>
+      <p><strong>1</strong> — Casou civilmente com <strong>Frederico Pinto da Rocha</strong>, em <strong>18 de Novembro de 1939</strong>, na 1.ª Conservatória do Registo Civil de Lourenço Marques. Averbamento ao <Rec id="ivone-assento-nascimento-1922">assento</Rec> transcrito em 7 de Maio de 1987. — Rasurei: &ldquo;em&rdquo;, entrelinhei &ldquo;Marques&rdquo;. […] O casamento referido no averbamento n.º 1 foi transcrito nesta Conservatória sob o n.º <span class="unclear">268-B/87 [?]</span></p>
+      <p><strong>2</strong> — O casamento averbado sob o n.º 1 foi <strong>dissolvido por divórcio</strong> decretado por sentença de <strong>6 de Dezembro de 1945</strong>, transitada em julgado, proferida pelo 1.º Ofício do Juízo de Direito da <strong>Beira</strong>. Averbamento n.º 2 ao <Rec id="ivone-assento-nascimento-1922">assento</Rec> do casamento já referido, em 30 de Setembro de 1987.</p>
       <p><strong>3</strong> — <strong>Rectificação</strong> no sentido de que a registada casou com o nome completo de <strong>Ivone Mata de Figueiredo</strong>, na Conservatória do Registo Civil de Lourenço Marques, Moçambique. Processo 10.277/87. Em 9 de Outubro de 1987. <strong>Emendei: &ldquo;3&rdquo;, &ldquo;(três)&rdquo; e &ldquo;Mata&rdquo;.</strong></p>
     </div>
     <div class="en">
       <h4>In English</h4>
       <p><strong>1</strong> — Married civilly to <strong>Frederico Pinto da Rocha</strong> on <strong>18 November 1939</strong>, at the 1st Civil Registry Office of Lourenço Marques. Endorsement to the entry transcribed on 7 May 1987. — I struck out &ldquo;em&rdquo; and interlined &ldquo;Marques&rdquo;. […] The marriage referred to in endorsement no. 1 was transcribed in this Registry under no. <span class="unclear">268-B/87 [?]</span></p>
-      <p><strong>2</strong> — The marriage endorsed under no. 1 was <strong>dissolved by divorce</strong>, decreed by judgment of <strong>6 December 1945</strong>, final and beyond appeal, handed down by the 1st Office of the Court of Law at <strong>Beira</strong>. Endorsement no. 2 to the marriage entry already mentioned, 30 September 1987.</p>
+      <p><strong>2</strong> — The marriage endorsed under no. 1 was <strong>dissolved by divorce</strong>, decreed by judgment of <strong>6 December 1945</strong>, final and beyond appeal, handed down by the 1st Office of the Court of Law at <strong>Beira</strong>. Endorsement no. 2 to the <Rec id="ivone-assento-nascimento-1922">marriage entry</Rec> already mentioned, 30 September 1987.</p>
       <p><strong>3</strong> — <strong>Rectification</strong> to the effect that the registered person married under the full name of <strong>Ivone Mata de Figueiredo</strong>, at the Civil Registry Office of Lourenço Marques, Mozambique. File 10,277/87. On 9 October 1987. <strong>I amended: &ldquo;3&rdquo;, &ldquo;(três)&rdquo; and &ldquo;Mata&rdquo;.</strong></p>
     </div>
   </div>
@@ -308,11 +309,12 @@ const fam = familyOf(subject.id);
     <h3>The da Rocha marriage, and what she declared at Germiston <span class="tag doc">Documented</span></h3>
     <p>
       The family tree records <em>“Marriage to: Unknown Da Rocha, before 1941”</em>, and
-      <strong>her own birth registration names him and dates it.</strong> Ivone married
+      <strong>her own <Rec id="ivone-assento-nascimento-1922">birth registration</Rec> names him and dates it.</strong> Ivone married
       <strong>FREDERICO PINTO DA ROCHA on 18 November 1939</strong> at the 1.ª Conservatória do Registo
       Civil de Lourenço Marques. The marriage was dissolved by divorce, by a sentence of
       <strong>6 December 1945</strong>. Both facts are marginal notes on the assento, added in 1987.
     </p>
+      <Rec id="plate-assento-1922" thumb />
     <p>
       So at Germiston in February 1948 she was <strong>not a spinster but a divorcée of two
       years</strong> — and the register there understates more than her status. It gives her age as
@@ -331,7 +333,7 @@ const fam = familyOf(subject.id);
       A husband at the date of birth is a legal presumption and not a certificate, and nothing here
       excludes another man. What it changes is the search. His birth registration at Lourenço
       Marques is no longer the <strong>only</strong> document likely to name his father, because
-      <strong>the marriage entry of 18 November 1939 exists too</strong>.
+      <strong>the <Rec id="ivone-assento-nascimento-1922">marriage entry of 18 November 1939</Rec> exists too</strong>.
     </p>
   </div>
 
@@ -359,7 +361,7 @@ const fam = familyOf(subject.id);
     </p>
     <p>
       <strong>He remarried on 25 February 1950</strong> &mdash; <em>Johannes Antonie Oelofse Dewitt
-      and <strong>Elsie Marie Geyer</strong></em>, in the national civil marriage index, he aged 27
+      and <strong>Elsie Marie Geyer</strong></em>, in the <Rec id="fs-dewitt-geyer-1950">national civil marriage index</Rec>, he aged 27
       and she born about 1930. And <strong>he died on 2 April 1963 at Sasolburg</strong> in the
       Orange Free State, aged 40, in the civil death register, which gives his birthplace as
       <strong>Pretoria</strong>.
@@ -375,7 +377,7 @@ const fam = familyOf(subject.id);
       One loose thread it pulls. Three officials wrote down his age &mdash; 25 in February 1948, 27
       in February 1950, 40 in April 1963 &mdash; and the three ranges overlap at April 1922 to
       February 1923. The tree&rsquo;s &ldquo;December 1923, Johannesburg&rdquo; is outside all three,
-      and the death register says Pretoria. Declared ages are not proof of anything on their own.
+      and the <Rec id="fs-dewitt-death-1963">death register</Rec> says Pretoria. Declared ages are not proof of anything on their own.
       Three of them agreeing is worth writing down.
     </p>
   </div>
@@ -512,7 +514,7 @@ const fam = familyOf(subject.id);
   <div class="panel">
     <h3>And one name, from a passport register <span class="tag inf">Candidate only</span></h3>
     <p>
-      Her father must be a Figueiredo. Searched across every Portuguese archive indexed on Digitarq,
+      Her father must be a Figueiredo. Searched across every Portuguese archive indexed on <Rec id="ivone-portuguese-origins">Digitarq</Rec>,
       exactly one Figueiredo took a passport for <strong>Lourenço Marques</strong> before she was
       born: <strong>Augusto Pereira de Figueiredo</strong>, 21, of Eixo in Aveiro, on
       <strong>22 October 1904</strong>. It may well be nothing — Figueiredo is among the commonest
@@ -523,13 +525,14 @@ const fam = familyOf(subject.id);
 
   <h2>Where her family came from</h2>
   <p>
-    The assento gives her father&rsquo;s home parish as <strong>Vimieiro</strong> and her
+    The <Rec id="ivone-assento-nascimento-1922">assento</Rec> gives her father&rsquo;s home parish as <strong>Vimieiro</strong> and her
     mother&rsquo;s as <strong>Negozela</strong>. Both are freguesias of
     <strong>SANTA COMBA D&Atilde;O</strong>, in the district of Viseu &mdash; a town of three thousand
     between the rivers D&atilde;o and Mondego, halfway between Viseu and Coimbra. Vimieiro is three
     kilometres from it. <strong>Her parents came from one small concelho in the Beira Alta</strong>,
     and left it for Louren&ccedil;o Marques before March 1922.
   </p>
+    <Rec id="plate-assento-1922" thumb />
 
   <div class="panel">
     <h3>And the DNA page has been standing next to it for weeks <span class="tag inf">Inferred</span></h3>
@@ -594,8 +597,8 @@ const fam = familyOf(subject.id);
   <div class="panel">
     <h3>What can be reached, and what cannot <span class="tag doc">Measured</span></h3>
     <p>
-      <strong>The parish registers of Santa Comba D&atilde;o are not online.</strong> The Arquivo
-      Distrital de Viseu&rsquo;s holdings on Digitarq are judicial and civil-government series only;
+      <strong>The parish registers of Santa Comba D&atilde;o are not online.</strong> The <Rec id="ivone-portuguese-origins">Arquivo
+      Distrital de Viseu</Rec>&rsquo;s holdings on Digitarq are judicial and civil-government series only;
       searches on Nagozela, Treixedo and Vimieiro return no parish-register fonds at all, while other
       districts&rsquo; come back readily. So her grandparents &mdash;
       <strong>Ant&oacute;nio J&uacute;lio de Figueiredo and Ana Pereira de Figueiredo, Augusto Mata and
@@ -604,7 +607,7 @@ const fam = familyOf(subject.id);
     </p>
     <p>
       <strong>What is online, free and indexed by individual name</strong> is the Governo Civil de
-      Viseu&rsquo;s <strong>passport applications</strong> &mdash; <em>&ldquo;Pedido de passaporte
+      Viseu&rsquo;s <strong><Rec id="ivone-portuguese-origins">passport applications</Rec></strong> &mdash; <em>&ldquo;Pedido de passaporte
       de&hellip;&rdquo;</em>, PT/ADVIS/AC/GCVIS/H-D/001 &mdash; digitised, with image counts against
       them. <strong>That is the emigration itself</strong>, the event that produced every Portuguese
       person in this archive. The Santa Comba D&atilde;o court records are there too, and a Portuguese
@@ -634,25 +637,25 @@ const fam = familyOf(subject.id);
   <div class="xlat">
     <div class="pt">
       <h4>What the certificate says</h4>
-      <p>Certificado de óbito n.º 12893536 — Ministério da Saúde, Direcção-Geral da Saúde</p>
+      <p><Rec id="ivone-death-certificate-2010">Certificado de óbito</Rec> n.º 12893536 — Ministério da Saúde, Direcção-Geral da Saúde</p>
       <p>Nome: <strong>IVONE MOTA DE FIGUEIREDO</strong></p>
       <p>Filho de <strong>Joaquim Júlio de Figueiredo</strong> e de <strong>Leónia dos Santos Mota</strong></p>
       <p>Sexo: Fem. · Data de nascimento: <strong>04|03|1922</strong> · Nacionalidade: Portuguesa</p>
       <p>Estado civil: <strong>Divorciado</strong></p>
       <p>Naturalidade: freguesia <strong>Nossa Senhora da Conceição</strong>, concelho <strong>Lourenço Marques — Moçambique</strong></p>
       <p>Residência habitual: <strong>Rua Nova das Marinhas, 82</strong>, freguesia <strong>Gulpilhares</strong>, concelho <strong>Vila Nova de Gaia</strong>, distrito <strong>Porto</strong>, país Portugal</p>
-      <p>Profissão: <strong>Doméstica</strong> · Tipo de óbito: <strong>Natural</strong></p>
+      <p>Profissão: <strong>Doméstica</strong> · Tipo de <Rec id="ivone-death-certificate-2010">óbito</Rec>: <strong>Natural</strong></p>
       <p>Causa da morte, Parte I a): <strong>falência cardio-respiratória</strong> — tempo aproximado &gt; 1 ano</p>
       <p>Parte II: <strong>Demência</strong> — &gt; 1 ano</p>
-      <p>16. Data do óbito: <strong>14|03|2010</strong> · 17. Hora: <strong>4h 30m</strong></p>
+      <p>16. Data do <Rec id="ivone-death-certificate-2010">óbito</Rec>: <strong>14|03|2010</strong> · 17. Hora: <strong>4h 30m</strong></p>
       <p>18. A causa de morte foi indicada com base em: <strong>Elementos de ordem clínica</strong></p>
-      <p>19. Local do óbito: <strong>Num domicílio</strong></p>
+      <p>19. Local do <Rec id="ivone-death-certificate-2010">óbito</Rec>: <strong>Num domicílio</strong></p>
       <p>22. Foi médico assistente do falecido nos sete dias que antecederam a morte? <strong>Sim</strong></p>
       <p>Cédula profissional n.º [withheld] · Data <strong>16/03/2010</strong> · Assinatura do médico</p>
     </div>
     <div class="en">
       <h4>In English</h4>
-      <p>Death certificate no. 12893536 — Ministry of Health, Directorate-General of Health</p>
+      <p><Rec id="ivone-death-certificate-2010">Death certificate no. 12893536</Rec> — Ministry of Health, Directorate-General of Health</p>
       <p>Name: <strong>IVONE MOTA DE FIGUEIREDO</strong></p>
       <p>Child of <strong>Joaquim Júlio de Figueiredo</strong> and <strong>Leónia dos Santos Mota</strong></p>
       <p>Sex: F. · Date of birth: <strong>04|03|1922</strong> · Nationality: Portuguese</p>
@@ -772,14 +775,14 @@ const fam = familyOf(subject.id);
   <ul>
     <li><s><strong>The Portuguese DNA matches from the surname sweep.</strong></s> <strong>Withdrawn the same evening.</strong> The 27 Figueiredo and 13 Mota hits are surname-string coincidences: MyHeritage was pairing Ivone with a woman <strong>born before 1713</strong>, and on the Mota side it states outright that no ancestral surname is shared. The real Portuguese matches are the ones already in the table above. <a href={base + '/dna/'}>Why it was withdrawn →</a></li>
     <li><s>Her death and burial record at Porto, which will name her parents outright.</s>
-      <strong>FOUND — supplied by the family, 27 September 2026.</strong> Certificado de óbito
-      n.º 12893536: died at home at Gulpilhares, Vila Nova de Gaia, in March 2010, and it names both
+      <strong>FOUND — supplied by the family, 27 September 2026.</strong> <Rec id="ivone-death-certificate-2010">Certificado de óbito
+      n.º 12893536</Rec>: died at home at Gulpilhares, Vila Nova de Gaia, in March 2010, and it names both
       parents. The <em>assento de óbito</em> at Vila Nova de Gaia would still fix the exact day.</li>
     <li><s>The certificate images, because South African certificates name both parties' fathers.</s> <strong>They do not.</strong> The 1948 register has now been read and the form has no parents column at all — eleven columns, none of them a father. Ivone's parents are in the Portuguese records or nowhere.</li>
-    <li><s>The 43 Figueiredo documents in the South African national archives index</s> — <strong>read, 14 September 2026</strong>, and they gave up her name. Of the rest, 31 are Transvaal court and estate files of other Johannesburg Portuguese families, and one Cape Town entry is early enough to be worth a look: <strong>KAB PIO 4752A, “Immigration papers. Mrs. L.A. Figueiredo”, 1950</strong>.</li>
+    <li><s>The 43 Figueiredo documents in the South African <Rec id="naairs-figueiredo">national archives index</Rec></s> — <strong>read, 14 September 2026</strong>, and they gave up her name. Of the rest, 31 are Transvaal court and estate files of other Johannesburg Portuguese families, and one Cape Town entry is early enough to be worth a look: <strong>KAB PIO 4752A, “Immigration papers. Mrs. L.A. Figueiredo”, 1950</strong>.</li>
     <li>The three <strong>Luwinski divorce files</strong> in the Transvaal depot, listed above.</li>
     <li><s>Her birth registration at Lourenço Marques.</s> <strong>A transcription is in hand</strong> —
-      assento n.º 447-D, Conservatória dos Registos Centrais, Lisboa, 7 May 1987, itself taken from a
+      <Rec id="ivone-assento-nascimento-1922">assento n.º 447-D</Rec>, Conservatória dos Registos Centrais, Lisboa, 7 May 1987, itself taken from a
       certidão issued at Lourenço Marques on 14 October 1974. It carries the parents, all four
       grandparents and the marriage and divorce. THE 1922 ORIGINAL IS STILL WORTH HAVING, because a
       transcription of a transcription is where <em>Mata</em> and <em>Mota</em> could have parted. The Arquivo Histórico de Moçambique holds the registers for 1865–1934 and issues certificates on request — <a href={base + '/mozambique/'}>the survey of where everything is kept →</a></li>
@@ -789,8 +792,9 @@ const fam = familyOf(subject.id);
     <li><s>The <strong>Pinto da Rocha</strong> family of Lourenço Marques — Henrique's father.</s>
       <strong>NAMED: FREDERICO PINTO DA ROCHA</strong>, who married Ivone at the 1.ª Conservatória,
       Lourenço Marques, on 18 November 1939 and was divorced from her by a sentence of 6 December
-      1945 — so Henrique was born within the marriage. The marriage entry itself is now the document
+      1945 — so Henrique was born within the marriage. The <Rec id="ivone-assento-nascimento-1922">marriage entry</Rec> itself is now the document
       to order, and it will name Frederico's own parents. Henrique's own deceased estate was gazetted three times in 2023 — <strong>estate 12294/2023, “DA ROCHA, HENRIQUE FIGUEIREDO PINTO”</strong>, opened on his death of 27 October 2022. A South African estate file contains the <strong>Death Notice, form J294</strong>, which asks outright for <strong>the full names of the father</strong> and the maiden name of the mother. It has not been ordered yet. <span class="tag open">Located, not ordered</span></li>
     <li>Her immigration to South Africa: when, and with whom.</li>
   </ul>
+    <Rec id="plate-assento-1922" thumb />
 </Base>

@@ -1,4 +1,5 @@
 ---
+import Rec from '../components/Rec.astro';
 import Base from '../layouts/Base.astro';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const fs = (a) => `https://www.familysearch.org/ark:/61903/${a}`;
@@ -64,7 +65,7 @@ const disproof = [
     <h3>Sixty-three and seventy-two Pix Road <span class="tag doc">17 Sep 2026</span></h3>
     <p>
       <strong>The 1939 Register was searched for Leonard&rsquo;s aunt and found his grandmother.</strong>
-      At <strong>63 Pix Road, Letchworth</strong> &mdash; TNA R39/1620/1620G/011/28, schedule 305, taken
+      At <strong>63 Pix Road, Letchworth</strong> &mdash; <Rec id="shenton-1939-pix-road">TNA R39/1620/1620G/011/28</Rec>, schedule 305, taken
       on 29 September 1939:
     </p>
     <div class="scroll"><table>
@@ -125,6 +126,7 @@ const disproof = [
       sailed for the Cape in 1937 and married at Rosebank in 1940 has no business being indexed under
       <em>Germany</em> &mdash; and they were opened expecting a different man. They are not.
     </p>
+      <Rec id="plate-rosebank-1940" thumb />
     <div class="scroll"><table>
       <thead><tr><th></th><th></th></tr></thead>
       <tbody>
@@ -166,7 +168,7 @@ const disproof = [
     <p>
       <strong>The last gap in Henry Robert&rsquo;s life closes with the 1911 census</strong>, and it
       explains how a boy raised in Watford came to marry a Baldock girl at Hitchin. At twenty-one he is
-      at <strong>9 Ridge Road, Letchworth</strong> &mdash; RG14/7576/0009 &mdash; <strong>a boarder, single,
+      at <strong>9 Ridge Road, Letchworth</strong> &mdash; <Rec id="wear-1911-letchworth">RG14/7576/0009</Rec> &mdash; <strong>a boarder, single,
       and a PRINTER&rsquo;S ASSISTANT</strong>, in the house of a 36-year-old widow named Harriet Reeves
       along with her brother, her small son and another young boarder, a fitter.
     </p>
@@ -199,7 +201,7 @@ const disproof = [
     <p>
       <strong>Robert Wear&rsquo;s own parents are found, and the line goes back one more generation.</strong>
       The 1871 census has him at twelve, a scholar, at <strong>Jamaica Road, Bermondsey</strong> &mdash;
-      RG10/641 f.40 sch.40:
+      <Rec id="wear-1871-bermondsey">RG10/641 f.40 sch.40</Rec>:
     </p>
     <div class="scroll"><table>
       <thead><tr><th></th><th></th><th>age</th><th>occupation</th><th>born</th></tr></thead>
@@ -252,7 +254,7 @@ const disproof = [
     <p>
       <strong>And Emma&rsquo;s own parents are now on the record.</strong> The 1871 census finds her at
       twelve, a scholar, at <strong>The Red Lion Cottages, Aldenham</strong> &mdash;
-      RG10/1380 f.10 p.12 sch.58:
+      <Rec id="hawkins-1871-aldenham">RG10/1380 f.10 p.12 sch.58</Rec>:
     </p>
     <div class="scroll"><table>
       <thead><tr><th></th><th></th><th>age</th><th>occupation</th></tr></thead>
@@ -273,7 +275,7 @@ const disproof = [
       there, and came back.
     </p>
     <p>
-      <strong>It also settles the problem the last panel had to leave open.</strong> The 1891 census
+      <strong>It also settles the problem the last panel had to leave open.</strong> The <Rec id="wear-1891-watford">1891 census</Rec>
       called Emma Wear the <em>Mother</em> of a head two years her senior, which could not be right.
       Here is <strong>John Hawkins, son, aged 14 in 1871, born Aldenham</strong> &mdash; the same John
       Hawkins who in 1891 is thirty-four, a carter, head of the house at 44 Ebury Road, with his widowed
@@ -315,7 +317,7 @@ const disproof = [
       </tbody>
     </table></div>
     <p>
-      <strong>On census night 1891 the house held nine people.</strong> The head was
+      <strong>On <Rec id="wear-1891-watford">census night 1891</Rec> the house held nine people.</strong> The head was
       <strong>John Hawkins</strong>, 34, a carter, born <strong>Aldenham, Hertfordshire</strong>. Also
       there was <strong>Emma Wear, 32, a WIDOW, born Aldenham, Hertfordshire</strong> &mdash; the same
       small parish, two years apart &mdash; with her three children:
@@ -335,7 +337,7 @@ const disproof = [
       mother&rsquo;s, not his father&rsquo;s.
     </p>
     <p class="small muted">
-      <strong>Two things to hold honestly.</strong> The census gives Emma&rsquo;s relationship to the
+      <strong>Two things to hold honestly.</strong> <Rec id="wear-1891-watford">The census</Rec> gives Emma&rsquo;s relationship to the
       head as <em>Mother</em>, which cannot be right &mdash; she is 32 and John Hawkins is 34. Same
       surname, same birth parish, two years apart: <strong>brother and sister is the reading, and the
       original image should be checked before it is treated as settled.</strong> And the service record
@@ -350,14 +352,14 @@ const disproof = [
     <h3>They left England in 1939, and they left in two parties <span class="tag doc">16 Sep 2026</span></h3>
     <p>
       <strong>This archive has asked since the beginning when the Wears emigrated, and has never been
-      able to answer it.</strong> The outbound passenger lists &mdash; BT 27 at the National Archives,
+      able to answer it.</strong> The <Rec id="wear-emigration-bt27">outbound passenger lists</Rec> &mdash; BT 27 at the National Archives,
       searched on Findmypast on 16 September 2026 &mdash; answer it twice over.
     </p>
     <p>
       <strong>Leonard went first, and this archive had it the wrong way round until
       16 September.</strong> <em>Mr L A R Wear</em>, aged twenty, <strong>occupation
       engineer</strong>, sailed from <strong>Southampton on 12 March 1937</strong> aboard the
-      Union-Castle liner <strong>Windsor Castle</strong>, bound for the Cape &mdash; TNA/BT27/1490/00/0047,
+      Union-Castle liner <strong>Windsor Castle</strong>, bound for the Cape &mdash; <Rec id="wear-emigration-bt27">TNA/BT27/1490/00/0047</Rec>,
       entry 00171. <strong>Two years before his father.</strong> The index would not give him up on his
       forename and surrendered him at once to the initial.
     </p>
@@ -365,7 +367,7 @@ const disproof = [
       <strong>Henry Robert followed in 1939.</strong> <em>Mr H R Wear</em>, born 1890, aged 49,
       occupation given as <strong>machine minder</strong> &mdash; the transcriber read it as &ldquo;machine
       minister&rdquo; &mdash; sailed from <strong>London on 5 April 1939</strong> aboard the Union-Castle
-      liner <strong>Durban Castle</strong>, bound for the Cape. He is the only Wear on that manifest.
+      liner <strong>Durban Castle</strong>, bound for the Cape. He is the only Wear on that <Rec id="wear-1939-bt27-images">manifest</Rec>.
     </p>
     <p>
       <strong>Martha Maud followed four months later with four children.</strong> On
@@ -395,7 +397,7 @@ const disproof = [
       <strong>The initials are all five of them, and the archive already had the names.</strong> Henry
       Robert and Martha Maud registered six children at Hitchin &mdash; Leonard 1917, Janette 1919,
       Kathleen 1921, Cynthia 1931, Linda 1933 and Bruce Wallace 1936. <strong>Four of those six are on
-      this manifest, in birth order, and the two who are missing are the two eldest.</strong> Leonard
+      this <Rec id="wear-1939-bt27-images">manifest</Rec>, in birth order, and the two who are missing are the two eldest.</strong> Leonard
       was twenty-two that August and Janette twenty. <strong>Martha Maud took the children who were
       still children.</strong>
     </p>
@@ -403,7 +405,7 @@ const disproof = [
       <strong>Thirteen days after the ship left, her brother died in London.</strong> George William
       Castle, the second of Martha Maud&rsquo;s eight siblings, of <strong>85 Jackmans-place,
       Letchworth</strong>, died on <strong>23 August 1939 at St Bartholomew&rsquo;s Hospital</strong>,
-      London E.C.1 &mdash; read from the 1939 probate calendar on 12 October. <strong>The grant was
+      London E.C.1 &mdash; read from the <Rec id="castle-nine-children">1939 probate calendar</Rec> on 12 October. <strong>The grant was
       administration, not probate, so there was no will.</strong> It went on 2 November to
       <strong>Margaret Castle, widow, and Cyril George Castle, printer</strong>; effects
       <strong>&pound;1,166 13s. 2d.</strong> He had been carried here as dying at Letchworth, which was
@@ -414,13 +416,13 @@ const disproof = [
     <p class="small muted">
       <strong>Cyril George Castle is not claimed as his son</strong> &mdash; a co-administrator beside a
       widow is where a son ordinarily sits, and that is all the entry says. And a trap on the same page:
-      <strong>there are two George William Castles in the 1939 calendar, twenty lines apart</strong>, the
+      <strong>there are two George William Castles in the <Rec id="castle-nine-children">1939 calendar</Rec>, twenty lines apart</strong>, the
       other of Worthing in Sussex with probate rather than administration and nearly twice the estate.
       Only the residence town separates them. The scan is not republished here because it is a
       licensed Findmypast image; the words are all above.
     </p>
     <p>
-      <strong>And the manifest corroborates the sibship this archive built out of the birth index.</strong>
+      <strong>And the <Rec id="wear-1939-bt27-images">manifest</Rec> corroborates the sibship this archive built out of the birth index.</strong>
       The reconstruction said Henry Robert and Martha Maud had six children at Hitchin between 1917 and
       1936, <em>of whom two were sons</em> &mdash; one thirty-one in June 1948 and the other eleven.
       <strong>MAST B Wear, born 1937, is that second son</strong>, and he is here in his own right on a
@@ -430,12 +432,13 @@ const disproof = [
     </p>
     <p class="small muted">
       <strong>Neither Leonard nor a Leonard-shaped man is on either ship.</strong> He was
-      twenty-two in 1939, he is in Johannesburg by 1940, and he married at Rosebank on 7 September that
+      twenty-two in 1939, he is in Johannesburg by 1940, and he <Rec id="rosebank-1940-marriage-register">married at Rosebank</Rec> on 7 September that
       year &mdash; so he travelled separately, as an adult would. A search of BT 27 on the forename
       <em>Leonard</em> with the surname Wear returns nothing at all, which means he is either indexed
       under initials or he did not leave from a port these lists cover. That is a live question, not a
       closed one.
     </p>
+      <Rec id="plate-rosebank-1940" thumb />
   </div>
 
 
@@ -517,7 +520,7 @@ const disproof = [
     <h3>The last certain sighting <span class="tag doc">15 September, late</span></h3>
     <p>
       Every other line in that table comes from a marriage register or a court index. This one comes
-      from a cemetery ledger, and it is the only record outside a family tree that puts
+      from a <Rec id="westpark-films">cemetery ledger</Rec>, and it is the only record outside a family tree that puts
       <strong>Leonard and Henry Robert Wear on the same document</strong>.
     </p>
     <blockquote class="small">
@@ -545,7 +548,7 @@ const disproof = [
       their elder son paid for.
     </p>
     <p class="small muted">
-      <strong>Correction, 15 September:</strong> this archive first published the folio as
+      <strong>Correction, 15 September:</strong> this archive <Rec id="westpark-films">first published the folio</Rec> as
       <strong>W58</strong>. It is <strong>W 8</strong>. Re-cropped and read on its own at 4.3&times;,
       the pencilled head-margin number is a looped <em>W</em> and a single <em>8</em>; the flourish
       on the W had been read as a 5. Three records agree &mdash; the purchaser page&rsquo;s own head
@@ -558,7 +561,7 @@ const disproof = [
   <div class="panel">
     <h3>His father&rsquo;s own address, and his own, on the same day <span class="tag doc">15 September, later</span></h3>
     <p>
-      The grave register gave the purchaser. The <strong>burial</strong> register &mdash; folio W 56 of
+      The grave register gave the purchaser. The <strong>burial</strong> register &mdash; <Rec id="westpark-films">folio W 56</Rec> of
       the same cemetery&rsquo;s books, the folio the grave register points to &mdash; gives the dead
       man&rsquo;s household. Row 4, read at up to five times magnification:
     </p>
@@ -593,17 +596,17 @@ const disproof = [
   <div class="panel">
     <h3>The family never took South African citizenship <span class="tag doc">15 September, later still</span></h3>
     <p>
-      The Parkhurst address was one clerk&rsquo;s handwriting. Run against the Government Gazette it
+      The Parkhurst address was one clerk&rsquo;s handwriting. Run against the <Rec id="gazette-wear-sweep">Government Gazette</Rec> it
       came back twice over, and the second record is worth more than the address it confirms.
     </p>
     <blockquote class="small">
-      <strong>Government Gazette 4620, 21 March 1975</strong> &mdash; <em>Naturalization Notices</em><br />
+      <strong><Rec id="gazette-wear-sweep">Government Gazette 4620, 21 March 1975</Rec></strong> &mdash; <em>Naturalization Notices</em><br />
       EVANS, Mrs <strong>Janette Eileen Maud</strong>, formerly <strong>Bailey</strong>,
       n&eacute;e <strong>Wear</strong>, saleslady,
       <strong>5 Livingstone Court, 28 Fourth Street, Parkhurst, Johannesburg</strong>
     </blockquote>
     <blockquote class="small">
-      <strong>Government Gazette 5007, 12 March 1976</strong> &mdash; certificates issued<br />
+      <strong><Rec id="gazette-wear-sweep">Government Gazette 5007, 12 March 1976</Rec></strong> &mdash; certificates issued<br />
       <strong>R54033</strong> &mdash; EVANS, Janette Eileen Maud, <strong>28/10/19</strong>,
       <strong>England</strong>, Citizen of the U.K. and C., <strong>30/10/75</strong>
     </blockquote>
@@ -849,7 +852,7 @@ const disproof = [
   <div class="panel">
     <h3>His sister did not stay behind. She stayed to be married. <span class="tag doc">16 September</span></h3>
     <p>
-      The 1939 Register, taken on <strong>29 September 1939</strong>, found one Wear still in
+      The <Rec id="wear-1939-register">1939 Register</Rec>, taken on <strong>29 September 1939</strong>, found one Wear still in
       Hertfordshire &mdash; <em>Jeannett (E M) Wear, 1919, 18 Ridge Avenue, Letchworth</em> &mdash;
       while the rest of the household had already gone. <strong>They had gone from that address</strong>
       &mdash; the passenger lists of April and August 1939 both give 18 Ridge Avenue as the family&rsquo;s

@@ -54,6 +54,7 @@ HAND_EDITED = {
     "data/corrections.json", "data/dna-ethnicity-derrick.json", "data/dna-segments.json",
     "data/register-documented.json", "data/superseded.json", "data/wear-signature.json",
     "data/names-aliases.json",               # forms of a name the data states for a person who has a page (18 Oct 2026)
+    "data/record-plates.json",               # which scans belong to which ledger entry, and whether the archive may show them
 }
 
 # Data files a script writes. Their generator's own scrub gate is the guard; scanning them here would only meet
@@ -64,6 +65,7 @@ GENERATED = {
     "site/src/data/names-index.json",        # tools/build-names-index.py (dead people with a page; checked against the register by check:names)
     "data/guarded-hashes.json",              # tools/make-guarded.py: salted digests, no names
     "data/labsa-catalogue.json",             # tools/labsa.py: the Landesarchiv's own catalogue of index volumes
+    "site/src/data/records.json",            # tools/build-records.py: one row per ledger entry, scan or public address
 }
 
 # Prose typed outside src/pages and notes/*.md: the layout (a sentence can be typed there), the research logs

@@ -1,4 +1,5 @@
 ---
+import Rec from '../components/Rec.astro';
 import Base from '../layouts/Base.astro';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
@@ -301,7 +302,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <h2>In order of likely return</h2>
   <ol>
-    <li><strong>AHM Maputo</strong>, through the online portal — her 1922 birth certificate — now superseded by the family's own copy, which named her parents.</li>
+    <li><strong>AHM Maputo</strong>, through the online portal — her <Rec id="ivone-assento-nascimento-1922">1922 birth certificate</Rec> — now superseded by the family's own copy, which named her parents.</li>
     <li><strong>Conservatória dos Registos Centrais</strong>, Lisbon — Henrique's 1941 birth, naming his father.</li>
     <li><s>Digitarq passport registers, Porto and Aveiro</s> — <strong>done</strong>. Porto closed as a dead end; Aveiro produced one candidate, above.</li>
     <li><s>The Eixo parish registers, for a Figueiredo–Mota marriage</s> — <strong>done. There is no such marriage</strong>, in Eixo or in the district.</li>

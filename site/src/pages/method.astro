@@ -1,4 +1,5 @@
 ---
+import Rec from '../components/Rec.astro';
 import Base from '../layouts/Base.astro';
 import register from '../data/register.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -218,7 +219,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <h2>Two rules for this particular family</h2>
   <p>
-    <strong>On the Holocaust records.</strong> Dates and places come from the Bundesarchiv and are
+    <strong>On the Holocaust records.</strong> Dates and places come from the <Rec id="leibholz-gedenkbuch">Bundesarchiv</Rec> and are
     quoted as the Bundesarchiv gives them, including its refusals: where it declines to state a date of
     death because the date is not certain, this archive declines too, and says why. Jacob Leibholz has
     no death date here. That is not an omission.
@@ -294,7 +295,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <div class="panel">
     <h3>Guessing at names is not enumerating them <span class="tag disp">23 September 2026</span></h3>
     <p>
-      The Charlottenburg registry holdings were inventoried by querying the five office names the
+      The <Rec id="labsa-charlottenburg-inventory">Charlottenburg registry holdings</Rec> were inventoried by querying the five office names the
       archive could think of: <strong>143 volumes in five designations</strong>. The real figure is
       <strong>207 in six</strong>. It had missed <em>Standesamt Charlottenburg von Berlin</em> entirely,
       because LABSA matches an office name <em>exactly</em> and the list of names is only obtainable
@@ -311,7 +312,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h3>A tenth of a catalogue went missing, and the hole was shaped like an umlaut <span class="tag disp">23 September 2026</span></h3>
     <p>
       With the office names finally in hand, the whole free holding was enumerated:
-      <strong>5,383 name-index volumes across 139 offices</strong> &mdash; 2,845 death, 1,595 marriage,
+      <strong><Rec id="labsa-berlin-catalogue">5,383 name-index volumes</Rec> across 139 offices</strong> &mdash; 2,845 death, 1,595 marriage,
       943 birth. That single list turns several jobs this archive had been costing by eye into finite
       ones: Reinickendorf&rsquo;s remaining death indexes are thirteen volumes, and the whole of
       &ldquo;she died in some other borough&rdquo; is 296 volumes across 25 offices.
@@ -514,14 +515,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   </p>
   <ul>
     <li>
-      <strong>The Landesarchiv's registry database.</strong> Four offices returned nothing and this
+      <strong>The <Rec id="berlin-namensverzeichnisse">Landesarchiv's registry database</Rec>.</strong> Four offices returned nothing and this
       archive nearly published <em>“Schöneberg has no online name index.”</em> The database stores
       its office names double-encoded, so the <em>correct</em> spelling finds nothing and the mangled
       one finds seventeen volumes. The tell was that all four failures contained an umlaut and none
       of the successes did.
     </li>
     <li>
-      <strong>Geneteka.</strong> Both spellings of a surname returned an empty table, and both were
+      <strong><Rec id="geneteka-pomorskie-2026-10-11">Geneteka</Rec>.</strong> Both spellings of a surname returned an empty table, and both were
       nearly written down as zeroes. The province and record-type parameters had been left blank,
       and a blank parameter there is not “everywhere” but “nothing”. The control caught it.
     </li>
@@ -564,7 +565,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <h2>The source</h2>
   <p>
-    The spine is a MyHeritage family tree of 164 people, read on 14 September 2026. It is a family
+    The spine is a <Rec id="tree-audit">MyHeritage family tree</Rec> of 164 people, read on 14 September 2026. It is a family
     record, not an archive: it carries real documents, real citations, family estimates and at least two
     duplicated individuals, all mixed together at the same apparent confidence. Separating those is most
     of the work here. Where this archive contradicts the tree — Jacob's death year, Georg's parentage,

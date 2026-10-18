@@ -1,4 +1,5 @@
 ---
+import Rec from '../components/Rec.astro';
 import Base from '../layouts/Base.astro';
 import seg from '../data/segments.json';
 import wearsig from '../data/wear-signature.json';
@@ -50,7 +51,7 @@ const matches = [
   <div class="panel">
     <h3>The finding <span class="tag inf">Inferred, strongly</span></h3>
     <p>
-      <strong>Kurt Israel Luwinski is very probably not Lynn Derrick Luwinski's biological father.</strong>
+      <strong>Kurt Israel Luwinski is very probably not <span data-name-exempt="the archive's subject, a living person named bare; a living person is never given an entry">Lynn Derrick Luwinski</span>'s biological father.</strong>
       Two independent lines of evidence say so, and the paper record was already hinting at it before any
       test was taken.
     </p>
@@ -1098,11 +1099,12 @@ const matches = [
       the Wears were Catholic.
     </p>
     <p class="small muted">
-      <strong>And a Catholic register would not have named the parents anyway.</strong> Rosebank replied that
-      the 1940 register survives and contains the entry, and that it does <em>not</em> carry them &mdash;
+      <strong>And a Catholic register would not have named the parents anyway.</strong> <Rec id="rosebank-1940-marriage-register">Rosebank replied that
+      the 1940</Rec> register survives and contains the entry, and that it does <em>not</em> carry them &mdash;
       <em>&ldquo;Unfortunately not, as attached&rdquo;</em>. The letter produced the page; it did not produce
       the parents.
     </p>
+      <Rec id="plate-rosebank-1940" thumb />
   </div>
   <div class="panel">
     <h3>A fourth ante-nuptial contract <span class="tag doc">New lead</span></h3>
@@ -1139,7 +1141,7 @@ const matches = [
   <figure class="doc-scan">
     <img src={base + '/wear-robertson-1940.png'} alt="The Original Marriage Register form for entry 13 of 1940 at Rosebank, Johannesburg: Leonard Aubrey Robert Wear, 23, England, bachelor, Army, of Roberts Heights Pretoria, and Phyllis Agnes Robertson, 25, Natal, spinster, shorthand typist, of 23 Derby Road Judith Paarl, married by banns on 7 September 1940 and signed by both" />
     <figcaption class="small muted">
-      <strong>Original Marriage Register</strong>, form B.M.D. 3 (Union), entry <strong>no. 13 of 1940</strong>,
+      <strong>Original Marriage Register</strong>, <Rec id="rosebank-1940-marriage-register">form B.M.D. 3 (Union)</Rec>, entry <strong>no. 13 of 1940</strong>,
       solemnized at Rosebank, district Johannesburg, on <strong>7 September 1940</strong>. Supplied by the
       <strong>Church of the Immaculate Conception, Rosebank</strong> on 22 September 2026, in reply to this
       archive&rsquo;s letter of 15 September. Every field on it was already known here, rebuilt from the
@@ -1206,7 +1208,7 @@ const matches = [
       tree built by his daughter. <strong>An attestation form would make it a government record.</strong>
     </p>
     <p>
-      <strong>2. The Catholic parish register at Rosebank. <span class="tag disp">Closed 22 September
+      <strong>2. <Rec id="rosebank-1940-marriage-register">The Catholic parish register at Rosebank</Rec>. <span class="tag disp">Closed 22 September
       2026</span></strong> The reasoning was that civil registers have no parents&rsquo; columns and
       Catholic sacramental registers do. <strong>The reasoning was sound and the premise was wrong for
       this parish.</strong> The Church of the Immaculate Conception answered in a week: the 1940
@@ -1561,7 +1563,7 @@ const matches = [
       exactly what the further reading needs.
     </p>
     <p>
-      <strong>And it may well be the wrong Frederick.</strong> The 1939 Register gives his birth as
+      <strong>And it may well be the wrong Frederick.</strong> The <Rec id="castle-frederick-soldier">1939 Register</Rec> gives his birth as
       <strong>10 April 1887</strong>. The 1901 household gives Frederick as <strong>eleven</strong> —
       born about 1890 — sitting beside a sister <strong>Ada aged fourteen</strong>. Two siblings born
       three months apart is not possible. And the Hitchin birth index contains
