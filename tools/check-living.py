@@ -317,6 +317,14 @@ class Page(HTMLParser):
     def _classes(self, attrs):
         return set((dict(attrs).get("class") or "").split())
 
+    def _in_ring(self):
+        """True inside the kit's `section.ring` (SiblingArchives, the other archives in the footer, added 25 October 2026 when
+        Luwinski joined the ring). Its h2 label is a site-level heading about the OTHER archives, on every page and carrying
+        nothing about a person, so it is not «a section beyond Family» on a living person's page. Exempted by that exact
+        element and class and nothing wider: any other h2 / h3 on a living person's page still fails, and the ring's
+        own text still passes through every other test here (names, years, attributes)."""
+        return any(self.elems[i][0] == "section" and "ring" in self.elems[i][1] for i in self.stack)
+
     def handle_starttag(self, tag, attrs):
         d = dict(attrs)
         if tag == "meta" and (d.get("name") or "").lower() == "robots" and "noindex" in (d.get("content") or "").lower():
@@ -360,7 +368,7 @@ class Page(HTMLParser):
                 self.title = text
             elif tag == "h1":
                 self.h1.append(text)
-            else:
+            elif not self._in_ring():
                 self.heads[int(tag[1])].append(text)
             self._cap = None
 

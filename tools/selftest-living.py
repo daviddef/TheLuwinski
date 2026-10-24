@@ -210,6 +210,10 @@ def main():
              lambda b, d: sub_in(living_page(b, d), r"</head>", '<meta name="description" content="1799"></head>'), "a year")
         case("a section beyond «Family» on a living person's page (a record, a source)", mode, True,
              lambda b, d: sub_in(living_page(b, d), r"</main>", "<h2>Where this comes from</h2></main>"), "section beyond")
+        case("a section beyond «Family» planted in the footer, outside the ring (only section.ring is exempt)", mode, True,
+             lambda b, d: sub_in(living_page(b, d), r"</footer>", "<h2>Where this comes from</h2></footer>"), "section beyond")
+        case("a section beyond «Family» planted as a lookalike of the ring (a div of class ring is not section.ring)", mode, True,
+             lambda b, d: sub_in(living_page(b, d), r"</footer>", '<div class="ring"><h2>Where this comes from</h2></div></footer>'), "section beyond")
         case("a living person's page in the sitemap", mode, True, sitemap_add(f"/people/{L['slug']}/"), "sitemap")
         case("a living person's page in the search index", mode, True,
              idx_edit(lambda data: data.append({"k": "Page", "t": "x", "s": "", "h": f"/people/{L['slug']}/", "q": "x"})), "search index")
