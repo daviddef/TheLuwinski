@@ -1,0 +1,25 @@
+---
+/* THE STORY (25 October 2026): the family of record told once, as a short book, and the archive's first page after the
+   cover. The page is the kit's (StoryBook, kit/docs/story.md); this archive supplies the data, src/data/story.json:
+   every paragraph graded doc / inf / lore by its weakest claim, or set in as "In the world around them" and marked
+   archive or history. It follows the two lanes lines.json marks ours (Schubin and Allenstein), which meet in Kurt; the
+   line the DNA points to is not told here and is linked from the prologue and the last chapter.
+   The living rule is the archive's own and stricter than the kit's: Derrick is named with his parents and nothing else,
+   no town and no one below him. The plates are scans this archive already shows elsewhere (data/record-plates.json,
+   show: true); the withheld ones are not used. */
+import Base from "../layouts/Base.astro";
+import StoryBook from "@daviddef/archive-kit/components/StoryBook.astro";
+import book from "../data/story.json";
+import { u } from "../lib/url.js";
+const personHref = (slug) => u(`/people/${slug}/`);
+const plateIndex = {
+  "szubin-1874-9": { src: "/pollnow-1874-marriage.jpg", w: 2500, h: 330, title: "Standesamt Schubin, marriage entry akt 9 of 1874, the line naming the groom's parents", holder: "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto, sygn. 141", alt: "A line of German handwriting from the 1874 Schubin marriage register, naming Sally Leibholz's parents" },
+  "schoeneberg-1924": { src: "/leibholz-luwinski-1924-blatt1.jpg", w: 1388, h: 2000, title: "Standesamt Schöneberg II, marriage register 1924 Nr. 6, first sheet", holder: "Landesarchiv Berlin, P Rep. 161 Nr. 171", alt: "The first sheet of the 1924 marriage entry, handwritten on a printed form, with two later notes in the right margin" },
+  "birth-index-1912": { src: "/kurt-963.png", w: 1700, h: 261, title: "The 1912 birth index of Standesamt Berlin VIII: Luwinski, Kurt Myszislaus, 963", holder: "Landesarchiv Berlin, P Rep. 523 Nr. 1395", alt: "A line from a handwritten alphabetical index: Luwinski, Kurt Myszislaus, 963" },
+  "passport-1939": { src: "/kurt-reisepass-1939-beschreibung.jpg", w: 1200, h: 1600, title: "Kurt's German passport of 1939, the description page", holder: "Family papers in the family's keeping", alt: "The personal description page of a 1939 German passport, occupation Hutmacher, with the wife and children columns struck through" },
+  "assento-1922": { src: "/ivone-assento-1922.jpg", w: 1126, h: 1456, title: "Assento de nascimento n.º 447-D, Lourenço Marques 1922", holder: "Family papers in the family's keeping", alt: "Ivone's Portuguese birth registration of 1922, handwritten, with three notes in the margin" },
+};
+---
+<Base title={book.title} subtitle={book.eyebrow} lede={book.dek}>
+  <StoryBook book={book} personHref={personHref} u={u} plateIndex={plateIndex} />
+</Base>

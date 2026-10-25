@@ -138,6 +138,16 @@ jobs:
       - name: Check that the name linker still catches what it should
         run: python3 node_modules/@daviddef/archive-kit/kit/tools/autolink_selftest.py
         working-directory: site
+      # THE FAMILY STORY (/story/, 25 October 2026): the kit's gate on src/data/story.json and on the BUILT page. Every paragraph
+      # graded doc / inf / lore or sourced archive / history, every chapter's papers resolving, every person link a built page, every
+      # map dot inside its extent, and no living person beside a date. CI's living list is the public one built above from the
+      # committed register (the same file the linker uses); locally `npm run check:story` passes the private list. Then the gate's
+      # own selftest, which plants each fault in the kit's example story and fails unless each is caught.
+      - name: Check the family story
+        run: |
+          python3 node_modules/@daviddef/archive-kit/kit/tools/checkfamilystory.py --story src/data/story.json --dist dist --person-base /people/ --living "$RUNNER_TEMP/living.json"
+          python3 node_modules/@daviddef/archive-kit/kit/tools/checkfamilystory.py --selftest
+        working-directory: site
       # THE LINKING STANDARD (18 October 2026): the twelve narrative pages are held to five rules, and the number of
       # violations of each may only go down (site/.standardfloor.json, counts only, no name, no address of a person).
       # L1 names that resolve are linked, L2 a person read from a record has an entry, L3 a passage that cites a record

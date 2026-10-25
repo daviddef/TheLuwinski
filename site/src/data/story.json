@@ -1,0 +1,1851 @@
+{
+ "_note": "The family story of the Luwinski archive (kit/docs/story.md, kit ed8211c). Hand-edited. Every paragraph traces to a line of the fact ledger kept with the session's working notes; the general-history claims are closing.notes.",
+ "title": "The Name Carried South",
+ "eyebrow": "The story · five generations · Hammerstein to Johannesburg",
+ "dek": "The family of record, told once as a short book: a merchant's son married at Schubin, a farming family of the Ermland, a milliner and a merchant in Berlin, a hatter on Eloff Street and a woman from Lourenço Marques. Under every chapter, a small family tree and the document it rests on; four maps follow the moves. Every paragraph says how well it is known.",
+ "cardsNote": "The document under the chapter, and what it cannot say.",
+ "prologue": {
+  "title": "Start here",
+  "paragraphs": [
+   {
+    "text": "This is the short version of a long archive: five generations of the family of record, told in order. It runs from a wedding at Schubin on Christmas Eve 1874 and a farming family in the Catholic villages of East Prussia, through Berlin, to Johannesburg, Lourenço Marques and a house in the district of Porto. It is meant to be read in one sitting.",
+    "grade": "doc",
+    "evidence": [
+     {
+      "href": "/method/",
+      "why": "How this archive works"
+     }
+    ]
+   },
+   {
+    "text": "Each paragraph ends with a mark: **doc** where a document says so, **inf** where the archive reasons from documents, **lore** where it rests on the family's memory or the family's tree. A paragraph takes the mark of its weakest sentence, and the mark links to the evidence. Passages set in under *In the world around them* describe the place and the years, never these people, and are marked **archive** for this archive's own pages or **history** for general history, listed at the foot of the page.",
+    "grade": "doc",
+    "evidence": [
+     {
+      "href": "/method/",
+      "why": "What documented, inferred and family mean here"
+     }
+    ]
+   },
+   {
+    "text": "Behind the living man at the end of this book run two lines, and they are not the same line. This book follows the one the archive marks as its own: the family he was born into and named for. His DNA points to an English family, the Wears of Hertfordshire, which no document yet joins to him. That story has [pages of its own](/wear-line/), and the reasoning is on [the DNA page](/dna/).",
+    "grade": "inf",
+    "evidence": [
+     {
+      "href": "/dna/",
+      "why": "What the DNA says, and what is still only inferred"
+     }
+    ]
+   },
+   {
+    "text": "Jacob Leibholz and two of his brothers were deported from Berlin in 1943 and did not come back. Where their papers stop, this book stops too.",
+    "grade": "inf",
+    "evidence": [
+     {
+      "href": "/leibholz/",
+      "why": "The Leibholz brothers, from the Memorial Book and the transport lists"
+     }
+    ]
+   },
+   {
+    "text": "One person here is living. He is named, with his parents, and nothing else: no dates, no town, no family below him. Corrections are welcome, and the archive keeps its own on [the corrections page](/corrections/).",
+    "grade": "doc",
+    "evidence": [
+     {
+      "href": "/derrick/",
+      "why": "Named, and nothing more"
+     }
+    ]
+   }
+  ]
+ },
+ "ribbon": {
+  "note": "Generation 2 is two households: the Leibholz of Hammerstein and Schubin, on this card, and the Luwinski and Thimm of the Ermland, in chapter II. The two lines meet in Berlin, in generation 3. The living generation carries no dates.",
+  "cards": [
+   {
+    "name": "Jacob Leibholz",
+    "years": "dates not known",
+    "origin": "Hammerstein",
+    "originGrade": "inf",
+    "spouse": "H—— née Pollnow",
+    "spouseOrigin": "place not known",
+    "atPlace": "",
+    "atYear": "",
+    "living": false,
+    "chapter": "schubin",
+    "glyph": "gable",
+    "title": "Named once, as Sally's parents, in the Schubin marriage entry of 1874. Hammerstein is where their son was born and living."
+   },
+   {
+    "name": "Sally Leibholz",
+    "years": "b. 1847",
+    "origin": "Hammerstein",
+    "originGrade": "doc",
+    "spouse": "Friederike Schmul",
+    "spouseOrigin": "of Schubin",
+    "atPlace": "Schubin",
+    "atYear": "1884",
+    "living": false,
+    "chapter": "schubin",
+    "person": "sally-leibholz",
+    "spousePerson": "friederike-schmul-leibholz",
+    "glyph": "gable"
+   },
+   {
+    "name": "Jacob Leibholz",
+    "years": "b. 1884, deported 1943",
+    "origin": "Schubin",
+    "originGrade": "doc",
+    "spouse": "Auguste Luwinski",
+    "spouseOrigin": "of Sauerbaum, East Prussia",
+    "atPlace": "Berlin",
+    "atYear": "1913",
+    "living": false,
+    "chapter": "berlin",
+    "person": "jacob-leibholz",
+    "spousePerson": "auguste-lizzy-luwinski-fricke",
+    "glyph": "loom"
+   },
+   {
+    "name": "Kurt Israel Luwinski",
+    "years": "1912–1968",
+    "origin": "Berlin",
+    "originGrade": "doc",
+    "spouse": "Ivone de Figueiredo",
+    "spouseOrigin": "of Lourenço Marques",
+    "atPlace": "Johannesburg",
+    "atYear": "1939",
+    "living": false,
+    "chapter": "eloff",
+    "person": "kurt-israel-luwinski",
+    "spousePerson": "ivone-mota-yvonne-figueiredo-de-witt",
+    "glyph": "works"
+   },
+   {
+    "name": "Lynn Derrick Luwinski",
+    "years": "",
+    "origin": "",
+    "originGrade": "doc",
+    "spouse": "",
+    "spouseOrigin": "",
+    "atPlace": "",
+    "atYear": "",
+    "living": true,
+    "chapter": "the-name"
+   }
+  ]
+ },
+ "chapters": [
+  {
+   "id": "schubin",
+   "numeral": "I",
+   "title": "Born and living at Hammerstein",
+   "place": "Hammerstein and Schubin",
+   "years": "1847–1887",
+   "generation": [
+    1,
+    2
+   ],
+   "paragraphs": [
+    {
+     "text": "On 24 December 1874 the registrar at Schubin, in the Prussian province of Posen, wrote up the ninth marriage in his book, and the last of the year. The groom was [Sally Leibholz](person:sally-leibholz), *Kaufmann*, a merchant, of the Jewish religion, twenty-seven years old, *geboren zu Hammerstein, wohnhaft zu Hammerstein*: born at Hammerstein and living there. The bride was [Friederica Schmul](person:friederike-schmul-leibholz), born and living at Schubin. It is the oldest paper this archive holds for the line, and the move east happens on it.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/leibholz/#marriage1874",
+       "why": "Standesamt Schubin, marriage register 1874, akt nr 9, read at the image"
+      }
+     ]
+    },
+    {
+     "text": "The book was three months old. Prussian civil registration began on 1 October 1874, and this volume holds nine marriages, from the day the office opened to the end of the year. Before that a Jewish marriage went into the congregation's own register, and the Jewish registers of Szubin that survive stop in 1847.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/leibholz/#december1874",
+       "why": "The volume of 1874, nine marriages in three months",
+       "kind": "archive"
+      },
+      {
+       "href": "/leibholz/#bydgoszcz2509",
+       "why": "Bydgoszcz: the Jewish registers of Szubin survive for 1820 to 1847 only",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "text": "The same entry names the groom's parents: *Sohn des Kaufmann Jacob Leibholz und der H—— geb. Pollnow*. Son of the merchant Jacob Leibholz and of H—— née Pollnow. They are the first generation of this book, and this line is all there is of them. Her given name begins with an H, and the rest of the word is past reading. It was once published here as Wilhelmine, and a volunteer index reads Philipine; both were tested against the clerk's own letters in the same register, and both fail. An initial is what this book can honestly print.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/leibholz/#pollnow-reread",
+       "why": "The name read against the clerk's own hand, 27 September 2026"
+      }
+     ]
+    },
+    {
+     "text": "Twenty-seven on Christmas Eve 1874 puts Sally's birth between the end of 1846 and the end of 1847. The family's tree gives 7 July 1847, which fits. No register can confirm it: the state archive at Koszalin has answered that the Hammerstein books are gone.",
+     "grade": "lore",
+     "evidence": [
+      {
+       "href": "/leibholz/#marriage1874",
+       "why": "The age in the marriage entry, and the family's date"
+      }
+     ]
+    },
+    {
+     "text": "Hammerstein lay in Kreis Schlochau, in West Prussia, and is Czarne in Poland today. In the German Federal Archives' Memorial Book, which lists the Jews of Germany murdered under National Socialism, fifty people bear the surname Leibholz. The largest clusters of them were born in Pomerania and West Prussia, within about sixty kilometres of Schlochau; only three of the fifty were born at Schubin. That corner of the map was the name's home ground.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/leibholz/",
+       "why": "Fifty in the Memorial Book, and only three born at Schubin",
+       "kind": "archive"
+      },
+      {
+       "href": "/atlas/",
+       "why": "Hammerstein (Czarne) on this archive's Atlas",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "text": "The bride's parents are in the entry too. The portal's index reads them as Juda Schmul and Jette Machot. The archivist at Bydgoszcz, who had the book in front of her, read the words after *Tochter der* as *Gastwirth Juda und Jutta geb. Machol*, and said herself that the line is hard to read: on her reading, Juda Schmul kept an inn. A card for an Abraham Schmul of Szubin gives a Jette née Muschll. One woman, read three ways, and the name stays as the index has it until the original settles it.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/leibholz/#bydgoszcz2509",
+       "why": "Bydgoszcz's reply, IU.631.434.2026"
+      }
+     ],
+     "tbc": "The archivist hedged her reading of the father's trade and of the mother's surname."
+    },
+    {
+     "text": "Ten years on, the household is at Schubin and Sally is there in his own hand. On 11 August 1884 *der Kaufmann Sally Leibholz*, resident at Schubin, of the Mosaic religion, came before the registrar to report a son born three days before, on 8 August, to *Friederike Leibholz geborene Schmul*, his wife, living with him. The boy was named [Jacob](person:jacob-leibholz). Sally signed the entry himself.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "person:sally-leibholz",
+       "why": "Standesamt Schubin, births 1884, akt nr 63, read at the image"
+      }
+     ]
+    },
+    {
+     "text": "Two more sons of the house can be dated. [Samuel](person:samuel-israel-leibholz) was born at Schubin on 28 June 1877; the death register kept at Auschwitz in 1943 names his parents as Sali and Fridericke, née Schmul. [Oskar](person:oskar-leibholz) was born there on 13 May 1887, and the family's tree makes him their son. Only three people in the whole Memorial Book were born at Schubin, and they are these three. The tree adds a fourth son, Georg; he was born at Hammerstein sixty-two days before Jacob, which no one mother can do, and the archive has [taken him off the line](/corrections/#c9500026).",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/leibholz/",
+       "why": "The great-grandparents, documented, and the Memorial Book"
+      }
+     ]
+    },
+    {
+     "text": "Then the parents go out of sight. Neither Sally nor Friederike is in the index of deaths at Schubin town for 1894 to 1911, and Sally is in no Berlin directory from 1903 to 1920. A death at Schubin before 1894, in years whose index does not survive, is the simplest reading of every absence, and it is only that. No paper says when either of them died, or where.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/leibholz/#sterbeindex",
+       "why": "The Szubin death index, 1894 to 1908 and on, read slot by slot"
+      }
+     ]
+    },
+    {
+     "text": "Schubin was a small town of the Prussian province of Posen. In the decades after 1871 many Jewish families left the Posen country for the cities of the west, Berlin above all; after the First World War the province passed to the new Polish state, and Schubin became Szubin.",
+     "register": "world",
+     "worldSource": "history",
+     "evidence": [
+      {
+       "href": "#world-H2",
+       "why": "The westward migration of Posen's Jews",
+       "kind": "history"
+      },
+      {
+       "href": "#world-H3",
+       "why": "Posen passes to Poland, 1919 to 1920",
+       "kind": "history"
+      }
+     ],
+     "tbc": "General history, listed at the foot of the page for approval."
+    }
+   ],
+   "tree": {
+    "glyph": "gable",
+    "note": "Oskar's outline is dashed: the Memorial Book gives his birth at Schubin, the family's tree his parents. Georg, whom the tree adds, was born at Hammerstein sixty-two days before Jacob and is not drawn.",
+    "thread": "jacob",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "jacob-elder",
+        "name": "Jacob Leibholz and H—— née Pollnow",
+        "years": "Kaufmann; named in 1874",
+        "grade": "doc"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "sally",
+        "name": "Sally Leibholz",
+        "years": "b. Hammerstein 1847, Kaufmann",
+        "grade": "doc",
+        "person": "sally-leibholz"
+       },
+       {
+        "id": "friederike",
+        "name": "Friederike née Schmul",
+        "years": "of Schubin; m. 1874",
+        "grade": "doc",
+        "person": "friederike-schmul-leibholz"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "samuel",
+        "name": "Samuel",
+        "years": "1877–1943",
+        "grade": "doc",
+        "person": "samuel-israel-leibholz"
+       },
+       {
+        "id": "jacob",
+        "name": "Jacob",
+        "years": "1884",
+        "grade": "doc",
+        "person": "jacob-leibholz"
+       },
+       {
+        "id": "oskar",
+        "name": "Oskar",
+        "years": "1887–1944",
+        "grade": "inf",
+        "person": "oskar-leibholz"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": {
+    "label": "1874 · Schubin",
+    "title": "Sally's parents, named once",
+    "text": "Sohn des Kaufmann Jacob Leibholz und der H—— geb. Pollnow",
+    "source": "Standesamt Schubin, marriage register 1874, akt nr 9 (Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto, sygn. 141)",
+    "hardLimit": "It gives them no dates and no place, and her given name cannot be read past its first letter."
+   },
+   "plates": [
+    "szubin-1874-9"
+   ],
+   "papers": [
+    {
+     "title": "The marriage entry of 1874",
+     "href": "/leibholz/#marriage1874"
+    },
+    {
+     "title": "Her name, read against the clerk's hand",
+     "href": "/leibholz/#pollnow-reread"
+    },
+    {
+     "title": "December, not November",
+     "href": "/leibholz/#december1874"
+    },
+    {
+     "title": "What Bydgoszcz answered",
+     "href": "/leibholz/#bydgoszcz2509"
+    },
+    {
+     "title": "The Schubin death index",
+     "href": "/leibholz/#sterbeindex"
+    },
+    {
+     "title": "Georg is not a brother",
+     "href": "/corrections/#c9500026"
+    },
+    {
+     "title": "Sally Leibholz",
+     "href": "person:sally-leibholz"
+    },
+    {
+     "title": "The Schmul family",
+     "href": "/families/schmul/"
+    },
+    {
+     "title": "The lines of the name",
+     "href": "/lines/"
+    }
+   ]
+  },
+  {
+   "id": "ermland",
+   "numeral": "II",
+   "title": "A village in the Ermland",
+   "place": "Allenstein and Sauerbaum, East Prussia",
+   "years": "1865–1955",
+   "generation": 2,
+   "paragraphs": [
+    {
+     "text": "In January 1924 a registrar in Berlin-Schöneberg wrote down where the bride had been born: *geboren am acht und zwanzigsten August des Jahres tausend acht hundert drei und neunzig zu Sauerbaum Kreis Rössel*. On 28 August 1893, at Sauerbaum, in the district of Rössel, birth register number 88 of the registry office at Groß-Bössau. The bride was [Auguste Luwinski](person:auguste-lizzy-luwinski-fricke). A census card of 1939 and a Berlin registration card give the same village.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/east-prussia/#bossau88",
+       "why": "Standesamt Schöneberg II, marriage register 1924 Nr. 6"
+      }
+     ]
+    },
+    {
+     "text": "Sauerbaum and Allenstein lay in the Ermland, the old prince-bishopric that stayed Catholic when the rest of East Prussia turned Lutheran: farming country, German-speaking and Catholic. It is Warmia, in Poland, today; Allenstein is Olsztyn and Sauerbaum is Zerbuń. After 1945 its German people fled or were driven out.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/east-prussia/",
+       "why": "Where these places are",
+       "kind": "archive"
+      },
+      {
+       "href": "/atlas/",
+       "why": "Allenstein (Olsztyn) and Sauerbaum (Zerbuń)",
+       "kind": "archive"
+      },
+      {
+       "href": "#world-H4",
+       "why": "The Ermland after 1945",
+       "kind": "history"
+      }
+     ],
+     "tbc": "The last sentence is general history, listed at the foot of the page for approval."
+    },
+    {
+     "text": "Of her parents the archive has only what the family's tree says. Her father, [Joachim Luwinski](person:joachim-luwinski-9500028), was born at Allenstein on 21 October 1865 and was a *Landwirt*, a farmer. Her mother, [Johanna Thimm](person:johanna-thimm-luwinski), was born at Sauerbaum on 25 March 1871, the daughter of [Anton Thimm](person:anton-thimm) and of Elisabeth. The tree gives Auguste a sister, [Hilda](person:hilda-luwinski-bottiger), who married a Böttiger. No register entry for any of them has been read.",
+     "grade": "lore",
+     "evidence": [
+      {
+       "href": "person:joachim-luwinski-9500028",
+       "why": "The family's tree; no record read"
+      }
+     ]
+    },
+    {
+     "text": "Who Joachim's own parents were, nobody knows; on this side he is where the line ends. The marriage that would name them falls, on the dates of the births, between about 1888 and 1893, at the registry of Biesowo or of Reszel, and a letter to the archives at Olsztyn is drafted in Polish. Auguste's own birth entry at Groß-Bössau would name her parents too. Until one of them is read, that she was the daughter of Joachim and Johanna rests on the family's word.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/east-prussia/",
+       "why": "The one line that would name Joachim's parents"
+      }
+     ]
+    },
+    {
+     "text": "The births fall on either side of a line in the law. Joachim and Johanna were born before Prussia began civil registration in October 1874, so they belong to church books: St Jakobi at Allenstein, and the Catholic parish of Gross Bössau, whose register names Sauerbaum. Their daughter, born in 1893, belongs to a civil register. No name index anywhere reaches the East Prussian church books.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/east-prussia/",
+       "why": "The church registers for Allenstein and Gross Bössau",
+       "kind": "archive"
+      },
+      {
+       "href": "/east-prussia/#bossau88",
+       "why": "A civil register, well after 1874",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "text": "The tree follows Johanna west. It has her on the Hohenbrucher Chaussee at Sommerfeld, in the Osthavelland outside Berlin, from August 1930; at Richard-Wagner-Straße 42 in Charlottenburg from 24 July 1932; and at the end at Besingstraße 110 in Zeutern, in Baden, where she died on 30 October 1955. Joachim, it says, died at Sommerfeld before 1955. Out of East Prussia, into Berlin and, after the war, into the west: the addresses state the move and never say why.",
+     "grade": "lore",
+     "evidence": [
+      {
+       "href": "person:johanna-thimm-luwinski",
+       "why": "Johanna's recorded addresses, from the family's tree"
+      }
+     ]
+    },
+    {
+     "text": "The name itself would not hold still. The Arolsen Archives index writes Auguste's maiden name LUWWINSKY, with a doubled W, and the family's Berlin registration card writes the same. It is not a common name in that city, and the Berlin directories print it rarely.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/east-prussia/",
+       "why": "Lizzy's date of birth, and a seventh spelling"
+      }
+     ]
+    },
+    {
+     "text": "In the autumn of 1912 a Luwinski household was in Berlin. The directory for 1913 prints *Luwinski, J., Invalide*, a man on a pension and out of his trade, at Chodowieckistraße 32 in Prenzlauer Berg. At number 31, next door, it prints *Leibholz, G., Kaufmann*; the name section of the same volume spells him out as Georg, the only Georg of the name in it. Whether J. was Joachim, no paper says. A directory gives an initial, not a man.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/kurt/",
+       "why": "A Luwinski at number 32 and a Leibholz at number 31"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "field",
+    "note": "Every outline here is dotted: the family's tree names this household, and no register entry for Joachim, Johanna or Hilda has been read. Auguste's birth at Sauerbaum is documented; that they were her parents is not yet.",
+    "thread": "auguste",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "anton",
+        "name": "Anton Thimm",
+        "years": "b. 1840, Johanna's father",
+        "grade": "lore",
+        "person": "anton-thimm"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "joachim",
+        "name": "Joachim Luwinski",
+        "years": "b. Allenstein 1865, Landwirt",
+        "grade": "lore",
+        "person": "joachim-luwinski-9500028"
+       },
+       {
+        "id": "johanna",
+        "name": "Johanna Thimm",
+        "years": "1871–1955, of Sauerbaum",
+        "grade": "lore",
+        "person": "johanna-thimm-luwinski"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "auguste",
+        "name": "Auguste",
+        "years": "1893–1975, Modistin",
+        "grade": "lore",
+        "person": "auguste-lizzy-luwinski-fricke"
+       },
+       {
+        "id": "hilda",
+        "name": "Hilda",
+        "years": "married Böttiger",
+        "grade": "lore",
+        "person": "hilda-luwinski-bottiger"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": {
+    "label": "1924 · Berlin-Schöneberg",
+    "title": "Where the bride was born",
+    "text": "geboren am acht und zwanzigsten August des Jahres tausend acht hundert drei und neunzig zu Sauerbaum Kreis Rössel, Geburtsregister Nr. 88 des Standesamts in Groß-Bössau",
+    "source": "Standesamt Schöneberg II, Heiratsregister 1924, Nr. 6 (Landesarchiv Berlin, P Rep. 161 Nr. 171)",
+    "hardLimit": "It names no parents: a Prussian marriage entry of the 1920s cites the birth register instead."
+   },
+   "papers": [
+    {
+     "title": "Sauerbaum and Allenstein",
+     "href": "/east-prussia/"
+    },
+    {
+     "title": "Her birth entry now has a number",
+     "href": "/east-prussia/#bossau88"
+    },
+    {
+     "title": "Joachim Luwinski",
+     "href": "person:joachim-luwinski-9500028"
+    },
+    {
+     "title": "Johanna Thimm",
+     "href": "person:johanna-thimm-luwinski"
+    },
+    {
+     "title": "The Thimm family",
+     "href": "/families/thimm/"
+    },
+    {
+     "title": "The Luwinski family",
+     "href": "/families/luwinski/"
+    },
+    {
+     "title": "Chodowieckistraße, 1913",
+     "href": "/kurt/"
+    }
+   ]
+  },
+  {
+   "id": "berlin",
+   "numeral": "III",
+   "title": "A merchant and a milliner",
+   "place": "Berlin",
+   "years": "1912–1975",
+   "generation": 3,
+   "paragraphs": [
+    {
+     "text": "On 5 January 1924, before the registrar of Schöneberg II, *der Kaufmann Jakob Leibholz*, born at Schubin and living at Freisinger Straße 19, married *die Modistin Auguste Luwinski*, born at Sauerbaum and living at Innsbrucker Straße 39. He was thirty-nine and she was thirty. The witnesses were two merchants, Samuel Leibholz, forty-six, of Belle-Alliance-Platz 6, and Walter Wottrich, twenty-six, of Lichtenberg. In the index the clerk wrote a religion beside each name: *mos.* for him, Jewish, and *kath.* for her, Catholic. Both their streets lie in the Bayerisches Viertel of Schöneberg; they were living a few streets apart.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/leibholz/#landesarchiv2909",
+       "why": "Standesamt Schöneberg II, Heiratsregister 1924, Nr. 6, both sheets"
+      }
+     ]
+    },
+    {
+     "text": "They had a son already. [Kurt](person:kurt-israel-luwinski) was born in Berlin on 11 May 1912, twelve years before the wedding, and carried his mother's surname, which German law gave a child born outside marriage. The index of births at Standesamt Berlin VIII, in Prenzlauer Berg, has one Luwinski in the whole of 1912: *Kurt Myszislaus*, entry 963, in the May block, with a second forename no other paper carries. The certificate, which would show whether a father acknowledged him, has not been read. That Jacob was his father rests on the family's record, and the 1924 entry carries no note that the marriage made him legitimate.",
+     "grade": "lore",
+     "evidence": [
+      {
+       "href": "/leibholz/#kurtbirth",
+       "why": "Standesamt Berlin VIII, birth index 1912, and the margin of 1924"
+      }
+     ]
+    },
+    {
+     "text": "Jacob had been in Berlin since at least 1913, when the directory prints *Leibholz, Jaques, Kaufm.* at Lutherstraße 34, in Charlottenburg. By 1925 he had a firm, *Jaques Leibholz & Co., Konfektion*, at Krausenstraße 59–60, and it is still in the directory in 1934 and in 1938. The bride was a milliner; Samuel Leibholz sold hats wholesale; Jacob's firm was in ready-made clothing. It was one trade, and the son of the house would follow it.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/corrections/#c9500912",
+       "why": "The Berlin directories, 1913, 1925, 1934 and 1938"
+      }
+     ]
+    },
+    {
+     "text": "Krausenstraße ran through Berlin's clothing quarter, the streets around the Hausvogteiplatz, where the city's ready-to-wear trade, the *Konfektion*, kept its workshops and showrooms. Many of its firms were Jewish-owned, and after 1933 they were driven out of it.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/corrections/#c9500912",
+       "why": "The Konfektion quarter around Hausvogteiplatz",
+       "kind": "archive"
+      },
+      {
+       "href": "#world-H1",
+       "why": "The Berlin Konfektion and its destruction",
+       "kind": "history"
+      }
+     ],
+     "tbc": "The second sentence is general history, listed at the foot of the page for approval."
+    },
+    {
+     "text": "In January 1934 Kurt, twenty-one, took out a Berlin driving licence and gave his address as Meraner Straße 2, Schöneberg. The census of 17 May 1939 finds Jacob, Auguste and their son [Siegfried](person:siegfried-leibholz), born in Schöneberg on 5 August 1925, in that house. On the census's supplementary card the state recorded each person's grandparents. Auguste's reads four times *nicht jüdisch*, not Jewish, and the record of her persecution gives its basis as collective: as one of a household, not for her own ancestry.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/kurt/#meraner1934",
+       "why": "The licence of 1934, and the census of 1939"
+      }
+     ]
+    },
+    {
+     "text": "Two notes were later written into the margin of the 1924 entry. The first, dated 5 June 1939, says that under the decree of 17 August 1938 the husband now also bears the forename Israel. The second, dated 4 April 1940, records that by a judgment of the Landgericht Berlin, final on 21 March 1940, the marriage has been dissolved. The court file has not been found, and nothing on the page says who asked for the divorce, or why. A line at the foot of the sheet adds that Jakob married for a second time in 1940, entry 2476 of that year. Whom he married, this archive does not yet know.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/leibholz/#divorce1940",
+       "why": "The margins of the 1924 entry"
+      }
+     ]
+    },
+    {
+     "text": "A German woman not counted as Jewish who was married to a Jewish man lived in what the law called a *Mischehe*, a mixed marriage. The marriage gave the husband a limited protection, and the pressure on such wives to divorce was official and sustained. Some held out to the end.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/east-prussia/",
+       "why": "A dated divorce in a mixed marriage",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "text": "From 1 January 1939 every Jewish man in Germany whose first name was not on an approved list had to add the name Israel, and every Jewish woman the name Sara.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/kurt/",
+       "why": "The decree of 17 August 1938, read",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "text": "By the winter of 1943 Jacob was no longer at Meraner Straße. The list of Transport 30, from Berlin to Auschwitz on 26 February 1943, has him on line 1039: *Leibholz, Jakob Israel, 8.8.84, Schubin*; occupation *ohne*, none; married, yes; fifty-eight; address Treuchtlinger Straße 4. An index card of the Berlin office of the American Joint Distribution Committee adds that he was lodging there *bei Spier*, in the flat of a family called Spier. In the directory of 1938 he had been a merchant with a firm of his own. When he was moved out of the family's flat, and by whom, no paper says.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/leibholz/",
+       "why": "The transport list (Arolsen Archives) and the AJDC card"
+      }
+     ]
+    },
+    {
+     "text": "Treuchtlinger Straße 4 was already a crowded house. On census night in May 1939 seventeen people of eleven families who appear in the persecution records were living there, and in the directories of 1942 and 1943 the owner's name is no longer printed.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/leibholz/#treuchtlinger-1940-1943",
+       "why": "The house, read volume by volume",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "text": "The German Federal Archives' Memorial Book records his deportation and, deliberately, no date of death; it gives one only where it is certain. The census records, as they are published today, carry him as dead before 8 May 1945, at Auschwitz. The family's tree had 1945, and that has been [corrected](/corrections/#c9500020). There is no Stolperstein for him at Meraner Straße, and an application for one is drafted.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/leibholz/",
+       "why": "Correction one: Jacob did not die in 1945"
+      }
+     ]
+    },
+    {
+     "text": "His brothers did not come back either. Samuel died at Auschwitz on 10 April 1943. Oskar was deported to Theresienstadt on 17 March 1943, and from there to Auschwitz on 16 October 1944; the Memorial Book gives that day as the day of his death.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/leibholz/",
+       "why": "The entries, as the Bundesarchiv has them"
+      }
+     ]
+    },
+    {
+     "text": "Auguste was not deported. The family's tree places Siegfried at Sommerfeld, in the Osthavelland, where her own family had lived, from January 1943 until 30 April 1945, and has him join the Berlin police after the war and die at Potsdam in 2005. It gives Auguste a second husband, Paul Fricke, who died at Sommerfeld in January 1946, and has her die at Kraichtal, in Baden, on 22 June 1975: in the town where her mother had died twenty years before. She outlived her elder son. His gravestone in Johannesburg names his mother among the people who would remember him.",
+     "grade": "lore",
+     "evidence": [
+      {
+       "href": "/east-prussia/",
+       "why": "What she did that can be seen; mother and daughter in one town"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "loom",
+    "note": "Kurt's outline is dotted: his birth is in the 1912 index, but his mother's name and his father's come from the family's record. Siegfried is on the family's registration card as their child. Auguste's death in 1975 is the family tree's date.",
+    "thread": "kurt",
+    "rows": [
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "jacob",
+        "name": "Jacob Leibholz",
+        "years": "b. 1884, Kaufmann; deported 1943",
+        "grade": "doc",
+        "person": "jacob-leibholz"
+       },
+       {
+        "id": "auguste",
+        "name": "Auguste Luwinski",
+        "years": "1893–1975, Modistin; m. 1924",
+        "grade": "doc",
+        "person": "auguste-lizzy-luwinski-fricke"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "kurt",
+        "name": "Kurt Luwinski",
+        "years": "1912–1968",
+        "grade": "lore",
+        "person": "kurt-israel-luwinski"
+       },
+       {
+        "id": "siegfried",
+        "name": "Siegfried Leibholz",
+        "years": "1925–2005",
+        "grade": "doc",
+        "person": "siegfried-leibholz"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": {
+    "label": "1940 · Berlin-Schöneberg",
+    "title": "A note in the margin",
+    "text": "Durch das am 21. März 1940 rechtskräftig gewordene Urteil des Landgerichts Berlin 251. R. 80. 40 ist die Ehe zwischen dem Jakob Leibholz und der Auguste Leibholz geborene Luwinski geschieden worden.",
+    "source": "Margin of Standesamt Schöneberg II, Heiratsregister 1924, Nr. 6, entered 4 April 1940 (Landesarchiv Berlin, P Rep. 161 Nr. 171)",
+    "hardLimit": "Who asked for the divorce, on what ground and under what pressure, the register does not say, and the court file has not been found."
+   },
+   "plates": [
+    "schoeneberg-1924",
+    "birth-index-1912"
+   ],
+   "papers": [
+    {
+     "title": "The marriage of 1924, both sheets",
+     "href": "/leibholz/#landesarchiv2909"
+    },
+    {
+     "title": "The divorce, dated",
+     "href": "/leibholz/#divorce1940"
+    },
+    {
+     "title": "Kurt's birth, Berlin VIII 1912 Nr. 963",
+     "href": "/leibholz/#kurtbirth"
+    },
+    {
+     "title": "The firm on Krausenstraße",
+     "href": "/corrections/#c9500912"
+    },
+    {
+     "title": "Lutherstraße 34",
+     "href": "/kurt/#charlottenburg-i"
+    },
+    {
+     "title": "Meraner Straße, 1934",
+     "href": "/kurt/#meraner1934"
+    },
+    {
+     "title": "The Leibholz brothers",
+     "href": "/leibholz/"
+    },
+    {
+     "title": "Jacob did not die in 1945",
+     "href": "/corrections/#c9500020"
+    },
+    {
+     "title": "Jacob Leibholz",
+     "href": "person:jacob-leibholz"
+    },
+    {
+     "title": "Auguste",
+     "href": "person:auguste-lizzy-luwinski-fricke"
+    },
+    {
+     "title": "Sauerbaum and Allenstein",
+     "href": "/east-prussia/"
+    }
+   ]
+  },
+  {
+   "id": "eloff",
+   "numeral": "IV",
+   "title": "The hatter of Eloff Street",
+   "place": "Berlin and Johannesburg",
+   "years": "1912–1968",
+   "generation": 4,
+   "paragraphs": [
+    {
+     "text": "On 26 July 1939 the German consulate in Johannesburg issued a passport, good for one year, to a man born in Berlin on 11 May 1912. Against occupation the clerk wrote *Hutmacher*, hatter. The columns for a wife and for children were struck through with a single line. The holder signed it *Israel Kurt Luwinski*: the name the decree of 1938 had added for Jewish men, in his own hand, at a consulate in South Africa.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/kurt/#hutmacher",
+       "why": "German passport, Deutsches Konsulat Johannesburg, 26 July 1939"
+      }
+     ]
+    },
+    {
+     "text": "The decree reached abroad by design. Its own text told a person living outside Germany to report to the German consul in place of the local police.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/kurt/",
+       "why": "The decree itself, and it reaches across an ocean",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "text": "When he left Germany is not settled. The family's tree says 1933, the year he turned twenty-one. But on 30 January 1934 the Berlin police issued him a driving licence, giving his address as Meraner Straße 2, and later in 1934 an international permit for driving abroad, whose page of particulars was stamped, given his photograph and left blank. The passport is the first paper that puts him in South Africa. A South African immigration officer stamped it on the eighth of a month; the archive's two readings of the rest of that date disagree.",
+     "grade": "lore",
+     "evidence": [
+      {
+       "href": "/kurt/#notyet1933",
+       "why": "His own papers, and the tree's year"
+      }
+     ]
+    },
+    {
+     "text": "By the end of 1941 he had a shop. The Government Gazette of November 1941 gives notice that the Piccadilly Hat Company, at Hannah Court, 81 Eloff Street, passed from Ivy Fuchs, a widow, to Walter Oppenheimer and [Kurt Luwinski](person:kurt-israel-luwinski) from 1 November. A year later the partnership was dissolved, and Kurt carried on the business alone, under the same name and at the same address. It was still trading there in 1952.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/kurt/",
+       "why": "The Piccadilly Hat Company, 81 Eloff Street: the gazettes"
+      }
+     ]
+    },
+    {
+     "text": "Eloff Street was Johannesburg's main shopping street. Sydenham, in those years, was one of the city's Jewish northern suburbs.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/kurt/",
+       "why": "The Piccadilly Hat Company",
+       "kind": "archive"
+      },
+      {
+       "href": "/1948/",
+       "why": "Read a third time, from the film itself",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "text": "He took the shop over alone at the end of October 1942. Four months later, in Berlin, Jacob Leibholz was put on the transport to Auschwitz. Nothing in the record says what Kurt knew, or when.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/kurt/",
+       "why": "And the date is hard to read without flinching"
+      }
+     ]
+    },
+    {
+     "text": "On 19 June 1948 he married [Ivone de Figueiredo](person:ivone-mota-yvonne-figueiredo-de-witt) at the Magistrate's Office in Johannesburg, by a special licence taken out ten days before. He was thirty-six, a bachelor, born in Berlin, a shop-keeper; she gave her age as twenty-four and her status as divorced. Both gave their address as 108 Dunottar Street, Sydenham. The two witnesses appear to have been the office's own staff, and the register notes an ante-nuptial contract.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/1948/",
+       "why": "Johannesburg, certificate 858 of 1948, read from the film"
+      }
+     ]
+    },
+    {
+     "text": "The marriage was in the courts the same year. Kurt filed for divorce in 1948. In 1950 Ivone brought an action of her own, for restitution of conjugal rights, the step that asks a court to order a spouse to come back. In 1951 he filed twice more, and the marriage was dissolved: when he married again, in February 1956, the registrar entered him as divorced and noted that the order had been filed.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/1948/",
+       "why": "Six actions in nine years: the court index"
+      }
+     ]
+    },
+    {
+     "text": "In South African practice of the time, restitution of conjugal rights was the first step towards a divorce for desertion: the court ordered the absent spouse to return, and if they did not, the order turned into a divorce.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/1948/",
+       "why": "She was not only the defendant",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "text": "His second marriage, to Frances Sefton, born Hostovsky in Vienna and a buyer for a firm, was on 29 February 1956. On that register he is a dress designer, and he sued her for restitution of conjugal rights the same year. His third wife, Pauline, called Paula, outlived him; the date of that marriage is not known.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/kurt/",
+       "why": "Register entry 169 of 1956, and estate MHG 7584/69"
+      }
+     ]
+    },
+    {
+     "text": "Kurt died in Johannesburg on 15 December 1968, aged fifty-six, and was buried the next day at Westpark, block L, grave 211, by the Chevrah Kadisha. His stone gives his Hebrew name, *Leib Kalman bar David*, and says he is remembered by his wife Paula, his son, his mother and his friends. The father's name on it is David, not Jacob. Jacob may have carried David as his Hebrew name; it may have been supplied by somebody who never knew him; or Kurt's father was not Jacob. The archive does not choose.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/kurt/",
+       "why": "The stone, and his father's name"
+      }
+     ]
+    },
+    {
+     "text": "There is one more thing the archive has had to say about him. On the evidence set out [on the DNA page](/dna/), Kurt was very probably not the biological father of the son born into his marriage to Ivone. It does not unmake anything in this chapter, and the book comes back to it at the end.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/dna/",
+       "why": "What the DNA says"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "works",
+    "note": "Kurt is drawn as the father of record, which every paper makes him; the DNA says he was very probably not the biological father (chapter VI). He married twice more: Frances Sefton, born Hostovsky, in 1956, and Pauline, called Paula, who outlived him.",
+    "thread": "derrick",
+    "rows": [
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "kurt",
+        "name": "Kurt Israel Luwinski",
+        "years": "1912–1968, hatter",
+        "grade": "doc",
+        "person": "kurt-israel-luwinski"
+       },
+       {
+        "id": "ivone",
+        "name": "Ivone de Figueiredo",
+        "years": "1922–2010; m. 1948",
+        "grade": "doc",
+        "person": "ivone-mota-yvonne-figueiredo-de-witt"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "derrick",
+        "name": "Derrick",
+        "living": true
+       }
+      ]
+     }
+    ]
+   },
+   "quote": {
+    "label": "1939 · Johannesburg",
+    "title": "A passport, signed",
+    "text": "Beruf: Hutmacher. Unterschrift des Paßinhabers: Israel Kurt Luwinski.",
+    "source": "German passport, Deutsches Konsulat Johannesburg, 26 July 1939; family papers in the family's keeping",
+    "hardLimit": "It says where he was in July 1939. It does not say when he came, by what route, or why the consulate wrote him down as a Jew."
+   },
+   "plates": [
+    "passport-1939"
+   ],
+   "papers": [
+    {
+     "title": "Kurt Israel Luwinski",
+     "href": "/kurt/"
+    },
+    {
+     "title": "His own papers",
+     "href": "/kurt/#hispapers"
+    },
+    {
+     "title": "1933, and a question mark over it",
+     "href": "/kurt/#notyet1933"
+    },
+    {
+     "title": "Hutmacher",
+     "href": "/kurt/#hutmacher"
+    },
+    {
+     "title": "Israel, in his own hand",
+     "href": "/kurt/#israelanswered"
+    },
+    {
+     "title": "The year 1948",
+     "href": "/1948/"
+    },
+    {
+     "title": "What the DNA says",
+     "href": "/dna/"
+    },
+    {
+     "title": "Kurt",
+     "href": "person:kurt-israel-luwinski"
+    }
+   ]
+  },
+  {
+   "id": "lourenco",
+   "numeral": "V",
+   "title": "From the Indian Ocean",
+   "place": "Lourenço Marques, Johannesburg and Vila Nova de Gaia",
+   "years": "1922–2010",
+   "generation": 4,
+   "paragraphs": [
+    {
+     "text": "*Nome próprio: Ivone.* Her birth entry records a girl born at Lourenço Marques on 4 March 1922 in the parish of Nossa Senhora da Conceição, the daughter of Joaquim Júlio de Figueiredo, of the parish of Vimieiro, and Leonia dos Santos Mata, of the parish of Negozela, both married and both living in the town. The entry reaches one more generation back: António Júlio de Figueiredo and Ana Pereira de Figueiredo on her father's side, Augusto Mata and Júlia Durães Mata on her mother's. It survives as a copy of a copy, made at Lisbon in 1987 from a certificate issued at Lourenço Marques in 1974.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/ivone/",
+       "why": "Assento de nascimento n.º 447-D"
+      }
+     ]
+    },
+    {
+     "text": "Lourenço Marques, Maputo since 1976, was the capital of Portuguese East Africa: a deep-water port on the Indian Ocean built on the traffic of the Witwatersrand goldfields, the Rand's nearest sea, and joined to Johannesburg since 1895 by about four hundred miles of railway.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/ivone/",
+       "why": "Lourenço Marques, 1922",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "text": "Vimieiro and Negozela are two parishes of one concelho, Santa Comba Dão, in the Beira Alta: a town of three thousand between the rivers Dão and Mondego, halfway between Viseu and Coimbra. Vimieiro is three kilometres from the town.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/ivone/",
+       "why": "Where her family came from",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "text": "Her parents had come out to the colony from that one small concelho before she was born; when, and how, no paper yet says. There is a second Vimieiro, in Évora, and the archive prefers this one because Negozela exists only here. Her mother's surname is written *Mata* in the entry, twice, and a registrar's rectification of 1987 confirms that spelling over his own signature. Her death certificate writes *Mota*, and so does the index of a Johannesburg court case of 1948. The archive publishes Mota and has not decided between them.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/ivone/#hername",
+       "why": "Her name is Mota Figueiredo, or Mata; and the two Vimieiros"
+      }
+     ]
+    },
+    {
+     "text": "In the margin of the same entry are the first of her marriages. On 18 November 1939, aged seventeen, she married Frederico Pinto da Rocha at Lourenço Marques, and the marriage was dissolved by a divorce decreed at Beira on 6 December 1945. Her son [Henrique](person:henrique-figueiredo-pinto-da-rocha), born within that marriage in March 1941, the family's tree says, carried the name Pinto da Rocha; he died in South Africa in 2022.",
+     "grade": "lore",
+     "evidence": [
+      {
+       "href": "/ivone/",
+       "why": "The three averbamentos, and Henrique"
+      }
+     ]
+    },
+    {
+     "text": "By February 1948 she was in the Transvaal. On the second of that month, before the magistrate at Germiston, she married Johannes Antonie Oelofse de Witt, an underground miner of twenty-five. She was entered as Yvonne Figueiredo, twenty-two, a spinster and a dressmaker employed by a firm, of 42 Joel Road, Berea, and she signed *Y. Figueiredo*. She was in fact twenty-five, and had been divorced for two years. De Witt sued for divorce that year, and on 19 June she married [Kurt Luwinski](person:kurt-israel-luwinski).",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/ivone/",
+       "why": "Germiston, register no. 34 of 1948, and TPD 534/1948"
+      }
+     ]
+    },
+    {
+     "text": "Her stated age kept drifting younger: twenty-two in February 1948, twenty-four that June, twenty-five in 1953, when she was thirty. She was a dressmaker, and Kurt a hatter with a shop on Eloff Street: the same trade, in the same city, in the same year. That is the plainest account of how they met, and it is only an account.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/1948/",
+       "why": "Her stated age is not evidence"
+      }
+     ]
+    },
+    {
+     "text": "The divorce Kurt sued for in 1951 was granted, and on 13 February 1953 she married Morris Isaac Salkow in Johannesburg. He sued for divorce the same year. After that, the archive has found no anchor for her in South Africa at all.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/ivone/",
+       "why": "The last marriage lasted months"
+      }
+     ]
+    },
+    {
+     "text": "Fifty-seven years later she died at home, at Rua Nova das Marinhas 82 in Gulpilhares, Vila Nova de Gaia, on 14 March 2010, aged eighty-eight. The certificate gives her occupation as *doméstica* and her state, after four marriages, as *divorciado*. The family names her partner at the end, Jacinto de Araújo Fernandes de Oliveira, who has died since. Where she lived in the years between, and when she came to Portugal, no paper yet says.",
+     "grade": "lore",
+     "evidence": [
+      {
+       "href": "/ivone/",
+       "why": "Porto, and the death certificate (the image is withheld)"
+      }
+     ]
+    },
+    {
+     "text": "Gulpilhares is a parish of Vila Nova de Gaia, in the district of Porto, on the south bank of the Douro across from the city.",
+     "register": "world",
+     "worldSource": "archive",
+     "evidence": [
+      {
+       "href": "/ivone/",
+       "why": "Porto",
+       "kind": "archive"
+      },
+      {
+       "href": "#world-H5",
+       "why": "Vila Nova de Gaia and the Douro",
+       "kind": "history"
+      }
+     ],
+     "tbc": "The river and the bank are general geography, listed at the foot of the page for approval."
+    },
+    {
+     "text": "Whatever else the DNA unsettles in this family, it does not unsettle her. Three of the closest matches in the test that began this archive's central question are in Portugal, and the archive takes her line as confirmed.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/ivone/",
+       "why": "Her line is the one part of this family the DNA confirms outright"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "wave",
+    "note": "Her parents and all four of her grandparents are named in her birth entry. Henrique's outline is dashed: his birth date is the family's tree's, his death is in an estate notice, and his father's name is in the margin of her entry.",
+    "thread": "ivone",
+    "rows": [
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "joaquim",
+        "name": "Joaquim Júlio de Figueiredo",
+        "years": "of Vimieiro",
+        "grade": "doc"
+       },
+       {
+        "id": "leonia",
+        "name": "Leonia dos Santos Mata",
+        "years": "of Negozela",
+        "grade": "doc"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "ivone",
+        "name": "Ivone",
+        "years": "1922–2010",
+        "grade": "doc",
+        "person": "ivone-mota-yvonne-figueiredo-de-witt"
+       }
+      ]
+     },
+     {
+      "kind": "grandchildren",
+      "nodes": [
+       {
+        "id": "henrique",
+        "name": "Henrique Pinto da Rocha",
+        "years": "1941–2022",
+        "grade": "inf",
+        "person": "henrique-figueiredo-pinto-da-rocha"
+       },
+       {
+        "id": "derrick5",
+        "name": "Derrick",
+        "living": true
+       }
+      ]
+     }
+    ]
+   },
+   "quote": {
+    "label": "1922 · Lourenço Marques",
+    "title": "A birth, and the generation above it",
+    "text": "Pai: Joaquim Júlio de Figueiredo, naturalidade: freguesia de Vimieiro. Mãe: Leonia dos Santos Mata, naturalidade: freguesia de Negozela. Residência habitual de ambos em Lourenço Marques.",
+    "source": "Assento de nascimento n.º 447-D, Conservatória dos Registos Centrais, Lisboa, 7 May 1987, from a certidão of Lourenço Marques, 14 October 1974; family papers",
+    "hardLimit": "It is a copy of a copy. The original of 1922 has not been read, and Mata and Mota could have parted anywhere along the way."
+   },
+   "plates": [
+    "assento-1922"
+   ],
+   "papers": [
+    {
+     "title": "Ivone de Figueiredo",
+     "href": "/ivone/"
+    },
+    {
+     "title": "Her name, Mota or Mata",
+     "href": "/ivone/#hername"
+    },
+    {
+     "title": "The year 1948",
+     "href": "/1948/"
+    },
+    {
+     "title": "Where the Mozambican records are",
+     "href": "/mozambique/"
+    },
+    {
+     "title": "The names she is filed under",
+     "href": "/names/"
+    },
+    {
+     "title": "The Figueiredo family",
+     "href": "/families/figueiredo/"
+    },
+    {
+     "title": "Ivone",
+     "href": "person:ivone-mota-yvonne-figueiredo-de-witt"
+    }
+   ]
+  },
+  {
+   "id": "the-name",
+   "numeral": "VI",
+   "title": "The name",
+   "place": "",
+   "years": "",
+   "generation": 5,
+   "paragraphs": [
+    {
+     "text": "At the end of the line of record stands [Lynn Derrick Luwinski](/derrick/), the son of Ivone and, on every paper, of Kurt. He is living, and this archive names him with his parents and says nothing else about him: not his town, not his work, not the family that has come after him. This book keeps the same rule.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/derrick/",
+       "why": "Named, and nothing more"
+      }
+     ]
+    },
+    {
+     "text": "The family has told the archive that Kurt raised him. It is on no document, and it is the one thing in this book that only the family could say.",
+     "grade": "lore",
+     "evidence": [
+      {
+       "href": "/derrick/",
+       "why": "The family's word"
+      }
+     ]
+    },
+    {
+     "text": "The name came to him the long way round. Kurt carried his mother's surname because she was not married when he was born, and he kept it after his parents married; his brother, born after the wedding, was a Leibholz. So the name Luwinski came down through Auguste, the milliner from Sauerbaum, on the side of the family that for the first twelve years of Kurt's life had no claim on the father's name.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/kurt/",
+       "why": "Why the brothers have different surnames"
+      }
+     ]
+    },
+    {
+     "text": "The DNA says that the line of fathers in him runs elsewhere, to an English family this book does not follow. The archive sets out the evidence [on its own page](/dna/), and it keeps [the other line](/wear-line/) beside this one rather than in place of it. The Berlin family is his by name and by law, and the archive holds both lines without pretending that either cancels the other.",
+     "grade": "inf",
+     "evidence": [
+      {
+       "href": "/dna/",
+       "why": "What the DNA says, and what it cannot"
+      }
+     ]
+    },
+    {
+     "text": "He had gone looking for the name himself, long before this archive existed. Among his mother's papers is a printout of a search for LUWINSKI in the German telephone listings, printed and kept. The question these pages work on is one he asked first.",
+     "grade": "doc",
+     "evidence": [
+      {
+       "href": "/derrick/",
+       "why": "He was searching for the surname before this archive existed"
+      }
+     ]
+    }
+   ],
+   "papers": [
+    {
+     "title": "Derrick",
+     "href": "/derrick/"
+    },
+    {
+     "title": "What the DNA says",
+     "href": "/dna/"
+    },
+    {
+     "title": "Where the Wear line stands",
+     "href": "/wear-line/"
+    },
+    {
+     "title": "The tree",
+     "href": "/tree/"
+    }
+   ]
+  }
+ ],
+ "maps": [
+  {
+   "id": "map-borderland",
+   "title": "Hammerstein, Schubin and the Ermland",
+   "extent": {
+    "west": 15.6,
+    "east": 21.8,
+    "south": 52.5,
+    "north": 55.0,
+    "projection": "equirectangular"
+   },
+   "chapter": "schubin",
+   "places": [
+    {
+     "id": "hammerstein",
+     "name": "Hammerstein",
+     "lat": 53.68,
+     "lon": 16.94,
+     "chapter": "schubin",
+     "dx": 8,
+     "dy": -8,
+     "note": "Czarne; Sally born and living, 1874"
+    },
+    {
+     "id": "szubin",
+     "name": "Schubin",
+     "lat": 53.0,
+     "lon": 17.74,
+     "chapter": "schubin",
+     "dx": 8,
+     "dy": 14,
+     "note": "Szubin; married 1874, sons born 1877 to 1887"
+    },
+    {
+     "id": "allenstein",
+     "name": "Allenstein",
+     "lat": 53.78,
+     "lon": 20.48,
+     "chapter": "ermland",
+     "dx": -8,
+     "dy": 16,
+     "anchor": "end",
+     "note": "Olsztyn; Joachim born, the family's tree"
+    },
+    {
+     "id": "sauerbaum",
+     "name": "Sauerbaum",
+     "lat": 53.935,
+     "lon": 20.846,
+     "chapter": "ermland",
+     "dx": 8,
+     "dy": -8,
+     "note": "Zerbuń; Auguste born 1893"
+    }
+   ],
+   "legs": [
+    {
+     "from": "hammerstein",
+     "to": "szubin",
+     "grade": "doc",
+     "chapter": "schubin",
+     "years": "1874 → 1884",
+     "evidence": "/leibholz/#marriage1874"
+    }
+   ]
+  },
+  {
+   "id": "map-berlin",
+   "title": "Into Berlin, and from it",
+   "extent": {
+    "west": 7.5,
+    "east": 22.5,
+    "south": 48.6,
+    "north": 55.0,
+    "projection": "equirectangular"
+   },
+   "chapter": "berlin",
+   "places": [
+    {
+     "id": "szubin",
+     "name": "Schubin",
+     "lat": 53.0,
+     "lon": 17.74,
+     "chapter": "schubin",
+     "dx": 8,
+     "dy": -8
+    },
+    {
+     "id": "sauerbaum",
+     "name": "Sauerbaum",
+     "lat": 53.935,
+     "lon": 20.846,
+     "chapter": "ermland",
+     "dx": -8,
+     "dy": -8,
+     "anchor": "end"
+    },
+    {
+     "id": "berlin",
+     "name": "Berlin",
+     "lat": 52.52,
+     "lon": 13.4,
+     "chapter": "berlin",
+     "dx": -8,
+     "dy": -8,
+     "anchor": "end",
+     "note": "1912 to 1943"
+    },
+    {
+     "id": "auschwitz",
+     "name": "Auschwitz",
+     "lat": 50.03,
+     "lon": 19.2,
+     "chapter": "berlin",
+     "dx": 8,
+     "dy": 14
+    },
+    {
+     "id": "kraichtal",
+     "name": "Kraichtal",
+     "lat": 49.14,
+     "lon": 8.72,
+     "chapter": "berlin",
+     "dx": 8,
+     "dy": 14,
+     "note": "Auguste, 1975, the family's tree"
+    }
+   ],
+   "legs": [
+    {
+     "from": "szubin",
+     "to": "berlin",
+     "grade": "doc",
+     "chapter": "berlin",
+     "years": "1884 → 1913",
+     "evidence": "/kurt/#charlottenburg-i"
+    },
+    {
+     "from": "sauerbaum",
+     "to": "berlin",
+     "grade": "doc",
+     "chapter": "berlin",
+     "years": "1893 → 1924",
+     "evidence": "/east-prussia/#bossau88",
+     "bend": 0.15
+    },
+    {
+     "from": "berlin",
+     "to": "auschwitz",
+     "grade": "doc",
+     "chapter": "berlin",
+     "years": "26 February 1943",
+     "evidence": "/leibholz/"
+    },
+    {
+     "from": "berlin",
+     "to": "kraichtal",
+     "grade": "lore",
+     "chapter": "berlin",
+     "years": "by 1975",
+     "routeKnown": false,
+     "evidence": "/east-prussia/"
+    }
+   ]
+  },
+  {
+   "id": "map-south",
+   "title": "Two journeys south",
+   "extent": {
+    "west": -18.0,
+    "east": 46.0,
+    "south": -33.0,
+    "north": 56.0,
+    "projection": "equirectangular"
+   },
+   "chapter": "eloff",
+   "places": [
+    {
+     "id": "berlin",
+     "name": "Berlin",
+     "lat": 52.52,
+     "lon": 13.4,
+     "chapter": "berlin",
+     "dx": 8,
+     "dy": -8
+    },
+    {
+     "id": "porto",
+     "name": "Porto",
+     "lat": 41.15,
+     "lon": -8.61,
+     "chapter": "lourenco",
+     "dx": -8,
+     "dy": -6,
+     "anchor": "end",
+     "note": "Vila Nova de Gaia, 2010"
+    },
+    {
+     "id": "santa-comba-dao",
+     "name": "Santa Comba Dão",
+     "lat": 40.3936,
+     "lon": -8.1289,
+     "chapter": "lourenco",
+     "dx": 8,
+     "dy": 12,
+     "note": "her parents' parishes"
+    },
+    {
+     "id": "johannesburg",
+     "name": "Johannesburg",
+     "lat": -26.2,
+     "lon": 28.05,
+     "chapter": "eloff",
+     "dx": -8,
+     "dy": 4,
+     "anchor": "end",
+     "note": "Kurt by 1939; Ivone by 1948"
+    },
+    {
+     "id": "lourenco-marques",
+     "name": "Lourenço Marques",
+     "lat": -25.97,
+     "lon": 32.58,
+     "chapter": "lourenco",
+     "dx": 8,
+     "dy": 4,
+     "note": "Maputo; Ivone born 1922"
+    }
+   ],
+   "legs": [
+    {
+     "from": "berlin",
+     "to": "johannesburg",
+     "grade": "doc",
+     "chapter": "eloff",
+     "years": "1934 → 1939",
+     "routeKnown": false,
+     "evidence": "/kurt/#hispapers"
+    },
+    {
+     "from": "santa-comba-dao",
+     "to": "lourenco-marques",
+     "grade": "inf",
+     "chapter": "lourenco",
+     "years": "before 1922",
+     "routeKnown": false,
+     "evidence": "/ivone/"
+    },
+    {
+     "from": "johannesburg",
+     "to": "porto",
+     "grade": "doc",
+     "chapter": "lourenco",
+     "years": "1953 → 2010",
+     "routeKnown": false,
+     "evidence": "/ivone/"
+    }
+   ]
+  },
+  {
+   "id": "map-rand",
+   "title": "Lourenço Marques and the Rand",
+   "extent": {
+    "west": 24.0,
+    "east": 36.0,
+    "south": -30.0,
+    "north": -21.0,
+    "projection": "equirectangular"
+   },
+   "chapter": "lourenco",
+   "places": [
+    {
+     "id": "johannesburg",
+     "name": "Johannesburg",
+     "lat": -26.2,
+     "lon": 28.05,
+     "chapter": "eloff",
+     "dx": -8,
+     "dy": -6,
+     "anchor": "end",
+     "note": "married 1948"
+    },
+    {
+     "id": "lourenco-marques",
+     "name": "Lourenço Marques",
+     "lat": -25.97,
+     "lon": 32.58,
+     "chapter": "lourenco",
+     "dx": 8,
+     "dy": -6,
+     "note": "born 1922"
+    }
+   ],
+   "legs": [
+    {
+     "from": "lourenco-marques",
+     "to": "johannesburg",
+     "grade": "doc",
+     "chapter": "lourenco",
+     "years": "1922 → 1948",
+     "evidence": "/ivone/",
+     "labelOffset": [
+      0,
+      18
+     ]
+    }
+   ]
+  }
+ ],
+ "closing": {
+  "unknown": {
+   "title": "What we do not know",
+   "lead": "The gaps, in the order the chapters meet them. Each is a document that exists somewhere, or a question no document may answer.",
+   "items": [
+    {
+     "text": "Who Jacob Leibholz the elder and H—— née Pollnow were, beyond two names in a marriage entry, and what her given name was.",
+     "href": "/leibholz/#pollnow-reread"
+    },
+    {
+     "text": "When and where Sally Leibholz and Friederike Schmul died. The Schubin death index for 1879 to 1893 does not survive.",
+     "href": "/leibholz/#sterbeindex"
+    },
+    {
+     "text": "Who [Joachim Luwinski](person:joachim-luwinski-9500028)'s parents were. The church books of Allenstein and Gross Bössau are not indexed anywhere, and the letter to Olsztyn is drafted.",
+     "href": "/east-prussia/"
+    },
+    {
+     "text": "Auguste's birth entry, Groß-Bössau 1893 Nr. 88, which would put her parents on a document for the first time.",
+     "href": "/east-prussia/#bossau88"
+    },
+    {
+     "text": "Kurt's birth certificate, Berlin VIII 1912 Nr. 963, and whether any father acknowledged him.",
+     "href": "/leibholz/#kurtbirth"
+    },
+    {
+     "text": "Why Jacob and Auguste divorced in 1940, and whom Jacob married that year.",
+     "href": "/leibholz/#divorce1940"
+    },
+    {
+     "text": "Where and when Jacob Leibholz died. The Memorial Book gives no date, deliberately."
+    },
+    {
+     "text": "When Kurt left Germany, and the year on the immigration stamp in his passport.",
+     "href": "/kurt/#immigrationstamp"
+    },
+    {
+     "text": "Whether Kurt, Auguste or Siegfried ever filed for compensation after the war; the files moved to the Landesarchiv Berlin in May 2026.",
+     "href": "/kurt/"
+    },
+    {
+     "text": "Her mother's surname, Mata or Mota, and Ivone's original birth entry of 1922 at the Arquivo Histórico de Moçambique.",
+     "href": "/mozambique/"
+    },
+    {
+     "text": "When Ivone came to South Africa, and where she lived from 1953 until she died.",
+     "href": "/ivone/"
+    }
+   ]
+  },
+  "papers": {
+   "title": "Read the papers",
+   "lead": "The chapters above are a reading of these pages. Every claim in them can be checked there.",
+   "links": [
+    {
+     "title": "The Leibholz brothers",
+     "href": "/leibholz/",
+     "why": "Schubin, Berlin, and the Memorial Book"
+    },
+    {
+     "title": "Sauerbaum and Allenstein",
+     "href": "/east-prussia/",
+     "why": "the Catholic half"
+    },
+    {
+     "title": "Kurt Israel Luwinski",
+     "href": "/kurt/",
+     "why": "Berlin 1912, Johannesburg 1968"
+    },
+    {
+     "title": "Ivone de Figueiredo",
+     "href": "/ivone/",
+     "why": "Lourenço Marques 1922, Vila Nova de Gaia 2010"
+    },
+    {
+     "title": "1948",
+     "href": "/1948/",
+     "why": "two marriages, and the courts"
+    },
+    {
+     "title": "Derrick",
+     "href": "/derrick/",
+     "why": "named, and nothing more"
+    },
+    {
+     "title": "What the DNA says",
+     "href": "/dna/",
+     "why": "the finding this archive cannot avoid"
+    },
+    {
+     "title": "The lines of the name",
+     "href": "/lines/",
+     "why": "the lanes marked ours, and the others"
+    },
+    {
+     "title": "The tree",
+     "href": "/tree/",
+     "why": "every person graded"
+    },
+    {
+     "title": "Atlas",
+     "href": "/atlas/",
+     "why": "every place this archive can date"
+    },
+    {
+     "title": "Corrections",
+     "href": "/corrections/",
+     "why": "what the family's record said, and what the papers say"
+    },
+    {
+     "title": "Method",
+     "href": "/method/",
+     "why": "what the marks mean"
+    }
+   ]
+  },
+  "notes": {
+   "title": "The world around them: general history",
+   "lead": "Passages marked history rest on general history rather than on this archive's own pages. Each is listed here, to be confirmed.",
+   "items": [
+    {
+     "key": "H1",
+     "claim": "Berlin's ready-to-wear clothing trade, the Konfektion, was centred on the streets around the Hausvogteiplatz; many of its firms were Jewish-owned, and after 1933 they were driven out.",
+     "source": "General history: Uwe Westphal, Berliner Konfektion und Mode 1836–1939: Die Zerstörung einer Tradition (Berlin, 1986); the memorial at the Hausvogteiplatz."
+    },
+    {
+     "key": "H2",
+     "claim": "In the decades after 1871 many Jewish families left the province of Posen for the cities of the west, Berlin above all.",
+     "source": "General history of German Jewry: the westward migration from Posen, e.g. Michael A. Meyer (ed.), German-Jewish History in Modern Times, vol. 3."
+    },
+    {
+     "key": "H3",
+     "claim": "After the First World War most of the province of Posen, Schubin with it, passed to Poland (1919 to 1920), and the town became Szubin.",
+     "source": "General history: the Treaty of Versailles and the transfer of the province of Posen."
+    },
+    {
+     "key": "H4",
+     "claim": "After 1945 the Ermland became part of Poland, and its German population fled or was expelled.",
+     "source": "General history: the Potsdam Agreement and the flight and expulsion of Germans from East Prussia."
+    },
+    {
+     "key": "H5",
+     "claim": "Vila Nova de Gaia lies on the south bank of the Douro, across the river from Porto.",
+     "source": "General geography."
+    }
+   ]
+  },
+  "mapNote": "Maps: coast and borders from Natural Earth (public domain), through the archive kit. Every place is at the coordinates of this archive's own Atlas. A journey whose route no paper gives is listed under its map and not drawn; a solid line is a documented move, a dotted one rests on the family's tree."
+ },
+ "conflicts": [
+  {
+   "chapter": "schubin",
+   "note": "The marriage of Sally and Friederike: the Leibholz page reads the register as 24 December 1874, corrected on 27 September 2026, but their two person pages still carry the family tree's date, a month earlier, in November."
+  },
+  {
+   "chapter": "berlin",
+   "note": "Meraner Straße 2: the Leibholz page reads the house in 1939 as one the family had been moved into with five other families, while Kurt's licence puts him at that address in January 1934, five years before the law that moved Jewish tenants."
+  },
+  {
+   "chapter": "eloff",
+   "note": "The immigration stamp in Kurt's passport: one passage of his page reads its day and month as 8 and 8 and its year as illegible; another reads it as the 8th of an unreadable month of 1939. The original is in the family's keeping."
+  },
+  {
+   "chapter": "lourenco",
+   "note": "Her marriages: the home page counts three that happened and a fourth in the family tree that did not; her own page, from the margin of her birth entry, documents four (Pinto da Rocha, de Witt, Luwinski, Salkow). This book follows her page."
+  },
+  {
+   "chapter": "the-name",
+   "note": "How strong the DNA finding is: the home page calls it inferred, very probably not the biological father; the Derrick page and the tree say the DNA excludes Kurt. This book keeps the home page's word, inferred."
+  }
+ ]
+}

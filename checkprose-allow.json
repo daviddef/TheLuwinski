@@ -20,5 +20,10 @@
   "file": "site/src/data/tree.json",
   "phrase": "derrick luwinski",
   "reason": "the subject of the archive (harvest id 9500003), shown as he is now by David's design: a stated exception to the living standard, recorded here and nowhere else (the feed treats him as living like anyone); the family-tree page's own entry for him, which carries the single word 'Living' where a date would be and the note that he is named only"
+ },
+ {
+  "file": "site/src/data/story.json",
+  "phrase": "derrick luwinski",
+  "reason": "the subject of the archive (harvest id 9500003), shown as he is now by David's design: a stated exception to the living standard, recorded here and nowhere else (the feed treats him as living like anyone); the family story's ribbon card for the living generation, which the kit's contract requires to carry two structural fields (originGrade, the grade of an empty origin, and chapter, the id of the chapter the card links to) and nothing else: every other field is empty and living is true, so it carries no date, no town and no relative"
  }
 ]

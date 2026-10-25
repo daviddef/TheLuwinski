@@ -42,6 +42,7 @@ ALLOW = ROOT / "checkprose-allow.json"
 HAND_EDITED = {
     # site/src/data: the narrative pages' own content
     "site/src/data/book.json",               # the book's order, part titles, one-line blurbs and part introductions (17 Oct 2026)
+    "site/src/data/story.json",              # the family story (/story/): every paragraph typed by hand, graded, kit contract (25 Oct 2026)
     "site/src/data/autoclusters.json",       # a typed summary of a private export (match holders unnamed)
     "site/src/data/dna.json", "site/src/data/emigration.json", "site/src/data/english-people.json",
     "site/src/data/families.json",           # declarations for the family pages: tree-entry names, verbatim fragments, page lists
