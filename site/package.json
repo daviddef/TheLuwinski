@@ -8,7 +8,7 @@
     "build": "npm run check:pin && npm run build:register && npm run build:names && npm run build:given && npm run build:evidence && npm run build:records && astro build && npm run autolink && npm run check:templates && python3 ../tools/build-search.py && npm run check:search && npm run sitemap && npm run check:book && npm run check:living && npm run check:prose && npm run check:families && npm run check:lines && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence && npm run check:superseded && npm run check:sources && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:nav && npm run check:links && npm run check:standard && npm run check:era-ground && npm run check:era && npm run check:era:selftest",
     "preview": "astro preview --port 4331",
     "check:search": "python3 ../tools/check-search.py",
-    "check:living": "python3 ../tools/check-living.py --dist dist --mode harvest && python3 ../tools/check-living.py --dist dist --mode hashes && python3 ../tools/selftest-living.py --dist dist",
+    "check:living": "python3 ../tools/check-living.py --dist dist --mode harvest && python3 ../tools/check-living.py --dist dist --mode hashes && python3 ../tools/selftest-living.py --dist dist && python3 node_modules/@daviddef/archive-kit/kit/tools/checkliving.py --dist dist --data src/data --years-only --config standard.json --strict-allow",
     "check:prose": "python3 ../tools/check-prose.py",
     "check:families": "python3 ../tools/check-families.py --dist dist && python3 ../tools/check-families.py --dist dist --selftest",
     "check:lines": "python3 ../tools/check-lines.py --dist dist && python3 ../tools/check-lines.py --dist dist --selftest",

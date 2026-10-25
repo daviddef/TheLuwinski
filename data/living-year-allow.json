@@ -1,0 +1,23 @@
+{
+ "_about": "Reviewed exceptions to the kit's printed-year gate (kit/tools/livingyears.py, `--years`). Each entry is text that the gate would read as a living person's birth year but is not: the reason says what it is. Nobody is recorded as dead here that the archive's own pages and data do not already say is dead. A year that IS a living person's birth is withdrawn from the page, never registered. `npm run check:living` runs the gate with --strict-allow, so an entry that matches nothing fails the build.",
+ "allow": [
+  {
+   "text": "Michelle Ann Wear, born 1978",
+   "why": "Deceased: the Johannesburg cemetery register (FamilySearch) lists her burial on 27 March 2017 in the same row, and the worklist records her d. 2017. The burial date is a date, not a death word, so the gate does not read it as a death."
+  },
+  {
+   "text": "<td><strong>1949</strong></td><td><strong>WLD 185/1949</strong>",
+   "why": "Two table cells read as one: the 1916 row is her birth (Marjorie Eileen Walker, born 1916, died 2003 with an estate file); 1949 is the year of the court file WLD 185/1949 in the next row.",
+   "file": "leonard/index.html"
+  },
+  {
+   "text": "a son of Leonard born in the 1950s would be in his seventies",
+   "why": "A hypothetical, not a person: the worklist reasons about what age a son of Leonard would be if he existed. No such person is in the archive."
+  },
+  {
+   "text": "born mota figueiredo  1948",
+   "file": "searchindex.json",
+   "why": "Not a birth: the search index flattens 'divorce file WLD 1950/1948, Kurt Luwinsky versus Ivone, born Mota Figueiredo, 1948' (a maiden name, then the year of the court file)."
+  }
+ ]
+}

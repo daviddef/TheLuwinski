@@ -54,6 +54,7 @@ HAND_EDITED = {
     "data/corrections.json", "data/dna-ethnicity-derrick.json", "data/dna-segments.json",
     "data/register-documented.json", "data/superseded.json", "data/wear-signature.json",
     "data/names-aliases.json",               # forms of a name the data states for a person who has a page (18 Oct 2026)
+    "data/living-year-allow.json",           # reviewed exceptions to the kit's printed-year gate, each with its reason (25 Oct 2026)
     "data/record-plates.json",               # which scans belong to which ledger entry, and whether the archive may show them
 }
 

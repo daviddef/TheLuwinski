@@ -121,8 +121,9 @@ def build(harvest=None):
         for d in json.load(io.open(DOCUMENTED, encoding="utf-8"))["people"]:
             stats["documented people"] += 1
             by = pd.year(d.get("born"))
-            is_dead = bool((d.get("died") or "").strip()) or not d.get("no_death_recorded", False)
-            if lr.is_living(by, is_dead, []):
+            has_record = bool((d.get("died") or "").strip())          # a death date or place written out
+            flag_only = (not has_record) and not d.get("no_death_recorded", False)   # the source says deceased, no more
+            if lr.is_living(by, has_record, [], undated_dead=flag_only):
                 stats["documented people the rule calls living"] += 1
                 living[str(d["id"])] = spellings(d)
             else:

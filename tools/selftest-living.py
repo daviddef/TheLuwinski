@@ -405,7 +405,7 @@ def main():
         hby = {q["id"]: q for q in hv0}
         hpair = None
         for q in hv0:
-            if st0[q["id"]] != "dead" or _pd.year(q.get("b")) or _pd.recorded_dead(q) or _lr.public_source(_pd.citations(q)):
+            if st0[q["id"]] != "dead" or _pd.year(q.get("b")) or _pd.recorded_dead(q) or _pd.undated_dead(q) or _lr.public_source(_pd.citations(q)):
                 continue
             kid = next((c for c in sorted(pidx.get(q["id"], ())) if c in hby and _pd.year(hby[c].get("b"))), None)
             if kid is not None:

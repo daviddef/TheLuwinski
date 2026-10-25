@@ -361,5 +361,9 @@
    "travel",
    "holocaust"
   ]
+ },
+ "living_years": {
+  "allow_file": "../data/living-year-allow.json",
+  "data": "src/data"
  }
 }

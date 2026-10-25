@@ -154,14 +154,23 @@ def g_year(p):
     return int(m.group(1)) if m else None
 
 
+def g_events(p):
+    """The person's own Death or Burial events (not «Death of husband:» filed on this page)."""
+    return [f for f in p.get("facts", [])
+            if f.get("ty") in ("DEAT", "BURI") and not (f.get("t") or "").strip().endswith(":")
+            and not (f.get("t") or "").strip().startswith("Death of")]
+
+
 def g_dead(p):
-    if (p.get("d") or "").strip() or not p.get("alive"):
+    """A death RECORD: a death date, or an own Death/Burial event with a date or a place."""
+    if (p.get("d") or "").strip():
         return True
-    for f in p.get("facts", []):
-        t = (f.get("t") or "").strip()
-        if f.get("ty") in ("DEAT", "BURI") and not t.endswith(":") and not t.startswith("Death of"):
-            return True
-    return False
+    return any((f.get("date") or "").strip() or (f.get("place") or "").strip() for f in g_events(p))
+
+
+def g_flag(p):
+    """Only a bare death FLAG: the tree says deceased, or a Death/Burial event carries no date and no place."""
+    return (not g_dead(p)) and ((not p.get("alive")) or bool(g_events(p)))
 
 
 def g_cites(p):
@@ -199,7 +208,7 @@ def g_classify(people, lr, today=None):
     by = {p["id"]: p for p in people}
 
     def living(p):
-        return lr.is_living(g_year(p), g_dead(p), g_cites(p), today, g_youngest_child(people, p["id"]))
+        return lr.is_living(g_year(p), g_dead(p), g_cites(p), today, g_youngest_child(people, p["id"]), undated_dead=g_flag(p))
 
     def parents_of(pid):
         out = set()
@@ -220,7 +229,7 @@ def g_classify(people, lr, today=None):
             out[pid] = "bare"
         else:
             plive = any(living(by[x]) for x in parents_of(pid) if x in by)
-            if lr.is_held_out(pid, g_year(p), g_dead(p), g_cites(p), plive, (), today, g_youngest_child(people, pid)):
+            if lr.is_held_out(pid, g_year(p), g_dead(p), g_cites(p), plive, (), today, g_youngest_child(people, pid), undated_dead=g_flag(p)):
                 out[pid] = "held_out"
             elif living(p):
                 out[pid] = "living"

@@ -64,20 +64,33 @@ def year(s):
     return int(m.group(1)) if m else None
 
 
-def recorded_dead(p):
-    """A death or burial is recorded, dated or not.
-
-    Counted: a death date; the tree marking the person deceased (`alive` false) even where it
-    gives no date; a Death or Burial event of the person's OWN. Not counted: a fact whose label
-    ends in a colon or starts «Death of» - «Death of husband:», «Death of son:» - which is another
-    person's death filed on this person's page."""
-    if (p.get("d") or "").strip() or not p.get("alive"):
-        return True
+def _own_death_events(p):
+    """The person's OWN Death or Burial events: not a fact whose label ends in a colon or starts «Death of»
+    («Death of husband:», «Death of son:»), which is another person's death filed on this person's page."""
+    out = []
     for f in p.get("facts", []):
         t = (f.get("t") or "").strip()
         if f.get("ty") in ("DEAT", "BURI") and not t.endswith(":") and not t.startswith("Death of"):
-            return True
-    return False
+            out.append(f)
+    return out
+
+
+def recorded_dead(p):
+    """A death or burial RECORD: a death date, or a Death or Burial event of the person's OWN that carries a date
+    or a place. This is the only thing the kit's living rule takes as a death for someone born 1946 or later
+    (kit/docs/living.md, 25 October 2026)."""
+    if (p.get("d") or "").strip():
+        return True
+    return any((f.get("date") or "").strip() or (f.get("place") or "").strip() for f in _own_death_events(p))
+
+
+def undated_dead(p):
+    """Only a FLAG that the person is dead: the tree marks them deceased (`alive` false), or carries a Death or Burial
+    event with no date and no place (GEDCOM `DEAT Y`), and nothing more. The kit treats that as a belief, not
+    a record: a person born 1946 or later stays living, an undated or older person is dead (undated_dead=True)."""
+    if recorded_dead(p):
+        return False
+    return (not p.get("alive")) or bool(_own_death_events(p))
 
 
 def citations(p):
@@ -156,7 +169,7 @@ def classify(people, lr=None, today=None):
 
     def living(p):
         return lr.is_living(year(p.get("b")), recorded_dead(p), citations(p), today,
-                            youngest_child_year(people, p["id"], index))
+                            youngest_child_year(people, p["id"], index), undated_dead=undated_dead(p))
 
     out = {}
     for p in people:
@@ -168,7 +181,7 @@ def classify(people, lr=None, today=None):
         else:
             plive = any(living(by[x]) for x in parent_ids(people, pid) if x in by)
             if lr.is_held_out(pid, year(p.get("b")), recorded_dead(p), citations(p), plive, HELD_IDS, today,
-                              youngest_child_year(people, pid, index)):
+                              youngest_child_year(people, pid, index), undated_dead=undated_dead(p)):
                 out[pid] = "held_out"
             elif living(p):
                 out[pid] = "living"
