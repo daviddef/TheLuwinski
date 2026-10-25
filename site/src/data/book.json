@@ -10,6 +10,11 @@
         "blurb": "Berlin, Schubin, Sauerbaum, Lourenço Marques, Johannesburg, Porto."
       },
       {
+        "path": "/story/",
+        "title": "The story",
+        "blurb": "The family of record told once, as a short book: five generations, every paragraph marked."
+      },
+      {
         "path": "/method/",
         "title": "Method",
         "blurb": "What the labels mean, and who is missing."
