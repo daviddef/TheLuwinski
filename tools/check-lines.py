@@ -45,6 +45,20 @@ def resolve_dist(root, dist):
     return p if p.is_absolute() else base / p
 
 
+def nod(n):
+    """(place, year, why) of a node, whether it is the old [place, year, why] or the kit's {place, year, why, person}."""
+    if isinstance(n, dict):
+        return n.get("place", ""), n.get("year", ""), n.get("why", "")
+    return n[0], n[1], n[2]
+
+
+def pens_of(s):
+    """The set's pens as [(id, [items])]: `pens` when present (the kit's contract), else the two older lists."""
+    if isinstance(s.get("pens"), list):
+        return [(p.get("id", "?"), p.get("items", [])) for p in s["pens"]]
+    return [(k, s.get(k, [])) for k in ("unplaced", "loose")]
+
+
 def years_of(s):
     return [int(y) for y in re.findall(r"\b(1[5-9]\d\d|20\d\d)\b", str(s))]
 
@@ -56,8 +70,8 @@ def hrefs(data):
             yield "%s/%s read link" % (s["name"], l["key"]), l["href"]
             for e in l["ends"]:
                 yield "%s/%s end %s" % (s["name"], l["key"], e[0]), e[1]
-        for k in ("unplaced", "loose"):
-            for x in s[k]:
+        for k, items in pens_of(s):
+            for x in items:
                 yield "%s %s %s" % (s["name"], k, x[0]), x[1]
 
 
@@ -65,14 +79,16 @@ def strings(data):
     for s in data["sets"]:
         yield s["name"] + " dek", s["dek"]
         for l in s["lanes"]:
-            for k in ("label", "conf", "read"):
-                yield "%s/%s %s" % (s["name"], l["key"], k), l[k]
+            for k in ("label", "statusNote", "read"):
+                yield "%s/%s %s" % (s["name"], l["key"], k), l.get(k, "")
             for n in l["nodes"]:
-                yield "%s/%s node %s" % (s["name"], l["key"], n[1]), " ".join(n)
+                yield "%s/%s node %s" % (s["name"], l["key"], nod(n)[1]), " ".join(nod(n))
             for e in l["ends"]:
                 yield "%s/%s end %s" % (s["name"], l["key"], e[0]), " ".join([e[0], e[2]])
-        for k in ("unplaced", "loose"):
-            for x in s[k]:
+        for p in s.get("pens", []):
+            yield "%s pen %s note" % (s["name"], p.get("id", "?")), p.get("note", "")
+        for k, items in pens_of(s):
+            for x in items:
                 yield "%s %s %s" % (s["name"], k, x[0]), " ".join([x[0], x[2]])
 
 
@@ -102,10 +118,11 @@ def check_data(data, page_of):
         for l in s["lanes"]:
             ns = l["nodes"]
             for a, b in zip(ns, ns[1:]):
-                ya, yb = years_of(a[1]), years_of(b[1])
+                (pa, ya_), (pb, yb_) = nod(a)[:2], nod(b)[:2]
+                ya, yb = years_of(ya_), years_of(yb_)
                 if ya and yb and min(ya) > max(yb):
                     probs.append("order: %s/%s: %r (%s) comes before %r (%s), which is earlier"
-                                 % (s["name"], l["key"], a[0], a[1], b[0], b[1]))
+                                 % (s["name"], l["key"], pa, ya_, pb, yb_))
     for where, t in strings(data):
         if t.count("***") % 2:
             probs.append("text: %s: an unbalanced *** (it prints as asterisks)" % where)
@@ -226,7 +243,8 @@ def selftest(root, dist):
     plant("a link with no trailing slash", lambda d: d["sets"][0]["lanes"][0].__setitem__("href", "/leibholz"), "trailing slash")
     plant("a link to no page", lambda d: d["sets"][0]["lanes"][0].__setitem__("href", "/nowhere/"), "reaches no built page")
     plant("an unbalanced ***", lambda d: d["sets"][0].__setitem__("dek", "*** UPDATED: " + d["sets"][0]["dek"]), "unbalanced")
-    plant("a numbered lane reference (L3)", lambda d: d["sets"][0]["loose"][0].__setitem__(2, "married into L3 or near it"), "numbered lane")
+    plant("a numbered lane reference (L3)", lambda d: d["sets"][0]["pens"][1]["items"][0].__setitem__(2, "married into L3 or near it"), "numbered lane")
+    plant("a link in a pen to no page", lambda d: d["sets"][0]["pens"][0]["items"][0].__setitem__(1, "/nowhere/"), "reaches no built page")
     plant("a lane key used twice", lambda d: d["sets"][1]["lanes"][1].__setitem__("key", d["sets"][1]["lanes"][0]["key"]), "used twice")
     missed = []
     for label, d, expect in faults:
@@ -269,7 +287,7 @@ def selftest(root, dist):
     if missed:
         print("selftest: FAIL, %d planted fault(s) not caught" % len(missed))
         return 1
-    print("selftest: ok, the unmodified data passes and all %d planted faults are caught" % (len(faults) + 3))
+    print("selftest: ok, the unmodified data passes and all %d planted faults are caught" % (len(faults) + 5))
     return 0
 
 

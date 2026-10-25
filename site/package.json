@@ -11,7 +11,7 @@
     "check:living": "python3 ../tools/check-living.py --dist dist --mode harvest && python3 ../tools/check-living.py --dist dist --mode hashes && python3 ../tools/selftest-living.py --dist dist && python3 node_modules/@daviddef/archive-kit/kit/tools/checkliving.py --dist dist --data src/data --years-only --config standard.json --strict-allow",
     "check:prose": "python3 ../tools/check-prose.py",
     "check:families": "python3 ../tools/check-families.py --dist dist && python3 ../tools/check-families.py --dist dist --selftest",
-    "check:lines": "python3 ../tools/check-lines.py --dist dist && python3 ../tools/check-lines.py --dist dist --selftest",
+    "check:lines": "python3 ../tools/check-lines.py --dist dist && python3 ../tools/check-lines.py --dist dist --selftest && python3 node_modules/@daviddef/archive-kit/kit/tools/checklines.py --lines src/data/lines.json --dist dist --config standard.json --living ../private/living.json && python3 node_modules/@daviddef/archive-kit/kit/tools/checklines.py --selftest",
     "check:prose-strict": "python3 ../tools/check-prose.py --require-tree",
     "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root .",
     "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root .",

@@ -365,5 +365,9 @@
  "living_years": {
   "allow_file": "../data/living-year-allow.json",
   "data": "src/data"
+ },
+ "lines": {
+  "exclusive": true,
+  "personBase": "/people/"
  }
 }
