@@ -5,6 +5,9 @@ import PersonTree from '@daviddef/archive-kit/components/PersonTree.astro';
 import '@daviddef/archive-kit/styles/persontree.css';
 import subjects from '../data/page-subjects.json';
 import { familyOf } from '../lib/kin.js';
+import directLine from '../data/direct-line.json';
+import { OURS_LEGEND } from '@daviddef/archive-kit/lib/directline.js';
+import '@daviddef/archive-kit/styles/ours.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const life = [
   ['11 May 1912', 'Born at Berlin', 'To Auguste Luwinski, nineteen and unmarried. He took her surname and kept it for life.', 'doc'],
@@ -28,7 +31,9 @@ const life = [
   ['16 Dec 1968', 'Buried Westpark, Johannesburg', 'By the Chevrah Kadisha. Yahrzeit 24 Kislev 5729. He was buried as a Jew.', 'doc'],
 ];
 const subject = subjects.subjects.kurt;
-const fam = familyOf(subject.id);
+const fam = familyOf(subject.id, { directLine });
+/* a relative on our direct line is tinted; the chart then says what the tint means (kit/docs/family-ribbon.md) */
+const oursKeys = [...fam.parents, ...fam.spouses, ...fam.children, ...fam.siblings].some((r) => r.ours) ? [{ cls: 'is-ours', label: OURS_LEGEND }] : [];
 ---
 <Base title="Kurt Israel Luwinski"
   subtitle="Berlin, 11 May 1912 — Johannesburg, 15 December 1968"
@@ -48,7 +53,7 @@ const fam = familyOf(subject.id);
   <div data-no-autolink>
   <PersonTree always self={fam.self} parents={fam.parents} spouses={fam.spouses}
               children={fam.children} siblings={fam.siblings}
-              labels={{ parents: 'His parents' }}>
+              labels={{ parents: 'His parents' }} keys={oursKeys}>
     <Fragment slot="notes">
       <p class="warn">Three marriages, one son, one brother, and a father whose death this archive cannot date — Jacob Leibholz's record ends with a deportation and not with a date, which is why the node beside his name carries only a birth. The prose below says what the chart cannot.</p>
     </Fragment>

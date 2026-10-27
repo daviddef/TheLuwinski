@@ -5,6 +5,7 @@ import BranchRivers from "@daviddef/archive-kit/components/BranchRivers.astro";
 import { ledger } from '@daviddef/archive-kit/lib/lines.js';
 import lines from '../data/lines.json';
 import register from '../data/register.json';
+import directLine from '../data/direct-line.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = (h) => base + h;
 /* The lists of people under each figure (the lanes' members) read names, not slugs. */
@@ -84,7 +85,7 @@ const FIGURE_CAPTION = `Hover or tab any dot and it says what the document behin
       <h2>{set.name}</h2>
       <p class="small muted" set:html={md(set.dek)}></p>
       <figure class="rivers">
-        <BranchRivers rivers={set} title={FIGURE_TITLE} caption={FIGURE_CAPTION} names={names} />
+        <BranchRivers rivers={set} title={FIGURE_TITLE} caption={FIGURE_CAPTION} names={names} directLine={directLine} />
       </figure>
       <p class="small muted ledger">
         {ledger(set).lanes} lanes drawn above &middot; {ledger(set).households} households of the name not yet

@@ -10,6 +10,7 @@
 import Base from "../layouts/Base.astro";
 import StoryBook from "@daviddef/archive-kit/components/StoryBook.astro";
 import book from "../data/story.json";
+import directLine from "../data/direct-line.json";
 import { u } from "../lib/url.js";
 const personHref = (slug) => u(`/people/${slug}/`);
 const plateIndex = {
@@ -21,5 +22,5 @@ const plateIndex = {
 };
 ---
 <Base title={book.title} subtitle={book.eyebrow} lede={book.dek}>
-  <StoryBook book={book} personHref={personHref} u={u} plateIndex={plateIndex} />
+  <StoryBook book={book} personHref={personHref} u={u} plateIndex={plateIndex} directLine={directLine} />
 </Base>

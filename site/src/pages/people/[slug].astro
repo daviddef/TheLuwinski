@@ -50,6 +50,7 @@ import { registerPerson, englishPerson, agreeWithGenerator, lineNotes, halfSibli
 import EraNote from '@daviddef/archive-kit/components/EraNote.astro';
 import { eraAt, plainYear } from '@daviddef/archive-kit/lib/era.js';
 import eraSnapshot from '../../data/era-snapshot.json';
+import directLine from '../../data/direct-line.json';
 import { lifePlace, dayFirst, yearOf } from '../../lib/eraplace.js';
 
 export function getStaticPaths() {
@@ -133,12 +134,14 @@ const description = view.bare ? 'Living. Named with his parents, and nothing mor
 const peopleHref = base + '/people/';
 const stubNote = 'the household that names them';
 const chartLabels = view.bare ? { parents: 'His parents' } : {};
+/* the page's own slug: OursBand draws 'On our direct line' only for someone in src/data/direct-line.json (kit/docs/family-ribbon.md) */
+const pageSlug = p ? p.slug : reg.slug;
 const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   // no Person for a placeholder: it stands for nobody
 ---
 <Base title={meta.title} subtitle={description} noindex={meta.noindex} structured={!meta.living} about={about} ownHeading noAutolink>
 
   {p && (
-  <PersonPage person={person} peopleHref={peopleHref} stubNote={stubNote}>
+  <PersonPage person={person} peopleHref={peopleHref} stubNote={stubNote} directLine={directLine} slug={pageSlug} storyHref={base + '/story/'}>
     <Fragment slot="chart-notes">
       {view.notes.length > 0 && (
         <Fragment>
@@ -199,7 +202,7 @@ const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   
   )}
 
   {reg && view.living && (
-  <PersonPage person={person} peopleHref={peopleHref} labels={chartLabels} />
+  <PersonPage person={person} peopleHref={peopleHref} labels={chartLabels} directLine={directLine} slug={pageSlug} storyHref={base + '/story/'} />
   )}
 
   {reg && view.bare && (
@@ -211,7 +214,7 @@ const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   
   )}
 
   {reg && !view.living && (
-  <PersonPage person={person} peopleHref={peopleHref} stubNote={stubNote}>
+  <PersonPage person={person} peopleHref={peopleHref} stubNote={stubNote} directLine={directLine} slug={pageSlug} storyHref={base + '/story/'}>
     <Fragment slot="chart-notes">
       {view.half.length > 0 && (
         <p class="small">{view.half.join(' and ')} {view.half.length > 1 ? 'are half-siblings' : 'is a half-sibling'}.</p>

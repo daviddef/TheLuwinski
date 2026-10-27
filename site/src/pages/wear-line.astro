@@ -2,6 +2,7 @@
 import Rec from '../components/Rec.astro';
 import Base from '../layouts/Base.astro';
 import Spine from '@daviddef/archive-kit/components/Spine.astro';
+import directLine from '../data/direct-line.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const line = [
@@ -96,7 +97,7 @@ const open = [
   <p class="small muted">
     Read downwards. Every step below rests on a document somebody opened, not on a family tree.
   </p>
-  <Spine rows={spine} u={(p) => base + p} archiveKey="luwinski" />
+  <Spine rows={spine} u={(p) => base + p} archiveKey="luwinski" directLine={directLine} />
 
   <div class="panel">
     <h3>One certificate would answer two of these <span class="tag inf">20 September 2026</span></h3>

@@ -101,7 +101,10 @@ export function edgesOf(id) {
    `datesOff` draws EVERY node without a date: a living person's own page names their relatives and
    their relationship and nothing else, and a dead parent's life span beside a living child's name is
    the child's age worked backwards. */
-export function familyOf(id, { livingSelf = false, datesOff = false } = {}) {
+/* `directLine` (src/data/direct-line.json, optional): a relative on our direct line is tinted (`ours` = the slug, which
+   PersonTree prints as is-ours and data-ours; kit/docs/family-ribbon.md). Never on a living relative. */
+export function familyOf(id, { livingSelf = false, datesOff = false, directLine = null } = {}) {
+  const onLine = new Set([...(directLine?.people || []), ...(directLine?.partners || [])].map((x) => String(x.slug)));
   const me = BY_ID.get(String(id));
   if (!me) return null;
   const out = { parents: [], spouses: [], children: [], siblings: [], unmapped: [] };
@@ -122,6 +125,7 @@ export function familyOf(id, { livingSelf = false, datesOff = false } = {}) {
       dates: alive || datesOff ? "" : span(other),
       mark: (alive ? ["living", MARK[String(r.rel)]].filter(Boolean).join(" · ") : MARK[String(r.rel)]) || undefined,
       title: String(r.rel),
+      ours: !alive && other.slug && onLine.has(String(other.slug)) ? String(other.slug) : undefined,
     });
   }
   return {

@@ -89,6 +89,7 @@
     "chapter": "schubin",
     "person": "sally-leibholz",
     "spousePerson": "friederike-schmul-leibholz",
+    "spouseDirect": true,
     "glyph": "gable"
    },
    {
@@ -104,6 +105,7 @@
     "chapter": "berlin",
     "person": "jacob-leibholz",
     "spousePerson": "auguste-lizzy-luwinski-fricke",
+    "spouseDirect": true,
     "glyph": "loom"
    },
    {
@@ -119,6 +121,7 @@
     "chapter": "eloff",
     "person": "kurt-israel-luwinski",
     "spousePerson": "ivone-mota-yvonne-figueiredo-de-witt",
+    "spouseDirect": true,
     "glyph": "works"
    },
    {

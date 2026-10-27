@@ -82,7 +82,7 @@ const youngestChildYear = (r) => {
 function row(other, rel, mark, { source = 'tree', quiet = false } = {}) {
   const live = isLivingRecord(other);
   return {
-    id: other.id, name: other.name, href: pageOf(other.id), source,
+    id: other.id, name: other.name, href: pageOf(other.id), slug: other.slug || undefined, source,
     ...(live ? { saidLiving: true } : { ...publicFields(other), parentLiving: livingParent(other) || undefined }),
     /* ON A LIVING PERSON'S PAGE no relative carries a date. This archive's gate (tools/check-living.py) fails
        any year on such a page, because a dead parent's life span beside a living child's name is the child's
@@ -142,6 +142,7 @@ export function englishPerson(p) {
   const row = (k, via) => ({
     name: k.n, source: via || k.via,
     href: k.href ? base + k.href : k.s ? u(`/people/${k.s}/`) : undefined,
+    slug: k.s || undefined,
     ...datesFromString(k.dates),
     mar: k.mar || undefined,
     mark: k.mark || undefined,

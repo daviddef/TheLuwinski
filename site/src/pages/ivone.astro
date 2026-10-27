@@ -5,6 +5,9 @@ import PersonTree from '@daviddef/archive-kit/components/PersonTree.astro';
 import '@daviddef/archive-kit/styles/persontree.css';
 import subjects from '../data/page-subjects.json';
 import { familyOf } from '../lib/kin.js';
+import directLine from '../data/direct-line.json';
+import { OURS_LEGEND } from '@daviddef/archive-kit/lib/directline.js';
+import '@daviddef/archive-kit/styles/ours.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const names = [
   ['Ivone Mota Figueiredo', 'Her birth name in full — the Supreme Court of the Transvaal, 1948'],
@@ -21,7 +24,9 @@ const marriages = [
   ['13 Feb 1953', 'Morris Isaac Salkow', 'b. 12 Oct 1921 Pretoria; d. 9 Nov 1991 Johannesburg, buried West Park', 'He sued her for divorce in the same year \u2014 WLD 2225/1953. The marriage lasted months.'],
 ];
 const subject = subjects.subjects.ivone;
-const fam = familyOf(subject.id);
+const fam = familyOf(subject.id, { directLine });
+/* a relative on our direct line is tinted; the chart then says what the tint means (kit/docs/family-ribbon.md) */
+const oursKeys = [...fam.parents, ...fam.spouses, ...fam.children, ...fam.siblings].some((r) => r.ours) ? [{ cls: 'is-ours', label: OURS_LEGEND }] : [];
 ---
 <Base title="Ivone de Figueiredo"
   subtitle="Lourenço Marques, 4 March 1922 — Vila Nova de Gaia, 14 March 2010"
@@ -164,7 +169,7 @@ const fam = familyOf(subject.id);
   <div data-no-autolink>
   <PersonTree always self={fam.self} parents={fam.parents} spouses={fam.spouses}
               children={fam.children} siblings={fam.siblings}
-              labels={{ parents: 'Her parents' }}>
+              labels={{ parents: 'Her parents' }} keys={oursKeys}>
     <Fragment slot="notes">
       <p class="warn">Four husbands and two sons, and <strong>no parents drawn</strong> &mdash; and that is a limit of the register rather than an open question. <strong>Her parents are known</strong>: JOAQUIM J&Uacute;LIO DE FIGUEIREDO and LE&Oacute;NIA DOS SANTOS MOTA, named in her own 1922 birth registration, with all four of her grandparents besides. They cannot appear in this chart because the register is generated from the family&rsquo;s own tree and has no mechanism for people found in documents afterwards. The section below has them. One son is living and appears as a name with no dates; the other died in 2022.</p>
     </Fragment>

@@ -1,0 +1,59 @@
+{
+ "_note": "Made by kit/tools/directline.py from the story's ribbon; do not edit by hand.",
+ "generationLabel": "generation",
+ "people": [
+  {
+   "slug": "sally-leibholz",
+   "generation": 2,
+   "storyChapter": "schubin",
+   "name": "Sally Leibholz"
+  },
+  {
+   "slug": "jacob-leibholz",
+   "generation": 3,
+   "storyChapter": "berlin",
+   "name": "Jacob Leibholz"
+  },
+  {
+   "slug": "kurt-israel-luwinski",
+   "generation": 4,
+   "storyChapter": "eloff",
+   "name": "Kurt Israel Luwinski"
+  }
+ ],
+ "partners": [
+  {
+   "slug": "friederike-schmul-leibholz",
+   "generation": 2,
+   "storyChapter": "schubin",
+   "partnerOf": "sally-leibholz",
+   "name": "Friederike Schmul"
+  },
+  {
+   "slug": "auguste-lizzy-luwinski-fricke",
+   "generation": 3,
+   "storyChapter": "berlin",
+   "partnerOf": "jacob-leibholz",
+   "name": "Auguste Luwinski"
+  },
+  {
+   "slug": "ivone-mota-yvonne-figueiredo-de-witt",
+   "generation": 4,
+   "storyChapter": "eloff",
+   "partnerOf": "kurt-israel-luwinski",
+   "name": "Ivone de Figueiredo"
+  }
+ ],
+ "unlinked": [
+  {
+   "generation": 1,
+   "storyChapter": "schubin",
+   "name": "Jacob Leibholz"
+  },
+  {
+   "generation": 5,
+   "storyChapter": "the-name",
+   "name": "Lynn Derrick Luwinski"
+  }
+ ]
+}
