@@ -1,0 +1,66 @@
+{
+ "_note": "Made by tools/build-family-lines.py with family-lines.json: the family pages with no line of two or more generations to draw. Their connection blocks (or the not-connected block) are drawn without a ribbon.",
+ "families": [
+  {
+   "id": "figueiredo",
+   "title": "Figueiredo",
+   "page": "/families/figueiredo/",
+   "ribbon": "none",
+   "ribbonWhy": "One person of the name has a page in this archive, so there is no line of generations to draw.",
+   "connections": [
+    {
+     "ourSlug": "kurt-israel-luwinski",
+     "ourGeneration": 4,
+     "ourName": "Kurt Israel Luwinski",
+     "theirSlug": "ivone-mota-yvonne-figueiredo-de-witt",
+     "theirName": "Ivone de Figueiredo",
+     "theirOrigin": "of Lourenço Marques",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#eloff"
+    }
+   ]
+  },
+  {
+   "id": "schmul",
+   "title": "Schmul",
+   "page": "/families/schmul/",
+   "ribbon": "none",
+   "ribbonWhy": "One person of the name has a page in this archive, so there is no line of generations to draw.",
+   "connections": [
+    {
+     "ourSlug": "sally-leibholz",
+     "ourGeneration": 2,
+     "ourName": "Sally Leibholz",
+     "theirSlug": "friederike-schmul-leibholz",
+     "theirName": "Friederike Schmul",
+     "theirOrigin": "of Schubin",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#schubin"
+    },
+    {
+     "ourSlug": "jacob-leibholz",
+     "ourGeneration": 3,
+     "ourName": "Jacob Leibholz",
+     "theirSlug": "friederike-schmul-leibholz",
+     "theirName": "Friederike Schmul",
+     "theirOrigin": "of Schubin",
+     "relation": "son of",
+     "grade": "doc",
+     "storyHref": "/story/#schubin"
+    }
+   ]
+  },
+  {
+   "id": "bloom",
+   "title": "Bloom",
+   "page": "/families/bloom/",
+   "ribbon": "none",
+   "ribbonWhy": "One person of the name has a page in this archive, so there is no line of generations to draw.",
+   "notConnected": {
+    "why": "This family is on the English line the DNA points to, through the Wears of Hertfordshire. No document yet joins that line to the family of record that the story follows, so nothing on it is drawn as ours; it has pages of its own."
+   }
+  }
+ ]
+}

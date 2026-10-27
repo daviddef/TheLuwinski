@@ -1,0 +1,525 @@
+{
+ "_note": "Made by tools/build-family-lines.py from story.json, direct-line.json, register.json, english-people.json, families.json and lines.json; do not edit by hand. The kit's contract: kit/docs/family-ribbon.md.",
+ "families": [
+  {
+   "id": "luwinski",
+   "title": "Luwinski",
+   "page": "/families/luwinski/",
+   "status": "origin-unknown",
+   "statusNote": "the line this archive descends from; Joachim's parents are known to nobody",
+   "span": [
+    1865,
+    1975
+   ],
+   "cards": [
+    {
+     "name": "Joachim Luwinski",
+     "years": "1865–before 1955",
+     "origin": "Allenstein",
+     "originGrade": "lore",
+     "spouse": "Johanna Thimm",
+     "spouseOrigin": "of Sauerbaum",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "joachim-luwinski-9500028",
+     "spousePerson": "johanna-thimm-luwinski"
+    },
+    {
+     "name": "Auguste Luwinski",
+     "years": "1893–1975",
+     "origin": "Sauerbaum",
+     "originGrade": "doc",
+     "spouse": "Jacob Leibholz",
+     "spouseOrigin": "of Schubin",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "auguste-lizzy-luwinski-fricke",
+     "spousePerson": "jacob-leibholz"
+    },
+    {
+     "name": "Kurt Israel Luwinski",
+     "years": "1912–1968",
+     "origin": "Berlin",
+     "originGrade": "doc",
+     "spouse": "Ivone de Figueiredo",
+     "spouseOrigin": "of Lourenço Marques",
+     "atPlace": "Johannesburg",
+     "atYear": "1939",
+     "living": false,
+     "person": "kurt-israel-luwinski",
+     "spousePerson": "ivone-mota-yvonne-figueiredo-de-witt"
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "auguste-lizzy-luwinski-fricke",
+     "ourGeneration": 3,
+     "ourName": "Auguste Luwinski",
+     "theirSlug": "joachim-luwinski-9500028",
+     "theirName": "Joachim Luwinski",
+     "theirOrigin": "of Allenstein",
+     "relation": "daughter of",
+     "grade": "lore",
+     "storyHref": "/story/#ermland"
+    },
+    {
+     "ourSlug": "jacob-leibholz",
+     "ourGeneration": 3,
+     "ourName": "Jacob Leibholz",
+     "theirSlug": "auguste-lizzy-luwinski-fricke",
+     "theirName": "Auguste Luwinski",
+     "theirOrigin": "of Sauerbaum, East Prussia",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#berlin"
+    },
+    {
+     "ourSlug": "ivone-mota-yvonne-figueiredo-de-witt",
+     "ourGeneration": 4,
+     "ourName": "Ivone de Figueiredo",
+     "theirSlug": "kurt-israel-luwinski",
+     "theirName": "Kurt Israel Luwinski",
+     "theirOrigin": "of Berlin",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#eloff"
+    }
+   ]
+  },
+  {
+   "id": "leibholz",
+   "title": "Leibholz",
+   "page": "/families/leibholz/",
+   "status": "documented",
+   "statusNote": "the line this archive descends from, beginning at Hammerstein not Schubin",
+   "span": [
+    1847,
+    1975
+   ],
+   "cards": [
+    {
+     "name": "Jacob Leibholz",
+     "years": "dates not known",
+     "origin": "Hammerstein",
+     "originGrade": "inf",
+     "spouse": "H—— née Pollnow",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "title": "Named once, as Sally's parents, in the Schubin marriage entry of 1874. Hammerstein is where their son was born and living."
+    },
+    {
+     "name": "Sally Leibholz",
+     "years": "b. 1847",
+     "origin": "Hammerstein",
+     "originGrade": "doc",
+     "spouse": "Friederike Schmul",
+     "spouseOrigin": "of Schubin",
+     "atPlace": "Schubin",
+     "atYear": "1884",
+     "living": false,
+     "person": "sally-leibholz",
+     "spousePerson": "friederike-schmul-leibholz"
+    },
+    {
+     "name": "Jacob Leibholz",
+     "years": "b. 1884, deported 1943",
+     "origin": "Schubin",
+     "originGrade": "doc",
+     "spouse": "Auguste Luwinski",
+     "spouseOrigin": "of Sauerbaum, East Prussia",
+     "atPlace": "Berlin",
+     "atYear": "1913",
+     "living": false,
+     "person": "jacob-leibholz",
+     "spousePerson": "auguste-lizzy-luwinski-fricke"
+    },
+    {
+     "name": "Siegfried Leibholz",
+     "years": "1925–2005",
+     "origin": "Berlin Schöneberg",
+     "originGrade": "doc",
+     "spouse": "Edith Charlotte Zelenka",
+     "spouseOrigin": "of Treplice",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "siegfried-leibholz",
+     "spousePerson": "edith-charlotte-zelenka-leibholz"
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "friederike-schmul-leibholz",
+     "ourGeneration": 2,
+     "ourName": "Friederike Schmul",
+     "theirSlug": "sally-leibholz",
+     "theirName": "Sally Leibholz",
+     "theirOrigin": "of Hammerstein",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#schubin"
+    },
+    {
+     "ourSlug": "auguste-lizzy-luwinski-fricke",
+     "ourGeneration": 3,
+     "ourName": "Auguste Luwinski",
+     "theirSlug": "jacob-leibholz",
+     "theirName": "Jacob Leibholz",
+     "theirOrigin": "of Schubin",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#berlin"
+    },
+    {
+     "ourSlug": "kurt-israel-luwinski",
+     "ourGeneration": 4,
+     "ourName": "Kurt Israel Luwinski",
+     "theirSlug": "jacob-leibholz",
+     "theirName": "Jacob Leibholz",
+     "theirOrigin": "of Schubin",
+     "relation": "son of",
+     "grade": "lore",
+     "storyHref": "/story/#berlin"
+    }
+   ]
+  },
+  {
+   "id": "wear",
+   "title": "Wear",
+   "page": "/families/wear/",
+   "status": "inferred",
+   "cards": [
+    {
+     "name": "John Wear",
+     "years": "dates not known",
+     "origin": "Newington",
+     "originGrade": "inf",
+     "spouse": "Elizabeth Wear",
+     "spouseOrigin": "of Newington",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "john-wear",
+     "spousePerson": "elizabeth-wear"
+    },
+    {
+     "name": "William Wear",
+     "years": "b. c.1823",
+     "origin": "Walworth or Newington, Surrey",
+     "originGrade": "doc",
+     "spouse": "Sarah Bloom",
+     "spouseOrigin": "of Deptford or Bermondsey",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "william-wear",
+     "spousePerson": "sarah-bloom"
+    },
+    {
+     "name": "Robert Wear",
+     "years": "1859–1890",
+     "origin": "Bermondsey",
+     "originGrade": "doc",
+     "spouse": "Emma Hawkins",
+     "spouseOrigin": "of Aldenham",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "robert-wear",
+     "spousePerson": "emma-hawkins-1859"
+    },
+    {
+     "name": "Henry Robert Wear",
+     "years": "1889–1969",
+     "origin": "St Olave, Bermondsey",
+     "originGrade": "doc",
+     "spouse": "Martha Maud Castle",
+     "spouseOrigin": "of Baldock",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "henry-robert-wear",
+     "spousePerson": "martha-maud-castle"
+    }
+   ],
+   "notConnected": {
+    "why": "This family is on the English line the DNA points to, through the Wears of Hertfordshire. No document yet joins that line to the family of record that the story follows, so nothing on it is drawn as ours; it has pages of its own."
+   }
+  },
+  {
+   "id": "thimm",
+   "title": "Thimm",
+   "page": "/families/thimm/",
+   "status": "family-lore",
+   "cards": [
+    {
+     "name": "Anton Thimm",
+     "years": "b. 1840",
+     "origin": "",
+     "originGrade": "lore",
+     "spouse": "Elisabeth Thimm",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "anton-thimm",
+     "spousePerson": "elisabeth-thimm"
+    },
+    {
+     "name": "Johanna Thimm",
+     "years": "1871–1955",
+     "origin": "Sauerbaum",
+     "originGrade": "lore",
+     "spouse": "Joachim Luwinski",
+     "spouseOrigin": "of Allenstein",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "johanna-thimm-luwinski",
+     "spousePerson": "joachim-luwinski-9500028"
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "auguste-lizzy-luwinski-fricke",
+     "ourGeneration": 3,
+     "ourName": "Auguste Luwinski",
+     "theirSlug": "johanna-thimm-luwinski",
+     "theirName": "Johanna Thimm",
+     "theirOrigin": "of Sauerbaum",
+     "relation": "daughter of",
+     "grade": "lore",
+     "storyHref": "/story/#ermland"
+    }
+   ]
+  },
+  {
+   "id": "castle",
+   "title": "Castle",
+   "page": "/families/castle/",
+   "status": "documented",
+   "cards": [
+    {
+     "name": "George Castle",
+     "years": "1840–1885",
+     "origin": "Baldock",
+     "originGrade": "doc",
+     "spouse": "Martha Giddings",
+     "spouseOrigin": "of Baldock district",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "george-castle-1840",
+     "spousePerson": "martha-giddings"
+    },
+    {
+     "name": "George William Castle",
+     "years": "1862–1917",
+     "origin": "Hitchin district",
+     "originGrade": "inf",
+     "spouse": "Caroline Wallis",
+     "spouseOrigin": "of Weston",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "george-william-castle-1862",
+     "spousePerson": "caroline-wallis"
+    },
+    {
+     "name": "Martha Maud Castle",
+     "years": "1895–1986",
+     "origin": "Baldock",
+     "originGrade": "doc",
+     "spouse": "Henry Robert Wear",
+     "spouseOrigin": "of St Olave, Bermondsey",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "martha-maud-castle",
+     "spousePerson": "henry-robert-wear"
+    }
+   ],
+   "notConnected": {
+    "why": "This family is on the English line the DNA points to, through the Wears of Hertfordshire. No document yet joins that line to the family of record that the story follows, so nothing on it is drawn as ours; it has pages of its own."
+   }
+  },
+  {
+   "id": "hawkins",
+   "title": "Hawkins",
+   "page": "/families/hawkins/",
+   "status": "inferred",
+   "cards": [
+    {
+     "name": "William Hawkins",
+     "years": "dates not known",
+     "origin": "Aldenham",
+     "originGrade": "inf",
+     "spouse": "Mary Appleyard",
+     "spouseOrigin": "of Aldenham",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "william-hawkins",
+     "spousePerson": "mary-appleyard"
+    },
+    {
+     "name": "John Hawkins",
+     "years": "b. 1819",
+     "origin": "Aldenham",
+     "originGrade": "doc",
+     "spouse": "Emma Larkin",
+     "spouseOrigin": "of Aldenham",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "john-hawkins-1819",
+     "spousePerson": "emma-larkin-1822"
+    },
+    {
+     "name": "Emma Hawkins",
+     "years": "1859–1944",
+     "origin": "Aldenham",
+     "originGrade": "doc",
+     "spouse": "Robert Wear",
+     "spouseOrigin": "of Bermondsey",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "emma-hawkins-1859",
+     "spousePerson": "robert-wear"
+    }
+   ],
+   "notConnected": {
+    "why": "This family is on the English line the DNA points to, through the Wears of Hertfordshire. No document yet joins that line to the family of record that the story follows, so nothing on it is drawn as ours; it has pages of its own."
+   }
+  },
+  {
+   "id": "giddins",
+   "title": "Giddins",
+   "page": "/families/giddins/",
+   "status": "documented",
+   "cards": [
+    {
+     "name": "James Giddins",
+     "years": "b. c.1815",
+     "origin": "Baldock",
+     "originGrade": "doc",
+     "spouse": "Elizabeth Giddins",
+     "spouseOrigin": "of Norton",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "james-giddins",
+     "spousePerson": "elizabeth-giddins"
+    },
+    {
+     "name": "Martha Giddings",
+     "years": "1841–1863",
+     "origin": "Baldock district",
+     "originGrade": "doc",
+     "spouse": "George Castle",
+     "spouseOrigin": "of Baldock",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "martha-giddings",
+     "spousePerson": "george-castle-1840"
+    }
+   ],
+   "notConnected": {
+    "why": "This family is on the English line the DNA points to, through the Wears of Hertfordshire. No document yet joins that line to the family of record that the story follows, so nothing on it is drawn as ours; it has pages of its own."
+   }
+  },
+  {
+   "id": "larkin",
+   "title": "Larkin",
+   "page": "/families/larkin/",
+   "status": "inferred",
+   "cards": [
+    {
+     "name": "Robert Larkin",
+     "years": "dates not known",
+     "origin": "Aldenham",
+     "originGrade": "inf",
+     "spouse": "Mary Burch",
+     "spouseOrigin": "of Aldenham",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "robert-larkin",
+     "spousePerson": "mary-burch"
+    },
+    {
+     "name": "Emma Larkin",
+     "years": "b. 1822",
+     "origin": "Aldenham",
+     "originGrade": "doc",
+     "spouse": "John Hawkins",
+     "spouseOrigin": "of Aldenham",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "emma-larkin-1822",
+     "spousePerson": "john-hawkins-1819"
+    }
+   ],
+   "notConnected": {
+    "why": "This family is on the English line the DNA points to, through the Wears of Hertfordshire. No document yet joins that line to the family of record that the story follows, so nothing on it is drawn as ours; it has pages of its own."
+   }
+  },
+  {
+   "id": "wallis",
+   "title": "Wallis",
+   "page": "/families/wallis/",
+   "status": "inferred",
+   "cards": [
+    {
+     "name": "William Wallis",
+     "years": "1807–c.1850",
+     "origin": "Weston, Hertfordshire",
+     "originGrade": "inf",
+     "spouse": "Mary Foster",
+     "spouseOrigin": "of Wallington, Hertfordshire",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "william-wallis-1807",
+     "spousePerson": "mary-foster-1806"
+    },
+    {
+     "name": "Joseph Wallis",
+     "years": "1827–1912",
+     "origin": "Weston, Hertfordshire",
+     "originGrade": "inf",
+     "spouse": "Sarah Field",
+     "spouseOrigin": "of Weston, Hertfordshire",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "joseph-wallis-1827",
+     "spousePerson": "sarah-field-1829"
+    },
+    {
+     "name": "Caroline Wallis",
+     "years": "1862–1957",
+     "origin": "Weston",
+     "originGrade": "inf",
+     "spouse": "George William Castle",
+     "spouseOrigin": "of Hitchin district",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "caroline-wallis",
+     "spousePerson": "george-william-castle-1862"
+    }
+   ],
+   "notConnected": {
+    "why": "This family is on the English line the DNA points to, through the Wears of Hertfordshire. No document yet joins that line to the family of record that the story follows, so nothing on it is drawn as ours; it has pages of its own."
+   }
+  }
+ ]
+}

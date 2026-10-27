@@ -148,6 +148,20 @@ jobs:
           python3 node_modules/@daviddef/archive-kit/kit/tools/checkfamilystory.py --story src/data/story.json --dist dist --person-base /people/ --living "$RUNNER_TEMP/living.json"
           python3 node_modules/@daviddef/archive-kit/kit/tools/checkfamilystory.py --selftest
         working-directory: site
+      # THE DIRECT LINE AND THE FAMILY RIBBONS (27 October 2026, kit/docs/family-ribbon.md). src/data/direct-line.json is the
+      # story's ribbon (who is tinted as our direct line), made by the kit's directline.py; family-lines.json and
+      # family-blocks.json are made by tools/build-family-lines.py from the story, the register and the English line. Both are
+      # committed and checked here to be what their sources make. Then the kit's gate reads the BUILT pages back: a ribbon and a
+      # block for every family and connection, a card tinted exactly when its person is on the line, the story ribbon tinted on
+      # the line and nowhere else, the band on every direct-line person's page and on no other, the legend wherever the tint is;
+      # then its selftest, which plants each fault in the kit's example families.
+      - name: Check the direct line, the family ribbons and how our line connects
+        run: |
+          python3 node_modules/@daviddef/archive-kit/kit/tools/directline.py --story src/data/story.json --check src/data/direct-line.json
+          python3 ../tools/build-family-lines.py --check
+          python3 node_modules/@daviddef/archive-kit/kit/tools/checkfamilyribbon.py --families src/data/family-lines.json --direct src/data/direct-line.json --story src/data/story.json --dist dist --lines src/data/lines.json --living "$RUNNER_TEMP/living.json"
+          python3 node_modules/@daviddef/archive-kit/kit/tools/checkfamilyribbon.py --selftest
+        working-directory: site
       # THE LINKING STANDARD (18 October 2026): the twelve narrative pages are held to five rules, and the number of
       # violations of each may only go down (site/.standardfloor.json, counts only, no name, no address of a person).
       # L1 names that resolve are linked, L2 a person read from a record has an entry, L3 a passage that cites a record

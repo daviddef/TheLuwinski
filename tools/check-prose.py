@@ -70,6 +70,9 @@ GENERATED = {
     "site/src/data/records.json",            # tools/build-records.py: one row per ledger entry, scan or public address
     "site/src/data/era-places.json",         # tools/build-era.py, from data/era/ground.tsv and era/towns.tsv: place strings and a region id, no names
     "site/src/data/era-snapshot.json",       # tools/build-era.py --snapshot, from the Record Atlas's context contract: region eras and regime labels, no names
+    "site/src/data/direct-line.json",        # the kit's directline.py, from story.json's ribbon (who is on our direct line); checked by check:directline
+    "site/src/data/family-lines.json",       # tools/build-family-lines.py: the family ribbons and how our line connects, from the story, register and English line
+    "site/src/data/family-blocks.json",      # tools/build-family-lines.py: the families with no line to draw, their connection blocks only
 }
 
 # Prose typed outside src/pages and notes/*.md: the layout (a sentence can be typed there), the research logs

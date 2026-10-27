@@ -15,6 +15,15 @@
 import Base from '../../layouts/Base.astro';
 import Families from '@daviddef/archive-kit/components/Families.astro';
 import Evidence from '@daviddef/archive-kit/components/Evidence.astro';
+import FamilyRibbon from '@daviddef/archive-kit/components/FamilyRibbon.astro';
+import '@daviddef/archive-kit/styles/story.css';
+import '@daviddef/archive-kit/styles/ours.css';
+import '@daviddef/archive-kit/styles/familyribbon.css';
+import { blocksOf, blockSentence, GRADE_WORD } from '@daviddef/archive-kit/lib/familyribbon.js';
+import { directMap, OURS_LEGEND } from '@daviddef/archive-kit/lib/directline.js';
+import familyLines from '../../data/family-lines.json';
+import familyBlocks from '../../data/family-blocks.json';
+import directLine from '../../data/direct-line.json';
 import { familyModel, familySlugs } from '../../lib/families.js';
 import { u } from '../../lib/url.js';
 
@@ -51,9 +60,68 @@ for (const g of M.elsewhereByKind) rows.push({
 });
 const groups = rows.length ? [{ rows }] : [];
 const hasTree = M.groups.length > 0;
+
+/* THE FAMILY'S OWN LINE, AND HOW OURS CONNECTS (27 October 2026; kit/docs/family-ribbon.md). Both files are made by
+   tools/build-family-lines.py from the story, the register and the English line, never typed. A family with a line of two
+   or more generations is in family-lines.json and drawn by the kit's FamilyRibbon; a family with none (one person of the
+   name has a page here) is in family-blocks.json and gets the same connection blocks, in the same markup, without a ribbon.
+   No living person is ever a card or a block: a family page names none. */
+const personHref = (s) => u(`/people/${s}/`);
+const ribbonFam = familyLines.families.find((x) => x.id === slug) || null;
+const blockFam = ribbonFam ? null : familyBlocks.families.find((x) => x.id === slug) || null;
+const DM = directMap(directLine);
+const onlyBlocks = blockFam ? blocksOf(blockFam, directLine, { cards: [] }) : [];
+const anyOurs = onlyBlocks.some((b) => b.kind === 'link');
 ---
 <Base title={`The ${f.name} family`} subtitle={sub}
   lede={`${f.name} as this archive holds it: the people of the name, the tree’s own words about each link, and the names it joins.`}>
+
+  {ribbonFam && <FamilyRibbon family={ribbonFam} directLine={directLine} personHref={personHref} u={u} />}
+  {blockFam && (
+    <section class="fr fr-only" data-family-blocks={blockFam.id} aria-label={`${f.name}: how our line connects`}>
+      <div class="fr-head"><h2 class="fr-h">{f.name}: how our line connects</h2></div>
+      <p class="fr-note">{blockFam.ribbonWhy}</p>
+      <div class="fr-conn" data-connections={onlyBlocks.filter((b) => b.kind === 'link').length}>
+        {onlyBlocks[0].kind === 'none' ? (
+          <p class="fr-nc" data-not-connected="1"><b>Not connected to our line yet.</b>{onlyBlocks[0].why ? <>{' '}{onlyBlocks[0].why}</> : null}</p>
+        ) : (
+          <ul class="fr-bl">
+            {onlyBlocks.map((b, i) => {
+              const theirOurs = DM.get(String(b.theirSlug));
+              return (
+                <li class={`fr-b fr-b-${b.grade}`} id={`frb-${blockFam.id}-${i + 1}`} data-grade={b.grade} data-relation={b.relation} data-our={b.ourSlug} data-their={b.theirSlug} data-our-generation={b.ourGeneration} aria-label={blockSentence(b)}>
+                  <div class="fr-b-our is-ours" data-ours={b.ourSlug}>
+                    <span class="fr-b-k">Our line · Gen. {b.ourGeneration}</span>
+                    <span class="fr-b-nm"><a href={personHref(b.ourSlug)}>{b.ourName}</a></span>
+                  </div>
+                  <div class="fr-b-rel"><span class="fr-b-w">{b.word}</span></div>
+                  <div class={`fr-b-their${theirOurs ? ' is-ours' : ''}`} data-ours={theirOurs ? b.theirSlug : undefined}>
+                    <span class="fr-b-k">{theirOurs ? `Our line · Gen. ${theirOurs.generation}` : f.name}</span>
+                    <span class="fr-b-nm"><a href={personHref(b.theirSlug)}>{b.theirName}</a></span>
+                    {b.theirOrigin && <span class="fr-b-o">{b.theirOrigin.replace(/^from /, 'of ')}</span>}
+                  </div>
+                  <p class="fr-b-foot">
+                    <span class="fr-b-g">{GRADE_WORD[b.grade]}</span>
+                    {b.storyHref && <a href={u(b.storyHref)}>in the story →</a>}
+                    {b.note && <span class="fr-b-note">{b.note}</span>}
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </div>
+      {anyOurs && (
+        <p class="fr-leg" aria-label="How to read the blocks">
+          <span class="fr-lt">Blocks</span>
+          <span><span class="fr-lk"></span>solid: documented</span>
+          <span><span class="fr-lk fr-lk-inf"></span>dashed: inferred</span>
+          <span><span class="fr-lk fr-lk-lore"></span>dotted: family memory or the family's tree</span>
+          <span class="fr-lg-ours"><span class="ours-sw"></span>{OURS_LEGEND}</span>
+        </p>
+      )}
+    </section>
+  )}
 
   <div class="panel">
     <h3>At a glance</h3>
