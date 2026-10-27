@@ -26,6 +26,7 @@ import familyBlocks from '../../data/family-blocks.json';
 import directLine from '../../data/direct-line.json';
 import { familyModel, familySlugs } from '../../lib/families.js';
 import { u } from '../../lib/url.js';
+import { familyWithFlags } from '../../lib/ribbonflags.js';
 
 export function getStaticPaths() {
   return familySlugs().map((slug) => ({ params: { slug }, props: { slug } }));
@@ -76,7 +77,7 @@ const anyOurs = onlyBlocks.some((b) => b.kind === 'link');
 <Base title={`The ${f.name} family`} subtitle={sub}
   lede={`${f.name} as this archive holds it: the people of the name, the tree’s own words about each link, and the names it joins.`}>
 
-  {ribbonFam && <FamilyRibbon family={ribbonFam} directLine={directLine} personHref={personHref} u={u} />}
+  {ribbonFam && <FamilyRibbon family={familyWithFlags(ribbonFam)} directLine={directLine} personHref={personHref} u={u} />}
   {blockFam && (
     <section class="fr fr-only" data-family-blocks={blockFam.id} aria-label={`${f.name}: how our line connects`}>
       <div class="fr-head"><h2 class="fr-h">{f.name}: how our line connects</h2></div>

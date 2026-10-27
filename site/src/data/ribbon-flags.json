@@ -1,0 +1,926 @@
+{
+ "_note": "Made by tools/build-ribbon-flags.py with the kit's ribbonflags.py from era-snapshot.json, flag-places.json and flag-countries.json, over story.json's ribbon and family-lines.json; do not edit by hand. Each entry: a ribbon card that draws flags (its position from 1, its name or `living`, and the kit's `flags`). The pages put them on the cards (src/lib/ribbonflags.js). Flags: Flags Atlas, by David Defranceski, drawn for this project; no licence is claimed.",
+ "story": [
+  {
+   "card": 1,
+   "name": "Jacob Leibholz",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Hammerstein",
+     "svg": "poland-flags--era-1989.svg",
+     "flag": "poland-flags--era-1989",
+     "country": "PL",
+     "year": null,
+     "label": "from Hammerstein: Poland today",
+     "grade": "inf"
+    }
+   ]
+  },
+  {
+   "card": 2,
+   "name": "Sally Leibholz",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Hammerstein",
+     "svg": "poland-flags--era-1989.svg",
+     "flag": "poland-flags--era-1989",
+     "country": "PL",
+     "year": null,
+     "label": "from Hammerstein: Poland today",
+     "grade": "doc"
+    },
+    {
+     "kind": "era",
+     "line": "at",
+     "place": "Schubin",
+     "svg": "germany-flags--era-1871.svg",
+     "flag": "germany-flags--era-1871",
+     "era": "posen--era-1871",
+     "year": 1884,
+     "label": "at Schubin, 1884: Prussia / German Empire then",
+     "grade": "doc",
+     "assessed": true
+    },
+    {
+     "kind": "today",
+     "line": "at",
+     "place": "Schubin",
+     "svg": "poland-flags--era-1989.svg",
+     "flag": "poland-flags--era-1989",
+     "country": "PL",
+     "year": null,
+     "label": "at Schubin: Poland today",
+     "grade": "doc"
+    },
+    {
+     "kind": "era",
+     "line": "spouse",
+     "place": "Schubin",
+     "svg": "germany-flags--era-1871.svg",
+     "flag": "germany-flags--era-1871",
+     "era": "posen--era-1871",
+     "year": 1884,
+     "label": "spouse of Schubin, 1884: Prussia / German Empire then",
+     "grade": "doc",
+     "assessed": true
+    },
+    {
+     "kind": "today",
+     "line": "spouse",
+     "place": "Schubin",
+     "svg": "poland-flags--era-1989.svg",
+     "flag": "poland-flags--era-1989",
+     "country": "PL",
+     "year": null,
+     "label": "spouse of Schubin: Poland today",
+     "grade": "doc"
+    }
+   ]
+  },
+  {
+   "card": 3,
+   "name": "Jacob Leibholz",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Schubin",
+     "svg": "poland-flags--era-1989.svg",
+     "flag": "poland-flags--era-1989",
+     "country": "PL",
+     "year": null,
+     "label": "from Schubin: Poland today",
+     "grade": "doc"
+    },
+    {
+     "kind": "today",
+     "line": "at",
+     "place": "Berlin",
+     "svg": "germany-flags--era-1990.svg",
+     "flag": "germany-flags--era-1990",
+     "country": "DE",
+     "year": null,
+     "label": "at Berlin: Germany today",
+     "grade": "doc"
+    },
+    {
+     "kind": "today",
+     "line": "spouse",
+     "place": "Sauerbaum, East Prussia",
+     "svg": "poland-flags--era-1989.svg",
+     "flag": "poland-flags--era-1989",
+     "country": "PL",
+     "year": null,
+     "label": "spouse of Sauerbaum, East Prussia: Poland today",
+     "grade": "doc"
+    }
+   ]
+  },
+  {
+   "card": 4,
+   "name": "Kurt Israel Luwinski",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Berlin",
+     "svg": "germany-flags--era-1990.svg",
+     "flag": "germany-flags--era-1990",
+     "country": "DE",
+     "year": null,
+     "label": "from Berlin: Germany today",
+     "grade": "doc"
+    },
+    {
+     "kind": "era",
+     "line": "at",
+     "place": "Johannesburg",
+     "svg": "south-africa-flags--era-1928.svg",
+     "flag": "south-africa-flags--era-1928",
+     "era": "transvaal--era-1910",
+     "year": 1939,
+     "label": "at Johannesburg, 1939: Britain and its colonies then",
+     "grade": "doc",
+     "assessed": true
+    }
+   ]
+  }
+ ],
+ "families": {
+  "luwinski": [
+   {
+    "card": 1,
+    "name": "Joachim Luwinski",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Allenstein",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "from Allenstein: Poland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Sauerbaum",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "spouse of Sauerbaum: Poland today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Auguste Luwinski",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Sauerbaum",
+      "svg": "germany-flags--era-1871.svg",
+      "flag": "germany-flags--era-1871",
+      "era": "east-prussia--era-1871",
+      "year": 1893,
+      "label": "from Sauerbaum, 1893: Prussia / German Empire then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Sauerbaum",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "from Sauerbaum: Poland today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Schubin",
+      "svg": "germany-flags--era-1871.svg",
+      "flag": "germany-flags--era-1871",
+      "era": "posen--era-1871",
+      "year": 1893,
+      "label": "spouse of Schubin, 1893: Prussia / German Empire then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Schubin",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "spouse of Schubin: Poland today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Kurt Israel Luwinski",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Berlin",
+      "svg": "germany-flags--era-1990.svg",
+      "flag": "germany-flags--era-1990",
+      "country": "DE",
+      "year": null,
+      "label": "from Berlin: Germany today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Johannesburg",
+      "svg": "south-africa-flags--era-1928.svg",
+      "flag": "south-africa-flags--era-1928",
+      "era": "transvaal--era-1910",
+      "year": 1939,
+      "label": "at Johannesburg, 1939: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "leibholz": [
+   {
+    "card": 1,
+    "name": "Jacob Leibholz",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Hammerstein",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "from Hammerstein: Poland today",
+      "grade": "inf"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Sally Leibholz",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Hammerstein",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "from Hammerstein: Poland today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Schubin",
+      "svg": "germany-flags--era-1871.svg",
+      "flag": "germany-flags--era-1871",
+      "era": "posen--era-1871",
+      "year": 1884,
+      "label": "at Schubin, 1884: Prussia / German Empire then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Schubin",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "at Schubin: Poland today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Schubin",
+      "svg": "germany-flags--era-1871.svg",
+      "flag": "germany-flags--era-1871",
+      "era": "posen--era-1871",
+      "year": 1884,
+      "label": "spouse of Schubin, 1884: Prussia / German Empire then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Schubin",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "spouse of Schubin: Poland today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Jacob Leibholz",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Schubin",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "from Schubin: Poland today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Berlin",
+      "svg": "germany-flags--era-1990.svg",
+      "flag": "germany-flags--era-1990",
+      "country": "DE",
+      "year": null,
+      "label": "at Berlin: Germany today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Sauerbaum, East Prussia",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "spouse of Sauerbaum, East Prussia: Poland today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 4,
+    "name": "Siegfried Leibholz",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Berlin Schöneberg",
+      "svg": "germany-flags--era-1990.svg",
+      "flag": "germany-flags--era-1990",
+      "country": "DE",
+      "year": null,
+      "label": "from Berlin Schöneberg: Germany today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "wear": [
+   {
+    "card": 1,
+    "name": "John Wear",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Newington",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Newington: the United Kingdom today",
+      "grade": "inf"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Newington",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Newington: the United Kingdom today",
+      "grade": "inf"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "William Wear",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Walworth or Newington, Surrey",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Walworth or Newington, Surrey: the United Kingdom today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Deptford or Bermondsey",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Deptford or Bermondsey: the United Kingdom today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Robert Wear",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Bermondsey",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Bermondsey: the United Kingdom today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Aldenham",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1837",
+      "year": 1859,
+      "label": "spouse of Aldenham, 1859: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 4,
+    "name": "Henry Robert Wear",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "St Olave, Bermondsey",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from St Olave, Bermondsey: the United Kingdom today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Baldock",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1837",
+      "year": 1889,
+      "label": "spouse of Baldock, 1889: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "thimm": [
+   {
+    "card": 2,
+    "name": "Johanna Thimm",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Sauerbaum",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "from Sauerbaum: Poland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Allenstein",
+      "svg": "poland-flags--era-1989.svg",
+      "flag": "poland-flags--era-1989",
+      "country": "PL",
+      "year": null,
+      "label": "spouse of Allenstein: Poland today",
+      "grade": "lore"
+     }
+    ]
+   }
+  ],
+  "castle": [
+   {
+    "card": 1,
+    "name": "George Castle",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Baldock",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Baldock: the United Kingdom today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Baldock district",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Baldock district: the United Kingdom today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "George William Castle",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Hitchin district",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Hitchin district: the United Kingdom today",
+      "grade": "inf"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Weston",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Weston: the United Kingdom today",
+      "grade": "inf"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Martha Maud Castle",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Baldock",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1837",
+      "year": 1895,
+      "label": "from Baldock, 1895: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "St Olave, Bermondsey",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of St Olave, Bermondsey: the United Kingdom today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "hawkins": [
+   {
+    "card": 1,
+    "name": "William Hawkins",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Aldenham",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Aldenham: the United Kingdom today",
+      "grade": "inf"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Aldenham",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Aldenham: the United Kingdom today",
+      "grade": "inf"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "John Hawkins",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Aldenham",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Aldenham: the United Kingdom today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Aldenham",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Aldenham: the United Kingdom today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Emma Hawkins",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Aldenham",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1837",
+      "year": 1859,
+      "label": "from Aldenham, 1859: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Bermondsey",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Bermondsey: the United Kingdom today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "giddins": [
+   {
+    "card": 1,
+    "name": "James Giddins",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Baldock",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Baldock: the United Kingdom today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Norton",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Norton: the United Kingdom today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Martha Giddings",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Baldock district",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Baldock district: the United Kingdom today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Baldock",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Baldock: the United Kingdom today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "larkin": [
+   {
+    "card": 1,
+    "name": "Robert Larkin",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Aldenham",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Aldenham: the United Kingdom today",
+      "grade": "inf"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Aldenham",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Aldenham: the United Kingdom today",
+      "grade": "inf"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Emma Larkin",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Aldenham",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Aldenham: the United Kingdom today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Aldenham",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Aldenham: the United Kingdom today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "wallis": [
+   {
+    "card": 1,
+    "name": "William Wallis",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Weston, Hertfordshire",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Weston, Hertfordshire: the United Kingdom today",
+      "grade": "inf"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Wallington, Hertfordshire",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Wallington, Hertfordshire: the United Kingdom today",
+      "grade": "inf"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Joseph Wallis",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Weston, Hertfordshire",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Weston, Hertfordshire: the United Kingdom today",
+      "grade": "inf"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Weston, Hertfordshire",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Weston, Hertfordshire: the United Kingdom today",
+      "grade": "inf"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Caroline Wallis",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Weston",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Weston: the United Kingdom today",
+      "grade": "inf"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Hitchin district",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Hitchin district: the United Kingdom today",
+      "grade": "inf"
+     }
+    ]
+   }
+  ]
+ }
+}

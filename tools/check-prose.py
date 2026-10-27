@@ -43,6 +43,8 @@ HAND_EDITED = {
     # site/src/data: the narrative pages' own content
     "site/src/data/book.json",               # the book's order, part titles, one-line blurbs and part introductions (17 Oct 2026)
     "site/src/data/story.json",              # the family story (/story/): every paragraph typed by hand, graded, kit contract (25 Oct 2026)
+    "site/src/data/flag-countries.json",     # the ribbon flags: this archive's country today for a card's place, with its evidence (27 Oct 2026)
+    "site/src/data/flag-places.json",        # the ribbon flags: a card's place -> the same town's row in the era table, with its evidence (27 Oct 2026)
     "site/src/data/autoclusters.json",       # a typed summary of a private export (match holders unnamed)
     "site/src/data/dna.json", "site/src/data/emigration.json", "site/src/data/english-people.json",
     "site/src/data/families.json",           # declarations for the family pages: tree-entry names, verbatim fragments, page lists
@@ -73,6 +75,7 @@ GENERATED = {
     "site/src/data/direct-line.json",        # the kit's directline.py, from story.json's ribbon (who is on our direct line); checked by check:directline
     "site/src/data/family-lines.json",       # tools/build-family-lines.py: the family ribbons and how our line connects, from the story, register and English line
     "site/src/data/family-blocks.json",      # tools/build-family-lines.py: the families with no line to draw, their connection blocks only
+    "site/src/data/ribbon-flags.json",       # tools/build-ribbon-flags.py (the kit's ribbonflags.py): each ribbon card's mini flags; held by check:ribbonflags
 }
 
 # Prose typed outside src/pages and notes/*.md: the layout (a sentence can be typed there), the research logs

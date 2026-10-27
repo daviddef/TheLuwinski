@@ -162,6 +162,29 @@ jobs:
           python3 node_modules/@daviddef/archive-kit/kit/tools/checkfamilyribbon.py --families src/data/family-lines.json --direct src/data/direct-line.json --story src/data/story.json --dist dist --lines src/data/lines.json --living "$RUNNER_TEMP/living.json"
           python3 node_modules/@daviddef/archive-kit/kit/tools/checkfamilyribbon.py --selftest
         working-directory: site
+      # THE RIBBON FLAGS (27 October 2026, kit/docs/ribbon-flags.md): a strip of mini flags in each ribbon card's header row, the
+      # state that held the place in the card's year and the country it is in today where that is another flag. The flags are
+      # committed in site/src/data/ribbon-flags.json, made by tools/build-ribbon-flags.py with the kit's ribbonflags.py from the era
+      # snapshot, flag-places.json and flag-countries.json (hand-written, each entry with its evidence), and put on the cards as the
+      # pages draw them (a file of its own because the story's and the family ribbon's contracts do not know a card field `flags`).
+      # Here: the file is what the inputs make; then the kit's gate, over copies of the two ribbon files with the flags put back,
+      # recomputes every flag independently and reads the BUILT pages (no flag where the rules are silent, no flag of a hate-symbol
+      # or occupation regime, no year on a living card, the credit on the page); then its selftest.
+      - name: Check the ribbon flags
+        run: |
+          python3 ../tools/build-ribbon-flags.py --check --merged "$RUNNER_TEMP/ribbonflags"
+          python3 node_modules/@daviddef/archive-kit/kit/tools/checkribbonflags.py --snapshot src/data/era-snapshot.json --story "$RUNNER_TEMP/ribbonflags/story.json" --family-lines "$RUNNER_TEMP/ribbonflags/family-lines.json" --alias src/data/flag-places.json --countries src/data/flag-countries.json --dist dist
+          python3 node_modules/@daviddef/archive-kit/kit/tools/checkribbonflags.py --selftest
+        working-directory: site
+      # The box gate, which needs a browser: Chrome is on the runner, and playwright-core is installed without saving it (no
+      # dependency of the site) in the checkout's root node_modules, outside site/, where the kit's script finds it. It serves dist
+      # and measures every ribbon card on /story/ and on every family page with a ribbon, with and without its flags, at 1440, 1100
+      # and 390: one pixel of difference, or a strip on a word, fails; not run (exit 2) fails too.
+      - name: Check that the ribbon flags change no card's size
+        run: |
+          npm i --prefix .. --no-save --no-package-lock --no-audit --no-fund playwright-core@1.63.0
+          npm run check:flagfit
+        working-directory: site
       # THE LINKING STANDARD (18 October 2026): the twelve narrative pages are held to five rules, and the number of
       # violations of each may only go down (site/.standardfloor.json, counts only, no name, no address of a person).
       # L1 names that resolve are linked, L2 a person read from a record has an entry, L3 a passage that cites a record

@@ -1,0 +1,11 @@
+{
+ "_note": "HAND-WRITTEN (27 October 2026). A ribbon card's place, as the card prints it (without a leading 'of '), -> the SAME place as this archive's era table prints it (data/era/ground.tsv, site/src/data/era-snapshot.json), for the ERA flag of the kit's ribbonflags.py (its --alias file; kit/docs/ribbon-flags.md). Given only where the card's place and the era-table row are one and the same town, so the card's flag reads the very region and rules the 'at the time' notes already use for that town on the person pages. Never a neighbouring town standing in for another, never a place the era table refuses (Hammerstein, Allenstein, Treplice, Berlin: their rows say why). Read by tools/build-family-lines.py and by the build's flags:data and check:ribbonflags steps. Evidence for each entry under _evidence.",
+ "_evidence": {
+  "Schubin": "The era table's own row 'Schubin | Szubin, Nakło County, Kuyavian-Pomeranian Voivodeship, Germany now Poland' (posen; 'Schubin (Szubin): the Posen province', town Szubin). The story's Schubin is that town: data/szubin-registers-online.tsv, the Szubin registers searched for Sally and Jacob Leibholz.",
+  "Sauerbaum": "The era table's own row 'Sauerbaum, Kreis Rössel, Germany' (east-prussia; 'Sauerbaum, Kreis Rössel: East Prussia'). data/surname-lines.tsv: 'JOHANNA THIMM, born SAUERBAUM (= ZERBUŃ), Kreis Rössel'.",
+  "Sauerbaum, East Prussia": "The same Sauerbaum, as the story's card prints it: the era table's row 'Sauerbaum, Kreis Rössel, Germany'."
+ },
+ "Schubin": "Schubin | Szubin, Nakło County, Kuyavian-Pomeranian Voivodeship, Germany now Poland",
+ "Sauerbaum": "Sauerbaum, Kreis Rössel, Germany",
+ "Sauerbaum, East Prussia": "Sauerbaum, Kreis Rössel, Germany"
+}

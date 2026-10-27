@@ -12,6 +12,10 @@ import StoryBook from "@daviddef/archive-kit/components/StoryBook.astro";
 import book from "../data/story.json";
 import directLine from "../data/direct-line.json";
 import { u } from "../lib/url.js";
+import { storyWithFlags } from "../lib/ribbonflags.js";
+/* The ribbon's mini flags (27 October 2026; kit/docs/ribbon-flags.md): made by tools/build-ribbon-flags.py into
+   src/data/ribbon-flags.json and put on the cards here, so story.json stays as typed. */
+const flagged = storyWithFlags(book);
 const personHref = (slug) => u(`/people/${slug}/`);
 const plateIndex = {
   "szubin-1874-9": { src: "/pollnow-1874-marriage.jpg", w: 2500, h: 330, title: "Standesamt Schubin, marriage entry akt 9 of 1874, the line naming the groom's parents", holder: "Archiwum Państwowe w Bydgoszczy, USC Szubin Miasto, sygn. 141", alt: "A line of German handwriting from the 1874 Schubin marriage register, naming Sally Leibholz's parents" },
@@ -22,5 +26,5 @@ const plateIndex = {
 };
 ---
 <Base title={book.title} subtitle={book.eyebrow} lede={book.dek}>
-  <StoryBook book={book} personHref={personHref} u={u} plateIndex={plateIndex} directLine={directLine} />
+  <StoryBook book={flagged} personHref={personHref} u={u} plateIndex={plateIndex} directLine={directLine} />
 </Base>
