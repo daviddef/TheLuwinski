@@ -292,7 +292,7 @@
     "/people/": "/people/"
   },
   "outside": [
-    "/search/",
+    "/search/", "/privacy/",
     "/letters/",
     "/research-log/",
     "/negatives/",
