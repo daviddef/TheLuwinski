@@ -148,12 +148,21 @@ export function englishPerson(p) {
     mark: k.mark || undefined,
   });
   const k = p.kin;
+  /* EVERY PERSON THE CHART DRAWS HAS A PAGE (the living standard, item 7; kit checkperson «nopage»). An English-line relative with neither a page of
+     their own nor a link is not drawn as a card that goes nowhere: they are listed in the chart's «not drawn» names, with the wording the line gave
+     them kept beside it (lineNotes), until the archive has a page for them. */
+  const draws = (x) => !!(x.s || x.href);
+  const undrawn = [['parents', 'parent'], ['spouses', 'spouse'], ['children', 'child'], ['siblings', 'sibling']]
+    .flatMap(([band, rel]) => k[band].filter((x) => !draws(x)).map((x) => ({
+      rel, name: x.n, why: 'no page yet', mark: x.mark || undefined, ...datesFromString(x.dates),
+    })));
   const person = {
     id: `english:${p.slug}`, name: p.name, gen: p.gen, lede: `${p.rel}. ${p.dek}`,
     born: kitDate(p.born), died: kitDate(p.died),
     relations: {
-      parents: k.parents.map((x) => row(x)), spouses: k.spouses.map((x) => row(x)),
-      children: k.children.map((x) => row(x)), siblings: k.siblings.map((x) => row(x)),
+      parents: k.parents.filter(draws).map((x) => row(x)), spouses: k.spouses.filter(draws).map((x) => row(x)),
+      children: k.children.filter(draws).map((x) => row(x)), siblings: k.siblings.filter(draws).map((x) => row(x)),
+      dropped: undrawn,
     },
   };
   return person;
@@ -169,6 +178,8 @@ export function lineNotes(person) {
       if (r.mark && r.mark !== 'his own page') out.push({ name: r.name, label, text: r.mark });
       else if (r.half) out.push({ name: r.name, label, text: 'half-' + label });
     }
+  for (const r of person.relations.dropped || [])
+    if (r.mark && r.mark !== 'his own page') out.push({ name: r.name, label: r.rel, text: r.mark });
   return out;
 }
 
