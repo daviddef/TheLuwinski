@@ -8,6 +8,7 @@ import Base from '../../layouts/Base.astro';
 import Evidence from '@daviddef/archive-kit/components/Evidence.astro';
 import data from '../../data/english-people.json';
 import register from '../../data/register.json';
+import { STUBS } from '../../lib/englishKin.js';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const GEN = {
   2: 'Grandparents',
@@ -28,7 +29,7 @@ const sets = [
 const nLiving = register.people.filter((p) => p.living).length;
 ---
 <Base title="The people" noAutolink
-  subtitle={`Every person this archive names has a page: ${data.people.length} on the English line and ${register.people.length} in the register.`}
+  subtitle={`Every person this archive names has a page: ${data.people.length} on the English line, ${STUBS.length} relatives it names, and ${register.people.length} in the register.`}
   lede="One page for each person the archive names, the living included. A living person's page says their name, their relationships and their town and country, and nothing more.">
 
   <div class="panel">
@@ -71,6 +72,22 @@ const nLiving = register.people.filter((p) => p.living).length;
       </table></div>
     </section>
   ))}
+
+  <h2 id="english-kin">Relatives the English line names</h2>
+  <p class="small muted">{STUBS.length} people the line names as a parent, a spouse, a child or a brother or sister of someone on it, and never wrote a
+    page for. Each page says only what the line says: the name, the dates as given, and whose page names them.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Person</th><th>Dates as given</th><th>Named on the page of</th></tr></thead>
+    <tbody>
+      {STUBS.map((s) => (
+        <tr>
+          <td><a href={`${base}/people/${s.slug}/`}>{s.name}</a></td>
+          <td>{s.dates}</td>
+          <td class="small muted">{[...new Set(s.edges.map((e) => e.of.name))].join(', ')}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
 
   <h2 id="register">Everyone in the register</h2>
   {sets.map(([title, note, list]) => (

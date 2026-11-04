@@ -26,6 +26,7 @@ import { parseDate, isLiving, isHeldOut } from '@daviddef/archive-kit/lib/person
 import { edgesOf, pageOf } from './kin.js';
 import register from '../data/register.json';
 import { u } from './url.js';
+import { stubFor } from './englishKin.js';
 
 export const NOW = new Date().getFullYear();
 const BY_ID = new Map(register.people.map((p) => [String(p.id), p]));
@@ -141,17 +142,16 @@ function datesFromString(s) {
 export function englishPerson(p) {
   const row = (k, via) => ({
     name: k.n, source: via || k.via,
-    href: k.href ? base + k.href : k.s ? u(`/people/${k.s}/`) : undefined,
-    slug: k.s || undefined,
+    href: k.href ? base + k.href : (k.s || stubFor(k)) ? u(`/people/${k.s || stubFor(k)}/`) : undefined,
+    slug: k.s || stubFor(k) || undefined,
     ...datesFromString(k.dates),
     mar: k.mar || undefined,
     mark: k.mark || undefined,
   });
   const k = p.kin;
-  /* EVERY PERSON THE CHART DRAWS HAS A PAGE (the living standard, item 7; kit checkperson «nopage»). An English-line relative with neither a page of
-     their own nor a link is not drawn as a card that goes nowhere: they are listed in the chart's «not drawn» names, with the wording the line gave
-     them kept beside it (lineNotes), until the archive has a page for them. */
-  const draws = (x) => !!(x.s || x.href);
+  /* EVERY PERSON THE CHART DRAWS HAS A PAGE (the living standard, item 7; kit checkperson «nopage»). A relative the line names and never wrote a page for
+     has a stub page (src/lib/englishKin.js, from 4 November 2026), so every row is drawn; `undrawn` stays as the net, and is empty while that holds. */
+  const draws = (x) => !!(x.s || x.href || stubFor(x));
   const undrawn = [['parents', 'parent'], ['spouses', 'spouse'], ['children', 'child'], ['siblings', 'sibling']]
     .flatMap(([band, rel]) => k[band].filter((x) => !draws(x)).map((x) => ({
       rel, name: x.n, why: 'no page yet', mark: x.mark || undefined, ...datesFromString(x.dates),

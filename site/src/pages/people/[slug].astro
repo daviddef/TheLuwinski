@@ -52,14 +52,17 @@ import { eraAt, plainYear } from '@daviddef/archive-kit/lib/era.js';
 import eraSnapshot from '../../data/era-snapshot.json';
 import directLine from '../../data/direct-line.json';
 import { lifePlace, dayFirst, yearOf } from '../../lib/eraplace.js';
+import { STUBS, stubPerson, stubNotes, stubAs, VIA_WORD } from '../../lib/englishKin.js';
+import { isLiving, isHeldOut } from '@daviddef/archive-kit/lib/person.js';
 
 export function getStaticPaths() {
   return [
-    ...data.people.map((p) => ({ params: { slug: p.slug }, props: { p, reg: null } })),
-    ...register.people.map((r) => ({ params: { slug: r.slug }, props: { p: null, reg: r } })),
+    ...data.people.map((p) => ({ params: { slug: p.slug }, props: { p, reg: null, stub: null } })),
+    ...register.people.map((r) => ({ params: { slug: r.slug }, props: { p: null, reg: r, stub: null } })),
+    ...STUBS.map((s) => ({ params: { slug: s.slug }, props: { p: null, reg: null, stub: s } })),
   ];
 }
-const { p, reg } = Astro.props;
+const { p, reg, stub } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const TAG = { doc: 'Documented', inf: 'Read with care', disp: 'Corrected' };
@@ -80,6 +83,14 @@ if (p) {
   const lifeLine = [p.born && p.born !== 'not established' ? `Born ${p.born}` : '',
                     p.died && p.died !== 'not established' ? `died ${p.died}` : ''].filter(Boolean).join(' · ');
   view = { english: true, lifeLine, notes: lineNotes(person) };
+} else if (stub) {
+  person = stubPerson(stub);
+  /* the safety net the register pages have: a relative the line names is long dead, and the kit's rule must agree */
+  const rule = { now: new Date().getFullYear(), sources: PS };
+  if (isLiving(person, rule) || isHeldOut(person, { ...rule, heldIds: [], parentLiving: false }))
+    throw new Error(`people/${stub.slug}: the kit's rule calls a relative of the English line living or held out; decide it in the data, not here`);
+  meta = personMeta(person, { siteName: '', sources: PS });
+  view = { english: false, living: false, stub: true, notes: stubNotes(stub) };
 } else {
   const made = registerPerson(reg);
   person = made.person;
@@ -135,7 +146,7 @@ const peopleHref = base + '/people/';
 const stubNote = 'the household that names them';
 const chartLabels = view.bare ? { parents: 'His parents' } : {};
 /* the page's own slug: OursBand draws 'On our direct line' only for someone in src/data/direct-line.json (kit/docs/family-ribbon.md) */
-const pageSlug = p ? p.slug : reg.slug;
+const pageSlug = p ? p.slug : stub ? stub.slug : reg.slug;
 const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   // no Person for a placeholder: it stands for nobody
 ---
 <Base title={meta.title} subtitle={description} noindex={meta.noindex} structured={!meta.living} about={about} ownHeading noAutolink>
@@ -198,6 +209,52 @@ const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   
         </ul>
       </div>
     </PersonSection>
+  </PersonPage>
+  )}
+
+  {stub && (
+  <PersonPage person={person} peopleHref={peopleHref} stubNote={stubNote} directLine={directLine} slug={pageSlug} storyHref={base + '/story/'}>
+    <Fragment slot="chart-notes">
+      {view.notes.length > 0 && (
+        <Fragment>
+          <p class="small">The line's own wording for the links drawn above:</p>
+          <ul class="small">
+            {view.notes.map((n) => <li>On the page of <strong>{n.name}</strong>: {n.text}</li>)}
+          </ul>
+        </Fragment>
+      )}
+    </Fragment>
+
+    <Fragment slot="record">
+      <p class="small"><span class="tag open">Named on the English line</span></p>
+      <p>The line names {stub.name}{stub.dates ? <> and gives {stub.parsed.baptised && !stub.parsed.died ? 'a baptism' : 'the dates'}{' '}<strong>{stub.dates}</strong></> : ' and gives no date'}.
+        Known only from the pages of the people who name them; nothing else is recorded yet.</p>
+      {(stub.parsed.baptised || stub.parsed.born || stub.parsed.died) && (
+        <p class="small muted">
+          {stub.parsed.born && <>Born {stub.parsed.born}. </>}
+          {stub.parsed.baptised && <>Baptised {stub.parsed.baptised}; a baptism is not a birth, so the chart prints no birth. </>}
+          {stub.parsed.died && <>Died {stub.parsed.died}.</>}
+        </p>
+      )}
+      <div class="scroll"><table>
+        <thead><tr><th>Named on the page of</th><th>Named there as</th><th>How the link is known</th></tr></thead>
+        <tbody>
+          {stub.edges.map((e) => (
+            <tr>
+              <td><a href={`${base}/people/${e.of.slug}/`}><strong>{e.of.name}</strong></a></td>
+              <td>{stubAs(e)}</td>
+              <td>{VIA_WORD[e.via] || e.via}{e.mark ? <> &mdash; <em>{e.mark}</em></> : null}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+    </Fragment>
+
+    <Fragment slot="sources">
+      <p class="small">This page is built from the English line's own data and from nothing else. Each page above says
+        what record it read for the link, and the grade of the whole line. <a href={base + '/method/'}>How the grades and
+        the labels on the chart are decided</a>, and <a href={base + '/sources/'}>every source this archive holds</a>.</p>
+    </Fragment>
   </PersonPage>
   )}
 
