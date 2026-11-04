@@ -521,6 +521,9 @@ header.site nav.topnav{display:flex;align-items:center;gap:1px;flex-wrap:nowrap}
   text-decoration:none;margin-left:10px;color:#fff!important;background:var(--accent);
   padding:8px 15px;border-radius:999px;white-space:nowrap}
 .findbtn:hover{background:var(--accent-2)}
+/* header.site nav a (0,1,3) sets padding:2px 0 and out-ranks .findbtn (0,1,0): the pill had no side padding and the word sat on its edges.
+   Say it at a higher weight, and keep the nowrap nav from squeezing it. */
+header.site nav a.findbtn{padding:8px 15px;border-bottom:0;flex:0 0 auto}
 .burger{display:none!important;align-items:center;gap:9px;font-family:var(--sans);font-size:13px;
   background:none;border:1px solid var(--rule-strong);border-radius:999px;padding:7px 14px;
   color:var(--ink);cursor:pointer}
