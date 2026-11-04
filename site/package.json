@@ -52,7 +52,7 @@
     "check:rows": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkrows.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#2941d6e1963229f4dd25cff25e244ac07b5ed346",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#e15c942976322e91ae957a8e61c35e26f874ebec",
     "astro": "^5.18.2"
   },
   "devDependencies": {
