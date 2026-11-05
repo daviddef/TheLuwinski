@@ -1,0 +1,65 @@
+{
+ "individuals": 102,
+ "kept": 91,
+ "living": 0,
+ "living_policy": "omit",
+ "undated_dropped": 9,
+ "birth_year_estimated": 10,
+ "death_year_estimated": 20,
+ "placed_from_relative": 26,
+ "dropped_unplaced": 2,
+ "unresolved_places": {
+  "Reetz, Pomerania": 1,
+  "Sulzelder Str. 70 = Brzezinska 70 = (aktueller Name) Woiska Polskiego 70Litzmannstadt": 1,
+  "Eisenbahnstrasse 82Eberswalde, Berlin": 1,
+  "Südafrika": 1,
+  "Steinberg": 1,
+  "Treplice (bei Zinnwald)": 1,
+  "Görkau/ Sokolov": 1
+ },
+ "focus": "9500001",
+ "conflicts": [],
+ "adapter": {
+  "register_people_published": 174,
+  "register_not_offered_to_the_converter": {
+   "placeholder (a record that stands for nobody)": 16,
+   "no death recorded and not long dead (omitted, not named)": 61,
+   "living or named-only (omitted)": 5,
+   "murdered or deported, no year of death recorded (not drawn: a year would be invented)": 1,
+   "no death date, no relative drawn (surname-index entry, not drawn)": 15
+  },
+  "english_line_people_offered": 26,
+  "english_line_relatives_not_drawn": "79 relatives named without a page of their own (no sex, no place, mostly no death)",
+  "offered_to_the_converter": 102,
+  "drawn": 91,
+  "drawn_register": 65,
+  "drawn_english_line": 26,
+  "family_link_notes": {},
+  "place_strings_used": 109,
+  "place_strings_settled_before_converter": 102,
+  "how_placed": {
+   "place-additions.json (by the town ground.tsv names)": 49,
+   "ground.tsv + towns.tsv (the town itself)": 34,
+   "place-additions.json (this string)": 12,
+   "ground.tsv + towns.tsv, drawn 'near' the town": 6,
+   "ground.tsv district + the one GeoNames village within 40 km": 1
+  },
+  "district_level_place_strings": [
+   "Dreidorf, Wirsitz, Posen, Preußen, Deutschland",
+   "Kolleschowitz, bei Saaz, Sudetengau",
+   "Nattern, Allenstein",
+   "Sauerbaum, Kreis Rössel, Germany",
+   "Schönbrück, Allenstein",
+   "Vinkelmeer, Burgersdorp, Albert"
+  ],
+  "unresolved_place_strings": {
+   "Reetz, Pomerania": 1,
+   "Sulzelder Str. 70 = Brzezinska 70 = (aktueller Name) Woiska Polskiego 70Litzmannstadt": 1,
+   "Eisenbahnstrasse 82Eberswalde, Berlin": 1,
+   "Südafrika": 1,
+   "Steinberg": 1,
+   "Treplice (bei Zinnwald)": 1,
+   "Görkau/ Sokolov": 1
+  }
+ }
+}

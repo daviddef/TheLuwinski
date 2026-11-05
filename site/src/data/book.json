@@ -64,6 +64,11 @@
           "blurb": "The ancestry as it now stands, graded on the five-word ladder."
         },
         {
+          "path": "/roots/",
+          "title": "Roots & Routes",
+          "blurb": "Everyone in the tree who has died, drawn ten ways: by generation, by place, by era, and as the route a life took."
+        },
+        {
           "path": "/families/",
           "title": "The families",
           "blurb": "Twelve surname lines, each with a page of its own."

@@ -1,0 +1,12 @@
+---
+/* Roots & Routes: built by tools/build-tree-page.py from people.json (no living person is in it) and rendered here inside the site layout (header, menu,
+   footer). The fragment carries its own scoped styles and script (every selector under #rr). Rebuild with `python3 tools/build-tree-page.py`; see
+   data/tree-page/README.md. A standalone copy of the page is kept at data/tree-page/roots.html, and served bare at /roots/view.html for the frames on a
+   person's page (kit PersonRootsViews). */
+import Base from "../../layouts/Base.astro";
+import page from "../../../../data/tree-page/roots.embed.html?raw";
+import { meta } from "../../../../data/tree-page/tree.json";
+---
+<Base title={meta.title} subtitle={meta.sub} noAutolink>
+  <Fragment set:html={page} />
+</Base>
