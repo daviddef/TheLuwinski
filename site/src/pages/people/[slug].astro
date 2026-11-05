@@ -40,7 +40,9 @@ import PersonSection from '@daviddef/archive-kit/components/PersonSection.astro'
 import EvidenceChip from '@daviddef/archive-kit/components/EvidenceChip.astro';
 import PS from '@daviddef/archive-kit/data/public-sources.json';
 import { personMeta } from '@daviddef/archive-kit/lib/person.js';
-import { md } from '@daviddef/archive-kit/lib/md.js';
+import { md, mdp } from '@daviddef/archive-kit/lib/md.js';
+import PersonStory from '@daviddef/archive-kit/components/PersonStory.astro';
+import PersonRootsViews from '@daviddef/archive-kit/components/PersonRootsViews.astro';
 import '@daviddef/archive-kit/styles/persontree.css';
 import '@daviddef/archive-kit/styles/personpage.css';
 import data from '../../data/english-people.json';
@@ -54,6 +56,8 @@ import directLine from '../../data/direct-line.json';
 import { lifePlace, dayFirst, yearOf } from '../../lib/eraplace.js';
 import { STUBS, stubPerson, stubNotes, stubAs, VIA_WORD } from '../../lib/englishKin.js';
 import { isLiving, isHeldOut } from '@daviddef/archive-kit/lib/person.js';
+import { u } from '../../lib/url.js';
+import { storyFor, chaptersFromFacts, inRoots, rootsIdOf, GRADE_SAY } from '../../lib/storyTree.js';
 
 export function getStaticPaths() {
   return [
@@ -148,6 +152,17 @@ const chartLabels = view.bare ? { parents: 'His parents' } : {};
 /* the page's own slug: OursBand draws 'On our direct line' only for someone in src/data/direct-line.json (kit/docs/family-ribbon.md) */
 const pageSlug = p ? p.slug : stub ? stub.slug : reg.slug;
 const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   // no Person for a placeholder: it stands for nobody
+
+/* STORY MODE (kit PERSON-PAGE-SPEC.md 2a; 5 November 2026). A page TELLS the life when the archive has something to tell: a parent,
+   a brother or sister, a child, or a written life (the English line's own facts). src/lib/storyTree.js builds the stages and writes
+   no word of its own; a page with nothing beyond «no parent is named» stays a chart. NEVER a living page, and never a placeholder
+   (it stands for nobody). The Roots & Routes section is drawn only for people Roots & Routes draws (public/roots-links.json). */
+let STORY = null;
+if (p) { const ch = chaptersFromFacts(p.facts); STORY = storyFor(p.slug, { chapters: ch.life, about: ch.about }); }
+else if (stub) STORY = storyFor(stub.slug);
+else if (reg && !view.living && !view.placeholder) STORY = storyFor(reg.slug);
+const STORYMODE = !!STORY;
+const rootsId = STORYMODE && inRoots(pageSlug) ? rootsIdOf(pageSlug) : null;
 ---
 <Base title={meta.title} subtitle={description} noindex={meta.noindex} structured={!meta.living} about={about} ownHeading noAutolink>
 
@@ -164,6 +179,9 @@ const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   
       )}
     </Fragment>
 
+    {STORYMODE && <Fragment slot="story"><PersonStory stages={STORY} md={(x) => `<p>${mdp(x)}</p>`} gradeSay={GRADE_SAY} u={u} /></Fragment>}
+    {rootsId && <Fragment slot="where"><PersonRootsViews pid={rootsId} u={u} /></Fragment>}
+
     <Fragment slot="record">
       <p>
         <EvidenceChip level={p.grade} />
@@ -175,6 +193,9 @@ const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   
           {p.died && p.died !== 'not established' ? <p style="margin:.2rem 0 0"><strong>{`Died ${p.died}`}</strong><EraNote era={diedEra} /></p> : null}
         </div>
       ) : view.lifeLine && <p class="small"><strong>{view.lifeLine}</strong></p>}
+      {STORYMODE ? (
+        <p class="small muted">The life, fact by fact, is told under <a href="#story">The story</a>, in the line&rsquo;s own words and with the grade the line gave each fact.</p>
+      ) : (
       <div class="scroll"><table>
         <thead><tr><th>When</th><th>What</th><th></th><th>Status</th></tr></thead>
         <tbody>
@@ -188,11 +209,12 @@ const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   
           ))}
         </tbody>
       </table></div>
+      )}
     </Fragment>
 
     <Fragment slot="sources">
-      <p class="small">Each line of the table above names the record it rests on in its third column, and
-        the grade at the top says how well the whole is evidenced. What is not established is said under
+      <p class="small">{STORYMODE ? 'Each fact of the story names the record it rests on, and the grade on it says how well that fact is evidenced; the grade at the top says how well the whole is.'
+        : 'Each line of the table above names the record it rests on in its third column, and the grade at the top says how well the whole is evidenced.'} What is not established is said under
         its own heading below. <a href={base + '/method/'}>How the grades and the labels on the chart are
         decided</a>, and <a href={base + '/sources/'}>every source this archive holds</a>.</p>
       <p class="small muted">
@@ -224,6 +246,9 @@ const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   
         </Fragment>
       )}
     </Fragment>
+
+    {STORYMODE && <Fragment slot="story"><PersonStory stages={STORY} md={(x) => `<p>${mdp(x)}</p>`} gradeSay={GRADE_SAY} u={u} /></Fragment>}
+    {rootsId && <Fragment slot="where"><PersonRootsViews pid={rootsId} u={u} /></Fragment>}
 
     <Fragment slot="record">
       <p class="small"><span class="tag open">Named on the English line</span></p>
@@ -277,6 +302,9 @@ const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   
         <p class="small">{view.half.join(' and ')} {view.half.length > 1 ? 'are half-siblings' : 'is a half-sibling'}.</p>
       )}
     </Fragment>
+
+    {STORYMODE && <Fragment slot="story"><PersonStory stages={STORY} md={(x) => `<p>${mdp(x)}</p>`} gradeSay={GRADE_SAY} u={u} /></Fragment>}
+    {rootsId && <Fragment slot="where"><PersonRootsViews pid={rootsId} u={u} /></Fragment>}
 
     <Fragment slot="record">
       {view.lifeLine && <p class="small"><strong>{view.lifeLine}</strong></p>}
@@ -348,3 +376,10 @@ const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   
   </p>
   )}
 </Base>
+
+<style is:global>
+  /* The kit's story draws «Where they came from» in .st-threads, a grid with no column set, so its one track is sized by its content: a row of
+     grandparents (cards 15rem wide) made the whole page 794px wide on a 375px phone. One column that may shrink is what it meant. Local to
+     this archive's person pages; the kit is not touched (reported to David). */
+  .ppage[data-mode="story"] .st-threads { grid-template-columns: minmax(0, 1fr); }
+</style>

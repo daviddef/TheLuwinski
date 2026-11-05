@@ -1,0 +1,990 @@
+{
+ "59067, Hamm, NRW, Deutschland": {
+  "name": "Hamm",
+  "lat": 51.6803,
+  "lon": 7.8209,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Hamm in DE of 100000+ people; the string says Hamm, Arnsberg, NRW; of the twelve places called Hamm in Germany only one has over 100,000 people (Hamm, Westphalia)"
+ },
+ "Aldenham": {
+  "name": "Aldenham",
+  "lat": 51.69,
+  "lon": -0.35,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Aldenham; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of"
+ },
+ "Allenstein, Germany": {
+  "name": "Allenstein",
+  "lat": 53.78,
+  "lon": 20.49,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Allenstein; point from data/era/towns.tsv (hand; matches the Atlas place file for Olsztyn); country by the Atlas's geo.country_of"
+ },
+ "Auschwitz, extermination camp": {
+  "name": "Auschwitz (Oświęcim)",
+  "lat": 50.0344,
+  "lon": 19.2104,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Oswiecim in PL of 10000+ people; as Auschwitz"
+ },
+ "Bad Wörishofen": {
+  "name": "Bad Wörishofen",
+  "lat": 48.0067,
+  "lon": 10.5967,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Bad Worishofen in DE; ground.tsv: Bad Wörishofen, Bavaria (the only one in Germany)"
+ },
+ "Baldock": {
+  "name": "Baldock",
+  "lat": 51.99,
+  "lon": -0.19,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Baldock; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of"
+ },
+ "Baldock, Hertfordshire": {
+  "name": "Baldock",
+  "lat": 51.99,
+  "lon": -0.19,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Baldock; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of"
+ },
+ "Beethovenstr.Stahnsdorf": {
+  "name": "Stahnsdorf",
+  "lat": 52.3833,
+  "lon": 13.2167,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Stahnsdorf in DE; ground.tsv: Stahnsdorf, Brandenburg (the only one in Germany)"
+ },
+ "Beethovenstrasse 20Stahnsdorf, Brandenburg Deutschland": {
+  "name": "Stahnsdorf",
+  "lat": 52.3833,
+  "lon": 13.2167,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Stahnsdorf in DE; ground.tsv: Stahnsdorf, Brandenburg (the only one in Germany)"
+ },
+ "Berlin": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin Deutschland": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin Germany": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin Schöneberg, Martin-Luther-Str. 60": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin, Berlin, Germany": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin, Germany": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin, Wilmersdorf, Germany": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin-Charlottenburg": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin-Kreuzberg": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin-Reinickendorf": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin-Schöneberg": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin-Tempelhof": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin-Tiergarten": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin-Wilmersdorf": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Berlin-Zehlendorf": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Bermondsey": {
+  "name": "Bermondsey",
+  "lat": 51.4979,
+  "lon": -0.0661,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Bermondsey in GB; the English line's birthplace (St Olave, Bermondsey): the only Bermondsey in the gazetteer"
+ },
+ "Besingstraße 110Zeutern, Baden-Württemberg 76698": {
+  "name": "Zeutern",
+  "lat": 49.1761,
+  "lon": 8.6747,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Zeutern in DE; ground.tsv: Zeutern, near Bruchsal, Baden-Württemberg (the only one in Germany)"
+ },
+ "Brisbane Australia": {
+  "name": "Brisbane",
+  "lat": -27.47,
+  "lon": 153.02,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era/ground.tsv names the town Brisbane; point from data/era/towns.tsv (hand; matches the kit gazetteer); country by the Atlas's geo.country_of"
+ },
+ "Bruno-Baum-Str.Potsdam-Babelsberg, Brandenburg Deutschland": {
+  "name": "Potsdam",
+  "lat": 52.3989,
+  "lon": 13.0657,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Potsdam in DE; ground.tsv: Potsdam, Brandenburg (the only Potsdam in Germany in the gazetteer)"
+ },
+ "Brüx": {
+  "name": "Brüx",
+  "lat": 50.5,
+  "lon": 13.64,
+  "country": "Czechia",
+  "iso": "CZ",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Brüx; point from data/era/towns.tsv (hand; matches the Atlas place file for Most); country by the Atlas's geo.country_of"
+ },
+ "Burgersdorp, Cape Province, South Africa": {
+  "name": "Burgersdorp",
+  "lat": -31.0,
+  "lon": 26.33,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": "burgersdorp",
+  "how": "data/era/ground.tsv names the town Burgersdorp; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of"
+ },
+ "Deuthen": {
+  "name": "Deuthen",
+  "lat": 53.76,
+  "lon": 20.44,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Deuthen; point from data/era/towns.tsv (hand (Dajtki, a suburb of Olsztyn)); country by the Atlas's geo.country_of"
+ },
+ "Deuthen, Ostpreußen, Deutschland": {
+  "name": "Deuthen",
+  "lat": 53.76,
+  "lon": 20.44,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Deuthen; point from data/era/towns.tsv (hand (Dajtki, a suburb of Olsztyn)); country by the Atlas's geo.country_of"
+ },
+ "Dreidorf, Wirsitz, Posen, Preußen, Deutschland": {
+  "name": "Dreidorf (near Wirsitz)",
+  "lat": 53.15,
+  "lon": 17.27,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Wirsitz; point from data/era/towns.tsv (hand: the Kreis seat (Wyrzysk); Dreidorf itself is somewhere in the Kreis); country by the Atlas's geo.country_of; the village Dreidorf is not found once in the gazetteer within 40 km, so it is drawn at the town and named 'near'"
+ },
+ "Frankfurt am Main (Homburgerlandstrasse 112)": {
+  "name": "Frankfurt",
+  "lat": 50.11,
+  "lon": 8.68,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Frankfurt; point from data/era/towns.tsv (hand; matches the Atlas place file); country by the Atlas's geo.country_of"
+ },
+ "Geretsried": {
+  "name": "Geretsried",
+  "lat": 47.8578,
+  "lon": 11.4805,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Geretsried in DE; ground.tsv: Geretsried, Bavaria (the only one in Germany)"
+ },
+ "Gręboszów, Powiat dąbrowski, Krakowskie, Polska": {
+  "name": "Gręboszów",
+  "lat": 50.19,
+  "lon": 20.99,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Gręboszów; point from data/era/towns.tsv (hand (near Dabrowa Tarnowska)); country by the Atlas's geo.country_of"
+ },
+ "Görkau": {
+  "name": "Görkau",
+  "lat": 50.5,
+  "lon": 13.45,
+  "country": "Czechia",
+  "iso": "CZ",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Görkau; point from data/era/towns.tsv (hand; matches the Atlas place file for Jirkov); country by the Atlas's geo.country_of"
+ },
+ "Görkau/ Kreis Komotau": {
+  "name": "Görkau",
+  "lat": 50.5,
+  "lon": 13.45,
+  "country": "Czechia",
+  "iso": "CZ",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Görkau; point from data/era/towns.tsv (hand; matches the Atlas place file for Jirkov); country by the Atlas's geo.country_of"
+ },
+ "Hamm, Arnsberg, NRW, Germany": {
+  "name": "Hamm",
+  "lat": 51.6803,
+  "lon": 7.8209,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Hamm in DE of 100000+ people; the string says Hamm, Arnsberg, NRW; of the twelve places called Hamm in Germany only one has over 100,000 people (Hamm, Westphalia)"
+ },
+ "Hammerstein (Czarne), Pomerania, Germany": {
+  "name": "Hammerstein",
+  "lat": 53.6842,
+  "lon": 16.9383,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Czarne in PL of 5000+ people; the string names Czarne; of the twelve Czarnes in Poland only one has over 5,000 people (Czarne, the former Hammerstein)"
+ },
+ "Hammerstein, Westpreußen, Germany now Poland": {
+  "name": "Hammerstein",
+  "lat": 53.6842,
+  "lon": 16.9383,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Czarne in PL of 5000+ people; Hammerstein is Czarne (Poland); of the twelve Czarnes in Poland only one has over 5,000 people"
+ },
+ "Hitchin": {
+  "name": "Hitchin",
+  "lat": 51.9492,
+  "lon": -0.285,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Hitchin in GB; the English line's Hitchin (the registration district and town): the only Hitchin in the gazetteer"
+ },
+ "Hohenbrucher ChausseeSommerfeld, Brandenburg 16766": {
+  "name": "Sommerfeld",
+  "lat": 52.8025,
+  "lon": 13.0347,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Sommerfeld in DE within [3]; the string says Osthavelland; of the three Sommerfelds in Germany the one near Kremmen is in the old Kreis Osthavelland (the others are in Mecklenburg-Vorpommern and Saxony)"
+ },
+ "Johannesburg": {
+  "name": "Johannesburg",
+  "lat": -26.2,
+  "lon": 28.05,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": "johannesburg",
+  "how": "data/era/ground.tsv names the town Johannesburg; point from data/era/towns.tsv (hand; matches the kit gazetteer); country by the Atlas's geo.country_of"
+ },
+ "Johannesburg, City of Johannesburg Metropolitan Municipality, GP, South Africa": {
+  "name": "Johannesburg",
+  "lat": -26.2,
+  "lon": 28.05,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": "johannesburg",
+  "how": "data/era/ground.tsv names the town Johannesburg; point from data/era/towns.tsv (hand; matches the kit gazetteer); country by the Atlas's geo.country_of"
+ },
+ "Johannesburg, Gauteng, South Africa": {
+  "name": "Johannesburg",
+  "lat": -26.2,
+  "lon": 28.05,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": "johannesburg",
+  "how": "data/era/ground.tsv names the town Johannesburg; point from data/era/towns.tsv (hand; matches the kit gazetteer); country by the Atlas's geo.country_of"
+ },
+ "Johannesburg, South Africa": {
+  "name": "Johannesburg",
+  "lat": -26.2,
+  "lon": 28.05,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": "johannesburg",
+  "how": "data/era/ground.tsv names the town Johannesburg; point from data/era/towns.tsv (hand; matches the kit gazetteer); country by the Atlas's geo.country_of"
+ },
+ "Johannesburg, Süd Afrika": {
+  "name": "Johannesburg",
+  "lat": -26.2,
+  "lon": 28.05,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": "johannesburg",
+  "how": "data/era/ground.tsv names the town Johannesburg; point from data/era/towns.tsv (hand; matches the kit gazetteer); country by the Atlas's geo.country_of"
+ },
+ "Johannesburg, Transvaal, South Africa": {
+  "name": "Johannesburg",
+  "lat": -26.2,
+  "lon": 28.05,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": "johannesburg",
+  "how": "data/era/ground.tsv names the town Johannesburg; point from data/era/towns.tsv (hand; matches the kit gazetteer); country by the Atlas's geo.country_of"
+ },
+ "KZ Auschwitz, Oświęcim County, Lesser Poland Voivodeship, Poland": {
+  "name": "Auschwitz (Oświęcim)",
+  "lat": 50.0344,
+  "lon": 19.2104,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Oswiecim in PL of 10000+ people; the string names Oświęcim County, Poland"
+ },
+ "KZ Kulmhof | Chełmno, Kuyavian-Pomeranian Voivodeship, Poland": {
+  "name": "Kulmhof (Chełmno nad Nerem)",
+  "lat": 52.1128,
+  "lon": 18.7513,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Chelmno nad Nerem in PL; as Kulmhof: the camp stood at Chełmno nad Nerem; the string's «Kuyavian-Pomeranian Voivodeship» is where Chełmno on the Vistula is, so the string is not taken at its word"
+ },
+ "Kleinmachnow, Seemannsheimweg 14a": {
+  "name": "Kleinmachnow",
+  "lat": 52.4079,
+  "lon": 13.2251,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Kleinmachnow in DE; ground.tsv: Kleinmachnow, Brandenburg (the only one in Germany)"
+ },
+ "Kolleschowitz, bei Saaz, Sudetengau": {
+  "name": "Kolleschowitz (near Saaz)",
+  "lat": 50.33,
+  "lon": 13.55,
+  "country": "Czechia",
+  "iso": "CZ",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Saaz; point from data/era/towns.tsv (hand; matches the Atlas place file for Zatec); country by the Atlas's geo.country_of; the village Kolleschowitz is not found once in the gazetteer within 40 km, so it is drawn at the town and named 'near'"
+ },
+ "Kraichtal, Baden-Württemberg, Germany": {
+  "name": "Kraichtal",
+  "lat": 49.1462,
+  "lon": 8.7328,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Kraichtal in DE; ground.tsv: Kraichtal, Baden-Württemberg (the only one in Germany)"
+ },
+ "Kulmhof (Chelmno), Vernichtungslager": {
+  "name": "Kulmhof (Chełmno nad Nerem)",
+  "lat": 52.1128,
+  "lon": 18.7513,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Chelmno nad Nerem in PL; Kulmhof is Chełmno nad Nerem, where the extermination camp stood (not Chełmno on the Vistula); the one in the gazetteer"
+ },
+ "Leinestraße 32 III. rechts, Neukölln": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; ground.tsv: Neukölln, a district of Berlin; drawn at the Atlas's Berlin"
+ },
+ "Lourenso Margues, Mozambique": {
+  "name": "Maputo",
+  "lat": -25.9655,
+  "lon": 32.5832,
+  "country": "Mozambique",
+  "iso": "MZ",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Maputo in MZ; Lourenço Marques is the former name of Maputo, as the string says Mozambique; drawn at Maputo"
+ },
+ "Ludwigsfelde": {
+  "name": "Ludwigsfelde",
+  "lat": 52.3032,
+  "lon": 13.254,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Ludwigsfelde in DE; ground.tsv: Ludwigsfelde, Brandenburg (the only one in Germany)"
+ },
+ "Magdeburg-Buckau": {
+  "name": "Magdeburg",
+  "lat": 52.1313,
+  "lon": 11.6319,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Magdeburg in DE; ground.tsv: Magdeburg (Buckau is a district of it); the only Magdeburg in Germany"
+ },
+ "Mahlow/ Kreis Zossen": {
+  "name": "Mahlow",
+  "lat": 52.3602,
+  "lon": 13.4095,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Mahlow in DE; ground.tsv: Mahlow, Kreis Zossen, Brandenburg (the only one in Germany)"
+ },
+ "Melbourne": {
+  "name": "Melbourne",
+  "lat": -37.814,
+  "lon": 144.9633,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "melbourne",
+  "how": "Record Atlas place melbourne; ground.tsv: Melbourne, or one of its suburbs (South Yarra, Toorak); drawn at the Atlas's Melbourne"
+ },
+ "Molteno, Cape Colony, South Africa": {
+  "name": "Molteno",
+  "lat": -31.4,
+  "lon": 26.36,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Molteno; point from data/era/towns.tsv (hand; matches the Atlas place file); country by the Atlas's geo.country_of"
+ },
+ "München": {
+  "name": "Munich",
+  "lat": 48.1374,
+  "lon": 11.5755,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Munich in DE of 1000000+ people; ground.tsv: Munich (München); the one Munich in Germany of over a million people"
+ },
+ "Nattern, Allenstein": {
+  "name": "Nattern (near Allenstein)",
+  "lat": 53.78,
+  "lon": 20.49,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Allenstein; point from data/era/towns.tsv (hand; matches the Atlas place file for Olsztyn); country by the Atlas's geo.country_of; the village Nattern is not found once in the gazetteer within 40 km, so it is drawn at the town and named 'near'"
+ },
+ "Ostrowo, Posen | Ostrów Wielkopolski": {
+  "name": "Ostrowo",
+  "lat": 51.65,
+  "lon": 17.81,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Ostrowo; point from data/era/towns.tsv (hand (Ostrow Wielkopolski)); country by the Atlas's geo.country_of"
+ },
+ "Porto, Porto, Portugal": {
+  "name": "Porto",
+  "lat": 41.15,
+  "lon": -8.61,
+  "country": "Portugal",
+  "iso": "PT",
+  "atlas_id": "porto",
+  "how": "data/era/ground.tsv names the town Porto; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of"
+ },
+ "Posen | Poznan": {
+  "name": "Posen",
+  "lat": 52.41,
+  "lon": 16.93,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": "posen",
+  "how": "data/era/ground.tsv names the town Posen; point from data/era/towns.tsv (hand; matches the Atlas place file for Poznan); country by the Atlas's geo.country_of"
+ },
+ "Posen, poznańskie, Polen": {
+  "name": "Posen",
+  "lat": 52.41,
+  "lon": 16.93,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": "posen",
+  "how": "data/era/ground.tsv names the town Posen; point from data/era/towns.tsv (hand; matches the Atlas place file for Poznan); country by the Atlas's geo.country_of"
+ },
+ "Postelberg (Postoloprty) Tschechische Republik": {
+  "name": "Postelberg",
+  "lat": 50.36,
+  "lon": 13.69,
+  "country": "Czechia",
+  "iso": "CZ",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Postelberg; point from data/era/towns.tsv (hand; matches the Atlas place file for Postoloprty); country by the Atlas's geo.country_of"
+ },
+ "Potsdam Babelsberg": {
+  "name": "Potsdam",
+  "lat": 52.3989,
+  "lon": 13.0657,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Potsdam in DE; ground.tsv: Potsdam, Brandenburg (the only Potsdam in Germany in the gazetteer)"
+ },
+ "Potsdam, Brandenburg, Germany": {
+  "name": "Potsdam",
+  "lat": 52.3989,
+  "lon": 13.0657,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Potsdam in DE; ground.tsv: Potsdam, Brandenburg (the only Potsdam in Germany in the gazetteer)"
+ },
+ "Pretoria": {
+  "name": "Pretoria",
+  "lat": -25.75,
+  "lon": 28.19,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": "pretoria",
+  "how": "data/era/ground.tsv names the town Pretoria; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of"
+ },
+ "Pretoria, Transvaal, South Africa": {
+  "name": "Pretoria",
+  "lat": -25.75,
+  "lon": 28.19,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": "pretoria",
+  "how": "data/era/ground.tsv names the town Pretoria; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of"
+ },
+ "Quednau, Königsberg, Ostpreußen, Preußen, Deutschland": {
+  "name": "Quednau",
+  "lat": 54.76,
+  "lon": 20.55,
+  "country": "Russia",
+  "iso": "RU",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Quednau; point from data/era/towns.tsv (hand (a suburb of Königsberg, now Kaliningrad)); country by the Atlas's geo.country_of"
+ },
+ "Richard-Wagnerstraße 42Charlottenburg, Berlin": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Saaz": {
+  "name": "Saaz",
+  "lat": 50.33,
+  "lon": 13.55,
+  "country": "Czechia",
+  "iso": "CZ",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Saaz; point from data/era/towns.tsv (hand; matches the Atlas place file for Zatec); country by the Atlas's geo.country_of"
+ },
+ "Sasolburg": {
+  "name": "Sasolburg",
+  "lat": -26.81,
+  "lon": 27.82,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Sasolburg; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of"
+ },
+ "Sasolburg, South Africa": {
+  "name": "Sasolburg",
+  "lat": -26.81,
+  "lon": 27.82,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Sasolburg; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of"
+ },
+ "Sauerbaum, Kreis Rössel, Germany": {
+  "name": "Sauerbaum (near Rössel)",
+  "lat": 54.05,
+  "lon": 21.14,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Rössel; point from data/era/towns.tsv (hand: the Kreis seat (Reszel); Sauerbaum itself is somewhere in the Kreis); country by the Atlas's geo.country_of; the village Sauerbaum is not found once in the gazetteer within 40 km, so it is drawn at the town and named 'near'"
+ },
+ "Schubin | Szubin, Nakło County, Kuyavian-Pomeranian Voivodeship, Germany now Poland": {
+  "name": "Szubin",
+  "lat": 53.0,
+  "lon": 17.99,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Szubin; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of"
+ },
+ "Schönbrück, Allenstein": {
+  "name": "Schönbrück (near Allenstein)",
+  "lat": 53.78,
+  "lon": 20.49,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Allenstein; point from data/era/towns.tsv (hand; matches the Atlas place file for Olsztyn); country by the Atlas's geo.country_of; the village Schönbrück is not found once in the gazetteer within 40 km, so it is drawn at the town and named 'near'"
+ },
+ "Schöneberg, Berlin, Germany": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Seemannsheimweg 14aKleinmachnow, Brandenburg 14532 Deutschland": {
+  "name": "Kleinmachnow",
+  "lat": 52.4079,
+  "lon": 13.2251,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Kleinmachnow in DE; ground.tsv: Kleinmachnow, Brandenburg (the only one in Germany)"
+ },
+ "Skarlin, Löbau, Westpreußen, Preußen, Deutschland": {
+  "name": "Skarlin",
+  "lat": 53.466,
+  "lon": 19.4738,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "the Atlas GeoNames gazetteer has one Skarlin in the country within 40 km of Löbau, the archive's point (data/era/ground.tsv names the district)"
+ },
+ "Sommerfeld": {
+  "name": "Sommerfeld",
+  "lat": 52.8025,
+  "lon": 13.0347,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Sommerfeld in DE within [3]; the string says Osthavelland; of the three Sommerfelds in Germany the one near Kremmen is in the old Kreis Osthavelland (the others are in Mecklenburg-Vorpommern and Saxony)"
+ },
+ "Sommerfeld, Osthaveliand, Germany": {
+  "name": "Sommerfeld",
+  "lat": 52.8025,
+  "lon": 13.0347,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Sommerfeld in DE within [3]; the string says Osthavelland; of the three Sommerfelds in Germany the one near Kremmen is in the old Kreis Osthavelland (the others are in Mecklenburg-Vorpommern and Saxony)"
+ },
+ "Sommerfeld/ Osthavelland": {
+  "name": "Sommerfeld",
+  "lat": 52.8025,
+  "lon": 13.0347,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Sommerfeld in DE within [3]; the string says Osthavelland; of the three Sommerfelds in Germany the one near Kremmen is in the old Kreis Osthavelland (the others are in Mecklenburg-Vorpommern and Saxony)"
+ },
+ "Sommerfeld/Osthavelland": {
+  "name": "Sommerfeld",
+  "lat": 52.8025,
+  "lon": 13.0347,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Sommerfeld in DE within [3]; the string says Osthavelland; of the three Sommerfelds in Germany the one near Kremmen is in the old Kreis Osthavelland (the others are in Mecklenburg-Vorpommern and Saxony)"
+ },
+ "Southwark": {
+  "name": "Southwark",
+  "lat": 51.5,
+  "lon": -0.0833,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Southwark in GB; the English line's «St Olave Southwark» (a registration district): the only Southwark in the gazetteer"
+ },
+ "Stahnsdorf": {
+  "name": "Stahnsdorf",
+  "lat": 52.3833,
+  "lon": 13.2167,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Stahnsdorf in DE; ground.tsv: Stahnsdorf, Brandenburg (the only one in Germany)"
+ },
+ "Stahnsdorf, Bahnhofstrasse": {
+  "name": "Stahnsdorf",
+  "lat": 52.3833,
+  "lon": 13.2167,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Stahnsdorf in DE; ground.tsv: Stahnsdorf, Brandenburg (the only one in Germany)"
+ },
+ "Stahnsdorf, Beethovenstrasse 20": {
+  "name": "Stahnsdorf",
+  "lat": 52.3833,
+  "lon": 13.2167,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Stahnsdorf in DE; ground.tsv: Stahnsdorf, Brandenburg (the only one in Germany)"
+ },
+ "Szubin/ SchubinPolen": {
+  "name": "Szubin",
+  "lat": 53.0,
+  "lon": 17.99,
+  "country": "Poland",
+  "iso": "PL",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Szubin; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of"
+ },
+ "Tarkastad, Cape Colony, South Africa": {
+  "name": "Tarkastad",
+  "lat": -32.01,
+  "lon": 26.26,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": null,
+  "how": "data/era/ground.tsv names the town Tarkastad; point from data/era/towns.tsv (hand; matches the Atlas place file); country by the Atlas's geo.country_of"
+ },
+ "Theresienstadt": {
+  "name": "Theresienstadt (Terezín)",
+  "lat": 50.511,
+  "lon": 14.1506,
+  "country": "Czechia",
+  "iso": "CZ",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Terezin in CZ of 2000+ people; Theresienstadt is the German name of Terezín (the ghetto was the town); the one Terezín of over 2,000 people in Czechia"
+ },
+ "Toorak, Victoria": {
+  "name": "Melbourne",
+  "lat": -37.814,
+  "lon": 144.9633,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "melbourne",
+  "how": "Record Atlas place melbourne; ground.tsv: Melbourne, or one of its suburbs (South Yarra, Toorak); drawn at the Atlas's Melbourne"
+ },
+ "Treuchtlingenstr. 4, bei LoewenheimSchöneberg, Berlin Deutschland": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Vinkelmeer, Burgersdorp, Albert": {
+  "name": "Vinkelmeer (near Burgersdorp)",
+  "lat": -31.0,
+  "lon": 26.33,
+  "country": "South Africa",
+  "iso": "ZA",
+  "atlas_id": "burgersdorp",
+  "how": "data/era/ground.tsv names the town Burgersdorp; point from data/era/towns.tsv (hand); country by the Atlas's geo.country_of; the village Vinkelmeer is not found once in the gazetteer within 40 km, so it is drawn at the town and named 'near'"
+ },
+ "Wallington, Hertfordshire": {
+  "name": "Wallington",
+  "lat": 51.9879,
+  "lon": -0.119,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Wallington in GB within [15]; the string names Hertfordshire; of the five Wallingtons in Great Britain the one within 15 km of Hitchin is the Hertfordshire village"
+ },
+ "Weston, Hertfordshire": {
+  "name": "Weston",
+  "lat": 51.9547,
+  "lon": -0.1704,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Weston in GB within [15]; the string names Hertfordshire; of the 21 Westons in Great Britain the one within 15 km of Hitchin is the Hertfordshire village"
+ },
+ "Wilmersdorf, Berlin, Germany": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "Record Atlas place berlin; data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+ },
+ "Zeutern, bei Bruchsal (Baden Württemberg), Germany": {
+  "name": "Zeutern",
+  "lat": 49.1761,
+  "lon": 8.6747,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "Record Atlas GeoNames gazetteer, the one Zeutern in DE; ground.tsv: Zeutern, near Bruchsal, Baden-Württemberg (the only one in Germany)"
+ },
+ "Reetz, Pomerania": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Sulzelder Str. 70 = Brzezinska 70 = (aktueller Name) Woiska Polskiego 70Litzmannstadt": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Eisenbahnstrasse 82Eberswalde, Berlin": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Südafrika": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Steinberg": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Treplice (bei Zinnwald)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Görkau/ Sokolov": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ }
+}

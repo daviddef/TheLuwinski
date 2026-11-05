@@ -1,0 +1,270 @@
+{
+ "_about": "Place strings decided by hand, each with its reason. 'places' is keyed by the string as printed; 'by_ground_town' by the town that data/era/ground.tsv names in its reason column for a string it left without a point; 'exclude' lists strings that must stay unplaced. A 'gazetteer' decision names the Record Atlas's GeoNames gazetteer (read only) and must match exactly one place, or the builder stops. The Atlas is never written to; a place it lacks is reported in tree.report.json, not added.",
+ "places": {
+  "Bermondsey": {
+   "gazetteer": [
+    "Bermondsey",
+    "GB"
+   ],
+   "why": "the English line's birthplace (St Olave, Bermondsey): the only Bermondsey in the gazetteer"
+  },
+  "Southwark": {
+   "gazetteer": [
+    "Southwark",
+    "GB"
+   ],
+   "why": "the English line's «St Olave Southwark» (a registration district): the only Southwark in the gazetteer"
+  },
+  "Hitchin": {
+   "gazetteer": [
+    "Hitchin",
+    "GB"
+   ],
+   "why": "the English line's Hitchin (the registration district and town): the only Hitchin in the gazetteer"
+  },
+  "Weston, Hertfordshire": {
+   "gazetteer": [
+    "Weston",
+    "GB"
+   ],
+   "why": "the string names Hertfordshire; of the 21 Westons in Great Britain the one within 15 km of Hitchin is the Hertfordshire village",
+   "near": [
+    51.95,
+    -0.28,
+    15
+   ]
+  },
+  "Wallington, Hertfordshire": {
+   "gazetteer": [
+    "Wallington",
+    "GB"
+   ],
+   "why": "the string names Hertfordshire; of the five Wallingtons in Great Britain the one within 15 km of Hitchin is the Hertfordshire village",
+   "near": [
+    51.95,
+    -0.28,
+    15
+   ]
+  },
+  "Schlochau, Pomerania": {
+   "gazetteer": [
+    "Czluchow",
+    "PL"
+   ],
+   "why": "Schlochau is the German name of Człuchów, Pomerania (now Poland); the one Człuchów in the gazetteer",
+   "shown": "Schlochau"
+  },
+  "Hammerstein (Czarne), Pomerania, Germany": {
+   "gazetteer": [
+    "Czarne",
+    "PL"
+   ],
+   "why": "the string names Czarne; of the twelve Czarnes in Poland only one has over 5,000 people (Czarne, the former Hammerstein)",
+   "pop_min": 5000,
+   "shown": "Hammerstein"
+  },
+  "Hammerstein, Westpreußen, Germany now Poland": {
+   "gazetteer": [
+    "Czarne",
+    "PL"
+   ],
+   "why": "Hammerstein is Czarne (Poland); of the twelve Czarnes in Poland only one has over 5,000 people",
+   "pop_min": 5000,
+   "shown": "Hammerstein"
+  },
+  "Auschwitz": {
+   "gazetteer": [
+    "Oswiecim",
+    "PL"
+   ],
+   "why": "Auschwitz is the German name of Oświęcim; the camp stood there; the one Oświęcim of over 10,000 people in Poland",
+   "pop_min": 10000,
+   "shown": "Auschwitz (Oświęcim)"
+  },
+  "Auschwitz, extermination camp": {
+   "gazetteer": [
+    "Oswiecim",
+    "PL"
+   ],
+   "why": "as Auschwitz",
+   "pop_min": 10000,
+   "shown": "Auschwitz (Oświęcim)"
+  },
+  "KZ Auschwitz, Oświęcim County, Lesser Poland Voivodeship, Poland": {
+   "gazetteer": [
+    "Oswiecim",
+    "PL"
+   ],
+   "why": "the string names Oświęcim County, Poland",
+   "pop_min": 10000,
+   "shown": "Auschwitz (Oświęcim)"
+  },
+  "Theresienstadt": {
+   "gazetteer": [
+    "Terezin",
+    "CZ"
+   ],
+   "why": "Theresienstadt is the German name of Terezín (the ghetto was the town); the one Terezín of over 2,000 people in Czechia",
+   "pop_min": 2000,
+   "shown": "Theresienstadt (Terezín)"
+  },
+  "Kulmhof (Chelmno), Vernichtungslager": {
+   "gazetteer": [
+    "Chelmno nad Nerem",
+    "PL"
+   ],
+   "why": "Kulmhof is Chełmno nad Nerem, where the extermination camp stood (not Chełmno on the Vistula); the one in the gazetteer",
+   "shown": "Kulmhof (Chełmno nad Nerem)"
+  },
+  "KZ Kulmhof | Chełmno, Kuyavian-Pomeranian Voivodeship, Poland": {
+   "gazetteer": [
+    "Chelmno nad Nerem",
+    "PL"
+   ],
+   "why": "as Kulmhof: the camp stood at Chełmno nad Nerem; the string's «Kuyavian-Pomeranian Voivodeship» is where Chełmno on the Vistula is, so the string is not taken at its word",
+   "shown": "Kulmhof (Chełmno nad Nerem)"
+  }
+ },
+ "by_ground_town": {
+  "Berlin": {
+   "atlas_id": "berlin",
+   "why": "data/era/ground.tsv decides this string is Berlin (the capital) or one of its districts; drawn at the Atlas's Berlin"
+  },
+  "Berlin-Kreuzberg": {
+   "atlas_id": "berlin",
+   "why": "ground.tsv: Kreuzberg, a district of Berlin; drawn at the Atlas's Berlin"
+  },
+  "Berlin-Neukolln": {
+   "atlas_id": "berlin",
+   "why": "ground.tsv: Neukölln, a district of Berlin; drawn at the Atlas's Berlin"
+  },
+  "Potsdam": {
+   "gazetteer": [
+    "Potsdam",
+    "DE"
+   ],
+   "why": "ground.tsv: Potsdam, Brandenburg (the only Potsdam in Germany in the gazetteer)"
+  },
+  "Stahnsdorf": {
+   "gazetteer": [
+    "Stahnsdorf",
+    "DE"
+   ],
+   "why": "ground.tsv: Stahnsdorf, Brandenburg (the only one in Germany)"
+  },
+  "Kleinmachnow": {
+   "gazetteer": [
+    "Kleinmachnow",
+    "DE"
+   ],
+   "why": "ground.tsv: Kleinmachnow, Brandenburg (the only one in Germany)"
+  },
+  "Teltow": {
+   "gazetteer": [
+    "Teltow",
+    "DE"
+   ],
+   "why": "ground.tsv: Teltow, Brandenburg (the only one in Germany)"
+  },
+  "Ludwigsfelde": {
+   "gazetteer": [
+    "Ludwigsfelde",
+    "DE"
+   ],
+   "why": "ground.tsv: Ludwigsfelde, Brandenburg (the only one in Germany)"
+  },
+  "Mahlow": {
+   "gazetteer": [
+    "Mahlow",
+    "DE"
+   ],
+   "why": "ground.tsv: Mahlow, Kreis Zossen, Brandenburg (the only one in Germany)"
+  },
+  "Kraichtal": {
+   "gazetteer": [
+    "Kraichtal",
+    "DE"
+   ],
+   "why": "ground.tsv: Kraichtal, Baden-Württemberg (the only one in Germany)"
+  },
+  "Zeutern": {
+   "gazetteer": [
+    "Zeutern",
+    "DE"
+   ],
+   "why": "ground.tsv: Zeutern, near Bruchsal, Baden-Württemberg (the only one in Germany)"
+  },
+  "Bad Worishofen": {
+   "gazetteer": [
+    "Bad Worishofen",
+    "DE"
+   ],
+   "why": "ground.tsv: Bad Wörishofen, Bavaria (the only one in Germany)",
+   "shown": "Bad Wörishofen"
+  },
+  "Geretsried": {
+   "gazetteer": [
+    "Geretsried",
+    "DE"
+   ],
+   "why": "ground.tsv: Geretsried, Bavaria (the only one in Germany)"
+  },
+  "Magdeburg": {
+   "gazetteer": [
+    "Magdeburg",
+    "DE"
+   ],
+   "why": "ground.tsv: Magdeburg (Buckau is a district of it); the only Magdeburg in Germany"
+  },
+  "Munich": {
+   "gazetteer": [
+    "Munich",
+    "DE"
+   ],
+   "why": "ground.tsv: Munich (München); the one Munich in Germany of over a million people",
+   "pop_min": 1000000
+  },
+  "Melbourne": {
+   "atlas_id": "melbourne",
+   "why": "ground.tsv: Melbourne, or one of its suburbs (South Yarra, Toorak); drawn at the Atlas's Melbourne"
+  },
+  "Hamm": {
+   "gazetteer": [
+    "Hamm",
+    "DE"
+   ],
+   "why": "the string says Hamm, Arnsberg, NRW; of the twelve places called Hamm in Germany only one has over 100,000 people (Hamm, Westphalia)",
+   "pop_min": 100000
+  },
+  "Sommerfeld, Osthavelland": {
+   "gazetteer": [
+    "Sommerfeld",
+    "DE"
+   ],
+   "why": "the string says Osthavelland; of the three Sommerfelds in Germany the one near Kremmen is in the old Kreis Osthavelland (the others are in Mecklenburg-Vorpommern and Saxony)",
+   "near": [
+    52.8,
+    13.03,
+    3
+   ]
+  },
+  "Kutten, Saxony-Anhalt": {
+   "gazetteer": [
+    "Kütten",
+    "DE"
+   ],
+   "why": "ground.tsv: Kütten, Kreis Bitterfeld, Saxony-Anhalt (the only one in Germany)"
+  },
+  "Lourenco Marques, Mozambique": {
+   "gazetteer": [
+    "Maputo",
+    "MZ"
+   ],
+   "why": "Lourenço Marques is the former name of Maputo, as the string says Mozambique; drawn at Maputo",
+   "shown": "Maputo"
+  }
+ },
+ "exclude": {
+  "Eisenbahnstrasse 82Eberswalde, Berlin": "the address is in Eberswalde, not Berlin; the archive's ground.tsv reason says Berlin, which the string does not support"
+ }
+}
