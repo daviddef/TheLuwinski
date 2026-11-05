@@ -159,7 +159,7 @@ EN_PLACES = {
  "elizabeth-giddins": (None, None), "john-wear": (None, None), "elizabeth-wear": (None, None),
  "william-hawkins": (None, "Aldenham"), "mary-appleyard": (None, "Aldenham"), "robert-larkin": (None, "Aldenham"), "mary-burch": (None, "Aldenham"),
 }
-EN_SEX = lambda rel: "F" if re.search(r"mother", rel or "") else "M"
+EN_SEX = lambda rel: "F" if re.search(r"mother$", rel or "") else ("M" if re.search(r"father$", rel or "") else "U")   # the line's own word for the person (grandfather, great-grandmother); never read off a given name
 
 # ---------------------------------------------------------------- people -> a small GEDCOM
 def build_people(reg, eng):
@@ -237,7 +237,7 @@ def write_ged(pe, parents, spouses, path):
             if k not in fam_of_spouse[q]: fam_of_spouse[q].append(k)
     out = ["0 HEAD", "1 CHAR UTF-8"]
     for x in pe:
-        out += ["0 @%s@ INDI" % x["id"], "1 NAME %s /%s/" % (gedname(x["given"]), gedname(x["sur"])), "1 SEX %s" % ("F" if x["sex"] == "F" else "M")]
+        out += ["0 @%s@ INDI" % x["id"], "1 NAME %s /%s/" % (gedname(x["given"]), gedname(x["sur"])), "1 SEX %s" % x["sex"]]
         if x["by"] is not None or x["bp"]:
             out.append("1 BIRT")
             if x["by"] is not None: out.append("2 DATE %d" % x["by"])

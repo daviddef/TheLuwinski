@@ -746,7 +746,7 @@ function loadTree(T){
   while(FAMS.length<8)FAMS.push({sur:'Other',host:'',m:[],f:[],places:[]});
   const P={},list=[];
   for(const r of T.people){
-    const p={id:r.id,sex:r.sex==='f'?'f':'m',fi:r.line==null?7:r.line,sur:r.sur||'',given:r.given||'',by:r.by,bp:r.bp,dy:r.dy==null?null:r.dy,hid:r.hid===1?1:0,dp:r.dp||r.bp,my:r.my||null,occ:r.occ||null,
+    const p={id:r.id,sex:r.sex==='f'?'f':r.sex==='m'?'m':'u',fi:r.line==null?7:r.line,sur:r.sur||'',given:r.given||'',by:r.by,bp:r.bp,dy:r.dy==null?null:r.dy,hid:r.hid===1?1:0,dp:r.dp||r.bp,my:r.my||null,occ:r.occ||null,
       father:r.father||null,mother:r.mother||null,spouse:r.spouse||[],kids:r.kids||[],g:0,src:(r.srcs||[]).length,srcs:r.srcs||null,slug:r.slug||null,href:r.href||null,page:r.page||null,route:r.route||null,mye:!!r.mye,bye:!!r.bye,dye:!!r.dye,bpe:!!r.bpe,bpr:r.bpr||null,dpr:r.dpr||null,sk:r.sk||null,note:r.note||null,fg:r.fg==null?null:r.fg,mg:r.mg==null?null:r.mg,gaps:r.gaps||null};
     if(p.dy==null)p.dp=null;
     P[p.id]=p;list.push(p);
@@ -880,14 +880,16 @@ const linkG=(c,par)=>!c||!par?null:(c.father===par.id?c.fg:c.mother===par.id?c.m
 const yrs=p=>living(p)?'living':(p.bye?'c.':'')+p.by+'–'+(p.dy==null?'':p.dye?'?':p.dy);   // c. = estimated birth year, ? = deceased, death year not recorded
 const colorOf=p=>'var(--l'+p.fi+')';
 function slots(p,g){let row=[p];const out=[row];for(let i=1;i<=g;i++){const next=[];for(const q of row){next.push(q&&q.father?P[q.father]:null,q&&q.mother?P[q.mother]:null)}out.push(next);row=next}return out}
-function rel(g,sex){const m=sex==='m';
+/* A person whose sex the record does not hold is 'u' and gets the neutral word. Nothing here guesses: the viewer never turns an unknown into 'm'. */
+const SX=(sex,m,f,u)=>sex==='m'?m:sex==='f'?f:u;
+function rel(g,sex){
   if(g===0)return 'Focus';
-  if(g===1)return m?'Son':'Daughter';
-  if(g===2)return m?'Grandson':'Granddaughter';
+  if(g===1)return SX(sex,'Son','Daughter','Child');
+  if(g===2)return SX(sex,'Grandson','Granddaughter','Grandchild');
   const n=-g;
-  if(n===1)return m?'Father':'Mother';
-  if(n===2)return m?'Grandfather':'Grandmother';
-  return (n===3?'Great-':(n-2)+'× great-')+(m?'grandfather':'grandmother');
+  if(n===1)return SX(sex,'Father','Mother','Parent');
+  if(n===2)return SX(sex,'Grandfather','Grandmother','Grandparent');
+  return (n===3?'Great-':(n-2)+'× great-')+SX(sex,'grandfather','grandmother','grandparent');
 }
 // every view's filters live in one full-width panel that opens from the Filters button; zoom stays on the chart
 (function(){
@@ -2100,12 +2102,11 @@ function renderOrphans(){
 const ord=n=>n+(n%10===1&&n!==11?'st':n%10===2&&n!==12?'nd':n%10===3&&n!==13?'rd':'th');
 const greats=n=>n<=1?'':n===2?'great-':(n-1)+'× great-';
 function kinName(dA,dB,sex,half){
-  const m=sex==='m';
-  if(dA===0)return dB===1?(m?'son':'daughter'):dB===2?(m?'grandson':'granddaughter'):greats(dB-1)+(m?'grandson':'granddaughter');
-  if(dB===0)return dA===1?(m?'father':'mother'):dA===2?(m?'grandfather':'grandmother'):greats(dA-1)+(m?'grandfather':'grandmother');
-  if(dA===1&&dB===1)return (half?'half-':'')+(m?'brother':'sister');
-  if(dB===1)return greats(dA-1)+(m?'uncle':'aunt');
-  if(dA===1)return greats(dB-1)+(m?'nephew':'niece');
+  if(dA===0)return dB===1?SX(sex,'son','daughter','child'):dB===2?SX(sex,'grandson','granddaughter','grandchild'):greats(dB-1)+SX(sex,'grandson','granddaughter','grandchild');
+  if(dB===0)return dA===1?SX(sex,'father','mother','parent'):dA===2?SX(sex,'grandfather','grandmother','grandparent'):greats(dA-1)+SX(sex,'grandfather','grandmother','grandparent');
+  if(dA===1&&dB===1)return (half?'half-':'')+SX(sex,'brother','sister','sibling');
+  if(dB===1)return greats(dA-1)+SX(sex,'uncle','aunt','uncle or aunt');
+  if(dA===1)return greats(dB-1)+SX(sex,'nephew','niece','nephew or niece');
   const c=Math.min(dA,dB)-1,rem=Math.abs(dA-dB);
   return ord(c)+' cousin'+(rem?' '+(rem===1?'once':rem===2?'twice':rem+'×')+' removed':'');
 }
@@ -2137,7 +2138,7 @@ function marriagePath(a,b){   // fallback: through marriages, as a chain of step
   if(!prev.has(b.id))return null;
   const out=[];let c=b.id;
   while(c){const e=prev.get(c),p=P[c];
-    out.push({p,how:e?(e[1]==='parent'?(p.sex==='m'?'father':'mother'):e[1]==='spouse'?(p.sex==='m'?'husband':'wife'):(p.sex==='m'?'son':'daughter')):null});
+    out.push({p,how:e?(e[1]==='parent'?SX(p.sex,'father','mother','parent'):e[1]==='spouse'?SX(p.sex,'husband','wife','spouse'):SX(p.sex,'son','daughter','child')):null});
     c=e?e[0]:null}
   return out.reverse();
 }

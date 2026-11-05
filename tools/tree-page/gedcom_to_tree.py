@@ -116,7 +116,7 @@ def main():
                     t = s.text()
                 if t and not any(x['t'] == t for x in srcs): srcs.append({'t': t[:140], **({'u': u} if u else {})})
         has_death = bool(r.get('DEAT') or r.get('BURI') or r.get('CREM'))
-        P[r.xref.strip('@')] = dict(id=r.xref.strip('@'), sex=(r.get('SEX').val[:1].lower() if r.get('SEX') and r.get('SEX').val else 'm'),
+        P[r.xref.strip('@')] = dict(id=r.xref.strip('@'), sex=(r.get('SEX').val[:1].lower() if r.get('SEX') and r.get('SEX').val else 'u'),
             given=given, sur=sur, by=by, bp_raw=bp, dy=dy, dp_raw=dp, resi=res, occ=occ.val if occ else None, srcs=srcs[:6],
             death_known=has_death, father=None, mother=None, spouse=[], kids=[])
     for fx, f in fams.items():

@@ -23,7 +23,7 @@ python3 tools/build-tree-page.py --check           # exit 1 if the page is older
 ```
 
 Needs the Record Atlas checkout (`RECORD_ATLAS`, default `~/Projects/Family Projects/Record Atlas`), read only, including its GeoNames gazetteer. The skill's
-scripts are vendored in `tools/tree-page/` (the family-tree-page skill, template 1.6.0), so CI and other sessions do not depend on `~/.claude`.
+scripts are vendored in `tools/tree-page/` (the family-tree-page skill, template 1.7.0), so CI and other sessions do not depend on `~/.claude`.
 
 ## Who is on the page, and who is not
 
@@ -40,6 +40,12 @@ hand-written people of the English line (`english-people.json`). The raw MyHerit
 - **Estimated years are flagged**: "c. 1809" is a birth estimated from a relative or given as approximate by the source; "1809–?" is a death not recorded
   (the converter adds 75 years, the page says so).
 - **The English line's 79 relatives with no page of their own are not drawn**: they have no sex, no place and, mostly, no death on record.
+- **Sex is only what the record holds.** Register people keep the register's own M or F; the English line's twenty-six take it from the line's own
+  relation word (grandfather, great-grandmother). Nothing is read off a given name. A person with neither is written `U`, which the viewer (1.7.0) shows with
+  neutral words (parent, child). Of the 91 drawn, 0 are unknown. A parent of unrecorded sex is not linked as father or mother.
+- **A last stop with no recorded death reads "Died, moved c.YYYY" in the viewer.** That label comes from the shared template (it prints "Died" only for a person
+  with a route); the adapter cannot change it. Jacob Leibholz is the case: his death is "not documented", the header says so, and his last place is his last
+  residence. Left to David to decide in the shared template.
 - **Colour is the archive's own family** (`families.json`: the surname line a person is declared in), not a surname spelling. Which spellings are one name is the
   Record Atlas catalogue's to say; nothing here lists them.
 
