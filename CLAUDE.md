@@ -11,3 +11,7 @@ not list — as you do it, not in a sweep at the end. Record the
 FamilySearch waypoint, not just the film number; the skill explains why.
 
 Surname spellings come only from the Record Atlas catalogue: terms before searching, cover before any nil, add for every new spelling, publish once at the end. Keep no variants list here.
+
+## Given names and old place names
+
+Given-name forms (Ivan = Johann = Giovanni = Zuane = Joannes) and a place's name in the year of the record (Salisbury before 1982, Fiume before 1945) come only from the Record Atlas catalogues, as surnames do: invoke the user-level `name-variants` skill, run `given_name_variants.py terms` / `place_names.py at PLACE YEAR` before searching, `cover` before any nil, `add` (with evidence) for every new form, `publish` once at the end. Keep no table of given-name forms or old place names here. Nothing about a person goes in the catalogues; `lead` is never a finding.
