@@ -26,6 +26,7 @@ import { parseDate, isLiving, isHeldOut } from '@daviddef/archive-kit/lib/person
 import { edgesOf, pageOf } from './kin.js';
 import register from '../data/register.json';
 import { u } from './url.js';
+import { stubFor } from './englishKin.js';
 
 export const NOW = new Date().getFullYear();
 const BY_ID = new Map(register.people.map((p) => [String(p.id), p]));
@@ -141,19 +142,27 @@ function datesFromString(s) {
 export function englishPerson(p) {
   const row = (k, via) => ({
     name: k.n, source: via || k.via,
-    href: k.href ? base + k.href : k.s ? u(`/people/${k.s}/`) : undefined,
-    slug: k.s || undefined,
+    href: k.href ? base + k.href : (k.s || stubFor(k)) ? u(`/people/${k.s || stubFor(k)}/`) : undefined,
+    slug: k.s || stubFor(k) || undefined,
     ...datesFromString(k.dates),
     mar: k.mar || undefined,
     mark: k.mark || undefined,
   });
   const k = p.kin;
+  /* EVERY PERSON THE CHART DRAWS HAS A PAGE (the living standard, item 7; kit checkperson «nopage»). A relative the line names and never wrote a page for
+     has a stub page (src/lib/englishKin.js, from 4 November 2026), so every row is drawn; `undrawn` stays as the net, and is empty while that holds. */
+  const draws = (x) => !!(x.s || x.href || stubFor(x));
+  const undrawn = [['parents', 'parent'], ['spouses', 'spouse'], ['children', 'child'], ['siblings', 'sibling']]
+    .flatMap(([band, rel]) => k[band].filter((x) => !draws(x)).map((x) => ({
+      rel, name: x.n, why: 'no page yet', mark: x.mark || undefined, ...datesFromString(x.dates),
+    })));
   const person = {
     id: `english:${p.slug}`, name: p.name, gen: p.gen, lede: `${p.rel}. ${p.dek}`,
     born: kitDate(p.born), died: kitDate(p.died),
     relations: {
-      parents: k.parents.map((x) => row(x)), spouses: k.spouses.map((x) => row(x)),
-      children: k.children.map((x) => row(x)), siblings: k.siblings.map((x) => row(x)),
+      parents: k.parents.filter(draws).map((x) => row(x)), spouses: k.spouses.filter(draws).map((x) => row(x)),
+      children: k.children.filter(draws).map((x) => row(x)), siblings: k.siblings.filter(draws).map((x) => row(x)),
+      dropped: undrawn,
     },
   };
   return person;
@@ -169,6 +178,8 @@ export function lineNotes(person) {
       if (r.mark && r.mark !== 'his own page') out.push({ name: r.name, label, text: r.mark });
       else if (r.half) out.push({ name: r.name, label, text: 'half-' + label });
     }
+  for (const r of person.relations.dropped || [])
+    if (r.mark && r.mark !== 'his own page') out.push({ name: r.name, label: r.rel, text: r.mark });
   return out;
 }
 

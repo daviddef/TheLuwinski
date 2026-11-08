@@ -28,3 +28,8 @@ private/
 # The given-name vocabulary for the linking standard: derived from the committed register in every build and in CI
 # (tools/build-given-names.py), never committed, so no stale copy can drift from the register.
 site/given.json
+
+# Roots & Routes: the intermediate GEDCOM written from register.json and english-people.json (tools/build-tree-page.py), rebuilt every time, and never published
+data/tree-page/people.ged
+data/tree-page/slugs.json
+*.ged

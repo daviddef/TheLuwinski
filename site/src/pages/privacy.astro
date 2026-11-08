@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro';
+import Privacy from '@daviddef/archive-kit/components/Privacy.astro';
+import { u } from '../lib/url.js';
+---
+<Base title="Privacy"
+  subtitle="What your browser loads, and who sees it"
+  lede="No account, no form and no advertising. What is counted, and what a reader's browser fetches from other sites.">
+  <Privacy u={u} name="The Luwinski Archive" aboutHref="/method/" />
+</Base>

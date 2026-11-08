@@ -1,0 +1,2536 @@
+<meta charset="utf-8">
+<title>Roots &amp; Routes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap">
+<style>
+/* Layout: search + tabs on top, a stage beside a shared person card, verdict underneath.
+   Ground, ink and the Adriatic teal are Record Atlas's own; the eight family lines carry the rest of the hue. */
+:root{
+  --bg:#EDEBE5; --panel:#F7F6F2; --ink:#16222A; --muted:#606C72; --rule:#D3D0C7; --band:#F0EEE8; --hair:#B6B2A6;
+  --sea:#DDE7E9; --land:#F7F6F2; --coast:#B6B2A6; --atlas:#1F5C6B; --brick:#9C3B28;
+  --sel:#16222A; --on-sel:#EDEBE5; --on-line:#FFFFFF; --brass:#7E5A20;
+  --l0:#17695F; --l1:#946315; --l2:#2F5E9E; --l3:#9A3B6D; --l4:#5A7A1A; --l5:#B23A2E; --l6:#5E46A0; --l7:#55656F;
+  --serif:Fraunces,Georgia,"Times New Roman",serif;
+  --sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#101820; --panel:#17212A; --ink:#E8E6DF; --muted:#8A9AA2; --rule:#2A3841; --band:#131D25; --hair:#3F515C;
+  --sea:#1B2E36; --land:#25353F; --coast:#3F515C; --atlas:#6FB6C6; --brick:#D66E55;
+  --sel:#E8E6DF; --on-sel:#101820; --on-line:#0F1A16; --brass:#D1A154;
+  --l0:#46C2B3; --l1:#E6B04A; --l2:#7FAAEB; --l3:#E08BB5; --l4:#A8CC5C; --l5:#F08A7C; --l6:#AE9BEB; --l7:#AAB8C1;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101820; --panel:#17212A; --ink:#E8E6DF; --muted:#8A9AA2; --rule:#2A3841; --band:#131D25; --hair:#3F515C;
+  --sea:#1B2E36; --land:#25353F; --coast:#3F515C; --atlas:#6FB6C6; --brick:#D66E55;
+  --sel:#E8E6DF; --on-sel:#101820; --on-line:#0F1A16; --brass:#D1A154;
+  --l0:#46C2B3; --l1:#E6B04A; --l2:#7FAAEB; --l3:#E08BB5; --l4:#A8CC5C; --l5:#F08A7C; --l6:#AE9BEB; --l7:#AAB8C1;
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans);
+  padding-block:22px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:none;margin:0 auto}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:var(--atlas)}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+.top{display:flex;flex-wrap:wrap;gap:14px 32px;align-items:flex-end;justify-content:space-between;margin-bottom:14px}
+h1{font:650 30px/1.1 var(--serif);margin:0;text-wrap:balance}
+.sub{margin:6px 0 0;color:var(--muted);max-width:62ch}
+.search{position:relative;width:min(340px,100%)}
+.search input{width:100%;padding:9px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--panel);color:var(--ink);font:inherit}
+.results{position:absolute;z-index:30;left:0;right:0;top:calc(100% + 4px);margin:0;padding:4px;list-style:none;background:var(--panel);border:1px solid var(--rule);border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.16)}
+.results button{display:flex;width:100%;gap:8px;align-items:center;text-align:left;border:0;background:none;padding:7px 8px;border-radius:4px}
+.results button:hover{background:var(--band)}
+.results small{margin-left:auto;color:var(--muted);font:400 11px var(--mono)}
+.pname{color:inherit;text-decoration:none}.pname:hover{text-decoration:underline;text-decoration-color:var(--atlas)}
+ol.rte{margin:6px 0 0;padding-left:20px;font-size:13.5px}ol.rte li{margin:0 0 3px}ol.rte small{color:var(--muted)}.rtn{font-size:12.5px;margin-top:6px}
+a.plk{color:inherit;text-decoration:none;border-bottom:1px dotted currentColor}a.plk:hover{color:var(--atlas);border-bottom-style:solid}
+svg a.plk .cname,svg a.plk .sname{text-decoration:underline dotted}svg a.plk:hover .cname,svg a.plk:hover .sname{text-decoration:underline solid;fill:var(--atlas)}
+
+.atlasbar{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;padding:10px 14px;margin-bottom:14px;background:var(--panel);border:1px solid var(--rule);border-left:4px solid var(--atlas);border-radius:6px;font-size:13px}
+.abadge{display:inline-flex;gap:6px;align-items:center;color:var(--atlas);font:600 10.5px var(--sans);letter-spacing:.13em;text-transform:uppercase}
+.atlasbar p{margin:0;color:var(--muted);flex:1 1 360px;min-width:0}
+.key{display:inline-flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+.key span{display:inline-flex;gap:6px;align-items:center}
+.key i{width:10px;height:10px;border-radius:50%;display:inline-block}
+
+.tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:2px;border-bottom:1px solid var(--rule);margin-bottom:12px}
+.tab{flex:none;white-space:nowrap;border:0;background:none;padding:9px 11px;border-bottom:3px solid transparent;margin-bottom:-1px;font-weight:600;color:var(--muted)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+.tab sup{font:600 8px var(--sans);letter-spacing:.06em;color:var(--atlas);margin-left:2px}
+.tabs::-webkit-scrollbar{display:none}
+.vnote{margin:0 0 10px;color:var(--muted);max-width:84ch}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 316px;gap:16px;align-items:start}
+@media (max-width:960px){.layout{grid-template-columns:minmax(0,1fr)}}
+.gaps{margin:4px 0 12px;padding:0;list-style:none}.gaps li{padding:6px 0;border-bottom:1px solid var(--rule);font-size:13px;line-height:1.4}.gaps small{display:block;color:var(--muted);font-size:12px;margin-top:2px}.gaps em{font-style:normal;opacity:.85}
+.stage{min-width:0;background:var(--panel);border:1px solid var(--rule);border-radius:8px;position:relative}
+.bar{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--rule);font-size:12.5px;color:var(--muted)}
+.bar b{font-weight:600;margin-right:6px}
+.foot{padding:9px 12px;border-top:1px solid var(--rule);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 16px}
+.foot span{display:inline-flex;align-items:center;gap:6px}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:6px;overflow:hidden;vertical-align:middle}
+.seg button,.btn{border:0;background:var(--panel);padding:3px 10px;font-size:12.5px}
+.seg button+button{border-left:1px solid var(--rule)}
+.seg button[aria-pressed="true"]{background:var(--sel);color:var(--on-sel)}
+.btn{border:1px solid var(--rule);border-radius:6px}
+.ibg{white-space:nowrap;display:inline-block}a.btn.ibtn{display:inline-block;text-decoration:none;color:inherit;vertical-align:middle}.btn.ibtn{padding:5px 9px;line-height:0}.btn.ibtn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.btn:disabled{opacity:.4;cursor:default}
+.scroll{overflow-x:auto}
+/* The host site shrink-wraps and centres every .scroll (width:fit-content); the plots size themselves from this box, so they must fill the stage instead */
+.stage>.scroll{width:auto;max-width:none;margin-left:0;transform:none}
+svg{display:block}
+svg text{user-select:none;-webkit-user-select:none}
+input[type=range]{accent-color:var(--atlas);flex:1 1 240px;min-width:140px}
+
+/* hourglass cards */
+.card{cursor:pointer}
+.card .cbody{fill:var(--panel);stroke:var(--rule);stroke-width:1}
+.card:hover .cbody,.card:focus-visible .cbody{stroke:var(--ink)}
+.card.focus .cbody{stroke:var(--ink);stroke-width:2.2}
+.card.dash .cbody{stroke-dasharray:4 3}
+.cname{font:600 12px var(--serif);fill:var(--ink)}
+.cmeta{font:400 9px var(--mono);fill:var(--muted)}
+.cmini{font:600 10.5px var(--serif);fill:var(--ink)}
+.cyr{font:400 8.5px var(--mono);fill:var(--muted)}
+.edge{fill:none;stroke:var(--hair);stroke-width:1.3}
+.edge.weak{stroke-dasharray:4 4}
+.colh.pc{font-weight:500;letter-spacing:.02em;text-transform:none;opacity:.85}
+.colh{font:600 9.5px var(--sans);letter-spacing:.09em;text-transform:uppercase;fill:var(--muted)}
+.card.simple .cbody{stroke:var(--atlas)}
+.card.simple:hover .cbody,.card.simple:focus-visible .cbody{stroke:var(--ink)}
+.card.simple.focus .cbody{stroke:var(--ink);fill:var(--sea)}
+.sgen{font:600 8.5px var(--sans);letter-spacing:.14em;fill:var(--muted)}
+.sname{font:600 12px var(--serif);fill:var(--ink)}
+.syr{font:400 8.5px var(--mono);fill:var(--muted)}
+.trailbar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--rule);font-size:12.5px;color:var(--muted)}
+.trailbar b{font-weight:600;margin-right:6px}
+.trail{display:flex;align-items:stretch;padding:14px 14px 16px;border-bottom:1px solid var(--rule)}
+.tc{flex:none;width:122px;display:flex;flex-direction:column;align-items:center;gap:1px;padding:9px 6px 8px;border:1.5px solid var(--atlas);border-radius:10px;background:var(--panel);cursor:pointer}
+.tc.focus{background:var(--sea);border:2px solid var(--brick)}
+.tc.dash{border-style:dashed;border-color:var(--brass)}
+.tc:hover{border-color:var(--ink)}
+.tc .tg{font:600 9.5px var(--sans);letter-spacing:.14em;color:var(--muted);margin-top:3px}
+.tc b{font:500 16px/1.2 var(--serif);text-align:center;min-height:2.4em;display:flex;align-items:center;justify-content:center;max-width:100%;overflow:hidden;overflow-wrap:anywhere}
+.tc b>*{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.tc .ty,.tc small{text-align:center}
+.tc .ty{font:500 14px/1.2 var(--serif)}
+.tc small{font-size:11px;color:var(--muted)}
+.pl{color:inherit;text-decoration:underline dotted;text-underline-offset:3px}
+.pl:hover{color:var(--atlas);text-decoration-style:solid}
+.fanlink text{cursor:pointer}
+.fanlink:hover text{text-decoration:underline;fill:var(--atlas)}
+.tlk{flex:none;align-self:center;width:18px;height:2px;background:var(--brick);opacity:.45}
+.tlk.mv{height:3px;opacity:1}
+.gdiv{stroke:var(--hair);stroke-width:1;opacity:.75}
+.ggrid{stroke:var(--rule);stroke-width:1;stroke-dasharray:2 5;opacity:.8}
+.ghost{fill:none;stroke:var(--hair);stroke-dasharray:3 3}
+.ghosttx{font:400 9px var(--mono);fill:var(--muted)}
+
+/* fan */
+.sec{cursor:pointer}
+.sec path{stroke:var(--panel);stroke-width:1.2}
+.sec:hover path,.sec:focus-visible path{stroke:var(--ink);stroke-width:2}
+.sec text{fill:var(--on-line);font-family:var(--sans);font-weight:600;pointer-events:none}
+.gap{fill:none;stroke:var(--hair);stroke-dasharray:3 3}
+.hub{fill:var(--panel);stroke:var(--ink);stroke-width:2}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;padding:10px 12px;border-top:1px solid var(--rule);font-size:12.5px}
+.legend button,.legend span{display:inline-flex;gap:6px;align-items:center;border:0;background:none;padding:2px 4px;border-radius:4px;color:var(--ink)}
+.legend button[aria-pressed="true"]{background:var(--sel);color:var(--on-sel)}
+.legend i,.plink i{width:10px;height:10px;border-radius:2px;display:inline-block;flex:none}
+.legend em{font:400 11px var(--mono);color:var(--muted);font-style:normal}
+.legend button[aria-pressed="true"] em{color:inherit;opacity:.8}
+
+/* map, movements, lanes, lifespans */
+#map{cursor:grab;touch-action:pan-y}
+.lane{font:600 11.5px var(--sans)}
+.lanec{font:400 9px var(--mono);fill:var(--muted)}
+.tick{font:400 9px var(--mono);fill:var(--muted)}
+.grid{stroke:var(--rule);stroke-width:1;opacity:.7}
+.dot{cursor:pointer}
+.tip{position:absolute;z-index:10;pointer-events:none;background:var(--sel);color:var(--on-sel);padding:5px 9px;border-radius:5px;font-size:12px;line-height:1.35;white-space:nowrap}
+.tip small{display:block;font:400 10.5px var(--mono);opacity:.85}
+.lanebox{display:flex;align-items:flex-start}
+.lanelab{flex:none;background:var(--panel);position:relative;z-index:2;box-shadow:6px 0 8px -8px rgba(0,0,0,.35)}
+.lanescroll{flex:1;min-width:0}
+.swipe{overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;overscroll-behavior-x:contain;
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 var(--ml,0px),#000 calc(100% - var(--mr,0px)),transparent 100%);
+  mask-image:linear-gradient(to right,transparent 0,#000 var(--ml,0px),#000 calc(100% - var(--mr,0px)),transparent 100%)}
+.swipe::-webkit-scrollbar{display:none}
+.swipe.dragging{cursor:grabbing}
+.swipe.dragging *{cursor:grabbing!important}
+.fl{display:inline-block;vertical-align:-2px;margin-left:6px}
+.flaglink{cursor:pointer}
+.flaglink:hover rect{stroke-opacity:1;stroke-width:1.6}
+.zoomtx{font:500 12px var(--mono);min-width:3ch;text-align:center}
+.row{cursor:pointer}
+.row:hover .rowbg{fill:var(--band)}
+.rowbg{fill:transparent}
+.rowfocus{fill:var(--band);stroke:var(--ink);stroke-width:1}
+.rname{font:600 12px var(--serif);fill:var(--ink)}
+.rrel{font:400 9px var(--mono);fill:var(--muted)}
+.readout{padding:8px 12px;border-bottom:1px solid var(--rule);font:400 12px var(--mono);color:var(--muted);min-height:36px}
+.readout b{color:var(--ink);font-weight:500}
+.arc{fill:none;cursor:pointer}
+.nodelab{font-family:var(--sans);font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--panel);stroke-linejoin:round}
+.bandtx{font:500 8.5px var(--sans);fill:var(--ink);opacity:.8;pointer-events:none}
+.evtx{font:600 8.5px var(--sans);fill:var(--brick);pointer-events:none}
+.yearbig{font:650 26px/1 var(--serif);min-width:3.2ch;font-variant-numeric:tabular-nums}
+.ctx{padding:12px;border-top:1px solid var(--rule);display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.ctx .c{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:start;font-size:12.5px;min-width:0}
+.ctx .c b{font:600 13.5px var(--serif);display:block}
+.ctx .c small{color:var(--muted);display:block}
+.chip{display:inline-block;padding:1px 7px;border-radius:10px;font-size:11px;font-weight:600;background:var(--band);border:1px solid var(--rule);margin:2px 4px 0 0}
+.chip.rg{color:var(--on-line);border:0}
+.chip.sh{display:inline-flex;align-items:center;gap:5px}.chip.sh i{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.chip.ev{color:var(--brick);border-color:var(--brick);background:transparent}
+
+/* person card */
+.pc{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:16px;min-width:0}
+.pc h2{font:650 22px/1.15 var(--serif);margin:0;text-wrap:balance}
+.pc .meta{font:400 12px var(--mono);color:var(--muted);margin-top:3px}
+.pc .head{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px}
+.pc .swatch{width:6px;align-self:stretch;border-radius:3px;flex:none}
+.pc dl{margin:0 0 12px;display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 6px;font-size:13.5px}.pc dl dd{margin:0 14px 0 0}
+.pc dt{color:var(--muted)}
+.pc dd{margin:0}
+.pc h3{font:600 10.5px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:15px 0 6px}
+.pc h3.at{color:var(--atlas)}
+.plink{display:flex;gap:8px;align-items:center;text-align:left;border:0;background:none;padding:4px 6px;margin-inline:-6px;border-radius:4px;width:calc(100% + 12px)}
+.plink:hover{background:var(--band)}
+.plink small{margin-left:auto;font:400 11px var(--mono);color:var(--muted);white-space:nowrap}
+.stack{display:flex;height:10px;border-radius:5px;overflow:hidden;gap:1px}
+.stack span{display:block;min-width:2px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}
+.stats .stat{font:600 21px/1.1 var(--serif);text-align:left;border:0;background:none;padding:6px 6px 5px;margin:-6px;border-radius:6px;border-bottom:2px solid transparent}
+.stats .stat:not(:disabled):hover{background:var(--band)}
+.stats .stat[aria-expanded="true"]{background:var(--band);border-bottom-color:var(--ink)}
+.stats .stat:disabled{cursor:default;opacity:.55}
+.openlist{margin:-4px 0 6px;padding:2px 10px 8px;background:var(--band);border-radius:6px}
+.openlist h3{margin-top:10px}
+.stats small{display:block;font:500 10px var(--sans);color:var(--muted);letter-spacing:.05em;text-transform:uppercase;margin-top:2px}
+.note{margin:0 0 10px;padding:8px 10px;background:var(--band);border-radius:6px;color:var(--muted);font-size:13px}
+.pc .btn{margin-bottom:12px}
+.srcs{margin:0;padding-left:18px;color:var(--ink);font-size:13px}
+.srcs li{margin:0 0 8px}
+.srcs small,.fsite small{display:block;color:var(--muted);font-size:12px;overflow-wrap:anywhere}
+.look>li{margin:0 0 14px}.look .lh{margin-top:6px;font-weight:600;color:var(--ink)}.lv{margin:2px 0 0;padding-left:16px;list-style:disc}.lv li{margin:0 0 3px;font-size:12.5px}.lv em{font-style:normal;font-size:11px;color:var(--muted);margin-left:4px}.lall{margin:6px 0 4px}.lall summary{cursor:pointer;color:var(--accent,#1d5f56);font-size:12.5px}
+.srcs em{font-style:normal;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-left:4px}
+.fsite{margin:0;font-size:13.5px;font-weight:600}
+.plc{display:grid;grid-template-columns:58px 1fr;gap:10px;margin-bottom:10px;font-size:13px}
+.plcs{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;align-items:start}
+.plcs .plc{grid-template-columns:58px minmax(0,1fr);gap:6px 10px;margin-bottom:10px;min-width:0}.plcs .plc>div{min-width:0}.plcs .plc small{overflow-wrap:anywhere}
+.plc .pld{grid-column:1/-1;min-width:0}.plc .pld .chip{display:inline-block;margin:2px 4px 2px 0}.plc .pld>small{margin-top:2px}
+.plc .pld .lk{display:inline-block;margin:6px 14px 0 0}
+.plcs.one{grid-template-columns:1fr}
+.plc b{font:600 14px var(--serif)}
+.plc small{display:block;color:var(--muted);font-size:12px}
+.plc .lk{font-size:12px;font-weight:600;display:block;margin-top:3px}
+.life{margin:0;padding:0;list-style:none;font-size:12.5px}
+.life li{padding:5px 0;border-top:1px solid var(--rule)}
+.life li:first-child{border-top:0}
+.life li.more{padding:5px 0 0}.life li.more summary{cursor:pointer;color:var(--muted);font-size:12px}.life li.more ul.life{margin-top:4px}
+.life small{display:block;color:var(--muted)}
+
+.toolrow{display:flex;gap:12px 20px;align-items:flex-start;justify-content:space-between;margin-bottom:10px}
+.toolrow .vnote{margin:0;max-width:96ch;font-size:13.5px}
+.filt{flex:none;padding:6px 14px;font-weight:600;background:var(--panel)}
+.filt[aria-expanded="true"]{background:var(--sel);color:var(--on-sel)}
+.ctrls{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:12px 14px;margin-bottom:12px}
+.ctrls[hidden],.ctrlgroup[hidden],.vdescg[hidden]{display:none}
+.ctrls .bar{border:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 32px;align-items:flex-start;color:var(--ink);font-size:13px}
+.ctrls .bar+.bar,.ctrls .trailbar{margin-top:12px;padding-top:12px;border-top:1px solid var(--rule)}
+.ctrls .bar>span{display:block;max-width:100%}
+.ctrls .bar b{display:block;margin:0 0 4px;font:600 10.5px var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.ctrls .seg{border:0;gap:4px;flex-wrap:wrap;overflow:visible;display:flex}
+.ctrls .seg button{border:1px solid var(--rule);border-radius:6px}
+.ctrls .seg button+button{border-left:1px solid var(--rule)}
+.ctrls .seg button[aria-pressed="true"]{border-color:var(--sel)}
+.ctrls .trailbar{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;color:var(--muted);font-size:12.5px;border-bottom:0}
+.ctrls .trailbar b{display:inline;margin:0 8px 0 0}
+.zoomfloat{position:absolute;bottom:52px;right:10px;z-index:4;display:flex;align-items:center;gap:4px;padding:4px 6px;background:var(--panel);border:1px solid var(--rule);border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.zoomfloat b{display:none}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:14px}
+.mt{display:flex;flex-direction:column;gap:1px;text-align:left;padding:10px 12px;background:var(--panel);border:1px solid var(--rule);border-radius:8px}
+.mt:hover{border-color:var(--ink)}
+.mt b{font:650 26px/1.1 var(--serif);font-variant-numeric:tabular-nums}
+.mt span{font:600 10.5px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--atlas)}
+.mt small{font-size:12px;color:var(--muted)}
+@media (max-width:560px){
+.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:10px}
+.mt{padding:8px 10px}.mt b{font-size:21px}.mt small{font-size:11px}
+.atlasbar{padding:8px 10px;gap:6px 12px;margin-bottom:10px;font-size:12px}
+.atlasbar p{flex-basis:100%}
+}
+.amwrap{display:grid;grid-template-columns:minmax(0,1fr) 290px}
+@media (max-width:820px){.amwrap{grid-template-columns:minmax(0,1fr)}}
+.amcanvas{min-width:0;border-right:1px solid var(--rule)}
+#am{cursor:grab;touch-action:pan-y;width:100%}
+.ampick{padding:14px;max-height:600px;overflow:auto;scrollbar-width:thin;font-size:13.5px}
+.ampick h2{font:650 21px/1.15 var(--serif);margin:0}
+.ampick h3{font:600 10.5px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px}
+.amsub{color:var(--muted);font-size:12.5px;margin:2px 0 4px}
+.amgrp{margin-bottom:6px}
+.amppl{max-height:340px;overflow:auto;border:1px solid var(--hair);border-radius:6px;padding:4px 8px}.amtxt{margin:6px 0 10px}.amtxh{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:12px;color:var(--muted)}.amtxh span{flex:1;min-width:0;overflow-wrap:anywhere}.amtxh b{color:var(--ink)}.amwhy{color:var(--ink);background:var(--hair);padding:4px 8px;border-radius:4px;margin-top:6px}
+.amgrp small{display:block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.chipb{border:1px solid var(--rule);background:var(--panel);border-radius:12px;padding:1px 8px;font-size:12px;margin:0 4px 4px 0}
+.chipb:hover,.chipb.on{background:var(--sel);color:var(--on-sel)}
+.chipb em{font:400 10.5px var(--mono);font-style:normal;opacity:.7}
+.stit{font:600 11px var(--sans);fill:var(--ink)}
+.ssub{font:400 10px var(--sans);fill:var(--muted)}
+.tfan{flex:none}
+.orsug{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px;padding:12px}
+.sg{border:1px solid var(--rule);border-radius:8px;padding:12px;background:var(--bg);min-width:0}
+.sgh{display:flex;gap:10px;align-items:center}
+.sgh b{font:650 16px/1.2 var(--serif);display:block}
+.sgh small{color:var(--muted);font-size:12px}
+.sgn{margin-left:auto;font:650 22px var(--serif)}
+.sgs{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.sgp{margin:8px 0 4px;font-size:12.5px}
+.sgl{margin:0 0 6px;padding:0;list-style:none;font-size:12.5px}
+.sgl li{padding:3px 0;overflow-wrap:anywhere}
+.sgl em{font-style:normal;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.sgf{border-top:1px solid var(--rule);padding-top:4px;margin-bottom:6px}
+.sgb{display:flex;gap:12px;align-items:center;font-size:12.5px;font-weight:600}
+.orlist{padding:4px 14px 14px;border-top:1px solid var(--rule)}
+.orlist h3{font:600 10.5px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:10px 0 6px}
+.orgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:0 18px}
+
+.kinpick{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--rule);font-size:14px}
+.kinpick small{font:400 11.5px var(--mono);color:var(--muted)}
+.ksearch{position:relative;flex:1 1 340px;max-width:520px;min-width:min(260px,100%)}
+.klab{display:block;margin:0 0 3px;font:600 10.5px var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--atlas)}
+.ksearch input{width:100%;padding:11px 14px;border:2px solid var(--atlas);border-radius:8px;background:var(--panel);color:var(--ink);font:16px/1.3 var(--sans)}
+.ksearch input:focus{outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--atlas) 25%,transparent)}
+.ksearch .results{max-height:420px;overflow:auto}
+.ksearch .results button{padding:8px 10px;flex-wrap:wrap;row-gap:0}
+.ksearch .results button[aria-selected="true"],.ksearch .results button:hover{background:var(--band)}
+.ksearch .results .rel{font:600 12px var(--sans);color:var(--atlas)}
+.ksearch .results .rel.none{color:var(--muted);font-weight:400}
+.ksearch .results .where{flex-basis:100%;margin-left:16px;color:var(--muted);font-size:11.5px}
+.kvs{color:var(--muted)}
+.kinchips{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 14px 12px;border-bottom:1px solid var(--rule)}
+.kinchips em{font:400 10.5px var(--sans);font-style:normal;color:inherit;opacity:.75;margin-left:2px}
+.kinhead{padding:14px 16px;border-bottom:1px solid var(--rule)}
+.kinhead h2{font:650 22px/1.2 var(--serif);margin:0 0 6px;text-wrap:balance}
+.kinhead p{margin:4px 0;color:var(--muted);font-size:13.5px}
+.kinmap{border-top:1px solid var(--rule)}
+.kinmap[hidden],#kvwrap[hidden],#kz[hidden]{display:none}
+.kz{display:flex;gap:6px;align-items:center;padding:6px 14px;border-bottom:1px solid var(--rule);font-size:12.5px;color:var(--muted)}
+#kv{background:var(--panel)}
+.kc{cursor:pointer}
+.kcbody{fill:var(--panel)}
+.kc:hover .kcbody{fill:var(--band)}
+#kvchain{overflow-x:auto}
+#kvchain .tlk{width:70px;position:relative}
+.tlh{position:absolute;top:-17px;left:50%;transform:translateX(-50%);font:600 9.5px var(--sans);letter-spacing:.06em;color:var(--muted);white-space:nowrap;font-style:normal;text-transform:uppercase}
+
+/* verdict */
+.verdict{margin-top:34px}
+.verdict h2{font:650 23px/1.2 var(--serif);margin:0 0 6px}
+.verdict h3{font:650 16px/1.2 var(--serif);margin:22px 0 8px}
+.verdict>p{max-width:74ch;color:var(--muted);margin:0 0 14px}
+.tblwrap{overflow-x:auto;border:1px solid var(--rule);border-radius:8px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:13.5px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--rule)}
+tr:last-child td{border-bottom:0}
+th{font:600 10.5px var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+td:first-child{font:600 14.5px var(--serif);white-space:nowrap}
+.pick{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-top:16px}
+.pick div{border:1px solid var(--rule);border-radius:8px;background:var(--panel);padding:14px}
+.pick div:first-child{border-color:var(--ink);border-width:2px}
+.pick h3{margin:0 0 4px;font:650 15.5px var(--serif)}
+.pick p{margin:0;color:var(--muted);font-size:13.5px}
+.tie{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.tie div{border-left:3px solid var(--atlas);padding:2px 0 2px 12px;font-size:13.5px}
+.tie b{display:block;font:650 14.5px var(--serif);margin-bottom:2px}
+.tie p{margin:0;color:var(--muted)}
+.build{margin-top:18px;max-width:74ch;color:var(--muted)}
+.build b{color:var(--ink);font-weight:600}
+
+/* LOCAL ADDITION: Surnames view */
+#sc{display:block;width:100%}
+#sc text.sw{font-family:var(--serif);font-weight:600;cursor:pointer;transition:opacity .15s}
+#sc text.sw:hover{text-decoration:underline}
+#sc .sel{stroke:var(--ink);stroke-width:2;fill:none;rx:6}
+.slegend{display:flex;flex-wrap:wrap;gap:6px 12px;padding:8px 12px;border-top:1px solid var(--rule);font-size:12.5px;align-items:center;color:var(--muted)}
+.slegend button{border:0;background:none;padding:2px 4px;border-radius:4px;display:inline-flex;gap:5px;align-items:center;font-size:12.5px;color:var(--ink)}
+.slegend button[aria-pressed="true"]{background:var(--sel);color:var(--on-sel)}
+.slegend i{width:10px;height:10px;border-radius:2px;display:inline-block}
+.slegend .ramp{width:160px;height:10px;border-radius:5px}
+.sgrid{padding:10px 12px;border-top:1px solid var(--rule);overflow-x:auto}
+.sgrid h3{margin:0 0 6px;font:600 10.5px var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.sgrid table{border-collapse:separate;border-spacing:2px;font-size:12px}
+.sgrid th{font-weight:400;color:var(--muted);padding:0 6px;text-align:center;font-size:11px}
+.sgrid th.rn{text-align:right;white-space:nowrap}
+.sgrid th.rn button{border:0;background:none;font:600 12.5px var(--serif);color:var(--ink);padding:1px 4px;border-radius:4px}
+.sgrid tr.on th.rn button{background:var(--sel);color:var(--on-sel)}
+.sgrid td{min-width:30px;height:22px;text-align:center;border-radius:4px;font-family:var(--mono);font-size:11px}
+.sgrid td.z{background:var(--band)}
+#sdetail .chip{margin:0 4px 4px 0}
+#sdetail .plist{max-height:420px;overflow:auto}
+/*EXT:STYLE*/
+/* Embedding (supported contract): add embed=1 to the hash and the page drops its own chrome, so a site can frame the viewer;
+   add profile=1 (with p=<person>) and only the person panel is drawn, and the page tells its parent its height. */
+html.embed header.top,html.embed #metrics,html.embed nav.tabs,html.embed .atlasbar,html.embed .toolrow,html.embed .verdict{display:none!important}
+html.profile .layout{grid-template-columns:minmax(0,1fr)}
+html.profile .layout>div:first-child,html.profile #ctrls{display:none!important}
+html.embed body{background:transparent}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <path id="land-world" vector-effect="non-scaling-stroke"/>
+    <path id="land-eu" vector-effect="non-scaling-stroke"/>
+    <pattern id="unsurv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="var(--hair)" stroke-width="1.4" opacity=".45"/></pattern>
+    <pattern id="evh" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="5" stroke="var(--brick)" stroke-width="1.6" opacity=".5"/></pattern>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1 id="ptitle">Roots &amp; Routes</h1>
+      <p class="sub"><span id="subtxt"></span> <span id="count"></span></p>
+    </div>
+    <div class="search">
+      <label class="vh" for="q">Find a person</label>
+      <input id="q" type="search" placeholder="Find a person, e.g. Mazza" autocomplete="off">
+      <ul class="results" id="results" hidden></ul>
+    </div>
+  </header>
+
+  <div class="atlasbar">
+    <span class="abadge"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 .8a4.4 4.4 0 0 0-4.4 4.4C2.6 8.6 7 13.2 7 13.2s4.4-4.6 4.4-8A4.4 4.4 0 0 0 7 .8Z" fill="currentColor"/><circle cx="7" cy="5.2" r="1.6" fill="var(--panel)"/></svg>Record Atlas</span>
+    <p>Places, flags, rulers and events come from <b>Record Atlas</b>. A pin's colour shows who ruled that place in that year. Click a place or a flag to open it in the Atlas.</p>
+    <span class="key" id="rgkey"></span>
+  </div>
+
+  <div class="metrics" id="metrics"></div>
+
+  <nav class="tabs" role="tablist" aria-label="Tree views">
+    <button class="tab" role="tab" data-view="hourglass">Hourglass</button>
+    <button class="tab" role="tab" data-view="fan">Fan</button>
+    <button class="tab" role="tab" data-view="map">Whole tree</button>
+    <button class="tab" role="tab" data-view="close">Close family</button>
+    <button class="tab" role="tab" data-view="atlasmap">Atlas map<sup>ATLAS</sup></button>
+    <button class="tab" role="tab" data-view="movements">Movements<sup>ATLAS</sup></button>
+    <button class="tab" role="tab" data-view="kinship">Kinship</button>
+    <button class="tab" role="tab" data-view="lanes">Place lanes<sup>ATLAS</sup></button>
+    <button class="tab" role="tab" data-view="eras">Eras<sup>ATLAS</sup></button>
+    <button class="tab" role="tab" data-view="timeline">Lifespans<sup>ATLAS</sup></button>
+<!--EXT:TABS-->
+    <button class="tab" role="tab" data-view="surnames">Surnames<sup>NEW</sup></button>
+    <button class="tab" role="tab" data-view="orphans" title="Orphans and where to start">Orphans<sup>ATLAS</sup></button>
+  </nav>
+
+  <div class="toolrow"><div id="vnotes"></div><button class="btn filt" id="filtbtn" aria-expanded="false" aria-controls="ctrls">Filters ▾</button></div>
+  <div class="ctrls" id="ctrls" hidden></div>
+
+  <div class="layout">
+    <div>
+      <section class="view" id="v-hourglass">
+        <p class="vnote">Ancestors one way, descendants the other, the focus person in the middle. Switch to mini cards to fit more generations, or flip it upright. Each card carries the flag that flew over the birthplace in the birth year.</p>
+        <div class="stage">
+          <div class="bar">
+            <span><b>Cards</b><span class="seg" data-key="card"><button data-v="full">Full</button><button data-v="simple">Simple</button><button data-v="mini">Flag tile</button></span></span>
+            <span><b>Direction</b><span class="seg" data-key="orient"><button data-v="h">Sideways</button><button data-v="v">Upright</button></span></span>
+            <span><b>Ancestors</b><span class="seg" data-key="up"><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button><button data-v="6">6</button><button data-v="7">7</button><button data-v="8">8</button></span></span>
+            <span><b>Descendants</b><span class="seg" data-key="down"><button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button></span></span>
+            <span><b>Zoom</b><button class="btn" id="hzo" aria-label="Zoom out">−</button> <span class="zoomtx" id="hztx">×1</span> <button class="btn" id="hzi" aria-label="Zoom in">+</button> <button class="btn" id="hzf">Fit</button></span>
+          </div>
+          <div class="trailbar"><b>Place trail</b><span class="seg" data-key="tline"><button data-v="pat">Father's line</button><button data-v="mat">Mother's line</button><button data-v="down">Down</button></span><span>Birthplace by generation. Dashed = not surveyed in the Atlas yet. A bold link means the family moved. Click a card to re-centre.</span></div>
+          <div class="trail" id="trail"></div>
+          <div class="scroll"><svg id="hg" role="group" aria-label="Hourglass tree"></svg></div>
+          <div class="foot"><span>Dashed card = spouse</span><span id="weaknote" hidden>Dashed line = parent link from an index entry only, no register read</span><span>Flag = the flag over the birthplace in the birth year (Flag Atlas)</span><span>Drag or swipe to move around</span><span>Ctrl/⌘-click a person to open their page</span><span id="bpenote" hidden>* place taken from a relative, not recorded</span></div>
+        </div>
+      </section>
+
+      <section class="view" id="v-fan" hidden>
+        <p class="vnote">Ancestors as rings, father's side on the left, mother's on the right. One glance shows how complete the research is: dashed gaps are the parents still to find.</p>
+        <div class="stage">
+          <div class="bar"><span><b>Generations</b><span class="seg" data-key="gens"><button data-v="4">4</button><button data-v="5">5</button><button data-v="6">6</button></span></span><span>Colour = family line</span></div>
+          <div class="scroll"><svg id="fan" role="group" aria-label="Fan chart"></svg></div>
+          <div class="legend" id="fanlegend"></div>
+        </div>
+      </section>
+
+      <section class="view" id="v-map" hidden>
+        <p class="vnote" id="mapnote"></p>
+        <div class="stage" id="mapstage">
+          <div class="bar">
+            <span id="mapsum"></span>
+            <span><b>Show</b><span class="seg" data-key="mapscope"><button data-v="close">Close family</button><button data-v="all">Whole tree</button></span></span>
+            <span><b>Colour</b><span class="seg" data-key="mcolor"><button data-v="country">Country</button><button data-v="line">Family line</button></span></span>
+            <span><b>Rows</b><span class="seg" data-key="mgroup"><button data-v="line">Last name</button><button data-v="country">Birth country</button></span></span>
+            <span><button class="btn" id="zo" aria-label="Zoom out">−</button> <button class="btn" id="zi" aria-label="Zoom in">+</button> <button class="btn" id="zr">Reset</button></span>
+            <span>Drag to pan · Ctrl/⌘ + scroll to zoom</span>
+          </div>
+          <div class="scroll" style="position:relative"><svg id="map" role="group" aria-label="Whole-tree map"></svg><canvas id="mapcv" aria-hidden="true" style="position:absolute;left:0;top:0;pointer-events:none" hidden></canvas></div>
+          <div class="legend" id="maplegend"></div>
+          <div class="tip" id="tip" hidden></div>
+        </div>
+      </section>
+
+      <section class="view" id="v-movements" hidden>
+        <p class="vnote">Where the family moved, drawn on the Atlas outlines. Drag the year and watch the arcs appear: each arc is one person (or one family) leaving a place. Underneath, the Atlas says whose rule each place was under and what else was happening there.</p>
+        <div class="stage">
+          <div class="bar">
+            <span><b>Map</b><span class="seg" data-key="mview"><button data-v="global">World</button><button data-v="europe">Europe</button><button data-v="fit">Fit places</button></span></span>
+            <span><b>Who</b><span class="seg" data-key="mscope"><button data-v="focus">Focus family</button><button data-v="anc">Ancestors</button><button data-v="desc">Descendants</button><button data-v="sib">Siblings</button><button data-v="all">Whole tree</button></span></span>
+          </div>
+          <div class="bar keep" style="gap:12px 16px">
+            <button class="btn" id="play" aria-label="Play">▶ Play</button>
+            <input id="yr" type="range" min="1740" max="2020" step="1" aria-label="Year">
+            <span class="yearbig" id="yrtxt"></span>
+          </div>
+          <div class="scroll"><svg id="mv" role="group" aria-label="Movement map"></svg></div>
+          <div class="ctx" id="ctx"></div>
+          <div class="foot"><span>Arc = one move, coloured by family line, bright if within 60 years of the slider</span><span>Circle = people living there, coloured by regime that year</span></div>
+        </div>
+      </section>
+
+      <section class="view" id="v-lanes" hidden>
+        <p class="vnote">Time runs across, places run down. Each bar is a life, coloured by family line. Curves show people moving between lanes. Tinted bands are the Atlas regime over that place, hatched bands are Atlas events such as famine or epidemic.</p>
+        <div class="stage">
+          <div class="bar">
+            <span><b>Lanes</b><span class="seg" data-key="lgroup"><button data-v="place">Place</button><button data-v="country">Country</button><button data-v="line">Family line</button></span></span>
+            <span><b>Who</b><span class="seg" data-key="lscope"><button data-v="focus">Focus family</button><button data-v="anc">Ancestors</button><button data-v="desc">Descendants</button><button data-v="sib">Siblings</button><button data-v="all">Whole tree</button></span></span>
+            <span><b>Time</b><button class="btn" id="lzo" aria-label="Zoom out">−</button> <span class="zoomtx" id="lztx">×1</span> <button class="btn" id="lzi" aria-label="Zoom in">+</button> <button class="btn" id="lzf">Fit</button></span>
+          </div>
+          <div class="lanebox" id="lnbox">
+            <svg id="lnlab" class="lanelab" role="group" aria-label="Lane labels"></svg>
+            <div class="lanescroll" id="lnscroll"><svg id="ln" role="group" aria-label="Place lanes"></svg></div>
+          </div>
+          <div class="foot"><span>Bar = one life</span><span>Curve = moved lane</span><span>Tint + flag = Atlas regime and its flag; click a band to open that region in the Atlas</span><span>Hatch = Atlas event</span><span>Grey hatch = not surveyed yet</span><span>Drag or swipe sideways, Ctrl/⌘ + scroll to zoom time</span></div>
+        </div>
+      </section>
+
+      <section class="view" id="v-atlasmap" hidden>
+        <p class="vnote">Every place this tree can put a person in. Click a marker to pick a place, or find it in the list. Bigger markers hold more people, and the colour is the Atlas regime that ruled the place. Markers are places, not kinship.</p>
+        <div class="stage">
+          <div class="bar">
+            <span id="amsum"></span>
+            <span><b>Show</b><span class="seg" data-key="amode"><button data-v="born">Born</button><button data-v="died">Died</button><button data-v="lived">Lived</button><button data-v="orph">Orphans</button><button data-v="dead">Dead ends</button></span></span>
+            <span><b>Who</b><span class="seg" data-key="ascope"><button data-v="all">Whole tree</button><button data-v="focus">Focus family</button></span></span>
+          </div>
+          <div class="bar">
+            <span><b>Map</b><span class="seg" data-key="aview"><button data-v="global">World</button><button data-v="europe">Europe</button><button data-v="fit">Fit places</button></span></span>
+            <span><button class="btn" id="azo" aria-label="Zoom out">−</button> <button class="btn" id="azi" aria-label="Zoom in">+</button></span>
+            <span>Drag to pan · Ctrl/⌘ + scroll to zoom</span>
+          </div>
+          <div class="amwrap"><div class="amcanvas"><svg id="am" role="group" aria-label="Atlas map"></svg></div><aside class="ampick" id="ampick"></aside></div>
+          <div class="foot"><span>Marker size = number of people</span><span>Marker colour = Atlas regime in the median birth year</span><span>Grey = not surveyed in the Atlas yet</span></div>
+        </div>
+      </section>
+
+      <section class="view" id="v-eras" hidden>
+        <p class="vnote">The family and the world it was in. Bands are the Atlas regimes over each region the family touched, with their flags. Family events sit above the bands, what they were up against below, and the story line underneath puts both on one scale.</p>
+        <div class="stage">
+          <div class="bar">
+            <span><b>Who</b><span class="seg" data-key="escope"><button data-v="focus">Focus family</button><button data-v="anc">Ancestors</button><button data-v="desc">Descendants</button><button data-v="sib">Siblings</button><button data-v="all">Whole tree</button></span></span>
+            <span><b>Time</b><button class="btn" id="ezo" aria-label="Zoom out">−</button> <span class="zoomtx" id="ezt">×1</span> <button class="btn" id="ezi" aria-label="Zoom in">+</button> <button class="btn" id="ezf">Fit</button></span>
+          </div>
+          <div class="lanebox" id="erbox">
+            <svg id="erlab" class="lanelab" role="group" aria-label="Eras labels"></svg>
+            <div class="lanescroll" id="erscroll"><svg id="er" role="group" aria-label="Regime bands"></svg><svg id="story" role="group" aria-label="Story line"></svg></div>
+          </div>
+          <div class="foot"><span>Click a band to open that region in the Atlas</span><span>Drag or swipe sideways, Ctrl/⌘ + scroll to zoom time</span></div>
+        </div>
+      </section>
+
+      <section class="view" id="v-surnames" hidden>
+        <p class="vnote">The surnames of the focus person and every ancestor, as a cloud. Bigger = more people carried the name. Click a name to see who they were, and click anyone to re-centre the whole page on them.</p>
+        <div class="stage">
+          <div class="bar">
+            <span id="ssum"></span>
+            <span><b>Colour by</b><span class="seg" data-key="scol"><button data-v="country">Where born</button><button data-v="gen">How far back</button><button data-v="era">When</button></span></span>
+            <span><b>Size by</b><span class="seg" data-key="ssize"><button data-v="people">People</button><button data-v="near">Nearness</button></span></span>
+            <span><b>Generations</b><span class="seg" data-key="sdepth"><button data-v="all">All</button><button data-v="4">4</button><button data-v="6">6</button><button data-v="8">8</button></span></span>
+          </div>
+          <div class="amwrap"><div class="amcanvas"><svg id="sc" role="group" aria-label="Surname cloud"></svg><div class="slegend" id="slegend"></div></div><aside class="ampick" id="sdetail"></aside></div>
+          <div class="sgrid" id="sgrid"></div>
+          <div class="foot"><span id="sfoot"></span><span>Nearness: a parent counts far more than a great-great-grandparent</span><span>Names are matched ignoring case and accents, spelling variants are kept apart</span></div>
+        </div>
+      </section>
+
+      <section class="view" id="v-orphans" hidden>
+        <p class="vnote" id="orsum"></p>
+        <div class="stage">
+          <div class="bar"><span><b>Show</b><span class="seg" data-key="okind"><button data-v="orph">Orphans</button><button data-v="clus">Detached families</button><button data-v="dead">Dead ends</button><button data-v="undrawn">Not drawn yet</button></span></span><span>Where to start: places ranked by how many people are waiting there and whether the Atlas knows a collection to search</span></div>
+          <div class="orsug" id="orsug"></div>
+          <div class="orlist" id="orlist"></div>
+        </div>
+      </section>
+
+      <section class="view" id="v-kinship" hidden>
+        <p class="vnote">Pick a second person and see exactly how they are related: the nearest shared ancestors, each generation down both sides, and where every link on the chain was born. Falls back to a marriage path when there is no shared ancestor.</p>
+        <div class="stage">
+          <div class="kinpick"><span id="kinA"></span><span class="kvs">is related to</span><div class="ksearch"><label class="klab" for="kq">Compare with anyone</label><input id="kq" type="search" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="kres" placeholder="Type a name, a place or a year"><ul class="results" id="kres" role="listbox" hidden></ul></div><button class="btn" id="kswap">Swap</button></div>
+          <div class="kinchips" id="kinchips"></div>
+          <div class="kinhead" id="kinhead"></div>
+          <div class="kz" id="kz"><button class="btn" id="kzo" aria-label="Zoom out">−</button><button class="btn" id="kzi" aria-label="Zoom in">+</button><button class="btn" id="kz1">Reset</button><span id="kzp"></span></div>
+          <div class="scroll" id="kvwrap"><svg id="kv" role="group" aria-label="Kinship diagram"></svg></div>
+          <div class="trail" id="kvchain" hidden></div>
+          <div class="kinmap" id="kinmap"><svg id="km" role="group" aria-label="Where each link was born"></svg><div class="legend"><span><i style="background:var(--atlas)"></i>A's line</span><span><i style="background:var(--brick)"></i>B's line</span><span><i style="background:var(--ink)"></i>Common ancestor</span></div></div>
+          <div class="foot"><span>Cards show the flag over each birthplace in the birth year</span><span>Click anyone to re-centre</span></div>
+        </div>
+      </section>
+
+      <section class="view" id="v-timeline" hidden>
+        <p class="vnote">Lifespans of the focus person's relatives, oldest at the top, with Atlas events behind them. Slide across to see who was alive in any year.</p>
+        <div class="stage">
+          <div class="readout" id="readout">Move across the chart to see who was alive in a given year.</div>
+          <div class="tlwrap" id="tlwrap"><svg id="tl" role="group" aria-label="Lifespan chart"></svg></div>
+          <div class="foot"><span>Small map = birthplace with regime pin</span><span>Hatched band = Atlas event at a relative's birthplace</span></div>
+        </div>
+      </section>
+<!--EXT:VIEWS-->
+    </div>
+
+    <aside class="pc" id="panel" aria-live="polite"></aside>
+  </div>
+
+  <section class="verdict">
+    <h2>Which one to use</h2>
+    <p>No single view does everything. They answer different questions, so the strongest site uses a few, each for one job.</p>
+    <div class="tblwrap">
+      <table>
+        <thead><tr><th>View</th><th>Answers</th><th>Scales to</th><th>Phone</th><th>Weakness</th></tr></thead>
+        <tbody>
+          <tr><td>Hourglass</td><td>Who are this person's parents and children?</td><td>Any size, ~30 people at once; mini cards roughly double that</td><td>Good, upright mode helps</td><td>No sense of the whole tree</td></tr>
+          <tr><td>Fan</td><td>How complete is this person's ancestry?</td><td>Ancestors only, 4 to 6 generations</td><td>Fair</td><td>No descendants or siblings</td></tr>
+          <tr><td>Whole-tree map</td><td>What is in this file, and where is everyone?</td><td>Thousands of people</td><td>Fair</td><td>Names only when zoomed</td></tr>
+          <tr><td>Movements</td><td>Where did they go, and when?</td><td>Hundreds of moves</td><td>Good</td><td>Only people with two known places</td></tr>
+          <tr><td>Place lanes</td><td>Who lived where, under whose rule, and who moved?</td><td>Around 100 people per screen</td><td>Scrolls sideways</td><td>Needs places on most people</td></tr>
+          <tr><td>Lifespans</td><td>Who overlapped? Do the dates make sense?</td><td>Around 50 relatives</td><td>Good</td><td>Shows time, not family shape</td></tr>
+          <tr><td>Atlas map</td><td>Where is everyone, and who is at this place?</td><td>Thousands of people, hundreds of places</td><td>Fair</td><td>Needs a coordinate per place</td></tr>
+          <tr><td>Eras</td><td>What was happening around them, in one picture?</td><td>A few regions at a time</td><td>Scrolls sideways</td><td>Depends on Atlas region coverage</td></tr>
+          <tr><td>Kinship</td><td>How exactly are these two people related?</td><td>Any two people with a shared ancestor</td><td>Good</td><td>Needs a shared ancestor or a marriage link</td></tr>
+          <tr><td>Orphans</td><td>What is not joined up, and where should I look?</td><td>Any size</td><td>Good</td><td>Only as good as the Atlas collections</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pick">
+      <div><h3>Default navigator: Hourglass</h3><p>On every person page, with the person card beside it. Simple, never dead-ends, and the mini and upright modes cover phones and big families.</p></div>
+      <div><h3>Front door: Whole-tree map</h3><p>The landing page for a large GEDCOM. Shows the shape of the family and gets a visitor to a person in two clicks.</p></div>
+      <div><h3>The signature: Place lanes</h3><p>Nobody else has Atlas regimes behind a family timeline. This is the view that shows what is distinct about your sites, so put it on every line page.</p></div>
+      <div><h3>Story mode: Movements</h3><p>Use it as the animated opener for a family line, and for sharing. Fan stays as the print and poster view.</p></div>
+    </div>
+
+    <h3>How it ties into the Atlas</h3>
+    <div class="tie">
+      <div><b>Every place is a link out</b><p>Birth and death places carry an Atlas pin map and a link to that place's Atlas page: the archives, the volumes, and the other names it has had.</p></div>
+      <div><b>Pin colour = jurisdiction in that year</b><p>The same place shows a different colour for a baptism in 1884 and one in 1930. This is the Atlas's own rule: it tells the visitor which archive to open.</p></div>
+      <div><b>Gaps are honest</b><p>Places the Atlas has no region for show a grey pin and an "add it" link. In this sample that is Mljet, Kraków, Warsaw, Stellenbosch and Perth.</p></div>
+      <div><b>Events come from the Atlas, not from us</b><p>The famine, epidemic and war bands use the Atlas mortality list, matched to each place by its outline. Nothing on this page is written by hand.</p></div>
+    </div>
+    <p class="build"><b>For the real build:</b> convert the GEDCOM once into a small JSON file, geocode each place name against the Atlas gazetteer (this is where its alternate names help), and draw everything in plain SVG. The map outlines and regime tables are already Atlas data, about 220 KB for what you see here. Withhold living people in the JSON itself; this mockup only hides their names. Movements need two places per person or a parent's place to compare, so an import report of "people with no place" is worth showing the researcher.</p>
+  </section>
+</div>
+
+<script>
+(function(){
+'use strict';
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+/* optional extension views (see build_page.py --ext): they register a renderer in EXT.views and read this page's own state */
+const EXT={names:[/*EXT:NAMES*/],views:{},stop(){}};
+const NS='http://www.w3.org/2000/svg';
+function S(tag,attrs,parent,text){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;if(parent)parent.appendChild(e);return e}
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const clip=(s,n)=>s.length>n?s.slice(0,n-1)+'…':s;
+
+/* ---------- Record Atlas data (built from the Atlas repo: outlines, regimes, eras, mortality events) ---------- */
+const ATLAS=/*ATLAS_DATA*/null;
+const PL={};ATLAS.places.forEach(p=>{PL[p.n]=p});
+const ERA={};for(const k in ATLAS.regions)ERA[k]=ATLAS.regions[k].eras.map(e=>({from:e[0],to:e[1],rg:e[2],polity:e[3],note:e[4],filed:e[5]}));
+const evOf=id=>{const e=ATLAS.events[id];return{id,n:e[0],ty:e[1],f:e[2],t:e[3],says:e[4],toll:e[5]}};
+function eraAt(place,y){const pl=PL[place];if(!pl||!pl.reg)return null;const es=ERA[pl.reg];for(const e of es)if(y>=e.from&&y<e.to)return e;const l=es[es.length-1];return y>=l.to?l:null}
+const rgv=id=>'var(--rg-'+id+')';
+const atlasURL=n=>{const p=PL[n];return p&&p.id?'https://recordatlas.org/place/'+p.id+'/':'https://recordatlas.org/add/'};
+// a place name that opens its Record Atlas page, when the Atlas has the place
+const placeA=n=>{const p=PL[n];return p&&p.id?'<a class="pl" href="'+atlasURL(n)+'" target="_blank" rel="noopener" title="Open '+esc(n)+' in Record Atlas">'+esc(n)+'</a>':esc(n)};
+const eventsFor=(n,a,b)=>(PL[n]?PL[n].ev:[]).map(evOf).filter(e=>e.f<=b&&e.t>=a);
+/* Where a person was, and when: every stop of a route (a stop with no year runs from the last dated one), else birth place then death place. */
+const yrB=y=>y<0?(-y)+' BCE':String(y);
+function stayList(p,end){
+  const out=[];
+  if(p.route){
+    let from=p.by;
+    p.route.forEach((s,i)=>{
+      const a=i===0?p.by:(s[1]!=null?s[1]:from);
+      let b=end;for(let j=i+1;j<p.route.length;j++)if(p.route[j][1]!=null){b=p.route[j][1];break}
+      out.push({pl:s[0],a:a,b:Math.max(a,b)});if(s[1]!=null)from=s[1];
+    });
+  }else{
+    const m=p.my||null;
+    out.push({pl:p.bp,a:p.by,b:m||end});
+    if(p.dp&&p.dp!==p.bp)out.push({pl:p.dp,a:m||p.by,b:end});
+  }
+  return out.filter(s=>s.pl&&PL[s.pl]);
+}
+/* Mortality events that fell while they were at each place, longest overlap first, so the few a panel shows are the ones that touched them. */
+function lifeEvents(p,end){
+  const m=new Map();
+  stayList(p,end).forEach(s=>eventsFor(s.pl,s.a,s.b).forEach(e=>{
+    const ov=Math.min(e.t,s.b)-Math.max(e.f,s.a)+1,o=m.get(e.id);
+    if(!o)m.set(e.id,Object.assign({at:s.pl,ov:ov},e));else if(ov>o.ov){o.ov=ov;o.at=s.pl}
+  }));
+  return [...m.values()].sort((x,y)=>y.ov-x.ov||x.f-y.f);
+}
+(function(){
+  let l=':root{',d='';
+  for(const k in ATLAS.regimes){l+='--rg-'+k+':'+ATLAS.regimes[k].c[0]+';';d+='--rg-'+k+':'+ATLAS.regimes[k].c[1]+';'}
+  const s=document.createElement('style');
+  s.textContent=l+'}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){'+d+'}}:root[data-theme="dark"]{'+d+'}';
+  document.head.appendChild(s);
+  $('#land-world').setAttribute('d',ATLAS.land.world);$('#land-eu').setAttribute('d',ATLAS.land.eu);
+  const defs=$('#land-world').parentNode;
+  ATLAS.flags.forEach((f,i)=>{const s=document.createElementNS(NS,'symbol');s.setAttribute('id','fl'+i);s.setAttribute('viewBox',f[0]);s.innerHTML=f[1];defs.appendChild(s)});
+})();
+/* Flag Atlas: the flag flown over a place's ground in a given year (matched through the Atlas regime to that polity's flag timeline). */
+/* LOCAL CHANGE (Record Atlas copy): before the first flag the Atlas knows for a place there is NO flag (null), never the first one back-dated. */
+function flagAt(place,year){const L=PL[place].fl;let k=null;for(const e of L){if(e[0]<=year)k=e[1];else break}return k}
+/* Clicking a flag opens that flag's page in the Flag Atlas, at the era shown. */
+function flagLink(idx){
+  const parts=ATLAS.fid[idx].split('--'),slug=parts[0],era=parts[1]||'',country=slug.replace(/-flags$/,'').replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase()),yr=era.replace(/^era-/,'');
+  return{url:'https://recordatlas.org/flags/'+slug+'/'+(era?'#'+era:''),title:'Flag Atlas: '+country+(/^\d+$/.test(yr)?', flag from '+yr:'')+' (opens the flag page)'};
+}
+function drawFlag(parent,idx,x,y,w){
+  if(idx==null)return;   // LOCAL CHANGE: no flag known for that date
+  const h=w*2/3,L=flagLink(idx),a=S('a',{href:L.url,target:'_blank',class:'flaglink'},parent);
+  S('title',{},a,L.title);
+  S('use',{href:'#fl'+idx,x,y,width:w,height:h},a);
+  S('rect',{x,y,width:w,height:h,fill:'none',stroke:'var(--ink)','stroke-opacity':.4,'stroke-width':.8},a)}
+/* Place types: a small line icon says what kind of ground a place is. Illustrative here; the Atlas would supply the type per place. */
+const ICONS={
+  coast:'M3 9q3-3 6 0t6 0t6 0M3 15q3-3 6 0t6 0t6 0',
+  port:'M12 5.5a1.8 1.8 0 1 0 .01 0M12 7.5V19M8 11h8M5 13.5q0 5.5 7 5.5t7-5.5',
+  island:'M3 17q9-11 18 0M3 20.5h18',
+  walled:'M4 19V9h3v2h2V9h2v2h2V9h2v2h2V9h3v10ZM10 19v-4h4v4',
+  mountain:'M3 19l6-10 3.5 5L16 7l5 12Z',
+  city:'M5 19V9h6v10M11 19V5h8v14M3 19h18M14 9h2M14 13h2',
+  industrial:'M4 19v-8l5 3v-3l5 3v-3l5 3v8ZM16 11V5h3v6',
+  farm:'M5 6h14v13H5ZM5 10.5h14M5 15h14M9.7 6v13M14.3 6v13',
+  house:'M4 12l8-7 8 7M6 11v8h12v-8M10 19v-5h4v5'
+};
+const PTYPE={Pula:'port',Trieste:'port','Mljet':'island',Dubrovnik:'walled',Montevideo:'port',Colonia:'coast','Kraków':'walled',Warsaw:'city',Naples:'mountain',Salerno:'coast',Cork:'port',Liverpool:'industrial',Stellenbosch:'farm','Cape Town':'mountain',Bari:'port',Taranto:'port',Sydney:'coast',Melbourne:'city',Perth:'coast',Adelaide:'farm'};
+ATLAS.places.forEach(p=>{if(p.type)PTYPE[p.n]=p.type});
+const iconSVG=(t,s)=>'<svg width="'+s+'" height="'+s+'" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="'+(ICONS[t]||ICONS.house)+'"/></svg>';
+function placeIcon(parent,type,cx,cy,size){
+  const g=S('g',{transform:'translate('+(cx-size/2)+','+(cy-size/2)+') scale('+size/24+')',fill:'none',stroke:'var(--brass)','stroke-width':1.5,'stroke-linecap':'round','stroke-linejoin':'round'},parent);
+  S('path',{d:ICONS[type]||ICONS.house},g);return g}
+function flagEl(place,year,w){const s=S('svg',{width:w,height:w*2/3,viewBox:'0 0 '+w+' '+w*2/3,role:'img','aria-label':'Flag over '+place+' in '+year});drawFlag(s,flagAt(place,year),0,0,w);s.setAttribute('class','fl');return s}
+
+/* Atlas place icon: a small map window on the Atlas outline, pin coloured by the regime in `year`. */
+function drawIcon(parent,place,year,x,y,w,h){
+  const pl=PL[place];
+  const eu=pl.lat>30&&pl.lat<62&&pl.lon>-13&&pl.lon<50,half=eu?4.2:11,hh=half*h/w;
+  const v=S('svg',{x,y,width:w,height:h,viewBox:(pl.lon-half)+' '+(-pl.lat-hh)+' '+(2*half)+' '+(2*hh),preserveAspectRatio:'xMidYMid slice'},parent);
+  S('rect',{x:pl.lon-half,y:-pl.lat-hh,width:2*half,height:2*hh,fill:'var(--sea)'},v);
+  S('use',{href:eu?'#land-eu':'#land-world',fill:'var(--land)',stroke:'var(--coast)','stroke-width':.8},v);
+  const e=eraAt(place,year),dpp=2*half/w;
+  S('circle',{cx:pl.lon,cy:-pl.lat,r:Math.max(3,w*.075)*dpp,fill:e?rgv(e.rg):'var(--hair)',stroke:'var(--panel)','stroke-width':1.3,'vector-effect':'non-scaling-stroke'},v);
+  if(w>=24){const fw=Math.min(22,Math.round(w*.5));drawFlag(parent,flagAt(place,year),x+2,y+h-fw*2/3-2,fw)}
+  S('rect',{x:x+.5,y:y+.5,width:w-1,height:h-1,rx:3,fill:'none',stroke:'var(--rule)'},parent);
+  return v;
+}
+function iconEl(place,year,w,h){const s=S('svg',{width:w,height:h,viewBox:'0 0 '+w+' '+h,role:'img','aria-label':place+' on the Atlas map'});drawIcon(s,place,year,0,0,w,h);return s}
+
+const TREE=/*TREE_DATA*/null;
+//#DATA-START
+/* Real trees come in as TREE (built from a GEDCOM by the family-tree-page skill). With no TREE the page runs on invented sample people. */
+function loadTree(T){
+  const FAMS=(T.lines||[]).slice(0,8).map(l=>({sur:l.sur,host:l.host||'',m:[],f:[],places:[]}));
+  while(FAMS.length<8)FAMS.push({sur:'Other',host:'',m:[],f:[],places:[]});
+  const P={},list=[];
+  for(const r of T.people){
+    const p={id:r.id,sex:r.sex==='f'?'f':r.sex==='m'?'m':'u',fi:r.line==null?7:r.line,sur:r.sur||'',given:r.given||'',by:r.by,bp:r.bp,dy:r.dy==null?null:r.dy,hid:r.hid===1?1:0,dp:r.dp||r.bp,my:r.my||null,occ:r.occ||null,
+      father:r.father||null,mother:r.mother||null,spouse:r.spouse||[],kids:r.kids||[],g:0,src:(r.srcs||[]).length,srcs:r.srcs||null,slug:r.slug||null,href:r.href||null,page:r.page||null,route:r.route||null,mye:!!r.mye,bye:!!r.bye,dye:!!r.dye,bpe:!!r.bpe,bpr:r.bpr||null,dpr:r.dpr||null,sk:r.sk||null,note:r.note||null,fg:r.fg==null?null:r.fg,mg:r.mg==null?null:r.mg,gaps:r.gaps||null};
+    if(p.dy==null)p.dp=null;
+    P[p.id]=p;list.push(p);
+  }
+  return{FAMS,SRC:[],P,list,ROOT:P[T.focus]||list[0]};
+}
+function makeSample(){
+
+/* ---------- Sample data (invented people, seeded so it is the same every load) ---------- */
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const R=rng(20261028);
+const pick=a=>a[Math.floor(R()*a.length)];
+const rint=(a,b)=>a+Math.floor(R()*(b-a+1));
+const FAMS=[
+ {sur:'Defranceski',places:['Pula','Trieste'],m:['Giovanni','Antonio','Luigi','Pietro','Matteo','Carlo'],f:['Maria','Anna','Rosa','Caterina','Lucia','Giulia']},
+ {sur:'Blažević',places:['Mljet','Dubrovnik'],m:['Ivan','Marko','Luka','Pavao','Nikola','Mato'],f:['Mara','Ana','Jelena','Katarina','Ivana','Cvijeta']},
+ {sur:'Lerena',places:['Montevideo','Colonia'],m:['José','Juan','Carlos','Pedro','Manuel','Alberto'],f:['Rosario','Elena','Lucía','Carmen','Dolores','Inés']},
+ {sur:'Luwinski',places:['Kraków','Warsaw'],m:['Jan','Stanisław','Józef','Wojciech','Franciszek','Tadeusz'],f:['Marianna','Zofia','Helena','Agnieszka','Stefania','Janina']},
+ {sur:'Mazza',places:['Naples','Salerno'],m:['Salvatore','Vincenzo','Gennaro','Domenico','Raffaele','Ciro'],f:['Carmela','Concetta','Assunta','Lucia','Immacolata','Filomena']},
+ {sur:"D'arcy",places:['Cork','Liverpool'],m:['John','Patrick','Thomas','Michael','Daniel','Edward'],f:['Mary','Bridget','Margaret','Ellen','Catherine','Honora']},
+ {sur:'Booyzen',places:['Stellenbosch','Cape Town'],m:['Pieter','Johannes','Hendrik','Jacobus','Willem','Gerrit'],f:['Annetjie','Susanna','Maria','Elsie','Magdalena','Johanna']},
+ {sur:'Falco',places:['Bari','Taranto'],m:['Giuseppe','Francesco','Nicola','Rocco','Carmine','Vito'],f:['Teresa','Angela','Filomena','Rosaria','Antonia','Vita']}
+];
+// where each line tends to go when it leaves home
+const DEST=[['Trieste','Sydney','Montevideo'],['Dubrovnik','Montevideo','Perth','Adelaide'],['Colonia','Sydney','Melbourne'],['Warsaw','Liverpool','Melbourne','Adelaide'],['Salerno','Sydney','Montevideo','Melbourne'],['Liverpool','Sydney','Melbourne','Adelaide'],['Cape Town','Perth','Sydney'],['Naples','Melbourne','Adelaide','Montevideo']];
+const OCC={m:['fisherman','shipwright','stonemason','farmer','merchant','sailor','cooper','clerk','schoolteacher','miner'],f:['seamstress','housewife','weaver','midwife','innkeeper','teacher','servant','laundress']};
+const SRC=['Parish baptism register','Civil birth record','Census return','Passenger list','Probate record','Newspaper notice','Family Bible','Marriage register'];
+const P={},list=[];let N=0;
+
+function mkPerson(fi,sex,by,g,bp){
+  const f=FAMS[fi],id='I'+(++N);
+  const inf=by<1930&&R()<.07,age=inf?rint(0,4):rint(36,91);
+  let dy=by+age; if(dy>2025)dy=null;
+  bp=bp||((by>1885&&R()<.2)?pick(DEST[fi]):pick(f.places));
+  let dp=null,my=null;
+  if(dy!=null){dp=bp;if(age>=24&&R()<.28){dp=R()<.5?pick(DEST[fi]):pick(f.places);if(dp!==bp)my=by+rint(18,Math.max(19,age-3));else dp=bp}}
+  const p={id,sex,fi,sur:f.sur,given:pick(f[sex]),by,bp,dy,dp,my,occ:inf?null:pick(OCC[sex]),father:null,mother:null,spouse:[],kids:[],g,src:rint(1,4)};
+  P[id]=p;list.push(p);return p;
+}
+function link(fa,mo,ch){
+  if(ch){ch.father=fa.id;ch.mother=mo.id;fa.kids.push(ch.id);mo.kids.push(ch.id);
+    for(const q of [fa,mo]) if(q.dy!=null&&q.dy<ch.by){q.dy=ch.by+rint(1,45);if(q.dy>2025)q.dy=null;else if(q.dp==null)q.dp=q.bp}}
+  if(!fa.spouse.includes(mo.id)){fa.spouse.push(mo.id);mo.spouse.push(fa.id)}
+}
+function addAnc(p,n){
+  if(n<=0||R()<.1)return;
+  const fa=mkPerson(p.fi,'m',p.by-rint(24,37),p.g-1);
+  const mo=mkPerson(rint(0,FAMS.length-1),'f',fa.by+rint(-4,5),p.g-1);
+  link(fa,mo,p);addAnc(fa,n-1);addAnc(mo,n-1);
+}
+function childBp(h,by){const pm=by<1850?.06:by<1900?.13:.2,r=R();return r<pm?pick(DEST[h.fi]):r<pm+.1?pick(FAMS[h.fi].places):h.bp}
+const queue=[];
+FAMS.forEach((f,i)=>{
+  const by=rint(1764,1790),h=mkPerson(i,'m',by,0),w=mkPerson((i+rint(1,7))%8,'f',by+rint(-4,4),0);
+  link(h,w,null);addAnc(h,1);queue.push({h,w,d:0});
+});
+while(queue.length&&N<1250){
+  const {h,w,d}=queue.shift(),k=pick([0,1,1,2,2,2,3,3]);
+  let cb=w.by+rint(20,30);
+  for(let i=0;i<k;i++){
+    if(i)cb+=rint(1,4);
+    if(cb>2012||cb>w.by+44)break;
+    const sex=R()<.5?'m':'f',ch=mkPerson(h.fi,sex,cb,d+1,childBp(h,cb));
+    link(h,w,ch);
+    if(R()<.8&&cb<1998){
+      const sp=mkPerson(rint(0,7),sex==='m'?'f':'m',cb+rint(-4,5),d+1);
+      if(R()<.8)addAnc(sp,1);
+      const hh=sex==='m'?ch:sp,ww=sex==='m'?sp:ch;
+      link(hh,ww,null);queue.push({h:hh,w:ww,d:d+1});
+    }
+  }
+}
+const kidsOf=p=>p.kids.map(id=>P[id]).sort((a,b)=>a.by-b.by);
+function ancSet(p){const out=new Map();(function w(q,g){for(const id of [q.father,q.mother]){if(id&&!out.has(id)){out.set(id,g+1);w(P[id],g+1)}}})(p,0);return out}
+function descSet(p){const out=new Map();(function w(q,g){for(const c of kidsOf(q)){out.set(c.id,g+1);w(c,g+1)}})(p,0);return out}
+// focus person: deceased, has children, and a big family below them
+let ROOT=null,best=-1;
+for(const p of list){
+  if(p.dy==null||!p.kids.length)continue;
+  const D=descSet(p),d=D.size;let atl=1;
+  ancSet(p).forEach((g,id)=>{if(PL[P[id].bp].reg)atl++});D.forEach((g,id)=>{if(PL[P[id].bp].reg)atl++});
+  const score=(d>=6&&d<=40?1000:0)+(PL[p.bp].reg?500:0)+p.g*10+atl*3;
+  if(score>best){best=score;ROOT=p}
+}
+(function enrich(p,g){if(g>=5)return;if(!p.father){addAnc(p,5-g);return}enrich(P[p.father],g+1);enrich(P[p.mother],g+1)})(ROOT,0);
+// records that arrived with the GEDCOM but were never joined to anyone, and a few small families that sit apart
+for(let i=0;i<46;i++){const fi=rint(0,7);mkPerson(fi,R()<.5?'m':'f',rint(1790,1962),0)}
+for(let c=0;c<6;c++){
+  const fi=rint(0,7),by=rint(1810,1900),h=mkPerson(fi,'m',by,0),w=mkPerson(rint(0,7),'f',by+rint(-4,4),0);link(h,w,null);
+  for(let k=rint(1,3),b=w.by+rint(20,28);k>0;k--,b+=rint(1,4))link(h,w,mkPerson(fi,R()<.5?'m':'f',b,1));
+}
+
+  const HOSTS=['archive','blazevic','lerena','luwinski','mazza','darcy','booyzen','falco'];
+  FAMS.forEach((f,i)=>{f.host=HOSTS[i]+'.defranceski.com'});
+  return{FAMS,SRC,P,list,ROOT};
+}
+const DATA=TREE?loadTree(TREE):makeSample();
+const {FAMS,SRC,P,list,ROOT}=DATA;
+const kidsOf=p=>p.kids.map(id=>P[id]).sort((a,b)=>a.by-b.by);
+function ancSet(p){const out=new Map();(function w(q,g){for(const id of [q.father,q.mother]){if(id&&!out.has(id)){out.set(id,g+1);w(P[id],g+1)}}})(p,0);return out}
+function descSet(p){const out=new Map();(function w(q,g){for(const c of kidsOf(q)){out.set(c.id,g+1);w(c,g+1)}})(p,0);return out}
+//#DATA-END
+
+// every move: a family leaving the father's birthplace, or a person's own late-life move
+const MOVES=[];
+for(const p of list){
+  const fa=p.father?P[p.father]:null;
+  if(fa&&fa.bp!==p.bp)MOVES.push({a:fa.bp,b:p.bp,y:p.by,p:p.id,k:'family'});
+  if(p.route){   // the whole route in the roster's order; a stop with no year is an undated arrival (est: dashed on the map)
+    for(let i=1;i<p.route.length;i++){const a=p.route[i-1],b=p.route[i];MOVES.push({a:a[0],b:b[0],y:b[1],p:p.id,k:'route',est:b[2]===1||b[1]==null,und:b[1]==null})}
+  }else if(p.my)MOVES.push({a:p.bp,b:p.dp,y:p.my,p:p.id,k:'self',est:!!p.mye});
+}
+const mvYear=m=>m.y==null?P[m.p].by:m.y;
+MOVES.sort((a,b)=>mvYear(a)-mvYear(b));
+// connected components: the main tree, small detached families, and single orphan records
+(function(){
+  const comp=new Map(),sizes=[];
+  for(const p of list){
+    if(comp.has(p.id))continue;const c=sizes.length,q=[p.id];comp.set(p.id,c);let n=0;
+    while(q.length){const x=P[q.pop()];n++;for(const y of [x.father,x.mother,...x.spouse,...x.kids])if(y&&!comp.has(y)){comp.set(y,c);q.push(y)}}
+    sizes.push(n);
+  }
+  // a connected tree is a component of 20 or more people; smaller ones are detached families
+  for(const p of list){const c=comp.get(p.id);p._comp=c;p._main=sizes[c]>=20;p._orph=sizes[c]===1;p._clus=sizes[c]>1&&sizes[c]<20;p._dead=p._main&&!p.father&&!p.mother}
+})();
+
+const ICO={person:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c.8-4 3.6-6 7-6s6.2 2 7 6"/></svg>',tree:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9.5" y="3" width="5" height="4" rx="1"/><rect x="3" y="17" width="5" height="4" rx="1"/><rect x="16" y="17" width="5" height="4" rx="1"/><path d="M12 7v5M5.5 17v-5h13v5"/></svg>',back:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>',copy:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>',check:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'};
+const living=p=>p.hid===1;   // a person whose name and details are withheld (the importing page sets hid; no death recorded no longer means withheld)
+const nm=p=>living(p)?'Living '+p.sur:((p.given+' '+p.sur).trim()||'(no name recorded)');
+const linkG=(c,par)=>!c||!par?null:(c.father===par.id?c.fg:c.mother===par.id?c.mg:null);   // grade of a parent link: 0 index only, 1 household tree, 2 read from a register
+const yrs=p=>living(p)?'living':(p.bye?'c.':'')+p.by+'–'+(p.dy==null?'':p.dye?'?':p.dy);   // c. = estimated birth year, ? = deceased, death year not recorded
+const colorOf=p=>'var(--l'+p.fi+')';
+function slots(p,g){let row=[p];const out=[row];for(let i=1;i<=g;i++){const next=[];for(const q of row){next.push(q&&q.father?P[q.father]:null,q&&q.mother?P[q.mother]:null)}out.push(next);row=next}return out}
+/* A person whose sex the record does not hold is 'u' and gets the neutral word. Nothing here guesses: the viewer never turns an unknown into 'm'. */
+const SX=(sex,m,f,u)=>sex==='m'?m:sex==='f'?f:u;
+function rel(g,sex){
+  if(g===0)return 'Focus';
+  if(g===1)return SX(sex,'Son','Daughter','Child');
+  if(g===2)return SX(sex,'Grandson','Granddaughter','Grandchild');
+  const n=-g;
+  if(n===1)return SX(sex,'Father','Mother','Parent');
+  if(n===2)return SX(sex,'Grandfather','Grandmother','Grandparent');
+  return (n===3?'Great-':(n-2)+'× great-')+SX(sex,'grandfather','grandmother','grandparent');
+}
+// every view's filters live in one full-width panel that opens from the Filters button; zoom stays on the chart
+(function(){
+  const ctrls=$('#ctrls'),notes=$('#vnotes'),zoom={hourglass:'hzo',map:'zo',atlasmap:'azo',lanes:'lzo',eras:'ezo'};
+  ['hourglass','fan','map','atlasmap','movements','lanes','eras','timeline','orphans'].forEach(v=>{
+    const sec=$('#v-'+v);if(!sec)return;
+    const stage=sec.querySelector('.stage'),zb=zoom[v]&&$('#'+zoom[v]);
+    if(zb){const sp=zb.closest('span');sp.classList.add('zoomfloat');stage.appendChild(sp)}
+    const d=document.createElement('div');d.className='vdescg';d.dataset.for=v;d.hidden=true;
+    const note=sec.querySelector('.vnote');if(note)d.appendChild(note);notes.appendChild(d);
+    const g=document.createElement('div');g.className='ctrlgroup';g.dataset.for=v;g.hidden=true;
+    sec.querySelectorAll('.stage > .bar:not(.keep), .stage > .trailbar').forEach(b=>g.appendChild(b));
+    ctrls.appendChild(g);
+  });
+})();
+function syncFilters(){
+  const g=$('.ctrlgroup[data-for="'+st.view+'"]'),has=g&&g.children.length>0;
+  $$('.ctrlgroup').forEach(x=>{x.hidden=x.dataset.for!==st.view});
+  $$('.vdescg').forEach(x=>{x.hidden=x.dataset.for!==st.view});
+  $('#filtbtn').hidden=!has;$('#ctrls').hidden=!(has&&st.fopen);
+  $('#filtbtn').setAttribute('aria-expanded',String(!!st.fopen));$('#filtbtn').textContent='Filters '+(st.fopen?'▴':'▾');
+}
+$('#filtbtn').onclick=()=>{st.fopen=!st.fopen;syncFilters()};
+// who a view shows: null = everyone, otherwise a set of ids around the focus person
+function scopeSet(kind){
+  if(kind==='all')return null;
+  if(kind==='focus')return pedigree(st.focus);
+  const p=P[st.focus],s=new Set([p.id]);
+  if(kind==='anc')ancSet(p).forEach((g,id)=>s.add(id));
+  else if(kind==='desc')descSet(p).forEach((g,id)=>s.add(id));
+  else for(const id of [p.father,p.mother])if(id){s.add(id);P[id].kids.forEach(k=>s.add(k))}   // siblings, with their parents
+  return s;
+}
+let pedKey=null,pedSet=null;
+function pedigree(id){if(pedKey===id)return pedSet;const p=P[id],s=new Set([id]);ancSet(p).forEach((g,k)=>s.add(k));descSet(p).forEach((g,k)=>s.add(k));pedKey=id;pedSet=s;return s}
+
+/* ---------- State ---------- */
+const VIEWS=['hourglass','fan','map','atlasmap','movements','kinship','lanes','eras','timeline','surnames','orphans',...EXT.names];
+const st={focus:ROOT.id,hist:[],view:'hourglass',card:'full',orient:'h',up:3,down:2,gens:5,q:'',line:null,zoom:1,tx:0,suppress:false,
+  mgroup:'line',mview:'global',mscope:'focus',year:1925,lgroup:'place',lscope:'focus',lzoom:1,hz:1,keep:false,open:null,tline:'pat',aview:'global',av:{cx:35,cy:-10,w:250},amode:'born',ascope:'all',apl:null,escope:'focus',ezoom:1,okind:'orph',fopen:false,kb:null,kinShow:false,kinSeq:null,kinIds:null,mapscope:'all',mcolor:'line',cty:null,scol:'country',ssize:'people',sdepth:'all',sn:null,scty:null,kz:1};
+/* The address bar is the page's state, so a link shares exactly what you are looking at: #kinship&p=<person>&b=<second person>&…
+   Only what differs from the defaults is written. An old link (#kinship, #close, #p=…) still works. */
+const EMB=/(^|&)(embed|profile)=1(&|$)/.test(location.hash.slice(1)),PROF=/(^|&)profile=1(&|$)/.test(location.hash.slice(1));
+const RROOT=document.getElementById('rr')||document.documentElement;   // a site-built page scopes the viewer under #rr; the Atlas viewer is the document
+if(EMB)RROOT.classList.add('embed');
+if(PROF)RROOT.classList.add('profile');
+const DEF=Object.assign({},st);
+const HASHKEYS={p:'focus',b:'kb',card:'card',o:'orient',up:'up',down:'down',gens:'gens',mg:'mgroup',mv:'mview',ms:'mscope',y:'year',lg:'lgroup',ls:'lscope',tl:'tline',es:'escope',ok:'okind',map:'mapscope',mc:'mcolor',cty:'cty',ln:'line',am:'amode',as:'ascope',pl:'apl',av:'aview',sc:'scol',ss:'ssize',sd:'sdepth',sn:'sn'};
+function applyHash(){
+  try{
+    const parts=location.hash.slice(1).split('&').filter(Boolean);
+    const v0=parts.length&&!parts[0].includes('=')?parts.shift():null;
+    const kv={};parts.forEach(x=>{const i=x.indexOf('=');if(i>0)kv[x.slice(0,i)]=decodeURIComponent(x.slice(i+1))});
+    for(const k in HASHKEYS){
+      const sk=HASHKEYS[k],d=DEF[sk],v=kv[k];
+      if(v==null){st[sk]=d;continue}
+      st[sk]=typeof d==='number'?(isNaN(+v)?d:+v):v;
+    }
+    if(!P[st.focus])st.focus=DEF.focus;
+    if(st.kb&&(!P[st.kb]||st.kb===st.focus))st.kb=null;
+    st.view=VIEWS.includes(v0)?v0:DEF.view;
+    if(v0==='close'){st.view='map';if(kv.ms==null&&kv.map==null)st.mapscope='close';if(kv.mc==null)st.mcolor='country'}
+    if(st.apl&&!PL[st.apl])st.apl=null;
+    if(st.apl&&st.aview==='fit'){const pl=PL[st.apl];st._av='x';st.av={cx:pl.lon,cy:-pl.lat,w:26}}
+  }catch(e){}
+}
+function writeHash(){
+  try{
+    const kvs=[];
+    for(const k in HASHKEYS){const sk=HASHKEYS[k];if(st[sk]!=null&&st[sk]!==DEF[sk])kvs.push(k+'='+encodeURIComponent(st[sk]))}
+    if(PROF)kvs.push('profile=1');else if(EMB)kvs.push('embed=1');
+    const h=[st.view,...kvs].join('&');
+    if(h!==location.hash.slice(1))history.replaceState(null,'',location.pathname+location.search+'#'+h);
+  }catch(e){}
+}
+applyHash();
+function go(id){if(!P[id])return;st.kinShow=false;if(id!==st.focus)st.hist.push(st.focus);st.focus=id;render()}
+function back(){const id=st.hist.pop();if(id){st.focus=id;render()}}
+
+/* ---------- Person card ---------- */
+function plink(p){return '<button class="plink" data-id="'+p.id+'"><i style="background:'+colorOf(p)+'"></i><span>'+esc(nm(p))+'</span><small>'+esc(yrs(p))+'</small></button>'}
+/* A route of three or more places, in the order the archive holds it. A stop with no year is an undated arrival: it is listed, drawn dashed, and said to be undated. */
+function routeBlock(p){
+  const n=p.route.length;
+  let h='<h3 class="at">The whole route · order as recorded</h3><ol class="rte">';
+  p.route.forEach((s,i)=>{const pl=PL[s[0]];
+    const how=i===0?'born '+p.by:i===n-1?'died '+p.dy+(s[1]?', arrived '+(s[2]?'about ':'')+s[1]:' · arrival not dated'):(s[1]?'arrived '+(s[2]?'about ':'')+s[1]:'date not recorded');
+    const tn=nameAt(pl,i===0?p.by:s[1]);
+    h+='<li>'+placeA(s[0])+' <small>'+esc(pl.cn)+' · '+how+(tn&&tn!==pl.n?' · then called <em>'+esc(tn)+'</em>':'')+'</small></li>'});
+  return h+'</ol><p class="note rtn">Dashed on the Movements map unless a year is recorded. Between undated stops this person is not placed on a map for a given year.</p>';
+}
+/* What the Atlas says the ground was called in a year (pl.nm = [[from,to,name]], dated names only; absent for a site on an older Atlas build). */
+const nameAt=(pl,y)=>{if(!pl||!pl.nm||y==null)return null;const h=pl.nm.filter(n=>(n[0]==null||n[0]<=y)&&(n[1]==null||y<=n[1]));return h.length?h[h.length-1][2]:null};
+function placeBlock(label,place,year,until){
+  const pl=PL[place],e=eraAt(place,year),thenName=nameAt(pl,year);
+  let h='<div class="plc"><span class="ico" data-place="'+esc(place)+'" data-year="'+year+'"></span><div class="plh"><small>'+label+'</small><b>'+placeA(place)+'<span class="fl" data-place="'+esc(place)+'" data-year="'+year+'"></span></b><small>'+esc(pl.cn)+'</small>'+(thenName&&thenName!==pl.n?'<small>called <em>'+esc(thenName)+'</em> in '+yrB(year)+'</small>':'');
+  h+='</div><div class="pld">';
+  if(e){
+    h+='<span class="chip rg" style="background:'+rgv(e.rg)+'">'+esc(ATLAS.regimes[e.rg].label)+'</span><small>'+esc(e.polity)+', '+e.from+'–'+e.to+'</small>';
+    if(e.filed.length)h+='<small>Records: '+e.filed.slice(0,3).map(k=>esc(ATLAS.prov[k]||k)).join(', ')+'</small>';
+  }else h+='<small>'+(pl.id?'No regime table for this ground yet.':'Not in the Atlas yet.')+'</small>';
+  h+=shelfChip(pl)+'<a class="lk" href="'+atlasURL(place)+'" target="_blank" rel="noopener">'+(pl.id?'Open in Record Atlas ↗':'Add it to the Atlas ↗')+'</a>'+mapLink(pl)+'</div></div>';
+  return h;
+}
+/* A site that has its own map names it in atlas-data (site.mapBase) and marks the places it matched (mp = the marker, sh = the shelf state it shows there). */
+const SITE=ATLAS.site||null;
+const shelfChip=pl=>{const s=SITE&&pl.sh&&SITE.shelf[pl.sh];return s?'<span class="chip sh"><i style="background:'+s[1]+'"></i>'+esc(s[0])+'</span>':''};
+const mapLink=pl=>SITE&&pl.mp?'<a class="lk" href="'+SITE.mapBase+encodeURIComponent(pl.mp)+'" title="Open this place on the archive map">On the archive map →</a>':'';
+/* Each family line has its own site; a person's page is /people/<slug>/ with the archive's own slug rule. */
+const slugify=s=>String(s).normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-+|-+$/g,'').toLowerCase().slice(0,60);
+/* Where the record for each source lives: an Atlas collection covering that place and year, else the archive the Atlas says that era was filed under, else the place's Atlas page. */
+function sourceRows(p){
+  const rows=[];
+  for(let i=0;i<p.src;i++){
+    const kind=SRC[(p.by+i*3+p.fi)%SRC.length],late=/Passenger|Probate|Newspaper/.test(kind);
+    const place=late&&p.dp?p.dp:p.bp,year=late?(p.route?p.dy:(p.my||p.dy)):p.by,pl=PL[place];
+    const link=recLink(place,year);
+    rows.push({kind,year,place,link});
+  }
+  return rows;
+}
+function pageURL(p){if(!p||living(p))return null;const site=FAMS[p.fi].host;return site?'https://'+site+(p.page||p.href||'/people/'+(p.slug||slugify(p.given+' '+p.sur))+'/'):null}   // p.page = this exact person's page; p.href is a name index shared by everyone with that name
+function pick(id,e){
+  const url=pageURL(P[id]);
+  if(url&&e&&(e.metaKey||e.ctrlKey)){window.open(url,'_blank','noopener');return}
+  go(id);
+}
+let MH=null;   // {site,tree,slug} sent by the page around us (the visitor pasted one MyHeritage link); nothing is sent anywhere
+addEventListener('message',e=>{if(e.source!==parent||!e.data||!('mh' in e.data))return;MH=e.data.mh;if(typeof renderPanel==='function'&&P&&P[st.focus])renderPanel()});
+const mhLinks=p=>{const m=/^I(\d{1,6})$/.exec(p.id);if(!MH||!m)return '';const n=MH.tree*1e6+ +m[1],sl=(nm(p)||'person').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,60)||'person';
+  const a=(u,t,i)=>' <a class="btn ibtn" href="'+u+'" target="_blank" rel="noopener noreferrer" title="'+t+'" aria-label="'+t+'">'+ICO[i]+'</a>';
+  return a('https://www.myheritage.com/profile-'+MH.site+'-'+n+'/'+sl,'Open this profile on MyHeritage','person')+a('https://www.myheritage.com/family-trees/'+(MH.slug||'tree')+'/'+MH.site+'?rootIndividualID='+n+'&familyTreeID='+MH.tree,'Open this person in the tree on MyHeritage','tree')};
+/* Where to look: for EVERY place on the person's route, the volumes the Atlas holds for the years they were there, the archives that were responsible
+   in those years, and (folded) everything else the Atlas lists for the place. A place the Atlas does not have yet says so and links to adding it. */
+function lookBlock(p){
+  const end=p.dy||p.by+80;
+  const stops=p.route&&p.route.length?p.route.map((s,i)=>({place:s[0],y:i===0?p.by:s[1]})):[{place:p.bp,y:p.by}].concat(p.dp&&p.dp!==p.bp?[{place:p.dp,y:p.dy||p.my||null}]:[]);
+  stops.forEach((s,i)=>{let nx=null;for(let j=i+1;j<stops.length;j++)if(stops[j].y){nx=stops[j].y;break}
+    s.lo=s.y||(i>0&&stops[i-1].y)||p.by;s.hi=nx||end;if(s.hi<s.lo)s.hi=s.lo});
+  const yr=c=>c[0]==null?'':c[0]===c[1]?c[0]:c[0]+'–'+c[1];
+  const aLink=(u,t)=>'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(clip(t,72))+' ↗</a>';
+  let h='<h3>Where to look</h3><ul class="srcs look">';
+  const seen=new Set();
+  stops.forEach(s=>{
+    if(seen.has(s.place))return;seen.add(s.place);
+    const pl=PL[s.place];if(!pl)return;
+    const near=pl.cols.filter(c=>(c[2]==null||c[2]<=s.hi)&&(c[3]==null||c[3]>=s.lo));
+    const rest=pl.cols.filter(c=>near.indexOf(c)<0),cat=pl.cat||[];
+    const from=s.y?s.lo:null,when=s.lo===s.hi?String(s.lo):s.lo+'–'+s.hi;
+    h+='<li><b>'+esc(s.place)+'</b> <small class="lyr">'+esc(pl.cn)+' · '+(from?'there '+when:'years not recorded')+'</small>';
+    // the archives responsible in those years (the Atlas's region table)
+    const es=pl.reg&&ERA[pl.reg]?ERA[pl.reg].filter(e=>e.to>s.lo&&e.from<=s.hi&&e.filed.length):[];
+    if(near.length)h+='<small class="lh">Volumes for those years</small><ul class="lv">'+near.slice(0,8).map(c=>'<li>'+aLink(c[1],c[0])+' <em>'+yr([c[2],c[3]])+'</em></li>').join('')+'</ul>'+(near.length>8?'<small>and '+(near.length-8)+' more</small>':'');
+    if(es.length)h+='<small class="lh">Archives responsible then</small><ul class="lv">'+es.map(e=>'<li>'+esc(e.polity)+' <em>'+e.from+'–'+e.to+'</em>'
+      +e.filed.slice(0,4).map(k=>' · '+(ATLAS.provurl[k]?aLink(ATLAS.provurl[k],ATLAS.prov[k]||k):esc(ATLAS.prov[k]||k))).join('')+'</li>').join('')+'</ul>';
+    if(!near.length&&!es.length)h+='<small>'+(pl.id?'The Atlas lists no volume or archive for those years yet.':'This place is not in the Atlas yet.')+'</small>';
+    const all=rest.length+cat.length;
+    if(all&&!near.length){const ys=rest.map(c=>[c[2],c[3]]).concat(cat.map(c=>[c[1],c[2]])).filter(y=>y[0]!=null);
+      if(ys.length)h+='<small>'+(all===1?'The one volume the Atlas lists for '+esc(s.place)+' does not cover those years: it runs ':'None of the '+all+' volumes the Atlas lists for '+esc(s.place)+' cover those years: they run ')+Math.min.apply(null,ys.map(y=>y[0]))+'–'+Math.max.apply(null,ys.map(y=>y[1]))+'.</small>'}
+    if(all)h+='<details class="lall"'+(near.length?'':' open')+'><summary>Everything else the Atlas lists for '+esc(s.place)+' ('+all+')</summary><ul class="lv">'
+      +rest.map(c=>'<li>'+aLink(c[1],c[0])+' <em>'+yr([c[2],c[3]])+'</em></li>').join('')
+      +cat.map(c=>'<li>'+esc(clip(c[0],72))+' <em>'+yr([c[1],c[2]])+' · catalogued, not photographed</em></li>').join('')+'</ul></details>';
+    h+='<small><a class="lk" href="'+atlasURL(s.place)+'" target="_blank" rel="noopener">'+(pl.id?'All records for '+esc(s.place)+' in Record Atlas ↗':'Add '+esc(s.place)+' to the Atlas ↗')+'</a></small></li>';
+  });
+  return h+'</ul>';
+}
+function renderPanel(){
+  const p=P[st.focus],A=ancSet(p),D=descSet(p);
+  const gensBack=A.size?Math.max(...A.values()):0;
+  const sibs=new Set();for(const id of [p.father,p.mother])if(id)for(const k of P[id].kids)if(k!==p.id)sibs.add(k);
+  const byLine=Array(8).fill(0);A.forEach((g,id)=>byLine[P[id].fi]++);
+  let h='<div class="head"><div class="swatch" style="background:'+colorOf(p)+'"></div><div><h2>'+(pageURL(p)?'<a class="pname" href="'+pageURL(p)+'" title="Open their page">'+esc(nm(p))+'</a>':esc(nm(p)))+'</h2><div class="meta">'+esc(yrs(p))+' · '+esc(p.id)+'</div></div></div>';
+  h+='<button class="btn ibtn" id="backbtn" title="Back" aria-label="Back"'+(st.hist.length?'':' disabled')+'>'+ICO.back+'</button> <button class="btn" data-goto="kinship">How are we related?</button> <span class="ibg"><button class="btn ibtn" id="copylink" title="Copy link to this person" aria-label="Copy link">'+ICO.copy+'</button>'+mhLinks(p)+'</span>';
+  if(living(p)) h+='<p class="note">Living person. Name and details are withheld on the public site.</p>';
+  else h+='<dl>'+(p.occ?'<dt>Occupation</dt><dd>'+esc(p.occ)+'</dd>':'')+'<dt>Born</dt><dd>'+(p.bye?'about ':'')+p.by+'</dd><dt>Died</dt><dd>'+(p.dy==null?'no death recorded':p.dye?'not recorded':p.dy)+'</dd></dl>';
+  const stat=(k,n,l)=>'<button class="stat" data-open="'+k+'" aria-expanded="'+(st.open===k)+'"'+(n?'':' disabled')+'>'+n+'<small>'+l+(n?' '+(st.open===k?'▴':'▾'):'')+'</small></button>';
+  if(TREE&&p.note)h+='<p class="note"><b>Why the archive holds this person.</b> '+esc(clip(p.note,300))+'</p>';
+  h+='<div class="stats">'+stat('anc',A.size,'Ancestors')+stat('desc',D.size,'Descendants')+stat('sib',sibs.size,'Siblings')+'</div>';
+  if(st.open){
+    const grp=(m,lab)=>{const by={};m.forEach((g,id)=>{(by[g]=by[g]||[]).push(P[id])});
+      return Object.keys(by).map(Number).sort((a,b)=>a-b).map(g=>'<h3>'+lab(g)+' ('+by[g].length+')</h3>'+by[g].sort((a,b)=>a.by-b.by).map(plink).join('')).join('')};
+    const ordn=n=>n===1?'':n===2?'Grand':n===3?'Great-grand':(n-2)+'× great-grand';
+    if(st.open==='anc')h+='<div class="openlist">'+grp(A,g=>g===1?'Parents':ordn(g)+'parents')+'</div>';
+    else if(st.open==='desc')h+='<div class="openlist">'+grp(D,g=>g===1?'Children':ordn(g)+'children')+'</div>';
+    else h+='<div class="openlist"><h3>Siblings ('+sibs.size+')</h3>'+[...sibs].map(id=>P[id]).sort((a,b)=>a.by-b.by).map(plink).join('')+'</div>';
+  }
+  if(A.size){
+    h+='<h3>Ancestry by line · '+gensBack+' generations back</h3><div class="stack">';
+    byLine.forEach((n,i)=>{if(n)h+='<span style="flex:'+n+';background:var(--l'+i+')" title="'+esc(FAMS[i].sur)+': '+n+'"></span>'});
+    h+='</div>';
+  }
+  if(p._orph||p._clus||p._dead){
+    const lk=recLink(p.bp,p.by);
+    h+='<div class="note"><b>'+(p._orph?'Orphan record.':p._clus?'Detached family.':'Dead end.')+'</b> '+(p._orph?'Not joined to anyone in the tree.':p._clus?'Not connected to any tree.':'No parents recorded.')+' To connect: search '+esc(p.bp)+' records around '+p.by+'. <a href="'+lk.u+'" target="_blank" rel="noopener">'+esc(clip(lk.t,48))+' ↗</a> <a href="#" data-goto="orphans" data-okind="'+(p._orph?'orph':p._clus?'clus':'dead')+'">More places to start</a></div>';
+  }
+  if(p.gaps&&p.gaps.length){
+    const gl=p.gaps.filter(x=>!(x.k==='parents'&&(p._orph||p._clus||p._dead)));
+    if(gl.length)h+='<h3>What is missing</h3><ul class="gaps">'+gl.map(x=>'<li>'+esc(x.t)+(x.l.length?'<small>Where to look: '+x.l.slice(0,3).map(l=>(l.u?'<a href="'+esc(l.u)+'" target="_blank" rel="noopener">'+esc(clip(l.w,54))+' ↗</a>':esc(clip(l.w,54)))+' <em>'+esc(l.y)+' · '+esc(l.b)+'</em>').join('; ')+'</small>':'')+'</li>').join('')+'</ul>';
+  }
+  // birth place and death place sit side by side (one column when there is only one place)
+  const two=!living(p)&&p.dp!==p.bp;
+  h+='<h3 class="at">Places · from Record Atlas</h3><div class="plcs'+(two?'':' one')+'">'+placeBlock('Born'+(p.bpe?' · place taken from a relative, not recorded':''),p.bp,p.by)
+    +(two?placeBlock(p.route?'Died':'Died, moved '+(p.mye?'about ':'c.')+p.my,p.dp,p.route?p.dy:p.my||p.dy):'')+'</div>';
+  if(p.route)h+=routeBlock(p);
+  if(!living(p)){
+    const end=p.dy==null?2026:p.dy;
+    const evs=lifeEvents(p,end);
+    const eras=ERA[PL[p.bp].reg]?ERA[PL[p.bp].reg].filter(e=>e.from>p.by&&e.from<=end):[];
+    if(evs.length||eras.length){
+      h+='<h3 class="at">Around their lifetime</h3><ul class="life">';
+      eras.forEach(e=>{h+='<li><b>'+e.from+'</b> · '+esc(e.polity)+'<small>Birthplace changed hands. '+esc(e.note)+'</small></li>'});
+      const li=e=>'<li><b>'+(e.f===e.t?yrB(e.f):yrB(e.f)+'–'+yrB(e.t))+'</b> · '+esc(e.n)+'<small>'+esc(e.at)+' · '+esc(clip(e.toll,120))+'</small></li>';
+      evs.slice(0,5).forEach(e=>{h+=li(e)});
+      if(evs.length>5)h+='<li class="more"><details><summary>'+(evs.length-5)+' more while they lived</summary><ul class="life">'+evs.slice(5).map(li).join('')+'</ul></details></li>';
+      h+='</ul>';
+    }
+  }
+  const par=[p.father,p.mother].filter(Boolean).map(id=>P[id]);
+  if(par.length)h+='<h3>Parents</h3>'+par.map(plink).join('');
+  if(p.spouse.length)h+='<h3>Spouse</h3>'+p.spouse.map(id=>plink(P[id])).join('');
+  const kids=kidsOf(p);
+  if(kids.length)h+='<h3>Children ('+kids.length+')</h3>'+kids.slice(0,8).map(plink).join('')+(kids.length>8?'<small style="color:var(--muted)">and '+(kids.length-8)+' more</small>':'');
+  if(!living(p)){
+    const slug=p.slug||slugify(p.given+' '+p.sur),site=FAMS[p.fi].host;
+    const pg=p.page||p.href||'/people/'+slug+'/';
+    if(site)h+='<h3 class="at">On the family site</h3><p class="fsite"><a href="https://'+site+pg+'" target="_blank" rel="noopener">'+(p.page||p.href?'Their page':'People page')+' ↗</a> · <a href="https://'+site+'/people/" target="_blank" rel="noopener">All '+esc(p.sur)+' people ↗</a><small>'+site+pg+'</small>'+(TREE?'':'<small>Sample person: this page does not exist yet. An imported GEDCOM would create it.</small>')+'</p>';
+    if(TREE){
+      if(p.srcs&&p.srcs.length)h+='<h3>Sources ('+p.srcs.length+')</h3><ul class="srcs">'+p.srcs.map(x=>'<li>'+(x.u?'<a href="'+esc(x.u)+'" target="_blank" rel="noopener">'+esc(clip(x.t,70))+' ↗</a>':esc(clip(x.t,70)))+'</li>').join('')+'</ul>';
+      h+=lookBlock(p);
+    }else h+='<h3>Sources found ('+p.src+')</h3><ul class="srcs">'+sourceRows(p).map(r=>'<li><b>'+esc(r.kind)+'</b> · '+esc(r.place)+', '+r.year+'<small><a href="'+r.link.u+'" target="_blank" rel="noopener">'+esc(clip(r.link.t,64))+' ↗</a> <em>'+r.link.w+'</em></small></li>').join('')+'</ul>';
+  }
+  $('#panel').innerHTML=h;
+  $$('#panel .ico').forEach(el=>el.appendChild(iconEl(el.dataset.place,+el.dataset.year,58,58)));
+  $$('#panel span.fl').forEach(el=>el.replaceWith(flagEl(el.dataset.place,+el.dataset.year,24)));
+  const b=$('#backbtn');if(b)b.onclick=back;
+}
+
+/* ---------- 1 · Hourglass ---------- */
+// the place trail: one birthplace per generation along a line, like a chain of stepping stones
+function renderTrail(){
+  const f=P[st.focus],tr=$('#trail');let path=[f];
+  if(st.tline==='down'){let p=f;for(;;){const k=kidsOf(p)[0];if(!k)break;path.push(k);p=k}}
+  else{const key=st.tline==='mat'?'mother':'father';let p=f;while(p[key]){p=P[p[key]];path.push(p)}path.reverse()}
+  const fi=path.indexOf(f);let h='';
+  path.forEach((p,i)=>{
+    const rel=i-fi,lab=rel===0?'FOCUS':'GEN. '+(rel>0?'+':'−')+Math.abs(rel),pl=PL[p.bp];
+    if(i)h+='<span class="tlk'+(path[i-1].bp!==p.bp?' mv':'')+'"></span>';
+    h+='<div role="button" tabindex="0" class="tc'+(rel===0?' focus':'')+(pl.id?'':' dash')+'" data-id="'+p.id+'" title="'+esc(nm(p))+'">'+iconSVG(PTYPE[p.bp],26)+'<span class="tg">'+lab+'</span><b>'+placeA(p.bp)+(p.bpe?'*':'')+'</b><span class="ty">'+(living(p)?'living':p.by)+'</span><small>'+(pageURL(p)?'<a class="plk" href="'+pageURL(p)+'" title="Open '+esc(nm(p))+'\'s page">'+esc(p.given)+'</a>':esc(living(p)?'Living':p.given))+'</small></div>';
+  });
+  tr.innerHTML=h;
+  if(st.tline!=='down'){   // where the descendants went on to, like the routes on the family sites
+    const dest=new Map();
+    descSet(f).forEach((g,id)=>{const q=P[id];for(const pl of new Set([q.bp,q.dp].filter(Boolean)))if(pl!==f.bp)dest.set(pl,(dest.get(pl)||0)+1)});
+    const top=[...dest].sort((a,b)=>b[1]-a[1]).slice(0,6);
+    if(top.length){
+      const RH=24,Hh=Math.max(60,top.length*RH+8),mid=Hh/2,fan=S('svg',{width:300,height:Hh,viewBox:'0 0 300 '+Hh,class:'tfan','aria-label':'Where the descendants went'});
+      top.forEach(([pl,n],i)=>{
+        const y=RH/2+4+i*RH;
+        S('path',{d:'M0,'+mid+'C90,'+mid+' 80,'+y+' 150,'+y,fill:'none',stroke:'var(--atlas)','stroke-width':n>1?1.6:1.2,'stroke-dasharray':n>1?'':'3 3','stroke-opacity':.75},fan);
+        S('circle',{cx:150,cy:y,r:3.2,fill:'var(--atlas)'},fan);
+        drawFlag(fan,flagAt(pl,2000),158,y-5,15);
+        const la=PL[pl]&&PL[pl].id?S('a',{href:atlasURL(pl),target:'_blank',class:'fanlink'},fan):fan;
+        if(la!==fan)S('title',{},la,'Open '+pl+' in Record Atlas');
+        S('text',{x:179,y:y+4,'font-size':12,'font-family':'var(--sans)',fill:'var(--ink)'},la,clip(pl,18)+' · '+n);
+      });
+      const lk=document.createElement('span');lk.className='tlk mv';tr.appendChild(lk);tr.appendChild(fan);
+    }
+  }
+  const fc=tr.querySelector('.focus');if(fc)tr.scrollLeft=Math.max(0,fc.offsetLeft-tr.clientWidth/2+61);
+}
+function renderHG(){
+  const svg=$('#hg');svg.textContent='';
+  const f=P[st.focus],up=st.up,down=st.down,vert=st.orient==='v',mini=st.card==='mini',simple=st.card==='simple',compact=mini||simple;
+  const CW=mini?78:simple?108:182,CH=mini?78:simple?92:40,PAD=8,LAB=vert?(compact?96:150):0,TOP=vert?10:42;
+  let leaf=0;
+  function lay(p,d){const n={p,d,kids:[]};if(d<down)n.kids=kidsOf(p).map(c=>lay(c,d+1));
+    n.slot=n.kids.length?(n.kids[0].slot+n.kids[n.kids.length-1].slot)/2:leaf++;return n}
+  const tree=lay(f,0);
+  const nDepth=up+down+1,hasSp=f.spouse.length>0;
+  // use the screen: spread the cards out so the canvas fills most of the window height
+  const target=Math.max(500,Math.round(window.innerHeight*.74)),slotsMax=Math.max(1<<up,leaf);
+  let VG=compact?6:8,DG=vert?(compact?30:36):(compact?34:30);
+  if(vert)DG=Math.max(DG,Math.min(96,Math.floor((target-TOP*2)/nDepth-CH)));
+  else VG=Math.max(VG,Math.min(40,Math.floor((target-TOP-PAD-(hasSp?CH+14:0))/slotsMax-CH)));
+  const cs=(vert?CW:CH)+VG,ds=(vert?CH:CW)+DG,span=nDepth*ds-DG;
+  /* room above and below the focus for every descendant slot, so no card rises into the column headings */
+  const sl=[];(function w(n){sl.push(n.slot);n.kids.forEach(w)})(tree);
+  const dUp=(tree.slot-Math.min(...sl))*cs+cs/2,dDown=(Math.max(...sl)-tree.slot)*cs+cs/2;
+  const Hup=(1<<up)*cs,H0=Math.max(Hup,leaf*cs,dUp+dDown),cF=Math.max(H0/2,dUp),H=Math.max(H0,cF+dDown),off=(H-Hup)/2;
+  const W=vert?LAB+PAD*2+H+(hasSp?CW+16:0):PAD*2+span;
+  const Ht=vert?TOP*2+span:TOP+H+PAD+(hasSp?cs+8:0);
+  svg.setAttribute('viewBox','0 0 '+W+' '+Ht);
+  svg.style.width=(st.hz*100)+'%';svg.style.minWidth=Math.round(W*(vert?.9:(compact?.8:.72))*st.hz)+'px';svg.style.margin='0 auto';
+  $('#hztx').textContent='×'+(Math.abs(st.hz-Math.round(st.hz))<.05?Math.round(st.hz):st.hz.toFixed(1));
+  const gE=S('g',{},svg),gC=S('g',{},svg);
+  const dep=g=>vert?TOP+(up+g)*ds:PAD+(up+g)*ds;
+  // generation bands: a tint that fades towards the focus (teal for ancestors, brick for descendants), dividers between them, and a fine grid
+  const gB=S('g',{style:'pointer-events:none','aria-hidden':'true'},svg);svg.insertBefore(gB,svg.firstChild);
+  const gdefs=S('defs',{},gB);
+  for(let g=-up;g<=down;g++){
+    const a=dep(g)-DG/2,id='hgb'+(g+up);
+    const lg=S('linearGradient',vert?{id,x1:0,y1:0,x2:0,y2:1}:{id,x1:0,y1:0,x2:1,y2:0},gdefs);
+    const col='var(--ink)',far=g===0?.035:.07,near=g===0?.035:.01;   // neutral and subtle: no hue
+    S('stop',{offset:0,style:'stop-color:'+col+';stop-opacity:'+(g>0?near:far)},lg);
+    S('stop',{offset:1,style:'stop-color:'+col+';stop-opacity:'+(g>0?far:near)},lg);
+    S('rect',vert?{x:0,y:a,width:W,height:ds,fill:'url(#'+id+')'}:{x:a,y:0,width:ds,height:Ht,fill:'url(#'+id+')'},gB);
+    if(g>-up)S('line',vert?{x1:0,x2:W,y1:a,y2:a,class:'gdiv'}:{x1:a,x2:a,y1:0,y2:Ht,class:'gdiv'},gB);
+  }
+  const gridN=Math.ceil((vert?W-LAB:Ht-TOP)/cs);
+  for(let k=0;k<=gridN;k++){const c=(vert?LAB+PAD:TOP)+k*cs;S('line',vert?{x1:c,x2:c,y1:0,y2:Ht,class:'ggrid'}:{x1:0,x2:W,y1:c,y2:c,class:'ggrid'},gB)}
+  const node=(g,c,w,h)=>vert?{x:LAB+PAD+c-w/2,y:dep(g),w,h}:{x:dep(g),y:TOP+c-h/2,w,h};
+  const nStart=n=>vert?[n.x+n.w/2,n.y]:[n.x,n.y+n.h/2], nEnd=n=>vert?[n.x+n.w/2,n.y+n.h]:[n.x+n.w,n.y+n.h/2];
+  function edge(a,b,weak){const [x1,y1]=a,[x2,y2]=b;S('path',{class:'edge'+(weak?' weak':''),d:vert?'M'+x1+','+y1+'V'+(y1+y2)/2+'H'+x2+'V'+y2:'M'+x1+','+y1+'H'+(x1+x2)/2+'V'+y2+'H'+x2},gE)}
+  const pct=g=>{const v=50/Math.pow(2,g-1);return ' · '+(v>=25?v.toFixed(0):v>=1?String(+v.toFixed(1)):String(+v.toFixed(2)))+'%'};
+  const heads={0:'Focus'};
+  for(let g=1;g<=up;g++)heads[-g]=g===1?'Parents':g===2?'Grandparents':g===3?(compact?'Gt-grandparents':'Great-grandparents'):(g-2)+(compact?'× gt-grandp.':'× great-grandparents');   // any depth
+  for(let d=1;d<=down;d++)heads[d]=d===1?'Children':d===2?'Grandchildren':d===3?(compact?'Gt-grandchildren':'Great-grandchildren'):(d-2)+(compact?'× gt-grandch.':'× great-grandchildren');
+  for(let g=-up;g<=down;g++){
+    const pc=g===0?'':pct(Math.abs(g));
+    if(vert)S('text',{class:'colh',x:PAD,y:dep(g)+CH/2+3},svg,compact?clip(heads[g]+pc,22):heads[g]+pc);
+    else{S('text',{class:'colh',x:dep(g),y:12},svg,heads[g]);if(pc)S('text',{class:'colh pc',x:dep(g),y:25},svg,pc.replace(/^ · /,'')+' related')}
+  }
+  // the name in a card is an ordinary link to that person's own page; the rest of the card re-centres the views
+  function nameHost(g,p){const u=pageURL(p);return u?S('a',{class:'plk',href:u},g):g}
+  function card(p,n,o){
+    o=o||{};
+    const g=S('g',{class:'card'+(o.focus?' focus':'')+(o.dash?' dash':'')+(simple?' simple':''),transform:'translate('+n.x+','+n.y+')',tabindex:0,role:'button','data-id':p.id,'aria-label':nm(p)+', '+yrs(p)},gC);
+    S('title',{},g,nm(p)+' · '+yrs(p)+' · born '+p.bp);
+    S('rect',{class:'cbody',width:CW,height:CH,rx:mini?4:simple?9:5},g);
+    S('rect',mini?{width:CW,height:5,rx:2,fill:colorOf(p)}:simple?{x:14,y:CH-5,width:CW-28,height:3,rx:1.5,fill:colorOf(p)}:{width:5,height:CH,rx:2,fill:colorOf(p)},g);
+    if(mini){
+      // square tile: birthplace map and flag on top, name and year underneath
+      drawFlag(g,flagAt(p.bp,p.by),(CW-54)/2,10,54);
+      S('text',{class:'cmini',x:CW/2,y:CH-19,'text-anchor':'middle'},g,clip(living(p)?'Living':p.given[0]+'. '+p.sur,12));
+      S('text',{class:'cyr',x:CW/2,y:CH-7,'text-anchor':'middle'},g,yrs(p));
+    }else if(simple){
+      // simple tile: place-type icon, generation, name, year and place
+      placeIcon(g,PTYPE[p.bp],CW/2,17,22);
+      S('text',{class:'sgen',x:CW/2,y:40,'text-anchor':'middle'},g,o.gen||'');
+      S('text',{class:'sname',x:CW/2,y:56,'text-anchor':'middle'},nameHost(g,p),clip(nm(p),15));
+      S('text',{class:'syr',x:CW/2,y:70,'text-anchor':'middle'},g,living(p)?'living':clip(p.by+' · '+p.bp,19));
+    }else{
+      S('text',{class:'cname',x:13,y:16},nameHost(g,p),clip(nm(p),20));
+      S('text',{class:'cmeta',x:13,y:30},g,clip(yrs(p)+(living(p)?'':' · '+p.bp+(p.bpe?'*':'')),23));
+      drawFlag(g,flagAt(p.bp,p.by),CW-42,(CH-24)/2,36);
+    }
+  }
+  const rows=slots(f,up);
+  const nodes=[];
+  for(let g=0;g<=up;g++){
+    nodes[g]=[];
+    for(let i=0;i<rows[g].length;i++){
+      const p=rows[g][i],c=off+(i+.5)*Hup/(1<<g);
+      if(g>0){
+        const child=rows[g-1][i>>1];
+        if(!child){nodes[g][i]=null;continue}
+        if(!p){const gn=node(-g,c,CW*.5,16);nodes[g][i]=gn;
+          S('rect',{class:'ghost',x:gn.x,y:gn.y,width:gn.w,height:gn.h,rx:4},gE);S('text',{class:'ghosttx',x:gn.x+8,y:gn.y+11},gE,'unknown');
+          edge(nStart(nodes[g-1][i>>1]),nEnd(gn));continue}
+        const n=node(-g,c,CW,CH);nodes[g][i]=n;
+        edge(nStart(nodes[g-1][i>>1]),nEnd(n),linkG(child,p)===0);card(p,n,{gen:'GEN. −'+g});
+      }else{nodes[0][0]=node(0,cF,CW,CH)}
+    }
+  }
+  (function draw(n,pn){
+    for(const k of n.kids){
+      const c=cF+(k.slot-tree.slot)*cs,nn=node(k.d,c,CW,CH);k.node=nn;
+      edge(nEnd(n.node||pn),nStart(nn),linkG(k.p,n.p)===0);card(k.p,nn,{gen:'GEN. +'+k.d});draw(k,n.node||pn);
+    }
+  })(Object.assign(tree,{node:nodes[0][0]}),nodes[0][0]);
+  card(f,nodes[0][0],{focus:true,gen:'FOCUS'});
+  if(hasSp){
+    const fn=nodes[0][0],sp=P[f.spouse[0]];
+    const sn=vert?{x:fn.x+CW+16,y:fn.y,w:CW,h:CH}:{x:fn.x,y:fn.y+CH+10,w:CW,h:CH};
+    S('path',{class:'edge',d:vert?'M'+(fn.x+CW)+','+(fn.y+CH/2)+'H'+sn.x:'M'+(fn.x+CW/2)+','+(fn.y+CH)+'V'+sn.y},gE);
+    card(sp,sn,{dash:true,gen:'SPOUSE'});
+  }
+  renderTrail();
+  const sc=svg.parentNode,fcx=nodes[0][0].x+CW/2,fcy=nodes[0][0].y+CH/2;
+  requestAnimationFrame(()=>{
+    if(st.keep){st.keep=false;return}
+    const k=svg.getBoundingClientRect().width/W;
+    sc.scrollLeft=Math.max(0,fcx*k-sc.clientWidth/2);sc.scrollTop=Math.max(0,fcy*k-sc.clientHeight/2);
+  });
+}
+function hzoom(z,cx,cy){
+  const sc=$('#hg').parentNode,old=st.hz;z=Math.min(3,Math.max(.4,z));if(z===old)return;
+  const sl=sc.scrollLeft,sT=sc.scrollTop;st.hz=z;st.keep=true;renderHG();
+  sc.scrollLeft=(sl+cx)*(z/old)-cx;sc.scrollTop=(sT+cy)*(z/old)-cy;edges(sc);
+}
+const hgc=()=>$('#hg').parentNode;
+$('#hzi').onclick=()=>hzoom(st.hz*1.3,hgc().clientWidth/2,hgc().clientHeight/2);
+$('#hzo').onclick=()=>hzoom(st.hz/1.3,hgc().clientWidth/2,hgc().clientHeight/2);
+$('#hzf').onclick=()=>{st.hz=1;st.keep=false;renderHG()};
+hgc().addEventListener('wheel',e=>{
+  if(!(e.ctrlKey||e.metaKey))return;e.preventDefault();
+  const r=e.currentTarget.getBoundingClientRect();
+  hzoom(st.hz*(e.deltaY<0?1.15:1/1.15),e.clientX-r.left,e.clientY-r.top);
+},{passive:false});
+
+/* ---------- 2 · Fan ---------- */
+function renderFan(){
+  const svg=$('#fan');svg.textContent='';
+  const G=st.gens,R0=50,RO=350,t=(RO-R0)/G,cx=RO+16,cy=RO+16;
+  svg.setAttribute('viewBox','0 0 '+(2*cx)+' '+(cy+58));
+  svg.style.width='100%';svg.style.minWidth='560px';svg.style.maxWidth='900px';svg.style.margin='0 auto';
+  const f=P[st.focus],rows=slots(f,G);
+  const pt=(r,a)=>[cx+r*Math.cos(a*Math.PI/180),cy-r*Math.sin(a*Math.PI/180)];
+  const fs=[0,12,10.5,9.5,8.5,7.5,7];
+  const counts=Array(8).fill(0);
+  for(let g=1;g<=G;g++){
+    const n=1<<g,span=180/n,r1=R0+(g-1)*t,r2=R0+g*t;
+    for(let i=0;i<n;i++){
+      const p=rows[g][i],child=rows[g-1][i>>1];
+      if(!p&&!child)continue;
+      const a1=180-i*span,a2=a1-span;
+      const A=pt(r2,a1),B=pt(r2,a2),C=pt(r1,a2),D=pt(r1,a1);
+      const d='M'+A+'A'+r2+','+r2+' 0 0 1 '+B+'L'+C+'A'+r1+','+r1+' 0 0 0 '+D+'Z';
+      if(!p){S('path',{d,class:'gap'},svg);continue}
+      counts[p.fi]++;
+      const gp=S('g',{class:'sec',tabindex:0,role:'button','data-id':p.id,'aria-label':nm(p)+', '+yrs(p)},svg);
+      S('title',{},gp,nm(p)+' · '+yrs(p)+' · born '+p.bp);
+      S('path',{d,fill:colorOf(p)},gp);
+      const am=a1-span/2,rm=(r1+r2)/2,T=pt(rm,am);
+      if(g===1){
+        S('text',{x:T[0],y:T[1]-2,'text-anchor':'middle','font-size':fs[1]},gp,living(p)?'Living':p.given);
+        S('text',{x:T[0],y:T[1]+12,'text-anchor':'middle','font-size':fs[1]},gp,p.sur);
+        S('text',{x:T[0],y:T[1]+25,'text-anchor':'middle','font-size':9,'font-family':'var(--mono)','font-weight':400},gp,yrs(p));
+      }else{
+        const rot=am>90?180-am:-am;
+        const label=g===2?nm(p):(living(p)?'Living':p.given[0]+'. '+p.sur);
+        const max=Math.floor(t/(fs[g]*.54));
+        S('text',{x:T[0],y:T[1]+fs[g]*.35,'text-anchor':'middle','font-size':fs[g],transform:'rotate('+rot+' '+T[0]+' '+T[1]+')'},gp,clip(label,max));
+      }
+    }
+  }
+  const hub=S('g',{},svg);
+  S('circle',{class:'hub',cx,cy,r:R0-3},hub);
+  S('text',{x:cx,y:cy-12,'text-anchor':'middle','font-family':'var(--serif)','font-weight':600,'font-size':12,fill:'var(--ink)'},hub,living(f)?'Living':clip(f.given,13));
+  S('text',{x:cx,y:cy+3,'text-anchor':'middle','font-family':'var(--serif)','font-weight':600,'font-size':12,fill:'var(--ink)'},hub,clip(f.sur,13));
+  S('text',{x:cx,y:cy+18,'text-anchor':'middle','font-family':'var(--mono)','font-size':8.5,fill:'var(--muted)'},hub,yrs(f));
+  let lg='';
+  counts.forEach((n,i)=>{if(n)lg+='<span><i style="background:var(--l'+i+')"></i>'+esc(FAMS[i].sur)+' <em>'+n+'</em></span>'});
+  const kids=kidsOf(f);
+  if(kids.length)lg+='<span style="margin-left:auto;color:var(--muted)">Children:</span>'+kids.slice(0,4).map(k=>'<button data-id="'+k.id+'"><i style="background:'+colorOf(k)+'"></i>'+esc(living(k)?'Living':k.given)+'</button>').join('');
+  $('#fanlegend').innerHTML=lg;
+}
+
+/* ---------- 3 · Whole-tree map ---------- */
+const ML=112,MR=14;let Y0=1720,Y1=2030;
+/* Few people are born before 1700 (6%), so a plain year scale left the left third of the plot empty. When the axis starts earlier than CUT, everything before CUT is squeezed into the first EB of the plot (a band marked "before 1700"); from CUT on the scale is linear. */
+const CUT=1700,EB=.07;
+const fr=y=>Y0>=CUT?(y-Y0)/(Y1-Y0):(y<CUT?(y-Y0)/(CUT-Y0)*EB:EB+(y-CUT)/(Y1-CUT)*(1-EB));
+const CTY=(()=>{const c={};list.forEach(p=>{const k=PL[p.bp].cn;c[k]=(c[k]||0)+1});return Object.keys(c).sort((a,b)=>c[b]-c[a]).slice(0,8)})();
+const ctyVar=c=>'var(--l'+(CTY.indexOf(c)<0?7:CTY.indexOf(c))+')';
+const ALLY0=Math.floor(Math.min(...list.map(p=>p.by))/10)*10-5;
+function fitBox(){
+  const lo=ATLAS.places.map(p=>p.lon),la=ATLAS.places.map(p=>p.lat),cx=(Math.min(...lo)+Math.max(...lo))/2,cy=-(Math.min(...la)+Math.max(...la))/2;
+  const w=Math.max((Math.max(...lo)-Math.min(...lo))*1.35,14),h=Math.max((Math.max(...la)-Math.min(...la))*1.5,9),W=Math.max(w,h/.58);
+  return{cx,cy,w:W,h:W*.58,x:cx-W/2,y:cy-W*.58/2,eu:Math.min(...lo)>-13&&Math.max(...lo)<50&&Math.min(...la)>30&&Math.max(...la)<62};
+}
+const FIT=fitBox();
+// close family: ancestors, descendants, and everyone who descends from a grandparent or great-grandparent
+// (siblings, aunts and uncles, 1st and 2nd cousins)
+function closeSet(id){
+  const p=P[id],s=new Set([id]),A=ancSet(p);
+  A.forEach((g,k)=>s.add(k));
+  descSet(p).forEach((g,k)=>s.add(k));
+  A.forEach((g,aid)=>{if(g<=3)(function w(q,d){for(const c of kidsOf(q))if(d<=g){s.add(c.id);w(c,d+1)}})(P[aid],1)});
+  return s;
+}
+let mapGeo=null,laneCache=null;
+/* LOCAL CHANGE (Record Atlas copy): past CANVAS_AT dots the whole-tree map paints its dots on one canvas instead of one SVG circle each
+   (100,000 circles took ~0.5 s per click). The lanes, grid, pedigree lines and names stay SVG; hover and click find the nearest dot. */
+const CANVAS_AT=4000;let cvGrid=null;
+const cvColor=(c,cs)=>{const m=/^var\((--[\w-]+)\)$/.exec(c);return m?(cs.getPropertyValue(m[1]).trim()||'#888'):c};
+function paintCv(d,W,H,on){
+  const cv=$('#mapcv');cvGrid=null;
+  if(!on){cv.hidden=true;return}
+  const dpr=Math.min(2,window.devicePixelRatio||1),ctx=cv.getContext('2d'),cs=getComputedStyle($('#map'));
+  cv.hidden=false;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);cv.style.width=W+'px';cv.style.height=H+'px';
+  ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,W,H);
+  const col=new Map(),cc=c=>{if(!c)return null;let v=col.get(c);if(v===undefined){v=cvColor(c,cs);col.set(c,v)}return v};
+  const grid=new Map();
+  d.forEach((q,i)=>{
+    ctx.globalAlpha=q[4];ctx.fillStyle=cc(q[3]);ctx.beginPath();ctx.arc(q[0],q[1],q[2],0,6.2832);ctx.fill();
+    if(q[5]||q[6]){ctx.globalAlpha=1;ctx.strokeStyle=cc(q[6]||q[5]);ctx.lineWidth=q[6]?2:1.4;ctx.stroke()}
+    const k=Math.floor(q[0]/12)+','+Math.floor(q[1]/12);let a=grid.get(k);if(!a)grid.set(k,a=[]);a.push(i);
+  });
+  ctx.globalAlpha=1;cvGrid={d,grid};
+}
+function cvHit(e){
+  if(!cvGrid)return null;
+  const b=$('#map').getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top,gx=Math.floor(x/12),gy=Math.floor(y/12);let best=null,bd=1e9;
+  for(let i=-1;i<=1;i++)for(let j=-1;j<=1;j++)for(const k of cvGrid.grid.get((gx+i)+','+(gy+j))||[]){
+    const q=cvGrid.d[k],dd=(q[0]-x)**2+(q[1]-y)**2;if(dd<bd&&dd<=(q[2]+3)**2){bd=dd;best=q[7]}
+  }
+  return best;
+}
+function renderMap(){
+  const svg=$('#map'),wrap=svg.parentNode;
+  const W=Math.max(520,wrap.clientWidth||900),plotW=W-ML-MR;
+  const clampTx=tx=>Math.min(0,Math.max(-(plotW*st.zoom-plotW),tx));
+  {const cm=st.mapscope==='close';if(cm){const ids=closeSet(st.focus);Y0=Math.floor(Math.min(...[...ids].map(id=>P[id].by))/10)*10-5;Y1=2030}else{Y0=ALLY0;Y1=2030}}
+  const xOf=y=>ML+fr(y)*plotW*st.zoom+st.tx;
+  const fp=P[st.focus],fx=xOf(fp.by);
+  if(fx<ML||fx>W-MR){ if(st.zoom>1){st.tx=clampTx(-(fr(fp.by)*plotW*st.zoom-plotW/2))} }
+  st.tx=clampTx(st.tx);
+  const closeMode=st.mapscope==='close',cty=st.mcolor==='country';
+  const pool=closeMode?[...closeSet(st.focus)].map(id=>P[id]):list,poolIds=new Set(pool.map(p=>p.id));
+  if(closeMode){Y0=Math.floor(Math.min(...pool.map(p=>p.by))/10)*10-5;Y1=2030}else{Y0=ALLY0;Y1=2030}
+  const fillOf=p=>cty?ctyVar(PL[p.bp].cn):colorOf(p);
+  const GAPX=closeMode?10:7,RH=closeMode?15:7;
+  const gk=p=>st.mgroup==='country'?PL[p.bp].cn:FAMS[p.fi].sur;
+  /* LOCAL CHANGE (Record Atlas copy): the whole-tree lane layout (grouping, sorting, row packing of every dot) is the same for every click, so it is kept
+     until the row grouping or the width changes. Colours are set per draw. */
+  const lk=closeMode?null:st.mgroup+'|'+plotW+'|'+pool.length;
+  let lanes,y;
+  if(lk&&laneCache&&laneCache.k===lk){lanes=laneCache.lanes;y=laneCache.y}
+  else{
+  const byKey=new Map();
+  for(const p of pool){const k=gk(p);if(!byKey.has(k))byKey.set(k,[]);byKey.get(k).push(p)}
+  let keys=[...byKey.keys()];
+  const CAPR=(!closeMode&&pool.length>CANVAS_AT)?Math.max(6,Math.floor(4000/(RH*Math.max(1,keys.length)))):1e9;
+  if(st.mgroup==='country')keys.sort((a,b)=>byKey.get(b).length-byKey.get(a).length);
+  else keys.sort((a,b)=>FAMS.findIndex(f=>f.sur===a)-FAMS.findIndex(f=>f.sur===b));
+  lanes=keys.map(k=>({key:k,people:byKey.get(k),y0:0,h:0,color:st.mgroup==='line'?(cty?'var(--ink)':'var(--l'+FAMS.findIndex(f=>f.sur===k)+')'):(cty?ctyVar(k):'var(--ink)')}));
+  y=24;
+  for(const L of lanes){
+    L.people.sort((a,b)=>a.by-b.by);
+    const ends=[];
+    for(const p of L.people){
+      const x=fr(p.by)*plotW;let r=0;
+      while(ends[r]!==undefined&&ends[r]>x-GAPX)r++;
+      ends[r]=x;p._row=r;p._lane=L;
+    }
+    if(ends.length>CAPR){for(const p of L.people)p._row%=CAPR}   // a very big tree: dots share rows (density shows) so the map stays a drawable height
+    L.nrows=Math.max(closeMode?3:2,Math.min(CAPR,ends.length));L.y0=y;L.h=L.nrows*RH+(closeMode?30:16);y+=L.h;
+  }
+  if(lk)laneCache={k:lk,lanes,y};
+  }
+  for(const L of lanes)L.color=st.mgroup==='line'?(cty?'var(--ink)':'var(--l'+FAMS.findIndex(f=>f.sur===L.key)+')'):(cty?ctyVar(L.key):'var(--ink)');
+  const H=y+4;
+  svg.setAttribute('width',W);svg.setAttribute('height',H);svg.textContent='';
+  mapGeo={W,plotW,clampTx,xOf,H};
+  const defs=S('defs',{},svg),cp=S('clipPath',{id:'plotclip'},defs);
+  S('rect',{x:ML,y:0,width:plotW,height:H},cp);
+  lanes.forEach((L,i)=>{
+    if(i%2===0)S('rect',{x:0,y:L.y0,width:W,height:L.h,fill:'var(--band)'},svg);
+    S('text',{class:'lane',x:10,y:L.y0+L.h/2-1,fill:L.color},svg,L.key);
+    S('text',{class:'lanec',x:10,y:L.y0+L.h/2+11},svg,L.people.length+' people');
+  });
+  /* the smallest step that keeps neighbouring labels about 42px apart, so a narrow panel thins its labels instead of printing them on top of each other */
+  const ppy=plotW*st.zoom*(1-(Y0<CUT?EB:0))/(Y1-Math.max(Y0,CUT)),step=[5,10,25,50,100].find(k=>k*ppy>=42)||100;
+  for(let yr=Math.ceil(Math.max(Y0,CUT)/step)*step;yr<=2025;yr+=step){
+    const x=xOf(yr);if(x<ML-2||x>W-MR+2)continue;
+    S('line',{class:'grid',x1:x,x2:x,y1:16,y2:H},svg);
+    S('text',{class:'tick',x:x,y:11,'text-anchor':'middle'},svg,yr);
+  }
+  if(Y0<CUT){const xe=xOf(Y0);if(xe>=ML-2&&xe<W-MR-30&&xOf(CUT)-xe>=52)S('text',{class:'tick',x:xe+2,y:11,'text-anchor':'start'},svg,'<'+CUT)}
+  const g=S('g',{'clip-path':'url(#plotclip)'},svg);
+  const ped=pedigree(st.focus),q=st.q.trim().toLowerCase();
+  const pos=p=>[xOf(p.by),p._lane.y0+(closeMode?17:10)+p._row*RH];
+  for(const id of (closeMode?poolIds:ped)){
+    const p=P[id];
+    for(const par of [p.father,p.mother]){
+      if(par&&(closeMode?poolIds:ped).has(par)){const a=pos(P[par]),b=pos(p);
+        if(Math.max(a[0],b[0])<ML||Math.min(a[0],b[0])>W)continue;
+        S('line',{x1:a[0],y1:a[1],x2:b[0],y2:b[1],stroke:'var(--ink)','stroke-opacity':.45,'stroke-width':1},g)}
+    }
+  }
+  if(st.kinShow&&st.kinSeq)st.kinSeq.forEach((seq,si)=>{
+    for(let i=1;i<seq.length;i++){
+      const a=seq[i-1],b=seq[i];if(!poolIds.has(a.id)||!poolIds.has(b.id))continue;
+      const pa=pos(a),pb=pos(b);
+      S('line',{x1:pa[0],y1:pa[1],x2:pb[0],y2:pb[1],stroke:si?'var(--brick)':'var(--atlas)','stroke-width':3.4,'stroke-linecap':'round'},g);
+    }
+  });
+  const useCv=!closeMode&&pool.length>CANVAS_AT,cvd=[];
+  const r=2.5+(closeMode?1.2:0)+Math.min(st.zoom,8)*.2,showNames=st.zoom>=6||(closeMode&&pool.length<=120&&st.zoom>=1.6);
+  for(const p of pool){
+    const [x,yy]=pos(p);if(x<ML-6||x>W+6)continue;
+    const inPed=ped.has(p.id),match=q&&nameHit(p,q);
+    let op=(inPed||closeMode)?1:.32;
+    if(cty){if(st.cty&&PL[p.bp].cn!==st.cty)op=.07}else if(st.line!==null&&p.fi!==st.line)op=.07;
+    if(q&&!match)op=Math.min(op,.12);
+    if(match)op=1;
+    if(useCv)cvd.push([x,yy,p.id===st.focus?r+3:(match?r+1.5:r),fillOf(p),op,(p._orph||p._clus)?'var(--brick)':null,(p.id===st.focus||match)?'var(--ink)':null,p.id]);
+    else{
+    const c=S('circle',{class:'dot',cx:x,cy:yy,r:p.id===st.focus?r+3:(match?r+1.5:r),fill:fillOf(p),opacity:op,'data-id':p.id},g);
+    if(p._orph||p._clus){c.setAttribute('stroke','var(--brick)');c.setAttribute('stroke-width',1.4)}
+    if(p.id===st.focus||match){c.setAttribute('stroke','var(--ink)');c.setAttribute('stroke-width',p.id===st.focus?2:1.4)}
+    }
+    if(showNames&&op>.3&&(inPed||closeMode))S('text',{x:x+r+3,y:yy+3,'font-size':9,fill:'var(--ink)','font-family':'var(--sans)',style:'pointer-events:none'},g,clip(nm(p),22));
+  }
+  paintCv(cvd,W,H,useCv);
+  if(cty){
+    const cc={};pool.forEach(p=>{const c=PL[p.bp].cn;cc[c]=(cc[c]||0)+1});
+    $('#maplegend').innerHTML='<span style="color:var(--muted)">Colour = birth country. Click one to isolate it:</span>'+CTY.filter(c=>cc[c]).map(c=>'<button data-cty="'+esc(c)+'" aria-pressed="'+(st.cty===c)+'"><i style="background:'+ctyVar(c)+'"></i>'+esc(c)+' <em>'+cc[c]+'</em></button>').join('');
+  }else{
+    const cnt=Array(8).fill(0);pool.forEach(p=>cnt[p.fi]++);
+    $('#maplegend').innerHTML='<span style="color:var(--muted)">Click a line to isolate it:</span>'+FAMS.map((f,i)=>'<button data-line="'+i+'" aria-pressed="'+(st.line===i)+'"><i style="background:var(--l'+i+')"></i>'+esc(f.sur)+' <em>'+cnt[i]+'</em></button>').join('');
+  }
+  $('#mapnote').textContent=closeMode?"Last names down the left, birth year across, one dot per person. This shows the selected person's ancestors, descendants, siblings, aunts and uncles, and 1st and 2nd cousins, coloured by birth country. Select someone else to redraw it. Use Filters to switch to the whole tree.":"Every person as one dot: birth year across, then either family line or birth country down. Built for the whole file. Search lights people up; the focus person's ancestors and descendants stay bright. Use Filters to show only close family.";
+  if(closeMode){
+    const A=ancSet(fp),D=descSet(fp),sib=new Set();for(const id of [fp.father,fp.mother])if(id)P[id].kids.forEach(k=>{if(k!==fp.id)sib.add(k)});
+    $('#mapsum').textContent='Close family of '+nm(fp)+': '+pool.length+' people · '+A.size+' ancestors · '+D.size+' descendants · '+sib.size+' siblings · '+(pool.length-1-A.size-D.size-sib.size)+' aunts, uncles and cousins';
+  }else $('#mapsum').textContent='Whole tree: '+pool.length+' people';
+  if(st.kinShow)$('#mapsum').insertAdjacentHTML('beforeend',' <button class="btn" data-clearkin="1">Clear relationship path</button>');
+}
+function zoomAt(mx,f){
+  if(!mapGeo)return;
+  const z1=st.zoom,z2=Math.min(14,Math.max(1,z1*f));
+  st.tx=(mx-ML)-((mx-ML-st.tx)/z1)*z2;st.zoom=z2;st.tx=mapGeo.clampTx(st.tx);renderMap();
+}
+let drag=null,raf=0;
+const mapSvg=$('#map');
+mapSvg.addEventListener('pointerdown',e=>{drag={x:e.clientX,tx:st.tx,moved:false}});
+window.addEventListener('pointermove',e=>{
+  if(!drag||!mapGeo)return;
+  const dx=e.clientX-drag.x;if(Math.abs(dx)>4)drag.moved=true;
+  if(drag.moved&&!raf){raf=requestAnimationFrame(()=>{raf=0;if(drag){st.tx=mapGeo.clampTx(drag.tx+dx);renderMap()}})}
+});
+window.addEventListener('pointerup',()=>{if(drag&&drag.moved){st.suppress=true;setTimeout(()=>{st.suppress=false},0)}drag=null});
+mapSvg.addEventListener('wheel',e=>{
+  if(!(e.ctrlKey||e.metaKey))return;e.preventDefault();
+  const r=mapSvg.getBoundingClientRect();zoomAt(e.clientX-r.left,e.deltaY<0?1.25:.8);
+},{passive:false});
+$('#zi').onclick=()=>zoomAt(mapGeo?mapGeo.W/2:400,1.5);
+$('#zo').onclick=()=>zoomAt(mapGeo?mapGeo.W/2:400,1/1.5);
+$('#zr').onclick=()=>{st.zoom=1;st.tx=0;renderMap()};
+const tip=$('#tip');
+mapSvg.addEventListener('mousemove',e=>{
+  const c=e.target.closest&&e.target.closest('[data-id]'),hid=c?c.dataset.id:cvHit(e);
+  if(!hid||drag){tip.hidden=true;return}
+  const p=P[hid],sr=$('#mapstage').getBoundingClientRect();
+  tip.innerHTML=esc(nm(p))+'<small>'+esc(yrs(p))+(living(p)?'':' · '+esc(p.bp))+'</small>';
+  tip.hidden=false;
+  tip.style.left=Math.min(e.clientX-sr.left+14,sr.width-tip.offsetWidth-8)+'px';tip.style.top=(e.clientY-sr.top+14)+'px';
+});
+mapSvg.addEventListener('mouseleave',()=>{tip.hidden=true});
+mapSvg.addEventListener('click',e=>{const id=cvHit(e);if(id&&!st.suppress)pick(id,e)});
+
+/* ---------- 4 · Movements ---------- */
+const VBOX={global:{x:-82,y:-66,w:240,h:112,land:'world',lab:false},europe:{x:-12,y:-60,w:46,h:28,land:'eu',lab:true},fit:{x:FIT.x,y:FIT.y,w:FIT.w,h:FIT.h,land:FIT.eu?'eu':'world',lab:true}};
+const inEu=n=>{const p=PL[n];return p.lat>30&&p.lat<62&&p.lon>-13&&p.lon<50};
+function residentAt(p,yr){
+  if(p.by>yr||(p.dy!=null&&p.dy<yr)||(p.dy==null&&yr>2025))return null;
+  if(p.route){   // born at the first stop; after that only the place of the latest stop with a year; between undated stops nobody is placed
+    if(yr===p.by)return p.route[0][0];
+    let at=p.route[0][0],unk=false;
+    for(let i=1;i<p.route.length;i++){const s=p.route[i];if(s[1]==null){unk=true;continue}if(yr>=s[1]){at=s[0];unk=false}else break}
+    return unk?(p.dy!=null&&yr>=p.dy?p.dp:null):at;
+  }
+  return(p.my&&yr>=p.my)?p.dp:p.bp}
+function renderMove(){
+  const svg=$('#mv'),V=VBOX[st.mview],W=Math.max(520,svg.parentNode.clientWidth||900),H=Math.round(W*V.h/V.w),k=V.w/W;
+  svg.setAttribute('width',W);svg.setAttribute('height',H);svg.setAttribute('viewBox',V.x+' '+V.y+' '+V.w+' '+V.h);svg.textContent='';
+  const yr=st.year,scope=scopeSet(st.mscope);
+  $('#yr').value=yr;$('#yrtxt').textContent=yr;
+  S('rect',{x:V.x,y:V.y,width:V.w,height:V.h,fill:'var(--sea)'},svg);
+  S('use',{href:V.land==='eu'?'#land-eu':'#land-world',fill:'var(--land)',stroke:'var(--coast)','stroke-width':.8},svg);
+  // residents by place
+  const res=new Map();
+  for(const p of list){if(scope&&!scope.has(p.id))continue;const pl=residentAt(p,yr);if(pl)res.set(pl,(res.get(pl)||0)+1)}
+  // arcs
+  const ga=S('g',{},svg);
+  MOVES.forEach(m=>{
+    const vy=mvYear(m);if(vy>yr||(scope&&!scope.has(m.p)))return;
+    const A=PL[m.a],B=PL[m.b],x1=A.lon,y1=-A.lat,x2=B.lon,y2=-B.lat,dx=x2-x1,dy=y2-y1,d=Math.hypot(dx,dy);
+    if(d<.01)return;
+    const hs=[...m.p].reduce((a,ch)=>(a*31+ch.charCodeAt(0))>>>0,7),sg=hs%2?1:-1,c=(.16+(hs%4)*.04)*sg;
+    const cxp=(x1+x2)/2-dy*c,cyp=(y1+y2)/2+dx*c;
+    const age=yr-vy,recent=age<=60,p=P[m.p];
+    const path=S('path',{class:'arc','data-id':m.p,d:'M'+x1+','+y1+'Q'+cxp+','+cyp+' '+x2+','+y2,stroke:colorOf(p),'stroke-width':recent?1.7:1,'stroke-opacity':m.und?.5:recent?.85:.16,'vector-effect':'non-scaling-stroke'},ga);if(m.est)path.setAttribute('stroke-dasharray','5 4');
+    S('title',{},path,nm(p)+': '+m.a+' → '+m.b+', '+(m.und?'date not recorded':(m.est?'about ':'')+m.y)+(m.k==='family'?' (family had moved by the birth)':m.k==='route'?' (stop '+(P[m.p].route.findIndex(s=>s[0]===m.b)+1)+' of '+P[m.p].route.length+' in the roster)':''));
+    if(recent)S('circle',{cx:x2,cy:y2,r:2.2*k,fill:colorOf(p),opacity:.9,style:'pointer-events:none'},ga);
+  });
+  // nodes
+  const gn=S('g',{},svg);
+  res.forEach((n,place)=>{
+    const pl=PL[place],e=eraAt(place,yr),r=(3.2+Math.sqrt(n)*1.5)*k;
+    const c=S('circle',{cx:pl.lon,cy:-pl.lat,r,fill:e?rgv(e.rg):'var(--hair)',stroke:'var(--panel)','stroke-width':1.5,'vector-effect':'non-scaling-stroke',opacity:.92},gn);
+    S('title',{},c,place+': '+n+' people'+(e?' · '+e.polity:' · not surveyed in the Atlas yet'));
+    if(V.lab||(!inEu(place)&&n>=1))S('text',{class:'nodelab',x:pl.lon+r+1.5*k,y:-pl.lat+3*k,'font-size':10.5*k,'stroke-width':3*k},gn,place+' '+n);
+  });
+  if(!res.size)S('text',{x:V.x+V.w/2,y:V.y+V.h/2,'text-anchor':'middle','font-size':12*k,fill:'var(--muted)'},svg,'Nobody in this scope is alive in '+yr);
+  // context
+  const top=[...res.entries()].sort((a,b)=>b[1]-a[1]).slice(0,6);
+  let h='';
+  for(const [place,n] of top){
+    const e=eraAt(place,yr),evs=eventsFor(place,yr,yr);
+    h+='<div class="c"><span class="ico" data-place="'+esc(place)+'" data-year="'+yr+'"></span><div><b>'+placeA(place)+'<span class="fl" data-place="'+esc(place)+'" data-year="'+yr+'"></span> <small style="display:inline">'+n+' living</small></b>';
+    h+=e?'<span class="chip rg" style="background:'+rgv(e.rg)+'">'+esc(ATLAS.regimes[e.rg].label)+'</span><small>'+esc(e.polity)+'</small>':'<small>Not surveyed in the Atlas yet</small>';
+    evs.forEach(ev=>{h+='<span class="chip ev" title="'+esc(ev.says)+'">'+esc(clip(ev.n,34))+'</span>'});
+    h+='<a class="lk" style="font-size:12px" href="'+atlasURL(place)+'" target="_blank" rel="noopener">Atlas ↗</a></div></div>';
+  }
+  $('#ctx').innerHTML=h||'<small style="color:var(--muted)">No context for this year.</small>';
+  $$('#ctx .ico').forEach(el=>el.appendChild(iconEl(el.dataset.place,+el.dataset.year,44,44)));
+  $$('#ctx span.fl').forEach(el=>el.replaceWith(flagEl(el.dataset.place,+el.dataset.year,18)));
+}
+let playT=0;
+function stopPlay(){clearInterval(playT);playT=0;$('#play').textContent='▶ Play'}
+$('#play').onclick=()=>{
+  if(playT){stopPlay();return}
+  if(st.year>=2020)st.year=1740;
+  $('#play').textContent='❚❚ Pause';
+  playT=setInterval(()=>{st.year=Math.min(2020,st.year+2);renderMove();if(st.year>=2020)stopPlay()},110);
+};
+$('#yr').addEventListener('input',e=>{st.year=+e.target.value;renderMove()});
+
+/* ---------- 5 · Place lanes ---------- */
+/* Where a person was, and when, as bars. A route is drawn only for the years the record places them: the first stop from the birth, a later stop
+   from its (approximate) arrival, and an undated stop for the single year it is recorded (the last dated arrival or the death), marked `und`. */
+function lifeSegs(p,end){
+  if(!p.route)return p.my?[{place:p.bp,a:p.by,b:p.my},{place:p.dp,a:p.my,b:end}]:[{place:p.bp,a:p.by,b:end}];
+  const r=p.route,out=[];let at=r[0][0],from=p.by,open=true;
+  for(let i=1;i<r.length;i++){const s=r[i];
+    if(s[1]==null){if(open)out.push({place:at,a:from,b:from+1,und:true});at=s[0];open=false;continue}
+    if(open)out.push({place:at,a:from,b:s[1]});
+    at=s[0];from=s[1];open=true}
+  if(open)out.push({place:at,a:from,b:end});else out.push({place:at,a:end-1,b:end,und:true});
+  return out}
+function renderLanes(){
+  const lab=$('#lnlab'),svg=$('#ln'),box=$('#lnbox');lab.textContent='';svg.textContent='';
+  const lsc=scopeSet(st.lscope),people=(lsc?[...lsc].map(id=>P[id]):list).filter(p=>p);
+  const mode=st.lgroup;
+  const keyOf=(place,p)=>mode==='place'?place:mode==='country'?PL[place].cn:FAMS[p.fi].sur;
+  // segments: where each person was, and when
+  const segs=[];
+  for(const p of people){
+    const end=p.dy==null?2026:p.dy;
+    p._segs=lifeSegs(p,end).map(s=>Object.assign({p,key:keyOf(s.place,p)},s));
+    p._segs.forEach(s=>segs.push(s));
+  }
+  const byKey=new Map();segs.forEach(s=>{if(!byKey.has(s.key))byKey.set(s.key,[]);byKey.get(s.key).push(s)});
+  const keys=[...byKey.keys()];
+  const meanLon=k=>{const a=byKey.get(k).map(s=>PL[s.place].lon);return a.reduce((s,v)=>s+v,0)/a.length};
+  if(mode==='line')keys.sort((a,b)=>FAMS.findIndex(f=>f.sur===a)-FAMS.findIndex(f=>f.sur===b));
+  else keys.sort((a,b)=>meanLon(a)-meanLon(b));
+  const lo=Math.floor(Math.min(...people.map(p=>p.by))/10)*10-5,hi=2026,span=hi-lo;
+  const LW=158,PWb=Math.max(380,(box.clientWidth||900)-LW-12),PW=PWb*st.lzoom,W=PW+12;
+  const xb=y=>(y-lo)/span*PWb,x=y=>6+(y-lo)/span*PW;
+  const RH=st.lscope==='all'?5:9,BH=st.lscope==='all'?3.6:5.4,HEAD=mode==='line'?6:20;
+  const lanes=[];let yy=22;
+  for(const k of keys){
+    const arr=byKey.get(k).sort((a,b)=>a.a-b.a),ends=[];
+    for(const s of arr){const sx=xb(s.a);let r=0;while(ends[r]!==undefined&&ends[r]>sx-2)r++;ends[r]=xb(s.b)+2;s.row=r}
+    const L={key:k,segs:arr,y0:yy,h:HEAD+Math.max(2,ends.length)*RH+12};
+    lanes.push(L);yy+=L.h;
+    arr.forEach(s=>{s.cy=L.y0+HEAD+s.row*RH+BH/2+1;s.lane=L});
+  }
+  const H=yy+4;
+  svg.setAttribute('width',W);svg.setAttribute('height',H);
+  lab.setAttribute('width',LW);lab.setAttribute('height',H);
+  $('#lztx').textContent='×'+(Math.abs(st.lzoom-Math.round(st.lzoom))<.05?Math.round(st.lzoom):st.lzoom.toFixed(1));
+  lanes.forEach((L,i)=>{
+    S('rect',{x:0,y:L.y0,width:W,height:L.h,fill:i%2?'var(--panel)':'var(--band)'},svg);
+    S('rect',{x:0,y:L.y0,width:LW,height:L.h,fill:i%2?'var(--panel)':'var(--band)'},lab);
+  });
+  const placeOf=L=>mode==='place'?[L.key]:mode==='country'?[...new Set(L.segs.map(s=>s.place))]:[];
+  const prov=e=>e.filed.map(k=>ATLAS.prov[k]||k);
+  lanes.forEach(L=>{
+    if(mode==='place'){
+      const pl=PL[L.key],sp=span;
+      if(pl.reg){
+        ERA[pl.reg].forEach(e=>{
+          const a=Math.max(lo,e.from),b=Math.min(hi,e.to);if(b<=a)return;
+          const bx=x(a),bw=x(b)-x(a);
+          const an=S('a',{href:'https://recordatlas.org/region/'+pl.reg+'/',target:'_blank'},svg);
+          S('title',{},an,e.polity+' ('+e.from+'–'+e.to+')'+(e.filed.length?'\nRecords: '+prov(e).join(', '):'')+'\nOpen '+ATLAS.rlabel[pl.reg]+' in the Atlas');
+          S('rect',{x:bx,y:L.y0+1,width:bw,height:L.h-2,fill:rgv(e.rg),opacity:.2},an);
+          S('rect',{x:bx,y:L.y0+1,width:bw,height:2.5,fill:rgv(e.rg),opacity:.9},an);
+          if(bw>22)drawFlag(an,flagAt(L.key,a),bx+3,L.y0+5,13);
+          if(bw>66)S('text',{class:'bandtx',x:bx+20,y:L.y0+14},an,clip(e.polity,Math.floor((bw-24)/4.6)));
+        });
+      }else{
+        S('rect',{x:6,y:L.y0+1,width:PW,height:L.h-2,fill:'url(#unsurv)'},svg);
+        let lastx=-99;
+        pl.fl.forEach(([fy,idx],n)=>{const fx=x(Math.max(fy,lo));if(fy>hi||fx-lastx<36)return;lastx=fx;drawFlag(svg,idx,fx+3,L.y0+5,13)});
+        S('text',{class:'bandtx',x:x(lo)+22,y:L.y0+14},svg,'Not surveyed in the Atlas yet. Flags only.');
+      }
+    }
+    if(mode!=='line'){
+      const seen=new Set();
+      placeOf(L).forEach(pn=>eventsFor(pn,lo,hi).forEach(e=>{
+        if(seen.has(e.id))return;seen.add(e.id);
+        const a=Math.max(lo,e.f),b=Math.min(hi,e.t+1),bx=x(a),bw=Math.max(3,x(b)-bx);
+        const r=S('rect',{x:bx,y:L.y0+1,width:bw,height:L.h-2,fill:'url(#evh)'},svg);
+        S('title',{},r,e.n+' ('+e.f+'–'+e.t+'): '+e.says);
+        if(bw>56)S('text',{class:'evtx',x:bx+3,y:L.y0+L.h-4},svg,clip(e.n,Math.floor(bw/4.6)));
+      }));
+    }
+  });
+  // axis + grid, step chosen from pixel density
+  const step=[1,2,5,10,25,50,100].find(s=>s*PW/span>=58)||100;
+  for(let yr=Math.ceil(lo/step)*step;yr<=hi;yr+=step){
+    S('line',{class:'grid',x1:x(yr),x2:x(yr),y1:16,y2:H},svg);
+    S('text',{class:'tick',x:x(yr),y:11,'text-anchor':'middle'},svg,yr);
+  }
+  // lane labels (fixed column)
+  lanes.forEach(L=>{
+    const cy=L.y0+L.h/2,ys=L.segs.map(s=>s.a).sort((a,b)=>a-b),med=ys[ys.length>>1];
+    if(mode==='place'){
+      const pl=PL[L.key],e=eraAt(L.key,med);
+      drawIcon(lab,L.key,med,8,cy-15,30,30);
+      const a=S('a',{href:atlasURL(L.key),target:'_blank'},lab);
+      S('text',{class:'lane',x:46,y:cy-6,fill:'var(--ink)'},a,clip(L.key,14));
+      S('text',{class:'lanec',x:46,y:cy+5},lab,pl.cn+(pl.id?' · Atlas ↗':' · not in Atlas'));
+      S('text',{class:'lanec',x:46,y:cy+16},lab,e&&e.filed.length?clip(prov(e)[0],24):'');
+    }else if(mode==='country'){
+      const pn=placeOf(L)[0];
+      drawFlag(lab,flagAt(pn,med),8,cy-9,26);
+      S('text',{class:'lane',x:42,y:cy-1,fill:'var(--ink)'},lab,L.key);
+      S('text',{class:'lanec',x:42,y:cy+11},lab,new Set(L.segs.map(s=>s.p.id)).size+' people');
+    }else{
+      S('rect',{x:8,y:cy-12,width:5,height:24,rx:2,fill:'var(--l'+FAMS.findIndex(f=>f.sur===L.key)+')'},lab);
+      S('text',{class:'lane',x:22,y:cy-1,fill:'var(--ink)'},lab,L.key);
+      S('text',{class:'lanec',x:22,y:cy+11},lab,new Set(L.segs.map(s=>s.p.id)).size+' people');
+    }
+  });
+  // connectors (moving between lanes)
+  const cg=S('g',{},svg);
+  for(const p of people){
+    const fa=p.father?P[p.father]:null,own=p._segs[0];
+    if(fa&&fa._segs){
+      const fs=fa._segs.find(s=>s.a<=p.by&&p.by<=s.b)||fa._segs[0];
+      if(fs.lane!==own.lane){
+        const px=x(p.by);
+        S('path',{d:'M'+px+','+fs.cy+'C'+(px+14)+','+fs.cy+' '+(px+14)+','+own.cy+' '+px+','+own.cy,fill:'none',stroke:colorOf(p),'stroke-width':1.3,opacity:.8},cg);
+        S('circle',{cx:px,cy:own.cy,r:1.8,fill:colorOf(p)},cg);
+      }
+    }
+    if(p._segs.length>1){
+      const a=p._segs[0],b=p._segs[1],px=x(b.a);
+      if(a.lane!==b.lane)S('path',{d:'M'+px+','+a.cy+'C'+(px+14)+','+a.cy+' '+(px+14)+','+b.cy+' '+px+','+b.cy,fill:'none',stroke:colorOf(p),'stroke-width':1.3,'stroke-dasharray':'3 2',opacity:.85},cg);
+    }
+  }
+  // bars
+  const bg=S('g',{},svg);
+  for(const L of lanes)for(const s of L.segs){
+    const p=s.p,x1=x(s.a),x2=Math.max(x(s.b),x1+2.5);
+    const r=S('rect',{class:'dot',x:x1,y:s.cy-BH/2,width:x2-x1,height:BH,rx:BH/2,fill:colorOf(p),opacity:s.und?.45:p.dy==null&&s.b===2026?.5:1,'data-id':p.id},bg);
+    if(p.id===st.focus){r.setAttribute('stroke','var(--ink)');r.setAttribute('stroke-width',1.6)}
+    S('title',{},r,nm(p)+' · '+yrs(p)+' · '+s.place);
+  }
+}
+function lzoom(z,cx){
+  const sc=$('#lnscroll'),old=st.lzoom;z=Math.min(10,Math.max(1,z));if(z===old)return;
+  const sl=sc.scrollLeft;st.lzoom=z;renderLanes();sc.scrollLeft=(sl+cx)*(z/old)-cx;edges(sc);
+}
+$('#lzi').onclick=()=>lzoom(st.lzoom*1.6,$('#lnscroll').clientWidth/2);
+$('#lzo').onclick=()=>lzoom(st.lzoom/1.6,$('#lnscroll').clientWidth/2);
+$('#lzf').onclick=()=>lzoom(1,0);
+$('#lnscroll').addEventListener('wheel',e=>{
+  if(!(e.ctrlKey||e.metaKey))return;e.preventDefault();
+  lzoom(st.lzoom*(e.deltaY<0?1.2:1/1.2),e.clientX-e.currentTarget.getBoundingClientRect().left);
+},{passive:false});
+
+/* ---------- Swipe: every canvas moves by dragging, with momentum, instead of showing scrollbars ---------- */
+function edges(el){
+  el.style.setProperty('--ml',el.scrollLeft>2?'28px':'0px');
+  el.style.setProperty('--mr',el.scrollLeft+el.clientWidth<el.scrollWidth-2?'28px':'0px');
+}
+function swipe(el,both){
+  if(el._sw)return;el._sw=1;el.classList.add('swipe');
+  if(both)el.style.maxHeight='82vh';   // a window onto a bigger canvas, so it pans up and down as well
+  let d=null,vx=0,vy=0,lt=0,raf=0;
+  el.addEventListener('scroll',()=>edges(el),{passive:true});
+  el.addEventListener('pointerdown',e=>{
+    if(e.pointerType==='touch'||e.button!==0)return;   // touch already swipes natively
+    cancelAnimationFrame(raf);d={x:e.clientX,y:e.clientY,sl:el.scrollLeft,stp:el.scrollTop,moved:false};vx=vy=0;lt=performance.now();
+  });
+  window.addEventListener('pointermove',e=>{
+    if(!d)return;const dx=e.clientX-d.x,dy=both?e.clientY-d.y:0;
+    if(!d.moved&&Math.hypot(dx,dy)>5){d.moved=true;el.classList.add('dragging')}
+    if(d.moved){
+      const nx=d.sl-dx,ny=d.stp-dy,now=performance.now(),dt=Math.max(1,now-lt);
+      vx=(nx-el.scrollLeft)/dt;vy=both?(ny-el.scrollTop)/dt:0;lt=now;
+      el.scrollLeft=nx;if(both)el.scrollTop=ny;
+    }
+  });
+  window.addEventListener('pointerup',()=>{
+    if(!d)return;const m=d.moved;d=null;el.classList.remove('dragging');
+    if(m){st.suppress=true;setTimeout(()=>{st.suppress=false},0);
+      const step=()=>{el.scrollLeft+=vx*16;el.scrollTop+=vy*16;vx*=.93;vy*=.93;if(Math.abs(vx)>.02||Math.abs(vy)>.02)raf=requestAnimationFrame(step)};step()}
+  });
+  if(window.ResizeObserver)new ResizeObserver(()=>edges(el)).observe(el);
+}
+[$('#hg').parentNode,$('#fan').parentNode,$('#mv').parentNode].forEach(el=>swipe(el,true));
+[$('.tabs'),$('#tl').parentNode,$('#lnscroll'),$('#trail'),$('#erscroll'),$('#kvwrap'),$('#kvchain')].forEach(el=>swipe(el));
+
+/* ---------- 6 · Lifespans ---------- */
+function renderTL(){
+  const svg=$('#tl'),wrap=$('#tlwrap');svg.textContent='';
+  const f=P[st.focus],rows=[],A=slots(f,5);
+  for(let g=5;g>=1;g--)A[g].forEach(p=>{if(p)rows.push({p,g:-g})});
+  rows.push({p:f,g:0});
+  f.spouse.forEach(id=>rows.push({p:P[id],g:0,sp:true}));
+  kidsOf(f).forEach(c=>{rows.push({p:c,g:1});kidsOf(c).forEach(gc=>rows.push({p:gc,g:2}))});
+  const rs=rows.slice(0,64);
+  const LW=206,RH=28,HEADH=22,NOW=2026;
+  const W=Math.max(580,wrap.clientWidth-2||780),PW=W-LW-14;
+  let lo=Math.min(...rs.map(r=>r.p.by));lo=Math.floor(lo/10)*10-5;
+  const x=y=>LW+(y-lo)/(NOW-lo)*PW;
+  const H=HEADH+rs.length*RH+6;
+  svg.setAttribute('width',W);svg.setAttribute('height',H);
+  const span=NOW-lo,step=span>200?50:span>100?25:10;
+  for(let yr=Math.ceil(lo/step)*step;yr<=NOW;yr+=step){
+    S('line',{class:'grid',x1:x(yr),x2:x(yr),y1:HEADH-4,y2:H},svg);
+    S('text',{class:'tick',x:x(yr),y:12,'text-anchor':'middle'},svg,yr);
+  }
+  // Atlas events at any relative's birthplace
+  const seen=new Map();
+  rs.forEach(r=>eventsFor(r.p.bp,lo,NOW).forEach(e=>{if(!seen.has(e.id))seen.set(e.id,e)}));
+  [...seen.values()].forEach(e=>{
+    const bx=x(Math.max(lo,e.f)),bw=Math.max(3,x(Math.min(NOW,e.t+1))-bx);
+    const r=S('rect',{x:bx,y:HEADH-4,width:bw,height:H-HEADH+4,fill:'url(#evh)',opacity:.8,style:'pointer-events:none'},svg);
+    S('title',{},r,e.n+' ('+e.f+'–'+e.t+')');
+    if(bw>40)S('text',{class:'evtx',x:bx+3,y:H-6},svg,clip(e.n,Math.floor(bw/4.6)));
+  });
+  let prevG=null;
+  rs.forEach((r,i)=>{
+    const p=r.p,y=HEADH+i*RH,mid=y+RH/2;
+    if(prevG!==null&&r.g!==prevG)S('line',{x1:8,x2:W-8,y1:y,y2:y,stroke:'var(--rule)'},svg);
+    prevG=r.g;
+    const g=S('g',{class:'row',tabindex:0,role:'button','data-id':p.id,'aria-label':nm(p)+', '+yrs(p)},svg);
+    S('rect',{class:p.id===st.focus&&!r.sp?'rowfocus':'rowbg',x:2,y:y+1,width:W-4,height:RH-2,rx:4},g);
+    drawIcon(g,p.bp,p.by,8,y+4,20,20);
+    S('text',{class:'rname',x:36,y:mid-1},g,clip(nm(p),24));
+    S('text',{class:'rrel',x:36,y:mid+10},g,(r.sp?'Spouse':rel(r.g,p.sex))+' · '+p.bp);
+    const x1=x(p.by),end=p.dy==null?NOW:p.dy,x2=Math.max(x(end),x1+4);
+    S('rect',{x:x1,y:mid-5,width:x2-x1,height:10,rx:5,fill:colorOf(p),opacity:p.dy==null?.55:1},g);
+    if(x2<W-110&&!living(p))S('text',{class:'rrel',x:x2+6,y:mid+3},g,yrs(p));
+  });
+  const cur=S('line',{x1:0,x2:0,y1:HEADH-4,y2:H,stroke:'var(--ink)','stroke-width':1.2,visibility:'hidden',style:'pointer-events:none'},svg);
+  svg.onmousemove=e=>{
+    const r=svg.getBoundingClientRect(),px=e.clientX-r.left;
+    if(px<LW||px>LW+PW){cur.setAttribute('visibility','hidden');return}
+    const yr=Math.round(lo+(px-LW)/PW*(NOW-lo));
+    cur.setAttribute('x1',px);cur.setAttribute('x2',px);cur.setAttribute('visibility','visible');
+    const alive=rs.filter(r=>r.p.by<=yr&&(r.p.dy==null?NOW:r.p.dy)>=yr);
+    const names=alive.slice(0,4).map(r=>living(r.p)?'Living':r.p.given).join(', ');
+    const evs=[...seen.values()].filter(e=>e.f<=yr&&e.t>=yr).map(e=>e.n);
+    $('#readout').innerHTML='<b>'+yr+'</b> · '+alive.length+' of '+rs.length+' relatives alive'+(alive.length?' · '+esc(names)+(alive.length>4?' and '+(alive.length-4)+' more':''):'')+(evs.length?' · <b style="color:var(--brick)">'+esc(evs.join('; '))+'</b>':'');
+  };
+  svg.onmouseleave=()=>cur.setAttribute('visibility','hidden');
+}
+
+/* ---------- 7 · Atlas map (like the family sites' Atlas page: pick a place, bigger marker = more people) ---------- */
+const AV={global:{cx:35,cy:-10,w:250},europe:{cx:11,cy:-46,w:48},fit:{cx:FIT.cx,cy:FIT.cy,w:FIT.w}};
+function atlasCounts(){
+  const sc=scopeSet(st.ascope),m=new Map();
+  for(const p of list){
+    if(sc&&!sc.has(p.id))continue;
+    if(st.amode==='orph'&&!(p._orph||p._clus))continue;
+    if(st.amode==='dead'&&!p._dead)continue;
+    const pls=(st.amode==='born'||st.amode==='orph'||st.amode==='dead')?[p.bp]:st.amode==='died'?(p.dy!=null&&p.dp?[p.dp]:[]):[...new Set([p.bp,p.dp].filter(Boolean))];
+    for(const pl of pls){let e=m.get(pl);if(!e){e={place:pl,people:[]};m.set(pl,e)}e.people.push(p)}
+  }
+  return m;
+}
+const medBirth=ps=>{const a=ps.map(p=>p.by).sort((x,y)=>x-y);return a[a.length>>1]};
+function renderAtlas(){
+  const svg=$('#am'),cv=svg.parentNode;
+  if(st._av!==st.aview){st.av=Object.assign({},AV[st.aview]);st._av=st.aview}
+  const Wp=Math.max(360,cv.clientWidth||700),Hp=Math.min(580,Math.max(400,Math.round(Wp*.64)));
+  const a=st.av,h=a.w*Hp/Wp,x0=a.cx-a.w/2,y0=a.cy-h/2,k=a.w/Wp;
+  svg.setAttribute('width',Wp);svg.setAttribute('height',Hp);svg.setAttribute('viewBox',x0+' '+y0+' '+a.w+' '+h);svg.textContent='';
+  S('rect',{x:x0-5,y:y0-5,width:a.w+10,height:h+10,fill:'var(--sea)'},svg);
+  const eu=a.cx>-13&&a.cx<50&&-a.cy>30&&-a.cy<62;
+  S('use',{href:a.w<70&&eu?'#land-eu':'#land-world',fill:'var(--land)',stroke:'var(--coast)','stroke-width':.8},svg);
+  const m=atlasCounts();
+  [...m.values()].sort((p,q)=>q.people.length-p.people.length).forEach(e=>{
+    const pl=PL[e.place],n=e.people.length,r=(5+Math.sqrt(n)*1.8)*k,era=eraAt(e.place,medBirth(e.people));
+    const c=S('circle',{cx:pl.lon,cy:-pl.lat,r,fill:era?rgv(era.rg):'var(--hair)',stroke:e.place===st.apl?'var(--ink)':'var(--panel)','stroke-width':e.place===st.apl?3:1.5,'vector-effect':'non-scaling-stroke',opacity:.92,'data-pick':e.place,style:'cursor:pointer'},svg);
+    S('title',{},c,e.place+': '+n+' people'+(era?' · '+era.polity:' · not surveyed in the Atlas yet'));
+    if(a.w<=100||n>=20||e.place===st.apl)S('text',{class:'nodelab',x:pl.lon+r+2*k,y:-pl.lat+3.5*k,'font-size':11*k,'stroke-width':3*k,style:'pointer-events:none'},svg,e.place);
+  });
+  atlasPanel(m);
+}
+function atlasPanel(m){
+  const notIn=[...m.keys()].filter(k=>!PL[k].id).length;
+  $('#amsum').textContent=m.size+' places on the map · '+notIn+' not in the Record Atlas yet';
+  const sel=st.apl&&m.get(st.apl);let h='';
+  if(sel){
+    const pl=PL[st.apl],ps=sel.people.slice().sort((x,y)=>x.by-y.by),era=eraAt(st.apl,medBirth(ps));
+    h+='<h2>'+esc(st.apl)+'<span class="fl" data-place="'+esc(st.apl)+'" data-year="'+medBirth(ps)+'"></span></h2><div class="amsub">'+esc(pl.cn)+' · '+ps.length+' people '+({born:'born here',died:'died here',lived:'lived here',orph:'not joined to the tree',dead:'with no recorded parents'})[st.amode]+'</div>';
+    if(era){h+='<span class="chip rg" style="background:'+rgv(era.rg)+'">'+esc(ATLAS.regimes[era.rg].label)+'</span><div class="amsub">'+esc(era.polity)+', '+era.from+'–'+era.to+(era.filed.length?'<br>Records: '+era.filed.slice(0,3).map(k=>esc(ATLAS.prov[k]||k)).join(', '):'')+'</div>'}
+    else h+='<div class="amsub">'+(pl.id?'No regime table for this ground yet.':'Not in the Atlas yet.')+'</div>';
+    h+='<a class="lk" href="'+atlasURL(st.apl)+'" target="_blank" rel="noopener">'+(pl.id?'Open in Record Atlas ↗':'Add it to the Atlas ↗')+'</a>';
+    const evs=eventsFor(st.apl,ps[0].by,2026);
+    if(evs.length)h+='<div style="margin-top:6px">'+evs.map(e=>'<span class="chip ev" title="'+esc(e.says)+'">'+esc(clip(e.n,30))+'</span>').join('')+'</div>';
+    /* LOCAL ADDITION: who is drawn here, grouped by the place text exactly as written, so a wrong marker (a whole country, the wrong county) can be traced and fixed */
+    const why={country:'Drawn at the middle of the country: the text names no town we could pin down.',district:'Drawn at the centre of a district or region: no exact town was found.'}[pl.kind];
+    if(why)h+='<div class="amsub amwhy">'+why+'</div>';
+    const raw=p=>(st.amode==='died'?p.dpr:p.bpr)||'',gs=new Map();
+    ps.forEach(p=>{const r=raw(p);(gs.get(r)||gs.set(r,[]).get(r)).push(p)});
+    h+='<h3>People ('+ps.length+')</h3><div class="amppl">'+[...gs].sort((x,y)=>x[0].localeCompare(y[0],'en')).map(([r,l])=>
+      '<div class="amtxt"><div class="amtxh"><span>'+(r?'Written as <b>'+esc(r)+'</b>':'<i>no place text</i>')+' · '+l.length+'</span>'+(r?'<button class="chipb" data-copytxt="'+esc(r)+'" title="Copy this text">Copy</button><button class="chipb" data-fixtxt="'+esc(r)+'" title="Find this text in Places to review">Fix this text</button>':'')+'</div>'+l.slice().sort((x,y)=>nm(x).localeCompare(nm(y),'en')).map(plink).join('')+'</div>').join('')+'</div>';
+  }else h+='<h2>Pick a place</h2><div class="amsub">Click any marker. Bigger markers hold more people. Colour is the Atlas regime that ruled the place in the median birth year, grey is not surveyed yet.</div><div class="amsub">Markers are places, not kinship: a big marker means many people of this tree were here.</div>';
+  h+='<h3>Find a place</h3>';
+  const by={};m.forEach((e,k)=>{(by[PL[k].cn]=by[PL[k].cn]||[]).push(e)});
+  Object.keys(by).sort().forEach(c=>{h+='<div class="amgrp"><small>'+esc(c)+'</small>'+by[c].sort((x,y)=>y.people.length-x.people.length).map(e=>'<button class="chipb'+(e.place===st.apl?' on':'')+'" data-pick="'+esc(e.place)+'">'+esc(e.place)+' <em>'+e.people.length+'</em></button>').join('')+'</div>'});
+  $('#ampick').innerHTML=h;
+  $$('#ampick span.fl').forEach(el=>el.replaceWith(flagEl(el.dataset.place,+el.dataset.year,26)));
+}
+function selectPlace(name){
+  st.apl=name;const pl=PL[name];st.av.cx=pl.lon;st.av.cy=-pl.lat;if(st.av.w>60)st.av.w=26;renderAtlas();
+}
+function azoom(f,mx,my){
+  const svg=$('#am'),Wp=svg.clientWidth||700,Hp=svg.clientHeight||450,a=st.av,k=a.w/Wp,h=a.w*Hp/Wp;
+  const wx=a.cx-a.w/2+mx*k,wy=a.cy-h/2+my*k,w2=Math.min(300,Math.max(3,a.w*f)),k2=w2/Wp,h2=w2*Hp/Wp;
+  a.cx=wx-mx*k2+w2/2;a.cy=wy-my*k2+h2/2;a.w=w2;renderAtlas();
+}
+let adrag=null,araf=0;
+$('#am').addEventListener('pointerdown',e=>{adrag={x:e.clientX,y:e.clientY,cx:st.av.cx,cy:st.av.cy,moved:false}});
+window.addEventListener('pointermove',e=>{
+  if(!adrag)return;const dx=e.clientX-adrag.x,dy=e.clientY-adrag.y;
+  if(!adrag.moved&&Math.hypot(dx,dy)>5)adrag.moved=true;
+  if(adrag.moved&&!araf){araf=requestAnimationFrame(()=>{araf=0;if(!adrag)return;const k=st.av.w/($('#am').clientWidth||700);st.av.cx=adrag.cx-dx*k;st.av.cy=adrag.cy-dy*k;renderAtlas()})}
+});
+window.addEventListener('pointerup',()=>{if(adrag&&adrag.moved){st.suppress=true;setTimeout(()=>{st.suppress=false},0)}adrag=null});
+$('#am').addEventListener('wheel',e=>{
+  if(!(e.ctrlKey||e.metaKey))return;e.preventDefault();
+  const r=e.currentTarget.getBoundingClientRect();azoom(e.deltaY<0?.8:1.25,e.clientX-r.left,e.clientY-r.top);
+},{passive:false});
+const kzSet=v=>{st.kz=Math.max(.5,Math.min(2,v));render()};
+$('#kzo').onclick=()=>kzSet(st.kz-.15);$('#kzi').onclick=()=>kzSet(st.kz+.15);$('#kz1').onclick=()=>kzSet(1);
+$('#azi').onclick=()=>azoom(.6,($('#am').clientWidth||700)/2,($('#am').clientHeight||450)/2);
+$('#azo').onclick=()=>azoom(1.6,($('#am').clientWidth||700)/2,($('#am').clientHeight||450)/2);
+
+/* ---------- 8 · Eras: regime bands with family events above and what they were up against below, then the story line ---------- */
+function wrapText(s,n,maxL){
+  const out=[];let cur='';
+  for(const w of String(s).split(/\s+/)){if((cur+' '+w).trim().length>n){if(cur)out.push(cur);cur=w}else cur=(cur+' '+w).trim()}
+  if(cur)out.push(cur);
+  if(out.length>maxL){out.length=maxL;out[maxL-1]=clip(out[maxL-1],n-1)+'…'}
+  return out;
+}
+function renderEras(){
+  const lab=$('#erlab'),svg=$('#er'),story=$('#story'),box=$('#erbox');lab.textContent='';svg.textContent='';story.textContent='';
+  const sc=scopeSet(st.escope),people=sc?[...sc].map(id=>P[id]):list;
+  const lo=Math.floor(Math.min(...people.map(p=>p.by))/10)*10-5,hi=2026,span=hi-lo;
+  const LW=172,avail=Math.max(420,(box.clientWidth||900)-LW),ppy=Math.max(2.4,(avail-16)/span)*st.ezoom,W=span*ppy+16,x=y=>8+(y-lo)*ppy;
+  const places=new Set();people.forEach(p=>{places.add(p.bp);if(p.dp)places.add(p.dp)});
+  const regs=new Map();places.forEach(n=>{const r=PL[n].reg;if(r){if(!regs.has(r))regs.set(r,[]);regs.get(r).push(n)}});
+  const lonOf=r=>regs.get(r).reduce((s,n)=>s+PL[n].lon,0)/regs.get(r).length;
+  const regList=[...regs.keys()].sort((a,b)=>lonOf(a)-lonOf(b));
+  const FAM_H=36,LANE_H=54,EVR=11,yFam=24,yLanes=yFam+FAM_H,yEv=yLanes+regList.length*LANE_H+8;
+  const evs=new Map();places.forEach(n=>eventsFor(n,lo,hi).forEach(e=>evs.set(e.id,e)));
+  const evl=[...evs.values()].sort((a,b)=>a.f-b.f),ends=[];
+  evl.forEach(e=>{const sx=x(e.f);let r=0;while(ends[r]!==undefined&&ends[r]>sx-2)r++;ends[r]=x(e.t+1)+2;e.row=r});
+  const yAxis=yEv+Math.max(1,ends.length)*EVR+16,H1=yAxis+24,stepY=[1,2,5,10,25,50,100].find(s=>s*ppy>=58)||100;
+  svg.setAttribute('width',W);svg.setAttribute('height',H1);
+  // grid and axis
+  for(let yr=Math.ceil(lo/stepY)*stepY;yr<=hi;yr+=stepY){
+    S('line',{class:'grid',x1:x(yr),x2:x(yr),y1:16,y2:yAxis},svg);
+    S('text',{class:'tick',x:x(yr),y:yAxis+14,'text-anchor':'middle'},svg,yr);
+  }
+  S('line',{x1:8,x2:W-8,y1:yFam+16,y2:yFam+16,stroke:'var(--brick)','stroke-opacity':.35,'stroke-width':1.5},svg);
+  S('line',{x1:8,x2:W-8,y1:yAxis,y2:yAxis,stroke:'var(--hair)'},svg);
+  // region bands
+  regList.forEach((r,i)=>{
+    const y0=yLanes+i*LANE_H+8,pls=regs.get(r);
+    S('text',{class:'lane',x:8,y:y0+12,fill:'var(--ink)'},lab,clip(ATLAS.rlabel[r],24));
+    S('text',{class:'lanec',x:8,y:y0+25},lab,clip(pls.join(', '),32));
+    ERA[r].forEach(e=>{
+      const a=Math.max(lo,e.from),b=Math.min(hi,e.to);if(b<=a)return;
+      const bx=x(a)+1,bw=x(b)-x(a)-2;
+      const an=S('a',{href:'https://recordatlas.org/region/'+r+'/',target:'_blank'},svg);
+      S('title',{},an,e.polity+' ('+e.from+'–'+e.to+')'+(e.filed.length?'\nRecords: '+e.filed.map(k=>ATLAS.prov[k]||k).join(', '):'')+'\nOpen '+ATLAS.rlabel[r]+' in the Atlas');
+      S('rect',{x:bx,y:y0,width:bw,height:26,rx:2,fill:rgv(e.rg)},an);
+      if(bw>34)drawFlag(an,flagAt(pls[0],a),bx+4,y0+6.5,13);
+      if(bw>74)S('text',{x:bx+22,y:y0+17,'font-size':10,'font-family':'var(--sans)',fill:'var(--on-line)',style:'pointer-events:none'},an,clip(e.polity,Math.floor((bw-26)/5.2)));
+    });
+  });
+  // family events (births, moves, deaths)
+  S('text',{class:'lane',x:8,y:yFam+19,fill:'var(--brick)'},lab,'Family events');
+  S('text',{class:'lanec',x:8,y:yFam+31},lab,people.length+' people · dot = born, diamond = moved, ring = died');
+  for(const p of people){
+    const yy=yFam+8+(p.by%3)*8;
+    const c=S('circle',{class:'dot',cx:x(p.by),cy:yy,r:people.length>300?2:2.8,fill:colorOf(p),opacity:.9,'data-id':p.id},svg);
+    S('title',{},c,nm(p)+' born '+p.by+', '+p.bp);
+    (p.route?p.route.slice(1).filter(s=>s[1]!=null).map(s=>[s[1],s[0],s[2]]):p.my?[[p.my,p.dp,p.mye?1:0]]:[]).forEach(([my,to,est])=>{const d=S('path',{class:'dot',d:'M'+x(my)+','+(yy-3.4)+'l3.4,3.4l-3.4,3.4l-3.4,-3.4Z',fill:'var(--brick)',opacity:est?.7:1,'data-id':p.id},svg);S('title',{},d,nm(p)+' moved to '+to+', '+(est?'about ':'')+my)});
+    if(p.dy!=null&&people.length<=300){const d=S('circle',{class:'dot',cx:x(p.dy),cy:yy,r:2.6,fill:'var(--panel)',stroke:colorOf(p),'stroke-width':1.4,'data-id':p.id},svg);S('title',{},d,nm(p)+' died '+p.dy+', '+p.dp)}
+  }
+  // what they were up against
+  S('text',{class:'lane',x:8,y:yEv+10,fill:'var(--brass)'},lab,'What they were up against');
+  S('text',{class:'lanec',x:8,y:yEv+22},lab,'Atlas events at their places');
+  evl.forEach(e=>{
+    const r=S('rect',{x:x(e.f),y:yEv+e.row*EVR,width:Math.max(4,x(e.t+1)-x(e.f)),height:8,fill:'var(--brass)',opacity:.85},svg);
+    S('title',{},r,e.n+' ('+e.f+'–'+e.t+'): '+e.says);
+  });
+  // ---- the story line: this family above, the world below ----
+  const f=P[st.focus],line=[f,...[...ancSet(f).keys()].map(id=>P[id]),...kidsOf(f)];
+  const fam=[],world=[];
+  line.forEach(p=>{
+    const g=living(p)?'Living':p.given;
+    fam.push({y:p.by,t:p.by+' · '+g+(p.id===f.id?' (focus) born':' born'),s:p.bp+' · '+nm(p),id:p.id});
+    if(p.route)p.route.slice(1).forEach((s,i)=>{if(s[1]!=null)fam.push({y:s[1],t:(s[2]?'about ':'')+s[1]+' · '+g+' leaves '+p.route[i][0],s:'For '+s[0],id:p.id})});
+    else if(p.my)fam.push({y:p.my,t:(p.mye?'about ':'')+p.my+' · '+g+' leaves '+p.bp,s:'For '+p.dp,id:p.id});
+    if(p.dy!=null&&(p.id===f.id||p.id===f.father||p.id===f.mother))fam.push({y:p.dy,t:p.dy+' · '+g+' dies',s:p.dp,id:p.id});
+  });
+  const seenE=new Set();
+  regList.forEach(r=>ERA[r].forEach(e=>{const k=e.from+e.polity;if(e.from>lo&&e.from<=hi&&!seenE.has(k)){seenE.add(k);world.push({y:e.from,t:e.from+' · '+e.polity,s:e.note,c:rgv(e.rg)})}}));
+  evl.forEach(e=>world.push({y:e.f,t:(e.f===e.t?yrB(e.f):yrB(e.f)+'–'+yrB(e.t))+' · '+e.n,s:e.says,c:'var(--brick)'}));
+  const ROW=66,CWD=158,MAXR=3;
+  const lay=items=>{const ends=[],out=[];items.sort((a,b)=>a.y-b.y).forEach(it=>{const sx=x(it.y);let r=0;while(r<MAXR&&ends[r]!==undefined&&ends[r]>sx-4)r++;if(r<MAXR){ends[r]=sx+CWD;it.row=r;out.push(it)}});return out};
+  const up=lay(fam),down=lay(world),nUp=Math.max(1,...up.map(i=>i.row+1)),nDn=Math.max(1,...down.map(i=>i.row+1));
+  const yA=16+nUp*ROW+14,H2=yA+30+nDn*ROW+12;
+  story.setAttribute('width',W);story.setAttribute('height',H2);
+  S('rect',{x:0,y:0,width:W,height:H2,fill:'var(--band)'},story);
+  for(let yr=Math.ceil(lo/stepY)*stepY;yr<=hi;yr+=stepY){
+    S('line',{x1:x(yr),x2:x(yr),y1:yA-4,y2:yA+4,stroke:'var(--hair)'},story);
+    S('text',{class:'tick',x:x(yr),y:yA+15,'text-anchor':'middle'},story,yr);
+  }
+  S('line',{x1:8,x2:W-8,y1:yA,y2:yA,stroke:'var(--hair)','stroke-width':1.5},story);
+  const card=(it,dir,col)=>{
+    const cx=x(it.y),ytop=dir<0?yA-14-(it.row+1)*ROW:yA+26+it.row*ROW;
+    const g=S('g',{'data-id':it.id||''},story);if(!it.id)g.removeAttribute('data-id');else g.setAttribute('style','cursor:pointer');
+    S('line',{x1:cx,x2:cx,y1:yA,y2:dir<0?yA-14-it.row*ROW:yA+26+it.row*ROW-4,stroke:col,'stroke-opacity':.5},g);
+    S('circle',{cx,cy:yA,r:3,fill:col},g);
+    S('text',{class:'stit',x:cx+4,y:ytop+(dir<0?12:12)},g,'').append(...wrapText(it.t,28,1).map(t=>document.createTextNode(t)));
+    wrapText(it.s,32,2).forEach((t,i)=>S('text',{class:'ssub',x:cx+4,y:ytop+25+i*12},g,t));
+  };
+  up.forEach(it=>card(it,-1,'var(--atlas)'));
+  down.forEach(it=>card(it,1,it.c));
+  // label column
+  S('rect',{x:0,y:H1,width:LW,height:H2,fill:'var(--band)'},lab);
+  S('text',{class:'lane',x:8,y:H1+yA-30,fill:'var(--atlas)'},lab,'Above the line');
+  S('text',{class:'lanec',x:8,y:H1+yA-18},lab,'this family');
+  S('text',{class:'lane',x:8,y:H1+yA+44,fill:'var(--brick)'},lab,'Below the line');
+  S('text',{class:'lanec',x:8,y:H1+yA+56},lab,'what was happening around them');
+  lab.setAttribute('width',LW);lab.setAttribute('height',H1+H2);
+  $('#ezt').textContent='×'+(Math.abs(st.ezoom-Math.round(st.ezoom))<.05?Math.round(st.ezoom):st.ezoom.toFixed(1));
+}
+function ezoom(z,cx){
+  const sc=$('#erscroll'),old=st.ezoom;z=Math.min(8,Math.max(1,z));if(z===old)return;
+  const sl=sc.scrollLeft;st.ezoom=z;renderEras();sc.scrollLeft=(sl+cx)*(z/old)-cx;edges(sc);
+}
+$('#ezi').onclick=()=>ezoom(st.ezoom*1.5,$('#erscroll').clientWidth/2);
+$('#ezo').onclick=()=>ezoom(st.ezoom/1.5,$('#erscroll').clientWidth/2);
+$('#ezf').onclick=()=>ezoom(1,0);
+$('#erscroll').addEventListener('wheel',e=>{
+  if(!(e.ctrlKey||e.metaKey))return;e.preventDefault();
+  ezoom(st.ezoom*(e.deltaY<0?1.2:1/1.2),e.clientX-e.currentTarget.getBoundingClientRect().left);
+},{passive:false});
+
+/* ---------- 9 · Orphans and where to start: what is not joined up yet, and where the Atlas says to look ---------- */
+function recLink(place,year){
+  const pl=PL[place];
+  const c=pl.cols.find(c=>(c[2]==null||c[2]<=year)&&(c[3]==null||year<=c[3]));
+  if(c)return{t:c[0],u:c[1],w:'Atlas collection'};
+  const e=eraAt(place,year),k=e&&e.filed[0];
+  if(k&&ATLAS.provurl[k])return{t:ATLAS.prov[k]||k,u:ATLAS.provurl[k],w:'archive'};
+  return{t:place+' in Record Atlas',u:atlasURL(place),w:'Atlas place'};
+}
+const okinds={undrawn:['Not drawn yet','people the archive holds who cannot be drawn: no birth or death year, or no place. Each links to their page on the site'],orph:['Orphan records','not joined to anyone: no parent, spouse or child'],clus:['Detached families','small families of 2 to 19 people that do not connect to any tree'],dead:['Dead ends','people in a tree with no recorded parents']};
+const inKind=(p,k)=>k==='orph'?p._orph:k==='clus'?p._clus:p._dead;
+function renderMetrics(){
+  const tot=list.length,main=list.filter(p=>p._main).length,orph=list.filter(p=>p._orph).length;
+  const clus=list.filter(p=>p._clus),nClus=new Set(clus.map(p=>p._comp)).size,dead=list.filter(p=>p._dead).length,liv=list.filter(living).length;
+  const places=new Set(list.map(p=>p.bp)),inAt=[...places].filter(n=>PL[n].id).length;
+  const T=(n,l,s,k)=>'<button class="mt" '+(k?'data-goto="orphans" data-okind="'+k+'"':'data-goto="map"')+'><b>'+n.toLocaleString('en')+'</b><span>'+l+'</span><small>'+s+'</small></button>';
+  $('#metrics').innerHTML=
+    T(tot,'People',new Set(list.filter(p=>p._main).map(p=>p._comp)).size+' connected trees ('+main.toLocaleString('en')+' people) · '+liv+' living, withheld')+
+    T(orph,'Orphans','records joined to no one','orph')+
+    T(nClus,'Detached families',clus.length+' people in small families outside every tree','clus')+
+    T(dead,'Dead ends','in a tree, but no parents recorded','dead')+
+    (TREE&&TREE.undrawn&&TREE.undrawn.length?T(TREE.undrawn.length,'Not drawn yet','no year or no place to draw','undrawn'):'')+
+    T(places.size,'Places',inAt+' in the Record Atlas · '+(places.size-inAt)+' not yet','dead');
+}
+function renderUndrawn(){
+  const U=(TREE&&TREE.undrawn)||[],noYear=U.filter(u=>u.why==='year'),noPlace=U.filter(u=>u.why==='place');
+  $('#orsum').innerHTML='<b>'+U.length.toLocaleString('en')+'</b> people the archive holds are not drawn on the maps: no birth or death year and no relative with one ('+noYear.length+'), or a year but no place the archive can put on a map ('+noPlace.length+'). Each links to their page on the site. Finding a year or a place for them is the quickest way to grow the tree.';
+  $('#orsug').innerHTML='<div class="sg"><div class="sgh"><div><b>No year</b><small>cannot be placed in time</small></div><span class="sgn">'+noYear.length+'</span></div><p class="sgp">Look for a baptism, burial or census entry, or any relative with a year, then add it to the roster.</p></div><div class="sg"><div class="sgh"><div><b>No place</b><small>cannot be put on a map</small></div><span class="sgn">'+noPlace.length+'</span></div><p class="sgp">A parish, town or country is enough. The archive atlas supplies the coordinates.</p></div>';
+  const row=u=>'<a class="plink" href="'+(FAMS[0].host&&u.id&&TREE?'https://'+FAMS[0].host+'/person/'+u.id+'/':'#')+'" '+(FAMS[0].host?'target="_blank" rel="noopener"':'')+'><i style="background:var(--hair)"></i><span>'+esc(u.name)+'</span><small>'+esc((u.b?'b. '+u.b+' · ':'')+(u.place||u.why))+'</small></a>';
+  $('#orlist').innerHTML='<h3>Not drawn yet ('+U.length+')</h3><div class="orgrid">'+U.slice(0,400).map(row).join('')+'</div>'+(U.length>400?'<p class="amsub">and '+(U.length-400)+' more in the data</p>':'');
+}
+function renderOrphans(){
+  if(st.okind==='undrawn')return renderUndrawn();
+  const k=st.okind,set=list.filter(p=>inKind(p,k));
+  $('#orsum').innerHTML='<b>'+set.length.toLocaleString('en')+'</b> '+okinds[k][0].toLowerCase()+': '+okinds[k][1]+'. Grouped by where they were born, then ranked by how many people there are and whether the Atlas knows a collection to search.';
+  const by=new Map();set.forEach(p=>{if(!by.has(p.bp))by.set(p.bp,[]);by.get(p.bp).push(p)});
+  const sug=[...by].map(([place,ps])=>{
+    const ys=ps.map(p=>p.by).sort((a,b)=>a-b),lo=ys[0],hi=ys[ys.length-1],med=ys[ys.length>>1],pl=PL[place];
+    const cols=pl.cols.filter(c=>(c[2]==null||c[2]<=hi)&&(c[3]==null||c[3]>=lo));
+    return{place,ps,lo,hi,med,pl,cols,score:ps.length*(cols.length?2:1)*(pl.id?1:.5)};
+  }).sort((a,b)=>b.score-a.score).slice(0,8);
+  let h='';
+  sug.forEach((s,i)=>{
+    const era=eraAt(s.place,s.med),sur={};s.ps.forEach(p=>{sur[p.sur]=(sur[p.sur]||0)+1});
+    const sn=Object.entries(sur).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([n,c])=>esc(n)+' '+c).join(', ');
+    h+='<div class="sg"><div class="sgh"><span class="fl" data-place="'+esc(s.place)+'" data-year="'+s.med+'"></span><div><b>'+(i+1)+'. '+placeA(s.place)+'</b><small>'+esc(s.pl.cn)+'</small></div><span class="sgn">'+s.ps.length+'</span></div>';
+    h+=era?'<span class="chip rg" style="background:'+rgv(era.rg)+'">'+esc(ATLAS.regimes[era.rg].label)+'</span><small class="sgs">'+esc(era.polity)+', '+era.from+'–'+era.to+'</small>':'<small class="sgs">'+(s.pl.id?'No regime table yet.':'Not in the Atlas yet. Add it first.')+'</small>';
+    h+='<p class="sgp">Born '+s.lo+'–'+s.hi+' · '+sn+'</p><ul class="sgl">';
+    const links=s.cols.length?s.cols.slice(0,3).map(c=>({t:c[0],u:c[1],w:'Atlas collection'})):[recLink(s.place,s.med)];
+    h+=links.map(l=>'<li><a href="'+l.u+'" target="_blank" rel="noopener">'+esc(clip(l.t,58))+' ↗</a> <em>'+l.w+'</em></li>').join('')+'</ul>';
+    h+='<div class="sgf">'+s.ps.slice().sort((a,b)=>a.by-b.by).slice(0,3).map(plink).join('')+'</div>';
+    h+='<div class="sgb"><button class="btn" data-showmap="'+esc(s.place)+'">Show on the Atlas map</button> <a href="'+atlasURL(s.place)+'" target="_blank" rel="noopener">Atlas ↗</a></div></div>';
+  });
+  $('#orsug').innerHTML=h||'<p class="note">Nothing here. Every person is joined up.</p>';
+  $$('#orsug span.fl').forEach(el=>el.replaceWith(flagEl(el.dataset.place,+el.dataset.year,26)));
+  const rows=set.slice().sort((a,b)=>a.bp.localeCompare(b.bp)||a.by-b.by);
+  $('#orlist').innerHTML='<h3>'+okinds[k][0]+' ('+set.length+')</h3><div class="orgrid">'+rows.slice(0,60).map(p=>'<button class="plink" data-id="'+p.id+'"><i style="background:'+colorOf(p)+'"></i><span>'+esc(nm(p))+'</span><small>'+esc(yrs(p))+' · '+esc(p.bp)+'</small></button>').join('')+'</div>'+(rows.length>60?'<p class="amsub">and '+(rows.length-60)+' more</p>':'');
+}
+
+/* ---------- 10 · Kinship: exactly how are two people related ---------- */
+const ord=n=>n+(n%10===1&&n!==11?'st':n%10===2&&n!==12?'nd':n%10===3&&n!==13?'rd':'th');
+const greats=n=>n<=1?'':n===2?'great-':(n-1)+'× great-';
+function kinName(dA,dB,sex,half){
+  if(dA===0)return dB===1?SX(sex,'son','daughter','child'):dB===2?SX(sex,'grandson','granddaughter','grandchild'):greats(dB-1)+SX(sex,'grandson','granddaughter','grandchild');
+  if(dB===0)return dA===1?SX(sex,'father','mother','parent'):dA===2?SX(sex,'grandfather','grandmother','grandparent'):greats(dA-1)+SX(sex,'grandfather','grandmother','grandparent');
+  if(dA===1&&dB===1)return (half?'half-':'')+SX(sex,'brother','sister','sibling');
+  if(dB===1)return greats(dA-1)+SX(sex,'uncle','aunt','uncle or aunt');
+  if(dA===1)return greats(dB-1)+SX(sex,'nephew','niece','nephew or niece');
+  const c=Math.min(dA,dB)-1,rem=Math.abs(dA-dB);
+  return ord(c)+' cousin'+(rem?' '+(rem===1?'once':rem===2?'twice':rem+'×')+' removed':'');
+}
+const ancDepths=p=>{const m=new Map([[p.id,0]]);ancSet(p).forEach((g,id)=>m.set(id,g));return m};
+function pathUp(p,xid){   // shortest line of parents from p up to the ancestor xid: [p ... X]
+  const prev=new Map([[p.id,null]]),q=[p.id];
+  while(q.length){const id=q.shift();if(id===xid)break;const x=P[id];for(const par of [x.father,x.mother])if(par&&!prev.has(par)){prev.set(par,id);q.push(par)}}
+  const out=[];let c=xid;while(c){out.push(P[c]);c=prev.get(c)}
+  return out.reverse();
+}
+function kinship(a,b){
+  const Ad=ancDepths(a),Bd=ancDepths(b),common=[...Ad.keys()].filter(k=>Bd.has(k));
+  if(!common.length)return null;
+  const anc=new Map(common.map(k=>[k,ancSet(P[k])]));
+  const minimal=common.filter(x=>!common.some(y=>y!==x&&anc.get(y).has(x)));
+  const best=minimal.slice().sort((x,y)=>(Ad.get(x)+Bd.get(x))-(Ad.get(y)+Bd.get(y)))[0];
+  const X=P[best],dA=Ad.get(best),dB=Bd.get(best);
+  const partner=minimal.map(id=>P[id]).find(y=>y.id!==best&&X.spouse.includes(y.id)&&Ad.get(y.id)===dA&&Bd.get(y.id)===dB)||null;
+  const r=minimal.reduce((s,id)=>s+Math.pow(.5,Ad.get(id)+Bd.get(id)),0),half=dA===1&&dB===1&&minimal.length===1;
+  return{X,partner,dA,dB,r,half,n:minimal.length,chainA:pathUp(a,best),chainB:pathUp(b,best),label:kinName(dA,dB,b.sex,half)};
+}
+function marriagePath(a,b){   // fallback: through marriages, as a chain of steps
+  const prev=new Map([[a.id,null]]),q=[a.id];
+  while(q.length){
+    const id=q.shift();if(id===b.id)break;const x=P[id];
+    for(const [n,how] of [[x.father,'parent'],[x.mother,'parent'],...x.spouse.map(s=>[s,'spouse']),...x.kids.map(k=>[k,'child'])])
+      if(n&&!prev.has(n)){prev.set(n,[id,how]);q.push(n)}
+  }
+  if(!prev.has(b.id))return null;
+  const out=[];let c=b.id;
+  while(c){const e=prev.get(c),p=P[c];
+    out.push({p,how:e?(e[1]==='parent'?SX(p.sex,'father','mother','parent'):e[1]==='spouse'?SX(p.sex,'husband','wife','spouse'):SX(p.sex,'son','daughter','child')):null});
+    c=e?e[0]:null}
+  return out.reverse();
+}
+function defaultKin(a){
+  let best=null,bs=-1;
+  const pref=l=>/2nd cousin/.test(l)?9:/1st cousin/.test(l)?8:/cousin/.test(l)?7:/aunt|uncle|niece|nephew/.test(l)?6:/sister|brother/.test(l)?5:/grand/.test(l)?4:3;
+  closeSet(a.id).forEach(id=>{if(id===a.id)return;const k=kinship(a,P[id]);if(!k)return;const s=pref(k.label)*10-(k.dA+k.dB);if(s>bs){bs=s;best=id}});
+  return best||list.find(p=>p.id!==a.id&&p._main).id;
+}
+function kcard(parent,p,x,y,o){
+  const W=156,H=58,g=S('g',{class:'kc',transform:'translate('+x+','+y+')',tabindex:0,role:'button','data-id':p.id,'aria-label':nm(p)},parent);
+  S('title',{},g,nm(p)+' · '+yrs(p)+' · born '+p.bp);
+  S('rect',{class:'kcbody',width:W,height:H,rx:8,style:'stroke:'+o.col+';stroke-width:'+(o.thick?2.6:1.5)},g);
+  S('text',{class:'sgen',x:10,y:13,style:'fill:'+o.col},g,o.tag||'');
+  S('text',{class:'sname',x:10,y:29},g,clip(nm(p),15));
+  S('text',{class:'syr',x:10,y:44},g,clip((living(p)?'living':yrs(p))+' · '+p.bp,23));
+  drawFlag(g,flagAt(p.bp,p.by),W-30,H/2-7.5,22);
+}
+function drawV(k,A,B){
+  const svg=$('#kv');svg.textContent='';
+  const CWk=156,CHk=58,RHk=92,top=24,dA=k.dA,dB=k.dB,maxd=Math.max(dA,dB),direct=dA===0||dB===0,base=108,stepX=44;
+  const gut=124,W=(direct?460:Math.max(600,2*(base+(maxd-1)*stepX+CWk/2)+40))+gut,H=top+maxd*RHk+CHk+26,cx=gut+(W-gut)/2;
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.style.width=Math.round(W*st.kz)+'px';svg.style.height=Math.round(H*st.kz)+'px';svg.style.maxWidth='none';svg.style.margin='0 auto';$('#kzp').textContent=Math.round(st.kz*100)+'%';
+  const yk=kk=>top+kk*RHk,teal='var(--atlas)',red='var(--brick)',ink='var(--ink)';
+  const seqA=k.chainA.slice().reverse(),seqB=k.chainB.slice().reverse();   // X ... endpoint
+  const edge=(px,py,qx,qy,col)=>S('path',{d:'M'+px+','+py+'V'+(py+qy)/2+'H'+qx+'V'+qy,fill:'none',stroke:col,'stroke-width':1.6,'stroke-opacity':.8},svg);
+  // generation guides
+  for(let kk=0;kk<=maxd;kk++){
+    S('line',{x1:0,x2:W,y1:yk(kk)+CHk/2,y2:yk(kk)+CHk/2,class:'ggrid'},svg);
+    S('text',{class:'colh',x:8,y:yk(kk)+CHk/2-5},svg,kk===0?'COMMON ANCESTOR':kk+' GEN. DOWN');
+  }
+  const x0=k.partner?cx-90:cx;
+  const lab=(p,g)=>g<=0?'':(rel(-g,p.sex)).toUpperCase();
+  const place=(seq,side,col,end,d)=>{
+    seq.forEach((p,i)=>{
+      if(i===0)return;
+      const x=direct?cx-CWk/2:(side<0?cx-(base+(i-1)*stepX)-CWk/2:cx+(base+(i-1)*stepX)-CWk/2),y=yk(i);
+      const pxm=i===1?cx:(direct?cx:(side<0?cx-(base+(i-2)*stepX):cx+(base+(i-2)*stepX)));
+      const py=yk(i-1)+CHk;
+      edge(i===1?(direct?cx:cx):pxm,py,x+CWk/2,y,col);
+      kcard(svg,p,x,y,{col,thick:i===seq.length-1,tag:i===seq.length-1?end:lab(p,d-i)});
+    });
+  };
+  // top: the common ancestor, and their partner when both are shared
+  kcard(svg,k.X,direct?cx-CWk/2:x0-CWk/2,yk(0),{col:ink,thick:true,tag:dA===0?'A · FOCUS':dB===0?'B':'COMMON ANCESTOR'});
+  if(k.partner)kcard(svg,k.partner,cx+90-CWk/2,yk(0),{col:ink,thick:true,tag:'COMMON ANCESTOR'});
+  if(k.partner)S('line',{x1:cx-90+CWk/2,x2:cx+90-CWk/2,y1:yk(0)+CHk/2,y2:yk(0)+CHk/2,stroke:ink,'stroke-width':1.6},svg);
+  if(direct){
+    const seq=dA===0?seqB:seqA,end=dA===0?'B':'A · FOCUS',d=seq.length-1;
+    place(seq,0,dA===0?red:teal,end,d);
+  }else{
+    place(seqA,-1,teal,'A · FOCUS',dA);place(seqB,1,red,'B',dB);
+    S('text',{class:'colh',x:cx-base-CWk/2,y:yk(maxd)+CHk+18,style:'fill:'+teal},svg,"A'S SIDE · "+dA+' UP');
+    S('text',{class:'colh',x:cx+base-CWk/2+20,y:yk(maxd)+CHk+18,style:'fill:'+red},svg,"B'S SIDE · "+dB+' UP');
+  }
+}
+function drawKinMap(ca,cb){
+  const pts=[...ca.map((p,i)=>({p,side:i===ca.length-1?0:-1,end:i===0})),...cb.map((p,i)=>({p,side:1,end:i===0}))];
+  const svg=$('#km'),Wp=Math.max(420,svg.parentNode.clientWidth||800),Hp=320;
+  svg.textContent='';svg.setAttribute('width',Wp);svg.setAttribute('height',Hp);
+  const uniq=[...new Map(pts.map(q=>[q.p.bp,PL[q.p.bp]])).values()];
+  const lons=uniq.map(p=>p.lon),lats=uniq.map(p=>p.lat);
+  const bw=Math.max(...lons)-Math.min(...lons),bh=Math.max(...lats)-Math.min(...lats);
+  let w=Math.max(bw*1.5,16);const hh=Math.max(bh*1.5,10);w=Math.max(w,hh*Wp/Hp);
+  const h=w*Hp/Wp,cx=(Math.max(...lons)+Math.min(...lons))/2,cy=-(Math.max(...lats)+Math.min(...lats))/2,k=w/Wp;
+  svg.setAttribute('viewBox',(cx-w/2)+' '+(cy-h/2)+' '+w+' '+h);
+  const eu=Math.min(...lons)>-13&&Math.max(...lons)<50&&Math.min(...lats)>30&&Math.max(...lats)<62;
+  S('rect',{x:cx-w/2-5,y:cy-h/2-5,width:w+10,height:h+10,fill:'var(--sea)'},svg);
+  S('use',{href:eu?'#land-eu':'#land-world',fill:'var(--land)',stroke:'var(--coast)','stroke-width':.8},svg);
+  const arcs=(seq,col,sg)=>{
+    for(let i=1;i<seq.length;i++){
+      const a=PL[seq[i-1].bp],b=PL[seq[i].bp];if(a===b)continue;
+      const x1=a.lon,y1=-a.lat,x2=b.lon,y2=-b.lat,dx=x2-x1,dy=y2-y1,c=.18*sg;
+      S('path',{d:'M'+x1+','+y1+'Q'+((x1+x2)/2-dy*c)+','+((y1+y2)/2+dx*c)+' '+x2+','+y2,fill:'none',stroke:col,'stroke-width':2.2,'stroke-opacity':.85,'vector-effect':'non-scaling-stroke'},svg);
+    }
+  };
+  arcs(ca,'var(--atlas)',1);arcs(cb,'var(--brick)',-1);
+  const seen=new Set();
+  pts.forEach(q=>{
+    const pl=PL[q.p.bp];if(seen.has(q.p.bp))return;seen.add(q.p.bp);
+    const col=q.side<0?'var(--atlas)':q.side>0?'var(--brick)':'var(--ink)';
+    const c=S('circle',{cx:pl.lon,cy:-pl.lat,r:(q.end?6.5:4.5)*k,fill:col,stroke:'var(--panel)','stroke-width':1.6,'vector-effect':'non-scaling-stroke'},svg);
+    S('title',{},c,q.p.bp+': '+nm(q.p)+' ('+yrs(q.p)+')');
+    S('text',{class:'nodelab',x:pl.lon+8*k,y:-pl.lat+3.5*k,'font-size':11*k,'stroke-width':3*k,style:'pointer-events:none'},svg,q.p.bp);
+  });
+}
+function renderKin(){
+  const A=P[st.focus];
+  if(!st.kb||!P[st.kb]||st.kb===A.id)st.kb=defaultKin(A);
+  const B=P[st.kb],k=kinship(A,B);
+  $('#kinA').innerHTML='<b>'+esc(nm(A))+'</b> <small>'+esc(yrs(A))+'</small>';
+  $('#kq').placeholder='Now: '+nm(B)+'. Find someone else…';
+  // quick picks: one of each kind of relative in the close family
+  const seenK=new Set(),ch=[];
+  [...closeSet(A.id)].filter(id=>id!==A.id).map(id=>({p:P[id],k:kinship(A,P[id])})).filter(x=>x.k).sort((x,y)=>(x.k.dA+x.k.dB)-(y.k.dA+y.k.dB)).forEach(x=>{
+    const key=x.k.label.replace(/^half-/,'');if(seenK.has(key)||ch.length>=10)return;seenK.add(key);ch.push(x);
+  });
+  $('#kinchips').innerHTML='<span class="kvs">Try:</span>'+ch.map(x=>'<button class="chipb'+(x.p.id===B.id?' on':'')+'" data-kin="'+x.p.id+'">'+esc(clip(nm(x.p),20))+' <em>'+esc(x.k.label)+'</em></button>').join('');
+  const head=$('#kinhead'),vwrap=$('#kvwrap'),chain=$('#kvchain'),mapw=$('#kinmap');
+  if(k){
+    const pct=k.r*100,pcts=pct>=1?pct.toFixed(pct>=10?0:1):pct.toFixed(2);
+    head.innerHTML='<h2>'+esc(nm(B))+' is '+esc(nm(A))+'’s '+esc(k.label)+'</h2>'+
+      '<p>Closest shared ancestor'+(k.partner?'s':'')+': <button class="plink" style="display:inline-flex;width:auto;margin:0 4px" data-id="'+k.X.id+'"><i style="background:'+colorOf(k.X)+'"></i>'+esc(nm(k.X))+'</button>'+(k.partner?' and <button class="plink" style="display:inline-flex;width:auto;margin:0 4px" data-id="'+k.partner.id+'"><i style="background:'+colorOf(k.partner)+'"></i>'+esc(nm(k.partner))+'</button>':'')+', '+k.dA+' generation'+(k.dA===1?'':'s')+' up from '+esc(A.given)+' and '+k.dB+' from '+esc(B.given)+'.'+(k.n>1&&!k.partner?' '+(k.n-1)+' other shared ancestor'+(k.n>2?'s':'')+'.':'')+'</p>'+
+      '<p>Expected shared DNA about <b>'+pcts+'%</b> (roughly '+Math.round(k.r*6800)+' cM). A statistical average from the tree, not a measurement.</p>'+
+      '<p><button class="btn" data-showpath="1">Show this path on the map</button></p>';
+    vwrap.hidden=false;$('#kz').hidden=false;chain.hidden=true;drawV(k,A,B);
+    mapw.hidden=false;drawKinMap(k.chainA,k.chainB);
+    st.kinIds=[...new Set([...k.chainA,...k.chainB].map(p=>p.id))];st.kinSeq=[k.chainA.slice().reverse(),k.chainB];
+  }else{
+    const mp=marriagePath(A,B);
+    vwrap.hidden=true;$('#kz').hidden=true;mapw.hidden=true;st.kinIds=null;
+    if(mp){
+      head.innerHTML='<h2>'+esc(nm(B))+' is connected to '+esc(nm(A))+' by marriage</h2><p>No shared ancestor in the tree, but the families join through '+(mp.length-1)+' step'+(mp.length>2?'s':'')+'.</p>';
+      chain.hidden=false;
+      chain.innerHTML=mp.map((s,i)=>(i?'<span class="tlk mv"><em class="tlh">'+esc(s.how)+'</em></span>':'')+'<button class="tc'+(i===0?' focus':'')+'" data-id="'+s.p.id+'">'+iconSVG(PTYPE[s.p.bp],24)+'<span class="tg">'+(i===0?'FOCUS':i===mp.length-1?'B':'')+'</span><b>'+esc(clip(nm(s.p),16))+'</b><span class="ty">'+(living(s.p)?'living':s.p.by)+'</span><small>'+esc(s.p.bp)+'</small></button>').join('');
+      st.kinIds=mp.map(s=>s.p.id);st.kinSeq=[mp.map(s=>s.p)];
+    }else{
+      head.innerHTML='<h2>No connection found between '+esc(nm(A))+' and '+esc(nm(B))+'</h2><p>They sit in different trees or one is an orphan record. <a href="#" data-goto="orphans" data-okind="'+(B._orph?'orph':'dead')+'">See where to start connecting people</a>.</p>';
+      chain.hidden=true;
+    }
+  }
+}
+
+/* ---------- Shell ---------- */
+function render(){
+  renderPanel();
+  if(st.view!=='movements')stopPlay();
+  if(!EXT.names.includes(st.view))EXT.stop();
+  $$('.tab').forEach(t=>t.setAttribute('aria-selected',String(t.dataset.view==='close'?(st.view==='map'&&st.mapscope==='close'):t.dataset.view==='map'?(st.view==='map'&&st.mapscope!=='close'):t.dataset.view===st.view)));
+  VIEWS.forEach(v=>{$('#v-'+v).hidden=v!==st.view});
+  syncFilters();
+  $$('.seg').forEach(s=>{const k=s.dataset.key;[...s.children].forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===String(st[k]))))});
+  (({hourglass:renderHG,fan:renderFan,map:renderMap,movements:renderMove,lanes:renderLanes,timeline:renderTL,atlasmap:renderAtlas,surnames:renderSurnames,eras:renderEras,orphans:renderOrphans,kinship:renderKin})[st.view]||EXT.views[st.view])();
+  requestAnimationFrame(()=>$$('.swipe').forEach(edges));
+  writeHash();
+  if(PROF&&parent!==window)requestAnimationFrame(()=>parent.postMessage({type:'ra-roots-height',h:Math.ceil(document.documentElement.scrollHeight)},'*'));
+}
+['click','change','keyup','input'].forEach(ev=>document.addEventListener(ev,()=>setTimeout(writeHash,0)));
+window.addEventListener('hashchange',()=>{applyHash();render()});
+document.addEventListener('click',e=>{if(st.suppress){e.preventDefault();e.stopPropagation();st.suppress=false}},true);
+document.addEventListener('click',e=>{
+  const kn=e.target.closest('[data-kin]');
+  if(kn){st.kb=kn.dataset.kin;$('#kres').hidden=true;$('#kq').value='';renderKin();return}
+  const sp=e.target.closest('[data-showpath]');
+  if(sp){st.kinShow=true;st.view='map';st.mapscope=(st.kinIds||[]).every(id=>closeSet(st.focus).has(id))?'close':'all';st.mcolor='line';render();return}
+  const ck=e.target.closest('[data-clearkin]');
+  if(ck){st.kinShow=false;renderMap();return}
+  const gt=e.target.closest('[data-goto]');
+  if(gt){e.preventDefault();if(gt.dataset.okind)st.okind=gt.dataset.okind;st.view=gt.dataset.goto;render();return}
+  const sm=e.target.closest('[data-showmap]');
+  if(sm){st.view='atlasmap';st.amode=st.okind;st.ascope='all';st.apl=sm.dataset.showmap;const pl=PL[st.apl];st._av='x';st.av={cx:pl.lon,cy:-pl.lat,w:26};st.aview='fit';render();return}
+  const pk=e.target.closest('[data-pick]');
+  if(pk){selectPlace(pk.dataset.pick);return}
+  const so=e.target.closest('[data-open]');
+  if(so){st.open=st.open===so.dataset.open?null:so.dataset.open;renderPanel();return}
+  const seg=e.target.closest('.seg button');
+  if(seg){const v=seg.dataset.v;st[seg.parentNode.dataset.key]=isNaN(+v)?v:+v;render();return}
+  const tab=e.target.closest('.tab');
+  if(tab){const v=tab.dataset.view;
+    if(v==='close'){st.view='map';st.mapscope='close';st.mcolor='country';st.cty=null}
+    else{st.view=v;if(v==='map'){st.mapscope='all';st.mcolor='line';st.line=null}}
+    render();return}
+  const ct=e.target.closest('[data-cty]');
+  if(ct){st.cty=st.cty===ct.dataset.cty?null:ct.dataset.cty;renderMap();return}
+  const ln=e.target.closest('[data-line]');
+  if(ln){const i=+ln.dataset.line;st.line=st.line===i?null:i;renderMap();return}
+  if(e.target.closest('a'))return;
+  const ft=e.target.closest('[data-fixtxt],[data-copytxt]');if(ft){try{parent.postMessage(ft.dataset.fixtxt!=null?{fixplace:ft.dataset.fixtxt}:{copytxt:ft.dataset.copytxt},'*')}catch(x){}return}
+  const sn=e.target.closest('[data-sn]');if(sn){st.sn=st.sn===sn.dataset.sn?null:sn.dataset.sn;render();return}
+  const sc=e.target.closest('[data-scty]');if(sc){st.scty=st.scty===sc.dataset.scty?null:sc.dataset.scty;render();return}
+  const t=e.target.closest('[data-id]');
+  if(t){if(st.suppress){st.suppress=false;return}
+    if(t.closest('#results')){$('#results').hidden=true;go(t.dataset.id);return}
+    pick(t.dataset.id,e);return}
+  if(!e.target.closest('.search'))$('#results').hidden=true;
+});
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Enter'&&e.key!==' ')return;
+  const t=e.target.closest&&e.target.closest('svg [data-id], .tc[data-id]');
+  if(t){e.preventDefault();pick(t.dataset.id,e)}
+});
+document.addEventListener('click',e=>{
+  if(e.target.closest('#copylink')){const b=$('#copylink'),u=location.href;
+    const done=()=>{b.innerHTML=ICO.check;b.title='Copied';setTimeout(()=>{b.innerHTML=ICO.copy;b.title='Copy link to this person'},1500)};
+    try{navigator.clipboard.writeText(u).then(done,()=>{window.prompt('Copy this link',u)})}catch(x){window.prompt('Copy this link',u)}}
+});
+const qi=$('#q'),res=$('#results');
+const fold=s=>String(s).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+/* a name matches when every word typed is found in it, in any order, ignoring accents and capitals: "ivan defranceski" finds Ivan Anton Defranceski */
+const nameHit=(p,q)=>{const n=fold(nm(p));return fold(q).split(/\s+/).filter(Boolean).every(t=>n.includes(t))};
+qi.addEventListener('input',()=>{
+  st.q=qi.value;const q=st.q.trim().toLowerCase();
+  if(!q){res.hidden=true}
+  else{
+    const m=list.filter(p=>nameHit(p,q)).sort((a,b)=>ancSet(b).size-ancSet(a).size||a.by-b.by).slice(0,8);
+    res.innerHTML=m.length?m.map(p=>'<li><button data-id="'+p.id+'"><i style="width:8px;height:8px;border-radius:2px;background:'+colorOf(p)+'"></i>'+esc(nm(p))+'<small>'+esc(yrs(p))+'</small></button></li>').join(''):'<li style="padding:8px;color:var(--muted)">No match</li>';
+    res.hidden=false;
+  }
+  if(st.view==='map')renderMap();
+});
+$('#kswap').onclick=()=>{const a=st.focus,b=st.kb;if(b){st.kb=a;go(b)}};
+/* Kinship search. Spelling-tolerant (Franceschi, Defranceschi, Defranceski, De Franceschi are one name), any word order, matches a place or a
+   year as well as a name, and puts relatives first, each result showing how they are related to the person in focus. */
+const skey=t=>t.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/đ/g,'d').replace(/ł/g,'l').replace(/sch/g,'sk').replace(/ch/g,'k').replace(/ck/g,'k').replace(/[zs]+/g,'s').replace(/[yj]/g,'i').replace(/w/g,'v').replace(/(.)\1+/g,'$1').replace(/[^a-z0-9]/g,'');
+const swords=t=>t.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+function lev1(a,b){if(Math.abs(a.length-b.length)>1)return false;let i=0;while(i<a.length&&a[i]===b[i])i++;if(a.length===b.length)return a.slice(i+1)===b.slice(i+1)||(a[i]===b[i+1]&&a[i+1]===b[i]&&a.slice(i+2)===b.slice(i+2));return a.length>b.length?a.slice(i+1)===b.slice(i):b.slice(i+1)===a.slice(i)}
+function skeyOf(p){
+  if(!p._sk){const pw=swords(nm(p)),ws=pw.map(skey).filter(Boolean);p._sk={pw,ws,all:ws.join(''),pl:swords((p.bp||'')+' '+(p.dp||'')).map(skey),yrs:[p.by,p.dy].filter(Boolean).map(String)}}
+  return p._sk;
+}
+function kinScore(p,toks,fuzzy){
+  const k=skeyOf(p);let tot=0;
+  for(const t of toks){
+    let b=0;
+    if(/^\d+$/.test(t)){if(k.yrs.some(y=>y===t))b=3;else if(k.yrs.some(y=>y.startsWith(t)))b=2}
+    else{
+      const pq=swords(t).join(''),q=skey(t);if(!pq)continue;
+      for(const w of k.pw){if(w===pq)b=Math.max(b,4);else if(w.startsWith(pq))b=Math.max(b,3)}      // exactly as typed, or the start of a word
+      if(q.length>=3){                                                                              // spelled another way: Defranceski for Defranceschi
+        for(const w of k.ws){if(w===q)b=Math.max(b,4);else if(w.startsWith(q))b=Math.max(b,3);else if(w.includes(q))b=Math.max(b,1.5);else if(fuzzy&&q.length>=4&&lev1(q,w))b=Math.max(b,1)}
+        if(!b&&k.all.includes(q))b=1.5;                                                             // "defra" across the de/di prefix
+      }
+      if(!b&&k.pl.some(w=>w===q||(q.length>2&&w.startsWith(q))))b=1.2;
+    }
+    if(!b)return 0;tot+=b;
+  }
+  return tot;
+}
+let kAct=-1;
+function kinSearch(raw){
+  const res=$('#kres'),inp=$('#kq'),A=P[st.focus];
+  const toks=raw.trim().split(/\s+/).filter(Boolean);
+  if(!toks.length){res.hidden=true;inp.setAttribute('aria-expanded','false');return}
+  let m=[];
+  for(const fuzzy of [false,true]){
+    m=[];for(const p of list){if(p.id===A.id)continue;const sc=kinScore(p,toks,fuzzy);if(sc)m.push({p,sc})}
+    if(m.length)break;
+  }
+  m=m.sort((a,b)=>b.sc-a.sc).slice(0,40).map(x=>{const k=kinship(A,x.p);return Object.assign(x,{k,d:k?k.dA+k.dB:99})});
+  m.sort((a,b)=>(b.sc>=3)-(a.sc>=3)||a.d-b.d||b.sc-a.sc||Math.abs((a.p.by||0)-A.by)-Math.abs((b.p.by||0)-A.by));
+  m=m.slice(0,12);kAct=m.length?0:-1;
+  res.innerHTML=m.length?m.map((x,i)=>'<li role="presentation"><button role="option" data-kin="'+x.p.id+'" aria-selected="'+(i===0)+'"><i style="width:8px;height:8px;border-radius:2px;background:'+colorOf(x.p)+'"></i>'+esc(nm(x.p))+' <span class="rel'+(x.k?'':' none')+'">'+esc(x.k?x.k.label:'no known link')+'</span><small>'+esc(yrs(x.p))+'</small><span class="where">'+esc(x.p.bp||'')+'</span></button></li>').join(''):'<li style="padding:10px;color:var(--muted)">No one matches “'+esc(raw.trim())+'”. Try a surname, a town or a birth year.</li>';
+  res.hidden=false;inp.setAttribute('aria-expanded','true');
+}
+$('#kq').addEventListener('input',e=>kinSearch(e.target.value));
+$('#kq').addEventListener('focus',e=>{if(e.target.value.trim())kinSearch(e.target.value)});
+$('#kq').addEventListener('keydown',e=>{
+  const bs=[...$('#kres').querySelectorAll('button')];
+  if(e.key==='Escape'){$('#kres').hidden=true;return}
+  if(!bs.length||$('#kres').hidden)return;
+  if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();kAct=(kAct+(e.key==='ArrowDown'?1:-1)+bs.length)%bs.length;bs.forEach((b,i)=>b.setAttribute('aria-selected',i===kAct));bs[kAct].scrollIntoView({block:'nearest'})}
+  else if(e.key==='Enter'){e.preventDefault();bs[Math.max(0,kAct)].click();$('#kq').value=''}
+});
+document.addEventListener('click',e=>{if(!e.target.closest('.ksearch'))$('#kres').hidden=true});
+// the dot map is drawn at its panel's width; if the panel is measured before layout settles (or later widens) draw it again
+if(window.ResizeObserver){const mw=$('#map')&&$('#map').parentNode;if(mw)new ResizeObserver(()=>{const w=mw.clientWidth;if(w>0&&st.view==='map'&&Math.abs(w-(+$('#map').getAttribute('width')||0))>8&&(w>=520||+$('#map').getAttribute('width')>w))render()}).observe(mw)}
+let rt=0;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(['map','timeline','movements','lanes','atlasmap','eras','orphans','kinship',...EXT.names].includes(st.view))render()},120)});
+
+if(TREE){const v=$('.verdict');if(v)v.hidden=true}
+const wn=$('#weaknote');if(wn)wn.hidden=!(TREE&&list.some(p=>p.fg===0||p.mg===0));
+const bn=$('#bpenote');if(bn)bn.hidden=!(TREE&&list.some(p=>p.bpe));
+const ub=$('[data-key="okind"] [data-v="undrawn"]');if(ub)ub.hidden=!(TREE&&TREE.undrawn&&TREE.undrawn.length);
+$('#q').placeholder='Find a person, e.g. '+FAMS[0].sur;
+$('#yr').min=Math.max(1500,ALLY0+10);st.year=Math.min(2020,Math.max(ALLY0+10,st.year));
+const META=Object.assign({title:'Roots & Routes',sub:'Explore the family tree ten ways: by generation, place, era and relationship. Click anyone and every view follows.'},(TREE&&TREE.meta)||{});
+document.querySelectorAll('[data-key="mgroup"] [data-v="line"]').forEach(b=>{b.textContent=META.rowLabel||'Last name'});
+document.querySelectorAll('[data-key="mcolor"] [data-v="line"]').forEach(b=>{b.textContent=META.lineLabel||'Family line'});
+document.title=META.title;$('#ptitle').textContent=META.title;$('#subtxt').textContent=META.sub;
+$('#count').textContent=TREE?'':'Sample data: '+list.length.toLocaleString('en')+' invented people.';
+$('#rgkey').innerHTML=Object.keys(ATLAS.regimes).slice(0,5).map(k=>'<span><i style="background:var(--rg-'+k+')"></i>'+esc(ATLAS.regimes[k].label.split(/ [—·\/] /)[0])+'</span>').join('')+'<span><i style="background:var(--hair)"></i>Not surveyed yet</span>';
+
+/* ---------- LOCAL ADDITION · Surnames: a cloud of the ancestors' surnames, with colour carrying a second fact ---------- */
+const sfold=t=>fold(t||'').replace(/[^a-z0-9]+/g,'');
+const med=a=>{a=a.filter(x=>x!=null).sort((x,y)=>x-y);return a.length?a[a.length>>1]:null};
+const ctry=p=>(p.bp&&PL[p.bp]&&PL[p.bp].cn)||'Unknown';
+function surnameData(){
+  const root=P[st.focus],anc=ancSet(root),depth=st.sdepth==='all'?99:+st.sdepth;
+  const rows=[[root,0]];anc.forEach((g,id)=>{if(g<=depth&&P[id])rows.push([P[id],g])});
+  const G=new Map();let none=0,maxG=0;
+  for(const [p,g] of rows){
+    const key=p.sk||sfold(p.sur);if(!key){none++;continue}
+    let e=G.get(key);if(!e){e={key,forms:new Map(),ppl:[],near:0};G.set(key,e)}
+    e.forms.set(p.sur,(e.forms.get(p.sur)||0)+1);e.ppl.push({p,g});e.near+=Math.pow(2,-g);maxG=Math.max(maxG,g);
+  }
+  const cc=new Map();
+  G.forEach(e=>{
+    e.label=[...e.forms].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))[0][0];
+    e.gMin=Math.min(...e.ppl.map(x=>x.g));e.gMax=Math.max(...e.ppl.map(x=>x.g));e.medG=med(e.ppl.map(x=>x.g));
+    e.medBy=med(e.ppl.map(x=>x.p.by));e.cn=new Map();
+    e.ppl.forEach(x=>{const c=ctry(x.p);e.cn.set(c,(e.cn.get(c)||0)+1);cc.set(c,(cc.get(c)||0)+1)});
+    e.topC=[...e.cn].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))[0][0];
+  });
+  const top=[...cc].filter(x=>x[0]!=='Unknown').sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,7).map(x=>x[0]);
+  return {G,none,maxG,rows:rows.length,cc,top};
+}
+const cCol=(D,c)=>{const i=D.top.indexOf(c);return 'var(--l'+(i<0?7:i)+')'};
+const ramp=t=>'color-mix(in oklab, var(--l2) '+Math.round((1-t)*100)+'%, var(--l5))';
+function surnameColour(D,e){
+  if(st.scol==='country')return cCol(D,e.topC);
+  if(st.scol==='gen')return ramp(D.maxG>1?(e.medG-1)/(D.maxG-1):0);
+  const ys=[...D.G.values()].map(x=>x.medBy).filter(y=>y!=null),lo=Math.min(...ys),hi=Math.max(...ys);
+  return e.medBy==null?'var(--l7)':ramp(hi>lo?(hi-e.medBy)/(hi-lo):0);
+}
+let _scx=null;
+function cloudLayout(items,W,H){
+  _scx=_scx||document.createElement('canvas').getContext('2d');
+  for(let scale=1;scale>.35;scale*=.9){
+    const placed=[];let ok=true;
+    for(const it of items){
+      const fs=Math.max(11,it.fs*scale);_scx.font='600 '+fs+'px Fraunces,Georgia,serif';
+      const w=_scx.measureText(it.label).width+8,h=fs*1.12+(st.scol==='country'?7:2);
+      let hit=false;
+      for(let a=0;a<900;a+=.3){
+        const r=2.2*a,x=W/2+r*Math.cos(a)*1.7-w/2,y=H/2+r*Math.sin(a)-h/2;
+        if(x<4||y<4||x+w>W-4||y+h>H-4)continue;
+        if(placed.some(b=>x<b.x+b.w&&x+w>b.x&&y<b.y+b.h&&y+h>b.y))continue;
+        placed.push({it,fs,x,y,w,h});hit=true;break;
+      }
+      if(!hit){ok=false;break}
+    }
+    if(ok)return placed;
+    if(scale<=.4)return placed;
+  }
+  return [];
+}
+function renderSurnames(){
+  const D=surnameData(),svg=$('#sc'),cv=svg.parentNode;
+  const all=[...D.G.values()];
+  const val=e=>st.ssize==='near'?e.near:e.ppl.length;
+  if(!all.length){svg.setAttribute('height',60);svg.textContent='';$('#slegend').textContent='';$('#sgrid').textContent='';$('#sdetail').innerHTML='<h2>No surnames</h2><div class="amsub">This person and their ancestors have no surname recorded.</div>';$('#ssum').textContent='';$('#sfoot').textContent='';return}
+  if(st.sn&&!D.G.has(st.sn))st.sn=null;
+  const W=Math.max(360,cv.clientWidth||700),H=Math.round(Math.min(560,Math.max(360,W*.52)));
+  const vmax=Math.max(...all.map(val)),fmax=Math.min(84,Math.max(36,W/9));
+  const shown=all.slice().sort((a,b)=>val(b)-val(a)||a.label.localeCompare(b.label)).slice(0,90);
+  const items=shown.map(e=>({e,label:e.label,fs:11+(fmax-11)*Math.pow(val(e)/vmax,.7)}));
+  const placed=cloudLayout(items,W,H);
+  svg.setAttribute('width',W);svg.setAttribute('height',H);svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.textContent='';
+  placed.forEach(b=>{
+    const e=b.it.e,dim=(st.sn&&st.sn!==e.key)||(st.scty&&st.scol==='country'&&e.topC!==st.scty);
+    const g=S('g',{opacity:dim?.22:1},svg);
+    const t=S('text',{class:'sw',x:b.x+4,y:b.y+b.fs*.86,'font-size':b.fs,fill:surnameColour(D,e),'data-sn':e.key,tabindex:0,role:'button','aria-label':e.label+', '+e.ppl.length+' people'},g,e.label);
+    S('title',{},t,e.label+': '+e.ppl.length+' '+(e.ppl.length===1?'person':'people')+', generations '+e.gMin+(e.gMax>e.gMin?'–'+e.gMax:'')+(e.medBy!=null?', typically born '+e.medBy:'')+' · '+[...e.cn].sort((a,c)=>c[1]-a[1]).map(x=>x[0]+' '+x[1]).join(', '));
+    if(st.scol==='country'){
+      let x=b.x+4;const tw=b.w-8,n=e.ppl.length;
+      [...e.cn].sort((a,c)=>D.top.indexOf(a[0])-D.top.indexOf(c[0])||a[0].localeCompare(c[0])).forEach(([c,k])=>{const w=tw*k/n;S('rect',{x,y:b.y+b.h-5,width:Math.max(1,w-1),height:4,rx:1.5,fill:cCol(D,c)},g);x+=w});
+    }
+    if(st.sn===e.key)S('rect',{class:'sel',x:b.x,y:b.y,width:b.w,height:b.h},g);
+  });
+  const hidden=all.length-placed.length;
+  $('#ssum').textContent=D.rows+' people · '+all.length+' surnames'+(D.none?' · '+D.none+' with no surname recorded':'');
+  $('#sfoot').textContent=hidden>0?hidden+' more names are too small to fit, see the table below or pick fewer generations':'Every surname is shown';
+  /* legend */
+  let lg='';
+  if(st.scol==='country'){
+    lg='<span>Where born (most common place of birth for each name; the bar under a name shows the mix):</span>'+[...D.top].sort().concat(D.cc.has('Unknown')?['Unknown']:[]).map(c=>'<button data-scty="'+esc(c)+'" aria-pressed="'+(st.scty===c)+'"><i style="background:'+(c==='Unknown'?'var(--l7)':cCol(D,c))+'"></i>'+esc(c)+' '+D.cc.get(c)+'</button>').join('')+(D.cc.size>D.top.length+(D.cc.has('Unknown')?1:0)?'<span><i style="background:var(--l7);width:10px;height:10px;border-radius:2px;display:inline-block"></i> other countries</span>':'');
+  }else{
+    const lo=st.scol==='gen'?'Near (parents)':'Recent',hi=st.scol==='gen'?'Far back ('+D.maxG+' generations)':'Earliest';
+    lg='<span>'+lo+'</span><span class="ramp" style="background:linear-gradient(90deg,'+ramp(0)+','+ramp(1)+')"></span><span>'+hi+'</span><span>'+(st.scol==='gen'?'(median generation of the people with that name)':'(median birth year of the people with that name)')+'</span>';
+  }
+  $('#slegend').innerHTML=lg;
+  /* details */
+  const sel=st.sn&&D.G.get(st.sn);let h='';
+  if(sel){
+    const ppl=sel.ppl.slice().sort((a,b)=>a.g-b.g||(a.p.by-b.p.by));
+    h+='<h2>'+esc(sel.label)+'</h2><div class="amsub">'+sel.ppl.length+' '+(sel.ppl.length===1?'person':'people')+' · generations '+sel.gMin+(sel.gMax>sel.gMin?'–'+sel.gMax:'')+(sel.medBy!=null?' · typically born '+sel.medBy:'')+'</div>';
+    if(sel.forms.size>1)h+='<div class="amsub">Spelled: '+[...sel.forms].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).map(x=>esc(x[0])+' ('+x[1]+')').join(', ')+'</div>';
+    h+='<div>'+[...sel.cn].sort((a,b)=>a[0].localeCompare(b[0])).map(([c,k])=>'<span class="chip" style="border-left:6px solid '+(c==='Unknown'?'var(--l7)':cCol(D,c))+'">'+esc(c)+' '+k+'</span>').join('')+'</div>';
+    h+='<h3>People</h3><div class="plist">';
+    let lastg=-1;ppl.forEach(x=>{if(x.g!==lastg){lastg=x.g;h+='<div class="amsub">'+(x.g===0?'Focus person':x.g===1?'Parents':'Generation '+x.g)+'</div>'}h+=plink(x.p)});
+    h+='</div>';
+  }else h+='<h2>Pick a name</h2><div class="amsub">Click a surname in the cloud, or a row in the table below, to see who carried it.</div><div class="amsub">Colour tells a second story: switch <b>Colour by</b> to see where each name came from, how far back it goes, or when it was at its height.</div>';
+  $('#sdetail').innerHTML=h;
+  /* surname x generation table: when each name enters and leaves the tree. A name with one person is left out, so the table shows the names that recur. */
+  const rowsT=all.filter(e=>e.ppl.length>=2).sort((a,b)=>a.label.localeCompare(b.label)).slice(0,40);
+  const tot=Array.from({length:D.maxG+1},(_,g)=>[...D.G.values()].reduce((n,e)=>n+e.ppl.filter(x=>x.g===g).length,0));
+  let t='<h3>Names by generation (1 = parents; the shade is the share of that generation\'s ancestors who carried the name)</h3>';
+  if(!rowsT.length)t+='<div class="amsub">No surname recurs in this selection.</div>';
+  else{
+    t+='<table><thead><tr><th></th>'+tot.map((n,g)=>'<th title="'+n+' people in this generation">'+(g===0?'Me':g)+'</th>').join('')+'</tr></thead><tbody>';
+    rowsT.forEach(e=>{
+      t+='<tr'+(st.sn===e.key?' class="on"':'')+'><th class="rn"><button data-sn="'+esc(e.key)+'">'+esc(e.label)+'</button></th>';
+      for(let g=0;g<=D.maxG;g++){const n=e.ppl.filter(x=>x.g===g).length;
+        t+=n?'<td title="'+n+' of '+tot[g]+'" style="background:color-mix(in srgb,'+surnameColour(D,e)+' '+Math.round(25+70*n/tot[g])+'%,var(--panel));color:var(--ink)">'+n+'</td>':'<td class="z"></td>'}
+      t+='</tr>';
+    });
+    t+='</tbody></table>';
+  }
+  $('#sgrid').innerHTML=t;
+}
+$('#sc').addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.dataset&&e.target.dataset.sn){e.preventDefault();e.target.dispatchEvent(new MouseEvent('click',{bubbles:true}))}});
+/*EXT:SCRIPT*/
+renderMetrics();
+render();
+})();
+</script>
