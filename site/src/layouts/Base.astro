@@ -371,6 +371,9 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     .muted { color: var(--ink-soft); }
     .small { font-size: .85rem; }
   </style>
+{/* Google AdSense (Auto ads). Never on a page about a living person: those are noindex, and the ad
+   script would hand Google the page address, which carries the name. Privacy page says so. */}
+{!noindex && <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4156851882993001" crossorigin="anonymous"></script>}
 </head>
 <body class={hero ? "has-hero" : undefined}>
   <SkipLink />
