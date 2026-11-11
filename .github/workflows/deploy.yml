@@ -96,6 +96,11 @@ jobs:
       - name: Check that every page is placed in the book
         run: python3 node_modules/@daviddef/archive-kit/kit/tools/checkbook.py --dist dist --book src/data/book.json
         working-directory: site
+      # What's new, the numbers and the search box (kit/docs/whats-new.md, 11 November 2026): /whats-new/ is built with a
+      # timeline, its badges equal the rows drawn, and every page carries exactly one ribbon and one search box.
+      - name: Check the what's-new page, the ribbon and the search box
+        run: python3 node_modules/@daviddef/archive-kit/kit/tools/checkpulse.py --dist dist
+        working-directory: site
       # The archive's standard for living people (version 2, 16 October 2026): a living person
       # (80 or younger, with no death recorded) is named with their relationships and their town
       # and country, and nothing more, on a page that is noindex; an undated person with a

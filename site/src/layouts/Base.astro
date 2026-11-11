@@ -5,6 +5,9 @@ import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
 import JsonLd from "@daviddef/archive-kit/components/JsonLd.astro";
 import BookHead from "@daviddef/archive-kit/components/BookHead.astro";
 import BookFoot from "@daviddef/archive-kit/components/BookFoot.astro";
+import PulseRibbon from "@daviddef/archive-kit/components/PulseRibbon.astro";
+import SearchPop from "@daviddef/archive-kit/components/SearchPop.astro";
+import { pulse } from "../lib/pulse.js";
 import book from "../data/book.json";
 import { u } from "../lib/url.js";
 /* `noindex` is the page-level switch for a page ABOUT a living person: the kit's sitemap tool and this
@@ -24,7 +27,7 @@ import { u } from "../lib/url.js";
 const { title, subtitle, lede, hero, structured = true, noindex = false, about = undefined, ownHeading = false, noAutolink = false } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const nav = [
-  ["Start", [["", "The archive"], ["/story", "The story"], ["/tree", "The tree"], ["/roots", "Roots & Routes"], ["/timeline", "The Timeline"], ["/dna", "The DNA"], ["/1948", "Nineteen forty-eight"]]],
+  ["Start", [["", "The archive"], ["/story", "The story"], ["/tree", "The tree"], ["/roots", "Roots & Routes"], ["/timeline", "The Timeline"], ["/dna", "The DNA"], ["/whats-new", "What's new"], ["/1948", "Nineteen forty-eight"]]],
   ["Our line", [["/derrick", "Derrick"], ["/leonard", "Leonard Wear"], ["/wear-line", "Where the Wear line stands"], ["/kurt", "Kurt"], ["/ivone", "Ivone"], ["/leibholz", "The Leibholz brothers"]]],
   ["The families", [["/families", "The families"], ["/families/luwinski", "Luwinski"], ["/families/leibholz", "Leibholz"], ["/families/wear", "Wear"], ["/families/thimm", "Thimm"], ["/families/castle", "Castle"], ["/families/hawkins", "Hawkins"], ["/families/giddins", "Giddins"], ["/families/larkin", "Larkin"], ["/families/figueiredo", "Figueiredo"], ["/families/schmul", "Schmul"], ["/families/bloom", "Bloom"], ["/families/wallis", "Wallis"]]],
   ["Places", [["/east-prussia", "East Prussia"], ["/mozambique", "Mozambique"], ["/australia", "Australia"], ["/atlas", "Atlas"]]],
@@ -390,7 +393,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
           </div>
         </details>
       ))}
-      <a class="findbtn" href={base + '/search/'}>Search</a>
+      <PulseRibbon pulse={pulse} />
     </nav>
     <details class="drawerbox">
       <summary>Menu</summary>
@@ -402,10 +405,11 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
             ))}
           </div>
         ))}
-        <div class="dgrp"><a href={base + '/search/'}>Search</a></div>
+        <div class="dgrp"><a href={base + '/search/'} data-search-open>Search</a></div>
       </div>
     </details>
   </div></header>
+  <SearchPop tries={["Leibholz", "Szubin", "Berlin", "1948"]} />
   {/* THE BOOK (17 October 2026): the running head sits below the site header on every page and the
       Previous / Next above the footer. src/data/book.json places every page; kit/tools/checkbook.py fails the
       build on one nobody placed. The width of the book's head and foot is set in the style block below. */}

@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev --port 4331",
-    "build": "npm run check:pin && npm run build:register && npm run build:names && npm run build:given && npm run build:evidence && npm run build:records && npm run flags:data && astro build && npm run autolink && npm run check:templates && python3 ../tools/build-search.py && npm run check:search && npm run sitemap && npm run check:book && npm run check:living && npm run check:prose && npm run check:families && npm run check:lines && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence && npm run check:superseded && npm run check:sources && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:nav && npm run check:links && npm run check:story && npm run check:directline && npm run check:familylines && npm run check:familyribbon && npm run check:ribbonflags && npm run check:standard && npm run check:era-ground && npm run check:era && npm run check:era:selftest",
+    "build": "npm run check:pin && npm run build:register && npm run build:names && npm run build:given && npm run build:evidence && npm run build:records && npm run flags:data && astro build && npm run autolink && npm run check:templates && python3 ../tools/build-search.py && npm run check:search && npm run sitemap && npm run check:book && npm run check:pulse && npm run check:living && npm run check:prose && npm run check:families && npm run check:lines && npm run check:worklist && npm run check:covers && npm run check:matches && npm run check:evidence && npm run check:superseded && npm run check:sources && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:nav && npm run check:links && npm run check:story && npm run check:directline && npm run check:familylines && npm run check:familyribbon && npm run check:ribbonflags && npm run check:standard && npm run check:era-ground && npm run check:era && npm run check:era:selftest",
     "preview": "astro preview --port 4331",
     "check:search": "python3 ../tools/check-search.py",
     "check:living": "python3 ../tools/check-living.py --dist dist --mode harvest && python3 ../tools/check-living.py --dist dist --mode hashes && python3 ../tools/selftest-living.py --dist dist && python3 node_modules/@daviddef/archive-kit/kit/tools/checkliving.py --dist dist --data src/data --years-only --config standard.json --strict-allow",
@@ -46,13 +46,14 @@
     "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 1",
     "sitemap": "python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py",
     "check:pin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpin.py --root .",
+    "check:pulse": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpulse.py --dist dist",
     "check:book": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkbook.py --dist dist --book src/data/book.json",
     "check:nav": "python3 node_modules/@daviddef/archive-kit/kit/tools/checknav.py --dist dist --strict",
     "check:inline": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkinline.py --root . --max-inline 13",
     "check:rows": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkrows.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#24def5394a25bf39e030b4818498434dc3672263",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#b18bd3e41e2907a0cf2069706724efb32a340f2c",
     "astro": "^5.18.2"
   },
   "devDependencies": {
