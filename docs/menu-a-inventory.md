@@ -2,11 +2,11 @@
 
 12 November 2026, the Luwinski archive. Only the header menu and the drawer changed (site/src/lib/site-menu.js, read by layouts/Base.astro); no page, address or redirect was touched. The proof is three checks, all run on the build of clean clones of main (before) and of this branch (after), each built with the CI workflow's own steps:
 
-1. **`menu-inventory-kit.py compare docs/menu-a-before.json DIST`**: every in-scope old address still answers and every text block that stood on it stands on the new site. Result: **NOTHING LOST** (47 in-scope pages: every menu address before or after, `/families/`, the Research pages, `/story/`).
+1. **`menu-inventory-kit.py compare docs/menu-a-before.json DIST`**: every in-scope old address still answers and every text block that stood on it stands on the new site. Result: **NOTHING LOST** (48 in-scope pages: every menu address before or after, `/families/`, the Research pages, `/story/`).
 2. **`menu-inventory-kit.py sitediff`**: all 354 pages of the site, old build against new: 354 before, 354 after, gone: none, new: none, **no page's text changed** (`docs/menu-text-changes.json` declares none).
 3. **`tools/menu-moves.py`** (docs/menu-a-moves.md): every address that left a menu is linked, in its `<main>`, from a page that is still in a menu; every address in the new menu is a built page. 0 problems.
 
-`/people/` is not in the compare scope: the kit's `compare` leaves out every page whose address starts with `/people/` when it builds the "somewhere on the new site" pool, which includes the index `/people/` itself, so its 265 rows are reported lost even against the same build (a kit quirk, not a loss). `/people/` is covered by `sitediff` (its text is identical) and it did not move: it is People > Lists.
+**A local patch of the kit tool, and the kit is not edited.** The kit's `compare` leaves every page whose address starts `/people/`, `/who/` or `/person/` out of its "somewhere on the new site" pool, the `/people/` index included, so the 265 rows of `/people/` read as lost even when a build is compared with itself. `tools/menu-inventory-kit.py` runs the kit's source with that one line changed to keep the `/people/` and `/who/` index pages in the pool (the pages below them stay out, as the kit intends), and asserts the line is still there, as TheMazza's `menus-a` does. With it a build compared with its own snapshot reads NOTHING LOST, and `/people/` is in the scope. The kit will be fixed separately after the rollout.
 
 The table below is the kit's report for the in-scope pages. The "What only this page holds" column is empty where the page was not edited by the earlier Research-menu work.
 
@@ -46,6 +46,7 @@ The table below is the kit's report for the in-scope pages. The "What only this 
 | `/mozambique/` | 83 | 83 | 9 | 9 | 5 | 5 | page |  |
 | `/names/` | 77 | 77 | 47 | 47 | 14 | 14 | page | The stories of how each spelling hid a file; now headed by an AtlasNote. |
 | `/open-questions/` | 42 | 42 | 0 | 0 | 13 | 13 | page | The ten open questions. Unchanged. |
+| `/people/` | 267 | 267 | 301 | 301 | 298 | 298 | page |  |
 | `/register/` | 163 | 163 | 177 | 177 | 176 | 176 | page |  |
 | `/research/` | 14 | 14 | 0 | 0 | 12 | 12 | page |  |
 | `/research/sources-and-method/` | 6 | 6 | 0 | 0 | 6 | 6 | page |  |
