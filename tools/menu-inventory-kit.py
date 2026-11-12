@@ -9,4 +9,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 KIT = os.path.join(HERE, "..", "site", "node_modules", "@daviddef", "archive-kit", "kit", "tools", "menu_inventory.py")
 os.chdir(os.path.join(HERE, ".."))
 g = {"__file__": os.path.join(HERE, "menu_inventory.py"), "__name__": "__main__"}
-exec(compile(open(KIT, encoding="utf-8").read(), KIT, "exec"), g)
+src = open(KIT, encoding="utf-8").read()
+# The kit's "where does a block now stand" index skips every page under /person/, /people/ and /who/ (written for archives where those are
+# directories of person pages). Here /people/ is itself a menu page in scope, so its own index page is kept in the index (the pages below it,
+# /people/<slug>/, are still skipped, as the kit intends). Without this the 265 rows of /people/ read as lost from itself, even when a build is
+# compared with itself. Same local patch as TheMazza's menus-a; the kit itself is NOT edited, and will be fixed there after the rollout.
+OLD = 'if url.startswith(("/person/", "/people/", "/who/")):'
+NEW = 'if url.startswith(("/person/", "/people/", "/who/")) and url not in ("/people/", "/who/"):'
+assert OLD in src, "kit menu_inventory.py changed: re-check this override"
+exec(compile(src.replace(OLD, NEW), KIT, "exec"), g)
