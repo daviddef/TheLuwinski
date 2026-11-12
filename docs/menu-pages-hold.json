@@ -1,0 +1,17 @@
+{
+  "/method/": "How the archive reads a record, and the rules it keeps. Unchanged.",
+  "/sources/": "What was read from each source, and what has only been identified; now headed by an AtlasNote.",
+  "/searched/": "The full account of each search and the bounded negatives; now headed by an AtlasNote.",
+  "/open-questions/": "The ten open questions. Unchanged.",
+  "/errands/": "The letters out and the drafts. Unchanged.",
+  "/worklist/": "The 280-row work list. Unchanged.",
+  "/corrections/": "The 23 claims taken back. Unchanged.",
+  "/changes/": "The dated log of what was done. Unchanged.",
+  "/status/": "Every open thread and the date it last moved. Unchanged (now listed under Sources & method).",
+  "/whats-new/": "The kit's What's new page; now also the head page of the What's new group. Unchanged.",
+  "/names/": "The stories of how each spelling hid a file; now headed by an AtlasNote.",
+  "/letters/": "Redirect stub to /errands/. Unchanged.",
+  "/research-log/": "Redirect stub to /changes/. Unchanged.",
+  "/negatives/": "Redirect stub to /searched/#negatives. Unchanged.",
+  "/evidence/": "Redirect stub to /searched/. Unchanged."
+}

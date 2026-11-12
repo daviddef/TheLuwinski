@@ -1,4 +1,5 @@
 ---
+import AtlasNote from "../components/AtlasNote.astro";
 import Base from '../layouts/Base.astro';
 import Sources from "@daviddef/archive-kit/components/Sources.astro";
 import { u } from '../lib/url.js';
@@ -32,6 +33,8 @@ const reachable = read.filter((r) => r.url || r.held).length;
 <Base title="Sources"
   subtitle="What has been read, and what has only been identified"
   lede="Named so that every claim on this site can be traced back, and so that the gap between what is actually held and what is merely known to exist stays visible.">
+
+  <AtlasNote only={[["What was actually read from each source, and what has only been identified", null, "the two groups below, with the evidence for each"], ["How each source bears on a claim in this archive", null, "the notes on each row"]]} atlas={[["FreeBMD", "https://recordatlas.org/archive/freebmd/"], ["FreeCEN", "https://recordatlas.org/archive/freecen/"], ["FreeREG", "https://recordatlas.org/archive/freereg/"], ["Hertfordshire Names Online", "https://recordatlas.org/archive/hertfordshire-names-online/"], ["Landesarchiv Berlin", "https://recordatlas.org/archive/de-landesarchiv-berlin/"], ["NAAIRS (South Africa)", "https://recordatlas.org/archive/naairs/"]]} closing="The sources themselves, and where each can be searched, are on the Atlas. The page below is this archive's own account of what it took from each." />
 
   <p class="small">Of the {read.length} sources this archive has read,
   <strong>{reachable}</strong> now say where they are — the one that carries no link is a scan

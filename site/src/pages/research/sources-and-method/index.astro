@@ -1,0 +1,13 @@
+---
+import Base from "../../../layouts/Base.astro";
+import ResearchList from "../../../components/ResearchList.astro";
+import { u } from "../../../lib/url.js";
+import { RESEARCH } from "../../../lib/research-menu.js";
+const g = RESEARCH.find((x) => x.id === "sources-and-method");
+---
+<Base title="Sources & method" subtitle="Research · what this archive stands on" lede={g.dek}>
+  <section>
+    <ResearchList items={g.items} />
+    <p class="small muted" style="margin-top:1.4rem">The rest of Research: <a href={u("/research/to-do/")}>To do</a> · <a href={u("/whats-new/")}>What's new</a> · <a href={u("/research/")}>all of it on one page</a>.</p>
+  </section>
+</Base>

@@ -1,0 +1,41 @@
+---
+/* THE NOTE AT THE TOP OF A PAGE WHOSE CONTENT THE RECORD ATLAS NOW ALSO CARRIES. 12 November 2026 (the research-menu pattern).
+   The Atlas holds the shared catalogues (the sources and where they are searched, and every surname's spellings, published from
+   this archive's own research); the page below keeps what only this archive has. The note says which is which, once, before the
+   page begins, and links the Atlas pages that exist (each address was fetched and answered 200 on 12 November 2026). Nothing on
+   the page below it was removed.
+     only    [[label, href | null, what]]   what only this archive holds here, with where on this page it starts (href optional)
+     atlas   [[label, href]]                where the same material is on the Atlas */
+import { u } from "../lib/url.js";
+const { atlas = [], only = [], closing = "These are on the Record Atlas as well. The page below is this archive's own account of them, in full." } = Astro.props;
+---
+<aside class="atlas-note" aria-label="What is here and what is on the Record Atlas">
+  <div class="an-col">
+    <div class="an-h">Only this archive holds</div>
+    <ul>
+      {only.map(([label, href, what]) => (
+        <li>{href ? <a href={href.startsWith("#") ? href : u(href)}>{label}</a> : label}{what ? <span class="an-w"> — {what}</span> : null}</li>
+      ))}
+    </ul>
+  </div>
+  <div class="an-col">
+    <div class="an-h">On the Record Atlas</div>
+    <ul>
+      {atlas.map(([label, href]) => (
+        <li><a href={href} target="_blank" rel="noopener">{label} ↗</a></li>
+      ))}
+    </ul>
+    <p class="an-p">{closing} <a href="https://recordatlas.org/" target="_blank" rel="noopener">recordatlas.org</a></p>
+  </div>
+</aside>
+<style>
+  .atlas-note { display: grid; grid-template-columns: 1.4fr 1fr; gap: .4rem 1.8rem; margin: 0 0 2rem; padding: 1rem 1.25rem;
+                border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 3px;
+                font-size: .92rem; line-height: 1.55; max-width: none; }
+  .an-h { font-size: .66rem; letter-spacing: .14em; text-transform: uppercase; opacity: .65; margin-bottom: .4rem; font-weight: 600; }
+  .atlas-note ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .25rem; max-width: none; }
+  .atlas-note li { margin: 0; }
+  .an-w { opacity: .8; }
+  .an-p { margin: .6rem 0 0; font-size: .82rem; opacity: .8; }
+  @media (max-width: 760px) { .atlas-note { grid-template-columns: 1fr; } }
+</style>

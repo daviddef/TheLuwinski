@@ -251,6 +251,21 @@
       "intro": "The working notes, kept inside the book: what has been read and what has only been identified, what cannot be answered yet, the corrections to the family's own record, the letters drafted and sent, and the work still to do.",
       "chapters": [
         {
+          "path": "/research/",
+          "title": "Research",
+          "blurb": "How this archive works in the open: what is to do, what is new, and what it stands on."
+        },
+        {
+          "path": "/research/to-do/",
+          "title": "To do",
+          "blurb": "Open questions, errands and the work list."
+        },
+        {
+          "path": "/research/sources-and-method/",
+          "title": "Sources & method",
+          "blurb": "What this archive stands on, how it reads a record, and where every open thread stands."
+        },
+        {
           "path": "/sources/",
           "title": "Sources",
           "blurb": "What has been read, and what has only been identified."
