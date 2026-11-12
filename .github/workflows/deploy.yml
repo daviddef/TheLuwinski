@@ -101,6 +101,11 @@ jobs:
       - name: Check the what's-new page, the ribbon and the search box
         run: python3 node_modules/@daviddef/archive-kit/kit/tools/checkpulse.py --dist dist
         working-directory: site
+      # A found row must say which page of the archive the finding went into (its `ev`), or say `logOnly` (kit/docs/whats-new-receipts.md,
+      # 12 November 2026). Only rows dated from the day in docs/row-pages.json are checked; earlier rows are left as they are.
+      - name: Check that every new found row names the page it updated
+        run: python3 node_modules/@daviddef/archive-kit/kit/tools/check_row_pages.py --dist dist
+        working-directory: site
       # The archive's standard for living people (version 2, 16 October 2026): a living person
       # (80 or younger, with no death recorded) is named with their relationships and their town
       # and country, and nothing more, on a page that is noindex; an undated person with a
