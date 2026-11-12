@@ -48,7 +48,7 @@
     "check:pin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpin.py --root .",
     "check:pulse": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpulse.py --dist dist",
     "check:book": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkbook.py --dist dist --book src/data/book.json",
-    "check:nav": "python3 node_modules/@daviddef/archive-kit/kit/tools/checknav.py --dist dist --strict",
+    "check:nav": "python3 node_modules/@daviddef/archive-kit/kit/tools/checknav.py --dist dist --canon menu-canon.json",
     "check:inline": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkinline.py --root . --max-inline 13",
     "check:rows": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkrows.py --root ."
   },

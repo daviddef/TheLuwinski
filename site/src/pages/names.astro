@@ -1,4 +1,5 @@
 ---
+import AtlasNote from "../components/AtlasNote.astro";
 import Base from '../layouts/Base.astro';
 import { md } from '@daviddef/archive-kit/lib/md.js';
 import data from '../data/names.json';
@@ -12,6 +13,8 @@ const groups = [
 ---
 <Base title={data.title} subtitle={data.dek}
   lede="An index cannot be searched for a person. It can only be searched for a spelling. This page exists because this archive learned that the expensive way: a file in which Ivone is the plaintiff sat unfound for weeks behind two letters.">
+
+  <AtlasNote only={[["How each spelling hid a file, and which record shows it", null, "the panels below"], ["Which spelling is which person (Ivone, Kurt and the others)", null, "the forms are tied to a person and a record, never to a surname alone"], ["What was tested and excluded", null, "the lists of spellings searched that returned nothing"]]} atlas={[["Luwinski", "https://recordatlas.org/surname/luwinski/"], ["Figueiredo", "https://recordatlas.org/surname/figueiredo/"], ["Mota", "https://recordatlas.org/surname/mota/"], ["Wear", "https://recordatlas.org/surname/wear/"], ["Giddins", "https://recordatlas.org/surname/giddins/"], ["Wallis", "https://recordatlas.org/surname/wallis/"], ["All surname families", "https://recordatlas.org/surname-families/"]]} closing="Each surname's spellings, with the evidence for each, are kept once, on the Atlas, and read from there when searching. The page below keeps the stories behind them." />
 
   <div class="panel">
     <h3>Why this page exists</h3>

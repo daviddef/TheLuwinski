@@ -1,0 +1,90 @@
+{
+  "note": "RESEARCH-MENU PATTERN (12 November 2026, branch research-menu, not merged): the kit's Evidence canon with the group renamed Research, because this archive's Evidence and Investigations menus are one Research menu now. The core pages, their routes and their labels are the kit's, unchanged. If the Research menu is adopted, the kit's own evidence-menu.json should say 'Research' and this copy goes. Original note: The Evidence menu, as the estate means it. Written 9 October 2026 after a comparison of all eight menus (122 entries, 9 to 25 per archive, five labels common to all). The 15 September menu canon fixed the ORDER OF THE GROUPS and one label per shared route; it never said what Evidence contains, so each archive filled it with whatever it had built. This file says. A menu label is estate-wide so a reader learns it once; a page TITLE may stay the archive's own voice.",
+  "group": "Research",
+  "core": [
+    {
+      "key": "method",
+      "route": "/method/",
+      "label": "Method",
+      "asks": "What would make you believe or not believe this?"
+    },
+    {
+      "key": "sources",
+      "route": "/sources/",
+      "label": "Sources",
+      "asks": "What does this stand on, and where do I check?"
+    },
+    {
+      "key": "searched",
+      "route": "/searched/",
+      "label": "What Has Been Read",
+      "asks": "What was looked at, and what did it not turn up?"
+    },
+    {
+      "key": "open-questions",
+      "route": "/open-questions/",
+      "label": "Open Questions",
+      "asks": "What is not known, and what would settle it?"
+    },
+    {
+      "key": "errands",
+      "route": "/errands/",
+      "label": "Errands",
+      "asks": "What has been asked of other people, or needs someone standing in a place?"
+    },
+    {
+      "key": "worklist",
+      "route": "/worklist/",
+      "label": "The work list",
+      "asks": "What is being done, by whom, since when?"
+    },
+    {
+      "key": "corrections",
+      "route": "/corrections/",
+      "label": "Corrections",
+      "asks": "What did this archive get wrong?"
+    },
+    {
+      "key": "changes",
+      "route": "/changes/",
+      "label": "What changed",
+      "asks": "What happened, most recent first?"
+    }
+  ],
+  "optional": [
+    {
+      "key": "documents",
+      "route": "/documents/",
+      "label": "Documents",
+      "asks": "What is reproduced whole?"
+    },
+    {
+      "key": "gallery",
+      "route": "/gallery/",
+      "label": "Gallery",
+      "asks": "What has been photographed?"
+    }
+  ],
+  "aliases": {
+    "/what-changed/": "changes",
+    "/evidence": "searched",
+    "/evidence/": "searched"
+  },
+  "folds": {
+    "note": "Pages that do the same job as a core page under another name, where the fold is MECHANICAL: a list that does a core page's job. Each fold keeps its old route working. Folded on 9 October 2026: Photograph these (Lerena, Blazevic, Defranceski), The Letters (Booyzen), What we cannot close (Lerena, Defranceski), the research log (Booyzen into What changed, Defranceski into Open Questions), and Luwinski's Letters out, Research log and Bounded negatives into its Errands, What changed and What has been read pages. READ AND DELIBERATELY NOT FOLDS, because each is an argued dossier or a different object, not a list: Lerena's Hypotheses and Roadmap, Mazza's The Audit, Booyzen's Disputed (its own dossiers.py records that it concerns contested facts about people), Luwinski's Status (a dated snapshot whose items mostly are not work-list rows) and Falco's Research log (an index of its working-notes files). 'Research log' turned out to be FOUR different things across four archives: the same log.json as What changed (Booyzen), a second view of the open questions (Defranceski), an index of working notes (Falco) and a chronology (Luwinski), which is why the fold table cannot name it.",
+    "errands": [
+      "photograph-these",
+      "letters"
+    ],
+    "open-questions": [
+      "gaps"
+    ],
+    "searched": [
+      "negatives"
+    ]
+  },
+  "overflow": {
+    "label": "Investigations",
+    "note": "Where an archive's OWN pages go once they leave Evidence: catalogues of where the records are, analyses, and the exhibits that are not Documents or Gallery. Optional, local, in the archive's own voice. Evidence stays the same eight everywhere; this group is allowed to differ."
+  }
+}

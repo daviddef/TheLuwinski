@@ -1,0 +1,28 @@
+{
+  "note": "What the research-menu branch changed ON PURPOSE on the Luwinski site, so it is never mistaken for a loss and never hidden. No vocabulary was changed (token_swaps and accepted stay empty). site_changes lists every page whose text changed, with why.",
+  "token_swaps": [],
+  "accepted": [],
+  "snapshot_pages": {},
+  "site_changes": [
+    {
+      "page": "/part/how-we-know/",
+      "why": "the book's Part VI lists three new chapters first (Research, To do, Sources & method), so every chapter after them is numbered three higher (VI.1 Sources is VI.4) and the part's 'Start reading' link points at Research. No chapter was removed or renamed."
+    },
+    {
+      "page": "/contents/",
+      "why": "the same three chapters in the contents list, and the same renumbering of Part VI. No chapter was removed or renamed."
+    },
+    {
+      "page": "/searched/",
+      "why": "an AtlasNote at the top (what only this archive holds / what the Atlas holds); the page below it is unchanged."
+    },
+    {
+      "page": "/sources/",
+      "why": "an AtlasNote at the top (what only this archive holds / what the Atlas holds); the page below it is unchanged."
+    },
+    {
+      "page": "/names/",
+      "why": "an AtlasNote at the top (what only this archive holds / the Atlas surname pages); the page below it is unchanged."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+---
+/* RESEARCH: the hub. One menu replaced "Evidence" and "Investigations" on 12 November 2026 (the research-menu pattern); this page is
+   where its three groups are set out together. The lists come from lib/research-menu.js, the same that draws the header menu. */
+import Base from "../../layouts/Base.astro";
+import ResearchList from "../../components/ResearchList.astro";
+import { u } from "../../lib/url.js";
+import { RESEARCH } from "../../lib/research-menu.js";
+---
+<Base title="Research"
+  subtitle="How this archive works, in the open"
+  lede="What is still to do, what is new, and what the archive stands on: three groups, one menu. Every page that used to sit under Evidence or Investigations is here, at the address it always had.">
+  {RESEARCH.map((g) => (
+    <section>
+      <h2 id={g.id}><a href={u(g.href + "/")}>{g.head}</a></h2>
+      <p class="sub">{g.dek}</p>
+      <ResearchList items={g.items} />
+    </section>
+  ))}
+</Base>

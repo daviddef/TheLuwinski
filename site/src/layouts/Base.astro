@@ -10,6 +10,7 @@ import SearchPop from "@daviddef/archive-kit/components/SearchPop.astro";
 import { pulse } from "../lib/pulse.js";
 import book from "../data/book.json";
 import { u } from "../lib/url.js";
+import { navGroups } from "../lib/research-menu.js";
 /* `noindex` is the page-level switch for a page ABOUT a living person: the kit's sitemap tool and this
    archive's search index (tools/build-search.py) both leave out a page that noindexes itself. Every
    person in the register has a page since 16 October 2026 and a LIVING person's passes noindex and
@@ -32,8 +33,10 @@ const nav = [
   ["The families", [["/families", "The families"], ["/families/luwinski", "Luwinski"], ["/families/leibholz", "Leibholz"], ["/families/wear", "Wear"], ["/families/thimm", "Thimm"], ["/families/castle", "Castle"], ["/families/hawkins", "Hawkins"], ["/families/giddins", "Giddins"], ["/families/larkin", "Larkin"], ["/families/figueiredo", "Figueiredo"], ["/families/schmul", "Schmul"], ["/families/bloom", "Bloom"], ["/families/wallis", "Wallis"]]],
   ["Places", [["/east-prussia", "East Prussia"], ["/mozambique", "Mozambique"], ["/australia", "Australia"], ["/atlas", "Atlas"]]],
   ["People & names", [["/register", "The register"], ["/bloodline", "Blood relatives"], ["/people", "All the people"], ["/lines", "The lines of the name"], ["/names", "Her names"]]],
-  ["Evidence", [["/method", "Method"], ["/sources", "Sources"], ["/searched", "What Has Been Read"], ["/open-questions", "Open Questions"], ["/errands", "Errands"], ["/worklist", "The work list"], ["/corrections", "Corrections"], ["/changes", "What changed"]]],
-  ["Investigations", [["/status", "Status"]]],
+  /* 12 November 2026 (the research-menu pattern): "Evidence" and "Investigations" are one "Research" menu with three groups, as David
+     chose. The list is lib/research-menu.js, which the header, the drawer, /research/ and its group pages all read. A menu is a flat
+     list of [href, label], or a list of groups { head, href, items }. Every address of the two old menus is still a built page. */
+  ["Research", navGroups],
 ];
 const navFlat = nav.flatMap(([, links]) => links);
 const here = Astro.url.pathname.replace(base, '').replace(/\/$/, '');
@@ -203,6 +206,11 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
       color: var(--ink-soft); text-decoration: none; padding: .4rem .6rem; border-radius: 8px; white-space: nowrap; }
     nav.topnav .dropdown a:hover { color: var(--accent); }
     nav.topnav .dropdown a.on { color: var(--ink); font-weight: 600; }
+    /* the Research menu (12 Nov 2026): three groups side by side, a heading that links to the group's own page. It is the last
+       menu in the bar, so its panel opens leftwards and never runs off the right edge. */
+    nav.topnav .dropdown.wide { left: auto; right: 0; display: grid; grid-template-columns: repeat(3, minmax(10.5rem, 1fr)); gap: .2rem .9rem; min-width: min(34rem, 92vw); padding: .6rem; }
+    nav.topnav .dropdown .pg { display: flex; flex-direction: column; min-width: 0; }
+    nav.topnav .dropdown a.ph { font-weight: 600; color: var(--ink); border-bottom: 1px solid var(--rule); border-radius: 8px 8px 0 0; margin-bottom: .2rem; }
     .findbtn { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif;
       font-size: .76rem; line-height: 1; text-decoration: none; margin-left: .55rem;
       color: var(--ground); background: var(--accent); padding: .45rem .85rem; border-radius: 999px; white-space: nowrap; }
@@ -219,6 +227,8 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
     .drawer a { display: inline-block; font-size: .88rem; color: var(--ink-soft);
       text-decoration: none; padding: .25rem .8rem .25rem 0; }
     .drawer a.on { color: var(--accent); font-weight: 600; }
+    .drawer .dsub { margin: .1rem 0 .5rem; display: flex; flex-direction: column; }
+    .drawer a.ph { font-weight: 600; color: var(--ink); }
     @media (max-width: 62rem) {
       nav.topnav { display: none; }
       .drawerbox { display: block; }
@@ -386,10 +396,18 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
       {nav.map(([label, links]) => (
         <details class="menu">
           <summary>{label}</summary>
-          <div class="dropdown">
-            {links.map(([h, l]) => (
-              <a href={base + (h ? h + '/' : '/')} class={here === h ? 'on' : undefined}>{l}</a>
-            ))}
+          <div class={"dropdown" + (links[0] && links[0].items ? " wide" : "")}>
+            {links[0] && links[0].items
+              ? links.map((g) => (
+                  <div class="pg">
+                    <a href={base + g.href + '/'} class={"ph" + (here === g.href ? " on" : "")}>{g.head}</a>
+                    {g.items.map(([h, l]) => (
+                      <a href={base + h + '/'} class={here === h ? 'on' : undefined}>{l}</a>
+                    ))}
+                  </div>))
+              : links.map(([h, l]) => (
+                  <a href={base + (h ? h + '/' : '/')} class={here === h ? 'on' : undefined}>{l}</a>
+                ))}
           </div>
         </details>
       ))}
@@ -400,9 +418,17 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
       <div class="drawer">
         {nav.map(([label, links]) => (
           <div class="dgrp"><span class="gl">{label}</span>
-            {links.map(([h, l]) => (
-              <a href={base + (h ? h + '/' : '/')} class={here === h ? 'on' : undefined}>{l}</a>
-            ))}
+            {links[0] && links[0].items
+              ? links.map((g) => (
+                  <div class="dsub">
+                    <a href={base + g.href + '/'} class={"ph" + (here === g.href ? " on" : "")}>{g.head}</a>
+                    {g.items.map(([h, l]) => (
+                      <a href={base + h + '/'} class={here === h ? 'on' : undefined}>{l}</a>
+                    ))}
+                  </div>))
+              : links.map(([h, l]) => (
+                  <a href={base + (h ? h + '/' : '/')} class={here === h ? 'on' : undefined}>{l}</a>
+                ))}
           </div>
         ))}
         <div class="dgrp"><a href={base + '/search/'} data-search-open>Search</a></div>

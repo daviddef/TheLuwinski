@@ -22,6 +22,7 @@
  * The evidence-file inventory and the bounded negatives below are a different
  * object from the register and stay as they were.
  */
+import AtlasNote from "../components/AtlasNote.astro";
 import Base from '../layouts/Base.astro';
 import { md } from '@daviddef/archive-kit/lib/md.js';
 import Searched from '@daviddef/archive-kit/components/Searched.astro';
@@ -67,6 +68,8 @@ const nilCount = searched.rows.filter((r) => NIL.includes(r.outcome)).length;
 <Base title="What has actually been read"
   subtitle={c.records + ' records, about ' + c.people + ' people, from ' + c.person_files + ' files'}
   lede="Every person below has a record behind them that somebody opened, transcribed and filed. This page exists because for three days none of that reached the site.">
+
+  <AtlasNote only={[["The full account of each search: what it found, and what it turned up nothing on", "#register", "the register below"], ["The bounded negatives", "#negatives", "what was searched, where, and what that rules out"]]} atlas={[["FreeBMD", "https://recordatlas.org/archive/freebmd/"], ["FreeCEN", "https://recordatlas.org/archive/freecen/"], ["FreeREG", "https://recordatlas.org/archive/freereg/"], ["Hertfordshire Names Online", "https://recordatlas.org/archive/hertfordshire-names-online/"], ["Landesarchiv Berlin", "https://recordatlas.org/archive/de-landesarchiv-berlin/"], ["NAAIRS (South Africa)", "https://recordatlas.org/archive/naairs/"]]} closing="The sources searched, and where each can be searched, are on the Atlas. The page below keeps this archive's full account of what each search did and did not find." />
 
   <div class="cards">
     <div class="card stat"><b>{c.people}</b><span>People with a record</span></div>
