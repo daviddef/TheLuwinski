@@ -16,7 +16,7 @@ belong to which name. This gate reads the declarations AND the built pages and c
              entry's given name and surname, and a register person with a birth year must have that year in the
              entry's dates (two Joachim Luwinski, one born 1865 and one born 1940, share a name and nothing
              else). `say` and `tree_links` keys must each be a real tree entry.
-  pages      every family has a built page, a canonical, the nav entry, an entry on the index, a place in the
+  pages      every family has a built page, a canonical, the nav entry (or a nav link to the index that links it), an entry on the index, a place in the
              sitemap and in the search index; every page it lists as telling the family's story exists and
              actually mentions the family; every internal link on a family page reaches a built page.
   counts     the number of people who have died that a family page states is recomputed here from the register
@@ -234,9 +234,15 @@ def run(root, dist):
             P("/families/%s/: canonical is not its own address" % slug)
         if "noindex" in raw:
             P("/families/%s/: is noindex" % slug)
-        if 'href="/families/%s/"' % slug not in raw.split("</nav>")[0]:
-            P("/families/%s/: the nav does not link to the page" % slug)
-        if 'href="/families/%s/"' % slug not in idx_html:
+        # THE NAV (12 Nov 2026, the menu regroup): a family page is reached from the header menu either directly, or through the
+        # /families/ index, which the menu links and which links every family (checked on the next line). Until then the menu listed
+        # all thirteen; the small ones were taken out of it, and this rule was widened from "the nav links the page" to "the nav links
+        # the page or the index that links it", with the index itself required in the nav.
+        navhead = raw.split("</nav>")[0]
+        in_idx = 'href="/families/%s/"' % slug in idx_html
+        if 'href="/families/%s/"' % slug not in navhead and not ('href="/families/"' in navhead and in_idx):
+            P("/families/%s/: neither the nav nor the /families/ index (which the nav must link) reaches the page" % slug)
+        if not in_idx:
             P("/families/ does not link to /families/%s/" % slug)
         if "/families/%s/" % slug not in sitemap:
             P("/families/%s/ is not in the sitemap" % slug)
@@ -381,11 +387,12 @@ def selftest(real_root, real_dist):
         faults.append(("a family page that is not built", f_missing))
 
         def f_nav(r, d):
+            # a small family page is reached through the index; take the index out of the nav and the page is reached from nowhere
             def fn(t):
                 head, sep, rest = t.partition("</nav>")
-                return head.replace('href="/families/larkin/"', 'href="/families/larkin-x/"') + sep + rest
+                return head.replace('href="/families/"', 'href="/families-x/"') + sep + rest
             hedit(d, "families/larkin/index.html", fn)
-        faults.append(("a family page the nav does not link to", f_nav))
+        faults.append(("a family page the nav does not reach, directly or through the /families/ index", f_nav))
 
         def f_dead(r, d):
             hedit(d, "families/wallis/index.html", lambda t: t.replace("</main>", '<a href="/nowhere-at-all/">x</a></main>', 1))
