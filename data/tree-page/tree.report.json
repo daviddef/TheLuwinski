@@ -36,7 +36,9 @@
   "drawn_english_line": 26,
   "for_the_canvas": {
    "undrawn_dead": 27,
-   "undrawn_placeholders": 16
+   "undrawn_placeholders": 16,
+   "name_and_family_only_living": 5,
+   "name_and_family_only_no_death_recorded": 61
   },
   "family_link_notes": {},
   "place_strings_used": 109,

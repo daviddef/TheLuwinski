@@ -495,25 +495,29 @@ def add_correction_counts(t, pe):
     print("corrections: %d people carry cx" % n)
 
 def add_everyone_else(t, reg):
-    """The register's dead people and placeholders that are not on the maps, for the Record Atlas Tree Canvas (17 November 2026: «if it's in the archive it must be shown in the canvas»).
-    The maps (this page's own views) draw only people with a place and a year; the canvas needs neither, so the rest are sent as `t["undrawn"]`, rows of
-    {id, sex, given, sur, by, dy, bye, dye, father, mother, spouse, kids}, no place and no page: the dead people the maps skip (a surname-index entry, an undated or
-    unplaced death, a death with no year) AND the placeholders (a record that stands for nobody: an unnamed spouse or parent the source tree held a slot for).
-    NOT sent: the living and named-only (the canvas reads a `living: true` row only from `people`, and a row there needs a year and a place for this page's own views and
-    checker, so it is held until David and the canvas agree a route), and the people with no death recorded who are not long dead (the archive names none of them).
+    """Every register person who is not on the maps, for the Record Atlas Tree Canvas (17 November 2026, David: «if it's in the archive it must be shown in the canvas»).
+    The maps (this page's own views) draw only people with a place and a year; the canvas needs neither, so the rest are sent as `t["undrawn"]`, which this page's views and
+    checker ignore. Two shapes:
+      the dead people the maps skip (a surname-index entry, an undated or unplaced death, a death with no year) and the placeholders (records that stand for nobody: an unnamed
+      spouse or parent the source tree held a slot for; `ph: true` marks them):
+          {id, sex, given, sur, by, dy, bye, dye, father, mother, spouse, kids}, no place, no page
+      the living and named-only (the register's `living` / `bare`) and the people with no death recorded who are not long dead (David's yes, 17 November 2026):
+          {id, sex, given, sur, father, mother, spouse, kids, living: true}: NAME AND FAMILY ONLY, which is what their own pages print, with no date, place or page. A named-only person
+          (the subject) carries his parents only, as his page does.
     Links go only to people that are themselves in the tree or the undrawn, so nothing points at someone left out."""
     LD = LONG_DEAD
     drawn = {p["id"] for p in t["people"]}
-    kind = {}      # id -> "dead" | "placeholder" | "living" | "bare"
+    kind = {}      # id -> "dead" | "placeholder" | "living" | "bare" | "unproven" (no death recorded, not long dead)
     for p in reg["people"]:
         i = str(p["id"])
         if i in drawn: continue
-        if p.get("bare") or p.get("living"): continue
+        if p.get("bare"): kind[i] = "bare"
+        elif p.get("living"): kind[i] = "living"
         elif p.get("placeholder"): kind[i] = "placeholder"
         else:
             documented = p.get("dy") is not None
             long_dead = (not p.get("no_death_recorded")) and p.get("by") is not None and p["by"] <= LD
-            if documented or long_dead: kind[i] = "dead"
+            kind[i] = "dead" if (documented or long_dead) else "unproven"
     by_id = {str(p["id"]): p for p in reg["people"]}
     here = drawn | set(kind)
     par, spo, kid = collections.defaultdict(dict), collections.defaultdict(set), collections.defaultdict(set)
@@ -529,10 +533,10 @@ def add_everyone_else(t, reg):
             if band == "p": add_parent(x, o)
             elif band == "c": add_parent(o, x)
             else: spo[x].add(o); spo[o].add(x)
-    def links(i):
+    def links(i, parents_only=False):
         return {"father": par[i].get("father") if par[i].get("father") in here else None,
                 "mother": par[i].get("mother") if par[i].get("mother") in here else None,
-                "spouse": sorted(o for o in spo[i] if o in here), "kids": sorted(o for o in kid[i] if o in here)}
+                "spouse": [] if parents_only else sorted(o for o in spo[i] if o in here), "kids": [] if parents_only else sorted(o for o in kid[i] if o in here)}
     def names(p):
         if p.get("placeholder") and re.match(r"Unknown\b", p["name"]): return "Unknown", p["name"][len("Unknown"):].strip()   # «Unknown de Witt»: the given name is the word Unknown, the surname is what follows
         given = clean_given(p.get("first")) or clean_given(re.sub(r"\([^)]*\)", " ", p["name"]).rsplit(" ", 1)[0])
@@ -540,14 +544,19 @@ def add_everyone_else(t, reg):
     undrawn = []
     for i, k in kind.items():
         p = by_id[i]; given, sur = names(p); sex = {"M": "m", "F": "f"}.get(p.get("sex"), "u")
-        row = dict(id=i, sex=sex, given=given, sur=sur, by=p.get("by"), dy=p.get("dy"))
-        if p.get("byq") == "circa" and p.get("by") is not None: row["bye"] = True
-        if p.get("dyq") in ("circa", "before") and p.get("dy") is not None: row["dye"] = True
-        row.update(links(i)); undrawn.append(row)
+        if k in ("living", "bare", "unproven"):
+            row = dict(id=i, sex=sex, given=given, sur=sur); row.update(links(i, k == "bare")); row["living"] = True
+        else:
+            row = dict(id=i, sex=sex, given=given, sur=sur, by=p.get("by"), dy=p.get("dy"))
+            if p.get("byq") == "circa" and p.get("by") is not None: row["bye"] = True
+            if p.get("dyq") in ("circa", "before") and p.get("dy") is not None: row["dye"] = True
+            row.update(links(i))
+            if k == "placeholder": row["ph"] = True
+        undrawn.append(row)
     t["undrawn"] = undrawn
     n = collections.Counter(kind.values())
-    print("undrawn for the canvas: %d dead, %d placeholders" % (n["dead"], n["placeholder"]))
-    return {"undrawn_dead": n["dead"], "undrawn_placeholders": n["placeholder"]}
+    print("undrawn for the canvas: %d dead, %d placeholders, %d living or named-only, %d no death recorded (name and family only)" % (n["dead"], n["placeholder"], n["living"] + n["bare"], n["unproven"]))
+    return {"undrawn_dead": n["dead"], "undrawn_placeholders": n["placeholder"], "name_and_family_only_living": n["living"] + n["bare"], "name_and_family_only_no_death_recorded": n["unproven"]}
 
 def write_roots_links(tree):
     ids = sorted(p["id"] for p in jl(tree)["people"])

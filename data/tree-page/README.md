@@ -54,6 +54,13 @@ hand-written people of the English line (`english-people.json`). The raw MyHerit
   a death with no year: 27) and the placeholders (records that stand for nobody, drawn as "Unknown ...": 16). This page's own views ignore the key. Links point only at people in `people` or
   `undrawn`. **Not sent:** the 5 living and named-only people (the canvas reads a `living: true` row only from `people`, where a row needs a year and a place for this page's own views and
   checker; held for a decision), and the 61 people with no death recorded who are not long dead (named nowhere here). Code: `add_everyone_else()` in `tools/build-tree-page.py`.
+- **`undrawn`, for the Atlas Tree Canvas (added 17 November 2026; David: every register person is on the canvas, so all 174 register people are either in `people` or in `undrawn`).**
+  The maps here draw only people with a place and a year; the canvas needs neither. This page's own views and checker ignore the key. Two row shapes, no place and no page in either:
+  `{id, sex, given, sur, by, dy, bye, dye, father, mother, spouse, kids}` for the 27 dead people the maps skip (surname-index entries, an undated or unplaced death, a death with no
+  year) and the 16 placeholders (records that stand for nobody, drawn as "Unknown ..." with `ph: true`); and `{id, sex, given, sur, father, mother, spouse, kids, living: true}`,
+  NAME AND FAMILY ONLY, for the 5 living or named-only people and the 61 with no death recorded who are not long dead (David's yes, 17 November 2026). The named-only subject
+  carries his parents only, as his page does. Links point only at people in `people` or `undrawn`. Because tree.json is embedded in the indexed `/roots/` page, these names are
+  in its data. Code: `add_everyone_else()` in `tools/build-tree-page.py`.
 - **The English line's 79 relatives with no page of their own are not drawn**: they have no sex, no place and, mostly, no death on record.
 - **Sex is only what the record holds.** Register people keep the register's own M or F; the English line's twenty-six take it from the line's own
   relation word (grandfather, great-grandmother). Nothing is read off a given name. A person with neither is written `U`, which the viewer (1.7.0) shows with
