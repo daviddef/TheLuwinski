@@ -5,6 +5,9 @@
    parent page so the frame is exactly as tall as its content. The panel's content is the viewer's own, so the two never disagree. */
 import page from "../../../../data/tree-page/roots.html?raw";
 
+/* noindex (17 November 2026): the data embedded in this page carries the living and named-only people as name-and-family-only rows for the Tree Canvas, so the page is noindex, as a living person's own page is. */
+const NOINDEX = `<meta name="robots" content="noindex">`;
+
 const EMBED = `<script>
 (function(){
   var h=location.hash, emb=/[#&]embed=1/.test(h), prof=/^#profile\\b/.test(h);
@@ -45,4 +48,4 @@ const EMBED = `<script>
 </style>`;
 
 export const GET = () =>
-  new Response(page.replace(/<head>/i, (h) => h + EMBED), { headers: { "content-type": "text/html; charset=utf-8" } });
+  new Response(page.replace(/<head>/i, (h) => h + NOINDEX + EMBED), { headers: { "content-type": "text/html; charset=utf-8" } });
