@@ -420,6 +420,7 @@ def build(a):
     keep_death_place(t, pe)
     flag_estimates(t, pe)
     add_full_dates(t, pe)
+    add_correction_counts(t, pe)
     io.open(tree, "w", encoding="utf-8").write(json.dumps(t, ensure_ascii=False, separators=(",", ":")))
     rep_path = os.path.splitext(tree)[0] + ".report.json"; rep = jl(rep_path)
     drawn_reg = sum(1 for p in t["people"] if not p["id"].startswith("E-")); drawn_en = len(t["people"]) - drawn_reg
@@ -478,6 +479,19 @@ def add_full_dates(t, pe):
         if full_date(src.get("born")): p["bd"] = src["born"]; nb += 1
         if full_date(src.get("died")): p["dd"] = src["died"]; nd += 1
     print("full dates: %d births, %d deaths" % (nb, nd))
+
+def add_correction_counts(t, pe):
+    """Optional per-person `cx` in tree.json (16 November 2026): the NUMBER of corrections this archive has recorded about that person, an integer >= 1, absent when there are none.
+    A count only, never what a correction says. It is exactly the list the person page prints under "Corrected": register.json's own `corrections` on that person's record
+    (tools/build-register.py attaches a correction to a person by the person's id, whole id, no name matching), so the number agrees with the page by construction. A
+    correction whose id is no person's (a note that is not about one register person) is on /corrections/ and counted for nobody. `t["people"]` holds only the people the page
+    draws (never living, named-only or placeholder), so a living person never carries one. The English line has no corrections."""
+    by = {x["id"]: x for x in pe}; n = 0
+    for p in t["people"]:
+        x = by.get(p["id"])
+        k = len((x["p"].get("corrections") or [])) if x and x["src"] == "register" else 0
+        if k >= 1: p["cx"] = k; n += 1
+    print("corrections: %d people carry cx" % n)
 
 def write_roots_links(tree):
     ids = sorted(p["id"] for p in jl(tree)["people"])
