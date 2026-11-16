@@ -2060,11 +2060,13 @@ function renderMetrics(){
     T(orph,'Orphans','records joined to no one','orph')+
     T(nClus,'Detached families',clus.length+' people in small families outside every tree','clus')+
     T(dead,'Dead ends','in a tree, but no parents recorded','dead')+
-    (TREE&&TREE.undrawn&&TREE.undrawn.length?T(TREE.undrawn.length,'Not drawn yet','no year or no place to draw','undrawn'):'')+
+    (UND().length?T(UND().length,'Not drawn yet','no year or no place to draw','undrawn'):'')+
     T(places.size,'Places',inAt+' in the Record Atlas · '+(places.size-inAt)+' not yet','dead');
 }
+/* The "Not drawn yet" list shows only rows that carry a page to link to and are not living (a row for the Record Atlas Tree Canvas, which carries a name and family only, is never listed here). */
+const UND=()=>((TREE&&TREE.undrawn)||[]).filter(u=>u&&u.page&&!u.living);
 function renderUndrawn(){
-  const U=(TREE&&TREE.undrawn)||[],noYear=U.filter(u=>u.why==='year'),noPlace=U.filter(u=>u.why==='place');
+  const U=UND(),noYear=U.filter(u=>u.why==='year'),noPlace=U.filter(u=>u.why==='place');
   $('#orsum').innerHTML='<b>'+U.length.toLocaleString('en')+'</b> people the archive holds are not drawn on the maps: no birth or death year and no relative with one ('+noYear.length+'), or a year but no place the archive can put on a map ('+noPlace.length+'). Each links to their page on the site. Finding a year or a place for them is the quickest way to grow the tree.';
   $('#orsug').innerHTML='<div class="sg"><div class="sgh"><div><b>No year</b><small>cannot be placed in time</small></div><span class="sgn">'+noYear.length+'</span></div><p class="sgp">Look for a baptism, burial or census entry, or any relative with a year, then add it to the roster.</p></div><div class="sg"><div class="sgh"><div><b>No place</b><small>cannot be put on a map</small></div><span class="sgn">'+noPlace.length+'</span></div><p class="sgp">A parish, town or country is enough. The archive atlas supplies the coordinates.</p></div>';
   const row=u=>'<a class="plink" href="'+(FAMS[0].host&&u.id&&TREE?'https://'+FAMS[0].host+'/person/'+u.id+'/':'#')+'" '+(FAMS[0].host?'target="_blank" rel="noopener"':'')+'><i style="background:var(--hair)"></i><span>'+esc(u.name)+'</span><small>'+esc((u.b?'b. '+u.b+' · ':'')+(u.place||u.why))+'</small></a>';
@@ -2400,7 +2402,7 @@ let rt=0;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()
 if(TREE){const v=$('.verdict');if(v)v.hidden=true}
 const wn=$('#weaknote');if(wn)wn.hidden=!(TREE&&list.some(p=>p.fg===0||p.mg===0));
 const bn=$('#bpenote');if(bn)bn.hidden=!(TREE&&list.some(p=>p.bpe));
-const ub=$('[data-key="okind"] [data-v="undrawn"]');if(ub)ub.hidden=!(TREE&&TREE.undrawn&&TREE.undrawn.length);
+const ub=$('[data-key="okind"] [data-v="undrawn"]');if(ub)ub.hidden=!UND().length;
 $('#q').placeholder='Find a person, e.g. '+FAMS[0].sur;
 $('#yr').min=Math.max(1500,ALLY0+10);st.year=Math.min(2020,Math.max(ALLY0+10,st.year));
 const META=Object.assign({title:'Roots & Routes',sub:'Explore the family tree ten ways: by generation, place, era and relationship. Click anyone and every view follows.'},(TREE&&TREE.meta)||{});
