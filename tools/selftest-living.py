@@ -198,7 +198,7 @@ def main():
         case("a place on a living person's row in the roots `undrawn` list", mode, True,
              lambda b, d: sub_in(d / "roots" / "index.html", r'(\{"id":"' + LID + r'",)', r'\1"place":"Leeds 2",'), "chart node")
         case("a `father` that is text, not an id, on a living person's row in the roots `undrawn` list", mode, True,
-             lambda b, d: sub_in(d / "roots" / "index.html", r'(\{"id":"' + LID + r'",)', r'\1"father":"born 1799",'), "chart node")
+             lambda b, d: sub_in(d / "roots" / "index.html", r'(\{"id":"' + LID + r'","sex":"[^"]*","given":"[^"]*","sur":"[^"]*","father":)(?:null|"\d+")', r'\1"born 1799"'), "chart node")
         case("`father` on a living person's node OUTSIDE the `undrawn` list (the blood-relatives chart)", mode, True,
              lambda b, d: sub_in(d / "bloodline" / "index.html", r'("slug":"' + LID + r'",)', r'\1"father":"9500001",'), "chart node")
 
