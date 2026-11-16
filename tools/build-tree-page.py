@@ -44,6 +44,18 @@ ATLAS_CANDIDATES = [os.environ.get("RECORD_ATLAS", ""), os.path.expanduser("~/Pr
                     os.path.join(os.path.dirname(ROOT), "Record Atlas")]
 INPUTS = ["register.json", "english-people.json", "families.json"]
 LONG_DEAD = 1900     # born in or before this year, marked deceased by the tree, no death date: still drawn
+MONTHS = {m: 1 for m in ("jan january feb february mar march apr april may jun june jul july aug august sep sept september oct october nov november dec december").split()}
+# A FULL date is a day, a month and a year and nothing else, in a shape this archive's pages print: "Mar 15 1845" / "June 7 1884" (month, day, year; the register)
+# or "4 March 1922" (day, month, year); or the ISO "1882-02-22". A year, a month and year ("Jan 1967"), "Circa ...", "Before 1955", a "?" and a date followed by a place
+# are NOT full dates and get no field.
+FULLDATE = (re.compile(r"^([A-Z][a-z]+) (\d{1,2}) (\d{4})$"), re.compile(r"^(\d{1,2}) ([A-Z][a-z]+) (\d{4})$"), re.compile(r"^\d{4}-\d{2}-\d{2}$"))
+def full_date(s):
+    s = str(s or "")
+    m = FULLDATE[0].match(s)
+    if m: return m.group(1).lower() in MONTHS and 1 <= int(m.group(2)) <= 31
+    m = FULLDATE[1].match(s)
+    if m: return m.group(2).lower() in MONTHS and 1 <= int(m.group(1)) <= 31
+    return bool(FULLDATE[2].match(s))
 NOW = datetime.date.today().year
 
 def jl(path): return json.load(io.open(path, encoding="utf-8"))
@@ -407,6 +419,7 @@ def build(a):
     drop_conflicts(t, tree)
     keep_death_place(t, pe)
     flag_estimates(t, pe)
+    add_full_dates(t, pe)
     io.open(tree, "w", encoding="utf-8").write(json.dumps(t, ensure_ascii=False, separators=(",", ":")))
     rep_path = os.path.splitext(tree)[0] + ".report.json"; rep = jl(rep_path)
     drawn_reg = sum(1 for p in t["people"] if not p["id"].startswith("E-")); drawn_en = len(t["people"]) - drawn_reg
@@ -454,6 +467,17 @@ def flag_estimates(t, pe):
         if x.get("dyq") in ("circa", "before") and x["dy"] is not None: p["dye"] = True; n += 1
         if x["src"] == "register" and x["dy"] is not None and re.search(r"not documented|deport", x["died"], re.I): p["dye"] = True; n += 1
     print("estimates: %d years flagged as approximate" % n)
+
+def add_full_dates(t, pe):
+    """Optional per-person `bd` / `dd` in tree.json (16 November 2026, as TheLerena 78a663b9): the person's own `born` / `died` string, byte for byte, which is what the
+    person page prints, and ONLY where it is a full date (see full_date). `t["people"]` holds only the people drawable() let through (never living, never named-only, never a
+    placeholder) and not the conflicts, so a living person never carries one. `by` / `dy` and `bye` / `dye` still carry the year and its approximation."""
+    by = {x["id"]: x for x in pe}; nb = nd = 0
+    for p in t["people"]:
+        src = (by.get(p["id"]) or {}).get("p") or {}
+        if full_date(src.get("born")): p["bd"] = src["born"]; nb += 1
+        if full_date(src.get("died")): p["dd"] = src["died"]; nd += 1
+    print("full dates: %d births, %d deaths" % (nb, nd))
 
 def write_roots_links(tree):
     ids = sorted(p["id"] for p in jl(tree)["people"])
