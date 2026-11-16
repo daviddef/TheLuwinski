@@ -7,6 +7,6 @@ import Base from "../../layouts/Base.astro";
 import page from "../../../../data/tree-page/roots.embed.html?raw";
 import { meta } from "../../../../data/tree-page/tree.json";
 ---
-<Base title={meta.title} subtitle={meta.sub} noAutolink>
+<Base title={meta.title} subtitle={meta.sub} noAutolink noindex structured={false}>
   <Fragment set:html={page} />
 </Base>
