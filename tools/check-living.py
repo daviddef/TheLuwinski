@@ -447,14 +447,25 @@ class Findings:
         self.hits.append((str(where), rule, ref))
 
 
-def audit_living_object(obj, where, rule_ref, F):
+# The Tree Canvas rows (17 November 2026, David's yes in the Luwinski session): tree.json's `undrawn` list may carry a living person as {id, sex, given, sur, father, mother, spouse,
+# kids, living: true}: a name and the ids of the family, nothing more. `father` and `mother` are ids (digits) and `living` is the flag the canvas reads; both are allowed in a row
+# directly under `undrawn` and NOWHERE else, and `father` / `mother` only as a bare register id or empty. A date, a place or any other digit-bearing field on such a row still fails.
+UNDRAWN_ID_KEYS = {"father", "mother"}
+
+
+def audit_living_object(obj, where, rule_ref, F, undrawn_row=False):
     """A JSON object that IS a living person (matched by id or by name): its own scalar
-    fields may hold a name, an id and a relationship, and nothing with a digit in it."""
+    fields may hold a name, an id and a relationship, and nothing with a digit in it.
+    A row of tree.json's `undrawn` (undrawn_row) may also hold `father` / `mother` as a bare id and `living: true`."""
     F.audited_objects += 1
     for k, v in obj.items():
         if isinstance(v, (dict, list)):
             continue      # nested objects are other people, audited on their own
         if k in NAME_KEYS or k in ID_KEYS:
+            continue
+        if undrawn_row and k in UNDRAWN_ID_KEYS and (v in ("", None) or (isinstance(v, str) and re.fullmatch(r"\d+", v))):
+            continue
+        if undrawn_row and k == "living" and v is True:
             continue
         if v in ("", None, False):
             continue
@@ -478,7 +489,7 @@ def walk_json(obj, where, matcher, living_ids, F, key=None, owner=None):
         if ident or named:
             F.seen_units += 1
             F.seen_pages.add(str(where))
-            audit_living_object(obj, where, ident or named, F)
+            audit_living_object(obj, where, ident or named, F, undrawn_row=(key == "undrawn"))
         for k, v in obj.items():
             walk_json(v, where, matcher, living_ids, F, key=k, owner=obj)
     elif isinstance(obj, list):

@@ -192,6 +192,16 @@ def main():
              lambda b, d: sub_in(d / "bloodline" / "index.html", r'("slug":"' + LID + r'",)', r'\1"occupation":"engineer 2",'),
              "chart node")
 
+        # --- the Tree Canvas rows in /roots/'s `undrawn` (17 November 2026): a living person is a name and the ids of the family, and the flag; nothing else
+        case("a date on a living person's row in the roots `undrawn` list", mode, True,
+             lambda b, d: sub_in(d / "roots" / "index.html", r'(\{"id":"' + LID + r'",)', r'\1"by":1799,'), "chart node")
+        case("a place on a living person's row in the roots `undrawn` list", mode, True,
+             lambda b, d: sub_in(d / "roots" / "index.html", r'(\{"id":"' + LID + r'",)', r'\1"place":"Leeds 2",'), "chart node")
+        case("a `father` that is text, not an id, on a living person's row in the roots `undrawn` list", mode, True,
+             lambda b, d: sub_in(d / "roots" / "index.html", r'(\{"id":"' + LID + r'",)', r'\1"father":"born 1799",'), "chart node")
+        case("`father` on a living person's node OUTSIDE the `undrawn` list (the blood-relatives chart)", mode, True,
+             lambda b, d: sub_in(d / "bloodline" / "index.html", r'("slug":"' + LID + r'",)', r'\1"father":"9500001",'), "chart node")
+
         # --- the page of a living person
         case("a living person's page without noindex", mode, True,
              lambda b, d: sub_in(living_page(b, d), r'<meta name="robots" content="noindex">', ""), "lacks noindex")
