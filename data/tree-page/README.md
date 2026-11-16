@@ -45,6 +45,10 @@ hand-written people of the English line (`english-people.json`). The raw MyHerit
   (day, month, year), not the `1882-02-22` or `1950-Mar-19` of the Lerena pilot; they are kept as printed. The field is present only when a day, a month and a year are all there:
   a year alone, `Jan 1967`, `Circa 1923`, `Before 1955`, a date with a `?` and a date followed by a place (`2 April 1963, Sasolburg`) get no field, and `by` / `dy` with `bye` / `dye`
   carry those. Code: `full_date()` and `add_full_dates()` in `tools/build-tree-page.py`.
+- **Corrections count, `cx` (added 16 November 2026).** Optional per-person integer in `tree.json`, >= 1, absent when there is none: how many corrections this archive has recorded about
+  that person. A count only, never what a correction says. It is the length of the register record's own `corrections` list, the one the person page prints under "Corrected"
+  (`tools/build-register.py` attaches a correction to a person by the person's id, no name matching), so it agrees with the page. A correction whose id is no register person's
+  is on `/corrections/` and counted for nobody. Only drawn people carry it, so never a living one. Code: `add_correction_counts()` in `tools/build-tree-page.py`.
 - **The English line's 79 relatives with no page of their own are not drawn**: they have no sex, no place and, mostly, no death on record.
 - **Sex is only what the record holds.** Register people keep the register's own M or F; the English line's twenty-six take it from the line's own
   relation word (grandfather, great-grandmother). Nothing is read off a given name. A person with neither is written `U`, which the viewer (1.7.0) shows with
