@@ -34,6 +34,10 @@
   "drawn": 91,
   "drawn_register": 65,
   "drawn_english_line": 26,
+  "for_the_canvas": {
+   "undrawn_dead": 27,
+   "undrawn_placeholders": 16
+  },
   "family_link_notes": {},
   "place_strings_used": 109,
   "place_strings_settled_before_converter": 102,
