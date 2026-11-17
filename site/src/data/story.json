@@ -236,7 +236,7 @@
      ]
     },
     {
-     "text": "Two more sons of the house can be dated. [Samuel](person:samuel-israel-leibholz) was born at Schubin on 28 June 1877; the death register kept at Auschwitz in 1943 names his parents as Sali and Fridericke, née Schmul. [Oskar](person:oskar-leibholz) was born there on 13 May 1887, and the family's tree makes him their son. Only three people in the whole Memorial Book were born at Schubin, and they are these three. The tree adds a fourth son, Georg; he was born at Hammerstein sixty-two days before Jacob, which no one mother can do, and the archive has [taken him off the line](/corrections/#c9500026).",
+     "text": "Two more sons of the house can be dated. [Samuel](person:samuel-israel-leibholz) was born at Schubin on 28 June 1877; the death register kept at Auschwitz in 1943 names his parents as Sali and Fridericke, née Schmul. [Oskar](person:oskar-leibholz) was born there on 13 May 1887, and the family's tree makes him their son. Only three people in the whole Memorial Book were born at Schubin, and they are these three. The tree adds a fourth son, Georg; he was born at Hammerstein sixty-two days before Jacob, which no one mother can do, and the archive has [taken him off the line](/corrections/#c-undated-psjs33).",
      "grade": "inf",
      "evidence": [
       {
@@ -370,7 +370,7 @@
     },
     {
      "title": "Georg is not a brother",
-     "href": "/corrections/#c9500026"
+     "href": "/corrections/#c-undated-psjs33"
     },
     {
      "title": "Sally Leibholz",
@@ -623,7 +623,7 @@
      "grade": "doc",
      "evidence": [
       {
-       "href": "/corrections/#c9500912",
+       "href": "/corrections/#c-undated-11vo0z",
        "why": "The Berlin directories, 1913, 1925, 1934 and 1938"
       }
      ]
@@ -634,7 +634,7 @@
      "worldSource": "archive",
      "evidence": [
       {
-       "href": "/corrections/#c9500912",
+       "href": "/corrections/#c-undated-11vo0z",
        "why": "The Konfektion quarter around Hausvogteiplatz",
        "kind": "archive"
       },
@@ -713,7 +713,7 @@
      ]
     },
     {
-     "text": "The German Federal Archives' Memorial Book records his deportation and, deliberately, no date of death; it gives one only where it is certain. The census records, as they are published today, carry him as dead before 8 May 1945, at Auschwitz. The family's tree had 1945, and that has been [corrected](/corrections/#c9500020). There is no Stolperstein for him at Meraner Straße, and an application for one is drafted.",
+     "text": "The German Federal Archives' Memorial Book records his deportation and, deliberately, no date of death; it gives one only where it is certain. The census records, as they are published today, carry him as dead before 8 May 1945, at Auschwitz. The family's tree had 1945, and that has been [corrected](/corrections/#c-undated-155ht9o). There is no Stolperstein for him at Meraner Straße, and an application for one is drafted.",
      "grade": "doc",
      "evidence": [
       {
@@ -814,7 +814,7 @@
     },
     {
      "title": "The firm on Krausenstraße",
-     "href": "/corrections/#c9500912"
+     "href": "/corrections/#c-undated-11vo0z"
     },
     {
      "title": "Lutherstraße 34",
@@ -830,7 +830,7 @@
     },
     {
      "title": "Jacob did not die in 1945",
-     "href": "/corrections/#c9500020"
+     "href": "/corrections/#c-undated-155ht9o"
     },
     {
      "title": "Jacob Leibholz",
