@@ -44,6 +44,7 @@ HAND_EDITED = {
     "site/src/data/book.json",               # the book's order, part titles, one-line blurbs and part introductions (17 Oct 2026)
     "site/src/data/story.json",              # the family story (/story/): every paragraph typed by hand, graded, kit contract (25 Oct 2026)
     "site/src/data/flag-countries.json",     # the ribbon flags: this archive's country today for a card's place, with its evidence (27 Oct 2026)
+    "site/src/data/place-rows.json",         # /corrections/: the places the corrections text may link, each to its own page here (kit placeIndex)
     "site/src/data/flag-places.json",        # the ribbon flags: a card's place -> the same town's row in the era table, with its evidence (27 Oct 2026)
     "site/src/data/autoclusters.json",       # a typed summary of a private export (match holders unnamed)
     "site/src/data/dna.json", "site/src/data/emigration.json", "site/src/data/english-people.json",
@@ -75,6 +76,7 @@ GENERATED = {
     "site/src/data/direct-line.json",        # the kit's directline.py, from story.json's ribbon (who is on our direct line); checked by check:directline
     "site/src/data/family-lines.json",       # tools/build-family-lines.py: the family ribbons and how our line connects, from the story, register and English line
     "site/src/data/family-blocks.json",      # tools/build-family-lines.py: the families with no line to draw, their connection blocks only
+    "site/src/data/place-flags.json",        # the kit's placeflags.py, from place-rows.json and the era snapshot: each place's flag today and in the record's years; held by check:placeflags
     "site/src/data/ribbon-flags.json",       # tools/build-ribbon-flags.py (the kit's ribbonflags.py): each ribbon card's mini flags; held by check:ribbonflags
 }
 
