@@ -1,0 +1,30 @@
+{
+ "Sauerbaum": {
+  "today": {
+   "svg": "poland-flags--era-1989.svg",
+   "label": "Poland"
+  },
+  "eras": [
+   [
+    1877,
+    1900,
+    "germany-flags--era-1871.svg",
+    "Prussia / German Empire"
+   ]
+  ]
+ },
+ "Allenstein": {
+  "today": {
+   "svg": "poland-flags--era-1989.svg",
+   "label": "Poland"
+  },
+  "eras": []
+ },
+ "Australia": {
+  "today": {
+   "svg": "australia-flags--era-1901.svg",
+   "label": "Australia"
+  },
+  "eras": []
+ }
+}

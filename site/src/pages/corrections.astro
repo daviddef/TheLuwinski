@@ -12,25 +12,54 @@
  * into tags, so the words are exactly the data's words (16 October 2026: the markers used
  * to print as literal asterisks). Method now links here instead of
  * carrying a second copy.
+ *
+ * 17 November 2026 (kit eb8ce42, kit/docs/corrections.md): the page sorts nothing itself (the component sorts newest first by `when`; this register
+ * carries no dates, so the file order stands). Each entry's anchor is corrIdMap() over register.corrections in FILE order, the same list
+ * lib/pulse.js hands buildPulse. `about` is read from the entry's own id: a correction whose id is a register person's own, and that person is
+ * not living, named-only or a placeholder, is about that person's page; a correction on an id that is no person is about nobody (it names none).
+ * No catalogue of register volumes is kept here, so `books` is not passed. Places that have a page of their own (src/data/place-rows.json) link
+ * with the flag the era snapshot supports (src/data/place-flags.json, made by `npm run build:placeflags`, checked in CI); a name borne by one dead
+ * person with a page links to them, a name several bear to the search for it, and a living or named-only person's name is never linked (`avoid`).
  */
 import Base from '../layouts/Base.astro';
 import { md } from '@daviddef/archive-kit/lib/md.js';
 import Corrections from '@daviddef/archive-kit/components/Corrections.astro';
 import register from '../data/register.json';
+import namesIndex from '../data/names-index.json';
+import placeRows from '../data/place-rows.json';
+import placeFlags from '../data/place-flags.json';
+import { corrIdMap } from '@daviddef/archive-kit/lib/corrections.js';
+import { placeIndex } from '@daviddef/archive-kit/lib/placelinks.js';
+import { nameIndex } from '@daviddef/archive-kit/lib/namelinks.js';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = (p) => (/^https?:/.test(p) ? p : base + p);
+/* who a correction is about: its own id, where that is a register person the archive publishes by name on a page of their own (never a living,
+   named-only or placeholder record). The name is the one the person's page prints: the register's, without a trailing parenthesis. */
+const aboutById = new Map(register.people.filter((p) => !p.living && !p.bare && !p.placeholder && p.slug)
+  .map((p) => [p.id, [[base + '/people/' + p.slug + '/', String(p.name).replace(/\s*\([^)]*\)\s*$/, '')]]]));
+const ids = corrIdMap(register.corrections);   // register.corrections in FILE order, the same list lib/pulse.js passes buildPulse
 const rows = register.corrections.map((c) => ({
-  id: 'c' + c.id,
+  id: ids.get(c),
+  about: aboutById.get(c.id),
   who: md(c.who) + ' <span class="muted">· ' + md(c.field) + '</span>',
   was: md(c.was),
   now: md(c.now),
   how: md(c.source),
   why: c.why ? md(c.why) : '',
 }));
+/* the kit's flag art, inlined as the ribbon cards do (no new file is served) */
+const flagUrl = (svg) => {
+  try { return 'data:image/svg+xml;base64,' + readFileSync(resolve(process.cwd(), 'node_modules/@daviddef/archive-kit/kit/data/flags', svg)).toString('base64'); }
+  catch { return ''; }
+};
+const places = placeIndex(placeRows.map((p) => ({ ...p, href: base + p.href })), placeFlags, flagUrl);
+const names = nameIndex(namesIndex, { avoid: register.people.filter((p) => p.living || p.bare).flatMap((p) => [p.name, String(p.name).replace(/\s*\([^)]*\)/g, '').trim()]) });
 ---
 <Base title="Corrections"
   subtitle={`${rows.length} corrections, each carrying what the family record said, what this archive says instead, and the evidence`}
   lede="Where a named source overrides the family record, the correction is applied to the register and listed here with the evidence. Nothing is silently rewritten: the original value is carried through as was, so a reader can always see what the family believed and why this archive disagrees.">
-  <Corrections rows={rows} u={u} />
+  <Corrections rows={rows} u={u} places={places} names={names} />
   <p class="small muted" style="margin-top:1.5rem">The same register, as a table, was on <a href={base + '/method/'}>Method</a> until 9 October 2026. <a href={base + '/changes/'}>What changed &rarr;</a> records the corrections as they were made.</p>
 </Base>
