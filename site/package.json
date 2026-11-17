@@ -56,7 +56,7 @@
     "check:placeflags": "python3 node_modules/@daviddef/archive-kit/kit/tools/placeflags.py --snapshot src/data/era-snapshot.json --places src/data/place-rows.json --alias src/data/flag-places.json --countries src/data/flag-countries.json --out \"${TMPDIR:-/tmp}/luwinski-placeflags.json\" && cmp \"${TMPDIR:-/tmp}/luwinski-placeflags.json\" src/data/place-flags.json"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#eb8ce427a374dff015981e7a11a599d18054acf3",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#194f551d2672b6d0e334e733494ba8044515edd1",
     "astro": "^5.18.2"
   },
   "devDependencies": {
