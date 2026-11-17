@@ -415,7 +415,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
       {/* THE TREE CANVAS BUTTON (16 November 2026, the estate's one spec for all eight archives): the same orange round button as Record Atlas's, at the end of the
           header icon group, opening this archive's own tree on the Atlas's canvas. It sits beside the kit's ribbon, not in it (the kit owns .pulse). Below 1181px the nav
           is hidden and the drawer carries a "Tree Canvas" link instead. */}
-      <a class="tcbtn" href="https://recordatlas.org/tree-canvas/?archive=luwinski" aria-label="Tree Canvas" title="Tree Canvas: draw this archive's tree on one canvas (Record Atlas)">
+      <a class="tcbtn" href="https://recordatlas.org/tree-canvas/?archive=luwinski" target="_blank" rel="noopener" aria-label="Tree Canvas" title="Tree Canvas: draw this archive's tree on one canvas (Record Atlas)">
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="4" width="7" height="5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="15" width="7" height="5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="4" width="7" height="5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10 6.5h4M6.5 9v8.5H14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </nav>
@@ -437,7 +437,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
                 ))}
           </div>
         ))}
-        <div class="dgrp"><a href={base + '/search/'} data-search-open>Search</a> <a href="https://recordatlas.org/tree-canvas/?archive=luwinski">Tree Canvas</a></div>
+        <div class="dgrp"><a href={base + '/search/'} data-search-open>Search</a> <a href="https://recordatlas.org/tree-canvas/?archive=luwinski" target="_blank" rel="noopener">Tree Canvas</a></div>
       </div>
     </details>
   </div></header>
