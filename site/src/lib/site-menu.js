@@ -30,7 +30,7 @@ export const MENU = [
   ]],
   ["People", [
     { head: "Lists", items: [["/people", "All the people"], ["/register", "The register"]] },
-    { head: "Drawn", items: [["/tree", "The tree"], ["/roots", "Roots & Routes"], ["/timeline", "The Timeline"], ["/bloodline", "Blood relatives"]] },
+    { head: "Drawn", items: [["/tree", "The tree"], ["/timeline", "The Timeline"], ["/bloodline", "Blood relatives"]] },
   ]],
   ["Places & families", [
     { head: "The families", href: "/families", items: [["/families/luwinski", "Luwinski"], ["/families/leibholz", "Leibholz"], ["/families/wear", "Wear"]] },

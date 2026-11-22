@@ -22,6 +22,10 @@ const redirects = {
   /* 9 October 2026: the estate's address for this page is /searched/. */
   '/evidence': '/searched/',
 };
+/* 23 November 2026. Roots & Routes (this archive's own ten-view tree page) is retired: the Tree Canvas on recordatlas.org replaced it
+   estate-wide. The old address keeps answering, and goes to this archive's own tree page. The bare viewer at /roots/view.html is NOT retired:
+   it is the frame the kit's PersonRootsViews draws on a person's page (see src/pages/roots/view.html.js). */
+redirects['/roots'] = '/tree/';
 
 export default defineConfig({
   site: 'https://luwinski.defranceski.com',

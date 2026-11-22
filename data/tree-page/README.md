@@ -2,8 +2,9 @@
 
 Ten views of the people in the archive who have died and whose death the archive can stand behind: hourglass, fan, whole-tree and close-family maps, Atlas map,
 movements, kinship, place lanes, eras, lifespans, an Orphans tab, and the five animated views (Night sky, Ink ledger, Household, Generations, Where they
-lived). It is served at `/roots/`, and bare at `/roots/view.html` for frames (the kit's `PersonRootsViews`, which this archive's person page does not use yet:
-see "The person page" below).
+lived). **Retired as a page on 23 November 2026**: the Tree Canvas on recordatlas.org replaced it estate-wide, and `/roots/` now redirects to `/tree/`. What
+stays is the bare viewer at `/roots/view.html` (noindex), the frame the kit's `PersonRootsViews` draws on a person's page (see "The person page" below), and the
+data that feeds it.
 
 | File | What it is | Edit by hand? |
 |---|---|---|
@@ -11,7 +12,7 @@ see "The person page" below).
 | `place_map.json` | each place string with coordinates, country and Record Atlas id | no, generated (see below) |
 | `place-additions.json` | place strings decided by hand, each with its reason | yes, with a reason |
 | `atlas-data.json` | the Record Atlas slice: outlines, regimes, flags, events, collections | no, generated |
-| `roots.html`, `roots.embed.html` | the page, whole and as a fragment for the site layout | no, generated |
+| `roots.html` | the viewer, served bare at `/roots/view.html` for the person-page frames (`roots.embed.html`, the fragment the retired `/roots/` page drew inside the site layout, is gone) | no, generated |
 | `tree.report.json` | counts, the place strings still unresolved, the district-level places | read it |
 | `people.ged`, `slugs.json` | intermediates, not committed (`*.ged` is ignored) | no |
 
@@ -59,7 +60,7 @@ hand-written people of the English line (`english-people.json`). The raw MyHerit
   `{id, sex, given, sur, by, dy, bye, dye, father, mother, spouse, kids}` for the 27 dead people the maps skip (surname-index entries, an undated or unplaced death, a death with no
   year) and the 16 placeholders (records that stand for nobody, drawn as "Unknown ..." with `ph: true`); and `{id, sex, given, sur, father, mother, spouse, kids, living: true}`,
   NAME AND FAMILY ONLY, for the 5 living or named-only people and the 61 with no death recorded who are not long dead (David's yes, 17 November 2026). The named-only subject
-  carries his parents only, as his page does. Links point only at people in `people` or `undrawn`. Because tree.json is embedded in the indexed `/roots/` page, these names are
+  carries his parents only, as his page does. Links point only at people in `people` or `undrawn`. Because tree.json is embedded in the `/roots/view.html` page (noindex; the indexed `/roots/` page it used to sit in is gone), these names are
   in its data. Code: `add_everyone_else()` in `tools/build-tree-page.py`.
 - **The English line's 79 relatives with no page of their own are not drawn**: they have no sex, no place and, mostly, no death on record.
 - **Sex is only what the record holds.** Register people keep the register's own M or F; the English line's twenty-six take it from the line's own
