@@ -1,0 +1,14 @@
+---
+/* RESEARCH > DEEP DIVES: the hub (23 November 2026, the estate clean-up, task C). The archive's own studies, each with its one line. The Research
+   menu has ONE "Deep dives" sub-group whose heading links here; it and this page read DEEP_DIVES in lib/research-menu.js, so they cannot
+   disagree. The eight core pages and their three groups are on /research/. The kit's ResearchList draws the cards (href, label, blurb). */
+import Base from "../../../layouts/Base.astro";
+import ResearchList from "@daviddef/archive-kit/components/ResearchList.astro";
+import { DEEP_DIVES } from "../../../lib/research-menu.js";
+const items = DEEP_DIVES.items.map((x) => ({ href: x.href + "/", label: x.label, blurb: x.blurb }));
+---
+<Base title="Deep dives"
+  subtitle="Studies of one question, in the archive's own voice"
+  lede={DEEP_DIVES.dek}>
+  <ResearchList items={items} />
+</Base>

@@ -30,3 +30,15 @@ export const RESEARCH = [
 ];
 /* the header menu's shape: [{ head, href, items: [[href, label]] }] */
 export const navGroups = RESEARCH.map((g) => ({ head: g.head, href: g.href, items: g.items.map((x) => [x.href, x.label]) }));
+
+/* DEEP DIVES (23 November 2026, the estate clean-up): the archive's own studies, listed on one hub page (/research/deep-dives/) and drawn in the
+   Research menu as ONE sub-group whose heading links to that hub (lib/site-menu.js reads this list, so the menu and the hub cannot disagree).
+   Before this, The DNA stood in the menu under an unlinked "Deep dives" sub-head. The DNA is the only local study this archive has built as a
+   page of its own; a new study goes in here and appears in both places. `blurb` is the one line the hub shows. */
+export const DEEP_DIVES = {
+  id: "deep-dives", head: "Deep dives", href: "/research/deep-dives",
+  dek: "Studies of one question, drawn out at length: the archive's own, kept apart from the eight pages every archive carries.",
+  items: [
+    { href: "/dna", label: "The DNA", blurb: "What the DNA says: a test the paper record set for itself, and failed." },
+  ],
+};
