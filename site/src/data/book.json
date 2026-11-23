@@ -228,6 +228,11 @@
           "blurb": "Every person this archive names has a page of their own."
         },
         {
+          "path": "/who/",
+          "title": "Every name",
+          "blurb": "Every name in the archive, and how many people bore it: a name is not a person."
+        },
+        {
           "path": "/register/",
           "title": "The register",
           "blurb": "People from the source tree and people found in registers, each with a page of their own."
