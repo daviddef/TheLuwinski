@@ -41,7 +41,7 @@ export const MENU = [
     ["/ivone", "Ivone"], ["/leibholz", "The Leibholz brothers"], ["/1948", "Nineteen forty-eight"],
   ]],
   ["People", [
-    { head: "Lists", items: [["/people", "The People"], ["/who", "Every Name"], ["/register", "The Register"]] },
+    { head: "Lists", items: [["/people", "The People"], ["/who", "Every Name"], ["/register", "The Register"], ["/households", "Households"]] },
     { head: "Drawn", href: "/drawn", items: [] },
   ]],
   ["Places & families", [

@@ -238,6 +238,11 @@
           "blurb": "People from the source tree and people found in registers, each with a page of their own."
         },
         {
+          "path": "/households/",
+          "title": "Households",
+          "blurb": "A couple and the children a record names under them, drawn as the household a register records rather than as a pedigree."
+        },
+        {
           "path": "/names/",
           "title": "The names she is filed under",
           "blurb": "Six spellings of a maiden surname, three of a forename and four married surnames."
