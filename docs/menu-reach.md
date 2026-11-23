@@ -20,8 +20,8 @@ cannot see its sibling archives.
 Labels now follow the estate's (Booyzen's): The archive is **Home**, All the people is **The People**, The register is **The Register**, Her names is
 **The Name**, Atlas is **The Atlas**, The lines of the name is **The Lines**. Where a page was already listed under a group heading ("The families"), that
 heading now carries an explicit **All the families** link beside Luwinski, Leibholz and Wear. People holds the two lists and one link, **Drawn**
-(`/drawn/`). Research keeps the eight core pages in the three groups and ends with one **Deep dives** sub-group whose heading links to
-`/research/deep-dives/`.
+(`/drawn/`). Research keeps the eight core pages in the three groups and ended with one **Deep dives** sub-group whose heading linked to
+`/research/deep-dives/`. (That hub is gone since the leftovers, below: The DNA is now an item of Sources & method.)
 
 ## Where each page that left a menu is reached from
 
@@ -47,3 +47,20 @@ does not have and does not need (its tree is `/tree/`); none was created.
 ## Estate pages this archive does not have (not created; each would need a decision)
 
 About, Every Name, Households, Marriages, The trees, Places (an index of places). `/atlas/` and the three place pages stand in for the last.
+
+## The leftovers, 23 November 2026 (six pages built, no one-entry hub)
+
+**New pages, each with its menu entry:** `/about/` (Start), `/who/` Every Name, `/households/`, `/marriages/` (People > Lists), `/trees/` (the
+Drawn page's list and the book; one of the three addresses the 22 November crawl found 404), `/places/` (the Places heading is now a link). Each
+is also in the book (`src/data/book.json`), the sitemap and the search index, and is drawn from this archive's own files only. The left-out
+cases (the two placeholder nodes of the register that hold 23 children, couples whose date no record ties to them) are said on the pages.
+
+**Menu:** the Research menu is back to its three groups with no sub-group: **The DNA** is the fourth item of Sources & method (after Sources, Method, Status).
+The Deep dives hub listed one study, so `/research/deep-dives/` is now a redirect stub to `/dna/` (noindex, not in the sitemap) and has left the book.
+Nothing else was removed. The header menu went from 36 links to 40 (distinct addresses, as above): About, Every Name, Households, Marriages and Places are new; the Deep dives link is gone and The DNA keeps its place in the menu.
+
+**Addresses:** 356 before, 362 after (the six new pages), none gone (`menu_inventory.py sitediff`; every address in the old sitemap still answers 200).
+**Text:** the blocks that stood on in-scope pages and are not on the new site are eight, all on purpose and all in `docs/menu-text-changes.json`:
+the Deep dives section heading line and the old group line on `/research/` (and the same group line on `/research/sources-and-method/`), the hub's own
+two lines on `/research/deep-dives/`, the "also on the Atlas" tag of What Has Been Read on `/research/` (the hub is now drawn with the kit's ResearchList, which words that tag "on the Atlas too"), and two counters on `/changes/` (236 to 237 entries, Documented 133 to 134). The kit tool reads hashed
+snapshots, so its `accepted` list cannot name them, and it keeps listing them as lost: it is these eight, no more.

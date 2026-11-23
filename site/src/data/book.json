@@ -334,11 +334,6 @@
           "path": "/changes/",
           "title": "What changed",
           "blurb": "What was done, in the order it was done."
-        },
-        {
-          "path": "/research/deep-dives/",
-          "title": "Deep dives",
-          "blurb": "The archive's own studies, each with its one line."
         }
       ]
     }

@@ -1,11 +1,13 @@
 ---
 /* RESEARCH: the hub. One menu replaced "Evidence" and "Investigations" on 12 November 2026 (the research-menu pattern); this page is
-   where its three groups are set out together. The lists come from lib/research-menu.js, the same that draws the header menu. */
+   where its three groups are set out together. The lists come from lib/research-menu.js, the same that draws the header menu.
+   23 November 2026 (the leftovers): drawn with the KIT's ResearchList (the hub of Deep dives was the only thing here that used it, and checkpages counts a
+   page that imports no kit component as drawn by hand, so removing the hub would have added one to the ratchet). The two group pages keep the local list. */
 import Base from "../../layouts/Base.astro";
-import ResearchList from "../../components/ResearchList.astro";
+import ResearchList from "@daviddef/archive-kit/components/ResearchList.astro";
+import { blurbOf } from "../../lib/research-counts.js";
 import { u } from "../../lib/url.js";
-import KitResearchList from "@daviddef/archive-kit/components/ResearchList.astro";
-import { RESEARCH, DEEP_DIVES } from "../../lib/research-menu.js";
+import { RESEARCH } from "../../lib/research-menu.js";
 ---
 <Base title="Research"
   subtitle="How this archive works, in the open"
@@ -14,12 +16,7 @@ import { RESEARCH, DEEP_DIVES } from "../../lib/research-menu.js";
     <section>
       <h2 id={g.id}><a href={u(g.href + "/")}>{g.head}</a></h2>
       <p class="sub">{g.dek}</p>
-      <ResearchList items={g.items} />
+      <ResearchList items={g.items.map((x) => ({ href: x.href + "/", label: x.label, atlas: x.atlas, blurb: blurbOf(x) }))} />
     </section>
   ))}
-  <section>
-    <h2 id={DEEP_DIVES.id}><a href={u(DEEP_DIVES.href + "/")}>{DEEP_DIVES.head}</a></h2>
-    <p class="sub">{DEEP_DIVES.dek}</p>
-    <KitResearchList items={DEEP_DIVES.items.map((x) => ({ href: x.href + "/", label: x.label, blurb: x.blurb }))} />
-  </section>
 </Base>
