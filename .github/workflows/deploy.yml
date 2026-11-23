@@ -153,6 +153,11 @@ jobs:
       - name: Check that the name linker still catches what it should
         run: python3 node_modules/@daviddef/archive-kit/kit/tools/autolink_selftest.py
         working-directory: site
+      # ONE PAGE PER PERSON (23 November 2026): a person page whose name another page also carries lists the others (#others-of-this-name),
+      # and nothing else does. Read from the built pages' own headings; needs only the build. The self-test plants a fault for each rule.
+      - name: Check that every person page lists the other people of its name
+        run: python3 ../tools/check-namesakes.py --dist dist && python3 ../tools/check-namesakes.py --dist dist --selftest
+        working-directory: site
       # THE FAMILY STORY (/story/, 25 October 2026): the kit's gate on src/data/story.json and on the BUILT page. Every paragraph
       # graded doc / inf / lore or sourced archive / history, every chapter's papers resolving, every person link a built page, every
       # map dot inside its extent, and no living person beside a date. CI's living list is the public one built above from the

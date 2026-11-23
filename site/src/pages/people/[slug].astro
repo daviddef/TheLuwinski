@@ -58,6 +58,8 @@ import { STUBS, stubPerson, stubNotes, stubAs, VIA_WORD } from '../../lib/englis
 import { isLiving, isHeldOut } from '@daviddef/archive-kit/lib/person.js';
 import { u } from '../../lib/url.js';
 import { storyFor, chaptersFromFacts, inRoots, rootsIdOf, GRADE_SAY } from '../../lib/storyTree.js';
+import OthersOfThisName from '../../components/OthersOfThisName.astro';
+import { othersFor, SECTION_ID } from '../../lib/namesakes.js';
 
 export function getStaticPaths() {
   return [
@@ -151,6 +153,10 @@ const stubNote = 'the household that names them';
 const chartLabels = view.bare ? { parents: 'His parents' } : {};
 /* the page's own slug: OursBand draws 'On our direct line' only for someone in src/data/direct-line.json (kit/docs/family-ribbon.md) */
 const pageSlug = p ? p.slug : stub ? stub.slug : reg.slug;
+/* THE OTHER PEOPLE OF THIS NAME (one page per person, 23 November 2026): each a link to their own page, none when nobody shares the name.
+   lib/namesakes.js says who shares a name; it leaves out placeholders and the living, and a living page draws no such section (the kit does not
+   render the namesakes slot for a living person at all). */
+const others = othersFor(pageSlug);
 const about = !p && view.placeholder ? undefined : (meta.about ?? undefined);   // no Person for a placeholder: it stands for nobody
 
 /* STORY MODE (kit PERSON-PAGE-SPEC.md 2a; 5 November 2026). A page TELLS the life when the archive has something to tell: a parent,
@@ -181,6 +187,10 @@ const rootsId = STORYMODE && inRoots(pageSlug) ? rootsIdOf(pageSlug) : null;
 
     {STORYMODE && <Fragment slot="story"><PersonStory stages={STORY} md={(x) => `<p>${mdp(x)}</p>`} gradeSay={GRADE_SAY} u={u} /></Fragment>}
     {rootsId && <Fragment slot="where"><PersonRootsViews pid={rootsId} u={u} /></Fragment>}
+
+    {others.length > 0 && (
+      <Fragment slot="namesakes"><div id={SECTION_ID} style="scroll-margin-top:8.5rem"><OthersOfThisName others={others} /></div></Fragment>
+    )}
 
     <Fragment slot="record">
       <p>
@@ -250,6 +260,10 @@ const rootsId = STORYMODE && inRoots(pageSlug) ? rootsIdOf(pageSlug) : null;
     {STORYMODE && <Fragment slot="story"><PersonStory stages={STORY} md={(x) => `<p>${mdp(x)}</p>`} gradeSay={GRADE_SAY} u={u} /></Fragment>}
     {rootsId && <Fragment slot="where"><PersonRootsViews pid={rootsId} u={u} /></Fragment>}
 
+    {others.length > 0 && (
+      <Fragment slot="namesakes"><div id={SECTION_ID} style="scroll-margin-top:8.5rem"><OthersOfThisName others={others} /></div></Fragment>
+    )}
+
     <Fragment slot="record">
       <p class="small"><span class="tag open">Named on the English line</span></p>
       <p>The line names {stub.name}{stub.dates ? <> and gives {stub.parsed.baptised && !stub.parsed.died ? 'a baptism' : 'the dates'}{' '}<strong>{stub.dates}</strong></> : ' and gives no date'}.
@@ -305,6 +319,10 @@ const rootsId = STORYMODE && inRoots(pageSlug) ? rootsIdOf(pageSlug) : null;
 
     {STORYMODE && <Fragment slot="story"><PersonStory stages={STORY} md={(x) => `<p>${mdp(x)}</p>`} gradeSay={GRADE_SAY} u={u} /></Fragment>}
     {rootsId && <Fragment slot="where"><PersonRootsViews pid={rootsId} u={u} /></Fragment>}
+
+    {others.length > 0 && (
+      <Fragment slot="namesakes"><div id={SECTION_ID} style="scroll-margin-top:8.5rem"><OthersOfThisName others={others} /></div></Fragment>
+    )}
 
     <Fragment slot="record">
       {view.lifeLine && <p class="small"><strong>{view.lifeLine}</strong></p>}
