@@ -15,6 +15,11 @@
         "blurb": "The family of record told once, as a short book: five generations, every paragraph marked."
       },
       {
+        "path": "/about/",
+        "title": "About",
+        "blurb": "What this archive is and what it holds, counted; what it will say and what it will not; how to tell it it is wrong."
+      },
+      {
         "path": "/method/",
         "title": "Method",
         "blurb": "What the labels mean, and who is missing."

@@ -35,7 +35,7 @@ export const DRAWN = [
 ];
 
 export const MENU = [
-  ["Start", [["", "Home"], ["/story", "The story"]]],
+  ["Start", [["", "Home"], ["/story", "The story"], ["/about", "About"]]],
   ["Our line", [
     ["/derrick", "Derrick"], ["/leonard", "Leonard Wear"], ["/wear-line", "Where the Wear line stands"], ["/kurt", "Kurt"],
     ["/ivone", "Ivone"], ["/leibholz", "The Leibholz brothers"], ["/1948", "Nineteen forty-eight"],
