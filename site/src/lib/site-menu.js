@@ -46,7 +46,7 @@ export const MENU = [
     { head: "Drawn", href: "/drawn", items: [] },
   ]],
   ["Places & families", [
-    { head: "Places", items: [["/east-prussia", "East Prussia"], ["/mozambique", "Mozambique"], ["/australia", "Australia"], ["/lines", "The Lines"], ["/atlas", "The Atlas"]] },
+    { head: "Places", href: "/places", items: [["/east-prussia", "East Prussia"], ["/mozambique", "Mozambique"], ["/australia", "Australia"], ["/lines", "The Lines"], ["/atlas", "The Atlas"]] },
     { head: "The families", items: [["/families", "All the families"], ["/families/luwinski", "Luwinski"], ["/families/leibholz", "Leibholz"], ["/families/wear", "Wear"]] },
   ]],
   ["The name", [["/names", "The Name"]]],

@@ -1,0 +1,44 @@
+---
+/* Places: every place this archive's own data names, in the estate's shape (the kit's Places). 23 November 2026.
+   THE ROWS ARE THE ATLAS'S: public/atlas-data.json holds the twenty-two places the map draws, each with a line on what happened there, and
+   src/data/place-rows.json holds the places that have a page of their own (East Prussia, Mozambique, Australia). Nothing is added.
+   WHAT IS NOT HERE: how many people each place holds. The register's place strings are as the source tree typed them ("Berlin",
+   "Berlin, Germany", "Berlin Deutschland", "Berlin-Wilmersdorf" are four of them), and counting people into a place by guessing which
+   strings are one place would be research, not a list; so the page says what each place is and does not give a count. The atlas's own
+   grouping of its places (the map's colour legend: Leibholz, Luwinski, Figueiredo, England and so on) is not used as a region either: it is
+   the colour of a family's line, and Kraichtal or Sommerfeld are not in East Prussia. */
+import Base from "../layouts/Base.astro";
+import Places from "@daviddef/archive-kit/components/Places.astro";
+import atlas from "../../public/atlas-data.json";
+import placeRows from "../data/place-rows.json";
+import { u } from "../lib/url.js";
+
+const base = (name) => name.split(/ \(|,/)[0].trim();
+const pageFor = (name) => {
+  const b = base(name);
+  const hit = placeRows.find((r) => base(r.name) === b || (r.aliases || []).some((a) => base(a) === b));
+  return hit ? hit.href : "";
+};
+const rows = atlas.places.map((p) => ({ name: p.name, href: pageFor(p.name), note: p.what }));
+/* a place with a page of its own that the map does not draw (Mozambique and Australia: whole countries, not points) */
+for (const r of placeRows) {
+  if (rows.some((x) => base(x.name) === base(r.name))) continue;
+  if (atlas.places.some((p) => (r.aliases || []).some((a) => base(a) === base(p.name)))) continue;
+  rows.push({ name: r.name, href: r.href, note: "Not a point on the map: a country this archive has a page about." });
+}
+---
+<Base title="Places"
+      subtitle={`${rows.length} places this archive names`}
+      lede="Every place this archive can put a person in, with what happened there. The atlas draws where the family was; this lists the places so that one can be looked up by name.">
+
+  <section class="blk">
+    <Places rows={rows} u={u} />
+  </section>
+
+  <p class="small muted">
+    The places are the ones <a href={u("/atlas/")}>the atlas</a> draws, with the same line about each, and the ones that have a page of their own:
+    <a href={u("/east-prussia/")}>East Prussia</a>, <a href={u("/mozambique/")}>Mozambique</a> and <a href={u("/australia/")}>Australia</a>.
+    No count of people is given for a place: the register writes its places as the source tree typed them, and this archive does not guess which
+    spellings are one place. <a href={u("/lines/")}>The lines of the name</a> keep the households of one surname apart, place by place.
+  </p>
+</Base>

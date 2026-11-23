@@ -40,6 +40,11 @@
           "blurb": "Every place this archive can put a date to."
         },
         {
+          "path": "/places/",
+          "title": "Places",
+          "blurb": "Every place this archive names, with what happened there, in a list that can be searched by name."
+        },
+        {
           "path": "/lines/",
           "title": "The lines of the name",
           "blurb": "Households of these surnames kept apart, each on a lane of its own, until a document joins them."
