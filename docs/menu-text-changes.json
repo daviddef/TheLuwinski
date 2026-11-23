@@ -1,7 +1,36 @@
 {
-  "note": "What the menu-regroup branch (PR A, MENU ONLY, 12 November 2026) changed ON PURPOSE in the TEXT of a page. It changed none: only the header menu and the drawer moved, and the kit's menu_inventory reads the text under <main>, not the menu. No vocabulary was changed (token_swaps and accepted stay empty). The earlier list (the Research-menu branch's five declared changes) is in git history at f31b611.",
+  "note": "What the 23 November 2026 estate clean-up (Roots & Routes removed, drawn and deep-dive hubs, menu labels) changed ON PURPOSE in the TEXT of a page. No vocabulary was changed (token_swaps and accepted stay empty). site_changes lists every page whose text changed, with why. The header menu and the drawer are not read by the kit's inventory (it reads the text under <main>). The 12 November lists are in git history (menu-regroup branch: none; research-menu branch: f31b611).",
   "token_swaps": [],
   "accepted": [],
   "snapshot_pages": {},
-  "site_changes": []
+  "site_changes": [
+    {
+      "page": "/roots/",
+      "why": "Roots & Routes was retired on purpose (the Tree Canvas on recordatlas.org replaced it estate-wide): the page is now a redirect stub to /tree/. The bare viewer /roots/view.html, which the person pages frame, is untouched."
+    },
+    {
+      "page": "/contents/",
+      "why": "the book no longer has a Roots & Routes chapter (Part II's later chapters are numbered one lower), and Part V gains the Drawn chapter and Part VI the Deep dives chapter."
+    },
+    {
+      "page": "/part/two-lines/",
+      "why": "the same: Roots & Routes left Part II, so the chapters after it are numbered one lower (II.2 Roots & Routes gone, The families is II.2). No other chapter was removed or renamed."
+    },
+    {
+      "page": "/part/everyone/",
+      "why": "Part V gains one chapter, Drawn (the new /drawn/ hub), before The Timeline."
+    },
+    {
+      "page": "/part/how-we-know/",
+      "why": "Part VI gains one chapter, Deep dives (the new /research/deep-dives/ hub), last."
+    },
+    {
+      "page": "/research/",
+      "why": "a Deep dives section is added after the three groups, linking the new hub and listing The DNA."
+    },
+    {
+      "page": "/changes/",
+      "why": "one new entry at the top (23 November 2026, what this clean-up did); the counts in the filter bar and the heading go from 235 to 236 and Documented from 132 to 133."
+    }
+  ]
 }

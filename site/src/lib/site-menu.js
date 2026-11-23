@@ -1,41 +1,53 @@
 /* THE WHOLE MENU, one list. 12 November 2026 (the menu regroup, PR A, MENU ONLY; the model is TheDefranceski PR #6): the six menus are still six,
    but the five other than Research are re-cut: Start, Our line, People, Places & families, The name. Research (lib/research-menu.js) is the sixth.
    The header menu and the drawer (layouts/Base.astro) both read THIS list, so there is one place to change a label or move a page.
-   No page was renamed, no address changed, no page was edited: every href below is a page that was already built, only its menu moved.
+   23 NOVEMBER 2026 (the estate clean-up, task C): the estate's labels, and the drawn pages behind one link. The labels are Booyzen's: Home, The People,
+   The Register, The Name, The Atlas, The Lines, Blood relatives and Our line drawn on the Drawn page. "Roots & Routes" is gone (the Tree Canvas on
+   recordatlas.org replaced it; /roots/ redirects to /tree/). People holds the two lists and ONE link, Drawn, to the hub /drawn/ (DRAWN below, which
+   draws that page too). Places & families holds the places, "All the families" (the /families/ index) and the three families named in the menu.
      a menu is  [label, items]
      items     a flat list of [href, label]                          (a short menu: one column)
                or a list of groups { head, href?, items }            (a group is a column; `href` makes its heading a link)
-     an item   [href, label], or { sub } for a small unlinked sub-head inside a column
+     an item   [href, label], or { sub, href? } for a small sub-head inside a column (a link when it has an href)
    Hrefs are written without the trailing slash, as Base.astro writes them; "" is the home page.
-   WHERE THE OLD ENTRIES WENT (docs/menu-a-moves.md is built from the two builds and is the proof):
-     Start       The archive, The story stay. The tree, Roots & Routes, The Timeline -> People > Drawn. Nineteen forty-eight -> Our line.
+   WHERE THE OLD ENTRIES WENT (docs/menu-a-moves.md is the 12 November proof, docs/menu-reach.md the 23 November one):
+     Start       The archive is now Home. The tree, The Timeline, Blood relatives -> People > Drawn (the hub /drawn/). Nineteen forty-eight -> Our line.
                  What's new left Start: it is the head of the "What's new" group of Research (and the pulse button's page).
-                 The DNA -> Research > Sources & method > Deep dives (the canon allows a local page there; kit/data/research-menu.json).
-     The families  the index and Luwinski, Leibholz, Wear stay (Places & families). Thimm, Castle, Hawkins, Giddins, Larkin, Figueiredo,
-                 Schmul, Bloom and Wallis left the menu; the /families/ index links every one of them (docs/menu-a-moves.md proves it).
-     Places      -> Places & families.   People & names: The register, All the people, Blood relatives -> People; The lines of the name ->
-                 Places & families; Her names -> The name.  Research is unchanged but for the Deep dives entry. */
-import { navGroups } from "./research-menu.js";
+                 The DNA -> Research > Deep dives (a sub-group whose heading links to /research/deep-dives/).
+     The families  "All the families" (the /families/ index) and Luwinski, Leibholz, Wear stay (Places & families). Thimm, Castle, Hawkins, Giddins,
+                 Larkin, Figueiredo, Schmul, Bloom and Wallis left the menu on 12 November; the /families/ index links every one of them.
+     Places      -> Places & families.   People & names: The register, All the people -> People; The lines of the name -> Places & families;
+                 Her names -> The name.  Research is unchanged but for the Deep dives sub-group. */
+import { navGroups, DEEP_DIVES } from "./research-menu.js";
 
-/* Research, as lib/research-menu.js has it, with the one local deep dive added to the last column. This is the menu only: the /research/ hub and
-   its group pages read RESEARCH directly and are not touched. */
+/* Research, as lib/research-menu.js has it, with the Deep dives sub-group added to the last column: its heading links to the hub, and the
+   hub lists the same items. This is the menu only: the /research/ hub and its group pages read RESEARCH directly. */
 const research = navGroups.map((g, i) =>
-  i === navGroups.length - 1 ? { ...g, items: [...g.items, { sub: "Deep dives" }, ["/dna", "The DNA"]] } : g);
+  i === navGroups.length - 1
+    ? { ...g, items: [...g.items, { sub: DEEP_DIVES.head, href: DEEP_DIVES.href }, ...DEEP_DIVES.items.map((x) => [x.href, x.label])] }
+    : g);
+
+/* THE DRAWN PAGES: what /drawn/ lists and the People menu reaches with one link. `blurb` is the one line each page gets on the hub. */
+export const DRAWN = [
+  { href: "/tree/", label: "Our line, drawn", blurb: "The ancestry as it now stands, every person graded on the five-word ladder." },
+  { href: "/bloodline/", label: "Blood relatives, drawn", blurb: "People joined by what this archive has read, drawn around a chosen person." },
+  { href: "/timeline/", label: "The Timeline", blurb: "Every dated event in the archive's own record files, in order." },
+];
 
 export const MENU = [
-  ["Start", [["", "The archive"], ["/story", "The story"]]],
+  ["Start", [["", "Home"], ["/story", "The story"]]],
   ["Our line", [
     ["/derrick", "Derrick"], ["/leonard", "Leonard Wear"], ["/wear-line", "Where the Wear line stands"], ["/kurt", "Kurt"],
     ["/ivone", "Ivone"], ["/leibholz", "The Leibholz brothers"], ["/1948", "Nineteen forty-eight"],
   ]],
   ["People", [
-    { head: "Lists", items: [["/people", "All the people"], ["/register", "The register"]] },
-    { head: "Drawn", items: [["/tree", "The tree"], ["/roots", "Roots & Routes"], ["/timeline", "The Timeline"], ["/bloodline", "Blood relatives"]] },
+    { head: "Lists", items: [["/people", "The People"], ["/register", "The Register"]] },
+    { head: "Drawn", href: "/drawn", items: [] },
   ]],
   ["Places & families", [
-    { head: "The families", href: "/families", items: [["/families/luwinski", "Luwinski"], ["/families/leibholz", "Leibholz"], ["/families/wear", "Wear"]] },
-    { head: "Places", items: [["/east-prussia", "East Prussia"], ["/mozambique", "Mozambique"], ["/australia", "Australia"], ["/atlas", "Atlas"], ["/lines", "The lines of the name"]] },
+    { head: "Places", items: [["/east-prussia", "East Prussia"], ["/mozambique", "Mozambique"], ["/australia", "Australia"], ["/lines", "The Lines"], ["/atlas", "The Atlas"]] },
+    { head: "The families", items: [["/families", "All the families"], ["/families/luwinski", "Luwinski"], ["/families/leibholz", "Leibholz"], ["/families/wear", "Wear"]] },
   ]],
-  ["The name", [["/names", "Her names"]]],
+  ["The name", [["/names", "The Name"]]],
   ["Research", research],
 ];

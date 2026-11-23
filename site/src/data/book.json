@@ -64,11 +64,6 @@
           "blurb": "The ancestry as it now stands, graded on the five-word ladder."
         },
         {
-          "path": "/roots/",
-          "title": "Roots & Routes",
-          "blurb": "Everyone in the tree who has died, drawn ten ways: by generation, by place, by era, and as the route a life took."
-        },
-        {
           "path": "/families/",
           "title": "The families",
           "blurb": "Twelve surname lines, each with a page of its own."
@@ -238,6 +233,11 @@
           "blurb": "Six spellings of a maiden surname, three of a forename and four married surnames."
         },
         {
+          "path": "/drawn/",
+          "title": "Drawn",
+          "blurb": "The drawn pages in one place: the tree, the blood relatives around one person, and the dated events in order."
+        },
+        {
           "path": "/timeline/",
           "title": "The Timeline",
           "blurb": "Every dated event in the archive's own record files, in order."
@@ -304,6 +304,11 @@
           "path": "/changes/",
           "title": "What changed",
           "blurb": "What was done, in the order it was done."
+        },
+        {
+          "path": "/research/deep-dives/",
+          "title": "Deep dives",
+          "blurb": "The archive's own studies, each with its one line."
         }
       ]
     }

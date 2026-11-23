@@ -404,7 +404,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
                     {g.href ? <a href={base + g.href + '/'} class={"ph" + (here === g.href ? " on" : "")}>{g.head}</a> : <span class="ps ph0">{g.head}</span>}
                     {g.items.map((x) => Array.isArray(x)
                       ? <a href={base + x[0] + '/'} class={here === x[0] ? 'on' : undefined}>{x[1]}</a>
-                      : <span class="ps">{x.sub}</span>)}
+                      : x.href ? <a class="ps" href={base + x.href + '/'}>{x.sub}</a> : <span class="ps">{x.sub}</span>)}
                   </div>))
               : links.map(([h, l]) => (
                   <a href={base + (h ? h + '/' : '/')} class={here === h ? 'on' : undefined}>{l}</a>
@@ -431,7 +431,7 @@ const full = title === SITE ? SITE : title + ' \u2014 ' + SITE;
                     {g.href ? <a href={base + g.href + '/'} class={"ph" + (here === g.href ? " on" : "")}>{g.head}</a> : <span class="ps ph0">{g.head}</span>}
                     {g.items.map((x) => Array.isArray(x)
                       ? <a href={base + x[0] + '/'} class={here === x[0] ? 'on' : undefined}>{x[1]}</a>
-                      : <span class="ps">{x.sub}</span>)}
+                      : x.href ? <a class="ps" href={base + x.href + '/'}>{x.sub}</a> : <span class="ps">{x.sub}</span>)}
                   </div>))
               : links.map(([h, l]) => (
                   <a href={base + (h ? h + '/' : '/')} class={here === h ? 'on' : undefined}>{l}</a>

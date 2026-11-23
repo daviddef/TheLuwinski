@@ -1,0 +1,13 @@
+---
+/* /drawn/ - THE DRAWN PAGES, one hub (23 November 2026, the estate clean-up, task C). The People menu used to list the drawn pages one by one; it now
+   has one link, Drawn, and this page says what each of them shows. The list is DRAWN in lib/site-menu.js, so the menu and this page cannot
+   disagree. No drawn page was renamed, moved or deleted. The kit's ResearchList draws the cards (href, label, blurb). */
+import Base from "../layouts/Base.astro";
+import ResearchList from "@daviddef/archive-kit/components/ResearchList.astro";
+import { DRAWN } from "../lib/site-menu.js";
+---
+<Base title="Drawn"
+  subtitle="The family drawn, three ways"
+  lede="The same people, set out as a picture rather than a list: the tree, the blood relatives around one person, and everything with a date, in order. Each page says on itself what its drawing leaves out.">
+  <ResearchList items={DRAWN} />
+</Base>

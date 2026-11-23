@@ -4,7 +4,8 @@
 import Base from "../../layouts/Base.astro";
 import ResearchList from "../../components/ResearchList.astro";
 import { u } from "../../lib/url.js";
-import { RESEARCH } from "../../lib/research-menu.js";
+import KitResearchList from "@daviddef/archive-kit/components/ResearchList.astro";
+import { RESEARCH, DEEP_DIVES } from "../../lib/research-menu.js";
 ---
 <Base title="Research"
   subtitle="How this archive works, in the open"
@@ -16,4 +17,9 @@ import { RESEARCH } from "../../lib/research-menu.js";
       <ResearchList items={g.items} />
     </section>
   ))}
+  <section>
+    <h2 id={DEEP_DIVES.id}><a href={u(DEEP_DIVES.href + "/")}>{DEEP_DIVES.head}</a></h2>
+    <p class="sub">{DEEP_DIVES.dek}</p>
+    <KitResearchList items={DEEP_DIVES.items.map((x) => ({ href: x.href + "/", label: x.label, blurb: x.blurb }))} />
+  </section>
 </Base>
