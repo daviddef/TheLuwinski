@@ -30,6 +30,7 @@ const research = navGroups.map((g, i) =>
 /* THE DRAWN PAGES: what /drawn/ lists and the People menu reaches with one link. `blurb` is the one line each page gets on the hub. */
 export const DRAWN = [
   { href: "/tree/", label: "Our line, drawn", blurb: "The ancestry as it now stands, every person graded on the five-word ladder." },
+  { href: "/trees/", label: "The trees", blurb: "The lines this archive follows, each in the form its evidence supports: drawn as a line, drawn as a web, or followed and closed." },
   { href: "/bloodline/", label: "Blood relatives, drawn", blurb: "People joined by what this archive has read, drawn around a chosen person." },
   { href: "/timeline/", label: "The Timeline", blurb: "Every dated event in the archive's own record files, in order." },
 ];

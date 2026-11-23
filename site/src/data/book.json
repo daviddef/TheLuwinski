@@ -69,6 +69,11 @@
           "blurb": "The ancestry as it now stands, graded on the five-word ladder."
         },
         {
+          "path": "/trees/",
+          "title": "The trees",
+          "blurb": "The lines this archive follows, each in the form its own evidence supports: a tree, a web, or a line followed and closed."
+        },
+        {
           "path": "/families/",
           "title": "The families",
           "blurb": "Twelve surname lines, each with a page of its own."
