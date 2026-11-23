@@ -1,0 +1,40 @@
+---
+/* Marriages: the couples this archive's own records name, in the estate's shape (the kit's Marriages). 23 November 2026.
+   Built by lib/couples.js from the register's spouse links and the English line's; read the head of that file for what a date has to be
+   tied by before a couple carries one, and for what a living person's couple does not carry. No couple is grouped into a family here (the
+   kit's `groups`): this archive's families are its /families/ pages, and a marriage is listed once, by the two people, not filed under a
+   surname. NOT HERE, because the data does not hold it: a marriage date for most of the register's couples. The register's marriage events
+   read "Marriage to:" and leave the partner out, so a date is printed only where the same date stands in both partners' own records or one
+   partner has one spouse and one dated marriage. The rest print "-" and say nothing. */
+import Base from "../layouts/Base.astro";
+import Marriages from "@daviddef/archive-kit/components/Marriages.astro";
+import { u } from "../lib/url.js";
+import { COUPLES, CHIPS, LEFT_OUT } from "../lib/couples.js";
+
+const dated = COUPLES.filter((c) => c.when);
+const cited = COUPLES.filter((c) => c.vias.includes("cited") || c.vias.includes("read"));
+const ended = COUPLES.filter((c) => c.ended);
+const withKids = COUPLES.filter((c) => c.kids);
+const band = (c) => (c.year == null ? "No date tied to the couple" : c.year < 1900 ? "Before 1900" : c.year < 1950 ? "1900 to 1949" : "1950 and after");
+const ORDER = ["Before 1900", "1900 to 1949", "1950 and after", "No date tied to the couple"];
+const couples = [...COUPLES].sort((a, b) =>
+  ORDER.indexOf(band(a)) - ORDER.indexOf(band(b)) || (a.year ?? 0) - (b.year ?? 0) || a.a.name.localeCompare(b.a.name));
+const metrics = [
+  { n: COUPLES.length, label: "couples the records name" },
+  { n: dated.length, label: "with a date tied to the couple" },
+  { n: cited.length, label: "resting on a record cited or read" },
+  { n: withKids.length, label: "with children recorded under them", href: "/households/" },
+  { n: ended.length, label: "where the register calls the partner an ex-spouse" },
+];
+---
+<Base title="Marriages"
+      subtitle={`${COUPLES.length} couples · ${dated.length} with a date`}
+      lede="Every couple this archive's records name, with the marriage where a record dates it. A marriage is where two lines join, and most of the register's couples have no date tied to them, so most rows say so.">
+  <section class="blk">
+    <Marriages u={u} metrics={metrics} chips={CHIPS} wheel={false}
+      couples={couples} couplesTitle="The couples"
+      couplesNote={`Each couple is two people a record of this archive names as spouses. <strong>It is not a claim that the two lived together, or that the list is complete.</strong> The children recorded under a couple are on <a href="${u("/households/")}">the households page</a>, and the families they belong to are on <a href="${u("/families/")}">the families page</a>.`}
+      couplesGroupBy={band} />
+    <p class="small muted" style="margin-top:1rem">{LEFT_OUT.couples} pairs of the source tree's placeholder nodes (&ldquo;Germany Luwinski&rdquo; and its like, which park the surname index) are not listed: they are not marriages. <a href={u("/register/")}>The register says more.</a></p>
+  </section>
+</Base>

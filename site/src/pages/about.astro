@@ -1,0 +1,36 @@
+---
+/* About: the estate's page, drawn by the kit's About. Everything but the opening is COUNTED from this archive's own data at build
+   time (23 November 2026). The opening is the archive's own words, taken from its cover page (index.astro: the subtitle and the
+   closing sentence of the cover's lede); nothing is written here about who made it or why, because nothing in the archive says. The cover page is the
+   archive's door and the story is its long read; this page is what the shared About asks every archive: what it holds, what it will
+   say and what it will not, and how to tell it it is wrong. */
+import Base from "../layouts/Base.astro";
+import About from "@daviddef/archive-kit/components/About.astro";
+import { u } from "../lib/url.js";
+import register from "../data/register.json";
+import english from "../data/english-people.json";
+import searched from "../data/searched.json";
+import openQuestions from "../data/open-questions.json";
+import atlas from "../../public/atlas-data.json";
+import { STUBS } from "../lib/englishKin.js";
+
+const pages = register.people.length + english.people.length + STUBS.length;
+const holds = [
+  { n: pages, what: "people named, each with a page of their own", href: "/people/" },
+  { n: register.people.length, what: "people in the register", href: "/register/" },
+  { n: atlas.places.length, what: "places on the atlas", href: "/places/" },
+  { n: searched.rows.length, what: "searches recorded, found or empty", href: "/searched/" },
+  { n: openQuestions.rows.length, what: "open questions", href: "/open-questions/" },
+  { n: register.corrections.length, what: "corrections it has made to itself", href: "/corrections/" },
+];
+---
+<Base title="About"
+      subtitle="What this archive is, and what it will not say"
+      lede="Every claim here carries one of five words, every correction it has had to make is published, and a living person is named with their relationships and their town and country, and nothing more. What it holds is counted from its own data, not asserted.">
+  <About holds={holds} u={u} name="The Luwinski Archive"
+    living="A living person (80 or younger, with no death recorded) is named with their relationships and their town and country, and nothing more. The one person the archive is built around, the subject, is named with his parents and nothing else.">
+    <p>An evidence-first archive for the family of Lynn Derrick Luwinski &mdash; Berlin, Schubin, Sauerbaum, Louren&ccedil;o Marques,
+      Johannesburg, Porto. It sets down what can be documented about them, with every inference marked as one and every correction left where
+      it was made. <a href={u("/")}>The cover</a> is where it begins, and <a href={u("/story/")}>the story</a> tells the family of record once, as a short book.</p>
+  </About>
+</Base>

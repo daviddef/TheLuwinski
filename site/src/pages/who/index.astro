@@ -1,0 +1,70 @@
+---
+
+import Base from "../../layouts/Base.astro";
+import NameLists from "@daviddef/archive-kit/components/NameLists.astro";
+import FilterTable from "@daviddef/archive-kit/components/FilterTable.astro";
+import register from "../../data/register.json";
+import english from "../../data/english-people.json";
+import { STUBS } from "../../lib/englishKin.js";
+import { slugify } from "../../lib/namesakes.js";
+import { isLivingRecord } from "../../lib/people.js";
+import { u } from "../../lib/url.js";
+
+const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const yr = (y, q) => (y ? (q ? `${q} ${y}` : String(y)) : "");
+const years = (r) => [yr(r.by, r.byq), yr(r.dy, r.dyq)].filter(Boolean).join("–");
+const KIND = { family: "family tree", index: "surname index", document: "found in a register" };
+
+const bearers = [
+  ...register.people.filter((r) => !r.placeholder).map((r) => {
+    const live = isLivingRecord(r);
+    return { name: r.name, slug: r.slug, life: live ? "" : years(r), how: live ? "living" : KIND[r.kind] || "" };
+  }),
+  ...english.people.map((p) => ({ name: p.name, slug: p.slug, life: p.dates || "", how: "English line" })),
+  ...STUBS.map((s) => ({ name: s.name, slug: s.slug, life: s.dates || "", how: "named on the English line" })),
+];
+const placeholders = register.people.filter((r) => r.placeholder).length;
+const by = new Map();
+for (const b of bearers) {
+  const k = slugify(b.name);
+  if (!k) continue;
+  if (!by.has(k)) by.set(k, { name: b.name, people: [] });
+  by.get(k).people.push(b);
+}
+const names = [...by.values()]
+  .sort((a, b) => b.people.length - a.people.length || a.name.localeCompare(b.name))
+  .map((n) => ({ ...n, n: n.people.length }));
+const shared = names.filter((n) => n.n > 1);
+const life = (p) => [p.life, p.how].filter(Boolean).join(" · ");
+const one = (p, text) => `<a href="${u(`/people/${p.slug}/`)}">${esc(text ?? p.name)}</a>`;
+const lifeOf = (p) => (p.life ? ` (${p.life})` : "");
+const rows = names.map((n) => ({
+  facets: { many: n.n > 1 ? "1" : "0" },
+  cells: [
+    n.n === 1 ? one(n.people[0]) : `<strong>${esc(n.name)}</strong>`,
+    n.n === 1 ? esc(life(n.people[0])) : n.people.map((p) => `${one(p, p.name + lifeOf(p))} <span class="dim">${esc(p.how)}</span>`).join("<br>"),
+    n.n > 1 ? String(n.n) : "",
+  ],
+}));
+const note = `<strong>${shared.length}</strong> of these names belong to more than one person. Those are the ones where a reader can go wrong: <strong>a name is not a person</strong>, and this archive does not join two of them without a record that says to.`;
+---
+<Base title="Every Name"
+      subtitle={`${names.length.toLocaleString()} names · ${shared.length} held by more than one person`}
+      lede="A name is not a person. This is every name in the archive, and how many different people bore it, each linked to their own page.">
+
+  <NameLists here="who" u={u} counts={{ people: register.people.length + english.people.length + STUBS.length, who: names.length, register: register.people.length }} />
+
+  <section class="blk">
+    <FilterTable
+      unit="names"
+      columns={[{ label: "Name" }, { label: "Who, and where they are known from", cls: "small" }, { label: "People", cls: "mono" }]}
+      facets={[{ key: "many", label: "Held by", options: [{ v: "1", label: "More than one person" }, { v: "0", label: "One person only" }] }]}
+      note={note}
+      rows={rows} />
+  </section>
+
+  <p class="small muted">
+    {placeholders} entries in the register stand for people the source tree could not name (&ldquo;Unknown&rdquo;); they are not names, and are left
+    out. Every other person with a page is on this list, the living included, by name only.
+  </p>
+</Base>

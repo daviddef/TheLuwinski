@@ -26,6 +26,8 @@ const redirects = {
    estate-wide. The old address keeps answering, and goes to this archive's own tree page. The bare viewer at /roots/view.html is NOT retired:
    it is the frame the kit's PersonRootsViews draws on a person's page (see src/pages/roots/view.html.js). */
 redirects['/roots'] = '/tree/';
+/* 23 November 2026 (the leftovers). The Deep dives hub listed ONE study, The DNA, and is gone; its address keeps answering and goes to that study. */
+redirects['/research/deep-dives'] = '/dna/';
 
 export default defineConfig({
   site: 'https://luwinski.defranceski.com',

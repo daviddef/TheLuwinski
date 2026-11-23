@@ -13,41 +13,35 @@
    WHERE THE OLD ENTRIES WENT (docs/menu-a-moves.md is the 12 November proof, docs/menu-reach.md the 23 November one):
      Start       The archive is now Home. The tree, The Timeline, Blood relatives -> People > Drawn (the hub /drawn/). Nineteen forty-eight -> Our line.
                  What's new left Start: it is the head of the "What's new" group of Research (and the pulse button's page).
-                 The DNA -> Research > Deep dives (a sub-group whose heading links to /research/deep-dives/).
+                 The DNA -> Research > Sources & method (23 November 2026, the leftovers: it was briefly the one entry of a Deep dives hub, which is gone).
      The families  "All the families" (the /families/ index) and Luwinski, Leibholz, Wear stay (Places & families). Thimm, Castle, Hawkins, Giddins,
                  Larkin, Figueiredo, Schmul, Bloom and Wallis left the menu on 12 November; the /families/ index links every one of them.
      Places      -> Places & families.   People & names: The register, All the people -> People; The lines of the name -> Places & families;
-                 Her names -> The name.  Research is unchanged but for the Deep dives sub-group. */
-import { navGroups, DEEP_DIVES } from "./research-menu.js";
-
-/* Research, as lib/research-menu.js has it, with the Deep dives sub-group added to the last column: its heading links to the hub, and the
-   hub lists the same items. This is the menu only: the /research/ hub and its group pages read RESEARCH directly. */
-const research = navGroups.map((g, i) =>
-  i === navGroups.length - 1
-    ? { ...g, items: [...g.items, { sub: DEEP_DIVES.head, href: DEEP_DIVES.href }, ...DEEP_DIVES.items.map((x) => [x.href, x.label])] }
-    : g);
+                 Her names -> The name.  Research is unchanged but for The DNA in Sources & method. */
+import { navGroups } from "./research-menu.js";
 
 /* THE DRAWN PAGES: what /drawn/ lists and the People menu reaches with one link. `blurb` is the one line each page gets on the hub. */
 export const DRAWN = [
   { href: "/tree/", label: "Our line, drawn", blurb: "The ancestry as it now stands, every person graded on the five-word ladder." },
+  { href: "/trees/", label: "The trees", blurb: "The lines this archive follows, each in the form its evidence supports: drawn as a line, drawn as a web, or followed and closed." },
   { href: "/bloodline/", label: "Blood relatives, drawn", blurb: "People joined by what this archive has read, drawn around a chosen person." },
   { href: "/timeline/", label: "The Timeline", blurb: "Every dated event in the archive's own record files, in order." },
 ];
 
 export const MENU = [
-  ["Start", [["", "Home"], ["/story", "The story"]]],
+  ["Start", [["", "Home"], ["/story", "The story"], ["/about", "About"]]],
   ["Our line", [
     ["/derrick", "Derrick"], ["/leonard", "Leonard Wear"], ["/wear-line", "Where the Wear line stands"], ["/kurt", "Kurt"],
     ["/ivone", "Ivone"], ["/leibholz", "The Leibholz brothers"], ["/1948", "Nineteen forty-eight"],
   ]],
   ["People", [
-    { head: "Lists", items: [["/people", "The People"], ["/register", "The Register"]] },
+    { head: "Lists", items: [["/people", "The People"], ["/who", "Every Name"], ["/register", "The Register"], ["/households", "Households"], ["/marriages", "Marriages"]] },
     { head: "Drawn", href: "/drawn", items: [] },
   ]],
   ["Places & families", [
-    { head: "Places", items: [["/east-prussia", "East Prussia"], ["/mozambique", "Mozambique"], ["/australia", "Australia"], ["/lines", "The Lines"], ["/atlas", "The Atlas"]] },
+    { head: "Places", href: "/places", items: [["/east-prussia", "East Prussia"], ["/mozambique", "Mozambique"], ["/australia", "Australia"], ["/lines", "The Lines"], ["/atlas", "The Atlas"]] },
     { head: "The families", items: [["/families", "All the families"], ["/families/luwinski", "Luwinski"], ["/families/leibholz", "Leibholz"], ["/families/wear", "Wear"]] },
   ]],
   ["The name", [["/names", "The Name"]]],
-  ["Research", research],
+  ["Research", navGroups],
 ];

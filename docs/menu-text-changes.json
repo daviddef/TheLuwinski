@@ -10,27 +10,43 @@
     },
     {
       "page": "/contents/",
-      "why": "the book no longer has a Roots & Routes chapter (Part II's later chapters are numbered one lower), and Part V gains the Drawn chapter and Part VI the Deep dives chapter."
+      "why": "the book no longer has a Roots & Routes chapter (Part II's later chapters are numbered one lower), and Part V gains the Drawn chapter and Part VI the Deep dives chapter. The leftovers (23 November 2026) then add six chapters (About, Places, The trees, Every Name, Households, Marriages) and remove the Deep dives chapter again."
     },
     {
       "page": "/part/two-lines/",
-      "why": "the same: Roots & Routes left Part II, so the chapters after it are numbered one lower (II.2 Roots & Routes gone, The families is II.2). No other chapter was removed or renamed."
+      "why": "the same: Roots & Routes left Part II, so the chapters after it are numbered one lower (II.2 Roots & Routes gone, The families is II.2). No other chapter was removed or renamed. The leftovers add one chapter here, The trees (/trees/), after Our line, drawn."
     },
     {
       "page": "/part/everyone/",
-      "why": "Part V gains one chapter, Drawn (the new /drawn/ hub), before The Timeline."
+      "why": "Part V gains one chapter, Drawn (the new /drawn/ hub), before The Timeline; the leftovers add three more: Every Name, Households and Marriages."
     },
     {
       "page": "/part/how-we-know/",
-      "why": "Part VI gains one chapter, Deep dives (the new /research/deep-dives/ hub), last."
+      "why": "Part VI gained one chapter, Deep dives (the /research/deep-dives/ hub), last; the leftovers remove it again, with the hub, so Part VI is back to eleven chapters."
     },
     {
       "page": "/research/",
-      "why": "a Deep dives section is added after the three groups, linking the new hub and listing The DNA."
+      "why": "the Deep dives section that the clean-up added after the three groups is gone with the hub, and The DNA is listed under Sources & method. The page is now drawn with the kit's ResearchList (its only kit component was the hub's list), so the tag on What Has Been Read reads 'on the Atlas too' where the archive's own list says 'also on the Atlas'."
     },
     {
       "page": "/changes/",
-      "why": "one new entry at the top (23 November 2026, what this clean-up did); the counts in the filter bar and the heading go from 235 to 236 and Documented from 132 to 133."
+      "why": "one new entry at the top (23 November 2026, what this clean-up did); the counts in the filter bar and the heading go from 235 to 236 and Documented from 132 to 133. The leftovers add a second entry on the same day: 236 to 237 and Documented 133 to 134."
+    },
+    {
+      "page": "/drawn/",
+      "why": "the leftovers: one card added, The trees (/trees/), which the 22 November crawl found missing."
+    },
+    {
+      "page": "/part/where-from/",
+      "why": "the leftovers: Part II gains one chapter, Places (/places/)."
+    },
+    {
+      "page": "/research/deep-dives/",
+      "why": "the one-entry Deep dives hub is gone: the address is now a redirect stub to /dna/ (noindex, not in the sitemap), and The DNA is an item of Sources & method."
+    },
+    {
+      "page": "/research/sources-and-method/",
+      "why": "The DNA joins Sources, Method and Status as one of its items, and the group's one-line description says so."
     }
   ]
 }

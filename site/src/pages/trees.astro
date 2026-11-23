@@ -1,0 +1,20 @@
+---
+/* The trees: every line this archive follows, each stated in the form its own evidence supports (the kit's Trees). 23 November 2026.
+   THIS ARCHIVE HAS NO trees.json AND DOES NOT INVENT ONE: the rows are written here from the data the archive already holds and counted from it
+   (data/tree.json, data/lines.json, data/family-lines.json), and every sentence in them is the archive's own, taken from those files or from the
+   cover page. It is a LINK PAGE: the drawings are /tree/, /lines/, /bloodline/ and the family pages, and it says which is which. /trees/ is
+   one of the three addresses the 22 November crawl reported as 404 for this archive (/trees/, /direct-line/, /contents/); it is built now.
+   /direct-line/ is not (see docs/menu-reach.md). */
+import Base from "../layouts/Base.astro";
+import Trees from "@daviddef/archive-kit/components/Trees.astro";
+import { u } from "../lib/url.js";
+import { rows, doors } from "../lib/trees-rows.js";
+---
+<Base title="The trees"
+      subtitle={`${rows.length} lines followed`}
+      lede="The lines this archive follows, each in the form its own evidence supports: a tree where the joins are proved, a web where they are not, and the lines that were followed and closed.">
+  <section class="blk">
+    <Trees rows={rows} drawn={u("/tree/")} doors={doors}
+      close="Everything here is drawn from the tree and the lanes. Where a join is not documented, those pages say so and this one does not draw it." />
+  </section>
+</Base>

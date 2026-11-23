@@ -1,0 +1,24 @@
+---
+/* Households: a couple and the children recorded under them, in the estate's shape (the kit's Households). 23 November 2026.
+   Built by lib/couples.js from the register's parent and child links and the English line's. A household is the children a record names under
+   ONE SET OF PARENTS: a person with children by two partners is two households, and a child named under only one parent is a household of one
+   parent. Only households with at least one child are drawn; the couples with none recorded are on /marriages/. The kit's caveat is printed
+   as the kit words it. A household with a living child or a living parent prints no dates at all. */
+import Base from "../layouts/Base.astro";
+import Households from "@daviddef/archive-kit/components/Households.astro";
+import { u } from "../lib/url.js";
+import { HOUSEHOLDS, COUPLES, LEFT_OUT } from "../lib/couples.js";
+
+const kids = HOUSEHOLDS.reduce((n, h) => n + h.children.length, 0);
+const noKids = COUPLES.filter((c) => !c.kids).length;
+---
+<Base title="Households"
+      subtitle={`${HOUSEHOLDS.length} households · ${kids} children`}
+      lede="The family reassembled as households rather than as a pedigree: a couple, and the children a record names under them.">
+  <section class="blk">
+    <Households rows={HOUSEHOLDS} u={u} />
+    <p class="small muted" style="margin-top:1rem">{noKids} couples have no children recorded under them in the records this archive holds: they are on <a href={u("/marriages/")}>the marriages page</a>.
+      {LEFT_OUT.households} households are not drawn: the source tree parks about a hundred people of the surname index under placeholder nodes (&ldquo;Germany Luwinski&rdquo; and its like), which are not couples, and what hangs from them is not their children. <a href={u("/register/")}>The register says more.</a>
+      A household is what the register records. Where this archive has reason to doubt a parentage the register gives, <a href={u("/dna/")}>the DNA page</a> says so and why.</p>
+  </section>
+</Base>

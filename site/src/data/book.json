@@ -15,6 +15,11 @@
         "blurb": "The family of record told once, as a short book: five generations, every paragraph marked."
       },
       {
+        "path": "/about/",
+        "title": "About",
+        "blurb": "What this archive is and what it holds, counted; what it will say and what it will not; how to tell it it is wrong."
+      },
+      {
         "path": "/method/",
         "title": "Method",
         "blurb": "What the labels mean, and who is missing."
@@ -33,6 +38,11 @@
           "path": "/atlas/",
           "title": "Atlas",
           "blurb": "Every place this archive can put a date to."
+        },
+        {
+          "path": "/places/",
+          "title": "Places",
+          "blurb": "Every place this archive names, with what happened there, in a list that can be searched by name."
         },
         {
           "path": "/lines/",
@@ -62,6 +72,11 @@
           "path": "/tree/",
           "title": "The tree",
           "blurb": "The ancestry as it now stands, graded on the five-word ladder."
+        },
+        {
+          "path": "/trees/",
+          "title": "The trees",
+          "blurb": "The lines this archive follows, each in the form its own evidence supports: a tree, a web, or a line followed and closed."
         },
         {
           "path": "/families/",
@@ -223,9 +238,24 @@
           "blurb": "Every person this archive names has a page of their own."
         },
         {
+          "path": "/who/",
+          "title": "Every name",
+          "blurb": "Every name in the archive, and how many people bore it: a name is not a person."
+        },
+        {
           "path": "/register/",
           "title": "The register",
           "blurb": "People from the source tree and people found in registers, each with a page of their own."
+        },
+        {
+          "path": "/households/",
+          "title": "Households",
+          "blurb": "A couple and the children a record names under them, drawn as the household a register records rather than as a pedigree."
+        },
+        {
+          "path": "/marriages/",
+          "title": "Marriages",
+          "blurb": "Every couple the archive's records name, with the marriage where a record dates it."
         },
         {
           "path": "/names/",
@@ -304,11 +334,6 @@
           "path": "/changes/",
           "title": "What changed",
           "blurb": "What was done, in the order it was done."
-        },
-        {
-          "path": "/research/deep-dives/",
-          "title": "Deep dives",
-          "blurb": "The archive's own studies, each with its one line."
         }
       ]
     }

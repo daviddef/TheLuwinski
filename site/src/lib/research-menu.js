@@ -21,24 +21,20 @@ export const RESEARCH = [
       { href: "/changes", label: "What changed", asks: "What happened, most recent first?" },
     ] },
   { id: "sources-and-method", head: "Sources & method", href: "/research/sources-and-method",
-    dek: "What this archive stands on, how it reads a record, and where every open thread stands.",
+    dek: "What this archive stands on, how it reads a record, where every open thread stands, and the one study it has made of its own, the DNA.",
     items: [
       { href: "/sources", label: "Sources", asks: "What does this stand on, and where do I check?", atlas: true },
       { href: "/method", label: "Method", asks: "What would make you believe or not believe this?" },
       { href: "/status", label: "Status", asks: "Where does every open thread stand, and when did it last move?" },
+      { href: "/dna", label: "The DNA", asks: "What the DNA says: a test the paper record set for itself, and failed." },
     ] },
 ];
 /* the header menu's shape: [{ head, href, items: [[href, label]] }] */
 export const navGroups = RESEARCH.map((g) => ({ head: g.head, href: g.href, items: g.items.map((x) => [x.href, x.label]) }));
 
-/* DEEP DIVES (23 November 2026, the estate clean-up): the archive's own studies, listed on one hub page (/research/deep-dives/) and drawn in the
-   Research menu as ONE sub-group whose heading links to that hub (lib/site-menu.js reads this list, so the menu and the hub cannot disagree).
-   Before this, The DNA stood in the menu under an unlinked "Deep dives" sub-head. The DNA is the only local study this archive has built as a
-   page of its own; a new study goes in here and appears in both places. `blurb` is the one line the hub shows. */
-export const DEEP_DIVES = {
-  id: "deep-dives", head: "Deep dives", href: "/research/deep-dives",
-  dek: "Studies of one question, drawn out at length: the archive's own, kept apart from the eight pages every archive carries.",
-  items: [
-    { href: "/dna", label: "The DNA", blurb: "What the DNA says: a test the paper record set for itself, and failed." },
-  ],
-};
+/* THE DNA, AND NO "DEEP DIVES" HUB (23 November 2026, the leftovers). Earlier the same day the estate clean-up gave this menu a "Deep dives"
+   sub-group whose heading linked to a hub page, /research/deep-dives/, listing the archive's own studies. It had ONE entry, The DNA, which is the
+   only study this archive has built as a page of its own; a hub that lists one thing is not a hub. The kit's convention (kit/docs/menus.md) is one
+   sub-group over a hub "listing every local study", and with one study that is the study itself: The DNA is an item of Sources & method, like any
+   other page, and the old address /research/deep-dives/ still answers (astro.config.mjs sends it to /dna/). When a second study of this
+   archive's own is built, the sub-group and the hub come back: put them here as { sub, href, items } and read them from lib/site-menu.js. */
