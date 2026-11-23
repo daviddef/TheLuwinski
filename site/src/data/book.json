@@ -243,6 +243,11 @@
           "blurb": "A couple and the children a record names under them, drawn as the household a register records rather than as a pedigree."
         },
         {
+          "path": "/marriages/",
+          "title": "Marriages",
+          "blurb": "Every couple the archive's records name, with the marriage where a record dates it."
+        },
+        {
           "path": "/names/",
           "title": "The names she is filed under",
           "blurb": "Six spellings of a maiden surname, three of a forename and four married surnames."
