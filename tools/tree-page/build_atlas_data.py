@@ -10,6 +10,8 @@ events that cover each place, the flag in force over each place per year (as SVG
 Atlas lists for each place. Every number is derived, so re-running it is how the page stays current.
 """
 import argparse, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import svg_path_check
 
 RISO = {'habsburg': 'AT', 'galicia': 'AT', 'napo': 'FR', 'italy': 'IT', 'venice': 'IT', 'twosicilies': 'IT', 'yugo': 'RS',
         'croatia': 'HR', 'uruguay': 'UY', 'spain': 'ES', 'portugal': 'PT', 'brazil': 'BR', 'argentina': 'AR', 'britain': 'GB',
@@ -151,13 +153,28 @@ def main():
     pm_prov = {x['id']: x for x in J('data/providers.json')['providers']}
     fu = {x for r in regions.values() for e in r['eras'] for x in e[5]}
     tbl = []
+    # The drawing comes from data/era-flags.json (tracked, what the Atlas build writes site/public/fl/ FROM), not from site/public/fl/:
+    # that folder is gitignored output, so a checkout can hold an old copy. Wales (era-1959) and ten other flags had paths a minifier
+    # had corrupted; the Atlas repaired them on 4 November 2026, but a stale fl/ kept them and every page built from it logged
+    # `<path> attribute d: Expected number` on load. fl/ is only the fallback when the era is missing from the JSON.
+    ART = (J('data/era-flags.json').get('art') or {}) if os.path.exists(os.path.join(A, 'data/era-flags.json')) else {}
+    def flag_svg(i):
+        slug, _, eid = i.partition('--')
+        if eid and (ART.get(slug) or {}).get(eid): return ART[slug][eid].strip(), 'data/era-flags.json'
+        return open(os.path.join(A, 'site/public/fl', i + '.svg')).read().strip(), 'site/public/fl/' + i + '.svg'
+    malformed = []
     for n, i in enumerate(imgs):
-        s = open(os.path.join(A, 'site/public/fl', i + '.svg')).read().strip()
+        s, src = flag_svg(i)
+        bad = svg_path_check.bad_paths(s)
+        if bad: malformed.append('%s (%s): %d path(s), first cut at character %d' % (i, src, len(bad), bad[0]))
         vb = re.search(r'viewBox="([^"]+)"', s).group(1); inner = re.sub(r'^<svg[^>]*>|</svg>\s*$', '', s)
         inner = re.sub(r'\bid="([^"]+)"', lambda m: 'id="f%d_%s"' % (n, m.group(1)), inner)
         inner = re.sub(r'url\(#([^)]+)\)', lambda m: 'url(#f%d_%s)' % (n, m.group(1)), inner)
         inner = re.sub(r'(xlink:)?href="#([^"]+)"', lambda m: 'href="#f%d_%s"' % (n, m.group(2)), inner)
         tbl.append([vb, inner])
+    if malformed:
+        sys.exit('A flag drawing has a malformed <path d> (a browser stops drawing it and logs "attribute d: Expected number" on every load):\n  '
+                 + '\n  '.join(malformed) + '\nRepair it in the Record Atlas (data/era-flags.json / site/src/flags-pages), then re-run. Do not cut it here.')
     out = {'land': land, 'regimes': regimes, 'regions': regions, 'places': places, 'events': evs,
            'prov': {k: pm_prov[k]['name'] for k in fu if k in pm_prov}, 'provurl': {k: pm_prov[k].get('url') for k in fu if k in pm_prov and pm_prov[k].get('url')},
            'flags': tbl, 'fid': imgs, 'rlabel': {k: reg[k]['label'] for k in regions}}

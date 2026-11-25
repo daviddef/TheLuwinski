@@ -5,6 +5,28 @@
 """
 import argparse, json, sys, datetime, re
 NOW = datetime.date.today().year
+_NUM = r'[-+]?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?'
+_ARGS = {'M': 2, 'L': 2, 'H': 1, 'V': 1, 'C': 6, 'S': 4, 'Q': 4, 'T': 2, 'A': 7, 'Z': 0}
+def bad_path(d):
+    """Why a flag's <path d="..."> would make a browser log "attribute d: Expected number", or None if it parses.
+    Checks only what a browser rejects: stray text (NaN, undefined), a path that does not start with a move, and, for paths
+    without arcs (whose flags may be written fused: 'a1 1 0 011 1'), a run of numbers that is not a whole number of arguments."""
+    tok = re.compile(r'[MmLlHhVvCcSsQqTtAaZz]|' + _NUM)
+    if re.sub(r'[\s,]+', '', tok.sub('', d)): return 'stray text %r' % re.sub(r'[\s,]+', '', tok.sub('', d))[:20]
+    t = tok.findall(d)
+    if not t: return None
+    if t[0] not in 'Mm': return 'does not start with a move'
+    if re.search('[Aa]', d): return None
+    i, cmd = 0, None
+    while i < len(t):
+        if t[i].isalpha():
+            cmd = t[i].upper(); i += 1
+            if cmd == 'Z': continue
+        j = i
+        while j < len(t) and not t[j].isalpha(): j += 1
+        if (j - i) % _ARGS[cmd]: return 'command %s has %d numbers, not a multiple of %d' % (cmd, j - i, _ARGS[cmd])
+        i = j
+    return None
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--tree', required=True); ap.add_argument('--atlas-data', required=True); ap.add_argument('--page')
     a = ap.parse_args()
@@ -31,6 +53,12 @@ def main():
             if p.get('given') or p.get('occ') or p.get('srcs') or p.get('dp'): errs.append('%s is living and carries personal details' % p['id'])
         elif p['by'] and p['by'] > NOW - 100 and p['dy'] is None: errs.append('%s recent birth without death' % p['id'])
     if t.get('focus') not in P: errs.append('focus person %r is not in the tree' % t.get('focus'))
+    # a flag whose SVG path data is broken fills the viewer's console with "Expected number" errors on every page that draws it.
+    # The art is the Atlas's (site/public/fl, built by its build.py); a stale or hand-edited checkout is the usual cause.
+    for fid, (vb, body) in zip(at.get('fid') or [], at.get('flags') or []):
+        for m in re.finditer(r'\bd="([^"]*)"', body):
+            why = bad_path(m.group(1))
+            if why: errs.append('flag %s: path data a browser rejects (%s, near %r): update the Record Atlas checkout (git pull) and run its scripts/build.py so site/public/fl is rebuilt, then rebuild this page' % (fid, why, m.group(1)[:30])); break
     gaps = [p['n'] for p in at['places'] if not p['id']]
     if gaps: warn.append('places not in the Atlas yet: ' + ', '.join(gaps))
     if a.page:
