@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import { md } from '@daviddef/archive-kit/lib/md.js';
 import data from '../data/tree.json';
 import Evidence from '@daviddef/archive-kit/components/Evidence.astro';
+import CanvasLink from '@daviddef/archive-kit/components/CanvasLink.astro';
 import english from '../data/english-people.json';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 /* The five-word ladder is shared across the sibling archives so a level means
@@ -24,6 +25,8 @@ const personName = Object.fromEntries(english.people.map((q) => [q.slug, q.name]
 </style>
 <Base title={data.title} subtitle={data.dek}
   lede="A family tree that shows only names is a claim without a citation. This one grades every person on the same five-word ladder the other archives use, so a level means the same thing wherever a reader meets it — and marks the two things that are not levels at all.">
+
+  <CanvasLink archive="luwinski" person="henry-robert-wear" />
 
   <div class="panel">
     <h3>How to read it</h3>
